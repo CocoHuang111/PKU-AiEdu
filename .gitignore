@@ -1,0 +1,46 @@
+.env
+.env.local
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+node_modules/
+frontend/dist/
+.vite/
+
+data/uploads/*
+data/frames/*
+data/chroma/*
+data/*.db
+!data/**/.gitkeep
+
+# 评估数据集：转写 cache 默认不入库；抽音/帧仍走 data/
+dataset/**/cache/
+
+# 微格原始材料只留本机：视频大，打分表含联系方式
+test/2018春微格作业-32人/
+*.mp4
+*.mov
+*.MP4
+*.MOV
+*.mkv
+*.avi
+*.wmv
+*.xlsx
+*.xls
+
+# 沙龙录像与转写中间产物
+knowledge/corpora/pku_salon/.work/
+knowledge/corpora/pku_salon/raw_video/*
+!knowledge/corpora/pku_salon/raw_video/README.md
+
+models/*
+!models/.gitkeep
+
+.idea/
+.vscode/
+*.swp
+.DS_Store
+*.log
+*.pkl

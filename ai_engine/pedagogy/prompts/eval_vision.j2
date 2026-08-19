@@ -1,0 +1,32 @@
+这是一堂高校课程录像中截取的关键帧（拍摄于视频第 {{ timestamp }}）。
+
+你的任务是**观测**，不是评价。只标注你确实看到的内容，不要推测、不要判断好坏、不要给分。
+
+请严格输出如下 JSON，不要有任何解释性文字，不要用 markdown 代码块包裹：
+
+```
+{
+  "gaze": "students | screen | script | audience_away | unclear",
+  "gesture": "none | pointing | illustrative | writing | unclear",
+  "posture": "standing_front | walking | behind_podium | seated | unclear",
+  "board_present": "blackboard | slide | both | none | unclear",
+  "board_content": "text_heavy | diagram | mixed | none | unclear",
+  "board_readable": "high | medium | low | none | unclear",
+  "students_visible": 画面中可见的学生人数（整数，看不到学生填 0，无法数清填 -1）,
+  "heads_up": "high | medium | low | unclear",
+  "hands_raised": "yes | no | unclear",
+  "note": "一句话补充画面中其他与教学相关的信息，30 字以内"
+}
+```
+
+字段含义：
+
+- `gaze` 教师视线方向：看学生 / 看投影屏 / 看讲稿或电脑 / 转身背对学生 / 看不清
+- `gesture` 手势：无 / 指向板书或屏幕 / 讲解性比划 / 正在书写 / 看不清
+- `posture` 站位：讲台前方 / 走动中 / 讲台后固定 / 坐着 / 看不清
+- `board_present` 有无板书或投影；`board_content` 以文字还是图表为主
+- `board_readable` 字迹与字号的可读性；没有板书投影时填 `none`
+- `heads_up` 可见学生的抬头比例；看不到学生时填 `unclear`
+
+**看不清、被遮挡、画面里没有对应对象时，一律填 `unclear`**（人数填 -1）。
+不要为了填满字段而猜测——猜错会直接变成错误的统计数字。

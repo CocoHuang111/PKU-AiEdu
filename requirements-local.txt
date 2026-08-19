@@ -1,0 +1,14 @@
+# 可选依赖。默认走云端 DashScope，不装这些也能跑完整流水线。
+#   pip install -r requirements-local.txt
+
+# --- 纯本地 embedding / rerank 备选方案 ---
+# 只有当 config.yaml 的 embedding/rerank 想用 sentence_transformers 时才需要
+sentence-transformers>=3.0
+torch>=2.2
+
+# --- 说话人分离（区分教师与学生发言）---
+# 开启方式：config.yaml 里 evaluation.diarization_enabled: true
+# 还需要在 .env 设 HF_TOKEN，并在模型页面接受使用条款：
+#   https://huggingface.co/pyannote/speaker-diarization-3.1
+# 注意：CPU 上 45 分钟音频约需 10–20 分钟，会明显拉长评估流水线
+pyannote.audio>=3.1

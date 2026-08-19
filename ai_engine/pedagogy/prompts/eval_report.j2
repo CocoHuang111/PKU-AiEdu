@@ -1,0 +1,45 @@
+你是一位资深的高校教师发展中心专家。请根据下面的评估结果，为这位教师撰写一份教学诊断报告。
+
+## 总体情况
+- 综合得分：{{ overall.score }} / 100（{{ overall.grade }} 级 · {{ overall.grade_label }}）
+- 课堂时长：{{ overall.duration_minutes }} 分钟
+- 本次可用模态：{{ overall.modalities | join('、') }}
+{% if overall.skipped_indicators %}
+- 有 {{ overall.skipped_indicators }} 个二级指标因缺少对应模态数据未参与评分
+{% endif %}
+
+## 五维得分
+| 维度 | 得分 | 等级 | 折算说明 |
+| --- | --- | --- | --- |
+{% for d in dimensions %}
+| {{ d.label }} | {% if d.assessed %}{{ d.score }}{% else %}未评估{% endif %} | {{ d.grade }} | {{ d.dimension_rationale or "—" }} |
+{% endfor %}
+
+## 二级指标明细
+{% for d in dimensions if d.assessed %}
+### {{ d.label }}（{{ d.score }} 分）
+{% if d.dimension_rationale %}{{ d.dimension_rationale }}
+{% endif %}
+{% for ind in d.indicators if ind.assessed %}
+- **{{ ind.label }}** {{ ind.score }} 分：{{ ind.evidence }}
+{% endfor %}
+{% endfor %}
+
+---
+
+请输出一份 600-900 字的报告，用 Markdown 组织，包含且仅包含这四个部分：
+
+## 一、总体评价
+两三句话概括这堂课的整体水平与最鲜明的特征。
+
+## 二、突出优点
+挑 2-3 个得分最高、最值得肯定的方面展开。每条都要引用上面的具体证据或数据，不要空泛表扬。
+
+## 三、主要问题
+挑 2-3 个得分最低、最影响教学效果的问题展开。指出问题在哪、为什么这是问题、对学生学习产生什么影响。语气要专业、对事不对人。
+
+## 四、改进建议
+给出 3-4 条具体可执行的建议，按优先级排序。每条建议要说清楚"下次课怎么做"，避免"应该加强互动"这类无法落地的表述。
+
+注意：不要重复罗列分数表格，不要写客套开场白和结束语，直接从"一、总体评价"开始。
+未参与评分的指标不要在报告里讨论，也不要因此指责教师。

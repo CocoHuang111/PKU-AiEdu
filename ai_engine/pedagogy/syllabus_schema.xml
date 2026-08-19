@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  教学大纲 XML 结构模板（北大问教 2.0 · 大纲级）
+
+  与 syllabus_markdown_schema.md 同级：输出课程大纲，不是教案。
+  元素内中文描述字段含义，不是输出范文。
+  结构与业务校验规则在 ai_engine/syllabus/optimizer.py 中同步维护。
+
+  约定：
+    - repeatable="true" 表示元素可重复，模型输出时必须移除此属性
+    - origin：original | clarified | added
+    - source_id 用于分阶段生成时的章节覆盖检查（S1、S2……）
+    - 原文没有且无法推断的数据写「待教师确认」，不得编造
+    - 篇幅应与原文相当，整体不超过原文两倍
+-->
+<syllabus>
+  <course>
+    <name>课程名称</name>
+    <code>课程代码；原文没有则写「待教师确认」</code>
+    <credits>学分</credits>
+    <total_hours>总学时；原文没有则写「待教师确认」</total_hours>
+    <discipline>学科门类；原文没有则写「待教师确认」或省略含义</discipline>
+    <audience>授课对象；原文没有则写「待教师确认」</audience>
+    <prerequisites>先修课程；原文没有则省略或写「待教师确认」</prerequisites>
+    <description>忠于原文的课程简介，1–3 句，不超过 120 字</description>
+  </course>
+
+  <objectives>
+    <!-- level：记忆|理解|应用|分析|评价|创造；3–6 条为宜，每条 1 句 -->
+    <objective id="O1" level="理解" origin="original" repeatable="true">
+      <statement>学生能够……（1 句可测量表述，层次已在 level 属性标注）</statement>
+    </objective>
+  </objectives>
+
+  <chapters>
+    <!-- 保留原章节数量、标题、顺序；禁止拆成逐知识点教案 -->
+    <chapter source_id="S1" index="1" origin="original" repeatable="true">
+      <title>原章节或模块标题</title>
+      <hours>本章学时；原文没有则写「待教师确认」</hours>
+      <points>
+        <point origin="original" repeatable="true">要点：1 句，保留原文表述或略作澄清</point>
+      </points>
+      <!-- 原文有教学形式则保留；无则省略本节点 -->
+      <teaching_format>如讲授、讨论、实验</teaching_format>
+    </chapter>
+  </chapters>
+
+  <assessment>
+    <!-- type：平时表现|作业|实验|期中|期末|大作业|汇报|项目|其他 -->
+    <item id="A1" type="期末" weight="50" origin="original" repeatable="true">
+      <description>考核项说明，1 句，对应原文</description>
+      <!-- 原文未规定 AI 政策时写「待教师确认」或省略 -->
+      <ai_policy>待教师确认</ai_policy>
+    </item>
+  </assessment>
+
+  <references>
+    <!-- type：教材|参考书|论文|网络资源|其他；只保留原文明确给出的文献 -->
+    <reference type="教材" origin="original" repeatable="true">文献著录信息</reference>
+  </references>
+
+  <additional_sections>
+    <section title="原栏目标题" origin="original" repeatable="true">
+      <content>无法归入标准字段的原大纲栏目，原意保留</content>
+    </section>
+  </additional_sections>
+
+  <needs_confirmation>
+    <item target="字段或章节位置" repeatable="true">需要教师确认的问题；无则留空</item>
+  </needs_confirmation>
+
+  <improvements>
+    <!-- 最多 5 条，每条 1 句；无实质改动可写「结构整理为主」 -->
+    <improvement target="改动位置" type="clarified" repeatable="true">
+      <summary>1 句改动说明</summary>
+      <source_basis>对应原文依据</source_basis>
+    </improvement>
+  </improvements>
+
+  <!-- 可选：全课最多 1 段 AI 说明（3–5 句）；不要求每章都有，不适切则省略整个节点 -->
+  <ai_integration origin="added">
+    <summary>AI 辅助教学的应用场景、价值与边界</summary>
+  </ai_integration>
+</syllabus>

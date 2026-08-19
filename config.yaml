@@ -1,0 +1,142 @@
+# 北大问教 2.0 — 统一 AI 能力配置
+#
+# mode 决定 llm / vlm / embedding / rerank 走云端还是本地。
+# 【默认 cloud】LLM、VLM、Embedding 应走通义千问 API；仅当显式设置 PKU_MODE=local 时才用 Ollama。
+# asr 不受 mode 影响，固定走本地 faster-whisper（语音识别，非大模型）。
+
+mode: cloud # cloud（默认）| local（需显式开启，见 README）
+
+llm:
+  cloud:
+    provider: openai_compat
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    model: qwen3.7-plus
+    api_key_env: DASHSCOPE_API_KEY
+    temperature: 0.3
+    timeout: 300
+  local:
+    provider: ollama
+    base_url: http://localhost:11434
+    model: qwen2.5:3b
+    temperature: 0.3
+    timeout: 300
+
+# 视觉语言模型：给教学视频关键帧做结构化描述
+vlm:
+  cloud:
+    provider: openai_compat
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    model: qwen3-vl-plus
+    api_key_env: DASHSCOPE_API_KEY
+    temperature: 0.2
+    timeout: 180
+  local:
+    provider: ollama
+    base_url: http://localhost:11434
+    model: qwen2.5vl:7b
+    temperature: 0.2
+    timeout: 600
+
+embedding:
+  cloud:
+    provider: openai_compat
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    model: text-embedding-v3
+    api_key_env: DASHSCOPE_API_KEY
+    batch_size: 10 # DashScope 单次最多 10 条
+    timeout: 60
+  local:
+    provider: ollama
+    base_url: http://localhost:11434
+    model: bge-m3
+    timeout: 120
+
+rerank:
+  cloud:
+    provider: none # 云端暂不接重排，检索结果按向量分数排序
+  local:
+    provider: none
+
+# ASR 只有本地实现，不随 mode 切换
+asr:
+  provider: faster_whisper
+  model: base # 想更准可换 small / medium，速度线性变慢
+  language: zh
+  device: cpu # macOS arm64 只能 cpu
+  compute_type: int8
+  vad_filter: true # 过滤静音段，长视频提速明显
+
+vector_store:
+  provider: chroma
+  persist_dir: ./data/chroma
+
+# 问答语料库：加一个库 = 这里加一项 + 在 knowledge/corpora/ 下建同名目录
+corpora:
+  - name: edu_theory
+    label: 教育学基础理论
+    description: 教学论、学习科学、课程与教学设计等通用教育学理论知识
+  - name: pku_salon
+    label: 北大教学沙龙
+    description: 北大青年教师教学沙龙、观摩活动的记录与案例
+  - name: course_syllabi
+    label: 课程大纲参考
+    description: 国内外公开课程大纲，用于大纲优化与教学设计参考
+  - name: eval_reports
+    label: 历史评估报告
+    description: 本系统产出的教学视频评估报告摘要，支持个性化追问
+    auto: true # 由系统自动写入，ingest 脚本跳过
+
+rag:
+  chunk_size: 500
+  chunk_overlap: 80
+  top_k: 15 # 每个语料库、每条 query 初筛条数（合并后再按阈值与 max_hits 截断）
+  score_threshold: 0.5 # 相似度低于此值的块不进入引用（cosine 相似度，0~1）
+  max_hits: 12 # 阈值过滤后最多引用条数
+  max_context_chars: 6000 # 拼进提示词的检索上下文上限
+
+evaluation:
+  segment_minutes: 5 # 转写按多少分钟切一段做客观特征统计
+  vlm_enabled: true # 关掉则跳过视觉模态，只用音频+文本
+  audio_enabled: true # 关掉则跳过 librosa 声学特征
+
+  # 视觉分两条轨，成本结构完全不同，所以分开配置：
+  #   稀疏轨 keyframe_count —— 每帧一次 VLM 调用，用于教态、板书风格
+  #   密集轨 slide_*        —— 只做本地帧差比对，零 API 成本，用于切换与停留
+  keyframe_count: 12 # 均匀抽多少张关键帧送 VLM
+  slide_detection_enabled: true # 关掉则不做课件切换检测
+  slide_sample_interval_sec: 3.0 # 密集轨抽帧间隔（秒）
+  slide_change_threshold: 0.08 # 相邻帧平均灰度差超过此值判为一次切换（0~1）
+  #   阈值调大 = 少报切换；固定机位下教师走动也会造成差异，所以切换数是上界
+  courseware_max_pages: 16 # 教师上传的课件最多渲染多少页送 VLM（超出则均匀抽样）
+
+  # 说话人分离：默认关闭。开启需装 requirements-local.txt 并配 HF_TOKEN，
+  # CPU 上 45 分钟音频约需 10–20 分钟，会明显拉长流水线。
+  # 关闭时「学生发言次数」只能靠词表粗估（系统性偏高），详见 evaluation_design.md
+  diarization_enabled: false
+
+diarization:
+  model: pyannote/speaker-diarization-3.1
+  hf_token_env: HF_TOKEN
+
+syllabus:
+  # 优化 prompt：
+  #   syllabus_optimize.j2 / syllabus_optimize_schema.j2（XML）
+  #   syllabus_optimize_markdown.j2 / syllabus_optimize_markdown_schema.j2（Markdown）
+  prompt_template: syllabus_optimize.j2
+  schema_file: syllabus_schema.xml # 位于 ai_engine/pedagogy/ 下；schema 模式时注入 prompt
+  markdown_schema_file: syllabus_markdown_schema.md # 固定 Markdown 框架模板
+  max_input_chars: 80000 # 送入 LLM 的大纲原文上限（PDF 抽取后常比 Word 更长）
+  llm_timeout: 600 # 大纲优化 LLM 读超时（秒）；固定框架单轮生成长 XML 常需 5–10 分钟
+  generation_strategy: single # 固定框架：single=单轮生成（默认，较快）；staged=分章流水线（慢，易超时）
+  chapter_batch_size: 1 # staged 模式下每次优化的章节数
+  max_staged_chapters: 30 # staged 模式下章节数上限
+  staged_fallback_to_single: true # staged 失败时退回单轮
+  markdown_max_length_ratio: 2.0 # Markdown/XML 固定框架输出字数上限 = 原文字数 × 该比例
+
+# 教学沙龙视频 → 结构化 Markdown 语料
+salon:
+  raw_video_dir: raw_video # 相对于 knowledge/corpora/pku_salon/
+  work_dir: .work # 转写中间产物（audio / transcript.json），不入向量库
+  asr_model: base 
+  segment_minutes: 5 # 喂给 LLM 前按多少分钟分段（便于长视频处理）
+  max_transcript_chars: 80000 # 超长转写截断上限（按段落边界）

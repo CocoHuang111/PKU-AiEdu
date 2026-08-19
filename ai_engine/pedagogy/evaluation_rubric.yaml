@@ -1,0 +1,305 @@
+# 多模态课堂教学评估指标体系
+#
+# 三层结构：一级维度(dimension) → 二级指标(indicator) → 分模态观测点(criteria)
+# modalities 标注该二级指标依赖哪些模态，Judge 会据此决定喂哪些证据：
+#   audio  = 声学特征（librosa 客观值）
+#   text   = ASR 转写文本与文本客观特征
+#   vision = 关键帧的 VLM 结构化描述
+#
+# 想调整指标，改这个文件即可，不需要动代码。
+# 二级 weight：仅在模型未给出有效一级分时，加权平均兜底用；正常路径由 LLM
+# 按课型综合出 dimension_score。一级 weight：五个维度合成总分时仍会用，会自动归一化。
+
+meta:
+  version: "2.0"
+  score_range: [0, 100]
+  grade_thresholds: # 总分与各维度得分共用
+    - { min: 90, grade: A, label: 优秀 }
+    - { min: 80, grade: B, label: 良好 }
+    - { min: 70, grade: C, label: 合格 }
+    - { min: 0, grade: D, label: 待提升 }
+
+# 五个一级维度合成总分时的权重（会自动归一化）。各维内部的一级分由 Judge 综合，不走这里。
+dimensions:
+  - key: teaching_attitude
+    label: 教学态度
+    weight: 1.0
+    description: 教师对课堂的投入与准备程度、授课熟练度、教态与课堂管理
+    indicators:
+      - key: preparation
+        label: 教学准备
+        weight: 1.0
+        modalities: [text, vision]
+        criteria:
+          - 课程结构完整
+          - 课件/板书设计详细完整
+      - key: proficiency
+        label: 教学熟练度
+        weight: 1.0
+        modalities: [audio, vision]
+        criteria:
+          - 非正常停顿留白少
+          - 看稿、读屏行为少
+      - key: teacher_bearing
+        label: 教师教态
+        weight: 1.0
+        modalities: [audio, vision]
+        criteria:
+          - 语气稳定
+          - 语调积极且富于变化
+          - 手势动作自然、表情自然、目光专注
+      - key: classroom_management
+        label: 课堂管理
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 纪律提醒、点名提问适时
+
+  - key: teaching_content
+    label: 教学内容
+    weight: 1.0
+    description: 授课内容的完整性、逻辑性、准确性与前沿性
+    indicators:
+      - key: completeness
+        label: 内容完整性
+        weight: 1.0
+        modalities: [text]
+        # 按转写判断本节课是否形成知识闭环；若教师上传了课程大纲，
+        # 则对照大纲中与本节相关的安排来评完整性。
+        criteria:
+          - 本节课内容完整闭环
+      - key: logic
+        label: 组织逻辑性
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 逻辑层次清晰，概念-原理-案例链条完整
+      - key: accuracy
+        label: 知识准确性
+        # 降权到 0.6：通用大模型对具体学科的事实核查能力有限，既会漏报也会误报。
+        # 与其他指标同权时，一次误判就会明显拉低整个「教学内容」维度。
+        weight: 0.6
+        modalities: [text]
+        criteria:
+          - 无知识性错误
+      - key: key_difficulty
+        label: 重点难点设计
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 详略结合，重点难点讲解充分
+          - 高阶/推理问题比例合理
+      - key: practice_link
+        label: 理论联系实际
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 引入实际案例、社会情境等
+      - key: frontier
+        label: 学科前沿融入
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 引用最新研究成果、行业动态或最新数据
+
+  - key: teaching_method
+    label: 教学方法
+    weight: 1.0
+    description: 提问与启发的设计、板书课件的运用、思维引导与资源整合
+    indicators:
+      - key: questioning
+        label: 提问设计
+        weight: 1.0
+        modalities: [text, audio]
+        criteria:
+          - 提问次数
+          - 开放性问题占比合理
+          - 提问后保留有效思考等待时间
+      - key: inspiration
+        label: 启发设计
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 启发技巧使用
+          - 追问充分
+      - key: blackboard
+        label: 板书设计
+        weight: 1.0
+        modalities: [vision]
+        criteria:
+          - 板书/课件布局清晰
+          - 板书/课件可读性高
+          - 板书/课件停留充分
+      - key: thinking_guidance
+        label: 思维引导
+        weight: 1.0
+        modalities: [text]
+        # 指标文档有这个二级指标，但没有对应的三级观测点。不自行扩写，按二级名称评分。
+        criteria:
+          - 思维引导
+      - key: multimedia
+        label: 多媒体应用
+        weight: 1.0
+        modalities: [vision]
+        criteria:
+          - 课件切换与讲授同步
+          - 多媒体切换使用熟练
+      - key: resource_integration
+        label: 教学资源融合
+        weight: 1.0
+        modalities: [text, vision]
+        # 同上：二级有、三级无，不自行扩写。
+        criteria:
+          - 教学资源融合
+
+  - key: teaching_effect
+    label: 教学效果
+    weight: 1.0
+    description: 学生的参与、互动质量、课堂氛围与知识掌握情况
+    indicators:
+      - key: participation
+        label: 学生参与度
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 学生提问/发言次数
+      - key: interaction_quality
+        label: 课堂互动质量
+        weight: 1.0
+        modalities: [audio]
+        criteria:
+          - 学生回答语气坚定
+      - key: atmosphere
+        label: 课堂学习氛围
+        weight: 1.0
+        modalities: [audio]
+        criteria:
+          - 课堂整体噪音小
+      - key: mastery
+        label: 知识掌握情况
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 学生回答正确率高、逻辑清晰
+
+  - key: teaching_quality
+    label: 教学素质
+    weight: 1.0
+    description: 教师个人的思维、表达、时间掌控与仪态
+    indicators:
+      - key: clear_thinking
+        label: 思维清晰
+        weight: 1.0
+        modalities: [text, audio]
+        criteria:
+          - 口齿清晰
+          - 过渡自然
+      - key: accurate_expression
+        label: 表达准确
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 用词准确无歧义
+          - 冗余词频率低
+      - key: time_control
+        label: 时间控制
+        weight: 1.0
+        modalities: [audio, text]
+        criteria:
+          - 时间分配合理
+          - 语速整体稳定
+          - 重点内容语速调整、语调变化
+      - key: demeanor
+        label: 教学仪态
+        weight: 1.0
+        modalities: [vision]
+        criteria:
+          - 眼神交流充分
+          - 肢体表达自然
+
+# 客观特征的中文标签与单位，用于前端展示和喂给 Judge 的证据表。
+# 分组即证据来源，提示词会按组标注出处，让 Judge 知道每个数字有多硬：
+#   text     纯 Python 从转写文本统计
+#   audio    librosa 从音轨提取
+#   timeline ASR 时间戳与解码指标
+#   vision     VLM 逐帧结构化标注后本地聚合
+#   slides     本地帧差检测（无需 VLM）
+#   courseware 教师上传课件的页面标注（有则作为板书/课件设计的权威证据）
+#   speakers   pyannote 说话人分离（默认关闭）
+objective_features:
+  text:
+    speech_rate: { label: 语速, unit: 字/分钟, ideal: [200, 280] }
+    speech_rate_cv: { label: 分段语速变异系数, unit: "%", ideal: [0, 20] }
+    speech_rate_late_ratio: { label: 后段/前段语速比, unit: "", ideal: [0.9, 1.15] }
+    question_count: { label: 提问次数, unit: 次 }
+    question_per_10min: { label: 每10分钟提问次数, unit: 次 }
+    open_question_ratio: { label: 开放性问题占比, unit: "%" }
+    higher_order_question_ratio: { label: 高阶问题占比, unit: "%" }
+    classified_question_count: { label: 可分类提问数（高阶占比的分母）, unit: 次 }
+    question_gini: { label: 提问分布集中度（0均匀-1集中）, unit: "" }
+    question_free_segment_ratio: { label: 无提问段落占比, unit: "%" }
+    interaction_count: { label: 互动话语次数, unit: 次 }
+    discipline_count: { label: 纪律提醒与点名次数, unit: 次 }
+    inspire_count: { label: 启发性话语次数, unit: 次 }
+    case_count: { label: 案例引入次数, unit: 次 }
+    recency_count: { label: 前沿性表述次数, unit: 次 }
+    year_ref_count: { label: 年份引用次数, unit: 次 }
+    filler_density: { label: 口头禅密度, unit: 次/百字, ideal: [0, 1.5] }
+    transition_count: { label: 过渡衔接词次数, unit: 次 }
+    student_speech_count: { label: 学生发言线索次数（词表粗估，偏高）, unit: 次 }
+  audio:
+    loudness_db: { label: 平均响度, unit: dB }
+    loudness_std: { label: 响度波动, unit: dB }
+    pitch_median: { label: 基频中位数, unit: Hz }
+    pitch_std: { label: 基频标准差, unit: Hz }
+    pitch_variation: { label: 语调起伏度, unit: "" }
+    emphasis_per_min: { label: 每分钟重音峰值数, unit: 次 }
+    long_pause_count: { label: 非正常长停顿次数, unit: 次 }
+    long_pause_per_10min: { label: 每10分钟长停顿次数, unit: 次 }
+    silence_ratio: { label: 静音占比, unit: "%" }
+    snr_estimate: { label: 信噪比估计, unit: dB }
+  timeline:
+    wait_time_mean: { label: 提问后平均等待时间, unit: 秒 }
+    wait_time_median: { label: 提问后等待时间中位数, unit: 秒 }
+    wait_time_effective_ratio: { label: 等待≥3秒的提问占比, unit: "%" }
+    wait_time_sample_count: { label: 等待时间有效样本数, unit: 次 }
+    asr_confidence: { label: 转写平均对数概率（越接近0越清晰）, unit: "" }
+    asr_low_confidence_ratio: { label: 低置信转写时长占比, unit: "%" }
+  vision:
+    frames_analyzed: { label: 成功标注帧数, unit: 帧 }
+    gaze_students_ratio: { label: 视线看学生帧占比, unit: "%" }
+    gaze_script_ratio: { label: 视线看讲稿帧占比, unit: "%" }
+    gaze_screen_ratio: { label: 视线看屏幕/背对学生帧占比, unit: "%" }
+    gaze_unclear_ratio: { label: 视线无法判断帧占比, unit: "%" }
+    gesture_active_ratio: { label: 有手势帧占比, unit: "%" }
+    walking_ratio: { label: 讲台前或走动帧占比, unit: "%" }
+    board_present_ratio: { label: 有板书或投影帧占比, unit: "%" }
+    board_diagram_ratio: { label: 含图表帧占比, unit: "%" }
+    board_readable_high_ratio: { label: 可读性高帧占比, unit: "%" }
+    board_readable_low_ratio: { label: 可读性低帧占比, unit: "%" }
+    heads_up_high_ratio: { label: 学生抬头率高帧占比, unit: "%" }
+    heads_up_unclear_ratio: { label: 抬头率无法判断帧占比, unit: "%" }
+    hands_raised_frame_ratio: { label: 有人举手帧占比, unit: "%" }
+    students_visible_median: { label: 可见学生人数中位数, unit: 人 }
+  courseware:
+    courseware_pages_analyzed: { label: 成功标注的课件页数, unit: 页 }
+    cw_layout_clear_ratio: { label: 版式清楚页占比, unit: "%" }
+    cw_layout_cluttered_ratio: { label: 版式拥挤页占比, unit: "%" }
+    cw_density_heavy_ratio: { label: 文字过密页占比, unit: "%" }
+    cw_diagram_ratio: { label: 含图表页占比, unit: "%" }
+    cw_readable_high_ratio: { label: 课件可读性高页占比, unit: "%" }
+    cw_readable_low_ratio: { label: 课件可读性低页占比, unit: "%" }
+  slides:
+    slide_change_count: { label: 板书课件切换次数（上界）, unit: 次 }
+    slide_change_per_10min: { label: 每10分钟切换次数, unit: 次 }
+    dwell_median_sec: { label: 页面停留中位时长, unit: 秒 }
+    dwell_short_ratio: { label: 停留不足20秒的页面占比, unit: "%" }
+    slide_sync_ratio: { label: 切换处伴随过渡话语的比例, unit: "%" }
+    blank_frame_ratio: { label: 黑屏白屏帧占比, unit: "%" }
+  speakers:
+    speaker_count: { label: 识别到的说话人数, unit: 人 }
+    teacher_speech_ratio: { label: 教师发言时长占比, unit: "%" }
+    student_speech_ratio: { label: 学生发言时长占比, unit: "%" }
+    student_turn_count: { label: 学生发言轮次, unit: 次 }
+    student_turn_mean_sec: { label: 学生单次发言平均时长, unit: 秒 }
+    turn_exchange_count: { label: 师生轮次交替次数, unit: 次 }

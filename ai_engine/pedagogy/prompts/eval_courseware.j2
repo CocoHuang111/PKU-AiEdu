@@ -1,0 +1,25 @@
+这是教师上传的课件第 {{ page }} 页（共 {{ page_count }} 页），不是课堂录像截帧。
+
+你的任务是**观测版式与内容密度**，不是评价教学好坏、不要给分、不要推测课堂实况。
+
+请严格输出如下 JSON，不要有任何解释性文字，不要用 markdown 代码块包裹：
+
+```
+{
+  "layout": "clear | cluttered | mixed | unclear",
+  "density": "sparse | moderate | text_heavy | unclear",
+  "content": "text_heavy | diagram | mixed | none | unclear",
+  "readable": "high | medium | low | unclear",
+  "note": "一句话描述本页主要内容和版式特点，40 字以内"
+}
+```
+
+字段含义：
+
+- `layout` 版式：分区清楚 / 拥挤堆叠 / 部分清楚部分乱 / 看不清
+- `density` 信息密度：留白充足 / 适中 / 文字过密 / 看不清
+- `content` 内容形态：以文字为主 / 以图表为主 / 图文混排 / 几乎空白 / 看不清
+- `readable` 字号、对比度、是否便于远看：高 / 中 / 低 / 看不清
+
+扫描件模糊、被水印遮挡、或几乎空白时，一律填 `unclear`。
+不要为了填满字段而猜测。
