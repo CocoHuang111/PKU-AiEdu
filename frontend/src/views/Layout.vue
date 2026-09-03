@@ -1,113 +1,89 @@
 <template>
-  <el-container class="shell">
-    <el-aside width="220px" class="side">
+  <el-container class="shell" direction="vertical">
+    <header class="nav">
       <div class="brand">
         北大问教
         <span>PKU-AskEdu 2.0</span>
       </div>
-      <el-menu :default-active="$route.path" router class="menu">
-        <el-menu-item index="/evaluation">🎬&nbsp; 教学视频评估</el-menu-item>
-        <el-menu-item index="/syllabus">📘&nbsp; 教学大纲优化</el-menu-item>
-        <el-menu-item index="/qa">🎓&nbsp; 教学智能问答</el-menu-item>
+      <el-menu
+        :default-active="$route.path"
+        :ellipsis="false"
+        router
+        mode="horizontal"
+        class="menu"
+      >
+        <el-menu-item index="/qa">智能问答</el-menu-item>
+        <el-menu-item index="/evaluation">教学评估</el-menu-item>
+        <el-menu-item index="/syllabus">大纲优化</el-menu-item>
+        <el-menu-item index="/profile">我的</el-menu-item>
       </el-menu>
-    </el-aside>
+    </header>
 
-    <el-container>
-      <el-header class="header">
-        <span class="title">{{ $route.meta.title || '智能教学支持系统' }}</span>
-        <span class="status">
-          <el-tag v-if="health" size="small" :type="health.mode === 'cloud' ? '' : 'warning'">
-            {{ health.mode === 'cloud' ? '云端 LLM' : '本地 LLM' }} · {{ health.llm_model }}
-          </el-tag>
-          <el-tag v-if="health" size="small" type="info">ASR 本地</el-tag>
-          <el-tag v-else size="small" type="info">后端未连接</el-tag>
-        </span>
-      </el-header>
-
-      <el-main class="main">
-        <router-view />
-      </el-main>
-    </el-container>
+    <el-main class="main">
+      <router-view />
+    </el-main>
   </el-container>
 </template>
-
-<script setup>
-import { onMounted, ref } from 'vue'
-import { healthApi } from '../api/client'
-
-const health = ref(null)
-
-onMounted(async () => {
-  try {
-    health.value = await healthApi.check()
-  } catch {
-    health.value = null
-  }
-})
-</script>
 
 <style scoped>
 .shell {
   height: 100vh;
 }
 
-.side {
+.nav {
+  height: 56px;
+  flex-shrink: 0;
   background: #7b1113;
   display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .brand {
-  padding: 22px 20px 18px;
+  flex-shrink: 0;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
 }
 .brand span {
-  display: block;
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.5px;
   color: rgba(255, 255, 255, 0.55);
-  margin-top: 4px;
 }
 
 .menu {
+  flex: 0 0 auto;
+  width: auto;
   background: transparent;
-  border-right: none;
-  padding-top: 8px;
+  border-bottom: none;
+  height: 56px;
+  --el-menu-bg-color: transparent;
+  --el-menu-hover-bg-color: transparent;
+  --el-menu-text-color: rgba(255, 255, 255, 0.78);
+  --el-menu-hover-text-color: #fff;
+  --el-menu-active-color: #fff;
 }
 .menu :deep(.el-menu-item) {
-  color: rgba(255, 255, 255, 0.82);
+  height: 56px;
+  line-height: 56px;
   font-size: 14px;
-  height: 48px;
+  border-bottom: 2px solid transparent !important;
+  padding: 0 18px;
+  overflow: visible;
 }
 .menu :deep(.el-menu-item:hover) {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: transparent;
 }
 .menu :deep(.el-menu-item.is-active) {
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
+  background: transparent !important;
   font-weight: 600;
-}
-
-.header {
-  height: 56px;
-  background: #fff;
-  border-bottom: 1px solid #e6e8eb;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.title {
-  font-size: 15px;
-  font-weight: 600;
-  color: #303133;
+  border-bottom-color: #fff !important;
 }
 
 .main {

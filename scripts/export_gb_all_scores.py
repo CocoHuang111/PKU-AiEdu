@@ -14,7 +14,7 @@ from ai_engine.evaluation.gb import (
     label_to_score5,
     score100_to_score5,
 )
-from ai_engine.evaluation.gb_fit import VARIANTS, _prepare_X, load_table
+from ai_engine.evaluation.gb_fit import CORE_KEYS, VARIANTS, _prepare_X, load_table
 
 DIMENSIONS = (
     ("llm_dim_teaching_attitude", "教学态度"),
@@ -49,7 +49,8 @@ def main() -> int:
     judge = _alignment(args.alignment)
     predictions: dict[str, list[float]] = {}
 
-    for key, config in VARIANTS.items():
+    for key in CORE_KEYS:
+        config = VARIANTS[key]
         with (args.model_dir / f"gb_{key}.pkl").open("rb") as f:
             bundle = pickle.load(f)
         if bundle.get("score_mapping_version") != SCORE_MAPPING_VERSION:

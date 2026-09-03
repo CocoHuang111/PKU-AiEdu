@@ -1,6 +1,6 @@
-video_id,score_mapping_version,expert_avg,expert_score_5,llm_overall_5,pred_obj_reg,pred_llm_reg,pred_llm_cls5,pred_llm_cls8
-宋晨,expert-4pt-direct-v2,2.45,3.0625,3.8,3.3049,3.8791,3.75,3.9062
-王勋,expert-4pt-direct-v2,3.65,4.5625,3.7,3.4212,3.9358,4.25,3.9062
-厉行,expert-4pt-direct-v2,3.4799999999999995,4.35,3.96,4.3618,4.0843,4.25,3.9062
-王菁,expert-4pt-direct-v2,3.35,4.1875,4.08,4.1502,4.2453,4.25,3.9062
-杨文云,expert-4pt-direct-v2,2.96,3.7,3.01,3.3908,3.6856,3.75,3.9062
+video_id,score_mapping_version,expert_avg,expert_score_5,llm_overall_5,pred_llm_cls5
+宋晨,expert-4pt-direct-v2,2.45,3.0625,3.8,3.75
+王勋,expert-4pt-direct-v2,3.65,4.5625,3.7,4.25
+厉行,expert-4pt-direct-v2,3.4799999999999995,4.35,3.96,4.25
+王菁,expert-4pt-direct-v2,3.35,4.1875,4.08,4.25
+杨文云,expert-4pt-direct-v2,2.96,3.7,3.01,4.25

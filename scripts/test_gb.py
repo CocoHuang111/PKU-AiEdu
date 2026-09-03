@@ -13,11 +13,14 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from ai_engine.evaluation.gb import (
+    LIVE_SCORE_SOURCE,
     avg_to_score5,
     feature_columns,
+    features_from_dimensions,
     is_invalid_label,
     label_to_score,
     label_to_score_100,
+    predict_overall,
     score_100_to_avg,
     score_to_label,
 )
@@ -62,10 +65,30 @@ def main() -> int:
             "comment",
             "text__speech_rate",
             "llm_dim_teaching_effect",
+            "llm_dim_teaching_effect_score_basis",
+            "ind_preparation",
+            "ind_preparation_assessed",
+            "expert1",
         ]
     )
     check("泄漏列不当特征", cols == ["text__speech_rate", "llm_dim_teaching_effect"], str(cols))
     check("llm 只要五维分", feature_columns(cols, mode="llm") == ["llm_dim_teaching_effect"])
+    check(
+        "objective 只要客观特征",
+        feature_columns(
+            ["text__speech_rate", "llm_dim_teaching_effect", "ind_preparation"],
+            mode="objective",
+        )
+        == ["text__speech_rate"],
+    )
+    check(
+        "indicators 只要二级分",
+        feature_columns(
+            ["text__speech_rate", "ind_preparation", "ind_preparation_assessed"],
+            mode="indicators",
+        )
+        == ["ind_preparation"],
+    )
 
     try:
         import pandas  # noqa: F401
@@ -97,6 +120,8 @@ def main() -> int:
                 "llm_dim_teaching_method": 52 + i,
                 "llm_dim_teaching_effect": 60 + i,
                 "llm_dim_teaching_quality": 50 + i,
+                "ind_preparation": 55 + i,
+                "ind_logic": 52 + i,
             }
         )
     rng_rows.append(
@@ -112,6 +137,8 @@ def main() -> int:
             "llm_dim_teaching_method": 50,
             "llm_dim_teaching_effect": 50,
             "llm_dim_teaching_quality": 50,
+            "ind_preparation": 50,
+            "ind_logic": 50,
         }
     )
     with tempfile.TemporaryDirectory() as tmp:
@@ -134,12 +161,76 @@ def main() -> int:
 
         m1 = run_variant("obj_reg", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
         m2 = run_variant("llm_cls5", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
+        m3 = run_variant("obj_only_reg", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
+        m4 = run_variant("ind_reg", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
         check("回归能写出 pkl", (tmp_p / "gb_obj_reg.pkl").exists())
         check("分类能写出 pkl", (tmp_p / "gb_llm_cls5.pkl").exists())
         check("回归 MAE 在 0–5 尺度", "mae_5" in m1 and m1["mae_5"] < 5, str(m1.get("mae_5")))
         check("两版预测人数相同", m1["n_test"] == m2["n_test"], f"{m1['n_test']} vs {m2['n_test']}")
+        check("客观特征回归能写出 pkl", (tmp_p / "gb_obj_only_reg.pkl").exists())
+        check("二级指标回归能写出 pkl", (tmp_p / "gb_ind_reg.pkl").exists())
+        check("新两路人数对齐", m3["n_test"] == m4["n_test"] == m1["n_test"])
         split = json.loads(split_path.read_text())
         check("划分文件未在第二次训练被改掉", split["test_ids"] == spec1["test_ids"])
+
+        from ai_engine.evaluation.pipeline import apply_live_overall
+
+        dims = [
+            {
+                "key": "teaching_attitude",
+                "assessed": True,
+                "score": 80,
+            },
+            {
+                "key": "teaching_content",
+                "assessed": True,
+                "score": 82,
+            },
+            {
+                "key": "teaching_method",
+                "assessed": True,
+                "score": 70,
+            },
+            {
+                "key": "teaching_effect",
+                "assessed": True,
+                "score": 75,
+            },
+            {
+                "key": "teaching_quality",
+                "assessed": True,
+                "score": 78,
+            },
+        ]
+        feat = features_from_dimensions(dims)
+        check(
+            "五维能收成 llm_dim 列",
+            feat["llm_dim_teaching_method"] == 70.0
+            and feat["llm_dim_teaching_effect"] == 75.0,
+            str(feat),
+        )
+        live_pkl = tmp_p / "gb_llm_cls5.pkl"
+        pred = predict_overall(dims, model_path=live_pkl)
+        check("玩具 5 分类能给出百分制总分", 55.0 <= pred["score"] <= 95.0, str(pred))
+        judged = apply_live_overall(
+            {
+                "overall": {
+                    "score": 77.0,
+                    "grade": "C",
+                    "grade_label": "合格",
+                    "duration_minutes": 20,
+                },
+                "dimensions": dims,
+            },
+            model_path=live_pkl,
+        )
+        check(
+            "线上总分改写为 GB",
+            judged["overall"]["score_source"] == LIVE_SCORE_SOURCE
+            and judged["overall"]["equal_weight_score"] == 77.0
+            and judged["overall"]["score"] == pred["score"],
+            str(judged["overall"]),
+        )
 
     print(f"\n{failures} 项失败" if failures else "\n全部通过")
     return 1 if failures else 0

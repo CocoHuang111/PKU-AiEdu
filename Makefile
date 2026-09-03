@@ -1,4 +1,4 @@
-.PHONY: help install install-local backend frontend ingest ingest-reset salon salon-transcribe salon-structure check check-features check-syllabus check-dataset check-expert-rules expert-rules-ingest expert-rules-extract expert-rules-distill check-gb train-gb train-gb-2018 train-gb-2018-v7 rejudge-2018-v7-effect rejudge-2018-v9 judge-overall-2018 smoke clean
+.PHONY: help install install-local backend frontend ingest ingest-reset salon salon-transcribe salon-structure check check-features check-syllabus check-dataset check-expert-rules expert-rules-ingest expert-rules-extract expert-rules-distill check-gb train-gb train-gb-2018 train-gb-2018-v7 train-gb-2018-v4 train-gb-live rejudge-2018-v7-effect rejudge-2018-v9 judge-overall-2018 smoke clean
 
 PY ?= python
 BACKEND_PORT ?= 8010
@@ -20,6 +20,8 @@ help:
 	@echo "  make train-gb       四个 GB 对照（同一 2022 预测集）再比较"
 	@echo "  make train-gb-2018  2018 fixed_prompt / effect_inferred 上训四种 GB"
 	@echo "  make train-gb-2018-v7  修正专家分制后，在 2018 v7 上训四种 GB"
+	@echo "  make train-gb-2018-v4  恢复 2018 v4 快照后训六种 GB（含客观/二级）"
+	@echo "  make train-gb-live  2018 v9 全量五维 5 分类 → 线上总分模型"
 	@echo "  make rejudge-2018-v7-effect  v7.1 恢复教学效果预期效果兜底"
 	@echo "  make rejudge-2018-v9  v9 严重度校准与五维诊断报告"
 	@echo "  make judge-overall-2018 2018 测试集五维+客观特征 LLM 盲评总分"
@@ -82,6 +84,12 @@ train-gb-2018-v7:
 	$(PY) -m scripts.train_gb_llm_cls5 --data dataset/2018_spring/goal_v7/training_gb.csv --alignment dataset/2018_spring/goal_v7/alignment.csv --split dataset/2018_spring/gb_split.json --out-dir models/2018_goal_v7 --hold-year within
 	$(PY) -m scripts.train_gb_llm_cls8 --data dataset/2018_spring/goal_v7/training_gb.csv --alignment dataset/2018_spring/goal_v7/alignment.csv --split dataset/2018_spring/gb_split.json --out-dir models/2018_goal_v7 --hold-year within
 	$(PY) -m scripts.compare_gb --pred-dir models/2018_goal_v7 --out dataset/2018_spring/goal_v7/gb_predictions.csv --title "2018 goal_v7（修正分制）"
+
+train-gb-2018-v4:
+	$(PY) -m scripts.train_gb_2018_v4
+
+train-gb-live:
+	$(PY) -m scripts.train_gb_live
 
 rejudge-2018-v7-effect:
 	$(PY) -m scripts.build_eval_dataset rejudge --dir dataset/2018_spring --prompt-version v7.1-goal-effect-fallback --output-cache cache_goal_effect_v7_1 --resume

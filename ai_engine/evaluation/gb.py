@@ -1,11 +1,17 @@
-"""GB 评分校准：特征列约定、无效标签剔除、离散化映射。
+"""GB 评分校准：特征列约定、无效标签剔除、离散化映射、线上总分推理。
 
-四个对照脚本共用同一份划分（见 gb_fit.py），线上评估仍走 Judge。
+对照实验仍走 gb_fit.py。线上视频评估的五维仍由 Judge 打，总分改用
+2018 v9 全量训出的五维 5 分类模型（见 LIVE_GB_PATH）。
 """
 from __future__ import annotations
 
 import math
+import pickle
+from functools import lru_cache
+from pathlib import Path
 from typing import Any, Iterable
+
+from ai_engine.config import ROOT
 
 ID_COL = "video_id"
 LABEL_COL = "expert_total_100"
@@ -160,6 +166,12 @@ LLM_DIM_COLS = frozenset(
     }
 )
 
+LIVE_VARIANT = "llm_cls5"
+LIVE_PROMPT_VERSION = "v9-calibrated"
+LIVE_GB_DIR = ROOT / "models" / "live"
+LIVE_GB_PATH = LIVE_GB_DIR / f"gb_{LIVE_VARIANT}.pkl"
+LIVE_SCORE_SOURCE = "gb_llm_cls5"
+
 
 def _is_indicator_score(col: str) -> bool:
     return col.startswith("ind_") and not col.endswith("_assessed")
@@ -203,3 +215,80 @@ def drop_all_missing(frame: Any, columns: list[str]) -> tuple[list[str], list[st
         else:
             kept.append(col)
     return kept, dropped
+
+
+def llm_dim_column(dimension_key: str) -> str:
+    return f"llm_dim_{dimension_key}"
+
+
+def features_from_dimensions(dimensions: list[dict[str, Any]]) -> dict[str, float | None]:
+    """把 Judge 五维结果收成训练时的 llm_dim_* 列。未评估记为缺失。"""
+    out: dict[str, float | None] = {col: None for col in LLM_DIM_COLS}
+    for dim in dimensions:
+        col = llm_dim_column(str(dim.get("key") or ""))
+        if col not in out:
+            continue
+        if dim.get("assessed") and dim.get("score") is not None:
+            out[col] = float(dim["score"])
+    return out
+
+
+def _row_for_bundle(
+    scores: dict[str, float | None], feature_names: list[str]
+) -> dict[str, float]:
+    import math as _math
+
+    row: dict[str, float] = {}
+    for name in feature_names:
+        if name.endswith("__missing"):
+            src = name[: -len("__missing")]
+            val = scores.get(src)
+            row[name] = 1.0 if val is None or (isinstance(val, float) and _math.isnan(val)) else 0.0
+        else:
+            val = scores.get(name)
+            row[name] = float("nan") if val is None else float(val)
+    return row
+
+
+@lru_cache(maxsize=4)
+def load_gb_bundle(path: str) -> dict[str, Any]:
+    model_path = Path(path)
+    if not model_path.exists():
+        raise FileNotFoundError(
+            f"找不到线上 GB 模型 {model_path}。请先运行 make train-gb-live"
+        )
+    with model_path.open("rb") as f:
+        bundle = pickle.load(f)
+    if not isinstance(bundle, dict) or "pipeline" not in bundle:
+        raise ValueError(f"{model_path} 不是有效的 GB bundle")
+    return bundle
+
+
+def predict_overall(
+    dimensions: list[dict[str, Any]],
+    *,
+    model_path: Path | str | None = None,
+) -> dict[str, Any]:
+    """用五维 5 分类 GB 把一级分合成总分。返回百分制与 0–5。"""
+    import pandas as pd
+
+    path = Path(model_path) if model_path is not None else LIVE_GB_PATH
+    bundle = load_gb_bundle(str(path.resolve()))
+    names = list(bundle.get("feature_names") or [])
+    if not names:
+        raise ValueError(f"{path} 缺少 feature_names")
+    step = float(bundle.get("step") or 0.4)
+    row = _row_for_bundle(features_from_dimensions(dimensions), names)
+    pred = bundle["pipeline"].predict(pd.DataFrame([row], columns=names))[0]
+    label = int(pred)
+    score_5 = label_to_score5(label, step=step)
+    score_100 = round(label_to_score_100(label, step=step), 1)
+    return {
+        "label": label,
+        "score_5": round(score_5, 4),
+        "score": score_100,
+        "variant": bundle.get("variant") or LIVE_VARIANT,
+        "model_path": str(path),
+        "step": step,
+        "score_mapping_version": bundle.get("score_mapping_version") or SCORE_MAPPING_VERSION,
+    }

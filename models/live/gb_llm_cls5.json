@@ -1,0 +1,122 @@
+{
+  "variant": "llm_cls5",
+  "config": {
+    "title": "五维 5分类",
+    "features": "llm",
+    "task": "classify",
+    "n_classes": 5
+  },
+  "feature_names": [
+    "llm_dim_teaching_attitude",
+    "llm_dim_teaching_content",
+    "llm_dim_teaching_method",
+    "llm_dim_teaching_effect",
+    "llm_dim_teaching_quality"
+  ],
+  "dropped_all_nan": [],
+  "indicator_src": [],
+  "split": {
+    "hold_year": "all",
+    "seed": 42,
+    "test_fraction": 0,
+    "train_ids": [
+      "刘冲",
+      "南星",
+      "厉行",
+      "宋晨",
+      "岳远坤",
+      "张剑葳",
+      "张梧",
+      "彭明浩",
+      "戴瀚程",
+      "曹志勋",
+      "朱晟君",
+      "杨文云",
+      "王勋",
+      "王晓兵",
+      "王翀",
+      "王菁",
+      "肖潇",
+      "胡家志",
+      "范晶晶",
+      "门卫伟",
+      "陈培永",
+      "韩晗"
+    ],
+    "test_ids": [
+      "刘冲",
+      "南星",
+      "厉行",
+      "宋晨",
+      "岳远坤",
+      "张剑葳",
+      "张梧",
+      "彭明浩",
+      "戴瀚程",
+      "曹志勋",
+      "朱晟君",
+      "杨文云",
+      "王勋",
+      "王晓兵",
+      "王翀",
+      "王菁",
+      "肖潇",
+      "胡家志",
+      "范晶晶",
+      "门卫伟",
+      "陈培永",
+      "韩晗"
+    ],
+    "fit_all": true
+  },
+  "metrics": {
+    "variant": "llm_cls5",
+    "title": "五维 5分类",
+    "scale": "0-5",
+    "n_train": 22,
+    "n_test": 22,
+    "fit_all": true,
+    "mae_5": 0.14,
+    "rmse_5": 0.156,
+    "judge_mae_5": 0.428,
+    "judge_rmse_5": 0.557,
+    "acc": 1.0,
+    "f1": 1.0,
+    "judge_acc": 0.318,
+    "feature_importance": [
+      [
+        "llm_dim_teaching_content",
+        0.3148
+      ],
+      [
+        "llm_dim_teaching_quality",
+        0.2202
+      ],
+      [
+        "llm_dim_teaching_attitude",
+        0.1924
+      ],
+      [
+        "llm_dim_teaching_method",
+        0.1528
+      ],
+      [
+        "llm_dim_teaching_effect",
+        0.1198
+      ]
+    ]
+  },
+  "hyperparams": {
+    "n_estimators": 200,
+    "max_depth": 3,
+    "learning_rate": 0.08,
+    "min_samples_split": 4,
+    "min_samples_leaf": 2,
+    "subsample": 0.8,
+    "random_state": 42
+  },
+  "n_classes": 5,
+  "step": 0.4,
+  "label_scale": "0-5",
+  "score_mapping_version": "expert-4pt-direct-v2"
+}

@@ -113,8 +113,8 @@ def main() -> int:
         check_package("librosa", "pip install librosa soundfile"),
         check_package("lxml", "pip install lxml"),
         check_package("zhconv", "pip install zhconv（中文转写繁转简）"),
-        check_package("pandas", "pip install pandas（训 GB 用）", required=False),
-        check_package("sklearn", "pip install scikit-learn（训 GB 用）", required=False),
+        check_package("pandas", "pip install pandas（线上总分 GB 需要）"),
+        check_package("sklearn", "pip install scikit-learn（线上总分 GB 需要）"),
     ]
 
     print("\n=== AI 能力 ===")
@@ -134,6 +134,14 @@ def main() -> int:
 
     print("\n=== 知识库 ===")
     check_corpora()
+
+    print("\n=== 线上评估模型 ===")
+    from ai_engine.evaluation.gb import LIVE_GB_PATH, LIVE_PROMPT_VERSION
+
+    if LIVE_GB_PATH.exists():
+        print(f"{OK} 线上 GB {LIVE_GB_PATH.name}（{LIVE_PROMPT_VERSION} 五维5分类）")
+    else:
+        print(f"{WARN} 未找到 {LIVE_GB_PATH} —— 视频评估总分需要它：make train-gb-live")
 
     failed = [r for r in (*base, *deps, *ai) if not r]
     print("\n" + "=" * 46)

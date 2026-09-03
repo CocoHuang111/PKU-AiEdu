@@ -527,6 +527,8 @@ def cmd_merge(args: argparse.Namespace) -> int:
         for k, v in dims.items():
             if k.startswith("llm_dim_") and not k.endswith("_rationale") and not k.endswith("_source"):
                 gb[k] = v
+            if k.startswith("ind_") and not k.endswith("_assessed"):
+                gb[k] = v
         gb_rows.append(gb)
 
         align_rows.append(

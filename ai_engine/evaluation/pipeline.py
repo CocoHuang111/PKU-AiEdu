@@ -11,9 +11,10 @@ from pathlib import Path
 from typing import Any, Callable
 
 from ..config import settings
-from ..pedagogy.loader import get_rubric, render_prompt
+from ..pedagogy.loader import get_rubric, grade_of, render_prompt
 from ..providers import ChatMessage, ProviderError, get_asr, get_llm
 from . import diarization, media
+from .gb import LIVE_PROMPT_VERSION, LIVE_SCORE_SOURCE, predict_overall
 from .audio_features import extract_audio_features
 from .judge import judge_all, judge_fingerprint
 from .slide_features import extract_slide_features
@@ -210,7 +211,7 @@ def evaluate_transcript(
     def on_dim(done: int, total: int, label: str):
         progress(30 + int(50 * done / total), "llm_judge", {"dimension": label})
 
-    judged = judge_all(evidence, {"text"}, progress_callback=on_dim)
+    judged = apply_live_overall(judge_all(evidence, {"text"}, progress_callback=on_dim))
 
     progress(85, "report", {})
     report = generate_report(judged)
@@ -219,6 +220,7 @@ def evaluate_transcript(
     has_syllabus = bool((reference or "").strip())
     return {
         "source": "transcript",
+        "prompt_version": LIVE_PROMPT_VERSION,
         "overall": judged["overall"],
         "dimensions": judged["dimensions"],
         "objective_features": _objective_rows(features),
@@ -431,13 +433,41 @@ def collect_video_evidence(
     }
 
 
+def apply_live_overall(
+    judged: dict[str, Any],
+    *,
+    model_path: Path | str | None = None,
+) -> dict[str, Any]:
+    """五维仍用 Judge；总分改成 2018 v9 五维 5 分类 GB。等权平均保留备查。"""
+    overall = judged["overall"]
+    equal_weight = overall.get("score")
+    pred = predict_overall(judged.get("dimensions") or [], model_path=model_path)
+    overall.update(
+        {
+            "score": pred["score"],
+            **grade_of(pred["score"]),
+            "score_source": LIVE_SCORE_SOURCE,
+            "equal_weight_score": equal_weight,
+            "gb_label": pred["label"],
+            "gb_score_5": pred["score_5"],
+            "gb_variant": pred["variant"],
+        }
+    )
+    judged["overall"] = overall
+    return judged
+
+
 def score_from_evidence(
     evidence: dict[str, Any],
     available: set[str] | list[str],
     progress: ProgressFn = _noop,
     prompt_version: str = "v0",
+    calibrate_overall: bool = False,
 ) -> dict[str, Any]:
-    """只打分 + 写报告。rejudge 读 evidence.json 走这条，不碰视频。"""
+    """只打分 + 写报告。rejudge 读 evidence.json 走这条，不碰视频。
+
+    calibrate_overall 只给线上评估：数据集 rejudge 必须关，避免总分污染训练表。
+    """
     avail = set(available) if available else _available_modalities({})
 
     def on_dim(done: int, total: int, label: str):
@@ -445,6 +475,8 @@ def score_from_evidence(
 
     progress(72, "llm_judge", {})
     judged = judge_all(evidence, avail, progress_callback=on_dim)
+    if calibrate_overall:
+        judged = apply_live_overall(judged)
     progress(92, "report", {})
     report = generate_report(judged)
     progress(100, "done", {})
@@ -513,7 +545,11 @@ def evaluate_video(
         courseware_path=courseware_path,
     )
     scores = score_from_evidence(
-        pack["evidence"], pack["available"], progress=progress, prompt_version="live"
+        pack["evidence"],
+        pack["available"],
+        progress=progress,
+        prompt_version=LIVE_PROMPT_VERSION,
+        calibrate_overall=True,
     )
     return _api_result_from_pack(pack, scores)
 

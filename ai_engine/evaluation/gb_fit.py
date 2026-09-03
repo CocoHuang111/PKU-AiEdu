@@ -79,6 +79,8 @@ VARIANTS: dict[str, dict[str, Any]] = {
     },
 }
 
+CORE_KEYS = ("obj_reg", "llm_reg", "llm_cls5", "llm_cls8")
+
 
 def _require_sklearn() -> None:
     try:
@@ -258,6 +260,7 @@ def run_variant(
     out_dir: Path | None = None,
     force_split: bool = False,
     hold_year: str = HOLD_YEAR,
+    fit_all: bool = False,
 ) -> dict[str, Any]:
     _require_sklearn()
     if key not in VARIANTS:
@@ -268,9 +271,22 @@ def run_variant(
 
     df, dropped = drop_invalid(load_table(data))
     print(f"【{cfg['title']}】读入后剔除 {dropped or '无'}，剩余 {len(df)}")
-    spec = make_or_load_split(
-        df, path=split_path, force=force_split, dropped_ids=dropped, hold_year=hold_year
-    )
+    if fit_all:
+        all_ids = df[ID_COL].astype(str).tolist()
+        spec = {
+            "hold_year": "all",
+            "seed": SPLIT_SEED,
+            "test_fraction": 0,
+            "dropped_ids": dropped,
+            "train_ids": all_ids,
+            "test_ids": list(all_ids),
+            "fit_all": True,
+        }
+        print(f"全量训练：{len(all_ids)} 人（预测文件写的是训练集内拟合，不作留出）")
+    else:
+        spec = make_or_load_split(
+            df, path=split_path, force=force_split, dropped_ids=dropped, hold_year=hold_year
+        )
     train_df = _select(df, spec["train_ids"])
     test_df = _select(df, spec["test_ids"])
     X_all, all_nan, ind_src = _prepare_X(df, cfg["features"])
@@ -321,6 +337,7 @@ def run_variant(
         "scale": "0-5",
         "n_train": int(len(X_tr)),
         "n_test": int(len(X_te)),
+        "fit_all": bool(fit_all),
         "mae_5": round(_mae(y5, pred_5), 3),
         "rmse_5": round(_rmse(y5, pred_5), 3),
     }
@@ -373,7 +390,11 @@ def run_variant(
         "feature_names": list(X_tr.columns),
         "dropped_all_nan": all_nan,
         "indicator_src": ind_src,
-        "split": {k: spec[k] for k in ("hold_year", "seed", "test_fraction", "train_ids", "test_ids")},
+        "split": {
+            k: spec[k]
+            for k in ("hold_year", "seed", "test_fraction", "train_ids", "test_ids", "fit_all")
+            if k in spec
+        },
         "metrics": metrics,
         "hyperparams": GB_PARAMS,
         "n_classes": n_classes,
@@ -435,6 +456,11 @@ def main_for(key: str) -> int:
         default=HOLD_YEAR,
         help="从哪一年留出预测集；within=在本表内 8:2（单年、无 batch 列时用）",
     )
+    ap.add_argument(
+        "--fit-all",
+        action="store_true",
+        help="用表内全部有效样本训练，不读划分文件；预测为训练集内拟合",
+    )
     args = ap.parse_args()
     align = Path(args.alignment)
     run_variant(
@@ -445,5 +471,6 @@ def main_for(key: str) -> int:
         out_dir=Path(args.out_dir),
         force_split=args.resplit,
         hold_year=args.hold_year,
+        fit_all=args.fit_all,
     )
     return 0

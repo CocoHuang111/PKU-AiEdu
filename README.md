@@ -71,7 +71,7 @@ make backend     # http://localhost:8010/docs
 make frontend    # http://localhost:5174
 ```
 
-浏览器打开 http://localhost:5174 即可。
+浏览器打开 http://localhost:5174 即可，默认进入教学智能问答（`#/qa`）。
 
 ---
 
@@ -107,8 +107,12 @@ make frontend    # http://localhost:5174
 | `python -m scripts.train_gb_llm_reg` | 只用五维 → 回归 |
 | `python -m scripts.train_gb_llm_cls5` | 只用五维 → 5 分类 |
 | `python -m scripts.train_gb_llm_cls8` | 只用五维 → 8 分类 |
-| `make train-gb` | 上面四个（同一 `gb_split.json`）再 `compare_gb` |
+| `python -m scripts.train_gb_obj_only` | 只用客观特征 → 回归 |
+| `python -m scripts.train_gb_ind_reg` | 只用二级指标 → 回归 |
+| `make train-gb` | 原来四个（同一 `gb_split.json`）再 `compare_gb` |
 | `make train-gb-2018` | 2018 `fixed_prompt` / `effect_inferred` 各训四种 GB（共用年内划分） |
+| `make train-gb-2018-v4` | 从快照恢复 2018 v4 后训六种 GB（含客观/二级） |
+| `make train-gb-live` | 2018 v9 全量五维 5 分类 → `models/live/gb_llm_cls5.pkl`（线上总分） |
 | `make judge-overall-2018` | 2018 测试集：LLM 读取五维与客观特征盲评总分，再与专家/GB 对照 |
 | `python -m scripts.build_eval_dataset inventory --root … --xlsx … --out …` | 扫描教师文件夹 + 打分表 → inventory / manifest |
 | `python -m scripts.build_eval_dataset extract --manifest … --resume` | ASR + 课件 + VLM + Judge（慢；可断点续跑） |
@@ -171,7 +175,7 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 │   │                        #     materials         教师上传的大纲/课件解析
 │   │                        #     vision            VLM 结构化标注 + 聚合
 │   │                        #     diarization       说话人分离（可选，默认关）
-│   │                        #     gb.py / gb_fit.py 离线 GB 校准（不接入线上评估）
+│   │                        #     gb.py / gb_fit.py  GB 校准；线上总分用 models/live/gb_llm_cls5.pkl
 │   ├── syllabus/optimizer.py
 │   │             export.py      # XML → Markdown / docx / pdf
 │   ├── qa/pipeline.py
@@ -184,7 +188,7 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 ├── frontend/src/
 │   ├── api/client.js        #   axios 封装 + 统一错误提示
 │   ├── api/stream.js        #   SSE 流式读取（fetch，axios 拿不到增量）
-│   └── views/               #   Layout / Evaluation / Syllabus / QA
+│   └── views/               #   Layout / QA / Evaluation / Syllabus / Profile
 ├── knowledge/corpora/       # 知识语料（放你的文档）
 ├── data/                    # 上传、关键帧、Chroma、SQLite（已 gitignore）
 ├── test/                    # 联调样例：大纲 PDF/Word 可入库；微格视频与打分表不入库
@@ -212,9 +216,8 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
                  courseware 上传课件的页面标注（选填）
                  speakers   说话人分离（可选，默认关闭）
             → LLM-as-Judge 按维度逐项打二级分，再由模型按课型综合出一级分
-            → 五维合成总分 → 生成报告 → 摘要回流进向量库
-            （GB 校准是离线步骤：四年拼表用 2022 预测集；2018 两套
-              prompt 另有年内对照。尚未替换线上总分）
+            → 五维雷达仍走 Judge；总分由 2018 v9 五维 5 分类 GB 校准
+            → 生成报告 → 摘要回流进向量库
 
 功能②  文档 → PyMuPDF/pypdf 多后端解析
             → 固定框架：章节索引 → 原文切片 → 全局骨架 → 分批章节优化 → source_id 合并校验
@@ -412,6 +415,7 @@ dataset/20XX_spring/
     evidence.json            # 转写 + 客观特征 + 课件文本（体积小）
     scores.json              # 当年 prompt 的五维分
   cache_*/{姓名}/            # 不入库（rejudge --output-cache 的独立版本）
+  v4/                        # 2018：从快照恢复的 v4 merge（含二级指标）
   training_gb.csv            # merge：客观特征 + 五维 LLM 分 + 专家百分制（无评语）
   training_detail.csv        # merge：上面这些 + 评语和二级指标
   alignment.csv              # merge：专家分 vs LLM 总分残差
@@ -600,11 +604,15 @@ make train-gb
 | `scripts/train_gb_llm_reg.py` | 只有五维 | 回归 0–5 | `models/gb_llm_reg.pkl` |
 | `scripts/train_gb_llm_cls5.py` | 只有五维 | 5 分类（step 0.4） | `models/gb_llm_cls5.pkl` |
 | `scripts/train_gb_llm_cls8.py` | 只有五维 | 8 分类（step 0.25） | `models/gb_llm_cls8.pkl` |
+| `scripts/train_gb_obj_only.py` | 只有 7 组客观特征 | 回归 0–5 | `models/gb_obj_only_reg.pkl` |
+| `scripts/train_gb_ind_reg.py` | 只有 `ind_*` 二级分 | 回归 0–5 | `models/gb_ind_reg.pkl` |
 
 `compare_gb` 在同一批人上比 **0–5 分** MAE/RMSE。专家表是满分 4 分、2 分及格，
 因此按 `原分÷4×100` 换百分制，再除以 20 得到等值 0–5：2→2.5、3→3.75、4→5。
 分类用 2–4 原分划档，再把档中点按同一公式还原。回归直接拟合 0–5，输出截断到 [0, 5]。
-pkl gitignore。线上仍走 Judge。
+对照实验的 pkl 仍 gitignore。线上总分模型例外：`models/live/gb_llm_cls5.pkl`
+（2018 v9 全量 22 人、五维 5 分类），`evaluate_video` / 转写快评都读这一份。
+换 v9 数据或超参后必须 `make train-gb-live`，否则会报「找不到线上 GB 模型」。
 
 > 2026-09-02 注意：下面所有在旧换算 `（均分−2）÷2` 上得到的 MAE、模型和逐人预测
 > 均为历史结果，不能再与 Judge 比较，也不能用于当前结论。修正标签后必须重新训练。
@@ -615,7 +623,33 @@ pkl gitignore。线上仍走 Judge。
 
 ```bash
 make train-gb-2018
+make train-gb-2018-v4
+make train-gb-live
 ```
+
+线上总分只用 v9 五维 5 分类。`make train-gb-live` 会先按年内划分写出留出对照
+（`dataset/2018_spring/v9/gb_predictions.csv`），再把 22 人全部拟合到
+`models/live/gb_llm_cls5.pkl`。五维雷达仍走 Judge；总分是 5 档中点映回百分制
+（55 / 65 / 75 / 85 / 95）。数据集 `rejudge` / `merge` 不走 GB，避免训练表被校准分污染。
+
+默认 `dataset/2018_spring/cache/` 的 `scores.json` 已被 v5 覆盖，evidence 仍在。
+`train-gb-2018-v4` 从 `eval_snapshots/v4/2018_spring/cache` 把 22 份 v4 分数拷到
+`cache_v4/`，再 merge 到 `dataset/2018_spring/v4/`。当前 Judge 已是 v9 规则，
+**不能**再 `--prompt-version v4` 重打还自称 v4。同一 `gb_split.json` 上六种方法
+（0–5，n=5）：
+
+| 方法 | MAE | 相对 Judge |
+| --- | ---: | ---: |
+| Judge 总分 | 0.53 | 基线 |
+| 客观特征+五维 回归 | **0.38** | −0.15 |
+| 五维 5 分类 | 0.44 | −0.09 |
+| **只用二级指标 回归** | **0.44** | −0.09 |
+| **只用客观特征 回归** | **0.47** | −0.06 |
+| 五维 8 分类 | 0.80 | +0.27 |
+| 五维 回归 | 0.84 | +0.31 |
+
+两路新方法都略好于等权 Judge，但都没有超过「客观+五维」。二级指标更看逻辑/完整/
+提问；客观特征更看手势、响度波动、换片。样本只有 5 人，不能据此换线上模型。
 
 | 表 | prompt | 预测集 MAE（0–5） |
 | --- | --- | --- |
@@ -837,7 +871,8 @@ make install-local                      # 装 pyannote.audio
 | 课件报 `Package not found` / `不是 zip` | 扩展名是 `.pptx` 但文件截断，或其实是旧版 `.ppt`。会改用同目录下完整的 `.ppt`；仍失败则跳过课件、按无课件口径继续评 |
 | 2019 inventory 只有约 11 人进 manifest | 42 个教师文件夹里约 30 个是空的（另有一整套 Finder ` (2)` 空副本已跳过）。缺视频记 `no_video`，有打分也不进 extract |
 | 2019 王长松 `expert_avg=0` | 0 不是有效专家评分。即使换算后为 0，四个 `train_gb_*` 脚本仍会自动丢掉这一行 |
-| `No module named 'sklearn'` / `pandas` | 训 GB 需要 `pip install pandas scikit-learn`（已写入 `requirements.txt`，`make install` 会装） |
+| `No module named 'sklearn'` / `pandas` | 线上总分和训 GB 都要。`pip install pandas scikit-learn`（已写入 `requirements.txt`，`make install` 会装） |
+| `找不到线上 GB 模型` | 还没训线上模型。`make train-gb-live`（读 `dataset/2018_spring/v9/training_gb.csv`） |
 | 2022 备课目录只有十几个文件 | 试讲 68 个视频齐，课件/教案只交了约 18 份。缺课件按无课件继续评，不判死 |
 | 2022 楚健春平均分数对不上表内唯一一行 | 合并表里他只有刘树华一行（3.5），「平均分数」却是 3.033。标签用平均分数，并标 `incomplete_experts` |
 | 2024 inventory 只有 3 人进 manifest | `2024春微格试讲-74位/` 目前只有张亿、王欢、黄炜三个 mp4，其余 71 人只有备课 PDF，记 `no_video`。补视频后重新 inventory 再 `--resume` extract |
@@ -989,8 +1024,9 @@ make install-local                      # 装 pyannote.audio
 
 | 分类 | 问题 | 备注 |
 | --- | --- | --- |
-| 视频评估 | 四个 GB 对照已能在同一 2022 预测集上比较，**尚未替换线上总分** | 看 `dataset/gb_predictions.csv`；接入时只校准总分，五维雷达仍走 Judge |
-| 视频评估 | 2018 两套新 prompt 上只有客+五回归压过 Judge，预测集仅 5 人 | 宋晨被校准、王勋被压垮，MAE 优势不可外推；单年 22 条仍不够训稳 |
+| 视频评估 | 线上总分已接 2018 v9 五维 5 分类 GB，但只有 22 人；留出仅 5 人 | 全量拟合 Acc=1.0 是训练集内数字，不能当泛化；换年或加样本后应重训并对照 |
+| 视频评估 | 2018 两套旧 prompt 上只有客+五回归压过 Judge，预测集仅 5 人 | 历史对照，不再接线上；当前线上模型是 v9 五维 5 分类 |
+| 视频评估 | 2018 v4 上「只客观 / 只二级」略好于 Judge，仍不如客+五回归 | 同一 5 人测试集；默认 cache 的 v4 分已被 v5 覆盖，训练用的是快照恢复 |
 | 视频评估 | 一级维度分由 LLM 按课型折算，同一视频两次跑可能差几分 | 越界会回退加权平均；要可复现可看 `weighted_score` 字段 |
 | 视频评估 | 说话人分离已接入但**未在真实课堂验证过**（缺 HF token，默认关闭） | 剩余 4 条 ❌ 指标里唯一有解的一条，验证后「教学效果」维度才可信 |
 | 视频评估 | 课件切换次数是**上界**：固定机位下教师走动也算差异 | 解法是让 VLM 在第一帧框出投影区域，密集轨只比对该区域 |
@@ -1001,6 +1037,7 @@ make install-local                      # 装 pyannote.audio
 | 视频评估 | CPU 转写慢、长视频证据截断 | 暂缓，不阻塞问答/大纲 |
 | 视频评估 | 评估报告回流未去重 | 同上 |
 | 全局 | 无鉴权 | 问答会话、大纲历史、评估任务均受影响 |
+| 全局 | 个人信息只存在本机浏览器 | 无账号体系，换设备或清缓存会丢；等鉴权后再接到服务端 |
 | 全局 | Evaluation 页 bundle 过大 | 与当前聚焦无关 |
 
 ---
@@ -1008,6 +1045,63 @@ make install-local                      # 装 pyannote.audio
 ## 十三、变更记录
 
 倒序排列，最新在最上面。每条写清楚**为什么这么改**。
+
+### 2026-09-03 · 顶栏「我的」被收成省略号
+
+**问题**：Tab 靠右后，Element Plus 横向菜单默认 `ellipsis=true`，宽度一紧就把最后一项收成「…」。
+**思路**：关掉省略折叠（`:ellipsis="false"`），四个标签始终完整显示。
+**影响**：只改 `Layout.vue`。
+
+### 2026-09-03 · 顶栏去掉模型标签，Tab 靠右
+
+**问题**：顶栏右侧的云端/本地 LLM 与 ASR 标签对教师没有操作意义，还把四个入口挤在中间。
+**思路**：去掉 health 状态展示和对应请求；品牌留左，四个 Tab 顶到右边。
+**影响**：只改 `Layout.vue`。后端 `/api/health` 仍给联调和自检用，前端不再打。
+
+### 2026-09-03 · 导航改到顶部，文案缩短
+
+**问题**：左侧目录占横向空间，四个入口还带 emoji，和「顶部标签页」的用法不一致。
+**思路**：去掉侧栏和内页标题条，改成顶栏：品牌 + 四个文字标签（智能问答 / 教学评估 /
+大纲优化 / 我的）+ 后端状态。路由不变，只改 `Layout.vue` 和页标题 meta。
+**影响**：问答页高度仍按 `100vh - 顶栏 - 主区 padding` 计算，视觉上内容区变宽。
+
+### 2026-09-03 · 默认进问答，侧栏增加个人信息
+
+**问题**：打开系统先落到视频评估，日常入口更常是问答；侧栏也没有教师身份入口。
+**思路**：根路径改为跳到 `/qa`；侧栏顺序改成问答、评估、大纲，并新增 `/profile`。
+资料存在本机 `localStorage`（`pku-askedu-profile`），不接后端——系统还没有账号。
+**影响**：`router/index.js`、`Layout.vue`、新增 `Profile.vue` / `profileStore.js`。
+旧书签 `#/evaluation` 仍可用。
+
+### 2026-09-03 · 线上总分改用 2018 v9 五维 5 分类 GB
+
+**问题**：前端视频评估一直用当前 Judge 文件打五维，再等权平均出总分；GB 只在离线
+对照里跑，没有接到产品链路。v9 已经是现行评分口径，继续挂 `live` 标签看不出用的
+是哪一版。
+**思路**：用 `dataset/2018_spring/v9/training_gb.csv` 的全部 22 人训五维 5 分类，
+写成 `models/live/gb_llm_cls5.pkl`。线上 `evaluate_video` / 转写快评固定
+`prompt_version=v9-calibrated`，五维仍由 Judge 打，总分改成 GB 档中点
+（`label_to_score_100`）。等权平均留在 `equal_weight_score` 备查。数据集 rejudge
+不加校准，避免 `llm_overall` 被 GB 污染后下一轮训练套套循环。
+**对照**：同一 `gb_split.json` 的 5 人留出上，五维 5 分类 MAE **0.342** / Acc 0.400，
+Judge 等权 MAE **0.557**。全量 22 人拟合 Acc=1.0、MAE 0.140，这是训练集内数字，
+不能当泛化。宋晨从 Judge 3.80 收到 3.75（专家 3.06），王勋从 3.70 抬到 4.25
+（专家 4.56），杨文云仍被高估（专家 3.70 / Judge 3.01 / GB 4.25）。
+**影响**：`gb.py` 增加推理；`pipeline.py` 线上路径接 GB；前端总分旁标明来源；
+`make train-gb-live`；`.gitignore` 放行 `models/live/gb_llm_cls5.pkl`。缺模型时
+评估会失败，先跑训练命令。
+
+### 2026-09-03 · 2018 v4 恢复缓存并增加两路 GB
+
+**问题**：只比「五维 / 五维+客观」看不出客观特征和二级指标各自有没有校准价值；
+同时 2018 默认 `cache/` 的 `scores.json` 已被 v5 覆盖，直接 rejudge v4 会用上
+当前 v9 规则，不再是原来的 v4。
+**思路**：从 `eval_snapshots/v4` 拷回 22 份分数到 `cache_v4/`，用现成 evidence
+merge。特征选择收紧为前缀：`objective` 只要 7 组客观列，`indicators` 只要 `ind_*`
+（不含 `_assessed`）。merge 的 `training_gb.csv` 带上二级分。同一
+`gb_split.json` 上加训两路回归。
+**影响**：`scripts/train_gb_{obj_only,ind_reg,2018_v4}.py`，`make train-gb-2018-v4`。
+测试集 MAE：客+五 0.38，二级 0.44，客观 0.47，Judge 0.53。不要用当前代码重打 v4。
 
 ### 2026-09-03 · gitignore 补上独立评分缓存
 

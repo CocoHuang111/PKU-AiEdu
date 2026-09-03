@@ -20,7 +20,15 @@ from ai_engine.config import ROOT as PROJ
 from ai_engine.evaluation.gb import SCORE_MAPPING_VERSION
 from ai_engine.evaluation.gb_fit import VARIANTS
 
-KEYS = ("obj_reg", "llm_reg", "llm_cls5", "llm_cls8")
+DEFAULT_KEYS = ("obj_reg", "llm_reg", "llm_cls5", "llm_cls8")
+SHORT = {
+    "obj_reg": "客+五回归",
+    "llm_reg": "五维回归",
+    "llm_cls5": "五维5类",
+    "llm_cls8": "五维8类",
+    "obj_only_reg": "客观回归",
+    "ind_reg": "二级回归",
+}
 
 
 def _mae(a, b) -> float:
@@ -41,8 +49,17 @@ def _load_pred(pred_dir: Path, key: str) -> dict[str, dict]:
         return {r["video_id"]: r for r in csv.DictReader(f)}
 
 
-def compare(pred_dir: Path, out_csv: Path, title: str = "") -> dict:
-    tables = {k: _load_pred(pred_dir, k) for k in KEYS}
+def compare(
+    pred_dir: Path,
+    out_csv: Path,
+    title: str = "",
+    keys: tuple[str, ...] | list[str] = DEFAULT_KEYS,
+) -> dict:
+    keys = tuple(keys)
+    unknown = [k for k in keys if k not in VARIANTS]
+    if unknown:
+        raise SystemExit(f"未知实验：{', '.join(unknown)}")
+    tables = {k: _load_pred(pred_dir, k) for k in keys}
     missing = [k for k, t in tables.items() if not t]
     if missing:
         raise SystemExit(f"还没有预测文件：{', '.join(missing)}。目录 {pred_dir}")
@@ -57,17 +74,17 @@ def compare(pred_dir: Path, out_csv: Path, title: str = "") -> dict:
             f"{', '.join(stale)}。请重新训练四个 GB。"
         )
 
-    ids = list(tables[KEYS[0]].keys())
-    for k in KEYS[1:]:
+    ids = list(tables[keys[0]].keys())
+    for k in keys[1:]:
         if list(tables[k].keys()) != ids:
-            print(f"警告：{k} 的预测集 id 与 {KEYS[0]} 不一致，将按 {KEYS[0]} 对齐")
+            print(f"警告：{k} 的预测集 id 与 {keys[0]} 不一致，将按 {keys[0]} 对齐")
             ids = [i for i in ids if i in tables[k]]
 
-    expert = [float(tables[KEYS[0]][i]["expert_score_5"]) for i in ids]
-    judge_raw = [tables[KEYS[0]][i].get("llm_overall_5") or "" for i in ids]
+    expert = [float(tables[keys[0]][i]["expert_score_5"]) for i in ids]
+    judge_raw = [tables[keys[0]][i].get("llm_overall_5") or "" for i in ids]
     judge = [float(v) for v in judge_raw if v != ""]
     expert_j = [
-        float(tables[KEYS[0]][ids[n]]["expert_score_5"])
+        float(tables[keys[0]][ids[n]]["expert_score_5"])
         for n, v in enumerate(judge_raw)
         if v != ""
     ]
@@ -93,7 +110,7 @@ def compare(pred_dir: Path, out_csv: Path, title: str = "") -> dict:
     if judge:
         summary["judge_mae"] = round(judge_mae, 3)
         summary["judge_rmse"] = round(_rmse(expert_j, judge), 3)
-    for key in KEYS:
+    for key in keys:
         pred = [float(tables[key][i]["pred_5"]) for i in ids]
         mae = _mae(expert, pred)
         rmse = _rmse(expert, pred)
@@ -108,12 +125,12 @@ def compare(pred_dir: Path, out_csv: Path, title: str = "") -> dict:
         summary[key] = {"mae": round(mae, 3), "rmse": round(rmse, 3), "acc": acc}
 
     print("\n逐人预测（0–5 分）：")
-    print(
-        f"{'video_id':<10} {'专家':>6} {'Judge':>6} "
-        f"{'客+五回归':>8} {'五维回归':>8} {'五维5类':>8} {'五维8类':>8}"
-    )
+    header = f"{'video_id':<10} {'专家':>6} {'Judge':>6}"
+    for key in keys:
+        header += f" {SHORT.get(key, key):>8}"
+    print(header)
     for i in ids:
-        r0 = tables[KEYS[0]][i]
+        r0 = tables[keys[0]][i]
         j = r0.get("llm_overall_5") or "—"
         line = {
             "video_id": i,
@@ -127,7 +144,7 @@ def compare(pred_dir: Path, out_csv: Path, title: str = "") -> dict:
             f"{float(r0['expert_score_5']):6.2f}",
             f"{float(j):6.2f}" if j not in ("—", "") else f"{'—':>6}",
         ]
-        for key in KEYS:
+        for key in keys:
             p = float(tables[key][i]["pred_5"])
             cells.append(f"{p:8.2f}")
             line[f"pred_{key}"] = round(p, 4)
@@ -151,8 +168,14 @@ def main() -> int:
     ap.add_argument("--pred-dir", default=str(PROJ / "models"))
     ap.add_argument("--out", default=str(PROJ / "dataset" / "gb_predictions.csv"))
     ap.add_argument("--title", default="")
+    ap.add_argument(
+        "--keys",
+        default=",".join(DEFAULT_KEYS),
+        help="逗号分隔的实验 key，默认原来的四个",
+    )
     args = ap.parse_args()
-    compare(Path(args.pred_dir), Path(args.out), title=args.title)
+    keys = tuple(k.strip() for k in args.keys.split(",") if k.strip())
+    compare(Path(args.pred_dir), Path(args.out), title=args.title, keys=keys)
     return 0
 
 

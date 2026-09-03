@@ -63,6 +63,10 @@ def main() -> int:
     on_progress.finish()
     overall = result["overall"]
     print(f"\n综合得分 {overall['score']}/100  {overall['grade']} 级 · {overall['grade_label']}")
+    if overall.get("score_source") == "gb_llm_cls5":
+        print(
+            f"总分来源：五维5分类 GB（等权 Judge {overall.get('equal_weight_score')}）"
+        )
     print(f"未评估的二级指标: {overall['skipped_indicators']} 项\n")
 
     print("五维得分:")

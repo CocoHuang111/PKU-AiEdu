@@ -173,6 +173,21 @@
             模态 {{ (result.overall.modalities || []).map((m) => MODALITY_LABEL[m]).join('/') }}
             <el-tag v-if="result.has_syllabus" size="small" type="success" effect="plain" class="src-tag">已对照课程大纲</el-tag>
             <el-tag v-if="result.has_courseware" size="small" type="success" effect="plain" class="src-tag">已对照上传课件</el-tag>
+            <el-tag
+              v-if="result.overall.score_source === 'gb_llm_cls5'"
+              size="small"
+              type="warning"
+              effect="plain"
+              class="src-tag"
+            >
+              五维5分类 GB
+            </el-tag>
+          </div>
+          <div
+            v-if="result.overall.score_source === 'gb_llm_cls5' && result.overall.equal_weight_score != null"
+            class="score-note"
+          >
+            总分由 v9 五维 5 分类 GB 校准；Judge 等权平均 {{ result.overall.equal_weight_score }}
           </div>
           <div v-if="result.overall.skipped_indicators" class="score-warn">
             {{ result.overall.skipped_indicators }} 个二级指标因缺少对应模态数据未参与评分
@@ -872,6 +887,11 @@ onBeforeUnmount(() => {
 .score-warn {
   font-size: 12px;
   color: #e6a23c;
+  margin-top: 6px;
+}
+.score-note {
+  font-size: 12px;
+  color: #909399;
   margin-top: 6px;
 }
 .na {

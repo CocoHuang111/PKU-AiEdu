@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from ai_engine.config import ROOT as PROJ
-from ai_engine.evaluation.gb_fit import VARIANTS, run_variant
+from ai_engine.evaluation.gb_fit import CORE_KEYS, run_variant
 from scripts.compare_gb import compare
 
 SPLIT = PROJ / "dataset" / "2018_spring" / "gb_split.json"
@@ -42,7 +42,7 @@ def main() -> int:
         print("\n" + "=" * 60)
         print(batch["title"])
         print("=" * 60)
-        for key in VARIANTS:
+        for key in CORE_KEYS:
             run_variant(
                 key,
                 data=batch["data"],
@@ -66,7 +66,7 @@ def main() -> int:
             f"{title:<22}",
             f"{s.get('judge_mae', float('nan')):7.3f}",
         ]
-        for key in VARIANTS:
+        for key in CORE_KEYS:
             row.append(f"{s[key]['mae']:8.3f}")
         print(" ".join(row))
     return 0
