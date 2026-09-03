@@ -11,7 +11,7 @@
 # 按课型综合出 dimension_score。一级 weight：五个维度合成总分时仍会用，会自动归一化。
 
 meta:
-  version: "2.0"
+  version: "2.1"
   score_range: [0, 100]
   grade_thresholds: # 总分与各维度得分共用
     - { min: 90, grade: A, label: 优秀 }
@@ -52,6 +52,7 @@ dimensions:
         label: 课堂管理
         weight: 1.0
         modalities: [text]
+        observation_target: live_classroom
         criteria:
           - 纪律提醒、点名提问适时
 
@@ -60,6 +61,14 @@ dimensions:
     weight: 1.0
     description: 授课内容的完整性、逻辑性、准确性与前沿性
     indicators:
+      - key: goal_clarity
+        label: 教学目标与定位
+        weight: 1.0
+        modalities: [text]
+        criteria:
+          - 能从口头说明、课件标题或内容导入中明确判断本节教学目标与定位
+          - 教学内容围绕目标展开，重点与目标一致
+          - 完整课时有适当收束或回扣目标
       - key: completeness
         label: 内容完整性
         weight: 1.0
@@ -155,30 +164,34 @@ dimensions:
   - key: teaching_effect
     label: 教学效果
     weight: 1.0
-    description: 学生的参与、互动质量、课堂氛围与知识掌握情况
+    description: 学生的直接参与、互动、课堂氛围与知识掌握；直接结果不可观察时，基于可观察教学过程评价预期教学效果
     indicators:
       - key: participation
         label: 学生参与度
         weight: 1.0
         modalities: [text]
+        observation_target: student_response
         criteria:
           - 学生提问/发言次数
       - key: interaction_quality
         label: 课堂互动质量
         weight: 1.0
         modalities: [audio]
+        observation_target: student_response
         criteria:
           - 学生回答语气坚定
       - key: atmosphere
         label: 课堂学习氛围
         weight: 1.0
         modalities: [audio]
+        observation_target: live_classroom
         criteria:
           - 课堂整体噪音小
       - key: mastery
         label: 知识掌握情况
         weight: 1.0
         modalities: [text]
+        observation_target: student_response
         criteria:
           - 学生回答正确率高、逻辑清晰
 

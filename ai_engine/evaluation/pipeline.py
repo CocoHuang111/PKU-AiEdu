@@ -15,7 +15,7 @@ from ..pedagogy.loader import get_rubric, render_prompt
 from ..providers import ChatMessage, ProviderError, get_asr, get_llm
 from . import diarization, media
 from .audio_features import extract_audio_features
-from .judge import judge_all
+from .judge import judge_all, judge_fingerprint
 from .slide_features import extract_slide_features
 from .text_features import (
     extract_text_features,
@@ -292,8 +292,10 @@ def collect_video_evidence(
                 courseware_path, settings.frame_dir / video_stem
             )
         except MaterialError as e:
-            raise RuntimeError(str(e)) from e
-        if courseware_pack.get("warning"):
+            # 课件是选填。解析失败按无课件口径继续，不要把整堂课（含已抽的音）判死。
+            progress(8, "parse_materials", {"warning": str(e)})
+            courseware_pack = None
+        if courseware_pack and courseware_pack.get("warning"):
             progress(8, "parse_materials", {"warning": courseware_pack["warning"]})
 
     keyframes: list[dict] = []
@@ -448,6 +450,7 @@ def score_from_evidence(
     progress(100, "done", {})
     return {
         "prompt_version": prompt_version,
+        "judge_fingerprint": judge_fingerprint(),
         "overall": judged["overall"],
         "dimensions": judged["dimensions"],
         "report": report,

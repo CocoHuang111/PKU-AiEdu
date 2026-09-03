@@ -14,6 +14,19 @@ class MediaError(RuntimeError):
     pass
 
 
+def _run(cmd: list[str], timeout: int | None = None) -> subprocess.CompletedProcess[str]:
+    """跑 ffmpeg/ffprobe。stderr 常带容器里的非 UTF-8 元数据（老 QuickTime/GBK），
+    不能用 text=True 的默认 utf-8 严格解码，否则抽音在读输出时就崩。"""
+    return subprocess.run(
+        cmd,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        timeout=timeout,
+    )
+
+
 def ensure_ffmpeg() -> None:
     if not shutil.which("ffmpeg"):
         raise MediaError(
@@ -26,12 +39,12 @@ def probe_duration(path: str | Path) -> float:
     if not shutil.which("ffprobe"):
         return 0.0
     try:
-        out = subprocess.run(
+        out = _run(
             [
                 "ffprobe", "-v", "quiet", "-print_format", "json",
                 "-show_format", str(path),
             ],
-            capture_output=True, text=True, timeout=60,
+            timeout=60,
         )
         return float(json.loads(out.stdout)["format"]["duration"])
     except Exception:
@@ -45,13 +58,12 @@ def extract_audio(video_path: str | Path, out_dir: Path | None = None) -> str:
     out_dir = out_dir or settings.upload_dir
     out_path = out_dir / f"{video_path.stem}.wav"
 
-    result = subprocess.run(
+    result = _run(
         [
             "ffmpeg", "-y", "-i", str(video_path),
             "-vn", "-ar", "16000", "-ac", "1", "-f", "wav",
             str(out_path),
-        ],
-        capture_output=True, text=True,
+        ]
     )
     if result.returncode != 0 or not out_path.exists():
         raise MediaError(f"抽取音频失败：{result.stderr[-500:]}")
@@ -84,14 +96,13 @@ def extract_keyframes(
         timestamp = duration * ratio
         out_path = frame_dir / f"frame_{i:02d}.jpg"
 
-        result = subprocess.run(
+        result = _run(
             [
                 "ffmpeg", "-y", "-ss", f"{timestamp:.2f}", "-i", str(video_path),
                 "-frames:v", "1", "-q:v", "3",
                 "-vf", "scale='min(1280,iw)':-2",
                 str(out_path),
-            ],
-            capture_output=True, text=True,
+            ]
         )
         if result.returncode == 0 and out_path.exists():
             frames.append(

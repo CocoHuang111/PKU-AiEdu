@@ -4,7 +4,7 @@
 
 | 功能 | 输入 | 输出 |
 | --- | --- | --- |
-| ① 教学视频质量评估 | 教学视频 | 五维雷达图 + 24 项二级指标明细 + 诊断报告 |
+| ① 教学视频质量评估 | 教学视频 | 五维雷达图 + 25 项二级指标明细 + 诊断报告 |
 | ② 教学大纲优化 | PDF / Word / Markdown 大纲 | 结构化 XML 大纲 + 改动留痕 |
 | ③ 教学智能问答 | 自然语言提问 | 基于多语料库检索的带引用回答 |
 
@@ -98,7 +98,25 @@ make frontend    # http://localhost:5174
 | `python -m scripts.qa_test "问题"` | 跑通「关键词 → 检索 → 生成」链路 |
 | `python -m scripts.test_parsing` | 校验对大模型跑偏输出的容错解析 |
 | `python -m scripts.test_eval_dataset` | 微格数据集 inventory 匹配（**不调大模型**） |
-| `python -m scripts.build_eval_dataset inventory ...` | 扫描教师文件夹 + 打分表，写 inventory/manifest |
+| `make check-expert-rules` | 专家评分长表、冻结规则和 Judge 可观察性测试（**不调大模型**） |
+| `make expert-rules-ingest` | 四份专家评分表 → `dataset/expert_rules/expert_reviews_long.csv` |
+| `make expert-rules-extract` | 评语 → 原子观点（会调大模型，支持续跑） |
+| `make expert-rules-distill` | 分数条件统计 → 待人工审核的结构化规则 |
+| `python -m scripts.test_gb` | GB 训练约定：离散化、2022 划分、玩具拟合 |
+| `python -m scripts.train_gb_obj_reg` | 客观特征+五维 → 回归 |
+| `python -m scripts.train_gb_llm_reg` | 只用五维 → 回归 |
+| `python -m scripts.train_gb_llm_cls5` | 只用五维 → 5 分类 |
+| `python -m scripts.train_gb_llm_cls8` | 只用五维 → 8 分类 |
+| `make train-gb` | 上面四个（同一 `gb_split.json`）再 `compare_gb` |
+| `make train-gb-2018` | 2018 `fixed_prompt` / `effect_inferred` 各训四种 GB（共用年内划分） |
+| `make judge-overall-2018` | 2018 测试集：LLM 读取五维与客观特征盲评总分，再与专家/GB 对照 |
+| `python -m scripts.build_eval_dataset inventory --root … --xlsx … --out …` | 扫描教师文件夹 + 打分表 → inventory / manifest |
+| `python -m scripts.build_eval_dataset extract --manifest … --resume` | ASR + 课件 + VLM + Judge（慢；可断点续跑） |
+| `python -m scripts.build_eval_dataset reflect --dir …` | 对照专家评语写 lesson（改过 prompt 后不要加 `--resume`） |
+| `python -m scripts.build_eval_dataset distill --dir …` | 把本年 lesson 压成 5–8 条口径 |
+| `python -m scripts.build_eval_dataset rejudge --dir … --prompt-version vN [--output-cache cache_name] [--resume]` | 只重打分，不重跑转写；可把新版评分写入独立缓存 |
+| `python -m scripts.build_eval_dataset merge --dir … [--scores-cache cache_name] [--output-dir …]` | 从指定评分缓存写出 training_detail / training_gb / alignment |
+| `python -m scripts.build_eval_dataset combine --dirs dataset/20XX_spring … --out dataset` | 拼成 training_*_all.csv（加 batch 列） |
 | `PKU_MODE=local <任意命令>` | 强制走本地 Ollama，无需 API Key |
 | `git status` | 本地仓库；**无远程**。视频、xlsx、`.env`、模型、cache 已 ignore |
 | `lsof -ti :8010 \| xargs kill -9` | 端口被占用时强杀 |
@@ -133,18 +151,18 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 ├── config.yaml              # 统一配置：模型、语料库、评估参数
 ├── .env                     # API Key（不入库；从 .env.example 复制）
 ├── .env.example             # 环境变量模板，不含真实 Key
-├── evaluation_criterion.md  # 评估指标的需求定义（人工维护，五维 38 条三级指标）
+├── evaluation_criterion.md  # 评估指标的需求定义（人工维护，五维 41 条三级指标）
 ├── evaluation_design.md     # 每条三级指标由谁来算：本地 / VLM / LLM 的划分与缺口
 ├── ai_engine/
 │   ├── config.py            #   读 config.yaml，按 mode 解析出各能力的配置
 │   ├── providers/           #   base.py 定接口，llm/embedding/asr.py 给实现
 │   ├── pedagogy/
-│   │   ├── evaluation_rubric.yaml   # 五维 24 项指标 + 客观特征标签（改这里就能调）
+│   │   ├── evaluation_rubric.yaml   # 五维 25 项指标 + 客观特征标签（改这里就能调）
 │   │   ├── feature_lexicon.yaml     # 文本特征统计词表与判分阈值
 │   │   ├── syllabus_schema.xml      # 大纲级 XML 结构（与 markdown_schema 对齐）
 │   │   ├── syllabus_markdown_schema.md # 大纲 Markdown 固定框架
 │   │   └── prompts/*.j2             # Jinja2 提示词
-│   ├── evaluation/          #   media / judge / pipeline
+│   ├── evaluation/          #   media / judge / pipeline / train
 │   │                        #   特征提取按来源分文件：
 │   │                        #     text_features     转写文本统计 + 分段汇总
 │   │                        #     audio_features    librosa 声学特征
@@ -153,6 +171,7 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 │   │                        #     materials         教师上传的大纲/课件解析
 │   │                        #     vision            VLM 结构化标注 + 聚合
 │   │                        #     diarization       说话人分离（可选，默认关）
+│   │                        #     gb.py / gb_fit.py 离线 GB 校准（不接入线上评估）
 │   ├── syllabus/optimizer.py
 │   │             export.py      # XML → Markdown / docx / pdf
 │   ├── qa/pipeline.py
@@ -169,10 +188,11 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 ├── knowledge/corpora/       # 知识语料（放你的文档）
 ├── data/                    # 上传、关键帧、Chroma、SQLite（已 gitignore）
 ├── test/                    # 联调样例：大纲 PDF/Word 可入库；微格视频与打分表不入库
-├── dataset/                 # 评估训练批次（manifest / csv / 蒸馏要点；cache 不入库）
+├── dataset/                 # 评估训练批次（manifest / csv / 蒸馏要点；cache / cache_* 不入库）
 └── scripts/                 # check_env / check_features / check-syllabus
                              # / smoke_test / qa_test / test_parsing
-                             # / build_eval_dataset / test_eval_dataset
+                             # / build_eval_dataset / test_eval_dataset / test_gb
+                             # / train_gb_* / compare_gb
 ```
 
 ### 数据流
@@ -193,6 +213,8 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
                  speakers   说话人分离（可选，默认关闭）
             → LLM-as-Judge 按维度逐项打二级分，再由模型按课型综合出一级分
             → 五维合成总分 → 生成报告 → 摘要回流进向量库
+            （GB 校准是离线步骤：四年拼表用 2022 预测集；2018 两套
+              prompt 另有年内对照。尚未替换线上总分）
 
 功能②  文档 → PyMuPDF/pypdf 多后端解析
             → 固定框架：章节索引 → 原文切片 → 全局骨架 → 分批章节优化 → source_id 合并校验
@@ -227,7 +249,7 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 以上传文件为准，课堂关键帧只用来看教态和学生状态；没有课件时，这些项改看
 抽取的关键帧。课堂节奏（停留、切换同步）始终看视频帧差，不看课件文件。
 
-**每个一级维度单独调一次 LLM**，而不是一次性打完 24 项。提示词更聚焦、输出更短，
+**每个一级维度单独调一次 LLM**，而不是一次性打完 25 项。提示词更聚焦、输出更短，
 JSON 解析失败率显著更低，也便于单维度重试。同一轮输出里，模型先打二级分，再给出
 `dimension_score`：按这节课的课型（微格、纯讲授、有无学生出镜等）灵活折算一级分，
 而不是对二级分做固定加权。一级分必须落在已评二级分的 min/max 附近（允许 ±5），
@@ -280,7 +302,8 @@ PKU_MODE=local make backend  # 仅当需要 Ollama 时
 
 **课件选填**（pdf / pptx / ppt）。有则以上传课件评版式与可读性；
 没有则根据课堂关键帧判断。PPT/PPTX 优先用 LibreOffice 转成 PDF 再渲染页面，
-转不成时 PPTX 会退回纯文本（版式只能弱判）。
+转不成时 PPTX 会退回纯文本（版式只能弱判）。扩展名是 `.pptx` 但文件截断时，
+会改用同目录同名的 `.ppt`。解析彻底失败则按无课件口径继续，不把整堂课判死。
 
 **模态缺失的处理**：如果关掉视觉分析（或 VLM 不可用），依赖 `vision` 模态的
 二级指标会被标记为「未评估」，在明细表里灰显，也不进雷达图。
@@ -300,41 +323,8 @@ PKU_MODE=local make backend  # 仅当需要 Ollama 时
 **想先不传视频跑通链路**：用左下角的「转写文本快速评估」，粘贴一段课堂文本，
 跳过 ASR 与视觉直接验证打分链路，几十秒出结果（同样可粘贴课程大纲）。
 
-**用专家打分表构造训练批次**（目前 2018 春微格已扫完 inventory，**尚未**批量 ASR）。
-同一年内冻结 Judge prompt；评语只用于打完分之后的 `reflect` / `distill`，不进该课打分。
-新经验只喂给后面的年份。训 GB 前用最终 prompt `rejudge`（只重打分，不重跑转写）。
-本批约 22 条，只够打通流水线，不够单独训稳 GB。打分表含联系方式，**不要**把原始 xlsx
-或带邮箱电话的文件推进公开远程；本仓库写出的 csv 不含邮箱/电话。
-
-```bash
-# 1. 扫描（已对 2018 跑过，产出 dataset/2018_spring/inventory.csv 与 manifest.csv）
-python -m scripts.build_eval_dataset inventory \
-  --root "test/2018春微格作业-32人" \
-  --xlsx "test/2018春微格作业-32人/微格教学评审汇总-2018--汇总意见.xlsx" \
-  --out dataset/2018_spring
-
-# 2. 抽证据 + 当前 prompt 打分（ASR 很慢；先 --limit 2 冒烟）
-python -m scripts.build_eval_dataset extract \
-  --manifest dataset/2018_spring/manifest.csv --resume --limit 2 --prompt-version v0
-
-# 3. 对照评语逐课写 lesson，再压成 5–8 条（人工看过再挂下一年度 Judge）
-python -m scripts.build_eval_dataset reflect --dir dataset/2018_spring
-python -m scripts.build_eval_dataset distill --dir dataset/2018_spring
-
-# 4. 全部年份跑完、冻结最终 prompt 后，只重打分再 merge
-python -m scripts.build_eval_dataset rejudge --dir dataset/2018_spring \
-  --prompt-version vN --lessons dataset/2018_spring/lessons_distilled.md
-python -m scripts.build_eval_dataset merge --dir dataset/2018_spring
-```
-
-纳入规则：文件夹名能匹配打分表姓名 **且** 有教学视频。无视频（`no_video`）或无专家分
-（`no_score`）写入 inventory 但不进 manifest。默认仍扫描「未通过」子目录。
-`extract` 永存 `cache/{id}/evidence.json`（转写与特征，体积小），默认删掉抽音和关键帧；
-原始视频留在 `test/`。终端是 TTY 时，`asr` / `vlm_describe` / `llm_judge` 在同一行刷新进度条
-（分钟数或帧数）；重定向到文件时按 10% 打一行，避免刷屏。`training_gb.csv` 不含评语文本。
-`eval_judge.j2` 可注入已确认的短口径清单（`--lessons`），默认不自动改提示词文件。
-
-校验匹配逻辑：`python -m scripts.test_eval_dataset`。
+用专家打分表按年构造训练批次（inventory / extract / reflect / distill / rejudge / merge）
+见 **八、构造评估训练批次**。不要把蒸馏口径粘进 `eval_judge.j2`。
 
 ### ② 教学大纲优化
 
@@ -396,7 +386,263 @@ Markdown 模式输出字数上限为 `syllabus.markdown_max_length_ratio`（默�
 
 ---
 
-## 八、加自己的知识语料
+## 八、构造评估训练批次
+
+按**自然年**一批。当年用冻结的 Judge prompt 打分；专家评语只在打完分之后
+`reflect` / `distill`，**不进该课分数**。蒸馏出的短口径用 `--lessons` 注入
+**下一年**的 extract，不要粘进 `eval_judge.j2`（线上评估默认不带历史口径）。
+全部年份跑完、prompt 冻结后再统一 `rejudge` + `merge` 出训练表。单年约 20 条，
+不够单独训稳 GB。
+
+打分表含联系方式。原始 xlsx / 视频只留本机（`.gitignore` 已排除）；仓库里的
+csv **不含**邮箱电话。
+
+### 目录约定
+
+```
+test/20XX春微格作业-N人/     # 2018/2019：一人一文件夹 + 打分表 xlsx（不入库）
+test/2022微格/               # 2022：备课/试讲两个平铺目录 + 三位专家合并表
+test/2024春微格作业-74人/    # 2024：备课/试讲平铺；文件名是「姓名」或「姓名-学号」
+dataset/20XX_spring/
+  inventory.csv              # 扫描全表：含 skip 原因
+  manifest.csv               # 训练候选：有姓名匹配且有视频
+  lessons/{姓名}.json        # reflect 逐课产出
+  lessons_distilled.md       # distill 压成 5–8 条（人工确认后再挂明年）
+  cache/{姓名}/              # 不入库（默认评分缓存）
+    evidence.json            # 转写 + 客观特征 + 课件文本（体积小）
+    scores.json              # 当年 prompt 的五维分
+  cache_*/{姓名}/            # 不入库（rejudge --output-cache 的独立版本）
+  training_gb.csv            # merge：客观特征 + 五维 LLM 分 + 专家百分制（无评语）
+  training_detail.csv        # merge：上面这些 + 评语和二级指标
+  alignment.csv              # merge：专家分 vs LLM 总分残差
+  fixed_prompt/              # 2018：v5-rules17 独立 merge（教学效果多半缺失）
+  effect_inferred/           # 2018：v6 独立 merge（五维齐全）
+  gb_split.json              # 2018 年内 80/20，两套 prompt 共用（勿覆盖四年划分）
+dataset/lessons_frozen.md    # 四年 distill 人工合并的 8 条；最终 rejudge 只用这一份
+dataset/training_gb_all.csv  # combine：四年拼表，训 GB 用这一份
+dataset/gb_split.json        # 从 2022 划出的预测集 id（四年对照共用）
+dataset/gb_predictions.csv   # 四个模型在预测集上的 0–5 对照
+dataset/training_detail_all.csv
+dataset/alignment_all.csv
+```
+
+纳入 manifest：能对上打分表「姓名」，**且**有教学视频。
+`no_video` / `no_score` 写入 inventory，不进 extract。Finder 复制出的
+`某文件夹 (2)` 会跳过。2018 表是「评语」单列；2019 是「整体优点 / 需要改进」；
+2022 是「突出优点 / 需要改进」，且同一人三行（每位专家一行），扫描时压成
+一人一行并拼 comment。2024 是一人一行「汇总评语-ZX」，另把「备注」接上；
+分数用「平均分」，不要用旁边那列「分数」（那是某一位专家）。xlsx 若第一行
+是标题，会自动找含「姓名」的那一行当表头。CSV **不含**邮件、职工号。
+
+2022 / 2024 都不是一人一夹：视频在试讲目录、课件在备课目录。2022 文件名
+`编号-姓名-院系`（青教赛有前缀）；2024 是 `姓名.mp4` / `姓名-学号.pdf`
+（英文名可能比打分表少一个词，按前缀对齐）。目录里堆满编号文件时自动按
+姓名把两边拼成一条，不要把整夹当成一个人。
+
+### 从专家评分表学习 Judge 规则
+
+新的规则学习不再把逐课 `reflect` 压成 8 句口号，而是先保留原始的
+“分数—评语”对应关系，再判断某个问题在低分中是主缺陷，还是在高分中只是
+改进建议。代码、Prompt、运行产物和生产规则分开放置：
+
+```
+scripts/eval_dataset/expert_rules.py       # 清洗、统计、冻结逻辑
+scripts/build_expert_rules.py              # 命令行入口
+ai_engine/pedagogy/prompts/expert_*.j2     # 原子抽取 / 条件规则 Prompt
+dataset/expert_rules/                      # 长表、逐条缓存、候选规则、审计报告
+ai_engine/pedagogy/expert_rules.yaml       # 仅存人工批准、供线上 Judge 使用的规则
+```
+
+执行顺序：
+
+```bash
+# 1. 只读四份 xlsx，生成长表和来源哈希；不调大模型
+make expert-rules-ingest
+
+# 2. 每条有效评语拆成原子观点；中断后可续跑
+make expert-rules-extract
+
+# 3. 生成 rule_candidates.csv、rules_candidate.yaml 和 rule_audit.md
+make expert-rules-distill
+
+# 4. 人工把确认的规则改成 approved: true，再冻结进生产 Judge
+python -m scripts.build_expert_rules freeze
+```
+
+2024 原表实际是每位教师 5 个个人分数。006–009 的备注全部与各自分数配对；
+005 只有存在个人备注时才配对。“汇总评语-ZX”只与平均分配对，绝不冒充 005
+个人意见。2018/2019 的汇总文字也只与平均分配对。
+
+Judge Prompt 固定包含“不可观察不等于表现差”：因 PPT 画外音、单人微格等形式
+看不到学生或教师时，相应二级指标返回 `assessed=false, score=null`，缺失不扣分，
+一级维度只根据其余可观察项计算。生产规则从 `expert_rules.yaml` 按维度加载；
+候选文件不会自动进入线上评分。
+
+### 每年做什么（复制执行）
+
+先 `conda activate pku2`。`extract` 一条 15–20 分钟课大约要实时的 3～5 倍 ASR，
+再加 VLM / Judge，11 人往往要数小时。断了加 `--resume`：已有 `evidence.json`
+的人会跳过。
+
+**不要**对本年使用本年刚蒸馏出的 `--lessons` 再打一遍（评语泄漏，对齐虚高）。
+**不要**把候选规则手工粘进 `eval_judge.j2`；审核后用 `freeze` 写入独立规则文件。
+
+```bash
+# 0. 校验扫描逻辑（不调大模型）
+python -m scripts.test_eval_dataset
+
+# 1. 扫描 → dataset/<批次>/{inventory,manifest}.csv
+python -m scripts.build_eval_dataset inventory \
+  --root "test/2019春微格作业-42人" \
+  --xlsx "test/2019春微格作业-42人/微格教学评审意见汇总表-总表（排序）-2019春.xlsx" \
+  --out dataset/2019_spring
+
+# 2. 抽证据 + 打分。下一年才带上一年的口径；prompt-version 逐年 +1
+python -m scripts.build_eval_dataset extract \
+  --manifest dataset/2019_spring/manifest.csv \
+  --resume --prompt-version v1 \
+  --lessons dataset/2018_spring/lessons_distilled.md
+
+# 3. 对照评语写 lesson，再压成清单（人工看过 md 再给下一年用）
+#    改过 eval_reflect.j2 后不要加 --resume，否则沿用旧 json
+python -m scripts.build_eval_dataset reflect --dir dataset/2019_spring
+python -m scripts.build_eval_dataset distill --dir dataset/2019_spring
+
+# 4. 全部年份结束后：同一版 prompt 只重打分，再出训练表
+python -m scripts.build_eval_dataset rejudge --dir dataset/2019_spring \
+  --prompt-version vN \
+  --lessons dataset/2018_spring/lessons_distilled.md
+python -m scripts.build_eval_dataset merge --dir dataset/2019_spring
+```
+
+`extract` 默认删掉抽音和关键帧，**转写留在 cache**。原始视频确认不再重抽后
+可删 `test/20XX…`（约十几 GB）；不影响以后对本年 `rejudge` / `merge`。
+`dataset/20XX_spring/`（含 `lessons_distilled.md` 和 cache）必须留着。
+
+课件：PDF 直接渲染；PPT/PPTX 经 LibreOffice 转 PDF。截断的假 pptx 会改用
+同目录 `.ppt`。解析失败按无课件继续，不把整堂课判死。
+
+`reflect` 的 lesson 必须是「下次没有专家评语」仍能执行的祈使句（主缺陷 /
+建议项 / 哪一维不该被单项打穿）。含「专家」「对齐专家」「听感」的句子会
+写入 `rejected_lesson` 后清空，不进 distill。
+
+### 各年进度
+
+| 批次 | inventory | extract | reflect / distill | 说明 |
+| --- | --- | --- | --- | --- |
+| `dataset/2018_spring` | 22 人进 manifest | **v4 已齐**；已 merge | 已写出 `lessons_distilled.md` | 冻结口径 `dataset/lessons_frozen.md` |
+| `dataset/2019_spring` | 42 人扫描、**11** 人有视频 | **v4 已齐**；已 merge | 已写出 `lessons_distilled.md` | 王长松 `expert_avg=0` 为无效标签，训 GB 自动剔除 |
+| `dataset/2022_spring` | 68 人进 manifest | **v4 已齐**；已 merge | 已写出 `lessons_distilled.md` | 备课 17 课件 + 1 教案 |
+| `dataset/2024_spring` | 74 人扫描、**3** 人有视频 | **v4 已齐**；已 merge | 已写出 `lessons_distilled.md` | 试讲目前 3 个 mp4 |
+
+```bash
+# 2024：先扫平铺目录。没有视频的人记 no_video，不进 extract
+python -m scripts.build_eval_dataset inventory \
+  --root "test/2024春微格作业-74人" \
+  --xlsx "test/2024春微格作业-74人/24春微格试讲评分表.xlsx" \
+  --out dataset/2024_spring
+
+python -m scripts.build_eval_dataset extract \
+  --manifest dataset/2024_spring/manifest.csv \
+  --resume --prompt-version v3 \
+  --lessons dataset/2022_spring/lessons_distilled.md
+```
+
+```bash
+# 2022：先扫平铺目录，再抽证（68 人，ASR 会跑很久；断了加 --resume）
+python -m scripts.build_eval_dataset inventory \
+  --root "test/2022微格" \
+  --xlsx "test/2022微格/2022春微格教学评审结果统计表-三位专家合并版本.xlsx" \
+  --out dataset/2022_spring
+
+python -m scripts.build_eval_dataset extract \
+  --manifest dataset/2022_spring/manifest.csv \
+  --resume --prompt-version v2 \
+  --lessons dataset/2019_spring/lessons_distilled.md
+```
+
+第一年 extract **不要** `--lessons`。2018 示例：
+
+```bash
+python -m scripts.build_eval_dataset extract \
+  --manifest dataset/2018_spring/manifest.csv --resume --prompt-version v0
+```
+
+`merge` 产出 `training_gb.csv`（**不含评语**，给 GB）/ `training_detail.csv` /
+`alignment.csv`（后两张含评语，给人看）。最终训 GB 用冻结 prompt rejudge
+之后的那一版。四年口径已人工合并为 `dataset/lessons_frozen.md`（8 条）。
+
+```bash
+# 四年都已 v4 后：按年出表，再拼总表
+for y in 2018_spring 2019_spring 2022_spring 2024_spring; do
+  python -m scripts.build_eval_dataset merge --dir dataset/$y
+done
+python -m scripts.build_eval_dataset combine \
+  --dirs dataset/2018_spring dataset/2019_spring dataset/2022_spring dataset/2024_spring \
+  --out dataset
+```
+
+训 GB 用 `dataset/training_gb_all.csv`。不要用 `comment`、`expert_avg` 当特征。
+2019 王长松均分是 0，属于无效标签，脚本会自动丢掉。
+
+四个对照脚本**共用** `dataset/gb_split.json`：从 2022（68 人）划 20% 作预测集，
+2018/2019/2024 以及 2022 剩下的人作训练集。第一次训练写出划分，之后只读不改。
+想重划加 `--resplit`（四个脚本要一起加，否则会对不上）。
+
+```bash
+make check-gb
+make train-gb
+```
+
+| 脚本 | 特征 | 任务 | 产出 |
+| --- | --- | --- | --- |
+| `scripts/train_gb_obj_reg.py` | 客观特征 + 五维 `llm_dim_*` | 回归 0–5 | `models/gb_obj_reg.pkl` |
+| `scripts/train_gb_llm_reg.py` | 只有五维 | 回归 0–5 | `models/gb_llm_reg.pkl` |
+| `scripts/train_gb_llm_cls5.py` | 只有五维 | 5 分类（step 0.4） | `models/gb_llm_cls5.pkl` |
+| `scripts/train_gb_llm_cls8.py` | 只有五维 | 8 分类（step 0.25） | `models/gb_llm_cls8.pkl` |
+
+`compare_gb` 在同一批人上比 **0–5 分** MAE/RMSE。专家表是满分 4 分、2 分及格，
+因此按 `原分÷4×100` 换百分制，再除以 20 得到等值 0–5：2→2.5、3→3.75、4→5。
+分类用 2–4 原分划档，再把档中点按同一公式还原。回归直接拟合 0–5，输出截断到 [0, 5]。
+pkl gitignore。线上仍走 Judge。
+
+> 2026-09-02 注意：下面所有在旧换算 `（均分−2）÷2` 上得到的 MAE、模型和逐人预测
+> 均为历史结果，不能再与 Judge 比较，也不能用于当前结论。修正标签后必须重新训练。
+
+2018 两套新 prompt（22 人）**不覆盖**四年划分，另存
+`dataset/2018_spring/gb_split.json`：年内 80/20（seed 42），预测集 5 人
+（宋晨、王勋、厉行、王菁、杨文云），两套表用同一批人。
+
+```bash
+make train-gb-2018
+```
+
+| 表 | prompt | 预测集 MAE（0–5） |
+| --- | --- | --- |
+| `fixed_prompt` | v5-rules17 | 历史旧尺度结果，需重训 |
+| `effect_inferred` | v6-effect-inferred | 历史旧尺度结果，需重训 |
+
+只靠五维的三种都打不过 Judge（Judge 总分本来就是五维等权平均）。客+五回归两次都
+压过 Judge 约 0.21，主要靠音量波动 / 手势 / 换片等客观特征，但预测集只有 5 人：
+宋晨（专家 1.12）被拉近，王勋（专家 4.12）被压到 ~1.8，MAE 优势很可能是单点。
+v5 有 17/22 人缺「教学效果」，五维 GB 只能中位数填；v6 补齐后 5 分类略好，其余
+没有变好。单年 22 条仍不够单独训稳。逐人对照见各自目录的 `gb_predictions.csv`。
+
+另有一个不训练的 LLM 综合总分对照：评分时只读取 v6 五维诊断与客观特征，五人全部
+落盘后才加载专家分和 GB 预测，避免标签泄漏。已有结果可用 `--resume` 复用：
+
+```bash
+make judge-overall-2018
+```
+
+产出位于 `dataset/2018_spring/effect_inferred/llm_overall/`：每人原始判断在 `cache/`，
+逐人比较（含专家评语）在 `comparison.csv`，汇总在 `summary.json`。本次 5 人上 LLM 综合总分 MAE
+**0.645**、RMSE **0.910**，优于等权 Judge（MAE 1.045）和四种 GB（最佳“客+五回归”
+MAE 0.836），但样本极少，且宋晨仍被高估 1.675 分，不能据此直接替换线上总分。
+
+---
+
+## 九、加自己的知识语料
 
 ```bash
 # 1. 把文档丢进对应目录（支持子目录）
@@ -460,13 +706,13 @@ LLM 只提取与教学实践相关的要点，过滤寒暄和行政内容。
 
 ---
 
-## 九、调整评估指标
+## 十、调整评估指标
 
 指标体系有三份文件，职责不同，**改之前先分清要改哪一份**：
 
 | 文件 | 是什么 | 谁读 |
 | --- | --- | --- |
-| `evaluation_criterion.md` | 需求源头：五维 38 条三级指标的人工定义 | 人 |
+| `evaluation_criterion.md` | 需求源头：五维 41 条三级指标的人工定义 | 人 |
 | `evaluation_design.md` | 每条三级指标由谁来算（本地 / VLM / LLM）、实现要点与**实现后仍存在的局限** | 人 |
 | `ai_engine/pedagogy/evaluation_rubric.yaml` | 上面两份的机器可读版本 + 客观特征的标签 | 代码 |
 | `ai_engine/pedagogy/feature_lexicon.yaml` | 本地统计用的词表与判分阈值 | 代码 |
@@ -489,6 +735,38 @@ LLM 只提取与教学实践相关的要点，过滤寒暄和行政内容。
   `slides` / `courseware` / `speakers`），给每个客观特征配中文标签、单位和理想区间。
   **代码里新算了特征但没在这里登记，它就不会进证据表也不会显示在前端** ——
   `make check-features` 会检查这一点
+
+### 如何调整某项指标的关注重点
+
+不要只改一个数字权重。先确定想改变的是“报告评什么”“什么算要害”“维度如何折算”
+还是“最终总分关注什么”，再修改对应入口：
+
+1. **调整报告必须评价的项目**：先在 `evaluation_criterion.md` 增删人工定义，再同步
+   `evaluation_rubric.yaml` 的 `indicators`。二级指标的 `key` 会进入 JSON/CSV，发布后尽量
+   不重命名；`criteria` 是 Judge 必须逐条对照的三级观察点，`modalities` 决定什么证据
+   缺失时该项不可评。只改 Markdown 不会改变运行结果。
+2. **调整“要害”与“改进建议”的边界**：修改 `expert_rules.yaml` 中相应规则的
+   `minor_when`、`major_when`、`not_observable_when` 和 `scoring_action`。规则只能影响已有
+   指标/维度的严重度和折算，不能自动创造一个新的报告指标；需要单独展示时仍要在 rubric
+   新增二级指标。
+3. **调整维度内部的关注重点**：修改 `eval_judge.j2` 的通用或维度专属指令。正常路径的
+   `dimension_score` 由 LLM 按课型和语义综合，二级 `weight` 主要用于 LLM 一级分无效时的
+   加权兜底，所以仅把 `weight: 1.0` 改成 `1.5` 不保证正常评分会更关注该项。
+4. **调整最终总分的关注重点**：等权总分由一级维度 `weight` 控制；独立 LLM 综合总分则
+   由 `eval_overall_judge.j2` 控制。若希望某种单项缺陷不得打穿、多个缺陷可累计，或某项
+   成为决定性问题，需要在综合总分 Prompt 中明确写出，不能指望二级权重自动传递语义。
+
+修改后先运行 `make check-features`。历史 `scores.json` 不会自动变化；需要用新的
+`--prompt-version` 和 `--output-cache` 重新 `rejudge`，不要覆盖旧缓存，确认效果后再 merge。
+例如：
+
+```bash
+python -m scripts.build_eval_dataset rejudge \
+  --dir dataset/2018_spring \
+  --prompt-version v7-goal-clarity \
+  --output-cache cache_goal_v7 \
+  --resume
+```
 
 文本特征的统计词表和判分阈值在 `feature_lexicon.yaml`，都可以按你的学科习惯调整：
 
@@ -539,7 +817,7 @@ make install-local                      # 装 pyannote.audio
 
 ---
 
-## 十、排错
+## 十一、排错
 
 | 现象 | 原因与处理 |
 | --- | --- |
@@ -555,6 +833,16 @@ make install-local                      # 装 pyannote.audio
 | 课件切换次数明显偏多 | 固定机位下教师走动也会造成画面差异，切换数是**上界**。把 `slide_change_threshold` 从 0.08 往上调（如 0.15）会更保守 |
 | 选了视频但没有开始评估 | 上传入口改为先选文件再点「开始评估」，以便同时附上大纲/课件。选完视频后要点按钮 |
 | PPT/PPTX 课件没有页面图像 | 本机没有 LibreOffice，无法把幻灯片转成 PDF。请另存为 PDF 再传，或 `brew install --cask libreoffice` |
+| `MuPDF error: cannot create appearance stream for Screen annotations` | LibreOffice 把 PPT 里的嵌入媒体转成 PDF Screen 注释，PyMuPDF 画不出来。已跳过注释渲染并关掉这段 stderr，页面图像不受影响 |
+| 课件报 `Package not found` / `不是 zip` | 扩展名是 `.pptx` 但文件截断，或其实是旧版 `.ppt`。会改用同目录下完整的 `.ppt`；仍失败则跳过课件、按无课件口径继续评 |
+| 2019 inventory 只有约 11 人进 manifest | 42 个教师文件夹里约 30 个是空的（另有一整套 Finder ` (2)` 空副本已跳过）。缺视频记 `no_video`，有打分也不进 extract |
+| 2019 王长松 `expert_avg=0` | 0 不是有效专家评分。即使换算后为 0，四个 `train_gb_*` 脚本仍会自动丢掉这一行 |
+| `No module named 'sklearn'` / `pandas` | 训 GB 需要 `pip install pandas scikit-learn`（已写入 `requirements.txt`，`make install` 会装） |
+| 2022 备课目录只有十几个文件 | 试讲 68 个视频齐，课件/教案只交了约 18 份。缺课件按无课件继续评，不判死 |
+| 2022 楚健春平均分数对不上表内唯一一行 | 合并表里他只有刘树华一行（3.5），「平均分数」却是 3.033。标签用平均分数，并标 `incomplete_experts` |
+| 2024 inventory 只有 3 人进 manifest | `2024春微格试讲-74位/` 目前只有张亿、王欢、黄炜三个 mp4，其余 71 人只有备课 PDF，记 `no_video`。补视频后重新 inventory 再 `--resume` extract |
+| 2024 表里「分数」和「平均分」不一致 | 「分数」是专家账号 005 的单人分。标签用「平均分」 |
+| `reflect` 大量 `empty`、lesson 被拒 | 旧 prompt 会写出「对齐专家」「结合听感」。不要加 `--resume`，直接重跑 `reflect`；含禁词的句子会进 `rejected_lesson` 被清空 |
 | 上传大纲后任务直接失败 | 扫描版 PDF 抽不出文字。请改传 Word，或先做 OCR |
 | 客观特征里没有「上传课件观测」这一组 | 没传课件，或 VLM 对课件页全部标注失败（进度详情里有 warning） |
 | 说话人分离报「需要 HuggingFace token」 | `.env` 里没填 `HF_TOKEN`，或没在模型页面接受使用条款。两者都要做 |
@@ -578,7 +866,7 @@ make install-local                      # 装 pyannote.audio
 
 ---
 
-## 十一、待解决的问题
+## 十二、待解决的问题
 
 **当前聚焦**：功能② 大纲优化——固定框架的结构、内容深度和业务校验已完成第一轮；
 **下一步优先**做分章生成、原文覆盖率检查和导出版式。功能③智能问答继续迭代。
@@ -701,6 +989,8 @@ make install-local                      # 装 pyannote.audio
 
 | 分类 | 问题 | 备注 |
 | --- | --- | --- |
+| 视频评估 | 四个 GB 对照已能在同一 2022 预测集上比较，**尚未替换线上总分** | 看 `dataset/gb_predictions.csv`；接入时只校准总分，五维雷达仍走 Judge |
+| 视频评估 | 2018 两套新 prompt 上只有客+五回归压过 Judge，预测集仅 5 人 | 宋晨被校准、王勋被压垮，MAE 优势不可外推；单年 22 条仍不够训稳 |
 | 视频评估 | 一级维度分由 LLM 按课型折算，同一视频两次跑可能差几分 | 越界会回退加权平均；要可复现可看 `weighted_score` 字段 |
 | 视频评估 | 说话人分离已接入但**未在真实课堂验证过**（缺 HF token，默认关闭） | 剩余 4 条 ❌ 指标里唯一有解的一条，验证后「教学效果」维度才可信 |
 | 视频评估 | 课件切换次数是**上界**：固定机位下教师走动也算差异 | 解法是让 VLM 在第一帧框出投影区域，密集轨只比对该区域 |
@@ -715,9 +1005,362 @@ make install-local                      # 装 pyannote.audio
 
 ---
 
-## 十二、变更记录
+## 十三、变更记录
 
 倒序排列，最新在最上面。每条写清楚**为什么这么改**。
+
+### 2026-09-03 · gitignore 补上独立评分缓存
+
+**问题**：`.gitignore` 只排除 `dataset/**/cache/`，`rejudge --output-cache` 写到
+`cache_fixed_prompt`、`cache_goal_v7`、`cache_v9` 等平级目录，`git add .` 会把可重建的
+`scores.json` 和网络失败残片一并入库。
+**思路**：目录名以 `cache_` 开头的一律忽略；改分制前的 `scale_backup_legacy_*` 与现表
+重复，一并排除。merge 出的 csv、lessons、专家规则长表仍可见。
+**影响**：`.gitignore` 增加 `dataset/**/cache_*/`、`dataset/scale_backup_legacy_*/`。
+提交前不必再手动漏掉这些目录。
+
+### 2026-09-03 · v9 取消70分软地板并增加五维诊断报告
+
+**问题**：v7.1 的冻结规则普遍写有“单个改进项不可导致维度低于70分”，模型容易把它
+误解为维度最低分保护；同时 `severity` 与一级分没有绑定，出现 `ordinary_issue` 却仍给
+85–90分。报告又只选择全局最低的2–3项，导致已经识别出的教学态度、教学内容问题经常
+不进入最终报告。
+**处理**：17条冻结规则全部移除70分软地板，单个轻微问题通常影响2–5分，但多个独立且
+证据充分的问题必须累计，一个严重问题或多个问题累计可使维度低于60分。Judge Prompt
+绑定 `none=85–100 / improvement_only=75–89 / ordinary_issue=60–79 /
+major_issue=0–59`，并规定90分以上至少需要两项示范性证据，不能用“未发现错误、材料存在、
+结构完整”等直接推出优秀。报告输入显式展示每维 `primary_issue` 与 `severity`，新增“五维
+诊断”部分：每维一个具体亮点、一个具体改进点；确无反面证据时固定写“当前证据未发现
+显著问题”。主要问题按严重度、学习影响、证据和独特性选择，不再只取最低分。
+**影响**：版本记为 `v9-calibrated`，2018 独立缓存为 `cache_v9`，运行
+`make rejudge-2018-v9`；v7.1 与更早缓存不会被覆盖。未来重新 distill/freeze 也会自动清除
+旧候选规则中的70分软地板。
+
+### 2026-09-02 · v7.1 恢复教学效果的预期效果兜底
+
+**问题**：从 v6 回到加入“教学目标与定位”的 v7 时，教学效果专用的“直接结果与预期
+效果分开”提示块和导出元数据被一并撤回；通用可观察性规则还误写成“缺失本身产生0分
+扣分”。结果2018 v7有12/22人的教学效果被保存为真实0分，污染五维总分和GB训练。
+**处理**：直接学生结果不可观察时，四个二级指标继续保持 `null`，但一级教学效果必须
+根据目标、内容、逻辑、表达、案例、节奏和总结等教学过程推断，标记 `score_basis=inferred`，
+置信度不高于 medium。禁止因学生未出镜或无学生声音给0分、低分或空分。模型首次仍返回
+0/空分时自动重试；两次都失败时，使用其余四个可观察一级维度的加权均值作低置信度技术
+兜底，并明确不代表观察到学生真实掌握。
+**影响**：当前口径版本记为 `v7.1-goal-effect-fallback`，独立缓存目录为
+`cache_goal_effect_v7_1`；旧 `cache_goal_v7`、旧GB模型和旧对照表保留为历史结果，不覆盖。
+运行 `make rejudge-2018-v7-effect` 后再独立 merge、重训。
+
+### 2026-09-02 · 修正专家 4 分制到百分制的换算
+
+**问题**：原代码把评分表中的 2 分误当成量表零点，使用 `(均分−2)÷2×100`，导致
+“满分 4 分、2 分及格”的 2 分被换成 0 分；Judge 却仍按正常百分制评价，二者 MAE
+不在同一尺度上。
+**处理**：统一改为 `均分÷4×100`，即 2→50、3→75、4→100；0–5 对照相应改为
+`均分÷4×5`，即 2→2.5、3→3.75、4→5。同步修正分类中点还原、百分制逆变换、专家规则
+审计分和综合评分 Prompt 的及格锚点。新增迁移脚本，旧 CSV 首次修正前备份到
+`dataset/scale_backup_legacy_20260902/`，历史 prompt 快照与历史模型预测不覆盖。
+**影响**：旧 GB 模型、MAE、Judge 基线和逐人误差均须重算；直接使用 2–4 原分划出的
+5/8/10 分类标签不变，但分类预测到百分制或 0–5 的还原值会变化。
+2018 v7 已用修正后的标签重新合并到 `dataset/2018_spring/goal_v7/`，无需重跑视频分析或
+五维 Judge。已沿用原来的17人训练、5人测试划分重训，命令为 `make train-gb-2018-v7`。
+测试集新结果（0–5）为：Judge MAE 1.137；客观特征+五维回归 **0.385**；五维回归
+0.826；五维5分类 1.022（Acc 0）；五维8分类 **0.499**（Acc 0.20）。样本只有5人，
+该排序仅用于同一测试集上的探索性比较，不能据此确定最终线上模型。
+
+### 2026-09-02 · 撤回 v8 五维报告双轴实验
+
+**问题**：v8 增加的结构化亮点、问题角色、根因去重和最高/最低报告改写，在 5 人测试中
+没有带来足够稳定的专家对齐效果，并引入目标、流利度、PPT 等新的误判。
+**处理**：恢复到加入“教学目标与定位”后的 v7 代码状态；删除 v8 专用命令、对照脚本和
+双轴字段，不改动 v7 的指标定义与关注重点调整指南。已经生成的 v8 缓存仅作为历史实验
+保留，不会被当前代码读取或复用。
+
+### 2026-08-31 · 新增“教学目标与定位”二级指标及调整指南
+
+**问题**：专家规则已有“教学目标或本节定位不清”，但运行 rubric 没有对应二级指标，
+因此它只能影响教学内容维度的主缺陷判断，不能在五维明细中单独展示；同时指标关注重点
+分散在 rubric、规则和两层 Prompt 中，后续容易误以为只改 `weight` 就会生效。
+**思路**：在教学内容下新增 `goal_clarity / 教学目标与定位`，从目标可识别、内容与目标
+一致、完整课时回扣目标三个观察点评价；不强制口头宣读，缺开头/结尾的片段不因此扣分，
+只有目标不可识别且内容发散时才可作为主缺陷。README 补充四层修改入口和重打分流程。
+**影响**：指标体系从 24 个二级指标增至 25 个；旧缓存不变，新版需用独立缓存 rejudge。
+
+### 2026-08-30 · 2018 测试集增加 LLM 综合总分盲评
+
+**问题**：现有 Judge 只对五维等权平均，GB 在 2018 的 5 人预测集上又容易受小样本和
+代理特征误导，尚未验证 LLM 能否结合五维语义诊断与客观证据重新判断总分。
+**思路**：新增独立综合评分 Prompt。调用 LLM 时严格排除专家分、专家评语和 GB 预测；
+五人结果全部落盘后再读对照表，防止标签泄漏。总分不是机械平均，并加入反证保护与
+不可观察证据降置信度规则。
+**影响**：新增 `scripts/judge_overall.py`、`eval_overall_judge.j2` 及无泄漏测试，命令为
+`make judge-overall-2018`。本次 LLM MAE 0.645，优于等权 Judge 1.045 和最佳 GB 0.836；
+优势主要来自厉行、王菁、杨文云接近专家，以及缓解王勋的 GB 极端低估，但宋晨仍显著
+高估，因此结论仅作为五例探索结果。
+
+### 2026-08-30 · 2018 两套 prompt 上训四种 GB
+
+**问题**：`fixed_prompt`（v5-rules17）和 `effect_inferred`（v6）是新打的 2018 表，
+四年拼表上的 GB 结论不能直接当成这两套 prompt 的结论；v5 还缺大量「教学效果」。
+**思路**：不覆盖 `dataset/gb_split.json`。22 人做年内 80/20（seed 42），两套表共用
+同一预测集，四种方法各训一遍。表里没有 `batch` 时按全体划分。
+**影响**：`scripts/train_gb_2018_prompts.py`、`make train-gb-2018`。划分在
+`dataset/2018_spring/gb_split.json`。客+五回归两次都压过 Judge 约 0.21，五维三种
+都打不过；预测集只有 5 人，不能据此换线上总分。
+
+### 2026-08-30 · rejudge 支持新旧评分并存
+
+**问题**：`rejudge` 原先固定覆盖 `cache/{video_id}/scores.json`，不利于逐人比较旧 Prompt 与
+新规则的结果；`merge` 也只能读取默认缓存并覆盖批次根目录下的三张 CSV。
+
+**影响**：`rejudge` 新增 `--output-cache`，证据仍从默认 `cache` 读取，评分可写入例如
+`cache_fixed_prompt/{video_id}/scores.json`。`merge` 新增 `--scores-cache` 和
+`--output-dir`，可从新版评分缓存生成独立对照表。两项参数均有默认值，旧命令行为不变；
+缓存目录必须位于批次目录内，拒绝绝对路径和 `..` 路径。
+
+### 2026-08-30 · 专家“分数—评语”规则学习接入 Judge
+
+**问题**：旧 `reflect / distill` 把每课差异压成少量短句，容易得到“校准尺度、勿打穿”
+等未来没有专家意见时无法执行的经验；同时 Judge 强制给所有二级指标数值分，PPT 画外音、
+单人微格或无学生镜头时，学生参与、互动和掌握等不可观察项仍可能被当成低表现。
+
+**思路**：四份评分表先清洗成长表，再让 LLM 逐条拆出原子优缺点，按独立教师统计问题
+被明确提及时的高/低分分布、评分人口径差和反例，最后生成带 `minor_when / major_when /
+not_observable_when` 的结构化候选规则。2018/2019 的汇总文字只配平均分；2022 保留三位
+专家的个人分数—评语；2024 原表实际是五位专家，006–009 的备注和各自分数配对，005
+仅在有个人备注时配对，“汇总评语-ZX”只配平均分。共得到 715 条评分记录、638 条有效
+评语、209 位教师。抽取命令逐条显示缓存、耗时和 ETA，并可用 `--resume` 续跑。
+
+**Judge 口径**：最终 Prompt 固定写入“不可观察不等于表现差”。因视频形式缺少观察对象时，
+二级指标返回 `observability=not_observable, assessed=false, score=null`，缺失不扣分、不填
+中间分，一级维度只使用其余可观察项。Judge 输出增加 `primary_issue / severity /
+applied_rule_ids`；生产侧按维度读取 `expert_rules.yaml`，候选规则默认不会上线。同一现象通过
+唯一 `primary_dimension` 与 `must_not_penalize_dimensions` 防止跨维重复扣分。
+
+**五维校验**：以 `evaluation_criterion.md` 为基本定义。人工审核后冻结 17 条规则：教学态度
+4 条、教学内容 4 条、教学方法 7 条、教学素质 2 条。“感染力、激情或生动性”依据“语调
+积极且富于变化”归入教学态度；画面、机位和拍摄质量不属于五维，保留为技术提示但不进入
+正式评分。`freeze` 现在会拒绝复合标签、`recording_only`、`unknown`、非法排除维度和重复
+rule ID，避免无效规则静默进入生产文件。
+
+**影响**：新增 `scripts/build_expert_rules.py`、`scripts/eval_dataset/expert_rules.py`、
+`expert_review_extract.j2`、`expert_rule_distill.j2`、`ai_engine/pedagogy/expert_rules.yaml` 与
+`dataset/expert_rules/` 审计产物。Judge Prompt、rubric 或冻结规则改变后会生成新的
+`judge_fingerprint`；即使 `prompt_version` 相同也不会误复用旧 `scores.json`。新增 7 项规则
+与可观察性测试，原有特征、数据集和 GB 测试保持通过。下一步应先保留 v4 对照快照，再以
+不注入旧 `lessons_frozen.md` 的新版本统一 rejudge，随后 merge/combine，对比新旧 Judge
+MAE、排序相关和大误差案例后再重训 GB。
+
+### 2026-08-29 · GB 改在 0–5 分上训练和比较
+
+**问题**：专家打的是 2–4 均分，对照表却用 0–100，MAE 十六七看着和专家表对不上。
+**历史思路（已于 2026-09-02 判定为错误口径）**：曾使用 `(均分−2)/2×5`
+（2→0、4→5）。评分表中的 2 是及格线而非量表零点，当前已改为 `均分÷4×5`。
+当时回归直接拟合 0–5 并截断；
+分类仍按 2–4 分档，中点再映回 0–5。Judge 总分同样 ÷20。划分仍用已有 `gb_split.json`。
+**影响**：本条记录中的旧 MAE 与模型均已失效，仅保留为问题追踪；须按 2026-09-02
+的新口径重训后再填写结果。线上仍走 Judge。
+
+### 2026-08-27 · 四个 GB 对照共用 2022 预测集
+
+**问题**：前两版一个是全特征回归、一个是五维 5 分类，划分不同（留一年 vs 随机 8:2），
+数字不能比。客观特征要不要、回归还是分类、5 类还是更细的档，需要同一批人上的结论。
+**思路**：删掉 `ai_engine/evaluation/train.py`。改成四个脚本，划分锁在
+`dataset/gb_split.json`：只从 2022 划 20% 作预测集（分层按 5 类，稀有档并进多数档），
+其余年份全部进训练。分类预测用档中点还原成百分制，才能和回归、Judge 比 MAE。
+8 类 step=0.25，比 5 类细、比论文 10 类少一些空档。
+**影响**：`scripts/train_gb_{obj_reg,llm_reg,llm_cls5,llm_cls8}.py`，`make train-gb`。
+预测宽表 `dataset/gb_predictions.csv`。第一次 2022 留出 14 人：Judge MAE 16.4；
+五维 8 分类 18.9，全特征回归 19.1，五维回归 21.0，五维 5 分类 21.3（Acc 0.43）。
+线上仍走 Judge。
+
+### 2026-08-27 · GB v2：只学五维 LLM 分的分类器（保留 v1）
+
+**问题**：v1 把约 70 维客观特征拿去回归百分制，留一年 MAE 16.7，没有打过 Judge 的 14.9。
+论文和 1.0 都是「少量语义特征 + 分类 GB」：1.0 用五维手工特征做 5 分类，论文用离散化
+降低噪声。客观特征缺测、跨年分布差，可能在帮倒忙。
+**思路**：另训一版，特征只用五维 `llm_dim_*`，标签按 1.0 把专家均分切成 5 类
+（`⌊(均分−2.0)/0.4⌋`）。v1 的 `gb_regressor.pkl` 不删、不覆盖，默认路径按任务分开。
+分类预测还原成百分制 MAE，才能和 v1、Judge 放在同一把尺上。
+**影响**：`make train-cls` → `models/gb_classifier_llm.pkl`（v1 的 `gb_regressor.pkl`
+仍在）。`--n-classes 10` 可对照论文。第一次留一年：Acc 0.26 / MAE 20.8，Judge 离散化
+Acc 0.38 / MAE 14.9。线上评估仍走 Judge。
+
+### 2026-08-27 · 增加 GB 训练脚本（回归校准，默认不改线上打分）
+
+**问题**：四年 v4 训练表已经拼好，但 2.0 还没有对应 1.0 `train.py` 的拟合入口。
+直接复用 1.0 的五分类 GB 对不上现在的表：特征从 5 维变成约 70 维，标签是百分制，
+Judge 已经给了五维分，GB 的任务变成校准而不是主评分器。
+**思路**：邵果毅论文选 GB 是因为样本少、有噪声，不宜上深度网；浅树拟合残差。
+2.0 默认 `GradientBoostingRegressor` 预测 `expert_total_100`，按年留一交叉验证，
+并用 `llm_overall` 当基线。分类（论文 10 类 / 1.0 的 5 类）留作 `--task classify`
+对照，因为没有论文里的「文本切 8 段」扩增，10 类在 n≈100 时尾部只有 1–2 人。
+王长松均分为 0 由脚本剔除；说话人整列空则丢掉；课件等高缺失列加缺失指示。
+**影响**：`ai_engine/evaluation/{gb,train}.py`，`make train` / `make check-gb`。
+`pandas`、`scikit-learn` 写入 `requirements.txt`。pkl 仍 gitignore。第一次留一年
+CV：GB MAE 16.7，Judge 总分基线 14.9；随机 8:2 则 GB 12.9 < Judge 15.3（同年样本
+泄漏，不能当结论）。所以线上 `evaluate_video` 仍只走 Judge，等留一年稳定优于
+基线再接入。
+
+### 2026-08-27 · 四年 v4 训练表 merge + combine
+
+**问题**：v4 rejudge 已齐，但还没有能训 GB 的拼表。`merge` 只认一个目录，
+四年要手动 cat 还容易把评语表和特征表搞混。
+**思路**：四年各跑一次 `merge`（不调模型）。新增 `combine` 加上 `batch` 列
+拼成 `dataset/training_*_all.csv`。GB 只用 `training_gb_all.csv`（无评语）。
+**历史影响**：104 行，全是 v4。`training_gb_all.csv` 79 列。2019 王长松均分为 0，
+拟合前应剔除。本条记录中的旧百分制残差已因 2026-09-02 的换算修正而失效。
+
+### 2026-08-27 · 四年 v4 rejudge 全部完成
+
+**问题**：断电后 2022 只写成丛治辰，2024 还没开始，训练表不能拼。
+**思路**：`--resume` 跳过已是 v4 的人，续跑 2022 剩余 67 人再打 2024 的 3 人。
+**影响**：四年 `cache/*/scores.json` 均为 v4（22+11+68+3=104，失败 0）。
+年序分仍在 `cache_by_year/`。下一步四年 `merge` 再拼 `training_gb_all.csv`。
+
+### 2026-08-26 · rejudge 支持 --resume（断电后续跑 2022）
+
+**问题**：四年 v4 rejudge 跑完 2018/2019 后刚开始 2022（只写成丛治辰）电脑没电。
+原命令会把已是 v4 的人再打一遍。
+**思路**：`--resume` 时若 `scores.json` 的 `prompt_version` 已是目标版本则跳过。
+2018（22）和 2019（11）保留；2022 从剩余 67 人接着打，然后 2024 的 3 人。
+**影响**：`build_eval_dataset rejudge` 增加 `--resume`。不要对未完成的年份省略该参数。
+
+### 2026-08-26 · 四年统一 rejudge（v4 + 冻结口径）开始
+
+**问题**：各年 `scores.json` 分别是 v0/v1/v2/v3，特征不可比，不能直接拼训练表。
+**思路**：先把各年 `scores.json` 拷到 `cache_by_year/`，再用同一份
+`dataset/lessons_frozen.md`、`--prompt-version v4` 只重打分，不重跑 ASR。
+**影响**：rejudge 覆盖 `cache/*/scores.json`。跑完后再 `merge`。年序分仍在
+`cache_by_year/`，`.gitignore` 已排除。
+
+### 2026-08-26 · 四年 distill 合并成冻结 8 条
+
+**问题**：2018/2019/2022/2024 各有一份最多 8 条的快照，不是累加栈，直接拼接
+会重复且互相打架。2018/2024 主张「纯讲授互动少只作建议」；2019 有一条
+「勿因无学生出镜宽容互动缺失」；2022 同时有「互动少仅作建议」和「提问设计
+不足须作主缺陷打穿」。最终 rejudge 只能喂一份。
+**思路**：按出现次数和能否解释分数分歧人工压成 8 条祈使句。互动冲突取多数：
+无学生出镜或内容完整的纯讲授，互动少不打穿效果维；语速过快/念稿仍要扣，但
+口误不打穿态度维。课型不符、缺导入总结、内容不完整、读屏、PPT 字多、课件
+与讲述不一致/纯板书缺总结保留。不粘进 `eval_judge.j2`。
+**影响**：写出 `dataset/lessons_frozen.md`。后续四年 `rejudge` 都用
+`--prompt-version v4 --lessons dataset/lessons_frozen.md`。各年原 md 不动。
+
+### 2026-08-26 · 2024 春 3 人 extract 完成（v3 + 2022 口径）
+
+**问题**：有视频的 3 人需要按 2022 蒸馏口径打分，才能进入 reflect。
+**思路**：`--prompt-version v3 --lessons dataset/2022_spring/lessons_distilled.md`，
+不重跑前几年，也不用 2024 自己的评语回打本年。
+**影响**：`dataset/2024_spring/cache/` 张亿、王欢、黄炜三人 `evidence.json` +
+`scores.json` 齐（失败 0），三人都有备课 PDF。其余 71 人仍缺视频。
+下一步可对这 3 人 `reflect`，或等试讲目录补齐后再 inventory / extract。
+
+### 2026-08-26 · 开始 2024 春微格批次（姓名-学号平铺）
+
+**问题**：2024 仍是备课/试讲分目录，但文件名改成 `姓名.mp4` / `姓名-学号.pdf`，
+旧的「编号-姓名-院系」解析对不上。打分表一人一行，「平均分」和「分数」不是
+同一列；评语在「汇总评语-ZX」，另有「备注」；表里有邮件和职工号，不能进 csv。
+试讲目录目前几乎是空的。
+**思路**：平铺扫描同时认 2022 编号格式和 2024 姓名-学号（英文名按前缀对上
+打分表）。分数用「平均分」，「分数」只进 expert1。「汇总评语-ZX」+「备注」
+拼进 comment。CSV 不写邮件/职工号。extract 用
+`--prompt-version v3 --lessons dataset/2022_spring/lessons_distilled.md`。
+**影响**：`inventory.py`、`test_eval_dataset.py`、`.gitignore` 增加
+`test/2024春微格作业-74人/`。写出 `dataset/2024_spring/{inventory,manifest}.csv`：
+74 人扫描、3 人有视频。缺视频的人要等材料补齐才能 extract。
+
+### 2026-08-23 · 2022 春 68 人 extract 完成（v2 + 2019 口径）
+
+**问题**：2022 有视频的 68 人需要按 2019 蒸馏口径打分，才能进入 reflect。
+**思路**：`--prompt-version v2 --lessons dataset/2019_spring/lessons_distilled.md`，
+不重跑 2018/2019，也不用 2022 自己的评语回打本年。
+**影响**：`dataset/2022_spring/cache/` 68 人 `evidence.json` + `scores.json` 齐（失败 0）。
+17 人有课件、1 人有教案。下一步是 `reflect` / `distill`，不必立刻 merge。
+
+### 2026-08-23 · 开始 2022 春微格批次（平铺目录 + 三人行打分表）
+
+**问题**：2022 材料不再是一人一夹。视频在「试讲」目录、课件在「备课」目录，
+文件名是 `编号-姓名-院系`（青教赛带前缀）；打分表同一人三行、均分列叫
+「平均分数」、评语叫「突出优点 / 需要改进」。旧扫描会把整个试讲夹当成一个人，
+且若按第一人（楚健春只有一行）收集专家列，会把另外 67 人的第二、三位专家分丢掉。
+**思路**：目录里堆满编号文件时按文件名拆姓名，把备课和试讲拼成一条。三人行
+压成一人一行：分数用表上「平均分数」，三位专家的优点/改进全部写入 comment，
+各位「总体评价」进 expert1/2/3。专家列按全表最大人数补齐，避免被缺行的人截断。
+2022 extract 用 `--prompt-version v2 --lessons dataset/2019_spring/lessons_distilled.md`，
+不把 2022 自己的口径打回本年。
+**影响**：`inventory.py`、`test_eval_dataset.py`、`.gitignore` 增加 `test/2022微格/`。
+写出 `dataset/2022_spring/{inventory,manifest}.csv`（68 人）。备课目前约 18 份。
+楚健春标 `incomplete_experts`，分仍用 3.033。
+
+### 2026-08-20 · 2019 春 11 人 extract 完成（v1 + 2018 口径）
+
+**问题**：2019 有视频的 11 人需要按 2018 蒸馏口径打分，才能进入下一年 reflect。
+**思路**：`--prompt-version v1 --lessons dataset/2018_spring/lessons_distilled.md`，
+不重跑 2018。课件解析失败不判死整堂课。
+**影响**：`dataset/2019_spring/cache/` 11 人 `evidence.json` + `scores.json` 齐（失败 0）。
+胡岠无课件文件。下一步是 `reflect` / `distill`，不必立刻 merge。
+
+### 2026-08-20 · 数据集构造操作收成 README 第八章
+
+**问题**：inventory / extract / reflect / distill / rejudge / merge 的约定散落在
+功能① 的段落和聊天记录里，2019 开跑时不知道 `--lessons` 怎么挂、能不能删原始视频、
+要不要立刻 merge。
+**思路**：从「三个功能怎么用」里抽出独立章节，按年流水线写可复制命令、目录约定、
+禁止事项（不把口径粘进 `eval_judge.j2`、不用本年口径打本年）和 2018/2019 进度表。
+命令速查补全对应入口。
+**影响**：README 第七节只留跳转；新第八章；其后章节序号 +1。
+
+### 2026-08-20 · 开始 2019 春微格批次（注入 2018 口径）
+
+**问题**：2018 已蒸馏出 `lessons_distilled.md`，2019 要按同一套扫描/抽证流程跑，
+并把口径注入 Judge。2019 打分表第一行是标题、表头在第二行，评语拆成「整体优点 /
+需要改进」；目录被 Finder 复制出 42 个空的 ` (2)` 文件夹；约 30 个正本文件夹也没有视频。
+**思路**：xlsx 找到含「姓名」的那一行当表头。没有「评语」列时把优点+改进拼成 comment。
+跳过 ` (2)` 副本。2019 extract 用 `--prompt-version v1 --lessons dataset/2018_spring/lessons_distilled.md`，
+不对 2018 自己 rejudge。
+**影响**：`xlsx.py`、`inventory.py`、`.gitignore` 增加 `test/2019春微格作业-42人/`。
+写出 `dataset/2019_spring/{inventory,manifest}.csv`：42 人扫描、11 人有视频进候选。
+缺视频的人要等材料补齐才能 extract。
+
+### 2026-08-20 · reflect/distill 改为「没专家时怎么打」
+
+**问题**：第一轮 lesson 在教模型「有专家时如何对齐」，例如「需对齐专家主缺陷」
+「熟悉度结合专家听感」。下次 Judge 没有评语、也没有听感，这些句子无法执行。
+**思路**：不把客观特征表塞进 reflect（避免过拟合单课数字）。评语和模型摘要对照
+仍做，但 lesson 必须是给未来评分员的祈使句：主缺陷是什么、什么只算建议、
+哪一维不该被单项打穿。禁止「专家 / 模型 / 对齐 / 听感」。含这些词的输出
+写入 `rejected_lesson` 后清空，distill 也不收。Judge 注入段改为「历史评审偏好」，
+用于主缺陷和一级折算，不覆盖已打的二级分。
+**影响**：`eval_reflect.j2`、`eval_distill.j2`、`eval_judge.j2`、
+`scripts/build_eval_dataset.py`。已有 `lessons/*.json` 是旧口径，需**不加**
+`--resume` 重跑 reflect，再 distill。
+
+### 2026-08-20 · 课件解析容错：截断 PPTX 与 MuPDF Screen 注释
+
+**问题**：2018 微格 extract 卡在两处。王菁的 `科维理-王菁.pptx` 以 PK 开头但没有
+zip 中央目录（尾部是 `0xFF` 填充），LibreOffice 打不开，python-pptx 报
+`Package not found`，整堂课失败；同目录其实有一份能转的 `.ppt`。门卫伟的
+PPTX 能转 PDF，但页上有嵌入媒体变成的 Screen 注释，MuPDF 往 stderr 刷
+`cannot create appearance stream`，看起来像崩了。
+**思路**：选课件时跳过打不开的 pptx，改用旁边的 ppt。解析端也做同样回退，
+这样旧 manifest 仍指向坏 pptx 时 extract 也能走通。渲染 PDF 时不画注释，
+并关掉 MuPDF 这段 stderr。课件彻底失败改为 warning，按无课件口径继续，
+不再把已抽的音一起判死。LibreOffice 使用独立 user profile，避免 GUI 占用
+默认配置目录导致转换空返回。
+**影响**：`materials.py`、`pipeline.py`、`inventory.py`。`make check-features`
+覆盖损坏 pptx 改用同名 PDF；`make check-dataset` 断言王菁选中 `.ppt`。
+`--resume` 会重试王菁（没有 evidence.json）。门卫伟若已写出 evidence 则不会重跑。
+
+### 2026-08-19 · ffmpeg stderr 按容错 UTF-8 解码
+
+**问题**：2018 厉行的 `.mov` 抽音频在 5% 报 `utf-8 codec can't decode byte 0xb9`。
+不是 MOV 不能转——刘冲的 `.mov` 已成功。ffmpeg 会把容器里的 GBK/老 QuickTime
+元数据打到 stderr，`subprocess.run(..., text=True)` 默认按 UTF-8 严格解码，
+读输出时就崩，音轨其实还没抽完。
+**思路**：抽音、抽帧、probe 一律 `encoding=utf-8, errors=replace`。非法字节换成
+替换符，真正的 ffmpeg 失败仍看 returncode。
+**影响**：`ai_engine/evaluation/media.py`。`--resume` 会重试厉行（没有
+evidence.json）。
 
 ### 2026-08-19 · 开始本地 git
 

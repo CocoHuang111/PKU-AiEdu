@@ -1,0 +1,49 @@
+下面是从大量“评分—原子问题”关系得到的统计。请生成面向未来教学视频 Judge 的条件规则。
+未来 Judge 只有视频、转写、音频、课件和结构化特征，没有历史评分和评审文字。
+
+```json
+{{ candidates_json }}
+```
+
+## 任务
+
+重点区分：
+
+- 主要出现在高分课程中的问题，应视为不错基础上的改进建议；
+- 持续和低分关联、且直接证据充分的问题，才可成为主要缺陷；
+- 高低分中都出现的问题，必须写清“什么可观察条件下较轻、什么条件下较重”；
+- 统计中的高分反例必须进入规则约束，不能只看低分案例；
+- 总分不是维度标签，不要声称精确学到了某一维的扣分权重。
+
+每条规则必须做到：
+
+1. `applicable_when / minor_when / major_when` 只能使用未来 Judge 可观察的条件。
+2. 不得出现“参考评分、结合评语、对齐、听感、综合考虑、校准尺度、勿打穿”等无法执行的说法。
+3. `scoring_action` 必须明确该现象是只写建议、可作一般扣分，还是满足何种证据后可成为主缺陷。
+4. 单个轻微问题通常只产生轻微影响，但**不存在 70 分或其他固定分数下限**；同一维度中
+   多个相互独立、证据充分的问题必须累计反映，一个严重问题或多个普通问题累计后可以使
+   该维度低于 60 分。不可观察项不得扣分。
+5. `primary_dimension` 指定唯一主扣分维度；`must_not_penalize_dimensions` 防止同一问题重复扣分。
+6. 拍摄形式和对象不可见不等于教学表现差。
+
+只输出合法 JSON：
+
+{
+  "rules": [
+    {
+      "rule_id": "稳定、简短的英文标识",
+      "target_dimension": "目标维度 key",
+      "phenomenon": "要判断的现象",
+      "applicable_when": ["可观察条件"],
+      "not_observable_when": ["因视频形式无法判断的条件"],
+      "minor_when": ["只作改进建议的条件"],
+      "major_when": ["允许成为主缺陷的直接证据组合"],
+      "severity": "improvement_only | ordinary_issue | major_issue | context_dependent",
+      "scoring_action": "明确、可执行的打分动作",
+      "primary_dimension": "唯一主扣分维度 key",
+      "must_not_penalize_dimensions": ["不得重复扣分的维度 key"],
+      "support_issue_key": "统计中的 issue_key",
+      "confidence": "high | medium | low"
+    }
+  ]
+}

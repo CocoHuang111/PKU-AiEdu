@@ -6,8 +6,10 @@
 
 from __future__ import annotations
 
+import contextlib
 import shutil
 import subprocess
+import zipfile
 from pathlib import Path
 
 from ..config import settings
@@ -71,6 +73,46 @@ def _pick_indices(n: int, k: int) -> list[int]:
     return [int(i * (n - 1) / (k - 1) + 0.5) for i in range(k)]
 
 
+def is_valid_pptx(path: Path) -> bool:
+    """扩展名是 .pptx 且能当 Office Open XML 打开（有 zip 中央目录）。"""
+    if path.suffix.lower() != ".pptx" or not path.is_file():
+        return False
+    try:
+        with zipfile.ZipFile(path) as z:
+            names = z.namelist()
+        return "[Content_Types].xml" in names or any(n.startswith("ppt/") for n in names)
+    except Exception:
+        return False
+
+
+def _office_fallbacks(path: Path) -> list[Path]:
+    """同目录、同主名、不同后缀。假 pptx 旁边经常有一份能用的 .ppt。"""
+    alts: list[Path] = []
+    seen: set[Path] = {path.resolve()}
+    for ext in (".ppt", ".pptx", ".pdf"):
+        cand = path.with_suffix(ext)
+        try:
+            resolved = cand.resolve()
+        except OSError:
+            continue
+        if resolved in seen or not cand.is_file():
+            continue
+        seen.add(resolved)
+        alts.append(cand)
+    return alts
+
+
+def _prefer_usable_courseware(path: Path) -> tuple[Path, str]:
+    """截断/损坏的 pptx 立刻改用旁边能打开的文件，避免白跑一遍 LibreOffice。"""
+    if path.suffix.lower() != ".pptx" or is_valid_pptx(path):
+        return path, ""
+    for alt in _office_fallbacks(path):
+        if alt.suffix.lower() == ".pptx" and not is_valid_pptx(alt):
+            continue
+        return alt, f"{path.name} 不是完整 PPTX（截断或损坏），改用 {alt.name}"
+    return path, ""
+
+
 def _office_to_pdf(src: Path, dest_dir: Path) -> Path:
     soffice = _find_soffice()
     if not soffice:
@@ -79,26 +121,35 @@ def _office_to_pdf(src: Path, dest_dir: Path) -> Path:
             "请另存为 PDF 后上传，或安装 LibreOffice（brew install --cask libreoffice）。"
         )
     dest_dir.mkdir(parents=True, exist_ok=True)
+    profile = dest_dir / "_lo_profile"
+    profile.mkdir(parents=True, exist_ok=True)
     result = subprocess.run(
         [
             soffice,
             "--headless",
             "--norestore",
+            "--nolockcheck",
+            f"-env:UserInstallation={profile.resolve().as_uri()}",
             "--convert-to",
             "pdf",
             "--outdir",
-            str(dest_dir),
-            str(src),
+            str(dest_dir.resolve()),
+            str(src.resolve()),
         ],
         capture_output=True,
         text=True,
-        timeout=180,
+        encoding="utf-8",
+        errors="replace",
+        timeout=300,
     )
-    pdf = dest_dir / f"{src.stem}.pdf"
-    if result.returncode != 0 or not pdf.is_file():
-        err = (result.stderr or result.stdout or "").strip()[-400:]
-        raise MaterialError(f"{src.name} 转为 PDF 失败。{err}")
-    return pdf
+    expected = dest_dir / f"{src.stem}.pdf"
+    if expected.is_file():
+        return expected
+    pdfs = sorted(p for p in dest_dir.glob("*.pdf") if p.is_file())
+    if pdfs:
+        return pdfs[0]
+    err = (result.stderr or result.stdout or "").strip()[-400:]
+    raise MaterialError(f"{src.name} 转为 PDF 失败。{err}")
 
 
 def _pptx_text(path: Path) -> str:
@@ -118,40 +169,66 @@ def _pptx_text(path: Path) -> str:
     return "\n\n".join(parts).strip()
 
 
+@contextlib.contextmanager
+def _mute_mupdf():
+    """LibreOffice 转出的 PDF 常带 Screen 注释（嵌入媒体播放器），
+    MuPDF 画不出 appearance stream，会往 stderr 刷 unsupported error。
+    页面图像本来就不需要这些控件，关掉报错即可。"""
+    import fitz
+
+    tools = getattr(fitz, "TOOLS", None)
+    if tools is None:
+        yield
+        return
+    prev = tools.mupdf_display_errors()
+    tools.mupdf_display_errors(False)
+    try:
+        tools.mupdf_display_warnings(False)
+    except Exception:
+        pass
+    try:
+        yield
+    finally:
+        tools.mupdf_display_errors(prev)
+
+
 def _render_pdf_pages(
     pdf_path: Path, out_dir: Path, max_pages: int, prefix: str = "cw"
 ) -> tuple[list[dict], str]:
     import fitz
 
-    doc = fitz.open(str(pdf_path))
-    try:
-        n = doc.page_count
-        if n <= 0:
-            raise MaterialError(f"{pdf_path.name} 没有可渲染的页面")
-        indices = _pick_indices(n, max_pages)
-        out_dir.mkdir(parents=True, exist_ok=True)
-        pages: list[dict] = []
-        text_parts: list[str] = []
-        for order, page_i in enumerate(indices):
-            page = doc[page_i]
-            pix = page.get_pixmap(matrix=fitz.Matrix(1.5, 1.5), alpha=False)
-            out_path = out_dir / f"{prefix}_{order:03d}.jpg"
-            pix.save(str(out_path))
-            pages.append(
-                {
-                    "index": order,
-                    "page": page_i + 1,
-                    "page_count": n,
-                    "path": str(out_path),
-                }
-            )
-            page_text = (page.get_text("text") or "").strip()
-            if page_text:
-                text_parts.append(f"【第 {page_i + 1} 页】\n{page_text}")
-        full_text = "\n\n".join(text_parts).strip()
-        return pages, full_text
-    finally:
-        doc.close()
+    with _mute_mupdf():
+        doc = fitz.open(str(pdf_path))
+        try:
+            n = doc.page_count
+            if n <= 0:
+                raise MaterialError(f"{pdf_path.name} 没有可渲染的页面")
+            indices = _pick_indices(n, max_pages)
+            out_dir.mkdir(parents=True, exist_ok=True)
+            pages: list[dict] = []
+            text_parts: list[str] = []
+            for order, page_i in enumerate(indices):
+                page = doc[page_i]
+                pix = page.get_pixmap(
+                    matrix=fitz.Matrix(1.5, 1.5), alpha=False, annots=False
+                )
+                out_path = out_dir / f"{prefix}_{order:03d}.jpg"
+                pix.save(str(out_path))
+                pages.append(
+                    {
+                        "index": order,
+                        "page": page_i + 1,
+                        "page_count": n,
+                        "path": str(out_path),
+                    }
+                )
+                page_text = (page.get_text("text") or "").strip()
+                if page_text:
+                    text_parts.append(f"【第 {page_i + 1} 页】\n{page_text}")
+            full_text = "\n\n".join(text_parts).strip()
+            return pages, full_text
+        finally:
+            doc.close()
 
 
 def prepare_courseware(
@@ -163,6 +240,7 @@ def prepare_courseware(
 
     PDF 直接渲染。PPT/PPTX 优先用 LibreOffice 转 PDF 再渲染；转不成时
     PPTX 退回纯文本（版式无法观测），PPT 则报错请教师另存。
+    扩展名是 .pptx 但 zip 截断时，会改用同目录同名的 .ppt / .pdf。
     """
     path = Path(path)
     out_dir = Path(out_dir)
@@ -176,26 +254,43 @@ def prepare_courseware(
 
     eval_conf = settings.section("evaluation")
     max_pages = max_pages or int(eval_conf.get("courseware_max_pages", 16))
-    warning = ""
+    original_name = path.name
+    path, warning = _prefer_usable_courseware(path)
+    suffix = path.suffix.lower()
     visual = True
     pdf_path = path
 
     if suffix in {".pptx", ".ppt"}:
-        try:
-            pdf_path = _office_to_pdf(path, out_dir / "_convert")
-        except MaterialError as e:
-            if suffix == ".pptx":
+        last_err: MaterialError | None = None
+        converted = False
+        sources = [path] + [
+            a for a in _office_fallbacks(path) if a.suffix.lower() in {".ppt", ".pptx"}
+        ]
+        for src in sources:
+            try:
+                pdf_path = _office_to_pdf(src, out_dir / "_convert")
+                if src != path:
+                    note = f"{original_name} 无法转换，改用 {src.name}"
+                    warning = f"{warning}；{note}" if warning else note
+                    path = src
+                    suffix = src.suffix.lower()
+                converted = True
+                break
+            except MaterialError as e:
+                last_err = e
+        if not converted:
+            if suffix == ".pptx" or path.suffix.lower() == ".pptx":
                 try:
                     text = _pptx_text(path)
                 except Exception as inner:
                     raise MaterialError(
-                        f"{path.name} 无法转成页面图像，文本抽取也失败：{inner}"
+                        f"{original_name} 无法转成页面图像，文本抽取也失败：{inner}"
                     ) from inner
                 if not text:
                     raise MaterialError(
-                        f"{path.name} 无法转成页面图像，且抽不到幻灯片文字。"
+                        f"{original_name} 无法转成页面图像，且抽不到幻灯片文字。"
                         "请另存为 PDF 后上传。"
-                    ) from e
+                    ) from last_err
                 if len(text) > MAX_COURSEWARE_TEXT_CHARS:
                     text = text[:MAX_COURSEWARE_TEXT_CHARS] + "\n……（课件文本已截断）"
                 return {
@@ -203,10 +298,12 @@ def prepare_courseware(
                     "text": text,
                     "visual": False,
                     "page_count": 0,
-                    "source": path.name,
-                    "warning": str(e),
+                    "source": original_name,
+                    "warning": str(last_err) if last_err else warning,
                 }
-            raise
+            if last_err:
+                raise last_err
+            raise MaterialError(f"{original_name} 转为 PDF 失败。")
 
     try:
         pages, text = _render_pdf_pages(pdf_path, out_dir, max_pages)
@@ -226,7 +323,8 @@ def prepare_courseware(
 
     if not pages:
         visual = False
-        warning = "课件没有可渲染的页面，仅保留抽取文本"
+        extra = "课件没有可渲染的页面，仅保留抽取文本"
+        warning = f"{warning}；{extra}" if warning else extra
 
     return {
         "pages": pages,

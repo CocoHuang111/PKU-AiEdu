@@ -1,0 +1,11 @@
+version,feature,n,missing,pearson_with_expert,spearman_with_expert
+v4,llm_dim_teaching_attitude,22,0,0.263532,0.124511
+v4,llm_dim_teaching_content,22,0,0.385088,0.262434
+v4,llm_dim_teaching_method,22,0,-0.031732,-0.137955
+v4,llm_dim_teaching_effect,22,0,-0.040433,-0.095209
+v4,llm_dim_teaching_quality,22,0,0.164278,0.313309
+v5,llm_dim_teaching_attitude,22,0,-0.008313,-0.073464
+v5,llm_dim_teaching_content,22,0,0.386091,0.326476
+v5,llm_dim_teaching_method,22,0,0.013427,-0.002856
+v5,llm_dim_teaching_effect,5,17,0.845657,0.707107
+v5,llm_dim_teaching_quality,22,0,0.045329,0.140707

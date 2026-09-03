@@ -145,6 +145,8 @@ def check_materials() -> None:
 
     from ai_engine.evaluation.materials import (
         _pick_indices,
+        _prefer_usable_courseware,
+        is_valid_pptx,
         load_syllabus_text,
         prepare_courseware,
     )
@@ -169,6 +171,17 @@ def check_materials() -> None:
     check("课件 PDF 渲染出页面", pack["visual"] and len(pack["pages"]) == 1)
     check("课件抽出文本", "Residual" in pack["text"])
     check("渲染文件存在", Path(pack["pages"][0]["path"]).is_file())
+
+    broken = tmp / "broken.pptx"
+    broken.write_bytes(b"PK\x03\x04" + b"\xff" * 200)
+    check("截断 pptx 判定无效", is_valid_pptx(broken) is False)
+    sibling_pdf = tmp / "broken.pdf"
+    sibling_pdf.write_bytes(pdf.read_bytes())
+    used, warn = _prefer_usable_courseware(broken)
+    check("损坏 pptx 改用同名 PDF", used.resolve() == sibling_pdf.resolve() and "改用" in warn)
+    pack_fb = prepare_courseware(broken, tmp / "out_fb", max_pages=4)
+    check("损坏 pptx 仍能渲染旁边的 PDF", pack_fb["visual"] and pack_fb["pages"])
+    check("损坏 pptx 留下 warning", "不是完整 PPTX" in (pack_fb.get("warning") or ""))
 
     labels = _parse_courseware_labels(
         '{"layout":"clear","density":"moderate","content":"diagram",'
@@ -303,6 +316,11 @@ def main() -> int:
     )
     check("知识准确性已降权", indicators["accuracy"]["weight"] < 1.0, f"= {indicators['accuracy']['weight']}")
     check("内容完整性不强制参照", indicators["completeness"].get("requires_reference") is not True)
+    check(
+        "教学目标与定位已成为独立二级指标",
+        indicators["goal_clarity"]["label"] == "教学目标与定位"
+        and len(indicators["goal_clarity"]["criteria"]) == 3,
+    )
 
     # 三级观测点必须以 evaluation_criterion.md 为准，不允许 rubric 自行扩写
     from ai_engine.config import settings as _settings
@@ -399,6 +417,7 @@ def main() -> int:
         "系统性偏高",
         "弱代理",
         "只报你有**明确把握**的知识性错误",
+        "不要机械要求教师口头宣读教学目标",
         "根据这些关键帧判断",
     ):
         check(f"提示词含「{marker[:12]}」", marker in prompt)
@@ -434,6 +453,31 @@ def main() -> int:
     check("视觉提示词要求 JSON", '"gaze"' in vision_prompt and "unclear" in vision_prompt)
     cw_prompt = render_prompt("eval_courseware.j2", page=2, page_count=10)
     check("课件提示词要求 JSON", '"layout"' in cw_prompt and "unclear" in cw_prompt)
+
+    reflect = render_prompt(
+        "eval_reflect.j2",
+        comment="建议增加互动，PPT 文字偏多。",
+        llm_summary="总分 72\n- 教学效果 45：互动少",
+        expert_score_line="专家均分 3.35（2–4 分制，约合百分 67.5）",
+    )
+    check("reflect 面向未来无专家的 Judge", "未来评分员" in reflect and "没有**专家评语" in reflect)
+    check("reflect 禁止听感/对齐句式", "禁止出现「专家」" in reflect and "听感" in reflect)
+    check("reflect 不要求客观特征表", "不要加入客观特征表" in reflect)
+    check("reflect 带入专家均分", "约合百分 67.5" in reflect)
+    distill = render_prompt(
+        "eval_distill.j2",
+        existing_bullets="（无）",
+        lessons_numbered="1. 微格纯讲授中互动少只作建议，不作为效果维主缺陷",
+    )
+    check("distill 面向无专家时的偏好", "没有专家评语时" in distill)
+    check("distill 要求问句选定一边", "必须选定一边" in distill)
+    judge_lessons = render_prompt(
+        "eval_judge.j2",
+        dimension=dim,
+        evidence=evidence,
+        expert_lessons="- 微格纯讲授中互动少只作建议，不作为效果维主缺陷",
+    )
+    check("Judge 注入历史偏好", "历史评审偏好" in judge_lessons and "主缺陷" in judge_lessons)
 
     print("\n=== 9. 课件切换检测 ===")
     check_slides()

@@ -1,0 +1,52 @@
+你正在分析一条“评分—评审文字”的对应关系。目标是把文字拆成原子观点，供后续跨案例统计。
+
+## 记录
+
+- 记录范围：{{ row.review_scope }}（individual 表示单个评分人；aggregate 表示多人平均分与汇总文字）
+- 原始分数：{{ row.score_raw }}（2–4 分制）
+- 分数区间：{{ row.score_band }}
+- 相对该评分人口径：{{ row.evaluator_delta }}
+
+评审文字：
+```
+{{ row.review_text }}
+```
+
+## 允许的问题分类
+
+{% for key, label in taxonomy.items() %}
+- `{{ key }}`：{{ label }}
+{% endfor %}
+
+## 抽取原则
+
+1. 一句话含多个优缺点时必须拆开；不要把整段复制成一个观点。
+2. 只抽取文字明确说出的内容，不得因分数低而补写缺点，也不得因未提到而推断表现良好。
+3. `stance` 只描述原文措辞：`praise | improvement | ordinary_problem | major_problem | neutral`。
+   不要仅凭“建议、可以进一步”等礼貌措辞判定实际严重程度，严重程度由后续跨案例分数统计决定。
+4. `executable=true` 仅限未来评分员能通过转写、音频、课件、关键帧或可靠说话人证据独立判断的现象。
+5. “不够熟悉、效果不好、需要加强”等没有可观察表现的抽象判断，设为 `executable=false`；不要自行发明判断依据。
+6. 拍摄、画质和录音问题归入 `recording_only`，不能伪装成教师教学能力问题。
+7. `observable_condition` 写明下次能据以判断的直接现象；若原文没有提供，留空且将 executable 设为 false。
+8. `evidence_phrase` 只保留支撑该原子观点的最短原文片段。
+
+只输出合法 JSON：
+
+{
+  "mentions": [
+    {
+      "polarity": "strength | issue",
+      "issue_key": "上面给定的分类 key",
+      "normalized_label": "不带课程专名的简短现象",
+      "dimension_key": "teaching_attitude | teaching_content | teaching_method | teaching_effect | teaching_quality | recording_only | unknown",
+      "indicator_key": "能够明确对应时填写，否则空字符串",
+      "stance": "praise | improvement | ordinary_problem | major_problem | neutral",
+      "observable_modalities": ["text", "audio", "vision", "courseware", "speakers"],
+      "format_dependent": false,
+      "executable": true,
+      "observable_condition": "未来没有评审文字时仍能直接核验的条件",
+      "evidence_phrase": "最短原文"
+    }
+  ]
+}
+

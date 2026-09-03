@@ -6,11 +6,56 @@
 需要你逐个打分的二级指标（每个二级指标下列出的三级指标就是评分依据，请逐条对照）：
 {% for ind in dimension.indicators %}
 ### {{ loop.index }}. {{ ind.label }}（key: `{{ ind.key }}`，依赖模态：{{ ind.modalities | join('、') }}）
+{% if ind.observation_target is defined %}
+观察对象：`{{ ind.observation_target }}`。只有确实观察到该对象时才能评价其表现。
+{% endif %}
 三级指标：
 {% for c in ind.criteria %}
   - {{ c }}
 {% endfor %}
 {% endfor %}
+
+---
+
+## 最高优先级：视频形式与指标可观察性
+
+评分前必须先判断视频呈现形式，以及每个二级指标要求的对象是否真正可观察。
+
+1. **不可观察不等于表现差。** 没有学生画面/声音、没有教师画面或没有真实课堂现场，
+   不得据此推断学生没有参与、教师仪态差、课堂气氛差或学生没有掌握。
+2. 如果指标因视频形式缺少观察通道，输出 `observability: "not_observable"`、
+   `assessed: false`、`score: null`。缺失本身不得产生 0 分或任何扣分，不得列为主要缺陷。
+3. 同一维度只根据其余可观察指标综合；缺失项不填中间分，也不进入加权。
+4. 只有相关对象确实出现时才评价：有可靠学生发言/画面才评学生参与、回答质量与掌握；
+   教师清晰出镜才评眼神、表情和肢体；真实课堂现场可观察时才评课堂氛围与管理。
+5. PPT 加画外音、单人微格、教师出镜讲授和真实课堂录像只是呈现形式，没有天然高低。
+6. 如果画面或声音已经提供直接反面证据，应按实际表现评分，不能借“视频形式”逃避扣分。
+
+这一规则高于后面的完整打分要求。“全部指标都要返回”是指 JSON 中必须包含每个 key，
+不是要求给不可观察项编造数值分数。
+
+{% if dimension.key == 'teaching_effect' %}
+## 教学效果专用规则：直接结果与预期效果必须分开
+
+「学生参与度、课堂互动质量、课堂学习氛围、知识掌握情况」是直接结果指标。没有可靠的
+学生声音、学生画面或真实课堂观察通道时，这些二级指标仍须返回 `score: null`，不得补分。
+
+但是，直接结果不可观察不等于整个「教学效果」不可评价。即使四个二级指标全部为 null，
+也必须根据当前视频中可观察的教学过程，独立判断这堂课的**预期教学效果**并填写一级
+`dimension_score`：重点参考目标是否清楚、内容与重点是否完整、组织逻辑与表达是否清晰、
+案例和解释是否支持理解、节奏是否便于跟随、是否有总结巩固，以及问题设计是否促进思考。
+
+- 没有任何直接学生结果时：`score_basis: "inferred"`，`dimension_confidence` 只能是
+  `medium` 或 `low`。
+- 有部分可靠学生结果时：`score_basis: "mixed"`，结合直接结果与教学过程综合判断。
+- 直接结果充分时：`score_basis: "direct"`。
+- 禁止因为学生未出镜、没有学生声音或互动次数不可观察而给 0 分、低分或 null。
+- 禁止用 60 或其他固定分填补缺失；必须根据本课可观察的教学过程拉开预期效果分数。
+- 低于 60 分必须有教学过程本身的严重反面证据，例如核心内容明显错误或混乱、目标与内容
+  严重脱节、表达已妨碍理解等；“没有学生证据”不能作为低分理由。
+- `dimension_rationale` 必须明确写出“直接学生结果不可观察”，再说明哪些教学过程证据
+  支撑该预期效果分，不能伪称学生已经掌握。
+{% endif %}
 
 ---
 
@@ -166,37 +211,95 @@
   "indicators": [
     {
       "key": "二级指标的 key，必须与上面给出的完全一致",
-      "score": 0-100 的整数,
-      "confidence": "high | medium | low",
+      "observability": "observed | not_observable",
+      "assessed": true,
+      "score": "observed 时为 0-100 整数；not_observable 时必须为 null",
+      "confidence": "high | medium | low | none",
       "evidence": "支撑这个分数的具体事实，必须引用上面的客观数据或转写原文片段，40-80字",
       "suggestion": "可操作的改进建议，30-60字。若该项已很好则写\"保持\"并说明亮点"
     }
   ],
   "dimension_score": 0-100 的整数,
-  "dimension_rationale": "40-80字。说明本维一级分如何从二级分折算：点名 1-2 个最影响本维的二级指标，以及这节课的课型特点（如微格单人讲授、几乎无学生出镜、纯讲授少提问）如何影响综合。"
+  "score_basis": "非教学效果填 observed；教学效果填 direct | mixed | inferred",
+  "dimension_confidence": "high | medium | low；inferred 不得为 high",
+  "dimension_rationale": "40-80字。只用已观察指标说明本维一级分如何折算。",
+  "primary_issue": "本维最主要的可观察问题；没有则为空字符串",
+  "severity": "none | improvement_only | ordinary_issue | major_issue",
+  "applied_rule_ids": ["实际采用的冻结规则 id；没有则空数组"]
 }
 ```
 
+## v9 分数校准：严重度、证据门槛与问题累计
+
 评分尺度：90+ 优秀且可作范例；80-89 良好；70-79 合格但有明显改进空间；60-69 待提升；60 以下有较严重问题。
-请务必对上面列出的**全部 {{ dimension.indicators | length }} 个**二级指标都给出评分，不要遗漏。
+
+`severity` 与 `dimension_score` 必须一致：
+
+- `none`：85–100。必须确有多项具体正面证据，而不是仅仅没有发现问题。
+- `improvement_only`：75–89。整体较好，但存在一个或多个不影响核心传达的改进点。
+- `ordinary_issue`：60–79。存在持续、明确、已经影响本维质量的一般问题。
+- `major_issue`：0–59。存在一个严重问题，或多个相互独立的一般问题累计后已明显影响教学质量。
+
+不存在 70 分或其他固定分数下限。单个轻微问题通常只产生有限影响，但同一维度多个相互
+独立、证据充分的问题必须累计，不能因为其中一项表现好就自动抵消其他问题。一个严重问题，
+或多个一般问题共同作用时，可以使本维低于 60 分。若 `primary_issue` 非空，`severity` 不得
+填写 `none`；若选择 `ordinary_issue` 或 `major_issue`，一级分不得落入更高严重度区间。
+
+90 分以上必须有**示范性证据**：至少两项与本维核心标准直接相关、具体且有区分力的突出
+表现，并说明为什么明显优于“完成了基本要求”。仅仅“未发现错误”“有课件”“结构完整”
+“没有长停顿”“能从标题推断目标”或“出现过案例”，都不足以支持 90 分。没有发现反面
+证据只表示尚未发现问题，不能反推为优秀；正面证据一般时应落在 70–79，证据稳定且明确
+时可落在 80–89。
+
+请务必在 JSON 中返回上面列出的**全部 {{ dimension.indicators | length }} 个**二级指标 key，不要遗漏。
+可观察项给出评分；不可观察项必须按最高优先级规则返回 null，不能为了“全评”而补分。
 不要因为证据不足就一律给中间分——有客观数据支撑的指标要敢于拉开差距。
 反之，没有客观数据支撑的指标不要硬拉开差距，把 confidence 设为 low 更诚实。
 
 一级维度分（dimension_score）规则：
 - 先打完所有二级分，再综合出本维一级分，不要为了让一级分好看去改二级分。
+- 先逐项寻找最强正面证据与最强反面证据，再判断问题数量、相互独立性和累计影响；不得只写
+  优点后给高分，也不得只凭一个低分项机械打穿整维。
 - 不要对二级分做简单算术平均。按这节课的课型判断哪些二级更关键：
   微格/镜头几乎只有教师时，学生参与类低分不应自动把整维打穿；
   纯讲授、提问很少时，不要只因为提问次数低就否定整个教学方法；
   有明确目标与收束的短课时，内容完整性可以比零散的互动更主导「教学内容」。
-- dimension_score 必须落在已给出的二级分最小值与最大值之间，允许向外各放宽 5 分，不得飞出这个范围。
+- 除「教学效果」外，dimension_score 必须落在已给出的二级分最小值与最大值之间，允许向外
+  各放宽 5 分，不得飞出这个范围。「教学效果」允许依据教学过程独立推断，不受不可观察的
+  直接结果二级分 min/max 限制。
 - dimension_rationale 必须点名 1-2 个二级指标名称，并写清课型如何影响折算。
 {% if expert_lessons is defined and expert_lessons %}
 
-## 专家评审口径（历史评语蒸馏，只辅助折算一级分，不得覆盖二级观测点、不得改已打的二级分）
+## 历史评审偏好（无专家在场时仍要遵守）
+用于判定**主缺陷**和一级分折算权重：什么当建议、什么当主问题、哪一维不该被单项打穿。
+不得捏造二级证据，不得覆盖已经打完的二级分。
 {{ expert_lessons }}
 {% endif %}
 
+{% if expert_rules is defined and expert_rules %}
+## 已审核的条件评分规则
+
+这些规则来自跨案例的“分数—评审文字”统计，并已人工确认。只在 applicable_when 成立时采用；
+not_observable_when 成立时不扣分；同一现象只在 primary_dimension 主扣分。
+{% for rule in expert_rules %}
+
+### {{ rule.rule_id }}：{{ rule.phenomenon }}
+- 适用：{{ rule.applicable_when | join('；') }}
+{% if rule.not_observable_when %}- 不可观察：{{ rule.not_observable_when | join('；') }}{% endif %}
+{% if rule.minor_when %}- 只作建议：{{ rule.minor_when | join('；') }}{% endif %}
+{% if rule.major_when %}- 可作主缺陷：{{ rule.major_when | join('；') }}{% endif %}
+- 评分动作：{{ rule.scoring_action }}
+- 唯一主扣分维度：{{ rule.primary_dimension }}
+{% if rule.must_not_penalize_dimensions %}- 不得重复扣分：{{ rule.must_not_penalize_dimensions | join('、') }}{% endif %}
+{% endfor %}
+{% endif %}
+
 {% if dimension.key == 'teaching_content' %}
+特别注意「教学目标与定位」：不要机械要求教师口头宣读教学目标。若从课件标题、内容导入、
+教学重点和组织结构中能够自然推断本节目标与定位，应正常给出正向评价。若视频只是缺少
+开头或结尾的片段，不得因未见目标陈述或目标回扣而扣分；只有目标无法识别且内容明显发散、
+重点无法判断时，才可作为主要缺陷。
+
 {% if evidence.reference %}
 特别注意「内容完整性」：对照教师上传的课程大纲，评价本节课是否覆盖了大纲中与本节相关的内容安排。
 {% else %}

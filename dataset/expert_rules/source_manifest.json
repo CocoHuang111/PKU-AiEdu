@@ -1,0 +1,33 @@
+{
+  "created_at": 1788012504.707068,
+  "sources": {
+    "2022": {
+      "file": "2022春微格教学评审结果统计表-三位专家合并版本.xlsx",
+      "sha256": "ff7ab359df1c985764f01e2ee69c9006c1ee80742e0f01c77901e17f6b63a5a8"
+    },
+    "2024": {
+      "file": "24春微格试讲评分表.xlsx",
+      "sha256": "1c1e28ed1356ec5d6bda3590ac1a0b6816fd8103795b19e080282f1561ac7c6a"
+    },
+    "2019": {
+      "file": "微格教学评审意见汇总表-总表（排序）-2019春 (2).xlsx",
+      "sha256": "a465dbd6f1ddca4c483203e76af9e8c1fb49a14b3a96be03035336eb0bfd31cf"
+    },
+    "2018": {
+      "file": "微格教学评审汇总-2018--汇总意见.xlsx",
+      "sha256": "4787eb935c9faa57bcfb8d4b5e4f7223a9163517d985a30e10622b9b58b09938"
+    }
+  },
+  "counts": {
+    "records": 715,
+    "usable_reviews": 638,
+    "teachers": 209,
+    "by_batch_scope": {
+      "2018:aggregate": 25,
+      "2019:aggregate": 42,
+      "2022:individual": 204,
+      "2024:individual": 370,
+      "2024:aggregate": 74
+    }
+  }
+}

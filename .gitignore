@@ -15,11 +15,22 @@ data/chroma/*
 data/*.db
 !data/**/.gitkeep
 
-# 评估数据集：转写 cache 默认不入库；抽音/帧仍走 data/
+# 评估数据集：转写 / 各版 rejudge 缓存不入库；抽音/帧仍走 data/
+# cache/ 是默认评分目录；cache_* 是 --output-cache 写出的独立版本
+#（cache_fixed_prompt、cache_goal_v7、cache_v9、cache_by_year 等）
 dataset/**/cache/
+dataset/**/cache_*/
+# 改分制前的整表拷贝，与现表重复
+dataset/scale_backup_legacy_*/
+# 专家规则抽取逐条 LLM 缓存可重建；长表、统计和审计产物保留可见
+dataset/expert_rules/mentions/
+dataset/expert_rules/expert_mentions.jsonl
 
 # 微格原始材料只留本机：视频大，打分表含联系方式
 test/2018春微格作业-32人/
+test/2019春微格作业-42人/
+test/2022微格/
+test/2024春微格作业-74人/
 *.mp4
 *.mov
 *.MP4

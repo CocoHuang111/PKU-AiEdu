@@ -39,6 +39,29 @@ def get_rubric() -> dict[str, Any]:
     return load_yaml("evaluation_rubric.yaml")
 
 
+@lru_cache(maxsize=1)
+def get_expert_rules() -> dict[str, Any]:
+    """读取已经人工冻结的生产规则；候选规则不会被线上 Judge 自动加载。"""
+    return load_yaml("expert_rules.yaml")
+
+
+def expert_rules_for_dimension(dimension_key: str) -> list[dict[str, Any]]:
+    rules = get_expert_rules().get("rules") or []
+    return [
+        rule
+        for rule in rules
+        if rule.get("approved", True)
+        and (
+            dimension_key
+            in {
+                rule.get("target_dimension"),
+                rule.get("primary_dimension"),
+            }
+            or dimension_key in (rule.get("must_not_penalize_dimensions") or [])
+        )
+    ]
+
+
 def grade_of(score: float) -> dict[str, str]:
     """按分数查等级。thresholds 已按 min 降序排列。
 

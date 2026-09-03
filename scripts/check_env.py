@@ -113,6 +113,8 @@ def main() -> int:
         check_package("librosa", "pip install librosa soundfile"),
         check_package("lxml", "pip install lxml"),
         check_package("zhconv", "pip install zhconv（中文转写繁转简）"),
+        check_package("pandas", "pip install pandas（训 GB 用）", required=False),
+        check_package("sklearn", "pip install scikit-learn（训 GB 用）", required=False),
     ]
 
     print("\n=== AI 能力 ===")

@@ -1,0 +1,13 @@
+version,feature,n,missing,mean_5,std_5,min_5,max_5
+v4,llm_dim_teaching_attitude,22,0,4.170455,0.208543,3.750000,4.500000
+v4,llm_dim_teaching_content,22,0,4.172727,0.233364,3.750000,4.500000
+v4,llm_dim_teaching_method,22,0,3.772727,0.281039,2.750000,4.100000
+v4,llm_dim_teaching_effect,22,0,3.293182,0.328523,2.500000,3.750000
+v4,llm_dim_teaching_quality,22,0,3.665909,0.331442,3.000000,4.400000
+v4,llm_overall,22,0,3.815000,0.175302,3.430000,4.130000
+v5-rules17,llm_dim_teaching_attitude,22,0,4.186364,0.355294,3.250000,4.650000
+v5-rules17,llm_dim_teaching_content,22,0,4.238636,0.236004,3.500000,4.650000
+v5-rules17,llm_dim_teaching_method,22,0,3.620455,0.331899,3.000000,4.100000
+v5-rules17,llm_dim_teaching_effect,5,17,4.420000,0.178885,4.100000,4.500000
+v5-rules17,llm_dim_teaching_quality,22,0,3.668182,0.368893,2.900000,4.100000
+v5-rules17,llm_overall,22,0,3.962500,0.164018,3.590000,4.275000

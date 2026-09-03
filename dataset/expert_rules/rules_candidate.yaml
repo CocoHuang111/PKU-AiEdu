@@ -1,0 +1,584 @@
+version: candidate-v1
+created_at: 1788056227.096585
+approved_required: true
+rules:
+- rule_id: audio_quality_rule
+  target_dimension: recording_only
+  phenomenon: 录音或声音质量问题
+  applicable_when:
+  - 音频中存在明显底噪、电流声或杂音
+  - 人声忽大忽小、音量过小或过大导致听不清
+  not_observable_when:
+  - 纯课件展示无教师人声的片段
+  minor_when:
+  - 存在轻微底噪或偶尔音量波动，但不影响核心内容的听懂
+  major_when:
+  - 持续存在严重杂音或电流声
+  - 音量过小或忽大忽小导致超过20%的核心讲授内容无法听清
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 recording_only 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 recording_only 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: recording_only
+  must_not_penalize_dimensions:
+  - teaching_content
+  - teaching_method
+  - teaching_attitude
+  support_issue_key: audio_quality
+  confidence: high
+  approved: false
+  support:
+    n_records: 62
+    n_teachers: 38
+    median_score: 3.0717
+    high_score_share: 0.0526
+    low_score_share: 0.3421
+    suggested_severity: context_dependent
+- rule_id: bearing_weak_rule
+  target_dimension: teaching_attitude
+  phenomenon: 教态、表情、目光或动作不足
+  applicable_when:
+  - 视频中教师面部表情紧张或不自然
+  - 目光长时间未面向镜头或学生（如一直看PPT）
+  - 肢体动作僵硬或仪容不整（如头发零乱）
+  not_observable_when:
+  - 纯画外音授课
+  - 镜头仅拍摄PPT或板书而未拍摄教师
+  minor_when:
+  - 偶尔目光偏离或表情略显紧张，但整体教态自然，不影响教学传达
+  major_when:
+  - 全程背对学生或镜头读屏
+  - 面部表情极度紧张或不自然
+  - 仪容严重不整，严重影响教学感染力
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_attitude
+  must_not_penalize_dimensions:
+  - teaching_method
+  - teaching_content
+  support_issue_key: bearing_weak
+  confidence: high
+  approved: true
+  support:
+    n_records: 107
+    n_teachers: 69
+    median_score: 3.2
+    high_score_share: 0.1884
+    low_score_share: 0.2029
+    suggested_severity: context_dependent
+- rule_id: content_incomplete_rule
+  target_dimension: teaching_content
+  phenomenon: 内容或知识闭环不完整
+  applicable_when:
+  - 视频开头缺乏导入环节直接切入正题
+  - 视频结尾 abrupt 结束无总结
+  - 讲授的知识点缺乏前因后果或理论推导，呈现碎片化
+  not_observable_when:
+  - 视频明确标记为课程中间的一个片段，且无法获取完整上下文
+  minor_when:
+  - 缺少简短的导入或总结，但核心知识点讲解完整，逻辑自洽
+  major_when:
+  - 讲授内容明显是一个未完成的片段，缺乏核心知识点的完整闭环
+  - 完全缺失导入和总结导致课程结构严重残缺
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_content
+  must_not_penalize_dimensions:
+  - teaching_method
+  - teaching_quality
+  support_issue_key: content_incomplete
+  confidence: high
+  approved: true
+  support:
+    n_records: 47
+    n_teachers: 44
+    median_score: 3.3175
+    high_score_share: 0.3864
+    low_score_share: 0.1818
+    suggested_severity: context_dependent
+- rule_id: depth_or_focus_weak_rule
+  target_dimension: teaching_content
+  phenomenon: 重点难点、深度或详略不当
+  applicable_when:
+  - 讲解平铺直叙，未对核心概念进行强调
+  - 对难点或重点讲解浅尝辄止
+  - 花费大量时间讲解与主题无关的次要内容
+  not_observable_when:
+  - 无法获取课程大纲或教学目标，且仅凭视频常识无法判断内容深浅是否合理
+  minor_when:
+  - 重点有提及但强调不够，或个别次要内容占用时间稍多，但核心内容讲解到位
+  major_when:
+  - 核心重难点完全未讲透
+  - 大量时间偏离主题，导致学生无法掌握本节课的核心知识
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_content
+  must_not_penalize_dimensions:
+  - teaching_effect
+  support_issue_key: depth_or_focus_weak
+  confidence: medium
+  approved: true
+  support:
+    n_records: 62
+    n_teachers: 43
+    median_score: 3.17
+    high_score_share: 0.093
+    low_score_share: 0.2558
+    suggested_severity: context_dependent
+- rule_id: engagement_weak_rule
+  target_dimension: teaching_attitude
+  phenomenon: 感染力、激情或生动性不足
+  applicable_when:
+  - 教师语调平淡无起伏，缺乏肢体语言
+  - 讲解枯燥，未使用案例、比喻或生动的情境辅助
+  not_observable_when:
+  - 课程内容本身为高度抽象或严肃的理论推导，客观上不需要过多情感渲染
+  minor_when:
+  - 语调较为平缓，但表达清晰，学生能跟上思路
+  major_when:
+  - 全程毫无激情、语调催眠，且缺乏任何生动案例或互动设计，导致课堂气氛极度沉闷
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_attitude
+  must_not_penalize_dimensions:
+  - teaching_content
+  - teaching_quality
+  support_issue_key: engagement_weak
+  confidence: medium  
+  approved: true
+  support:
+    n_records: 78
+    n_teachers: 49
+    median_score: 3.175
+    high_score_share: 0.1633
+    low_score_share: 0.2449
+    suggested_severity: context_dependent
+- rule_id: expression_weak_rule
+  target_dimension: teaching_quality
+  phenomenon: 表达不清、不准确或冗余
+  applicable_when:
+  - 教师频繁使用无意义口头禅（如“然后”、“对吧”）
+  - 中英文混用且缺乏条理
+  - 语句重复、含糊不清
+  not_observable_when:
+  - 教师使用专业外语术语进行双语教学，且语境清晰
+  minor_when:
+  - 偶尔出现口头禅或轻微重复，但不影响核心语义的传达
+  major_when:
+  - 口头禅极其频繁（如每句话都有）
+  - 表达逻辑混乱、含糊不清，导致学生无法理解讲授内容
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_quality 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_quality 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_quality
+  must_not_penalize_dimensions:
+  - teaching_content
+  - teaching_method
+  support_issue_key: expression_weak
+  confidence: high
+  approved: true
+  support:
+    n_records: 26
+    n_teachers: 18
+    median_score: 3.22
+    high_score_share: 0.0556
+    low_score_share: 0.2778
+    suggested_severity: context_dependent
+- rule_id: fluency_weak_rule
+  target_dimension: teaching_attitude
+  phenomenon: 讲解不够熟练或流畅
+  applicable_when:
+  - 教师在讲授过程中出现明显的停顿、卡壳、语句不连贯
+  - 频繁自我纠正
+  not_observable_when:
+  - 教师为了强调重点而进行的刻意停顿或留白
+  minor_when:
+  - 偶尔出现短暂卡顿或思考停顿，但能迅速恢复，不影响整体流畅度
+  major_when:
+  - 频繁卡壳、长时间停顿
+  - 严重依赖讲稿导致讲解支离破碎，严重影响知识传递的连贯性
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_attitude 
+  must_not_penalize_dimensions:
+  - teaching_method
+  - teaching_content
+  support_issue_key: fluency_weak
+  confidence: high
+  approved: true
+  support:
+    n_records: 24
+    n_teachers: 17
+    median_score: 3.1
+    high_score_share: 0.1176
+    low_score_share: 0.2353
+    suggested_severity: context_dependent
+- rule_id: goal_unclear_rule
+  target_dimension: teaching_content
+  phenomenon: 教学目标或本节定位不清
+  applicable_when:
+  - 课程开头或结尾未明确说明本节课的教学目标、学习重点或在整个课程中的定位
+  not_observable_when:
+  - 视频为无上下文的微课片段，且课件中已包含清晰的目录或标题
+  minor_when:
+  - 未口头明确陈述教学目标，但通过课件标题或内容导入能自然推断出本节重点
+  major_when:
+  - 全程未交代教学目标，且内容发散，导致无法判断本节课的核心学习目的和定位
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_content
+  must_not_penalize_dimensions:
+  - teaching_method
+  - teaching_quality
+  support_issue_key: goal_unclear
+  confidence: high
+  approved: true
+  support:
+    n_records: 149
+    n_teachers: 74
+    median_score: 3.1867
+    high_score_share: 0.1757
+    low_score_share: 0.2432
+    suggested_severity: context_dependent
+- rule_id: inspiration_weak_rule
+  target_dimension: teaching_method
+  phenomenon: 启发或思维引导不足
+  applicable_when:
+  - 教师全程单向灌输，缺乏启发式提问
+  - 未引导学生进行推理、探究或批判性思考
+  not_observable_when:
+  - 课程内容为纯事实性记忆或基础操作演示，客观上不需要深度启发
+  minor_when:
+  - 以讲授为主，但穿插了少量引导性问题或思考提示
+  major_when:
+  - 全程满堂灌，直接给出所有结论，完全剥夺学生思考过程
+  - 缺乏任何启发式教学设计
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_method
+  must_not_penalize_dimensions:
+  - teaching_content
+  - teaching_attitude
+  support_issue_key: inspiration_weak
+  confidence: medium
+  approved: true
+  support:
+    n_records: 151
+    n_teachers: 107
+    median_score: 3.2
+    high_score_share: 0.3271
+    low_score_share: 0.1495
+    suggested_severity: context_dependent
+- rule_id: interaction_weak_rule
+  target_dimension: teaching_method
+  phenomenon: 课堂互动不足
+  applicable_when:
+  - 教师未向学生提问，未组织讨论，或对学生的回答缺乏反馈
+  - 针对无学生视频，缺乏模拟互动或设问
+  not_observable_when:
+  - 纯录播且无学生画面，且课程设计要求为单向讲授
+  minor_when:
+  - 互动频次较低，但包含了基本的提问或设问环节
+  major_when:
+  - 全程零互动（无提问、无讨论、无设问）
+  - 教师自问自答且未留给学生任何思考时间
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_method
+  must_not_penalize_dimensions:
+  - teaching_attitude
+  - teaching_content
+  support_issue_key: interaction_weak
+  confidence: high
+  approved: true
+  support:
+    n_records: 254
+    n_teachers: 151
+    median_score: 3.2667
+    high_score_share: 0.2848
+    low_score_share: 0.1192
+    suggested_severity: context_dependent
+- rule_id: logic_weak_rule
+  target_dimension: teaching_content
+  phenomenon: 内容组织、衔接或逻辑不清
+  applicable_when:
+  - 知识点之间缺乏过渡，因果关系或推导过程不严密
+  - 内容结构混乱
+  - 未交代与前后课程的逻辑联系
+  not_observable_when:
+  - 视频为跳跃性剪辑的集锦，缺乏连贯上下文
+  minor_when:
+  - 整体逻辑通顺，但个别知识点之间的过渡略显生硬或缺乏 explicit 衔接词
+  major_when:
+  - 内容组织混乱，前后矛盾
+  - 核心推导过程存在严重逻辑断层，导致学生无法理解知识脉络
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_content
+  must_not_penalize_dimensions:
+  - teaching_method
+  - teaching_quality
+  support_issue_key: logic_weak
+  confidence: high
+  approved: true
+  support:
+    n_records: 55
+    n_teachers: 45
+    median_score: 3.18
+    high_score_share: 0.2667
+    low_score_share: 0.2667
+    suggested_severity: context_dependent
+- rule_id: other_teaching_aids_rule
+  target_dimension: teaching_method
+  phenomenon: 教学辅助与环节设计不当
+  applicable_when:
+  - 导入环节设计生硬或无效
+  - 多媒体工具使用不当（如该用动画展示公式却用静态）
+  - PPT排版或配色严重影响视觉体验
+  not_observable_when:
+  - 无法获取教学设计意图，仅凭视频无法判断某种辅助手段是否最优
+  minor_when:
+  - 导入或小结环节较为平淡，多媒体使用基本达标但缺乏亮点，PPT排版普通
+  major_when:
+  - 导入完全偏离主题
+  - 多媒体使用严重干扰教学（如动画闪烁、声画不同步）
+  - PPT设计极其混乱导致无法阅读
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_method
+  must_not_penalize_dimensions:
+  - teaching_content
+  - teaching_quality
+  support_issue_key: other
+  confidence: medium  
+  approved: true
+  support:
+    n_records: 127
+    n_teachers: 98
+    median_score: 3.2325
+    high_score_share: 0.3163
+    low_score_share: 0.2041
+    suggested_severity: context_dependent
+- rule_id: pace_weak_rule
+  target_dimension: teaching_quality
+  phenomenon: 语速、节奏或时间控制不当
+  applicable_when:
+  - 教师语速持续过快或过慢
+  - 时间分配不合理（如重点内容一笔带过，次要内容长篇大论）
+  not_observable_when:
+  - 教师为了强调重点而刻意放慢语速，或为了赶进度在结尾加快语速
+  minor_when:
+  - 语速整体适中，仅在个别难点或结尾处语速稍快或稍慢，但不影响整体理解
+  major_when:
+  - 全程语速过快导致内容无法消化
+  - 严重拖沓导致核心内容未讲完，时间控制严重失控
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_quality 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_quality 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_quality
+  must_not_penalize_dimensions:
+  - teaching_content
+  support_issue_key: pace_weak
+  confidence: high
+  approved: true
+  support:
+    n_records: 95
+    n_teachers: 62
+    median_score: 3.18
+    high_score_share: 0.1774
+    low_score_share: 0.3065
+    suggested_severity: context_dependent
+- rule_id: ppt_blackboard_coordination_rule
+  target_dimension: teaching_method
+  phenomenon: 课件、板书与讲授配合不足
+  applicable_when:
+  - 教师讲授内容与PPT展示内容不同步
+  - PPT与板书功能重叠或冲突
+  - 教师未使用指示工具指引PPT内容
+  not_observable_when:
+  - 纯PPT录屏无教师画面
+  - 纯板书授课无PPT
+  minor_when:
+  - 偶尔翻页不同步，或未使用指示工具，但通过口头描述能明确所指内容
+  major_when:
+  - 讲授与PPT严重脱节（如讲A页翻到B页）
+  - PPT与板书内容冲突，导致学生认知混乱
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_method
+  must_not_penalize_dimensions:
+  - teaching_content
+  - teaching_quality
+  support_issue_key: ppt_blackboard_coordination
+  confidence: high
+  approved: true
+  support:
+    n_records: 65
+    n_teachers: 53
+    median_score: 3.175
+    high_score_share: 0.2075
+    low_score_share: 0.1887
+    suggested_severity: context_dependent
+- rule_id: ppt_overloaded_rule
+  target_dimension: teaching_method
+  phenomenon: 课件文字或信息过载
+  applicable_when:
+  - 单页PPT包含大段文字，信息密度过高
+  - 缺乏图表或视觉元素辅助
+  not_observable_when:
+  - 课件为参考文献列表、代码块或必须完整展示的复杂表格
+  minor_when:
+  - 个别页面文字较多，但教师能通过口头讲解提炼重点，不致使学生迷失
+  major_when:
+  - 绝大多数页面均为大段文字堆砌，缺乏提炼
+  - 课件变成讲稿搬家，严重影响视觉吸收
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_method
+  must_not_penalize_dimensions:
+  - teaching_content
+  - teaching_quality
+  support_issue_key: ppt_overloaded
+  confidence: high
+  approved: true
+  support:
+    n_records: 21
+    n_teachers: 14
+    median_score: 3.1633
+    high_score_share: 0.0714
+    low_score_share: 0.2857
+    suggested_severity: context_dependent
+- rule_id: ppt_readability_weak_rule
+  target_dimension: teaching_method
+  phenomenon: 课件布局、字号或可读性不足
+  applicable_when:
+  - PPT文字字号过小，对比度低
+  - 图表模糊或排版混乱导致观看困难
+  not_observable_when:
+  - 视频分辨率本身极低导致无法判断PPT清晰度（应归入 video_quality）
+  minor_when:
+  - 个别页面字号偏小或对比度稍弱，但核心内容仍可辨认
+  major_when:
+  - 大面积文字过小、图表模糊或配色导致严重反光或看不清
+  - 直接阻碍信息获取
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_method
+  must_not_penalize_dimensions:
+  - teaching_quality
+  - teaching_content
+  support_issue_key: ppt_readability_weak
+  confidence: high
+  approved: true
+  support:
+    n_records: 35
+    n_teachers: 27
+    median_score: 3.14
+    high_score_share: 0.0741
+    low_score_share: 0.2593
+    suggested_severity: context_dependent
+- rule_id: questioning_weak_rule
+  target_dimension: teaching_method
+  phenomenon: 问题设计不足
+  applicable_when:
+  - 课堂中缺乏提问设计
+  - 问题仅为简单的封闭式问题，缺乏启发性和层次性
+  not_observable_when:
+  - 课程为纯讲授型微课，或内容极为简单无需提问
+  minor_when:
+  - 包含少量提问，但问题设计较为简单，或未能有效利用问题推进教学
+  major_when:
+  - 全程零提问
+  - 问题设计存在严重科学性错误，完全无法起到引导思考的作用
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_method
+  must_not_penalize_dimensions:
+  - teaching_content
+  - teaching_attitude
+  support_issue_key: questioning_weak
+  confidence: medium
+  approved: true
+  support:
+    n_records: 98
+    n_teachers: 63
+    median_score: 3.35
+    high_score_share: 0.381
+    low_score_share: 0.0794
+    suggested_severity: context_dependent
+- rule_id: read_slides_rule
+  target_dimension: teaching_attitude
+  phenomenon: 照读课件或看稿过多
+  applicable_when:
+  - 教师视线长时间停留在屏幕或讲稿上
+  - 直接朗读课件文字，缺乏与镜头或学生的目光交流
+  not_observable_when:
+  - 教师偶尔瞥一眼屏幕确认内容
+  - 朗读必要的定义或原文
+  minor_when:
+  - 偶尔看稿或读屏，但大部分时间能脱稿讲解并与镜头或学生有目光交流
+  major_when:
+  - 全程或绝大部分时间背对学生或镜头照念PPT或讲稿
+  - 完全脱离学生，呈现念稿状态
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: teaching_attitude
+  must_not_penalize_dimensions:
+  - teaching_method
+  - teaching_content
+  support_issue_key: read_slides
+  confidence: high
+  approved: true
+  support:
+    n_records: 23
+    n_teachers: 17
+    median_score: 3.02
+    high_score_share: 0.0
+    low_score_share: 0.4118
+    suggested_severity: context_dependent
+- rule_id: video_quality_rule
+  target_dimension: recording_only
+  phenomenon: 画面、机位或拍摄质量问题
+  applicable_when:
+  - 视频画面模糊、失焦、光线过暗或过曝
+  - 机位不当导致教师被遮挡或出现摩尔纹
+  - 缺乏学生镜头或教师出镜率极低
+  not_observable_when:
+  - 纯PPT录屏或画外音课程，无需教师出镜
+  minor_when:
+  - 画面存在轻微瑕疵（如偶尔失焦、光线稍暗），但不影响核心教学内容的观看
+  major_when:
+  - 画面持续模糊、严重过曝或过暗
+  - 机位严重不当导致教师面部或板书长期不可见，严重影响观看体验
+  severity: context_dependent
+  scoring_action: 若为 minor_when，仅作为改进建议或在 recording_only 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 recording_only 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
+  primary_dimension: recording_only
+  must_not_penalize_dimensions:
+  - teaching_content
+  - teaching_method
+  - teaching_attitude
+  support_issue_key: video_quality
+  confidence: high
+  approved: false
+  support:
+    n_records: 67
+    n_teachers: 45
+    median_score: 3.1
+    high_score_share: 0.1778
+    low_score_share: 0.3556
+    suggested_severity: context_dependent

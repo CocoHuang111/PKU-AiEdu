@@ -1,4 +1,4 @@
-"""构造评估数据集：inventory / extract / reflect / distill / rejudge / merge。
+"""构造评估数据集：inventory / extract / reflect / distill / rejudge / merge / combine。
 
     python -m scripts.build_eval_dataset inventory --root ... --xlsx ... --out dataset/2018_spring
 """
@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 import time
 import traceback
@@ -39,8 +40,15 @@ def _dump_json(path: Path, obj: Any) -> None:
 
 
 def _cache_dir(batch: Path, video_id: str) -> Path:
+    return _named_cache_dir(batch, "cache", video_id)
+
+
+def _named_cache_dir(batch: Path, cache_name: str, video_id: str) -> Path:
+    cache_path = Path(cache_name)
+    if not cache_path.parts or cache_path.is_absolute() or ".." in cache_path.parts:
+        raise ValueError(f"缓存目录必须是批次目录内的相对路径：{cache_name}")
     safe = video_id.replace("/", "_").replace("\\", "_")
-    return batch / "cache" / safe
+    return batch / cache_path / safe
 
 
 def _abs(rel: str | None) -> str | None:
@@ -88,6 +96,7 @@ def cmd_inventory(args: argparse.Namespace) -> int:
 
 
 def cmd_extract(args: argparse.Namespace) -> int:
+    from ai_engine.evaluation.judge import judge_fingerprint
     from ai_engine.evaluation.media import cleanup_video_artifacts
     from ai_engine.evaluation.pipeline import collect_video_evidence, score_from_evidence
 
@@ -97,6 +106,7 @@ def cmd_extract(args: argparse.Namespace) -> int:
         return 1
     out = Path(args.dir).resolve() if args.dir else Path(args.manifest).resolve().parent
     _apply_lessons(args.lessons)
+    current_fingerprint = judge_fingerprint()
     rows = manifest[: args.limit] if args.limit else manifest
     failed = 0
     for i, row in enumerate(rows, start=1):
@@ -137,9 +147,14 @@ def cmd_extract(args: argparse.Namespace) -> int:
             need_score = True
             if args.resume and sc_path.exists():
                 old = _load_json(sc_path)
-                if old.get("prompt_version") == args.prompt_version:
+                if (
+                    old.get("prompt_version") == args.prompt_version
+                    and old.get("judge_fingerprint") == current_fingerprint
+                ):
                     print(f"  复用 scores.json ({args.prompt_version})")
                     need_score = False
+                elif old.get("prompt_version") == args.prompt_version:
+                    print("  Judge Prompt/规则已变化，忽略同名旧 scores.json")
             if need_score:
                 scores = score_from_evidence(
                     pack["evidence"],
@@ -161,6 +176,33 @@ def cmd_extract(args: argparse.Namespace) -> int:
                     pass
     print(f"\n完成 {len(rows) - failed}/{len(rows)}，失败 {failed}")
     return 1 if failed else 0
+
+
+# lesson 是给「下次没有专家」的 Judge 用的。含这些词就无法独立执行。
+_LESSON_META = re.compile(r"专家|评语|模型|听感|参考评审|对齐专家|需对齐")
+_LESSON_EMPTY = ("全面客观", "综合判定", "注意仪态和内容", "校准评分尺度", "需对齐")
+
+
+def _expert_score_line(row: dict[str, str]) -> str:
+    avg = (row.get("expert_avg") or "").strip()
+    total = (row.get("expert_total_100") or "").strip()
+    if avg and total:
+        return f"专家均分 {avg}（2–4 分制，约合百分 {total}）"
+    if avg:
+        return f"专家均分 {avg}"
+    return "专家均分未知"
+
+
+def lesson_is_actionable(text: str) -> bool:
+    """删掉专家信息后仍能当祈使句执行。"""
+    t = (text or "").strip()
+    if not t:
+        return False
+    if _LESSON_META.search(t):
+        return False
+    if any(p in t for p in _LESSON_EMPTY):
+        return False
+    return True
 
 
 def _llm_summary(scores: dict[str, Any]) -> str:
@@ -210,13 +252,17 @@ def cmd_reflect(args: argparse.Namespace) -> int:
             continue
         scores = _load_json(sc_path)
         prompt = render_prompt(
-            "eval_reflect.j2", comment=comment, llm_summary=_llm_summary(scores)
+            "eval_reflect.j2",
+            comment=comment,
+            llm_summary=_llm_summary(scores),
+            expert_score_line=_expert_score_line(row),
         )
         raw = llm.chat(
             [
                 ChatMessage(
                     "system",
-                    "你只输出合法 JSON，对照专家评语与模型摘要，不重新打分。",
+                    "你只输出合法 JSON。lesson 是给未来没有专家评语的评分员的祈使句，"
+                    "禁止出现专家/模型/对齐/听感。不要重新打分。",
                 ),
                 ChatMessage("user", prompt),
             ]
@@ -225,11 +271,15 @@ def cmd_reflect(args: argparse.Namespace) -> int:
             parsed = _parse_json(raw)
         except ValueError:
             parsed = {"drop": False, "lesson": "", "raw": raw[:500], "error": "parse"}
+        lesson = str(parsed.get("lesson") or "").strip()
+        if lesson and not lesson_is_actionable(lesson):
+            parsed["rejected_lesson"] = lesson
+            parsed["lesson"] = ""
+            lesson = ""
         parsed["video_id"] = vid
         parsed["created_at"] = time.time()
         _dump_json(out_path, parsed)
         n_ok += 1
-        lesson = (parsed.get("lesson") or "").strip()
         flag = "drop" if parsed.get("drop") else ("lesson" if lesson else "empty")
         print(f"  {vid}: {flag} {lesson[:40]}")
     print(f"reflect 写入 {n_ok}，跳过 {n_skip}")
@@ -244,7 +294,7 @@ def _collect_lessons(batch: Path, holdout: int) -> tuple[list[str], list[str]]:
         if data.get("drop"):
             continue
         lesson = str(data.get("lesson") or "").strip()
-        if not lesson:
+        if not lesson_is_actionable(lesson):
             continue
         usable.append((data.get("video_id") or p.stem, lesson))
     holdout_ids = {vid for vid, _ in usable[-holdout:]} if holdout else set()
@@ -275,7 +325,11 @@ def cmd_distill(args: argparse.Namespace) -> int:
     )
     raw = get_llm().chat(
         [
-            ChatMessage("system", "你只输出短 Markdown 无序列表，不要前言。"),
+            ChatMessage(
+                    "system",
+                    "你只输出短 Markdown 无序列表，不要前言。"
+                    "每条必须是没有专家评语时仍能执行的祈使句，禁止专家/模型/对齐/听感。",
+                ),
             ChatMessage("user", prompt),
         ]
     )
@@ -307,20 +361,36 @@ def cmd_distill(args: argparse.Namespace) -> int:
 
 
 def cmd_rejudge(args: argparse.Namespace) -> int:
+    from ai_engine.evaluation.judge import judge_fingerprint
     from ai_engine.evaluation.pipeline import score_from_evidence
 
     batch = Path(args.dir).resolve()
     manifest = read_csv(batch / "manifest.csv")
     _apply_lessons(args.lessons)
+    current_fingerprint = judge_fingerprint()
     failed = 0
     n = 0
+    skipped = 0
     for row in manifest:
         vid = row["video_id"]
-        cache = _cache_dir(batch, vid)
-        ev_path = cache / "evidence.json"
+        evidence_cache = _cache_dir(batch, vid)
+        score_cache = _named_cache_dir(batch, args.output_cache, vid)
+        ev_path = evidence_cache / "evidence.json"
+        sc_path = score_cache / "scores.json"
         if not ev_path.exists():
             print(f"跳过 {vid}：没有 evidence.json")
             continue
+        if args.resume and sc_path.exists():
+            old = _load_json(sc_path)
+            if (
+                old.get("prompt_version") == args.prompt_version
+                and old.get("judge_fingerprint") == current_fingerprint
+            ):
+                print(f"复用 {vid}（{args.prompt_version}）")
+                skipped += 1
+                continue
+            if old.get("prompt_version") == args.prompt_version:
+                print(f"{vid} 的 Judge Prompt/规则已变化，重新评分")
         n += 1
         pack = _load_json(ev_path)
         print(f"rejudge {vid} → {args.prompt_version}")
@@ -332,12 +402,15 @@ def cmd_rejudge(args: argparse.Namespace) -> int:
                 prompt_version=args.prompt_version,
             )
             _progress.finish()
-            _dump_json(cache / "scores.json", scores)
+            _dump_json(sc_path, scores)
         except Exception as e:
             _progress.finish()
             failed += 1
             print(f"  失败：{e}")
-    print(f"rejudge {n - failed}/{n}，失败 {failed}")
+    print(
+        f"rejudge {n - failed}/{n}，失败 {failed}，复用 {skipped}；"
+        f"评分写入 {batch / args.output_cache}"
+    )
     return 1 if failed else 0
 
 
@@ -359,6 +432,15 @@ def _dim_map(scores: dict[str, Any]) -> dict[str, Any]:
         key = d.get("key")
         out[f"llm_dim_{key}"] = d.get("score") if d.get("assessed") else ""
         out[f"llm_dim_{key}_source"] = d.get("score_source") or ""
+        out[f"llm_dim_{key}_score_basis"] = d.get("score_basis") or ""
+        out[f"llm_dim_{key}_confidence"] = d.get("dimension_confidence") or ""
+        if key == "teaching_effect":
+            out[f"llm_dim_{key}_direct_result_assessed"] = int(
+                bool(d.get("direct_effect_assessed"))
+            )
+            out[f"llm_dim_{key}_direct_result_indicator_count"] = int(
+                d.get("direct_effect_indicator_count") or 0
+            )
         out[f"llm_dim_{key}_rationale"] = d.get("dimension_rationale") or ""
         for ind in d.get("indicators") or []:
             ik = ind.get("key")
@@ -369,6 +451,7 @@ def _dim_map(scores: dict[str, Any]) -> dict[str, Any]:
 
 def cmd_merge(args: argparse.Namespace) -> int:
     batch = Path(args.dir).resolve()
+    output_dir = Path(args.output_dir).resolve() if args.output_dir else batch
     manifest = read_csv(batch / "manifest.csv")
     versions: set[str] = set()
     detail_rows: list[dict[str, Any]] = []
@@ -377,15 +460,17 @@ def cmd_merge(args: argparse.Namespace) -> int:
 
     for row in manifest:
         vid = row["video_id"]
-        cache = _cache_dir(batch, vid)
-        ev_path = cache / "evidence.json"
-        sc_path = cache / "scores.json"
+        evidence_cache = _cache_dir(batch, vid)
+        score_cache = _named_cache_dir(batch, args.scores_cache, vid)
+        ev_path = evidence_cache / "evidence.json"
+        sc_path = score_cache / "scores.json"
         if not ev_path.exists() or not sc_path.exists():
             print(f"merge 跳过 {vid}：缺 evidence 或 scores")
             continue
         pack = _load_json(ev_path)
         scores = _load_json(sc_path)
         pv = str(scores.get("prompt_version") or "")
+        fingerprint = str(scores.get("judge_fingerprint") or "")
         versions.add(pv)
         overall = (scores.get("overall") or {}).get("score")
         try:
@@ -413,6 +498,7 @@ def cmd_merge(args: argparse.Namespace) -> int:
             "has_courseware": pack.get("has_courseware"),
             "duration_sec": pack.get("duration_sec"),
             "prompt_version": pv,
+            "judge_fingerprint": fingerprint,
             "expert_avg": row.get("expert_avg"),
             "expert_total_100": row.get("expert_total_100"),
             "score_std": row.get("score_std"),
@@ -435,6 +521,7 @@ def cmd_merge(args: argparse.Namespace) -> int:
             "expert_avg": row.get("expert_avg"),
             "expert_total_100": row.get("expert_total_100"),
             "prompt_version": pv,
+            "judge_fingerprint": fingerprint,
             **feats,
         }
         for k, v in dims.items():
@@ -446,6 +533,7 @@ def cmd_merge(args: argparse.Namespace) -> int:
             {
                 "video_id": vid,
                 "prompt_version": pv,
+                "judge_fingerprint": fingerprint,
                 "expert_avg": row.get("expert_avg"),
                 "expert_total_100": row.get("expert_total_100"),
                 "llm_overall": overall,
@@ -464,13 +552,45 @@ def cmd_merge(args: argparse.Namespace) -> int:
             f"警告：scores 含多个 prompt_version {sorted(versions)}。"
             "训 GB 前请用同一版本 rejudge。"
         )
-    write_csv(batch / "training_detail.csv", detail_rows)
-    write_csv(batch / "training_gb.csv", gb_rows)
-    write_csv(batch / "alignment.csv", align_rows)
+    output_dir.mkdir(parents=True, exist_ok=True)
+    write_csv(output_dir / "training_detail.csv", detail_rows)
+    write_csv(output_dir / "training_gb.csv", gb_rows)
+    write_csv(output_dir / "alignment.csv", align_rows)
     print(
-        f"merge {len(detail_rows)} 条 → training_detail.csv / training_gb.csv / alignment.csv"
+        f"merge {len(detail_rows)} 条 → {output_dir}/"
+        "training_detail.csv / training_gb.csv / alignment.csv"
         f"（prompt_version={sorted(versions)}）"
     )
+    return 0
+
+
+def cmd_combine(args: argparse.Namespace) -> int:
+    """把多年 merge 表拼成 dataset/training_*_all.csv，并加上 batch 列。"""
+    kinds = ("training_gb", "training_detail", "alignment")
+    out_dir = Path(args.out).resolve()
+    out_dir.mkdir(parents=True, exist_ok=True)
+    dirs = [Path(d).resolve() for d in args.dirs]
+    for kind in kinds:
+        rows: list[dict[str, Any]] = []
+        versions: set[str] = set()
+        for batch in dirs:
+            path = batch / f"{kind}.csv"
+            if not path.exists():
+                print(f"缺 {path}，请先 merge --dir {batch}")
+                return 1
+            for r in read_csv(path):
+                rec = dict(r)
+                rec["batch"] = batch.name
+                pv = rec.get("prompt_version") or ""
+                if pv:
+                    versions.add(pv)
+                rows.append(rec)
+        write_csv(out_dir / f"{kind}_all.csv", rows)
+        print(f"combine {len(rows)} 条 → {out_dir / (kind + '_all.csv')}")
+    if len(versions) > 1:
+        print(f"警告：总表含多个 prompt_version {sorted(versions)}，训 GB 前请统一 rejudge")
+    elif versions:
+        print(f"prompt_version={sorted(versions)}")
     return 0
 
 
@@ -517,11 +637,41 @@ def build_parser() -> argparse.ArgumentParser:
     rj.add_argument("--dir", required=True)
     rj.add_argument("--prompt-version", required=True)
     rj.add_argument("--lessons", default="")
+    rj.add_argument(
+        "--output-cache",
+        default="cache",
+        help="scores.json 写入的批次内缓存目录；evidence.json 始终从 cache 读取",
+    )
+    rj.add_argument(
+        "--resume",
+        action="store_true",
+        help="已有相同 prompt_version 的 scores.json 则跳过",
+    )
     rj.set_defaults(func=cmd_rejudge)
 
     mg = sub.add_parser("merge", help="写出 training_detail / training_gb / alignment")
     mg.add_argument("--dir", required=True)
+    mg.add_argument(
+        "--scores-cache",
+        default="cache",
+        help="读取 scores.json 的批次内缓存目录；evidence.json 始终从 cache 读取",
+    )
+    mg.add_argument(
+        "--output-dir",
+        default="",
+        help="三张 CSV 的输出目录；默认写入批次目录",
+    )
     mg.set_defaults(func=cmd_merge)
+
+    cb = sub.add_parser("combine", help="把多年 merge 表拼成 *_all.csv")
+    cb.add_argument(
+        "--dirs",
+        nargs="+",
+        required=True,
+        help="已 merge 过的 dataset/20XX_spring 目录",
+    )
+    cb.add_argument("--out", default="dataset", help="写出 training_*_all.csv 的目录")
+    cb.set_defaults(func=cmd_combine)
     return p
 
 

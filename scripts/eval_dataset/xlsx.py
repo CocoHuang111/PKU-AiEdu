@@ -33,8 +33,14 @@ def _shared_strings(z: zipfile.ZipFile) -> list[str]:
     return out
 
 
-def read_sheet_rows(path: str | Path) -> list[dict[str, str]]:
-    """返回第一张表：表头为键的 dict 列表。单元格一律转成 str。"""
+def read_sheet_rows(
+    path: str | Path, *, keep_blank_names: bool = False
+) -> list[dict[str, str]]:
+    """返回第一张表：表头为键的 dict 列表。单元格一律转成 str。
+
+    inventory 默认忽略没有姓名的续行。专家规则长表需要保留这类行，再按原表
+    顺序向下填充姓名，因此通过 ``keep_blank_names`` 显式开启，避免改变旧流程。
+    """
     path = Path(path)
     with zipfile.ZipFile(path) as z:
         ss = _shared_strings(z)
@@ -64,6 +70,11 @@ def read_sheet_rows(path: str | Path) -> list[dict[str, str]]:
     if not grid:
         return []
     header_row = min(grid)
+    for r in sorted(grid):
+        vals = [str(v).strip() for v in grid[r].values()]
+        if "姓名" in vals:
+            header_row = r
+            break
     headers = grid[header_row]
     max_col = max(headers)
     names = [headers.get(i, f"col{i}").strip() or f"col{i}" for i in range(1, max_col + 1)]
@@ -73,6 +84,9 @@ def read_sheet_rows(path: str | Path) -> list[dict[str, str]]:
             continue
         cells = grid[r]
         rec = {names[i - 1]: str(cells.get(i, "")).strip() for i in range(1, len(names) + 1)}
+        name = (rec.get("姓名") or "").strip()
+        if name in {"姓名", "序号"} or (not keep_blank_names and not name):
+            continue
         if any(rec.values()):
             records.append(rec)
     return records
