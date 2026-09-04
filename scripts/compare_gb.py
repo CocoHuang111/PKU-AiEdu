@@ -26,6 +26,9 @@ SHORT = {
     "llm_reg": "五维回归",
     "llm_cls5": "五维5类",
     "llm_cls8": "五维8类",
+    "obj_cls5": "客+五5类",
+    "obj_only_cls5": "客观5类",
+    "ind_cls5": "二级5类",
     "obj_only_reg": "客观回归",
     "ind_reg": "二级回归",
 }

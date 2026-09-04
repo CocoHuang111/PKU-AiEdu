@@ -19,9 +19,9 @@
       </el-menu>
     </header>
 
-    <el-main class="main">
-      <router-view />
-    </el-main>
+      <el-main class="main" :class="{ flush: $route.path === '/qa' || $route.path === '/evaluation' }">
+        <router-view />
+      </el-main>
   </el-container>
 </template>
 
@@ -90,5 +90,10 @@
   padding: 16px;
   background: #f5f7fa;
   overflow-y: auto;
+}
+.main.flush {
+  padding: 0;
+  overflow: hidden;
+  background: #fff;
 }
 </style>

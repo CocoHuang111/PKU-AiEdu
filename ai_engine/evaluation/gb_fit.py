@@ -59,6 +59,24 @@ VARIANTS: dict[str, dict[str, Any]] = {
         "task": "classify",
         "n_classes": 5,
     },
+    "obj_cls5": {
+        "title": "客观特征+五维 5分类",
+        "features": "all",
+        "task": "classify",
+        "n_classes": 5,
+    },
+    "obj_only_cls5": {
+        "title": "只用客观特征 5分类",
+        "features": "objective",
+        "task": "classify",
+        "n_classes": 5,
+    },
+    "ind_cls5": {
+        "title": "只用二级指标 5分类",
+        "features": "indicators",
+        "task": "classify",
+        "n_classes": 5,
+    },
     "llm_cls8": {
         "title": "五维 8分类",
         "features": "llm",
@@ -80,6 +98,14 @@ VARIANTS: dict[str, dict[str, Any]] = {
 }
 
 CORE_KEYS = ("obj_reg", "llm_reg", "llm_cls5", "llm_cls8")
+SIX_KEYS = (
+    "llm_reg",
+    "obj_reg",
+    "llm_cls5",
+    "obj_cls5",
+    "obj_only_cls5",
+    "ind_cls5",
+)
 
 
 def _require_sklearn() -> None:

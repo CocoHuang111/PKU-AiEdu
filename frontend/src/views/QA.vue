@@ -1,127 +1,227 @@
 <template>
   <div class="qa">
-    <!-- 会话侧栏 -->
-    <aside class="sessions">
-      <div class="sessions-head">
-        <span>历史会话</span>
-        <el-button size="small" type="primary" plain @click="newSession">+ 新建</el-button>
-      </div>
-      <div class="sessions-list">
-        <div v-if="!sessions.length" class="empty-hint">暂无会话</div>
-        <div
-          v-for="s in sessions"
-          :key="s.id"
-          class="session"
-          :class="{ active: s.id === sessionId }"
-          @click="openSession(s.id)"
-        >
-          <div class="session-title">{{ s.title }}</div>
-          <div class="session-time">{{ formatTime(s.updated_at) }}</div>
-          <el-button
-            class="session-del"
-            text
-            type="danger"
-            size="small"
-            @click.stop="removeSession(s.id)"
-          >
-            删除
-          </el-button>
+    <aside class="sidebar" :class="{ open: sidebarOpen }">
+      <div class="sidebar-inner">
+        <div class="drawer-head">
+          <span class="drawer-title">历史会话</span>
+          <div class="drawer-actions">
+            <button class="icon-btn" type="button" title="新对话" @click="newSession">
+              <el-icon :size="18"><Plus /></el-icon>
+            </button>
+            <button class="icon-btn" type="button" title="收起" @click="sidebarOpen = false">
+              <el-icon :size="18"><Close /></el-icon>
+            </button>
+          </div>
+        </div>
+        <div class="drawer-list">
+          <div v-if="!sessions.length" class="empty-hint">还没有会话</div>
+          <template v-else>
+            <section v-for="group in sessionGroups" :key="group.key" class="session-group">
+              <div class="group-label" :class="group.key">{{ group.label }}</div>
+              <div v-if="!group.items.length" class="empty-hint">暂无会话</div>
+              <div
+                v-for="s in group.items"
+                :key="s.id"
+                class="session"
+                :class="{ active: s.id === sessionId }"
+                @click="openSession(s.id)"
+              >
+                <div class="session-main">
+                  <el-icon class="session-icon" :size="14"><ChatDotRound /></el-icon>
+                  <div class="session-text">
+                    <div class="session-title">
+                      <el-icon v-if="s.pinned" class="pin-mark" :size="12"><Top /></el-icon>
+                      <span class="session-name">{{ s.title }}</span>
+                    </div>
+                    <div class="session-time">{{ formatTime(s.updated_at) }}</div>
+                  </div>
+                </div>
+                <el-dropdown
+                  trigger="click"
+                  @command="(cmd) => onSessionCommand(s, cmd)"
+                  @click.stop
+                >
+                  <button class="more-btn" type="button" title="更多" @click.stop>
+                    <el-icon :size="16"><MoreFilled /></el-icon>
+                  </button>
+                  <template #dropdown>
+                    <el-dropdown-menu>
+                      <el-dropdown-item command="rename">重命名</el-dropdown-item>
+                      <el-dropdown-item command="pin">
+                        {{ s.pinned ? '取消置顶' : '置顶' }}
+                      </el-dropdown-item>
+                      <el-dropdown-item command="delete" divided>删除</el-dropdown-item>
+                    </el-dropdown-menu>
+                  </template>
+                </el-dropdown>
+              </div>
+            </section>
+          </template>
         </div>
       </div>
     </aside>
 
-    <!-- 对话区 -->
-    <section class="chat">
-      <div ref="bodyEl" class="chat-body">
-        <div v-if="!messages.length" class="chat-empty">
-          <div class="chat-empty-icon">🎓</div>
-          <h3>教学智能问答</h3>
-          <p>基于教育学理论、教学沙龙记录与你的历史评估报告，回答教学相关问题。</p>
-          <div class="samples">
-            <el-tag
-              v-for="q in SAMPLES"
-              :key="q"
-              class="sample"
-              effect="plain"
-              @click="input = q"
+    <div class="stage">
+      <header class="chat-top">
+        <div class="top-left">
+          <template v-if="!sidebarOpen">
+            <button
+              class="icon-btn"
+              type="button"
+              title="历史会话"
+              @click="sidebarOpen = true"
             >
-              {{ q }}
-            </el-tag>
-          </div>
+              <el-icon :size="20"><ChatLineRound /></el-icon>
+            </button>
+            <button class="icon-btn" type="button" title="新对话" @click="newSession">
+              <el-icon :size="20"><Plus /></el-icon>
+            </button>
+          </template>
         </div>
+        <div class="top-heading">
+          <div class="top-title">{{ currentTitle }}</div>
+          <el-dropdown
+            v-if="sessionId"
+            trigger="click"
+            @command="(cmd) => onCurrentCommand(cmd)"
+          >
+            <button class="more-btn header-more" type="button" title="更多">
+              <el-icon :size="16"><MoreFilled /></el-icon>
+            </button>
+            <template #dropdown>
+              <el-dropdown-menu>
+                <el-dropdown-item command="rename">重命名</el-dropdown-item>
+                <el-dropdown-item command="pin">
+                  {{ currentPinned ? '取消置顶' : '置顶' }}
+                </el-dropdown-item>
+                <el-dropdown-item command="delete" divided>删除</el-dropdown-item>
+              </el-dropdown-menu>
+            </template>
+          </el-dropdown>
+        </div>
+      </header>
 
-        <div v-for="(m, i) in messages" :key="i" class="msg" :class="m.role">
-          <div v-if="m.role === 'user'" class="bubble user">{{ m.content }}</div>
-          <div v-else class="bubble assistant">
-            <!-- 检索规划：调试检索质量的窗口 -->
-            <div v-if="m.plan" class="plan">
-              <span class="plan-label">检索关键词</span>
-              <el-tag v-for="q in m.plan.queries" :key="q" size="small" effect="plain">
-                {{ q }}
-              </el-tag>
-              <span class="plan-label">语料库</span>
-              <el-tag
-                v-for="c in m.plan.corpora"
-                :key="c"
-                size="small"
-                type="info"
-                effect="plain"
+      <section class="chat">
+        <div ref="bodyEl" class="chat-body">
+          <div v-if="!messages.length" class="chat-empty">
+            <h1>有什么教学问题？</h1>
+            <p>基于教育学理论、教学沙龙记录与你的历史评估报告来回答。</p>
+            <div class="samples">
+              <button
+                v-for="q in SAMPLES"
+                :key="q"
+                type="button"
+                class="sample"
+                @click="useSample(q)"
               >
-                {{ corpusLabel(c) }}
-              </el-tag>
+                {{ q }}
+              </button>
             </div>
+          </div>
 
-            <div class="markdown" v-html="renderMd(m.content)"></div>
-            <span v-if="m.streaming" class="cursor">▋</span>
-
-            <el-collapse v-if="m.citations?.length" class="citations">
-              <el-collapse-item :title="`引用来源（${m.citations.length}）`" name="c">
-                <div v-for="c in m.citations" :key="c.index" class="citation">
-                  <div class="citation-head">
-                    <el-tag size="small" effect="plain">[{{ c.index }}]</el-tag>
-                    <span class="citation-corpus">{{ c.corpus_label }}</span>
-                    <span class="citation-source">{{ c.source }}</span>
-                    <span class="citation-score">相似度 {{ c.score }}</span>
-                  </div>
-                  <div class="citation-text">{{ c.snippet }}</div>
+          <div v-else class="thread">
+            <div v-for="(m, i) in messages" :key="i" class="msg" :class="m.role">
+              <div v-if="m.role === 'user'" class="bubble user">{{ m.content }}</div>
+              <div v-else class="assistant">
+                <div v-if="m.plan" class="plan">
+                  <span class="plan-label">检索</span>
+                  <el-tag v-for="q in m.plan.queries" :key="q" size="small" effect="plain">
+                    {{ q }}
+                  </el-tag>
+                  <el-tag
+                    v-for="c in m.plan.corpora"
+                    :key="c"
+                    size="small"
+                    type="info"
+                    effect="plain"
+                  >
+                    {{ corpusLabel(c) }}
+                  </el-tag>
                 </div>
-              </el-collapse-item>
-            </el-collapse>
+
+                <div v-if="m.content" class="markdown" v-html="renderMd(m.content)"></div>
+                <span v-if="m.streaming" class="stream-status">
+                  <span v-if="m.thinking" class="thinking">思考中<span class="dots"></span></span>
+                  <span class="cursor">▋</span>
+                </span>
+
+                <el-collapse v-if="m.citations?.length" class="citations">
+                  <el-collapse-item :title="`来源（${m.citations.length}）`" name="c">
+                    <div v-for="c in m.citations" :key="c.index" class="citation">
+                      <div class="citation-head">
+                        <el-tag size="small" effect="plain">[{{ c.index }}]</el-tag>
+                        <span class="citation-corpus">{{ c.corpus_label }}</span>
+                        <span class="citation-source">{{ c.source }}</span>
+                        <span class="citation-score">相似度 {{ c.score }}</span>
+                      </div>
+                      <div class="citation-text">{{ c.snippet }}</div>
+                    </div>
+                  </el-collapse-item>
+                </el-collapse>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- 输入区 -->
-      <footer class="chat-footer">
-        <div class="corpus-bar">
-          <span class="corpus-label">语料库</span>
-          <el-checkbox-group v-model="selectedCorpora" size="small">
-            <el-checkbox v-for="c in corpora" :key="c.name" :value="c.name" :disabled="!c.count">
-              {{ c.label }}（{{ c.count }}）
-            </el-checkbox>
-          </el-checkbox-group>
-          <span class="corpus-hint">不勾选则检索全部语料库（相似度≥50%才引用，最多12条）</span>
-        </div>
-        <div class="input-row">
-          <el-input
-            v-model="input"
-            type="textarea"
-            :rows="2"
-            resize="none"
-            placeholder="输入教学相关问题，Enter 发送，Shift+Enter 换行"
-            @keydown.enter.exact.prevent="send"
-          />
-          <el-button type="primary" :loading="sending" :disabled="!input.trim()" @click="send">
-            发送
-          </el-button>
-        </div>
-      </footer>
-    </section>
+        <footer class="composer-wrap">
+          <div class="composer">
+            <div class="composer-box">
+              <el-popover placement="top-start" :width="280" trigger="click">
+                <template #reference>
+                  <button
+                    class="plus-btn"
+                    type="button"
+                    :class="{ active: corporaNarrowed }"
+                    title="检索范围"
+                  >
+                    <el-icon :size="18"><Plus /></el-icon>
+                  </button>
+                </template>
+                <div class="corpus-menu">
+                  <div class="corpus-menu-title">检索范围</div>
+                  <el-checkbox-group v-model="selectedCorpora">
+                    <el-checkbox
+                      v-for="c in corpora"
+                      :key="c.name"
+                      :value="c.name"
+                      :disabled="!c.count"
+                    >
+                      {{ c.label }}（{{ c.count }}）
+                    </el-checkbox>
+                  </el-checkbox-group>
+                  <div class="corpus-hint">默认全选。取消勾选则不检索该库。</div>
+                </div>
+              </el-popover>
+              <el-input
+                v-model="input"
+                type="textarea"
+                :autosize="{ minRows: 1, maxRows: 6 }"
+                resize="none"
+                placeholder="问任何教学相关的问题"
+                @keydown.enter.exact.prevent="send"
+              />
+              <el-button
+                class="send-btn"
+                type="primary"
+                circle
+                :loading="sending"
+                :disabled="!input.trim()"
+                @click="send"
+              >
+                <el-icon v-if="!sending" :size="16"><Promotion /></el-icon>
+              </el-button>
+            </div>
+            <div class="composer-hint">Enter 发送，Shift+Enter 换行</div>
+          </div>
+        </footer>
+      </section>
+    </div>
   </div>
 </template>
 
 <script setup>
-import { nextTick, onMounted, ref } from 'vue'
+import { computed, nextTick, onMounted, ref } from 'vue'
+import { ChatDotRound, ChatLineRound, Close, MoreFilled, Plus, Promotion, Top } from '@element-plus/icons-vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
@@ -142,7 +242,35 @@ const corpora = ref([])
 const selectedCorpora = ref([])
 const input = ref('')
 const sending = ref(false)
+const sidebarOpen = ref(true)
 const bodyEl = ref(null)
+
+const currentTitle = computed(() => {
+  if (!sessionId.value) return '新对话'
+  return sessions.value.find((s) => s.id === sessionId.value)?.title || '对话'
+})
+
+const currentPinned = computed(() => {
+  return !!sessions.value.find((s) => s.id === sessionId.value)?.pinned
+})
+
+const sessionGroups = computed(() => {
+  const pinned = sessions.value.filter((s) => s.pinned)
+  const recent = sessions.value.filter((s) => !s.pinned)
+  const groups = []
+  if (pinned.length) groups.push({ key: 'pinned', label: '置顶', items: pinned })
+  groups.push({ key: 'recent', label: '最近', items: recent })
+  return groups
+})
+
+const selectableNames = computed(() =>
+  corpora.value.filter((c) => c.count).map((c) => c.name)
+)
+const corporaNarrowed = computed(() => {
+  const all = selectableNames.value
+  if (!all.length) return false
+  return all.length !== selectedCorpora.value.length || all.some((n) => !selectedCorpora.value.includes(n))
+})
 
 function renderMd(text) {
   return DOMPurify.sanitize(marked.parse(text || ''))
@@ -175,6 +303,7 @@ async function loadSessions() {
 async function loadCorpora() {
   try {
     corpora.value = await qaApi.corpora()
+    selectedCorpora.value = corpora.value.filter((c) => c.count).map((c) => c.name)
   } catch {
     /* 拦截器已提示 */
   }
@@ -207,6 +336,100 @@ async function removeSession(id) {
   loadSessions()
 }
 
+async function renameSession(id) {
+  const current = sessions.value.find((s) => s.id === id)?.title || ''
+  let name
+  try {
+    const { value } = await ElMessageBox.prompt('请输入新的会话名称', '重命名', {
+      confirmButtonText: '保存',
+      cancelButtonText: '取消',
+      inputValue: current,
+      inputPattern: /\S/,
+      inputErrorMessage: '名称不能为空',
+    })
+    name = (value || '').trim()
+  } catch {
+    return
+  }
+  if (!name) return
+  await qaApi.patchSession(id, { title: name.slice(0, 80) })
+  await loadSessions()
+}
+
+async function togglePin(id, pinned) {
+  await qaApi.patchSession(id, { pinned })
+  await loadSessions()
+}
+
+function onSessionCommand(s, cmd) {
+  if (cmd === 'rename') renameSession(s.id)
+  else if (cmd === 'pin') togglePin(s.id, !s.pinned)
+  else if (cmd === 'delete') removeSession(s.id)
+}
+
+function onCurrentCommand(cmd) {
+  const s = sessions.value.find((item) => item.id === sessionId.value)
+  if (!s) return
+  onSessionCommand(s, cmd)
+}
+
+function useSample(q) {
+  input.value = q
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+function createLineRevealer(reply) {
+  let committed = ''
+  let pending = ''
+  const queue = []
+  let running = false
+
+  function paint() {
+    reply.content = committed + pending
+    reply.thinking = !reply.content
+    scrollDown()
+  }
+
+  async function run() {
+    if (running) return
+    running = true
+    while (queue.length) {
+      committed += queue.shift()
+      paint()
+      if (queue.length) await sleep(queue.length > 12 ? 16 : 40)
+    }
+    running = false
+  }
+
+  return {
+    push(text) {
+      pending += text
+      const parts = pending.split('\n')
+      pending = parts.pop() ?? ''
+      if (parts.length) {
+        for (const line of parts) queue.push(`${line}\n`)
+        run()
+      }
+      paint()
+    },
+    async flush() {
+      if (pending) {
+        queue.push(pending)
+        pending = ''
+      }
+      while (queue.length || running) {
+        await run()
+        if (!queue.length) break
+        await sleep(8)
+      }
+      paint()
+    },
+  }
+}
+
 async function send() {
   const question = input.value.trim()
   if (!question || sending.value) return
@@ -221,8 +444,10 @@ async function send() {
     citations: [],
     plan: null,
     streaming: true,
+    thinking: true,
   }
   messages.value.push(reply)
+  const reveal = createLineRevealer(reply)
   scrollDown()
 
   try {
@@ -231,10 +456,8 @@ async function send() {
       (event) => {
         if (event.type === 'plan') reply.plan = event.data
         else if (event.type === 'citations') reply.citations = event.data
-        else if (event.type === 'chunk') {
-          reply.content += event.data
-          scrollDown()
-        } else if (event.type === 'session') {
+        else if (event.type === 'chunk') reveal.push(event.data)
+        else if (event.type === 'session') {
           sessionId.value = event.session_id
           loadSessions()
         } else if (event.type === 'error') {
@@ -242,10 +465,13 @@ async function send() {
         }
       }
     )
+    await reveal.flush()
   } catch (e) {
+    await reveal.flush()
     reply.content += `\n\n（请求失败：${e.message}）`
     ElMessage.error(e.message)
   } finally {
+    reply.thinking = false
     reply.streaming = false
     sending.value = false
     scrollDown()
@@ -260,156 +486,230 @@ onMounted(() => {
 
 <style scoped>
 .qa {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  gap: 16px;
-  height: calc(100vh - 88px);
-}
-
-/* 会话侧栏 */
-.sessions {
-  background: #fff;
-  border: 1px solid #e8eaed;
-  border-radius: 6px;
+  height: calc(100vh - 56px);
   display: flex;
-  flex-direction: column;
+  background: #fff;
   overflow: hidden;
 }
-.sessions-head {
-  padding: 12px;
-  border-bottom: 1px solid #ebeef5;
+
+.sidebar {
+  width: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #f7f7f8;
+  border-right: 1px solid transparent;
+  transition: width 0.2s ease, border-color 0.2s ease;
+}
+.sidebar.open {
+  width: 280px;
+  border-right-color: #ececec;
+}
+.sidebar-inner {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stage {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.chat-top {
+  height: 52px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-size: 13px;
-  font-weight: 600;
+  gap: 8px;
+  padding: 0 16px;
 }
-.sessions-list {
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.top-heading {
   flex: 1;
-  overflow-y: auto;
-  padding: 8px;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
-.session {
-  position: relative;
-  padding: 9px 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 4px;
-  border-left: 3px solid transparent;
+.top-heading :deep(.el-dropdown) {
+  margin-left: auto;
+  flex-shrink: 0;
 }
-.session:hover {
-  background: #f7f8fa;
-}
-.session:hover .session-del {
-  display: block;
-}
-.session.active {
-  background: #fce8e8;
-  border-left-color: #a61b1b;
-}
-.session-title {
-  font-size: 13px;
+.top-title {
+  min-width: 0;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
   color: #303133;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.session-time {
-  font-size: 11px;
-  color: #a8abb2;
-  margin-top: 2px;
-}
-.session-del {
-  display: none;
-  position: absolute;
-  right: 4px;
-  top: 6px;
+  text-align: left;
 }
 
-/* 对话区 */
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  color: #4b4b4b;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn:hover {
+  background: #f3f3f3;
+}
+
 .chat {
-  background: #fff;
-  border: 1px solid #e8eaed;
-  border-radius: 6px;
+  flex: 1;
+  min-height: 0;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
+
 .chat-body {
   flex: 1;
   overflow-y: auto;
-  padding: 24px 32px;
 }
 
 .chat-empty {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 80px;
   text-align: center;
-  padding: 70px 20px;
 }
-.chat-empty-icon {
-  font-size: 42px;
-}
-.chat-empty h3 {
-  margin: 14px 0 8px;
-  color: #303133;
+.chat-empty h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1f1f1f;
+  letter-spacing: 0.5px;
 }
 .chat-empty p {
-  color: #909399;
+  margin: 12px 0 0;
+  color: #8a8a8a;
   font-size: 14px;
-  max-width: 460px;
-  margin: 0 auto;
-  line-height: 1.8;
+  max-width: 420px;
+  line-height: 1.7;
 }
 .samples {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 560px;
+  width: 100%;
 }
 .sample {
+  text-align: left;
+  padding: 14px 16px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  border-radius: 14px;
+  font-size: 13px;
+  color: #303133;
   cursor: pointer;
+  line-height: 1.5;
+}
+.sample:hover {
+  background: #f7f7f7;
+  border-color: #dcdcdc;
+}
+
+.thread {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 8px 20px 24px;
+  width: 100%;
 }
 
 .msg {
   display: flex;
-  margin-bottom: 18px;
+  margin: 18px 0;
 }
 .msg.user {
   justify-content: flex-end;
 }
-
-.bubble {
-  max-width: 82%;
-  padding: 11px 15px;
-  border-radius: 10px;
-  font-size: 14px;
-  line-height: 1.8;
+.msg.assistant {
+  justify-content: flex-start;
 }
+
 .bubble.user {
-  background: linear-gradient(135deg, #8b1010, #a61b1b);
-  color: #fff;
+  max-width: 72%;
+  padding: 10px 16px;
+  border-radius: 18px;
+  background: #f4f4f4;
+  color: #1f1f1f;
+  font-size: 15px;
+  line-height: 1.7;
   white-space: pre-wrap;
 }
-.bubble.assistant {
-  background: #fff;
-  border: 1px solid #f0e0e0;
-  color: #303133;
+
+.assistant {
+  width: 100%;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #1f1f1f;
 }
 
-/* 检索规划 */
 .plan {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 5px;
-  padding-bottom: 9px;
   margin-bottom: 10px;
-  border-bottom: 1px dashed #f0e0e0;
 }
 .plan-label {
   font-size: 12px;
   color: #a8abb2;
-  margin-right: 2px;
+}
+
+.stream-status {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  min-height: 1.8em;
+}
+.thinking {
+  font-size: 14px;
+  color: #a61b1b;
+  letter-spacing: 0.04em;
+}
+.dots::after {
+  display: inline-block;
+  width: 1.4em;
+  text-align: left;
+  content: '';
+  animation: thinking-dots 1.2s steps(4, end) infinite;
+}
+@keyframes thinking-dots {
+  0% {
+    content: '';
+  }
+  25% {
+    content: '.';
+  }
+  50% {
+    content: '..';
+  }
+  75% {
+    content: '...';
+  }
 }
 
 .cursor {
@@ -422,16 +722,18 @@ onMounted(() => {
   }
 }
 
-/* 引用 */
 .citations {
   margin-top: 10px;
 }
 .citations :deep(.el-collapse-item__header) {
   font-size: 12px;
-  color: #c47a7a;
+  color: #a61b1b;
   height: 32px;
   line-height: 32px;
   border-bottom: none;
+}
+.citations :deep(.el-collapse-item__arrow) {
+  color: #a61b1b;
 }
 .citation {
   padding: 8px 0;
@@ -461,11 +763,10 @@ onMounted(() => {
   line-height: 1.7;
 }
 
-/* Markdown */
 .markdown :deep(h2),
 .markdown :deep(h3) {
-  font-size: 14px;
-  color: #a61b1b;
+  font-size: 15px;
+  color: #1f1f1f;
   margin: 14px 0 6px;
 }
 .markdown :deep(p) {
@@ -488,38 +789,255 @@ onMounted(() => {
 .markdown :deep(pre) {
   background: #f7f8fa;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   overflow-x: auto;
 }
 
-/* 输入区 */
-.chat-footer {
-  border-top: 1px solid #ebeef5;
-  padding: 12px 16px;
-  background: #fdfdfd;
+.composer-wrap {
+  flex-shrink: 0;
+  padding: 0 16px 16px;
 }
-.corpus-bar {
-  display: flex;
+.composer {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.composer-box {
+  position: relative;
+  border: 1px solid #e4e4e4;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  padding: 10px 52px 10px 48px;
+}
+.composer-box:focus-within {
+  border-color: #d0d0d0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+.composer-box :deep(.el-textarea__inner) {
+  box-shadow: none;
+  border: none;
+  padding: 4px 0;
+  background: transparent;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.plus-btn {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #f4f4f4;
+  color: #4b4b4b;
+  cursor: pointer;
+  display: inline-flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 10px;
+  justify-content: center;
 }
-.corpus-label {
-  font-size: 12px;
-  color: #909399;
+.plus-btn:hover,
+.plus-btn.active {
+  background: #f5e6e6;
+  color: #a61b1b;
 }
-.corpus-hint {
+.send-btn {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  width: 34px;
+  height: 34px;
+}
+.composer-hint {
+  text-align: center;
   font-size: 12px;
   color: #c0c4cc;
+  margin-top: 8px;
 }
-.input-row {
+
+.corpus-menu-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #303133;
+  margin-bottom: 10px;
+}
+.corpus-menu :deep(.el-checkbox-group) {
   display: flex;
-  gap: 10px;
-  align-items: flex-end;
+  flex-direction: column;
+  gap: 6px;
 }
-.input-row .el-button {
-  height: 60px;
-  padding: 0 24px;
+.corpus-hint {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #c0c4cc;
+  line-height: 1.5;
+}
+
+.drawer-head {
+  height: 64px;
+  padding: 0 8px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #303133;
+  flex-shrink: 0;
+  border-bottom: 1px solid #f0e0e0;
+}
+.drawer-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: #7b1113;
+  position: relative;
+  padding-left: 10px;
+}
+.drawer-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  border-radius: 2px;
+  background: #a61b1b;
+}
+.drawer-actions {
+  display: flex;
+  align-items: center;
+}
+.drawer-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 8px 16px;
+}
+.session-group + .session-group {
+  margin-top: 14px;
+}
+.group-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  padding: 4px 8px 8px;
+}
+.group-label.pinned {
+  color: #a61b1b;
+}
+.group-label.recent {
+  color: #8a8a8a;
+}
+.group-label.pinned::before,
+.group-label.recent::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #d8d8d8;
+}
+.group-label.pinned::before {
+  background: #a61b1b;
+}
+.empty-hint {
+  color: #909399;
+  font-size: 13px;
+  text-align: center;
+  padding: 24px 0;
+}
+.session {
+  position: relative;
+  padding: 10px 8px 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.session:hover {
+  background: #ececed;
+}
+.session.active {
+  background: #f5e6e6;
+}
+.session.active .session-name {
+  color: #7b1113;
+}
+.session-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+.session-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #8a8a8a;
+}
+.session.active .session-icon {
+  color: #a61b1b;
+}
+.session-text {
+  min-width: 0;
+  flex: 1;
+}
+.session-title {
+  font-size: 13px;
+  color: #303133;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.session-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.session-time {
+  font-size: 11px;
+  color: #a8abb2;
+  margin-top: 2px;
+}
+.session :deep(.el-dropdown) {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.more-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  color: #909399;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  opacity: 1;
+}
+.more-btn:hover {
+  background: #fff;
+  color: #303133;
+}
+.header-more:hover {
+  background: #f3f3f3;
+}
+
+@media (max-width: 640px) {
+  .samples {
+    grid-template-columns: 1fr;
+  }
+  .chat-empty h1 {
+    font-size: 24px;
+  }
+  .bubble.user {
+    max-width: 88%;
+  }
 }
 </style>

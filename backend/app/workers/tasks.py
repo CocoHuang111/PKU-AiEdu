@@ -9,7 +9,7 @@ from __future__ import annotations
 import asyncio
 import traceback
 
-from ai_engine.evaluation import evaluate_video, index_report
+from ai_engine.evaluation import evaluate_session, index_report
 from ai_engine.evaluation.exceptions import EvaluationCancelled
 
 from ..core import db
@@ -35,10 +35,12 @@ STEP_LABELS = {
 
 async def run_evaluation(
     task_id: str,
-    video_path: str,
+    video_path: str | None = None,
     reference: str | None = None,
     syllabus_path: str | None = None,
     courseware_path: str | None = None,
+    transcript_text: str | None = None,
+    transcript_path: str | None = None,
 ) -> None:
     if db.is_task_cancelled(task_id):
         return
@@ -60,12 +62,14 @@ async def run_evaluation(
 
     try:
         result = await asyncio.to_thread(
-            evaluate_video,
+            evaluate_session,
             video_path,
             progress,
             reference,
             syllabus_path,
             courseware_path,
+            transcript_text,
+            transcript_path,
         )
         if db.is_task_cancelled(task_id):
             return

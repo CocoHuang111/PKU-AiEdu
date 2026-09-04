@@ -16,8 +16,13 @@ class QAForm(BaseModel):
     question: str = Field(..., min_length=1)
     session_id: str | None = None
     corpora: list[str] | None = Field(
-        None, description="限定检索的语料库；为空则由模型自动路由"
+        None, description="限定检索的语料库；省略则全库，空列表则不检索"
     )
+
+
+class SessionPatch(BaseModel):
+    title: str | None = Field(None, min_length=1, max_length=80)
+    pinned: bool | None = None
 
 
 class SyllabusTextForm(BaseModel):

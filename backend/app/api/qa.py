@@ -12,7 +12,7 @@ from ai_engine.qa import ask, ask_stream
 from ai_engine.rag import collection_stats
 
 from ..core import db
-from ..schemas import QAForm
+from ..schemas import QAForm, SessionPatch
 
 router = APIRouter(prefix="/api/qa", tags=["教学智能问答"])
 
@@ -120,6 +120,20 @@ async def get_session(session_id: str) -> dict:
     session = await db.get_session(session_id)
     if not session:
         raise HTTPException(404, "会话不存在")
+    return session
+
+
+@router.patch("/session/{session_id}")
+async def patch_session(session_id: str, form: SessionPatch) -> dict:
+    if form.title is None and form.pinned is None:
+        raise HTTPException(400, "没有要修改的字段")
+    title = form.title.strip() if form.title is not None else None
+    if title is not None and not title:
+        raise HTTPException(400, "名称不能为空")
+    session = await db.update_session(session_id, title=title, pinned=form.pinned)
+    if not session:
+        raise HTTPException(404, "会话不存在")
+    session.pop("history", None)
     return session
 
 

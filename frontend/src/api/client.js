@@ -16,19 +16,35 @@ export default client
 
 // ---------------------------------------------------------------- 视频评估
 export const evaluationApi = {
-  uploadVideo(file, onProgress, extras) {
-    const opts = typeof extras === 'string' ? { reference: extras } : extras || {}
+  uploadMaterials(files, onProgress) {
+    const opts = files || {}
     const form = new FormData()
-    form.append('file', file)
-    if (opts.reference?.trim()) form.append('reference', opts.reference.trim())
+    if (opts.video) form.append('file', opts.video)
     if (opts.syllabus) form.append('syllabus', opts.syllabus)
     if (opts.courseware) form.append('courseware', opts.courseware)
+    if (opts.transcript) form.append('transcript', opts.transcript)
+    if (opts.transcriptText?.trim()) form.append('transcript_text', opts.transcriptText.trim())
+    if (opts.reference?.trim()) form.append('reference', opts.reference.trim())
     return client.post('/api/evaluation/upload_video', form, {
       headers: { 'Content-Type': 'multipart/form-data' },
       onUploadProgress: (e) => {
         if (onProgress && e.total) onProgress(Math.round((e.loaded / e.total) * 100))
       },
     })
+  },
+  uploadVideo(file, onProgress, extras) {
+    const opts = typeof extras === 'string' ? { reference: extras } : extras || {}
+    return this.uploadMaterials(
+      {
+        video: file,
+        syllabus: opts.syllabus,
+        courseware: opts.courseware,
+        transcript: opts.transcript,
+        transcriptText: opts.transcriptText,
+        reference: opts.reference,
+      },
+      onProgress
+    )
   },
   listTasks: () => client.get('/api/evaluation/tasks'),
   getTask: (id) => client.get(`/api/evaluation/task/${id}`),
@@ -72,6 +88,7 @@ export const qaApi = {
   corpora: () => client.get('/api/qa/corpora'),
   sessions: () => client.get('/api/qa/sessions'),
   getSession: (id) => client.get(`/api/qa/session/${id}`),
+  patchSession: (id, data) => client.patch(`/api/qa/session/${id}`, data),
   deleteSession: (id) => client.delete(`/api/qa/session/${id}`),
 }
 

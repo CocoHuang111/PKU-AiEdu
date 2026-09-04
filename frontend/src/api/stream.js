@@ -16,7 +16,7 @@ export async function askStream({ question, sessionId, corpora }, onEvent, signa
     body: JSON.stringify({
       question,
       session_id: sessionId || null,
-      corpora: corpora?.length ? corpora : null,
+      corpora: Array.isArray(corpora) ? corpora : null,
     }),
     signal,
   })

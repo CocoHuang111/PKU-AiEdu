@@ -1,397 +1,418 @@
 <template>
-  <div class="layout">
-    <!-- ══════════════ 左栏 ══════════════ -->
-    <div class="left">
-      <el-card shadow="never" class="card">
-        <template #header><span class="card-title">上传教学视频</span></template>
-        <el-upload
-          drag
-          :auto-upload="false"
-          :show-file-list="false"
-          accept=".mp4,.avi,.mov,.mkv,.flv,.wmv,.webm,.m4v"
-          :on-change="onVideoChange"
-        >
-          <div class="upload-inner">
-            <div class="upload-icon">🎬</div>
-            <div class="upload-text">{{ videoFile ? videoFile.name : '拖入视频或点击选择' }}</div>
-            <div class="upload-hint">mp4 / mov / mkv 等，建议先用 5-15 分钟片段联调</div>
-          </div>
-        </el-upload>
-        <el-progress
-          v-if="uploading"
-          :percentage="uploadPercent"
-          :stroke-width="6"
-          style="margin-top: 10px"
-        />
-        <div class="mat-block">
-          <div class="mat-item">
-            <div class="ref-label">
-              课程大纲
-              <span class="ref-optional">选填</span>
-            </div>
-            <el-upload
-              :auto-upload="false"
-              :show-file-list="false"
-              accept=".pdf,.docx,.doc,.txt,.md,.html"
-              :on-change="onSyllabusChange"
-            >
-              <el-button size="small">{{ syllabusFile ? '更换文件' : '选择文件' }}</el-button>
-            </el-upload>
-            <div v-if="syllabusFile" class="mat-file">
-              {{ syllabusFile.name }}
-              <el-button text size="small" @click="syllabusFile = null">清除</el-button>
-            </div>
-            <div class="ref-hint">有则对照大纲安排评本节课完整性；没有则看转写是否闭环</div>
-          </div>
-          <div class="mat-item">
-            <div class="ref-label">
-              课件
-              <span class="ref-optional">选填</span>
-            </div>
-            <el-upload
-              :auto-upload="false"
-              :show-file-list="false"
-              accept=".pdf,.pptx,.ppt"
-              :on-change="onCoursewareChange"
-            >
-              <el-button size="small">{{ coursewareFile ? '更换文件' : '选择文件' }}</el-button>
-            </el-upload>
-            <div v-if="coursewareFile" class="mat-file">
-              {{ coursewareFile.name }}
-              <el-button text size="small" @click="coursewareFile = null">清除</el-button>
-            </div>
-            <div class="ref-hint">有则以上传课件评版式与可读性；没有则根据课堂关键帧判断</div>
+  <div class="eval">
+    <aside class="sidebar" :class="{ open: sidebarOpen }">
+      <div class="sidebar-inner">
+        <div class="drawer-head">
+          <span class="drawer-title">历史评估</span>
+          <div class="drawer-actions">
+            <button class="icon-btn" type="button" title="新建评估" @click="newEvaluation">
+              <el-icon :size="18"><Plus /></el-icon>
+            </button>
+            <button class="icon-btn" type="button" title="收起" @click="sidebarOpen = false">
+              <el-icon :size="18"><Close /></el-icon>
+            </button>
           </div>
         </div>
-        <el-button
-          type="primary"
-          style="width: 100%; margin-top: 12px"
-          :loading="uploading"
-          :disabled="!videoFile"
-          @click="startUpload"
-        >
-          开始评估
-        </el-button>
-      </el-card>
-
-      <el-card shadow="never" class="card">
-        <template #header>
-          <div class="card-header">
-            <span class="card-title">评估任务</span>
-            <el-button text size="small" @click="loadTasks">刷新</el-button>
-          </div>
-        </template>
-
-        <div v-if="!tasks.length" class="empty-hint">暂无任务</div>
-        <div
-          v-for="t in tasks"
-          :key="t.id"
-          class="task"
-          :class="{ active: t.id === activeId }"
-          @click="selectTask(t.id)"
-        >
-          <div class="task-top">
-            <el-tag :type="statusType(t.status)" size="small">{{ statusText(t.status) }}</el-tag>
-            <span class="task-name">{{ t.filename }}</span>
-            <el-button
+        <div class="task-list">
+          <div v-if="!tasks.length" class="empty-hint">暂无评估记录</div>
+          <div
+            v-for="t in tasks"
+            :key="t.id"
+            class="task"
+            :class="{ active: t.id === activeId }"
+            @click="selectTask(t.id)"
+          >
+            <div class="task-top">
+              <el-tag :type="statusType(t.status)" size="small">{{ statusText(t.status) }}</el-tag>
+              <span class="task-name">{{ t.filename }}</span>
+              <el-button
+                v-if="t.status === 'processing' || t.status === 'queued'"
+                text
+                type="danger"
+                size="small"
+                class="task-stop"
+                :loading="cancellingId === t.id"
+                @click.stop="cancelTask(t.id)"
+              >
+                停止
+              </el-button>
+            </div>
+            <el-progress
               v-if="t.status === 'processing' || t.status === 'queued'"
-              text
-              type="danger"
-              size="small"
-              class="task-stop"
-              :loading="cancellingId === t.id"
-              @click.stop="cancelTask(t.id)"
-            >
-              停止
-            </el-button>
+              :percentage="t.progress"
+              :stroke-width="4"
+              :show-text="false"
+              style="margin: 6px 0 4px"
+            />
+            <div class="task-meta">
+              <span>{{ t.step_label }}{{ stepDetail(t) }}</span>
+              <span v-if="t.summary">{{ t.summary.score }} 分 · {{ t.summary.grade }}</span>
+            </div>
+            <div v-if="t.error" class="task-error">{{ t.error }}</div>
           </div>
-          <el-progress
-            v-if="t.status === 'processing' || t.status === 'queued'"
-            :percentage="t.progress"
-            :stroke-width="4"
-            :show-text="false"
-            style="margin: 6px 0 4px"
-          />
-          <div class="task-meta">
-            <span>{{ t.step_label }}{{ stepDetail(t) }}</span>
-            <span v-if="t.summary">{{ t.summary.score }} 分 · {{ t.summary.grade }}</span>
-          </div>
-          <div v-if="t.error" class="task-error">{{ t.error }}</div>
-        </div>
-      </el-card>
-
-      <el-card shadow="never" class="card">
-        <template #header><span class="card-title">转写文本快速评估</span></template>
-        <div class="quick-hint">粘贴课堂转写文本，跳过 ASR 与视觉分析，直接验证五维打分</div>
-        <el-input v-model="quickText" type="textarea" :rows="5" placeholder="粘贴课堂转写文本…" />
-          <el-input
-            v-model="reference"
-            type="textarea"
-            :rows="3"
-            placeholder="课程大纲（选填）。有则对照大纲评完整性，没有则看转写是否闭环…"
-            style="margin-top: 8px"
-          />
-        <div class="quick-row">
-          <span>时长</span>
-          <el-input-number v-model="quickMinutes" :min="1" :max="240" size="small" />
-          <span>分钟</span>
-        </div>
-        <el-button
-          type="primary"
-          :loading="quickLoading"
-          :disabled="quickText.trim().length < 10"
-          style="width: 100%"
-          @click="runQuickEval"
-        >
-          开始评估
-        </el-button>
-      </el-card>
-    </div>
-
-    <!-- ══════════════ 右栏 ══════════════ -->
-    <div class="right">
-      <div v-if="!result" class="welcome">
-        <div class="welcome-icon">📊</div>
-        <h3>多模态课堂教学评估</h3>
-        <p>
-          上传教学视频后，系统会抽取音轨与关键帧，做语音转写、声学特征分析与视觉理解，
-          再依据五维指标体系逐项打分。课程大纲和课件可按需上传，用来对照本节课内容完整性和课件设计。
-        </p>
-        <div class="welcome-dims">
-          <span v-for="d in DIM_LABELS" :key="d">{{ d }}</span>
         </div>
       </div>
+    </aside>
 
-      <template v-else>
-        <!-- 总分 -->
-        <el-card shadow="never" class="card score-card">
-          <div class="score-value">{{ result.overall.score }}</div>
-          <div class="score-grade">{{ result.overall.grade }} 级 · {{ result.overall.grade_label }}</div>
-          <div class="score-meta">
-            课堂时长 {{ result.overall.duration_minutes }} 分钟 ·
-            {{ result.source === 'video' ? '视频完整评估' : '纯文本评估' }} ·
-            模态 {{ (result.overall.modalities || []).map((m) => MODALITY_LABEL[m]).join('/') }}
-            <el-tag v-if="result.has_syllabus" size="small" type="success" effect="plain" class="src-tag">已对照课程大纲</el-tag>
-            <el-tag v-if="result.has_courseware" size="small" type="success" effect="plain" class="src-tag">已对照上传课件</el-tag>
-            <el-tag
-              v-if="result.overall.score_source === 'gb_llm_cls5'"
-              size="small"
-              type="warning"
-              effect="plain"
-              class="src-tag"
+    <div class="stage">
+      <header class="stage-top">
+        <div class="top-left">
+          <template v-if="!sidebarOpen">
+            <button
+              class="icon-btn"
+              type="button"
+              title="历史评估"
+              @click="sidebarOpen = true"
             >
-              五维5分类 GB
-            </el-tag>
-          </div>
-          <div
-            v-if="result.overall.score_source === 'gb_llm_cls5' && result.overall.equal_weight_score != null"
-            class="score-note"
-          >
-            总分由 v9 五维 5 分类 GB 校准；Judge 等权平均 {{ result.overall.equal_weight_score }}
-          </div>
-          <div v-if="result.overall.skipped_indicators" class="score-warn">
-            {{ result.overall.skipped_indicators }} 个二级指标因缺少对应模态数据未参与评分
-          </div>
-        </el-card>
+              <el-icon :size="20"><Tickets /></el-icon>
+            </button>
+            <button class="icon-btn" type="button" title="新建评估" @click="newEvaluation">
+              <el-icon :size="20"><Plus /></el-icon>
+            </button>
+          </template>
+        </div>
+        <div class="top-title">{{ pageTitle }}</div>
+      </header>
 
-        <!-- 雷达 -->
-        <el-card shadow="never" class="card">
-          <template #header><span class="card-title">五维得分</span></template>
-          <div ref="radarEl" class="radar"></div>
-          <el-table :data="result.dimensions" size="small" border>
-            <el-table-column prop="label" label="维度" width="110" />
-            <el-table-column label="得分" width="80" align="center">
-              <template #default="{ row }">
-                <span v-if="row.assessed">{{ row.score }}</span>
-                <span v-else class="na">—</span>
-              </template>
-            </el-table-column>
-            <el-table-column label="等级" width="80" align="center">
-              <template #default="{ row }">
-                <el-tag v-if="row.assessed" :type="gradeType(row.grade)" size="small">
-                  {{ row.grade }}
-                </el-tag>
-                <span v-else class="na">未评估</span>
-              </template>
-            </el-table-column>
-            <el-table-column label="说明" min-width="240">
-              <template #default="{ row }">
-                <div v-if="row.assessed && row.dimension_rationale" class="dim-rationale">
-                  {{ row.dimension_rationale }}
+      <div class="stage-body">
+        <div v-if="!result" class="compose">
+          <section class="block">
+            <div class="block-title">上传评估材料</div>
+            <p class="compose-lead">
+              必须上传教学视频。课件、大纲、讲稿选填。有讲稿则直接当作转写，
+              不再跑语音识别；没有讲稿才从视频做语音转写。
+            </p>
+            <div class="welcome-dims">
+              <span v-for="d in DIM_LABELS" :key="d">{{ d }}</span>
+            </div>
+            <div class="slots">
+              <div class="slot">
+                <div class="slot-title">
+                  视频
+                  <span class="slot-flag">必填</span>
                 </div>
-                <div v-else>{{ row.description }}</div>
-                <el-tag
-                  v-if="row.score_source === 'weighted_fallback'"
-                  size="small"
-                  type="info"
-                  effect="plain"
-                  class="src-tag"
+                <el-upload
+                  drag
+                  :auto-upload="false"
+                  :show-file-list="false"
+                  accept=".mp4,.avi,.mov,.mkv,.flv,.wmv,.webm,.m4v"
+                  :on-change="onVideoChange"
                 >
-                  等权兜底{{ row.weighted_score != null ? ' ' + row.weighted_score : '' }}
-                </el-tag>
-              </template>
-            </el-table-column>
-          </el-table>
-        </el-card>
+                  <div class="upload-inner">
+                    <div class="upload-text">{{ videoFile ? videoFile.name : '拖入教学视频或点击选择' }}</div>
+                    <div class="upload-hint">mp4 / mov / mkv 等</div>
+                  </div>
+                </el-upload>
+                <div v-if="videoFile" class="mat-file">
+                  {{ videoFile.name }}
+                  <el-button text size="small" @click="videoFile = null">清除</el-button>
+                </div>
+                <div class="slot-hint">抽取音轨、关键帧与课件切换，再按五维打分</div>
+              </div>
 
-        <!-- 二级指标 -->
-        <el-card shadow="never" class="card">
-          <template #header><span class="card-title">二级指标明细</span></template>
-          <el-collapse v-model="openDims">
-            <el-collapse-item v-for="d in result.dimensions" :key="d.key" :name="d.key">
-              <template #title>
-                <span class="dim-title">
-                  {{ d.label }}
-                  <el-tag v-if="d.assessed" :type="gradeType(d.grade)" size="small">
-                    {{ d.score }} 分
+              <div class="slot">
+                <div class="slot-title">
+                  课件
+                  <span class="slot-flag optional">选填</span>
+                </div>
+                <el-upload
+                  drag
+                  :auto-upload="false"
+                  :show-file-list="false"
+                  accept=".pdf,.pptx,.ppt"
+                  :on-change="onCoursewareChange"
+                >
+                  <div class="upload-inner">
+                    <div class="upload-text">{{ coursewareFile ? coursewareFile.name : '拖入课件或点击选择' }}</div>
+                    <div class="upload-hint">pdf / pptx / ppt</div>
+                  </div>
+                </el-upload>
+                <div v-if="coursewareFile" class="mat-file">
+                  {{ coursewareFile.name }}
+                  <el-button text size="small" @click="coursewareFile = null">清除</el-button>
+                </div>
+                <div class="slot-hint">有则评版式与可读性；没有则根据课堂关键帧判断</div>
+              </div>
+
+              <div class="slot">
+                <div class="slot-title">
+                  大纲
+                  <span class="slot-flag optional">选填</span>
+                </div>
+                <el-upload
+                  drag
+                  :auto-upload="false"
+                  :show-file-list="false"
+                  accept=".pdf,.docx,.doc,.txt,.md,.html"
+                  :on-change="onSyllabusChange"
+                >
+                  <div class="upload-inner">
+                    <div class="upload-text">{{ syllabusFile ? syllabusFile.name : '拖入课程大纲或点击选择' }}</div>
+                    <div class="upload-hint">pdf / Word / txt / md</div>
+                  </div>
+                </el-upload>
+                <div v-if="syllabusFile" class="mat-file">
+                  {{ syllabusFile.name }}
+                  <el-button text size="small" @click="syllabusFile = null">清除</el-button>
+                </div>
+                <div class="slot-hint">有则对照安排评完整性；没有则看讲稿或转写是否闭环</div>
+              </div>
+
+              <div class="slot">
+                <div class="slot-title">
+                  讲稿
+                  <span class="slot-flag optional">选填</span>
+                </div>
+                <el-upload
+                  drag
+                  :auto-upload="false"
+                  :show-file-list="false"
+                  accept=".pdf,.docx,.doc,.txt,.md,.html"
+                  :on-change="onScriptChange"
+                >
+                  <div class="upload-inner">
+                    <div class="upload-text">{{ scriptFile ? scriptFile.name : '拖入讲稿或点击选择' }}</div>
+                    <div class="upload-hint">pdf / Word / txt / md，后端当作转写</div>
+                  </div>
+                </el-upload>
+                <div v-if="scriptFile" class="mat-file">
+                  {{ scriptFile.name }}
+                  <el-button text size="small" @click="scriptFile = null">清除</el-button>
+                </div>
+                <el-input
+                  v-model="scriptText"
+                  type="textarea"
+                  :rows="4"
+                  placeholder="也可直接粘贴讲稿文本…"
+                  class="script-input"
+                />
+                <div class="slot-hint">有讲稿则跳过语音识别，直接用这份文本打分</div>
+              </div>
+            </div>
+            <el-progress
+              v-if="uploading"
+              :percentage="uploadPercent"
+              :stroke-width="6"
+              style="margin-top: 16px"
+            />
+            <el-button
+              type="primary"
+              class="full-btn"
+              :loading="uploading"
+              :disabled="!canStart"
+              @click="startUpload"
+            >
+              开始评估
+            </el-button>
+          </section>
+        </div>
+
+        <div v-else class="result">
+          <section class="block score-block">
+            <div class="score-value">{{ result.overall.score }}</div>
+            <div class="score-grade">{{ result.overall.grade }} 级 · {{ result.overall.grade_label }}</div>
+            <div class="score-meta">
+              课堂时长 {{ result.overall.duration_minutes }} 分钟 ·
+              {{ result.source === 'video' ? '视频评估' : '讲稿评估' }} ·
+              模态 {{ (result.overall.modalities || []).map((m) => MODALITY_LABEL[m]).join('/') }}
+              <el-tag v-if="result.transcript_source === 'script'" size="small" type="success" effect="plain" class="src-tag">已使用讲稿</el-tag>
+              <el-tag v-if="result.has_syllabus" size="small" type="success" effect="plain" class="src-tag">已对照课程大纲</el-tag>
+              <el-tag v-if="result.has_courseware" size="small" type="success" effect="plain" class="src-tag">已对照上传课件</el-tag>
+              <el-tag
+                v-if="result.overall.score_source === 'gb_llm_cls5'"
+                size="small"
+                type="warning"
+                effect="plain"
+                class="src-tag"
+              >
+                五维5分类 GB
+              </el-tag>
+            </div>
+            <div
+              v-if="result.overall.score_source === 'gb_llm_cls5' && result.overall.equal_weight_score != null"
+              class="score-note"
+            >
+              总分由 v9 五维 5 分类 GB 校准；Judge 等权平均 {{ result.overall.equal_weight_score }}
+            </div>
+            <div v-if="result.overall.skipped_indicators" class="score-warn">
+              {{ result.overall.skipped_indicators }} 个二级指标因缺少对应模态数据未参与评分
+            </div>
+          </section>
+
+          <section class="block">
+            <div class="block-title">五维得分</div>
+            <div ref="radarEl" class="radar"></div>
+            <el-table :data="result.dimensions" size="small">
+              <el-table-column prop="label" label="维度" width="110" />
+              <el-table-column label="得分" width="80" align="center">
+                <template #default="{ row }">
+                  <span v-if="row.assessed">{{ row.score }}</span>
+                  <span v-else class="na">—</span>
+                </template>
+              </el-table-column>
+              <el-table-column label="等级" width="80" align="center">
+                <template #default="{ row }">
+                  <el-tag v-if="row.assessed" :type="gradeType(row.grade)" size="small">
+                    {{ row.grade }}
                   </el-tag>
-                  <el-tag v-else type="info" size="small">未评估</el-tag>
-                  <el-tag v-if="d.skipped_count" type="info" size="small" effect="plain">
-                    {{ d.skipped_count }} 项跳过
-                  </el-tag>
+                  <span v-else class="na">未评估</span>
+                </template>
+              </el-table-column>
+              <el-table-column label="说明" min-width="240">
+                <template #default="{ row }">
+                  <div v-if="row.assessed && row.dimension_rationale" class="dim-rationale">
+                    {{ row.dimension_rationale }}
+                  </div>
+                  <div v-else>{{ row.description }}</div>
                   <el-tag
-                    v-if="d.score_source === 'weighted_fallback'"
-                    type="info"
+                    v-if="row.score_source === 'weighted_fallback'"
                     size="small"
+                    type="info"
                     effect="plain"
+                    class="src-tag"
                   >
-                    等权兜底
+                    等权兜底{{ row.weighted_score != null ? ' ' + row.weighted_score : '' }}
                   </el-tag>
-                </span>
-              </template>
-              <el-table :data="d.indicators" size="small" border :row-class-name="rowClass">
-                <el-table-column prop="label" label="二级指标" width="120" />
-                <el-table-column label="模态" width="130">
-                  <template #default="{ row }">
-                    <el-tag
-                      v-for="m in row.modalities"
-                      :key="m"
-                      size="small"
-                      :type="MODALITY_TYPE[m]"
-                      effect="plain"
-                      class="modality-tag"
-                    >
-                      {{ MODALITY_LABEL[m] }}
+                </template>
+              </el-table-column>
+            </el-table>
+          </section>
+
+          <section class="block">
+            <div class="block-title">二级指标明细</div>
+            <el-collapse v-model="openDims">
+              <el-collapse-item v-for="d in result.dimensions" :key="d.key" :name="d.key">
+                <template #title>
+                  <span class="dim-title">
+                    {{ d.label }}
+                    <el-tag v-if="d.assessed" :type="gradeType(d.grade)" size="small">
+                      {{ d.score }} 分
                     </el-tag>
-                  </template>
-                </el-table-column>
-                <el-table-column label="得分" width="70" align="center">
-                  <template #default="{ row }">
-                    <span v-if="row.assessed">{{ row.score }}</span>
-                    <span v-else class="na">—</span>
-                  </template>
-                </el-table-column>
-                <el-table-column label="置信" width="70" align="center">
-                  <template #default="{ row }">
-                    <span v-if="row.assessed" :class="'conf-' + row.confidence">
-                      {{ CONF_LABEL[row.confidence] }}
-                    </span>
-                    <span v-else class="na">—</span>
-                  </template>
-                </el-table-column>
-                <el-table-column prop="evidence" label="评分依据" min-width="240" />
-                <el-table-column prop="suggestion" label="改进建议" min-width="200" />
-              </el-table>
-            </el-collapse-item>
-          </el-collapse>
-        </el-card>
+                    <el-tag v-else type="info" size="small">未评估</el-tag>
+                    <el-tag v-if="d.skipped_count" type="info" size="small" effect="plain">
+                      {{ d.skipped_count }} 项跳过
+                    </el-tag>
+                    <el-tag
+                      v-if="d.score_source === 'weighted_fallback'"
+                      type="info"
+                      size="small"
+                      effect="plain"
+                    >
+                      等权兜底
+                    </el-tag>
+                  </span>
+                </template>
+                <el-table :data="d.indicators" size="small" :row-class-name="rowClass">
+                  <el-table-column prop="label" label="二级指标" width="120" />
+                  <el-table-column label="模态" width="130">
+                    <template #default="{ row }">
+                      <el-tag
+                        v-for="m in row.modalities"
+                        :key="m"
+                        size="small"
+                        :type="MODALITY_TYPE[m]"
+                        effect="plain"
+                        class="modality-tag"
+                      >
+                        {{ MODALITY_LABEL[m] }}
+                      </el-tag>
+                    </template>
+                  </el-table-column>
+                  <el-table-column label="得分" width="70" align="center">
+                    <template #default="{ row }">
+                      <span v-if="row.assessed">{{ row.score }}</span>
+                      <span v-else class="na">—</span>
+                    </template>
+                  </el-table-column>
+                  <el-table-column label="置信" width="70" align="center">
+                    <template #default="{ row }">
+                      <span v-if="row.assessed" :class="'conf-' + row.confidence">
+                        {{ CONF_LABEL[row.confidence] }}
+                      </span>
+                      <span v-else class="na">—</span>
+                    </template>
+                  </el-table-column>
+                  <el-table-column prop="evidence" label="评分依据" min-width="240" />
+                  <el-table-column prop="suggestion" label="改进建议" min-width="200" />
+                </el-table>
+              </el-collapse-item>
+            </el-collapse>
+          </section>
 
-        <!-- 客观特征 -->
-        <el-card v-if="featureGroups.length" shadow="never" class="card">
-          <template #header><span class="card-title">客观特征（事实层）</span></template>
-          <div class="feature-cols">
-            <div v-for="g in featureGroups" :key="g.key">
-              <div class="feature-head">{{ g.label }}</div>
-              <div class="feature-origin">{{ g.origin }}</div>
-              <div v-for="f in g.rows" :key="f.key" class="feature-item">
-                <span>{{ f.label }}</span>
-                <b>{{ f.value }}{{ f.unit }}</b>
+          <section v-if="featureGroups.length" class="block">
+            <div class="block-title">客观特征（事实层）</div>
+            <div class="feature-cols">
+              <div v-for="g in featureGroups" :key="g.key">
+                <div class="feature-head">{{ g.label }}</div>
+                <div class="feature-origin">{{ g.origin }}</div>
+                <div v-for="f in g.rows" :key="f.key" class="feature-item">
+                  <span>{{ f.label }}</span>
+                  <b>{{ f.value }}{{ f.unit }}</b>
+                </div>
               </div>
             </div>
-          </div>
-        </el-card>
+          </section>
 
-        <!-- 上传课件页面 -->
-        <el-card v-if="result.courseware_slides?.length" shadow="never" class="card">
-          <template #header>
-            <span class="card-title">上传课件页面观测（{{ result.courseware_slides.length }} 页）</span>
-          </template>
-          <div class="frames">
-            <div v-for="f in result.courseware_slides" :key="'cw-' + f.index" class="frame">
-              <el-image :src="f.url" fit="cover" class="frame-img" :preview-src-list="coursewareUrls" :initial-index="f.index" />
-              <div class="frame-time">第 {{ f.page }} 页</div>
-              <div v-if="coursewareTags(f).length" class="frame-tags">
-                <el-tag
-                  v-for="t in coursewareTags(f)"
-                  :key="t.key"
-                  size="small"
-                  effect="plain"
-                  :type="t.type"
-                >
-                  {{ t.text }}
-                </el-tag>
+          <section v-if="result.courseware_slides?.length" class="block">
+            <div class="block-title">上传课件页面观测（{{ result.courseware_slides.length }} 页）</div>
+            <div class="frames">
+              <div v-for="f in result.courseware_slides" :key="'cw-' + f.index" class="frame">
+                <el-image :src="f.url" fit="cover" class="frame-img" :preview-src-list="coursewareUrls" :initial-index="f.index" />
+                <div class="frame-time">第 {{ f.page }} 页</div>
+                <div v-if="coursewareTags(f).length" class="frame-tags">
+                  <el-tag v-for="t in coursewareTags(f)" :key="t.key" size="small" effect="plain" :type="t.type">
+                    {{ t.text }}
+                  </el-tag>
+                </div>
+                <div class="frame-desc">{{ f.labels?.note || f.description }}</div>
               </div>
-              <div class="frame-desc">{{ f.labels?.note || f.description }}</div>
             </div>
-          </div>
-        </el-card>
+          </section>
 
-        <!-- 关键帧 -->
-        <el-card v-if="result.keyframes?.length" shadow="never" class="card">
-          <template #header>
-            <span class="card-title">关键帧视觉观测（{{ result.keyframes.length }} 帧）</span>
-          </template>
-          <div class="frames">
-            <div v-for="f in result.keyframes" :key="f.index" class="frame">
-              <el-image :src="f.url" fit="cover" class="frame-img" :preview-src-list="frameUrls" :initial-index="f.index" />
-              <div class="frame-time">{{ f.timestamp }}</div>
-              <div v-if="frameTags(f).length" class="frame-tags">
-                <el-tag
-                  v-for="t in frameTags(f)"
-                  :key="t.key"
-                  size="small"
-                  effect="plain"
-                  :type="t.type"
-                >
-                  {{ t.text }}
-                </el-tag>
+          <section v-if="result.keyframes?.length" class="block">
+            <div class="block-title">关键帧视觉观测（{{ result.keyframes.length }} 帧）</div>
+            <div class="frames">
+              <div v-for="f in result.keyframes" :key="f.index" class="frame">
+                <el-image :src="f.url" fit="cover" class="frame-img" :preview-src-list="frameUrls" :initial-index="f.index" />
+                <div class="frame-time">{{ f.timestamp }}</div>
+                <div v-if="frameTags(f).length" class="frame-tags">
+                  <el-tag v-for="t in frameTags(f)" :key="t.key" size="small" effect="plain" :type="t.type">
+                    {{ t.text }}
+                  </el-tag>
+                </div>
+                <div class="frame-desc">{{ f.labels?.note || f.description }}</div>
               </div>
-              <div class="frame-desc">{{ f.labels?.note || f.description }}</div>
             </div>
-          </div>
-        </el-card>
+          </section>
 
-        <!-- 报告 -->
-        <el-card shadow="never" class="card">
-          <template #header><span class="card-title">教学诊断报告</span></template>
-          <div class="markdown" v-html="reportHtml"></div>
-        </el-card>
+          <section class="block">
+            <div class="block-title">教学诊断报告</div>
+            <div class="markdown" v-html="reportHtml"></div>
+          </section>
 
-        <!-- 转写 -->
-        <el-card v-if="result.transcript?.full_text" shadow="never" class="card">
-          <template #header>
-            <div class="card-header">
-              <span class="card-title">语音转写文稿</span>
+          <section v-if="result.transcript?.full_text" class="block">
+            <div class="block-head">
+              <div class="block-title">语音转写文稿</div>
               <span class="transcript-meta">
                 {{ result.transcript.language }} ·
                 {{ Math.round(result.transcript.duration_sec / 60) }} 分钟 ·
                 {{ result.transcript.full_text.length }} 字
               </span>
             </div>
-          </template>
-          <el-collapse v-if="result.transcript.segments?.length">
-            <el-collapse-item
-              v-for="s in result.transcript.segments"
-              :key="s.index"
-              :title="`第 ${s.index + 1} 段 · ${s.time_range} · 语速 ${s.features.speech_rate} 字/分`"
-              :name="s.index"
-            >
-              <div class="segment-text">{{ s.text }}</div>
-            </el-collapse-item>
-          </el-collapse>
-          <div v-else class="segment-text">{{ result.transcript.full_text }}</div>
-        </el-card>
-      </template>
+            <el-collapse v-if="result.transcript.segments?.length">
+              <el-collapse-item
+                v-for="s in result.transcript.segments"
+                :key="s.index"
+                :title="`第 ${s.index + 1} 段 · ${s.time_range} · 语速 ${s.features.speech_rate} 字/分`"
+                :name="s.index"
+              >
+                <div class="segment-text">{{ s.text }}</div>
+              </el-collapse-item>
+            </el-collapse>
+            <div v-else class="segment-text">{{ result.transcript.full_text }}</div>
+          </section>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -402,6 +423,7 @@ import { ElMessage } from 'element-plus'
 import * as echarts from 'echarts'
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
+import { Close, Plus, Tickets } from '@element-plus/icons-vue'
 import { evaluationApi } from '../api/client'
 
 const DIM_LABELS = ['教学态度', '教学内容', '教学方法', '教学效果', '教学素质']
@@ -451,12 +473,12 @@ const uploadPercent = ref(0)
 const videoFile = ref(null)
 const syllabusFile = ref(null)
 const coursewareFile = ref(null)
-
-const quickText = ref('')
-const quickMinutes = ref(45)
-const reference = ref('')
-const quickLoading = ref(false)
+const scriptFile = ref(null)
+const scriptText = ref('')
 const cancellingId = ref(null)
+const sidebarOpen = ref(true)
+
+const canStart = computed(() => Boolean(videoFile.value))
 
 const radarEl = ref(null)
 let radarChart = null
@@ -501,6 +523,10 @@ function frameTags(frame) {
 const reportHtml = computed(() =>
   result.value?.report ? DOMPurify.sanitize(marked.parse(result.value.report)) : ''
 )
+const pageTitle = computed(() => {
+  if (!activeId.value) return result.value ? '评估结果' : '新建评估'
+  return tasks.value.find((t) => t.id === activeId.value)?.filename || '评估结果'
+})
 
 // ---------------------------------------------------------------- 任务列表
 
@@ -525,6 +551,12 @@ function stepDetail(t) {
   if (t.current_step === 'vlm_describe' && d.total) return `（${d.done || 0}/${d.total}）`
   if (t.current_step === 'llm_judge' && d.dimension) return `（${d.dimension}）`
   return ''
+}
+
+function newEvaluation() {
+  activeId.value = null
+  result.value = null
+  clearMaterials()
 }
 
 async function loadTasks() {
@@ -564,11 +596,11 @@ async function selectTask(id) {
       openDims.value = task.result.dimensions.map((d) => d.key)
       await nextTick()
       renderRadar()
-    } else if (task.status === 'failed') {
+    } else {
       result.value = null
-      ElMessage.error(task.error || '任务失败')
-    } else if (task.status === 'cancelled') {
-      result.value = null
+      if (task.status === 'failed') {
+        ElMessage.error(task.error || '任务失败')
+      }
     }
   } catch {
     /* 拦截器已提示 */
@@ -605,47 +637,41 @@ function onCoursewareChange(file) {
   coursewareFile.value = file.raw
 }
 
+function onScriptChange(file) {
+  scriptFile.value = file.raw
+}
+
+function clearMaterials() {
+  videoFile.value = null
+  syllabusFile.value = null
+  coursewareFile.value = null
+  scriptFile.value = null
+  scriptText.value = ''
+}
+
 async function startUpload() {
-  if (!videoFile.value) return
+  if (!canStart.value) return
   uploading.value = true
   uploadPercent.value = 0
   try {
-    const resp = await evaluationApi.uploadVideo(
-      videoFile.value,
-      (p) => (uploadPercent.value = p),
+    const resp = await evaluationApi.uploadMaterials(
       {
+        video: videoFile.value,
         syllabus: syllabusFile.value,
         courseware: coursewareFile.value,
-      }
+        transcript: scriptFile.value,
+        transcriptText: scriptText.value,
+      },
+      (p) => (uploadPercent.value = p)
     )
     ElMessage.success('上传成功，已加入评估队列')
     activeId.value = resp.task_id
-    videoFile.value = null
+    clearMaterials()
     await loadTasks()
   } catch {
     /* 拦截器已提示 */
   } finally {
     uploading.value = false
-  }
-}
-
-async function runQuickEval() {
-  quickLoading.value = true
-  try {
-    const data = await evaluationApi.evaluateTranscript(
-      quickText.value,
-      quickMinutes.value * 60,
-      reference.value
-    )
-    result.value = data
-    activeId.value = null
-    openDims.value = data.dimensions.map((d) => d.key)
-    await nextTick()
-    renderRadar()
-  } catch {
-    /* 拦截器已提示 */
-  } finally {
-    quickLoading.value = false
   }
 }
 
@@ -698,40 +724,150 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
-.layout {
-  display: grid;
-  grid-template-columns: 340px 1fr;
-  gap: 16px;
-  align-items: start;
-}
-@media (max-width: 1180px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
+.eval {
+  height: calc(100vh - 56px);
+  display: flex;
+  background: #fff;
+  overflow: hidden;
 }
 
-.left {
-  position: sticky;
-  top: 0;
+.sidebar {
+  width: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #f7f7f8;
+  border-right: 1px solid transparent;
+  transition: width 0.2s ease, border-color 0.2s ease;
 }
-@media (max-width: 1180px) {
-  .left {
-    position: static;
-  }
+.sidebar.open {
+  width: 280px;
+  border-right-color: #ececec;
 }
-
-.card {
-  margin-bottom: 16px;
-  border: 1px solid #e8eaed;
+.sidebar-inner {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.card-title {
-  font-size: 14px;
-  font-weight: 600;
-}
-.card-header {
+.drawer-head {
+  height: 64px;
+  padding: 0 8px 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #303133;
+  flex-shrink: 0;
+  border-bottom: 1px solid #f0e0e0;
+}
+.drawer-title {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: #7b1113;
+  position: relative;
+  padding-left: 10px;
+}
+.drawer-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  border-radius: 2px;
+  background: #a61b1b;
+}
+.drawer-actions {
+  display: flex;
+  align-items: center;
+}
+
+.stage {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.stage-top {
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+}
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.top-title {
+  min-width: 0;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 600;
+  color: #303133;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  color: #4b4b4b;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn:hover {
+  background: #f3f3f3;
+}
+
+.stage-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.block {
+  padding: 28px 32px 32px;
+  border-bottom: 1px solid #ececec;
+}
+.compose .block:last-child,
+.result .block:last-child {
+  border-bottom: none;
+}
+.block-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #303133;
+  margin-bottom: 14px;
+}
+.block-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.block-head .block-title {
+  margin-bottom: 0;
+}
+.full-btn {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.task-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 8px 16px;
 }
 
 /* 上传 */
@@ -757,22 +893,21 @@ onBeforeUnmount(() => {
   color: #909399;
   font-size: 13px;
   text-align: center;
-  padding: 16px 0;
+  padding: 24px 0;
 }
 .task {
-  padding: 10px;
-  border: 1px solid #ebeef5;
-  border-radius: 6px;
-  margin-bottom: 8px;
+  padding: 10px 8px 10px 12px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.15s;
 }
 .task:hover {
-  border-color: #d28d8d;
+  background: #ececed;
 }
 .task.active {
-  border-color: #a61b1b;
-  background: #fff8f7;
+  background: #f5e6e6;
+}
+.task.active .task-name {
+  color: #7b1113;
 }
 .task-top {
   display: flex;
@@ -782,8 +917,9 @@ onBeforeUnmount(() => {
 .task-name {
   flex: 1;
   min-width: 0;
-  font-size: 12px;
-  color: #606266;
+  font-size: 13px;
+  color: #303133;
+  letter-spacing: 0.02em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -806,43 +942,58 @@ onBeforeUnmount(() => {
   word-break: break-all;
 }
 
-/* 快速评估 */
-.quick-hint {
-  font-size: 12px;
-  color: #909399;
-  margin-bottom: 8px;
-  line-height: 1.6;
+/* 上传 */
+.compose,
+.result {
+  min-height: 100%;
 }
-.quick-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 10px 0;
-  font-size: 13px;
+.compose-lead {
+  margin: 0 0 14px;
   color: #606266;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.compose .welcome-dims {
+  justify-content: flex-start;
+  margin: 0 0 18px;
 }
 
-/* 欢迎页 */
-.welcome {
-  background: #fff;
-  border: 1px solid #e8eaed;
-  border-radius: 6px;
-  padding: 80px 40px;
-  text-align: center;
+.slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px 32px;
 }
-.welcome-icon {
-  font-size: 44px;
+.slot {
+  min-width: 0;
 }
-.welcome h3 {
-  margin: 16px 0 10px;
+.slot-title {
+  font-size: 15px;
+  font-weight: 600;
   color: #303133;
+  margin-bottom: 10px;
 }
-.welcome p {
+.slot-flag {
+  margin-left: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #a61b1b;
+}
+.slot-flag.optional {
   color: #909399;
-  font-size: 14px;
-  line-height: 1.8;
-  max-width: 520px;
-  margin: 0 auto;
+}
+.slot-hint {
+  font-size: 12px;
+  color: #909399;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+.script-input {
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
+  .slots {
+    grid-template-columns: 1fr;
+  }
 }
 .welcome-dims {
   margin-top: 22px;
@@ -860,9 +1011,8 @@ onBeforeUnmount(() => {
 }
 
 /* 总分 */
-.score-card {
+.score-block {
   text-align: center;
-  padding: 12px 0;
 }
 .score-value {
   font-size: 60px;
@@ -996,44 +1146,11 @@ onBeforeUnmount(() => {
   line-height: 1.6;
 }
 
-/* 大纲 / 课件选填 */
-.mat-block {
-  margin-top: 14px;
-  padding-top: 12px;
-  border-top: 1px dashed #ebeef5;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-.mat-item {
-  min-width: 0;
-}
 .mat-file {
   font-size: 12px;
   color: #606266;
   margin-top: 4px;
   word-break: break-all;
-}
-.ref-block {
-  margin-top: 14px;
-  padding-top: 12px;
-  border-top: 1px dashed #ebeef5;
-}
-.ref-label {
-  font-size: 13px;
-  color: #303133;
-  margin-bottom: 6px;
-}
-.ref-optional {
-  font-size: 11px;
-  color: #909399;
-  margin-left: 4px;
-}
-.ref-hint {
-  font-size: 11px;
-  color: #909399;
-  line-height: 1.6;
-  margin-top: 5px;
 }
 
 /* 报告 */

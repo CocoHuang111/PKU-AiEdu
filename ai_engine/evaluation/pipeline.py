@@ -1,7 +1,8 @@
 """功能① 教学视频质量评估的编排。
 
-evaluate_video()      完整流水线：视频 → 音频+关键帧 → ASR → 客观特征 → VLM → Judge → 报告
-evaluate_transcript() 纯文本快速通道：跳过 ASR 与视觉，用于联调
+evaluate_session()    统一入口：视频 / 讲稿 / 大纲 / 课件任意组合
+evaluate_video()      完整流水线：视频 → 音频+关键帧 → ASR（有讲稿则跳过）→ Judge
+evaluate_transcript() 纯文本通道：只喂转写，跳过 ASR 与视觉
 """
 
 from __future__ import annotations
@@ -12,19 +13,20 @@ from typing import Any, Callable
 
 from ..config import settings
 from ..pedagogy.loader import get_rubric, grade_of, render_prompt
-from ..providers import ChatMessage, ProviderError, get_asr, get_llm
+from ..providers import ASRResult, ChatMessage, ProviderError, get_asr, get_llm
 from . import diarization, media
 from .gb import LIVE_PROMPT_VERSION, LIVE_SCORE_SOURCE, predict_overall
 from .audio_features import extract_audio_features
 from .judge import judge_all, judge_fingerprint
 from .slide_features import extract_slide_features
 from .text_features import (
+    CHINESE_CHAR,
     extract_text_features,
     segment_transcript,
     summarize_segments,
 )
 from .timeline_features import extract_timeline_features
-from .materials import MaterialError, load_syllabus_text, prepare_courseware
+from .materials import MaterialError, load_script_text, load_syllabus_text, prepare_courseware
 from .vision import (
     aggregate_courseware_features,
     aggregate_vision_features,
@@ -51,6 +53,29 @@ MAX_REFERENCE_CHARS = 12000
 
 def _noop(progress: int, step: str, detail: dict | None = None) -> None:
     pass
+
+
+def _estimate_duration_sec(text: str) -> float:
+    """没有视频时按约 200 字/分钟估课堂时长，至少 5 分钟，避免速率被吹爆。"""
+    chars = len(CHINESE_CHAR.findall(text or ""))
+    return max(chars / 200.0 * 60.0, 300.0)
+
+
+def _resolve_script(
+    transcript_text: str | None,
+    transcript_path: str | None,
+    progress: ProgressFn = _noop,
+) -> str | None:
+    text = (transcript_text or "").strip() or None
+    if text:
+        return text
+    if not transcript_path:
+        return None
+    progress(14, "parse_materials", {"kind": "transcript"})
+    try:
+        return load_script_text(transcript_path)
+    except MaterialError as e:
+        raise RuntimeError(str(e)) from e
 
 
 def _feature_rows(features: dict, group: str) -> list[dict]:
@@ -228,6 +253,7 @@ def evaluate_transcript(
         "has_reference": has_syllabus,
         "has_syllabus": has_syllabus,
         "has_courseware": False,
+        "transcript_source": "script",
         "keyframes": [],
         "courseware_slides": [],
         "transcript": {
@@ -268,8 +294,13 @@ def collect_video_evidence(
     reference: str | None = None,
     syllabus_path: str | None = None,
     courseware_path: str | None = None,
+    transcript_text: str | None = None,
+    transcript_path: str | None = None,
 ) -> dict[str, Any]:
-    """视频 → 转写 / 客观特征 / VLM。不打分。返回可序列化的证据包。"""
+    """视频 → 转写 / 客观特征 / VLM。不打分。返回可序列化的证据包。
+
+    有讲稿时当作转写，跳过 ASR；没有真实时间戳就不做 timeline。
+    """
     eval_conf = settings.section("evaluation")
     video_path = str(video_path)
     video_stem = Path(video_path).stem
@@ -309,19 +340,31 @@ def collect_video_evidence(
         except media.MediaError as e:
             progress(10, "keyframe_sampling", {"warning": str(e)})
 
-    progress(15, "asr", {})
+    script = _resolve_script(transcript_text, transcript_path, progress)
+    transcript_source = "script" if script else "asr"
 
-    def on_asr(done_sec: float, total_sec: float):
-        pct = 15 + int(30 * min(done_sec / max(total_sec, 1), 1.0))
-        progress(pct, "asr", {"done_sec": round(done_sec), "total_sec": round(total_sec)})
+    if script:
+        progress(15, "asr", {"source": "script"})
+        duration = duration or _estimate_duration_sec(script)
+        asr_result = ASRResult(
+            text=script, segments=[], language="zh", duration=float(duration)
+        )
+    else:
+        progress(15, "asr", {})
 
-    asr_result = get_asr().transcribe(audio_path, progress_callback=on_asr)
-    duration = duration or asr_result.duration
+        def on_asr(done_sec: float, total_sec: float):
+            pct = 15 + int(30 * min(done_sec / max(total_sec, 1), 1.0))
+            progress(
+                pct, "asr", {"done_sec": round(done_sec), "total_sec": round(total_sec)}
+            )
+
+        asr_result = get_asr().transcribe(audio_path, progress_callback=on_asr)
+        duration = duration or asr_result.duration
 
     if not asr_result.text.strip():
         raise RuntimeError(
             "语音识别结果为空。请确认视频含有清晰的中文语音，"
-            "或在 config.yaml 中把 asr.model 换成 small / medium 再试。"
+            "或改传讲稿，或在 config.yaml 中把 asr.model 换成 small / medium 再试。"
         )
 
     progress(46, "objective_features", {})
@@ -334,8 +377,9 @@ def collect_video_evidence(
 
     features: dict[str, dict] = {
         "text": text_features,
-        "timeline": extract_timeline_features(asr_result.segments),
     }
+    if asr_result.segments:
+        features["timeline"] = extract_timeline_features(asr_result.segments)
 
     if eval_conf.get("audio_enabled", True):
         try:
@@ -430,6 +474,8 @@ def collect_video_evidence(
         },
         "vision_notes": vision_notes,
         "courseware_notes": courseware_notes,
+        "source": "video",
+        "transcript_source": transcript_source,
     }
 
 
@@ -494,7 +540,8 @@ def _api_result_from_pack(pack: dict[str, Any], scores: dict[str, Any]) -> dict[
     vision_notes = pack.get("vision_notes") or []
     courseware_notes = pack.get("courseware_notes") or []
     return {
-        "source": "video",
+        "source": pack.get("source", "video"),
+        "transcript_source": pack.get("transcript_source", "asr"),
         "video_file": pack.get("video_file", ""),
         "overall": scores["overall"],
         "dimensions": scores["dimensions"],
@@ -530,20 +577,134 @@ def _api_result_from_pack(pack: dict[str, Any], scores: dict[str, Any]) -> dict[
     }
 
 
-def evaluate_video(
-    video_path: str,
+def collect_script_evidence(
+    transcript_text: str,
     progress: ProgressFn = _noop,
     reference: str | None = None,
     syllabus_path: str | None = None,
     courseware_path: str | None = None,
+    work_stem: str = "script",
 ) -> dict[str, Any]:
-    pack = collect_video_evidence(
-        video_path,
-        progress=progress,
-        reference=reference,
-        syllabus_path=syllabus_path,
-        courseware_path=courseware_path,
+    """无视频：讲稿当转写，再解析大纲 / 课件。"""
+    eval_conf = settings.section("evaluation")
+    text = (transcript_text or "").strip()
+    if len(text) < 10:
+        raise RuntimeError("讲稿过短或为空，请上传更完整的讲稿，或改传教学视频。")
+
+    duration = _estimate_duration_sec(text)
+    syllabus_text = (reference or "").strip() or None
+    if syllabus_path:
+        progress(7, "parse_materials", {"kind": "syllabus"})
+        try:
+            syllabus_text = load_syllabus_text(syllabus_path)
+        except MaterialError as e:
+            raise RuntimeError(str(e)) from e
+
+    courseware_pack: dict[str, Any] | None = None
+    if courseware_path:
+        progress(8, "parse_materials", {"kind": "courseware"})
+        try:
+            courseware_pack = prepare_courseware(
+                courseware_path, settings.frame_dir / work_stem
+            )
+        except MaterialError as e:
+            progress(8, "parse_materials", {"warning": str(e)})
+            courseware_pack = None
+        if courseware_pack and courseware_pack.get("warning"):
+            progress(8, "parse_materials", {"warning": courseware_pack["warning"]})
+
+    progress(20, "objective_features", {})
+    features: dict[str, dict] = {"text": extract_text_features(text, duration)}
+
+    courseware_notes: list[dict] = []
+    cw_pages = (courseware_pack or {}).get("pages") or []
+    vlm_enabled = eval_conf.get("vlm_enabled", True)
+    if vlm_enabled and cw_pages:
+        progress(58, "vlm_describe", {"total": len(cw_pages), "kind": "courseware"})
+        vlm_done = 0
+
+        def on_vlm_item(_done: int, _total: int):
+            nonlocal vlm_done
+            vlm_done += 1
+            progress(
+                58 + int(12 * vlm_done / max(len(cw_pages), 1)),
+                "vlm_describe",
+                {"done": vlm_done, "total": len(cw_pages)},
+            )
+
+        try:
+            courseware_notes = describe_courseware_pages(
+                cw_pages, progress_callback=on_vlm_item
+            )
+            cw_feat = aggregate_courseware_features(courseware_notes)
+            if cw_feat:
+                features["courseware"] = cw_feat
+        except ProviderError as e:
+            progress(70, "vlm_describe", {"warning": f"课件页面分析失败: {e}"})
+
+    features = {k: v for k, v in features.items() if v}
+    has_cw = bool(courseware_pack)
+    evidence = build_evidence(
+        text,
+        duration,
+        features,
+        None,
+        syllabus_text,
+        has_courseware=has_cw,
+        courseware_text=(courseware_pack or {}).get("text") or "",
+        courseware_notes=courseware_notes,
+        courseware_visual=bool((courseware_pack or {}).get("visual")),
     )
+    return {
+        "video_file": "",
+        "duration_sec": round(float(duration), 1),
+        "has_syllabus": bool((syllabus_text or "").strip()),
+        "has_courseware": has_cw,
+        "evidence": _jsonable(evidence),
+        "raw_features": _jsonable(features),
+        "available": sorted(_available_modalities(features)),
+        "transcript": {
+            "full_text": text,
+            "duration_sec": round(float(duration), 1),
+            "language": "zh",
+            "segments": [],
+        },
+        "vision_notes": [],
+        "courseware_notes": courseware_notes,
+        "source": "transcript",
+        "transcript_source": "script",
+    }
+
+
+def evaluate_session(
+    video_path: str | None = None,
+    progress: ProgressFn = _noop,
+    reference: str | None = None,
+    syllabus_path: str | None = None,
+    courseware_path: str | None = None,
+    transcript_text: str | None = None,
+    transcript_path: str | None = None,
+) -> dict[str, Any]:
+    """四个材料入口的统一评估。产品入口要求视频；讲稿选填，有则当作转写。"""
+    script = _resolve_script(transcript_text, transcript_path, progress)
+    if video_path:
+        pack = collect_video_evidence(
+            video_path,
+            progress=progress,
+            reference=reference,
+            syllabus_path=syllabus_path,
+            courseware_path=courseware_path,
+            transcript_text=script,
+        )
+    else:
+        pack = collect_script_evidence(
+            script or "",
+            progress=progress,
+            reference=reference,
+            syllabus_path=syllabus_path,
+            courseware_path=courseware_path,
+            work_stem=Path(transcript_path).stem if transcript_path else f"script_{int(time.time())}",
+        )
     scores = score_from_evidence(
         pack["evidence"],
         pack["available"],
@@ -552,6 +713,26 @@ def evaluate_video(
         calibrate_overall=True,
     )
     return _api_result_from_pack(pack, scores)
+
+
+def evaluate_video(
+    video_path: str,
+    progress: ProgressFn = _noop,
+    reference: str | None = None,
+    syllabus_path: str | None = None,
+    courseware_path: str | None = None,
+    transcript_text: str | None = None,
+    transcript_path: str | None = None,
+) -> dict[str, Any]:
+    return evaluate_session(
+        video_path,
+        progress=progress,
+        reference=reference,
+        syllabus_path=syllabus_path,
+        courseware_path=courseware_path,
+        transcript_text=transcript_text,
+        transcript_path=transcript_path,
+    )
 
 
 # --------------------------------------------------------------- 报告回流

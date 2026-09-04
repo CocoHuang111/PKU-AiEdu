@@ -17,9 +17,11 @@ from ..rag.loaders import SUPPORTED as DOC_SUPPORTED
 from ..rag.loaders import UnsupportedDocument, load_document
 
 SYLLABUS_EXT = set(DOC_SUPPORTED)
+SCRIPT_EXT = set(DOC_SUPPORTED)
 COURSEWARE_EXT = {".pdf", ".pptx", ".ppt"}
 
 MAX_SYLLABUS_CHARS = 12000
+MAX_SCRIPT_CHARS = 80000
 MAX_COURSEWARE_TEXT_CHARS = 8000
 
 SOFFICE_CANDIDATES = (
@@ -35,21 +37,31 @@ class MaterialError(RuntimeError):
     pass
 
 
-def load_syllabus_text(path: str | Path, max_chars: int = MAX_SYLLABUS_CHARS) -> str:
-    """把大纲文档抽成纯文本。解析失败直接抛错，避免静默丢掉教师上传的参照。"""
+def load_text_file(path: str | Path, kind: str, max_chars: int) -> str:
+    """把大纲 / 讲稿等文档抽成纯文本。解析失败直接抛错。"""
     path = Path(path)
     try:
         text = load_document(path)
     except UnsupportedDocument as e:
         raise MaterialError(str(e)) from e
     except FileNotFoundError as e:
-        raise MaterialError(f"课程大纲文件不存在：{path.name}") from e
+        raise MaterialError(f"{kind}文件不存在：{path.name}") from e
     text = text.strip()
     if not text:
         raise MaterialError(f"{path.name} 解析结果为空。扫描版 PDF 请先做 OCR，或改传 Word。")
     if len(text) > max_chars:
-        text = text[:max_chars] + "\n……（大纲已截断）"
+        text = text[:max_chars] + f"\n……（{kind}已截断）"
     return text
+
+
+def load_syllabus_text(path: str | Path, max_chars: int = MAX_SYLLABUS_CHARS) -> str:
+    """把大纲文档抽成纯文本。解析失败直接抛错，避免静默丢掉教师上传的参照。"""
+    return load_text_file(path, "课程大纲", max_chars)
+
+
+def load_script_text(path: str | Path, max_chars: int = MAX_SCRIPT_CHARS) -> str:
+    """把讲稿抽成纯文本，后端当作转写文本用。"""
+    return load_text_file(path, "讲稿", max_chars)
 
 
 def _find_soffice() -> str | None:

@@ -163,6 +163,9 @@ def main() -> int:
         m2 = run_variant("llm_cls5", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
         m3 = run_variant("obj_only_reg", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
         m4 = run_variant("ind_reg", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
+        m5 = run_variant("obj_cls5", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
+        m6 = run_variant("obj_only_cls5", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
+        m7 = run_variant("ind_cls5", data=csv_path, alignment=None, split_path=split_path, out_dir=tmp_p)
         check("回归能写出 pkl", (tmp_p / "gb_obj_reg.pkl").exists())
         check("分类能写出 pkl", (tmp_p / "gb_llm_cls5.pkl").exists())
         check("回归 MAE 在 0–5 尺度", "mae_5" in m1 and m1["mae_5"] < 5, str(m1.get("mae_5")))
@@ -170,6 +173,13 @@ def main() -> int:
         check("客观特征回归能写出 pkl", (tmp_p / "gb_obj_only_reg.pkl").exists())
         check("二级指标回归能写出 pkl", (tmp_p / "gb_ind_reg.pkl").exists())
         check("新两路人数对齐", m3["n_test"] == m4["n_test"] == m1["n_test"])
+        check("客观+五维5分类能写出 pkl", (tmp_p / "gb_obj_cls5.pkl").exists())
+        check("纯客观5分类能写出 pkl", (tmp_p / "gb_obj_only_cls5.pkl").exists())
+        check("纯二级5分类能写出 pkl", (tmp_p / "gb_ind_cls5.pkl").exists())
+        check(
+            "三条新增5分类人数对齐",
+            m5["n_test"] == m6["n_test"] == m7["n_test"] == m1["n_test"],
+        )
         split = json.loads(split_path.read_text())
         check("划分文件未在第二次训练被改掉", split["test_ids"] == spec1["test_ids"])
 

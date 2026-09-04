@@ -1,0 +1,159 @@
+{
+  "test_ids": [
+    "宋晨",
+    "王勋",
+    "厉行",
+    "王菁",
+    "杨文云"
+  ],
+  "summaries": {
+    "v7.1": {
+      "n_test": 5,
+      "test_ids": [
+        "宋晨",
+        "王勋",
+        "厉行",
+        "王菁",
+        "杨文云"
+      ],
+      "score_mapping_version": "expert-4pt-direct-v2",
+      "judge_mae": 0.454,
+      "judge_rmse": 0.529,
+      "obj_reg": {
+        "mae": 0.382,
+        "rmse": 0.55,
+        "acc": ""
+      },
+      "llm_reg": {
+        "mae": 0.612,
+        "rmse": 0.762,
+        "acc": ""
+      },
+      "llm_cls5": {
+        "mae": 0.817,
+        "rmse": 0.982,
+        "acc": "0.200"
+      },
+      "llm_cls8": {
+        "mae": 0.424,
+        "rmse": 0.506,
+        "acc": "0.200"
+      },
+      "obj_only_reg": {
+        "mae": 0.432,
+        "rmse": 0.584,
+        "acc": ""
+      },
+      "ind_reg": {
+        "mae": 0.422,
+        "rmse": 0.512,
+        "acc": ""
+      }
+    },
+    "v9": {
+      "n_test": 5,
+      "test_ids": [
+        "宋晨",
+        "王勋",
+        "厉行",
+        "王菁",
+        "杨文云"
+      ],
+      "score_mapping_version": "expert-4pt-direct-v2",
+      "judge_mae": 0.557,
+      "judge_rmse": 0.621,
+      "obj_reg": {
+        "mae": 0.362,
+        "rmse": 0.52,
+        "acc": ""
+      },
+      "llm_reg": {
+        "mae": 0.361,
+        "rmse": 0.468,
+        "acc": ""
+      },
+      "llm_cls5": {
+        "mae": 0.342,
+        "rmse": 0.421,
+        "acc": "0.400"
+      },
+      "llm_cls8": {
+        "mae": 0.486,
+        "rmse": 0.541,
+        "acc": "0.000"
+      },
+      "obj_only_reg": {
+        "mae": 0.432,
+        "rmse": 0.584,
+        "acc": ""
+      },
+      "ind_reg": {
+        "mae": 0.388,
+        "rmse": 0.482,
+        "acc": ""
+      }
+    }
+  },
+  "rows": [
+    {
+      "variant": "obj_reg",
+      "title": "客观特征+五维 回归",
+      "mae_v7.1": 0.382,
+      "rmse_v7.1": 0.55,
+      "acc_v7.1": "",
+      "mae_v9": 0.362,
+      "rmse_v9": 0.52,
+      "acc_v9": ""
+    },
+    {
+      "variant": "llm_reg",
+      "title": "五维 回归",
+      "mae_v7.1": 0.612,
+      "rmse_v7.1": 0.762,
+      "acc_v7.1": "",
+      "mae_v9": 0.361,
+      "rmse_v9": 0.468,
+      "acc_v9": ""
+    },
+    {
+      "variant": "llm_cls5",
+      "title": "五维 5分类",
+      "mae_v7.1": 0.817,
+      "rmse_v7.1": 0.982,
+      "acc_v7.1": "0.200",
+      "mae_v9": 0.342,
+      "rmse_v9": 0.421,
+      "acc_v9": "0.400"
+    },
+    {
+      "variant": "llm_cls8",
+      "title": "五维 8分类",
+      "mae_v7.1": 0.424,
+      "rmse_v7.1": 0.506,
+      "acc_v7.1": "0.200",
+      "mae_v9": 0.486,
+      "rmse_v9": 0.541,
+      "acc_v9": "0.000"
+    },
+    {
+      "variant": "obj_only_reg",
+      "title": "只用客观特征 回归",
+      "mae_v7.1": 0.432,
+      "rmse_v7.1": 0.584,
+      "acc_v7.1": "",
+      "mae_v9": 0.432,
+      "rmse_v9": 0.584,
+      "acc_v9": ""
+    },
+    {
+      "variant": "ind_reg",
+      "title": "只用二级指标 回归",
+      "mae_v7.1": 0.422,
+      "rmse_v7.1": 0.512,
+      "acc_v7.1": "",
+      "mae_v9": 0.388,
+      "rmse_v9": 0.482,
+      "acc_v9": ""
+    }
+  ]
+}

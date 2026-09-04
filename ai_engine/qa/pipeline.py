@@ -41,9 +41,9 @@ def _parse_json(raw: str) -> dict[str, Any]:
 
 
 def _resolve_corpora(forced_corpora: list[str] | None) -> list[str]:
-    """非手动选择时检索全部语料库（含 eval_reports）。"""
+    """None = 全库；传入列表（可为空）= 只查这些。"""
     valid = settings.corpus_names(include_auto=True)
-    if forced_corpora:
+    if forced_corpora is not None:
         return [c for c in forced_corpora if c in valid]
     return valid
 

@@ -26,6 +26,8 @@ CREATE TABLE IF NOT EXISTS eval_tasks (
     reference     TEXT,                -- 解析后的课程大纲文本（选填）
     syllabus_path TEXT,                -- 教师上传的课程大纲文件
     courseware_path TEXT,              -- 教师上传的课件文件
+    transcript    TEXT,                -- 教师上传的讲稿文本（对应转写）
+    transcript_path TEXT,              -- 教师上传的讲稿文件
     status        TEXT NOT NULL,       -- queued | processing | completed | failed | cancelled
     progress      INTEGER DEFAULT 0,
     current_step  TEXT,
@@ -87,6 +89,9 @@ MIGRATIONS = [
     ("eval_tasks", "reference", "TEXT"),
     ("eval_tasks", "syllabus_path", "TEXT"),
     ("eval_tasks", "courseware_path", "TEXT"),
+    ("eval_tasks", "transcript", "TEXT"),
+    ("eval_tasks", "transcript_path", "TEXT"),
+    ("qa_sessions", "pinned", "INTEGER NOT NULL DEFAULT 0"),
 ]
 
 
@@ -126,26 +131,30 @@ def _row_get(row: aiosqlite.Row, key: str, default: Any = None) -> Any:
 
 async def create_task(
     filename: str,
-    video_path: str,
+    video_path: str | None = None,
     reference: str | None = None,
     syllabus_path: str | None = None,
     courseware_path: str | None = None,
+    transcript: str | None = None,
+    transcript_path: str | None = None,
 ) -> str:
     task_id = new_id()
     now = time.time()
     async with aiosqlite.connect(DB_PATH) as db:
         await db.execute(
             "INSERT INTO eval_tasks (id, filename, video_path, reference, "
-            "syllabus_path, courseware_path, status, "
+            "syllabus_path, courseware_path, transcript, transcript_path, status, "
             "progress, current_step, created_at, updated_at) "
-            "VALUES (?,?,?,?,?,?,?,?,?,?,?)",
+            "VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)",
             (
                 task_id,
                 filename,
-                video_path,
+                video_path or "",
                 reference,
                 syllabus_path,
                 courseware_path,
+                transcript,
+                transcript_path,
                 "queued",
                 0,
                 "queued",
@@ -188,6 +197,7 @@ def _task_row(row: aiosqlite.Row, with_result: bool = True) -> dict[str, Any]:
         "updated_at": row["updated_at"],
         "has_syllabus": bool(row["reference"] or _row_get(row, "syllabus_path")),
         "has_courseware": bool(_row_get(row, "courseware_path")),
+        "has_script": bool(_row_get(row, "transcript") or _row_get(row, "transcript_path")),
     }
     if with_result:
         task["result"] = _loads(row["result"])
@@ -423,6 +433,7 @@ async def get_session(session_id: str) -> dict[str, Any] | None:
         "history": _loads(row["history"], []),
         "created_at": row["created_at"],
         "updated_at": row["updated_at"],
+        "pinned": bool(_row_get(row, "pinned", 0)),
     }
 
 
@@ -430,12 +441,47 @@ async def list_sessions(limit: int = 50) -> list[dict[str, Any]]:
     async with aiosqlite.connect(DB_PATH) as db:
         db.row_factory = aiosqlite.Row
         cur = await db.execute(
-            "SELECT id, title, created_at, updated_at FROM qa_sessions "
-            "ORDER BY updated_at DESC LIMIT ?",
+            "SELECT id, title, created_at, updated_at, pinned FROM qa_sessions "
+            "ORDER BY pinned DESC, updated_at DESC LIMIT ?",
             (limit,),
         )
         rows = await cur.fetchall()
-    return [dict(r) for r in rows]
+    return [
+        {
+            "id": r["id"],
+            "title": r["title"],
+            "created_at": r["created_at"],
+            "updated_at": r["updated_at"],
+            "pinned": bool(_row_get(r, "pinned", 0)),
+        }
+        for r in rows
+    ]
+
+
+async def update_session(
+    session_id: str, *, title: str | None = None, pinned: bool | None = None
+) -> dict[str, Any] | None:
+    session = await get_session(session_id)
+    if not session:
+        return None
+    fields: list[str] = []
+    values: list[Any] = []
+    if title is not None:
+        fields.append("title = ?")
+        values.append(title)
+    if pinned is not None:
+        fields.append("pinned = ?")
+        values.append(1 if pinned else 0)
+    if not fields:
+        return session
+    values.append(session_id)
+    async with aiosqlite.connect(DB_PATH) as db:
+        await db.execute(
+            f"UPDATE qa_sessions SET {', '.join(fields)} WHERE id = ?",
+            values,
+        )
+        await db.commit()
+    return await get_session(session_id)
 
 
 async def delete_session(session_id: str) -> bool:

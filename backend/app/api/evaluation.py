@@ -10,7 +10,7 @@ from fastapi.responses import FileResponse
 
 from ai_engine.config import settings
 from ai_engine.evaluation import evaluate_transcript
-from ai_engine.evaluation.materials import COURSEWARE_EXT, SYLLABUS_EXT
+from ai_engine.evaluation.materials import COURSEWARE_EXT, SCRIPT_EXT, SYLLABUS_EXT
 
 from ..core import db
 from ..schemas import TranscriptForm
@@ -21,6 +21,11 @@ router = APIRouter(prefix="/api/evaluation", tags=["教学视频质量评估"])
 ALLOWED_EXT = {".mp4", ".avi", ".mov", ".mkv", ".flv", ".wmv", ".webm", ".m4v"}
 SYLLABUS_MAX_BYTES = 30 * 1024 * 1024
 COURSEWARE_MAX_BYTES = 80 * 1024 * 1024
+SCRIPT_MAX_BYTES = 30 * 1024 * 1024
+
+
+def _has_upload(upload: UploadFile | None) -> bool:
+    return upload is not None and bool(upload.filename)
 
 
 def _save_upload(
@@ -63,19 +68,25 @@ def _save_upload(
 @router.post("/upload_video")
 async def upload_video(
     background: BackgroundTasks,
-    file: UploadFile = File(...),
+    file: UploadFile = File(..., description="教学视频（必填）"),
     reference: str | None = Form(
         None, description="课程大纲文本（选填）。上传大纲文件时以文件为准"
     ),
     syllabus: UploadFile | None = File(None, description="课程大纲文件（选填）"),
     courseware: UploadFile | None = File(None, description="课件文件（选填）"),
+    transcript: UploadFile | None = File(None, description="讲稿文件（选填），后端当作转写"),
+    transcript_text: str | None = Form(None, description="讲稿纯文本（选填），后端当作转写"),
 ) -> dict:
+    has_script_file = _has_upload(transcript)
+    script_body = (transcript_text or "").strip() or None
+    if script_body and len(script_body) < 10:
+        raise HTTPException(400, "讲稿过短，请补充内容或改传文件")
+
     suffix = Path(file.filename or "").suffix.lower()
     if suffix not in ALLOWED_EXT:
         raise HTTPException(
             400, f"不支持的视频格式 {suffix}，支持：{', '.join(sorted(ALLOWED_EXT))}"
         )
-
     safe_name = f"{int(time.time())}_{Path(file.filename).name}"
     dest = settings.upload_dir / safe_name
     try:
@@ -83,56 +94,72 @@ async def upload_video(
             shutil.copyfileobj(file.file, f)
     finally:
         await file.close()
-
     if dest.stat().st_size == 0:
         dest.unlink(missing_ok=True)
-        raise HTTPException(400, "上传的文件为空")
+        raise HTTPException(400, "上传的视频为空")
 
     syllabus_path = None
     courseware_path = None
+    transcript_path = None
     try:
-        if syllabus is not None and syllabus.filename:
+        if _has_upload(syllabus):
             syllabus_path = _save_upload(
                 syllabus, "syllabus", SYLLABUS_EXT, SYLLABUS_MAX_BYTES, "课程大纲"
             )
-        if courseware is not None and courseware.filename:
+        if _has_upload(courseware):
             courseware_path = _save_upload(
                 courseware, "courseware", COURSEWARE_EXT, COURSEWARE_MAX_BYTES, "课件"
             )
+        if has_script_file:
+            transcript_path = _save_upload(
+                transcript, "script", SCRIPT_EXT, SCRIPT_MAX_BYTES, "讲稿"
+            )
     except HTTPException:
-        dest.unlink(missing_ok=True)
+        if dest:
+            dest.unlink(missing_ok=True)
         if syllabus_path:
             Path(syllabus_path).unlink(missing_ok=True)
+        if courseware_path:
+            Path(courseware_path).unlink(missing_ok=True)
         raise
     finally:
         if syllabus is not None:
             await syllabus.close()
         if courseware is not None:
             await courseware.close()
+        if transcript is not None:
+            await transcript.close()
 
     ref = (reference or "").strip() or None
+    filename = file.filename or dest.name
+    video_path = str(dest)
     task_id = await db.create_task(
-        file.filename,
-        str(dest),
+        filename,
+        video_path,
         ref,
         syllabus_path=syllabus_path,
         courseware_path=courseware_path,
+        transcript=script_body,
+        transcript_path=transcript_path,
     )
     background.add_task(
         run_evaluation,
         task_id,
-        str(dest),
+        video_path,
         ref,
         syllabus_path,
         courseware_path,
+        script_body,
+        transcript_path,
     )
     return {
         "task_id": task_id,
         "status": "queued",
-        "filename": file.filename,
+        "filename": filename,
         "has_reference": bool(ref or syllabus_path),
         "has_syllabus": bool(ref or syllabus_path),
         "has_courseware": bool(courseware_path),
+        "has_script": bool(script_body or transcript_path),
     }
 
 
