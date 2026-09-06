@@ -48,10 +48,10 @@ knowledge/corpora/pku_salon/raw_video/*
 
 models/*
 !models/.gitkeep
-# 线上总分模型：2018 v9 五维 5 分类。缺了前端评估会报「找不到线上 GB 模型」
+# 线上总分模型：四年 v9 客观特征+五维 5 分类。缺了前端评估会报「找不到线上 GB 模型」
 !models/live/
-!models/live/gb_llm_cls5.pkl
-!models/live/gb_llm_cls5.json
+!models/live/gb_obj_cls5.pkl
+!models/live/gb_obj_cls5.json
 
 .idea/
 .vscode/
@@ -59,4 +59,4 @@ models/*
 .DS_Store
 *.log
 *.pkl
-!models/live/gb_llm_cls5.pkl
+!models/live/gb_obj_cls5.pkl

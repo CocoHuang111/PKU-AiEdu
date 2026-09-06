@@ -7,6 +7,7 @@ evaluate_transcript() 纯文本通道：只喂转写，跳过 ASR 与视觉
 
 from __future__ import annotations
 
+import re
 import time
 from pathlib import Path
 from typing import Any, Callable
@@ -85,14 +86,15 @@ def _feature_rows(features: dict, group: str) -> list[dict]:
     for key, meta in spec.items():
         if key not in features:
             continue
-        rows.append(
-            {
-                "key": key,
-                "label": meta["label"],
-                "value": features[key],
-                "unit": meta.get("unit", ""),
-            }
-        )
+        row = {
+            "key": key,
+            "label": meta["label"],
+            "value": features[key],
+            "unit": meta.get("unit", ""),
+        }
+        if meta.get("ideal"):
+            row["ideal"] = list(meta["ideal"])
+        rows.append(row)
     return rows
 
 
@@ -190,11 +192,88 @@ def generate_report(judged: dict) -> str:
         return _fallback_report(judged, str(e))
 
 
+_DIGEST_KEYS = (("突出优点", "strengths"), ("主要问题", "issues"), ("改进建议", "suggestions"))
+
+
+def parse_report_digest(report: str) -> dict[str, list[str]]:
+    """抽出报告里「诊断摘要」三类各至多 2 条短句。没有该节则返回空。"""
+    digest = {key: [] for _, key in _DIGEST_KEYS}
+    if not report:
+        return digest
+    m = re.search(r"^##\s+(?:[〇零0]、\s*)?诊断摘要\s*$", report, re.M)
+    if not m:
+        return digest
+    rest = report[m.end() :]
+    nxt = re.search(r"^##\s+", rest, re.M)
+    body = rest[: nxt.start()] if nxt else rest
+    current = None
+    for raw in body.splitlines():
+        line = raw.strip()
+        if line.startswith("#"):
+            title = line.lstrip("#").strip()
+            current = next((key for label, key in _DIGEST_KEYS if label in title), None)
+            continue
+        if not current or not re.match(r"^(?:\d+[\.、．)]|[-*])\s+", line):
+            continue
+        item = re.sub(r"^(?:\d+[\.、．)]|[-*])\s+", "", line)
+        item = item.replace("**", "").strip(" 。！？；;")
+        if item and item not in digest[current] and "短句" not in item:
+            digest[current].append(item)
+        if len(digest[current]) >= 2:
+            current = None
+    return digest
+
+
+def fallback_digest(judged: dict) -> dict[str, list[str]]:
+    """报告里没有摘要节时，用最高分指标、主问题和建议各补 2 条。"""
+    inds = [
+        i
+        for d in judged.get("dimensions") or []
+        for i in d.get("indicators") or []
+        if i.get("assessed")
+    ]
+    strengths = [
+        f"{i['label']} {i['score']} 分"
+        for i in sorted(inds, key=lambda x: x.get("score") or 0, reverse=True)[:2]
+    ]
+    issues = []
+    for d in judged.get("dimensions") or []:
+        issue = (d.get("primary_issue") or "").strip()
+        if d.get("assessed") and issue and issue != "当前证据未发现显著问题":
+            issues.append(issue[:22])
+        if len(issues) >= 2:
+            break
+    suggestions = []
+    for i in inds:
+        tip = (i.get("suggestion") or "").strip()
+        if tip and tip != "保持":
+            suggestions.append(re.split(r"[。！？]", tip, maxsplit=1)[0][:22])
+        if len(suggestions) >= 2:
+            break
+    return {"strengths": strengths, "issues": issues, "suggestions": suggestions}
+
+
+def attach_report(judged: dict) -> tuple[str, dict[str, list[str]]]:
+    report = generate_report(judged)
+    digest = parse_report_digest(report)
+    if not (digest["strengths"] or digest["issues"] or digest["suggestions"]):
+        digest = fallback_digest(judged)
+    return report, digest
+
+
 def _fallback_report(judged: dict, reason: str) -> str:
     """LLM 不可用时，用评分结果拼一份结构化报告，保证链路不断。"""
     overall = judged["overall"]
+    digest = fallback_digest(judged)
     lines = [
-        f"## 总体评价\n\n综合得分 **{overall['score']}/100**（{overall['grade']} 级 · {overall['grade_label']}）。\n",
+        "## 〇、诊断摘要\n",
+        "### 突出优点\n",
+        *[f"- {t}" for t in digest["strengths"] or ["暂无"]],
+        "\n### 主要问题\n",
+        *[f"- {t}" for t in digest["issues"] or ["暂无"]],
+        "\n### 改进建议\n",
+        *[f"- {t}" for t in digest["suggestions"] or ["暂无"]],
+        f"\n## 总体评价\n\n综合得分 **{overall['score']}/100**（{overall['grade']} 级 · {overall['grade_label']}）。\n",
         f"> 注：文字报告生成失败（{reason}），以下为根据评分结果自动汇总的结构化摘要。\n",
         "## 五维得分\n",
     ]
@@ -236,10 +315,13 @@ def evaluate_transcript(
     def on_dim(done: int, total: int, label: str):
         progress(30 + int(50 * done / total), "llm_judge", {"dimension": label})
 
-    judged = apply_live_overall(judge_all(evidence, {"text"}, progress_callback=on_dim))
+    judged = apply_live_overall(
+        judge_all(evidence, {"text"}, progress_callback=on_dim),
+        raw_features=features,
+    )
 
     progress(85, "report", {})
-    report = generate_report(judged)
+    report, digest = attach_report(judged)
 
     progress(100, "done", {})
     has_syllabus = bool((reference or "").strip())
@@ -263,6 +345,7 @@ def evaluate_transcript(
             "segments": [],
         },
         "report": report,
+        "digest": digest,
         "created_at": time.time(),
     }
 
@@ -482,12 +565,17 @@ def collect_video_evidence(
 def apply_live_overall(
     judged: dict[str, Any],
     *,
+    raw_features: dict[str, Any] | None = None,
     model_path: Path | str | None = None,
 ) -> dict[str, Any]:
-    """五维仍用 Judge；总分改成 2018 v9 五维 5 分类 GB。等权平均保留备查。"""
+    """五维仍用 Judge；总分改成四年 v9 客观特征+五维 5 分类 GB。等权平均保留备查。"""
     overall = judged["overall"]
     equal_weight = overall.get("score")
-    pred = predict_overall(judged.get("dimensions") or [], model_path=model_path)
+    pred = predict_overall(
+        judged.get("dimensions") or [],
+        raw_features=raw_features,
+        model_path=model_path,
+    )
     overall.update(
         {
             "score": pred["score"],
@@ -496,6 +584,7 @@ def apply_live_overall(
             "equal_weight_score": equal_weight,
             "gb_label": pred["label"],
             "gb_score_5": pred["score_5"],
+            "gb_score_4": pred.get("score_4"),
             "gb_variant": pred["variant"],
         }
     )
@@ -509,6 +598,7 @@ def score_from_evidence(
     progress: ProgressFn = _noop,
     prompt_version: str = "v0",
     calibrate_overall: bool = False,
+    raw_features: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """只打分 + 写报告。rejudge 读 evidence.json 走这条，不碰视频。
 
@@ -522,9 +612,9 @@ def score_from_evidence(
     progress(72, "llm_judge", {})
     judged = judge_all(evidence, avail, progress_callback=on_dim)
     if calibrate_overall:
-        judged = apply_live_overall(judged)
+        judged = apply_live_overall(judged, raw_features=raw_features)
     progress(92, "report", {})
-    report = generate_report(judged)
+    report, digest = attach_report(judged)
     progress(100, "done", {})
     return {
         "prompt_version": prompt_version,
@@ -532,6 +622,7 @@ def score_from_evidence(
         "overall": judged["overall"],
         "dimensions": judged["dimensions"],
         "report": report,
+        "digest": digest,
         "created_at": time.time(),
     }
 
@@ -573,6 +664,7 @@ def _api_result_from_pack(pack: dict[str, Any], scores: dict[str, Any]) -> dict[
         ],
         "transcript": pack.get("transcript") or {},
         "report": scores.get("report", ""),
+        "digest": scores.get("digest") or {},
         "created_at": scores.get("created_at", time.time()),
     }
 
@@ -711,6 +803,7 @@ def evaluate_session(
         progress=progress,
         prompt_version=LIVE_PROMPT_VERSION,
         calibrate_overall=True,
+        raw_features=pack.get("raw_features"),
     )
     return _api_result_from_pack(pack, scores)
 

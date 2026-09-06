@@ -395,6 +395,8 @@ def main() -> int:
     rows = _objective_rows({"text": tf, "timeline": tl, "vision": vf})
     check("输出结构含全部 7 组", len(rows) == 7, f"= {sorted(rows)}")
     check("空分组渲染为空列表", rows["speakers"] == [] and rows["courseware"] == [])
+    speech = next((r for r in rows["text"] if r["key"] == "speech_rate"), None)
+    check("语速行带 ideal，供前端比例条标区间", bool(speech) and speech.get("ideal") == [200, 280])
 
     print("\n=== 8. 提示词渲染 ===")
     dim = next(d for d in rubric["dimensions"] if d["key"] == "teaching_content")
@@ -478,6 +480,19 @@ def main() -> int:
         expert_lessons="- 微格纯讲授中互动少只作建议，不作为效果维主缺陷",
     )
     check("Judge 注入历史偏好", "历史评审偏好" in judge_lessons and "主缺陷" in judge_lessons)
+    report_prompt = render_prompt(
+        "eval_report.j2",
+        overall={
+            "score": 80,
+            "grade": "B",
+            "grade_label": "良好",
+            "duration_minutes": 20,
+            "modalities": ["text"],
+            "skipped_indicators": 0,
+        },
+        dimensions=[],
+    )
+    check("报告要求诊断摘要两点", "每类恰好 2 条" in report_prompt and "## 〇、诊断摘要" in report_prompt)
 
     print("\n=== 9. 课件切换检测 ===")
     check_slides()

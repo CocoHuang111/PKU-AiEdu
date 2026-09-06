@@ -126,6 +126,94 @@ def _row_get(row: aiosqlite.Row, key: str, default: Any = None) -> Any:
     return default if value is None else value
 
 
+_KIND_PREFIX = {
+    "courseware": "courseware",
+    "syllabus": "syllabus",
+    "script": "script",
+}
+
+
+def _original_name(stored: str, kind: str | None = None) -> str:
+    name = Path(stored).name
+    prefix = _KIND_PREFIX.get(kind or "")
+    parts = name.split("_", 2)
+    if prefix and len(parts) >= 3 and parts[0].isdigit() and parts[1] == prefix:
+        return parts[2]
+    head, _, rest = name.partition("_")
+    if rest and head.isdigit():
+        return rest
+    return name
+
+
+def _material_entry(
+    path: str | None,
+    *,
+    fallback: str | None = None,
+    kind: str | None = None,
+) -> dict[str, Any] | None:
+    if not path and not fallback:
+        return None
+    name = fallback or "未命名"
+    size = 0
+    if path:
+        p = Path(path)
+        name = _original_name(p.name, kind) or fallback or p.name
+        try:
+            if p.is_file():
+                size = p.stat().st_size
+        except OSError:
+            pass
+    return {"name": name, "size": size}
+
+
+def _task_materials(row: aiosqlite.Row) -> dict[str, Any]:
+    video = _material_entry(
+        _row_get(row, "video_path"),
+        fallback=row["filename"],
+        kind="video",
+    )
+    syllabus = _material_entry(_row_get(row, "syllabus_path"), kind="syllabus")
+    if not syllabus and row["reference"]:
+        syllabus = {"name": "课程大纲文本", "size": 0}
+    script = _material_entry(_row_get(row, "transcript_path"), kind="script")
+    if not script and _row_get(row, "transcript"):
+        script = {"name": "讲稿文本", "size": 0}
+    return {
+        "video": video,
+        "courseware": _material_entry(_row_get(row, "courseware_path"), kind="courseware"),
+        "syllabus": syllabus,
+        "script": script,
+    }
+
+
+_FILE_COLS = {
+    "video": "video_path",
+    "courseware": "courseware_path",
+    "syllabus": "syllabus_path",
+    "script": "transcript_path",
+}
+
+
+async def get_task_file_path(task_id: str, kind: str) -> Path | None:
+    col = _FILE_COLS.get(kind)
+    if not col:
+        return None
+    async with aiosqlite.connect(DB_PATH) as db:
+        db.row_factory = aiosqlite.Row
+        cur = await db.execute("SELECT * FROM eval_tasks WHERE id = ?", (task_id,))
+        row = await cur.fetchone()
+    if not row:
+        return None
+    raw = _row_get(row, col)
+    if not raw:
+        return None
+    path = Path(raw).resolve()
+    root = settings.upload_dir.resolve()
+    if not str(path).startswith(str(root)) or not path.is_file():
+        return None
+    return path
+
+
 # ---------------------------------------------------------------- 评估任务
 
 
@@ -198,6 +286,7 @@ def _task_row(row: aiosqlite.Row, with_result: bool = True) -> dict[str, Any]:
         "has_syllabus": bool(row["reference"] or _row_get(row, "syllabus_path")),
         "has_courseware": bool(_row_get(row, "courseware_path")),
         "has_script": bool(_row_get(row, "transcript") or _row_get(row, "transcript_path")),
+        "materials": _task_materials(row),
     }
     if with_result:
         task["result"] = _loads(row["result"])

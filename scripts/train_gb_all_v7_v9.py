@@ -122,7 +122,7 @@ def _print_cross(summaries: list[tuple[str, dict]]) -> None:
         print(f"{title:<16}" + "".join(f" {c}" for c in cells))
         rows.append(rec)
     with CROSS_CSV.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        w = csv.DictWriter(f, fieldnames=list(rows[0].keys()), lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
     CROSS_JSON.write_text(

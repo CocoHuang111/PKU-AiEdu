@@ -1,4 +1,4 @@
-.PHONY: help install install-local backend frontend ingest ingest-reset salon salon-transcribe salon-structure check check-features check-syllabus check-dataset check-expert-rules expert-rules-ingest expert-rules-extract expert-rules-distill check-gb train-gb train-gb-2018 train-gb-2018-v7 train-gb-2018-v4 train-gb-2018-v7-v9 train-gb-all-v7-v9 train-gb-live rejudge-2018-v7-effect rejudge-2018-v9 judge-overall-2018 smoke clean
+.PHONY: help install install-local backend frontend ingest ingest-reset salon salon-transcribe salon-structure check check-features check-syllabus check-dataset check-expert-rules expert-rules-ingest expert-rules-extract expert-rules-distill check-gb train-gb train-gb-2018 train-gb-2018-v7 train-gb-2018-v4 train-gb-2018-v7-v9 train-gb-all-v7-v9 train-gb-v9-regression-experiments train-gb-live rejudge-2018-v7-effect rejudge-2018-v9 judge-overall-2018 smoke clean
 
 PY ?= python
 BACKEND_PORT ?= 8010
@@ -23,7 +23,8 @@ help:
 	@echo "  make train-gb-2018-v4  恢复 2018 v4 快照后训六种 GB（含客观/二级）"
 	@echo "  make train-gb-2018-v7-v9  2018 v7.1 / v9 各训六种 GB 并对照"
 	@echo "  make train-gb-all-v7-v9  四年拼表后 v7.1 / v9 各训六种 GB（2022 留出）"
-	@echo "  make train-gb-live  2018 v9 全量五维 5 分类 → 线上总分模型"
+	@echo "  make train-gb-v9-regression-experiments  v9 四种小样本回归实验（独立产物）"
+	@echo "  make train-gb-live  四年 v9 全量客+五 5 分类 → 线上总分模型"
 	@echo "  make rejudge-2018-v7-effect  v7.1 恢复教学效果预期效果兜底"
 	@echo "  make rejudge-2018-v9  v9 严重度校准与五维诊断报告"
 	@echo "  make judge-overall-2018 2018 测试集五维+客观特征 LLM 盲评总分"
@@ -95,6 +96,9 @@ train-gb-2018-v7-v9:
 
 train-gb-all-v7-v9:
 	$(PY) -m scripts.train_gb_all_v7_v9
+
+train-gb-v9-regression-experiments:
+	$(PY) -m scripts.train_gb_regression_experiments
 
 train-gb-live:
 	$(PY) -m scripts.train_gb_live

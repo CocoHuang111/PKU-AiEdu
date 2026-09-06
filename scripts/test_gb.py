@@ -219,9 +219,10 @@ def main() -> int:
             and feat["llm_dim_teaching_effect"] == 75.0,
             str(feat),
         )
-        live_pkl = tmp_p / "gb_llm_cls5.pkl"
-        pred = predict_overall(dims, model_path=live_pkl)
-        check("玩具 5 分类能给出百分制总分", 55.0 <= pred["score"] <= 95.0, str(pred))
+        live_pkl = tmp_p / "gb_obj_cls5.pkl"
+        raw = {"text": {"speech_rate": 200}}
+        pred = predict_overall(dims, raw_features=raw, model_path=live_pkl)
+        check("玩具客+五 5 分类能给出百分制总分", 55.0 <= pred["score"] <= 95.0, str(pred))
         judged = apply_live_overall(
             {
                 "overall": {
@@ -232,6 +233,7 @@ def main() -> int:
                 },
                 "dimensions": dims,
             },
+            raw_features=raw,
             model_path=live_pkl,
         )
         check(

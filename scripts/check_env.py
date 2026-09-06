@@ -139,7 +139,7 @@ def main() -> int:
     from ai_engine.evaluation.gb import LIVE_GB_PATH, LIVE_PROMPT_VERSION
 
     if LIVE_GB_PATH.exists():
-        print(f"{OK} 线上 GB {LIVE_GB_PATH.name}（{LIVE_PROMPT_VERSION} 五维5分类）")
+        print(f"{OK} 线上 GB {LIVE_GB_PATH.name}（{LIVE_PROMPT_VERSION} 客+五 5分类）")
     else:
         print(f"{WARN} 未找到 {LIVE_GB_PATH} —— 视频评估总分需要它：make train-gb-live")
 

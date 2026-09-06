@@ -1,7 +1,7 @@
 """GB 评分校准：特征列约定、无效标签剔除、离散化映射、线上总分推理。
 
 对照实验仍走 gb_fit.py。线上视频评估的五维仍由 Judge 打，总分改用
-2018 v9 全量训出的五维 5 分类模型（见 LIVE_GB_PATH）。
+四年 v9 全量训出的「客观特征+五维 5 分类」模型（见 LIVE_GB_PATH）。
 """
 from __future__ import annotations
 
@@ -166,11 +166,11 @@ LLM_DIM_COLS = frozenset(
     }
 )
 
-LIVE_VARIANT = "llm_cls5"
+LIVE_VARIANT = "obj_cls5"
 LIVE_PROMPT_VERSION = "v9-calibrated"
 LIVE_GB_DIR = ROOT / "models" / "live"
 LIVE_GB_PATH = LIVE_GB_DIR / f"gb_{LIVE_VARIANT}.pkl"
-LIVE_SCORE_SOURCE = "gb_llm_cls5"
+LIVE_SCORE_SOURCE = "gb_obj_cls5"
 
 
 def _is_indicator_score(col: str) -> bool:
@@ -233,6 +233,37 @@ def features_from_dimensions(dimensions: list[dict[str, Any]]) -> dict[str, floa
     return out
 
 
+def features_from_raw(raw: dict[str, Any] | None) -> dict[str, float | None]:
+    """把流水线 raw_features（按组）收成训练时的 group__key 列。"""
+    from ai_engine.pedagogy.loader import get_rubric
+
+    spec = get_rubric().get("objective_features") or {}
+    out: dict[str, float | None] = {}
+    grouped = raw or {}
+    for group, keys in spec.items():
+        src = grouped.get(group) or {}
+        for key in keys:
+            val = src.get(key)
+            if val is None or val == "":
+                out[f"{group}__{key}"] = None
+                continue
+            try:
+                out[f"{group}__{key}"] = float(val)
+            except (TypeError, ValueError):
+                out[f"{group}__{key}"] = None
+    return out
+
+
+def features_from_evidence(
+    dimensions: list[dict[str, Any]],
+    raw_features: dict[str, Any] | None = None,
+) -> dict[str, float | None]:
+    """线上推理用的完整特征：客观特征 + 五维一级分。"""
+    out = features_from_raw(raw_features)
+    out.update(features_from_dimensions(dimensions))
+    return out
+
+
 def _row_for_bundle(
     scores: dict[str, float | None], feature_names: list[str]
 ) -> dict[str, float]:
@@ -267,9 +298,10 @@ def load_gb_bundle(path: str) -> dict[str, Any]:
 def predict_overall(
     dimensions: list[dict[str, Any]],
     *,
+    raw_features: dict[str, Any] | None = None,
     model_path: Path | str | None = None,
 ) -> dict[str, Any]:
-    """用五维 5 分类 GB 把一级分合成总分。返回百分制与 0–5。"""
+    """用客观特征+五维 5 分类 GB 合成总分。返回百分制、0–5 与 4 分制。"""
     import pandas as pd
 
     path = Path(model_path) if model_path is not None else LIVE_GB_PATH
@@ -278,7 +310,7 @@ def predict_overall(
     if not names:
         raise ValueError(f"{path} 缺少 feature_names")
     step = float(bundle.get("step") or 0.4)
-    row = _row_for_bundle(features_from_dimensions(dimensions), names)
+    row = _row_for_bundle(features_from_evidence(dimensions, raw_features), names)
     pred = bundle["pipeline"].predict(pd.DataFrame([row], columns=names))[0]
     label = int(pred)
     score_5 = label_to_score5(label, step=step)
@@ -286,6 +318,7 @@ def predict_overall(
     return {
         "label": label,
         "score_5": round(score_5, 4),
+        "score_4": round(score_5 / SCORE5_MAX * THESIS_SCORE_MAX, 4),
         "score": score_100,
         "variant": bundle.get("variant") or LIVE_VARIANT,
         "model_path": str(path),

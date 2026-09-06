@@ -426,9 +426,36 @@ class V9PromptContractTest(unittest.TestCase):
             ],
         )
         self.assertIn("核心难点展开不足", prompt)
+        self.assertIn("## 〇、诊断摘要", prompt)
+        self.assertIn("每类恰好 2 条", prompt)
         self.assertIn("## 三、五维诊断", prompt)
         self.assertIn("当前证据未发现显著问题", prompt)
         self.assertIn("不再只按全局最低分排序", prompt)
+
+    def test_parse_report_digest_reads_two_points(self):
+        from ai_engine.evaluation.pipeline import parse_report_digest
+
+        report = """## 〇、诊断摘要
+
+### 突出优点
+- 课件图表清楚，案例能把概念说透
+- 23 分钟内讲完导入到小结
+
+### 主要问题
+- 提问后几乎不留思考时间
+- 视线长时间停在屏幕上
+
+### 改进建议
+- 提问后默数三秒再叫答
+- 每讲完一块就抬头看学生
+
+## 一、总体评价
+展开论述。
+"""
+        digest = parse_report_digest(report)
+        self.assertEqual(digest["strengths"][0], "课件图表清楚，案例能把概念说透")
+        self.assertEqual(len(digest["issues"]), 2)
+        self.assertEqual(digest["suggestions"][1], "每讲完一块就抬头看学生")
 
 
 if __name__ == "__main__":

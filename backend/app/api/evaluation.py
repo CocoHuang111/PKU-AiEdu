@@ -180,6 +180,35 @@ async def get_task(task_id: str) -> dict:
     return task
 
 
+_FILE_MEDIA = {
+    ".mp4": "video/mp4",
+    ".mov": "video/quicktime",
+    ".mkv": "video/x-matroska",
+    ".avi": "video/x-msvideo",
+    ".webm": "video/webm",
+    ".m4v": "video/mp4",
+    ".pdf": "application/pdf",
+    ".ppt": "application/vnd.ms-powerpoint",
+    ".pptx": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+    ".doc": "application/msword",
+    ".docx": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+    ".txt": "text/plain",
+    ".md": "text/markdown",
+    ".html": "text/html",
+}
+
+
+@router.get("/task/{task_id}/file/{kind}")
+async def get_task_file(task_id: str, kind: str) -> FileResponse:
+    if kind not in {"video", "courseware", "syllabus", "script"}:
+        raise HTTPException(400, "不支持的文件类型")
+    path = await db.get_task_file_path(task_id, kind)
+    if not path:
+        raise HTTPException(404, "文件不存在")
+    media = _FILE_MEDIA.get(path.suffix.lower(), "application/octet-stream")
+    return FileResponse(path, media_type=media, filename=path.name)
+
+
 @router.post("/task/{task_id}/cancel")
 async def cancel_task(task_id: str) -> dict:
     """请求停止排队中或进行中的评估任务（协作式取消）。"""

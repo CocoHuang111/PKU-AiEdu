@@ -4,59 +4,61 @@
       <div class="sidebar-inner">
         <div class="drawer-head">
           <span class="drawer-title">历史会话</span>
-          <div class="drawer-actions">
-            <button class="icon-btn" type="button" title="新对话" @click="newSession">
-              <el-icon :size="18"><Plus /></el-icon>
-            </button>
-            <button class="icon-btn" type="button" title="收起" @click="sidebarOpen = false">
-              <el-icon :size="18"><Close /></el-icon>
-            </button>
-          </div>
+          <button class="icon-btn" type="button" title="收起" @click="sidebarOpen = false">
+            <el-icon :size="18"><DArrowLeft /></el-icon>
+          </button>
         </div>
-        <div class="drawer-list">
+        <div class="drawer-tools">
+          <el-input
+            v-model="sessionQuery"
+            placeholder="搜索历史会话"
+            :prefix-icon="Search"
+            clearable
+          />
+          <button class="new-eval-btn" type="button" @click="newSession">
+            <el-icon :size="16"><Plus /></el-icon>
+            新对话
+          </button>
+        </div>
+        <div class="task-list">
           <div v-if="!sessions.length" class="empty-hint">还没有会话</div>
-          <template v-else>
-            <section v-for="group in sessionGroups" :key="group.key" class="session-group">
-              <div class="group-label" :class="group.key">{{ group.label }}</div>
-              <div v-if="!group.items.length" class="empty-hint">暂无会话</div>
-              <div
-                v-for="s in group.items"
-                :key="s.id"
-                class="session"
-                :class="{ active: s.id === sessionId }"
-                @click="openSession(s.id)"
-              >
-                <div class="session-main">
-                  <el-icon class="session-icon" :size="14"><ChatDotRound /></el-icon>
-                  <div class="session-text">
-                    <div class="session-title">
-                      <el-icon v-if="s.pinned" class="pin-mark" :size="12"><Top /></el-icon>
-                      <span class="session-name">{{ s.title }}</span>
-                    </div>
-                    <div class="session-time">{{ formatTime(s.updated_at) }}</div>
-                  </div>
+          <div v-else-if="!visibleGroups.length" class="empty-hint">没有匹配的会话</div>
+          <section v-for="group in visibleGroups" :key="group.key" class="task-group">
+            <div class="group-label">{{ group.label }}</div>
+            <div
+              v-for="s in group.items"
+              :key="s.id"
+              class="task"
+              :class="{ active: s.id === sessionId, pinned: s.pinned }"
+              @click="openSession(s.id)"
+            >
+              <el-icon class="task-icon" :size="18"><ChatDotRound /></el-icon>
+              <div class="task-body">
+                <div class="task-name">{{ s.title }}</div>
+                <div class="task-status-row">
+                  <span class="task-time">{{ formatTime(s.updated_at) }}</span>
                 </div>
-                <el-dropdown
-                  trigger="click"
-                  @command="(cmd) => onSessionCommand(s, cmd)"
-                  @click.stop
-                >
-                  <button class="more-btn" type="button" title="更多" @click.stop>
-                    <el-icon :size="16"><MoreFilled /></el-icon>
-                  </button>
-                  <template #dropdown>
-                    <el-dropdown-menu>
-                      <el-dropdown-item command="rename">重命名</el-dropdown-item>
-                      <el-dropdown-item command="pin">
-                        {{ s.pinned ? '取消置顶' : '置顶' }}
-                      </el-dropdown-item>
-                      <el-dropdown-item command="delete" divided>删除</el-dropdown-item>
-                    </el-dropdown-menu>
-                  </template>
-                </el-dropdown>
               </div>
-            </section>
-          </template>
+              <el-dropdown
+                trigger="click"
+                @command="(cmd) => onSessionCommand(s, cmd)"
+                @click.stop
+              >
+                <button class="more-btn" type="button" title="更多" @click.stop>
+                  <el-icon :size="16"><MoreFilled /></el-icon>
+                </button>
+                <template #dropdown>
+                  <el-dropdown-menu>
+                    <el-dropdown-item command="rename">重命名</el-dropdown-item>
+                    <el-dropdown-item command="pin">
+                      {{ s.pinned ? '取消置顶' : '置顶' }}
+                    </el-dropdown-item>
+                    <el-dropdown-item command="delete" divided>删除</el-dropdown-item>
+                  </el-dropdown-menu>
+                </template>
+              </el-dropdown>
+            </div>
+          </section>
         </div>
       </div>
     </aside>
@@ -221,7 +223,7 @@
 
 <script setup>
 import { computed, nextTick, onMounted, ref } from 'vue'
-import { ChatDotRound, ChatLineRound, Close, MoreFilled, Plus, Promotion, Top } from '@element-plus/icons-vue'
+import { ChatDotRound, ChatLineRound, DArrowLeft, MoreFilled, Plus, Promotion, Search } from '@element-plus/icons-vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
@@ -243,6 +245,7 @@ const selectedCorpora = ref([])
 const input = ref('')
 const sending = ref(false)
 const sidebarOpen = ref(true)
+const sessionQuery = ref('')
 const bodyEl = ref(null)
 
 const currentTitle = computed(() => {
@@ -254,13 +257,18 @@ const currentPinned = computed(() => {
   return !!sessions.value.find((s) => s.id === sessionId.value)?.pinned
 })
 
-const sessionGroups = computed(() => {
-  const pinned = sessions.value.filter((s) => s.pinned)
-  const recent = sessions.value.filter((s) => !s.pinned)
-  const groups = []
-  if (pinned.length) groups.push({ key: 'pinned', label: '置顶', items: pinned })
-  groups.push({ key: 'recent', label: '最近', items: recent })
-  return groups
+const visibleGroups = computed(() => {
+  const q = sessionQuery.value.trim().toLowerCase()
+  const filtered = sessions.value.filter((s) => {
+    if (q && !(s.title || '').toLowerCase().includes(q)) return false
+    return true
+  })
+  const pinned = filtered.filter((s) => s.pinned)
+  const recent = filtered.filter((s) => !s.pinned)
+  return [
+    { key: 'pinned', label: '置顶', items: pinned },
+    { key: 'recent', label: '最近', items: recent },
+  ].filter((g) => g.items.length)
 })
 
 const selectableNames = computed(() =>
@@ -501,11 +509,11 @@ onMounted(() => {
   transition: width 0.2s ease, border-color 0.2s ease;
 }
 .sidebar.open {
-  width: 280px;
+  width: 300px;
   border-right-color: #ececec;
 }
 .sidebar-inner {
-  width: 280px;
+  width: 300px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -874,17 +882,16 @@ onMounted(() => {
 }
 
 .drawer-head {
-  height: 64px;
+  height: 56px;
   padding: 0 8px 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #303133;
   flex-shrink: 0;
-  border-bottom: 1px solid #f0e0e0;
 }
 .drawer-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.02em;
   line-height: 1.2;
@@ -902,43 +909,34 @@ onMounted(() => {
   border-radius: 2px;
   background: #a61b1b;
 }
-.drawer-actions {
+.drawer-tools {
+  padding: 0 14px 12px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
 }
-.drawer-list {
+.new-eval-btn {
+  height: 36px;
+  border: 1px solid #a61b1b;
+  background: #fff;
+  color: #a61b1b;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.new-eval-btn:hover {
+  background: #fdf4f4;
+}
+.task-list {
   flex: 1;
   overflow-y: auto;
-  padding: 10px 8px 16px;
-}
-.session-group + .session-group {
-  margin-top: 14px;
-}
-.group-label {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  padding: 4px 8px 8px;
-}
-.group-label.pinned {
-  color: #a61b1b;
-}
-.group-label.recent {
-  color: #8a8a8a;
-}
-.group-label.pinned::before,
-.group-label.recent::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: #d8d8d8;
-}
-.group-label.pinned::before {
-  background: #a61b1b;
+  padding: 4px 8px 16px;
 }
 .empty-hint {
   color: #909399;
@@ -946,65 +944,66 @@ onMounted(() => {
   text-align: center;
   padding: 24px 0;
 }
-.session {
-  position: relative;
-  padding: 10px 8px 10px 12px;
-  border-radius: 10px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 4px;
+.task-group + .task-group {
+  margin-top: 8px;
 }
-.session:hover {
-  background: #ececed;
+.group-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a8a8a;
+  letter-spacing: 0.08em;
+  padding: 8px 8px 4px;
 }
-.session.active {
-  background: #f5e6e6;
-}
-.session.active .session-name {
-  color: #7b1113;
-}
-.session-main {
+.task {
   display: flex;
   align-items: flex-start;
-  gap: 8px;
-  flex: 1;
-  min-width: 0;
+  gap: 10px;
+  padding: 10px 8px;
+  border-top: 1px solid #ececec;
+  cursor: pointer;
 }
-.session-icon {
+.task:hover {
+  background: #ececed;
+}
+.task.active {
+  background: #f5e6e6;
+}
+.task.active .task-name {
+  color: #7b1113;
+}
+.task-icon {
   flex-shrink: 0;
   margin-top: 2px;
   color: #8a8a8a;
 }
-.session.active .session-icon {
+.task.active .task-icon,
+.task.pinned .task-icon {
   color: #a61b1b;
 }
-.session-text {
+.task-body {
   min-width: 0;
   flex: 1;
 }
-.session-title {
+.task-name {
   font-size: 13px;
   color: #303133;
+  letter-spacing: 0.02em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  letter-spacing: 0.02em;
+}
+.task-status-row {
   display: flex;
   align-items: center;
-  gap: 4px;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
 }
-.session-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.session-time {
+.task-time {
   font-size: 11px;
   color: #a8abb2;
-  margin-top: 2px;
 }
-.session :deep(.el-dropdown) {
-  margin-left: auto;
+.task :deep(.el-dropdown) {
   flex-shrink: 0;
 }
 .more-btn {
@@ -1019,7 +1018,6 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  opacity: 1;
 }
 .more-btn:hover {
   background: #fff;

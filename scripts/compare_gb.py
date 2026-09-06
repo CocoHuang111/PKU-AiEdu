@@ -156,7 +156,7 @@ def compare(
 
     out_csv.parent.mkdir(parents=True, exist_ok=True)
     with out_csv.open("w", encoding="utf-8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=list(rows_out[0].keys()))
+        w = csv.DictWriter(f, fieldnames=list(rows_out[0].keys()), lineterminator="\n")
         w.writeheader()
         w.writerows(rows_out)
     print(f"\n宽表已写 {out_csv}")
