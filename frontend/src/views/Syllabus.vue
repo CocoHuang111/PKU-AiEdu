@@ -1,255 +1,413 @@
 <template>
-  <div class="layout">
-    <!-- 输入区 -->
-    <el-card shadow="never" class="card">
-      <template #header>
-        <span class="card-title">上传教学大纲 — 解析并生成结构化的优化大纲</span>
-      </template>
-
-      <div class="mode-row">
-        <span class="mode-label">优化模式</span>
-        <el-radio-group v-model="promptMode" size="small" class="mode-group">
-          <el-radio-button value="adaptive">灵活结构 · XML</el-radio-button>
-          <el-radio-button value="schema">固定框架 · XML</el-radio-button>
-          <el-radio-button value="markdown">灵活结构 · Markdown</el-radio-button>
-          <el-radio-button value="markdown_schema">固定框架 · Markdown</el-radio-button>
-        </el-radio-group>
-      </div>
-
-      <el-tabs v-model="tab">
-        <el-tab-pane label="上传文档" name="file">
-          <el-upload
-            drag
-            :auto-upload="false"
-            :show-file-list="false"
-            :disabled="!!busyTask || submitting"
-            accept=".pdf,.docx,.doc,.txt,.md"
-            :on-change="handleFile"
-          >
-            <div class="upload-inner">
-              <div class="upload-icon">📘</div>
-              <div class="upload-text">拖入大纲文档或点击选择</div>
-              <div class="upload-hint">支持 PDF / Word(docx, doc) / Markdown / 纯文本</div>
-            </div>
-          </el-upload>
-        </el-tab-pane>
-
-        <el-tab-pane label="粘贴文本" name="text">
-          <el-input
-            v-model="text"
-            type="textarea"
-            :rows="10"
-            placeholder="把大纲内容粘贴到这里…"
-          />
-          <el-button
-            type="primary"
-            :loading="submitting"
-            :disabled="text.trim().length < 10 || !!busyTask"
-            style="margin-top: 12px"
-            @click="runText"
-          >
-            开始优化
-          </el-button>
-        </el-tab-pane>
-      </el-tabs>
-    </el-card>
-
-    <!-- 进行中的任务 -->
-    <el-card v-if="activeTask" shadow="never" class="card task-card">
-      <template #header>
-        <div class="result-header">
-          <span class="card-title">优化进度</span>
-          <el-button
-            v-if="activeTask.status === 'processing' || activeTask.status === 'queued'"
-            type="danger"
-            size="small"
-            plain
-            :loading="cancelling"
-            @click="cancelActiveTask"
-          >
-            停止
-          </el-button>
+  <div class="syllabus">
+    <aside class="sidebar" :class="{ open: sidebarOpen }">
+      <div class="sidebar-inner">
+        <div class="drawer-head">
+          <span class="drawer-title">历史任务</span>
+          <button class="icon-btn" type="button" title="收起" @click="sidebarOpen = false">
+            <el-icon :size="18"><DArrowLeft /></el-icon>
+          </button>
         </div>
-      </template>
-      <div class="task-filename">{{ activeTask.filename }}</div>
-      <div class="task-status-row">
-        <el-tag :type="statusType(activeTask.status)" size="small">
-          {{ statusText(activeTask.status) }}
-        </el-tag>
-        <span class="task-step">{{ activeTask.step_label }}{{ stepDetail(activeTask) }}</span>
-      </div>
-      <el-progress
-        :percentage="activeTask.progress"
-        :stroke-width="10"
-        :status="progressStatus(activeTask.status)"
-        style="margin-top: 12px"
-      />
-      <div v-if="activeTask.error" class="task-error">{{ activeTask.error }}</div>
-      <div v-else-if="activeTask.status === 'processing' || activeTask.status === 'queued'" class="task-hint">
-        {{ loadingHint }}
-      </div>
-    </el-card>
-
-    <!-- 结果区 -->
-    <el-card v-if="result" shadow="never" class="card">
-      <template #header>
-        <div class="result-header">
-          <span class="card-title">{{ result.course_name }}</span>
-          <div class="result-actions">
-            <el-tag v-if="result.valid" type="success" size="small">
-              {{ isMarkdownOutput ? 'Markdown 校验通过' : 'XML 校验通过' }}
-            </el-tag>
-            <el-tag v-else type="danger" size="small">
-              {{ isMarkdownOutput ? 'Markdown 校验失败' : 'XML 校验失败' }}
-            </el-tag>
-            <el-tag v-if="result.repair_attempts" type="warning" size="small">
-              自动修复 {{ result.repair_attempts }} 次
-            </el-tag>
-            <el-tag v-if="result.truncated" type="warning" size="small">原文超长已截断</el-tag>
-            <el-tag
-              v-if="isMarkdownOutput && result.output_char_count"
-              type="info"
-              size="small"
+        <div class="drawer-tools">
+          <el-input
+            v-model="taskQuery"
+            placeholder="搜索历史任务"
+            :prefix-icon="Search"
+            clearable
+          />
+          <button class="new-eval-btn" type="button" @click="newOptimization">
+            <el-icon :size="16"><Plus /></el-icon>
+            新建优化
+          </button>
+          <div class="filter-row">
+            <button
+              v-for="f in TASK_FILTERS"
+              :key="f.key"
+              type="button"
+              class="filter-btn"
+              :class="{ on: taskFilter === f.key }"
+              @click="taskFilter = f.key"
             >
-              {{ result.output_char_count }} / {{ result.max_output_chars || '—' }} 字
-            </el-tag>
-            <el-tag v-if="result.prompt_mode" type="info" size="small">
-              {{ modeLabel(result.prompt_mode) }}
-            </el-tag>
-            <el-button size="small" @click="copyOutput">
-              复制{{ isMarkdownOutput ? ' Markdown' : ' XML' }}
-            </el-button>
-            <el-button size="small" @click="downloadOutput">
-              下载{{ isMarkdownOutput ? ' Markdown' : ' XML' }}
-            </el-button>
-            <el-dropdown
-              trigger="click"
-              :disabled="!result.valid || !result.id"
-              @command="exportAs"
-            >
-              <el-button size="small" type="primary" :disabled="!result.valid || !result.id">
-                导出 ▾
-              </el-button>
-              <template #dropdown>
-                <el-dropdown-menu>
-                  <el-dropdown-item v-if="!isMarkdownOutput" command="markdown">
-                    Markdown (.md)
-                  </el-dropdown-item>
-                  <el-dropdown-item command="docx">Word (.docx)</el-dropdown-item>
-                  <el-dropdown-item command="pdf">PDF (.pdf)</el-dropdown-item>
-                </el-dropdown-menu>
-              </template>
-            </el-dropdown>
+              {{ f.label }}
+            </button>
           </div>
         </div>
-      </template>
-
-      <el-alert
-        v-if="!result.valid"
-        type="error"
-        :closable="false"
-        :title="validationAlertTitle(result.validation_error)"
-        style="margin-bottom: 12px"
-      />
-      <el-alert
-        v-else-if="result.validation_error"
-        type="warning"
-        :closable="false"
-        :title="result.validation_error"
-        style="margin-bottom: 12px"
-      />
-
-      <div class="compare">
-        <div class="pane">
-          <div class="pane-head">原始大纲</div>
-          <pre class="pane-body original">{{ result.original_text }}</pre>
-        </div>
-        <div class="pane">
-          <div class="pane-head">优化后大纲（{{ isMarkdownOutput ? 'Markdown' : 'XML' }}）</div>
-          <pre v-if="!isMarkdownOutput" class="pane-body xml" v-html="highlight(result.xml)"></pre>
-          <div v-else class="pane-body markdown" v-html="renderMd(result.xml)"></div>
+        <div class="task-list">
+          <div v-if="!tasks.length" class="empty-hint">暂无优化记录</div>
+          <div v-else-if="!visibleGroups.length" class="empty-hint">没有匹配的任务</div>
+          <section v-for="group in visibleGroups" :key="group.key" class="task-group">
+            <div class="group-label">{{ group.label }}</div>
+            <div
+              v-for="t in group.items"
+              :key="t.id"
+              class="task"
+              :class="{ active: t.id === activeId, running: isRunning(t) }"
+              @click="selectTask(t.id)"
+            >
+              <el-icon class="task-icon" :size="18"><Document /></el-icon>
+              <div class="task-body">
+                <div class="task-name">{{ t.filename }}</div>
+                <div v-if="isRunning(t)" class="task-run">
+                  <span>优化中 {{ t.progress }}%</span>
+                  <el-progress :percentage="t.progress" :stroke-width="4" :show-text="false" />
+                  <div class="task-meta">{{ t.step_label }}{{ stepDetail(t) }}</div>
+                </div>
+                <div v-else class="task-status-row">
+                  <span class="task-status" :class="t.status">{{ statusText(t.status) }}</span>
+                  <span class="task-time">{{ formatTime(t.created_at) }}</span>
+                </div>
+                <div v-if="t.error" class="task-error">{{ t.error }}</div>
+              </div>
+              <el-button
+                v-if="isRunning(t)"
+                text
+                type="danger"
+                size="small"
+                class="task-stop"
+                :loading="cancellingId === t.id"
+                @click.stop="cancelTask(t.id)"
+              >
+                停止
+              </el-button>
+              <button
+                class="del-btn"
+                type="button"
+                title="删除"
+                @click.stop="removeTask(t)"
+              >
+                <el-icon :size="16"><Delete /></el-icon>
+              </button>
+            </div>
+          </section>
         </div>
       </div>
-    </el-card>
+    </aside>
 
-    <!-- 历史 -->
-    <el-card shadow="never" class="card">
-      <template #header>
-        <div class="result-header">
-          <span class="card-title">历史记录</span>
-          <el-button text size="small" @click="loadHistory">刷新</el-button>
+    <div class="stage">
+      <header v-if="!sidebarOpen" class="stage-top">
+        <div class="top-left">
+          <button class="icon-btn" type="button" title="历史任务" @click="sidebarOpen = true">
+            <el-icon :size="20"><Tickets /></el-icon>
+          </button>
+          <button class="icon-btn" type="button" title="新建优化" @click="newOptimization">
+            <el-icon :size="20"><Plus /></el-icon>
+          </button>
         </div>
-      </template>
-      <div v-if="!history.length" class="empty-hint">暂无记录</div>
-      <el-table v-else :data="history" size="small" border @row-click="openRecord">
-        <el-table-column prop="course_name" label="课程名称" />
-        <el-table-column prop="filename" label="来源文件" width="220" />
-        <el-table-column label="校验" width="90" align="center">
-          <template #default="{ row }">
-            <el-tag :type="row.valid ? 'success' : 'danger'" size="small">
-              {{ row.valid ? '通过' : '失败' }}
-            </el-tag>
-          </template>
-        </el-table-column>
-        <el-table-column label="时间" width="160">
-          <template #default="{ row }">{{ formatTime(row.created_at) }}</template>
-        </el-table-column>
-      </el-table>
-    </el-card>
+      </header>
+
+      <div class="stage-body">
+        <div class="workspace">
+          <header class="page-head">
+            <div>
+              <h1>教学大纲优化</h1>
+              <p>上传大纲文档，生成融合AI辅助教学的优化版本</p>
+            </div>
+          </header>
+
+          <section class="compose">
+            <div class="mode-row">
+              <span class="mode-label">优化模式</span>
+              <el-radio-group v-model="promptMode" size="small" class="mode-group">
+                <el-radio-button value="markdown">原文微调</el-radio-button>
+                <el-radio-button value="markdown_schema">重构框架</el-radio-button>
+              </el-radio-group>
+            </div>
+
+            <div class="file-slot">
+              <div v-if="sourceFile && !reviewing" class="ready-card">
+                <div class="slot-head">
+                  教学大纲
+                  <span class="req-tag">必填</span>
+                  <div v-if="!reviewing" class="head-actions">
+                    <button type="button" class="text-act" @click="pickFile">
+                      <el-icon :size="14"><RefreshRight /></el-icon>
+                      更换
+                    </button>
+                    <button type="button" class="text-act" @click="clearFile">
+                      <el-icon :size="14"><Delete /></el-icon>
+                      删除
+                    </button>
+                  </div>
+                </div>
+                <div class="aux-file">
+                  <div class="type-badge" :class="fileKind(sourceFile).tone">
+                    {{ fileKind(sourceFile).label }}
+                  </div>
+                  <div class="aux-copy">
+                    <div class="fname">{{ sourceFile.name }}</div>
+                    <div v-if="sourceFile.size" class="fmeta">{{ formatSize(sourceFile.size) }}</div>
+                    <div class="ok">
+                      <el-icon :size="14"><CircleCheckFilled /></el-icon>
+                      已选择
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div v-else-if="reviewing" class="ready-card">
+                <div class="slot-head">
+                  教学大纲
+                  <span class="req-tag">必填</span>
+                  <div v-if="activeTask && isRunning(activeTask)" class="head-actions">
+                    <button
+                      type="button"
+                      class="text-act"
+                      :disabled="cancellingId === activeTask.id"
+                      @click="cancelTask(activeTask.id)"
+                    >
+                      停止
+                    </button>
+                  </div>
+                </div>
+                <div v-if="activeTask?.filename" class="aux-file">
+                  <div class="type-badge" :class="fileKind({ name: activeTask.filename }).tone">
+                    {{ fileKind({ name: activeTask.filename }).label }}
+                  </div>
+                  <div class="aux-copy">
+                    <div class="fname">{{ activeTask.filename }}</div>
+                  </div>
+                </div>
+                <div v-else class="empty-slot">未上传</div>
+                <div v-if="activeTask" class="file-progress">
+                  <el-progress
+                    :percentage="activeTask.progress"
+                    :stroke-width="6"
+                    :show-text="false"
+                    :status="progressStatus(activeTask.status)"
+                  />
+                  <div class="file-progress-caption" :class="{ error: !!activeTask.error }">
+                    {{ progressCaption }}
+                  </div>
+                </div>
+              </div>
+              <el-upload
+                v-else
+                drag
+                class="file-drop"
+                :auto-upload="false"
+                :show-file-list="false"
+                :disabled="submitting"
+                accept=".pdf,.docx,.doc,.txt,.md"
+                :on-change="onFileChange"
+              >
+                <div class="slot-head">
+                  教学大纲
+                  <span class="req-tag">必填</span>
+                </div>
+                <el-icon class="drop-icon" :size="36"><Document /></el-icon>
+                <div class="upload-text">
+                  拖入大纲文件，或<span class="pick">点击选择</span>
+                </div>
+                <div class="upload-hint">支持 PDF、Word、Markdown、纯文本</div>
+              </el-upload>
+            </div>
+
+            <div v-if="!reviewing" class="compose-actions">
+              <el-button @click="clearCompose" :disabled="!sourceFile">
+                清空
+              </el-button>
+              <el-button
+                type="primary"
+                :loading="submitting"
+                :disabled="!canStart || !!busyTask"
+                @click="startOptimize"
+              >
+                开始优化
+              </el-button>
+            </div>
+            <input
+              ref="filePicker"
+              type="file"
+              accept=".pdf,.docx,.doc,.txt,.md"
+              hidden
+              @change="onFilePicked"
+            />
+          </section>
+
+          <el-card v-if="result" shadow="never" class="card">
+            <template #header>
+              <div class="result-header">
+                <span class="card-title">{{ result.course_name }}</span>
+                <div class="result-actions">
+                  <el-tag v-if="result.valid" type="success" size="small">
+                    {{ isMarkdownOutput ? 'Markdown 校验通过' : 'XML 校验通过' }}
+                  </el-tag>
+                  <el-tag v-else type="danger" size="small">
+                    {{ isMarkdownOutput ? 'Markdown 校验失败' : 'XML 校验失败' }}
+                  </el-tag>
+                  <el-tag v-if="result.repair_attempts" type="warning" size="small">
+                    自动修复 {{ result.repair_attempts }} 次
+                  </el-tag>
+                  <el-tag v-if="result.truncated" type="warning" size="small">原文超长已截断</el-tag>
+                  <el-tag
+                    v-if="isMarkdownOutput && result.output_char_count"
+                    type="info"
+                    size="small"
+                  >
+                    {{ result.output_char_count }} / {{ result.max_output_chars || '—' }} 字
+                  </el-tag>
+                  <el-tag v-if="result.prompt_mode" type="info" size="small">
+                    {{ modeLabel(result.prompt_mode) }}
+                  </el-tag>
+                  <el-button size="small" @click="copyOutput">
+                    复制{{ isMarkdownOutput ? ' Markdown' : ' XML' }}
+                  </el-button>
+                  <el-dropdown
+                    trigger="click"
+                    :disabled="!result.valid || !result.id"
+                    @command="exportAs"
+                  >
+                    <el-button size="small" type="primary" :disabled="!result.valid || !result.id">
+                      导出 ▾
+                    </el-button>
+                    <template #dropdown>
+                      <el-dropdown-menu>
+                        <el-dropdown-item command="markdown">Markdown (.md)</el-dropdown-item>
+                        <el-dropdown-item command="docx">Word (.docx)</el-dropdown-item>
+                        <el-dropdown-item command="pdf">PDF (.pdf)</el-dropdown-item>
+                      </el-dropdown-menu>
+                    </template>
+                  </el-dropdown>
+                </div>
+              </div>
+            </template>
+
+            <el-alert
+              v-if="!result.valid"
+              type="error"
+              :closable="false"
+              :title="validationAlertTitle(result.validation_error)"
+              style="margin-bottom: 12px"
+            />
+            <el-alert
+              v-else-if="result.validation_error"
+              type="warning"
+              :closable="false"
+              :title="result.validation_error"
+              style="margin-bottom: 12px"
+            />
+
+            <div class="compare">
+              <div class="pane">
+                <div class="pane-head">原始大纲</div>
+                <pre class="pane-body original">{{ result.original_text }}</pre>
+              </div>
+              <div class="pane">
+                <div class="pane-head">优化后大纲（{{ isMarkdownOutput ? 'Markdown' : 'XML' }}）</div>
+                <pre v-if="!isMarkdownOutput" class="pane-body xml" v-html="highlight(result.xml)"></pre>
+                <div v-else class="pane-body markdown" v-html="renderMd(result.xml)"></div>
+              </div>
+            </div>
+          </el-card>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
 import { computed, onMounted, onUnmounted, ref } from 'vue'
-import { ElMessage } from 'element-plus'
+import { ElMessage, ElMessageBox } from 'element-plus'
+import {
+  CircleCheckFilled,
+  DArrowLeft,
+  Delete,
+  Document,
+  Plus,
+  RefreshRight,
+  Search,
+  Tickets,
+} from '@element-plus/icons-vue'
 import DOMPurify from 'dompurify'
 import { marked } from 'marked'
 import { syllabusApi } from '../api/client'
 
 const POLL_INTERVAL = 2500
+const TASK_FILTERS = [
+  { key: 'all', label: '全部' },
+  { key: 'running', label: '进行中' },
+  { key: 'completed', label: '已完成' },
+  { key: 'failed', label: '失败' },
+]
 
-const tab = ref('file')
-const text = ref('')
-const promptMode = ref('adaptive')
+const promptMode = ref('markdown')
+const sourceFile = ref(null)
+const filePicker = ref(null)
 const submitting = ref(false)
-const cancelling = ref(false)
-const activeTask = ref(null)
+const cancellingId = ref(null)
+const tasks = ref([])
+const activeId = ref(null)
 const result = ref(null)
-const history = ref([])
+const sidebarOpen = ref(true)
+const taskQuery = ref('')
+const taskFilter = ref('all')
 let pollTimer = null
 
-const busyTask = computed(
-  () =>
-    activeTask.value &&
-    (activeTask.value.status === 'processing' || activeTask.value.status === 'queued')
-)
+const activeTask = computed(() => tasks.value.find((t) => t.id === activeId.value) || null)
+const busyTask = computed(() => activeTask.value && isRunning(activeTask.value))
+const reviewing = computed(() => Boolean(activeId.value && !submitting.value))
+const canStart = computed(() => Boolean(sourceFile.value))
 
 const isMarkdownOutput = computed(() => {
-  if (!result.value) return promptMode.value.startsWith('markdown')
+  if (!result.value) return true
   if (result.value.output_format) return result.value.output_format === 'markdown'
   const content = (result.value.xml || '').trimStart()
   return content.startsWith('#') || !content.startsWith('<')
 })
 
 const loadingHint = computed(() => {
-  if (promptMode.value === 'schema') {
-    return '固定框架单轮生成较长 XML，可能需要 5–10 分钟；可离开页面，进度会自动刷新。'
-  }
   if (promptMode.value === 'markdown_schema') {
-    return '固定框架 Markdown 生成内容较长，可能需要 3–8 分钟；可离开页面，进度会自动刷新。'
+    return '重构框架生成较久，可离开页面，进度会自动刷新'
   }
-  if (promptMode.value === 'markdown') {
-    return 'Markdown 模式通常 30 秒到 3 分钟；可离开页面，进度会自动刷新。'
-  }
-  return '通常 30 秒到 2 分钟；可离开页面，进度会自动刷新。'
+  return '可离开页面，进度会自动刷新'
 })
 
-function statusType(status) {
-  return (
-    { completed: 'success', processing: 'warning', failed: 'danger', cancelled: 'info' }[
-      status
-    ] || 'info'
-  )
+const progressCaption = computed(() => {
+  const t = activeTask.value
+  if (!t) return ''
+  if (t.error) return t.error
+  if (isRunning(t)) {
+    const step = `${t.step_label || ''}${stepDetail(t)}`.trim()
+    return step || loadingHint.value
+  }
+  if (t.status === 'completed') return '优化已完成'
+  if (t.status === 'cancelled') return '已停止'
+  return statusText(t.status)
+})
+
+const filteredTasks = computed(() => {
+  const q = taskQuery.value.trim().toLowerCase()
+  return tasks.value.filter((t) => {
+    if (taskFilter.value === 'running' && !isRunning(t)) return false
+    if (taskFilter.value === 'completed' && t.status !== 'completed') return false
+    if (taskFilter.value === 'failed' && t.status !== 'failed' && t.status !== 'cancelled') {
+      return false
+    }
+    const hay = `${t.filename || ''} ${t.summary?.course_name || ''}`.toLowerCase()
+    if (q && !hay.includes(q)) return false
+    return true
+  })
+})
+
+const visibleGroups = computed(() => {
+  const now = new Date()
+  const start = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime() / 1000
+  const running = []
+  const today = []
+  const earlier = []
+  for (const t of filteredTasks.value) {
+    if (isRunning(t)) running.push(t)
+    else if ((t.created_at || 0) >= start) today.push(t)
+    else earlier.push(t)
+  }
+  return [
+    { key: 'running', label: '进行中', items: running },
+    { key: 'today', label: '今天', items: today },
+    { key: 'earlier', label: '更早', items: earlier },
+  ].filter((g) => g.items.length)
+})
+
+function isRunning(t) {
+  return t.status === 'processing' || t.status === 'queued'
 }
 
 function statusText(status) {
@@ -277,87 +435,187 @@ function stepDetail(task) {
   return ''
 }
 
-function schedulePoll() {
-  clearTimeout(pollTimer)
-  const busy =
-    activeTask.value &&
-    (activeTask.value.status === 'processing' || activeTask.value.status === 'queued')
-  if (busy) pollTimer = setTimeout(refreshActiveTask, POLL_INTERVAL)
+function applyResult(payload) {
+  if (!payload) {
+    result.value = null
+    return
+  }
+  result.value = {
+    ...payload,
+    validation_error: payload.validation_error || '',
+  }
 }
 
-async function refreshActiveTask() {
-  if (!activeTask.value?.id) return
-  const before = activeTask.value.status
+function schedulePoll() {
+  clearTimeout(pollTimer)
+  const busy = tasks.value.some(isRunning)
+  if (busy) pollTimer = setTimeout(refreshRunning, POLL_INTERVAL)
+}
+
+async function loadTasks() {
   try {
-    const task = await syllabusApi.getTask(activeTask.value.id)
-    activeTask.value = task
-    if (before !== 'completed' && task.status === 'completed' && task.result) {
-      result.value = {
-        ...task.result,
-        validation_error: task.result.validation_error || '',
+    tasks.value = await syllabusApi.listTasks()
+    schedulePoll()
+  } catch {
+    /* 拦截器已提示 */
+  }
+}
+
+async function refreshRunning() {
+  const before = tasks.value.find((t) => t.id === activeId.value)?.status
+  await loadTasks()
+  const after = tasks.value.find((t) => t.id === activeId.value)
+  if (activeId.value && before !== 'completed' && after?.status === 'completed') {
+    await selectTask(activeId.value)
+    ElMessage.success('优化完成')
+  } else if (activeId.value && before !== 'failed' && after?.status === 'failed') {
+    applyResult(null)
+    ElMessage.error(after.error || '优化失败')
+  } else if (activeId.value && before !== 'cancelled' && after?.status === 'cancelled') {
+    applyResult(null)
+    ElMessage.info('已停止优化')
+  }
+}
+
+async function selectTask(id) {
+  activeId.value = id
+  sourceFile.value = null
+  applyResult(null)
+  try {
+    const task = await syllabusApi.getTask(id)
+    const idx = tasks.value.findIndex((t) => t.id === id)
+    if (idx >= 0) {
+      tasks.value[idx] = {
+        ...tasks.value[idx],
+        ...task,
+        summary: tasks.value[idx].summary || {
+          course_name: task.result?.course_name,
+          valid: task.result?.valid,
+        },
       }
-      ElMessage.success('优化完成')
-      loadHistory()
-    } else if (task.status === 'failed') {
-      ElMessage.error(task.error || '优化失败')
-    } else if (task.status === 'cancelled') {
-      ElMessage.info('已停止优化')
+    }
+    if (task.status === 'completed' && task.result) {
+      applyResult(task.result)
+    }
+  } catch {
+    /* 拦截器已提示 */
+  }
+}
+
+function newOptimization() {
+  activeId.value = null
+  result.value = null
+  clearCompose()
+}
+
+function clearCompose() {
+  sourceFile.value = null
+}
+
+function clearFile() {
+  sourceFile.value = null
+}
+
+function pickFile() {
+  filePicker.value?.click()
+}
+
+function onFileChange(file) {
+  if (file?.raw) sourceFile.value = file.raw
+}
+
+function onFilePicked(ev) {
+  const file = ev.target.files?.[0] || null
+  ev.target.value = ''
+  if (file) sourceFile.value = file
+}
+
+async function startTask(payload) {
+  activeId.value = payload.task_id
+  result.value = null
+  await loadTasks()
+  await selectTask(payload.task_id)
+}
+
+async function cancelTask(id) {
+  cancellingId.value = id
+  try {
+    await syllabusApi.cancelTask(id)
+    ElMessage.success('已请求停止')
+    await loadTasks()
+    if (activeId.value === id) {
+      result.value = null
     }
   } catch {
     /* 拦截器已提示 */
   } finally {
-    schedulePoll()
+    cancellingId.value = null
   }
 }
 
-async function startTask(payload) {
-  activeTask.value = {
-    id: payload.task_id,
-    filename: payload.filename,
-    status: payload.status || 'queued',
-    progress: 0,
-    current_step: 'queued',
-    step_label: '排队中',
-    step_detail: {},
-  }
-  result.value = null
-  schedulePoll()
-  await refreshActiveTask()
-}
-
-async function cancelActiveTask() {
-  if (!activeTask.value?.id) return
-  cancelling.value = true
+async function removeTask(t) {
+  const running = isRunning(t)
   try {
-    await syllabusApi.cancelTask(activeTask.value.id)
-    ElMessage.success('已请求停止')
-    await refreshActiveTask()
+    await ElMessageBox.confirm(
+      running ? '该任务正在优化，删除后将停止并无法恢复。确定删除？' : '确定删除这个优化任务？',
+      '提示',
+      { type: 'warning' }
+    )
+  } catch {
+    return
+  }
+  try {
+    if (running) {
+      try {
+        await syllabusApi.cancelTask(t.id)
+      } catch {
+        /* 任务可能已结束 */
+      }
+    }
+    await syllabusApi.deleteTask(t.id)
+    ElMessage.success('已删除')
+    if (activeId.value === t.id) newOptimization()
+    await loadTasks()
   } catch {
     /* 拦截器已提示 */
-  } finally {
-    cancelling.value = false
   }
 }
 
 function modeLabel(mode) {
   if (
-    mode === 'syllabus_optimize_schema.j2' ||
-    mode === 'schema' ||
     mode === 'syllabus_optimize_markdown_schema.j2' ||
     mode === 'markdown_schema'
   ) {
-    return mode.includes('markdown') || mode === 'markdown_schema'
-      ? '固定框架 · Markdown'
-      : '固定框架 · XML'
+    return '重构框架'
   }
   if (
     mode === 'syllabus_optimize_markdown.j2' ||
     mode === 'markdown' ||
     mode === 'markdown_adaptive'
   ) {
-    return '灵活结构 · Markdown'
+    return '原文微调'
   }
-  return '灵活结构 · XML'
+  if (mode === 'syllabus_optimize_schema.j2' || mode === 'schema') {
+    return '重构框架 · XML'
+  }
+  return mode?.includes('xml') || mode === 'adaptive' ? '原文微调 · XML' : '原文微调'
+}
+
+function fileKind(file) {
+  const name = file?.name || ''
+  const i = name.lastIndexOf('.')
+  const ext = i >= 0 ? name.slice(i + 1).toLowerCase() : ''
+  if (ext === 'pdf') return { label: 'PDF', tone: 'pdf' }
+  if (ext === 'doc' || ext === 'docx') return { label: 'DOC', tone: 'doc' }
+  if (ext === 'txt' || ext === 'md') return { label: ext.toUpperCase(), tone: 'txt' }
+  return { label: (ext || 'FILE').toUpperCase(), tone: 'file' }
+}
+
+function formatSize(bytes) {
+  if (bytes >= 1024 ** 3) return `${(bytes / 1024 ** 3).toFixed(2)} GB`
+  if (bytes >= 1024 ** 2) return `${(bytes / 1024 ** 2).toFixed(1)} MB`
+  if (bytes >= 1024) return `${Math.round(bytes / 1024)} KB`
+  return `${bytes} B`
 }
 
 function renderMd(text) {
@@ -365,7 +623,13 @@ function renderMd(text) {
 }
 
 function formatTime(ts) {
-  return new Date(ts * 1000).toLocaleString('zh-CN')
+  if (!ts) return ''
+  return new Date(ts * 1000).toLocaleString('zh-CN', {
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+  })
 }
 
 function validationAlertTitle(error) {
@@ -387,22 +651,11 @@ function highlight(xml) {
     .replace(/([\w-]+)=(&quot;|")([^"&]*)\2/g, '<span class="attr">$1</span>=<span class="val">"$3"</span>')
 }
 
-async function handleFile(file) {
+async function startOptimize() {
+  if (!canStart.value || busyTask.value) return
   submitting.value = true
   try {
-    const payload = await syllabusApi.optimizeFile(file.raw, promptMode.value)
-    await startTask(payload)
-  } catch {
-    /* 拦截器已提示 */
-  } finally {
-    submitting.value = false
-  }
-}
-
-async function runText() {
-  submitting.value = true
-  try {
-    const payload = await syllabusApi.optimizeText(text.value, promptMode.value)
+    const payload = await syllabusApi.optimizeFile(sourceFile.value, promptMode.value)
     await startTask(payload)
   } catch {
     /* 拦截器已提示 */
@@ -414,25 +667,6 @@ async function runText() {
 async function copyOutput() {
   await navigator.clipboard.writeText(result.value.xml)
   ElMessage.success('已复制到剪贴板')
-}
-
-function downloadOutput() {
-  if (result.value?.id) {
-    const a = document.createElement('a')
-    a.href = syllabusApi.downloadUrl(result.value.id)
-    a.click()
-    return
-  }
-  const markdown = isMarkdownOutput.value
-  const blob = new Blob([result.value.xml], {
-    type: markdown ? 'text/markdown;charset=utf-8' : 'application/xml;charset=utf-8',
-  })
-  const url = URL.createObjectURL(blob)
-  const a = document.createElement('a')
-  a.href = url
-  a.download = `${result.value.course_name || 'syllabus'}.${markdown ? 'md' : 'xml'}`
-  a.click()
-  URL.revokeObjectURL(url)
 }
 
 function exportAs(format) {
@@ -451,35 +685,298 @@ function exportAs(format) {
   ElMessage.success(`正在下载 ${format.toUpperCase()}…`)
 }
 
-async function loadHistory() {
-  try {
-    history.value = await syllabusApi.history()
-  } catch {
-    /* 拦截器已提示 */
-  }
-}
-
-async function openRecord(row) {
-  try {
-    const record = await syllabusApi.getRecord(row.id)
-    result.value = {
-      ...record,
-      valid: !!record.valid,
-      repair_attempts: 0,
-      truncated: false,
-      validation_error: '',
-    }
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  } catch {
-    /* 拦截器已提示 */
-  }
-}
-
-onMounted(loadHistory)
+onMounted(loadTasks)
 onUnmounted(() => clearTimeout(pollTimer))
 </script>
 
 <style scoped>
+.syllabus {
+  height: calc(100vh - 56px);
+  display: flex;
+  background: #fff;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 0;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: #f7f7f8;
+  border-right: 1px solid transparent;
+  transition: width 0.2s ease, border-color 0.2s ease;
+}
+.sidebar.open {
+  width: 300px;
+  border-right-color: #ececec;
+}
+.sidebar-inner {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.drawer-head {
+  height: 56px;
+  padding: 0 8px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #303133;
+  flex-shrink: 0;
+}
+.drawer-title {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: #7b1113;
+  position: relative;
+  padding-left: 10px;
+}
+.drawer-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 3px;
+  border-radius: 2px;
+  background: #a61b1b;
+}
+.drawer-tools {
+  padding: 0 14px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.new-eval-btn {
+  height: 36px;
+  border: 1px solid #a61b1b;
+  background: #fff;
+  color: #a61b1b;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.new-eval-btn:hover {
+  background: #fdf4f4;
+}
+.filter-row {
+  display: flex;
+  gap: 4px;
+}
+.filter-btn {
+  flex: 1;
+  height: 28px;
+  border: none;
+  background: transparent;
+  color: #8a8a8a;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.filter-btn.on,
+.filter-btn:hover {
+  color: #a61b1b;
+  background: #f5e6e6;
+}
+
+.stage {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.stage-top {
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 16px;
+}
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+.icon-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  color: #4b4b4b;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-btn:hover {
+  background: #f3f3f3;
+}
+
+.stage-body {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.workspace {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 32px 48px;
+  box-sizing: border-box;
+}
+
+.page-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 20px;
+}
+.page-head h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+.page-head p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+
+.task-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 4px 8px 16px;
+}
+
+.empty-hint {
+  color: #909399;
+  font-size: 13px;
+  text-align: center;
+  padding: 24px 0;
+}
+.task-group + .task-group {
+  margin-top: 8px;
+}
+.group-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #8a8a8a;
+  letter-spacing: 0.08em;
+  padding: 8px 8px 4px;
+}
+.task {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 8px;
+  border-top: 1px solid #ececec;
+  cursor: pointer;
+}
+.task:hover {
+  background: #ececed;
+}
+.task.active {
+  background: #f5e6e6;
+}
+.task.active .task-name {
+  color: #7b1113;
+}
+.task-icon {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: #8a8a8a;
+}
+.task.active .task-icon,
+.task.running .task-icon {
+  color: #a61b1b;
+}
+.task-body {
+  min-width: 0;
+  flex: 1;
+}
+.task-name {
+  font-size: 13px;
+  color: #303133;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.task-stop {
+  flex-shrink: 0;
+}
+.del-btn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 6px;
+  color: #909399;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.del-btn:hover {
+  background: #fff;
+  color: #c45656;
+}
+.task-status-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+}
+.task-status {
+  font-size: 12px;
+  color: #8a8a8a;
+}
+.task-status.completed {
+  color: #2e8b57;
+}
+.task-status.failed,
+.task-status.cancelled {
+  color: #f56c6c;
+}
+.task-time {
+  font-size: 11px;
+  color: #a8abb2;
+}
+.task-run {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #a61b1b;
+}
+.task-meta {
+  font-size: 12px;
+  color: #909399;
+  margin-top: 4px;
+}
+.task-error {
+  font-size: 12px;
+  color: #f56c6c;
+  margin-top: 4px;
+  word-break: break-all;
+}
+
 .card {
   margin-bottom: 16px;
   border: 1px solid #e8eaed;
@@ -489,35 +986,168 @@ onUnmounted(() => clearTimeout(pollTimer))
   font-weight: 600;
 }
 
+.compose {
+  padding-top: 4px;
+  margin-bottom: 24px;
+}
 .mode-row {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 .mode-label {
   font-size: 13px;
   color: #606266;
   font-weight: 500;
 }
-
 .mode-group {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
 }
 
-.upload-inner {
-  padding: 26px 8px;
+.file-slot {
+  margin-top: 8px;
 }
-.upload-icon {
-  font-size: 34px;
+.ready-card {
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background: #fff;
+  padding: 14px 16px 16px;
+}
+.slot-head {
+  font-size: 15px;
+  font-weight: 600;
+  color: #303133;
+  display: flex;
+  align-items: center;
+}
+.req-tag {
+  margin-left: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 8px;
+  border-radius: 10px;
+  line-height: 18px;
+  color: #a61b1b;
+  background: #fff;
+  border: 1px solid #a61b1b;
+}
+.head-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 14px;
+}
+.text-act {
+  border: none;
+  background: transparent;
+  color: #606266;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  padding: 0;
+}
+.text-act:hover {
+  color: #a61b1b;
+}
+.aux-file {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 14px;
+}
+.type-badge {
+  width: 44px;
+  height: 52px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.type-badge.pdf {
+  background: #c0392b;
+}
+.type-badge.doc {
+  background: #2b579a;
+}
+.type-badge.txt,
+.type-badge.file {
+  background: #6b7280;
+}
+.aux-copy {
+  min-width: 0;
+  flex: 1;
+}
+.fname {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f1f1f;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.fmeta {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #909399;
+}
+.ok {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #2e8b57;
+  font-size: 13px;
+}
+.empty-slot {
+  color: #c0c4cc;
+  font-size: 13px;
+  text-align: center;
+  padding: 24px 0 16px;
+}
+
+.file-drop :deep(.el-upload),
+.file-drop :deep(.el-upload-dragger) {
+  width: 100%;
+}
+.file-drop :deep(.el-upload-dragger) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 20px 28px;
+  border: 1px dashed #d8d8d8;
+  border-radius: 10px;
+  background: #fff;
+}
+.file-drop :deep(.el-upload-dragger:hover) {
+  border-color: #a61b1b;
+}
+.file-drop .slot-head {
+  align-self: flex-start;
+  margin-bottom: 18px;
+}
+.drop-icon {
+  color: #a61b1b;
 }
 .upload-text {
   margin-top: 8px;
   font-size: 14px;
   color: #303133;
+}
+.upload-text .pick {
+  color: #a61b1b;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 .upload-hint {
   margin-top: 4px;
@@ -525,46 +1155,25 @@ onUnmounted(() => clearTimeout(pollTimer))
   color: #909399;
 }
 
-.task-card {
-  border-color: #e6a23c33;
-}
-.task-filename {
-  font-size: 13px;
-  color: #303133;
-  font-weight: 500;
-}
-.task-status-row {
+.compose-actions {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  gap: 10px;
-  margin-top: 8px;
-  flex-wrap: wrap;
-}
-.task-step {
-  font-size: 13px;
-  color: #606266;
-}
-.task-hint {
-  margin-top: 10px;
-  font-size: 12px;
-  color: #909399;
-}
-.task-error {
-  margin-top: 10px;
-  font-size: 12px;
-  color: #f56c6c;
+  gap: 12px;
+  margin-top: 20px;
 }
 
-.loading-tip {
-  margin-top: 12px;
-  padding: 10px 14px;
-  background: #fdf6ec;
-  border-radius: 5px;
-  font-size: 13px;
-  color: #e6a23c;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.file-progress {
+  margin-top: 14px;
+}
+.file-progress-caption {
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #909399;
+}
+.file-progress-caption.error {
+  color: #f56c6c;
 }
 
 .result-header {
@@ -663,12 +1272,5 @@ onUnmounted(() => clearTimeout(pollTimer))
   padding-left: 12px;
   border-left: 3px solid #dcdfe6;
   color: #606266;
-}
-
-.empty-hint {
-  color: #909399;
-  font-size: 13px;
-  text-align: center;
-  padding: 16px 0;
 }
 </style>

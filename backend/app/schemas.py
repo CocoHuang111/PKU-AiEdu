@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class TranscriptForm(BaseModel):
@@ -17,6 +17,14 @@ class QAForm(BaseModel):
     session_id: str | None = None
     corpora: list[str] | None = Field(
         None, description="限定检索的语料库；省略则全库，空列表则不检索"
+    )
+    eval_task_ids: list[str] | None = Field(
+        None,
+        description=(
+            "限定检索的评估任务，只作用于 eval_reports。"
+            "省略则检索该用户全部已完成报告；空列表则不检索报告"
+        ),
+        max_length=200,
     )
 
 
@@ -35,3 +43,83 @@ class SyllabusTextForm(BaseModel):
             "默认读 config.yaml"
         ),
     )
+
+
+class RegisterForm(BaseModel):
+    username: str = Field(..., min_length=3, max_length=32)
+    password: str = Field(..., min_length=1, max_length=64)
+    confirm_password: str = Field(..., min_length=1, max_length=64)
+    display_name: str = Field(..., min_length=1, max_length=40)
+    invite_code: str | None = Field(None, max_length=64)
+    role: str | None = Field(None, description="忽略。注册不能指定角色")
+
+    @field_validator("username", "display_name")
+    @classmethod
+    def strip_text(cls, value: str) -> str:
+        text = (value or "").strip()
+        if not text:
+            raise ValueError("不能为空")
+        return text
+
+    @field_validator("role")
+    @classmethod
+    def reject_role(cls, value: str | None) -> None:
+        return None
+
+
+class LoginForm(BaseModel):
+    username: str = Field(..., min_length=1, max_length=32)
+    password: str = Field(..., min_length=1, max_length=64)
+
+    @field_validator("username", "password")
+    @classmethod
+    def strip_text(cls, value: str) -> str:
+        text = (value or "").strip()
+        if not text:
+            raise ValueError("不能为空")
+        return text
+
+
+class UserSettingsForm(BaseModel):
+    settings: dict
+
+
+class ChangePasswordForm(BaseModel):
+    old_password: str = Field(..., min_length=1, max_length=64)
+    new_password: str = Field(..., min_length=1, max_length=64)
+    confirm_password: str = Field(..., min_length=1, max_length=64)
+
+
+class AdminRoleForm(BaseModel):
+    role: str = Field(..., pattern="^(user|admin)$")
+
+
+class AdminPasswordForm(BaseModel):
+    password: str = Field(..., min_length=1, max_length=64)
+
+
+class ProfileUpdateForm(BaseModel):
+    name: str | None = Field(None, max_length=40)
+    staff_id: str | None = Field(None, max_length=32)
+    department: str | None = Field(None, max_length=80)
+    email: str | None = Field(None, max_length=80)
+    phone: str | None = Field(None, max_length=20)
+    title: str | None = Field(None, max_length=32)
+    courses: str | None = Field(None, max_length=200)
+    bio: str | None = Field(None, max_length=400)
+
+    @field_validator("name", "staff_id", "department", "email", "phone", "title", "courses", "bio")
+    @classmethod
+    def strip_optional(cls, value: str | None) -> str | None:
+        if value is None:
+            return None
+        return value.strip()
+
+    @field_validator("email")
+    @classmethod
+    def check_email(cls, value: str | None) -> str | None:
+        if not value:
+            return value
+        if "@" not in value or value.startswith("@") or value.endswith("@"):
+            raise ValueError("邮箱格式不正确")
+        return value

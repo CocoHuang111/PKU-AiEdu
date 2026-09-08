@@ -26,6 +26,7 @@ CancelFn = Callable[[], bool]
 SYSTEM = "你是课程与教学论专家。你只输出合法的 XML 文档，不输出任何解释文字。"
 MARKDOWN_SYSTEM = (
     "你是课程与教学论专家。你只输出完整的 Markdown 大纲文档，不输出任何解释文字。"
+    "文档必须含有 Markdown 标题行（# / ## / ###），否则校验失败。"
 )
 MARKDOWN_TEMPLATES = {
     "syllabus_optimize_markdown.j2",
@@ -244,6 +245,27 @@ def _strip_markdown_wrapper(raw: str) -> str:
     return text.strip()
 
 
+def _has_atx_heading(text: str) -> bool:
+    return bool(re.search(r"^#{1,3}\s+\S", text.strip(), re.MULTILINE))
+
+
+def _ensure_leading_atx(markdown: str) -> str:
+    """Word/PDF 抽出来的节名常常没有 #。至少给首行非空短句补一级标题，避免整篇校验失败。"""
+    text = markdown.strip()
+    if not text or _has_atx_heading(text):
+        return text
+    lines = text.splitlines()
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if stripped.startswith("#"):
+            return text
+        lines[i] = f"# {stripped}"
+        return "\n".join(lines)
+    return text
+
+
 def _request_markdown(
     llm,
     prompt: str,
@@ -269,7 +291,7 @@ def validate_markdown(
     text = markdown.strip()
     if len(text) < 80:
         return False, "Markdown 内容过短"
-    if not re.search(r"^#{1,3}\s+\S", text, re.MULTILINE):
+    if not _has_atx_heading(text):
         return False, "Markdown 缺少标题结构"
     if max_chars is not None and len(text) > max_chars:
         return (
@@ -1092,10 +1114,40 @@ def optimize_text(
         markdown = _generate_single_markdown(
             llm, template, prompt_kwargs, timeout=llm_timeout
         )
+        markdown = _ensure_leading_atx(markdown)
         _report_progress(progress, is_cancelled, 82, "validating")
         valid, error = validate_markdown(markdown, max_chars=max_output_chars)
+        attempts = 0
+        while not valid and attempts < MAX_REPAIR_ATTEMPTS:
+            if "过短" in error:
+                break
+            attempts += 1
+            _report_progress(
+                progress,
+                is_cancelled,
+                min(88 + attempts * 4, 94),
+                "repairing",
+                {"attempt": attempts},
+            )
+            repair = (
+                f"下面这份 Markdown 大纲校验失败：{error}\n\n"
+                "请只做最小修改后重新输出**全文**：\n"
+                "- 给课程名和各原有栏目补上 Markdown 标题（# / ## / ###），标题用词与原文一致；\n"
+                "- 不要把段落改成列表，不要改写题记、引语和正文事实；\n"
+                "- 不要用代码块包裹，不要在前后加说明。\n\n"
+                f"{markdown}"
+            )
+            try:
+                markdown = _ensure_leading_atx(
+                    _request_markdown(
+                        llm, repair, "大纲自动修复失败", timeout=llm_timeout
+                    )
+                )
+            except RuntimeError:
+                break
+            valid, error = validate_markdown(markdown, max_chars=max_output_chars)
         xml = markdown
-        repair_attempts = 0
+        repair_attempts = attempts
     else:
         use_staged = (
             template == "syllabus_optimize_schema.j2"

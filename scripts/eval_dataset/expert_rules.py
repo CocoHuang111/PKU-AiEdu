@@ -631,21 +631,6 @@ def _production_rule_errors(rule: dict[str, Any]) -> list[str]:
     return errors
 
 
-def _remove_legacy_score_floor(rule: dict[str, Any]) -> None:
-    """把旧候选规则中的 70 分软地板迁移为可累计的证据规则。"""
-    action = str(rule.get("scoring_action") or "")
-    action = action.replace(
-        "不可作为导致该维度低于70分的唯一理由",
-        "通常只产生2–5分影响，但不存在70分或其他固定下限；"
-        "同一维度多个相互独立且证据充分的问题必须累计",
-    )
-    action = action.replace(
-        "允许导致该维度低于70分",
-        "一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分",
-    )
-    rule["scoring_action"] = action
-
-
 def distill_rule_candidates(work_dir: Path) -> list[dict[str, Any]]:
     from ai_engine.evaluation.judge import _parse_json
     from ai_engine.pedagogy.loader import render_prompt
@@ -742,7 +727,6 @@ def freeze_approved_rules(candidate_path: Path, out_path: Path) -> int:
         rule.setdefault("severity", "context_dependent")
         rule.setdefault("primary_dimension", rule.get("target_dimension"))
         rule.setdefault("must_not_penalize_dimensions", [])
-        _remove_legacy_score_floor(rule)
         validation_errors.extend(_production_rule_errors(rule))
         rule_id = str(rule.get("rule_id") or "")
         if rule_id in seen_ids:

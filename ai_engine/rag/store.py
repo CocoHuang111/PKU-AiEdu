@@ -33,8 +33,14 @@ def _collection(name: str):
     )
 
 
-def doc_id(corpus: str, source: str, index: int) -> str:
-    raw = f"{corpus}::{source}::{index}"
+def doc_id(
+    corpus: str,
+    source: str,
+    index: int,
+    user_id: str | None = None,
+    task_id: str | None = None,
+) -> str:
+    raw = f"{corpus}::{user_id or ''}::{task_id or ''}::{source}::{index}"
     return hashlib.md5(raw.encode()).hexdigest()
 
 
@@ -59,7 +65,13 @@ def add_chunks(
         for m in metadatas
     ]
     ids = [
-        doc_id(corpus, str(m.get("source", "unknown")), i)
+        doc_id(
+            corpus,
+            str(m.get("source", "unknown")),
+            int(m.get("chunk_index", i)),
+            user_id=str(m.get("user_id") or "") or None,
+            task_id=str(m.get("task_id") or "") or None,
+        )
         for i, m in enumerate(flat_metas)
     ]
 
@@ -82,17 +94,23 @@ def add_chunks(
 
 
 def query(
-    corpus: str, query_embedding: list[float], top_k: int = 5
+    corpus: str,
+    query_embedding: list[float],
+    top_k: int = 5,
+    where: dict[str, Any] | None = None,
 ) -> list[dict[str, Any]]:
     col = _collection(corpus)
     if col.count() == 0:
         return []
 
-    res = col.query(
-        query_embeddings=[query_embedding],
-        n_results=min(top_k, col.count()),
-        include=["documents", "metadatas", "distances"],
-    )
+    kwargs: dict[str, Any] = {
+        "query_embeddings": [query_embedding],
+        "n_results": min(top_k, col.count()),
+        "include": ["documents", "metadatas", "distances"],
+    }
+    if where:
+        kwargs["where"] = where
+    res = col.query(**kwargs)
     hits = []
     for text, meta, dist in zip(
         res["documents"][0], res["metadatas"][0], res["distances"][0]
@@ -106,6 +124,16 @@ def query(
             }
         )
     return hits
+
+
+def delete_eval_report_chunks(task_id: str, user_id: str | None = None) -> None:
+    where: dict[str, Any] = {"task_id": task_id}
+    if user_id:
+        where = {"$and": [{"task_id": task_id}, {"user_id": user_id}]}
+    try:
+        _collection("eval_reports").delete(where=where)
+    except Exception as exc:
+        print(f"[warn] 删除 eval_reports 失败: {exc}")
 
 
 def collection_stats() -> dict[str, int]:

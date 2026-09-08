@@ -27,12 +27,14 @@ from .text_features import (
     summarize_segments,
 )
 from .timeline_features import extract_timeline_features
+from .transcript_punc import punctuate_asr_result
 from .materials import MaterialError, load_script_text, load_syllabus_text, prepare_courseware
 from .vision import (
     aggregate_courseware_features,
     aggregate_vision_features,
     describe_courseware_pages,
     describe_keyframes,
+    locate_content_rois,
 )
 
 ProgressFn = Callable[[int, str, dict], None]
@@ -142,6 +144,7 @@ def build_evidence(
         "timeline_features": _feature_rows(features.get("timeline", {}), "timeline"),
         "vision_features": _feature_rows(features.get("vision", {}), "vision"),
         "slide_features": _feature_rows(features.get("slides", {}), "slides"),
+        "slide_roi_used": (features.get("slides") or {}).get("slide_roi_source") == "vlm",
         "speaker_features": _feature_rows(features.get("speakers", {}), "speakers"),
         "courseware_features": _feature_rows(features.get("courseware", {}), "courseware"),
         "vision_notes": [
@@ -195,17 +198,27 @@ def generate_report(judged: dict) -> str:
 _DIGEST_KEYS = (("突出优点", "strengths"), ("主要问题", "issues"), ("改进建议", "suggestions"))
 
 
-def parse_report_digest(report: str) -> dict[str, list[str]]:
-    """抽出报告里「诊断摘要」三类各至多 2 条短句。没有该节则返回空。"""
-    digest = {key: [] for _, key in _DIGEST_KEYS}
+def _digest_span(report: str) -> tuple[int, int] | None:
     if not report:
-        return digest
+        return None
     m = re.search(r"^##\s+(?:[〇零0]、\s*)?诊断摘要\s*$", report, re.M)
     if not m:
-        return digest
+        return None
     rest = report[m.end() :]
     nxt = re.search(r"^##\s+", rest, re.M)
-    body = rest[: nxt.start()] if nxt else rest
+    end = m.end() + nxt.start() if nxt else len(report)
+    return m.start(), end
+
+
+def parse_report_digest(report: str) -> dict[str, list[str]]:
+    """抽出模型输出里「诊断摘要」三类各至多 2 条短句。没有该节则返回空。"""
+    digest = {key: [] for _, key in _DIGEST_KEYS}
+    span = _digest_span(report)
+    if not span:
+        return digest
+    start, end = span
+    heading = re.search(r"^##\s+(?:[〇零0]、\s*)?诊断摘要\s*$", report[start:end], re.M)
+    body = report[start + (heading.end() if heading else 0) : end]
     current = None
     for raw in body.splitlines():
         line = raw.strip()
@@ -222,6 +235,15 @@ def parse_report_digest(report: str) -> dict[str, list[str]]:
         if len(digest[current]) >= 2:
             current = None
     return digest
+
+
+def strip_report_digest(report: str) -> str:
+    """从诊断报告正文去掉「〇、诊断摘要」。摘要只走 digest 字段。"""
+    span = _digest_span(report)
+    if not span:
+        return (report or "").strip()
+    start, end = span
+    return (report[:start].rstrip() + "\n\n" + report[end:].lstrip()).strip()
 
 
 def fallback_digest(judged: dict) -> dict[str, list[str]]:
@@ -254,26 +276,18 @@ def fallback_digest(judged: dict) -> dict[str, list[str]]:
 
 
 def attach_report(judged: dict) -> tuple[str, dict[str, list[str]]]:
-    report = generate_report(judged)
-    digest = parse_report_digest(report)
+    raw = generate_report(judged)
+    digest = parse_report_digest(raw)
     if not (digest["strengths"] or digest["issues"] or digest["suggestions"]):
         digest = fallback_digest(judged)
-    return report, digest
+    return strip_report_digest(raw), digest
 
 
 def _fallback_report(judged: dict, reason: str) -> str:
     """LLM 不可用时，用评分结果拼一份结构化报告，保证链路不断。"""
     overall = judged["overall"]
-    digest = fallback_digest(judged)
     lines = [
-        "## 〇、诊断摘要\n",
-        "### 突出优点\n",
-        *[f"- {t}" for t in digest["strengths"] or ["暂无"]],
-        "\n### 主要问题\n",
-        *[f"- {t}" for t in digest["issues"] or ["暂无"]],
-        "\n### 改进建议\n",
-        *[f"- {t}" for t in digest["suggestions"] or ["暂无"]],
-        f"\n## 总体评价\n\n综合得分 **{overall['score']}/100**（{overall['grade']} 级 · {overall['grade_label']}）。\n",
+        f"## 一、总体评价\n\n综合得分 **{overall['score']}/100**（{overall['grade']} 级 · {overall['grade_label']}）。\n",
         f"> 注：文字报告生成失败（{reason}），以下为根据评分结果自动汇总的结构化摘要。\n",
         "## 五维得分\n",
     ]
@@ -443,6 +457,13 @@ def collect_video_evidence(
 
         asr_result = get_asr().transcribe(audio_path, progress_callback=on_asr)
         duration = duration or asr_result.duration
+        asr_conf = settings.flat_config("asr")
+        if asr_conf.get("punctuate", True):
+            progress(45, "asr", {"phase": "punctuate"})
+            try:
+                asr_result = punctuate_asr_result(asr_result)
+            except Exception as e:
+                progress(45, "asr", {"warning": f"转写补标点失败，沿用原转写: {e}"})
 
     if not asr_result.text.strip():
         raise RuntimeError(
@@ -474,13 +495,35 @@ def collect_video_evidence(
 
     if eval_conf.get("slide_detection_enabled", True):
         progress(50, "slide_detection", {})
+        rois: list[dict] = []
+        roi_meta: dict[str, Any] = {"boxes": [], "source": "none"}
         try:
-            features["slides"] = extract_slide_features(
+            if (
+                eval_conf.get("slide_roi_enabled", True)
+                and vlm_enabled
+                and keyframes
+            ):
+                progress(50, "slide_detection", {"phase": "roi"})
+                roi_meta = locate_content_rois(
+                    keyframes,
+                    max_attempts=int(eval_conf.get("slide_roi_max_frames", 2)),
+                )
+                rois = list(roi_meta.get("boxes") or [])
+        except Exception as e:
+            progress(50, "slide_detection", {"warning": f"投影区域定位失败: {e}"})
+            roi_meta = {"boxes": [], "source": "none"}
+        try:
+            slides = extract_slide_features(
                 video_path,
                 asr_result.segments,
                 interval_sec=eval_conf.get("slide_sample_interval_sec", 3.0),
                 change_threshold=eval_conf.get("slide_change_threshold", 0.08),
+                rois=rois,
             )
+            slides["slide_roi_source"] = roi_meta.get("source") or "none"
+            if rois:
+                slides["slide_roi_boxes"] = rois
+            features["slides"] = slides
         except Exception as e:
             progress(50, "slide_detection", {"warning": f"课件切换检测失败: {e}"})
 
@@ -568,7 +611,7 @@ def apply_live_overall(
     raw_features: dict[str, Any] | None = None,
     model_path: Path | str | None = None,
 ) -> dict[str, Any]:
-    """五维仍用 Judge；总分改成四年 v9 客观特征+五维 5 分类 GB。等权平均保留备查。"""
+    """五维仍用 Judge；总分改成四年 v7.1 客观特征+五维 5 分类 GB。等权平均保留备查。"""
     overall = judged["overall"]
     equal_weight = overall.get("score")
     pred = predict_overall(
@@ -831,9 +874,9 @@ def evaluate_video(
 # --------------------------------------------------------------- 报告回流
 
 
-def index_report(task_id: str, result: dict) -> None:
+def index_report(task_id: str, result: dict, user_id: str | None = None) -> None:
     """把评估报告摘要写进 eval_reports 语料库，供问答功能引用。"""
-    from ..rag import add_chunks, split_text
+    from ..rag import add_chunks, delete_eval_report_chunks, split_text
 
     overall = result["overall"]
     dims = "、".join(
@@ -847,6 +890,7 @@ def index_report(task_id: str, result: dict) -> None:
     )
 
     try:
+        delete_eval_report_chunks(task_id, user_id)
         chunks = split_text(summary)
         add_chunks(
             "eval_reports",
@@ -856,6 +900,8 @@ def index_report(task_id: str, result: dict) -> None:
                     "source": f"评估报告-{result.get('video_file', task_id[:8])}",
                     "corpus": "eval_reports",
                     "task_id": task_id,
+                    "user_id": user_id or "",
+                    "access_scope": "private",
                     "score": overall["score"],
                     "chunk_index": i,
                 }

@@ -4,8 +4,11 @@
 「多媒体切换使用熟练」。这些指标 12 张关键帧根本覆盖不到（45 分钟课约每
 3.75 分钟一帧），必须靠密集抽帧。好在帧差比对是纯 numpy，零 API 成本。
 
-已知局限：机位同时拍到板书和投影时，画面差异无法区分「翻页」与「教师走动」，
-所以切换次数是上界而非精确值。要更准需要先框定屏幕区域再比对。
+有 VLM 时先在关键帧上框出投影/板书，密集轨只比对框内；框不到则退回整幅
+8×5 格子。格子看「变化最大的那一格」，候选还要等下一采样定住才计入
+（翻页后画面会停，走动则下一拍仍在变）。
+
+仍不是精确页数：框偏了、投影极暗、人在框里停住时仍会漏报或多记。
 """
 
 from __future__ import annotations
@@ -18,27 +21,121 @@ from .text_features import _lexicon
 
 
 BLANK_STD_THRESHOLD = 8.0
+GRID_COLS = 8
+GRID_ROWS = 5
+# 跳变格子在下一采样的平均差低于 threshold × 此系数，才认定画面已定住
+SETTLE_RATIO = 0.5
+ROI_PAD = 0.08
 
 
-def _scan_frames(frame_iter, threshold: float) -> tuple[int, list[int], int]:
+def _cell_means(frame, cols: int, rows: int):
+    """把灰度帧切成 cols×rows 格，返回每格均值，shape (rows, cols)。"""
+    import numpy as np
+
+    h, w = frame.shape[:2]
+    ys = np.linspace(0, h, rows + 1, dtype=int)
+    xs = np.linspace(0, w, cols + 1, dtype=int)
+    out = np.empty((rows, cols), dtype=np.float64)
+    for i in range(rows):
+        for j in range(cols):
+            out[i, j] = float(frame[ys[i] : ys[i + 1], xs[j] : xs[j + 1]].mean())
+    return out
+
+
+def _pad_box(box: dict, pad: float = ROI_PAD) -> dict:
+    x, y, w, h = (float(box["x"]), float(box["y"]), float(box["w"]), float(box["h"]))
+    x0 = max(0.0, x - w * pad)
+    y0 = max(0.0, y - h * pad)
+    x1 = min(1.0, x + w * (1.0 + pad))
+    y1 = min(1.0, y + h * (1.0 + pad))
+    out = {"x": x0, "y": y0, "w": x1 - x0, "h": y1 - y0}
+    if box.get("kind"):
+        out["kind"] = box["kind"]
+    return out
+
+
+def _crop_box(frame, box: dict):
+    h, w = frame.shape[:2]
+    x0 = int(round(float(box["x"]) * w))
+    y0 = int(round(float(box["y"]) * h))
+    x1 = int(round((float(box["x"]) + float(box["w"])) * w))
+    y1 = int(round((float(box["y"]) + float(box["h"])) * h))
+    x0 = max(0, min(x0, w - 2))
+    x1 = max(x0 + 2, min(x1, w))
+    y0 = max(0, min(y0, h - 2))
+    y1 = max(y0 + 2, min(y1, h))
+    return frame[y0:y1, x0:x1]
+
+
+def _roi_crops(frame, rois: list[dict]):
+    crops = []
+    for box in rois:
+        crop = _crop_box(frame, _pad_box(box))
+        if crop.size >= 16:
+            crops.append(crop)
+    return crops
+
+
+def _signature(frame, rois: list[dict] | None):
+    """一帧的比对向量：有框则只取框内格子，否则用整幅 8×5。"""
+    import numpy as np
+
+    if rois:
+        parts = []
+        for crop in _roi_crops(frame, rois):
+            ch, cw = crop.shape[:2]
+            cols = min(GRID_COLS, max(2, cw // 8))
+            rows = min(GRID_ROWS, max(2, ch // 8))
+            parts.append(_cell_means(crop, cols, rows).ravel())
+        if parts:
+            return np.concatenate(parts)
+    return _cell_means(frame, GRID_COLS, GRID_ROWS).ravel()
+
+
+def _scan_frames(
+    frame_iter,
+    threshold: float,
+    rois: list[dict] | None = None,
+) -> tuple[int, list[int], int]:
     """单趟扫描帧流，同时得到总帧数、切换位置、纯色帧数。
 
-    只保留上一帧，内存占用与视频长度无关。
+    只保留上一帧的格子均值和一帧未确认的候选，内存占用与视频长度无关。
+    切换记在「新画面出现」的那一帧；下一帧格子已稳住才写入结果。
+    片尾还在动的候选丢掉，避免走动持续到结束时多记一次。
     """
     import numpy as np
 
+    boxes = list(rois or [])
     changes: list[int] = []
     total = blank = 0
-    prev = None
+    prev_means = None
+    pending: tuple[int, object] | None = None
+
     for frame in frame_iter:
-        if frame.std() < BLANK_STD_THRESHOLD:
+        crops = _roi_crops(frame, boxes) if boxes else [frame]
+        if crops and all(c.std() < BLANK_STD_THRESHOLD for c in crops):
             blank += 1
-        if prev is not None:
-            diff = float(np.abs(frame.astype(np.int16) - prev).mean()) / 255.0
-            if diff > threshold:
-                changes.append(total)
-        prev = frame.astype(np.int16)
+        means = _signature(frame, boxes or None)
+        if prev_means is not None and means.shape == prev_means.shape:
+            cell_diff = np.abs(means - prev_means) / 255.0
+            jumped = cell_diff > threshold
+
+            if pending is not None:
+                idx, mask = pending
+                settled = (
+                    mask.any()
+                    and float(cell_diff[mask].mean()) < threshold * SETTLE_RATIO
+                )
+                if settled:
+                    changes.append(idx)
+                pending = None
+
+            if jumped.any():
+                pending = (total, jumped)
+
+        prev_means = means
         total += 1
+
     return total, changes, blank
 
 
@@ -71,10 +168,13 @@ def extract_slide_features(
     asr_segments: list | None = None,
     interval_sec: float = 3.0,
     change_threshold: float = 0.08,
+    rois: list[dict] | None = None,
 ) -> dict[str, float]:
+    boxes = [b for b in (rois or []) if isinstance(b, dict) and "x" in b]
     total, changes, blank = _scan_frames(
         media.iter_gray_frames(video_path, interval_sec=interval_sec),
         change_threshold,
+        rois=boxes or None,
     )
     total_min = total * interval_sec / 60.0
 
@@ -100,8 +200,10 @@ def extract_slide_features(
         features["dwell_short_ratio"] = round(
             100.0 * sum(1 for d in dwells if d < dwell_min) / len(dwells), 1
         )
+        features["dwell_samples"] = [round(d, 1) for d in dwells]
 
     change_times = [i * interval_sec for i in changes]
+    features["slide_change_times"] = [round(t, 1) for t in change_times]
     if (sync := _sync_ratio(change_times, asr_segments or [], window)) is not None:
         features["slide_sync_ratio"] = sync
 

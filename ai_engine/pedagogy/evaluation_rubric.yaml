@@ -303,7 +303,7 @@ objective_features:
     cw_readable_high_ratio: { label: 课件可读性高页占比, unit: "%" }
     cw_readable_low_ratio: { label: 课件可读性低页占比, unit: "%" }
   slides:
-    slide_change_count: { label: 板书课件切换次数（上界）, unit: 次 }
+    slide_change_count: { label: 板书课件切换次数, unit: 次 }
     slide_change_per_10min: { label: 每10分钟切换次数, unit: 次 }
     dwell_median_sec: { label: 页面停留中位时长, unit: 秒 }
     dwell_short_ratio: { label: 停留不足20秒的页面占比, unit: "%" }

@@ -1,0 +1,24 @@
+# 仅用于本地开发的 PostgreSQL 16。不要把真实密码写进仓库。
+# 启动：make db-up
+# 停止：make db-down
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: pku2-postgres
+    environment:
+      POSTGRES_USER: pku2
+      POSTGRES_PASSWORD: pku2
+      POSTGRES_DB: pku2
+    ports:
+      - "5432:5432"
+    volumes:
+      - pku2_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pku2 -d pku2"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  pku2_pgdata:

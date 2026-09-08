@@ -1,7 +1,7 @@
 """GB 评分校准：特征列约定、无效标签剔除、离散化映射、线上总分推理。
 
-对照实验仍走 gb_fit.py。线上视频评估的五维仍由 Judge 打，总分改用
-四年 v9 全量训出的「客观特征+五维 5 分类」模型（见 LIVE_GB_PATH）。
+对照实验仍走 gb_fit.py。线上视频评估的五维仍由 Judge 打（v7.1 prompt），总分改用
+四年 v7.1 全量训出的「客观特征+五维 5 分类」模型（见 LIVE_GB_PATH）。
 """
 from __future__ import annotations
 
@@ -167,7 +167,7 @@ LLM_DIM_COLS = frozenset(
 )
 
 LIVE_VARIANT = "obj_cls5"
-LIVE_PROMPT_VERSION = "v9-calibrated"
+LIVE_PROMPT_VERSION = "v7.1-goal-effect-fallback"
 LIVE_GB_DIR = ROOT / "models" / "live"
 LIVE_GB_PATH = LIVE_GB_DIR / f"gb_{LIVE_VARIANT}.pkl"
 LIVE_SCORE_SOURCE = "gb_obj_cls5"

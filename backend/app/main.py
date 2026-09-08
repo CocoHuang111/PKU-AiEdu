@@ -8,14 +8,19 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from ai_engine.config import settings
 
-from .api import evaluation, qa, syllabus
-from .core import db
+from .api import admin, auth, evaluation, qa, syllabus
+from .core.app_settings import get_app_settings
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    await db.init_db()
-    print(f"北大问教 2.0 后端启动 | AI 模式: {settings.mode} | 数据库: {db.DB_PATH}")
+    app_settings = get_app_settings()
+    print(
+        "北大问教 2.0 后端启动 | "
+        f"AI 模式: {settings.mode} | "
+        f"认证: {app_settings.auth_mode} | "
+        f"环境: {app_settings.app_env}"
+    )
     yield
 
 
@@ -34,6 +39,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(auth.router)
+app.include_router(admin.router)
 app.include_router(evaluation.router)
 app.include_router(syllabus.router)
 app.include_router(qa.router)
@@ -45,9 +52,11 @@ async def health() -> dict:
 
     stats = await asyncio.to_thread(collection_stats)
     llm_conf = settings.provider_config("llm")
+    app_settings = get_app_settings()
     return {
         "status": "ok",
         "mode": settings.mode,
+        "auth_mode": app_settings.auth_mode,
         "llm_backend": llm_conf.get("provider", "openai_compat"),
         "llm_model": llm_conf.get("model"),
         "vlm_model": settings.provider_config("vlm").get("model"),

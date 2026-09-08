@@ -18,10 +18,13 @@ def search(
     corpora: list[str],
     top_k: int | None = None,
     rerank_query: str | None = None,
+    user_id: str | None = None,
+    eval_task_ids: list[str] | None = None,
 ) -> list[dict[str, Any]]:
     """对每条 query 在每个 corpus 里检索，合并结果。
 
     同一段文本被多条 query 命中时保留最高分——被反复命中说明更相关。
+    eval_task_ids 只约束 eval_reports：None=该用户全部报告，空列表=跳过该库。
     """
     if not queries or not corpora:
         return []
@@ -33,7 +36,21 @@ def search(
     merged: dict[str, dict[str, Any]] = {}
     for vector in query_vectors:
         for corpus in corpora:
-            for hit in store.query(corpus, vector, top_k=top_k):
+            where = None
+            if corpus == "eval_reports":
+                if not user_id:
+                    continue
+                if eval_task_ids is not None and not eval_task_ids:
+                    continue
+                where = {"user_id": user_id}
+                if eval_task_ids:
+                    where = {
+                        "$and": [
+                            {"user_id": user_id},
+                            {"task_id": {"$in": list(eval_task_ids)}},
+                        ]
+                    }
+            for hit in store.query(corpus, vector, top_k=top_k, where=where):
                 key = _dedup_key(hit)
                 if key not in merged or hit["score"] > merged[key]["score"]:
                     merged[key] = hit
@@ -94,3 +111,53 @@ def build_contexts(
         )
         used += len(text)
     return contexts
+
+
+def merge_contexts(
+    pinned: list[dict[str, Any]],
+    retrieved: list[dict[str, Any]],
+    max_chars: int | None = None,
+) -> list[dict[str, Any]]:
+    """勾选的评估报告用单独额度，检索结果再用 max_context_chars。"""
+    rag = settings.section("rag")
+    rag_cap = max_chars or rag.get("max_context_chars", 6000)
+    pin_cap = rag.get("pinned_eval_max_chars", 12000)
+    merged: list[dict[str, Any]] = []
+    seen: set[str] = set()
+
+    used_pin = 0
+    for item in pinned or []:
+        text = (item.get("text") or "").strip()
+        if not text:
+            continue
+        key = text[:120]
+        if key in seen:
+            continue
+        if used_pin + len(text) > pin_cap:
+            remain = pin_cap - used_pin
+            if remain <= 200:
+                break
+            text = text[:remain]
+        merged.append({**item, "text": text, "pinned": True})
+        seen.add(key)
+        used_pin += len(text)
+
+    used_rag = 0
+    for item in retrieved or []:
+        text = (item.get("text") or "").strip()
+        if not text:
+            continue
+        key = text[:120]
+        if key in seen:
+            continue
+        if used_rag + len(text) > rag_cap:
+            if used_rag == 0:
+                text = text[:rag_cap]
+            else:
+                break
+        merged.append({**item, "text": text})
+        seen.add(key)
+        used_rag += len(text)
+        if used_rag >= rag_cap:
+            break
+    return merged

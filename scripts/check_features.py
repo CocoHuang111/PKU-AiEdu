@@ -4,12 +4,13 @@
 
 覆盖阶段 1–6 引入的所有本地计算：词表统计、分段汇总、提问等待时间、
 ASR 置信度、VLM 标签解析与聚合、大纲/课件评分口径、提示词渲染。
-课件切换检测会用 ffmpeg 现造一段切换时刻已知的视频来验证。
+课件切换检测会用 ffmpeg 现造整屏切换、角落小块切换、移动色块三类视频来验证。
 说话人分离（阶段 6）默认关闭且需要 HF token，这里只验证开关与降级路径。
 """
 
 from __future__ import annotations
 
+import re
 import sys
 from pathlib import Path
 
@@ -18,6 +19,7 @@ from ai_engine.evaluation.pipeline import (
     _available_modalities,
     _objective_rows,
     build_evidence,
+    strip_report_digest,
 )
 from ai_engine.evaluation.text_features import (
     extract_text_features,
@@ -25,15 +27,23 @@ from ai_engine.evaluation.text_features import (
     summarize_segments,
 )
 from ai_engine.evaluation.timeline_features import extract_timeline_features
+from ai_engine.evaluation.transcript_punc import (
+    needs_punctuation,
+    parse_numbered_lines,
+    punctuate_asr_result,
+    punctuate_texts,
+    rule_punctuate,
+)
 from ai_engine.evaluation.vision import (
     _parse_courseware_labels,
     _parse_labels,
+    _parse_roi_payload,
     aggregate_courseware_features,
     aggregate_vision_features,
     render_label_text,
 )
 from ai_engine.pedagogy.loader import get_rubric, load_yaml, render_prompt
-from ai_engine.providers.base import ASRSegment
+from ai_engine.providers.base import ASRResult, ASRSegment
 
 PASS, FAIL = "  ✓", "  ✗"
 failures: list[str] = []
@@ -105,7 +115,17 @@ def check_slides() -> None:
     ]
     f = extract_slide_features(tmp, segs, interval_sec=1.0, change_threshold=0.08)
     check("切换次数 = 2", f["slide_change_count"] == 2, f"= {f['slide_change_count']}")
+    check(
+        "切换时刻写入 raw 供总览时间轴",
+        f.get("slide_change_times") == [6.0, 12.0],
+        f"= {f.get('slide_change_times')}",
+    )
     check("停留中位时长 = 6 秒", f["dwell_median_sec"] == 6.0, f"= {f['dwell_median_sec']}")
+    check(
+        "逐次停留已保存",
+        f.get("dwell_samples") == [6.0, 6.0, 6.0],
+        f"= {f.get('dwell_samples')}",
+    )
     check(
         "停留不足 20 秒占比 = 100%",
         f["dwell_short_ratio"] == 100.0,
@@ -127,6 +147,77 @@ def check_slides() -> None:
         "阈值调大后切换更少（方向正确）",
         loose["slide_change_count"] < f["slide_change_count"],
         f"0.99 → {loose['slide_change_count']} 次",
+    )
+
+    corner = Path(tmp).with_name("corner_slides.mp4")
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error",
+         "-f", "lavfi", "-i", "color=c=black:s=320x180:d=18",
+         "-f", "lavfi", "-i", "color=c=white:s=60x40:d=6",
+         "-f", "lavfi", "-i", "color=c=red:s=60x40:d=6",
+         "-f", "lavfi", "-i", "color=c=gray:s=60x40:d=6",
+         "-filter_complex",
+         "[1][2][3]concat=n=3:v=1[ov];[0][ov]overlay=250:10",
+         str(corner)],
+        check=True, capture_output=True,
+    )
+    import numpy as np
+
+    frames = list(media.iter_gray_frames(corner, interval_sec=1.0))
+    global_hits = 0
+    prev = None
+    for fr in frames:
+        if prev is not None:
+            diff = float(np.abs(fr.astype(np.int16) - prev).mean()) / 255.0
+            if diff > 0.08:
+                global_hits += 1
+        prev = fr.astype(np.int16)
+    check(
+        "角落小投影整帧平均会漏报",
+        global_hits == 0,
+        f"整帧命中 {global_hits} 次",
+    )
+    corner_feat = extract_slide_features(str(corner), interval_sec=1.0)
+    check(
+        "格子帧差能抓住角落小投影的两次翻页",
+        corner_feat["slide_change_count"] == 2,
+        f"= {corner_feat['slide_change_count']} 次 {corner_feat.get('slide_change_times')}",
+    )
+    boxed = extract_slide_features(
+        str(corner),
+        interval_sec=1.0,
+        rois=[{"kind": "slide", "x": 0.78, "y": 0.05, "w": 0.19, "h": 0.23}],
+    )
+    check(
+        "框住角落投影后仍能检出两次翻页",
+        boxed["slide_change_count"] == 2,
+        f"= {boxed['slide_change_count']} 次",
+    )
+    missed = extract_slide_features(
+        str(corner),
+        interval_sec=1.0,
+        rois=[{"kind": "slide", "x": 0.02, "y": 0.55, "w": 0.25, "h": 0.30}],
+    )
+    check(
+        "框在没有投影的角落则不计翻页",
+        missed["slide_change_count"] == 0,
+        f"= {missed['slide_change_count']} 次",
+    )
+
+    moving = Path(tmp).with_name("moving_blob.mp4")
+    subprocess.run(
+        ["ffmpeg", "-y", "-v", "error",
+         "-f", "lavfi", "-i", "color=c=black:s=320x180:d=12",
+         "-f", "lavfi", "-i", "color=c=white:s=40x40:d=12",
+         "-filter_complex", "[0][1]overlay=x='10+22*t':y=70",
+         str(moving)],
+        check=True, capture_output=True,
+    )
+    moving_feat = extract_slide_features(str(moving), interval_sec=1.0)
+    check(
+        "持续移动的色块不记成翻页",
+        moving_feat["slide_change_count"] == 0,
+        f"= {moving_feat['slide_change_count']} 次",
     )
 
     try:
@@ -250,6 +341,7 @@ def main() -> int:
     print("\n=== 3. 提问等待时间与 ASR 置信度 ===")
     tl = extract_timeline_features(make_segments())
     check("等待时间有样本", tl.get("wait_time_sample_count", 0) >= 1, f"= {tl.get('wait_time_sample_count')}")
+    check("逐次等待已保存", isinstance(tl.get("wait_samples"), list) and tl["wait_samples"], f"= {tl.get('wait_samples')}")
     check("平均等待时间已算出", "wait_time_mean" in tl, f"= {tl.get('wait_time_mean')}s")
     check(
         "4.2 秒留白被判为有效等待",
@@ -265,6 +357,59 @@ def main() -> int:
     check("无 avg_logprob 时不报置信度", "asr_confidence" not in extract_timeline_features(
         [ASRSegment(0, 5, "测试"), ASRSegment(5, 10, "测试")]
     ))
+
+    print("\n=== 3b. 转写补标点 ===")
+    wall = "同学们好今天我们讲卷积神经网络有没有同学记得什么叫感受野"
+    check("无标点的中文需要补", needs_punctuation(wall))
+    check(
+        "已有标点则跳过",
+        not needs_punctuation(
+            "同学们好。今天我们讲卷积神经网络。首先回顾一下上节课的内容。"
+            "有没有同学记得什么叫感受野。"
+        ),
+    )
+    check("英文短句不补中文标点", not needs_punctuation("Hello, this is a lecture."))
+    ruled = rule_punctuate(wall)
+    check("规则兜底会加上中文标点", bool(re.findall(r"[。？！，]", ruled)), f"= {ruled[:40]}")
+    parsed = parse_numbered_lines(
+        "1. 同学们好，今天我们讲卷积神经网络。\n2. 有没有同学记得什么叫感受野？\n",
+        2,
+    )
+    check(
+        "能解析带行号的补标点输出",
+        parsed == ["同学们好，今天我们讲卷积神经网络。", "有没有同学记得什么叫感受野？"],
+        f"= {parsed}",
+    )
+    fake = lambda prompt: (
+        "1. 同学们好，今天我们讲卷积神经网络。\n2. 有没有同学记得什么叫感受野？"
+    )
+    filled = punctuate_texts(
+        ["同学们好今天我们讲卷积神经网络", "有没有同学记得什么叫感受野"],
+        llm_fn=fake,
+    )
+    check("LLM 补标点后片段数不变", len(filled) == 2)
+    check("问句被补上问号", filled[1].endswith("？"), f"= {filled[1]}")
+    rewritten = punctuate_texts(
+        ["同学们好今天我们讲卷积神经网络"],
+        llm_fn=lambda _: "1. 本节课改讲循环神经网络，内容与原文无关。",
+    )
+    check(
+        "改写内容会被丢掉并走规则兜底",
+        "循环神经网络" not in rewritten[0],
+        f"= {rewritten[0][:40]}",
+    )
+    asr = ASRResult(
+        text=wall,
+        segments=[
+            ASRSegment(0.0, 6.0, "同学们好今天我们讲卷积神经网络"),
+            ASRSegment(6.0, 12.0, "有没有同学记得什么叫感受野"),
+        ],
+        language="zh",
+        duration=12.0,
+    )
+    punctuated = punctuate_asr_result(asr, llm_fn=fake)
+    check("补标点后时间戳不变", punctuated.segments[0].start == 0.0 and punctuated.segments[1].end == 12.0)
+    check("全文由补过标点的片段重拼", "？" in punctuated.text and punctuated.text.startswith("同学们好"))
 
     print("\n=== 4. VLM 结构化标签 ===")
     raw = (
@@ -282,6 +427,15 @@ def main() -> int:
     check("表外取值归为 unclear", bad["gaze"] == "unclear", f"= {bad['gaze']}")
     check("非法人数归为 None", bad["students_visible"] is None)
 
+    walk_screen = _parse_labels(
+        '{"gaze":"screen","gesture":"none","posture":"walking"}'
+    )
+    check("走动中未指向屏幕不记成看屏幕", walk_screen["gaze"] == "students")
+    point_screen = _parse_labels(
+        '{"gaze":"screen","gesture":"pointing","posture":"walking"}'
+    )
+    check("走动中指向屏幕仍记看屏幕", point_screen["gaze"] == "screen")
+
     notes = [
         {"ok": True, "labels": labels},
         {"ok": True, "labels": _parse_labels('{"gaze":"script","board_readable":"low","heads_up":"unclear"}')},
@@ -297,6 +451,29 @@ def main() -> int:
         f"= {vf['heads_up_unclear_ratio']}%",
     )
     check("全部失败时返回空", aggregate_vision_features([{"ok": False, "labels": {}}]) == {})
+
+    boxed, full = _parse_roi_payload(
+        '{"slide":{"x":0.62,"y":0.08,"w":0.3,"h":0.4},"blackboard":null}'
+    )
+    check(
+        "能解析投影框",
+        len(boxed) == 1 and boxed[0]["kind"] == "slide" and abs(boxed[0]["x"] - 0.62) < 0.01,
+        f"= {boxed}",
+    )
+    boxed, full = _parse_roi_payload(
+        '{"slide":{"x":0,"y":0,"w":1,"h":1},"blackboard":null}'
+    )
+    check("整幅录屏不裁小框", full is True and boxed == [])
+    boxed, full = _parse_roi_payload(
+        '{"slide":{"x":62,"y":10,"w":30,"h":40},"blackboard":null}'
+    )
+    check(
+        "百分数坐标会换成 0-1",
+        boxed and abs(boxed[0]["x"] - 0.62) < 0.02,
+        f"x={boxed[0]['x'] if boxed else None}",
+    )
+    boxed, full = _parse_roi_payload('{"slide":null,"blackboard":null}')
+    check("没有投影板书时框为空", boxed == [] and full is False)
 
     print("\n=== 5. rubric 与代码对齐 ===")
     rubric = get_rubric()
@@ -354,7 +531,8 @@ def main() -> int:
         for k in computed - declared
         if k not in {"duration_minutes", "total_chars", "sentence_count",
                      "open_question_count", "question_count", "filler_count",
-                     "higher_order_question_count", "segment_count"}
+                     "higher_order_question_count", "segment_count",
+                     "wait_samples"}
     )
     check("无未登记的特征 key", not missing, f"缺标签: {missing}" if missing else "")
 
@@ -415,6 +593,7 @@ def main() -> int:
         "对照这份大纲",
         "时序特征",
         "视觉观测统计",
+        "不要当成读屏",
         "课件时序特征",
         "系统性偏高",
         "弱代理",
@@ -453,6 +632,19 @@ def main() -> int:
 
     vision_prompt = render_prompt("eval_vision.j2", timestamp="05:00")
     check("视觉提示词要求 JSON", '"gaze"' in vision_prompt and "unclear" in vision_prompt)
+    check("视觉提示词区分侧面走动与看屏幕", "左右横移" in vision_prompt and "students" in vision_prompt)
+    roi_prompt = render_prompt("eval_screen_roi.j2", timestamp="05:00")
+    check(
+        "投影定位提示词要求 JSON",
+        '"slide"' in roi_prompt and "blackboard" in roi_prompt and "0~1" in roi_prompt,
+    )
+    ev_roi = build_evidence(
+        SAMPLE,
+        300,
+        {"text": tf, "slides": {"slide_change_count": 4, "slide_roi_source": "vlm"}},
+    )
+    prompt_roi = render_prompt("eval_judge.j2", dimension=method, evidence=ev_roi)
+    check("框到投影后提示词说明只比对框内", "框出的投影" in prompt_roi)
     cw_prompt = render_prompt("eval_courseware.j2", page=2, page_count=10)
     check("课件提示词要求 JSON", '"layout"' in cw_prompt and "unclear" in cw_prompt)
 
@@ -493,6 +685,11 @@ def main() -> int:
         dimensions=[],
     )
     check("报告要求诊断摘要两点", "每类恰好 2 条" in report_prompt and "## 〇、诊断摘要" in report_prompt)
+    check("提示词写明摘要不进诊断报告", "从诊断报告里拿掉" in report_prompt)
+    stripped = strip_report_digest(
+        "## 〇、诊断摘要\n\n### 突出优点\n- 示例\n\n## 一、总体评价\n正文\n"
+    )
+    check("诊断摘要会从报告正文剔除", "诊断摘要" not in stripped and "总体评价" in stripped)
 
     print("\n=== 9. 课件切换检测 ===")
     check_slides()

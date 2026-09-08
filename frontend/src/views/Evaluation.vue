@@ -464,14 +464,20 @@
                 重新评估
               </el-button>
               <el-dropdown trigger="click" @command="onExport">
-                <el-button class="export-btn">
+                <el-button type="primary" class="export-btn">
                   导出报告
                   <el-icon class="btn-ico"><ArrowDown /></el-icon>
                 </el-button>
                 <template #dropdown>
                   <el-dropdown-menu>
-                    <el-dropdown-item command="md" :disabled="!result.report">
-                      诊断报告 Markdown
+                    <el-dropdown-item command="markdown" :disabled="!result.report">
+                      Markdown (.md)
+                    </el-dropdown-item>
+                    <el-dropdown-item command="docx" :disabled="!result.report">
+                      Word (.docx)
+                    </el-dropdown-item>
+                    <el-dropdown-item command="pdf" :disabled="!result.report">
+                      PDF (.pdf)
                     </el-dropdown-item>
                   </el-dropdown-menu>
                 </template>
@@ -663,41 +669,605 @@
             </el-collapse>
           </section>
 
-          <section v-else-if="reportTab === 'features'" class="block">
-            <p class="feature-legend">
-              色条是当前值在刻度上的位置；占比类按 0–100% 铺。浅色框是 rubric
-              登记的理想区间，落入为绿、略偏为黄、明显偏离为红。
-            </p>
-            <div class="feature-cols">
-              <div v-for="g in featureGroups" :key="g.key">
-                <div class="feature-head">{{ g.label }}</div>
-                <div class="feature-origin">{{ g.origin }}</div>
-                <div
-                  v-for="f in g.rows"
-                  :key="f.key"
-                  class="feature-item"
-                  :class="f.meter.tone"
-                >
-                  <div class="feature-line">
-                    <span>{{ f.label }}</span>
-                    <b>{{ f.value }}{{ f.unit }}</b>
+          <section v-else-if="reportTab === 'features'" class="block feature-page">
+            <nav class="feat-tabs">
+              <button
+                v-for="b in FEATURE_BUCKETS"
+                :key="b.key"
+                type="button"
+                class="feat-tab"
+                :class="{ on: featureSubTab === b.key, off: !bucketCount(b.key) }"
+                @click="featureSubTab = b.key"
+              >
+                {{ b.label }}
+                <em>{{ bucketCount(b.key) }}</em>
+              </button>
+              <button
+                v-if="featureGroupMap.speakers?.rows.length"
+                type="button"
+                class="feat-tab"
+                :class="{ on: featureSubTab === 'speakers' }"
+                @click="featureSubTab = 'speakers'"
+              >
+                说话人
+                <em>{{ featureGroupMap.speakers.rows.length }}</em>
+              </button>
+              <div class="feat-meta">
+                <span>已获得 {{ featureGot }} / {{ featureExpected }} 项特征</span>
+                <span v-if="!featureGroupMap.speakers?.rows.length">说话人分离未启用</span>
+              </div>
+            </nav>
+
+            <div v-if="featureSubTab === 'content'" class="pace-page">
+              <section class="pace-block">
+                <header class="pace-head">
+                  <p>基于语音转写与语义结构分析，已获得 {{ featureGroupMap.text?.rows.length || 0 }} / {{ featureGroupMap.text?.expected || 19 }} 项</p>
+                </header>
+                <div class="pace-heroes">
+                  <div v-for="h in pacePage.textHeroes" :key="h.label" class="pace-hero">
+                    <b>{{ h.value }}</b>
+                    <span>
+                      {{ h.label }}
+                      <em v-if="h.tag" :class="'tone-' + h.tone">{{ h.tag }}</em>
+                    </span>
                   </div>
-                  <div class="feature-meter" :title="f.meter.title">
-                    <div class="feature-track">
-                      <i class="feature-fill" :style="{ width: f.meter.pct + '%' }" />
-                      <i
-                        v-if="f.meter.idealBand"
-                        class="feature-ideal"
-                        :style="{
-                          left: f.meter.idealBand.left + '%',
-                          width: f.meter.idealBand.width + '%',
-                        }"
+                </div>
+                <div class="pace-charts">
+                  <figure>
+                    <figcaption>课堂语速变化</figcaption>
+                    <div class="pace-chart-frame">
+                      <img
+                        v-if="activeId"
+                        :src="evaluationApi.chartUrl(activeId, 'speech_rate')"
+                        alt="课堂语速变化"
+                      />
+                      <p v-else class="pace-hint">完成评估后显示语速折线</p>
+                    </div>
+                  </figure>
+                  <figure>
+                    <figcaption>提问结构</figcaption>
+                    <div class="pace-chart-frame pace-chart-frame-fit">
+                      <img
+                        v-if="activeId"
+                        :src="evaluationApi.chartUrl(activeId, 'question_structure')"
+                        alt="提问结构"
                       />
                     </div>
-                    <span v-if="f.meter.idealHint" class="feature-hint">{{ f.meter.idealHint }}</span>
+                  </figure>
+                </div>
+                <div class="pace-detail">
+                  <header class="pace-detail-head">
+                    <h3>指标明细 <em>共 {{ pacePage.textCount }} 项</em></h3>
+                    <div class="pace-detail-leg">
+                      <span><i class="dot ok" />符合参考</span>
+                      <span><i class="dot warn" />需要关注</span>
+                      <span><i class="dot fact" />事实观察</span>
+                    </div>
+                  </header>
+
+                  <section v-if="pacePage.textRows.length" class="pace-judge">
+                    <table class="pace-table">
+                      <thead>
+                        <tr>
+                          <th>指标</th>
+                          <th>当前值</th>
+                          <th>参考范围</th>
+                          <th>状态</th>
+                          <th>说明</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr v-for="r in pacePage.textRows" :key="r.key">
+                          <td>{{ r.label }}</td>
+                          <td>{{ r.value }}</td>
+                          <td>{{ r.range }}</td>
+                          <td><em :class="'tone-' + r.tone">{{ r.status }}</em></td>
+                          <td>{{ r.note }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+
+                  <section v-if="pacePage.textDonut || pacePage.textFacts.length" class="pace-obs">
+                    <div class="pace-obs-body">
+                      <div v-if="pacePage.textDonut" class="pace-donut-card">
+                        <div class="pace-donut-wrap">
+                          <svg viewBox="0 0 120 120" aria-hidden="true">
+                            <circle cx="60" cy="60" r="42" pathLength="100" class="pace-donut-bg" />
+                            <circle
+                              cx="60"
+                              cy="60"
+                              r="42"
+                              pathLength="100"
+                              class="pace-donut-arc"
+                              :stroke-dasharray="`${pacePage.textDonut.pct} ${100 - pacePage.textDonut.pct}`"
+                            />
+                          </svg>
+                          <div class="pace-donut-label">
+                            <b>{{ pacePage.textDonut.pctLabel }}</b>
+                            <span>{{ pacePage.textDonut.label }}</span>
+                          </div>
+                        </div>
+                        <p>课堂时长占比</p>
+                      </div>
+                      <div class="pace-obs-grid">
+                        <div v-for="h in pacePage.textFacts" :key="h.key" class="pace-obs-item">
+                          <span class="pace-obs-ico" v-html="paceObsIcon(h.key)" />
+                          <div>
+                            <b>{{ h.value }}</b>
+                            <span>{{ h.label }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </section>
+            </div>
+
+            <div v-else-if="featureSubTab === 'audio'" class="pace-page">
+              <section v-if="audioPage.got" class="pace-block">
+                <header class="pace-head">
+                  <p>
+                    融合音轨声学分析、提问等待与转写时序质量，已获得
+                    {{ audioPage.got }} / {{ audioPage.expected }} 项
+                  </p>
+                </header>
+                <div class="pace-heroes">
+                  <div v-for="h in audioPage.heroes" :key="h.label" class="pace-hero">
+                    <b>{{ h.value }}</b>
+                    <span>
+                      {{ h.label }}
+                      <em v-if="h.tag" :class="'tone-' + h.tone">{{ h.tag }}</em>
+                    </span>
+                  </div>
+                </div>
+                <div class="audio-charts">
+                  <div class="audio-cap">音轨与声学变化</div>
+                  <div class="audio-cap audio-cap-wait">
+                    <b>提问等待</b>
+                    <span v-if="audioPage.waitMean">平均 {{ audioPage.waitMean }}</span>
+                    <span v-if="audioPage.waitMedian">中位数 {{ audioPage.waitMedian }}</span>
+                  </div>
+                  <div class="audio-cell audio-wave">
+                    <img
+                      v-if="activeId"
+                      :src="evaluationApi.chartUrl(activeId, 'audio_wave')"
+                      alt="音轨波形"
+                    />
+                  </div>
+                  <div class="audio-cell audio-wait">
+                    <img
+                      v-if="activeId"
+                      :src="evaluationApi.chartUrl(activeId, 'wait_samples')"
+                      alt="提问等待样本"
+                    />
+                  </div>
+                  <div class="audio-cell audio-line">
+                    <span>响度变化</span>
+                    <img
+                      v-if="activeId"
+                      :src="evaluationApi.chartUrl(activeId, 'loudness_series')"
+                      alt="响度变化"
+                    />
+                  </div>
+                  <div class="audio-cell audio-dist">
+                    <div v-if="audioPage.waitQuality.length" class="audio-stack">
+                      <span>等待质量分布</span>
+                      <div class="audio-bar">
+                        <i
+                          v-for="s in audioPage.waitQuality"
+                          :key="s.key"
+                          :style="{ width: s.pct + '%', background: s.color }"
+                        />
+                      </div>
+                      <ul>
+                        <li v-for="s in audioPage.waitQuality" :key="s.key">
+                          <i :style="{ background: s.color }" />
+                          {{ s.label }}
+                          <b>{{ s.pct }}%</b>
+                        </li>
+                      </ul>
+                    </div>
+                    <div v-if="audioPage.asrStack.length" class="audio-stack">
+                      <span>ASR置信度分布</span>
+                      <div class="audio-bar">
+                        <i
+                          v-for="s in audioPage.asrStack"
+                          :key="s.key"
+                          :style="{ width: s.pct + '%', background: s.color }"
+                        />
+                      </div>
+                      <ul>
+                        <li v-for="s in audioPage.asrStack" :key="s.key">
+                          <i :style="{ background: s.color }" />
+                          {{ s.label }}
+                          <b>{{ s.pct }}%</b>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="audio-cell audio-line">
+                    <span>音高变化</span>
+                    <img
+                      v-if="activeId"
+                      :src="evaluationApi.chartUrl(activeId, 'pitch_series')"
+                      alt="音高变化"
+                    />
+                  </div>
+                  <div class="audio-cell audio-facts">
+                    <div v-for="h in audioPage.facts" :key="h.key" class="pace-obs-item">
+                      <span class="pace-obs-ico" v-html="paceObsIcon(h.key)" />
+                      <div>
+                        <b>{{ h.value }}</b>
+                        <span>{{ h.label }}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pace-detail">
+                  <header class="pace-detail-head">
+                    <h3>指标明细 <em>共 {{ audioPage.got }} 项</em></h3>
+                    <div class="pace-detail-leg">
+                      <span><i class="dot ok" />符合参考</span>
+                      <span><i class="dot warn" />需要关注</span>
+                      <span><i class="dot fact" />事实观察</span>
+                    </div>
+                  </header>
+
+                  <section v-if="audioPage.judgeRows.length" class="pace-judge">
+                    <table class="pace-table">
+                      <thead>
+                        <tr>
+                          <th>指标</th>
+                          <th>当前值</th>
+                          <th>参考范围</th>
+                          <th>状态</th>
+                          <th>说明</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr v-for="r in audioPage.judgeRows" :key="r.key">
+                          <td>{{ r.label }}</td>
+                          <td>{{ r.value }}</td>
+                          <td>{{ r.range }}</td>
+                          <td><em :class="'tone-' + r.tone">{{ r.status }}</em></td>
+                          <td>{{ r.note }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+                </div>
+              </section>
+              <div v-else class="empty-hint">该组暂无特征</div>
+            </div>
+
+            <div v-else-if="featureSubTab === 'vision'" class="pace-page vision-page">
+              <section v-if="visionPage.got" class="pace-block">
+                <header class="pace-head">
+                  <p>
+                    基于课堂关键帧结构化观测，已获得
+                    {{ visionPage.got }} / {{ visionPage.expected }} 项，已分析
+                    {{ visionPage.frames }} 帧
+                  </p>
+                </header>
+                <div class="pace-heroes">
+                  <div v-for="h in visionPage.heroes" :key="h.label" class="pace-hero">
+                    <b>{{ h.value }}</b>
+                    <span>{{ h.label }}</span>
+                  </div>
+                </div>
+                <div class="vision-mid">
+                  <div class="vision-col">
+                    <h3>课堂视觉状态分布</h3>
+                    <div v-for="row in visionPage.stacks" :key="row.key" class="vision-stack-row">
+                      <span>{{ row.label }}</span>
+                      <div>
+                        <div class="vision-bar">
+                          <i
+                            v-for="s in row.parts"
+                            :key="s.key"
+                            :style="{ width: s.width + '%', background: s.color }"
+                            :title="s.label + ' ' + s.pct + '%'"
+                          />
+                        </div>
+                        <ul>
+                          <li v-for="s in row.parts" :key="s.key">
+                            <i :style="{ background: s.color }" />
+                            {{ s.label }} {{ trimNum(s.pct) }}%
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vision-col">
+                    <div
+                      v-for="(c, i) in visionPage.conclusions"
+                      :key="c.title"
+                      class="vision-find"
+                    >
+                      <el-icon :size="20"><CircleCheckFilled /></el-icon>
+                      <div>
+                        <h4 :class="{ on: i === 0 }">{{ c.title }}</h4>
+                        <p>{{ c.text }}</p>
+                      </div>
+                    </div>
+                    <p v-if="!visionPage.conclusions.length" class="pace-hint">暂无足够数据生成结论</p>
+                  </div>
+                </div>
+                <div class="pace-detail">
+                  <header class="pace-detail-head">
+                    <h3>指标明细 <em>共 {{ visionPage.rows.length }} 项</em></h3>
+                    <div class="pace-detail-leg">
+                      <span><i class="dot ok" />符合参考</span>
+                      <span><i class="dot warn" />需要关注</span>
+                      <span><i class="dot fact" />事实观察</span>
+                    </div>
+                  </header>
+                  <section v-if="visionPage.rows.length" class="pace-judge">
+                    <table class="pace-table">
+                      <thead>
+                        <tr>
+                          <th>指标</th>
+                          <th>当前值</th>
+                          <th>参考范围</th>
+                          <th>状态</th>
+                          <th>说明</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr v-for="r in visionPage.rows" :key="r.key">
+                          <td>{{ r.label }}</td>
+                          <td>{{ r.value }}</td>
+                          <td>{{ r.range }}</td>
+                          <td><em :class="'tone-' + r.tone">{{ r.status }}</em></td>
+                          <td>{{ r.note }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+                </div>
+              </section>
+              <div v-else class="empty-hint">该组暂无特征</div>
+            </div>
+
+            <div v-else-if="featureSubTab === 'tools'" class="pace-page tools-page">
+              <section v-if="toolsPage.got" class="pace-block">
+                <header class="pace-head tools-head">
+                  <p>{{ toolsPage.lead }}</p>
+                  <em v-if="toolsPage.hasCw" class="tools-badge">已上传课件 · {{ toolsPage.pages }}页</em>
+                </header>
+                <div class="pace-heroes">
+                  <div v-for="h in toolsPage.heroes" :key="h.label" class="pace-hero">
+                    <b>{{ h.value }}</b>
+                    <span>{{ h.label }}</span>
+                  </div>
+                </div>
+
+                <template v-if="toolsPage.hasCw">
+                  <div class="tools-mid">
+                    <div class="tools-col tools-quality">
+                      <h3>课件质量分布</h3>
+                      <div v-for="row in toolsPage.stacks" :key="row.key" class="vision-stack-row">
+                        <span>{{ row.label }}</span>
+                        <div>
+                          <div class="vision-bar">
+                            <i
+                              v-for="s in row.parts"
+                              :key="s.key"
+                              :style="{ width: s.width + '%', background: s.color }"
+                              :title="s.label + ' ' + s.pct + '%'"
+                            />
+                          </div>
+                          <ul>
+                            <li v-for="s in row.parts" :key="s.key">
+                              <i :style="{ background: s.color }" />
+                              {{ s.label }} {{ trimNum(s.pct) }}%
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tools-col">
+                      <h3>页面切换时间轴</h3>
+                      <div class="tools-axis tools-axis-lg" v-if="toolsPage.timeline">
+                        <svg :viewBox="`0 0 ${toolsPage.timeline.W} ${toolsPage.timeline.H}`" preserveAspectRatio="none">
+                          <rect
+                            :x="toolsPage.timeline.pad"
+                            :y="toolsPage.timeline.trackY"
+                            :width="toolsPage.timeline.inner"
+                            :height="toolsPage.timeline.trackH"
+                            rx="6"
+                            fill="#f2f2f2"
+                          />
+                          <line
+                            v-for="(t, i) in toolsPage.timeline.ticks"
+                            :key="i"
+                            :x1="t.x"
+                            :x2="t.x"
+                            :y1="toolsPage.timeline.tickY1"
+                            :y2="toolsPage.timeline.tickY2"
+                            stroke="#a61b1b"
+                            stroke-width="1.8"
+                          />
+                          <text
+                            v-for="lab in toolsPage.timeline.labels"
+                            :key="lab.text"
+                            :x="lab.x"
+                            :y="toolsPage.timeline.labelY"
+                            text-anchor="middle"
+                            fill="#8a8a8a"
+                            font-size="11"
+                          >
+                            {{ lab.text }}
+                          </text>
+                        </svg>
+                        <p class="tools-axis-leg"><i />切换时刻</p>
+                      </div>
+                      <p v-else class="pace-hint">暂无切换时刻</p>
+                      <div class="tools-minis">
+                        <div v-for="m in toolsPage.minis" :key="m.key" class="pace-obs-item">
+                          <span class="pace-obs-ico" v-html="paceObsIcon(m.key)" />
+                          <div>
+                            <b>{{ m.value }}</b>
+                            <span>{{ m.label }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </template>
+
+                <template v-else>
+                  <div class="tools-axis-block">
+                    <h3>页面切换时间轴</h3>
+                    <div class="tools-axis" v-if="toolsPage.timeline">
+                      <svg :viewBox="`0 0 ${toolsPage.timeline.W} ${toolsPage.timeline.H}`" preserveAspectRatio="none">
+                        <rect
+                          :x="toolsPage.timeline.pad"
+                          :y="toolsPage.timeline.trackY"
+                          :width="toolsPage.timeline.inner"
+                          :height="toolsPage.timeline.trackH"
+                          rx="5"
+                          fill="#f2f2f2"
+                        />
+                        <line
+                          v-for="(t, i) in toolsPage.timeline.ticks"
+                          :key="i"
+                          :x1="t.x"
+                          :x2="t.x"
+                          :y1="toolsPage.timeline.tickY1"
+                          :y2="toolsPage.timeline.tickY2"
+                          stroke="#a61b1b"
+                          stroke-width="1.6"
+                        />
+                        <text
+                          v-for="lab in toolsPage.timeline.labels"
+                          :key="lab.text"
+                          :x="lab.x"
+                          :y="toolsPage.timeline.labelY"
+                          text-anchor="middle"
+                          fill="#8a8a8a"
+                          font-size="11"
+                        >
+                          {{ lab.text }}
+                        </text>
+                      </svg>
+                    </div>
+                    <div v-if="toolsPage.axisNotes.length" class="tools-pills">
+                      <span v-for="n in toolsPage.axisNotes" :key="n">{{ n }}</span>
+                    </div>
+                  </div>
+                  <div class="tools-mid tools-mid-wide">
+                    <div class="tools-col">
+                      <h3>分段切换频率</h3>
+                      <img
+                        v-if="activeId"
+                        class="tools-freq"
+                        :src="evaluationApi.chartUrl(activeId, 'slide_freq')"
+                        alt="分段切换频率"
+                      />
+                    </div>
+                    <div class="tools-col tools-dwell">
+                      <h3>页面停留时长分布</h3>
+                      <div class="tools-dwell-body">
+                        <div v-if="toolsPage.donut" class="tools-donut-wrap">
+                          <div class="tools-donut" :style="{ background: toolsPage.donut.bg }" />
+                          <div class="tools-donut-label">
+                            <b>{{ toolsPage.donut.median }}</b>
+                            <span>中位数</span>
+                          </div>
+                        </div>
+                        <ul v-if="toolsPage.donut">
+                          <li v-for="s in toolsPage.donut.parts" :key="s.key">
+                            <i :style="{ background: s.color }" />
+                            {{ s.label }} {{ trimNum(s.pct) }}%
+                          </li>
+                        </ul>
+                        <div v-if="toolsPage.dwellNote" class="vision-find">
+                          <el-icon :size="20"><CircleCheckFilled /></el-icon>
+                          <div>
+                            <h4>{{ toolsPage.dwellNote.title }}</h4>
+                            <p>{{ toolsPage.dwellNote.text }}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </template>
+
+                <div class="pace-detail">
+                  <header class="pace-detail-head">
+                    <h3>指标明细 <em>共 {{ toolsPage.rows.length }} 项</em></h3>
+                    <div class="pace-detail-leg">
+                      <span><i class="dot ok" />符合参考</span>
+                      <span><i class="dot warn" />需要关注</span>
+                      <span><i class="dot fact" />事实观察</span>
+                    </div>
+                  </header>
+                  <section v-if="toolsPage.rows.length" class="pace-judge">
+                    <table class="pace-table">
+                      <thead>
+                        <tr>
+                          <th>指标</th>
+                          <th>当前值</th>
+                          <th>参考范围</th>
+                          <th>状态</th>
+                          <th>说明</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr v-for="r in toolsPage.rows" :key="r.key">
+                          <td>{{ r.label }}</td>
+                          <td>{{ r.value }}</td>
+                          <td>{{ r.range }}</td>
+                          <td><em :class="'tone-' + r.tone">{{ r.status }}</em></td>
+                          <td>{{ r.note }}</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+                </div>
+              </section>
+              <div v-else class="empty-hint">该组暂无特征</div>
+            </div>
+
+            <div v-else class="feature-detail">
+              <p class="feature-legend">
+                {{ activeBucketLegend }}。色条是当前值在刻度上的位置；
+                占比类按 0–100% 铺。浅色框是 rubric 登记的理想区间。
+              </p>
+              <div v-if="activeBucketSections.length" class="feature-cols single">
+                <div v-for="sec in activeBucketSections" :key="sec.key">
+                  <div class="feature-head">{{ sec.label }}</div>
+                  <div
+                    v-for="f in sec.rows"
+                    :key="f.key"
+                    class="feature-item"
+                    :class="f.meter.tone"
+                  >
+                    <div class="feature-line">
+                      <span>{{ f.label }}</span>
+                      <b>{{ f.value }}{{ f.unit }}</b>
+                    </div>
+                    <div class="feature-meter" :title="f.meter.title">
+                      <div class="feature-track">
+                        <i class="feature-fill" :style="{ width: f.meter.pct + '%' }" />
+                        <i
+                          v-if="f.meter.idealBand"
+                          class="feature-ideal"
+                          :style="{
+                            left: f.meter.idealBand.left + '%',
+                            width: f.meter.idealBand.width + '%',
+                          }"
+                        />
+                      </div>
+                      <span v-if="f.meter.idealHint" class="feature-hint">{{ f.meter.idealHint }}</span>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div v-else class="empty-hint">该组暂无特征</div>
             </div>
           </section>
 
@@ -804,13 +1374,19 @@ const TASK_FILTERS = [
 
 // 分组即证据来源。把来源标出来，是为了让人一眼看出哪些数字是算的、哪些是模型看的
 const FEATURE_GROUPS = [
-  { key: 'text', label: '文本特征', origin: '转写文本统计' },
-  { key: 'audio', label: '声学特征', origin: 'librosa 音轨分析' },
-  { key: 'timeline', label: '时序特征', origin: 'ASR 时间戳与解码指标' },
-  { key: 'vision', label: '视觉观测统计', origin: 'VLM 逐帧标注后聚合' },
-  { key: 'courseware', label: '上传课件观测', origin: '教师上传课件，VLM 逐页标注' },
-  { key: 'slides', label: '课件时序特征', origin: '本地帧差检测，不经大模型' },
-  { key: 'speakers', label: '说话人分离', origin: 'pyannote 分离统计' },
+  { key: 'text', label: '文本特征', short: '文本', expected: 19, origin: '转写文本统计' },
+  { key: 'audio', label: '声学特征', short: '声学', expected: 10, origin: 'librosa 音轨分析' },
+  { key: 'timeline', label: '时序特征', short: '时序', expected: 6, origin: 'ASR 时间戳与解码指标' },
+  { key: 'vision', label: '视觉观测统计', short: '视觉', expected: 15, origin: 'VLM 逐帧标注后聚合' },
+  { key: 'courseware', label: '上传课件观测', short: '课件', expected: 7, origin: '教师上传课件，VLM 逐页标注' },
+  { key: 'slides', label: '课件时序特征', short: '切换', expected: 6, origin: '本地帧差检测，不经大模型' },
+  { key: 'speakers', label: '说话人分离', short: '说话人', expected: 6, origin: 'pyannote 分离统计' },
+]
+const FEATURE_BUCKETS = [
+  { key: 'content', label: '授课内容', sources: ['text'] },
+  { key: 'audio', label: '声学特征', sources: ['audio', 'timeline'] },
+  { key: 'vision', label: '课堂视觉', sources: ['vision'] },
+  { key: 'tools', label: '工具调度', sources: ['courseware', 'slides'] },
 ]
 
 // 与 evaluation_rubric.yaml 的 ideal 对齐；旧任务结果没有 ideal 字段时用这里兜底
@@ -820,6 +1396,190 @@ const FEATURE_IDEAL = {
   speech_rate_late_ratio: [0.9, 1.15],
   filler_density: [0, 1.5],
 }
+// 仅供授课内容 / 时序表明细展示，不进 Judge。有 rubric.ideal 的用 ideal。
+const PACE_GUIDE = {
+  speech_rate: { range: '200 - 280 字/分钟' },
+  speech_rate_cv: { range: '10% - 20%' },
+  speech_rate_late_ratio: { range: '0.90 - 1.20' },
+  question_count: { range: '建议 ≥ 15 次', min: 15 },
+  question_per_10min: { range: '建议 3 – 5 次', band: [3, 5] },
+  open_question_ratio: { range: '建议 ≥ 40%', min: 40 },
+  higher_order_question_ratio: { range: '建议 ≥ 30%', min: 30 },
+  question_gini: { range: '建议 0.20 – 0.50', band: [0.2, 0.5] },
+  wait_time_mean: { range: '建议 ≥ 3 秒', min: 3 },
+  wait_time_effective_ratio: { range: '建议 ≥ 50%', min: 50 },
+  asr_low_confidence_ratio: { range: '建议 ≤ 10%', max: 10 },
+}
+// 声学页展示用参考区间，不进 Judge
+const AUDIO_GUIDE = {
+  loudness_db: { range: '-26 ~ -16 dB', band: [-26, -16], ok: '良好' },
+  loudness_std: { range: '建议 ≤ 8 dB', max: 8, ok: '稳定' },
+  pitch_median: { range: '150 ~ 220 Hz', band: [150, 220], ok: '适中' },
+  pitch_std: { range: '建议 20 – 60 Hz', band: [20, 60], ok: '适中' },
+  pitch_variation: { range: '建议 0.10 – 0.35', band: [0.1, 0.35], ok: '适中' },
+  emphasis_per_min: { range: '建议 8 – 20 次', band: [8, 20], ok: '适中' },
+  long_pause_per_10min: { range: '建议 ≤ 6 次', max: 6, ok: '良好' },
+  silence_ratio: { range: '建议 ≤ 25%', max: 25, ok: '良好' },
+  snr_estimate: { range: '建议 ≥ 15 dB', min: 15, ok: '良好' },
+  wait_time_mean: { range: '3 ~ 6 秒', band: [3, 6], ok: '适中' },
+  wait_time_median: { range: '3 ~ 6 秒', band: [3, 6], ok: '适中' },
+  wait_time_effective_ratio: { range: '建议 ≥ 50%', min: 50, ok: '良好' },
+  asr_confidence: { range: '建议 ≥ −0.40', min: -0.4, ok: '良好' },
+  asr_low_confidence_ratio: { range: '建议 ≤ 10%', max: 10, ok: '良好' },
+}
+const AUDIO_ORDER = [
+  'loudness_db',
+  'snr_estimate',
+  'loudness_std',
+  'silence_ratio',
+  'pitch_median',
+  'pitch_std',
+  'pitch_variation',
+  'emphasis_per_min',
+  'long_pause_per_10min',
+  'wait_time_mean',
+  'wait_time_median',
+  'wait_time_effective_ratio',
+  'asr_confidence',
+  'asr_low_confidence_ratio',
+]
+const VISION_LABELS = {
+  frames_analyzed: '已分析帧数',
+  gaze_students_ratio: '视线看学生',
+  gaze_script_ratio: '视线看讲稿',
+  gaze_screen_ratio: '视线看屏幕',
+  gaze_unclear_ratio: '视线无法判断',
+  gesture_active_ratio: '手势活跃',
+  walking_ratio: '讲台前或走动',
+  board_present_ratio: '板书或投影',
+  board_diagram_ratio: '含图表',
+  board_readable_high_ratio: '可读性高',
+  board_readable_low_ratio: '可读性低',
+  heads_up_high_ratio: '学生抬头率高',
+  heads_up_unclear_ratio: '抬头率无法判断',
+  hands_raised_frame_ratio: '有人举手',
+  students_visible_median: '可见学生中位数',
+}
+const VISION_GUIDE = {
+  gaze_students_ratio: { range: '建议 ≥ 50%', min: 50, ok: '良好' },
+  gaze_script_ratio: { range: '建议 ≤ 25%', max: 25, ok: '良好' },
+  gaze_screen_ratio: { range: '建议 ≤ 25%', max: 25, ok: '良好' },
+  gaze_unclear_ratio: { range: '建议 ≤ 15%', max: 15, ok: '良好' },
+  gesture_active_ratio: { range: '建议 ≥ 40%', min: 40, ok: '良好' },
+  board_present_ratio: { range: '建议 ≥ 60%', min: 60, ok: '良好' },
+  board_diagram_ratio: { range: '建议 ≥ 20%', min: 20, ok: '良好' },
+  board_readable_high_ratio: { range: '建议 ≥ 50%', min: 50, ok: '良好' },
+  board_readable_low_ratio: { range: '建议 ≤ 20%', max: 20, ok: '良好' },
+  heads_up_high_ratio: { range: '建议 ≥ 50%', min: 50, ok: '良好' },
+  heads_up_unclear_ratio: { range: '建议 ≤ 30%', max: 30, ok: '良好' },
+}
+const VISION_ORDER = [
+  'gaze_students_ratio',
+  'gaze_script_ratio',
+  'gaze_screen_ratio',
+  'gaze_unclear_ratio',
+  'gesture_active_ratio',
+  'walking_ratio',
+  'board_present_ratio',
+  'board_diagram_ratio',
+  'board_readable_high_ratio',
+  'board_readable_low_ratio',
+  'heads_up_high_ratio',
+  'heads_up_unclear_ratio',
+  'hands_raised_frame_ratio',
+  'students_visible_median',
+  'frames_analyzed',
+]
+const TOOLS_LABELS = {
+  courseware_pages_analyzed: '已分析页数',
+  cw_layout_clear_ratio: '版式清晰',
+  cw_layout_cluttered_ratio: '版式拥挤',
+  cw_density_heavy_ratio: '文字过密',
+  cw_diagram_ratio: '含图表',
+  cw_readable_high_ratio: '可读性高',
+  cw_readable_low_ratio: '可读性低',
+  slide_change_count: '页面切换',
+  slide_change_per_10min: '每10分钟切换',
+  dwell_median_sec: '停留中位数',
+  dwell_short_ratio: '短停留比例',
+  slide_sync_ratio: '讲授同步',
+  blank_frame_ratio: '空白画面',
+}
+const TOOLS_GUIDE = {
+  cw_layout_clear_ratio: { range: '建议 ≥ 60%', min: 60, ok: '良好' },
+  cw_layout_cluttered_ratio: { range: '建议 ≤ 30%', max: 30, ok: '良好' },
+  cw_density_heavy_ratio: { range: '建议 ≤ 25%', max: 25, ok: '良好' },
+  cw_diagram_ratio: { range: '建议 ≥ 25%', min: 25, ok: '良好' },
+  cw_readable_high_ratio: { range: '建议 ≥ 60%', min: 60, ok: '良好' },
+  cw_readable_low_ratio: { range: '建议 ≤ 20%', max: 20, ok: '良好' },
+  slide_change_per_10min: { range: '建议 3 – 5 次', band: [3, 5], ok: '正常' },
+  dwell_median_sec: { range: '建议 20 – 70 秒', band: [20, 70], ok: '适中' },
+  dwell_short_ratio: { range: '建议 ≤ 15%', max: 15, ok: '良好' },
+  slide_sync_ratio: { range: '建议 ≥ 60%', min: 60, ok: '良好' },
+  blank_frame_ratio: { range: '建议 ≤ 8%', max: 8, ok: '良好' },
+}
+const TOOLS_ORDER = [
+  'courseware_pages_analyzed',
+  'cw_layout_clear_ratio',
+  'cw_layout_cluttered_ratio',
+  'cw_density_heavy_ratio',
+  'cw_diagram_ratio',
+  'cw_readable_high_ratio',
+  'cw_readable_low_ratio',
+  'slide_change_count',
+  'slide_change_per_10min',
+  'dwell_median_sec',
+  'dwell_short_ratio',
+  'slide_sync_ratio',
+  'blank_frame_ratio',
+]
+const PACE_LABELS = {
+  speech_rate: '平均语速',
+  speech_rate_cv: '语速变异系数',
+  speech_rate_late_ratio: '后段/前段语速比',
+  question_count: '提问次数',
+  question_per_10min: '每 10 分钟提问',
+  open_question_ratio: '开放性问题比例',
+  higher_order_question_ratio: '高阶问题比例',
+  question_gini: '提问集中度',
+  wait_time_mean: '平均等待时间',
+  wait_time_effective_ratio: '有效等待比例',
+  asr_confidence: '转写置信度',
+  asr_low_confidence_ratio: '低置信转写比例',
+  classified_question_count: '可分类提问',
+  question_free_segment_ratio: '无提问段落',
+  interaction_count: '互动话语',
+  discipline_count: '纪律提醒',
+  inspire_count: '启发性话语',
+  case_count: '案例引入',
+  recency_count: '前沿表述',
+  year_ref_count: '年份引用',
+  filler_density: '口头禅密度',
+  transition_count: '过渡衔接',
+  student_speech_count: '学生发言线索',
+  wait_time_median: '等待中位数',
+  wait_time_sample_count: '等待样本数',
+  loudness_db: '平均响度',
+  loudness_std: '响度波动',
+  snr_estimate: '信噪比',
+  pitch_median: '基频中位数',
+  pitch_std: '基频标准差',
+  pitch_variation: '语调起伏度',
+  emphasis_per_min: '每分钟重音',
+  long_pause_count: '长停顿次数',
+  long_pause_per_10min: '每10分钟长停顿',
+  silence_ratio: '静音占比',
+}
+const PACE_TEXT_ORDER = [
+  'speech_rate',
+  'speech_rate_cv',
+  'speech_rate_late_ratio',
+  'question_count',
+  'question_per_10min',
+  'open_question_ratio',
+  'higher_order_question_ratio',
+  'question_gini',
+]
 const FEATURE_UNIT_CEILING = {
   '字/分钟': 360,
   '次/百字': 4,
@@ -857,6 +1617,7 @@ const activeId = ref(null)
 const result = ref(null)
 const openDims = ref([])
 const reportTab = ref('overview')
+const featureSubTab = ref('content')
 
 const uploading = ref(false)
 const uploadPercent = ref(0)
@@ -935,6 +1696,999 @@ const featureGroups = computed(() => {
     ...g,
     rows: (groups[g.key] || []).map((f) => ({ ...f, meter: featureMeter(f) })),
   })).filter((g) => g.rows.length)
+})
+const featureGroupMap = computed(() => {
+  const groups = result.value?.objective_features || {}
+  const map = {}
+  for (const g of FEATURE_GROUPS) {
+    map[g.key] = {
+      ...g,
+      rows: (groups[g.key] || []).map((f) => ({ ...f, meter: featureMeter(f) })),
+    }
+  }
+  return map
+})
+const featureGot = computed(() =>
+  FEATURE_GROUPS.reduce((n, g) => n + (featureGroupMap.value[g.key]?.rows.length || 0), 0)
+)
+const featureExpected = FEATURE_GROUPS.reduce((n, g) => n + g.expected, 0)
+
+function featRow(group, key) {
+  return featureGroupMap.value[group]?.rows.find((r) => r.key === key) || null
+}
+function featNum(group, key) {
+  const n = Number(featRow(group, key)?.value)
+  return Number.isFinite(n) ? n : null
+}
+function featText(group, key, fallback = '—') {
+  const row = featRow(group, key)
+  if (!row) return fallback
+  return `${row.value}${row.unit || ''}`
+}
+function bucketCount(key) {
+  const bucket = FEATURE_BUCKETS.find((b) => b.key === key)
+  if (!bucket) return featureGroupMap.value[key]?.rows.length || 0
+  return bucket.sources.reduce((n, src) => n + (featureGroupMap.value[src]?.rows.length || 0), 0)
+}
+
+function lessonSeconds() {
+  const minutes = Number(result.value?.overall?.duration_minutes)
+  if (Number.isFinite(minutes) && minutes > 0) return minutes * 60
+  const segs = result.value?.transcript?.segments || []
+  const last = segs[segs.length - 1]
+  const end = Number(last?.end_sec)
+  return Number.isFinite(end) && end > 0 ? end : 1
+}
+
+const activeBucketSections = computed(() => {
+  if (featureSubTab.value === 'speakers') {
+    const g = featureGroupMap.value.speakers
+    return g?.rows.length ? [{ key: g.key, label: `${g.label} · ${g.origin}`, rows: g.rows }] : []
+  }
+  const bucket = FEATURE_BUCKETS.find((b) => b.key === featureSubTab.value)
+  if (!bucket) return []
+  return bucket.sources
+    .map((src) => {
+      const g = featureGroupMap.value[src]
+      return g?.rows.length ? { key: g.key, label: `${g.label} · ${g.origin}`, rows: g.rows } : null
+    })
+    .filter(Boolean)
+})
+
+const activeBucketLegend = computed(() => {
+  if (featureSubTab.value === 'speakers') {
+    return featureGroupMap.value.speakers?.origin || '说话人分离'
+  }
+  const bucket = FEATURE_BUCKETS.find((b) => b.key === featureSubTab.value)
+  if (!bucket) return ''
+  return bucket.sources
+    .map((src) => featureGroupMap.value[src]?.origin)
+    .filter(Boolean)
+    .join('；')
+})
+
+function paceStatus(row, guide) {
+  const n = Number(row?.value)
+  const ideal = featureIdeal(row)
+  if (ideal && Number.isFinite(n)) {
+    if (n >= ideal[0] && n <= ideal[1]) {
+      if (row.key === 'speech_rate') return { text: '适中', tone: 'ok' }
+      if (row.key === 'speech_rate_cv') return { text: '稳定', tone: 'ok' }
+      return { text: '良好', tone: 'ok' }
+    }
+    const band = Math.max(ideal[1] - ideal[0], 1e-6)
+    const dist = n < ideal[0] ? ideal[0] - n : n - ideal[1]
+    if (row.key === 'speech_rate') {
+      return n > ideal[1] ? { text: '偏快', tone: 'warn' } : { text: '偏慢', tone: 'warn' }
+    }
+    return dist / band <= 0.4 ? { text: '关注', tone: 'warn' } : { text: '偏离', tone: 'bad' }
+  }
+  if (!Number.isFinite(n) || !guide) return { text: '—', tone: 'ok' }
+  const okText = guide.ok || '适中'
+  if (guide.min != null) {
+    return n >= guide.min ? { text: okText, tone: 'ok' } : { text: '关注', tone: 'warn' }
+  }
+  if (guide.max != null) {
+    return n <= guide.max ? { text: guide.ok || '良好', tone: 'ok' } : { text: '关注', tone: 'warn' }
+  }
+  if (guide.band) {
+    return n >= guide.band[0] && n <= guide.band[1]
+      ? { text: okText, tone: 'ok' }
+      : { text: '关注', tone: 'warn' }
+  }
+  return { text: '—', tone: 'ok' }
+}
+
+function paceNote(row, status) {
+  const key = row.key
+  if (key === 'speech_rate') {
+    if (status.text === '适中') return '语速在推荐区间内，利于学生理解与跟随'
+    if (status.text === '偏快') return '语速偏快，学生可能来不及消化'
+    return '语速偏慢，课堂推进可能偏缓'
+  }
+  if (key === 'speech_rate_cv') {
+    return status.tone === 'ok' ? '语速波动适中，节奏稳定' : '分段语速起伏较大'
+  }
+  if (key === 'speech_rate_late_ratio') {
+    return status.tone === 'ok' ? '后段语速与前段基本持平' : '前后段语速差距较大'
+  }
+  if (key === 'question_count' || key === 'question_per_10min') {
+    return status.tone === 'ok' ? '提问总量适中' : '提问偏少，可增加互动'
+  }
+  if (key === 'open_question_ratio') {
+    return status.tone === 'ok' ? '开放性问题比例良好' : '开放性问题偏少'
+  }
+  if (key === 'higher_order_question_ratio') {
+    return status.tone === 'ok' ? '高阶问题比例良好' : '高阶问题仍可增加'
+  }
+  if (key === 'question_gini') {
+    return status.tone === 'ok' ? '提问分布比较均匀' : '提问分布略集中，建议分散到更多教学环节'
+  }
+  if (key === 'wait_time_mean' || key === 'wait_time_effective_ratio') {
+    return status.tone === 'ok' ? '提问后给学生留了思考时间' : '等待时间偏短'
+  }
+  if (key === 'asr_low_confidence_ratio') {
+    return status.tone === 'ok' ? '转写整体可靠' : '低置信转写偏多，数字要谨慎看'
+  }
+  if (key === 'loudness_db') {
+    return status.tone === 'ok' ? '音量适中，听感清楚' : '响度偏离常见授课区间'
+  }
+  if (key === 'snr_estimate') {
+    return status.tone === 'ok' ? '课堂底噪较低' : '背景噪音偏大'
+  }
+  if (key === 'silence_ratio') {
+    return status.tone === 'ok' ? '静音比例正常' : '静音偏多，可能有长时间停顿'
+  }
+  if (key === 'loudness_std') {
+    return status.tone === 'ok' ? '响度波动不大' : '音量起伏偏大'
+  }
+  if (key === 'pitch_median' || key === 'pitch_std' || key === 'pitch_variation') {
+    return status.tone === 'ok' ? '语调变化在常见范围' : '基频起伏需要关注'
+  }
+  if (key === 'emphasis_per_min') {
+    return status.tone === 'ok' ? '重音节奏适中' : '强调密度偏离常见范围'
+  }
+  if (key === 'long_pause_per_10min') {
+    return status.tone === 'ok' ? '非正常长停顿不多' : '长停顿偏多'
+  }
+  if (key === 'wait_time_median') {
+    return status.tone === 'ok' ? '等待中位数落在推荐区间' : '等待中位数偏离 3–6 秒'
+  }
+  if (key === 'asr_confidence') {
+    return status.tone === 'ok' ? '转写解码较有把握' : '平均对数概率偏低'
+  }
+  return row.label
+}
+
+function paceRangeText(row) {
+  const guide = PACE_GUIDE[row.key] || {}
+  if (guide.range) return guide.range
+  const ideal = featureIdeal(row)
+  if (ideal) return `${trimNum(ideal[0])} – ${trimNum(ideal[1])}${row.unit || ''}`
+  return ''
+}
+
+function paceTableRows(group, preferred) {
+  const rows = featureGroupMap.value[group]?.rows || []
+  const seen = new Set()
+  const ordered = []
+  for (const key of preferred || []) {
+    const row = rows.find((r) => r.key === key)
+    if (row) {
+      ordered.push(row)
+      seen.add(key)
+    }
+  }
+  for (const row of rows) {
+    if (!seen.has(row.key)) ordered.push(row)
+  }
+  return ordered
+    .map((row) => {
+      const range = paceRangeText(row)
+      if (!range) return null
+      const guide = PACE_GUIDE[row.key] || {}
+      const status = paceStatus(row, guide)
+      return {
+        key: row.key,
+        label: PACE_LABELS[row.key] || row.label,
+        value: `${row.value}${row.unit || ''}`,
+        range,
+        status: status.text,
+        tone: status.tone,
+        note: paceNote(row, status),
+      }
+    })
+    .filter(Boolean)
+}
+
+function paceExtraItems(group, excludeKeys) {
+  const exclude = new Set(excludeKeys || [])
+  return (featureGroupMap.value[group]?.rows || [])
+    .filter((row) => !exclude.has(row.key) && !paceRangeText(row))
+    .map((row) => ({
+      key: row.key,
+      label: PACE_LABELS[row.key] || row.label,
+      value: `${row.value}${row.unit || ''}`,
+      raw: Number(row.value),
+    }))
+}
+
+function audioRangeText(row) {
+  const guide = AUDIO_GUIDE[row.key] || {}
+  if (guide.range) return guide.range
+  const ideal = featureIdeal(row)
+  if (ideal) return `${trimNum(ideal[0])} – ${trimNum(ideal[1])}${row.unit || ''}`
+  return ''
+}
+
+function audioAllRows() {
+  return [
+    ...(featureGroupMap.value.audio?.rows || []),
+    ...(featureGroupMap.value.timeline?.rows || []),
+  ]
+}
+
+function audioTableRows() {
+  const rows = audioAllRows()
+  const seen = new Set()
+  const ordered = []
+  for (const key of AUDIO_ORDER) {
+    const row = rows.find((r) => r.key === key)
+    if (row) {
+      ordered.push(row)
+      seen.add(key)
+    }
+  }
+  for (const row of rows) {
+    if (!seen.has(row.key)) ordered.push(row)
+  }
+  return ordered
+    .map((row) => {
+      const range = audioRangeText(row)
+      if (!range) return null
+      const guide = AUDIO_GUIDE[row.key] || {}
+      const status = paceStatus(row, guide)
+      return {
+        key: row.key,
+        label: PACE_LABELS[row.key] || row.label,
+        value: `${row.value}${row.unit || ''}`,
+        range,
+        status: status.text,
+        tone: status.tone,
+        note: paceNote(row, status),
+      }
+    })
+    .filter(Boolean)
+}
+
+function audioFactItems() {
+  return audioAllRows()
+    .filter((row) => !audioRangeText(row))
+    .map((row) => ({
+      key: row.key,
+      label: PACE_LABELS[row.key] || row.label,
+      value: `${row.value}${row.unit || ''}`,
+    }))
+}
+
+function waitQuality(samples, effectiveRatio) {
+  const list = (samples || []).map(Number).filter((n) => Number.isFinite(n))
+  if (list.length) {
+    const short = list.filter((g) => g < 3).length
+    const good = list.filter((g) => g >= 3 && g <= 6).length
+    const long = list.filter((g) => g > 6).length
+    const total = list.length
+    return [
+      { key: 'good', label: '有效等待 (3-6秒)', pct: Math.round((1000 * good) / total) / 10, color: '#67c23a' },
+      { key: 'short', label: '偏短 (<3秒)', pct: Math.round((1000 * short) / total) / 10, color: '#e6a23c' },
+      { key: 'long', label: '偏长 (>6秒)', pct: Math.round((1000 * long) / total) / 10, color: '#c0c4cc' },
+    ].filter((s) => s.pct > 0)
+  }
+  if (effectiveRatio == null) return []
+  const good = Math.min(100, Math.max(0, effectiveRatio))
+    return [
+      { key: 'good', label: '有效等待 (≥3秒)', pct: good, color: '#67c23a' },
+      { key: 'short', label: '偏短 (<3秒)', pct: Math.round(10 * (100 - good)) / 10, color: '#e6a23c' },
+    ].filter((s) => s.pct > 0)
+}
+
+function paceObsIcon(key) {
+  const d = PACE_OBS_PATHS[key] || PACE_OBS_PATHS.default
+  return `<svg viewBox="0 0 24 24" fill="none" stroke="#a61b1b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`
+}
+
+const PACE_OBS_PATHS = {
+  classified_question_count:
+    '<path d="M4 5h13a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H9l-4 3v-3H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M7 9h9M7 12.5h6"/>',
+  transition_count:
+    '<path d="M7 7h10M7 12h10M7 17h10"/><path d="M5 5.5L3 7.5 5 9.5M19 14.5l2 2-2 2"/>',
+  case_count:
+    '<path d="M5 8h14v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z"/><path d="M9 8V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V8"/><path d="M8 13h8M8 16.5h5"/>',
+  interaction_count:
+    '<path d="M4 6h10a2 2 0 0 1 2 2v5l-3.5-2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/><path d="M10 13.5h8.5a2 2 0 0 1 2 2v4.5l-3.2-1.8H10a2 2 0 0 1-2-2v-0.7"/>',
+  discipline_count:
+    '<path d="M18 8A6 6 0 0 0 6 8c0 7-3 8.5-3 8.5h18S18 15 18 8"/><path d="M10 20.5a2.2 2.2 0 0 0 4 0"/>',
+  recency_count:
+    '<path d="M12 3.2l2.2 6.3H21l-5.4 3.8 2.1 6.4L12 16.7 6.3 19.7l2.1-6.4L3 9.5h6.8z"/>',
+  student_speech_count:
+    '<circle cx="9" cy="7.5" r="3.4"/><path d="M3.5 20v-1.4A4.6 4.6 0 0 1 8.1 14h1.8a4.6 4.6 0 0 1 4.6 4.6V20"/><circle cx="17" cy="8.5" r="2.6"/><path d="M21.5 20v-1.2A3.8 3.8 0 0 0 17.7 15h-.4"/>',
+  inspire_count:
+    '<path d="M9 17.5h6M10 21h4"/><path d="M12 2.8a6.6 6.6 0 0 0-4.1 11.7V16h8.2v-1.5A6.6 6.6 0 0 0 12 2.8z"/><path d="M10.5 9.2h3"/>',
+  year_ref_count:
+    '<rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M3.5 10h17M8 3.2v4.2M16 3.2v4.2"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01"/>',
+  wait_time_median:
+    '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.2v5.1l3.2 1.9"/>',
+  wait_time_sample_count:
+    '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.2v5.1l3.2 1.9"/>',
+  long_pause_count:
+    '<rect x="7" y="5" width="3.2" height="14" rx="0.8"/><rect x="13.8" y="5" width="3.2" height="14" rx="0.8"/>',
+  slide_change_per_10min:
+    '<rect x="3.5" y="6" width="11" height="14" rx="1.4"/><rect x="8.5" y="3.5" width="11" height="14" rx="1.4"/><path d="M15.5 10.5h5M18 8v5"/>',
+  dwell_median_sec:
+    '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.2v5.1l3.2 1.9"/>',
+  dwell_short_ratio:
+    '<circle cx="12" cy="12" r="8.5"/><path d="M10 8.2l6.2 3.8L10 15.8z"/>',
+  blank_frame_ratio:
+    '<rect x="4" y="6" width="16" height="12" rx="1.6"/><path d="M8 12h8"/>',
+  asr_confidence:
+    '<path d="M3 12h2.2l2-7 3.6 14 2.4-7H21"/><path d="M4 16.5h3M17 16.5h3"/>',
+  default:
+    '<circle cx="12" cy="12" r="8.5"/><path d="M8 12h8"/>',
+}
+
+const pacePage = computed(() => {
+  const rate = featNum('text', 'speech_rate')
+  const rateStatus = paceStatus(featRow('text', 'speech_rate') || { key: 'speech_rate', value: rate }, PACE_GUIDE.speech_rate)
+  const textRows = paceTableRows('text', PACE_TEXT_ORDER)
+  const textExtras = paceExtraItems('text')
+  const donutRow = textExtras.find((h) => h.key === 'question_free_segment_ratio')
+  const pct = Number.isFinite(donutRow?.raw) ? Math.min(100, Math.max(0, donutRow.raw)) : 0
+  return {
+    textHeroes: [
+      {
+        value: rate == null ? '—' : `${trimNum(rate)} 字/分钟`,
+        label: '语速',
+        tag: rate == null ? '' : rateStatus.text,
+        tone: rateStatus.tone,
+      },
+      { value: featText('text', 'question_count'), label: '提问' },
+      { value: featText('text', 'open_question_ratio'), label: '开放性问题' },
+      { value: featText('text', 'higher_order_question_ratio'), label: '高阶问题' },
+    ],
+    timeHeroes: [
+      { value: featText('timeline', 'wait_time_mean'), label: '平均等待' },
+      { value: featText('timeline', 'wait_time_effective_ratio'), label: '有效等待' },
+      { value: featText('timeline', 'asr_confidence'), label: '转写置信' },
+      { value: featText('timeline', 'asr_low_confidence_ratio'), label: '低置信转写' },
+    ].filter((h) => h.value !== '—'),
+    textRows,
+    textFacts: textExtras.filter((h) => h.key !== 'question_free_segment_ratio'),
+    textDonut: donutRow
+      ? { pct, pctLabel: `${trimNum(pct)}%`, label: donutRow.label }
+      : null,
+    textCount: textRows.length + textExtras.length,
+    timeRows: paceTableRows('timeline'),
+    timeFacts: paceExtraItems('timeline'),
+  }
+})
+
+const audioPage = computed(() => {
+  const audioCount = featureGroupMap.value.audio?.rows.length || 0
+  const timeCount = featureGroupMap.value.timeline?.rows.length || 0
+  const expected =
+    (featureGroupMap.value.audio?.expected || 10) + (featureGroupMap.value.timeline?.expected || 6)
+  const snr = featNum('audio', 'snr_estimate')
+  const silence = featNum('audio', 'silence_ratio')
+  const loud = featNum('audio', 'loudness_db')
+  const voiceOk = snr != null && snr >= 15 && (silence == null || silence <= 25)
+  const low = featNum('timeline', 'asr_low_confidence_ratio')
+  const asrPct = low == null ? null : Math.min(100, Math.max(0, 100 - low))
+  const samples = result.value?.raw_features?.timeline?.wait_samples
+  const judgeRows = audioTableRows()
+  const facts = audioFactItems()
+  const waitMean = featRow('timeline', 'wait_time_mean')
+  const waitMedian = featRow('timeline', 'wait_time_median')
+  return {
+    got: audioCount + timeCount,
+    expected,
+    audioCount,
+    timeCount,
+    judgeRows,
+    facts,
+    waitQuality: waitQuality(samples, featNum('timeline', 'wait_time_effective_ratio')),
+    asrStack:
+      low == null
+        ? []
+        : [
+            { key: 'high', label: '高置信 (≥90%)', pct: Math.round(10 * asrPct) / 10, color: '#a61b1b' },
+            { key: 'low', label: '低置信 (<90%)', pct: Math.round(10 * low) / 10, color: '#c0c4cc' },
+          ].filter((s) => s.pct > 0),
+    waitMean: waitMean ? `${waitMean.value}${waitMean.unit || ''}` : '',
+    waitMedian: waitMedian ? `${waitMedian.value}${waitMedian.unit || ''}` : '',
+    heroes: [
+      {
+        value: loud == null ? '—' : `${trimNum(loud)} dB`,
+        label: '平均响度',
+        tag: voiceOk ? '清晰稳定' : '',
+        tone: 'ok',
+      },
+      { value: featText('audio', 'snr_estimate'), label: '信噪比' },
+      { value: featText('timeline', 'wait_time_mean'), label: '平均等待' },
+      {
+        value: asrPct == null ? featText('timeline', 'asr_confidence') : `${trimNum(asrPct)} %`,
+        label: 'ASR置信度',
+      },
+    ],
+  }
+})
+
+function visionPct(key) {
+  return featNum('vision', key)
+}
+
+function visionStack(parts) {
+  const items = parts
+    .map((s) => ({ ...s, pct: Math.max(0, visionPct(s.key) ?? 0) }))
+    .filter((s) => s.pct > 0)
+  const sum = items.reduce((n, s) => n + s.pct, 0)
+  const scale = sum > 100 ? 100 / sum : 1
+  return items.map((s) => ({ ...s, width: Math.round(10 * s.pct * scale) / 10 }))
+}
+
+function visionNote(row, status) {
+  const key = row.key
+  const ok = status.tone === 'ok'
+  if (key === 'gaze_students_ratio') return ok ? '多数时间面向学生' : '面向学生的时间偏少'
+  if (key === 'gaze_script_ratio') return ok ? '看讲稿不多' : '看讲稿偏多，可能打断目光交流'
+  if (key === 'gaze_screen_ratio') return ok ? '看屏幕或背对学生不多' : '视线较多落在屏幕或背对学生'
+  if (key === 'gaze_unclear_ratio') return ok ? '视线标注较清楚' : '无法判断的帧偏多，这项要谨慎看'
+  if (key === 'gesture_active_ratio') return ok ? '手势使用较充分' : '手势出现偏少'
+  if (key === 'board_present_ratio') return ok ? '板书或投影使用充分' : '板书或投影出现的帧不多'
+  if (key === 'board_diagram_ratio') return ok ? '有一定图示内容' : '图表内容偏少'
+  if (key === 'board_readable_high_ratio') return ok ? '板书投影多数可读' : '高可读帧偏少'
+  if (key === 'board_readable_low_ratio') return ok ? '低可读帧不多' : '低可读帧偏多'
+  if (key === 'heads_up_high_ratio') return ok ? '学生抬头率整体较好' : '抬头率高的帧不多'
+  if (key === 'heads_up_unclear_ratio') return ok ? '抬头情况大多能看清' : '较多帧看不清学生抬头'
+  return row.label
+}
+
+function visionFactNote(key) {
+  if (key === 'frames_analyzed') return '成功标注的关键帧数量'
+  if (key === 'walking_ratio') return '讲台前或走动的帧占比，只作观察'
+  if (key === 'hands_raised_frame_ratio') return '画面中出现举手的帧占比，只作观察'
+  if (key === 'students_visible_median') return '画面中可见学生人数的中位数'
+  return '无展示用参考区间，只作观察'
+}
+
+function visionTableRows() {
+  const rows = featureGroupMap.value.vision?.rows || []
+  const seen = new Set()
+  const ordered = []
+  for (const key of VISION_ORDER) {
+    const row = rows.find((r) => r.key === key)
+    if (row) {
+      ordered.push(row)
+      seen.add(key)
+    }
+  }
+  for (const row of rows) {
+    if (!seen.has(row.key)) ordered.push(row)
+  }
+  return ordered.map((row) => {
+    const guide = VISION_GUIDE[row.key]
+    const label = VISION_LABELS[row.key] || row.label
+    const value = `${row.value}${row.unit || ''}`
+    if (!guide) {
+      return {
+        key: row.key,
+        label,
+        value,
+        range: '—',
+        status: '事实观察',
+        tone: 'fact',
+        note: visionFactNote(row.key),
+      }
+    }
+    const status = paceStatus(row, guide)
+    return {
+      key: row.key,
+      label,
+      value,
+      range: guide.range,
+      status: status.text,
+      tone: status.tone,
+      note: visionNote(row, status),
+    }
+  })
+}
+
+function visionConclusions() {
+  const gaze = visionPct('gaze_students_ratio')
+  const script = visionPct('gaze_script_ratio') || 0
+  const screen = visionPct('gaze_screen_ratio') || 0
+  const gesture = visionPct('gesture_active_ratio')
+  const heads = visionPct('heads_up_high_ratio')
+  const unclear = visionPct('heads_up_unclear_ratio') || 0
+  const board = visionPct('board_present_ratio')
+  const out = []
+  if (gaze != null) {
+    if (gaze >= 50) {
+      out.push({
+        title: '多数时间面向学生',
+        text: '教师视线主要面向学生，关注度较高，有利于课堂互动与理解。',
+      })
+    } else if (script >= gaze && script >= screen) {
+      out.push({
+        title: '看讲稿偏多',
+        text: '教师较多时间看讲稿，面向学生的交流可能被打断。',
+      })
+    } else if (screen > gaze) {
+      out.push({
+        title: '看屏幕或背对学生偏多',
+        text: '视线较多落在屏幕或背对学生，课堂目光交流偏弱。',
+      })
+    } else {
+      out.push({
+        title: '面向学生时间有限',
+        text: '看学生帧占比不高，课堂目光交流偏弱。',
+      })
+    }
+  }
+  if (gesture != null) {
+    if (gesture >= 50) {
+      out.push({
+        title: '手势表达较充分',
+        text: '手势使用频率较高，能够辅助强调重点，增强表达效果。',
+      })
+    } else if (gesture >= 25) {
+      out.push({
+        title: '有一定手势辅助',
+        text: '部分帧出现手势，讲解辅助有限。',
+      })
+    } else {
+      out.push({
+        title: '手势使用偏少',
+        text: '多数帧未见明显手势，讲解主要依赖言语。',
+      })
+    }
+  }
+  if (heads != null) {
+    if (heads >= 50) {
+      out.push({
+        title: '学生抬头状态整体良好',
+        text: '学生抬头率较高，表明学生参与度较好，课堂注意力集中。',
+      })
+    } else if (unclear >= 40) {
+      out.push({
+        title: '学生抬头率难以判断',
+        text: '较多帧无法看清学生抬头情况，这项只作参考。',
+      })
+    } else {
+      out.push({
+        title: '学生抬头率偏低',
+        text: '抬头率高的帧不多，学生参与或镜头覆盖需要关注。',
+      })
+    }
+  } else if (board != null) {
+    out.push({
+      title: board >= 70 ? '板书或投影使用充分' : '板书或投影出现有限',
+      text:
+        board >= 70
+          ? '多数帧能看到板书或投影，视觉媒介使用充分。'
+          : '板书或投影出现的帧不多，课堂视觉媒介偏少。',
+    })
+  }
+  return out.slice(0, 3)
+}
+
+const visionPage = computed(() => {
+  const got = featureGroupMap.value.vision?.rows.length || 0
+  const expected = featureGroupMap.value.vision?.expected || 15
+  const frames = visionPct('frames_analyzed')
+  const pctText = (key) => {
+    const n = visionPct(key)
+    return n == null ? '—' : `${trimNum(n)}%`
+  }
+  const stacks = [
+    {
+      key: 'gaze',
+      label: '教师视线',
+      parts: visionStack([
+        { key: 'gaze_students_ratio', label: '看学生', color: '#a61b1b' },
+        { key: 'gaze_script_ratio', label: '看讲稿', color: '#e6a23c' },
+        { key: 'gaze_screen_ratio', label: '看屏幕', color: '#67c23a' },
+        { key: 'gaze_unclear_ratio', label: '无法判断', color: '#c0c4cc' },
+      ]),
+    },
+    {
+      key: 'act',
+      label: '教学行为',
+      parts: visionStack([
+        { key: 'gesture_active_ratio', label: '有手势', color: '#a61b1b' },
+        { key: 'walking_ratio', label: '讲台前或走动', color: '#e6a23c' },
+        { key: 'hands_raised_frame_ratio', label: '有人举手', color: '#67c23a' },
+      ]),
+    },
+    {
+      key: 'media',
+      label: '课堂媒介',
+      parts: visionStack([
+        { key: 'board_present_ratio', label: '板书或投影', color: '#a61b1b' },
+        { key: 'board_diagram_ratio', label: '含图表', color: '#e6a23c' },
+        { key: 'board_readable_high_ratio', label: '可读性高', color: '#67c23a' },
+      ]),
+    },
+  ].filter((row) => row.parts.length)
+  return {
+    got,
+    expected,
+    frames: frames == null ? '—' : trimNum(frames),
+    heroes: [
+      { value: pctText('gaze_students_ratio'), label: '视线面向学生' },
+      { value: pctText('gesture_active_ratio'), label: '有手势' },
+      { value: pctText('board_present_ratio'), label: '板书或投影' },
+      { value: pctText('heads_up_high_ratio'), label: '抬头率高' },
+    ],
+    stacks,
+    conclusions: visionConclusions(),
+    rows: visionTableRows(),
+  }
+})
+
+function clockSec(sec) {
+  const n = Math.max(0, Math.floor(Number(sec) || 0))
+  const m = Math.floor(n / 60)
+  const s = n % 60
+  return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`
+}
+
+function toolsNum(group, key) {
+  return featNum(group, key)
+}
+
+function toolsStack(parts) {
+  const items = parts
+    .map((s) => ({ ...s, pct: Math.max(0, Number(s.pct) || 0) }))
+    .filter((s) => s.pct > 0)
+  const sum = items.reduce((n, s) => n + s.pct, 0)
+  const scale = sum > 100 ? 100 / sum : 1
+  return items.map((s) => ({ ...s, width: Math.round(10 * s.pct * scale) / 10 }))
+}
+
+function cwPageRatio(field, wanted) {
+  const pages = result.value?.courseware_slides || []
+  const vals = pages.map((p) => p.labels?.[field]).filter(Boolean)
+  if (!vals.length) return 0
+  return Math.round((1000 * vals.filter((v) => wanted.includes(v)).length) / vals.length) / 10
+}
+
+function toolsChangeTimes() {
+  const raw = result.value?.raw_features?.slides?.slide_change_times
+  if (!Array.isArray(raw)) return []
+  return raw.map(Number).filter((n) => Number.isFinite(n) && n >= 0).sort((a, b) => a - b)
+}
+
+function toolsDwells() {
+  const raw = result.value?.raw_features?.slides?.dwell_samples
+  if (Array.isArray(raw) && raw.length) {
+    return raw.map(Number).filter((n) => Number.isFinite(n) && n > 0)
+  }
+  const times = toolsChangeTimes()
+  const dur = lessonSeconds()
+  if (!times.length || dur <= 0) return []
+  const bounds = [0, ...times.filter((t) => t < dur), dur]
+  const out = []
+  for (let i = 0; i < bounds.length - 1; i += 1) {
+    const d = bounds[i + 1] - bounds[i]
+    if (d > 0) out.push(d)
+  }
+  return out
+}
+
+function toolsTimeline(tall = false) {
+  const times = toolsChangeTimes()
+  const dur = Math.max(lessonSeconds(), times[times.length - 1] || 0, 1)
+  if (!times.length && !featNum('slides', 'slide_change_count')) return null
+  const W = 640
+  const H = tall ? 88 : 58
+  const pad = 12
+  const inner = W - pad * 2
+  const trackY = tall ? 30 : 18
+  const trackH = tall ? 18 : 10
+  const tickY1 = tall ? 18 : 12
+  const tickY2 = trackY + trackH + (tall ? 8 : 6)
+  const labelY = H - 8
+  const ticks = (times.length ? times : []).map((t) => ({
+    x: pad + (Math.min(dur, Math.max(0, t)) / dur) * inner,
+  }))
+  if (!ticks.length) {
+    const n = Math.min(featNum('slides', 'slide_change_count') || 0, 24)
+    for (let i = 1; i <= n; i += 1) {
+      ticks.push({ x: pad + (i / (n + 1)) * inner })
+    }
+  }
+  return {
+    W,
+    H,
+    pad,
+    inner,
+    trackY,
+    trackH,
+    tickY1,
+    tickY2,
+    labelY,
+    ticks,
+    labels: [
+      { x: pad, text: clockSec(0) },
+      { x: pad + inner / 2, text: clockSec(dur / 2) },
+      { x: pad + inner, text: clockSec(dur) },
+    ],
+  }
+}
+
+function toolsAxisNotes() {
+  const times = toolsChangeTimes()
+  const dur = Math.max(lessonSeconds(), 1)
+  const notes = []
+  if (times.length >= 3) {
+    const bin = 90
+    let best = 0
+    let bestStart = 0
+    for (let t = 0; t < dur; t += 30) {
+      const n = times.filter((x) => x >= t && x < t + bin).length
+      if (n > best) {
+        best = n
+        bestStart = t
+      }
+    }
+    if (best >= 3) {
+      notes.push(`${clockSec(bestStart)}–${clockSec(bestStart + bin)} 切换较密集`)
+    }
+  }
+  const dwells = toolsDwells()
+  if (dwells.length) {
+    const maxD = Math.max(...dwells)
+    if (maxD >= 90) {
+      const times2 = toolsChangeTimes()
+      const bounds = [0, ...times2.filter((t) => t < dur), dur]
+      let start = 0
+      for (let i = 0; i < bounds.length - 1; i += 1) {
+        if (bounds[i + 1] - bounds[i] === maxD) {
+          start = bounds[i]
+          break
+        }
+      }
+      notes.push(`${clockSec(start)} 长停留`)
+    }
+  }
+  if (times.length >= 4) {
+    const bins = []
+    for (let t = 0; t < dur; t += 300) {
+      bins.push(times.filter((x) => x >= t && x < t + 300).length)
+    }
+    const mean = bins.reduce((a, b) => a + b, 0) / bins.length
+    const sd = Math.sqrt(bins.reduce((s, v) => s + (v - mean) ** 2, 0) / bins.length)
+    if (mean > 0 && sd / mean <= 0.55) notes.push('整体节奏较均匀')
+  }
+  return notes.slice(0, 3)
+}
+
+function toolsDonut() {
+  const dwells = toolsDwells()
+  const median = featNum('slides', 'dwell_median_sec')
+  if (!dwells.length && median == null) return null
+  let short = 0
+  let mid = 0
+  let long = 0
+  if (dwells.length) {
+    short = dwells.filter((d) => d < 20).length
+    mid = dwells.filter((d) => d >= 20 && d <= 90).length
+    long = dwells.filter((d) => d > 90).length
+  } else {
+    const s = featNum('slides', 'dwell_short_ratio') || 0
+    short = s
+    mid = Math.max(0, 100 - s)
+    long = 0
+  }
+  const total = short + mid + long || 1
+  const parts = [
+    { key: 'short', label: '短停留 < 20秒', pct: Math.round((1000 * short) / total) / 10, color: '#e6a23c' },
+    { key: 'mid', label: '常规停留 20-90秒', pct: Math.round((1000 * mid) / total) / 10, color: '#a61b1b' },
+    { key: 'long', label: '长停留 > 90秒', pct: Math.round((1000 * long) / total) / 10, color: '#c0c4cc' },
+  ].filter((s) => s.pct > 0)
+  let acc = 0
+  const stops = parts.map((s) => {
+    const from = acc
+    acc += s.pct
+    return `${s.color} ${from}% ${acc}%`
+  })
+  return {
+    parts,
+    bg: `conic-gradient(${stops.join(', ')})`,
+    median: median == null ? '—' : `${trimNum(median)} 秒`,
+  }
+}
+
+function toolsDwellNote(donut) {
+  if (!donut?.parts.length) return null
+  const short = donut.parts.find((p) => p.key === 'short')?.pct || 0
+  const long = donut.parts.find((p) => p.key === 'long')?.pct || 0
+  if (short <= 20 && long <= 40) {
+    return { title: '长短停留搭配基本合理', text: long > 25 ? '个别段落讲解偏长。' : '页面停留整体在常见范围。' }
+  }
+  if (short > 20) {
+    return { title: '短停留偏多', text: '不少页面停留不足 20 秒，学生可能来不及看清。' }
+  }
+  return { title: '长停留偏多', text: '部分页面停留偏长，节奏可以再紧凑一些。' }
+}
+
+function toolsNote(row, status) {
+  const ok = status.tone === 'ok'
+  const key = row.key
+  if (key === 'cw_layout_clear_ratio') return ok ? '多数页面版式清楚' : '版式清楚的页面偏少'
+  if (key === 'cw_layout_cluttered_ratio') return ok ? '拥挤页面不多' : '版式拥挤的页面偏多'
+  if (key === 'cw_density_heavy_ratio') return ok ? '文字过密的页面不多' : '文字过密页偏多，信息负担较重'
+  if (key === 'cw_diagram_ratio') return ok ? '有一定图表辅助' : '图表页偏少'
+  if (key === 'cw_readable_high_ratio') return ok ? '多数页面可读性高' : '高可读页面偏少'
+  if (key === 'cw_readable_low_ratio') return ok ? '低可读页面不多' : '低可读页面偏多'
+  if (key === 'slide_change_per_10min') return ok ? '切换频率在建议范围' : '切换偏快或偏慢'
+  if (key === 'dwell_median_sec') return ok ? '页面停留中位数适中' : '停留中位数偏离常见区间'
+  if (key === 'dwell_short_ratio') return ok ? '短停留不多' : '短停留偏多'
+  if (key === 'slide_sync_ratio') return ok ? '切换处多有过渡话语' : '切换与讲授衔接偏弱'
+  if (key === 'blank_frame_ratio') return ok ? '空白画面很少' : '空白画面偏多'
+  return row.label
+}
+
+function toolsFactNote(key) {
+  if (key === 'courseware_pages_analyzed') return '成功标注的上传课件页数'
+  if (key === 'slide_change_count') {
+    const src = result.value?.raw_features?.slides?.slide_roi_source
+    if (src === 'vlm') return '已先框出投影/板书，再在该区域内检测切换；仍非精确页数'
+    return '画面局部跳变识别到的切换次数，走动造成的持续变化会滤掉，仍非精确页数'
+  }
+  return '无展示用参考区间，只作观察'
+}
+
+function toolsTableRows() {
+  const rows = [
+    ...(featureGroupMap.value.courseware?.rows || []),
+    ...(featureGroupMap.value.slides?.rows || []),
+  ]
+  const seen = new Set()
+  const ordered = []
+  for (const key of TOOLS_ORDER) {
+    const row = rows.find((r) => r.key === key)
+    if (row) {
+      ordered.push(row)
+      seen.add(key)
+    }
+  }
+  for (const row of rows) {
+    if (!seen.has(row.key)) ordered.push(row)
+  }
+  return ordered.map((row) => {
+    const guide = TOOLS_GUIDE[row.key]
+    const label = TOOLS_LABELS[row.key] || row.label
+    const value = `${row.value}${row.unit || ''}`
+    if (!guide) {
+      return {
+        key: row.key,
+        label,
+        value,
+        range: '—',
+        status: '事实观察',
+        tone: 'fact',
+        note: toolsFactNote(row.key),
+      }
+    }
+    const status = paceStatus(row, guide)
+    return {
+      key: row.key,
+      label,
+      value,
+      range: guide.range,
+      status: status.text,
+      tone: status.tone,
+      note: toolsNote(row, status),
+    }
+  })
+}
+
+const toolsPage = computed(() => {
+  const cwCount = featureGroupMap.value.courseware?.rows.length || 0
+  const slideCount = featureGroupMap.value.slides?.rows.length || 0
+  const cwExpected = featureGroupMap.value.courseware?.expected || 7
+  const slideExpected = featureGroupMap.value.slides?.expected || 6
+  const hasCw = cwCount > 0 || (result.value?.courseware_slides || []).length > 0
+  const pages = toolsNum('courseware', 'courseware_pages_analyzed')
+  const donut = toolsDonut()
+  const stacks = hasCw
+    ? [
+        {
+          key: 'layout',
+          label: '版式',
+          parts: toolsStack([
+            { key: 'clear', label: '清晰', pct: toolsNum('courseware', 'cw_layout_clear_ratio'), color: '#67c23a' },
+            { key: 'clutter', label: '拥挤', pct: toolsNum('courseware', 'cw_layout_cluttered_ratio'), color: '#c0c4cc' },
+          ]),
+        },
+        {
+          key: 'density',
+          label: '信息密度',
+          parts: toolsStack([
+            { key: 'mod', label: '适中', pct: cwPageRatio('density', ['moderate']), color: '#67c23a' },
+            { key: 'heavy', label: '过高', pct: toolsNum('courseware', 'cw_density_heavy_ratio') ?? cwPageRatio('density', ['text_heavy']), color: '#e6a23c' },
+            { key: 'sparse', label: '过低', pct: cwPageRatio('density', ['sparse']), color: '#c0c4cc' },
+          ]),
+        },
+        {
+          key: 'chart',
+          label: '图表使用',
+          parts: toolsStack([
+            { key: 'diag', label: '含图表', pct: toolsNum('courseware', 'cw_diagram_ratio'), color: '#67c23a' },
+            {
+              key: 'text',
+              label: '纯文字',
+              pct:
+                toolsNum('courseware', 'cw_diagram_ratio') == null
+                  ? cwPageRatio('content', ['text_heavy', 'none'])
+                  : Math.max(0, Math.round(10 * (100 - (toolsNum('courseware', 'cw_diagram_ratio') || 0))) / 10),
+              color: '#c0c4cc',
+            },
+          ]),
+        },
+        {
+          key: 'read',
+          label: '可读性',
+          parts: toolsStack([
+            { key: 'high', label: '高', pct: toolsNum('courseware', 'cw_readable_high_ratio'), color: '#67c23a' },
+            { key: 'low', label: '低', pct: toolsNum('courseware', 'cw_readable_low_ratio'), color: '#c0c4cc' },
+          ]),
+        },
+      ].filter((row) => row.parts.length)
+    : []
+  const val = (group, key, fallback = '—') => {
+    const n = toolsNum(group, key)
+    if (n == null) return fallback
+    const unit = featRow(group, key)?.unit || ''
+    if (unit === '%') return `${trimNum(n)}%`
+    return unit ? `${trimNum(n)} ${unit}` : trimNum(n)
+  }
+  return {
+    got: cwCount + slideCount,
+    expected: cwExpected + slideExpected,
+    cwExpected,
+    hasCw,
+    pages: pages == null ? (result.value?.courseware_slides || []).length || '—' : trimNum(pages),
+    lead: hasCw
+      ? `融合上传课件页面观测与视频切换时序，已获得 ${cwCount + slideCount} / ${cwExpected + slideExpected} 项`
+      : `基于视频画面变化分析切换节奏，已获得 ${slideCount} / ${cwExpected + slideExpected} 项，${cwExpected}项课件页面质量指标因未上传材料已跳过`,
+    heroes: hasCw
+      ? [
+          { value: val('courseware', 'courseware_pages_analyzed'), label: '已分析' },
+          { value: val('courseware', 'cw_layout_clear_ratio'), label: '版式清晰' },
+          { value: val('slides', 'slide_change_count'), label: '页面切换' },
+          { value: val('slides', 'slide_sync_ratio'), label: '讲授同步' },
+        ]
+      : [
+          { value: val('slides', 'slide_change_count'), label: '页面切换' },
+          { value: val('slides', 'slide_change_per_10min'), label: '切换频率' },
+          { value: val('slides', 'dwell_median_sec'), label: '停留中位数' },
+          { value: val('slides', 'slide_sync_ratio'), label: '讲授同步' },
+        ],
+    stacks,
+    timeline: toolsTimeline(hasCw),
+    minis: [
+      { key: 'slide_change_per_10min', value: val('slides', 'slide_change_per_10min'), label: '每 10 分钟' },
+      { key: 'dwell_median_sec', value: val('slides', 'dwell_median_sec'), label: '停留中位数' },
+      { key: 'dwell_short_ratio', value: val('slides', 'dwell_short_ratio'), label: '短停留' },
+      { key: 'blank_frame_ratio', value: val('slides', 'blank_frame_ratio'), label: '空白画面' },
+    ],
+    axisNotes: toolsAxisNotes(),
+    donut,
+    dwellNote: toolsDwellNote(donut),
+    rows: toolsTableRows(),
+  }
 })
 
 function featureIdeal(f) {
@@ -1034,9 +2788,23 @@ function frameTags(frame) {
     .filter((t) => t.text)
     .map((t) => ({ ...t, type: FRAME_TAG_TYPE[t.text] || 'info' }))
 }
-const reportHtml = computed(() =>
-  result.value?.report ? DOMPurify.sanitize(marked.parse(result.value.report)) : ''
-)
+function stripReportDigest(md) {
+  if (!md) return ''
+  const match = md.match(/^##\s*(?:[〇零0]、\s*)?诊断摘要\s*$/m)
+  if (!match || match.index == null) return md
+  const start = match.index
+  const afterHeading = start + match[0].length
+  const rest = md.slice(afterHeading)
+  const next = rest.search(/^##\s/m)
+  const before = md.slice(0, start).trimEnd()
+  const after = next >= 0 ? rest.slice(next).trimStart() : ''
+  return [before, after].filter(Boolean).join('\n\n')
+}
+
+const reportHtml = computed(() => {
+  const md = stripReportDigest(result.value?.report || '')
+  return md ? DOMPurify.sanitize(marked.parse(md)) : ''
+})
 
 const reportTitle = computed(() => {
   const name = (activeTask.value?.filename || '课堂').replace(/\.[^.]+$/, '')
@@ -1172,13 +2940,18 @@ function openIndicatorTab(key) {
 }
 
 function onExport(cmd) {
-  if (cmd !== 'md' || !result.value?.report) return
-  const blob = new Blob([result.value.report], { type: 'text/markdown;charset=utf-8' })
+  if (!result.value?.report) {
+    ElMessage.warning('暂无诊断报告')
+    return
+  }
+  if (!activeId.value) {
+    ElMessage.warning('请从已完成任务导出')
+    return
+  }
   const a = document.createElement('a')
-  a.href = URL.createObjectURL(blob)
-  a.download = `${reportTitle.value}.md`
+  a.href = evaluationApi.exportUrl(activeId.value, cmd)
+  a.rel = 'noopener'
   a.click()
-  URL.revokeObjectURL(a.href)
 }
 
 const filteredTasks = computed(() => {
@@ -1238,9 +3011,11 @@ function rowClass({ row }) {
 
 function stepDetail(t) {
   const d = t.step_detail || {}
+  if (t.current_step === 'asr' && d.phase === 'punctuate') return '（补标点）'
   if (t.current_step === 'asr' && d.total_sec) {
     return `（${Math.round(d.done_sec / 60)}/${Math.round(d.total_sec / 60)} 分钟）`
   }
+  if (t.current_step === 'slide_detection' && d.phase === 'roi') return '（定位投影）'
   if (t.current_step === 'vlm_describe' && d.total) return `（${d.done || 0}/${d.total}）`
   if (t.current_step === 'llm_judge' && d.dimension) return `（${d.dimension}）`
   return ''
@@ -1250,6 +3025,7 @@ function newEvaluation() {
   activeId.value = null
   result.value = null
   reportTab.value = 'overview'
+  featureSubTab.value = 'content'
   clearMaterials()
 }
 
@@ -1313,7 +3089,7 @@ function applyTaskMaterials(task) {
 
 function bindRemoteVideo(taskId) {
   revokeVideoUrl()
-  const url = `/api/evaluation/task/${taskId}/file/video`
+  const url = evaluationApi.fileUrl(taskId, 'video')
   videoUrl.value = url
   const video = document.createElement('video')
   video.preload = 'metadata'
@@ -1345,6 +3121,7 @@ async function viewResult() {
     if (task.status === 'completed' && task.result) {
       result.value = task.result
       reportTab.value = 'overview'
+      featureSubTab.value = 'content'
       openDims.value = task.result.dimensions[0] ? [task.result.dimensions[0].key] : []
       await ensureRadar()
     } else {
@@ -2403,29 +4180,32 @@ svg.aux-icon .chip {
   vertical-align: middle;
 }
 .export-btn {
-  color: #a61b1b;
+  color: #fff;
   border-color: #a61b1b;
-  background: #fff;
+  background: #a61b1b;
 }
-.export-btn:hover {
-  color: #891616;
+.export-btn:hover,
+.export-btn:focus {
+  color: #fff;
   border-color: #891616;
-  background: #fdf4f4;
+  background: #891616;
 }
 
 .report-tabs {
   display: flex;
-  gap: 4px;
   margin-top: 18px;
   border-bottom: 1px solid #ececec;
 }
 .report-tab {
+  flex: 1 1 0;
   height: 40px;
-  padding: 0 14px;
+  padding: 0 8px;
   border: none;
   background: transparent;
   color: #606266;
   font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
   cursor: pointer;
   border-bottom: 2px solid transparent;
   margin-bottom: -1px;
@@ -2777,6 +4557,849 @@ svg.aux-icon .chip {
 }
 
 /* 客观特征 */
+.feature-page {
+  padding-top: 20px;
+}
+.pace-page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.pace-block h3 {
+  margin: 22px 0 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.pace-head h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+.pace-head p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #8a8a8a;
+}
+.pace-heroes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 12px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+.pace-hero b {
+  display: block;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1f1f1f;
+  line-height: 1.2;
+}
+.pace-hero span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 13px;
+  color: #8a8a8a;
+}
+.pace-extras {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px 12px;
+  margin-top: 36px;
+}
+.pace-hero.compact b {
+  font-size: 26px;
+  font-weight: 700;
+}
+.pace-hero.compact span {
+  margin-top: 4px;
+  font-size: 13px;
+  line-height: 1.35;
+}
+.pace-hero em,
+.pace-table em {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+.pace-hero em.tone-ok,
+.pace-table em.tone-ok {
+  background: #eaf6ee;
+  color: #2e8b57;
+}
+.pace-hero em.tone-warn,
+.pace-table em.tone-warn {
+  background: #fff6e8;
+  color: #d48806;
+}
+.pace-table em.tone-bad {
+  background: #fdecec;
+  color: #c45656;
+}
+.pace-table em.tone-fact {
+  background: #f4f4f5;
+  color: #909399;
+}
+.pace-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 20px;
+  row-gap: 8px;
+  margin-top: 20px;
+  align-items: stretch;
+}
+.pace-charts figure {
+  display: contents;
+}
+.pace-charts figure:first-child > * {
+  grid-column: 1;
+}
+.pace-charts figure:last-child > * {
+  grid-column: 2;
+}
+.pace-charts figcaption {
+  grid-row: 1;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #1f1f1f;
+}
+.pace-chart-frame {
+  grid-row: 2;
+  min-width: 0;
+}
+.pace-charts figure:first-child .pace-chart-frame {
+  align-self: start;
+}
+.pace-chart-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.pace-chart-frame-fit {
+  position: relative;
+  height: 0;
+  min-height: 100%;
+  align-self: stretch;
+}
+.pace-chart-frame-fit img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.pace-block .pace-charts + .pace-detail,
+.pace-block .audio-charts + .pace-detail {
+  margin-top: 0;
+  padding-top: 14px;
+  border-top: 1px solid #f0f0f0;
+}
+.vision-page .pace-detail,
+.tools-page .pace-detail {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid #f0f0f0;
+}
+.pace-detail-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.pace-detail-head h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.pace-detail-head h3 em {
+  margin-left: 8px;
+  padding: 2px 8px;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a61b1b;
+  background: #f8e8e8;
+  border-radius: 999px;
+  vertical-align: middle;
+}
+.pace-detail-leg {
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+.pace-detail-leg .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.pace-detail-leg .dot.ok {
+  background: #2e8b57;
+}
+.pace-detail-leg .dot.warn {
+  background: #d48806;
+}
+.pace-detail-leg .dot.fact {
+  background: #fff;
+  border: 1.5px solid #c0c4cc;
+  box-sizing: border-box;
+}
+.audio-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  column-gap: 28px;
+  row-gap: 16px;
+  margin-top: 20px;
+  align-items: stretch;
+}
+.audio-cap {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #1f1f1f;
+}
+.audio-cap-wait {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.audio-cap-wait b {
+  font-weight: 600;
+}
+.audio-cap-wait span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8a8a8a;
+}
+.audio-cell {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+}
+.audio-cell img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.audio-wait {
+  position: relative;
+  min-height: 0;
+}
+.audio-wait img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.audio-line span,
+.audio-stack > span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.audio-line img {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+.audio-dist {
+  justify-content: space-evenly;
+  gap: 12px;
+}
+.audio-facts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+}
+.audio-facts .pace-obs-item {
+  margin: 0;
+  min-height: 0;
+  height: auto;
+  gap: 12px;
+}
+.audio-facts .pace-obs-ico {
+  flex-basis: 72px;
+  width: 72px;
+  height: 72px;
+}
+.audio-facts .pace-obs-ico :deep(svg),
+.audio-facts .pace-obs-ico svg {
+  width: 38px;
+  height: 38px;
+}
+.audio-facts .pace-obs-item b {
+  font-size: 36px;
+}
+.audio-facts .pace-obs-item span {
+  font-size: 16px;
+}
+.audio-stack {
+  margin: 0;
+}
+.audio-bar {
+  display: flex;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #f2f2f2;
+}
+.audio-bar i {
+  display: block;
+  height: 100%;
+}
+.audio-stack ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  color: #606266;
+}
+.audio-stack li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.audio-stack li i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.audio-stack li b {
+  font-weight: 600;
+  color: #303133;
+}
+.vision-mid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 40px;
+  margin-top: 28px;
+  min-width: 0;
+}
+.vision-col {
+  min-width: 0;
+}
+.vision-col > h3 {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.vision-stack-row {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 14px;
+  align-items: start;
+  margin-bottom: 16px;
+}
+.vision-stack-row > span {
+  padding-top: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #303133;
+  line-height: 1.4;
+}
+.vision-bar {
+  display: flex;
+  height: 12px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #f2f2f2;
+}
+.vision-bar i {
+  display: block;
+  height: 100%;
+}
+.vision-stack-row ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 8px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  color: #606266;
+}
+.vision-stack-row li {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.vision-stack-row li i {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+.vision-find {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.vision-find + .vision-find {
+  margin-top: 18px;
+}
+.vision-find .el-icon {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: #a61b1b;
+}
+.vision-find h4 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.vision-find h4.on {
+  color: #a61b1b;
+}
+.vision-find p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #8a8a8a;
+}
+.tools-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.tools-head p {
+  margin: 0;
+}
+.tools-badge {
+  flex: 0 0 auto;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2e8b57;
+  background: #eaf6ee;
+}
+.tools-mid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  gap: 36px;
+  margin-top: 28px;
+  min-width: 0;
+}
+.tools-mid-wide {
+  grid-template-columns: 1fr 1fr;
+}
+.tools-quality .vision-bar {
+  max-width: 88%;
+}
+.tools-col,
+.tools-axis-block {
+  min-width: 0;
+}
+.tools-col > h3,
+.tools-axis-block > h3 {
+  margin: 0 0 16px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.tools-axis {
+  width: 100%;
+}
+.tools-axis svg {
+  display: block;
+  width: 100%;
+  height: 58px;
+}
+.tools-axis-lg svg {
+  height: 96px;
+}
+.tools-axis-leg {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+.tools-axis-leg i {
+  width: 10px;
+  height: 2px;
+  background: #a61b1b;
+}
+.tools-minis {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px 14px;
+  margin-top: 20px;
+}
+.tools-minis .pace-obs-item {
+  margin: 0;
+  gap: 10px;
+}
+.tools-minis .pace-obs-ico {
+  flex-basis: 40px;
+  width: 40px;
+  height: 40px;
+}
+.tools-minis .pace-obs-ico :deep(svg),
+.tools-minis .pace-obs-ico svg {
+  width: 20px;
+  height: 20px;
+}
+.tools-minis .pace-obs-item b {
+  font-size: 16px;
+}
+.tools-minis .pace-obs-item span {
+  font-size: 12px;
+}
+.tools-axis-block {
+  margin-top: 28px;
+}
+.tools-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.tools-pills span {
+  padding: 4px 10px;
+  border: 1px solid #eee;
+  border-radius: 999px;
+  font-size: 12px;
+  color: #606266;
+  background: #fff;
+}
+.tools-freq {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.tools-dwell-body {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px 20px;
+  align-items: center;
+}
+.tools-dwell-body .vision-find {
+  grid-column: 1 / -1;
+}
+.tools-dwell-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  color: #606266;
+}
+.tools-dwell-body li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+}
+.tools-dwell-body li i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+.tools-donut-wrap {
+  position: relative;
+  width: 140px;
+  height: 140px;
+}
+.tools-donut {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(farthest-side, transparent 58%, #000 59%);
+  mask: radial-gradient(farthest-side, transparent 58%, #000 59%);
+}
+.tools-donut-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.tools-donut-label b {
+  font-size: 18px;
+  font-weight: 800;
+  color: #1f1f1f;
+  line-height: 1.2;
+}
+.tools-donut-label span {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+.pace-obs {
+  margin-top: 22px;
+}
+.pace-obs-body {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 12px 40px;
+  align-items: center;
+}
+.pace-donut-card {
+  text-align: center;
+}
+.pace-donut-wrap {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.pace-donut-wrap svg {
+  width: 100%;
+  height: 100%;
+}
+.pace-donut-bg {
+  fill: none;
+  stroke: #f0f0f0;
+  stroke-width: 12;
+}
+.pace-donut-arc {
+  fill: none;
+  stroke: #a61b1b;
+  stroke-width: 12;
+  transform: rotate(-90deg);
+  transform-origin: 60px 60px;
+}
+.pace-donut-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.pace-donut-label b {
+  font-size: 32px;
+  font-weight: 800;
+  color: #1f1f1f;
+  line-height: 1.1;
+}
+.pace-donut-label span {
+  margin-top: 6px;
+  font-size: 15px;
+  color: #8a8a8a;
+}
+.pace-donut-card > p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #8a8a8a;
+}
+.pace-obs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px 0;
+}
+.pace-obs-grid.time {
+  margin-top: 16px;
+}
+.pace-obs-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+.pace-obs-ico {
+  flex: 0 0 52px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f8eaea;
+  color: #a61b1b;
+}
+.pace-obs-ico :deep(svg),
+.pace-obs-ico svg {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+.pace-obs-item b {
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  color: #1f1f1f;
+  line-height: 1.15;
+}
+.pace-obs-item span {
+  font-size: 14px;
+  color: #8a8a8a;
+}
+@media (max-width: 960px) {
+  .pace-obs-body,
+  .pace-obs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.pace-hint {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #8a8a8a;
+}
+.pace-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+.pace-table th,
+.pace-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #f2f2f2;
+  color: #303133;
+  vertical-align: top;
+}
+.pace-table th {
+  color: #8a8a8a;
+  font-weight: 600;
+  background: #fafafa;
+}
+.pace-table td:last-child {
+  color: #606266;
+  line-height: 1.5;
+}
+@media (max-width: 960px) {
+  .pace-heroes,
+  .pace-charts {
+    grid-template-columns: 1fr 1fr;
+  }
+  .audio-charts,
+  .vision-mid,
+  .tools-mid {
+    grid-template-columns: 1fr;
+  }
+  .pace-extras {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.feat-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+  font-size: 12px;
+  color: #8a8a8a;
+  white-space: nowrap;
+}
+.feat-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 20px;
+}
+.feat-tab {
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  background: #fff;
+  color: #303133;
+  font-size: 13px;
+  cursor: pointer;
+}
+.feat-tab em {
+  margin-left: 4px;
+  font-style: normal;
+  color: #8a8a8a;
+}
+.feat-tab small {
+  margin-left: 4px;
+  color: #b0b3b8;
+  font-size: 11px;
+}
+.feat-tab.on {
+  background: #a61b1b;
+  border-color: #a61b1b;
+  color: #fff;
+}
+.feat-tab.on em,
+.feat-tab.on small {
+  color: rgba(255, 255, 255, 0.85);
+}
+.feat-tab.off:not(.on) {
+  color: #909399;
+}
+.feat-read {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 16px;
+  padding: 16px 18px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+}
+.feat-read h3 {
+  margin: 0;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f1f1f;
+}
+.feat-read ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.feat-read li {
+  position: relative;
+  padding: 0 16px 0 16px;
+  border-right: 1px solid #eee;
+  font-size: 13px;
+  color: #303133;
+  line-height: 1.5;
+}
+.feat-read li:last-child {
+  border-right: none;
+}
+.feat-read li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #2e8b57;
+}
 .feature-legend {
   margin: 0 0 16px;
   font-size: 12px;
@@ -2787,6 +5410,12 @@ svg.aux-icon .chip {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
+}
+.feature-cols.single {
+  grid-template-columns: minmax(280px, 640px);
+}
+.feature-cols.single > div + div {
+  margin-top: 22px;
 }
 .feature-head {
   font-size: 13px;

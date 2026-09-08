@@ -1,18 +1,19 @@
 from __future__ import annotations
 
 import asyncio
-import shutil
-import time
 from pathlib import Path
 
-from fastapi import APIRouter, BackgroundTasks, File, HTTPException, Query, UploadFile
+from fastapi import APIRouter, BackgroundTasks, Depends, File, HTTPException, Query, UploadFile
 from fastapi.responses import Response
 
-from ai_engine.config import settings
 from ai_engine.syllabus import ExportError, detect_output_format, export_syllabus
 from ai_engine.syllabus.export import content_disposition, export_filename
 
 from ..core import db
+from ..core.audit import audit
+from ..core.auth import current_user
+from ..core.database import session_scope
+from ..core.uploads import new_task_id, record_upload, save_user_upload
 from ..schemas import SyllabusTextForm
 from ..workers.syllabus_tasks import STEP_LABELS, run_syllabus_optimization
 
@@ -23,7 +24,9 @@ ALLOWED_EXT = {".pdf", ".docx", ".doc", ".txt", ".md"}
 
 @router.post("/optimize")
 async def optimize_from_text(
-    background: BackgroundTasks, form: SyllabusTextForm
+    background: BackgroundTasks,
+    form: SyllabusTextForm,
+    user: dict = Depends(current_user),
 ) -> dict:
     if len(form.text.strip()) < 10:
         raise HTTPException(400, "大纲内容过短")
@@ -31,6 +34,7 @@ async def optimize_from_text(
         filename="粘贴文本",
         prompt_mode=form.prompt_mode,
         source_text=form.text.strip(),
+        user_id=user["id"],
     )
     background.add_task(run_syllabus_optimization, task_id)
     return {"task_id": task_id, "status": "queued", "filename": "粘贴文本"}
@@ -44,6 +48,7 @@ async def optimize_from_file(
         None,
         description="adaptive | schema | markdown | markdown_schema",
     ),
+    user: dict = Depends(current_user),
 ) -> dict:
     suffix = Path(file.filename or "").suffix.lower()
     if suffix not in ALLOWED_EXT:
@@ -51,33 +56,47 @@ async def optimize_from_file(
             400, f"不支持的文档格式 {suffix}，支持：{', '.join(sorted(ALLOWED_EXT))}"
         )
 
-    dest = settings.upload_dir / f"{int(time.time())}_{Path(file.filename).name}"
-    try:
-        with open(dest, "wb") as f:
-            shutil.copyfileobj(file.file, f)
-    finally:
-        await file.close()
-
-    task_id = await db.create_syllabus_task(
+    task_id = new_task_id()
+    dest, key = save_user_upload(
+        file,
+        user_id=user["id"],
+        task_id=task_id,
+        purpose="syllabus",
+        allowed=ALLOWED_EXT,
+        max_bytes=30 * 1024 * 1024,
+        kind_label="大纲",
+    )
+    await file.close()
+    await record_upload(
+        user_id=user["id"],
+        purpose="syllabus",
+        original_name=file.filename or "upload",
+        storage_key=key,
+        mime_type=file.content_type,
+        path=dest,
+    )
+    await db.create_syllabus_task(
         filename=file.filename or "上传文件",
         prompt_mode=prompt_mode,
-        source_path=str(dest),
+        source_path=dest,
+        user_id=user["id"],
+        task_id=task_id,
     )
     background.add_task(run_syllabus_optimization, task_id)
     return {"task_id": task_id, "status": "queued", "filename": file.filename}
 
 
 @router.get("/tasks")
-async def list_tasks() -> list[dict]:
-    tasks = await db.list_syllabus_tasks()
+async def list_tasks(user: dict = Depends(current_user)) -> list[dict]:
+    tasks = await db.list_syllabus_tasks(user_id=user["id"])
     for task in tasks:
         task["step_label"] = STEP_LABELS.get(task["current_step"], task["current_step"])
     return tasks
 
 
 @router.get("/task/{task_id}")
-async def get_task(task_id: str) -> dict:
-    task = await db.get_syllabus_task(task_id)
+async def get_task(task_id: str, user: dict = Depends(current_user)) -> dict:
+    task = await db.get_syllabus_task(task_id, user_id=user["id"])
     if not task:
         raise HTTPException(404, "任务不存在")
     task["step_label"] = STEP_LABELS.get(task["current_step"], task["current_step"])
@@ -85,9 +104,9 @@ async def get_task(task_id: str) -> dict:
 
 
 @router.post("/task/{task_id}/cancel")
-async def cancel_task(task_id: str) -> dict:
-    result = await db.request_cancel_syllabus_task(task_id)
-    if result["reason"] == "not_found":
+async def cancel_task(task_id: str, user: dict = Depends(current_user)) -> dict:
+    result = await db.request_cancel_syllabus_task(task_id, user_id=user["id"])
+    if result.get("reason") == "not_found":
         raise HTTPException(404, "任务不存在")
     if not result["ok"]:
         raise HTTPException(
@@ -96,14 +115,32 @@ async def cancel_task(task_id: str) -> dict:
     return {"ok": True, "status": "cancelled"}
 
 
+@router.delete("/task/{task_id}")
+async def delete_task(task_id: str, user: dict = Depends(current_user)) -> dict:
+    if not await db.delete_syllabus_task(task_id, user_id=user["id"]):
+        raise HTTPException(404, "任务不存在")
+    async with session_scope() as session:
+        await audit(
+            session,
+            None,
+            action="delete",
+            actor_user_id=user["_id"],
+            resource_type="syllabus_task",
+            resource_id=task_id,
+        )
+    return {"ok": True}
+
+
 @router.get("/history")
-async def history() -> list[dict]:
-    return await db.list_syllabi()
+async def history(user: dict = Depends(current_user)) -> list[dict]:
+    return await db.list_syllabi(user_id=user["id"])
 
 
 @router.get("/record/{record_id}")
-async def get_record(record_id: str) -> dict:
-    record = await db.get_syllabus(record_id)
+async def get_record(
+    record_id: str, user: dict = Depends(current_user)
+) -> dict:
+    record = await db.get_syllabus(record_id, user_id=user["id"])
     if not record:
         raise HTTPException(404, "记录不存在")
     record["output_format"] = detect_output_format(record.get("xml") or "")
@@ -111,10 +148,21 @@ async def get_record(record_id: str) -> dict:
 
 
 @router.get("/download/{record_id}")
-async def download(record_id: str) -> Response:
-    record = await db.get_syllabus(record_id)
+async def download(
+    record_id: str, user: dict = Depends(current_user)
+) -> Response:
+    record = await db.get_syllabus(record_id, user_id=user["id"])
     if not record:
         raise HTTPException(404, "记录不存在")
+    async with session_scope() as session:
+        await audit(
+            session,
+            None,
+            action="download",
+            actor_user_id=user["_id"],
+            resource_type="syllabus_record",
+            resource_id=record_id,
+        )
     name = (record["course_name"] or "syllabus").replace("/", "_")
     content = record["xml"]
     output_format = detect_output_format(content or "")
@@ -141,8 +189,9 @@ async def download(record_id: str) -> Response:
 async def export_record(
     record_id: str,
     format: str = Query(..., pattern="^(markdown|docx|pdf)$"),
+    user: dict = Depends(current_user),
 ) -> Response:
-    record = await db.get_syllabus(record_id)
+    record = await db.get_syllabus(record_id, user_id=user["id"])
     if not record:
         raise HTTPException(404, "记录不存在")
     if not record.get("valid"):

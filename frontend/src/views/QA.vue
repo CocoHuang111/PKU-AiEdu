@@ -29,13 +29,14 @@
               v-for="s in group.items"
               :key="s.id"
               class="task"
-              :class="{ active: s.id === sessionId, pinned: s.pinned }"
+              :class="{ active: s.id === sessionId, pinned: s.pinned, pending: s.pending }"
               @click="openSession(s.id)"
             >
               <el-icon class="task-icon" :size="18"><ChatDotRound /></el-icon>
               <div class="task-body">
                 <div class="task-name">{{ s.title }}</div>
-                <div class="task-status-row">
+                <div v-if="s.pending" class="task-run">思考中</div>
+                <div v-else class="task-status-row">
                   <span class="task-time">{{ formatTime(s.updated_at) }}</span>
                 </div>
               </div>
@@ -134,10 +135,13 @@
                     v-for="c in m.plan.corpora"
                     :key="c"
                     size="small"
-                    type="info"
+                    :type="c === 'eval_reports' && m.plan.pinned_eval_reports ? 'danger' : 'info'"
                     effect="plain"
                   >
                     {{ corpusLabel(c) }}
+                    <template v-if="c === 'eval_reports' && m.plan.pinned_eval_reports">
+                      ·已带入{{ m.plan.pinned_eval_reports }}份
+                    </template>
                   </el-tag>
                 </div>
 
@@ -154,7 +158,9 @@
                         <el-tag size="small" effect="plain">[{{ c.index }}]</el-tag>
                         <span class="citation-corpus">{{ c.corpus_label }}</span>
                         <span class="citation-source">{{ c.source }}</span>
-                        <span class="citation-score">相似度 {{ c.score }}</span>
+                        <span class="citation-score">
+                          {{ c.pinned ? '指定带入' : `相似度 ${c.score}` }}
+                        </span>
                       </div>
                       <div class="citation-text">{{ c.snippet }}</div>
                     </div>
@@ -168,7 +174,13 @@
         <footer class="composer-wrap">
           <div class="composer">
             <div class="composer-box">
-              <el-popover placement="top-start" :width="280" trigger="click">
+              <el-popover
+                v-model:visible="corpusMenuOpen"
+                placement="top-start"
+                :width="300"
+                trigger="click"
+                @show="loadEvalReports"
+              >
                 <template #reference>
                   <button
                     class="plus-btn"
@@ -181,9 +193,9 @@
                 </template>
                 <div class="corpus-menu">
                   <div class="corpus-menu-title">检索范围</div>
-                  <el-checkbox-group v-model="selectedCorpora">
+                  <el-checkbox-group v-model="staticSelectedCorpora">
                     <el-checkbox
-                      v-for="c in corpora"
+                      v-for="c in staticCorpora"
                       :key="c.name"
                       :value="c.name"
                       :disabled="!c.count"
@@ -191,7 +203,26 @@
                       {{ c.label }}（{{ c.count }}）
                     </el-checkbox>
                   </el-checkbox-group>
-                  <div class="corpus-hint">默认全选。取消勾选则不检索该库。</div>
+                  <button
+                    class="eval-report-entry"
+                    type="button"
+                    :class="{ active: selectedEvalTaskIds.length }"
+                    @click="openEvalDialog"
+                  >
+                    <span class="eval-report-check" :class="{ on: selectedEvalTaskIds.length }" />
+                    <span class="eval-report-entry-text">
+                      <span>
+                        {{ evalCorpus?.label || '历史评估报告' }}（{{ evalCorpus?.count || 0 }}）
+                      </span>
+                      <span class="eval-report-entry-meta">
+                        {{
+                          selectedEvalTaskIds.length
+                            ? `已选 ${selectedEvalTaskIds.length} 份，点击更改`
+                            : '默认不检索，点击选择任务'
+                        }}
+                      </span>
+                    </span>
+                  </button>
                 </div>
               </el-popover>
               <el-input
@@ -207,7 +238,7 @@
                 type="primary"
                 circle
                 :loading="sending"
-                :disabled="!input.trim()"
+                :disabled="sending || !input.trim()"
                 @click="send"
               >
                 <el-icon v-if="!sending" :size="16"><Promotion /></el-icon>
@@ -218,17 +249,87 @@
         </footer>
       </section>
     </div>
+
+    <el-dialog
+      v-model="evalDialogOpen"
+      title="选择历史评估任务"
+      width="480px"
+      append-to-body
+      class="eval-report-dialog"
+      align-center
+    >
+      <div class="eval-dialog-toolbar">
+        <span class="eval-dialog-count">
+          已选 {{ evalDraftIds.length }} / {{ evalReports.length }}
+        </span>
+        <div class="eval-dialog-actions">
+          <button type="button" :disabled="!evalReports.length" @click="selectAllEvalDraft">全选</button>
+          <button type="button" :disabled="!evalDraftIds.length" @click="clearEvalDraft">清除</button>
+        </div>
+      </div>
+      <div class="eval-dialog-list">
+        <el-checkbox-group v-if="evalReports.length" v-model="evalDraftIds">
+          <el-checkbox
+            v-for="t in evalReports"
+            :key="t.id"
+            :value="t.id"
+          >
+            <span class="eval-report-name">{{ evalReportLabel(t) }}</span>
+            <span v-if="evalReportTime(t)" class="eval-report-time">{{ evalReportTime(t) }}</span>
+          </el-checkbox>
+        </el-checkbox-group>
+        <div v-else class="eval-report-empty">完成一次视频评估后会出现在这里</div>
+      </div>
+      <template #footer>
+        <el-button @click="evalDialogOpen = false">取消</el-button>
+        <el-button type="primary" @click="confirmEvalDialog">确定</el-button>
+      </template>
+    </el-dialog>
   </div>
 </template>
 
+<script>
+export default { name: 'QA' }
+</script>
+
 <script setup>
-import { computed, nextTick, onMounted, ref } from 'vue'
+import { onActivated, onMounted, ref } from 'vue'
 import { ChatDotRound, ChatLineRound, DArrowLeft, MoreFilled, Plus, Promotion, Search } from '@element-plus/icons-vue'
-import { ElMessage, ElMessageBox } from 'element-plus'
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
-import { qaApi } from '../api/client'
-import { askStream } from '../api/stream'
+import { authState } from '../authStore'
+import {
+  applyEvalTaskSelection,
+  corporaNarrowed,
+  corpusLabel,
+  currentPinned,
+  currentTitle,
+  evalCorpus,
+  evalReportLabel,
+  evalReportTime,
+  evalReports,
+  initQa,
+  input,
+  loadEvalReports,
+  messages,
+  newSession,
+  onCurrentCommand,
+  onQaActivated,
+  onSessionCommand,
+  openSession,
+  selectedEvalTaskIds,
+  sending,
+  sessionId,
+  sessionQuery,
+  sessions,
+  setQaScroll,
+  sidebarOpen,
+  staticCorpora,
+  staticSelectedCorpora,
+  useSample,
+  visibleGroups,
+  send,
+} from '../qaStore'
 
 const SAMPLES = [
   '如何提高大班课的学生参与度？',
@@ -237,55 +338,35 @@ const SAMPLES = [
   '板书和课件应该怎么分工？',
 ]
 
-const sessions = ref([])
-const sessionId = ref(null)
-const messages = ref([])
-const corpora = ref([])
-const selectedCorpora = ref([])
-const input = ref('')
-const sending = ref(false)
-const sidebarOpen = ref(true)
-const sessionQuery = ref('')
 const bodyEl = ref(null)
+const corpusMenuOpen = ref(false)
+const evalDialogOpen = ref(false)
+const evalDraftIds = ref([])
 
-const currentTitle = computed(() => {
-  if (!sessionId.value) return '新对话'
-  return sessions.value.find((s) => s.id === sessionId.value)?.title || '对话'
-})
+async function openEvalDialog() {
+  corpusMenuOpen.value = false
+  await loadEvalReports()
+  evalDraftIds.value = [...selectedEvalTaskIds.value]
+  evalDialogOpen.value = true
+}
 
-const currentPinned = computed(() => {
-  return !!sessions.value.find((s) => s.id === sessionId.value)?.pinned
-})
+function selectAllEvalDraft() {
+  evalDraftIds.value = evalReports.value.map((t) => t.id)
+}
 
-const visibleGroups = computed(() => {
-  const q = sessionQuery.value.trim().toLowerCase()
-  const filtered = sessions.value.filter((s) => {
-    if (q && !(s.title || '').toLowerCase().includes(q)) return false
-    return true
-  })
-  const pinned = filtered.filter((s) => s.pinned)
-  const recent = filtered.filter((s) => !s.pinned)
-  return [
-    { key: 'pinned', label: '置顶', items: pinned },
-    { key: 'recent', label: '最近', items: recent },
-  ].filter((g) => g.items.length)
-})
+function clearEvalDraft() {
+  evalDraftIds.value = []
+}
 
-const selectableNames = computed(() =>
-  corpora.value.filter((c) => c.count).map((c) => c.name)
-)
-const corporaNarrowed = computed(() => {
-  const all = selectableNames.value
-  if (!all.length) return false
-  return all.length !== selectedCorpora.value.length || all.some((n) => !selectedCorpora.value.includes(n))
-})
+function confirmEvalDialog() {
+  applyEvalTaskSelection(evalDraftIds.value)
+  evalDialogOpen.value = false
+}
 
 function renderMd(text) {
   return DOMPurify.sanitize(marked.parse(text || ''))
 }
-function corpusLabel(name) {
-  return corpora.value.find((c) => c.name === name)?.label || name
-}
+
 function formatTime(ts) {
   return new Date(ts * 1000).toLocaleString('zh-CN', {
     month: '2-digit',
@@ -295,200 +376,15 @@ function formatTime(ts) {
   })
 }
 
-async function scrollDown() {
-  await nextTick()
-  if (bodyEl.value) bodyEl.value.scrollTop = bodyEl.value.scrollHeight
-}
-
-async function loadSessions() {
-  try {
-    sessions.value = await qaApi.sessions()
-  } catch {
-    /* 拦截器已提示 */
-  }
-}
-
-async function loadCorpora() {
-  try {
-    corpora.value = await qaApi.corpora()
-    selectedCorpora.value = corpora.value.filter((c) => c.count).map((c) => c.name)
-  } catch {
-    /* 拦截器已提示 */
-  }
-}
-
-function newSession() {
-  sessionId.value = null
-  messages.value = []
-}
-
-async function openSession(id) {
-  try {
-    const s = await qaApi.getSession(id)
-    sessionId.value = id
-    messages.value = s.history.map((m) => ({ ...m, streaming: false }))
-    scrollDown()
-  } catch {
-    /* 拦截器已提示 */
-  }
-}
-
-async function removeSession(id) {
-  try {
-    await ElMessageBox.confirm('确定删除这个会话？', '提示', { type: 'warning' })
-  } catch {
-    return
-  }
-  await qaApi.deleteSession(id)
-  if (sessionId.value === id) newSession()
-  loadSessions()
-}
-
-async function renameSession(id) {
-  const current = sessions.value.find((s) => s.id === id)?.title || ''
-  let name
-  try {
-    const { value } = await ElMessageBox.prompt('请输入新的会话名称', '重命名', {
-      confirmButtonText: '保存',
-      cancelButtonText: '取消',
-      inputValue: current,
-      inputPattern: /\S/,
-      inputErrorMessage: '名称不能为空',
-    })
-    name = (value || '').trim()
-  } catch {
-    return
-  }
-  if (!name) return
-  await qaApi.patchSession(id, { title: name.slice(0, 80) })
-  await loadSessions()
-}
-
-async function togglePin(id, pinned) {
-  await qaApi.patchSession(id, { pinned })
-  await loadSessions()
-}
-
-function onSessionCommand(s, cmd) {
-  if (cmd === 'rename') renameSession(s.id)
-  else if (cmd === 'pin') togglePin(s.id, !s.pinned)
-  else if (cmd === 'delete') removeSession(s.id)
-}
-
-function onCurrentCommand(cmd) {
-  const s = sessions.value.find((item) => item.id === sessionId.value)
-  if (!s) return
-  onSessionCommand(s, cmd)
-}
-
-function useSample(q) {
-  input.value = q
-}
-
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms))
-}
-
-function createLineRevealer(reply) {
-  let committed = ''
-  let pending = ''
-  const queue = []
-  let running = false
-
-  function paint() {
-    reply.content = committed + pending
-    reply.thinking = !reply.content
-    scrollDown()
-  }
-
-  async function run() {
-    if (running) return
-    running = true
-    while (queue.length) {
-      committed += queue.shift()
-      paint()
-      if (queue.length) await sleep(queue.length > 12 ? 16 : 40)
-    }
-    running = false
-  }
-
-  return {
-    push(text) {
-      pending += text
-      const parts = pending.split('\n')
-      pending = parts.pop() ?? ''
-      if (parts.length) {
-        for (const line of parts) queue.push(`${line}\n`)
-        run()
-      }
-      paint()
-    },
-    async flush() {
-      if (pending) {
-        queue.push(pending)
-        pending = ''
-      }
-      while (queue.length || running) {
-        await run()
-        if (!queue.length) break
-        await sleep(8)
-      }
-      paint()
-    },
-  }
-}
-
-async function send() {
-  const question = input.value.trim()
-  if (!question || sending.value) return
-
-  input.value = ''
-  sending.value = true
-  messages.value.push({ role: 'user', content: question })
-
-  const reply = {
-    role: 'assistant',
-    content: '',
-    citations: [],
-    plan: null,
-    streaming: true,
-    thinking: true,
-  }
-  messages.value.push(reply)
-  const reveal = createLineRevealer(reply)
-  scrollDown()
-
-  try {
-    await askStream(
-      { question, sessionId: sessionId.value, corpora: selectedCorpora.value },
-      (event) => {
-        if (event.type === 'plan') reply.plan = event.data
-        else if (event.type === 'citations') reply.citations = event.data
-        else if (event.type === 'chunk') reveal.push(event.data)
-        else if (event.type === 'session') {
-          sessionId.value = event.session_id
-          loadSessions()
-        } else if (event.type === 'error') {
-          ElMessage.error(event.data)
-        }
-      }
-    )
-    await reveal.flush()
-  } catch (e) {
-    await reveal.flush()
-    reply.content += `\n\n（请求失败：${e.message}）`
-    ElMessage.error(e.message)
-  } finally {
-    reply.thinking = false
-    reply.streaming = false
-    sending.value = false
-    scrollDown()
-  }
-}
-
 onMounted(() => {
-  loadSessions()
-  loadCorpora()
+  setQaScroll(() => {
+    if (bodyEl.value) bodyEl.value.scrollTop = bodyEl.value.scrollHeight
+  })
+  initQa(authState.user?.id)
+})
+
+onActivated(() => {
+  onQaActivated()
 })
 </script>
 
@@ -874,11 +770,68 @@ onMounted(() => {
   flex-direction: column;
   gap: 6px;
 }
-.corpus-hint {
+.eval-report-entry {
   margin-top: 10px;
+  padding: 8px 8px 8px 0;
+  width: 100%;
+  border: none;
+  border-top: 1px solid #f0f0f0;
+  background: transparent;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  text-align: left;
+  cursor: pointer;
+  color: #303133;
+}
+.eval-report-entry:hover .eval-report-entry-text {
+  color: #7b1113;
+}
+.eval-report-check {
+  margin-top: 3px;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border: 1px solid #dcdfe6;
+  border-radius: 2px;
+  background: #fff;
+  box-sizing: border-box;
+}
+.eval-report-check.on {
+  border-color: #7b1113;
+  background: #7b1113;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.eval-report-entry-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.eval-report-entry-meta {
   font-size: 12px;
   color: #c0c4cc;
+}
+.eval-report-name {
+  display: block;
+  line-height: 1.35;
+  word-break: break-all;
+  white-space: normal;
+}
+.eval-report-time {
+  display: block;
+  font-size: 11px;
+  color: #c0c4cc;
+  line-height: 1.3;
+  margin-top: 2px;
+}
+.eval-report-empty {
+  font-size: 13px;
+  color: #c0c4cc;
   line-height: 1.5;
+  padding: 24px 0;
+  text-align: center;
 }
 
 .drawer-head {
@@ -971,13 +924,17 @@ onMounted(() => {
 .task.active .task-name {
   color: #7b1113;
 }
+.task.pending .task-name {
+  color: #7b1113;
+}
 .task-icon {
   flex-shrink: 0;
   margin-top: 2px;
   color: #8a8a8a;
 }
 .task.active .task-icon,
-.task.pinned .task-icon {
+.task.pinned .task-icon,
+.task.pending .task-icon {
   color: #a61b1b;
 }
 .task-body {
@@ -1002,6 +959,11 @@ onMounted(() => {
 .task-time {
   font-size: 11px;
   color: #a8abb2;
+}
+.task-run {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #a61b1b;
 }
 .task :deep(.el-dropdown) {
   flex-shrink: 0;
@@ -1037,5 +999,71 @@ onMounted(() => {
   .bubble.user {
     max-width: 88%;
   }
+}
+</style>
+
+<style>
+.eval-report-dialog .eval-dialog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.eval-report-dialog .eval-dialog-count {
+  font-size: 13px;
+  color: #909399;
+}
+.eval-report-dialog .eval-dialog-actions {
+  display: flex;
+  gap: 4px;
+}
+.eval-report-dialog .eval-dialog-actions button {
+  border: none;
+  background: none;
+  color: #7b1113;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 4px 8px;
+}
+.eval-report-dialog .eval-dialog-actions button:disabled {
+  color: #c0c4cc;
+  cursor: not-allowed;
+}
+.eval-report-dialog .eval-dialog-list {
+  max-height: min(52vh, 420px);
+  overflow-y: auto;
+  padding-right: 4px;
+}
+.eval-report-dialog .el-checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.eval-report-dialog .el-checkbox {
+  align-items: flex-start;
+  height: auto;
+  margin-right: 0;
+  white-space: normal;
+}
+.eval-report-dialog .eval-report-name {
+  display: block;
+  line-height: 1.35;
+  word-break: break-all;
+  white-space: normal;
+}
+.eval-report-dialog .eval-report-time {
+  display: block;
+  font-size: 11px;
+  color: #c0c4cc;
+  line-height: 1.3;
+  margin-top: 2px;
+}
+.eval-report-dialog .eval-report-empty {
+  font-size: 13px;
+  color: #c0c4cc;
+  line-height: 1.5;
+  padding: 24px 0;
+  text-align: center;
 }
 </style>

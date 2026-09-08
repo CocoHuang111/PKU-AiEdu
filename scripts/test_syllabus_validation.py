@@ -28,6 +28,7 @@ from ai_engine.syllabus.optimizer import (
     _sanitize_llm_xml,
     _should_skip_llm_repair,
     _strip_markdown_wrapper,
+    _ensure_leading_atx,
     detect_output_format,
     extract_course_name_from_markdown,
     optimize_text,
@@ -401,6 +402,33 @@ class MarkdownModeTests(unittest.TestCase):
         valid, error = validate_markdown(no_heading)
         self.assertFalse(valid)
         self.assertIn("标题", error)
+        promoted = _ensure_leading_atx(no_heading)
+        self.assertTrue(promoted.startswith("# "), promoted[:40])
+        valid, error = validate_markdown(promoted)
+        self.assertTrue(valid, error)
+
+    def test_markdown_mode_promotes_plain_title_without_hash(self) -> None:
+        body = "强化学习\n\n课程概述\n知其然，知其所以然。——《朱子语类》卷九《论知行》。\n" + (
+            "这是正文段落，用来保证超过八十个字的校验下限。" * 3
+        )
+
+        class FakeLlm:
+            def chat(self, messages, **kwargs):
+                return body
+
+        llm = FakeLlm()
+        with patch("ai_engine.syllabus.optimizer.settings") as mock_settings:
+            mock_settings.section.return_value = {
+                "max_input_chars": 80000,
+                "prompt_template": "syllabus_optimize.j2",
+                "markdown_max_length_ratio": 2.0,
+            }
+            with patch("ai_engine.syllabus.optimizer.get_llm", return_value=llm):
+                result = optimize_text("原始大纲内容足够长用于测试", prompt_mode="markdown")
+
+        self.assertTrue(result["valid"], result["validation_error"])
+        self.assertTrue(result["xml"].lstrip().startswith("# 强化学习"))
+        self.assertEqual(result["course_name"], "强化学习")
 
     def test_strip_markdown_wrapper(self) -> None:
         wrapped = "说明文字\n```markdown\n# 课程\n\n正文\n```"
@@ -458,6 +486,8 @@ class MarkdownModeTests(unittest.TestCase):
         self.assertIn(str(len(original)), llm.prompts[0])
         self.assertIn(str(expected_max), llm.prompts[0])
         self.assertIn("大纲级别", llm.prompts[0])
+        self.assertIn("必须融合 AI 辅助教学", llm.prompts[0])
+        self.assertNotIn("或整节省略", llm.prompts[0])
 
     def test_markdown_mode_uses_markdown_prompt(self) -> None:
         class FakeLlm:
@@ -481,6 +511,13 @@ class MarkdownModeTests(unittest.TestCase):
         self.assertTrue(result["valid"], result["validation_error"])
         self.assertEqual(result["prompt_mode"], "syllabus_optimize_markdown.j2")
         self.assertEqual(result["course_name"], "测试课程")
+        prompt = llm.prompts[0]
+        self.assertIn("灵活结构", prompt)
+        self.assertIn("只在原来的基础上增补或删减", prompt)
+        self.assertIn("禁止一律列表化", prompt)
+        self.assertIn("必须融合 AI 辅助教学", prompt)
+        self.assertIn("ATX", prompt)
+        self.assertNotIn("否则省略", prompt)
 
 
 if __name__ == "__main__":

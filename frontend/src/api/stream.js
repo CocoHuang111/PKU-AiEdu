@@ -9,17 +9,29 @@
  *   { type: 'session',   session_id }
  *   { type: 'error',     data: '错误信息' }
  */
-export async function askStream({ question, sessionId, corpora }, onEvent, signal) {
+import { clearAuth } from '../authStore'
+
+export async function askStream({ question, sessionId, corpora, evalTaskIds }, onEvent, signal) {
   const resp = await fetch('/api/qa/ask/stream', {
     method: 'POST',
+    credentials: 'include',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       question,
       session_id: sessionId || null,
       corpora: Array.isArray(corpora) ? corpora : null,
+      eval_task_ids: Array.isArray(evalTaskIds) ? evalTaskIds : null,
     }),
     signal,
   })
+
+  if (resp.status === 401) {
+    clearAuth()
+    if (!location.hash.startsWith('#/login')) {
+      location.hash = '#/login'
+    }
+    throw new Error('登录已失效，请重新登录')
+  }
 
   if (!resp.ok) {
     const text = await resp.text().catch(() => '')
@@ -35,7 +47,6 @@ export async function askStream({ question, sessionId, corpora }, onEvent, signa
     if (done) break
 
     buffer += decoder.decode(value, { stream: true })
-    // SSE 以空行分隔事件；最后一段可能不完整，留在 buffer 里等下一批
     const parts = buffer.split('\n\n')
     buffer = parts.pop() || ''
 

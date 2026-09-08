@@ -327,51 +327,51 @@
     "fit_all": true,
     "mae_5": 0.127,
     "rmse_5": 0.146,
-    "judge_mae_5": 0.535,
-    "judge_rmse_5": 0.651,
+    "judge_mae_5": 0.524,
+    "judge_rmse_5": 0.643,
     "acc": 1.0,
     "f1": 1.0,
-    "judge_acc": 0.252,
+    "judge_acc": 0.291,
     "feature_importance": [
       [
         "audio__loudness_db",
-        0.0643
-      ],
-      [
-        "audio__snr_estimate",
-        0.0493
-      ],
-      [
-        "vision__board_readable_high_ratio",
-        0.0446
-      ],
-      [
-        "slides__slide_change_per_10min",
-        0.0408
-      ],
-      [
-        "audio__emphasis_per_min",
-        0.038
+        0.0663
       ],
       [
         "text__filler_density",
-        0.0371
-      ],
-      [
-        "llm_dim_teaching_effect",
-        0.0362
+        0.0469
       ],
       [
         "text__interaction_count",
-        0.0362
+        0.0466
+      ],
+      [
+        "audio__snr_estimate",
+        0.0425
+      ],
+      [
+        "llm_dim_teaching_quality",
+        0.0407
+      ],
+      [
+        "slides__slide_change_per_10min",
+        0.0363
       ],
       [
         "audio__pitch_variation",
-        0.0316
+        0.0352
       ],
       [
-        "timeline__asr_confidence",
-        0.0306
+        "slides__dwell_median_sec",
+        0.033
+      ],
+      [
+        "audio__emphasis_per_min",
+        0.0326
+      ],
+      [
+        "vision__board_readable_high_ratio",
+        0.0322
       ]
     ]
   },

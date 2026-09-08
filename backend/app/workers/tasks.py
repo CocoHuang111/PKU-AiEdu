@@ -82,7 +82,10 @@ async def run_evaluation(
             error=None,
         )
         # 报告回流到向量库，供问答引用；失败不影响任务状态
-        await asyncio.to_thread(index_report, task_id, result)
+        task = await db.get_task(task_id)
+        await asyncio.to_thread(
+            index_report, task_id, result, (task or {}).get("user_id")
+        )
     except EvaluationCancelled:
         await db.update_task(
             task_id,

@@ -19,8 +19,8 @@ rules:
   - 面部表情极度紧张或不自然
   - 仪容严重不整，严重影响教学感染力
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_attitude
   must_not_penalize_dimensions:
   - teaching_method
@@ -50,8 +50,8 @@ rules:
   - 讲授内容明显是一个未完成的片段，缺乏核心知识点的完整闭环
   - 完全缺失导入和总结导致课程结构严重残缺
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_content
   must_not_penalize_dimensions:
   - teaching_method
@@ -81,8 +81,8 @@ rules:
   - 核心重难点完全未讲透
   - 大量时间偏离主题，导致学生无法掌握本节课的核心知识
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_content
   must_not_penalize_dimensions:
   - teaching_effect
@@ -109,8 +109,8 @@ rules:
   major_when:
   - 全程毫无激情、语调催眠，且缺乏任何生动案例或互动设计，导致课堂气氛极度沉闷
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_attitude
   must_not_penalize_dimensions:
   - teaching_content
@@ -140,8 +140,8 @@ rules:
   - 口头禅极其频繁（如每句话都有）
   - 表达逻辑混乱、含糊不清，导致学生无法理解讲授内容
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_quality 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_quality 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_quality 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_quality 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_quality
   must_not_penalize_dimensions:
   - teaching_content
@@ -170,8 +170,8 @@ rules:
   - 频繁卡壳、长时间停顿
   - 严重依赖讲稿导致讲解支离破碎，严重影响知识传递的连贯性
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_attitude
   must_not_penalize_dimensions:
   - teaching_method
@@ -198,8 +198,8 @@ rules:
   major_when:
   - 全程未交代教学目标，且内容发散，导致无法判断本节课的核心学习目的和定位
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_content
   must_not_penalize_dimensions:
   - teaching_method
@@ -228,8 +228,8 @@ rules:
   - 全程满堂灌，直接给出所有结论，完全剥夺学生思考过程
   - 缺乏任何启发式教学设计
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_method
   must_not_penalize_dimensions:
   - teaching_content
@@ -258,8 +258,8 @@ rules:
   - 全程零互动（无提问、无讨论、无设问）
   - 教师自问自答且未留给学生任何思考时间
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_method
   must_not_penalize_dimensions:
   - teaching_attitude
@@ -289,8 +289,8 @@ rules:
   - 内容组织混乱，前后矛盾
   - 核心推导过程存在严重逻辑断层，导致学生无法理解知识脉络
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_content 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_content 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_content
   must_not_penalize_dimensions:
   - teaching_method
@@ -321,8 +321,8 @@ rules:
   - 多媒体使用严重干扰教学（如动画闪烁、声画不同步）
   - PPT设计极其混乱导致无法阅读
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_method
   must_not_penalize_dimensions:
   - teaching_content
@@ -351,8 +351,8 @@ rules:
   - 全程语速过快导致内容无法消化
   - 严重拖沓导致核心内容未讲完，时间控制严重失控
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_quality 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_quality 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_quality 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_quality 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_quality
   must_not_penalize_dimensions:
   - teaching_content
@@ -382,8 +382,8 @@ rules:
   - 讲授与PPT严重脱节（如讲A页翻到B页）
   - PPT与板书内容冲突，导致学生认知混乱
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_method
   must_not_penalize_dimensions:
   - teaching_content
@@ -412,8 +412,8 @@ rules:
   - 绝大多数页面均为大段文字堆砌，缺乏提炼
   - 课件变成讲稿搬家，严重影响视觉吸收
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_method
   must_not_penalize_dimensions:
   - teaching_content
@@ -442,8 +442,8 @@ rules:
   - 大面积文字过小、图表模糊或配色导致严重反光或看不清
   - 直接阻碍信息获取
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_method
   must_not_penalize_dimensions:
   - teaching_quality
@@ -472,8 +472,8 @@ rules:
   - 全程零提问
   - 问题设计存在严重科学性错误，完全无法起到引导思考的作用
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_method 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_method 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_method
   must_not_penalize_dimensions:
   - teaching_content
@@ -503,8 +503,8 @@ rules:
   - 全程或绝大部分时间背对学生或镜头照念PPT或讲稿
   - 完全脱离学生，呈现念稿状态
   severity: context_dependent
-  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，通常只产生2–5分影响，但不存在70分或其他固定下限；同一维度多个相互独立且证据充分的问题必须累计；若为
-    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，一个严重问题或与本维其他独立问题累计时，允许导致该维度低于60分。
+  scoring_action: 若为 minor_when，仅作为改进建议或在 teaching_attitude 维度轻微扣分，不可作为导致该维度低于70分的唯一理由；若为
+    major_when，在 teaching_attitude 维度作为主要缺陷进行显著扣分，允许导致该维度低于70分。
   primary_dimension: teaching_attitude
   must_not_penalize_dimensions:
   - teaching_method

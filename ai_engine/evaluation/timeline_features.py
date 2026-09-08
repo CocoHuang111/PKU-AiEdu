@@ -27,20 +27,12 @@ def _ends_with_question(text: str, lex: dict) -> bool:
     return bool(sentences) and is_question(sentences[-1], lex)
 
 
-def extract_wait_time_features(segments: list) -> dict[str, float]:
-    """提问后的思考等待时间。
-
-    对应三级指标「提问后保留有效思考等待时间」。教育研究里 3 秒是分界线
-    （Rowe 的 wait-time 实验），所以除了均值还单独报达标比例。
-    """
+def collect_wait_gaps(segments: list) -> list[float]:
+    """提问句落在片段末尾时，下一段开始前的间隔（秒，已截断）。"""
     if len(segments) < 2:
-        return {}
-
+        return []
     lex = _lexicon()
-    conf = load_yaml("feature_lexicon.yaml")["timeline_thresholds"]
-    effective = float(conf["wait_time_effective_sec"])
-    cap = float(conf["wait_time_cap_sec"])
-
+    cap = float(load_yaml("feature_lexicon.yaml")["timeline_thresholds"]["wait_time_cap_sec"])
     gaps: list[float] = []
     for cur, nxt in zip(segments, segments[1:]):
         if not _ends_with_question(cur.text, lex):
@@ -49,10 +41,22 @@ def extract_wait_time_features(segments: list) -> dict[str, float]:
         if gap < 0:
             continue
         gaps.append(min(gap, cap))
+    return gaps
 
+
+def extract_wait_time_features(segments: list) -> dict:
+    """提问后的思考等待时间。
+
+    对应三级指标「提问后保留有效思考等待时间」。教育研究里 3 秒是分界线
+    （Rowe 的 wait-time 实验），所以除了均值还单独报达标比例。
+    wait_samples 只给页面画逐次等待，不进 rubric / Judge。
+    """
+    gaps = collect_wait_gaps(segments)
     if not gaps:
-        return {"wait_time_sample_count": 0}
+        return {"wait_time_sample_count": 0} if len(segments) >= 2 else {}
 
+    conf = load_yaml("feature_lexicon.yaml")["timeline_thresholds"]
+    effective = float(conf["wait_time_effective_sec"])
     return {
         "wait_time_sample_count": len(gaps),
         "wait_time_mean": round(statistics.fmean(gaps), 1),
@@ -60,6 +64,7 @@ def extract_wait_time_features(segments: list) -> dict[str, float]:
         "wait_time_effective_ratio": round(
             100.0 * sum(1 for g in gaps if g >= effective) / len(gaps), 1
         ),
+        "wait_samples": [round(g, 2) for g in gaps],
     }
 
 

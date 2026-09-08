@@ -62,7 +62,8 @@ class Settings:
 
     @property
     def upload_dir(self) -> Path:
-        d = self.root / "data" / "uploads"
+        raw = (os.getenv("UPLOAD_ROOT") or "").strip()
+        d = Path(raw).resolve() if raw else (self.root / "data" / "uploads")
         d.mkdir(parents=True, exist_ok=True)
         return d
 

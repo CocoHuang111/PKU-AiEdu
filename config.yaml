@@ -65,6 +65,7 @@ asr:
   device: cpu # macOS arm64 只能 cpu
   compute_type: int8
   vad_filter: true # 过滤静音段，长视频提速明显
+  punctuate: true # 转写后用 LLM 只补中文标点（学 Atmos）；失败则规则断句，不中断评估
 
 vector_store:
   provider: chroma
@@ -93,6 +94,7 @@ rag:
   score_threshold: 0.5 # 相似度低于此值的块不进入引用（cosine 相似度，0~1）
   max_hits: 12 # 阈值过滤后最多引用条数
   max_context_chars: 6000 # 拼进提示词的检索上下文上限
+  pinned_eval_max_chars: 12000 # 勾选的历史评估报告单独额度，不跟检索抢 6000
 
 evaluation:
   segment_minutes: 5 # 转写按多少分钟切一段做客观特征统计
@@ -101,12 +103,15 @@ evaluation:
 
   # 视觉分两条轨，成本结构完全不同，所以分开配置：
   #   稀疏轨 keyframe_count —— 每帧一次 VLM 调用，用于教态、板书风格
-  #   密集轨 slide_*        —— 只做本地帧差比对，零 API 成本，用于切换与停留
+  #   密集轨 slide_*        —— 本地帧差；有 VLM 时先框投影/板书再只比对框内
   keyframe_count: 12 # 均匀抽多少张关键帧送 VLM
   slide_detection_enabled: true # 关掉则不做课件切换检测
   slide_sample_interval_sec: 3.0 # 密集轨抽帧间隔（秒）
-  slide_change_threshold: 0.08 # 相邻帧平均灰度差超过此值判为一次切换（0~1）
-  #   阈值调大 = 少报切换；固定机位下教师走动也会造成差异，所以切换数是上界
+  slide_change_threshold: 0.08 # 格子灰度差超过此值判为候选切换（0~1）
+  #   有框时作用在框内格子，否则作用在整幅变化最大的那一格。调大 = 少报。
+  #   候选还需下一采样定住才计入，用来滤掉教师走动；仍非精确翻页数
+  slide_roi_enabled: true # 先用 VLM 框出投影/板书再做帧差；关掉则只用整幅格子
+  slide_roi_max_frames: 2 # 最多看几张关键帧来框（首帧，必要时加中间帧）。投影和板书都找到就停
   courseware_max_pages: 16 # 教师上传的课件最多渲染多少页送 VLM（超出则均匀抽样）
 
   # 说话人分离：默认关闭。开启需装 requirements-local.txt 并配 HF_TOKEN，

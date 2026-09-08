@@ -166,6 +166,15 @@ def transcribe_video(video: Path, force: bool = False) -> Path:
     result = _asr().transcribe(str(audio_path), progress_callback=on_progress)
     print()
 
+    if settings.flat_config("asr").get("punctuate", True):
+        print("    补标点…")
+        try:
+            from ai_engine.evaluation.transcript_punc import punctuate_asr_result
+
+            result = punctuate_asr_result(result)
+        except Exception as e:
+            print(f"    补标点失败，沿用原转写: {e}")
+
     if not result.text.strip():
         raise RuntimeError(f"转写结果为空：{video.name}")
 

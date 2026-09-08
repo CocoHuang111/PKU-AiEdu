@@ -115,7 +115,173 @@ def _parse_labels(raw: str) -> dict[str, Any]:
     labels["students_visible"] = count if count >= 0 else None
 
     labels["note"] = str(parsed.get("note", "")).strip()[:60]
+    _recode_walking_gaze(labels)
     return labels
+
+
+def _recode_walking_gaze(labels: dict[str, Any]) -> None:
+    """侧面走动经常被标成看屏幕；未指向屏幕时改记为看学生。"""
+    if (
+        labels.get("posture") == "walking"
+        and labels.get("gaze") == "screen"
+        and labels.get("gesture") != "pointing"
+    ):
+        labels["gaze"] = "students"
+
+
+def _parse_json_object(raw: str) -> dict[str, Any]:
+    text = raw.strip()
+    if text.startswith("```"):
+        text = re.sub(r"^```[a-zA-Z]*\n?", "", text)
+        text = re.sub(r"\n?```$", "", text).strip()
+
+    parsed: Any = None
+    try:
+        parsed = json.loads(text)
+    except json.JSONDecodeError:
+        if match := JSON_BLOCK.search(text):
+            try:
+                parsed = json.loads(match.group())
+            except json.JSONDecodeError:
+                parsed = None
+    if not isinstance(parsed, dict):
+        raise ValueError(f"VLM 未返回合法 JSON：{raw[:120]}")
+    return parsed
+
+
+def _norm_unit(value: float, siblings: list[float]) -> float:
+    """模型有时给 0~1，有时给百分数。"""
+    if all(v > 1.5 for v in siblings) and all(v <= 100.0 for v in siblings):
+        return value / 100.0
+    return value
+
+
+def _as_box(raw: Any, kind: str) -> dict[str, Any] | None:
+    if raw is None or raw is False or raw == "null":
+        return None
+    if not isinstance(raw, dict):
+        return None
+    try:
+        if {"x2", "y2"} <= raw.keys() or {"x1", "y1"} <= raw.keys():
+            x = float(raw.get("x1", raw.get("x", 0)))
+            y = float(raw.get("y1", raw.get("y", 0)))
+            x2 = float(raw.get("x2", x))
+            y2 = float(raw.get("y2", y))
+            nums = [x, y, x2, y2]
+            x, y, x2, y2 = (_norm_unit(v, nums) for v in nums)
+            w, h = x2 - x, y2 - y
+        else:
+            x = float(raw.get("x"))
+            y = float(raw.get("y"))
+            w = float(raw.get("w", raw.get("width")))
+            h = float(raw.get("h", raw.get("height")))
+            nums = [x, y, w, h]
+            x, y, w, h = (_norm_unit(v, nums) for v in nums)
+    except (TypeError, ValueError):
+        return None
+    if w < 0:
+        x, w = x + w, -w
+    if h < 0:
+        y, h = y + h, -h
+    x = max(0.0, min(x, 0.99))
+    y = max(0.0, min(y, 0.99))
+    w = max(0.0, min(w, 1.0 - x))
+    h = max(0.0, min(h, 1.0 - y))
+    if w < 0.04 or h < 0.04:
+        return None
+    return {
+        "kind": kind,
+        "x": round(x, 4),
+        "y": round(y, 4),
+        "w": round(w, 4),
+        "h": round(h, 4),
+        "full": w * h >= 0.85,
+    }
+
+
+def _parse_roi_payload(raw: str) -> tuple[list[dict], bool]:
+    """从 VLM 输出里抽出投影/板书框。返回 (有效小框, 是否几乎整幅)。"""
+    parsed = _parse_json_object(raw)
+    boxes: list[dict] = []
+    saw_full = False
+    for kind in ("slide", "blackboard"):
+        box = _as_box(parsed.get(kind), kind)
+        if not box:
+            continue
+        if box.pop("full", False):
+            saw_full = True
+            continue
+        boxes.append(box)
+    return boxes, saw_full
+
+
+def _union_box(a: dict, b: dict) -> dict:
+    x0 = min(a["x"], b["x"])
+    y0 = min(a["y"], b["y"])
+    x1 = max(a["x"] + a["w"], b["x"] + b["w"])
+    y1 = max(a["y"] + a["h"], b["y"] + b["h"])
+    return {
+        "kind": a.get("kind") or b.get("kind"),
+        "x": round(x0, 4),
+        "y": round(y0, 4),
+        "w": round(x1 - x0, 4),
+        "h": round(y1 - y0, 4),
+    }
+
+
+def _merge_boxes(boxes: list[dict]) -> list[dict]:
+    by_kind: dict[str, dict] = {}
+    extras: list[dict] = []
+    for box in boxes:
+        kind = str(box.get("kind") or "")
+        if not kind:
+            extras.append(box)
+            continue
+        if kind in by_kind:
+            by_kind[kind] = _union_box(by_kind[kind], box)
+        else:
+            by_kind[kind] = dict(box)
+    return list(by_kind.values()) + extras
+
+
+def locate_content_rois(frames: list[dict], max_attempts: int = 2) -> dict[str, Any]:
+    """用 1～2 张关键帧框出投影/板书。失败或没有目标时 boxes 为空，调用方退回整幅格子。"""
+    if not frames:
+        return {"boxes": [], "source": "none"}
+
+    picks = [frames[0]]
+    mid = len(frames) // 2
+    if max_attempts > 1 and mid > 0 and frames[mid] is not frames[0]:
+        picks.append(frames[mid])
+
+    vlm = get_vlm()
+    collected: list[dict] = []
+    saw_full = False
+    for frame in picks[: max(1, max_attempts)]:
+        prompt = render_prompt("eval_screen_roi.j2", timestamp=frame.get("timestamp", ""))
+        try:
+            raw = vlm.describe([frame["path"]], prompt)
+            boxes, full = _parse_roi_payload(raw)
+        except (ProviderError, ValueError, KeyError):
+            continue
+        if full:
+            saw_full = True
+        collected.extend(boxes)
+        kinds = {b.get("kind") for b in collected}
+        if "slide" in kinds and "blackboard" in kinds:
+            break
+        if collected and max_attempts <= 1:
+            break
+        # 录屏几乎铺满画面时不必再看第二帧
+        if saw_full and not collected:
+            break
+
+    merged = _merge_boxes(collected)
+    if merged:
+        return {"boxes": merged, "source": "vlm"}
+    if saw_full:
+        return {"boxes": [], "source": "full"}
+    return {"boxes": [], "source": "none"}
 
 
 def render_label_text(labels: dict[str, Any]) -> str:

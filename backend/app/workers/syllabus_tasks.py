@@ -104,6 +104,7 @@ async def run_syllabus_optimization(task_id: str) -> None:
             original_text=result["original_text"],
             xml=result["xml"],
             valid=result["valid"],
+            user_id=task.get("user_id"),
         )
         payload = {**result, "id": record_id}
         await db.update_syllabus_task(

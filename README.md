@@ -5,10 +5,10 @@
 | 功能 | 输入 | 输出 |
 | --- | --- | --- |
 | ① 教学视频质量评估 | 教学视频 | 五维雷达图 + 25 项二级指标明细 + 诊断报告 |
-| ② 教学大纲优化 | PDF / Word / Markdown 大纲 | 结构化 XML 大纲 + 改动留痕 |
+| ② 教学大纲优化 | PDF / Word / Markdown 大纲 | Markdown 大纲（原文微调 / 重构框架）+ AI 助教助学融入课程设计 |
 | ③ 教学智能问答 | 自然语言提问 | 基于多语料库检索的带引用回答 |
 
-技术栈：Vue 3 + Vite + Element Plus 前端，FastAPI 后端，Chroma 向量库。
+技术栈：Vue 3 + Vite + Element Plus 前端，FastAPI 后端，PostgreSQL 业务库，Chroma 向量库。
 **大模型（LLM / VLM / Embedding）默认走通义千问云端 API**；语音识别（ASR）固定本地 faster-whisper，不随 mode 切换。
 
 > **本文档持续维护**。整体框架、运行命令、待解决问题、每次改动的思路都记录在这里，
@@ -23,7 +23,8 @@
 | Python | **3.11** | 必须。3.13+ 在 arm64 上没有 ctranslate2 / chromadb 的 wheel |
 | Node.js | ≥ 18 | 前端构建 |
 | ffmpeg | 任意近期版本 | 抽音频与关键帧，`brew install ffmpeg` |
-| Docker | **不需要** | 全部本地进程运行 |
+| PostgreSQL | **16** | 用户、Session、任务、文件元数据和审计日志 |
+| Docker | 仅数据库可选 | `make db-up` 只启动 PostgreSQL 16；本机已有 Postgres 17 也可，创建 `pku2` 用户和库即可 |
 
 大模型通道（**默认云端**）：
 
@@ -51,7 +52,12 @@ brew install ffmpeg
 cp .env.example .env
 # 编辑 .env，填入 DASHSCOPE_API_KEY
 
-# 4. 自检
+# 4. 业务数据库
+make db-up          # 或使用本机 PostgreSQL 16，并设置 DATABASE_URL
+make db-migrate
+python -m scripts.create_admin --username admin --display-name 管理员
+
+# 5. 自检
 make check
 ```
 
@@ -71,7 +77,39 @@ make backend     # http://localhost:8010/docs
 make frontend    # http://localhost:5174
 ```
 
-浏览器打开 http://localhost:5174 即可，默认进入教学智能问答（`#/qa`）。
+浏览器打开 http://localhost:5174 先登录（`#/login`），通过后进入教学智能问答（`#/qa`）。
+
+`AUTH_MODE=local` 时用工号密码注册/登录；管理员只能用 `python -m scripts.create_admin` 或已有管理员提升，注册接口拿不到 `admin`。
+`AUTH_MODE=pku_sso` 时本地注册和登录关闭，登录页只显示北京大学统一身份认证。本地账号不会自动合并到北大账号。
+
+切换认证模式前先备份数据库。切换本身不迁移、不合并、不删除账号。
+
+### 数据库、备份与认证切换
+
+```bash
+# 启动 / 初始化（本机已有 Postgres 时不必开 Docker）
+make db-up
+make db-migrate
+
+# 备份（容器内 postgres）
+docker compose exec -T postgres pg_dump -U pku2 pku2 > backup.sql
+
+# 恢复
+docker compose exec -T postgres psql -U pku2 -d pku2 < backup.sql
+
+# 切换到北大统一身份认证：只改服务端环境变量，不要自动清库
+# 在 .env 中设置：
+#   AUTH_MODE=pku_sso
+#   ADMIN_IDENTITIES=pku_sso:官方稳定subject
+# 然后重启后端。本地注册/登录入口关闭；原本地账号保留为历史数据。
+```
+
+旧 `data/app.db` 不会被修改或删除。如果要把旧业务记录挂到某个新用户下：
+
+```bash
+python -m scripts.import_sqlite --db data/app.db --user-id <UUID>
+python -m scripts.import_sqlite --db data/app.db --user-id <UUID> --execute
+```
 
 ---
 
@@ -81,11 +119,22 @@ make frontend    # http://localhost:5174
 | --- | --- |
 | `make check` | 环境自检：Python / ffmpeg / 依赖 / API Key / 向量库 |
 | `make check-features` | 客观特征自检：词表、分段汇总、等待时间、VLM 标签解析、rubric 对齐（**不调大模型，不花额度**） |
+| `python scripts/draw_feat_overview.py` | 重画客观特征总览四张卡的示意图 SVG（默认写到 `design-mockups/objective-feature-four-groups/`） |
+| `python scripts/draw_pace_page.py` | 重画授课内容页语速折线 / 提问结构 PNG（默认写到 `design-mockups/pace-page/`；`--from-task` 可读评估结果 JSON） |
+| `python scripts/draw_audio_page.py` | 重画声学特征页波形 / 响度 / 基频 / 等待样本 PNG（默认写到 `design-mockups/audio-page/`；`--from-task` 可读评估结果 JSON） |
 | `make check-syllabus` | 大纲优化单元测试：XML/Markdown 校验、分章生成、导出（**不调大模型**） |
 | `make install` | 安装基础依赖 |
 | `make install-local` | 安装可选依赖：本地 embedding / rerank、说话人分离 |
 | `make backend` | 启动 FastAPI（8010），带 `--reload` |
 | `make frontend` | 启动 Vite（5174） |
+| `make db-up` | 准备 PostgreSQL：本机 5432 已在监听则直接复用并确保有 `pku2` 库；否则才 `docker compose up` |
+| `make db-down` | 只停 Docker 容器。本机 Homebrew Postgres 不受影响 |
+| `make db-migrate` | `alembic upgrade head` |
+| `make db-downgrade` | `alembic downgrade -1` |
+| `make create-admin` | 创建或提升本地管理员（会提示输入密码） |
+| `make test-auth` | 认证、隔离、管理员、mock SSO、Alembic 测试 |
+| `python -m scripts.import_sqlite --user-id <UUID>` | 可选：预览把旧 `data/app.db` 记录挂到指定用户（加 `--execute` 才写入） |
+| `python -m scripts.purge_user_data --user-id <UUID>` | 预览清理某用户；加 `--execute` 才删除 |
 | `make ingest` | 增量构建向量库 |
 | `make ingest-reset` | 清空后重建向量库（换 embedding 模型后必须） |
 | `make salon` | 沙龙 mp4 → ASR(small) 转写 + LLM 提取教学知识 → Markdown |
@@ -118,7 +167,7 @@ make frontend    # http://localhost:5174
 | `make train-gb-2018-v7-v9` | 2018 v7.1 / v9 各训六种 GB，同一年内划分对照 |
 | `make train-gb-all-v7-v9` | 四年拼表后 v7.1 / v9 各训六种 GB（2022 留出 14 人） |
 | `make train-gb-v9-regression-experiments` | v9 四种小样本回归实验；独立输出，不改线上模型 |
-| `make train-gb-live` | 四年 v9 全量客观特征+五维 5 分类 → `models/live/gb_obj_cls5.pkl`（线上总分） |
+| `make train-gb-live` | 四年 v7.1 全量客观特征+五维 5 分类 → `models/live/gb_obj_cls5.pkl`（线上总分） |
 | `make judge-overall-2018` | 2018 测试集：LLM 读取五维与客观特征盲评总分，再与专家/GB 对照 |
 | `python -m scripts.build_eval_dataset inventory --root … --xlsx … --out …` | 扫描教师文件夹 + 打分表 → inventory / manifest |
 | `python -m scripts.build_eval_dataset extract --manifest … --resume` | ASR + 课件 + VLM + Judge（慢；可断点续跑） |
@@ -140,7 +189,7 @@ make frontend    # http://localhost:5174
 ```
 frontend/          Vue 3 单页应用，只管展示与交互
       │  HTTP / SSE（Vite 代理 /api → 8010）
-backend/app/       FastAPI：路由、参数校验、SQLite 持久化、异步任务调度
+backend/app/       FastAPI：路由、参数校验、PostgreSQL 持久化、异步任务调度
       │  直接函数调用
 ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚本里跑
       │
@@ -177,32 +226,44 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 │   │                        #     text_features     转写文本统计 + 分段汇总
 │   │                        #     audio_features    librosa 声学特征
 │   │                        #     timeline_features 提问等待时间、ASR 置信度
-│   │                        #     slide_features    课件切换（本地帧差，无 API）
+│   │                        #     transcript_punc   Whisper 后用 LLM 补中文标点
+│   │                        #     slide_features    课件切换（先框投影/板书，再格子帧差）
 │   │                        #     materials         教师上传的大纲/课件/讲稿解析
 │   │                        #     vision            VLM 结构化标注 + 聚合
 │   │                        #     diarization       说话人分离（可选，默认关）
+│   │                        #     pace_charts       授课内容页 matplotlib PNG（语速折线 / 提问条）
+│   │                        #     audio_charts      声学特征页 matplotlib PNG（波形 / 响度 / 基频 / 等待）
 │   │                        #     gb.py / gb_fit.py  GB 校准；线上总分用 models/live/gb_obj_cls5.pkl
 │   ├── syllabus/optimizer.py
-│   │             export.py      # XML → Markdown / docx / pdf
+│   │             export.py      # XML / Markdown → Markdown / docx / pdf（大纲与评估报告共用）
 │   ├── qa/pipeline.py
 │   └── rag/                 #   loaders / splitter / store / retriever
 ├── backend/app/
 │   ├── main.py              #   应用装配、CORS、health
-│   ├── api/                 #   evaluation.py / syllabus.py / qa.py
-│   ├── core/db.py           #   SQLite：评估任务 / 大纲任务 / 问答 / 大纲记录
+│   ├── api/                 #   auth.py / admin.py / evaluation.py / syllabus.py / qa.py
+│   ├── models/              #   SQLAlchemy 模型
+│   ├── auth/                #   Local / PKU SSO provider 与 Session
+│   ├── core/db.py           #   PostgreSQL 业务仓储
+│   ├── core/auth.py         #   get_current_user / require_admin
+│   ├── core/security.py     #   Argon2id、Session 哈希
 │   └── workers/             #   tasks.py 评估任务；syllabus_tasks.py 大纲优化
 ├── frontend/src/
-│   ├── api/client.js        #   axios 封装 + 统一错误提示
-│   ├── api/stream.js        #   SSE 流式读取（fetch，axios 拿不到增量）
-│   └── views/               #   Layout / QA / Evaluation / Syllabus / Profile
+│   ├── api/client.js        #   axios 封装 + Cookie + 统一错误提示
+│   ├── api/stream.js        #   SSE 流式读取（credentials: include）
+│   ├── authStore.js         #   当前用户（权威来源是 /api/auth/me）
+│   ├── qaStore.js           #   问答会话与 SSE 状态（切页后仍继续）
+│   └── views/               #   Login / Layout / QA / Evaluation / Syllabus / Profile / admin
+├── alembic/                 #   数据库迁移
+├── docker-compose.yml       #   仅 PostgreSQL 16
 ├── knowledge/corpora/       # 知识语料（放你的文档）
-├── data/                    # 上传、关键帧、Chroma、SQLite（已 gitignore）
+├── data/                    # 上传、关键帧、Chroma；旧 SQLite 不删不迁
 ├── test/                    # 联调样例：大纲 PDF/Word 可入库；微格视频与打分表不入库
 ├── dataset/                 # 评估训练批次（manifest / csv / 蒸馏要点；cache / cache_* 不入库）
 └── scripts/                 # check_env / check_features / check-syllabus
                              # / smoke_test / qa_test / test_parsing
                              # / build_eval_dataset / test_eval_dataset / test_gb
-                             # / train_gb_* / compare_gb
+                             # / train_gb_* / compare_gb / draw_feat_overview / draw_pace_page
+                             # / create_admin / import_sqlite / purge_user_data / test_auth_system
 ```
 
 ### 数据流
@@ -211,9 +272,9 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 功能①  视频（必填）+ 课件 / 大纲 / 讲稿（选填）
             │    ffmpeg 抽音轨 + 视觉双轨抽帧
             │    稀疏轨：均匀 12 帧 → 送 VLM（每帧一次调用）
-            │    密集轨：每 3 秒灰度缩略帧 → 只做本地帧差（零 API 成本）
+            │    密集轨：每 3 秒灰度缩略帧 → 有 VLM 时先框投影/板书再只比对框内
             │    若上传课件：渲染页面 → 另走 VLM 逐页标注（板书/课件设计以此为准）
-            → 有讲稿则直接当转写；否则 faster-whisper 转写（自动繁转简）
+            → 有讲稿则直接当转写；否则 faster-whisper 转写（自动繁转简，再用 LLM 补中文标点）
             → 客观特征按来源分 7 组：
                  text       转写文本统计 + 分段汇总
                  audio      librosa 声学特征
@@ -223,7 +284,7 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
                  courseware 上传课件的页面标注（选填）
                  speakers   说话人分离（可选，默认关闭）
             → LLM-as-Judge 按维度逐项打二级分，再由模型按课型综合出一级分
-            → 五维雷达仍走 Judge；总分由四年 v9 客观特征+五维 5 分类 GB 校准
+            → 五维雷达仍走 Judge（v7.1 prompt）；总分由四年 v7.1 客观特征+五维 5 分类 GB 校准
             → 生成报告 → 摘要回流进向量库
 
 功能②  文档 → PyMuPDF/pypdf 多后端解析
@@ -232,9 +293,9 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
             → lxml 结构/深度/业务校验，不合法则带报错回喂模型自修（最多 2 次）
             → 可导出 Markdown / Word / PDF（export.py）
 
-功能③  提问 → LLM 生成检索关键词并选语料库
-            → Chroma 多路检索、合并去重
-            → LLM 结合检索结果生成带 [n] 角标的回答（SSE 流式）
+功能③  提问 → LLM 生成检索关键词
+            → 勾选的历史评估报告直接带入；公开库仍向量检索
+            → LLM 结合指定报告与检索结果生成带 [n] 角标的回答（SSE 流式）
 ```
 
 ### 几个关键设计决策
@@ -249,8 +310,8 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 「看稿读屏行为少」会退化成印象分。
 
 **证据必须带来源和局限**。喂给 Judge 的每组特征都标明出处（「由 librosa 从音轨提取」
-「本地帧差检测，不经过大模型」），弱代理量必须写清它弱在哪 —— 比如 ASR 置信度
-混杂了录音质量与口音，课件切换次数在固定机位下只是上界。不标局限，模型会把
+「本地帧差检测；有 VLM 时先框投影/板书」），弱代理量必须写清它弱在哪 —— 比如 ASR 置信度
+混杂了录音质量与口音，课件切换次数来自画面局部跳变、仍非精确页数。不标局限，模型会把
 所有数字当成同等硬度的事实。
 
 **课程大纲与课件都是选填，有和无走两条评分口径**。
@@ -285,7 +346,7 @@ JSON 解析失败率显著更低，也便于单维度重试。同一轮输出里
 | LLM | qwen3.7-plus（通义 API） | qwen2.5:3b（Ollama） |
 | VLM（关键帧 / 课件页） | qwen3-vl-plus | qwen2.5vl:7b |
 | Embedding | text-embedding-v3 | bge-m3 |
-| ASR（语音识别） | faster-whisper（**固定本地，非大模型**） | 同左 |
+| ASR（语音识别） | faster-whisper（**固定本地，非大模型**）；中文转写后默认用 LLM 补标点 | 同左 |
 
 显式切换方式（不推荐日常使用本地）：
 
@@ -299,6 +360,10 @@ PKU_MODE=local make backend  # 仅当需要 Ollama 时
 ---
 
 ## 七、三个功能怎么用
+
+未登录会跳到 `#/login`。本地模式注册字段：工号、密码、确认密码、姓名、可选邀请码。
+登录后「我的」里工号只读（即登录账号），可改姓名、职称、院系、邮箱、手机、课程、简介和头像。
+问答 / 评估 / 大纲的历史只看当前用户的；管理员走独立的 `#/admin`。
 
 ### ① 教学视频质量评估
 
@@ -328,17 +393,50 @@ PKU_MODE=local make backend  # 仅当需要 Ollama 时
 
 **模态缺失的处理**：如果关掉视觉分析（或 VLM 不可用），依赖 `vision` 模态的
 二级指标会被标记为「未评估」，在明细表里灰显，也不进雷达图。
-但**课件切换检测走本地帧差，不依赖 VLM**，所以「板书停留充分」「切换与讲授同步」
-在 `vlm_enabled: false` 时仍然可评。上传了课件时，课件页标注会点亮 `vision` 模态，
+但**课件切换检测不依赖逐帧 VLM 标注**：默认会先花 1～2 次调用框出投影/板书，
+再在框内做本地帧差；关掉 VLM 或框不到时退回整幅格子，所以「板书停留充分」
+「切换与讲授同步」在 `vlm_enabled: false` 时仍然可评。上传了课件时，课件页标注会点亮 `vision` 模态，
 即使关键帧分析失败，「板书设计」仍可能可评。
 
-**诊断摘要**：总览三列（优点 / 问题 / 建议）优先用报告里「〇、诊断摘要」——
-模型直接写每类 2 条短句，后端解析进 `digest`。旧任务没有该节时，仍从后文剪句兜底。
+**诊断摘要**：总览三列（优点 / 问题 / 建议）优先用模型写的「〇、诊断摘要」——
+每类恰好 2 条短句，后端解析进 `digest` 后从报告正文删掉。诊断报告页和导出都不带这一节。
+旧任务没有 `digest` 时，仍从报告原文剪句兜底；展示时同样会藏掉该节。
 报告模板是 `eval_report.j2`，v7.1 / v9 打分后都走这一份，没有分叉副本。
 
-**客观特征怎么看**：结果页「客观特征」按来源分 7 组，每组下面标了出处。
-每项除数字外有一条比例条：占比类按 0–100% 铺；次数 / 语速等按单位刻度铺。
-rubric 里写了 `ideal` 的项（语速、口头禅密度等）会画出浅绿色理想区间，
+**导出报告**：结果页右上角红底白字「导出报告」，可选 Markdown / Word / PDF。
+走 `GET /api/evaluation/task/{id}/export?format=markdown|docx|pdf`，
+转换复用大纲的 `export_syllabus`（Markdown 源）。Word / PDF 需本机 `pandoc` 或 LibreOffice。
+导出文件开头补标题、生成日期、综合得分、课堂时长、评估方式和对照材料，不改库里的报告正文。
+
+**客观特征怎么看**：标签是四个大组——
+**授课内容**（文本）、**声学特征**（声学+时序）、**课堂视觉**、**工具调度**（课件+切换）。
+进客观特征页默认落在授课内容。说话人分离默认关，有数据时才多一个标签。
+
+**客观特征明细**：点大组标签进入该组。
+**授课内容**只含文本特征，按稿子做成大号数字、语速折线、提问结构条和指标明细表。
+语速折线和提问结构条由后端 `GET /api/evaluation/task/{id}/chart/{speech_rate|question_structure}`
+用 matplotlib 现画 PNG（比页面里手写 SVG 更接近折线/条形稿）；示意数据可用
+`python scripts/draw_pace_page.py` 重画。表里的「建议 ≥ 15 次」等参考范围只给展示，
+不进 Judge；语速三项仍用 rubric 的 `ideal` 判状态。
+没有参考范围的项不进表：无提问段落用环形图，其余用图标+数字卡。有参考范围的项仍用指标 / 当前值 / 参考范围 / 状态 / 说明五列表。
+**声学特征**页与授课内容同一套排版：顶部四个数字（响度、信噪比、平均等待、ASR 高置信占比），
+左右两栏图（音轨波形+响度/基频，提问等待样本+分布条），下面指标 / 当前值 / 参考范围 / 状态 / 说明五列表。
+没有参考范围的项（长停顿次数、等待样本数）放在右侧 ASR 置信度分布下面，用图标数字卡。
+图表走 `GET /api/evaluation/task/{id}/chart/{audio_wave|loudness_series|pitch_series|wait_samples|slide_freq}`，
+matplotlib 现画。新任务会把 `wave_envelope` / `loudness_curve` / `pitch_curve` / `long_pause_times`
+和 `wait_samples` 写进 `raw_features`（不进 rubric、不进 Judge）；旧任务没有曲线时按均值生成示意，
+没有逐次等待则图上写「暂无」。表上的响度 -26～-16 dB、等待 3–6 秒等区间只给展示。
+**课堂视觉**顶部四个黑色数字（看学生、有手势、板书或投影、抬头率高），下面左分布条、右三条结论（左侧对号、无标题无分割线），不再套卡片。
+分布条用现有视觉特征：视线四分类互斥；教学行为是有手势 / 讲台前或走动 / 有人举手；课堂媒介是板书或投影 / 含图表 / 可读性高。
+后两组可以重叠，条宽按合计归一化，图例仍写原始占比。结论由占比规则写成，不进 Judge。
+明细表与声学页相同：指标 / 当前值 / 参考范围 / 状态 / 说明。看学生 ≥50%、看讲稿 ≤25% 等区间只给展示；
+帧数、走动、举手、可见学生人数没有区间，标成事实观察。
+**工具调度**分有无上传课件两套。有课件：四个数字（已分析页数、版式清晰、页面切换、讲授同步），左栏版式/密度/图表/可读性分布条，右栏切换时间轴和四项切换数字。
+无课件：说明行写成「已获得 n / 13 项，7项课件页面质量指标因未上传材料已跳过」；四个数字改成切换次数、频率、停留中位数、讲授同步；全宽时间轴加节奏批注；下面是分段切换频次图、停留时长环图和一条结论。
+时间轴和频次图用 `slide_change_times`；停留环图优先 `dwell_samples`（新评估写入 `raw_features.slides`，不进 Judge），旧任务按切换时刻反推。短停留仍按词典 20 秒，不是稿子里的 30 秒。
+明细仍是五列表。切换次数、已分析页数是事实观察；每 10 分钟 3–5 次等区间只给展示。
+其余大组（有数据时的说话人）仍按来源分段，每项除数字外有一条比例条：占比类按 0–100% 铺；
+次数 / 语速等按单位刻度铺。rubric 里写了 `ideal` 的项会画出浅绿色理想区间，
 落入为绿、略偏为黄、明显偏离为红。来源就是可信度：`text` / `audio` /
 `timeline` / `slides` 是算出来的，`vision` / `courseware` 是 VLM 看出来再聚合的。
 带括号说明的标签是弱代理量，比如「学生发言线索次数（词表粗估，偏高）」。
@@ -354,7 +452,16 @@ rubric 里写了 `ideal` 的项（语速、口头禅密度等）会画出浅绿�
 
 ### ② 教学大纲优化
 
-上传 PDF / Word / Markdown，或直接粘贴文本。提交后**立即返回任务 ID**，页面显示进度条并每 2.5 秒轮询；处理中可点**停止**（协作式取消）。完成后输出 XML 或 Markdown（取决于模式），页面上原文与结果左右对照，可复制或下载；校验通过后可**导出 Word / PDF**（XML 模式还可导出 Markdown；Markdown 模式可直接下载 `.md`）。
+默认左侧展开历史任务（可搜索、按全部/进行中/已完成/失败筛选，按进行中/今天/更早分组），
+交互与教学评估一致。右侧上传区也按评估页来：虚线拖入框、选中后显示文件卡片，再点「开始优化」。
+页面只提供**原文微调 / 重构框架**两种 Markdown 模式（不再露出 XML）。
+提交后**立即返回任务 ID**，进度条每 2.5 秒轮询；处理中可点**停止**（协作式取消）。
+点历史任务可回看进度或打开对应结果。
+收起侧栏后左上角只留历史 / 新建图标。
+历史任务右侧垃圾桶可删除；进行中的任务删除前会先停止。
+
+完成后输出 Markdown，页面上原文与结果左右对照，可复制或下载；
+校验通过后可**导出 Word / PDF**。旧的 XML 任务仍可打开并按原格式下载。
 
 任务 API（与视频评估类似）：
 
@@ -372,18 +479,20 @@ curl "http://127.0.0.1:8010/api/syllabus/task/{task_id}"
 
 # 停止任务
 curl -X POST "http://127.0.0.1:8010/api/syllabus/task/{task_id}/cancel"
+
+# 删除任务（进行中请先停止，或由页面删除时自动停止）
+curl -X DELETE "http://127.0.0.1:8010/api/syllabus/task/{task_id}"
 ```
 
-**四种优化模式**（页面上可切换，用于对比效果）：
+**页面上的两种优化模式**（均为 Markdown）：
 
 | 模式 | API `prompt_mode` | Prompt 文件 | 说明 |
 | --- | --- | --- | --- |
-| **灵活结构 · XML**（默认） | `adaptive` | `syllabus_optimize.j2` | 保留原大纲章节逻辑，XML 标签随原稿变化（根节点 `<course_syllabus>`） |
-| **固定框架 · XML** | `schema` | `syllabus_optimize_schema.j2` | 映射到 `syllabus_schema.xml` **大纲级**结构（根节点 `<syllabus>`，章节用 `<points>`） |
-| **灵活结构 · Markdown** | `markdown` | `syllabus_optimize_markdown.j2` | 保留原大纲结构，输出**大纲级** Markdown；篇幅不超过原文 2 倍 |
-| **固定框架 · Markdown** | `markdown_schema` | `syllabus_optimize_markdown_schema.j2` | 映射到 `syllabus_markdown_schema.md`（大纲级框架），篇幅不超过原文 2 倍 |
+| **原文微调**（页面默认） | `markdown` | `syllabus_optimize_markdown.j2` | 在原文上增删：目录、段落/列表体例、题记引语等个人表述都保留；禁止套通用模板、禁止一律改成要点列表；AI 助教/助学写入原课程设计栏目；不超过原文 2 倍 |
+| **重构框架** | `markdown_schema` | `syllabus_optimize_markdown_schema.j2` | 映射到 `syllabus_markdown_schema.md`；各章教学形式、考核政策与「AI 辅助教学」节必写；大纲级，不超过原文 2 倍 |
 
-默认模式由 `config.yaml` → `syllabus.prompt_template` 控制；API 可传 `prompt_mode` 覆盖。
+XML 两种模式（`adaptive` / `schema`）仍可通过 API 调用，页面不再提供入口；日常优化只走上面两个 Markdown 入口。
+API 未传 `prompt_mode` 时仍由 `config.yaml` → `syllabus.prompt_template` 决定（当前默认仍是 XML 的 `syllabus_optimize.j2`）。
 送入 LLM 的原文上限由 `syllabus.max_input_chars` 控制（默认 80000 字）。
 Markdown 模式输出字数上限为 `syllabus.markdown_max_length_ratio`（默认 2.0）× 原文字数。
 固定框架 **XML** 与 **Markdown** 均已对齐为**大纲级**：章节用要点列表（XML 为 `<points><point>`），
@@ -409,8 +518,18 @@ Markdown 模式输出字数上限为 `syllabus.markdown_max_length_ratio`（默�
 
 默认左侧展开历史会话（可搜索；列表分成「置顶」「最近」，
 格式与教学评估的历史任务一致）。回答上方会显示这次用了哪些关键词、查了哪些语料库，下方可展开引用来源。
-输入框左侧「+」打开检索范围，**默认全选**；取消勾选则不检索该库。
-检索效果不好时，看关键词和来源就能判断是规划问题还是语料覆盖问题。
+输入框左侧「+」打开检索范围。公开语料库**默认全选**；取消勾选则不检索该库。
+「历史评估报告」**默认不选**。点它会弹出任务列表，可滚动勾选、全选或清除；确定后才纳入检索。
+勾选后提问会把这些任务的诊断报告**整份放进提示词**（总分、五维、正文；单独 12000 字额度），
+再检索沙龙/大纲等作补充。检索关键字里不会出现「历史评估」，因为报告不是靠关键字搜进来的。
+这份列表跟评估页左侧任务同步：评估成功完成会写入向量库，删除任务会清掉对应块；
+切回问答页或再打开弹窗会刷新。失败、取消、进行中的任务不会出现。
+回答提示词会把指定报告标成该教师自己的课堂诊断：问自己的课时应依据报告分析，
+不得说「无法观摩课堂」。检索条上会显示「历史评估报告 ·已带入 N 份」。
+
+提问后可以切到教学评估或大纲优化，也可以再开一个新对话继续问：生成在后台继续，
+历史列表会标「思考中」，多个会话可以同时思考。当前打开的会话若正在生成，发送按钮才会禁用。
+问句在发出时就落库，整段答完再写入；刷新后会回到上次会话，若仍在生成则轮询直到完成。
 
 ---
 
@@ -639,8 +758,8 @@ make train-gb
 因此按 `原分÷4×100` 换百分制，再除以 20 得到等值 0–5：2→2.5、3→3.75、4→5。
 分类用 2–4 原分划档，再把档中点按同一公式还原。回归直接拟合 0–5，输出截断到 [0, 5]。
 对照实验的 pkl 仍 gitignore。线上总分模型例外：`models/live/gb_obj_cls5.pkl`
-（四年 v9 全量 103 人、客观特征+五维 5 分类），`evaluate_session`（视频或讲稿）都读这一份。
-换 v9 数据或超参后必须 `make train-gb-live`，否则会报「找不到线上 GB 模型」。
+（四年 v7.1 全量、客观特征+五维 5 分类），`evaluate_session`（视频或讲稿）都读这一份。
+换 v7.1 数据或超参后必须 `make train-gb-live`，否则会报「找不到线上 GB 模型」。
 
 > 2026-09-02 注意：下面所有在旧换算 `（均分−2）÷2` 上得到的 MAE、模型和逐人预测
 > 均为历史结果，不能再与 Judge 比较，也不能用于当前结论。修正标签后必须重新训练。
@@ -694,12 +813,14 @@ v9 的最佳方案是 **客观特征+五维 5 分类**，MAE 0.348、RMSE 0.414�
 0.429；它也优于 v7.1 的全部方案。只客观 5 分类两版完全相同（MAE 0.473），
 符合客观特征不随 prompt 变化的预期。v9 在五维回归、客+五回归、五维 5 分类、
 客+五 5 分类和二级 5 分类上均优于 v7.1，说明 v9 的评分信息整体更适合后续 GB。
-预测集只有 14 人，结论仍需交叉验证。线上总分已改为四年 v9 客观特征+五维 5 分类。
+预测集只有 14 人，结论仍需交叉验证。
 
-线上总分用 v9 prompt + 客观特征+五维 5 分类 GB。`make train-gb-live` 会先在
-2022 留出上对照，再把四年 v9 有效样本全部拟合到 `models/live/gb_obj_cls5.pkl`。
-五维雷达仍走 Judge；总分是 5 档中点映回百分制（55 / 65 / 75 / 85 / 95）。
-数据集 `rejudge` / `merge` 不走 GB，避免训练表被校准分污染。
+线上总分用 **v7.1 prompt + 客观特征+五维 5 分类 GB**。`make train-gb-live` 会先在
+2022 留出上对照，再把四年 v7.1 有效样本全部拟合到 `models/live/gb_obj_cls5.pkl`。
+五维雷达仍走 Judge（`eval_judge.j2` 的 v7.1 口径，含 70 分软地板和教学效果预期效果兜底）；
+总分是 5 档中点映回百分制（55 / 65 / 75 / 85 / 95）。结果里 `prompt_version` 为
+`v7.1-goal-effect-fallback`。数据集 `rejudge` / `merge` 不走 GB，避免训练表被校准分污染。
+v9 对照仍可用 `make train-gb-all-v7-v9`，不改线上模型。
 
 #### v9 四种小样本回归实验
 
@@ -724,7 +845,7 @@ make train-gb-v9-regression-experiments
 
 默认 `dataset/2018_spring/cache/` 的 `scores.json` 已被 v5 覆盖，evidence 仍在。
 `train-gb-2018-v4` 从 `eval_snapshots/v4/2018_spring/cache` 把 22 份 v4 分数拷到
-`cache_v4/`，再 merge 到 `dataset/2018_spring/v4/`。当前 Judge 已是 v9 规则，
+`cache_v4/`，再 merge 到 `dataset/2018_spring/v4/`。当前 Judge 已是 v7.1 规则，
 **不能**再 `--prompt-version v4` 重打还自称 v4。同一 `gb_split.json` 上六种方法
 （0–5，n=5）：
 
@@ -920,10 +1041,18 @@ python -m scripts.build_eval_dataset rejudge \
 | `vlm_enabled` | `true` | 关掉则跳过 VLM 逐帧标注 |
 | `keyframe_count` | `12` | 稀疏轨：送 VLM 的帧数，**每帧一次 API 调用** |
 | `slide_detection_enabled` | `true` | 关掉则跳过课件切换检测 |
-| `slide_sample_interval_sec` | `3.0` | 密集轨抽帧间隔，只做本地帧差，零 API 成本 |
-| `slide_change_threshold` | `0.08` | 相邻帧平均灰度差超此值判为切换（0~1）。调大 = 少报切换 |
+| `slide_sample_interval_sec` | `3.0` | 密集轨抽帧间隔，帧差本身为零 API 成本 |
+| `slide_change_threshold` | `0.08` | 框内（或整幅）变化最大的那一格超过此值才算候选。调大 = 少报。候选还需下一采样定住才计入 |
+| `slide_roi_enabled` | `true` | 先用 VLM 框出投影/板书再比对框内；关掉或框不到则退回整幅格子 |
+| `slide_roi_max_frames` | `2` | 最多看几张关键帧来框（首帧 + 中间帧）。找到投影和板书就停 |
 | `courseware_max_pages` | `16` | 教师上传的课件最多渲染多少页送 VLM，超出则均匀抽样 |
 | `diarization_enabled` | `false` | 说话人分离，见下 |
+
+`config.yaml` → `asr`：
+
+| 配置项 | 默认 | 说明 |
+| --- | --- | --- |
+| `punctuate` | `true` | 转写后用 LLM **只补中文标点**，不改字。失败则规则断句。上传讲稿当转写时不走这一步 |
 
 **说话人分离默认关闭**，开启需要三步：
 
@@ -951,10 +1080,12 @@ make install-local                      # 装 pyannote.audio
 | `Ollama 调用失败` | 确认 `ollama serve` 在跑，且已 `ollama pull qwen2.5:3b` |
 | 上传视频后卡在「语音识别」很久 | 首次运行要下载 whisper 权重；且 CPU 转写约为实时的 1/3～1/5。先用几分钟的短视频试 |
 | 转写结果是繁体 | 已内置 zhconv 自动转简体。若没转，确认装了 `zhconv` |
+| 中文转写几乎没有句号问号 | 默认会在 ASR 后用 LLM 补标点。确认 `asr.punctuate: true`，且云端 Key / 本地 Ollama 可用；失败会走规则断句，仍可能较粗。上传讲稿则跳过 ASR 与补标点 |
 | 评估结果里很多指标显示「未评估」 | 对应模态没数据。视觉指标需要 VLM 可用（云端要 key，本地要 `ollama pull qwen2.5vl:7b`） |
 | 关键帧下面没有彩色标签，只有一句话 | VLM 没按 JSON 格式回，标签全部归为 `unclear`。本地模型（qwen2.5vl:7b）比云端更容易跑偏，可换云端或看 `frame.description` 里的报错 |
 | 客观特征里没有「课件时序特征」这一组 | `slide_detection_enabled` 被关了，或 ffmpeg 解码失败（进度详情里有 warning）。密集抽帧要求视频有可解码的视频流，纯音频文件会失败 |
-| 课件切换次数明显偏多 | 固定机位下教师走动也会造成画面差异，切换数是**上界**。把 `slide_change_threshold` 从 0.08 往上调（如 0.15）会更保守 |
+| 课件切换次数经常为 0 | 旧口径用整帧平均，角落投影会被摊薄。现已先框区域再比对。仍为 0 时可能是投影极暗、VLM 没框到且格子也看不出，或 `slide_detection_enabled` 被关 |
+| 课件切换次数明显偏多 | 人刚好停住、镜头晃一下仍可能多记。把 `slide_change_threshold` 从 0.08 往上调（如 0.15）会更保守 |
 | 选了视频但没有开始评估 | 上传入口改为先选文件再点「开始评估」，以便同时附上大纲/课件。选完视频后要点按钮 |
 | PPT/PPTX 课件没有页面图像 | 本机没有 LibreOffice，无法把幻灯片转成 PDF。请另存为 PDF 再传，或 `brew install --cask libreoffice` |
 | `MuPDF error: cannot create appearance stream for Screen annotations` | LibreOffice 把 PPT 里的嵌入媒体转成 PDF Screen 注释，PyMuPDF 画不出来。已跳过注释渲染并关掉这段 stderr，页面图像不受影响 |
@@ -962,7 +1093,7 @@ make install-local                      # 装 pyannote.audio
 | 2019 inventory 只有约 11 人进 manifest | 42 个教师文件夹里约 30 个是空的（另有一整套 Finder ` (2)` 空副本已跳过）。缺视频记 `no_video`，有打分也不进 extract |
 | 2019 王长松 `expert_avg=0` | 0 不是有效专家评分。即使换算后为 0，四个 `train_gb_*` 脚本仍会自动丢掉这一行 |
 | `No module named 'sklearn'` / `pandas` | 线上总分和训 GB 都要。`pip install pandas scikit-learn`（已写入 `requirements.txt`，`make install` 会装） |
-| `找不到线上 GB 模型` | 还没训线上模型。`make train-gb-live`（读 `dataset/all_v9/training_gb.csv`） |
+| `找不到线上 GB 模型` | 还没训线上模型。`make train-gb-live`（读 `dataset/all_v7_1/training_gb.csv`） |
 | 2022 备课目录只有十几个文件 | 试讲 68 个视频齐，课件/教案只交了约 18 份。缺课件按无课件继续评，不判死 |
 | 2022 楚健春平均分数对不上表内唯一一行 | 合并表里他只有刘树华一行（3.5），「平均分数」却是 3.033。标签用平均分数，并标 `incomplete_experts` |
 | 2024 inventory 只有 3 人进 manifest | `2024春微格试讲-74位/` 目前只有张亿、王欢、黄炜三个 mp4，其余 71 人只有备课 PDF，记 `no_video`。补视频后重新 inventory 再 `--resume` extract |
@@ -972,15 +1103,26 @@ make install-local                      # 装 pyannote.audio
 | 客观特征里没有「上传课件观测」这一组 | 没传课件，或 VLM 对课件页全部标注失败（进度详情里有 warning） |
 | 说话人分离报「需要 HuggingFace token」 | `.env` 里没填 `HF_TOKEN`，或没在模型页面接受使用条款。两者都要做 |
 | 说话人分离报「未安装 pyannote.audio」 | `make install-local` |
+| 授课内容页语速图 / 提问条裂开或接口 500 | 没装 matplotlib，或 conda 环境不是 `pku2`。`conda activate pku2 && pip install matplotlib`（已写入 `requirements.txt`） |
+| 声学特征页等待图写「暂无逐次等待样本」 | 旧任务没存 `wait_samples`。重新评估后才有棒棒糖图；等待质量条会退回「≥3秒 vs 偏短」两段 |
+| 声学特征页波形/响度不像真实音轨 | 旧任务没有包络和曲线，页面按响度均值生成示意。新评估会写入 `wave_envelope` / `loudness_curve` / `pitch_curve` |
 | 新加的客观特征前端看不到 | 忘了在 `evaluation_rubric.yaml` 的 `objective_features` 里登记标签。跑 `make check-features` 会指出缺哪个 key |
 | `make check-features` 报「无未登记的特征 key」失败 | 同上，按提示把 key 加到 rubric 对应分组里 |
 | 问答检索不到内容 / 语料库计数为 0 | 没建库。`make ingest`，并确认语料目录里确实有文档 |
+| 问答里「历史评估报告」是空的 / 勾不了某次课 | 只有评估**成功完成**才会入库。进行中、失败、取消的不会出现。从评估页删掉任务会同步删向量。点「+」里的「历史评估报告」打开弹窗；切回问答页会刷新列表 |
 | `dimension mismatch` 之类的 Chroma 报错 | 换过 embedding 模型。`make ingest-reset` 重建 |
+| 打开页面立刻跳到登录 | 正常。先 `make db-up && make db-migrate`，再注册或用 `create_admin` 创建的账号登录 |
+| 登录后历史是空的 | 新 PostgreSQL 默认是空库。旧 SQLite 不会自动导入 |
+| 接口 401 /「请先登录」 | Session Cookie 失效或被撤销。重新登录；下载和图表走同源 Cookie，不必再拼 token |
+| 注册报「工号已被使用」 | 工号规范化后全局唯一。换工号，或直接登录 |
+| 后端启动报数据库连接失败 | PostgreSQL 没起来，或 `DATABASE_URL` 不对。`make db-up` 后重试 |
+| `make db-up` 报 Docker daemon | 正常。这台机器用的是 Homebrew Postgres，不需要 Docker。直接再跑一次 `make db-up`（已改为自动复用本机 5432） |
+| `/admin` 进不去 | 当前账号不是 `role=admin` 且 `status=active`。用 `python -m scripts.create_admin` |
 | 前端起来了但数据全空 | 后端没启动或端口不是 8010。检查 `make backend`，代理配置在 `frontend/vite.config.js` |
 | 端口被占用 | `lsof -ti :8010 \| xargs kill -9` |
 | 扫描版 PDF 解析为空 | 目前不带 OCR。先用其他工具转成文字版 |
-| 中文 PDF「原始大纲」乱码 | 已用 PyMuPDF 多后端解析；仍失败则改传 docx 或粘贴文本 |
-| 大纲 PDF 导出失败 | 需安装 `pandoc` 或 LibreOffice：`brew install pandoc` 或 `brew install --cask libreoffice` |
+| 中文 PDF「原始大纲」乱码 | 已用 PyMuPDF 多后端解析；仍失败则改传 docx |
+| 大纲 / 评估报告 PDF、Word 导出失败 | 需安装 `pandoc` 或 LibreOffice：`brew install pandoc` 或 `brew install --cask libreoffice` |
 | 旧版 `.doc` 无法解析 | macOS 会尝试用 textutil；失败的话在 Word 里另存为 .docx |
 | 大纲校验失败但未自动修复 | 自修采用**黑名单制**：除 `source_id 覆盖或顺序错误` 等少数项外，默认会自修（最多 2 次）。看进度是否出现「自动修复」及 `repair_attempts` 标签 |
 | 大纲校验「章节学时合计与总学时不一致」 | 重启后端后应触发自修；若 2 次仍失败，可能是原文学时数据不完整，模型无法可靠配平 |
@@ -1053,7 +1195,7 @@ make install-local                      # 装 pyannote.audio
 | **会话管理简陋** | 只有列表 + 删除，无搜索、重命名、导出 Markdown | 补会话标题编辑、全文导出 |
 | **引用展示过短** | snippet 固定 200 字，难以判断是否值得点开 | 可展开全文；高亮与回答句子的匹配片段 |
 | **无「换检索再答」** | 关键词或语料库选错时只能重新提问 | 加「编辑关键词 / 换库重试」按钮，复用同一会话 |
-| **无鉴权** | 所有会话、语料库状态对局域网内任何人可见 | 最简登录 + 会话按用户隔离（与全局暂缓项联动） |
+| **尚未接北大统一身份认证** | 已有 provider 接口、回调路由和 mock 测试；没有官方文档前不写伪生产代码 | 拿到官方协议后再只改 `PKUSSOAuthProvider` |
 
 ---
 
@@ -1099,9 +1241,10 @@ make install-local                      # 装 pyannote.audio
 | 问题 | 影响 | 优化方向 |
 | --- | --- | --- |
 | **同步阻塞请求** | 大纲优化已改为异步任务 + 进度轮询，与视频评估一致 | 可选 WebSocket；长时间任务支持邮件/通知 |
-| **无可读预览** | 非技术用户看不懂 XML 标签 | 按 schema 渲染为表单/大纲树形视图；或默认展示 Markdown 预览 |
+| **无可读预览** | 页面已默认出 Markdown 预览；旧 XML 任务仍是标签原文 | 旧 XML 记录可做树形/表单预览，或提示导出 Markdown |
 | **对比无 diff 高亮** | 左右对照需人工找改动 | 章节级 diff 高亮；improvements 与 diff 联动跳转 |
 | **历史无版本对比** | 只能打开单条记录，无法看两次优化差异 | 同一课程多次优化做 version diff |
+| **异步改造前的旧记录不在侧栏** | 2026-08-18 之前只写入 `syllabus_records`、没有对应 `syllabus_tasks` 的记录，新侧栏看不到 | 需要时把无 task 的 record 合成已完成条目；`GET /api/syllabus/history` 仍可查 |
 
 ---
 
@@ -1114,20 +1257,18 @@ make install-local                      # 装 pyannote.audio
 
 | 分类 | 问题 | 备注 |
 | --- | --- | --- |
-| 视频评估 | 线上总分已接四年 v9 客+五 5 分类 GB；2022 留出仅 14 人 | 全量拟合不能当泛化；换年或加样本后应 `make train-gb-live` 重训 |
+| 视频评估 | 线上总分已接四年 v7.1 客+五 5 分类 GB；2022 留出仅 14 人 | 全量拟合不能当泛化；换年或加样本后应 `make train-gb-live` 重训 |
 | 视频评估 | 2018 两套旧 prompt 上只有客+五回归压过 Judge，预测集仅 5 人 | 历史对照，不再接线上 |
 | 视频评估 | 2018 v4 上「只客观 / 只二级」略好于 Judge，仍不如客+五回归 | 同一 5 人测试集；默认 cache 的 v4 分已被 v5 覆盖，训练用的是快照恢复 |
 | 视频评估 | 一级维度分由 LLM 按课型折算，同一视频两次跑可能差几分 | 越界会回退加权平均；要可复现可看 `weighted_score` 字段 |
 | 视频评估 | 说话人分离已接入但**未在真实课堂验证过**（缺 HF token，默认关闭） | 剩余 4 条 ❌ 指标里唯一有解的一条，验证后「教学效果」维度才可信 |
-| 视频评估 | 课件切换次数是**上界**：固定机位下教师走动也算差异 | 解法是让 VLM 在第一帧框出投影区域，密集轨只比对该区域 |
+| 视频评估 | 课件切换仍非精确页数：框偏了、人走进框内停住、投影极暗时会漏报/多记 | 已先用 VLM 框投影/板书再只比对框内；框不到退回整幅格子 |
 | 视频评估 | 「详略结合」缺客观依据 | 可加术语时间轴驻留特征（某术语首次到末次出现跨多少分钟、占多少字） |
 | 视频评估 | 提问等待时间的有效样本常只有个位数（受 ASR 片段边界限制） | 开 `word_timestamps=True` 可解，代价是转写慢 20–30% |
 | 视频评估 | 「表情自然」「板书重点是否突出」未纳入 VLM 标注 | 前者受关键帧分辨率限制，后者需理解板书语义 |
 | 视频评估 | ASR 置信度是弱代理：混杂录音质量与口音，**换 whisper 模型后历史数据不可比** | 已在提示词里标明局限，无更好的本地替代 |
 | 视频评估 | CPU 转写慢、长视频证据截断 | 暂缓，不阻塞问答/大纲 |
-| 视频评估 | 评估报告回流未去重 | 同上 |
-| 全局 | 无鉴权 | 问答会话、大纲历史、评估任务均受影响 |
-| 全局 | 个人信息只存在本机浏览器 | 无账号体系，换设备或清缓存会丢；等鉴权后再接到服务端 |
+| 全局 | 北大 SSO 只完成适配层和 mock，未接真实官方协议 | 接入时只改 `backend/app/auth/pku_sso.py` 与环境变量 |
 | 全局 | Evaluation 页 bundle 过大 | 与当前聚焦无关 |
 
 ---
@@ -1135,6 +1276,366 @@ make install-local                      # 装 pyannote.audio
 ## 十三、变更记录
 
 倒序排列，最新在最上面。每条写清楚**为什么这么改**。
+
+### 2026-09-08 · 顶栏「我的」旁不再显示姓名
+
+**问题**：标签页右侧再写一遍姓名，和「我的」重复，也占位置。
+**思路**：顶栏只保留入口和退出；姓名在资料页看。管理员仍显示「后台」。
+**影响**：`Layout.vue`。
+
+### 2026-09-08 · 注册「显示名称」改成「姓名」
+
+**问题**：注册写「显示名称」，资料页写「姓名」，同一字段两套叫法。
+**思路**：注册标签和缺填提示改成姓名，与「我的」对齐。接口仍是 `display_name`。
+**影响**：`Login.vue`。
+
+### 2026-09-08 · 登录账号改回「工号」
+
+**问题**：登录/注册写的是「用户名」，「我的」里又有一个可改的工号，教师会当成两个东西；工号保存接口其实已经丢掉这个字段。
+**思路**：本地登录标识对教师就是工号。登录和注册标签改成工号；资料页工号只读，显示登录账号。新注册把 `staff_id` 写成同一值，避免后台出现两套工号。
+**影响**：`Login.vue`、`Profile.vue`、`Users.vue`、`auth.py`、`local.py`、`security.py`、`create_admin.py`。已有账号仍用原来的登录名，只是页面改叫工号。
+
+### 2026-09-08 · 勾选的评估报告单独进 prompt，不跟检索抢字数
+
+**问题**：勾选后虽会取出报告，但和沙龙检索挤在 6000 字里，第三份起会被截掉；规划模型也不知道报告已经带入，还在关键字里猜「评估报告」。
+**思路**：指定报告用 `pinned_eval_max_chars=12000` 单独额度，整份诊断（总分、五维、正文）放进「教师指定的课堂评估报告」；公开库仍用 6000 字检索作补充。规划提示词写明报告已带入，不必再为库名生成检索词。
+**影响**：`config.yaml`、`retriever.py`、`qa_answer.j2`、`qa_keywords.j2`。需重启后端。勾几份就带几份，太多时按额度从前往后截。
+
+### 2026-09-08 · 勾选的历史评估改为直接带入提示词
+
+**问题**：勾选只缩小 `eval_reports` 的向量检索范围。报告正文和「参与度」等问法相似度常低于 0.5，沙龙语料反而进了上下文，回答变成通用策略，检索条里「历史评估报告」也看不出是否用上。
+**思路**：勾选的任务从数据库取出总分、五维和诊断报告，作为【指定评估】固定放进 prompt 最前面；公开语料仍按相似度检索作补充。不再用报告块去过 0.5 阈值。
+**影响**：`qa.py`、`pipeline.py`、`qa_answer.j2`、`QA.vue`。需重启后端。来源里会标「指定带入」。
+
+### 2026-09-08 · 多个问答会话可以同时思考
+
+**问题**：后端每个提问已经是独立后台任务，前端却用全局 `sending` 锁发送按钮。一个对话在生成时，新开对话也问不了，看起来像不支持并行。
+**思路**：按会话记生成任务。发送按钮只看「当前打开的会话是否在思考」；切走后 SSE 仍写回那个会话的消息列表，侧栏各自标「思考中」。
+**影响**：`qaStore.js`。刷新后仍靠轮询收尾；同一会话不能连发两条。
+
+### 2026-09-08 · 问答提示词标明历史评估是自己的课
+
+**问题**：勾选了历史评估报告，模型仍说「无法直接观摩您的课堂」。提示词没说明这些块是该教师自己的诊断报告，模型当成没有听过课的通用助教。
+**思路**：`qa_answer.j2` 写明「历史评估报告 / 教学视频评估报告」是本系统对该教师课堂录像的诊断，问自己的课必须依据报告分析，禁止那句客套。规划提示词在「我的课 / 课堂质量」类问题上加一条能对上报告的检索短语。
+**影响**：改的是 Jinja 模板，下次提问即可；报告没检索到时仍走通用建议。
+
+### 2026-09-08 · 去掉检索说明和顶栏英文副标题
+
+**问题**：检索范围弹层里的操作说明占地方；顶栏「北大问教」旁的 `PKU-AskEdu 2.0` 对教师也没有用。
+**思路**：说明文案删掉，任务入口本身已写「点击选择任务」。顶栏只留中文品牌名。
+**影响**：`QA.vue`、`Layout.vue`。登录页英文副标题未改。
+
+### 2026-09-08 · 历史评估改弹窗勾选，默认不检索
+
+**问题**：嵌在「+」菜单里的任务列表太挤，而且默认把全部历史评估勾上，一提问就会把几次课混在一起。
+**思路**：公开语料库仍默认全选；历史评估报告单独一行，点开弹窗再选。弹窗里滚动列表，有全选和清除，点确定才写入检索范围。
+**影响**：`QA.vue`、`qaStore.js`。没选任务时不查 `eval_reports`。
+
+### 2026-09-08 · 问答可勾选某一次历史评估
+
+**问题**：评估完成后报告会进 `eval_reports`，问答却只能整库混搜，不能指定「就问这一堂课」。
+用户也不清楚这份语料和评估页任务列表是不是同一批数据。
+**思路**：完成评估仍按 `task_id` 写入（先删后写，避免同一任务留下旧块）；删除任务继续清向量。
+问答「+」里点「历史评估报告」打开任务弹窗，请求带 `eval_task_ids`。
+检索用 Chroma `user_id` + `task_id ∈ …` 过滤，别人的任务 ID 会被丢掉。
+**影响**：`retriever.py` / `qa.py` / `QAForm` / `QA.vue`。切回问答页会刷新列表。
+失败、取消、进行中的任务不入库，也不会出现在勾选里。
+
+### 2026-09-08 · 侧面走动不再算成看屏幕
+
+**问题**：教师左右走动时的侧面中间态，VLM 常标成 `gaze=screen`。这其实是面向教室的互动站位，却把「看屏幕」占比抬高，教态被说成读屏。
+**思路**：观测提示词写明：横移、侧身、脸朝教室或镜头 → 看学生；只有头明确转向投影才算看屏幕；后背正对教室才算背对。解析时再兜一层：走动中且未指向屏幕的 `screen` 改记为 `students`。指向屏幕的走动仍算看屏幕。
+**影响**：`eval_vision.j2`、`vision.py`、`eval_judge.j2`。已完成的评估要重跑，旧关键帧标签不会改。
+
+### 2026-09-08 · Whisper 转写后用 LLM 补中文标点
+
+**问题**：faster-whisper 转英文常带 `. ?`，转中文几乎不断句。切句、问句统计和「片段末尾提问后的等待时间」都对不齐。Atmos 也是 Whisper，标点靠转写后的 LLM 补。
+**思路**：ASR 仍用本地 Whisper；中文墙字再送给现成 LLM，只补 `。，、？！`，不改字。按片段编号批量回写，时间戳不动。行数对不上或改写了汉字则丢弃，改走规则断句，评估不中断。上传讲稿不走 ASR，也就不补。
+**影响**：`transcript_punc.py`；`asr.punctuate` 默认为 true。每堂课多几次短 LLM 调用。沙龙转写同样补。已完成的评估要重跑才有标点。
+
+### 2026-09-07 · 课件切换先框投影/板书，再只看框内变化
+
+**问题**：整幅格子能抓住角落投影，但教师走动、旁边黑板、灯光仍会进格子；用户希望
+先框出投影/板书，再判断那一块变化够不够明显。
+**思路**：评估时额外用 1～2 张关键帧（首帧，必要时加中间帧）让 VLM 给出投影和
+板书的 0～1 框。密集轨只在框内做格子帧差；投影和板书分开框，避免把中间的人算进去。
+框不到、VLM 关掉或几乎整幅都是录屏时，退回原来的整幅格子。
+**影响**：新增 `eval_screen_roi.j2`、`locate_content_rois`；每条视频大约多 1～2 次
+VLM 调用。`slide_roi_enabled` 可关。Judge / 前端会标明是否用了框。已完成的评估
+要重跑才会变。
+
+### 2026-09-07 · 课件切换改成格子帧差，避免角落投影记成 0 次
+
+**问题**：切换次数不是 LLM 看的，而是整幅 160×90 灰度帧的平均像素差。非纯 PPT
+录像里投影只占画面一角，翻页贡献被墙和人摊薄，经常低于 0.08，整节课记成 0 次；
+Judge 再把「几乎不换页」当事实写进报告。
+**思路**：改看 8×5 格子里变化最大的那一格；候选还要等下一采样该格定住才计入
+（翻页后画面会停，走动则下一拍仍在变）。不增加 API，也不用先框屏幕。
+**影响**：`slide_features.py`；`eval_judge.j2` / 前端不再把次数写成「上界」。
+`make check-features` 增加角落小色块能检出、移动色块不记翻页两条。旧评估和线上
+GB 用的是整帧平均口径，新跑的 `slide_change_count` 与历史不可比；若要 GB 对齐需
+重提特征再训。
+
+### 2026-09-07 · 智能问答切页后继续生成
+
+**问题**：问答是页内 SSE，切到教学评估 / 大纲优化会拆掉组件；会话又要等整段答完才入库。
+思考中的问题和半成品答案都会丢，看起来像不支持后台运行。
+**思路**：提问当下落一条 pending 会话；LLM 生成跟 SSE 连接脱钩，客户端走了也跑完再写入。
+前端把对话状态放到 `qaStore`，并用 `keep-alive` 保住问答页。回来接着看；刷新则打开上次会话，
+若仍 pending 就轮询。侧栏对生成中的会话显示「思考中」。
+**影响**：`qa.py`、`db.py`、`qaStore.js`、`QA.vue`、`Layout.vue`。评估 / 大纲任务本来就是 worker 后台跑，行为不变。
+
+### 2026-09-07 · 结果页标签拉齐左右
+
+**问题**：综合总览、诊断报告等标签挤在左边，底边和内容区左右不齐。
+**思路**：标签均分整行宽度，文字居中，第一项贴左、最后一项贴右。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 客观特征去掉总览标签
+
+**问题**：四个大组已经各自成页，总览 2×2 卡和标签重复，进客观特征还要再点一次。
+**思路**：删掉「总览」标签和四张卡。进客观特征默认打开授课内容。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 线上评估改回 v7.1 prompt + 客+五 5 分类 GB
+
+**问题**：前端视频评估走的是 v9 打分口径和四年 v9 训出的 GB。现在要对齐 v7.1：Judge 用 70 分软地板和教学效果预期效果兜底，总分用同一套客观特征+五维 5 分类，但必须在 v7.1 分数上训。
+**思路**：`eval_judge.j2` 去掉 v9 的严重度绑分与 90 分示范性证据门槛；生产规则恢复 70 分软地板。`LIVE_PROMPT_VERSION` 改成 `v7.1-goal-effect-fallback`。`make train-gb-live` 改读 `dataset/all_v7_1/training_gb.csv`，重写 `models/live/gb_obj_cls5.pkl`。v9 对照表和 `cache_v9` 保留，不接线上。
+**影响**：新评估任务的五维和总分都会变；已完成的旧任务结果不变。缺模型时先跑 `make train-gb-live`。
+
+### 2026-09-07 · 无课件说明并进标题行
+
+**问题**：灰色提示框单独占一行，和上面「已获得 n / 13 项」说的是同一件事。
+**思路**：跳过说明接到获得项数后面，去掉灰框。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 有课件时时间轴加大、质量条缩短
+
+**问题**：有课件那一版左边质量条占太宽，时间轴偏小；轴下四个数字挤成一行，不好扫。
+**思路**：中栏改成左窄右宽。质量条最多到列宽的 88%。有课件的时间轴加高。轴下四个指标带图标，排成一行。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 工具调度页按有无课件分两套
+
+**问题**：点进「工具调度」仍是课件 / 切换两段比例条，对不上有课件和无课件两张稿。
+**思路**：有课件时左边四条质量分布、右边切换时间轴。没课件时提示 7 项已跳过，改成全宽时间轴、分段频次图和停留环图。数字用黑色，明细跟声学页同一套五列表。新评估把 `dwell_samples` 写入 `raw_features.slides`，不进 Judge。
+**影响**：`Evaluation.vue`、`slide_features.py`、`tools_charts.py`、图表 API。
+
+### 2026-09-07 · 课堂视觉拉开区块间距
+
+**问题**：四个数字下面的分割线几乎贴着状态分布和结论；指标明细又没有分割线，和上面连在一起。
+**思路**：分割线到分布 / 结论留 28px。指标明细上方同样留空并加一条分割线。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 课堂视觉结论改成对号列表
+
+**问题**：「观测结论」标题和三条之间的分割线让右栏像另开了一节，和左边分布条不对齐。
+**思路**：去掉标题和分割线。每条左侧放对号图标，直接跟分布条顶对齐。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 课堂视觉去掉标题卡片，明细改成五列表
+
+**问题**：页内再写一遍「课堂视觉」、数字用红色还加竖线，分布和统计又套卡片，和授课内容 / 声学页不一致；横表也不好看明细。
+**思路**：标题留给标签栏。四个数字改黑色、去掉竖线。分布和结论不再画框。代表帧统计改成与声学页相同的指标 / 当前值 / 参考范围 / 状态 / 说明；展示用区间不进 Judge，没有区间的标事实观察。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 诊断摘要不再放进诊断报告
+
+**问题**：总览已经有三列摘要卡，诊断报告开头又把「〇、诊断摘要」复述一遍，像两份同一内容。
+**思路**：模型仍在同一轮写出摘要短句，解析进 `digest` 后从报告正文剔除。新任务入库就不带这一节；旧任务在报告页和导出时同样去掉。
+**影响**：`eval_report.j2`、`pipeline.py`、`evaluation.py` 导出、`Evaluation.vue`。
+
+### 2026-09-07 · 课堂视觉页按稿子重排
+
+**问题**：点进「课堂视觉」仍是通用比例条，对不上稿子里的大号占比、状态分布、观测结论和代表帧表。
+**思路**：单独排这一页。四个数字用看学生 / 有手势 / 板书或投影 / 抬头率高。三条分布用现有视觉特征，不另造指标；视线互斥，行为与媒介可重叠。结论按占比规则写，不进 Judge。表默认 8 项，其余展开。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 长停顿与等待样本卡放大靠拢
+
+**问题**：音高图右侧两张观察卡偏小，又被两列均分拉开，看起来空、散。
+**思路**：只放大声学页这一对：图标 72px、数字 36px。两卡左右并排、居中，间距 30px；显式 `flex-direction: row`，避免被格子的纵向 flex 竖排。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 提问等待图压到波形同高
+
+**问题**：等待图 PNG 比波形高，网格行被它撑开，左右第一行图对不齐。
+**思路**：这一行的高度只由左侧波形决定；等待图绝对定位铺满格子。画幅高度从 1.85 降到 1.45，少留上下空白。
+**影响**：`Evaluation.vue`、`audio_charts.py`。
+
+### 2026-09-07 · 声学页左右四行对齐
+
+**问题**：提问等待、分布条、两项观察卡都堆在右栏，和左侧波形 / 响度 / 音高对不齐；平均、中位数还占等待图上方一行。
+**思路**：改成四行网格。标题行把平均、中位数放在「提问等待」右侧。等待图与波形同行同高，分布条与响度同行，长停顿 / 等待样本与音高同行。等待 PNG 画幅改成和波形一样。
+**影响**：`Evaluation.vue`、`audio_charts.py`。
+
+### 2026-09-07 · 音高图纵轴按峰值撑开
+
+**问题**：音高变化把 Y 轴钉在 80–280 Hz，女声或重音峰值会被裁掉，看起来像线顶到框上。
+**思路**：默认仍是 80–280。曲线超出时按最高点上留约 8% 再取整刻度，最低点同理向下扩。
+**影响**：`audio_charts.py`。
+
+### 2026-09-07 · 长停顿与等待样本挪到 ASR 分布下
+
+**问题**：没有参考范围的两项还在表格下面，右侧 ASR 分布条底下空着。
+**思路**：长停顿次数、等待样本数改放到提问等待栏、ASR 置信度分布下面，表下不再重复。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 响度与音高改成上下排
+
+**问题**：响度、基频并排各占半栏，线挤、刻度看不清。
+**思路**：两张图改成和波形同宽、上下各占一行。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 声学页图表拉开间距、补全边距
+
+**问题**：响度/基频挤在波形下面各占半栏，刻度被裁；等待图强制画到 12 秒，样本都在 0 附近时上半空白很大，和左侧也不齐。
+**思路**：响度、基频改成与波形同宽竖排。三张音轨图加高一点，长停顿标签画进图内。等待纵轴按数据收，至少留到 7 秒好看见 3–6 秒绿带。分布条贴紧图下。
+**影响**：`audio_charts.py`、`Evaluation.vue`。
+
+### 2026-09-07 · 声学特征页排版对齐授课内容
+
+**问题**：声学页刚按独立稿做成标题、筛选标签、绿带红点表，和授课内容页（字幕、左右图、五列表、图标卡）不像一套。
+**思路**：去掉页内大标题和可判定/观察项切换。图改成与语速/提问条同一套左右栏。表改回指标 / 当前值 / 参考范围 / 状态 / 说明；没有区间的项仍用图标卡。波形和等待图保留。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 声学特征页改成稿子里的图+表
+
+**问题**：点进「声学特征」仍是声学比例条和时序表上下两截，对不上「声学与时序」稿（大号响度/信噪比/等待、波形与基频、等待样本、带区间位置的明细）。
+**思路**：该页单独排版。波形、响度、基频、等待样本用 matplotlib 按任务结果现画 PNG。新评估把音轨包络、响度/基频曲线、长停顿时刻和逐次等待写进 `raw_features`，不进 Judge。旧任务没有曲线时按均值示意，没有 `wait_samples` 则等待图留空。可判定项用绿带和红点标位置；长停顿次数、等待样本数只作观察项。展示用参考区间不进 Judge。
+**影响**：`Evaluation.vue`、`audio_features.py`、`timeline_features.py`、`ai_engine/evaluation/audio_charts.py`、`GET /api/evaluation/task/{id}/chart/{name}`、`scripts/draw_audio_page.py`。
+
+### 2026-09-07 · 大纲优化页文案改为原文微调 / 重构框架
+
+**问题**：标题说明仍写「结构化的优化版本」，模式名「灵活结构 / 固定框架」也不贴现在的两种做法。
+**思路**：说明改为强调融合 AI 辅助教学；页面与结果标签改成「原文微调」「重构框架」。API `prompt_mode` 不变。
+**影响**：`Syllabus.vue`。
+
+### 2026-09-07 · 大纲结果的下载与导出合成一个菜单
+
+**问题**：Markdown 结果同时有「下载 Markdown」和「导出」（Word/PDF），两个入口功能重叠。
+**思路**：只留「导出」，三项为 Markdown / Word / PDF，都走 `/export`。复制按钮保留。
+**影响**：`Syllabus.vue`。
+
+### 2026-09-07 · 大纲优化进度并进文件卡片
+
+**问题**：优化进行中文件卡和「优化进度」卡上下各一块，文件名重复，中间还隔着按钮区。
+**思路**：回看或进行中的任务只保留文件卡：文件名下面一条进度条，条下用一行说明当前步骤、完成或失败原因。停止放进卡片标题栏。独立进度卡删掉。
+**影响**：`Syllabus.vue`。
+
+### 2026-09-07 · 灵活结构补 Markdown 标题以免校验失败
+
+**问题**：灵活结构要求跟原文体例后，模型常按 Word/PDF 抽出的「课程概述」纯文本输出，没有 `#` 标题，前端报「Markdown 缺少标题结构」且无法导出。
+**思路**：提示词写明节名必须译成 `#` / `##` / `###`（这是 Markdown 编码，不是改目录）；生成后若仍无标题，给首行补 `#`，必要时再 LLM 最小修复。正文段落/列表规则不变。
+**影响**：`syllabus_optimize_markdown.j2`、`optimizer.py`、`test_syllabus_validation.py`。重启后端后重新优化。
+
+### 2026-09-07 · 灵活结构改为原文修订稿，保留体例与个人表述
+
+**问题**：灵活结构虽要求跟原目录，仍强制「知识内容用要点列表、每点 1 句」，模型会把课程概述里的引语、连贯段落改成标准条目，个人特点被抹掉。
+**思路**：灵活入口改成「同一份文档的有限增删」：目录同源、格式跟随原文（段落就段落、列表就列表），题记/引语/寄语必须保留；AI 与目标澄清按该节原有文体嵌入。固定框架仍用标准栏目，不改。
+**影响**：`syllabus_optimize_markdown.j2`、`test_syllabus_validation.py`。重启后端后重新优化才会生效。
+
+### 2026-09-07 · Markdown 大纲优化必须融入 AI 且灵活结构跟原目录
+
+**问题**：页面默认走 Markdown 灵活结构，提示词把 AI 辅助教学写成「原文未提则省略」，优化结果几乎不改课程设计；「灵活」也只写了保留章节，模型仍常套成通用栏目模板。
+**思路**：两份 Markdown 入口改为必写教师端助教、学生端助学、考核规范，并嵌进教学目标 / 教学安排 / 考核，而不是可删附录。灵活结构把「输出目录 = 原文目录」提到最高优先级，禁止改写成「课程信息 / 第 N 章」。固定框架模板同步把各章教学形式、AI 政策与「AI 辅助教学」节改为必写。
+**影响**：`syllabus_optimize_markdown.j2`、`syllabus_optimize_markdown_schema.j2`、`syllabus_markdown_schema.md`、`test_syllabus_validation.py`。重启后端后重新优化才会生效；旧任务仍是旧报告。
+
+### 2026-09-07 · SQLite 导入改为整条拷贝
+
+**问题**：可选导入只 `create_task`，历史评估会变成空的排队任务，结果和大纲任务都丢了。
+**思路**：按原 ID 写入状态、进度、结果 JSON 和大纲任务/记录，并挂到指定用户。仍不改 `data/app.db`。
+**影响**：`scripts/import_sqlite.py`。本机已把旧记录导入管理员账号。
+
+### 2026-09-07 · db-up 不再强依赖 Docker
+
+**问题**：开发机 Homebrew PostgreSQL 已经在 5432 监听，`make db-up` 却去拉 `postgres:16`，Docker 没开就失败。
+**思路**：先探测本机 5432；已经就绪就创建/复用 `pku2` 库，只有端口空闲时才启动 compose。
+**影响**：`scripts/ensure_postgres.sh`、`Makefile` 的 `db-up`。
+
+### 2026-09-07 · PostgreSQL 多用户与可切换认证
+
+**问题**：未提交的 SQLite + Bearer 登录只够单机内测，密码和 Session 原文落库，也没有管理员后台、文件隔离和私有向量过滤。后面要接北大统一身份认证，但不能把本地账号自动合并过去。
+**思路**：业务状态迁到 PostgreSQL，用户与登录身份分开。两种认证都签发同一套 HttpOnly Session Cookie，数据库只存令牌哈希。本地注册只能得到普通用户；管理员走安全命令或 SSO 白名单。Chroma 的 `eval_reports` 写入和查询都带 `user_id`。原 `data/app.db` 不改不删，导入必须显式指定归属用户。
+**影响**：新增 Alembic、`docker-compose.yml`、`/admin`、认证 provider；`db.py` 改为 SQLAlchemy；前端改为 Cookie + `/api/auth/me`。北大 SSO 真实协议仍未接入。
+
+### 2026-09-07 · 指标明细分成可判定与观察性
+
+**问题**：没有参考范围的十项挤成小号数字，看不出「这是事实不是评分」；有区间的项也只靠文字，位置对不上区间。
+**思路**：有参考范围的项仍用五列表。没有区间的项不进表，左侧环形图画无提问段落占比，右侧图标数字卡。表上的建议区间仍只给展示，不进 Judge。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 授课内容页去掉文本特征标题
+
+**问题**：上面标签已经是「授课内容」，页内再写「文本特征」重复；提问条偏粗，表下十个数字也贴表格太近。
+**思路**：去掉该标题，只留已获得项数。语速折线画矮一档；提问条图不再按自身高度撑开格子，而是在折线图框里 contain 居中。图与指标明细贴紧并加分割线。
+**影响**：`Evaluation.vue`、`pace_charts.py`。
+
+### 2026-09-07 · 指标明细只保留有参考范围的行
+
+**问题**：口头禅次数、案例引入、年份引用等没有对照区间，硬塞进表里「参考范围 / 状态 / 说明」三列都是空的，表被拉得很长。
+**思路**：只有 PACE_GUIDE 或 rubric `ideal` 的项留在表里。其余用顶部语速/提问那种数字+标签，字号略小、一行五个。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 授课内容与声学特征重新分组
+
+**问题**：时序特征（等待、转写置信）挂在「授课节奏」里，和语速/提问稿不是一类；标签也容易理解成整堂课的快慢，而不是讲了什么。
+**思路**：标签改成「授课内容」，只留文本特征。时序并进「声学特征」，总览卡 KPI 跟着走：内容卡看提问结构，声学卡看信噪比/静音和等待。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-07 · 最简注册登录，历史数据归到种子账号
+
+**问题**：局域网里谁都能看问答、评估、大纲；「我的」只存在本机 `localStorage`，换设备就丢。后面还要接北大统一身份认证，所以先做最小可用的账号，不要做成以后拆不掉的体系。
+**思路**：用工号+密码注册/登录，令牌放 SQLite。业务表加 `user_id`，列表和读写都按当前用户过滤。启动时若没有工号 `2400017801`，写入黄珂凡这个种子账号，并把还没有主人的旧记录挂过去。资料改存服务端；注册只要姓名/工号/院系/邮箱/手机/密码，课程、简介、头像登录后再改。鉴权集中在 `auth.py`，以后换 IAAA 只动这一层。
+**影响**：`backend/app/api/auth.py`、`core/auth.py`、`core/security.py`、`core/db.py`、三个业务 API、前端 `Login.vue` / `authStore.js` / 路由守卫。旧的 `profileStore.js` 删除。
+
+### 2026-09-07 · 授课节奏明细改成稿子里的图+表
+
+**问题**：点进「授课节奏」仍是和其他组一样的比例条，对不上文本特征稿（大号语速/提问、语速折线、提问结构条、指标明细表）。页面里手写 SVG 折线也不如出图干净。
+**思路**：该页单独排版。语速折线和提问条用 matplotlib 按任务结果现画 PNG；没有音轨采样，点来自分段转写。表上的提问次数、开放性问题等参考范围只给展示，不进 Judge。
+**影响**：`Evaluation.vue`、`ai_engine/evaluation/pace_charts.py`、`GET /api/evaluation/task/{id}/chart/{name}`、`scripts/draw_pace_page.py`；需 `matplotlib`。
+
+### 2026-09-07 · 客观特征总览改成四个大组
+
+**问题**：七组来源标签和总览卡的名字对不上，教师要自己把文本/时序、课件/切换拼在一起；卡内图也偏示意。
+**思路**：标签改成总览 + 授课节奏 / 声学特征 / 课堂视觉 / 工具调度。卡按稿子做成一整块 2×2：大号主指标、轴上折线/波形/占比条/时间轴、底下一排 KPI。波形没有采样，用声学数字生成；切换时刻写入 `slide_change_times` 供新任务画点。说话人未划进四组，有数据才单独露标签。
+**影响**：`Evaluation.vue`、`slide_features.py`、`scripts/draw_feat_overview.py`、`check_features.py`。
+
+### 2026-09-06 · 大纲页去掉粘贴文本
+
+**问题**：上传对齐评估页之后，粘贴框还在文件入口下面，教师实际只传文档，多一个入口容易分心。
+**思路**：页面只保留文件上传；粘贴接口仍在后端，需要时可用 curl。
+**影响**：`Syllabus.vue`。
+
+### 2026-09-06 · 评估导出补上标题和日期
+
+**问题**：导出的 Markdown / Word / PDF 直接从「一、总体评价」起笔，打开文件看不出是哪堂课、哪天评的、分数多少。
+**思路**：导出时在正文前拼一页头（标题、生成日期、综合得分、时长、评估方式、对照材料），三种格式共用；页面展示和库里的 `report` 不动。
+**影响**：`evaluation.py` 的 `_build_export_markdown`。
+
+### 2026-09-06 · 大纲页去掉 XML 入口，上传对齐评估页
+
+**问题**：四个模式里两个 XML 对教师没有用，还占选择；上传是旧式卡片+选完即提交，和评估页的拖入/就绪/再开始不一致。
+**思路**：页面只留灵活结构、固定框架两个 Markdown 选项。上传改成评估页同款虚线拖入框和文件卡片，选完后点「开始优化」才提交；粘贴文本降为选填。XML 仍走 API，不删后端。
+**影响**：`Syllabus.vue`。
+
+### 2026-09-06 · 评估报告可导出 Markdown / Word / PDF
+
+**问题**：结果页「导出报告」只有本地下 Markdown，按钮还是白底红字，和页内主操作不一致；教师也要 Word / PDF。
+**思路**：按钮改成红底白字。下拉增加三种格式，走 `GET /api/evaluation/task/{id}/export`，转换直接调用已有的 `export_syllabus`，不另写转换链路。
+**影响**：`evaluation.py`、`client.js`、`Evaluation.vue`。Word / PDF 与大纲导出一样依赖 `pandoc` 或 LibreOffice。
+
+### 2026-09-06 · 大纲历史条目去掉摘要行
+
+**问题**：对齐评估页时照搬了「分数 · 等级」那一行，大纲任务显示成课程名/校验结果，像内容介绍，占地方也没必要。
+**思路**：已完成条目只留文件名、状态和时间；进行中仍显示步骤进度。
+**影响**：`Syllabus.vue`。
+
+### 2026-09-06 · 大纲优化历史任务对齐评估页
+
+**问题**：大纲优化的历史是页面底部表格，和评估/问答的左侧任务列表不像一套产品；进行中的任务也不在历史里，只能看已落库的记录。
+**思路**：左侧改成与评估页相同的推开式历史任务（搜索、状态筛选、进行中/今天/更早分组、分割线条目）。数据源从 `syllabus_records` 改为 `syllabus_tasks`，点条目回看进度或结果。补上 `DELETE /api/syllabus/task/{id}`，进行中先停止再删。
+**影响**：`Syllabus.vue`、`Layout.vue`（大纲页铺满）、`client.js`、`syllabus.py`、`db.py`。
 
 ### 2026-09-06 · 评估完成卡片通栏
 
@@ -1146,6 +1647,25 @@ make install-local                      # 装 pyannote.audio
 
 **问题**：问答会话能删，评估历史只能停、不能清掉失败或旧任务。
 **思路**：列表条目加垃圾桶图标，确认后调已有 `DELETE /api/evaluation/task/{id}`；进行中的先停止再删。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-06 · 客观特征标签与已获得项数同行
+
+**问题**：总览卡上方还有一行灰色说明；「已获得 n 项」单独占右上，和标签错行。
+**思路**：去掉说明；项数和「说话人未启用」收到标签行右侧。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-06 · 客观特征页去掉「事实层」标题
+
+**问题**：页内再写一遍「客观特征（事实层）」，和上面标签重复。
+**思路**：只留来源说明和已获得项数。
+**影响**：`Evaluation.vue`。
+
+### 2026-09-06 · 客观特征页改成总览折叠卡
+
+**问题**：七组特征平铺，语速、视线、切换要自己翻表才能形成印象。
+**思路**：先总览四张卡（讲授节奏、声音与转写、课堂视觉、课件切换），点标签或
+「查看该组特征」再进原来的七组比例条。数据解读用区间和阈值拼短句，不另调模型。
 **影响**：`Evaluation.vue`。
 
 ### 2026-09-06 · 五维表相对雷达与标签垂直居中

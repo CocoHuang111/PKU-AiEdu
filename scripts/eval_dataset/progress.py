@@ -33,10 +33,14 @@ def step_label(step: str) -> str:
 
 def format_extra(step: str, detail: dict[str, Any] | None) -> str:
     detail = detail or {}
+    if step == "asr" and detail.get("phase") == "punctuate":
+        return "补标点"
     if step == "asr" and detail.get("total_sec"):
         done = int(detail.get("done_sec") or 0)
         total = int(detail["total_sec"])
         return f"{done // 60}/{max(total // 60, 1)} 分钟"
+    if step == "slide_detection" and detail.get("phase") == "roi":
+        return "定位投影"
     if step == "vlm_describe" and detail.get("total"):
         suffix = " 课件" if detail.get("kind") == "courseware" else ""
         return f"{int(detail.get('done') or 0)}/{int(detail['total'])}{suffix}"
@@ -44,7 +48,7 @@ def format_extra(step: str, detail: dict[str, Any] | None) -> str:
         return str(detail["dimension"])
     if step == "parse_materials" and detail.get("kind"):
         return str(detail["kind"])
-    skip = {"warning", "done", "total", "done_sec", "total_sec", "dimension", "kind"}
+    skip = {"warning", "done", "total", "done_sec", "total_sec", "dimension", "kind", "phase"}
     return " ".join(f"{k}={v}" for k, v in detail.items() if k not in skip and v is not None)
 
 

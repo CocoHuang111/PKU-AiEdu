@@ -1,29 +1,56 @@
 <template>
   <el-container class="shell" direction="vertical">
     <header class="nav">
-      <div class="brand">
-        北大问教
-        <span>PKU-AskEdu 2.0</span>
+      <div class="brand">北大问教</div>
+      <div class="nav-right">
+        <el-menu
+          :default-active="$route.path"
+          :ellipsis="false"
+          router
+          mode="horizontal"
+          class="menu"
+        >
+          <el-menu-item index="/qa">智能问答</el-menu-item>
+          <el-menu-item index="/evaluation">教学评估</el-menu-item>
+          <el-menu-item index="/syllabus">大纲优化</el-menu-item>
+          <el-menu-item index="/profile">我的</el-menu-item>
+        </el-menu>
+        <div class="who">
+          <router-link v-if="isAdmin()" class="admin-link" to="/admin">后台</router-link>
+          <el-button class="logout" text @click="onLogout">退出</el-button>
+        </div>
       </div>
-      <el-menu
-        :default-active="$route.path"
-        :ellipsis="false"
-        router
-        mode="horizontal"
-        class="menu"
-      >
-        <el-menu-item index="/qa">智能问答</el-menu-item>
-        <el-menu-item index="/evaluation">教学评估</el-menu-item>
-        <el-menu-item index="/syllabus">大纲优化</el-menu-item>
-        <el-menu-item index="/profile">我的</el-menu-item>
-      </el-menu>
     </header>
 
-      <el-main class="main" :class="{ flush: $route.path === '/qa' || $route.path === '/evaluation' }">
-        <router-view />
+      <el-main class="main" :class="{ flush: $route.path === '/qa' || $route.path === '/evaluation' || $route.path === '/syllabus' }">
+        <router-view v-slot="{ Component }">
+          <keep-alive include="QA">
+            <component :is="Component" />
+          </keep-alive>
+        </router-view>
       </el-main>
   </el-container>
 </template>
+
+<script setup>
+import { useRouter } from 'vue-router'
+import { authApi } from '../api/client'
+import { clearAuth, isAdmin } from '../authStore'
+import { resetQa } from '../qaStore'
+
+const router = useRouter()
+
+async function onLogout() {
+  try {
+    await authApi.logout()
+  } catch {
+    /* 本地清掉即可 */
+  }
+  clearAuth()
+  resetQa()
+  router.replace('/login')
+}
+</script>
 
 <style scoped>
 .shell {
@@ -46,15 +73,36 @@
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
 }
-.brand span {
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  color: rgba(255, 255, 255, 0.55);
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+.who {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  flex-shrink: 0;
+}
+.admin-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  text-decoration: none;
+  margin-right: 8px;
+}
+.admin-link:hover {
+  color: #fff;
+}
+.logout {
+  color: rgba(255, 255, 255, 0.72) !important;
+  padding: 0 8px;
+}
+.logout:hover {
+  color: #fff !important;
 }
 
 .menu {

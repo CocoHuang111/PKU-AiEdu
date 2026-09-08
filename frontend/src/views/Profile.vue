@@ -26,11 +26,11 @@
       <template #header>
         <div class="card-header">
           <span class="card-title">基本资料</span>
-          <span class="hint">仅保存在本机浏览器，换设备或清缓存后需重新填写</span>
+          <span class="hint">保存在服务端，登录后可在各设备查看</span>
         </div>
       </template>
 
-      <el-form :model="form" label-width="88px" class="form">
+      <el-form :model="form" label-width="88px" class="form" v-loading="loading">
         <el-row :gutter="20">
           <el-col :xs="24" :sm="12">
             <el-form-item label="姓名">
@@ -39,7 +39,7 @@
           </el-col>
           <el-col :xs="24" :sm="12">
             <el-form-item label="工号">
-              <el-input v-model="form.staffId" maxlength="32" placeholder="选填" />
+              <el-input :model-value="staffIdDisplay" disabled placeholder="登录工号" />
             </el-form-item>
           </el-col>
           <el-col :xs="24" :sm="12">
@@ -88,23 +88,56 @@
         </el-form-item>
 
         <el-form-item>
-          <el-button type="primary" @click="save">保存</el-button>
-          <el-button @click="reset">恢复上次保存</el-button>
-          <el-button text type="danger" @click="clearAll">清空</el-button>
+          <el-button type="primary" :loading="saving" @click="save">保存</el-button>
+          <el-button @click="reload">重新加载</el-button>
+          <el-button
+            v-if="authState.config.auth_mode === 'local'"
+            @click="showPassword = true"
+          >
+            修改密码
+          </el-button>
         </el-form-item>
       </el-form>
     </el-card>
+
+    <el-dialog v-model="showPassword" title="修改密码" width="400px">
+      <el-form label-position="top">
+        <el-form-item label="原密码">
+          <el-input v-model="passwordForm.old_password" type="password" show-password />
+        </el-form-item>
+        <el-form-item label="新密码">
+          <el-input v-model="passwordForm.new_password" type="password" show-password />
+        </el-form-item>
+        <el-form-item label="确认新密码">
+          <el-input v-model="passwordForm.confirm_password" type="password" show-password />
+        </el-form-item>
+      </el-form>
+      <template #footer>
+        <el-button @click="showPassword = false">取消</el-button>
+        <el-button type="primary" :loading="savingPassword" @click="changePassword">保存</el-button>
+      </template>
+    </el-dialog>
   </div>
 </template>
 
 <script setup>
-import { computed, reactive } from 'vue'
-import { ElMessage, ElMessageBox } from 'element-plus'
-import { loadProfile, saveProfile, emptyProfile } from '../profileStore'
+import { computed, onMounted, reactive, ref } from 'vue'
+import { ElMessage } from 'element-plus'
+import { authApi } from '../api/client'
+import { authState, setUser } from '../authStore'
 
 const TITLES = ['教授', '副教授', '讲师', '助教', '研究员', '副研究员', '其他']
 
-const form = reactive(loadProfile())
+const loading = ref(false)
+const saving = ref(false)
+const showPassword = ref(false)
+const savingPassword = ref(false)
+const form = reactive(emptyForm())
+const passwordForm = reactive({
+  old_password: '',
+  new_password: '',
+  confirm_password: '',
+})
 
 const initials = computed(() => {
   const name = (form.name || '').trim()
@@ -115,44 +148,106 @@ const headline = computed(() => {
   return [form.title, form.department].filter(Boolean).join(' · ')
 })
 
-function onAvatarChange(file) {
+const staffIdDisplay = computed(() => {
+  return (form.username || form.staff_id || '').trim()
+})
+
+function emptyForm() {
+  return {
+    name: '',
+    username: '',
+    staff_id: '',
+    title: '',
+    department: '',
+    email: '',
+    phone: '',
+    courses: '',
+    bio: '',
+    avatar: '',
+  }
+}
+
+function applyUser(user) {
+  Object.assign(form, emptyForm(), user || {})
+}
+
+async function reload() {
+  loading.value = true
+  try {
+    const user = await authApi.me()
+    applyUser(user)
+    setUser(user)
+  } catch {
+    /* 401 时拦截器会跳登录 */
+  } finally {
+    loading.value = false
+  }
+}
+
+async function onAvatarChange(file) {
   const raw = file.raw
   if (!raw) return
   if (raw.size > 2 * 1024 * 1024) {
     ElMessage.warning('头像请小于 2MB')
     return
   }
-  const reader = new FileReader()
-  reader.onload = () => {
-    form.avatar = String(reader.result || '')
-  }
-  reader.readAsDataURL(raw)
-}
-
-function save() {
-  saveProfile(form)
-  ElMessage.success('已保存到本机')
-}
-
-function reset() {
-  Object.assign(form, loadProfile())
-  ElMessage.info('已恢复上次保存的内容')
-}
-
-async function clearAll() {
   try {
-    await ElMessageBox.confirm('确定清空本机保存的个人信息？', '清空确认', {
-      type: 'warning',
-      confirmButtonText: '清空',
-      cancelButtonText: '取消',
-    })
+    const user = await authApi.uploadAvatar(raw)
+    applyUser(user)
+    setUser(user)
+    ElMessage.success('头像已更新')
   } catch {
+    /* 错误已由 axios 拦截器提示 */
+  }
+}
+
+async function save() {
+  if (!form.name.trim()) {
+    ElMessage.warning('请填写姓名')
     return
   }
-  Object.assign(form, emptyProfile())
-  saveProfile(form)
-  ElMessage.success('已清空')
+  saving.value = true
+  try {
+    const user = await authApi.updateMe({
+      name: form.name.trim(),
+      department: form.department.trim(),
+      email: form.email.trim(),
+      phone: form.phone.trim(),
+      title: form.title || '',
+      courses: form.courses || '',
+      bio: form.bio || '',
+    })
+    applyUser(user)
+    setUser(user)
+    ElMessage.success('已保存')
+  } catch {
+    /* 错误已由 axios 拦截器提示 */
+  } finally {
+    saving.value = false
+  }
 }
+
+async function changePassword() {
+  if (passwordForm.new_password !== passwordForm.confirm_password) {
+    ElMessage.warning('两次输入的密码不一致')
+    return
+  }
+  savingPassword.value = true
+  try {
+    await authApi.changePassword({ ...passwordForm })
+    ElMessage.success('密码已更新')
+    showPassword.value = false
+    passwordForm.old_password = ''
+    passwordForm.new_password = ''
+    passwordForm.confirm_password = ''
+  } catch {
+    /* 错误已由 axios 拦截器提示 */
+  } finally {
+    savingPassword.value = false
+  }
+}
+
+onMounted(reload)
 </script>
 
 <style scoped>

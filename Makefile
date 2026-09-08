@@ -1,4 +1,4 @@
-.PHONY: help install install-local backend frontend ingest ingest-reset salon salon-transcribe salon-structure check check-features check-syllabus check-dataset check-expert-rules expert-rules-ingest expert-rules-extract expert-rules-distill check-gb train-gb train-gb-2018 train-gb-2018-v7 train-gb-2018-v4 train-gb-2018-v7-v9 train-gb-all-v7-v9 train-gb-v9-regression-experiments train-gb-live rejudge-2018-v7-effect rejudge-2018-v9 judge-overall-2018 smoke clean
+.PHONY: help install install-local backend frontend ingest ingest-reset salon salon-transcribe salon-structure check check-features check-syllabus check-dataset check-expert-rules expert-rules-ingest expert-rules-extract expert-rules-distill check-gb train-gb train-gb-2018 train-gb-2018-v7 train-gb-2018-v4 train-gb-2018-v7-v9 train-gb-all-v7-v9 train-gb-v9-regression-experiments train-gb-live rejudge-2018-v7-effect rejudge-2018-v9 judge-overall-2018 smoke clean db-up db-down db-migrate db-downgrade create-admin test-auth
 
 PY ?= python
 BACKEND_PORT ?= 8010
@@ -24,13 +24,19 @@ help:
 	@echo "  make train-gb-2018-v7-v9  2018 v7.1 / v9 各训六种 GB 并对照"
 	@echo "  make train-gb-all-v7-v9  四年拼表后 v7.1 / v9 各训六种 GB（2022 留出）"
 	@echo "  make train-gb-v9-regression-experiments  v9 四种小样本回归实验（独立产物）"
-	@echo "  make train-gb-live  四年 v9 全量客+五 5 分类 → 线上总分模型"
+	@echo "  make train-gb-live  四年 v7.1 全量客+五 5 分类 → 线上总分模型"
 	@echo "  make rejudge-2018-v7-effect  v7.1 恢复教学效果预期效果兜底"
 	@echo "  make rejudge-2018-v9  v9 严重度校准与五维诊断报告"
 	@echo "  make judge-overall-2018 2018 测试集五维+客观特征 LLM 盲评总分"
 	@echo "  make smoke          打分链路冒烟测试（会调大模型）"
 	@echo "  make backend        启动 FastAPI     http://localhost:$(BACKEND_PORT)/docs"
 	@echo "  make frontend       启动 Vite        http://localhost:5174"
+	@echo "  make db-up          准备 PostgreSQL（本机已有则复用；否则才用 Docker）"
+	@echo "  make db-down        停止 Docker 里的 PostgreSQL（不影响本机 brew 服务）"
+	@echo "  make db-migrate     Alembic 升级到最新"
+	@echo "  make db-downgrade   Alembic 回退一个版本"
+	@echo "  make create-admin   创建首个本地管理员"
+	@echo "  make test-auth      多用户 / 认证 / 隔离测试（需 PostgreSQL）"
 	@echo "  make ingest         构建向量库（增量）"
 	@echo "  make ingest-reset   重建向量库（清空后重建）"
 	@echo "  make salon          沙龙视频 → 转写 + 教学知识 Markdown"
@@ -114,6 +120,25 @@ judge-overall-2018:
 
 smoke:
 	$(PY) -m scripts.smoke_test
+
+db-up:
+	sh scripts/ensure_postgres.sh
+
+db-down:
+	docker compose down 2>/dev/null || true
+	@echo "本机 Homebrew PostgreSQL 不会被这条命令关掉。如需停止：brew services stop postgresql@17"
+
+db-migrate:
+	$(PY) -m alembic upgrade head
+
+db-downgrade:
+	$(PY) -m alembic downgrade -1
+
+create-admin:
+	$(PY) -m scripts.create_admin --username $${ADMIN_USERNAME:-admin} --display-name $${ADMIN_DISPLAY_NAME:-管理员}
+
+test-auth:
+	$(PY) -m unittest scripts.test_auth_system
 
 backend:
 	$(PY) -m uvicorn backend.app.main:app --reload --port $(BACKEND_PORT)

@@ -131,7 +131,7 @@ class FrozenRuleTest(unittest.TestCase):
         self.assertEqual(count, 1)
         self.assertEqual([r["rule_id"] for r in frozen["rules"]], ["approved_rule"])
 
-    def test_freeze_removes_legacy_70_point_floor(self):
+    def test_freeze_keeps_v7_1_70_point_floor(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             candidate = root / "candidate.yaml"
@@ -160,10 +160,9 @@ class FrozenRuleTest(unittest.TestCase):
             action = yaml.safe_load(output.read_text(encoding="utf-8"))["rules"][0][
                 "scoring_action"
             ]
-        self.assertNotIn("不可作为导致该维度低于70分", action)
-        self.assertIn("不存在70分或其他固定下限", action)
-        self.assertIn("多个相互独立且证据充分的问题必须累计", action)
-        self.assertIn("允许导致该维度低于60分", action)
+        self.assertIn("不可作为导致该维度低于70分", action)
+        self.assertIn("允许导致该维度低于70分", action)
+        self.assertNotIn("不存在70分或其他固定下限", action)
 
     def test_freeze_rejects_non_five_dimension(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -383,7 +382,7 @@ class JudgeObservabilityTest(unittest.TestCase):
 
 
 class V9PromptContractTest(unittest.TestCase):
-    def test_judge_prompt_binds_severity_and_removes_score_floor(self):
+    def test_judge_prompt_is_v7_1_without_v9_calibration(self):
         dimension = next(
             d for d in get_rubric()["dimensions"] if d["key"] == "teaching_content"
         )
@@ -394,11 +393,12 @@ class V9PromptContractTest(unittest.TestCase):
             expert_lessons="",
             expert_rules=[],
         )
-        self.assertIn("不存在 70 分或其他固定分数下限", prompt)
-        self.assertIn("`ordinary_issue`：60–79", prompt)
-        self.assertIn("`major_issue`：0–59", prompt)
-        self.assertIn("90 分以上必须有**示范性证据**", prompt)
-        self.assertIn("证据充分的问题必须累计", prompt)
+        self.assertIn("## 评分尺度", prompt)
+        self.assertIn("不可观察不等于表现差", prompt)
+        self.assertNotIn("v9 分数校准", prompt)
+        self.assertNotIn("不存在 70 分或其他固定分数下限", prompt)
+        self.assertNotIn("`ordinary_issue`：60–79", prompt)
+        self.assertNotIn("90 分以上必须有**示范性证据**", prompt)
 
     def test_report_prompt_reads_primary_issue_and_requires_five_dimensions(self):
         prompt = render_prompt(
@@ -456,6 +456,22 @@ class V9PromptContractTest(unittest.TestCase):
         self.assertEqual(digest["strengths"][0], "课件图表清楚，案例能把概念说透")
         self.assertEqual(len(digest["issues"]), 2)
         self.assertEqual(digest["suggestions"][1], "每讲完一块就抬头看学生")
+
+    def test_strip_report_digest_keeps_body(self):
+        from ai_engine.evaluation.pipeline import strip_report_digest
+
+        report = """## 〇、诊断摘要
+
+### 突出优点
+- 课件图表清楚
+
+## 一、总体评价
+展开论述。
+"""
+        body = strip_report_digest(report)
+        self.assertNotIn("诊断摘要", body)
+        self.assertIn("## 一、总体评价", body)
+        self.assertIn("展开论述", body)
 
 
 if __name__ == "__main__":
