@@ -33,7 +33,7 @@ echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 按照 Docker 官方 Ubuntu 安装方式配置 apt 仓库并安装：
 
 ```bash
-sudo apt install -y ca-certificates curl
+sudo apt install -y ca-certificates curl git
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
@@ -60,27 +60,36 @@ sudo usermod -aG docker "$USER"
 - TCP/UDP 443：HTTPS 与 HTTP/3。
 - 不要开放 5432、8010；PostgreSQL 和后端都只在 Docker 内部网络访问。
 
-## 三、传输项目
+## 三、从 GitHub 获取项目
 
-当前仓库没有 Git 远程地址。推荐先在本机提交准备上线的代码，再只打包 Git 跟踪的
-文件，这样不会带上 `.env`、`data/`、测试视频、历史数据库和旧向量索引：
+项目远程仓库为：
 
-```bash
-git status
-git add Dockerfile Dockerfile.frontend .dockerignore compose.production.yml deploy/Caddyfile .env.production.example DEPLOYMENT.md backend/app/workers/tasks.py
-git commit -m "Add production deployment for internal beta"
-git archive --format=tar.gz --output=pku2-deploy.tar.gz HEAD
-scp pku2-deploy.tar.gz 用户名@服务器公网IP:/tmp/
-```
+- HTTPS：`https://github.com/CocoHuang111/PKU_AskEdu.git`
+- SSH：`git@github.com:CocoHuang111/PKU_AskEdu.git`
 
-在服务器解压：
+如果仓库是公开的，直接在服务器使用 HTTPS 克隆：
 
 ```bash
 sudo mkdir -p /opt/pku2
 sudo chown "$USER":"$USER" /opt/pku2
-tar -xzf /tmp/pku2-deploy.tar.gz -C /opt/pku2
+git clone https://github.com/CocoHuang111/PKU_AskEdu.git /opt/pku2
 cd /opt/pku2
+git branch --show-current
 ```
+
+最后一条命令应显示 `main`。如果仓库是私有的，先把服务器 SSH 公钥添加为 GitHub
+Deploy Key，再使用 SSH 地址：
+
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/pku2_deploy -C "pku2-deploy"
+cat ~/.ssh/pku2_deploy.pub
+GIT_SSH_COMMAND="ssh -i $HOME/.ssh/pku2_deploy -o IdentitiesOnly=yes" git clone git@github.com:CocoHuang111/PKU_AskEdu.git /opt/pku2
+cd /opt/pku2
+git config core.sshCommand "ssh -i $HOME/.ssh/pku2_deploy -o IdentitiesOnly=yes"
+```
+
+Deploy Key 只需要仓库读取权限，不要开启写权限。Git 只会拉取已经提交的仓库内容，
+不会带上本机被 `.gitignore` 排除的 `.env`、历史上传视频、数据库和旧向量索引。
 
 ## 四、配置公网 IP 与密钥
 
@@ -161,13 +170,22 @@ docker compose --env-file .env.production -f compose.production.yml logs --tail=
 
 ## 六、发布更新
 
-确认没有视频或大纲任务正在处理后，把新版归档上传并覆盖解压到 `/opt/pku2`，然后：
+先在开发电脑完成修改、测试并推送到远程仓库。确认服务器上没有视频或大纲任务正在
+处理后，在服务器检查并拉取 `main` 的最新提交：
 
 ```bash
 cd /opt/pku2
+git status --short
+git fetch origin main
+git log --oneline HEAD..origin/main
+git pull --ff-only origin main
 docker compose --env-file .env.production -f compose.production.yml up -d --build
 docker compose --env-file .env.production -f compose.production.yml ps
 ```
+
+`git status --short` 正常情况下不应显示任何代码改动；`.env.production` 已被忽略，
+不会被拉取覆盖。如果服务器代码有未提交修改，应先停止更新并查明来源，不要直接强制
+覆盖。
 
 命令不会删除 PostgreSQL、上传文件、向量索引、Whisper 缓存或 HTTPS 证书，它们存放在
 固定命名的 Docker volumes 中。不要执行 `docker compose down -v`。
