@@ -79,9 +79,9 @@ make frontend    # http://localhost:5174
 
 浏览器打开 http://localhost:5174 先登录（`#/login`），通过后进入教学智能问答（`#/qa`）。
 
-Ubuntu 服务器内测部署见 [`DEPLOYMENT.md`](DEPLOYMENT.md)。生产部署使用
-`compose.production.yml`，会建立全新的 PostgreSQL 和 Chroma 数据，不需要复制本机
-的历史任务、上传文件或旧向量索引。
+Ubuntu 服务器内测部署见 [`DEPLOYMENT.md`](DEPLOYMENT.md)：用固定公网 IP 走 HTTPS，
+不必先买域名。生产部署使用 `compose.production.yml`，会建立全新的 PostgreSQL 和
+Chroma 数据，不需要复制本机的历史任务、上传文件或旧向量索引。
 
 `AUTH_MODE=local` 时用工号密码注册/登录；管理员只能用 `python -m scripts.create_admin` 或已有管理员提升，注册接口拿不到 `admin`。
 `AUTH_MODE=pku_sso` 时本地注册和登录关闭，登录页只显示北京大学统一身份认证。本地账号不会自动合并到北大账号。
@@ -1280,6 +1280,12 @@ make install-local                      # 装 pyannote.audio
 ## 十三、变更记录
 
 倒序排列，最新在最上面。每条写清楚**为什么这么改**。
+
+### 2026-09-08 · 内测用公网 IP 上 HTTPS，不迁历史数据
+
+**问题**：内测没有域名，又不能把 `APP_ENV=production` 的 Secure Cookie 配在裸 HTTP 上。
+**思路**：Caddy 2.11 用 Let's Encrypt `shortlived` 给固定公网 IP 签证书；Docker 在服务器上建空库和空向量索引，不拷本机任务。评估默认并发 1，避免 2 核机器被多个 Whisper 打满。
+**影响**：`DEPLOYMENT.md`、`compose.production.yml`、`deploy/Caddyfile`、`EVALUATION_MAX_CONCURRENCY`。
 
 ### 2026-09-08 · 顶栏「我的」旁不再显示姓名
 

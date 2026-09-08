@@ -1,8 +1,12 @@
-# 北大问教 2.0：2 核 8GB 服务器内测部署
+# 北大问教 2.0：2 核 8GB 服务器公网 IP 内测部署
 
 本方案建立全新的业务数据库和向量索引，不迁移本机历史评估任务、问答任务、
 大纲优化任务、上传视频或历史评估报告。会随代码带上知识库原始语料与线上 GB
 评分模型，并在服务器上重新生成知识库索引。
+
+不要求提前购买域名。Caddy 2.11 会使用 Let's Encrypt 的 `shortlived` ACME profile
+为固定公网 IP 申请浏览器可信的 HTTPS 证书，并自动续签。用户最终通过
+`https://服务器公网IP` 访问。
 
 ## 一、运行边界
 
@@ -78,11 +82,10 @@ tar -xzf /tmp/pku2-deploy.tar.gz -C /opt/pku2
 cd /opt/pku2
 ```
 
-## 四、配置域名与密钥
+## 四、配置公网 IP 与密钥
 
-把域名的 A 记录解析到服务器公网 IP。DNS 生效后，在服务器创建生产环境配置。
-正式内测需要域名：生产环境 Session 使用 Secure Cookie，不能把 `http://公网IP`
-作为登录入口。
+确认实例已经绑定固定公网 IPv4，然后在服务器创建生产环境配置。不要填写内网 IP；
+如果云厂商会在关机后更换公网 IP，应先改为固定/弹性公网 IP。
 
 ```bash
 cd /opt/pku2
@@ -99,7 +102,7 @@ nano .env.production
 
 至少修改：
 
-- `SITE_ADDRESS`：已经解析到服务器公网 IP 的正式域名，不要带路径。
+- `SITE_ADDRESS`：固定公网 IPv4，只写数字地址，不带协议、端口或路径。
 - `POSTGRES_PASSWORD` 和 `DATABASE_URL`：使用同一个仅含字母数字的随机密码。
 - `DASHSCOPE_API_KEY`：通义千问 API Key。
 - `SESSION_SECRET`：另一条随机值。
@@ -136,7 +139,18 @@ docker compose --env-file .env.production -f compose.production.yml exec backend
 docker compose --env-file .env.production -f compose.production.yml exec backend python -m scripts.create_admin --username admin --display-name 管理员
 ```
 
-打开 `https://你的域名`，依次验证：登录、问答、大纲优化、短视频评估、报告下载。
+首次启动后查看 `web` 日志，确认出现证书签发成功信息：
+
+```bash
+docker compose --env-file .env.production -f compose.production.yml logs --tail=100 web
+```
+
+然后打开 `https://服务器公网IP`，依次验证：登录、问答、大纲优化、短视频评估、
+报告下载。不要使用 `http://`；Caddy 会将 HTTP 自动跳转到 HTTPS。
+
+公网 IP 证书有效期约 6 天，Caddy 会自动续签。必须持续保留 `pku2_caddy_data` 卷，
+并保持 80/443 端口可从公网访问。如果公网 IP 改变，需要修改 `SITE_ADDRESS` 后重建
+`web` 服务，新 IP 会申请新证书。
 查看状态和日志：
 
 ```bash

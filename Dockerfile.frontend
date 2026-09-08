@@ -6,7 +6,8 @@ RUN npm ci
 COPY frontend/ ./
 RUN npm run build
 
-FROM caddy:2-alpine
+# ACME profile 支持自 Caddy 2.10 起提供；公网 IP 证书需要 shortlived profile。
+FROM caddy:2.11.4-alpine
 COPY deploy/Caddyfile /etc/caddy/Caddyfile
 COPY --from=build /src/dist /srv
 
