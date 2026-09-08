@@ -79,6 +79,10 @@ make frontend    # http://localhost:5174
 
 浏览器打开 http://localhost:5174 先登录（`#/login`），通过后进入教学智能问答（`#/qa`）。
 
+Ubuntu 服务器内测部署见 [`DEPLOYMENT.md`](DEPLOYMENT.md)。生产部署使用
+`compose.production.yml`，会建立全新的 PostgreSQL 和 Chroma 数据，不需要复制本机
+的历史任务、上传文件或旧向量索引。
+
 `AUTH_MODE=local` 时用工号密码注册/登录；管理员只能用 `python -m scripts.create_admin` 或已有管理员提升，注册接口拿不到 `admin`。
 `AUTH_MODE=pku_sso` 时本地注册和登录关闭，登录页只显示北京大学统一身份认证。本地账号不会自动合并到北大账号。
 

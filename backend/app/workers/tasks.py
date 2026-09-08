@@ -7,12 +7,25 @@
 from __future__ import annotations
 
 import asyncio
+import os
 import traceback
 
 from ai_engine.evaluation import evaluate_session, index_report
 from ai_engine.evaluation.exceptions import EvaluationCancelled
 
 from ..core import db
+
+
+def _evaluation_concurrency() -> int:
+    try:
+        return max(1, int(os.getenv("EVALUATION_MAX_CONCURRENCY") or "1"))
+    except ValueError:
+        return 1
+
+
+# 2 核内测服务器只允许一个视频流水线占用 CPU。等待信号量期间任务保持 queued，
+# 避免多个 faster-whisper / ffmpeg 同时运行导致整台服务器失去响应。
+_EVALUATION_SEMAPHORE = asyncio.Semaphore(_evaluation_concurrency())
 
 STEP_LABELS = {
     "queued": "排队中",
@@ -34,6 +47,27 @@ STEP_LABELS = {
 
 
 async def run_evaluation(
+    task_id: str,
+    video_path: str | None = None,
+    reference: str | None = None,
+    syllabus_path: str | None = None,
+    courseware_path: str | None = None,
+    transcript_text: str | None = None,
+    transcript_path: str | None = None,
+) -> None:
+    async with _EVALUATION_SEMAPHORE:
+        await _run_evaluation(
+            task_id,
+            video_path,
+            reference,
+            syllabus_path,
+            courseware_path,
+            transcript_text,
+            transcript_path,
+        )
+
+
+async def _run_evaluation(
     task_id: str,
     video_path: str | None = None,
     reference: str | None = None,
