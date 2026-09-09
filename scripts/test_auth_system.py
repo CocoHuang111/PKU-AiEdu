@@ -94,6 +94,24 @@ class AuthSystemTest(unittest.TestCase):
         self.assertEqual(login.status_code, 200)
         self.assertEqual(self.client.get("/api/auth/me").status_code, 200)
 
+    def test_login_distinguishes_unknown_username_and_wrong_password(self):
+        unknown = self.client.post(
+            "/api/auth/login",
+            json={"username": f"missing{self.suffix}", "password": "password12"},
+        )
+        self.assertEqual(unknown.status_code, 401)
+        self.assertEqual(unknown.json()["detail"], "工号不存在")
+
+        registered, username = self.register()
+        self.assertEqual(registered.status_code, 200, registered.text)
+        self.client.post("/api/auth/logout")
+        wrong_password = self.client.post(
+            "/api/auth/login",
+            json={"username": username, "password": "incorrect-password"},
+        )
+        self.assertEqual(wrong_password.status_code, 401)
+        self.assertEqual(wrong_password.json()["detail"], "密码错误")
+
     def test_password_not_plaintext(self):
         resp, username = self.register()
         self.assertEqual(resp.status_code, 200, resp.text)

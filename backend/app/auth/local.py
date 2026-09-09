@@ -27,8 +27,10 @@ class LocalAuthProvider:
                 AuthIdentity.subject == username,
             )
         )
-        if not row or not row.password_hash or not verify_password(password, row.password_hash):
-            raise HTTPException(401, "工号或密码错误")
+        if not row:
+            raise HTTPException(401, "工号不存在")
+        if not row.password_hash or not verify_password(password, row.password_hash):
+            raise HTTPException(401, "密码错误")
         return identity
 
     async def get_identity(self, subject: str) -> AuthIdentityInfo:
@@ -40,7 +42,7 @@ class LocalAuthProvider:
             )
         )
         if not row:
-            raise HTTPException(401, "工号或密码错误")
+            raise HTTPException(401, "工号不存在")
         return AuthIdentityInfo(
             provider="local",
             subject=username,

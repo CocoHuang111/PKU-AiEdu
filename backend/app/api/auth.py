@@ -135,10 +135,18 @@ async def login(form: LoginForm, request: Request, response: Response) -> dict:
                 AuthIdentity.subject == username,
             )
         )
-        if (
-            not identity
-            or not identity.password_hash
-            or not verify_password(form.password, identity.password_hash)
+        if not identity:
+            record_login_failure(rate_key)
+            await audit(
+                session,
+                request,
+                action="login_failed",
+                resource_type="auth_identity",
+                details={"provider": "local"},
+            )
+            raise HTTPException(401, "工号不存在")
+        if not identity.password_hash or not verify_password(
+            form.password, identity.password_hash
         ):
             record_login_failure(rate_key)
             await audit(
@@ -148,11 +156,11 @@ async def login(form: LoginForm, request: Request, response: Response) -> dict:
                 resource_type="auth_identity",
                 details={"provider": "local"},
             )
-            raise HTTPException(401, "工号或密码错误")
+            raise HTTPException(401, "密码错误")
         user = await session.get(User, identity.user_id)
         if not user:
             record_login_failure(rate_key)
-            raise HTTPException(401, "工号或密码错误")
+            raise HTTPException(401, "工号不存在")
         from ..auth.base import AuthIdentityInfo
 
         _, token, payload = await complete_login(
