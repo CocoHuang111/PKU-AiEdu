@@ -22,7 +22,6 @@ SSH 登录服务器后，先更新系统并创建 swap：
 
 ```bash
 sudo apt update
-sudo apt upgrade -y
 sudo fallocate -l 8G /swapfile
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
@@ -70,10 +69,10 @@ sudo usermod -aG docker "$USER"
 如果仓库是公开的，直接在服务器使用 HTTPS 克隆：
 
 ```bash
-sudo mkdir -p /opt/pku2
-sudo chown "$USER":"$USER" /opt/pku2
-git clone https://github.com/CocoHuang111/PKU_AskEdu.git /opt/pku2
-cd /opt/pku2
+sudo mkdir -p /opt/AskEdu
+sudo chown "$USER":"$USER" /opt/AskEdu
+git clone https://github.com/CocoHuang111/PKU_AskEdu.git /opt/AskEdu
+cd /opt/AskEdu
 git branch --show-current
 ```
 
@@ -83,8 +82,8 @@ Deploy Key，再使用 SSH 地址：
 ```bash
 ssh-keygen -t ed25519 -f ~/.ssh/pku2_deploy -C "pku2-deploy"
 cat ~/.ssh/pku2_deploy.pub
-GIT_SSH_COMMAND="ssh -i $HOME/.ssh/pku2_deploy -o IdentitiesOnly=yes" git clone git@github.com:CocoHuang111/PKU_AskEdu.git /opt/pku2
-cd /opt/pku2
+GIT_SSH_COMMAND="ssh -i $HOME/.ssh/pku2_deploy -o IdentitiesOnly=yes" git clone git@github.com:CocoHuang111/PKU_AskEdu.git /opt/AskEdu
+cd /opt/AskEdu
 git config core.sshCommand "ssh -i $HOME/.ssh/pku2_deploy -o IdentitiesOnly=yes"
 ```
 
@@ -97,7 +96,7 @@ Deploy Key 只需要仓库读取权限，不要开启写权限。Git 只会拉�
 如果云厂商会在关机后更换公网 IP，应先改为固定/弹性公网 IP。
 
 ```bash
-cd /opt/pku2
+cd /opt/AskEdu
 cp .env.production.example .env.production
 openssl rand -hex 32
 openssl rand -hex 32
@@ -124,7 +123,7 @@ nano .env.production
 构建并启动三个服务：
 
 ```bash
-cd /opt/pku2
+cd /opt/AskEdu
 docker compose --env-file .env.production -f compose.production.yml up -d --build
 docker compose --env-file .env.production -f compose.production.yml ps
 ```
@@ -174,7 +173,7 @@ docker compose --env-file .env.production -f compose.production.yml logs --tail=
 处理后，在服务器检查并拉取 `main` 的最新提交：
 
 ```bash
-cd /opt/pku2
+cd /opt/AskEdu
 git status --short
 git fetch origin main
 git log --oneline HEAD..origin/main
@@ -195,8 +194,8 @@ docker compose --env-file .env.production -f compose.production.yml ps
 每天备份 PostgreSQL；上传数据是否备份按内测隐私策略决定。数据库备份示例：
 
 ```bash
-mkdir -p /opt/pku2-backups
-docker compose --env-file /opt/pku2/.env.production -f /opt/pku2/compose.production.yml exec -T postgres pg_dump -U pku2 -d pku2 -Fc > /opt/pku2-backups/pku2.dump
+mkdir -p /opt/AskEdu-backups
+docker compose --env-file /opt/AskEdu/.env.production -f /opt/AskEdu/compose.production.yml exec -T postgres pg_dump -U pku2 -d pku2 -Fc > /opt/AskEdu-backups/pku2.dump
 ```
 
 虽然本次不迁移历史数据，上线后产生的新账号和任务仍在 PostgreSQL 中。建议：

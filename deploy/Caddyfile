@@ -3,7 +3,6 @@
     # Caddy 会在证书约 6 天有效期内自动续签，证书状态保存在 caddy_data 卷。
     tls {
         issuer acme {
-            ca https://acme-v02.api.letsencrypt.org/directory
             profile shortlived
         }
     }
