@@ -12,8 +12,8 @@
 
 - Ubuntu 24.04，2 vCPU / 8GB 内存可用于小范围内测。
 - LLM、VLM、Embedding 必须使用云端模式，不要在这台机器上运行 Ollama。
-- 视频评估最多同时执行 1 个；其他视频任务在应用进程内等待。
-- 后端固定为 1 个进程。评估任务当前不是独立任务队列，更新或重启后端前应确认没有任务正在处理。
+- 视频评估最多同时执行 1 个；其他视频任务保存在 PostgreSQL 队列中等待。
+- `backend` 只处理网站请求，`worker` 独立执行视频评估。Worker 异常退出后，租约过期的任务会自动重新排队。
 - 建议添加 8GB swap，避免首次构建或视频处理时因瞬时内存不足退出。
 
 ## 二、服务器初始化
@@ -120,7 +120,7 @@ nano .env.production
 
 ## 五、首次启动
 
-构建并启动三个服务：
+构建并启动四个服务（PostgreSQL、后端、评估 Worker、网站）：
 
 ```bash
 cd /opt/AskEdu
@@ -164,6 +164,7 @@ docker compose --env-file .env.production -f compose.production.yml logs --tail=
 ```bash
 docker compose --env-file .env.production -f compose.production.yml ps
 docker compose --env-file .env.production -f compose.production.yml logs --tail=200 backend
+docker compose --env-file .env.production -f compose.production.yml logs --tail=200 worker
 docker compose --env-file .env.production -f compose.production.yml logs --tail=100 web
 ```
 
@@ -203,7 +204,7 @@ docker compose --env-file /opt/AskEdu/.env.production -f /opt/AskEdu/compose.pro
 - 磁盘达到 70% 时告警，达到 85% 前清理。
 - 明确告知内测用户视频保存期限，建议 14～30 天。
 - 每天数据库备份，保留最近 7～14 份，并定期复制到服务器之外。
-- 服务器重启或升级前先确认没有 `processing` 状态的长任务。
+- 更新前仍建议等待长任务结束；如果 Worker 意外重启，`processing` 任务会在租约超时后自动重新排队。
 
 ## 八、完整清空内测环境
 

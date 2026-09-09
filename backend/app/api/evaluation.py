@@ -1,10 +1,11 @@
 from __future__ import annotations
 
 import asyncio
+import shutil
 from datetime import datetime
 from pathlib import Path
 
-from fastapi import APIRouter, BackgroundTasks, Depends, File, Form, HTTPException, Query, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, Query, UploadFile
 from fastapi.responses import FileResponse, Response
 
 from ai_engine.config import settings
@@ -18,9 +19,9 @@ from ..core import db
 from ..core.audit import audit
 from ..core.auth import current_user
 from ..core.database import session_scope
-from ..core.uploads import new_task_id, record_upload, save_user_upload
-from ..schemas import TranscriptForm
-from ..workers.tasks import STEP_LABELS, run_evaluation
+from ..core.uploads import record_upload, save_user_upload
+from ..schemas import EvaluationTaskCreateForm, TranscriptForm
+from ..workers.tasks import STEP_LABELS
 
 router = APIRouter(prefix="/api/evaluation", tags=["教学视频质量评估"])
 
@@ -55,156 +56,208 @@ def _save_upload(
     )
 
 
-@router.post("/upload_video")
-async def upload_video(
-    background: BackgroundTasks,
-    file: UploadFile = File(..., description="教学视频（必填）"),
-    reference: str | None = Form(
-        None, description="课程大纲文本（选填）。上传大纲文件时以文件为准"
-    ),
-    syllabus: UploadFile | None = File(None, description="课程大纲文件（选填）"),
-    courseware: UploadFile | None = File(None, description="课件文件（选填）"),
-    transcript: UploadFile | None = File(None, description="讲稿文件（选填），后端当作转写"),
-    transcript_text: str | None = Form(None, description="讲稿纯文本（选填），后端当作转写"),
-    user: dict = Depends(current_user),
-) -> dict:
-    has_script_file = _has_upload(transcript)
-    script_body = (transcript_text or "").strip() or None
-    if script_body and len(script_body) < 10:
-        raise HTTPException(400, "讲稿过短，请补充内容或改传文件")
-
-    suffix = Path(file.filename or "").suffix.lower()
+def _validate_video_filename(filename: str) -> None:
+    suffix = Path(filename).suffix.lower()
     if suffix not in ALLOWED_EXT:
         raise HTTPException(
             400, f"不支持的视频格式 {suffix}，支持：{', '.join(sorted(ALLOWED_EXT))}"
         )
-    task_id = new_task_id()
-    dest, video_key = save_user_upload(
-        file,
-        user_id=user["id"],
-        task_id=task_id,
-        purpose="video",
-        allowed=ALLOWED_EXT,
-        max_bytes=2 * 1024 * 1024 * 1024,
-        kind_label="视频",
-    )
-    dest_path = Path(dest)
-    await file.close()
 
+
+def _cleanup_task_uploads(user_id: str, task_id: str) -> None:
+    root = settings.upload_dir.resolve()
+    task_dir = (root / user_id / task_id).resolve()
+    if task_dir.parent == root / user_id and task_dir.is_dir():
+        shutil.rmtree(task_dir)
+
+
+@router.post("/tasks")
+async def create_upload_task(
+    form: EvaluationTaskCreateForm, user: dict = Depends(current_user)
+) -> dict:
+    _validate_video_filename(form.filename)
+    task_id = await db.create_task(
+        form.filename, user_id=user["id"], status="uploading"
+    )
+    task = await db.get_task(task_id, user_id=user["id"])
+    return task or {"id": task_id, "status": "uploading", "filename": form.filename}
+
+
+async def _store_task_materials(
+    task_id: str,
+    user: dict,
+    file: UploadFile,
+    reference: str | None,
+    syllabus: UploadFile | None,
+    courseware: UploadFile | None,
+    transcript: UploadFile | None,
+    transcript_text: str | None,
+) -> dict:
+    task = await db.get_task(task_id, user_id=user["id"])
+    if not task:
+        raise HTTPException(404, "任务不存在")
+    if task["status"] not in {"uploading", "upload_failed"}:
+        raise HTTPException(409, f"任务当前状态为 {task['status']}，不能上传材料")
+    has_script_file = _has_upload(transcript)
+    script_body = (transcript_text or "").strip() or None
+    try:
+        _validate_video_filename(file.filename or task.get("filename") or "")
+        if script_body and len(script_body) < 10:
+            raise HTTPException(400, "讲稿过短，请补充内容或改传文件")
+    except HTTPException as exc:
+        await db.update_task(
+            task_id,
+            status="upload_failed",
+            current_step="upload_failed",
+            error=str(exc.detail),
+        )
+        raise
+
+    dest = None
+    video_key = None
     syllabus_path = None
     courseware_path = None
     transcript_path = None
     try:
-        if _has_upload(syllabus):
-            syllabus_path, syllabus_key = _save_upload(
-                syllabus,
+        dest, video_key = await asyncio.to_thread(
+            save_user_upload,
+            file,
+            user_id=user["id"],
+            task_id=task_id,
+            purpose="video",
+            allowed=ALLOWED_EXT,
+            max_bytes=2 * 1024 * 1024 * 1024,
+            kind_label="视频",
+        )
+        current = await db.get_task(task_id, user_id=user["id"])
+        if not current or current["status"] == "cancelled":
+            raise HTTPException(409, "上传已取消")
+
+        for upload, purpose, allowed, max_bytes, label in (
+            (syllabus, "syllabus", SYLLABUS_EXT, SYLLABUS_MAX_BYTES, "课程大纲"),
+            (courseware, "courseware", COURSEWARE_EXT, COURSEWARE_MAX_BYTES, "课件"),
+            (transcript, "transcript", SCRIPT_EXT, SCRIPT_MAX_BYTES, "讲稿"),
+        ):
+            if not _has_upload(upload):
+                continue
+            saved_path, storage_key = await asyncio.to_thread(
+                _save_upload,
+                upload,
                 user_id=user["id"],
                 task_id=task_id,
-                purpose="syllabus",
-                allowed=SYLLABUS_EXT,
-                max_bytes=SYLLABUS_MAX_BYTES,
-                kind_label="课程大纲",
+                purpose=purpose,
+                allowed=allowed,
+                max_bytes=max_bytes,
+                kind_label=label,
             )
+            if purpose == "syllabus":
+                syllabus_path = saved_path
+            elif purpose == "courseware":
+                courseware_path = saved_path
+            else:
+                transcript_path = saved_path
             await record_upload(
                 user_id=user["id"],
-                purpose="syllabus",
-                original_name=syllabus.filename or "syllabus",
-                storage_key=syllabus_key,
-                mime_type=syllabus.content_type,
-                path=syllabus_path,
+                purpose=purpose,
+                original_name=upload.filename or purpose,
+                storage_key=storage_key,
+                mime_type=upload.content_type,
+                path=saved_path,
             )
-        if _has_upload(courseware):
-            courseware_path, courseware_key = _save_upload(
-                courseware,
-                user_id=user["id"],
-                task_id=task_id,
-                purpose="courseware",
-                allowed=COURSEWARE_EXT,
-                max_bytes=COURSEWARE_MAX_BYTES,
-                kind_label="课件",
+
+        await record_upload(
+            user_id=user["id"],
+            purpose="video",
+            original_name=file.filename or Path(dest).name,
+            storage_key=video_key,
+            mime_type=file.content_type,
+            path=dest,
+        )
+        saved = await db.set_task_materials(
+            task_id,
+            user["id"],
+            filename=file.filename or task.get("filename"),
+            video_path=dest,
+            reference=(reference or "").strip() or None,
+            syllabus_path=syllabus_path,
+            courseware_path=courseware_path,
+            transcript=script_body,
+            transcript_path=transcript_path,
+        )
+        if not saved:
+            raise HTTPException(409, "任务已取消或当前状态不允许上传")
+        return saved
+    except Exception as exc:
+        _cleanup_task_uploads(user["id"], task_id)
+        current = await db.get_task(task_id, user_id=user["id"])
+        if current and current["status"] != "cancelled":
+            await db.update_task(
+                task_id,
+                status="upload_failed",
+                current_step="upload_failed",
+                error=str(getattr(exc, "detail", exc)),
             )
-            await record_upload(
-                user_id=user["id"],
-                purpose="courseware",
-                original_name=courseware.filename or "courseware",
-                storage_key=courseware_key,
-                mime_type=courseware.content_type,
-                path=courseware_path,
-            )
-        if has_script_file:
-            transcript_path, script_key = _save_upload(
-                transcript,
-                user_id=user["id"],
-                task_id=task_id,
-                purpose="transcript",
-                allowed=SCRIPT_EXT,
-                max_bytes=SCRIPT_MAX_BYTES,
-                kind_label="讲稿",
-            )
-            await record_upload(
-                user_id=user["id"],
-                purpose="transcript",
-                original_name=transcript.filename or "transcript",
-                storage_key=script_key,
-                mime_type=transcript.content_type,
-                path=transcript_path,
-            )
-    except HTTPException:
-        dest_path.unlink(missing_ok=True)
-        if syllabus_path:
-            Path(syllabus_path).unlink(missing_ok=True)
-        if courseware_path:
-            Path(courseware_path).unlink(missing_ok=True)
         raise
     finally:
-        if syllabus is not None:
-            await syllabus.close()
-        if courseware is not None:
-            await courseware.close()
-        if transcript is not None:
-            await transcript.close()
+        await file.close()
+        for upload in (syllabus, courseware, transcript):
+            if upload is not None:
+                await upload.close()
 
-    await record_upload(
-        user_id=user["id"],
-        purpose="video",
-        original_name=file.filename or dest_path.name,
-        storage_key=video_key,
-        mime_type=file.content_type,
-        path=dest,
+
+@router.post("/tasks/{task_id}/materials")
+async def upload_task_materials(
+    task_id: str,
+    file: UploadFile = File(..., description="教学视频（必填）"),
+    reference: str | None = Form(None),
+    syllabus: UploadFile | None = File(None),
+    courseware: UploadFile | None = File(None),
+    transcript: UploadFile | None = File(None),
+    transcript_text: str | None = Form(None),
+    user: dict = Depends(current_user),
+) -> dict:
+    return await _store_task_materials(
+        task_id, user, file, reference, syllabus, courseware, transcript, transcript_text
     )
-    ref = (reference or "").strip() or None
-    filename = file.filename or dest_path.name
-    video_path = dest
-    await db.create_task(
-        filename,
-        video_path,
-        ref,
-        syllabus_path=syllabus_path,
-        courseware_path=courseware_path,
-        transcript=script_body,
-        transcript_path=transcript_path,
-        user_id=user["id"],
-        task_id=task_id,
+
+
+@router.post("/tasks/{task_id}/submit")
+async def submit_upload_task(task_id: str, user: dict = Depends(current_user)) -> dict:
+    result = await db.submit_task(task_id, user["id"])
+    if result.get("reason") == "not_found":
+        raise HTTPException(404, "任务不存在")
+    if not result["ok"]:
+        detail = (
+            "视频尚未上传"
+            if result["reason"] == "missing_video"
+            else f"任务当前状态为 {result['reason']}，不能提交"
+        )
+        raise HTTPException(409, detail)
+    return result["task"]
+
+
+@router.post("/upload_video")
+async def upload_video(
+    file: UploadFile = File(...),
+    reference: str | None = Form(None),
+    syllabus: UploadFile | None = File(None),
+    courseware: UploadFile | None = File(None),
+    transcript: UploadFile | None = File(None),
+    transcript_text: str | None = Form(None),
+    user: dict = Depends(current_user),
+) -> dict:
+    """兼容旧客户端；新客户端应使用 create -> materials -> submit。"""
+    _validate_video_filename(file.filename or "")
+    task_id = await db.create_task(
+        file.filename or "教学视频", user_id=user["id"], status="uploading"
     )
-    background.add_task(
-        run_evaluation,
-        task_id,
-        video_path,
-        ref,
-        syllabus_path,
-        courseware_path,
-        script_body,
-        transcript_path,
+    await _store_task_materials(
+        task_id, user, file, reference, syllabus, courseware, transcript, transcript_text
     )
-    return {
-        "task_id": task_id,
-        "status": "queued",
-        "filename": filename,
-        "has_reference": bool(ref or syllabus_path),
-        "has_syllabus": bool(ref or syllabus_path),
-        "has_courseware": bool(courseware_path),
-        "has_script": bool(script_body or transcript_path),
-    }
+    result = await db.submit_task(task_id, user["id"])
+    if not result["ok"]:
+        raise HTTPException(409, f"任务当前状态为 {result['reason']}，不能提交")
+    return {"task_id": task_id, **result["task"]}
 
 
 @router.get("/tasks")
@@ -406,13 +459,16 @@ async def cancel_task(task_id: str, user: dict = Depends(current_user)) -> dict:
         raise HTTPException(
             409, f"任务当前状态为 {result['reason']}，无法停止"
         )
-    return {"ok": True, "status": "cancelled"}
+    return {"ok": True, "status": result["status"]}
 
 
 @router.delete("/task/{task_id}")
 async def delete_task(task_id: str, user: dict = Depends(current_user)) -> dict:
-    if not await db.delete_task(task_id, user_id=user["id"]):
+    result = await db.delete_task(task_id, user_id=user["id"])
+    if result.get("reason") == "not_found":
         raise HTTPException(404, "任务不存在")
+    if not result["ok"]:
+        raise HTTPException(409, "任务尚未结束，请先停止任务并等待其完全退出")
     async with session_scope() as session:
         await audit(
             session,

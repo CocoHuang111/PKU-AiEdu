@@ -3,12 +3,13 @@
 from __future__ import annotations
 
 import json
+import shutil
 import uuid
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
-from sqlalchemy import Select, func, select
+from sqlalchemy import Select, func, select, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from ai_engine.config import settings
@@ -120,6 +121,7 @@ def _task_row(row: EvalTask, with_result: bool = True) -> dict[str, Any]:
         "error": row.error,
         "created_at": _ts(row.created_at),
         "updated_at": _ts(row.updated_at),
+        "attempt_count": row.attempt_count,
         "has_syllabus": bool(row.reference or row.syllabus_path),
         "has_courseware": bool(row.courseware_path),
         "has_script": bool(row.transcript or row.transcript_path),
@@ -145,6 +147,7 @@ async def create_task(
     transcript_path: str | None = None,
     user_id: str | uuid.UUID | None = None,
     task_id: str | uuid.UUID | None = None,
+    status: str = "queued",
 ) -> str:
     if not user_id:
         raise ValueError("创建评估任务必须有 user_id")
@@ -158,9 +161,9 @@ async def create_task(
         courseware_path=courseware_path,
         transcript=transcript,
         transcript_path=transcript_path,
-        status="queued",
+        status=status,
         progress=0,
-        current_step="queued",
+        current_step=status,
     )
     async with session_scope() as session:
         session.add(row)
@@ -206,45 +209,256 @@ async def list_tasks(
         return [_task_row(row, with_result=False) for row in rows]
 
 
-async def delete_task(task_id: str, user_id: str | None = None) -> bool:
+DELETABLE_EVAL_STATUSES = {"completed", "failed", "cancelled", "upload_failed"}
+
+
+async def delete_task(task_id: str, user_id: str | None = None) -> dict[str, Any]:
     async with session_scope() as session:
         stmt = _owned(select(EvalTask).where(EvalTask.id == _uid(task_id)), EvalTask, user_id)
         row = await session.scalar(stmt)
         if not row:
-            return False
+            return {"ok": False, "reason": "not_found"}
+        if row.status not in DELETABLE_EVAL_STATUSES:
+            return {"ok": False, "reason": row.status}
         owner = str(row.user_id)
         await session.delete(row)
+        stored = (
+            await session.scalars(
+                select(StoredFile).where(
+                    StoredFile.user_id == row.user_id,
+                    StoredFile.storage_key.like(f"{owner}/{task_id}/%"),
+                )
+            )
+        ).all()
+        for item in stored:
+            item.deleted_at = _now()
+    task_dir = (settings.upload_dir / owner / task_id).resolve()
+    upload_root = settings.upload_dir.resolve()
+    if task_dir.parent == upload_root / owner and task_dir.is_dir():
+        shutil.rmtree(task_dir)
     try:
         from ai_engine.rag.store import delete_eval_report_chunks
 
         delete_eval_report_chunks(task_id, owner)
     except Exception as exc:
         print(f"[warn] 删除评估报告向量失败: {exc}")
-    return True
+    return {"ok": True}
 
 
 def is_task_cancelled(task_id: str) -> bool:
     with sync_session_scope() as session:
         row = session.get(EvalTask, _uid(task_id))
-    return row is not None and row.status == "cancelled"
+    return row is None or row.status in {"cancel_requested", "cancelled"}
 
 
 async def request_cancel(
     task_id: str, user_id: str | None = None
 ) -> dict[str, Any]:
-    task = await get_task(task_id, user_id=user_id)
-    if not task:
-        return {"ok": False, "reason": "not_found"}
-    if task["status"] in ("completed", "failed", "cancelled"):
-        return {"ok": False, "reason": task["status"]}
-    await update_task(
-        task_id,
-        status="cancelled",
-        current_step="cancelled",
-        step_detail={},
-        error=None,
-    )
-    return {"ok": True}
+    async with session_scope() as session:
+        stmt = _owned(
+            select(EvalTask).where(EvalTask.id == _uid(task_id)).with_for_update(),
+            EvalTask,
+            user_id,
+        )
+        row = await session.scalar(stmt)
+        if not row:
+            return {"ok": False, "reason": "not_found"}
+        status = row.status
+        if status in ("completed", "failed", "cancelled", "upload_failed"):
+            return {"ok": False, "reason": status}
+        if status == "cancel_requested":
+            return {"ok": True, "status": "cancel_requested"}
+        next_status = "cancel_requested" if status == "processing" else "cancelled"
+        row.status = next_status
+        row.current_step = next_status
+        row.step_detail = {}
+        row.error = None
+        row.updated_at = _now()
+        return {"ok": True, "status": next_status}
+
+
+async def set_task_materials(task_id: str, user_id: str, **fields) -> dict[str, Any] | None:
+    async with session_scope() as session:
+        row = await session.scalar(
+            select(EvalTask)
+            .where(EvalTask.id == _uid(task_id), EvalTask.user_id == _uid(user_id))
+            .with_for_update()
+        )
+        if not row or row.status not in {"uploading", "upload_failed"}:
+            return None
+        for key, value in fields.items():
+            if hasattr(row, key):
+                setattr(row, key, value)
+        row.status = "uploading"
+        row.current_step = "uploading"
+        row.error = None
+        row.updated_at = _now()
+        await session.flush()
+        return _task_row(row)
+
+
+async def submit_task(task_id: str, user_id: str) -> dict[str, Any]:
+    async with session_scope() as session:
+        row = await session.scalar(
+            select(EvalTask)
+            .where(EvalTask.id == _uid(task_id), EvalTask.user_id == _uid(user_id))
+            .with_for_update()
+        )
+        if not row:
+            return {"ok": False, "reason": "not_found"}
+        if row.status != "uploading":
+            return {"ok": False, "reason": row.status}
+        if not row.video_path or not Path(row.video_path).is_file():
+            return {"ok": False, "reason": "missing_video"}
+        row.status = "queued"
+        row.current_step = "queued"
+        row.progress = 0
+        row.updated_at = _now()
+        await session.flush()
+        return {"ok": True, "task": _task_row(row)}
+
+
+async def claim_next_eval_task(worker_id: str) -> dict[str, Any] | None:
+    async with session_scope() as session:
+        row = await session.scalar(
+            select(EvalTask)
+            .where(EvalTask.status == "queued")
+            .order_by(EvalTask.created_at.asc())
+            .with_for_update(skip_locked=True)
+            .limit(1)
+        )
+        if not row:
+            return None
+        row.status = "processing"
+        row.current_step = "starting"
+        row.progress = max(row.progress or 0, 2)
+        row.worker_id = worker_id
+        row.heartbeat_at = _now()
+        row.attempt_count = (row.attempt_count or 0) + 1
+        row.updated_at = _now()
+        await session.flush()
+        return {
+            "id": str(row.id),
+            "video_path": row.video_path,
+            "reference": row.reference,
+            "syllabus_path": row.syllabus_path,
+            "courseware_path": row.courseware_path,
+            "transcript": row.transcript,
+            "transcript_path": row.transcript_path,
+        }
+
+
+async def heartbeat_eval_task(task_id: str, worker_id: str) -> bool:
+    async with session_scope() as session:
+        result = await session.execute(
+            update(EvalTask)
+            .where(
+                EvalTask.id == _uid(task_id),
+                EvalTask.worker_id == worker_id,
+                EvalTask.status.in_(["processing", "cancel_requested"]),
+            )
+            .values(heartbeat_at=_now(), updated_at=_now())
+        )
+        return bool(result.rowcount)
+
+
+async def complete_eval_task(task_id: str, result_payload: dict[str, Any]) -> bool:
+    async with session_scope() as session:
+        result = await session.execute(
+            update(EvalTask)
+            .where(EvalTask.id == _uid(task_id), EvalTask.status == "processing")
+            .values(
+                status="completed",
+                progress=100,
+                current_step="done",
+                result=result_payload,
+                error=None,
+                worker_id=None,
+                heartbeat_at=None,
+                updated_at=_now(),
+            )
+        )
+        return bool(result.rowcount)
+
+
+async def fail_eval_task(task_id: str, error: str) -> bool:
+    async with session_scope() as session:
+        result = await session.execute(
+            update(EvalTask)
+            .where(EvalTask.id == _uid(task_id), EvalTask.status == "processing")
+            .values(
+                status="failed",
+                current_step="failed",
+                error=error,
+                worker_id=None,
+                heartbeat_at=None,
+                updated_at=_now(),
+            )
+        )
+        return bool(result.rowcount)
+
+
+async def finalize_eval_cancellation(task_id: str) -> bool:
+    async with session_scope() as session:
+        result = await session.execute(
+            update(EvalTask)
+            .where(
+                EvalTask.id == _uid(task_id),
+                EvalTask.status.in_(["cancel_requested", "cancelled"]),
+            )
+            .values(
+                status="cancelled",
+                current_step="cancelled",
+                step_detail={},
+                error=None,
+                worker_id=None,
+                heartbeat_at=None,
+                updated_at=_now(),
+            )
+        )
+        return bool(result.rowcount)
+
+
+async def recover_stale_eval_tasks(lease_seconds: int) -> int:
+    cutoff = _now() - timedelta(seconds=max(30, lease_seconds))
+    async with session_scope() as session:
+        rows = (
+            await session.scalars(
+                select(EvalTask).where(
+                    EvalTask.status.in_(["processing", "cancel_requested"]),
+                    (EvalTask.heartbeat_at.is_(None)) | (EvalTask.heartbeat_at < cutoff),
+                )
+            )
+        ).all()
+        for row in rows:
+            if row.status == "cancel_requested":
+                row.status = "cancelled"
+                row.current_step = "cancelled"
+            else:
+                row.status = "queued"
+                row.current_step = "queued"
+            row.worker_id = None
+            row.heartbeat_at = None
+            row.updated_at = _now()
+        return len(rows)
+
+
+async def expire_stale_uploads(max_age_seconds: int) -> int:
+    cutoff = _now() - timedelta(seconds=max(300, max_age_seconds))
+    async with session_scope() as session:
+        rows = (
+            await session.scalars(
+                select(EvalTask).where(
+                    EvalTask.status == "uploading", EvalTask.updated_at < cutoff
+                )
+            )
+        ).all()
+        for row in rows:
+            row.status = "upload_failed"
+            row.current_step = "upload_failed"
+            row.error = "上传长时间未完成，请重新创建评估任务"
+            row.updated_at = _now()
+        return len(rows)
 
 
 _FILE_COLS = {

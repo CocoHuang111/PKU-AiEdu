@@ -12,6 +12,18 @@ class TranscriptForm(BaseModel):
     )
 
 
+class EvaluationTaskCreateForm(BaseModel):
+    filename: str = Field(..., min_length=1, max_length=512)
+
+    @field_validator("filename")
+    @classmethod
+    def strip_filename(cls, value: str) -> str:
+        text = (value or "").strip()
+        if not text:
+            raise ValueError("文件名不能为空")
+        return text
+
+
 class QAForm(BaseModel):
     question: str = Field(..., min_length=1)
     session_id: str | None = None

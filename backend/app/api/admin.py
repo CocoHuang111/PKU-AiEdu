@@ -365,7 +365,7 @@ async def cancel_task(
             resource_type=f"{kind}_task",
             resource_id=task_id,
         )
-    return {"ok": True, "status": "cancelled"}
+    return {"ok": True, "status": result.get("status", "cancelled")}
 
 
 @router.delete("/tasks/{kind}/{task_id}")
@@ -378,7 +378,12 @@ async def cleanup_task(
     from ..core import db
 
     if kind == "eval":
-        ok = await db.delete_task(task_id)
+        result = await db.delete_task(task_id)
+        if result.get("reason") == "not_found":
+            raise HTTPException(404, "任务不存在")
+        if not result["ok"]:
+            raise HTTPException(409, "任务尚未结束，请先停止任务并等待其完全退出")
+        ok = True
     elif kind == "syllabus":
         ok = await db.delete_syllabus_task(task_id)
     else:

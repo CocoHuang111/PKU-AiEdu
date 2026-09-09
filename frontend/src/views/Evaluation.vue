@@ -48,8 +48,8 @@
               <div class="task-body">
                 <div class="task-name">{{ t.filename }}</div>
                 <div v-if="isRunning(t)" class="task-run">
-                  <span>评估中 {{ t.progress }}%</span>
-                  <el-progress :percentage="t.progress" :stroke-width="4" :show-text="false" />
+                  <span>{{ taskRunningText(t) }} {{ taskProgress(t) }}%</span>
+                  <el-progress :percentage="taskProgress(t)" :stroke-width="4" :show-text="false" />
                   <div class="task-meta">{{ t.step_label }}{{ stepDetail(t) }}</div>
                 </div>
                 <div v-else class="task-status-row">
@@ -176,8 +176,8 @@
                       上传完成
                     </div>
                     <div class="bar-row">
-                      <div class="bar"><i :style="{ width: (uploading ? uploadPercent : 100) + '%' }"></i></div>
-                      <span>{{ uploading ? uploadPercent : 100 }}%</span>
+                      <div class="bar"><i :style="{ width: (isActiveUpload ? uploadPercent : 100) + '%' }"></i></div>
+                      <span>{{ isActiveUpload ? uploadPercent : 100 }}%</span>
                     </div>
                   </div>
                 </div>
@@ -413,7 +413,7 @@
             <div v-if="!reviewing" class="compose-actions">
               <span class="foot-count">已选择 {{ materialCount }} / 4 项材料</span>
               <el-button :disabled="materialCount === 0" @click="clearMaterials">清空</el-button>
-              <el-button type="primary" :loading="uploading" :disabled="!canStart" @click="startUpload">
+              <el-button type="primary" :loading="uploading" :disabled="!canStart || uploading" @click="startUpload">
                 开始视频评估
               </el-button>
             </div>
@@ -1621,6 +1621,8 @@ const featureSubTab = ref('content')
 
 const uploading = ref(false)
 const uploadPercent = ref(0)
+const uploadTaskId = ref(null)
+const uploadContext = ref(null)
 const videoFile = ref(null)
 const syllabusFile = ref(null)
 const coursewareFile = ref(null)
@@ -1639,6 +1641,8 @@ const cancellingId = ref(null)
 const sidebarOpen = ref(true)
 const taskQuery = ref('')
 const taskFilter = ref('all')
+let uploadController = null
+let taskListRequest = 0
 
 const canStart = computed(() => Boolean(videoFile.value))
 const materialCount = computed(() => {
@@ -1650,24 +1654,33 @@ const materialCount = computed(() => {
   return n
 })
 const activeTask = computed(() => tasks.value.find((t) => t.id === activeId.value) || null)
-const reviewing = computed(() => Boolean(activeId.value && !uploading.value))
+const isActiveUpload = computed(
+  () => Boolean(uploading.value && uploadTaskId.value && activeId.value === uploadTaskId.value)
+)
+const reviewing = computed(() => Boolean(activeId.value && !isActiveUpload.value))
 const statusBanner = computed(() => {
   const t = activeTask.value
-  if (!t || uploading.value) return null
+  if (!t || isActiveUpload.value) return null
   if (t.status === 'completed') {
     return { tone: 'done', title: '评估已完成', sub: '完整评估报告已生成，可前往结果页查看' }
   }
+  if (t.status === 'upload_failed') {
+    return { tone: 'fail', title: '上传失败', sub: t.error || '材料上传过程中出错' }
+  }
   if (t.status === 'failed') {
-    return { tone: 'fail', title: '解析失败', sub: t.error || '评估过程中出错' }
+    return { tone: 'fail', title: '评估失败', sub: t.error || '评估过程中出错' }
   }
   if (t.status === 'cancelled') {
-    return { tone: 'fail', title: '解析失败', sub: '任务已停止' }
+    return { tone: 'fail', title: '任务已停止', sub: '该任务未继续执行' }
   }
-  if (t.status === 'processing' || t.status === 'queued') {
+  if (t.status === 'uploading') {
+    return { tone: 'run', title: '上传中', sub: '视频和辅助材料正在上传', progress: t.progress ?? 0 }
+  }
+  if (t.status === 'processing' || t.status === 'queued' || t.status === 'cancel_requested') {
     const step = `${t.step_label || ''}${stepDetail(t)}`.trim()
     return {
       tone: 'run',
-      title: '解析中',
+      title: t.status === 'cancel_requested' ? '正在停止' : '解析中',
       sub: step || '正在处理上传材料',
       progress: t.progress ?? 0,
     }
@@ -2959,7 +2972,7 @@ const filteredTasks = computed(() => {
   return tasks.value.filter((t) => {
     if (taskFilter.value === 'running' && !isRunning(t)) return false
     if (taskFilter.value === 'completed' && t.status !== 'completed') return false
-    if (taskFilter.value === 'failed' && t.status !== 'failed' && t.status !== 'cancelled') return false
+    if (taskFilter.value === 'failed' && !['failed', 'upload_failed', 'cancelled'].includes(t.status)) return false
     if (q && !(t.filename || '').toLowerCase().includes(q)) return false
     return true
   })
@@ -2986,7 +2999,18 @@ const visibleGroups = computed(() => {
 // ---------------------------------------------------------------- 任务列表
 
 function isRunning(t) {
-  return t.status === 'processing' || t.status === 'queued'
+  return ['uploading', 'queued', 'processing', 'cancel_requested'].includes(t.status)
+}
+
+function taskProgress(t) {
+  if (t.id === uploadTaskId.value && uploading.value) return uploadPercent.value
+  return t.progress || 0
+}
+
+function taskRunningText(t) {
+  if (t.status === 'uploading') return '上传中'
+  if (t.status === 'cancel_requested') return '正在停止'
+  return '评估中'
 }
 
 function formatTime(ts) {
@@ -3000,7 +3024,16 @@ function formatTime(ts) {
 }
 
 function statusText(s) {
-  return { completed: '已完成', processing: '处理中', failed: '失败', queued: '排队中', cancelled: '已停止' }[s] || s
+  return {
+    uploading: '上传中',
+    upload_failed: '上传失败',
+    completed: '已完成',
+    processing: '处理中',
+    failed: '失败',
+    queued: '排队中',
+    cancel_requested: '正在停止',
+    cancelled: '已停止',
+  }[s] || s
 }
 function gradeType(g) {
   return { A: 'success', B: '', C: 'warning', D: 'danger' }[g] || 'info'
@@ -3030,8 +3063,15 @@ function newEvaluation() {
 }
 
 async function loadTasks() {
+  const requestId = ++taskListRequest
   try {
-    tasks.value = await evaluationApi.listTasks()
+    const incoming = await evaluationApi.listTasks()
+    if (requestId !== taskListRequest) return
+    if (uploadTaskId.value && !incoming.some((t) => t.id === uploadTaskId.value)) {
+      const local = tasks.value.find((t) => t.id === uploadTaskId.value)
+      if (local) incoming.unshift(local)
+    }
+    tasks.value = incoming
     schedulePoll()
   } catch {
     /* 拦截器已提示 */
@@ -3040,7 +3080,7 @@ async function loadTasks() {
 
 function schedulePoll() {
   clearTimeout(pollTimer)
-  const busy = tasks.value.some((t) => t.status === 'processing' || t.status === 'queued')
+  const busy = tasks.value.some((t) => isRunning(t))
   if (busy) pollTimer = setTimeout(refreshRunning, POLL_INTERVAL)
 }
 
@@ -3059,6 +3099,10 @@ async function refreshRunning() {
 async function selectTask(id) {
   activeId.value = id
   result.value = null
+  if (id === uploadTaskId.value && uploadContext.value) {
+    restoreUploadContext()
+    return
+  }
   const listed = tasks.value.find((t) => t.id === id)
   if (listed) applyTaskMaterials(listed)
   try {
@@ -3067,6 +3111,15 @@ async function selectTask(id) {
   } catch {
     /* 拦截器已提示 */
   }
+}
+
+function restoreUploadContext() {
+  const ctx = uploadContext.value
+  if (!ctx) return
+  setVideo(ctx.video)
+  syllabusFile.value = ctx.syllabus
+  coursewareFile.value = ctx.courseware
+  scriptFile.value = ctx.transcript
 }
 
 function applyTaskMaterials(task) {
@@ -3138,21 +3191,18 @@ async function removeTask(t) {
   const running = isRunning(t)
   try {
     await ElMessageBox.confirm(
-      running ? '该任务正在评估，删除后将停止并无法恢复。确定删除？' : '确定删除这个评估任务？',
+      running ? '该任务尚未结束，现在只能先停止。确定请求停止？' : '确定删除这个评估任务？',
       '提示',
       { type: 'warning' }
     )
   } catch {
     return
   }
+  if (running) {
+    await cancelTask(t.id)
+    return
+  }
   try {
-    if (running) {
-      try {
-        await evaluationApi.cancelTask(t.id)
-      } catch {
-        /* 任务可能已结束 */
-      }
-    }
     await evaluationApi.deleteTask(t.id)
     ElMessage.success('已删除')
     if (activeId.value === t.id) newEvaluation()
@@ -3165,8 +3215,9 @@ async function removeTask(t) {
 async function cancelTask(id) {
   cancellingId.value = id
   try {
-    await evaluationApi.cancelTask(id)
-    ElMessage.success('已请求停止诊断')
+    if (id === uploadTaskId.value) uploadController?.abort()
+    const response = await evaluationApi.cancelTask(id)
+    ElMessage.success(response.status === 'cancel_requested' ? '正在安全停止评估' : '任务已停止')
     await loadTasks()
     if (activeId.value === id) {
       result.value = null
@@ -3313,27 +3364,45 @@ function clearMaterials() {
 
 async function startUpload() {
   if (!canStart.value) return
+  const startedFromId = activeId.value
+  const context = {
+    video: videoFile.value,
+    syllabus: syllabusFile.value,
+    courseware: coursewareFile.value,
+    transcript: scriptFile.value,
+  }
   uploading.value = true
   uploadPercent.value = 0
+  uploadContext.value = context
+  uploadController = new AbortController()
   try {
-    const resp = await evaluationApi.uploadMaterials(
-      {
-        video: videoFile.value,
-        syllabus: syllabusFile.value,
-        courseware: coursewareFile.value,
-        transcript: scriptFile.value,
-      },
-      (p) => (uploadPercent.value = p)
+    const created = await evaluationApi.createTask(context.video.name)
+    uploadTaskId.value = created.id
+    if (activeId.value === startedFromId) activeId.value = created.id
+    tasks.value = [created, ...tasks.value.filter((t) => t.id !== created.id)]
+    schedulePoll()
+
+    await evaluationApi.uploadTaskMaterials(
+      created.id,
+      context,
+      (p) => (uploadPercent.value = p),
+      uploadController.signal
     )
+    const submitted = await evaluationApi.submitTask(created.id)
+    tasks.value = [submitted, ...tasks.value.filter((t) => t.id !== created.id)]
     ElMessage.success('上传成功，已加入评估队列')
-    activeId.value = resp.task_id
     await loadTasks()
-    const created = tasks.value.find((t) => t.id === resp.task_id)
-    if (created) applyTaskMaterials(created)
-  } catch {
-    /* 拦截器已提示 */
+    if (activeId.value === created.id) {
+      const latest = tasks.value.find((t) => t.id === created.id) || submitted
+      applyTaskMaterials(latest)
+    }
+  } catch (err) {
+    if (err?.code !== 'ERR_CANCELED') await loadTasks()
   } finally {
     uploading.value = false
+    uploadTaskId.value = null
+    uploadContext.value = null
+    uploadController = null
   }
 }
 
@@ -4122,6 +4191,7 @@ svg.aux-icon .chip {
   color: #2e8b57;
 }
 .task-status.failed,
+.task-status.upload_failed,
 .task-status.cancelled {
   color: #f56c6c;
 }

@@ -11,6 +11,7 @@ const client = axios.create({
 client.interceptors.response.use(
   (resp) => resp.data,
   (err) => {
+    if (axios.isCancel(err)) return Promise.reject(err)
     const status = err.response?.status
     const msg = err.response?.data?.detail || err.message || '请求失败'
     if (status !== 401) {
@@ -64,7 +65,26 @@ export const adminApi = {
 
 // ---------------------------------------------------------------- 视频评估
 export const evaluationApi = {
-  uploadMaterials(files, onProgress) {
+  createTask: (filename) => client.post('/api/evaluation/tasks', { filename }),
+  uploadTaskMaterials(id, files, onProgress, signal) {
+    const opts = files || {}
+    const form = new FormData()
+    if (opts.video) form.append('file', opts.video)
+    if (opts.syllabus) form.append('syllabus', opts.syllabus)
+    if (opts.courseware) form.append('courseware', opts.courseware)
+    if (opts.transcript) form.append('transcript', opts.transcript)
+    if (opts.transcriptText?.trim()) form.append('transcript_text', opts.transcriptText.trim())
+    if (opts.reference?.trim()) form.append('reference', opts.reference.trim())
+    return client.post(`/api/evaluation/tasks/${id}/materials`, form, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+      signal,
+      onUploadProgress: (e) => {
+        if (onProgress && e.total) onProgress(Math.round((e.loaded / e.total) * 100))
+      },
+    })
+  },
+  submitTask: (id) => client.post(`/api/evaluation/tasks/${id}/submit`),
+  uploadMaterials(files, onProgress, signal) {
     const opts = files || {}
     const form = new FormData()
     if (opts.video) form.append('file', opts.video)
@@ -75,6 +95,7 @@ export const evaluationApi = {
     if (opts.reference?.trim()) form.append('reference', opts.reference.trim())
     return client.post('/api/evaluation/upload_video', form, {
       headers: { 'Content-Type': 'multipart/form-data' },
+      signal,
       onUploadProgress: (e) => {
         if (onProgress && e.total) onProgress(Math.round((e.loaded / e.total) * 100))
       },
