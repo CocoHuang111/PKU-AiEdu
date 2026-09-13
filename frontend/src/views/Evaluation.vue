@@ -151,7 +151,7 @@
                       <el-icon :size="14"><View /></el-icon>
                       预览
                     </button>
-                    <template v-if="!reviewing">
+                    <template v-if="!reviewing && !uploading">
                       <button type="button" class="text-act" @click="pickVideo">
                         <el-icon :size="14"><RefreshRight /></el-icon>
                         更换
@@ -172,15 +172,37 @@
                     <div class="fname">{{ videoFile.name }}</div>
                     <div v-if="videoMetaLine" class="fmeta">{{ videoMetaLine }}</div>
                     <div class="ok">
-                      <el-icon :size="14"><CircleCheckFilled /></el-icon>
-                      上传完成
+                      <el-icon v-if="!preparingEvidence" :size="14"><CircleCheckFilled /></el-icon>
+                      <el-icon v-else class="is-loading" :size="14"><Loading /></el-icon>
+                      {{ videoStageText }}
                     </div>
                     <div class="bar-row">
-                      <div class="bar"><i :style="{ width: (isActiveUpload ? uploadPercent : 100) + '%' }"></i></div>
-                      <span>{{ isActiveUpload ? uploadPercent : 100 }}%</span>
+                      <div class="bar"><i :style="{ width: videoProgress + '%' }"></i></div>
+                      <span>{{ videoProgress }}%</span>
                     </div>
                   </div>
                 </div>
+                <div v-if="!reviewing" class="upload-mode-picker">
+                  <button
+                    type="button"
+                    :class="{ active: uploadMode === 'fast' }"
+                    :disabled="uploading"
+                    @click="uploadMode = 'fast'"
+                  >
+                    <strong>快速上传</strong>
+                    <span>本机无损拆音频并抽取画面，上传量更小</span>
+                  </button>
+                  <button
+                    type="button"
+                    :class="{ active: uploadMode === 'original' }"
+                    :disabled="uploading"
+                    @click="uploadMode = 'original'"
+                  >
+                    <strong>原视频上传</strong>
+                    <span>兼容性最好，网络较快或小文件时更合适</span>
+                  </button>
+                </div>
+                <div v-if="evidenceSummary" class="evidence-summary">{{ evidenceSummary }}</div>
               </div>
               <div v-else-if="reviewing" class="ready-card empty-view">
                 <div class="slot-head">
@@ -407,13 +429,23 @@
 
             <div v-if="videoFile && !reviewing" class="eta-banner">
               <el-icon :size="16"><InfoFilled /></el-icon>
-              系统将结合视频、课件、大纲与讲稿进行多模态分析，预计耗时 8–15 分钟。
+              {{ uploadMode === 'fast'
+                ? '快速上传不会压缩声音；如果当前浏览器不兼容，将自动回退为原视频上传。'
+                : '系统将上传完整视频，网络较快或文件较小时更合适。' }}
             </div>
 
             <div v-if="!reviewing" class="compose-actions">
               <span class="foot-count">已选择 {{ materialCount }} / 4 项材料</span>
-              <el-button :disabled="materialCount === 0" @click="clearMaterials">清空</el-button>
-              <el-button type="primary" :loading="uploading" :disabled="!canStart || uploading" @click="startUpload">
+              <el-button :disabled="materialCount === 0 || uploading" @click="clearMaterials">清空</el-button>
+              <el-button
+                v-if="uploading && !uploadTaskId"
+                type="danger"
+                plain
+                @click="cancelLocalUpload"
+              >
+                停止处理
+              </el-button>
+              <el-button v-else type="primary" :loading="uploading" :disabled="!canStart || uploading" @click="startUpload">
                 开始视频评估
               </el-button>
             </div>
@@ -1621,6 +1653,11 @@ const featureSubTab = ref('content')
 
 const uploading = ref(false)
 const uploadPercent = ref(0)
+const uploadMode = ref('original')
+const preparingEvidence = ref(false)
+const evidencePercent = ref(0)
+const evidenceStage = ref('')
+const evidenceSummary = ref('')
 const uploadTaskId = ref(null)
 const uploadContext = ref(null)
 const videoFile = ref(null)
@@ -1634,6 +1671,7 @@ const scriptPicker = ref(null)
 const videoUrl = ref('')
 const videoPoster = ref('')
 const videoDuration = ref('')
+const videoDurationSec = ref(0)
 const videoWidth = ref(0)
 const videoHeight = ref(0)
 const previewOpen = ref(false)
@@ -1658,6 +1696,20 @@ const isActiveUpload = computed(
   () => Boolean(uploading.value && uploadTaskId.value && activeId.value === uploadTaskId.value)
 )
 const reviewing = computed(() => Boolean(activeId.value && !isActiveUpload.value))
+const videoProgress = computed(() => {
+  if (preparingEvidence.value) return evidencePercent.value
+  if (isActiveUpload.value && uploadMode.value === 'fast' && evidenceSummary.value) {
+    return 70 + Math.round(uploadPercent.value * 0.3)
+  }
+  if (isActiveUpload.value) return uploadPercent.value
+  return reviewing.value ? 100 : 0
+})
+const videoStageText = computed(() => {
+  if (preparingEvidence.value) return evidenceStage.value || '浏览器预处理中'
+  if (isActiveUpload.value) return '正在上传材料'
+  if (reviewing.value) return '上传完成'
+  return uploadMode.value === 'fast' ? '已选择，等待快速处理' : '已选择，等待上传'
+})
 const statusBanner = computed(() => {
   const t = activeTask.value
   if (!t || isActiveUpload.value) return null
@@ -3309,6 +3361,14 @@ function formatDuration(sec) {
   return `${m}:${String(s).padStart(2, '0')}`
 }
 
+function shouldSuggestFastUpload(file, durationSec) {
+  return (
+    Number(file?.size || 0) >= 300 * 1024 * 1024 &&
+    Number(durationSec || 0) >= 15 * 60 &&
+    typeof VideoDecoder !== 'undefined'
+  )
+}
+
 function revokeVideoUrl() {
   if (videoUrl.value && videoUrl.value.startsWith('blob:')) {
     URL.revokeObjectURL(videoUrl.value)
@@ -3316,12 +3376,17 @@ function revokeVideoUrl() {
   videoUrl.value = ''
   videoPoster.value = ''
   videoDuration.value = ''
+  videoDurationSec.value = 0
   videoWidth.value = 0
   videoHeight.value = 0
 }
 
 function setVideo(file) {
   videoFile.value = file
+  uploadMode.value = 'original'
+  evidenceSummary.value = ''
+  evidencePercent.value = 0
+  evidenceStage.value = ''
   revokeVideoUrl()
   if (!file) return
   const url = URL.createObjectURL(file)
@@ -3332,8 +3397,10 @@ function setVideo(file) {
   video.src = url
   video.onloadedmetadata = () => {
     videoDuration.value = formatDuration(video.duration)
+    videoDurationSec.value = Number(video.duration) || 0
     videoWidth.value = video.videoWidth
     videoHeight.value = video.videoHeight
+    if (shouldSuggestFastUpload(file, videoDurationSec.value)) uploadMode.value = 'fast'
     video.currentTime = Math.min(1, video.duration * 0.1 || 0)
   }
   video.onseeked = () => {
@@ -3376,6 +3443,31 @@ async function startUpload() {
   uploadContext.value = context
   uploadController = new AbortController()
   try {
+    if (uploadMode.value === 'fast') {
+      preparingEvidence.value = true
+      evidencePercent.value = 0
+      evidenceStage.value = '准备浏览器预处理'
+      try {
+        const { prepareBrowserEvidence } = await import('../utils/videoEvidence')
+        context.evidence = await prepareBrowserEvidence(context.video, {
+          signal: uploadController.signal,
+          onProgress: ({ percent, stage }) => {
+            evidencePercent.value = Math.min(70, Math.round(percent * 0.7))
+            evidenceStage.value = stage
+          },
+        })
+        const packageBytes = context.evidence.audio.size + context.evidence.archive.size
+        const saved = Math.max(0, 100 - (packageBytes / Math.max(context.video.size, 1)) * 100)
+        evidenceSummary.value = `快速包 ${formatSize(packageBytes)}，比原视频减少 ${saved.toFixed(1)}%`
+      } catch (error) {
+        if (error?.name === 'AbortError') throw error
+        uploadMode.value = 'original'
+        evidenceSummary.value = ''
+        ElMessage.warning(`快速处理不可用，已回退原视频上传：${error?.message || '未知错误'}`)
+      } finally {
+        preparingEvidence.value = false
+      }
+    }
     const created = await evaluationApi.createTask(context.video.name)
     uploadTaskId.value = created.id
     if (activeId.value === startedFromId) activeId.value = created.id
@@ -3399,11 +3491,16 @@ async function startUpload() {
   } catch (err) {
     if (err?.code !== 'ERR_CANCELED') await loadTasks()
   } finally {
+    preparingEvidence.value = false
     uploading.value = false
     uploadTaskId.value = null
     uploadContext.value = null
     uploadController = null
   }
+}
+
+function cancelLocalUpload() {
+  uploadController?.abort()
 }
 
 // ---------------------------------------------------------------- 雷达图
@@ -3852,6 +3949,49 @@ onBeforeUnmount(() => {
   width: 40px;
   text-align: right;
 }
+.upload-mode-picker {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #f0f0f0;
+}
+.upload-mode-picker button {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 11px 13px;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  background: #fff;
+  color: #606266;
+  text-align: left;
+  cursor: pointer;
+}
+.upload-mode-picker button:hover,
+.upload-mode-picker button.active {
+  border-color: #a61b1b;
+  background: #fff8f8;
+}
+.upload-mode-picker button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.upload-mode-picker strong {
+  color: #303133;
+  font-size: 13px;
+}
+.upload-mode-picker span,
+.evidence-summary {
+  color: #909399;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.evidence-summary {
+  margin-top: 9px;
+  color: #2e8b57;
+}
 .aux-slot.filled {
   align-items: stretch;
   text-align: left;
@@ -4055,6 +4195,9 @@ svg.aux-icon .chip {
 }
 @media (max-width: 960px) {
   .aux-row {
+    grid-template-columns: 1fr;
+  }
+  .upload-mode-picker {
     grid-template-columns: 1fr;
   }
 }

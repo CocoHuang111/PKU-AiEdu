@@ -69,7 +69,13 @@ export const evaluationApi = {
   uploadTaskMaterials(id, files, onProgress, signal) {
     const opts = files || {}
     const form = new FormData()
-    if (opts.video) form.append('file', opts.video)
+    if (opts.evidence) {
+      form.append('evidence_audio', opts.evidence.audio)
+      form.append('evidence_archive', opts.evidence.archive)
+      form.append('evidence_manifest', JSON.stringify(opts.evidence.manifest))
+    } else if (opts.video) {
+      form.append('file', opts.video)
+    }
     if (opts.syllabus) form.append('syllabus', opts.syllabus)
     if (opts.courseware) form.append('courseware', opts.courseware)
     if (opts.transcript) form.append('transcript', opts.transcript)

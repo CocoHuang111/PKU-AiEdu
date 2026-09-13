@@ -119,6 +119,29 @@ def extract_keyframes(
     return frames
 
 
+def load_browser_evidence(media_path: str | Path) -> dict | None:
+    """读取上传接口生成的浏览器证据清单；普通视频没有该文件。"""
+    media_path = Path(media_path)
+    manifest_path = media_path.parent / "browser-evidence.json"
+    if not manifest_path.is_file():
+        return None
+    try:
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        duration = float(manifest["duration_sec"])
+        interval = float(manifest["interval_sec"])
+        dense = list(manifest["dense_frames"])
+        keyframes = list(manifest["keyframes"])
+    except (OSError, KeyError, TypeError, ValueError, json.JSONDecodeError) as exc:
+        raise MediaError("浏览器证据清单已损坏") from exc
+    if duration <= 0 or interval <= 0 or len(dense) < 2 or not keyframes:
+        raise MediaError("浏览器证据清单不完整")
+    paths = [Path(item.get("path", "")).resolve() for item in dense + keyframes]
+    frame_root = settings.frame_dir.resolve()
+    if any(not path.is_relative_to(frame_root) or not path.is_file() for path in paths):
+        raise MediaError("浏览器证据画面缺失")
+    return manifest
+
+
 def cleanup_video_artifacts(video_path: str | Path) -> None:
     """删掉本条抽音和关键帧/课件渲染页。原始视频不动。数据集 extract 用完即调。"""
     video_path = Path(video_path)
@@ -184,6 +207,32 @@ def iter_gray_frames(
             f"密集抽帧失败或帧数不足（得到 {count} 帧）："
             f"{stderr.decode('utf-8', 'ignore')[-300:]}"
         )
+
+
+def iter_gray_image_files(
+    paths: list[str | Path], width: int = 160, height: int = 90
+):
+    """读取浏览器已抽取的图片，转为与视频密集轨相同的灰度数组。"""
+    try:
+        import numpy as np
+        from PIL import Image
+    except ImportError as exc:
+        raise MediaError("未安装浏览器证据画面解码依赖") from exc
+
+    count = 0
+    for raw_path in paths:
+        path = Path(raw_path)
+        try:
+            with Image.open(path) as image:
+                frame = np.asarray(
+                    image.convert("L").resize((width, height)), dtype=np.uint8
+                ).copy()
+        except Exception as exc:
+            raise MediaError(f"无法读取浏览器证据画面：{path.name}") from exc
+        count += 1
+        yield frame
+    if count < 2:
+        raise MediaError(f"浏览器证据画面不足（得到 {count} 帧）")
 
 
 def _fmt_time(seconds: float) -> str:

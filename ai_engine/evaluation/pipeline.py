@@ -19,7 +19,7 @@ from . import diarization, media
 from .gb import LIVE_PROMPT_VERSION, LIVE_SCORE_SOURCE, predict_overall
 from .audio_features import extract_audio_features
 from .judge import judge_all, judge_fingerprint
-from .slide_features import extract_slide_features
+from .slide_features import extract_slide_features, extract_slide_features_from_images
 from .text_features import (
     CHINESE_CHAR,
     extract_text_features,
@@ -401,10 +401,15 @@ def collect_video_evidence(
     eval_conf = settings.section("evaluation")
     video_path = str(video_path)
     video_stem = Path(video_path).stem
+    browser_evidence = media.load_browser_evidence(video_path)
 
     progress(5, "extracting_audio", {})
     audio_path = media.extract_audio(video_path)
-    duration = media.probe_duration(video_path)
+    duration = (
+        float(browser_evidence["duration_sec"])
+        if browser_evidence
+        else media.probe_duration(video_path)
+    )
 
     syllabus_text = (reference or "").strip() or None
     if syllabus_path:
@@ -433,7 +438,18 @@ def collect_video_evidence(
     if vlm_enabled:
         progress(10, "keyframe_sampling", {})
         try:
-            keyframes = media.extract_keyframes(video_path, duration=duration)
+            if browser_evidence:
+                keyframes = [
+                    {
+                        "index": index,
+                        "path": item["path"],
+                        "time_sec": round(float(item["time_sec"]), 1),
+                        "timestamp": media._fmt_time(float(item["time_sec"])),
+                    }
+                    for index, item in enumerate(browser_evidence["keyframes"])
+                ]
+            else:
+                keyframes = media.extract_keyframes(video_path, duration=duration)
         except media.MediaError as e:
             progress(10, "keyframe_sampling", {"warning": str(e)})
 
@@ -513,13 +529,22 @@ def collect_video_evidence(
             progress(50, "slide_detection", {"warning": f"投影区域定位失败: {e}"})
             roi_meta = {"boxes": [], "source": "none"}
         try:
-            slides = extract_slide_features(
-                video_path,
-                asr_result.segments,
-                interval_sec=eval_conf.get("slide_sample_interval_sec", 3.0),
-                change_threshold=eval_conf.get("slide_change_threshold", 0.08),
-                rois=rois,
-            )
+            if browser_evidence:
+                slides = extract_slide_features_from_images(
+                    [item["path"] for item in browser_evidence["dense_frames"]],
+                    asr_result.segments,
+                    interval_sec=float(browser_evidence["interval_sec"]),
+                    change_threshold=eval_conf.get("slide_change_threshold", 0.08),
+                    rois=rois,
+                )
+            else:
+                slides = extract_slide_features(
+                    video_path,
+                    asr_result.segments,
+                    interval_sec=eval_conf.get("slide_sample_interval_sec", 3.0),
+                    change_threshold=eval_conf.get("slide_change_threshold", 0.08),
+                    rois=rois,
+                )
             slides["slide_roi_source"] = roi_meta.get("source") or "none"
             if rois:
                 slides["slide_roi_boxes"] = rois
@@ -585,7 +610,11 @@ def collect_video_evidence(
         courseware_visual=bool((courseware_pack or {}).get("visual")),
     )
     return {
-        "video_file": Path(video_path).name,
+        "video_file": (
+            browser_evidence.get("original_filename")
+            if browser_evidence
+            else Path(video_path).name
+        ),
         "duration_sec": round(float(duration), 1),
         "has_syllabus": bool((syllabus_text or "").strip()),
         "has_courseware": has_cw,
@@ -601,6 +630,7 @@ def collect_video_evidence(
         "vision_notes": vision_notes,
         "courseware_notes": courseware_notes,
         "source": "video",
+        "upload_mode": "browser_evidence" if browser_evidence else "original_video",
         "transcript_source": transcript_source,
     }
 

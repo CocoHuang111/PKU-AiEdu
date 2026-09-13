@@ -18,6 +18,7 @@ from ai_engine.syllabus.export import content_disposition, export_filename
 from ..core import db
 from ..core.audit import audit
 from ..core.auth import current_user
+from ..core.browser_evidence import save_browser_evidence
 from ..core.database import session_scope
 from ..core.uploads import record_upload, save_user_upload
 from ..schemas import EvaluationTaskCreateForm, TranscriptForm
@@ -86,22 +87,35 @@ async def create_upload_task(
 async def _store_task_materials(
     task_id: str,
     user: dict,
-    file: UploadFile,
+    file: UploadFile | None,
     reference: str | None,
     syllabus: UploadFile | None,
     courseware: UploadFile | None,
     transcript: UploadFile | None,
     transcript_text: str | None,
+    evidence_audio: UploadFile | None = None,
+    evidence_archive: UploadFile | None = None,
+    evidence_manifest: str | None = None,
 ) -> dict:
     task = await db.get_task(task_id, user_id=user["id"])
     if not task:
         raise HTTPException(404, "任务不存在")
     if task["status"] not in {"uploading", "upload_failed"}:
         raise HTTPException(409, f"任务当前状态为 {task['status']}，不能上传材料")
-    has_script_file = _has_upload(transcript)
     script_body = (transcript_text or "").strip() or None
+    has_video = _has_upload(file)
+    evidence_parts = (
+        _has_upload(evidence_audio),
+        _has_upload(evidence_archive),
+        bool((evidence_manifest or "").strip()),
+    )
+    has_evidence = all(evidence_parts)
     try:
-        _validate_video_filename(file.filename or task.get("filename") or "")
+        if has_video and any(evidence_parts):
+            raise HTTPException(400, "原视频和浏览器证据包不能同时上传")
+        if not has_video and not has_evidence:
+            raise HTTPException(400, "请上传原视频或完整的浏览器证据包")
+        _validate_video_filename(task.get("filename") or (file.filename if file else ""))
         if script_body and len(script_body) < 10:
             raise HTTPException(400, "讲稿过短，请补充内容或改传文件")
     except HTTPException as exc:
@@ -119,16 +133,26 @@ async def _store_task_materials(
     courseware_path = None
     transcript_path = None
     try:
-        dest, video_key = await asyncio.to_thread(
-            save_user_upload,
-            file,
-            user_id=user["id"],
-            task_id=task_id,
-            purpose="video",
-            allowed=ALLOWED_EXT,
-            max_bytes=2 * 1024 * 1024 * 1024,
-            kind_label="视频",
-        )
+        if has_evidence:
+            dest, video_key, _ = await asyncio.to_thread(
+                save_browser_evidence,
+                audio=evidence_audio,
+                archive=evidence_archive,
+                raw_manifest=evidence_manifest,
+                user_id=user["id"],
+                task_id=task_id,
+            )
+        else:
+            dest, video_key = await asyncio.to_thread(
+                save_user_upload,
+                file,
+                user_id=user["id"],
+                task_id=task_id,
+                purpose="video",
+                allowed=ALLOWED_EXT,
+                max_bytes=2 * 1024 * 1024 * 1024,
+                kind_label="视频",
+            )
         current = await db.get_task(task_id, user_id=user["id"])
         if not current or current["status"] == "cancelled":
             raise HTTPException(409, "上传已取消")
@@ -168,15 +192,15 @@ async def _store_task_materials(
         await record_upload(
             user_id=user["id"],
             purpose="video",
-            original_name=file.filename or Path(dest).name,
+            original_name=task.get("filename") or (file.filename if file else Path(dest).name),
             storage_key=video_key,
-            mime_type=file.content_type,
+            mime_type=(evidence_audio.content_type if has_evidence else file.content_type),
             path=dest,
         )
         saved = await db.set_task_materials(
             task_id,
             user["id"],
-            filename=file.filename or task.get("filename"),
+            filename=task.get("filename") or (file.filename if file else Path(dest).name),
             video_path=dest,
             reference=(reference or "").strip() or None,
             syllabus_path=syllabus_path,
@@ -189,6 +213,8 @@ async def _store_task_materials(
         return saved
     except Exception as exc:
         _cleanup_task_uploads(user["id"], task_id)
+        if dest and has_evidence:
+            shutil.rmtree(settings.frame_dir / Path(dest).stem, ignore_errors=True)
         current = await db.get_task(task_id, user_id=user["id"])
         if current and current["status"] != "cancelled":
             await db.update_task(
@@ -199,8 +225,7 @@ async def _store_task_materials(
             )
         raise
     finally:
-        await file.close()
-        for upload in (syllabus, courseware, transcript):
+        for upload in (file, syllabus, courseware, transcript, evidence_audio, evidence_archive):
             if upload is not None:
                 await upload.close()
 
@@ -208,16 +233,29 @@ async def _store_task_materials(
 @router.post("/tasks/{task_id}/materials")
 async def upload_task_materials(
     task_id: str,
-    file: UploadFile = File(..., description="教学视频（必填）"),
+    file: UploadFile | None = File(None, description="教学视频"),
     reference: str | None = Form(None),
     syllabus: UploadFile | None = File(None),
     courseware: UploadFile | None = File(None),
     transcript: UploadFile | None = File(None),
     transcript_text: str | None = Form(None),
+    evidence_audio: UploadFile | None = File(None),
+    evidence_archive: UploadFile | None = File(None),
+    evidence_manifest: str | None = Form(None),
     user: dict = Depends(current_user),
 ) -> dict:
     return await _store_task_materials(
-        task_id, user, file, reference, syllabus, courseware, transcript, transcript_text
+        task_id,
+        user,
+        file,
+        reference,
+        syllabus,
+        courseware,
+        transcript,
+        transcript_text,
+        evidence_audio,
+        evidence_archive,
+        evidence_manifest,
     )
 
 
@@ -359,6 +397,11 @@ _FILE_MEDIA = {
     ".avi": "video/x-msvideo",
     ".webm": "video/webm",
     ".m4v": "video/mp4",
+    ".m4a": "audio/mp4",
+    ".mp3": "audio/mpeg",
+    ".flac": "audio/flac",
+    ".wav": "audio/wav",
+    ".mka": "audio/x-matroska",
     ".pdf": "application/pdf",
     ".ppt": "application/vnd.ms-powerpoint",
     ".pptx": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
