@@ -42,6 +42,28 @@ def tree_size(path: Path) -> int:
     return sum(item.stat().st_size for item in path.rglob("*") if item.is_file())
 
 
+def copied_audio_path(output: Path, metadata: dict) -> Path:
+    audio_stream = next(
+        (
+            stream
+            for stream in metadata.get("streams", [])
+            if stream.get("codec_type") == "audio"
+        ),
+        {},
+    )
+    extension = {
+        "aac": "m4a",
+        "alac": "m4a",
+        "mp3": "mp3",
+        "opus": "opus",
+        "vorbis": "ogg",
+        "flac": "flac",
+        "pcm_s16le": "wav",
+        "pcm_s24le": "wav",
+    }.get(audio_stream.get("codec_name"), "mka")
+    return output / f"audio-original.{extension}"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("video", type=Path)
@@ -67,6 +89,7 @@ def main() -> None:
     metadata = probe(args.video)
     duration = float(metadata["format"]["duration"])
     source_size = int(metadata["format"]["size"])
+    original_audio = copied_audio_path(args.output, metadata)
 
     timings: dict[str, float] = {}
     timings["audio_copy_sec"] = run(
@@ -83,7 +106,7 @@ def main() -> None:
             "-vn",
             "-c:a",
             "copy",
-            str(args.output / "audio-original.mka"),
+            str(original_audio),
         ]
     )
     timings["audio_compact_sec"] = run(
@@ -138,7 +161,6 @@ def main() -> None:
     )
 
     compact_audio = args.output / "audio-compact.opus"
-    original_audio = args.output / "audio-original.mka"
     visual_size = tree_size(dense_dir) + tree_size(keyframe_dir)
     report = {
         "source": {
