@@ -3461,6 +3461,11 @@ async function startUpload() {
         evidenceSummary.value = `快速包 ${formatSize(packageBytes)}，比原视频减少 ${saved.toFixed(1)}%`
       } catch (error) {
         if (error?.name === 'AbortError') throw error
+        if (context.video.size > 2 * 1024 * 1024 * 1024) {
+          throw new Error(
+            `快速处理失败，且原视频超过2GB，已停止以避免无效上传：${error?.message || '未知错误'}`
+          )
+        }
         uploadMode.value = 'original'
         evidenceSummary.value = ''
         ElMessage.warning(`快速处理不可用，已回退原视频上传：${error?.message || '未知错误'}`)
