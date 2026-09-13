@@ -13,6 +13,7 @@ from ..core import db
 
 STEP_LABELS = {
     "uploading": "上传中",
+    "remote_downloading": "服务器下载中",
     "upload_failed": "上传失败",
     "queued": "排队中",
     "starting": "准备中",

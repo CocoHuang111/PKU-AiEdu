@@ -211,25 +211,70 @@
                 </div>
                 <div class="empty-slot">未上传</div>
               </div>
-              <el-upload
-                v-else
-                drag
-                class="video-drop"
-                :auto-upload="false"
-                :show-file-list="false"
-                accept=".mp4,.avi,.mov,.mkv,.flv,.wmv,.webm,.m4v"
-                :on-change="onVideoChange"
-              >
+              <div v-else class="video-source-card">
                 <div class="slot-head">
                   课堂视频
                   <span class="req-tag">必填</span>
                 </div>
-                <el-icon class="drop-icon" :size="36"><VideoCameraFilled /></el-icon>
-                <div class="upload-text">
-                  拖入视频文件，或<span class="pick">点击选择</span>
+                <div class="video-source-tabs">
+                  <button
+                    type="button"
+                    :class="{ active: videoSource === 'file' }"
+                    :disabled="uploading"
+                    @click="chooseVideoSource('file')"
+                  >
+                    本地视频
+                  </button>
+                  <button
+                    type="button"
+                    :class="{ active: videoSource === 'link' }"
+                    :disabled="uploading"
+                    @click="chooseVideoSource('link')"
+                  >
+                    视频链接
+                  </button>
                 </div>
-                <div class="upload-hint">支持 MP4、MOV、MKV 等格式，建议上传 5–90 分钟的视频</div>
-              </el-upload>
+                <el-upload
+                  v-if="videoSource === 'file'"
+                  drag
+                  class="video-drop"
+                  :auto-upload="false"
+                  :show-file-list="false"
+                  accept=".mp4,.avi,.mov,.mkv,.flv,.wmv,.webm,.m4v"
+                  :on-change="onVideoChange"
+                >
+                  <el-icon class="drop-icon" :size="36"><VideoCameraFilled /></el-icon>
+                  <div class="upload-text">
+                    拖入视频文件，或<span class="pick">点击选择</span>
+                  </div>
+                  <div class="upload-hint">支持 MP4、MOV、MKV 等格式，建议上传 5–90 分钟的视频</div>
+                </el-upload>
+                <div v-else class="video-link-panel">
+                  <el-icon class="link-icon" :size="34"><Link /></el-icon>
+                  <div class="link-copy">粘贴可直接下载的公网视频地址</div>
+                  <el-input
+                    v-model="remoteVideoLink"
+                    :disabled="uploading"
+                    clearable
+                    size="large"
+                    placeholder="https://example.com/lesson.mp4"
+                    @keyup.enter="startUpload"
+                  />
+                  <div class="upload-hint">
+                    支持 HTTP/HTTPS 直链或带签名的下载链接；不支持需登录、提取码的网盘分享页。
+                  </div>
+                  <div v-if="remoteUrlError" class="link-error">{{ remoteUrlError }}</div>
+                  <div v-if="isRemoteImport" class="remote-progress">
+                    <div class="bar-row">
+                      <div class="bar"><i :style="{ width: remoteImportProgress + '%' }"></i></div>
+                      <span>{{ remoteImportProgress }}%</span>
+                    </div>
+                    <div class="remote-progress-text">
+                      {{ activeTask?.step_label || '服务器正在读取链接' }}{{ activeTask ? stepDetail(activeTask) : '' }}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <div class="aux-row">
@@ -427,9 +472,11 @@
               </el-upload>
             </div>
 
-            <div v-if="videoFile && !reviewing" class="eta-banner">
+            <div v-if="(videoFile || validRemoteVideoLink) && !reviewing" class="eta-banner">
               <el-icon :size="16"><InfoFilled /></el-icon>
-              {{ uploadMode === 'fast'
+              {{ videoSource === 'link'
+                ? '视频将由服务器直接下载，不占用本机上传带宽；链接失效或需要登录时将导入失败。'
+                : uploadMode === 'fast'
                 ? '快速上传不会压缩声音；如果当前浏览器不兼容，将自动回退为原视频上传。'
                 : '系统将上传完整视频，网络较快或文件较小时更合适。' }}
             </div>
@@ -438,14 +485,15 @@
               <span class="foot-count">已选择 {{ materialCount }} / 4 项材料</span>
               <el-button :disabled="materialCount === 0 || uploading" @click="clearMaterials">清空</el-button>
               <el-button
-                v-if="uploading && !uploadTaskId"
+                v-if="uploading"
                 type="danger"
                 plain
-                @click="cancelLocalUpload"
+                :loading="Boolean(uploadTaskId && cancellingId === uploadTaskId)"
+                @click="uploadTaskId ? cancelTask(uploadTaskId) : cancelLocalUpload()"
               >
-                停止处理
+                {{ uploadTaskId ? '停止任务' : '停止处理' }}
               </el-button>
-              <el-button v-else type="primary" :loading="uploading" :disabled="!canStart || uploading" @click="startUpload">
+              <el-button v-else type="primary" :disabled="!canStart" @click="startUpload">
                 开始视频评估
               </el-button>
             </div>
@@ -1381,6 +1429,7 @@ import {
   DArrowLeft,
   Delete,
   InfoFilled,
+  Link,
   Loading,
   Plus,
   RefreshRight,
@@ -1654,6 +1703,8 @@ const featureSubTab = ref('content')
 const uploading = ref(false)
 const uploadPercent = ref(0)
 const uploadMode = ref('original')
+const videoSource = ref('file')
+const remoteVideoLink = ref('')
 const preparingEvidence = ref(false)
 const evidencePercent = ref(0)
 const evidenceStage = ref('')
@@ -1682,10 +1733,25 @@ const taskFilter = ref('all')
 let uploadController = null
 let taskListRequest = 0
 
-const canStart = computed(() => Boolean(videoFile.value))
+const validRemoteVideoLink = computed(() => {
+  if (videoSource.value !== 'link') return ''
+  const value = remoteVideoLink.value.trim()
+  if (!value) return ''
+  try {
+    const parsed = new URL(value)
+    return ['http:', 'https:'].includes(parsed.protocol) && parsed.hostname ? value : ''
+  } catch {
+    return ''
+  }
+})
+const remoteUrlError = computed(() => {
+  if (videoSource.value !== 'link' || !remoteVideoLink.value.trim() || validRemoteVideoLink.value) return ''
+  return '请填写完整的 HTTP/HTTPS 链接'
+})
+const canStart = computed(() => Boolean(videoFile.value || validRemoteVideoLink.value))
 const materialCount = computed(() => {
   let n = 0
-  if (videoFile.value) n += 1
+  if (videoFile.value || validRemoteVideoLink.value) n += 1
   if (coursewareFile.value) n += 1
   if (syllabusFile.value) n += 1
   if (scriptFile.value) n += 1
@@ -1695,6 +1761,13 @@ const activeTask = computed(() => tasks.value.find((t) => t.id === activeId.valu
 const isActiveUpload = computed(
   () => Boolean(uploading.value && uploadTaskId.value && activeId.value === uploadTaskId.value)
 )
+const isRemoteImport = computed(
+  () => Boolean(isActiveUpload.value && uploadContext.value?.videoUrl)
+)
+const remoteImportProgress = computed(() => {
+  if (!isRemoteImport.value) return 0
+  return activeTask.value?.progress || 0
+})
 const reviewing = computed(() => Boolean(activeId.value && !isActiveUpload.value))
 const videoProgress = computed(() => {
   if (preparingEvidence.value) return evidencePercent.value
@@ -3055,6 +3128,7 @@ function isRunning(t) {
 }
 
 function taskProgress(t) {
+  if (t.id === uploadTaskId.value && uploadContext.value?.videoUrl) return t.progress || 0
   if (t.id === uploadTaskId.value && uploading.value) return uploadPercent.value
   return t.progress || 0
 }
@@ -3096,6 +3170,14 @@ function rowClass({ row }) {
 
 function stepDetail(t) {
   const d = t.step_detail || {}
+  if (t.current_step === 'remote_downloading') {
+    if (d.phase === 'connecting') return '（正在连接）'
+    if (d.phase === 'validating') return '（正在校验视频）'
+    if (d.downloaded_bytes) {
+      const done = formatSize(d.downloaded_bytes)
+      return d.total_bytes ? `（${done} / ${formatSize(d.total_bytes)}）` : `（已下载 ${done}）`
+    }
+  }
   if (t.current_step === 'asr' && d.phase === 'punctuate') return '（补标点）'
   if (t.current_step === 'asr' && d.total_sec) {
     return `（${Math.round(d.done_sec / 60)}/${Math.round(d.total_sec / 60)} 分钟）`
@@ -3168,7 +3250,13 @@ async function selectTask(id) {
 function restoreUploadContext() {
   const ctx = uploadContext.value
   if (!ctx) return
-  setVideo(ctx.video)
+  if (ctx.videoUrl) {
+    clearVideo()
+    videoSource.value = 'link'
+    remoteVideoLink.value = ctx.videoUrl
+  } else {
+    setVideo(ctx.video)
+  }
   syllabusFile.value = ctx.syllabus
   coursewareFile.value = ctx.courseware
   scriptFile.value = ctx.transcript
@@ -3361,6 +3449,16 @@ function formatDuration(sec) {
   return `${m}:${String(s).padStart(2, '0')}`
 }
 
+function filenameFromRemoteUrl(value) {
+  try {
+    const name = decodeURIComponent(new URL(value).pathname.split('/').pop() || '')
+    if (/\.(mp4|avi|mov|mkv|flv|wmv|webm|m4v)$/i.test(name)) return name.slice(0, 180)
+  } catch {
+    /* canStart 已经校验 URL */
+  }
+  return '链接视频.mp4'
+}
+
 function shouldSuggestFastUpload(file, durationSec) {
   return (
     Number(file?.size || 0) >= 300 * 1024 * 1024 &&
@@ -3382,6 +3480,8 @@ function revokeVideoUrl() {
 }
 
 function setVideo(file) {
+  videoSource.value = 'file'
+  remoteVideoLink.value = ''
   videoFile.value = file
   uploadMode.value = 'original'
   evidenceSummary.value = ''
@@ -3422,8 +3522,17 @@ function clearVideo() {
   revokeVideoUrl()
 }
 
+function chooseVideoSource(source) {
+  if (uploading.value || source === videoSource.value) return
+  if (source === 'link') clearVideo()
+  else remoteVideoLink.value = ''
+  videoSource.value = source
+}
+
 function clearMaterials() {
   clearVideo()
+  remoteVideoLink.value = ''
+  videoSource.value = 'file'
   syllabusFile.value = null
   coursewareFile.value = null
   scriptFile.value = null
@@ -3434,6 +3543,7 @@ async function startUpload() {
   const startedFromId = activeId.value
   const context = {
     video: videoFile.value,
+    videoUrl: validRemoteVideoLink.value || null,
     syllabus: syllabusFile.value,
     courseware: coursewareFile.value,
     transcript: scriptFile.value,
@@ -3443,7 +3553,7 @@ async function startUpload() {
   uploadContext.value = context
   uploadController = new AbortController()
   try {
-    if (uploadMode.value === 'fast') {
+    if (context.video && uploadMode.value === 'fast') {
       preparingEvidence.value = true
       evidencePercent.value = 0
       evidenceStage.value = '准备浏览器预处理'
@@ -3473,7 +3583,9 @@ async function startUpload() {
         preparingEvidence.value = false
       }
     }
-    const created = await evaluationApi.createTask(context.video.name)
+    const created = await evaluationApi.createTask(
+      context.video?.name || filenameFromRemoteUrl(context.videoUrl)
+    )
     uploadTaskId.value = created.id
     if (activeId.value === startedFromId) activeId.value = created.id
     tasks.value = [created, ...tasks.value.filter((t) => t.id !== created.id)]
@@ -4066,6 +4178,79 @@ onBeforeUnmount(() => {
   width: 100%;
   max-height: 70vh;
   background: #000;
+}
+.video-source-card {
+  padding: 14px 16px 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background: #fff;
+}
+.video-source-tabs {
+  display: inline-flex;
+  gap: 4px;
+  margin: 14px 0;
+  padding: 3px;
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+.video-source-tabs button {
+  padding: 7px 18px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #606266;
+  cursor: pointer;
+  font-size: 13px;
+}
+.video-source-tabs button.active {
+  background: #fff;
+  color: #a61b1b;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
+}
+.video-source-tabs button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.video-link-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 20px 20px;
+  border: 1px dashed #d8d8d8;
+  border-radius: 10px;
+}
+.link-icon {
+  color: #a61b1b;
+}
+.link-copy {
+  margin: 9px 0 12px;
+  color: #303133;
+  font-size: 14px;
+}
+.video-link-panel .el-input {
+  width: min(680px, 100%);
+}
+.video-link-panel .upload-hint,
+.link-error,
+.remote-progress {
+  width: min(680px, 100%);
+}
+.video-link-panel .upload-hint {
+  line-height: 1.6;
+}
+.link-error {
+  margin-top: 6px;
+  color: #c45656;
+  font-size: 12px;
+}
+.remote-progress {
+  margin-top: 4px;
+}
+.remote-progress-text {
+  margin-top: 5px;
+  color: #606266;
+  font-size: 12px;
 }
 .video-drop :deep(.el-upload),
 .video-drop :deep(.el-upload-dragger) {

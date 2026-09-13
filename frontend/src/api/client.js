@@ -75,6 +75,8 @@ export const evaluationApi = {
       form.append('evidence_manifest', JSON.stringify(opts.evidence.manifest))
     } else if (opts.video) {
       form.append('file', opts.video)
+    } else if (opts.videoUrl) {
+      form.append('video_url', opts.videoUrl)
     }
     if (opts.syllabus) form.append('syllabus', opts.syllabus)
     if (opts.courseware) form.append('courseware', opts.courseware)
@@ -84,8 +86,11 @@ export const evaluationApi = {
     return client.post(`/api/evaluation/tasks/${id}/materials`, form, {
       headers: { 'Content-Type': 'multipart/form-data' },
       signal,
+      timeout: opts.videoUrl ? 0 : undefined,
       onUploadProgress: (e) => {
-        if (onProgress && e.total) onProgress(Math.round((e.loaded / e.total) * 100))
+        if (!opts.videoUrl && onProgress && e.total) {
+          onProgress(Math.round((e.loaded / e.total) * 100))
+        }
       },
     })
   },

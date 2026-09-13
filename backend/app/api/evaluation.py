@@ -20,13 +20,14 @@ from ..core.audit import audit
 from ..core.auth import current_user
 from ..core.browser_evidence import save_browser_evidence
 from ..core.database import session_scope
+from ..core.remote_video import ALLOWED_VIDEO_EXT, download_remote_video
 from ..core.uploads import record_upload, save_user_upload
 from ..schemas import EvaluationTaskCreateForm, TranscriptForm
 from ..workers.tasks import STEP_LABELS
 
 router = APIRouter(prefix="/api/evaluation", tags=["教学视频质量评估"])
 
-ALLOWED_EXT = {".mp4", ".avi", ".mov", ".mkv", ".flv", ".wmv", ".webm", ".m4v"}
+ALLOWED_EXT = ALLOWED_VIDEO_EXT
 SYLLABUS_MAX_BYTES = 30 * 1024 * 1024
 COURSEWARE_MAX_BYTES = 80 * 1024 * 1024
 SCRIPT_MAX_BYTES = 30 * 1024 * 1024
@@ -96,6 +97,7 @@ async def _store_task_materials(
     evidence_audio: UploadFile | None = None,
     evidence_archive: UploadFile | None = None,
     evidence_manifest: str | None = None,
+    video_url: str | None = None,
 ) -> dict:
     task = await db.get_task(task_id, user_id=user["id"])
     if not task:
@@ -110,11 +112,15 @@ async def _store_task_materials(
         bool((evidence_manifest or "").strip()),
     )
     has_evidence = all(evidence_parts)
+    remote_url = (video_url or "").strip()
+    has_remote = bool(remote_url)
     try:
-        if has_video and any(evidence_parts):
-            raise HTTPException(400, "原视频和浏览器证据包不能同时上传")
-        if not has_video and not has_evidence:
-            raise HTTPException(400, "请上传原视频或完整的浏览器证据包")
+        if any(evidence_parts) and not has_evidence:
+            raise HTTPException(400, "浏览器证据包不完整，请重新处理后上传")
+        if sum((has_video, has_evidence, has_remote)) > 1:
+            raise HTTPException(400, "原视频、浏览器证据包和视频链接只能选择一种")
+        if not any((has_video, has_evidence, has_remote)):
+            raise HTTPException(400, "请上传原视频、完整的浏览器证据包或填写视频直链")
         _validate_video_filename(task.get("filename") or (file.filename if file else ""))
         if script_body and len(script_body) < 10:
             raise HTTPException(400, "讲稿过短，请补充内容或改传文件")
@@ -132,6 +138,8 @@ async def _store_task_materials(
     syllabus_path = None
     courseware_path = None
     transcript_path = None
+    original_video_name = task.get("filename") or (file.filename if file else "教学视频")
+    video_mime_type = None
     try:
         if has_evidence:
             dest, video_key, _ = await asyncio.to_thread(
@@ -141,6 +149,53 @@ async def _store_task_materials(
                 raw_manifest=evidence_manifest,
                 user_id=user["id"],
                 task_id=task_id,
+            )
+            video_mime_type = evidence_audio.content_type
+        elif has_remote:
+            async def remote_progress(downloaded: int, total: int | None) -> None:
+                current = await db.get_task(task_id, user_id=user["id"])
+                if not current or current["status"] == "cancelled":
+                    raise HTTPException(409, "导入已取消")
+                if total:
+                    progress = min(95, max(1, round(downloaded / total * 95)))
+                else:
+                    progress = min(90, max(1, round(downloaded / (128 * 1024 * 1024))))
+                await db.update_task(
+                    task_id,
+                    progress=progress,
+                    current_step="remote_downloading",
+                    step_detail={
+                        "phase": "download",
+                        "downloaded_bytes": downloaded,
+                        "total_bytes": total,
+                    },
+                )
+
+            await db.update_task(
+                task_id,
+                progress=1,
+                current_step="remote_downloading",
+                step_detail={"phase": "connecting"},
+            )
+            remote = await download_remote_video(
+                remote_url,
+                user_id=user["id"],
+                task_id=task_id,
+                on_progress=remote_progress,
+            )
+            dest = remote.path
+            video_key = remote.storage_key
+            original_video_name = remote.filename
+            video_mime_type = remote.mime_type
+            await db.update_task(
+                task_id,
+                progress=97,
+                current_step="remote_downloading",
+                step_detail={
+                    "phase": "validating",
+                    "downloaded_bytes": remote.size_bytes,
+                    "total_bytes": remote.size_bytes,
+                },
             )
         else:
             dest, video_key = await asyncio.to_thread(
@@ -153,6 +208,7 @@ async def _store_task_materials(
                 max_bytes=2 * 1024 * 1024 * 1024,
                 kind_label="视频",
             )
+            video_mime_type = file.content_type
         current = await db.get_task(task_id, user_id=user["id"])
         if not current or current["status"] == "cancelled":
             raise HTTPException(409, "上传已取消")
@@ -192,15 +248,15 @@ async def _store_task_materials(
         await record_upload(
             user_id=user["id"],
             purpose="video",
-            original_name=task.get("filename") or (file.filename if file else Path(dest).name),
+            original_name=original_video_name,
             storage_key=video_key,
-            mime_type=(evidence_audio.content_type if has_evidence else file.content_type),
+            mime_type=video_mime_type,
             path=dest,
         )
         saved = await db.set_task_materials(
             task_id,
             user["id"],
-            filename=task.get("filename") or (file.filename if file else Path(dest).name),
+            filename=original_video_name,
             video_path=dest,
             reference=(reference or "").strip() or None,
             syllabus_path=syllabus_path,
@@ -242,6 +298,7 @@ async def upload_task_materials(
     evidence_audio: UploadFile | None = File(None),
     evidence_archive: UploadFile | None = File(None),
     evidence_manifest: str | None = Form(None),
+    video_url: str | None = Form(None),
     user: dict = Depends(current_user),
 ) -> dict:
     return await _store_task_materials(
@@ -256,6 +313,7 @@ async def upload_task_materials(
         evidence_audio,
         evidence_archive,
         evidence_manifest,
+        video_url,
     )
 
 

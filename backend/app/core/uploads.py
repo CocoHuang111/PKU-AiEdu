@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import uuid
 from pathlib import Path
 
@@ -69,6 +70,7 @@ async def record_upload(
     path: str,
 ) -> str:
     disk = Path(path)
+    digest = await asyncio.to_thread(sha256_file, disk) if disk.is_file() else None
     return await db.create_stored_file(
         user_id=user_id,
         purpose=purpose,
@@ -76,7 +78,7 @@ async def record_upload(
         storage_key=storage_key,
         mime_type=mime_type,
         size_bytes=disk.stat().st_size if disk.is_file() else 0,
-        sha256=sha256_file(disk) if disk.is_file() else None,
+        sha256=digest,
     )
 
 
