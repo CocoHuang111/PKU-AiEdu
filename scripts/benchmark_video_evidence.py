@@ -83,7 +83,7 @@ def main() -> None:
             "-vn",
             "-c:a",
             "copy",
-            str(args.output / "audio-original.ogg"),
+            str(args.output / "audio-original.mka"),
         ]
     )
     timings["audio_compact_sec"] = run(
@@ -109,7 +109,7 @@ def main() -> None:
             str(args.output / "audio-compact.opus"),
         ]
     )
-    timings["dense_frames_sec"] = run(
+    timings["visual_frames_sec"] = run(
         [
             "ffmpeg",
             "-hide_banner",
@@ -117,23 +117,20 @@ def main() -> None:
             "error",
             "-i",
             str(args.video),
-            "-vf",
-            f"fps=1/{args.interval},scale=160:90,format=gray",
+            "-filter_complex",
+            (
+                "[0:v:0]split=2[dense][key];"
+                f"[dense]fps=1/{args.interval},scale=160:90,format=gray[dense_out];"
+                f"[key]fps={args.keyframes}/{duration},"
+                "scale='min(1280,iw)':-2[key_out]"
+            ),
+            "-map",
+            "[dense_out]",
             "-q:v",
             "5",
             str(dense_dir / "frame-%05d.jpg"),
-        ]
-    )
-    timings["keyframes_sec"] = run(
-        [
-            "ffmpeg",
-            "-hide_banner",
-            "-loglevel",
-            "error",
-            "-i",
-            str(args.video),
-            "-vf",
-            f"fps={args.keyframes}/{duration},scale='min(1280,iw)':-2",
+            "-map",
+            "[key_out]",
             "-q:v",
             "3",
             str(keyframe_dir / "frame-%02d.jpg"),
@@ -141,7 +138,7 @@ def main() -> None:
     )
 
     compact_audio = args.output / "audio-compact.opus"
-    original_audio = args.output / "audio-original.ogg"
+    original_audio = args.output / "audio-original.mka"
     visual_size = tree_size(dense_dir) + tree_size(keyframe_dir)
     report = {
         "source": {
