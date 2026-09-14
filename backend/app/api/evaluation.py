@@ -5,7 +5,7 @@ import shutil
 from datetime import datetime
 from pathlib import Path
 
-from fastapi import APIRouter, Depends, File, Form, HTTPException, Query, UploadFile
+from fastapi import APIRouter, Depends, File, Form, Header, HTTPException, Query, Request, UploadFile
 from fastapi.responses import FileResponse, Response
 
 from ai_engine.config import settings
@@ -21,8 +21,20 @@ from ..core.auth import current_user
 from ..core.browser_evidence import save_browser_evidence
 from ..core.database import session_scope
 from ..core.remote_video import ALLOWED_VIDEO_EXT, download_remote_video
+from ..core.upload_sessions import (
+    complete_session,
+    create_session,
+    remove_session,
+    save_part,
+    session_status,
+)
 from ..core.uploads import record_upload, save_user_upload
-from ..schemas import EvaluationTaskCreateForm, TranscriptForm
+from ..schemas import (
+    EvaluationTaskCreateForm,
+    TranscriptForm,
+    UploadSessionCompleteForm,
+    UploadSessionCreateForm,
+)
 from ..workers.tasks import STEP_LABELS
 
 router = APIRouter(prefix="/api/evaluation", tags=["教学视频质量评估"])
@@ -83,6 +95,216 @@ async def create_upload_task(
     )
     task = await db.get_task(task_id, user_id=user["id"])
     return task or {"id": task_id, "status": "uploading", "filename": form.filename}
+
+
+def _uploadable_task(task: dict | None) -> dict:
+    if not task:
+        raise HTTPException(404, "任务不存在")
+    if task["status"] not in {"uploading", "upload_failed"}:
+        raise HTTPException(409, f"任务当前状态为 {task['status']}，不能继续上传")
+    return task
+
+
+@router.post("/upload-probe")
+async def upload_probe(request: Request, _: dict = Depends(current_user)) -> dict:
+    """接收一个小型随机请求，仅用于测量浏览器到本服务的真实上行速度。"""
+    received = 0
+    async for chunk in request.stream():
+        received += len(chunk)
+        if received > 2 * 1024 * 1024:
+            raise HTTPException(413, "测速数据超过2MB")
+    if received <= 0:
+        raise HTTPException(400, "测速数据为空")
+    return {"received_bytes": received}
+
+
+@router.post("/tasks/{task_id}/upload-session")
+async def create_task_upload_session(
+    task_id: str,
+    form: UploadSessionCreateForm,
+    user: dict = Depends(current_user),
+) -> dict:
+    task = _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
+    if task.get("video_path"):
+        return {"complete": True, "task": task}
+    if Path(form.original_filename).name != task.get("filename"):
+        raise HTTPException(400, "上传文件名与任务不一致")
+    return await asyncio.to_thread(
+        create_session,
+        user["id"],
+        task_id,
+        mode=form.mode,
+        fingerprint=form.fingerprint,
+        original_filename=form.original_filename,
+        original_size=form.original_size,
+        audio_filename=form.audio_filename,
+        audio_mime=form.audio_mime,
+    )
+
+
+@router.get("/tasks/{task_id}/upload-session")
+async def get_task_upload_session(
+    task_id: str, user: dict = Depends(current_user)
+) -> dict:
+    task = _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
+    if task.get("video_path"):
+        return {"complete": True, "task": task}
+    return await asyncio.to_thread(session_status, user["id"], task_id)
+
+
+@router.delete("/tasks/{task_id}/upload-session")
+async def reset_task_upload_session(
+    task_id: str, user: dict = Depends(current_user)
+) -> dict:
+    task = _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
+    if task.get("video_path"):
+        raise HTTPException(409, "视频已经上传完成，不能重置上传会话")
+    await remove_session(user["id"], task_id)
+    return {"ok": True}
+
+
+@router.put("/tasks/{task_id}/upload-session/parts/{kind}/{index}")
+async def upload_task_part(
+    task_id: str,
+    kind: str,
+    index: int,
+    request: Request,
+    x_upload_session: str | None = Header(None),
+    x_part_sha256: str | None = Header(None),
+    user: dict = Depends(current_user),
+) -> dict:
+    _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
+    result = await save_part(
+        user["id"],
+        task_id,
+        kind=kind,
+        index=index,
+        session_token=x_upload_session,
+        expected_sha256=x_part_sha256 or "",
+        chunks=request.stream(),
+    )
+    status = await asyncio.to_thread(session_status, user["id"], task_id)
+    progress = None
+    if status["mode"] == "original":
+        progress = min(99, round(status["uploaded_bytes"] / status["original_size"] * 100))
+    await db.update_task(
+        task_id,
+        progress=progress if progress is not None else 0,
+        current_step="uploading",
+        step_detail={
+            "phase": "chunk_upload",
+            "mode": status["mode"],
+            "uploaded_bytes": status["uploaded_bytes"],
+        },
+    )
+    return {**result, "uploaded_bytes": status["uploaded_bytes"]}
+
+
+@router.post("/tasks/{task_id}/upload-session/complete")
+async def complete_task_upload_session(
+    task_id: str,
+    form: UploadSessionCompleteForm,
+    user: dict = Depends(current_user),
+) -> dict:
+    task = _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
+    if task.get("video_path"):
+        return task
+    result = await asyncio.to_thread(
+        complete_session,
+        user["id"],
+        task_id,
+        session_token=form.session_id,
+        audio_parts=form.audio_parts,
+        frame_parts=form.frame_parts,
+        raw_manifest=form.manifest,
+    )
+    try:
+        await record_upload(
+            user_id=user["id"],
+            purpose="video",
+            original_name=result["original_filename"],
+            storage_key=result["storage_key"],
+            mime_type=result["mime_type"],
+            path=result["path"],
+        )
+        saved = await db.set_task_materials(
+            task_id,
+            user["id"],
+            filename=result["original_filename"],
+            video_path=result["path"],
+        )
+        if not saved:
+            raise HTTPException(409, "任务已取消或当前状态不允许上传")
+        await remove_session(user["id"], task_id)
+        return saved
+    except Exception:
+        Path(result["path"]).unlink(missing_ok=True)
+        if result["mode"] == "evidence":
+            (Path(result["path"]).parent / "browser-evidence.json").unlink(missing_ok=True)
+            shutil.rmtree(settings.frame_dir / Path(result["path"]).stem, ignore_errors=True)
+        raise
+
+
+@router.post("/tasks/{task_id}/aux-materials")
+async def upload_task_aux_materials(
+    task_id: str,
+    reference: str | None = Form(None),
+    syllabus: UploadFile | None = File(None),
+    courseware: UploadFile | None = File(None),
+    transcript: UploadFile | None = File(None),
+    transcript_text: str | None = Form(None),
+    user: dict = Depends(current_user),
+) -> dict:
+    _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
+    script_body = (transcript_text or "").strip() or None
+    if script_body and len(script_body) < 10:
+        raise HTTPException(400, "讲稿过短，请补充内容或改传文件")
+    fields: dict[str, str] = {}
+    if (reference or "").strip():
+        fields["reference"] = reference.strip()
+    if script_body:
+        fields["transcript"] = script_body
+    saved_paths: list[Path] = []
+    try:
+        for upload, purpose, allowed, max_bytes, label, field in (
+            (syllabus, "syllabus", SYLLABUS_EXT, SYLLABUS_MAX_BYTES, "课程大纲", "syllabus_path"),
+            (courseware, "courseware", COURSEWARE_EXT, COURSEWARE_MAX_BYTES, "课件", "courseware_path"),
+            (transcript, "transcript", SCRIPT_EXT, SCRIPT_MAX_BYTES, "讲稿", "transcript_path"),
+        ):
+            if not _has_upload(upload):
+                continue
+            path, key = await asyncio.to_thread(
+                _save_upload,
+                upload,
+                user_id=user["id"],
+                task_id=task_id,
+                purpose=purpose,
+                allowed=allowed,
+                max_bytes=max_bytes,
+                kind_label=label,
+            )
+            saved_paths.append(Path(path))
+            fields[field] = path
+            await record_upload(
+                user_id=user["id"],
+                purpose=purpose,
+                original_name=upload.filename or purpose,
+                storage_key=key,
+                mime_type=upload.content_type,
+                path=path,
+            )
+        saved = await db.set_task_materials(task_id, user["id"], **fields)
+        if not saved:
+            raise HTTPException(409, "任务已取消或当前状态不允许上传")
+        return saved
+    except Exception:
+        for path in saved_paths:
+            path.unlink(missing_ok=True)
+        raise
+    finally:
+        for upload in (syllabus, courseware, transcript):
+            if upload is not None:
+                await upload.close()
 
 
 async def _store_task_materials(
@@ -553,6 +775,7 @@ async def get_task_file(
 @router.post("/task/{task_id}/cancel")
 async def cancel_task(task_id: str, user: dict = Depends(current_user)) -> dict:
     """请求停止排队中或进行中的评估任务（协作式取消）。"""
+    task = await db.get_task(task_id, user_id=user["id"])
     result = await db.request_cancel(task_id, user_id=user["id"])
     if result.get("reason") == "not_found":
         raise HTTPException(404, "任务不存在")
@@ -560,6 +783,8 @@ async def cancel_task(task_id: str, user: dict = Depends(current_user)) -> dict:
         raise HTTPException(
             409, f"任务当前状态为 {result['reason']}，无法停止"
         )
+    if result["status"] == "cancelled" and task and task.get("status") == "uploading":
+        _cleanup_task_uploads(user["id"], task_id)
     return {"ok": True, "status": result["status"]}
 
 

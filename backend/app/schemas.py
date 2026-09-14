@@ -24,6 +24,22 @@ class EvaluationTaskCreateForm(BaseModel):
         return text
 
 
+class UploadSessionCreateForm(BaseModel):
+    mode: str = Field(..., pattern="^(original|evidence)$")
+    fingerprint: str = Field(..., min_length=64, max_length=64)
+    original_filename: str = Field(..., min_length=1, max_length=512)
+    original_size: int = Field(..., gt=0, le=20 * 1024 * 1024 * 1024)
+    audio_filename: str | None = Field(None, max_length=512)
+    audio_mime: str | None = Field(None, max_length=128)
+
+
+class UploadSessionCompleteForm(BaseModel):
+    session_id: str = Field(..., min_length=16, max_length=128)
+    audio_parts: int | None = Field(None, gt=0, le=100_000)
+    frame_parts: int | None = Field(None, gt=0, le=100_000)
+    manifest: dict | None = None
+
+
 class QAForm(BaseModel):
     question: str = Field(..., min_length=1)
     session_id: str | None = None

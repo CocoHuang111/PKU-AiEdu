@@ -187,18 +187,18 @@
                     type="button"
                     :class="{ active: uploadMode === 'fast' }"
                     :disabled="uploading"
-                    @click="uploadMode = 'fast'"
+                    @click="chooseUploadMode('fast')"
                   >
-                    <strong>快速上传</strong>
+                    <strong>快速上传 <em v-if="recommendedUploadMode === 'fast'">推荐</em></strong>
                     <span>本机无损拆音频并抽取画面，上传量更小</span>
                   </button>
                   <button
                     type="button"
                     :class="{ active: uploadMode === 'original' }"
                     :disabled="uploading"
-                    @click="uploadMode = 'original'"
+                    @click="chooseUploadMode('original')"
                   >
-                    <strong>原视频上传</strong>
+                    <strong>原视频上传 <em v-if="recommendedUploadMode === 'original'">推荐</em></strong>
                     <span>兼容性最好，网络较快或小文件时更合适</span>
                   </button>
                 </div>
@@ -1709,6 +1709,9 @@ const preparingEvidence = ref(false)
 const evidencePercent = ref(0)
 const evidenceStage = ref('')
 const evidenceSummary = ref('')
+const uploadRecommendation = ref(null)
+const recommendationAnalyzing = ref(false)
+const uploadModeManuallyChosen = ref(false)
 const uploadTaskId = ref(null)
 const uploadContext = ref(null)
 const videoFile = ref(null)
@@ -1732,6 +1735,8 @@ const taskQuery = ref('')
 const taskFilter = ref('all')
 let uploadController = null
 let taskListRequest = 0
+let recommendationRequest = 0
+let recommendationPromise = null
 
 const validRemoteVideoLink = computed(() => {
   if (videoSource.value !== 'link') return ''
@@ -1749,6 +1754,7 @@ const remoteUrlError = computed(() => {
   return '请填写完整的 HTTP/HTTPS 链接'
 })
 const canStart = computed(() => Boolean(videoFile.value || validRemoteVideoLink.value))
+const recommendedUploadMode = computed(() => uploadRecommendation.value?.strategy?.mode || null)
 const materialCount = computed(() => {
   let n = 0
   if (videoFile.value || validRemoteVideoLink.value) n += 1
@@ -3467,6 +3473,61 @@ function shouldSuggestFastUpload(file, durationSec) {
   )
 }
 
+function formatEtaSeconds(seconds) {
+  if (!Number.isFinite(seconds)) return '未知'
+  if (seconds < 60) return `${Math.max(1, Math.round(seconds))} 秒`
+  return `${Math.max(1, Math.round(seconds / 60))} 分钟`
+}
+
+function chooseUploadMode(mode) {
+  uploadMode.value = mode
+  uploadModeManuallyChosen.value = true
+}
+
+async function refreshUploadRecommendation(file) {
+  const request = ++recommendationRequest
+  recommendationAnalyzing.value = true
+  evidenceSummary.value = '正在实测网络和浏览器处理速度…'
+  const work = (async () => {
+    try {
+      const [{ measureUploadSpeed, chooseUploadStrategy }, { benchmarkBrowserEvidence }] =
+        await Promise.all([import('../utils/resumableUpload'), import('../utils/videoEvidence')])
+      const network = await measureUploadSpeed()
+      let descriptor = null
+      try {
+        descriptor = await benchmarkBrowserEvidence(file, {
+          onProgress: ({ stage }) => {
+            if (request === recommendationRequest) evidenceSummary.value = `${stage}…`
+          },
+        })
+      } catch {
+        descriptor = null
+      }
+      const strategy = chooseUploadStrategy(file, network, descriptor)
+      if (request !== recommendationRequest || videoFile.value !== file) return null
+      uploadRecommendation.value = { file, network, descriptor, strategy }
+      if (!uploadModeManuallyChosen.value) uploadMode.value = strategy.mode
+      const speed = network.megabitsPerSec.toFixed(network.megabitsPerSec >= 10 ? 0 : 1)
+      const originalEta = formatEtaSeconds(strategy.originalSeconds)
+      const fastEta = strategy.fastSeconds ? formatEtaSeconds(strategy.fastSeconds) : '不可用'
+      evidenceSummary.value = `实测上行 ${speed} Mbps；原视频约 ${originalEta}，快速上传约 ${fastEta}。${strategy.reason}`
+      return uploadRecommendation.value
+    } catch (error) {
+      if (request !== recommendationRequest || videoFile.value !== file) return null
+      uploadRecommendation.value = null
+      if (!uploadModeManuallyChosen.value) {
+        uploadMode.value = shouldSuggestFastUpload(file, videoDurationSec.value) ? 'fast' : 'original'
+      }
+      evidenceSummary.value = '测速暂不可用，将按文件大小选择并保留原视频回退。'
+      return null
+    } finally {
+      if (request === recommendationRequest) recommendationAnalyzing.value = false
+    }
+  })()
+  recommendationPromise = work
+  return work
+}
+
 function revokeVideoUrl() {
   if (videoUrl.value && videoUrl.value.startsWith('blob:')) {
     URL.revokeObjectURL(videoUrl.value)
@@ -3484,6 +3545,9 @@ function setVideo(file) {
   remoteVideoLink.value = ''
   videoFile.value = file
   uploadMode.value = 'original'
+  uploadModeManuallyChosen.value = false
+  uploadRecommendation.value = null
+  recommendationRequest += 1
   evidenceSummary.value = ''
   evidencePercent.value = 0
   evidenceStage.value = ''
@@ -3501,6 +3565,7 @@ function setVideo(file) {
     videoWidth.value = video.videoWidth
     videoHeight.value = video.videoHeight
     if (shouldSuggestFastUpload(file, videoDurationSec.value)) uploadMode.value = 'fast'
+    refreshUploadRecommendation(file)
     video.currentTime = Math.min(1, video.duration * 0.1 || 0)
   }
   video.onseeked = () => {
@@ -3517,6 +3582,10 @@ function setVideo(file) {
 }
 
 function clearVideo() {
+  recommendationRequest += 1
+  recommendationPromise = null
+  uploadRecommendation.value = null
+  recommendationAnalyzing.value = false
   videoFile.value = null
   previewOpen.value = false
   revokeVideoUrl()
@@ -3553,51 +3622,118 @@ async function startUpload() {
   uploadContext.value = context
   uploadController = new AbortController()
   try {
-    if (context.video && uploadMode.value === 'fast') {
-      preparingEvidence.value = true
-      evidencePercent.value = 0
-      evidenceStage.value = '准备浏览器预处理'
-      try {
-        const { prepareBrowserEvidence } = await import('../utils/videoEvidence')
-        context.evidence = await prepareBrowserEvidence(context.video, {
-          signal: uploadController.signal,
-          onProgress: ({ percent, stage }) => {
-            evidencePercent.value = Math.min(70, Math.round(percent * 0.7))
-            evidenceStage.value = stage
-          },
-        })
-        const packageBytes = context.evidence.audio.size + context.evidence.archive.size
-        const saved = Math.max(0, 100 - (packageBytes / Math.max(context.video.size, 1)) * 100)
-        evidenceSummary.value = `快速包 ${formatSize(packageBytes)}，比原视频减少 ${saved.toFixed(1)}%`
-      } catch (error) {
-        if (error?.name === 'AbortError') throw error
-        if (context.video.size > 2 * 1024 * 1024 * 1024) {
-          throw new Error(
-            `快速处理失败，且原视频超过2GB，已停止以避免无效上传：${error?.message || '未知错误'}`
-          )
+    if (context.video && recommendationPromise) {
+      await recommendationPromise
+    }
+    let fingerprint = null
+    let created = null
+    let resumeTools = null
+    if (context.video) {
+      resumeTools = await import('../utils/resumableUpload')
+      fingerprint = await resumeTools.fileFingerprint(context.video)
+      context.fingerprint = fingerprint
+      const rememberedId = resumeTools.rememberedTaskId(fingerprint)
+      if (rememberedId) {
+        try {
+          const remembered = await evaluationApi.getTask(rememberedId)
+          if (
+            ['uploading', 'upload_failed'].includes(remembered.status) &&
+            remembered.filename === context.video.name
+          ) {
+            created = remembered
+          } else {
+            resumeTools.forgetTask(fingerprint)
+          }
+        } catch {
+          resumeTools.forgetTask(fingerprint)
         }
-        uploadMode.value = 'original'
-        evidenceSummary.value = ''
-        ElMessage.warning(`快速处理不可用，已回退原视频上传：${error?.message || '未知错误'}`)
-      } finally {
-        preparingEvidence.value = false
       }
     }
-    const created = await evaluationApi.createTask(
-      context.video?.name || filenameFromRemoteUrl(context.videoUrl)
-    )
+    if (!created) {
+      created = await evaluationApi.createTask(
+        context.video?.name || filenameFromRemoteUrl(context.videoUrl)
+      )
+      if (fingerprint) resumeTools.rememberTask(fingerprint, created.id, context.video.name)
+    }
     uploadTaskId.value = created.id
     if (activeId.value === startedFromId) activeId.value = created.id
     tasks.value = [created, ...tasks.value.filter((t) => t.id !== created.id)]
     schedulePoll()
-
-    await evaluationApi.uploadTaskMaterials(
-      created.id,
-      context,
-      (p) => (uploadPercent.value = p),
-      uploadController.signal
-    )
+    if (context.video) {
+      await evaluationApi.uploadAuxMaterials(created.id, context, uploadController.signal)
+      const { uploadOriginalVideo, createOrResumeSession } = await import('../utils/resumableUpload')
+      const originalUpload = () =>
+        uploadOriginalVideo({
+          taskId: created.id,
+          file: context.video,
+          fingerprint,
+          signal: uploadController.signal,
+          onProgress: ({ percent, stage }) => {
+            uploadPercent.value = percent
+            evidenceStage.value = stage
+          },
+        })
+      const descriptor = uploadRecommendation.value?.file === context.video
+        ? uploadRecommendation.value.descriptor
+        : null
+      if (uploadMode.value === 'fast' && descriptor) {
+        preparingEvidence.value = true
+        evidencePercent.value = 0
+        evidenceStage.value = '初始化边提取边上传'
+        try {
+          const session = await createOrResumeSession(created.id, context.video, {
+            mode: 'evidence',
+            fingerprint,
+            audioFilename: descriptor.audio.filename,
+            audioMime: descriptor.audio.mime,
+          })
+          const { streamBrowserEvidence } = await import('../utils/videoEvidence')
+          const streamed = await streamBrowserEvidence(context.video, {
+            taskId: created.id,
+            session,
+            descriptor,
+            signal: uploadController.signal,
+            onProgress: ({ percent, stage }) => {
+              evidencePercent.value = percent
+              uploadPercent.value = percent
+              evidenceStage.value = stage
+            },
+          })
+          await evaluationApi.completeUploadSession(created.id, {
+            session_id: session.session_id,
+            audio_parts: streamed.audioParts,
+            frame_parts: streamed.frameParts,
+            manifest: streamed.manifest,
+          })
+          const saved = Math.max(
+            0,
+            100 - (streamed.evidenceBytes / Math.max(context.video.size, 1)) * 100
+          )
+          evidenceSummary.value = `实际上传 ${formatSize(streamed.evidenceBytes)}，比原视频减少 ${saved.toFixed(1)}%`
+        } catch (error) {
+          if (error?.name === 'AbortError' || error?.code === 'ERR_CANCELED') throw error
+          await evaluationApi.resetUploadSession(created.id)
+          uploadMode.value = 'original'
+          preparingEvidence.value = false
+          evidenceSummary.value = '浏览器快速处理不兼容，已自动切换为原视频断点续传。'
+          ElMessage.warning(`快速处理不可用，已回退原视频分片上传：${error?.message || '未知错误'}`)
+          await originalUpload()
+        } finally {
+          preparingEvidence.value = false
+        }
+      } else {
+        await originalUpload()
+      }
+    } else {
+      await evaluationApi.uploadTaskMaterials(
+        created.id,
+        context,
+        (p) => (uploadPercent.value = p),
+        uploadController.signal
+      )
+    }
     const submitted = await evaluationApi.submitTask(created.id)
+    if (fingerprint) resumeTools.forgetTask(fingerprint)
     tasks.value = [submitted, ...tasks.value.filter((t) => t.id !== created.id)]
     ElMessage.success('上传成功，已加入评估队列')
     await loadTasks()
@@ -4098,6 +4234,17 @@ onBeforeUnmount(() => {
 .upload-mode-picker strong {
   color: #303133;
   font-size: 13px;
+}
+.upload-mode-picker strong em {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 1px 5px;
+  border-radius: 999px;
+  background: #a61b1b;
+  color: #fff;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
 }
 .upload-mode-picker span,
 .evidence-summary {

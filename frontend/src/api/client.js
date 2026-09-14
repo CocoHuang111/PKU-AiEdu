@@ -66,6 +66,43 @@ export const adminApi = {
 // ---------------------------------------------------------------- 视频评估
 export const evaluationApi = {
   createTask: (filename) => client.post('/api/evaluation/tasks', { filename }),
+  probeUpload: (blob, signal) =>
+    client.post('/api/evaluation/upload-probe', blob, {
+      headers: { 'Content-Type': 'application/octet-stream' },
+      signal,
+      timeout: 60000,
+    }),
+  createUploadSession: (id, data) =>
+    client.post(`/api/evaluation/tasks/${id}/upload-session`, data),
+  getUploadSession: (id) => client.get(`/api/evaluation/tasks/${id}/upload-session`),
+  resetUploadSession: (id) => client.delete(`/api/evaluation/tasks/${id}/upload-session`),
+  uploadPart(id, kind, index, blob, { sessionId, sha256, signal, onProgress } = {}) {
+    return client.put(`/api/evaluation/tasks/${id}/upload-session/parts/${kind}/${index}`, blob, {
+      headers: {
+        'Content-Type': 'application/octet-stream',
+        'X-Upload-Session': sessionId,
+        'X-Part-SHA256': sha256,
+      },
+      signal,
+      timeout: 0,
+      onUploadProgress: (event) => onProgress?.(event.loaded, event.total || blob.size),
+    })
+  },
+  completeUploadSession: (id, data) =>
+    client.post(`/api/evaluation/tasks/${id}/upload-session/complete`, data, { timeout: 0 }),
+  uploadAuxMaterials(id, files, signal) {
+    const opts = files || {}
+    const form = new FormData()
+    if (opts.syllabus) form.append('syllabus', opts.syllabus)
+    if (opts.courseware) form.append('courseware', opts.courseware)
+    if (opts.transcript) form.append('transcript', opts.transcript)
+    if (opts.transcriptText?.trim()) form.append('transcript_text', opts.transcriptText.trim())
+    if (opts.reference?.trim()) form.append('reference', opts.reference.trim())
+    return client.post(`/api/evaluation/tasks/${id}/aux-materials`, form, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+      signal,
+    })
+  },
   uploadTaskMaterials(id, files, onProgress, signal) {
     const opts = files || {}
     const form = new FormData()
