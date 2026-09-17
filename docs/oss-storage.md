@@ -108,6 +108,17 @@ UPLOAD_STORAGE_BACKEND=local docker compose --env-file .env.production -f compos
 一旦创建 OSS 任务，不能直接回到不识别 OSS 引用的旧镜像：必须先恢复材料并转换数据库引用，或保留本版兼容层。
 旧 Git 分支、镜像用于首次启用前回退；不删除历史 Git 记录或本地历史文件。
 
+## 2026-09-18 发布记录
+
+- 已启用服务器 `8.141.113.98` 的 OSS 上传模式；业务代码提交 `2d7d309`。
+- 独立发布代码快照全量 80 项测试通过；正式镜像用非 root 用户通过真实 OSS/隔离数据库业务验证。
+- 后端、Worker 配置均为 `oss` / `pku-askedu`；站点及 `/api/health` 均返回 HTTP 200。
+- 生产容器再次验证内网读写/缓存、公网匿名 403、短期签名下载和删除（25,600 字节，0.72 秒）。
+- Git 基线 `codex/pre-oss-2d7d309` 指向 `e769acc`；旧镜像为
+  `pku2-backend:pre-oss-2d7d309`、`pku2-worker:pre-oss-2d7d309`。
+- 正式业务镜像 `pku2-oss-release:2d7d309`，配置通过 `compose.oss.production.yml` 启用。
+- 未迁移历史文件、未设置生命周期自动删除、未删除用户数据或 Git 历史。
+
 ## 后续阶段
 
 1. 报告关键帧、课件渲染页的 OSS 持久化/按需缓存和头像缓存 TTL 管理。
