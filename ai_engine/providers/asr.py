@@ -6,7 +6,13 @@
 
 from __future__ import annotations
 
+import math
+import os
+from pathlib import Path
 from typing import Any
+
+from .. import checkpoints
+from ..processes import run_json_worker
 
 from .base import ASRProvider, ASRResult, ASRSegment, ProviderError
 
@@ -32,6 +38,10 @@ class FasterWhisperASR(ASRProvider):
         self.device = conf.get("device", "cpu")
         self.compute_type = conf.get("compute_type", "int8")
         self.vad_filter = conf.get("vad_filter", True)
+        self.chunk_seconds = max(30, float(conf.get("chunk_seconds", 600)))
+        self.overlap_seconds = max(0, min(5, float(conf.get("overlap_seconds", 2))))
+        self.cpu_threads = max(1, int(conf.get("cpu_threads", min(os.cpu_count() or 1, 4))))
+        self.chunk_timeout = max(60, float(conf.get("chunk_timeout", 1800)))
         self._model = None
 
     def _load(self):
@@ -47,7 +57,8 @@ class FasterWhisperASR(ASRProvider):
             ) from e
         # 首次加载会从 HuggingFace 下载权重，可用 .env 的 HF_HOME 指定缓存目录
         self._model = WhisperModel(
-            self.model_name, device=self.device, compute_type=self.compute_type
+            self.model_name, device=self.device, compute_type=self.compute_type,
+            cpu_threads=self.cpu_threads,
         )
         return self._model
 
@@ -57,9 +68,67 @@ class FasterWhisperASR(ASRProvider):
         language: str | None = None,
         progress_callback=None,
     ) -> ASRResult:
+        import soundfile as sf
+
+        info = sf.info(audio_path)
+        total = info.frames / info.samplerate
+        if total <= 0:
+            raise ProviderError("音频为空")
+        lang = language or self.language
+        conf = {
+            "model": self.model_name, "device": self.device,
+            "compute_type": self.compute_type, "vad_filter": self.vad_filter,
+            "cpu_threads": self.cpu_threads,
+        }
+        signature = checkpoints.identity(audio_path, {
+            "version": 1, **conf, "language": lang,
+            "chunk_seconds": self.chunk_seconds, "overlap_seconds": self.overlap_seconds,
+        })
+        folder = Path(audio_path).with_suffix(".asr-checkpoint")
+        segments: list[ASRSegment] = []
+        detected = lang
+        for index in range(math.ceil(total / self.chunk_seconds)):
+            start = index * self.chunk_seconds
+            end = min(total, start + self.chunk_seconds)
+            path = folder / f"{index:05d}.json"
+            chunk = checkpoints.read(path, signature)
+            if progress_callback:
+                progress_callback(start, total)
+            if chunk is None:
+                read_start = max(0, start - self.overlap_seconds)
+                read_end = min(total, end + self.overlap_seconds)
+
+                def on_progress(value):
+                    if progress_callback:
+                        done = read_start + float((value or {}).get("done_sec", 0))
+                        progress_callback(max(start, min(done, end)), total)
+
+                raw = run_json_worker("ai_engine.providers.asr_chunk", {
+                    "audio_path": str(Path(audio_path).resolve()), "conf": conf,
+                    "language": lang, "read_start": read_start, "read_end": read_end,
+                }, on_progress, self.chunk_timeout)
+                kept = []
+                for item in raw["segments"]:
+                    left, right = read_start + item["start"], read_start + item["end"]
+                    # Each overlapping segment belongs to exactly one core by its midpoint.
+                    if start <= (left + right) / 2 < end:
+                        kept.append({**item, "start": max(start, left), "end": min(end, right)})
+                chunk = {"segments": kept, "language": raw["language"]}
+                checkpoints.write(path, signature, chunk)
+            detected = chunk["language"]
+            segments.extend(ASRSegment(**item) for item in chunk["segments"])
+            if progress_callback:
+                progress_callback(end, total)
+        return ASRResult(
+            text="".join(s.text for s in segments), segments=segments,
+            language=detected, duration=total,
+        )
+
+    def _transcribe_one(self, audio, language=None, progress_callback=None) -> ASRResult:
+        """Child-only model inference; input is a bounded 16kHz array."""
         model = self._load()
         segments_iter, info = model.transcribe(
-            audio_path,
+            audio,
             language=language or self.language,
             vad_filter=self.vad_filter,
             beam_size=5,

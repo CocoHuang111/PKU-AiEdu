@@ -221,6 +221,7 @@ async def delete_task(task_id: str, user_id: str | None = None) -> dict[str, Any
         if row.status not in DELETABLE_EVAL_STATUSES:
             return {"ok": False, "reason": row.status}
         owner = str(row.user_id)
+        video_path = row.video_path
         await session.delete(row)
         stored = (
             await session.scalars(
@@ -234,6 +235,9 @@ async def delete_task(task_id: str, user_id: str | None = None) -> dict[str, Any
             item.deleted_at = _now()
     task_dir = (settings.upload_dir / owner / task_id).resolve()
     upload_root = settings.upload_dir.resolve()
+    if video_path and Path(video_path).resolve().is_relative_to(upload_root):
+        from ai_engine.evaluation.media import cleanup_video_artifacts
+        cleanup_video_artifacts(video_path)
     if task_dir.parent == upload_root / owner and task_dir.is_dir():
         shutil.rmtree(task_dir)
     try:
@@ -434,6 +438,10 @@ async def recover_stale_eval_tasks(lease_seconds: int) -> int:
             if row.status == "cancel_requested":
                 row.status = "cancelled"
                 row.current_step = "cancelled"
+            elif (row.attempt_count or 0) >= 3:
+                row.status = "failed"
+                row.current_step = "failed"
+                row.error = "解析进程连续中断3次，已停止自动重试。请检查服务器资源；已完成的解析检查点仍保留。"
             else:
                 row.status = "queued"
                 row.current_step = "queued"

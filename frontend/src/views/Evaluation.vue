@@ -3184,9 +3184,15 @@ function stepDetail(t) {
       return d.total_bytes ? `（${done} / ${formatSize(d.total_bytes)}）` : `（已下载 ${done}）`
     }
   }
-  if (t.current_step === 'asr' && d.phase === 'punctuate') return '（补标点）'
+  if (t.current_step === 'asr' && d.phase === 'punctuate') {
+    return d.total ? `（整理转写 ${d.done || 0}/${d.total} 段）` : '（整理转写）'
+  }
   if (t.current_step === 'asr' && d.total_sec) {
     return `（${Math.round(d.done_sec / 60)}/${Math.round(d.total_sec / 60)} 分钟）`
+  }
+  if (t.current_step === 'objective_features' && d.total_sec) {
+    const phase = { loudness: '响度与停顿', pitch: '语调分析', cached: '已恢复检查点', starting: '准备声学分析' }[d.phase] || '声学分析'
+    return `（${phase} ${Math.round(d.done_sec / 60)}/${Math.round(d.total_sec / 60)} 分钟）`
   }
   if (t.current_step === 'slide_detection' && d.phase === 'roi') return '（定位投影）'
   if (t.current_step === 'vlm_describe' && d.total) return `（${d.done || 0}/${d.total}）`

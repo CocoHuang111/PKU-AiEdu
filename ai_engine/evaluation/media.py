@@ -8,6 +8,7 @@ import subprocess
 from pathlib import Path
 
 from ..config import settings
+from .. import checkpoints
 
 
 class MediaError(RuntimeError):
@@ -57,6 +58,10 @@ def extract_audio(video_path: str | Path, out_dir: Path | None = None) -> str:
     video_path = Path(video_path)
     out_dir = out_dir or settings.upload_dir
     out_path = out_dir / f"{video_path.stem}.wav"
+    cache_path = out_path.with_suffix(".audio-source.json")
+    signature = checkpoints.identity(video_path, {"audio": "pcm_s16le/16000/mono/v1"})
+    if out_path.is_file() and checkpoints.read(cache_path, signature) == out_path.stat().st_size:
+        return str(out_path)
 
     result = _run(
         [
@@ -67,6 +72,7 @@ def extract_audio(video_path: str | Path, out_dir: Path | None = None) -> str:
     )
     if result.returncode != 0 or not out_path.exists():
         raise MediaError(f"抽取音频失败：{result.stderr[-500:]}")
+    checkpoints.write(cache_path, signature, out_path.stat().st_size)
     return str(out_path)
 
 
@@ -148,6 +154,12 @@ def cleanup_video_artifacts(video_path: str | Path) -> None:
     wav = settings.upload_dir / f"{video_path.stem}.wav"
     if wav.exists():
         wav.unlink(missing_ok=True)
+    for suffix in (".audio-source.json", ".audio-features.json"):
+        wav.with_suffix(suffix).unlink(missing_ok=True)
+    for suffix in (".asr-checkpoint", ".audio-checkpoint", ".punctuation-checkpoint"):
+        folder = wav.with_suffix(suffix)
+        if folder.is_dir():
+            shutil.rmtree(folder)
     frame_dir = settings.frame_dir / video_path.stem
     if frame_dir.exists():
         shutil.rmtree(frame_dir, ignore_errors=True)

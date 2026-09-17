@@ -13,11 +13,13 @@ from pathlib import Path
 from typing import Any, Callable
 
 from ..config import settings
+from .. import checkpoints
 from ..pedagogy.loader import get_rubric, grade_of, render_prompt
 from ..providers import ASRResult, ChatMessage, ProviderError, get_asr, get_llm
 from . import diarization, media
+from .exceptions import EvaluationCancelled
 from .gb import LIVE_PROMPT_VERSION, LIVE_SCORE_SOURCE, predict_overall
-from .audio_features import extract_audio_features
+from .audio_features import extract_audio_features_isolated
 from .judge import judge_all, judge_fingerprint
 from .slide_features import extract_slide_features, extract_slide_features_from_images
 from .text_features import (
@@ -466,7 +468,7 @@ def collect_video_evidence(
         progress(15, "asr", {})
 
         def on_asr(done_sec: float, total_sec: float):
-            pct = 15 + int(30 * min(done_sec / max(total_sec, 1), 1.0))
+            pct = 15 + int(25 * min(done_sec / max(total_sec, 1), 1.0))
             progress(
                 pct, "asr", {"done_sec": round(done_sec), "total_sec": round(total_sec)}
             )
@@ -475,9 +477,21 @@ def collect_video_evidence(
         duration = duration or asr_result.duration
         asr_conf = settings.flat_config("asr")
         if asr_conf.get("punctuate", True):
-            progress(45, "asr", {"phase": "punctuate"})
+            progress(40, "asr", {"phase": "punctuate"})
+
+            def on_punctuation(done, total, detail):
+                progress(40 + int(5 * done / max(total, 1)), "asr", {
+                    "phase": "punctuate", "done": done, "total": total, **detail,
+                })
+
             try:
-                asr_result = punctuate_asr_result(asr_result)
+                asr_result = punctuate_asr_result(
+                    asr_result, progress_callback=on_punctuation,
+                    budget_seconds=float(asr_conf.get("punctuation_budget_seconds", 180)),
+                    checkpoint_dir=Path(audio_path).with_suffix(".punctuation-checkpoint"),
+                )
+            except EvaluationCancelled:
+                raise
             except Exception as e:
                 progress(45, "asr", {"warning": f"转写补标点失败，沿用原转写: {e}"})
 
@@ -502,10 +516,20 @@ def collect_video_evidence(
         features["timeline"] = extract_timeline_features(asr_result.segments)
 
     if eval_conf.get("audio_enabled", True):
+        def on_audio(phase, done, total):
+            fraction = min(done / max(total, 1), 1.0)
+            pct = (47 + int(2 * fraction)) if phase == "pitch" else (46 + int(fraction))
+            if phase == "cached":
+                pct = 49
+            progress(pct, "objective_features", {
+                "phase": phase, "done_sec": round(done), "total_sec": round(total),
+            })
         try:
-            features["audio"] = extract_audio_features(
-                audio_path, asr_result.segments
+            features["audio"] = extract_audio_features_isolated(
+                audio_path, progress_callback=on_audio,
             )
+        except EvaluationCancelled:
+            raise
         except Exception as e:
             progress(46, "objective_features", {"warning": f"声学特征提取失败: {e}"})
 
@@ -853,14 +877,27 @@ def evaluate_session(
     """四个材料入口的统一评估。产品入口要求视频；讲稿选填，有则当作转写。"""
     script = _resolve_script(transcript_text, transcript_path, progress)
     if video_path:
-        pack = collect_video_evidence(
-            video_path,
-            progress=progress,
-            reference=reference,
-            syllabus_path=syllabus_path,
-            courseware_path=courseware_path,
-            transcript_text=script,
-        )
+        options = {"version": 2, "evaluation": settings.section("evaluation"),
+                   "asr": settings.section("asr"), "reference": reference, "script": script}
+        for name, path in (("syllabus", syllabus_path), ("courseware", courseware_path)):
+            options[name] = checkpoints.identity(path, {}) if path else None
+        signature = checkpoints.identity(video_path, options)
+        checkpoint = Path(video_path).with_suffix(".evaluation-checkpoint.json")
+        pack = checkpoints.read(checkpoint, signature)
+        if pack is None:
+            pack = collect_video_evidence(
+                video_path,
+                progress=progress,
+                reference=reference,
+                syllabus_path=syllabus_path,
+                courseware_path=courseware_path,
+                transcript_text=script,
+            )
+            audio = pack.get("raw_features", {}).get("audio", {})
+            if not settings.section("evaluation").get("audio_enabled", True) or audio.get("pitch_available"):
+                checkpoints.write(checkpoint, signature, pack)
+        else:
+            progress(70, "vlm_describe", {"phase": "cached", "warning": "已恢复完整解析检查点，继续生成评估报告"})
     else:
         pack = collect_script_evidence(
             script or "",

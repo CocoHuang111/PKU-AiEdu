@@ -66,6 +66,11 @@ asr:
   compute_type: int8
   vad_filter: true # 过滤静音段，长视频提速明显
   punctuate: true # 转写后用 LLM 只补中文标点（学 Atmos）；失败则规则断句，不中断评估
+  chunk_seconds: 600 # 每十分钟独立子进程转写，保存检查点，重启后续跑
+  overlap_seconds: 2 # 分块边界上下文；按片段中点归属去除重叠
+  cpu_threads: 4
+  chunk_timeout: 1800 # 每块最多30分钟，超时回收进程而不是无限等待
+  punctuation_budget_seconds: 180 # 总整理预算，超过后规则补标点
 
 vector_store:
   provider: chroma

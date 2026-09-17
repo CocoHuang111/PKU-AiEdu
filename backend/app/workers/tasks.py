@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import asyncio
 import traceback
+import time
+from pathlib import Path
 
 from ai_engine.evaluation import evaluate_session, index_report
 from ai_engine.evaluation.exceptions import EvaluationCancelled
@@ -71,10 +73,27 @@ async def _run_evaluation(
     await db.update_task(task_id, progress=2, current_step="starting")
 
     loop = asyncio.get_running_loop()
+    started = time.monotonic()
+    last_write = 0.0
+    last_log = 0.0
+    last_step = None
 
     def progress(pct: int, step: str, detail: dict | None = None) -> None:
+        nonlocal last_write, last_log, last_step
         if db.is_task_cancelled(task_id):
             raise EvaluationCancelled()
+        now = time.monotonic()
+        if step != last_step or now - last_log >= 30:
+            memory = "unknown"
+            try:
+                memory = f"{int(Path('/sys/fs/cgroup/memory.current').read_text()) / 1024**2:.0f}MiB"
+            except (OSError, ValueError):
+                pass
+            print(f"[evaluation] task={task_id} step={step} progress={pct} elapsed={now-started:.1f}s memory={memory} detail={detail}", flush=True)
+            last_log = now
+        if step == last_step and now - last_write < 1 and pct < 100:
+            return
+        last_step, last_write = step, now
         # 等写库完成再继续，保证最后的 completed 不会被迟到的进度更新覆盖。
         future = asyncio.run_coroutine_threadsafe(
             db.update_task(
