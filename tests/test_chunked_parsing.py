@@ -185,7 +185,7 @@ class ProcessAndCacheTests(unittest.TestCase):
             video = Path(folder) / "video.mp4"
             video.write_bytes(b"test fixture")
             pack = {"evidence": {}, "available": ["audio"], "raw_features": {"audio": {"pitch_available": True}}}
-            with patch.object(pipeline, "collect_video_evidence", return_value=pack) as collect, patch.object(pipeline, "score_from_evidence", return_value={}) as score:
+            with patch.object(pipeline, "collect_video_evidence", return_value=pack) as collect, patch.object(pipeline, "score_from_evidence", return_value={"overall": {}, "dimensions": []}) as score:
                 pipeline.evaluate_session(str(video))
                 pipeline.evaluate_session(str(video))
                 self.assertEqual(collect.call_count, 1)
