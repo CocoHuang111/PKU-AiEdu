@@ -1,0 +1,17 @@
+# Add to compose.production.yml after IAM and isolated business checks pass.
+x-oss-env: &oss-env
+  UPLOAD_STORAGE_BACKEND: ${UPLOAD_STORAGE_BACKEND:-oss}
+  OSS_BUCKET: pku-askedu
+  OSS_REGION: cn-beijing
+  OSS_RAM_ROLE_NAME: AskEduOssServerRole
+  OSS_USE_INTERNAL: "true"
+  OSS_CACHE_ROOT: /app/data/oss-cache
+  OSS_CACHE_MIN_FREE_BYTES: "5368709120"
+
+services:
+  backend:
+    environment:
+      <<: *oss-env
+  worker:
+    environment:
+      <<: *oss-env

@@ -1,0 +1,12 @@
+# One-time incremental release from the verified pre-OSS image.
+# Normal future builds can use Dockerfile + requirements.txt directly.
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+USER root
+RUN python -m pip install --disable-pip-version-check --timeout 30 --retries 2 \
+    --index-url https://mirrors.aliyun.com/pypi/simple/ \
+    "oss2==2.19.1" "alibabacloud-credentials==0.3.6"
+COPY backend /app/backend
+COPY scripts /app/scripts
+COPY requirements.txt /app/requirements.txt
+USER app

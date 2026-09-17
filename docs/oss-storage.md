@@ -1,4 +1,4 @@
-# OSS 服务端存储适配（第一阶段）
+# OSS 服务端存储接入
 
 目标 Bucket：`pku-askedu`；地域：`cn-beijing`；RAM 角色：`AskEduOssServerRole`。
 购买的资源包为标准 ZRS 100GB，中国内地通用，一个月。
@@ -6,16 +6,20 @@
 
 ## 范围与生产边界
 
-本阶段实现独立 OSS 存储后端与解析本地缓存，不改变现有业务上传路由。
-`get_storage()` 和现有上传仍默认 `local`；只有显式 `get_storage("oss")` 使用 OSS。
+新增 `UPLOAD_STORAGE_BACKEND=local|oss`，未配置时仍默认本地。
+OSS 模式的新原视频、快速音频/画面/清单、网盘导入落地视频、大纲、课件、讲稿和头像持久化到 OSS。
+数据库记录实际 backend/key；任务材料保存 `oss://` 或 `oss-evidence://` 引用。
+上传成功后释放本地源文件；Worker 按需恢复，终态释放源文件和大音频/检查点临时文件。
+报告图片目前仍保留在服务器，随评估任务删除；它们还未切换为 OSS 持久化或 TTL 缓存。
 不自动迁移历史文件，不删除现有业务数据，不自动配置生命周期删除规则。
-这不是“全站文件已迁移 OSS”，也不是“浏览器已经直传 OSS”。
+报告正文、用户/任务数据仍在 PostgreSQL。浏览器仍经服务端上传，不是浏览器直传 OSS。
 
 ## 配置（无密钥）
 
 配置在服务端环境中，SDK 使用实例 RAM 角色自动更新临时凭证，不接受浏览器提供的凭证。
 
 ```dotenv
+UPLOAD_STORAGE_BACKEND=oss
 OSS_BUCKET=pku-askedu
 OSS_REGION=cn-beijing
 OSS_RAM_ROLE_NAME=AskEduOssServerRole
@@ -44,6 +48,11 @@ ECS 与 Bucket 同地域时，用内网访问对象；用户短期下载链接�
 
 这些方法是同步 I/O，API 应通过 `asyncio.to_thread` 使用。
 缓存目前由调用方显式清理，没有自动 TTL 回收；业务接入阶段必须补充容量与任务生命周期管理。
+业务调用已在任务终态释放源文件缓存。头像下载缓存目前保留，未增加自动 TTL 清理。
+快速画面伴随包完整保存规范清单和画面；恢复复用已有严格解包校验，缺失伴随包会报错，不降级为纯音频。
+材料下载先校验当前用户/任务归属，再签发 5 分钟私有下载链接；不提供任意 key 的签名接口。
+元数据在上传前提交，失败后标记删除；删除队列仅处理已删除的 OSS 记录，失败保留以便 Worker 重试。
+重复完成不重新生成材料；已有对象禁止覆盖，遇到 409 仅允许内容相同的重试。
 
 ## 权限
 
@@ -74,11 +83,35 @@ python -m scripts.check_oss_storage
 `_checks/2cd5f0313c9d41eabb544503a00780b5.bin`、
 `_checks/2e4d20df5ce1433a93a4a483f88611b8.bin`。
 没有改动线上代码、环境变量、数据库或用户文件。
+随后修正角色授权，真实内网上传/下载/缓存、公网匿名 403、签名下载和删除全部通过（25,600 字节检查用时 0.78 秒）。
+业务隔离数据库验证也已通过：原视频及课件、原视频分片重试和幂等完成、快速材料恢复、
+链接落地文件转 OSS、大纲、头像、旧本地兼容、模式回退后 OSS 可读、任务删除和测试对象清理。
+业务验证的链接下载器及 AI 引擎为模拟实现；没有运行真实视频 ASR/LLM。
 
-## 下一阶段（尚未接入）
+## 部署与回退边界
 
-1. 新上传文件持久化到 OSS，数据库记录 backend/key；处理任务按需恢复本地材料。
-2. 完成用户删除、取消/失败清理、报告附件读取以及缓存回收的全链路验证。
+启用：在原命令基础上增加 `-f compose.oss.production.yml`。
+镜像先在隔离数据库执行 `python -m scripts.check_oss_business`。
+检查使用真实 OSS、API、数据库、Worker 材料恢复；ASR/LLM 和外部链接下载器模拟，避免昂贵模型任务。
+
+```sh
+docker compose --env-file .env.production -f compose.production.yml -f compose.oss.production.yml up -d --no-build backend worker
+```
+
+快速回退只改变新上传模式，**保留 OSS 可读代码**：
+
+```sh
+UPLOAD_STORAGE_BACKEND=local docker compose --env-file .env.production -f compose.production.yml -f compose.oss.production.yml up -d --no-build backend worker
+```
+
+已有 OSS 引用不随上传模式回退变成本地；仍由 OSS 适配器读取。
+一旦创建 OSS 任务，不能直接回到不识别 OSS 引用的旧镜像：必须先恢复材料并转换数据库引用，或保留本版兼容层。
+旧 Git 分支、镜像用于首次启用前回退；不删除历史 Git 记录或本地历史文件。
+
+## 后续阶段
+
+1. 报告关键帧、课件渲染页的 OSS 持久化/按需缓存和头像缓存 TTL 管理。
+2. 活跃上传会话仍在服务器磁盘；失败/取消任务的材料保留至用户删除，不自动设置生命周期过期。
 3. 分片和快速材料改为浏览器直传 OSS，使用限用户、限任务、限时的授权。
 4. 灰度启用后再决定历史数据迁移，保留本地文件与存储模式回退。
 

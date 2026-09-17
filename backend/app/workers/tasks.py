@@ -11,6 +11,7 @@ from ai_engine.evaluation import evaluate_session, index_report
 from ai_engine.evaluation.exceptions import EvaluationCancelled
 
 from ..core import db
+from ..core.material_storage import resolve_material, clear_staged_material
 
 
 STEP_LABELS = {
@@ -105,6 +106,14 @@ async def _run_evaluation(
         future.result(timeout=30)
 
     try:
+        task = await db.get_task(task_id)
+        owner = (task or {}).get("user_id")
+        if not owner:
+            raise ValueError("任务缺少文件所有者")
+        references = (video_path, syllabus_path, courseware_path, transcript_path)
+        video_path, syllabus_path, courseware_path, transcript_path = await asyncio.to_thread(
+            lambda: tuple(resolve_material(ref, owner=owner, task_id=task_id) for ref in references)
+        )
         result = await asyncio.to_thread(
             evaluate_session,
             video_path,
@@ -135,3 +144,10 @@ async def _run_evaluation(
         traceback.print_exc()
         if not await db.fail_eval_task(task_id, str(e)):
             await db.finalize_eval_cancellation(task_id)
+    finally:
+        if "references" in locals() and owner:
+            for ref in references:
+                try:
+                    await asyncio.to_thread(clear_staged_material, ref, owner=owner, task_id=task_id, processing=True)
+                except Exception:
+                    print("[storage] 解析临时文件清理失败，持久材料仍在 OSS", flush=True)

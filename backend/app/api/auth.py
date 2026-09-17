@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import secrets
+import asyncio
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, File, HTTPException, Request, Response, UploadFile
@@ -261,7 +262,7 @@ async def upload_avatar(
     file: UploadFile = File(...),
     user: dict = Depends(current_user),
 ) -> dict:
-    path, key = save_avatar(file, user["id"])
+    path, key = await asyncio.to_thread(save_avatar, file, user["id"])
     file_id = await record_upload(
         user_id=user["id"],
         purpose="avatar",
@@ -275,10 +276,19 @@ async def upload_avatar(
         if profile is None:
             profile = UserProfile(user_id=user["_id"])
             session.add(profile)
+        if profile.avatar_file_id:
+            old = await session.get(StoredFile, profile.avatar_file_id)
+            if old and old.user_id == user["_id"] and old.storage_backend == "oss":
+                old.deleted_at = datetime.now(timezone.utc)
         profile.avatar_file_id = __import__("uuid").UUID(file_id)
         profile.updated_at = datetime.now(timezone.utc)
         db_user = await session.get(User, user["_id"])
-        return await public_user(session, db_user)
+        result = await public_user(session, db_user)
+    from ..core.material_storage import upload_backend
+    if upload_backend() == "oss":
+        from pathlib import Path
+        Path(path).unlink(missing_ok=True)
+    return result
 
 
 @router.get("/me/avatar")
@@ -294,7 +304,7 @@ async def get_avatar(user: dict = Depends(current_user)):
             raise HTTPException(404, "还没有头像")
         from ..core.db import stored_file_disk_path
 
-        path = stored_file_disk_path(stored.storage_key, stored.storage_backend)
+        path = await asyncio.to_thread(stored_file_disk_path, stored.storage_key, stored.storage_backend)
     if not path.is_file():
         raise HTTPException(404, "还没有头像")
     return FileResponse(path, media_type=stored.mime_type or "image/jpeg")

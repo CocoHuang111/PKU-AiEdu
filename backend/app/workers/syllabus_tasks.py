@@ -10,6 +10,7 @@ from ai_engine.syllabus.exceptions import SyllabusCancelled
 from ai_engine.syllabus.optimizer import optimize_file, optimize_text
 
 from ..core import db
+from ..core.material_storage import resolve_material, clear_staged_material
 
 STEP_LABELS = {
     "queued": "排队中",
@@ -55,6 +56,7 @@ async def run_syllabus_optimization(task_id: str) -> None:
     loop = asyncio.get_running_loop()
     prompt_mode = task.get("prompt_mode")
     source_path = task.get("source_path")
+    resolved_source_path = source_path
     source_text = task.get("source_text") or ""
 
     def progress(pct: int, step: str, detail: dict | None = None) -> None:
@@ -75,9 +77,13 @@ async def run_syllabus_optimization(task_id: str) -> None:
 
     try:
         if source_path:
+            resolved_source_path = await asyncio.to_thread(
+                resolve_material, source_path, owner=task["user_id"], task_id=task_id
+            )
+        if source_path:
             result = await asyncio.to_thread(
                 optimize_file,
-                source_path,
+                resolved_source_path,
                 prompt_mode=prompt_mode,
                 progress=progress,
                 is_cancelled=is_cancelled,
@@ -136,6 +142,10 @@ async def run_syllabus_optimization(task_id: str) -> None:
             task_id, status="failed", current_step="failed", error=str(e)
         )
     finally:
+        try:
+            await asyncio.to_thread(clear_staged_material, source_path, owner=task["user_id"], task_id=task_id)
+        except Exception:
+            print("[storage] 大纲临时文件清理失败，持久材料仍在 OSS", flush=True)
         stop.set()
         heartbeat.cancel()
         try:

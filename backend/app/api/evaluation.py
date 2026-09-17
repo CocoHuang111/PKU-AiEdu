@@ -31,6 +31,7 @@ from ..core.upload_sessions import (
     session_status,
 )
 from ..core.uploads import record_upload, save_user_upload
+from ..core.material_storage import material_reference, purge_deleted_oss_files, release_uploaded_paths, task_material_reference
 from ..schemas import (
     EvaluationTaskCreateForm,
     RemoteSourceForm,
@@ -133,7 +134,7 @@ async def create_task_upload_session(
     user: dict = Depends(current_user),
 ) -> dict:
     task = _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
-    if task.get("video_path"):
+    if await task_material_reference(user["id"], task_id):
         return {"complete": True, "task": task}
     if Path(form.original_filename).name != task.get("filename"):
         raise HTTPException(400, "上传文件名与任务不一致")
@@ -155,7 +156,7 @@ async def get_task_upload_session(
     task_id: str, user: dict = Depends(current_user)
 ) -> dict:
     task = _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
-    if task.get("video_path"):
+    if await task_material_reference(user["id"], task_id):
         return {"complete": True, "task": task}
     return await asyncio.to_thread(session_status, user["id"], task_id)
 
@@ -165,7 +166,7 @@ async def reset_task_upload_session(
     task_id: str, user: dict = Depends(current_user)
 ) -> dict:
     task = _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
-    if task.get("video_path"):
+    if await task_material_reference(user["id"], task_id):
         raise HTTPException(409, "视频已经上传完成，不能重置上传会话")
     await remove_session(user["id"], task_id)
     return {"ok": True}
@@ -215,7 +216,7 @@ async def complete_task_upload_session(
     user: dict = Depends(current_user),
 ) -> dict:
     task = _uploadable_task(await db.get_task(task_id, user_id=user["id"]))
-    if task.get("video_path"):
+    if await task_material_reference(user["id"], task_id):
         return task
     result = await asyncio.to_thread(
         complete_session,
@@ -239,11 +240,12 @@ async def complete_task_upload_session(
             task_id,
             user["id"],
             filename=result["original_filename"],
-            video_path=result["path"],
+            video_path=material_reference(result["path"], result["storage_key"], evidence=result["mode"] == "evidence"),
         )
         if not saved:
             raise HTTPException(409, "任务已取消或当前状态不允许上传")
         await remove_session(user["id"], task_id)
+        await release_uploaded_paths(user["id"], task_id, result["path"])
         return saved
     except Exception:
         Path(result["path"]).unlink(missing_ok=True)
@@ -301,9 +303,11 @@ async def upload_task_aux_materials(
                 mime_type=upload.content_type,
                 path=path,
             )
+            fields[field] = material_reference(path, key)
         saved = await db.set_task_materials(task_id, user["id"], **fields)
         if not saved:
             raise HTTPException(409, "任务已取消或当前状态不允许上传")
+        await release_uploaded_paths(user["id"], task_id, *(str(path) for path in saved_paths))
         return saved
     except Exception:
         for path in saved_paths:
@@ -503,15 +507,16 @@ async def _store_task_materials(
             task_id,
             user["id"],
             filename=original_video_name,
-            video_path=dest,
+            video_path=material_reference(dest, video_key, evidence=has_evidence),
             reference=(reference or "").strip() or None,
-            syllabus_path=syllabus_path,
-            courseware_path=courseware_path,
+            syllabus_path=material_reference(syllabus_path),
+            courseware_path=material_reference(courseware_path),
             transcript=script_body,
-            transcript_path=transcript_path,
+            transcript_path=material_reference(transcript_path),
         )
         if not saved:
             raise HTTPException(409, "任务已取消或当前状态不允许上传")
+        await release_uploaded_paths(user["id"], task_id, dest, syllabus_path, courseware_path, transcript_path)
         return saved
     except Exception as exc:
         _cleanup_task_uploads(user["id"], task_id)
@@ -785,6 +790,18 @@ async def get_task_file(
 ) -> FileResponse:
     if kind not in {"video", "courseware", "syllabus", "script"}:
         raise HTTPException(400, "不支持的文件类型")
+    # Authorize against the owned task before creating any OSS download capability.
+    from ..core.material_storage import is_oss_reference, object_key
+    from ..core.storage import get_storage
+    from fastapi.responses import RedirectResponse
+    reference = await task_material_reference(user["id"], task_id, kind)
+    if reference and is_oss_reference(reference):
+        key = object_key(reference, owner=user["id"], task_id=task_id)
+        url = await asyncio.to_thread(get_storage("oss").signed_download_url, key, 300)
+        async with session_scope() as session:
+            await audit(session, None, action="download", actor_user_id=user["_id"],
+                        resource_type="eval_file", resource_id=task_id, details={"kind": kind})
+        return RedirectResponse(url, status_code=302, headers={"Cache-Control": "no-store"})
     path = await db.get_task_file_path(task_id, kind, user_id=user["id"])
     if not path:
         raise HTTPException(404, "文件不存在")
@@ -825,6 +842,7 @@ async def delete_task(task_id: str, user: dict = Depends(current_user)) -> dict:
         raise HTTPException(404, "任务不存在")
     if not result["ok"]:
         raise HTTPException(409, "任务尚未结束，请先停止任务并等待其完全退出")
+    await purge_deleted_oss_files()
     async with session_scope() as session:
         await audit(
             session,

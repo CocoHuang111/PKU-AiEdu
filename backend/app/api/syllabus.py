@@ -14,6 +14,7 @@ from ..core.audit import audit
 from ..core.auth import current_user
 from ..core.database import session_scope
 from ..core.uploads import new_task_id, record_upload, save_user_upload
+from ..core.material_storage import material_reference, mark_task_files_deleted, purge_deleted_oss_files, release_uploaded_paths
 from ..schemas import SyllabusTextForm
 from ..workers.syllabus_tasks import STEP_LABELS, run_syllabus_optimization
 
@@ -57,7 +58,7 @@ async def optimize_from_file(
         )
 
     task_id = new_task_id()
-    dest, key = save_user_upload(
+    dest, key = await asyncio.to_thread(save_user_upload,
         file,
         user_id=user["id"],
         task_id=task_id,
@@ -78,10 +79,11 @@ async def optimize_from_file(
     await db.create_syllabus_task(
         filename=file.filename or "上传文件",
         prompt_mode=prompt_mode,
-        source_path=dest,
+        source_path=material_reference(dest, key),
         user_id=user["id"],
         task_id=task_id,
     )
+    await release_uploaded_paths(user["id"], task_id, dest)
     background.add_task(run_syllabus_optimization, task_id)
     return {"task_id": task_id, "status": "queued", "filename": file.filename}
 
@@ -119,6 +121,8 @@ async def cancel_task(task_id: str, user: dict = Depends(current_user)) -> dict:
 async def delete_task(task_id: str, user: dict = Depends(current_user)) -> dict:
     if not await db.delete_syllabus_task(task_id, user_id=user["id"]):
         raise HTTPException(404, "任务不存在")
+    await mark_task_files_deleted(user["id"], task_id)
+    await purge_deleted_oss_files()
     async with session_scope() as session:
         await audit(
             session,

@@ -128,7 +128,9 @@ class OSSStorageBackend:
             if status == 404 and code == "NoSuchKey":
                 raise FileNotFoundError("OSS 文件不存在") from None
             suffix = f"（HTTP {status}）" if isinstance(status, int) else ""
-            raise OSSStorageError(f"OSS {operation}失败{suffix}，请检查角色权限、网络和配置") from None
+            error = OSSStorageError(f"OSS {operation}失败{suffix}，请检查角色权限、网络和配置")
+            error.status = status if isinstance(status, int) else None
+            raise error from None
 
     def save(self, key: str, stream: BinaryIO) -> int:
         key = self._key(key)
