@@ -11,7 +11,8 @@ acoustic coverage. No original-video downsampling or pitch subsampling.
 - ASR: ten-minute cores with two seconds of left/right context. Each segment
   belongs to its core by midpoint; timestamps are clipped and offset globally.
   A fresh child process loads the model per core, then exits to release native
-  allocations. Successfully completed cores are saved atomically, including
+  allocations. Cached weights load offline; uncached weights may download once.
+  Successfully completed cores are saved atomically, including
   silent cores. Source/model/settings changes invalidate checkpoints.
 - Audio extraction: unchanged source reuses the WAV, keeping source identity
   stable across worker restarts rather than invalidating all ASR checkpoints.
@@ -37,8 +38,12 @@ acoustic coverage. No original-video downsampling or pitch subsampling.
   and reaps the child. ASR core timeout: 30 minutes; acoustic stage: one hour.
 - Progress: ASR 15–40, punctuation 40–45, acoustic features 46–49; show phase
   and completed audio minutes instead of one opaque 45% stage.
-- Worker logs phase/progress/elapsed/cgroup memory at transitions and every
+- Worker logs phase/progress/elapsed/anonymous memory at transitions and every
   thirty seconds. One evaluation worker remains serial; CPU threads capped at 4.
+- Native child high-water RSS is recorded via resource.getrusage. The host-side
+  `scripts.monitor_evaluation_resources` also samples combined process RSS every
+  five seconds. This is separate from cgroup file cache, and a sampled maximum
+  is not claimed to be an exact combined-process high-water mark.
 - Deleting a task also removes its WAV/analysis checkpoints and generated frames.
 
 ## Verification

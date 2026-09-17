@@ -20,6 +20,9 @@ import soundfile as sf
 from ai_engine.config import settings
 from ai_engine.evaluation.audio_features import extract_audio_features
 from ai_engine.providers.asr import FasterWhisperASR
+from ai_engine.evaluation.exceptions import EvaluationCancelled
+from ai_engine.processes import run_json_worker
+from unittest.mock import patch
 
 
 def main(source: Path, output: Path, offset: float, seconds: float):
@@ -49,6 +52,22 @@ def main(source: Path, output: Path, offset: float, seconds: float):
     started = time.monotonic()
     features = extract_audio_features(str(clip))
     bounded_pitch_seconds = time.monotonic() - started
+    resume_clip = output / "quality-resume.wav"
+    sf.write(resume_clip, samples, rate, subtype="FLOAT")
+    first_checkpoint = resume_clip.with_suffix(".asr-checkpoint") / "00000.json"
+    def interrupt(done, total):
+        if done >= 30 and first_checkpoint.exists():
+            raise EvaluationCancelled()
+    try:
+        FasterWhisperASR({**conf, "chunk_seconds": 30}).transcribe(str(resume_clip), progress_callback=interrupt)
+    except EvaluationCancelled:
+        pass
+    if not first_checkpoint.exists():
+        raise RuntimeError("Expected the first completed chunk to survive interruption")
+    with patch("ai_engine.providers.asr.run_json_worker", wraps=run_json_worker) as calls:
+        resumed = FasterWhisperASR({**conf, "chunk_seconds": 30}).transcribe(str(resume_clip))
+    if calls.call_count != int(np.ceil(len(samples) / rate / 30)) - 1:
+        raise RuntimeError("Resume reprocessed completed chunks")
     summary = {
         "offset_sec": offset, "duration_sec": len(samples) / rate,
         "normalized_transcript_agreement": difflib.SequenceMatcher(
@@ -61,6 +80,8 @@ def main(source: Path, output: Path, offset: float, seconds: float):
         "chunked_pitch_std": features.get("pitch_std"),
         "whole_pitch_seconds": reference_pitch_seconds,
         "chunked_audio_features_seconds": bounded_pitch_seconds,
+        "resume_remaining_child_calls": calls.call_count,
+        "resume_text_matches_uninterrupted_chunks": resumed.text == bounded.text,
     }
     (output / "quality.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     print(json.dumps({k: v for k, v in summary.items() if k not in ("whole_asr", "chunked_asr")}, ensure_ascii=False), flush=True)

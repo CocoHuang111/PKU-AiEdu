@@ -878,12 +878,18 @@ def evaluate_session(
     script = _resolve_script(transcript_text, transcript_path, progress)
     if video_path:
         options = {"version": 2, "evaluation": settings.section("evaluation"),
-                   "asr": settings.section("asr"), "reference": reference, "script": script}
+                   "asr": settings.section("asr"), "reference": reference, "script": script,
+                   "mode": settings.mode, "vlm": settings.section("vlm"), "llm": settings.section("llm")}
         for name, path in (("syllabus", syllabus_path), ("courseware", courseware_path)):
             options[name] = checkpoints.identity(path, {}) if path else None
         signature = checkpoints.identity(video_path, options)
         checkpoint = Path(video_path).with_suffix(".evaluation-checkpoint.json")
         pack = checkpoints.read(checkpoint, signature)
+        if pack is not None and any(
+            not Path(note["path"]).is_file()
+            for note in pack.get("vision_notes", []) + pack.get("courseware_notes", [])
+        ):
+            pack = None
         if pack is None:
             pack = collect_video_evidence(
                 video_path,
@@ -894,7 +900,9 @@ def evaluate_session(
                 transcript_text=script,
             )
             audio = pack.get("raw_features", {}).get("audio", {})
-            if not settings.section("evaluation").get("audio_enabled", True) or audio.get("pitch_available"):
+            audio_complete = not settings.section("evaluation").get("audio_enabled", True) or audio.get("pitch_available")
+            vision_complete = all(note.get("ok", True) for note in pack.get("vision_notes", []) + pack.get("courseware_notes", []))
+            if audio_complete and vision_complete:
                 checkpoints.write(checkpoint, signature, pack)
         else:
             progress(70, "vlm_describe", {"phase": "cached", "warning": "已恢复完整解析检查点，继续生成评估报告"})

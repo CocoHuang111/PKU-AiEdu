@@ -14,6 +14,7 @@ from dataclasses import replace
 from pathlib import Path
 
 from .. import checkpoints
+from ..config import settings
 
 from ..providers import ASRResult, ASRSegment, ChatMessage, ProviderError, get_llm
 from .text_features import CHINESE_CHAR
@@ -193,7 +194,10 @@ def punctuate_texts(
             idxs.append(i)
             size += len(texts[i])
             i += 1
-        signature = hashlib.sha256(json.dumps([2, batch], ensure_ascii=False).encode()).hexdigest()
+        signature = hashlib.sha256(json.dumps(
+            [2, batch, budget_seconds, settings.mode, settings.section("llm")],
+            ensure_ascii=False, sort_keys=True,
+        ).encode()).hexdigest()
         path = checkpoint_dir / f"{batch_index:05d}.json" if checkpoint_dir else None
         saved = checkpoints.read(path, signature) if path else None
         detail = {"batch": batch_index + 1}
