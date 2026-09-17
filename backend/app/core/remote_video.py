@@ -89,6 +89,42 @@ async def _resolve_public_addresses(hostname: str, port: int) -> list[str]:
     return addresses
 
 
+class PublicNetworkTransport(httpx.AsyncBaseTransport):
+    """Pin each connection to a checked public IP, with original Host and TLS SNI.
+
+    Pools are separated by original origin: two hostnames sharing a CDN address
+    must not reuse each other's TLS connection. No environment proxy is used.
+    """
+    def __init__(self):
+        self.pools: dict[tuple[str, str, int], httpx.AsyncHTTPTransport] = {}
+
+    async def handle_async_request(self, request: httpx.Request) -> httpx.Response:
+        scheme, host = request.url.scheme, request.url.host
+        if scheme not in {"http", "https"} or not host:
+            raise HTTPException(400, "仅允许连接公网 HTTP/HTTPS 地址")
+        port = request.url.port or (443 if scheme == "https" else 80)
+        addresses = await _resolve_public_addresses(host, port)
+        # Prefer IPv4 when both families exist (some deployments lack IPv6 egress).
+        address = sorted(addresses, key=lambda value: (":" in value, value))[0]
+        key = scheme, host, port
+        if key not in self.pools:
+            self.pools[key] = httpx.AsyncHTTPTransport(
+                trust_env=False, retries=0, http2=False,
+                limits=httpx.Limits(max_connections=2, max_keepalive_connections=2),
+            )
+        pinned = httpx.Request(
+            request.method, request.url.copy_with(host=address),
+            headers=request.headers, stream=request.stream,
+            extensions={**request.extensions, "sni_hostname": host},
+        )
+        return await self.pools[key].handle_async_request(pinned)
+
+    async def aclose(self):
+        for pool in self.pools.values():
+            await pool.aclose()
+        self.pools.clear()
+
+
 async def validate_remote_url(raw_url: str, *, allowed_origins: frozenset[str] = frozenset()) -> str:
     value = (raw_url or "").strip()
     if not value or len(value) > 2048:
@@ -229,7 +265,7 @@ async def download_remote_video(
             follow_redirects=False,
             timeout=timeout,
             trust_env=False,
-            transport=transport,
+            transport=transport if transport is not None else PublicNetworkTransport(),
         ) as client:
             resolved = Download(current_url)
             if source.provider != "direct":
@@ -237,7 +273,11 @@ async def download_remote_video(
                     await on_progress(0, None)
                 async with asyncio.timeout(120):
                     try:
-                        adapter = adapter_for(source, client)
+                        async def on_activity():
+                            if on_progress:
+                                await on_progress(0, None)
+
+                        adapter = adapter_for(source, client, on_activity=on_activity)
                         selected = await adapter.select(share_path or [], share_file_id)
                         if selected.size is not None and selected.size > max_bytes:
                             raise HTTPException(400, f"链接视频超过 {max_bytes // (1024 ** 3)} GB 限制")

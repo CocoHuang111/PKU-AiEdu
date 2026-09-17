@@ -269,6 +269,7 @@
                   </div>
                   <div v-if="remoteShare" class="remote-file-picker">
                     <div class="upload-hint">{{ remoteShare.provider_name }} · {{ remoteShare.notice }}</div>
+                    <div v-if="remoteShare.configuration_message" class="link-error">{{ remoteShare.configuration_message }}</div>
                     <el-button v-if="remoteSharePath.length" text :disabled="uploading || remoteShareLoading"
                       @click="readRemoteShare(remoteSharePath.slice(0, -1))">返回上一级</el-button>
                     <div v-for="entry in remoteShare.files" :key="entry.id">
@@ -1793,8 +1794,9 @@ let recommendationPromise = null
 
 const validRemoteVideoLink = computed(() => {
   if (videoSource.value !== 'link') return ''
-  const links = remoteVideoLink.value.trim().match(/https?:\/\/[^\s<>"，。；）]+/gi) || []
-  const value = links.length === 1 ? links[0].replace(/[)\]]+$/, '') : ''
+  const text = remoteVideoLink.value.trim()
+  const links = text.match(/https?:\/\/[^\s<>"，。；）]+/gi) || []
+  const value = links.length === 1 ? (links[0] === text ? links[0] : links[0].replace(/[)\]]+$/, '')) : ''
   if (!value) return ''
   try {
     const parsed = new URL(value)
@@ -1805,10 +1807,10 @@ const validRemoteVideoLink = computed(() => {
 })
 const remoteUrlError = computed(() => {
   if (videoSource.value !== 'link' || !remoteVideoLink.value.trim() || validRemoteVideoLink.value) return ''
-  return '请填写完整的 HTTP/HTTPS 链接'
+  return '请一次填写一个完整的 HTTP/HTTPS 链接'
 })
 const canStart = computed(() => Boolean(videoFile.value || (validRemoteVideoLink.value && !remoteShareLoading.value &&
-  (remoteShare.value?.provider === 'direct' || remoteShareFileId.value))))
+  remoteShare.value?.download_ready !== false && (remoteShare.value?.provider === 'direct' || remoteShareFileId.value))))
 const recommendedUploadMode = computed(() => uploadRecommendation.value?.strategy?.mode || null)
 const materialCount = computed(() => {
   let n = 0
@@ -4447,6 +4449,23 @@ onBeforeUnmount(() => {
 }
 .video-link-panel .el-input {
   width: min(680px, 100%);
+  margin-bottom: 8px;
+}
+.remote-file-picker {
+  width: min(680px, 100%);
+  margin-top: 8px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+.remote-file-picker :deep(.el-radio) {
+  height: auto;
+  min-height: 32px;
+  width: calc(100% - 8px);
+}
+.remote-file-picker :deep(.el-radio__label) {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  line-height: 1.5;
 }
 .video-link-panel .upload-hint,
 .link-error,

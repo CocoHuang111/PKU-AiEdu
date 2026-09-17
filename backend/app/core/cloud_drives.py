@@ -12,16 +12,20 @@ import re
 from dataclasses import dataclass, field
 from html import unescape
 from html.parser import HTMLParser
+from http.cookies import SimpleCookie
 from pathlib import PurePosixPath
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 
 import httpx
 from fastapi import HTTPException
 
-from .remote_video import ALLOWED_VIDEO_EXT, validate_remote_url
+from .remote_video import (
+    ALLOWED_VIDEO_EXT, PublicNetworkTransport, _content_length, _safe_filename,
+    validate_remote_url,
+)
 
 NAMES = {"pku": "北大网盘", "baidu": "百度网盘", "quark": "夸克网盘", "google": "Google Drive", "direct": "视频直链"}
-UA = "Mozilla/5.0 PKU-AskEdu-Video-Importer/1.0"
+UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 MAX_PAGE_BYTES = 4 * 1024 * 1024
 
 
@@ -41,7 +45,7 @@ def parse_source(text: str, password: str = "") -> Source:
     matches = re.findall(r'https?://[^\s<>"，。；）]+', text, flags=re.I)
     if len(matches) != 1:
         raise HTTPException(400, "请一次填写一个 HTTP/HTTPS 视频链接")
-    url = matches[0].rstrip(")]")
+    url = matches[0] if matches[0] == text.strip() else matches[0].rstrip(")]")
     try:
         p = urlsplit(url)
         if p.username or p.password or p.port not in (None, 80, 443):
@@ -55,7 +59,7 @@ def parse_source(text: str, password: str = "") -> Source:
     provider, identity, folder = "direct", "", False
     if host == "disk.pku.edu.cn":
         provider = "pku"
-        match = re.fullmatch(r"/(?:anyshare/)?link/([A-Za-z0-9_-]+)/*", p.path)
+        match = re.fullmatch(r"/(?:anyshare/(?:[A-Za-z]{2}(?:-[A-Za-z]{2})?/)?)?link/([A-Za-z0-9_-]+)/*", p.path)
         identity = match[1] if match else ""
     elif host in {"pan.baidu.com", "yun.baidu.com"}:
         provider = "baidu"
@@ -109,14 +113,17 @@ def _name(value):
 
 
 class Adapter:
-    def __init__(self, source: Source, client: httpx.AsyncClient):
+    def __init__(self, source: Source, client: httpx.AsyncClient, on_activity=None):
         self.source, self.client = source, client
         self.calls = 0
+        self.on_activity = on_activity
 
     def fail(self, message, status=400):
         raise HTTPException(status, f"{NAMES[self.source.provider]}：{message}")
 
     async def request(self, method, url, **kwargs):
+        if self.on_activity:
+            await self.on_activity()
         self.calls += 1
         if self.calls > 100:
             self.fail("目录过大或请求过多，请分享较小的子目录")
@@ -262,10 +269,23 @@ class Baidu(Adapter):
 class Quark(Adapter):
     base = "https://drive-pc.quark.cn/1/clouddrive"
 
+    def account_cookie(self):
+        parsed = SimpleCookie()
+        parsed.load(os.getenv("QUARK_NETDISK_COOKIE", "").strip())
+        values = {key: morsel.value for key, morsel in parsed.items()}
+        # Quark refreshes __puus on API responses. Use that provider-scoped
+        # update during this import; never persist it or expose it to the UI.
+        for cookie in self.client.cookies.jar:
+            domain = cookie.domain.lstrip(".").lower()
+            if domain == "quark.cn" or domain.endswith(".quark.cn"):
+                if cookie.name in values:
+                    values[cookie.name] = cookie.value
+        return "; ".join(f"{key}={value}" for key, value in values.items())
+
     async def api(self, method, path, authenticated=False, **kwargs):
         headers = {"Referer": "https://pan.quark.cn/"}
         if authenticated:
-            headers["Cookie"] = os.getenv("QUARK_NETDISK_COOKIE", "").strip()
+            headers["Cookie"] = self.account_cookie()
         data = await self.json(method, self.base + path, headers=headers,
                                params={"pr": "ucpro", "fr": "pc", **kwargs.pop("params", {})}, **kwargs)
         if data.get("code") != 0:
@@ -318,7 +338,7 @@ class Quark(Adapter):
                 # Account cookies are never forwarded to arbitrary download origins.
                 trusted = p.scheme == "https" and (p.hostname or "").endswith(".quark.cn")
                 return Download(url, item.name, {"User-Agent": UA, "Referer": "https://pan.quark.cn/"},
-                                f"https://{p.netloc}" if trusted else "", {"Cookie": cookie} if trusted else {})
+                                f"https://{p.netloc}" if trusted else "", {"Cookie": self.account_cookie()} if trusted else {})
             if data.get("status") in {2, 3}:
                 self.fail("转存任务结束但未返回文件，请检查账号权限或存储空间")
             await asyncio.sleep(1)
@@ -387,15 +407,24 @@ class Google(Adapter):
             if not entries:
                 self.fail("未读取到文件；文件夹可能为空、未公开或页面格式已变化")
             return list(entries.values())
-        return [ShareFile(self.source.share_id, "Google Drive 视频.mp4")]
+        item = ShareFile(self.source.share_id, "")
+        resolved, size = await self.resolve_download(item)
+        return [ShareFile(item.id, resolved.filename, size, private={"resolved": resolved})]
 
     async def download(self, item):
+        if item.private.get("resolved"):
+            return item.private["resolved"]
+        return (await self.resolve_download(item))[0]
+
+    async def resolve_download(self, item):
         params = {"id": item.id, "export": "download"}
         key = item.private.get("resource_key") or self.source.resource_key
         if key:
             params["resourcekey"] = key
         current = "https://drive.usercontent.google.com/download?" + urlencode(params)
         for _ in range(6):
+            if self.on_activity:
+                await self.on_activity()
             await validate_remote_url(current)
             p = urlsplit(current)
             if p.scheme != "https" or not (p.hostname in {"drive.google.com", "docs.google.com", "drive.usercontent.google.com"}
@@ -409,40 +438,62 @@ class Google(Adapter):
                     self.fail(f"无法下载（HTTP {response.status_code}），请将文件设为知道链接的人可查看并允许下载")
                 content_type = response.headers.get("content-type", "").lower()
                 if "text/html" not in content_type:
+                    filename, _ = _safe_filename(response, current, item.name)
+                    size = _content_length(response)
                     cookie = self.client.build_request("GET", current).headers.get("cookie", "")
-                    return Download(current, item.name if self.source.folder else "", {"User-Agent": UA},
-                                    f"{p.scheme}://{p.netloc}", {"Cookie": cookie} if cookie else {})
+                    return Download(current, filename, {"User-Agent": UA},
+                                    f"{p.scheme}://{p.netloc}", {"Cookie": cookie} if cookie else {}), size
                 body = bytearray()
                 async for chunk in response.aiter_bytes(64 * 1024):
                     body.extend(chunk)
                     if len(body) > MAX_PAGE_BYTES:
                         self.fail("下载确认页过大")
+            page = body.decode("utf-8", errors="replace")
             parser = GoogleForm()
-            parser.feed(body.decode("utf-8", errors="replace"))
-            if not parser.action:
+            parser.feed(page)
+            if parser.action:
+                current = urljoin(current, unescape(parser.action))
+                current += ("&" if "?" in current else "?") + urlencode(parser.fields)
+                continue
+            href = re.search(r'href=["\'](/uc\?export=download[^"\']+)', page)
+            embedded = re.search(r'"downloadUrl"\s*:\s*("(?:\\.|[^"\\])*")', page)
+            if href:
+                current = urljoin("https://docs.google.com", unescape(href[1]))
+            elif embedded:
+                current = json.loads(embedded[1])
+            else:
                 self.fail("文件未开放下载、需要登录或已达到下载配额，请检查分享设置")
-            current = urljoin(current, unescape(parser.action))
-            current += ("&" if "?" in current else "?") + urlencode(parser.fields)
         self.fail("下载确认或重定向次数过多")
 
 
-def adapter_for(source, client):
-    return {"pku": Pku, "baidu": Baidu, "quark": Quark, "google": Google}[source.provider](source, client)
+def adapter_for(source, client, on_activity=None):
+    return {"pku": Pku, "baidu": Baidu, "quark": Quark, "google": Google}[source.provider](source, client, on_activity)
+
+
+def import_readiness(provider):
+    if provider == "baidu" and not os.getenv("BAIDU_NETDISK_COOKIE", "").strip():
+        return False, "暂未连接百度网盘导入账号，请联系管理员，或下载视频后本地上传"
+    if provider == "quark" and not (os.getenv("QUARK_NETDISK_COOKIE", "").strip() and os.getenv("QUARK_IMPORT_FOLDER_ID", "").strip()):
+        return False, "暂未连接夸克网盘导入账号，请联系管理员，或下载视频后本地上传"
+    return True, ""
 
 
 async def inspect_share(raw_url, password="", path=None, *, transport=None):
     source = parse_source(raw_url, password)
     try:
-        async with asyncio.timeout(90), httpx.AsyncClient(follow_redirects=False, trust_env=False, timeout=20, transport=transport) as client:
+        network = transport if transport is not None else PublicNetworkTransport()
+        async with asyncio.timeout(90), httpx.AsyncClient(follow_redirects=False, trust_env=False, timeout=20, transport=network) as client:
             if source.provider == "direct":
                 await validate_remote_url(source.url)
-                return {"provider": "direct", "provider_name": NAMES["direct"], "files": [], "notice": "服务器将在导入时检查视频格式和大小"}
+                return {"provider": "direct", "provider_name": NAMES["direct"], "files": [], "notice": "服务器将在导入时检查视频格式和大小", "download_ready": True, "configuration_message": ""}
             files = await adapter_for(source, client).walk(path or [])
             notice = "请选择要导入的视频"
             if source.provider == "quark":
                 notice = "导入时会转存至管理员配置的夸克专用目录，转存文件将保留在该账号中"
+            ready, message = import_readiness(source.provider)
             return {"provider": source.provider, "provider_name": NAMES[source.provider],
-                    "files": [f.public() for f in files if f.is_dir or f.public()["is_video"]], "notice": notice}
+                    "files": [f.public() for f in files if f.is_dir or f.public()["is_video"]], "notice": notice,
+                    "download_ready": ready, "configuration_message": message}
     except (httpx.RequestError, TimeoutError):
         raise HTTPException(408, "网盘连接失败或超时，请稍后重试") from None
     except (KeyError, TypeError, ValueError, AttributeError):
