@@ -105,6 +105,8 @@ def _stream_pitch(audio, path, librosa, signature, progress_callback=None, block
 
 def _wave_envelope(audio):
     n = min(360, max(8, audio.frames // 64))
+    if audio.frames < n:
+        return []
     win = max(1, audio.frames // n)
     peaks = []
     # A single display bin can itself be large for very long media. Bound reads.
@@ -254,10 +256,13 @@ def extract_audio_features_isolated(audio_path: str, progress_callback=None):
 if __name__ == "__main__":
     import json
     import sys
+    import resource
     from ..processes import emit
 
     request = json.load(sys.stdin)
     result = extract_audio_features(request["audio_path"], progress_callback=lambda phase, done, total: emit(
         "progress", {"phase": phase, "done_sec": done, "total_sec": total},
     ))
+    peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    result["analysis_peak_rss_mb"] = round(peak / (1024**2 if sys.platform == "darwin" else 1024), 2)
     emit("result", result)

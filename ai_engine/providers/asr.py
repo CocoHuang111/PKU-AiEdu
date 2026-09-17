@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import math
 import os
+import time
 from pathlib import Path
 from typing import Any
 
@@ -56,10 +57,14 @@ class FasterWhisperASR(ASRProvider):
                 "注意需要 Python 3.11（3.13+ 缺少 ctranslate2 的 arm64 wheel）。"
             ) from e
         # 首次加载会从 HuggingFace 下载权重，可用 .env 的 HF_HOME 指定缓存目录
-        self._model = WhisperModel(
-            self.model_name, device=self.device, compute_type=self.compute_type,
-            cpu_threads=self.cpu_threads,
-        )
+        from huggingface_hub.utils import LocalEntryNotFoundError
+        options = {"device": self.device, "compute_type": self.compute_type,
+                   "cpu_threads": self.cpu_threads}
+        try:
+            # Cached models must not repeat slow HuggingFace HEAD requests per core.
+            self._model = WhisperModel(self.model_name, local_files_only=True, **options)
+        except LocalEntryNotFoundError:
+            self._model = WhisperModel(self.model_name, local_files_only=False, **options)
         return self._model
 
     def transcribe(
@@ -95,6 +100,7 @@ class FasterWhisperASR(ASRProvider):
             if progress_callback:
                 progress_callback(start, total)
             if chunk is None:
+                chunk_started = time.monotonic()
                 read_start = max(0, start - self.overlap_seconds)
                 read_end = min(total, end + self.overlap_seconds)
 
@@ -113,8 +119,10 @@ class FasterWhisperASR(ASRProvider):
                     # Each overlapping segment belongs to exactly one core by its midpoint.
                     if start <= (left + right) / 2 < end:
                         kept.append({**item, "start": max(start, left), "end": min(end, right)})
-                chunk = {"segments": kept, "language": raw["language"]}
+                chunk = {"segments": kept, "language": raw["language"],
+                         "child_peak_rss_mb": raw.get("child_peak_rss_mb")}
                 checkpoints.write(path, signature, chunk)
+                print(f"[asr] core={index+1} seconds={start:g}-{end:g} elapsed={time.monotonic()-chunk_started:.1f}s child_peak_rss_mb={raw.get('child_peak_rss_mb')}", flush=True)
             detected = chunk["language"]
             segments.extend(ASRSegment(**item) for item in chunk["segments"])
             if progress_callback:

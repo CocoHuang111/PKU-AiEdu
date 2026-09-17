@@ -90,6 +90,17 @@ class AudioTests(unittest.TestCase):
 
 
 class ASRTests(unittest.TestCase):
+    def test_cached_model_is_loaded_without_network(self):
+        with patch("faster_whisper.WhisperModel") as model:
+            FasterWhisperASR({})._load()
+        self.assertTrue(model.call_args.kwargs["local_files_only"])
+
+    def test_uncached_model_can_be_downloaded(self):
+        from huggingface_hub.utils import LocalEntryNotFoundError
+        with patch("faster_whisper.WhisperModel", side_effect=[LocalEntryNotFoundError("missing"), object()]) as model:
+            FasterWhisperASR({})._load()
+        self.assertEqual([call.kwargs["local_files_only"] for call in model.call_args_list], [True, False])
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)

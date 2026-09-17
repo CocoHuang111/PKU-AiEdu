@@ -86,7 +86,8 @@ async def _run_evaluation(
         if step != last_step or now - last_log >= 30:
             memory = "unknown"
             try:
-                memory = f"{int(Path('/sys/fs/cgroup/memory.current').read_text()) / 1024**2:.0f}MiB"
+                memory_stat = dict(line.split() for line in Path('/sys/fs/cgroup/memory.stat').read_text().splitlines())
+                memory = f"{int(memory_stat['anon']) / 1024**2:.0f}MiB-anon"
             except (OSError, ValueError):
                 pass
             print(f"[evaluation] task={task_id} step={step} progress={pct} elapsed={now-started:.1f}s memory={memory} detail={detail}", flush=True)

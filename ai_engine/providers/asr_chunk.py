@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import sys
+import resource
 from dataclasses import asdict
 
 import soundfile as sf
@@ -28,7 +29,8 @@ def main():
         samples, request["language"],
         lambda done, total: emit("progress", {"done_sec": done}),
     )
-    emit("result", asdict(result))
+    peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    emit("result", {**asdict(result), "child_peak_rss_mb": round(peak / (1024**2 if sys.platform == "darwin" else 1024), 2)})
 
 
 if __name__ == "__main__":
