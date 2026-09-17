@@ -24,14 +24,10 @@ GOOGLE = "https://drive.google.com/file/d/abc/view"
 
 
 class SourceTests(unittest.TestCase):
-    def test_all_providers_and_share_text(self):
-        for url, provider in [(PKU, "pku"), (BAIDU, "baidu"), (QUARK, "quark"), (GOOGLE, "google"),
-                              ("https://example.com/a.mp4?token=a%2Bb", "direct")]:
-            self.assertEqual(parse_source(url).provider, provider)
-        self.assertEqual(parse_source("我分享的视频 " + QUARK + " 提取码：abcd").password, "abcd")
-        self.assertEqual(parse_source(BAIDU).password, "1234")
-        self.assertEqual(parse_source(BAIDU, "override").password, "override")
-        self.assertEqual(parse_source("https://pan.baidu.com/share/init?surl=abc").share_id, "abc")
+    def test_supported_sources_and_share_text(self):
+        self.assertEqual(parse_source(PKU).provider, "pku")
+        self.assertEqual(parse_source("https://example.com/a.mp4?token=a%2Bb").provider, "direct")
+        self.assertEqual(parse_source("我分享的视频 " + PKU + " 提取码：abcd").password, "abcd")
         for prefix in ["anyshare/", "anyshare/zh-cn/", "anyshare/en-us/", "anyshare/en/"]:
             self.assertEqual(parse_source("https://disk.pku.edu.cn/" + prefix + "link/ABC123?title=lesson.mp4").share_id, "ABC123")
         signed = "https://example.com/a.mp4?signature=abc)"
@@ -99,148 +95,65 @@ class AdapterTests(unittest.IsolatedAsyncioTestCase):
             with self.assertRaises(HTTPException):
                 await self.resolve(PKU, self.pku_handler, path, file_id)
 
-    def baidu_handler(self, request):
-        if request.url.path.endswith("wxlist"):
-            form = parse_qs(request.content.decode(), keep_blank_values=True)
-            self.assertEqual(form["pwd"], ["1234"])
-            return httpx.Response(200, json={"errno": 0, "data": {"uk": "8", "shareid": "9", "seckey": "secret",
-                      "list": [{"fs_id": 123, "server_filename": "lecture.mp4", "isdir": 0, "size": 10, "path": "/lecture.mp4"}]}})
-        self.assertEqual(request.headers.get("cookie"), "BDUSS=test")
-        if request.url.path.endswith("tplconfig"):
-            return httpx.Response(200, json={"errno": 0, "data": {"sign": "sig", "timestamp": 123}})
-        if request.url.path.endswith("sharedownload"):
-            form = parse_qs(request.content.decode())
-            self.assertEqual(json.loads(form["fid_list"][0]), [123])
-            self.assertEqual(json.loads(form["extra"][0]), {"sekey": "secret"})
-            return httpx.Response(200, json={"errno": 0, "list": [{"dlink": "https://cdn.example/lesson.mp4"}]})
-        self.fail("unexpected endpoint")
-
-    async def test_baidu_requires_explicit_account_and_resolves(self):
-        info = await inspect_share(BAIDU, transport=httpx.MockTransport(self.baidu_handler))
-        self.assertEqual(info["files"][0]["id"], "123")
-        self.assertFalse(info["download_ready"])
-        self.assertIn("管理员", info["configuration_message"])
-        with self.assertRaises(HTTPException) as error:
-            await self.resolve(BAIDU, self.baidu_handler)
-        self.assertEqual(error.exception.status_code, 503)
-        with patch.dict(os.environ, {"BAIDU_NETDISK_COOKIE": "BDUSS=test"}):
-            result = await self.resolve(BAIDU, self.baidu_handler)
-        self.assertNotIn("Cookie", result.headers_for(result.url))
-
-    def quark_handler(self, request):
-        path = request.url.path
-        if path.endswith("/token"):
-            return httpx.Response(200, json={"code": 0, "data": {"stoken": "token"}})
-        if path.endswith("/detail"):
-            return httpx.Response(200, json={"code": 0, "metadata": {"_total": 1}, "data": {"list": [
-                {"fid": "vid", "file_name": "lesson.mp4", "dir": False, "size": 100, "share_fid_token": "filetoken"}]}})
-        self.assertEqual(request.headers.get("cookie"), "__uid=test")
-        if path.endswith("/save"):
-            form = json.loads(request.content)
-            self.assertEqual(form["fid_list"], ["vid"])
-            self.assertEqual(form["to_pdir_fid"], "dedicated")
-            return httpx.Response(200, json={"code": 0, "data": {"task_id": "job"}})
-        if path.endswith("/task"):
-            return httpx.Response(200, json={"code": 0, "data": {"status": 2, "save_as": {"save_as_top_fids": ["saved"]}}})
-        if path.endswith("/download"):
-            self.assertEqual(json.loads(request.content)["fids"], ["saved"])
-            return httpx.Response(200, json={"code": 0, "data": [{"download_url": "https://cdn.example/a"}]})
-        self.fail("unexpected endpoint")
-
-    async def test_quark_transfer_requires_config_and_is_scoped(self):
-        with self.assertRaises(HTTPException) as error:
-            await self.resolve(QUARK, self.quark_handler)
-        self.assertEqual(error.exception.status_code, 503)
-        with patch.dict(os.environ, {"QUARK_NETDISK_COOKIE": "__uid=test", "QUARK_IMPORT_FOLDER_ID": "dedicated"}):
-            result = await self.resolve(QUARK, self.quark_handler)
-        self.assertNotIn("Cookie", result.headers_for(result.url))
-
-    async def test_cancellation_prevents_quark_transfer(self):
-        requests = []
-        calls = 0
-        async def activity():
-            nonlocal calls
-            calls += 1
-            if calls == 3:
-                raise HTTPException(409, "导入已取消")
+    async def test_pku_directory_navigation_and_selection(self):
         def handler(request):
-            requests.append(request.url.path)
-            return self.quark_handler(request)
-        with patch.dict(os.environ, {"QUARK_NETDISK_COOKIE": "__uid=test", "QUARK_IMPORT_FOLDER_ID": "dedicated"}):
-            async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
-                adapter = adapter_for(parse_source(QUARK), client, on_activity=activity)
-                selected = await adapter.select([], "")
-                with self.assertRaises(HTTPException) as error:
-                    await adapter.download(selected)
-        self.assertEqual(error.exception.status_code, 409)
-        self.assertFalse(any(path.endswith("/save") for path in requests))
+            if request.url.path.endswith("entry-item"):
+                return httpx.Response(200, json=[{"id": "folder", "name": "课程", "type": "dir"}])
+            if request.url.path.endswith("dir/list"):
+                self.assertEqual(json.loads(request.content)["docid"], "folder")
+                return httpx.Response(200, json={"dirs": [], "files": [
+                    {"id": "video", "name": "lesson.mp4", "size": 100, "rev": "r1"},
+                    {"id": "slides", "name": "slides.pdf", "size": 20}]})
+            return self.pku_handler(request)
+        root = await inspect_share(PKU, transport=httpx.MockTransport(handler))
+        self.assertTrue(root["files"][0]["is_dir"])
+        child = await inspect_share(PKU, path=["folder"], transport=httpx.MockTransport(handler))
+        self.assertEqual([f["id"] for f in child["files"]], ["video"])
+        self.assertTrue(child["download_ready"])
+        self.assertEqual((await self.resolve(PKU, handler, ["folder"], "video")).filename, "lesson.mp4")
 
-    async def test_quark_cookie_refresh_is_used_only_for_provider(self):
-        from backend.app.core.cloud_drives import Quark
-        with patch.dict(os.environ, {"QUARK_NETDISK_COOKIE": "__uid=test; __puus=old"}):
-            async with httpx.AsyncClient() as client:
-                client.cookies.set("__puus", "refreshed", domain="drive-pc.quark.cn")
-                client.cookies.set("__uid", "foreign", domain="evil.example")
-                adapter = Quark(parse_source(QUARK), client)
-                self.assertEqual(adapter.account_cookie(), "__uid=test; __puus=refreshed")
-
-    async def test_wrong_codes_and_malformed_responses(self):
-        for url, payload in [(BAIDU, {"errno": -9}), (QUARK, {"code": 41004}), (PKU, {"wrong": "shape"}), (BAIDU, [])]:
-            with self.assertRaises(HTTPException):
-                await inspect_share(url, transport=httpx.MockTransport(lambda r: httpx.Response(200, json=payload)))
-
-    async def test_google_confirmation_and_resource_key(self):
+    async def test_pku_watermark_download_is_rejected(self):
         def handler(request):
-            self.assertEqual(request.url.params.get("resourcekey"), "rk")
-            if request.url.params.get("confirm") == "t":
-                return httpx.Response(200, headers={"content-type": "video/mp4"})
-            return httpx.Response(200, headers={"content-type": "text/html"}, text='''<form id="download-form" action="https://drive.usercontent.google.com/download">
-                <input type="hidden" name="id" value="abc"><input type="hidden" name="confirm" value="t">
-                <input type="hidden" name="resourcekey" value="rk"></form>''')
-        result = await self.resolve(GOOGLE + "?resourcekey=rk", handler)
-        self.assertIn("confirm=t", result.url)
-
-    async def test_google_rejects_foreign_confirmation(self):
-        seen = []
-        def handler(request):
-            seen.append(request.url.host)
-            return httpx.Response(200, headers={"content-type": "text/html"}, text='<form id="download-form" action="https://evil.example/steal"></form>')
+            if request.url.path.endswith("osdownload"):
+                return httpx.Response(200, json={"authrequest": ["GET", "https://cdn.example/signed"],
+                                                "need_watermark": True})
+            return self.pku_handler(request)
         with self.assertRaises(HTTPException):
-            await self.resolve(GOOGLE, handler)
-        self.assertEqual(seen, ["drive.usercontent.google.com"])
+            await self.resolve(PKU, handler)
 
-    async def test_google_inspection_reads_real_filename_and_size(self):
+    async def test_cancellation_prevents_pku_download_resolution(self):
+        calls = []
+        async def cancelled():
+            raise HTTPException(409, "导入已取消")
         def handler(request):
-            return httpx.Response(200, headers={"content-type": "application/octet-stream",
-                "content-disposition": 'attachment; filename="lecture.webm"', "content-length": "1000"})
-        result = await inspect_share(GOOGLE, transport=httpx.MockTransport(handler))
-        self.assertEqual(result["files"][0]["name"], "lecture.webm")
-        self.assertEqual(result["files"][0]["size"], 1000)
-        self.assertNotIn("resolved", json.dumps(result))
+            calls.append(request.url)
+            return self.pku_handler(request)
+        async with httpx.AsyncClient(transport=httpx.MockTransport(handler)) as client:
+            adapter = adapter_for(parse_source(PKU), client, on_activity=cancelled)
+            with self.assertRaises(HTTPException) as error:
+                await adapter.select([], "")
+        self.assertEqual(error.exception.status_code, 409)
+        self.assertEqual(calls, [])
 
-    async def test_google_inaccessible_file_is_not_invented_as_video(self):
-        for headers, content in [({"content-type": "text/html"}, b"permission required"),
-                                 ({"content-type": "application/pdf", "content-disposition": 'attachment; filename="a.pdf"'}, b"pdf")]:
+    async def test_malformed_pku_response(self):
+        for payload in [{"wrong": "shape"}, []]:
             with self.assertRaises(HTTPException):
-                await inspect_share(GOOGLE, transport=httpx.MockTransport(lambda r: httpx.Response(200, headers=headers, content=content)))
+                await inspect_share(PKU, transport=httpx.MockTransport(lambda r: httpx.Response(200, json=payload)))
 
-    async def test_google_legacy_confirmation_formats_are_supported(self):
-        pages = ['<a href="/uc?export=download&amp;id=abc&amp;confirm=t">Download</a>',
-                 '{"downloadUrl":"https://drive.usercontent.google.com/download?id=abc\\u0026confirm=t"}']
-        for page in pages:
-            def handler(request):
-                if request.url.params.get("confirm") == "t":
-                    return httpx.Response(200, headers={"content-type": "video/mp4"})
-                return httpx.Response(200, headers={"content-type": "text/html"}, text=page)
-            result = await self.resolve(GOOGLE, handler)
-            self.assertIn("confirm=t", result.url)
-
-    async def test_google_folder_membership(self):
+    async def test_unsupported_drives_rejected_without_network(self):
+        requests = []
         def handler(request):
-            self.assertEqual(request.url.params.get("id"), "folder")
-            return httpx.Response(200, text='<title>Folder</title><a href="https://drive.google.com/file/d/video/view">课.mp4</a><a href="https://evil.example/file/d/evil/view">evil.mp4</a>')
-        result = await inspect_share("https://drive.google.com/drive/folders/folder", transport=httpx.MockTransport(handler))
-        self.assertEqual([f["id"] for f in result["files"]], ["video"])
+            requests.append(request.url)
+            return httpx.Response(200, json={})
+        for url in [BAIDU, QUARK, GOOGLE]:
+            with self.subTest(url=url):
+                for action in [inspect_share, download_remote_video]:
+                    with self.assertRaises(HTTPException) as error:
+                        kwargs = {"user_id": "user", "task_id": "task"} if action is download_remote_video else {}
+                        await action(url, transport=httpx.MockTransport(handler), **kwargs)
+                    self.assertEqual(error.exception.status_code, 400)
+                    self.assertIn("暂不支持", error.exception.detail)
+        self.assertEqual(requests, [])
 
     async def test_provider_page_size_is_bounded(self):
         from backend.app.core import cloud_drives

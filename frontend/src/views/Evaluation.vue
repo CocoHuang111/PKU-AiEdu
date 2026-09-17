@@ -251,21 +251,19 @@
                 </el-upload>
                 <div v-else class="video-link-panel">
                   <el-icon class="link-icon" :size="34"><Link /></el-icon>
-                  <div class="link-copy">粘贴网盘分享链接或视频下载地址</div>
+                  <div class="link-copy">粘贴北大网盘公开分享链接或视频下载地址</div>
                   <el-input
                     v-model="remoteVideoLink"
                     :disabled="uploading"
                     clearable
                     size="large"
-                    placeholder="北大网盘、百度网盘、夸克网盘、Google Drive 或视频直链"
+                    placeholder="北大网盘公开分享链接或视频直链"
                     @keyup.enter="readRemoteShare()"
                   />
-                  <el-input v-model="remoteSharePassword" :disabled="uploading" maxlength="128"
-                    placeholder="提取码 / 访问密码（没有可留空）" show-password />
                   <el-button :loading="remoteShareLoading" :disabled="uploading || !validRemoteVideoLink"
                     @click="readRemoteShare()">读取链接</el-button>
                   <div class="upload-hint">
-                    可粘贴包含提取码的分享文本。文件须允许下载；账号权限、验证码和网盘限速仍然适用。
+                    网盘导入目前仅支持北大网盘无需登录、无需访问密码的公开分享，且文件须允许下载。其他网盘请下载后本地上传。
                   </div>
                   <div v-if="remoteShare" class="remote-file-picker">
                     <div class="upload-hint">{{ remoteShare.provider_name }} · {{ remoteShare.notice }}</div>
