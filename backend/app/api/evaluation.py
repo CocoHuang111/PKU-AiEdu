@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 import shutil
 from datetime import datetime
 from pathlib import Path
@@ -21,6 +22,7 @@ from ..core.auth import current_user
 from ..core.browser_evidence import save_browser_evidence
 from ..core.database import session_scope
 from ..core.remote_video import ALLOWED_VIDEO_EXT, download_remote_video
+from ..core.cloud_drives import inspect_share
 from ..core.upload_sessions import (
     complete_session,
     create_session,
@@ -31,6 +33,7 @@ from ..core.upload_sessions import (
 from ..core.uploads import record_upload, save_user_upload
 from ..schemas import (
     EvaluationTaskCreateForm,
+    RemoteSourceForm,
     TranscriptForm,
     UploadSessionCompleteForm,
     UploadSessionCreateForm,
@@ -43,6 +46,11 @@ ALLOWED_EXT = ALLOWED_VIDEO_EXT
 SYLLABUS_MAX_BYTES = 30 * 1024 * 1024
 COURSEWARE_MAX_BYTES = 80 * 1024 * 1024
 SCRIPT_MAX_BYTES = 30 * 1024 * 1024
+
+
+@router.post("/remote-source")
+async def inspect_remote_source(form: RemoteSourceForm, user: dict = Depends(current_user)) -> dict:
+    return await inspect_share(form.url, form.password, form.path)
 
 
 def _has_upload(upload: UploadFile | None) -> bool:
@@ -320,6 +328,9 @@ async def _store_task_materials(
     evidence_archive: UploadFile | None = None,
     evidence_manifest: str | None = None,
     video_url: str | None = None,
+    share_password: str = "",
+    share_file_id: str = "",
+    share_path: str = "[]",
 ) -> dict:
     task = await db.get_task(task_id, user_id=user["id"])
     if not task:
@@ -374,6 +385,16 @@ async def _store_task_materials(
             )
             video_mime_type = evidence_audio.content_type
         elif has_remote:
+            try:
+                parsed_path = json.loads(share_path)
+                if not isinstance(parsed_path, list):
+                    raise ValueError()
+                source_form = RemoteSourceForm(url=remote_url, password=share_password, path=parsed_path)
+                if len(share_file_id) > 2048:
+                    raise ValueError()
+            except (ValueError, TypeError):
+                raise HTTPException(400, "网盘选择参数无效，请重新读取链接") from None
+
             async def remote_progress(downloaded: int, total: int | None) -> None:
                 current = await db.get_task(task_id, user_id=user["id"])
                 if not current or current["status"] == "cancelled":
@@ -404,6 +425,9 @@ async def _store_task_materials(
                 user_id=user["id"],
                 task_id=task_id,
                 on_progress=remote_progress,
+                share_password=source_form.password,
+                share_file_id=share_file_id,
+                share_path=source_form.path,
             )
             dest = remote.path
             video_key = remote.storage_key
@@ -521,6 +545,9 @@ async def upload_task_materials(
     evidence_archive: UploadFile | None = File(None),
     evidence_manifest: str | None = Form(None),
     video_url: str | None = Form(None),
+    share_password: str = Form(""),
+    share_file_id: str = Form(""),
+    share_path: str = Form("[]"),
     user: dict = Depends(current_user),
 ) -> dict:
     return await _store_task_materials(
@@ -536,6 +563,9 @@ async def upload_task_materials(
         evidence_archive,
         evidence_manifest,
         video_url,
+        share_password,
+        share_file_id,
+        share_path,
     )
 
 

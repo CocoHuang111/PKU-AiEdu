@@ -103,6 +103,7 @@ export const evaluationApi = {
       signal,
     })
   },
+  inspectRemoteSource: (data) => client.post('/api/evaluation/remote-source', data, { timeout: 100000 }),
   uploadTaskMaterials(id, files, onProgress, signal) {
     const opts = files || {}
     const form = new FormData()
@@ -114,6 +115,9 @@ export const evaluationApi = {
       form.append('file', opts.video)
     } else if (opts.videoUrl) {
       form.append('video_url', opts.videoUrl)
+      form.append('share_password', opts.sharePassword || '')
+      form.append('share_file_id', opts.shareFileId || '')
+      form.append('share_path', JSON.stringify(opts.sharePath || []))
     }
     if (opts.syllabus) form.append('syllabus', opts.syllabus)
     if (opts.courseware) form.append('courseware', opts.courseware)

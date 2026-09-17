@@ -89,7 +89,7 @@ async def _resolve_public_addresses(hostname: str, port: int) -> list[str]:
     return addresses
 
 
-async def validate_remote_url(raw_url: str) -> str:
+async def validate_remote_url(raw_url: str, *, allowed_origins: frozenset[str] = frozenset()) -> str:
     value = (raw_url or "").strip()
     if not value or len(value) > 2048:
         raise HTTPException(400, "请填写有效的视频直链（最长 2048 个字符）")
@@ -103,7 +103,8 @@ async def validate_remote_url(raw_url: str) -> str:
     if parsed.username or parsed.password:
         raise HTTPException(400, "视频链接不能在地址中携带账号或密码")
     effective_port = port or (443 if parsed.scheme.lower() == "https" else 80)
-    if effective_port not in {80, 443}:
+    origin = f"{parsed.scheme.lower()}://{parsed.hostname.lower()}:{effective_port}"
+    if effective_port not in {80, 443} and origin not in allowed_origins:
         raise HTTPException(400, "视频链接只支持标准 HTTP/HTTPS 端口")
     hostname = parsed.hostname.rstrip(".").lower()
     if hostname == "localhost" or hostname.endswith(".localhost"):
@@ -113,7 +114,7 @@ async def validate_remote_url(raw_url: str) -> str:
     return urlunsplit((parsed.scheme.lower(), parsed.netloc, parsed.path or "/", parsed.query, ""))
 
 
-def _safe_filename(response: httpx.Response, url: str) -> tuple[str, str]:
+def _safe_filename(response: httpx.Response, url: str, fallback: str = "") -> tuple[str, str]:
     content_type = (response.headers.get("content-type") or "").split(";", 1)[0].strip().lower()
     disposition = response.headers.get("content-disposition") or ""
     filename = ""
@@ -122,7 +123,7 @@ def _safe_filename(response: httpx.Response, url: str) -> tuple[str, str]:
         message["content-disposition"] = disposition
         filename = message.get_filename() or ""
     if not filename:
-        filename = unquote(Path(urlsplit(url).path).name)
+        filename = fallback or unquote(Path(urlsplit(url).path).name)
     filename = Path(filename.replace("\\", "/")).name.strip().strip(".")
     filename = "".join(char for char in filename if char >= " " and char != "\x7f")[:180]
     suffix = Path(filename).suffix.lower()
@@ -200,12 +201,18 @@ async def download_remote_video(
     task_id: str,
     on_progress: ProgressCallback | None = None,
     transport: httpx.AsyncBaseTransport | None = None,
+    share_password: str = "",
+    share_path: list[str] | None = None,
+    share_file_id: str = "",
 ) -> RemoteVideo:
     """跟随至多 5 次安全重定向，边下载边落盘。
 
     transport 仅供单元测试注入。
     """
-    current_url = await validate_remote_url(raw_url)
+    from .cloud_drives import Download, adapter_for, parse_source
+
+    source = parse_source(raw_url, share_password)
+    current_url = await validate_remote_url(source.url)
     max_bytes = _env_int("REMOTE_VIDEO_MAX_BYTES", DEFAULT_MAX_BYTES)
     min_free_bytes = _env_int("REMOTE_VIDEO_MIN_FREE_BYTES", DEFAULT_MIN_FREE_BYTES)
     max_duration_sec = _env_int("REMOTE_VIDEO_MAX_DURATION_SEC", DEFAULT_MAX_DURATION_SEC)
@@ -224,22 +231,40 @@ async def download_remote_video(
             trust_env=False,
             transport=transport,
         ) as client:
+            resolved = Download(current_url)
+            if source.provider != "direct":
+                if on_progress:
+                    await on_progress(0, None)
+                async with asyncio.timeout(120):
+                    try:
+                        adapter = adapter_for(source, client)
+                        selected = await adapter.select(share_path or [], share_file_id)
+                        if selected.size is not None and selected.size > max_bytes:
+                            raise HTTPException(400, f"链接视频超过 {max_bytes // (1024 ** 3)} GB 限制")
+                        resolved = await adapter.download(selected)
+                    except (KeyError, TypeError, ValueError, AttributeError):
+                        raise HTTPException(400, "网盘返回的下载信息不完整或格式已变化") from None
+                current_url = await validate_remote_url(resolved.url, allowed_origins=resolved.allowed_origins)
+                if on_progress:
+                    await on_progress(0, selected.size)
+            # API cookies must never accompany a CDN request or a cross-origin redirect.
+            client.cookies.clear()
             for redirect_count in range(6):
-                async with client.stream("GET", current_url, headers=headers) as response:
+                async with client.stream("GET", current_url, headers={**headers, **resolved.headers_for(current_url)}) as response:
                     if response.status_code in REDIRECT_CODES:
                         location = response.headers.get("location")
                         if not location:
                             raise HTTPException(400, "视频链接重定向缺少目标地址")
                         if redirect_count >= 5:
                             raise HTTPException(400, "视频链接重定向次数过多")
-                        current_url = await validate_remote_url(urljoin(current_url, location))
+                        current_url = await validate_remote_url(urljoin(current_url, location), allowed_origins=resolved.allowed_origins)
                         continue
                     if response.status_code != 200:
                         raise HTTPException(
                             400, f"视频地址下载失败（HTTP {response.status_code}）"
                         )
 
-                    filename, mime_type = _safe_filename(response, current_url)
+                    filename, mime_type = _safe_filename(response, current_url, resolved.filename)
                     total = _content_length(response)
                     if total == 0:
                         raise HTTPException(400, "链接中的视频文件为空")
@@ -301,7 +326,7 @@ async def download_remote_video(
                         duration_sec=duration,
                     )
             raise HTTPException(400, "视频链接重定向次数过多")
-    except httpx.TimeoutException as exc:
+    except (httpx.TimeoutException, TimeoutError) as exc:
         raise HTTPException(408, "服务器下载视频超时，请检查链接后重试") from exc
     except httpx.RequestError as exc:
         raise HTTPException(400, "服务器无法连接该视频地址") from exc

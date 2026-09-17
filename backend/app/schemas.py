@@ -24,6 +24,19 @@ class EvaluationTaskCreateForm(BaseModel):
         return text
 
 
+class RemoteSourceForm(BaseModel):
+    url: str = Field(..., min_length=1, max_length=8192)
+    password: str = Field("", max_length=128)
+    path: list[str] = Field(default_factory=list, max_length=12)
+
+    @field_validator("path")
+    @classmethod
+    def validate_path(cls, value):
+        if any(not item or len(item) > 2048 for item in value):
+            raise ValueError("无效的网盘目录路径")
+        return value
+
+
 class UploadSessionCreateForm(BaseModel):
     mode: str = Field(..., pattern="^(original|evidence)$")
     fingerprint: str = Field(..., min_length=64, max_length=64)

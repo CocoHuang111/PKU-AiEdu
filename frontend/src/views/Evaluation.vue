@@ -251,17 +251,34 @@
                 </el-upload>
                 <div v-else class="video-link-panel">
                   <el-icon class="link-icon" :size="34"><Link /></el-icon>
-                  <div class="link-copy">粘贴可直接下载的公网视频地址</div>
+                  <div class="link-copy">粘贴网盘分享链接或视频下载地址</div>
                   <el-input
                     v-model="remoteVideoLink"
                     :disabled="uploading"
                     clearable
                     size="large"
-                    placeholder="https://example.com/lesson.mp4"
-                    @keyup.enter="startUpload"
+                    placeholder="北大网盘、百度网盘、夸克网盘、Google Drive 或视频直链"
+                    @keyup.enter="readRemoteShare()"
                   />
+                  <el-input v-model="remoteSharePassword" :disabled="uploading" maxlength="128"
+                    placeholder="提取码 / 访问密码（没有可留空）" show-password />
+                  <el-button :loading="remoteShareLoading" :disabled="uploading || !validRemoteVideoLink"
+                    @click="readRemoteShare()">读取链接</el-button>
                   <div class="upload-hint">
-                    支持 HTTP/HTTPS 直链或带签名的下载链接；不支持需登录、提取码的网盘分享页。
+                    可粘贴包含提取码的分享文本。文件须允许下载；账号权限、验证码和网盘限速仍然适用。
+                  </div>
+                  <div v-if="remoteShare" class="remote-file-picker">
+                    <div class="upload-hint">{{ remoteShare.provider_name }} · {{ remoteShare.notice }}</div>
+                    <el-button v-if="remoteSharePath.length" text :disabled="uploading || remoteShareLoading"
+                      @click="readRemoteShare(remoteSharePath.slice(0, -1))">返回上一级</el-button>
+                    <div v-for="entry in remoteShare.files" :key="entry.id">
+                      <el-button v-if="entry.is_dir" text :disabled="uploading || remoteShareLoading"
+                        @click="readRemoteShare([...remoteSharePath, entry.id])">📁 {{ entry.name }}</el-button>
+                      <el-radio v-else v-model="remoteShareFileId" :value="entry.id" :disabled="uploading || remoteShareLoading">
+                        {{ entry.name }}{{ entry.size != null ? `（${formatSize(entry.size)}）` : '' }}
+                      </el-radio>
+                    </div>
+                    <div v-if="remoteShare.provider !== 'direct' && !remoteShare.files.length" class="upload-hint">此目录没有可导入的视频或子目录</div>
                   </div>
                   <div v-if="remoteUrlError" class="link-error">{{ remoteUrlError }}</div>
                   <div v-if="isRemoteImport" class="remote-progress">
@@ -1705,6 +1722,42 @@ const uploadPercent = ref(0)
 const uploadMode = ref('original')
 const videoSource = ref('file')
 const remoteVideoLink = ref('')
+const remoteSharePassword = ref('')
+const remoteShare = ref(null)
+const remoteSharePath = ref([])
+const remoteShareFileId = ref('')
+const remoteShareLoading = ref(false)
+let remoteShareRequest = 0
+
+watch([remoteVideoLink, remoteSharePassword], () => {
+  remoteShareRequest += 1
+  remoteShare.value = null
+  remoteSharePath.value = []
+  remoteShareFileId.value = ''
+  remoteShareLoading.value = false
+}, { flush: 'sync' })
+
+async function readRemoteShare(path = []) {
+  if (!validRemoteVideoLink.value || uploading.value) return
+  const request = ++remoteShareRequest
+  remoteShareLoading.value = true
+  remoteShare.value = null
+  remoteShareFileId.value = ''
+  try {
+    const result = await evaluationApi.inspectRemoteSource({
+      url: remoteVideoLink.value.trim(), password: remoteSharePassword.value.trim(), path,
+    })
+    if (request !== remoteShareRequest) return
+    remoteShare.value = result
+    remoteSharePath.value = path
+    const videos = result.files.filter((f) => f.is_video)
+    if (videos.length === 1) remoteShareFileId.value = videos[0].id
+  } catch {
+    // The API client displays the provider-specific, sanitized error.
+  } finally {
+    if (request === remoteShareRequest) remoteShareLoading.value = false
+  }
+}
 const preparingEvidence = ref(false)
 const evidencePercent = ref(0)
 const evidenceStage = ref('')
@@ -1740,7 +1793,8 @@ let recommendationPromise = null
 
 const validRemoteVideoLink = computed(() => {
   if (videoSource.value !== 'link') return ''
-  const value = remoteVideoLink.value.trim()
+  const links = remoteVideoLink.value.trim().match(/https?:\/\/[^\s<>"，。；）]+/gi) || []
+  const value = links.length === 1 ? links[0].replace(/[)\]]+$/, '') : ''
   if (!value) return ''
   try {
     const parsed = new URL(value)
@@ -1753,7 +1807,8 @@ const remoteUrlError = computed(() => {
   if (videoSource.value !== 'link' || !remoteVideoLink.value.trim() || validRemoteVideoLink.value) return ''
   return '请填写完整的 HTTP/HTTPS 链接'
 })
-const canStart = computed(() => Boolean(videoFile.value || validRemoteVideoLink.value))
+const canStart = computed(() => Boolean(videoFile.value || (validRemoteVideoLink.value && !remoteShareLoading.value &&
+  (remoteShare.value?.provider === 'direct' || remoteShareFileId.value))))
 const recommendedUploadMode = computed(() => uploadRecommendation.value?.strategy?.mode || null)
 const materialCount = computed(() => {
   let n = 0
@@ -3266,6 +3321,10 @@ function restoreUploadContext() {
     clearVideo()
     videoSource.value = 'link'
     remoteVideoLink.value = ctx.videoUrl
+    remoteSharePassword.value = ctx.sharePassword || ''
+    remoteShare.value = ctx.shareListing || null
+    remoteSharePath.value = [...(ctx.sharePath || [])]
+    remoteShareFileId.value = ctx.shareFileId || ''
   } else {
     setVideo(ctx.video)
   }
@@ -3618,7 +3677,12 @@ async function startUpload() {
   const startedFromId = activeId.value
   const context = {
     video: videoFile.value,
-    videoUrl: validRemoteVideoLink.value || null,
+    videoUrl: validRemoteVideoLink.value ? remoteVideoLink.value.trim() : null,
+    sharePassword: remoteSharePassword.value.trim(),
+    sharePath: [...remoteSharePath.value],
+    shareFileId: remoteShareFileId.value,
+    shareFilename: remoteShare.value?.files.find((f) => f.id === remoteShareFileId.value)?.name,
+    shareListing: remoteShare.value,
     syllabus: syllabusFile.value,
     courseware: coursewareFile.value,
     transcript: scriptFile.value,
@@ -3657,7 +3721,7 @@ async function startUpload() {
     }
     if (!created) {
       created = await evaluationApi.createTask(
-        context.video?.name || filenameFromRemoteUrl(context.videoUrl)
+        context.video?.name || context.shareFilename || filenameFromRemoteUrl(context.videoUrl)
       )
       if (fingerprint) resumeTools.rememberTask(fingerprint, created.id, context.video.name)
     }
