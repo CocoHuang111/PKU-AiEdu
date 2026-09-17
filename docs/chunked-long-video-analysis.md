@@ -63,7 +63,7 @@ creates a labeled hard-linked copy of an existing upload in a new task and
 observes the real queue/worker through completion, saving manifest/events and
 result summary. Restarting the observer does not duplicate the test task.
 
-Compare parsing success, time, peak worker cgroup memory, ASR tail timestamps,
+Compare parsing success, time, child high-water RSS and sampled worker RSS, ASR tail timestamps,
 complete pitch coverage, keyframes, five dimensions and report. Do not claim
 upload throughput improved: the benchmark reuses an already-uploaded source.
 Do not attribute time improvements solely to code when hardware also changed.
@@ -76,3 +76,11 @@ Roll back by switching to the preserved pre-optimization branch and rebuilding
 backend/worker/web images, only after stopping active evaluations. No database
 migration is required; source videos and reports are preserved. Checkpoints are
 additional files and old code ignores them.
+
+## Server results, 2026-09-17
+
+See [the measured results](chunked-long-video-results-20260917.md). The complete
+119-minute evaluation finished successfully on the upgraded four-core server;
+the independently capped legacy acoustic test was OOM-killed during whole-audio
+pYIN. Actual interruption/resume on real audio also passed. Raw transcripts and
+resource events remain private under `data/benchmarks/` and are not committed.

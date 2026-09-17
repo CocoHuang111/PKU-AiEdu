@@ -14,6 +14,8 @@ data/uploads/*
 data/frames/*
 data/chroma/*
 data/*.db
+# Server benchmark artifacts may contain private transcripts and user identifiers.
+data/benchmarks/
 !data/**/.gitkeep
 
 # 评估数据集：转写 / 各版 rejudge 缓存不入库；抽音/帧仍走 data/
