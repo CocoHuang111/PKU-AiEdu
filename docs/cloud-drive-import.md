@@ -30,9 +30,10 @@
 2026-09-17，本地真实公开分享：72,978,078 字节，时长 1,732.208 秒。
 固定公网 IP 连接实现后的完整下载和 ffprobe 校验约 20.30 秒；不是服务器测速。
 前端本地界面验证已覆盖读取、文件名/大小显示、选中视频、修改链接清除选择和多链接拒绝。
-当前发布还需进行服务器下载与健康检查；完整生产登录、发起评估和报告效果由用户验证。
+服务器真实下载与公网健康检查已通过；完整生产登录、发起评估和报告效果由用户验证。
 仅北大网盘版本的工作区回归测试 64 项通过，前端生产构建通过。
 首次测试遇到本机 Numba 缓存目录不可写；指定临时缓存目录后全量通过，未修改解析代码。
+从 Git 已提交内容导出的独立发布目录：55 项测试通过（不包含工作区其他开发中的测试）。
 
 ```sh
 python -m unittest discover -s tests -v
@@ -48,3 +49,27 @@ cd frontend && npm run build
 
 管理员可执行 `python -m scripts.check_pku_share 分享链接 --download`，
 只进行真实分享读取、临时下载和 ffprobe 校验，不访问数据库、不运行 ASR，结束自动清理副本。
+
+### 2026-09-17 服务器发布记录
+
+- 代码版本：`60c1da8`，功能分支已推送 GitHub，不改写 `main` 或历史提交。
+- 服务器新后端镜像中网盘/HTTP 接口测试：18 项通过。
+- 用户授权的公开单视频分享：完整下载 72,978,078 字节，ffprobe 时长 1,732.232 秒，
+  读取、下载及校验合计约 42.45 秒。临时副本已清理，未创建任务、未运行 ASR。
+- 公网 HTTPS 证书验证正常，`/api/health` 返回 200，新版前端资源和仅北大网盘提示确认正常。
+- 未登录请求 `/api/evaluation/remote-source` 返回 401。
+- 服务器原 `main` 保留；实际运行代码基线对应 `c276ac0`，
+  已建立服务器本地分支 `codex/pre-pku-cloud-60c1da8`。
+- 后端、Worker、前端旧镜像均保留为对应镜像的 `pre-pku-cloud-60c1da8` 标签。
+
+如需回退，先确认无活动任务和未提交代码，再在 `/opt/AskEdu` 执行：
+
+```sh
+git checkout codex/pre-pku-cloud-60c1da8
+docker tag pku2-backend:pre-pku-cloud-60c1da8 pku2-backend:latest
+docker tag pku2-worker:pre-pku-cloud-60c1da8 pku2-worker:latest
+docker tag pku2-web:pre-pku-cloud-60c1da8 pku2-web:latest
+docker compose --env-file .env.production -f compose.production.yml up -d --no-build backend worker web
+```
+
+回退不删除业务数据或上传文件；仅恢复旧代码和服务镜像。
