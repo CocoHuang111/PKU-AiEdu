@@ -265,7 +265,7 @@
                 </el-upload>
                 <div v-else class="video-link-panel">
                   <div class="link-copy">
-                    <el-icon class="link-icon" :size="20"><Link /></el-icon>
+                    <el-icon class="link-icon" :size="26"><Link /></el-icon>
                     <span>粘贴北大网盘分享链接/粘贴视频下载地址</span>
                   </div>
                   <div class="video-link-input-row">
@@ -277,7 +277,7 @@
                     placeholder="北大网盘公开分享链接或视频直链"
                     @keyup.enter="readRemoteShare()"
                   />
-                  <el-button size="large" :loading="remoteShareLoading" :disabled="uploading || !validRemoteVideoLink"
+                  <el-button type="primary" size="large" :loading="remoteShareLoading" :disabled="uploading || !validRemoteVideoLink"
                     @click="readRemoteShare()">读取链接</el-button>
                   </div>
                   <div class="upload-hint">
@@ -4537,13 +4537,20 @@ onBeforeUnmount(() => {
   color: #a61b1b;
   flex-shrink: 0;
 }
+.link-icon :deep(svg) {
+  stroke: currentColor;
+  stroke-width: 20;
+  stroke-linejoin: round;
+}
 .link-copy {
   display: flex;
   align-items: center;
   gap: 8px;
   margin: 0 0 12px;
   color: #303133;
-  font-size: 14px;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
 }
 .video-link-input-row {
   display: flex;
