@@ -128,11 +128,9 @@
               <Loading v-else />
             </el-icon>
             <div class="done-copy">
-              <div class="upload-hint">评估任务进度</div>
               <div class="done-title">{{ statusBanner.title }}</div>
               <div class="done-file">{{ activeTask?.filename }}</div>
               <div class="done-sub">{{ statusBanner.sub }}</div>
-              <div v-if="statusBanner.progressNote" class="upload-hint">{{ statusBanner.progressNote }}</div>
               <el-progress
                 v-if="statusBanner.progress != null"
                 :percentage="statusBanner.progress"
@@ -190,9 +188,9 @@
                     <div class="ok">
                       <el-icon v-if="!preparingEvidence" :size="14"><CircleCheckFilled /></el-icon>
                       <el-icon v-else class="is-loading" :size="14"><Loading /></el-icon>
-                      视频传输状态：{{ videoStageText }}
+                      {{ videoStageText }}
                     </div>
-                    <div v-if="!transferReady && (isActiveUpload || activeTask?.status === 'uploading')" class="bar-row">
+                    <div class="bar-row">
                       <div class="bar"><i :style="{ width: videoProgress + '%' }"></i></div>
                       <span>{{ videoProgress }}%</span>
                     </div>
@@ -300,13 +298,13 @@
                     <div v-if="remoteShare.provider !== 'direct' && !remoteShare.files.length" class="upload-hint">此目录没有可导入的视频或子目录</div>
                   </div>
                   <div v-if="remoteUrlError" class="link-error">{{ remoteUrlError }}</div>
-                  <div v-if="isRemoteImport && !transferReady" class="remote-progress">
+                  <div v-if="isRemoteImport" class="remote-progress">
                     <div class="bar-row">
                       <div class="bar"><i :style="{ width: remoteImportProgress + '%' }"></i></div>
                       <span>{{ remoteImportProgress }}%</span>
                     </div>
                     <div class="remote-progress-text">
-                      视频传输状态：{{ transferReady ? '下载完成，材料已就绪' : '服务器下载中' }}{{ activeTask ? stepDetail(activeTask) : '' }}
+                      {{ activeTask?.step_label || '服务器正在读取链接' }}{{ activeTask ? stepDetail(activeTask) : '' }}
                     </div>
                   </div>
                 </div>
@@ -1478,7 +1476,6 @@ import {
   WarningFilled,
 } from '@element-plus/icons-vue'
 import { evaluationApi } from '../api/client'
-import { evaluationBanner, materialsReady } from '../utils/evaluationProgress'
 
 const MODALITY_LABEL = { audio: '音频', text: '文本', vision: '图像' }
 const MODALITY_TYPE = { audio: 'warning', text: 'success', vision: 'info' }
@@ -1903,31 +1900,48 @@ const remoteImportProgress = computed(() => {
   return activeTask.value?.progress || 0
 })
 const reviewing = computed(() => Boolean(activeId.value && !isActiveUpload.value))
-const transferReady = computed(() => materialsReady(activeTask.value))
 const videoProgress = computed(() => {
   if (preparingEvidence.value) return evidencePercent.value
   if (isActiveUpload.value && uploadMode.value === 'fast' && evidenceSummary.value) {
     return 70 + Math.round(uploadPercent.value * 0.3)
   }
   if (isActiveUpload.value) return uploadPercent.value
-  return 0
+  return reviewing.value ? 100 : 0
 })
 const videoStageText = computed(() => {
-  if (transferReady.value) return '材料已就绪'
   if (preparingEvidence.value) return evidenceStage.value || '浏览器预处理中'
-  if (isActiveUpload.value) return '上传中'
-  if (activeTask.value?.status === 'uploading') return activeTask.value.current_step === 'remote_downloading' ? '服务器下载中' : '上传中'
-  if (activeTask.value?.status === 'upload_failed') return '传输失败'
-  if (activeTask.value?.status === 'cancelled') return '传输已停止'
+  if (isActiveUpload.value) return '正在上传材料'
+  if (reviewing.value) return '上传完成'
   return uploadMode.value === 'fast' ? '已选择，等待快速处理' : '已选择，等待上传'
 })
 const statusBanner = computed(() => {
-  const task = activeTask.value
-  const banner = evaluationBanner(task, { localUploading: isActiveUpload.value, remote: isRemoteImport.value })
-  if (banner && task?.status === 'processing') {
-    banner.sub = `${task.step_label || '正在处理材料'}${stepDetail(task)}`
+  const t = activeTask.value
+  if (!t || isActiveUpload.value) return null
+  if (t.status === 'completed') {
+    return { tone: 'done', title: '评估已完成', sub: '完整评估报告已生成，可前往结果页查看' }
   }
-  return banner
+  if (t.status === 'upload_failed') {
+    return { tone: 'fail', title: '上传失败', sub: t.error || '材料上传过程中出错' }
+  }
+  if (t.status === 'failed') {
+    return { tone: 'fail', title: '评估失败', sub: t.error || '评估过程中出错' }
+  }
+  if (t.status === 'cancelled') {
+    return { tone: 'fail', title: '任务已停止', sub: '该任务未继续执行' }
+  }
+  if (t.status === 'uploading') {
+    return { tone: 'run', title: '上传中', sub: '视频和辅助材料正在上传', progress: t.progress ?? 0 }
+  }
+  if (t.status === 'processing' || t.status === 'queued' || t.status === 'cancel_requested') {
+    const step = `${t.step_label || ''}${stepDetail(t)}`.trim()
+    return {
+      tone: 'run',
+      title: t.status === 'cancel_requested' ? '正在停止' : '解析中',
+      sub: step || '正在处理上传材料',
+      progress: t.progress ?? 0,
+    }
+  }
+  return null
 })
 const videoMetaLine = computed(() => {
   if (!videoFile.value) return ''
