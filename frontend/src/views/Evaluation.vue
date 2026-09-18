@@ -371,7 +371,7 @@
                 <div class="upload-text">
                   拖入课件文件，或<span class="pick">点击选择</span>
                 </div>
-                <div class="upload-hint">支持 PDF / PPT / PPTX 格式</div>
+                <div class="upload-hint">支持 PDF / PPT / PPTX 格式，单个文件不超过 200 MB</div>
               </el-upload>
 
               <div v-if="syllabusFile" class="aux-slot filled">
@@ -436,7 +436,7 @@
                 <div class="upload-text">
                   拖入大纲文件，或<span class="pick">点击选择</span>
                 </div>
-                <div class="upload-hint">支持 PDF / Word / Markdown 格式</div>
+                <div class="upload-hint">支持 PDF / Word / Markdown 格式，单个文件不超过 50 MB</div>
               </el-upload>
 
               <div v-if="scriptFile" class="aux-slot filled">
@@ -502,7 +502,7 @@
                 <div class="upload-text">
                   拖入讲稿文件，或<span class="pick">点击选择</span>
                 </div>
-                <div class="upload-hint">支持 PDF / Word / TXT / Markdown 格式</div>
+                <div class="upload-hint">支持 PDF / Word / TXT / Markdown 格式，单个文件不超过 50 MB</div>
               </el-upload>
             </div>
 
@@ -3520,13 +3520,21 @@ function onVideoChange(file) {
   setVideo(file.raw)
 }
 function onCoursewareChange(file) {
-  if (file?.raw) coursewareFile.value = file.raw
+  if (file?.raw) setMaterialFile(coursewareFile, file.raw, 200, '课件')
 }
 function onSyllabusChange(file) {
-  if (file?.raw) syllabusFile.value = file.raw
+  if (file?.raw) setMaterialFile(syllabusFile, file.raw, 50, '大纲')
 }
 function onScriptChange(file) {
-  if (file?.raw) scriptFile.value = file.raw
+  if (file?.raw) setMaterialFile(scriptFile, file.raw, 50, '讲稿')
+}
+
+function setMaterialFile(target, file, maxMB, label) {
+  if (file.size > maxMB * 1024 * 1024) {
+    ElMessage.warning(`${label}超过大小限制（${maxMB} MB）`)
+    return
+  }
+  target.value = file
 }
 
 function pickFrom(input) {
@@ -3556,15 +3564,15 @@ function onVideoPicked(ev) {
 }
 function onCoursewarePicked(ev) {
   const file = takeFile(ev)
-  if (file) coursewareFile.value = file
+  if (file) setMaterialFile(coursewareFile, file, 200, '课件')
 }
 function onSyllabusPicked(ev) {
   const file = takeFile(ev)
-  if (file) syllabusFile.value = file
+  if (file) setMaterialFile(syllabusFile, file, 50, '大纲')
 }
 function onScriptPicked(ev) {
   const file = takeFile(ev)
-  if (file) scriptFile.value = file
+  if (file) setMaterialFile(scriptFile, file, 50, '讲稿')
 }
 
 function extOf(file) {

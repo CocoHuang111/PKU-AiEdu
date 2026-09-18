@@ -64,7 +64,7 @@ async def optimize_from_file(
         task_id=task_id,
         purpose="syllabus",
         allowed=ALLOWED_EXT,
-        max_bytes=30 * 1024 * 1024,
+        max_bytes=50 * 1024 * 1024,
         kind_label="大纲",
     )
     await file.close()

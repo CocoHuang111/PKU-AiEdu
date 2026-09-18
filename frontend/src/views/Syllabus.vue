@@ -197,7 +197,7 @@
                 <div class="upload-text">
                   拖入大纲文件，或<span class="pick">点击选择</span>
                 </div>
-                <div class="upload-hint">支持 PDF、Word、Markdown、纯文本</div>
+                <div class="upload-hint">支持 PDF、Word、Markdown、纯文本，单个文件不超过 50 MB</div>
               </el-upload>
             </div>
 
@@ -521,13 +521,21 @@ function pickFile() {
 }
 
 function onFileChange(file) {
-  if (file?.raw) sourceFile.value = file.raw
+  if (file?.raw) setSourceFile(file.raw)
+}
+
+function setSourceFile(file) {
+  if (file.size > 50 * 1024 * 1024) {
+    ElMessage.warning('大纲超过大小限制（50 MB）')
+    return
+  }
+  sourceFile.value = file
 }
 
 function onFilePicked(ev) {
   const file = ev.target.files?.[0] || null
   ev.target.value = ''
-  if (file) sourceFile.value = file
+  if (file) setSourceFile(file)
 }
 
 async function startTask(payload) {

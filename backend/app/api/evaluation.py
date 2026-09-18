@@ -46,9 +46,9 @@ from .evaluation_followup import router as followup_router
 router.include_router(followup_router)
 
 ALLOWED_EXT = ALLOWED_VIDEO_EXT
-SYLLABUS_MAX_BYTES = 30 * 1024 * 1024
-COURSEWARE_MAX_BYTES = 80 * 1024 * 1024
-SCRIPT_MAX_BYTES = 30 * 1024 * 1024
+SYLLABUS_MAX_BYTES = 50 * 1024 * 1024
+COURSEWARE_MAX_BYTES = 200 * 1024 * 1024
+SCRIPT_MAX_BYTES = 50 * 1024 * 1024
 
 
 @router.post("/remote-source")
