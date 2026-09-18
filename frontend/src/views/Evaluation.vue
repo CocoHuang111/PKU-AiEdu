@@ -226,27 +226,27 @@
                 <div class="empty-slot">未上传</div>
               </div>
               <div v-else class="video-source-card">
-                <div class="slot-head">
+                <div class="slot-head video-source-head">
                   课堂视频
                   <span class="req-tag">必填</span>
-                </div>
-                <div class="video-source-tabs">
-                  <button
-                    type="button"
-                    :class="{ active: videoSource === 'file' }"
-                    :disabled="uploading"
-                    @click="chooseVideoSource('file')"
-                  >
-                    本地视频
-                  </button>
+                  <div class="video-source-tabs">
                   <button
                     type="button"
                     :class="{ active: videoSource === 'link' }"
                     :disabled="uploading"
                     @click="chooseVideoSource('link')"
                   >
-                    北大网盘链接
+                    北大网盘链接提取
                   </button>
+                  <button
+                    type="button"
+                    :class="{ active: videoSource === 'file' }"
+                    :disabled="uploading"
+                    @click="chooseVideoSource('file')"
+                  >
+                    上传本地视频
+                  </button>
+                  </div>
                 </div>
                 <el-upload
                   v-if="videoSource === 'file'"
@@ -266,7 +266,8 @@
                 <div v-else class="video-link-panel">
                   <el-icon class="link-icon" :size="34"><Link /></el-icon>
                   <div class="link-copy">粘贴北大网盘公开分享链接或视频下载地址</div>
-                  <el-input
+                  <div class="video-link-input-row">
+                    <el-input
                     v-model="remoteVideoLink"
                     :disabled="uploading"
                     clearable
@@ -274,8 +275,9 @@
                     placeholder="北大网盘公开分享链接或视频直链"
                     @keyup.enter="readRemoteShare()"
                   />
-                  <el-button :loading="remoteShareLoading" :disabled="uploading || !validRemoteVideoLink"
+                  <el-button size="large" :loading="remoteShareLoading" :disabled="uploading || !validRemoteVideoLink"
                     @click="readRemoteShare()">读取链接</el-button>
+                  </div>
                   <div class="upload-hint">
                     网盘导入目前仅支持北大网盘无需登录、无需访问密码的公开分享，且文件须允许下载。其他网盘请下载后本地上传。
                   </div>
@@ -4480,10 +4482,15 @@ onBeforeUnmount(() => {
   border-radius: 10px;
   background: #fff;
 }
+.video-source-head {
+  flex-wrap: wrap;
+  row-gap: 8px;
+  margin-bottom: 14px;
+}
 .video-source-tabs {
   display: inline-flex;
   gap: 4px;
-  margin: 14px 0;
+  margin-left: 12px;
   padding: 3px;
   border-radius: 8px;
   background: #f3f4f6;
@@ -4496,6 +4503,7 @@ onBeforeUnmount(() => {
   color: #606266;
   cursor: pointer;
   font-size: 13px;
+  white-space: nowrap;
 }
 .video-source-tabs button.active {
   background: #fff;
@@ -4523,9 +4531,19 @@ onBeforeUnmount(() => {
   color: #303133;
   font-size: 14px;
 }
-.video-link-panel .el-input {
+.video-link-input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   width: min(680px, 100%);
   margin-bottom: 8px;
+}
+.video-link-input-row .el-input {
+  flex: 1;
+  min-width: 0;
+}
+.video-link-input-row .el-button {
+  flex-shrink: 0;
 }
 .remote-file-picker {
   width: min(680px, 100%);
