@@ -12,6 +12,8 @@ client.interceptors.response.use(
   (resp) => resp.data,
   (err) => {
     if (axios.isCancel(err)) return Promise.reject(err)
+    // 登录表单自行展示错误；错误密码的 401 不表示现有会话失效。
+    if (err.config?.formErrorHandled) return Promise.reject(err)
     const status = err.response?.status
     const msg = err.response?.data?.detail || err.message || '请求失败'
     if (status !== 401) {
@@ -32,8 +34,8 @@ export default client
 
 export const authApi = {
   config: () => client.get('/api/auth/config'),
-  register: (data) => client.post('/api/auth/register', data),
-  login: (data) => client.post('/api/auth/login', data),
+  register: (data) => client.post('/api/auth/register', data, { formErrorHandled: true }),
+  login: (data) => client.post('/api/auth/login', data, { formErrorHandled: true }),
   logout: () => client.post('/api/auth/logout'),
   me: () => client.get('/api/auth/me'),
   updateMe: (data) => client.patch('/api/auth/me', data),
