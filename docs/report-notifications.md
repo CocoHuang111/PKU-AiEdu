@@ -26,3 +26,15 @@ EVALUATION_ESTIMATE_SECONDS=7200
 也支持 `SMTP_SECURITY=ssl` / 465；不允许明文 SMTP。
 完成配置后重建后端/Worker 环境，已有待配置通知会自动等待任务完成后发送。
 注意个人资料邮箱尚无验证流程，因此邮件仅包含需本人登录的报告入口，不附带敏感材料。
+
+## 2026-09-18 发布记录
+
+- 已发布至 `8.141.113.98`；后端/Worker 业务版本 `48cfa4a`，前端版本 `541836b`。
+- 前端构建通过，独立发布快照 83 项测试通过；隔离 PostgreSQL/真实 OSS 验证邮箱补全、
+  通知登记、模拟发送幂等及失败退避通过。未真实发送测试邮件。
+- 默认入口也适用于新建/清空任务；邮件链接可定位最新列表之外的任务并打开已完成报告。
+- 线上没有 SMTP_HOST/SMTP_FROM，实际发送未启用，申请为 `waiting_service`。
+- 站点和健康检查为 HTTP 200；两个新接口匿名访问为 HTTP 401。
+- 回退 Git 基线 `codex/pre-followup-48cfa4a` 指向 `6ea9a50`（OSS 可读版本）。
+  镜像为 `pku2-backend:pre-followup-48cfa4a`、`pku2-worker:pre-followup-48cfa4a`、
+  `pku2-web:pre-followup-48cfa4a`；回退仍须保留 `compose.oss.production.yml`。
