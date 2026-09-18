@@ -3732,7 +3732,7 @@ function chooseVideoSource(source) {
 function clearMaterials() {
   clearVideo()
   remoteVideoLink.value = ''
-  videoSource.value = 'file'
+  videoSource.value = 'link'
   syllabusFile.value = null
   coursewareFile.value = null
   scriptFile.value = null
