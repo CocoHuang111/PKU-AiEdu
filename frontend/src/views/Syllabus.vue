@@ -831,9 +831,9 @@ onUnmounted(() => clearTimeout(pollTimer))
 
 .workspace {
   width: 100%;
-  max-width: 1100px;
+  max-width: 992px;
   margin: 0 auto;
-  padding: 24px 32px 48px;
+  padding: 32px 56px 48px;
   box-sizing: border-box;
 }
 
