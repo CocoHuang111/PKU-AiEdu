@@ -3334,6 +3334,10 @@ async function loadTasks() {
   try {
     const incoming = await evaluationApi.listTasks()
     if (requestId !== taskListRequest) return
+    if (activeId.value && !incoming.some((task) => task.id === activeId.value)) {
+      const selected = tasks.value.find((task) => task.id === activeId.value)
+      if (selected) incoming.unshift(selected)
+    }
     if (uploadTaskId.value && !incoming.some((t) => t.id === uploadTaskId.value)) {
       const local = tasks.value.find((t) => t.id === uploadTaskId.value)
       if (local) incoming.unshift(local)
@@ -3374,6 +3378,8 @@ async function selectTask(id) {
   if (listed) applyTaskMaterials(listed)
   try {
     const task = await evaluationApi.getTask(id)
+    if (!tasks.value.some((entry) => entry.id === id)) tasks.value.unshift(task)
+    else tasks.value = tasks.value.map((entry) => entry.id === id ? task : entry)
     applyTaskMaterials(task)
   } catch {
     /* 拦截器已提示 */
@@ -3979,6 +3985,7 @@ onMounted(async () => {
   await loadTasks()
   if (typeof route.query.task === 'string' && /^[0-9a-f-]{36}$/i.test(route.query.task)) {
     await selectTask(route.query.task)
+    if (activeTask.value?.status === 'completed') await viewResult()
     if (route.query.submitted === '1') void showFollowup(route.query.task)
   }
   window.addEventListener('resize', onResize)
