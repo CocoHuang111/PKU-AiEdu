@@ -4549,7 +4549,7 @@ onBeforeUnmount(() => {
   margin: 0 0 12px;
   color: #303133;
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
 }
 .video-link-input-row {
