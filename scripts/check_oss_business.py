@@ -45,8 +45,12 @@ async def check():
             assert response.status_code == 200, "任务创建失败"
             return response.json()["id"]
 
-        async def download(task, payload):
+        async def download(task, payload, *, oss=False):
             response = await client.get(f"/api/evaluation/task/{task}/file/video")
+            if not oss:
+                assert response.status_code == 200, "评估前本地源文件不可读"
+                assert response.content == payload, "下载内容不一致"
+                return
             assert response.status_code == 302, "OSS 下载入口未返回授权跳转"
             def read():
                 with urlopen(response.headers["location"], timeout=15) as opened:
@@ -71,9 +75,10 @@ async def check():
                  patch("backend.app.workers.tasks.index_report"):
                 await run_evaluation(task, claimed["video_path"], claimed["reference"], claimed["syllabus_path"],
                                      claimed["courseware_path"], claimed["transcript"], claimed["transcript_path"])
-            assert (await db.get_task(task))["status"] == "completed", "任务材料恢复失败"
-            key = object_key(claimed["video_path"], owner=str(owner), task_id=task)
-            assert not get_storage("local").path_for(key).exists(), "解析后未清理本地源文件"
+            finished = await db.get_task(task)
+            assert finished["status"] == "completed", "任务材料恢复失败"
+            key = object_key(finished["video_path"], owner=str(owner), task_id=task)
+            assert not get_storage("local").path_for(key).exists(), "归档后未清理本地源文件"
 
         primary = b"isolated-original-video\n" * 1024
         task = await new_task()
@@ -84,7 +89,7 @@ async def check():
         assert response.status_code == 200, "原视频材料保存失败"
         await download(task, primary)
         await process(task, primary)
-        await download(task, primary)
+        await download(task, primary, oss=True)
         stages.append("原视频、课件、授权下载、Worker 恢复和源文件清理")
         info = await client.get(f"/api/evaluation/task/{task}/follow-up")
         assert info.status_code == 200 and info.json()["estimate"]["min_minutes"] > 0
@@ -194,7 +199,7 @@ async def check():
             assert response.status_code == 200
             response = await client.get(f"/api/evaluation/task/{legacy}/file/video")
             assert response.status_code == 200 and response.content == primary
-            await download(task, primary)  # new OSS references survive local upload-mode rollback
+            await download(task, primary, oss=True)  # new OSS references survive local upload-mode rollback
         stages.append("旧本地文件读取、上传模式回退后 OSS 文件可读")
 
         for item in (task, chunk_task, task_remote, task_fast, legacy):

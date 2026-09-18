@@ -588,6 +588,18 @@ async def create_syllabus_task(
         return str(row.id)
 
 
+async def start_syllabus_task(task_id: str) -> bool:
+    """Claim only when a syllabus execution slot is available; preserve cancellation."""
+    async with session_scope() as session:
+        result = await session.execute(
+            update(SyllabusTask)
+            .where(SyllabusTask.id == _uid(task_id), SyllabusTask.status == "queued")
+            .values(status="processing", progress=2, current_step="starting", updated_at=_now())
+            .returning(SyllabusTask.id)
+        )
+        return result.scalar_one_or_none() is not None
+
+
 async def update_syllabus_task(task_id: str, **fields) -> None:
     if not fields:
         return

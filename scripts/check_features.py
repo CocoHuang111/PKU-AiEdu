@@ -2,7 +2,7 @@
 
     python -m scripts.check_features
 
-覆盖阶段 1–6 引入的所有本地计算：词表统计、分段汇总、提问等待时间、
+覆盖阶段 1–6 引入的所有本地计算：词表统计、分段汇总、
 ASR 置信度、VLM 标签解析与聚合、大纲/课件评分口径、提示词渲染。
 课件切换检测会用 ffmpeg 现造整屏切换、角落小块切换、移动色块三类视频来验证。
 说话人分离（阶段 6）默认关闭且需要 HF token，这里只验证开关与降级路径。
@@ -338,16 +338,9 @@ def main() -> int:
         f"= {summary['question_gini']}",
     )
 
-    print("\n=== 3. 提问等待时间与 ASR 置信度 ===")
+    print("\n=== 3. ASR 置信度 ===")
     tl = extract_timeline_features(make_segments())
-    check("等待时间有样本", tl.get("wait_time_sample_count", 0) >= 1, f"= {tl.get('wait_time_sample_count')}")
-    check("逐次等待已保存", isinstance(tl.get("wait_samples"), list) and tl["wait_samples"], f"= {tl.get('wait_samples')}")
-    check("平均等待时间已算出", "wait_time_mean" in tl, f"= {tl.get('wait_time_mean')}s")
-    check(
-        "4.2 秒留白被判为有效等待",
-        tl.get("wait_time_effective_ratio", 0) > 0,
-        f"= {tl.get('wait_time_effective_ratio')}%",
-    )
+    check("不再输出提问等待指标", not any(k.startswith("wait_") for k in tl))
     check("转写置信度已算出", "asr_confidence" in tl, f"= {tl.get('asr_confidence')}")
     check(
         "低置信占比已算出",
@@ -531,8 +524,7 @@ def main() -> int:
         for k in computed - declared
         if k not in {"duration_minutes", "total_chars", "sentence_count",
                      "open_question_count", "question_count", "filler_count",
-                     "higher_order_question_count", "segment_count",
-                     "wait_samples"}
+                     "higher_order_question_count", "segment_count"}
     )
     check("无未登记的特征 key", not missing, f"缺标签: {missing}" if missing else "")
 

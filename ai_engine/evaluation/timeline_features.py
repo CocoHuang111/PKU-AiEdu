@@ -1,71 +1,12 @@
-"""时序特征：从带时间戳的 ASR 片段里算提问等待时间与转写置信度。
+"""时序特征：从带时间戳的 ASR 片段里计算转写置信度。
 
-这两项都不需要 librosa，也不需要重新解码音频，只用 ASR 已经产出的
+该项不需要 librosa，也不需要重新解码音频，只用 ASR 已经产出的
 时间戳和解码指标，所以不受 config.yaml 的 audio_enabled 开关影响。
 """
 
 from __future__ import annotations
 
-import statistics
-
 from ..pedagogy.loader import load_yaml
-from .text_features import _lexicon, _split_sentences, is_question
-
-
-def _ends_with_question(text: str, lex: dict) -> bool:
-    """判断片段是否以提问收尾。
-
-    只认「问句落在片段末尾」的样本：Whisper 的片段是 5–30 秒的块，提问句若在
-    片段中间，片段之间的间隔测的就不是提问后的停顿，算进来只会污染统计。
-    """
-    stripped = text.rstrip()
-    if not stripped:
-        return False
-    if stripped.endswith(("?", "？")):
-        return True
-    sentences = _split_sentences(stripped)
-    return bool(sentences) and is_question(sentences[-1], lex)
-
-
-def collect_wait_gaps(segments: list) -> list[float]:
-    """提问句落在片段末尾时，下一段开始前的间隔（秒，已截断）。"""
-    if len(segments) < 2:
-        return []
-    lex = _lexicon()
-    cap = float(load_yaml("feature_lexicon.yaml")["timeline_thresholds"]["wait_time_cap_sec"])
-    gaps: list[float] = []
-    for cur, nxt in zip(segments, segments[1:]):
-        if not _ends_with_question(cur.text, lex):
-            continue
-        gap = float(nxt.start) - float(cur.end)
-        if gap < 0:
-            continue
-        gaps.append(min(gap, cap))
-    return gaps
-
-
-def extract_wait_time_features(segments: list) -> dict:
-    """提问后的思考等待时间。
-
-    对应三级指标「提问后保留有效思考等待时间」。教育研究里 3 秒是分界线
-    （Rowe 的 wait-time 实验），所以除了均值还单独报达标比例。
-    wait_samples 只给页面画逐次等待，不进 rubric / Judge。
-    """
-    gaps = collect_wait_gaps(segments)
-    if not gaps:
-        return {"wait_time_sample_count": 0} if len(segments) >= 2 else {}
-
-    conf = load_yaml("feature_lexicon.yaml")["timeline_thresholds"]
-    effective = float(conf["wait_time_effective_sec"])
-    return {
-        "wait_time_sample_count": len(gaps),
-        "wait_time_mean": round(statistics.fmean(gaps), 1),
-        "wait_time_median": round(statistics.median(gaps), 1),
-        "wait_time_effective_ratio": round(
-            100.0 * sum(1 for g in gaps if g >= effective) / len(gaps), 1
-        ),
-        "wait_samples": [round(g, 2) for g in gaps],
-    }
 
 
 def extract_asr_confidence(segments: list) -> dict[str, float]:
@@ -110,6 +51,4 @@ def extract_asr_confidence(segments: list) -> dict[str, float]:
 def extract_timeline_features(segments: list) -> dict[str, float]:
     if not segments:
         return {}
-    features = dict(extract_wait_time_features(segments))
-    features.update(extract_asr_confidence(segments))
-    return features
+    return extract_asr_confidence(segments)

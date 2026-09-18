@@ -15,6 +15,7 @@ from ..core import db
 from ..core.audit import audit
 from ..core.auth import current_user
 from ..core.database import session_scope
+from ..core.execution import run_qa
 from ..schemas import QAForm, SessionPatch
 
 router = APIRouter(prefix="/api/qa", tags=["教学智能问答"])
@@ -170,7 +171,7 @@ async def ask_once(form: QAForm, user: dict = Depends(current_user)) -> dict:
     history = await _load_history(form.session_id, user["id"])
     eval_task_ids = await _owned_eval_task_ids(user["id"], form.eval_task_ids)
     pinned = await _pinned_eval_contexts(user["id"], eval_task_ids)
-    result = await asyncio.to_thread(
+    result = await run_qa(
         ask,
         form.question,
         history,
@@ -233,7 +234,7 @@ async def ask_streaming(
 
     async def persist_job() -> None:
         try:
-            await asyncio.to_thread(produce)
+            await run_qa(produce)
             final = result["final"]
             if final:
                 new_history = _complete_history(

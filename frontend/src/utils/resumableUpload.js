@@ -175,7 +175,16 @@ export async function uploadOriginalVideo({ taskId, file, fingerprint, signal, o
   const confirmed = new Map((session.received?.video || []).map((item) => [item.index, item.size]))
   let committed = Array.from(confirmed.values()).reduce((sum, size) => sum + size, 0)
   const activeProgress = new Map()
-  onProgress?.({ percent: Math.round((committed / file.size) * 100), stage: '断点续传检查完成' })
+  const report = (loaded, stage) => {
+    const visible = Math.min(file.size, loaded)
+    onProgress?.({
+      percent: Math.round((visible / Math.max(file.size, 1)) * 100),
+      stage,
+      loaded: visible,
+      total: file.size,
+    })
+  }
+  report(committed, '断点续传检查完成')
 
   let cursor = 0
   const workers = Array.from({ length: Math.min(3, partCount) }, async () => {
@@ -197,13 +206,12 @@ export async function uploadOriginalVideo({ taskId, file, fingerprint, signal, o
         onProgress: (loaded) => {
           activeProgress.set(index, loaded)
           const activeBytes = Array.from(activeProgress.values()).reduce((sum, size) => sum + size, 0)
-          const visible = Math.min(file.size, committed + activeBytes)
-          onProgress?.({ percent: Math.round((visible / file.size) * 100), stage: '分片上传原视频' })
+          report(committed + activeBytes, '分片上传原视频')
         },
       })
       activeProgress.delete(index)
       committed += blob.size
-      onProgress?.({ percent: Math.round((committed / file.size) * 100), stage: '分片上传原视频' })
+      report(committed, '分片上传原视频')
     }
   })
   await Promise.all(workers)

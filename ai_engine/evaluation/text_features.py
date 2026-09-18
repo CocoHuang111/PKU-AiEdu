@@ -30,7 +30,7 @@ def _split_sentences(text: str) -> list[str]:
 
 
 def is_question(sentence: str, lex: dict | None = None) -> bool:
-    """判断一句话是否为提问。judge 之外的模块（等待时间统计）也要用同一口径。"""
+    """根据问号及提问词表判断一句话是否为提问。"""
     lex = lex or _lexicon()
     return (
         "?" in sentence

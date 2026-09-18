@@ -16,6 +16,7 @@ from sqlalchemy import select
 from ai_engine.config import settings
 from .database import session_scope
 from .storage import LocalStorageBackend, get_storage, sha256_file
+from ..models.business import EvalTask
 from ..models.files import StoredFile
 
 PREFIX = "oss://"
@@ -210,6 +211,159 @@ async def purge_deleted_oss_files(limit: int = 10) -> None:
                 print("[storage] OSS 删除暂未完成，将保留记录并重试", flush=True)
                 continue
             await session.delete(row)
+
+
+def local_storage_key(path: str) -> str:
+    key = Path(path).resolve().relative_to(settings.upload_dir.resolve()).as_posix()
+    get_storage("local").path_for(key)
+    return key
+
+
+def clear_eval_scratch(path: str | None) -> None:
+    """Drop wav/checkpoints for a local source video; keep the source until OSS archive."""
+    if not path or is_oss_reference(path):
+        return
+    media = Path(path)
+    if not media.is_file():
+        return
+    wav = settings.upload_dir / f"{media.stem}.wav"
+    wav.unlink(missing_ok=True)
+    for suffix in (".audio-source.json", ".audio-features.json"):
+        wav.with_suffix(suffix).unlink(missing_ok=True)
+    for suffix in (".asr-checkpoint", ".audio-checkpoint", ".punctuation-checkpoint"):
+        folder = wav.with_suffix(suffix)
+        if folder.parent == settings.upload_dir.resolve() and folder.is_dir():
+            shutil.rmtree(folder)
+
+
+async def _mark_stored_oss(session, owner: uuid.UUID, key: str) -> None:
+    row = await session.scalar(
+        select(StoredFile).where(
+            StoredFile.user_id == owner,
+            StoredFile.storage_key == key,
+            StoredFile.deleted_at.is_(None),
+        )
+    )
+    if row is not None:
+        row.storage_backend = "oss"
+
+
+async def _archive_local_path(owner: str, task_id: str, path: str | None, *, evidence: bool) -> str | None:
+    if not path or is_oss_reference(path):
+        return path
+    disk = Path(path)
+    if not disk.is_file():
+        return path
+    key = local_storage_key(path)
+    bundle = None
+    try:
+        if evidence or disk.suffix.lower() in {".m4a", ".mp4", ".mov", ".mkv", ".webm"}:
+            bundle = evidence_bundle(path)
+        await asyncio.to_thread(persist_file, key, path)
+        if bundle is not None:
+            companion_key = key + ".evidence.zip"
+            await asyncio.to_thread(persist_file, companion_key, str(bundle))
+            async with session_scope() as session:
+                existing = await session.scalar(
+                    select(StoredFile.id).where(
+                        StoredFile.user_id == uuid.UUID(owner),
+                        StoredFile.storage_key == companion_key,
+                        StoredFile.deleted_at.is_(None),
+                    )
+                )
+                if existing is None:
+                    session.add(
+                        StoredFile(
+                            user_id=uuid.UUID(owner),
+                            purpose="browser_evidence",
+                            original_name="evidence.zip",
+                            storage_backend="oss",
+                            storage_key=companion_key,
+                            mime_type="application/zip",
+                            size_bytes=bundle.stat().st_size,
+                            sha256=await asyncio.to_thread(sha256_file, bundle),
+                        )
+                    )
+                else:
+                    await _mark_stored_oss(session, uuid.UUID(owner), companion_key)
+        async with session_scope() as session:
+            await _mark_stored_oss(session, uuid.UUID(owner), key)
+        return (EVIDENCE_PREFIX if evidence or bundle is not None else PREFIX) + key
+    finally:
+        if bundle is not None:
+            bundle.unlink(missing_ok=True)
+
+
+async def archive_eval_task_materials(owner: str, task_id: str) -> None:
+    """Push completed evaluation sources to OSS, then free the local copies.
+
+    Scoring already finished; failure here must not reopen the task. Idle
+    workers retry remaining local paths.
+    """
+    if upload_backend() != "oss":
+        return
+    async with session_scope() as session:
+        row = await session.scalar(
+            select(EvalTask).where(
+                EvalTask.id == uuid.UUID(task_id),
+                EvalTask.user_id == uuid.UUID(owner),
+            )
+        )
+        if row is None:
+            return
+        paths = {
+            "video_path": row.video_path,
+            "syllabus_path": row.syllabus_path,
+            "courseware_path": row.courseware_path,
+            "transcript_path": row.transcript_path,
+        }
+        evidence = bool(row.video_path) and (Path(row.video_path).parent / "browser-evidence.json").is_file()
+    updates: dict[str, str | None] = {}
+    for field, path in paths.items():
+        updates[field] = await _archive_local_path(
+            owner, task_id, path, evidence=field == "video_path" and evidence
+        )
+    async with session_scope() as session:
+        row = await session.scalar(
+            select(EvalTask).where(
+                EvalTask.id == uuid.UUID(task_id),
+                EvalTask.user_id == uuid.UUID(owner),
+            )
+        )
+        if row is None:
+            return
+        for field, value in updates.items():
+            setattr(row, field, value)
+    for field, old in paths.items():
+        new = updates.get(field)
+        if new and is_oss_reference(new) and old and not is_oss_reference(old):
+            await asyncio.to_thread(clear_staged_material, new, owner=owner, task_id=task_id)
+            Path(old).unlink(missing_ok=True)
+
+
+async def archive_pending_eval_materials(limit: int = 5) -> None:
+    if upload_backend() != "oss":
+        return
+    async with session_scope() as session:
+        rows = (
+            await session.scalars(
+                select(EvalTask)
+                .where(
+                    EvalTask.status == "completed",
+                    EvalTask.video_path.is_not(None),
+                    EvalTask.video_path.notlike(PREFIX + "%"),
+                    EvalTask.video_path.notlike(EVIDENCE_PREFIX + "%"),
+                )
+                .order_by(EvalTask.updated_at.asc())
+                .limit(limit)
+            )
+        ).all()
+        pending = [(str(row.user_id), str(row.id)) for row in rows]
+    for owner, task_id in pending:
+        try:
+            await archive_eval_task_materials(owner, task_id)
+        except Exception:
+            print(f"[storage] 评估结束后归档 OSS 失败，将重试 task={task_id}", flush=True)
 
 
 async def release_uploaded_paths(owner: str, task_id: str, *paths: str | None) -> None:

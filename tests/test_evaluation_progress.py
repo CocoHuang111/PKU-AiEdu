@@ -37,5 +37,8 @@ class EvaluationProgressTests(unittest.IsolatedAsyncioTestCase):
         stack.enter_context(patch.object(tasks, 'resolve_material', side_effect=lambda ref, **kw: ref))
         stack.enter_context(patch.object(tasks, 'evaluate_session', return_value={}))
         stack.enter_context(patch.object(tasks, 'index_report'))
+        stack.enter_context(patch.object(tasks, 'archive_eval_task_materials', new_callable=AsyncMock))
+        stack.enter_context(patch.object(tasks, 'clear_eval_scratch'))
         stack.enter_context(patch.object(tasks, 'clear_staged_material'))
+        stack.enter_context(patch.object(tasks, 'is_oss_reference', return_value=False))
         return stack

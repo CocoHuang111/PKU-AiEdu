@@ -31,7 +31,7 @@ from ..core.upload_sessions import (
     session_status,
 )
 from ..core.uploads import record_upload, save_user_upload
-from ..core.material_storage import material_reference, purge_deleted_oss_files, release_uploaded_paths, task_material_reference
+from ..core.material_storage import purge_deleted_oss_files, task_material_reference
 from ..schemas import (
     EvaluationTaskCreateForm,
     RemoteSourceForm,
@@ -237,17 +237,17 @@ async def complete_task_upload_session(
             storage_key=result["storage_key"],
             mime_type=result["mime_type"],
             path=result["path"],
+            persist_now=False,
         )
         saved = await db.set_task_materials(
             task_id,
             user["id"],
             filename=result["original_filename"],
-            video_path=material_reference(result["path"], result["storage_key"], evidence=result["mode"] == "evidence"),
+            video_path=result["path"],
         )
         if not saved:
             raise HTTPException(409, "任务已取消或当前状态不允许上传")
         await remove_session(user["id"], task_id)
-        await release_uploaded_paths(user["id"], task_id, result["path"])
         return saved
     except Exception:
         Path(result["path"]).unlink(missing_ok=True)
@@ -304,12 +304,12 @@ async def upload_task_aux_materials(
                 storage_key=key,
                 mime_type=upload.content_type,
                 path=path,
+                persist_now=False,
             )
-            fields[field] = material_reference(path, key)
+            fields[field] = path
         saved = await db.set_task_materials(task_id, user["id"], **fields)
         if not saved:
             raise HTTPException(409, "任务已取消或当前状态不允许上传")
-        await release_uploaded_paths(user["id"], task_id, *(str(path) for path in saved_paths))
         return saved
     except Exception:
         for path in saved_paths:
@@ -495,6 +495,7 @@ async def _store_task_materials(
                 storage_key=storage_key,
                 mime_type=upload.content_type,
                 path=saved_path,
+                persist_now=False,
             )
 
         await record_upload(
@@ -504,21 +505,21 @@ async def _store_task_materials(
             storage_key=video_key,
             mime_type=video_mime_type,
             path=dest,
+            persist_now=False,
         )
         saved = await db.set_task_materials(
             task_id,
             user["id"],
             filename=original_video_name,
-            video_path=material_reference(dest, video_key, evidence=has_evidence),
+            video_path=dest,
             reference=(reference or "").strip() or None,
-            syllabus_path=material_reference(syllabus_path),
-            courseware_path=material_reference(courseware_path),
+            syllabus_path=syllabus_path,
+            courseware_path=courseware_path,
             transcript=script_body,
-            transcript_path=material_reference(transcript_path),
+            transcript_path=transcript_path,
         )
         if not saved:
             raise HTTPException(409, "任务已取消或当前状态不允许上传")
-        await release_uploaded_paths(user["id"], task_id, dest, syllabus_path, courseware_path, transcript_path)
         return saved
     except Exception as exc:
         _cleanup_task_uploads(user["id"], task_id)

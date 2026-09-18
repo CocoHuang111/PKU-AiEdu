@@ -122,7 +122,7 @@ python -m scripts.import_sqlite --db data/app.db --user-id <UUID> --execute
 | 命令 | 作用 |
 | --- | --- |
 | `make check` | 环境自检：Python / ffmpeg / 依赖 / API Key / 向量库 |
-| `make check-features` | 客观特征自检：词表、分段汇总、等待时间、VLM 标签解析、rubric 对齐（**不调大模型，不花额度**） |
+| `make check-features` | 客观特征自检：词表、分段汇总、ASR 置信度、VLM 标签解析、rubric 对齐（**不调大模型，不花额度**） |
 | `python scripts/draw_feat_overview.py` | 重画客观特征总览四张卡的示意图 SVG（默认写到 `design-mockups/objective-feature-four-groups/`） |
 | `python scripts/draw_pace_page.py` | 重画授课内容页语速折线 / 提问结构 PNG（默认写到 `design-mockups/pace-page/`；`--from-task` 可读评估结果 JSON） |
 | `python scripts/draw_audio_page.py` | 重画声学特征页波形 / 响度 / 基频 / 等待样本 PNG（默认写到 `design-mockups/audio-page/`；`--from-task` 可读评估结果 JSON） |
@@ -229,7 +229,7 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 │   │                        #   特征提取按来源分文件：
 │   │                        #     text_features     转写文本统计 + 分段汇总
 │   │                        #     audio_features    librosa 声学特征
-│   │                        #     timeline_features 提问等待时间、ASR 置信度
+│   │                        #     timeline_features ASR 置信度
 │   │                        #     transcript_punc   Whisper 后用 LLM 补中文标点
 │   │                        #     slide_features    课件切换（先框投影/板书，再格子帧差）
 │   │                        #     materials         教师上传的大纲/课件/讲稿解析
@@ -256,6 +256,7 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
 │   ├── api/stream.js        #   SSE 流式读取（credentials: include）
 │   ├── authStore.js         #   当前用户（权威来源是 /api/auth/me）
 │   ├── qaStore.js           #   问答会话与 SSE 状态（切页后仍继续）
+│   ├── evalFollowupStore.js #   评估入队弹窗（切页/切后台仍弹出）
 │   └── views/               #   Login / Layout / QA / Evaluation / Syllabus / Profile / admin
 ├── alembic/                 #   数据库迁移
 ├── docker-compose.yml       #   仅 PostgreSQL 16
@@ -282,7 +283,7 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
             → 客观特征按来源分 7 组：
                  text       转写文本统计 + 分段汇总
                  audio      librosa 声学特征
-                 timeline   提问等待时间、ASR 置信度
+                 timeline   ASR 置信度
                  slides     课件切换、停留时长、讲授同步
                  vision     课堂关键帧 VLM 标签聚合成比例
                  courseware 上传课件的页面标注（选填）
@@ -290,6 +291,7 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
             → LLM-as-Judge 按维度逐项打二级分，再由模型按课型综合出一级分
             → 五维雷达仍走 Judge（v7.1 prompt）；总分由四年 v7.1 客观特征+五维 5 分类 GB 校准
             → 生成报告 → 摘要回流进向量库
+            → OSS 模式下源文件在评分完成、报告可展示之后再归档对象存储
 
 功能②  文档 → PyMuPDF/pypdf 多后端解析
             → 固定框架：章节索引 → 原文切片 → 全局骨架 → 分批章节优化 → source_id 合并校验
@@ -377,6 +379,9 @@ PKU_MODE=local make backend  # 仅当需要 Ollama 时
 已完成任务点「查看评估结果」才进入报告（综合总览 + 现有明细标签页）；点「重新评估」或「新建评估」回到上传。
 收起侧栏后左上角只留历史 / 新建图标。
 任务异步执行，前端每 2.5 秒轮询进度。
+上传中会按已传字节和瞬时速度显示剩余时间（网盘导入按服务器已下载量估算）。
+本机上传未结束时切到问答/大纲不会中断传输（评估页 keep-alive）；关掉浏览器标签仍会中断本机上传。
+上传结束并入队后，无论当时是否还在评估页都会弹出提示；若标签在后台且浏览器允许通知，还会发一条桌面通知。
 历史任务右侧垃圾桶可删除；进行中的任务删除前会先停止。
 处理中或排队中的任务可点「停止」中途取消诊断（在 ASR、视觉分析、打分等
 步骤的进度回调处协作式退出，短步骤如抽音频期间可能需稍等片刻）。
@@ -423,13 +428,8 @@ PKU_MODE=local make backend  # 仅当需要 Ollama 时
 `python scripts/draw_pace_page.py` 重画。表里的「建议 ≥ 15 次」等参考范围只给展示，
 不进 Judge；语速三项仍用 rubric 的 `ideal` 判状态。
 没有参考范围的项不进表：无提问段落用环形图，其余用图标+数字卡。有参考范围的项仍用指标 / 当前值 / 参考范围 / 状态 / 说明五列表。
-**声学特征**页与授课内容同一套排版：顶部四个数字（响度、信噪比、平均等待、ASR 高置信占比），
-左右两栏图（音轨波形+响度/基频，提问等待样本+分布条），下面指标 / 当前值 / 参考范围 / 状态 / 说明五列表。
-没有参考范围的项（长停顿次数、等待样本数）放在右侧 ASR 置信度分布下面，用图标数字卡。
-图表走 `GET /api/evaluation/task/{id}/chart/{audio_wave|loudness_series|pitch_series|wait_samples|slide_freq}`，
-matplotlib 现画。新任务会把 `wave_envelope` / `loudness_curve` / `pitch_curve` / `long_pause_times`
-和 `wait_samples` 写进 `raw_features`（不进 rubric、不进 Judge）；旧任务没有曲线时按均值生成示意，
-没有逐次等待则图上写「暂无」。表上的响度 -26～-16 dB、等待 3–6 秒等区间只给展示。
+**声学特征**页顶部展示响度、信噪比、静音占比与 ASR 置信度；下方保留音轨波形、响度/基频曲线、ASR 置信度分布和指标明细。
+提问后等待时间及逐次等待图表已移除，历史数据保留但相关字段不再展示。
 **课堂视觉**顶部四个黑色数字（看学生、有手势、板书或投影、抬头率高），下面左分布条、右三条结论（左侧对号、无标题无分割线），不再套卡片。
 分布条用现有视觉特征：视线四分类互斥；教学行为是有手势 / 讲台前或走动 / 有人举手；课堂媒介是板书或投影 / 含图表 / 可读性高。
 后两组可以重叠，条宽按合计归一化，图例仍写原始占比。结论由占比规则写成，不进 Judge。
@@ -1027,7 +1027,7 @@ python -m scripts.build_eval_dataset rejudge \
 | `discipline_markers` | 纪律提醒与点名（已从 `interaction_markers` 拆出，两边不重复计数） |
 | `inspire_markers` / `transition_markers` / `filler_markers` | 启发话语、过渡衔接、口头禅 |
 | `audio_thresholds` | 长停顿秒数、理想语速区间、信噪比门槛 |
-| `timeline_thresholds` | 有效等待时间（默认 3 秒）、等待时间截断上限、ASR 低置信门槛 |
+| `timeline_thresholds` | ASR 低置信门槛 |
 | `slide_thresholds` | 页面停留下限（默认 20 秒）、切换同步的时间窗（默认 ±10 秒） |
 
 改完跑一次 `make check-features` 确认没把结构改坏（不花 API 额度）。
@@ -1090,7 +1090,9 @@ make install-local                      # 装 pyannote.audio
 | 客观特征里没有「课件时序特征」这一组 | `slide_detection_enabled` 被关了，或 ffmpeg 解码失败（进度详情里有 warning）。密集抽帧要求视频有可解码的视频流，纯音频文件会失败 |
 | 课件切换次数经常为 0 | 旧口径用整帧平均，角落投影会被摊薄。现已先框区域再比对。仍为 0 时可能是投影极暗、VLM 没框到且格子也看不出，或 `slide_detection_enabled` 被关 |
 | 课件切换次数明显偏多 | 人刚好停住、镜头晃一下仍可能多记。把 `slide_change_threshold` 从 0.08 往上调（如 0.15）会更保守 |
-| 选了视频但没有开始评估 | 上传入口改为先选文件再点「开始评估」，以便同时附上大纲/课件。选完视频后要点按钮 |
+| 网盘导入卡在 97% 很久 | 旧逻辑会在下载后立刻把整份视频推 OSS。现已改为评估完成后再归档；若仍停在 97%，是本机校验/哈希，稍等即可。归档失败不影响报告，Worker 空闲会重试 |
+| 切到问答后本机视频上传停了 | 评估页已 keep-alive，上传应继续。若仍中断，确认没有刷新或关掉标签。关掉标签会中断本机上传；网盘下载随浏览器请求走，关标签也会断 |
+| 入队后没有弹出提示 | 弹窗挂在整站 Layout 上，不在评估页里。刷新后若没关过弹窗会再出现。浏览器后台标签需允许通知才会有桌面提醒；拦截通知不影响站内弹窗 |
 | PPT/PPTX 课件没有页面图像 | 本机没有 LibreOffice，无法把幻灯片转成 PDF。请另存为 PDF 再传，或 `brew install --cask libreoffice` |
 | `MuPDF error: cannot create appearance stream for Screen annotations` | LibreOffice 把 PPT 里的嵌入媒体转成 PDF Screen 注释，PyMuPDF 画不出来。已跳过注释渲染并关掉这段 stderr，页面图像不受影响 |
 | 课件报 `Package not found` / `不是 zip` | 扩展名是 `.pptx` 但文件截断，或其实是旧版 `.ppt`。会改用同目录下完整的 `.ppt`；仍失败则跳过课件、按无课件口径继续评 |
@@ -1108,7 +1110,6 @@ make install-local                      # 装 pyannote.audio
 | 说话人分离报「需要 HuggingFace token」 | `.env` 里没填 `HF_TOKEN`，或没在模型页面接受使用条款。两者都要做 |
 | 说话人分离报「未安装 pyannote.audio」 | `make install-local` |
 | 授课内容页语速图 / 提问条裂开或接口 500 | 没装 matplotlib，或 conda 环境不是 `pku2`。`conda activate pku2 && pip install matplotlib`（已写入 `requirements.txt`） |
-| 声学特征页等待图写「暂无逐次等待样本」 | 旧任务没存 `wait_samples`。重新评估后才有棒棒糖图；等待质量条会退回「≥3秒 vs 偏短」两段 |
 | 声学特征页波形/响度不像真实音轨 | 旧任务没有包络和曲线，页面按响度均值生成示意。新评估会写入 `wave_envelope` / `loudness_curve` / `pitch_curve` |
 | 新加的客观特征前端看不到 | 忘了在 `evaluation_rubric.yaml` 的 `objective_features` 里登记标签。跑 `make check-features` 会指出缺哪个 key |
 | `make check-features` 报「无未登记的特征 key」失败 | 同上，按提示把 key 加到 rubric 对应分组里 |
@@ -1268,7 +1269,6 @@ make install-local                      # 装 pyannote.audio
 | 视频评估 | 说话人分离已接入但**未在真实课堂验证过**（缺 HF token，默认关闭） | 剩余 4 条 ❌ 指标里唯一有解的一条，验证后「教学效果」维度才可信 |
 | 视频评估 | 课件切换仍非精确页数：框偏了、人走进框内停住、投影极暗时会漏报/多记 | 已先用 VLM 框投影/板书再只比对框内；框不到退回整幅格子 |
 | 视频评估 | 「详略结合」缺客观依据 | 可加术语时间轴驻留特征（某术语首次到末次出现跨多少分钟、占多少字） |
-| 视频评估 | 提问等待时间的有效样本常只有个位数（受 ASR 片段边界限制） | 开 `word_timestamps=True` 可解，代价是转写慢 20–30% |
 | 视频评估 | 「表情自然」「板书重点是否突出」未纳入 VLM 标注 | 前者受关键帧分辨率限制，后者需理解板书语义 |
 | 视频评估 | ASR 置信度是弱代理：混杂录音质量与口音，**换 whisper 模型后历史数据不可比** | 已在提示词里标明局限，无更好的本地替代 |
 | 视频评估 | CPU 转写慢、长视频证据截断 | 暂缓，不阻塞问答/大纲 |
@@ -1280,6 +1280,18 @@ make install-local                      # 装 pyannote.audio
 ## 十三、变更记录
 
 倒序排列，最新在最上面。每条写清楚**为什么这么改**。
+
+### 2026-09-18 · 上传中显示剩余时间，入队后跨页提示
+
+**问题**：大视频上传只看到百分比，看不出还要多久；入队弹窗写在评估页里，上传中途切到问答或把标签切到后台就看不到「已经排上队」。
+**思路**：按已传输字节和瞬时速度估剩余时间，估不稳时退回测速得到的预计时长。入队弹窗挪到顶栏 Layout，评估页 keep-alive，上传在站内切页后继续。标签在后台且浏览器允许时再发一条桌面通知。
+**影响**：`Evaluation.vue`、`Layout.vue`、`evalFollowupStore.js`、`resumableUpload.js`。关掉浏览器标签仍会中断尚未完成的本机上传。
+
+### 2026-09-18 · 评估完成后再把源文件推到 OSS
+
+**问题**：网盘下载结束后立刻整文件上传 OSS，进度停在 97%，用户还没开始评估。小盘机器既要下网盘又要传对象存储，体验差。
+**思路**：点击开始评估后立刻上传/下载到服务器本地并入队；轮到 Worker 后在本地解析。任务标成已完成、报告可看之后，再把源文件归档 OSS 并删本地。归档失败不改任务状态，空闲时重试。头像和大纲优化仍立即上 OSS。
+**影响**：`uploads.py` 的 `persist_now`、`material_storage.archive_eval_task_materials`、评估 API 不再在上传成功后释放本地源文件、Worker 终态归档。需重启 backend/worker。
 
 ### 2026-09-08 · 内测用公网 IP 上 HTTPS，不迁历史数据
 
@@ -1362,6 +1374,11 @@ make install-local                      # 装 pyannote.audio
 **问题**：faster-whisper 转英文常带 `. ?`，转中文几乎不断句。切句、问句统计和「片段末尾提问后的等待时间」都对不齐。Atmos 也是 Whisper，标点靠转写后的 LLM 补。
 **思路**：ASR 仍用本地 Whisper；中文墙字再送给现成 LLM，只补 `。，、？！`，不改字。按片段编号批量回写，时间戳不动。行数对不上或改写了汉字则丢弃，改走规则断句，评估不中断。上传讲稿不走 ASR，也就不补。
 **影响**：`transcript_punc.py`；`asr.punctuate` 默认为 true。每堂课多几次短 LLM 调用。沙龙转写同样补。已完成的评估要重跑才有标点。
+
+### 2026-09-18 · 移除提问后等待时间指标
+
+**原因**：相邻 ASR 片段空档不能可靠代表提问后的真实思考等待时间。
+**调整**：移除后端提取、rubric 观测点、Judge 说明、阈值和图表；前端移除相关数值和展示，并过滤历史结果中的旧字段。保留 ASR 置信度、提问统计和屏幕切换功能；历史数据集和已训练模型不改动。
 
 ### 2026-09-07 · 课件切换先框投影/板书，再只看框内变化
 

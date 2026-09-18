@@ -10,18 +10,26 @@ from ai_engine.config import settings
 
 from .api import admin, auth, evaluation, qa, syllabus
 from .core.app_settings import get_app_settings
+from .core.execution import get_execution_pools, shutdown_execution_pools
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     app_settings = get_app_settings()
+    get_execution_pools()
     print(
         "北大问教 2.0 后端启动 | "
         f"AI 模式: {settings.mode} | "
         f"认证: {app_settings.auth_mode} | "
         f"环境: {app_settings.app_env}"
     )
-    yield
+    try:
+        yield
+    finally:
+        # SSE generation outlives its HTTP connection; let it persist before exit.
+        if qa._background_jobs:
+            await asyncio.gather(*tuple(qa._background_jobs), return_exceptions=True)
+        await shutdown_execution_pools()
 
 
 app = FastAPI(

@@ -69,12 +69,14 @@ async def record_upload(
     storage_key: str,
     mime_type: str | None,
     path: str,
+    persist_now: bool = True,
 ) -> str:
     disk = Path(path)
     digest = await asyncio.to_thread(sha256_file, disk) if disk.is_file() else None
     backend = upload_backend()
-    # Commit a cleanup-capable metadata record before sending bytes to OSS.
-    # The task only receives a durable reference after every required object succeeds.
+    # Evaluation videos stay local until scoring finishes. Other uploads still
+    # persist immediately so small files (avatars, syllabi) do not occupy ECS.
+    store_backend = "local" if not persist_now or backend == "local" else "oss"
     file_id = await db.create_stored_file(
         user_id=user_id,
         purpose=purpose,
@@ -83,9 +85,9 @@ async def record_upload(
         mime_type=mime_type,
         size_bytes=disk.stat().st_size if disk.is_file() else 0,
         sha256=digest,
-        storage_backend=backend,
+        storage_backend=store_backend,
     )
-    if backend == "local":
+    if store_backend == "local":
         return file_id
     bundle = None
     companion_id = None

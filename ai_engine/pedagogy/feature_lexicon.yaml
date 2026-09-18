@@ -235,11 +235,6 @@ audio_thresholds:
 
 # 时序特征阈值：作用于带时间戳的 ASR 片段
 timeline_thresholds:
-  # 提问后停顿达到这个秒数才算「有效思考等待时间」（Rowe 的 wait-time 研究取 3 秒）
-  wait_time_effective_sec: 3.0
-  # 提问后间隔超过这个秒数，更可能是 ASR 漏转写或学生答话未被拾音，
-  # 不是教师主动留白，因此截断后再统计，避免个别极端值把均值拉高
-  wait_time_cap_sec: 30.0
   # ASR 段平均对数概率低于此值记为低置信段
   asr_low_confidence_logprob: -0.6
 

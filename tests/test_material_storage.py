@@ -149,6 +149,20 @@ class MaterialTests(unittest.TestCase):
         self.assertEqual(create.call_args.kwargs["storage_backend"], "oss")
         remove.assert_awaited_once_with("file-id", user_id="user")
 
+    def test_deferred_record_keeps_evaluation_source_local(self):
+        disk = self.root / "sample.mp4"
+        disk.write_bytes(b"video")
+        with patch.object(uploads.db, "create_stored_file", AsyncMock(return_value="id")) as create, \
+             patch.object(uploads, "persist_file") as persist:
+            result = asyncio.run(uploads.record_upload(
+                user_id="user", purpose="video", original_name="video.mp4",
+                storage_key=self.key, mime_type="video/mp4", path=str(disk), persist_now=False,
+            ))
+        self.assertEqual(result, "id")
+        self.assertEqual(create.call_args.kwargs["storage_backend"], "local")
+        persist.assert_not_called()
+        self.assertTrue(disk.is_file())
+
     def test_local_record_does_not_contact_oss(self):
         disk = self.root / "sample.pdf"
         disk.write_bytes(b"pdf")

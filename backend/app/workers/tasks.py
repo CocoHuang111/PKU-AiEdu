@@ -11,7 +11,13 @@ from ai_engine.evaluation import evaluate_session, index_report
 from ai_engine.evaluation.exceptions import EvaluationCancelled
 
 from ..core import db
-from ..core.material_storage import resolve_material, clear_staged_material
+from ..core.material_storage import (
+    archive_eval_task_materials,
+    clear_eval_scratch,
+    clear_staged_material,
+    is_oss_reference,
+    resolve_material,
+)
 
 
 STEP_LABELS = {
@@ -157,6 +163,10 @@ async def _run_evaluation(
         await asyncio.to_thread(
             index_report, task_id, result, (task or {}).get("user_id")
         )
+        try:
+            await archive_eval_task_materials(owner, task_id)
+        except Exception:
+            print("[storage] 评估已完成，OSS 归档将在空闲时重试", flush=True)
     except EvaluationCancelled:
         await db.finalize_eval_cancellation(task_id)
     except Exception as e:
@@ -174,6 +184,11 @@ async def _run_evaluation(
         if "references" in locals() and owner:
             for ref in references:
                 try:
-                    await asyncio.to_thread(clear_staged_material, ref, owner=owner, task_id=task_id, processing=True)
+                    if ref and is_oss_reference(ref):
+                        await asyncio.to_thread(
+                            clear_staged_material, ref, owner=owner, task_id=task_id, processing=True
+                        )
+                    else:
+                        await asyncio.to_thread(clear_eval_scratch, ref)
                 except Exception:
-                    print("[storage] 解析临时文件清理失败，持久材料仍在 OSS", flush=True)
+                    print("[storage] 解析临时文件清理失败，源文件仍保留到 OSS 归档", flush=True)

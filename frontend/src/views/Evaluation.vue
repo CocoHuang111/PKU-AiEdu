@@ -1,19 +1,5 @@
 <template>
   <div class="eval">
-    <el-dialog v-model="followupVisible" title="视频已提交，可离开此页面" width="min(540px, 92vw)">
-      <p>视频已进入评估流程。{{ estimateText }}</p>
-      <p class="upload-hint">预计时间仅供参考，视频时长及服务器负载会影响实际耗时。关闭页面不会停止处理，进度可在历史任务中查看。</p>
-      <p>是否在报告完成后发送邮件通知？</p>
-      <p v-if="mailStatus === 'waiting_service'" class="upload-hint">通知申请已保存；邮件服务尚未配置，暂不能发送。报告仍可在系统内查看。</p>
-      <p v-else-if="mailStatus === 'pending'">已开启完成邮件通知。</p>
-      <p v-else-if="mailStatus === 'sent'">报告通知已发送。</p>
-      <el-button v-if="!['pending', 'sent', 'waiting_service'].includes(mailStatus)" :loading="mailSaving" @click="enableReportMail">是，完成后通知我</el-button>
-      <el-button v-if="!['pending', 'sent', 'waiting_service'].includes(mailStatus)" @click="mailDeclined = true">{{ mailDeclined ? '已选择暂不需要' : '暂不需要' }}</el-button>
-      <p>等待期间，是否先试试其他教学功能？</p>
-      <el-button type="primary" @click="goToFeature('/qa')">前往智能问答</el-button>
-      <el-button @click="goToFeature('/syllabus')">前往大纲优化</el-button>
-      <template #footer><el-button @click="followupVisible = false">留在评估页面</el-button></template>
-    </el-dialog>
     <aside class="sidebar" :class="{ open: sidebarOpen }">
       <div class="sidebar-inner">
         <div class="drawer-head">
@@ -65,6 +51,7 @@
                   <span>{{ taskRunningText(t) }} {{ taskProgress(t) }}%</span>
                   <el-progress :percentage="taskProgress(t)" :stroke-width="4" :show-text="false" />
                   <div class="task-meta">{{ t.step_label }}{{ stepDetail(t) }}</div>
+                  <div v-if="taskEtaText(t)" class="task-meta">{{ taskEtaText(t) }}</div>
                 </div>
                 <div v-else class="task-status-row">
                   <span class="task-status" :class="t.status">{{ statusText(t.status) }}</span>
@@ -194,6 +181,7 @@
                       <div class="bar"><i :style="{ width: videoProgress + '%' }"></i></div>
                       <span>{{ videoProgress }}%</span>
                     </div>
+                    <div v-if="transferEtaText" class="eta-live">{{ transferEtaText }}</div>
                   </div>
                 </div>
                 <div v-if="!reviewing" class="upload-mode-picker">
@@ -306,6 +294,7 @@
                     <div class="remote-progress-text">
                       {{ activeTask?.step_label || '服务器正在读取链接' }}{{ activeTask ? stepDetail(activeTask) : '' }}
                     </div>
+                    <div v-if="transferEtaText" class="eta-live">{{ transferEtaText }}</div>
                   </div>
                 </div>
               </div>
@@ -508,11 +497,10 @@
 
             <div v-if="(videoFile || validRemoteVideoLink) && !reviewing" class="eta-banner">
               <el-icon :size="16"><InfoFilled /></el-icon>
-              {{ videoSource === 'link'
-                ? '视频将由服务器直接下载，不占用本机上传带宽；链接失效或需要登录时将导入失败。'
-                : uploadMode === 'fast'
-                ? '快速上传不会压缩声音；如果当前浏览器不兼容，将自动回退为原视频上传。'
-                : '系统将上传完整视频，网络较快或文件较小时更合适。' }}
+              <span>
+                <template v-if="uploading && transferEtaText">{{ transferEtaText }}。{{ uploadEtaHint }}</template>
+                <template v-else>{{ uploadEtaHint }}</template>
+              </span>
             </div>
 
             <div v-if="!reviewing" class="compose-actions">
@@ -923,7 +911,7 @@
               <section v-if="audioPage.got" class="pace-block">
                 <header class="pace-head">
                   <p>
-                    融合音轨声学分析、提问等待与转写时序质量，已获得
+                    融合音轨声学分析与转写质量，已获得
                     {{ audioPage.got }} / {{ audioPage.expected }} 项
                   </p>
                 </header>
@@ -938,23 +926,11 @@
                 </div>
                 <div class="audio-charts">
                   <div class="audio-cap">音轨与声学变化</div>
-                  <div class="audio-cap audio-cap-wait">
-                    <b>提问等待</b>
-                    <span v-if="audioPage.waitMean">平均 {{ audioPage.waitMean }}</span>
-                    <span v-if="audioPage.waitMedian">中位数 {{ audioPage.waitMedian }}</span>
-                  </div>
                   <div class="audio-cell audio-wave">
                     <img
                       v-if="activeId"
                       :src="evaluationApi.chartUrl(activeId, 'audio_wave')"
                       alt="音轨波形"
-                    />
-                  </div>
-                  <div class="audio-cell audio-wait">
-                    <img
-                      v-if="activeId"
-                      :src="evaluationApi.chartUrl(activeId, 'wait_samples')"
-                      alt="提问等待样本"
                     />
                   </div>
                   <div class="audio-cell audio-line">
@@ -966,23 +942,6 @@
                     />
                   </div>
                   <div class="audio-cell audio-dist">
-                    <div v-if="audioPage.waitQuality.length" class="audio-stack">
-                      <span>等待质量分布</span>
-                      <div class="audio-bar">
-                        <i
-                          v-for="s in audioPage.waitQuality"
-                          :key="s.key"
-                          :style="{ width: s.pct + '%', background: s.color }"
-                        />
-                      </div>
-                      <ul>
-                        <li v-for="s in audioPage.waitQuality" :key="s.key">
-                          <i :style="{ background: s.color }" />
-                          {{ s.label }}
-                          <b>{{ s.pct }}%</b>
-                        </li>
-                      </ul>
-                    </div>
                     <div v-if="audioPage.asrStack.length" class="audio-stack">
                       <span>ASR置信度分布</span>
                       <div class="audio-bar">
@@ -1448,10 +1407,14 @@
   </div>
 </template>
 
+<script>
+export default { name: 'Evaluation' }
+</script>
+
 <script setup>
-import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, onActivated, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import { useRouter, useRoute } from 'vue-router'
+import { useRoute } from 'vue-router'
 import * as echarts from 'echarts'
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
@@ -1476,6 +1439,7 @@ import {
   WarningFilled,
 } from '@element-plus/icons-vue'
 import { evaluationApi } from '../api/client'
+import { requestDesktopNotifyPermission, showEvalQueuedFollowup } from '../evalFollowupStore'
 
 const MODALITY_LABEL = { audio: '音频', text: '文本', vision: '图像' }
 const MODALITY_TYPE = { audio: 'warning', text: 'success', vision: 'info' }
@@ -1488,62 +1452,13 @@ const TASK_FILTERS = [
   { key: 'failed', label: '失败' },
 ]
 
-const router = useRouter()
 const route = useRoute()
-const followupVisible = ref(false)
-const followupTask = ref(null)
-const followupInfo = ref(null)
-const mailStatus = ref('')
-const mailDeclined = ref(false)
-const mailSaving = ref(false)
-const estimateText = computed(() => {
-  if (followupInfo.value?.status === 'completed') return '评估已完成，可以查看报告。'
-  const estimate = followupInfo.value?.estimate
-  if (!estimate) return '预计时间暂不可用，请稍后查看任务进度。'
-  return `${estimate.preliminary ? '初步估算' : '根据近期解析耗时估算'}，预计约 ${estimate.min_minutes}–${estimate.max_minutes} 分钟完成（含等待）。`
-})
-
-async function showFollowup(taskId) {
-  followupTask.value = taskId
-  followupInfo.value = null
-  mailStatus.value = ''
-  mailDeclined.value = false
-  followupVisible.value = true
-  try {
-    const info = await evaluationApi.followUp(taskId)
-    if (followupTask.value !== taskId) return
-    followupInfo.value = info
-    mailStatus.value = info.notification_status || ''
-  } catch { /* 任务已成功提交，后续提示失败不影响解析 */ }
-}
-
-async function enableReportMail() {
-  if (!followupTask.value) return
-  mailSaving.value = true
-  mailDeclined.value = false
-  try {
-    const info = await evaluationApi.followUp(followupTask.value)
-    if (!info.has_email) {
-      followupVisible.value = false
-      await router.push({ path: '/profile', query: { reportMailTask: followupTask.value } })
-      return
-    }
-    const response = await evaluationApi.requestEmail(followupTask.value)
-    mailStatus.value = response.status
-  } catch { /* 错误由公共拦截器提示 */ }
-  finally { mailSaving.value = false }
-}
-
-function goToFeature(path) {
-  followupVisible.value = false
-  router.push(path)
-}
 
 // 分组即证据来源。把来源标出来，是为了让人一眼看出哪些数字是算的、哪些是模型看的
 const FEATURE_GROUPS = [
   { key: 'text', label: '文本特征', short: '文本', expected: 19, origin: '转写文本统计' },
   { key: 'audio', label: '声学特征', short: '声学', expected: 10, origin: 'librosa 音轨分析' },
-  { key: 'timeline', label: '时序特征', short: '时序', expected: 6, origin: 'ASR 时间戳与解码指标' },
+  { key: 'timeline', label: '转写置信度', short: '转写', expected: 2, origin: 'ASR 解码指标' },
   { key: 'vision', label: '视觉观测统计', short: '视觉', expected: 15, origin: 'VLM 逐帧标注后聚合' },
   { key: 'courseware', label: '上传课件观测', short: '课件', expected: 7, origin: '教师上传课件，VLM 逐页标注' },
   { key: 'slides', label: '课件时序特征', short: '切换', expected: 6, origin: '本地帧差检测，不经大模型' },
@@ -1573,8 +1488,6 @@ const PACE_GUIDE = {
   open_question_ratio: { range: '建议 ≥ 40%', min: 40 },
   higher_order_question_ratio: { range: '建议 ≥ 30%', min: 30 },
   question_gini: { range: '建议 0.20 – 0.50', band: [0.2, 0.5] },
-  wait_time_mean: { range: '建议 ≥ 3 秒', min: 3 },
-  wait_time_effective_ratio: { range: '建议 ≥ 50%', min: 50 },
   asr_low_confidence_ratio: { range: '建议 ≤ 10%', max: 10 },
 }
 // 声学页展示用参考区间，不进 Judge
@@ -1588,9 +1501,6 @@ const AUDIO_GUIDE = {
   long_pause_per_10min: { range: '建议 ≤ 6 次', max: 6, ok: '良好' },
   silence_ratio: { range: '建议 ≤ 25%', max: 25, ok: '良好' },
   snr_estimate: { range: '建议 ≥ 15 dB', min: 15, ok: '良好' },
-  wait_time_mean: { range: '3 ~ 6 秒', band: [3, 6], ok: '适中' },
-  wait_time_median: { range: '3 ~ 6 秒', band: [3, 6], ok: '适中' },
-  wait_time_effective_ratio: { range: '建议 ≥ 50%', min: 50, ok: '良好' },
   asr_confidence: { range: '建议 ≥ −0.40', min: -0.4, ok: '良好' },
   asr_low_confidence_ratio: { range: '建议 ≤ 10%', max: 10, ok: '良好' },
 }
@@ -1604,9 +1514,6 @@ const AUDIO_ORDER = [
   'pitch_variation',
   'emphasis_per_min',
   'long_pause_per_10min',
-  'wait_time_mean',
-  'wait_time_median',
-  'wait_time_effective_ratio',
   'asr_confidence',
   'asr_low_confidence_ratio',
 ]
@@ -1709,8 +1616,6 @@ const PACE_LABELS = {
   open_question_ratio: '开放性问题比例',
   higher_order_question_ratio: '高阶问题比例',
   question_gini: '提问集中度',
-  wait_time_mean: '平均等待时间',
-  wait_time_effective_ratio: '有效等待比例',
   asr_confidence: '转写置信度',
   asr_low_confidence_ratio: '低置信转写比例',
   classified_question_count: '可分类提问',
@@ -1724,8 +1629,6 @@ const PACE_LABELS = {
   filler_density: '口头禅密度',
   transition_count: '过渡衔接',
   student_speech_count: '学生发言线索',
-  wait_time_median: '等待中位数',
-  wait_time_sample_count: '等待样本数',
   loudness_db: '平均响度',
   loudness_std: '响度波动',
   snr_estimate: '信噪比',
@@ -1788,6 +1691,8 @@ const featureSubTab = ref('content')
 
 const uploading = ref(false)
 const uploadPercent = ref(0)
+const nowMs = ref(Date.now())
+const transferEtaText = ref('')
 const uploadMode = ref('original')
 const videoSource = ref('link')
 const remoteVideoLink = ref('')
@@ -1859,6 +1764,50 @@ let uploadController = null
 let taskListRequest = 0
 let recommendationRequest = 0
 let recommendationPromise = null
+let etaTimer = null
+let lastSampleAt = 0
+let lastSampleLoaded = 0
+const transferStartedAt = ref(0)
+const transferLoaded = ref(0)
+const transferTotal = ref(0)
+const transferBps = ref(0)
+
+function resetTransferTracking() {
+  transferStartedAt.value = 0
+  transferLoaded.value = 0
+  transferTotal.value = 0
+  transferBps.value = 0
+  lastSampleAt = 0
+  lastSampleLoaded = 0
+  transferEtaText.value = ''
+}
+
+function markTransferStart() {
+  const now = Date.now()
+  transferStartedAt.value = now
+  lastSampleAt = now
+  nowMs.value = now
+}
+
+function noteTransferProgress(loaded, total) {
+  const now = Date.now()
+  if (!transferStartedAt.value) markTransferStart()
+  transferLoaded.value = Number(loaded) || 0
+  if (total) transferTotal.value = Number(total) || 0
+  if (lastSampleAt && loaded > lastSampleLoaded) {
+    const dt = (now - lastSampleAt) / 1000
+    if (dt >= 0.4) {
+      const inst = (loaded - lastSampleLoaded) / dt
+      transferBps.value = transferBps.value ? transferBps.value * 0.65 + inst * 0.35 : inst
+      lastSampleAt = now
+      lastSampleLoaded = loaded
+    }
+  } else if (!lastSampleLoaded) {
+    lastSampleLoaded = loaded
+    lastSampleAt = now
+  }
+  refreshTransferEta()
+}
 
 const validRemoteVideoLink = computed(() => {
   if (videoSource.value !== 'link') return ''
@@ -1914,6 +1863,75 @@ const videoStageText = computed(() => {
   if (reviewing.value) return '上传完成'
   return uploadMode.value === 'fast' ? '已选择，等待快速处理' : '已选择，等待上传'
 })
+const uploadEtaHint = computed(() => {
+  if (videoSource.value === 'link') {
+    return '视频将由服务器直接下载，不占用本机上传带宽；链接失效或需要登录时将导入失败。'
+  }
+  if (uploadMode.value === 'fast') {
+    return '快速上传不会压缩声音；如果当前浏览器不兼容，将自动回退为原视频上传。'
+  }
+  return '系统将上传完整视频，网络较快或文件较小时更合适。'
+})
+
+function plannedUploadSeconds() {
+  const strategy = uploadRecommendation.value?.strategy
+  if (!strategy) return null
+  return uploadMode.value === 'fast' ? strategy.fastSeconds : strategy.originalSeconds
+}
+
+function refreshTransferEta() {
+  nowMs.value = Date.now()
+  if (!uploading.value) {
+    transferEtaText.value = ''
+    return
+  }
+  const started = transferStartedAt.value || nowMs.value
+  const elapsed = (nowMs.value - started) / 1000
+  const total = transferTotal.value
+  const loaded = transferLoaded.value
+  const bps = transferBps.value
+  if (total > 0 && loaded > 32 * 1024 && bps > 1000 && loaded < total) {
+    transferEtaText.value = formatRemain( (total - loaded) / bps )
+    return
+  }
+  const pct = isRemoteImport.value ? remoteImportProgress.value : videoProgress.value
+  if (pct >= 2 && elapsed > 2) {
+    transferEtaText.value = formatRemain(elapsed * (100 - Math.min(pct, 99)) / pct)
+    return
+  }
+  const planned = plannedUploadSeconds()
+  if (planned) {
+    const remain = planned * (1 - Math.min(Number(pct) || 0, 99) / 100)
+    transferEtaText.value = pct >= 2 ? formatRemain(remain) : `预计约 ${formatEtaSeconds(planned)}`
+    return
+  }
+  transferEtaText.value = elapsed < 3 ? '正在估算剩余时间…' : ''
+}
+
+watch(uploading, (on) => {
+  clearInterval(etaTimer)
+  etaTimer = null
+  if (on) {
+    etaTimer = setInterval(refreshTransferEta, 1000)
+    refreshTransferEta()
+  } else {
+    transferEtaText.value = ''
+  }
+})
+
+watch(
+  () => {
+    const t = activeTask.value
+    if (!uploading.value || !t || t.id !== uploadTaskId.value) return null
+    const d = t.step_detail || {}
+    return [Number(d.downloaded_bytes || 0), Number(d.total_bytes || 0)]
+  },
+  (curr) => {
+    if (!curr) return
+    const [loaded, total] = curr
+    if (loaded > 0) noteTransferProgress(loaded, total)
+  }
+)
 const statusBanner = computed(() => {
   const t = activeTask.value
   if (!t || isActiveUpload.value) return null
@@ -1930,7 +1948,13 @@ const statusBanner = computed(() => {
     return { tone: 'fail', title: '任务已停止', sub: '该任务未继续执行' }
   }
   if (t.status === 'uploading') {
-    return { tone: 'run', title: '上传中', sub: '视频和辅助材料正在上传', progress: t.progress ?? 0 }
+    const eta = t.id === uploadTaskId.value ? transferEtaText.value : ''
+    return {
+      tone: 'run',
+      title: '上传中',
+      sub: eta || '视频和辅助材料正在上传',
+      progress: t.progress ?? 0,
+    }
   }
   if (t.status === 'processing' || t.status === 'queued' || t.status === 'cancel_requested') {
     const step = `${t.step_label || ''}${stepDetail(t)}`.trim()
@@ -1963,7 +1987,7 @@ const featureGroups = computed(() => {
   const groups = result.value?.objective_features || {}
   return FEATURE_GROUPS.map((g) => ({
     ...g,
-    rows: (groups[g.key] || []).map((f) => ({ ...f, meter: featureMeter(f) })),
+    rows: (groups[g.key] || []).filter((f) => !f.key?.startsWith('wait_time_') && f.key !== 'wait_samples').map((f) => ({ ...f, meter: featureMeter(f) })),
   })).filter((g) => g.rows.length)
 })
 const featureGroupMap = computed(() => {
@@ -1972,7 +1996,7 @@ const featureGroupMap = computed(() => {
   for (const g of FEATURE_GROUPS) {
     map[g.key] = {
       ...g,
-      rows: (groups[g.key] || []).map((f) => ({ ...f, meter: featureMeter(f) })),
+      rows: (groups[g.key] || []).filter((f) => !f.key?.startsWith('wait_time_') && f.key !== 'wait_samples').map((f) => ({ ...f, meter: featureMeter(f) })),
     }
   }
   return map
@@ -2093,9 +2117,6 @@ function paceNote(row, status) {
   if (key === 'question_gini') {
     return status.tone === 'ok' ? '提问分布比较均匀' : '提问分布略集中，建议分散到更多教学环节'
   }
-  if (key === 'wait_time_mean' || key === 'wait_time_effective_ratio') {
-    return status.tone === 'ok' ? '提问后给学生留了思考时间' : '等待时间偏短'
-  }
   if (key === 'asr_low_confidence_ratio') {
     return status.tone === 'ok' ? '转写整体可靠' : '低置信转写偏多，数字要谨慎看'
   }
@@ -2119,9 +2140,6 @@ function paceNote(row, status) {
   }
   if (key === 'long_pause_per_10min') {
     return status.tone === 'ok' ? '非正常长停顿不多' : '长停顿偏多'
-  }
-  if (key === 'wait_time_median') {
-    return status.tone === 'ok' ? '等待中位数落在推荐区间' : '等待中位数偏离 3–6 秒'
   }
   if (key === 'asr_confidence') {
     return status.tone === 'ok' ? '转写解码较有把握' : '平均对数概率偏低'
@@ -2240,27 +2258,6 @@ function audioFactItems() {
     }))
 }
 
-function waitQuality(samples, effectiveRatio) {
-  const list = (samples || []).map(Number).filter((n) => Number.isFinite(n))
-  if (list.length) {
-    const short = list.filter((g) => g < 3).length
-    const good = list.filter((g) => g >= 3 && g <= 6).length
-    const long = list.filter((g) => g > 6).length
-    const total = list.length
-    return [
-      { key: 'good', label: '有效等待 (3-6秒)', pct: Math.round((1000 * good) / total) / 10, color: '#67c23a' },
-      { key: 'short', label: '偏短 (<3秒)', pct: Math.round((1000 * short) / total) / 10, color: '#e6a23c' },
-      { key: 'long', label: '偏长 (>6秒)', pct: Math.round((1000 * long) / total) / 10, color: '#c0c4cc' },
-    ].filter((s) => s.pct > 0)
-  }
-  if (effectiveRatio == null) return []
-  const good = Math.min(100, Math.max(0, effectiveRatio))
-    return [
-      { key: 'good', label: '有效等待 (≥3秒)', pct: good, color: '#67c23a' },
-      { key: 'short', label: '偏短 (<3秒)', pct: Math.round(10 * (100 - good)) / 10, color: '#e6a23c' },
-    ].filter((s) => s.pct > 0)
-}
-
 function paceObsIcon(key) {
   const d = PACE_OBS_PATHS[key] || PACE_OBS_PATHS.default
   return `<svg viewBox="0 0 24 24" fill="none" stroke="#a61b1b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`
@@ -2285,10 +2282,6 @@ const PACE_OBS_PATHS = {
     '<path d="M9 17.5h6M10 21h4"/><path d="M12 2.8a6.6 6.6 0 0 0-4.1 11.7V16h8.2v-1.5A6.6 6.6 0 0 0 12 2.8z"/><path d="M10.5 9.2h3"/>',
   year_ref_count:
     '<rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M3.5 10h17M8 3.2v4.2M16 3.2v4.2"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01"/>',
-  wait_time_median:
-    '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.2v5.1l3.2 1.9"/>',
-  wait_time_sample_count:
-    '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.2v5.1l3.2 1.9"/>',
   long_pause_count:
     '<rect x="7" y="5" width="3.2" height="14" rx="0.8"/><rect x="13.8" y="5" width="3.2" height="14" rx="0.8"/>',
   slide_change_per_10min:
@@ -2325,8 +2318,6 @@ const pacePage = computed(() => {
       { value: featText('text', 'higher_order_question_ratio'), label: '高阶问题' },
     ],
     timeHeroes: [
-      { value: featText('timeline', 'wait_time_mean'), label: '平均等待' },
-      { value: featText('timeline', 'wait_time_effective_ratio'), label: '有效等待' },
       { value: featText('timeline', 'asr_confidence'), label: '转写置信' },
       { value: featText('timeline', 'asr_low_confidence_ratio'), label: '低置信转写' },
     ].filter((h) => h.value !== '—'),
@@ -2345,18 +2336,15 @@ const audioPage = computed(() => {
   const audioCount = featureGroupMap.value.audio?.rows.length || 0
   const timeCount = featureGroupMap.value.timeline?.rows.length || 0
   const expected =
-    (featureGroupMap.value.audio?.expected || 10) + (featureGroupMap.value.timeline?.expected || 6)
+    (featureGroupMap.value.audio?.expected || 10) + (featureGroupMap.value.timeline?.expected || 2)
   const snr = featNum('audio', 'snr_estimate')
   const silence = featNum('audio', 'silence_ratio')
   const loud = featNum('audio', 'loudness_db')
   const voiceOk = snr != null && snr >= 15 && (silence == null || silence <= 25)
   const low = featNum('timeline', 'asr_low_confidence_ratio')
   const asrPct = low == null ? null : Math.min(100, Math.max(0, 100 - low))
-  const samples = result.value?.raw_features?.timeline?.wait_samples
   const judgeRows = audioTableRows()
   const facts = audioFactItems()
-  const waitMean = featRow('timeline', 'wait_time_mean')
-  const waitMedian = featRow('timeline', 'wait_time_median')
   return {
     got: audioCount + timeCount,
     expected,
@@ -2364,7 +2352,6 @@ const audioPage = computed(() => {
     timeCount,
     judgeRows,
     facts,
-    waitQuality: waitQuality(samples, featNum('timeline', 'wait_time_effective_ratio')),
     asrStack:
       low == null
         ? []
@@ -2372,8 +2359,6 @@ const audioPage = computed(() => {
             { key: 'high', label: '高置信 (≥90%)', pct: Math.round(10 * asrPct) / 10, color: '#a61b1b' },
             { key: 'low', label: '低置信 (<90%)', pct: Math.round(10 * low) / 10, color: '#c0c4cc' },
           ].filter((s) => s.pct > 0),
-    waitMean: waitMean ? `${waitMean.value}${waitMean.unit || ''}` : '',
-    waitMedian: waitMedian ? `${waitMedian.value}${waitMedian.unit || ''}` : '',
     heroes: [
       {
         value: loud == null ? '—' : `${trimNum(loud)} dB`,
@@ -2382,7 +2367,7 @@ const audioPage = computed(() => {
         tone: 'ok',
       },
       { value: featText('audio', 'snr_estimate'), label: '信噪比' },
-      { value: featText('timeline', 'wait_time_mean'), label: '平均等待' },
+      { value: featText('audio', 'silence_ratio'), label: '静音占比' },
       {
         value: asrPct == null ? featText('timeline', 'asr_confidence') : `${trimNum(asrPct)} %`,
         label: 'ASR置信度',
@@ -3264,6 +3249,11 @@ function taskProgress(t) {
   return t.progress || 0
 }
 
+function taskEtaText(t) {
+  if (t.id === uploadTaskId.value && uploading.value) return transferEtaText.value
+  return ''
+}
+
 function taskRunningText(t) {
   if (t.status === 'uploading') return '上传中'
   if (t.status === 'cancel_requested') return '正在停止'
@@ -3628,6 +3618,12 @@ function formatEtaSeconds(seconds) {
   return `${Math.max(1, Math.round(seconds / 60))} 分钟`
 }
 
+function formatRemain(seconds) {
+  if (!Number.isFinite(seconds) || seconds < 0) return ''
+  if (seconds < 8) return '即将完成'
+  return `预计剩余约 ${formatEtaSeconds(seconds)}`
+}
+
 function chooseUploadMode(mode) {
   uploadMode.value = mode
   uploadModeManuallyChosen.value = true
@@ -3758,6 +3754,7 @@ function clearMaterials() {
 
 async function startUpload() {
   if (!canStart.value) return
+  requestDesktopNotifyPermission()
   const startedFromId = activeId.value
   const context = {
     video: videoFile.value,
@@ -3771,6 +3768,7 @@ async function startUpload() {
     courseware: coursewareFile.value,
     transcript: scriptFile.value,
   }
+  resetTransferTracking()
   uploading.value = true
   uploadPercent.value = 0
   uploadContext.value = context
@@ -3813,6 +3811,7 @@ async function startUpload() {
     if (activeId.value === startedFromId) activeId.value = created.id
     tasks.value = [created, ...tasks.value.filter((t) => t.id !== created.id)]
     schedulePoll()
+    markTransferStart()
     if (context.video) {
       await evaluationApi.uploadAuxMaterials(created.id, context, uploadController.signal)
       const { uploadOriginalVideo, createOrResumeSession } = await import('../utils/resumableUpload')
@@ -3822,9 +3821,10 @@ async function startUpload() {
           file: context.video,
           fingerprint,
           signal: uploadController.signal,
-          onProgress: ({ percent, stage }) => {
+          onProgress: ({ percent, stage, loaded, total }) => {
             uploadPercent.value = percent
             evidenceStage.value = stage
+            if (loaded != null) noteTransferProgress(loaded, total || context.video.size)
           },
         })
       const descriptor = uploadRecommendation.value?.file === context.video
@@ -3847,10 +3847,11 @@ async function startUpload() {
             session,
             descriptor,
             signal: uploadController.signal,
-            onProgress: ({ percent, stage }) => {
+            onProgress: ({ percent, stage, loaded, total }) => {
               evidencePercent.value = percent
               uploadPercent.value = percent
               evidenceStage.value = stage
+              if (loaded != null) noteTransferProgress(loaded, total || context.video.size)
             },
           })
           await evaluationApi.completeUploadSession(created.id, {
@@ -3882,15 +3883,17 @@ async function startUpload() {
       await evaluationApi.uploadTaskMaterials(
         created.id,
         context,
-        (p) => (uploadPercent.value = p),
+        (p) => {
+          uploadPercent.value = p
+          refreshTransferEta()
+        },
         uploadController.signal
       )
     }
     const submitted = await evaluationApi.submitTask(created.id)
     if (fingerprint) resumeTools.forgetTask(fingerprint)
     tasks.value = [submitted, ...tasks.value.filter((t) => t.id !== created.id)]
-    ElMessage.success('上传成功，已加入评估队列')
-    void showFollowup(created.id)
+    void showEvalQueuedFollowup(created.id)
     await loadTasks()
     if (activeId.value === created.id) {
       const latest = tasks.value.find((t) => t.id === created.id) || submitted
@@ -3998,13 +4001,22 @@ onMounted(async () => {
   if (typeof route.query.task === 'string' && /^[0-9a-f-]{36}$/i.test(route.query.task)) {
     await selectTask(route.query.task)
     if (activeTask.value?.status === 'completed') await viewResult()
-    if (route.query.submitted === '1') void showFollowup(route.query.task)
+    if (route.query.submitted === '1') void showEvalQueuedFollowup(route.query.task)
   }
   window.addEventListener('resize', onResize)
 })
 
+onActivated(() => {
+  if (uploading.value) schedulePoll()
+  else void loadTasks()
+  if (route.query.submitted === '1' && typeof route.query.task === 'string') {
+    void showEvalQueuedFollowup(route.query.task)
+  }
+})
+
 onBeforeUnmount(() => {
   clearTimeout(pollTimer)
+  clearInterval(etaTimer)
   window.removeEventListener('resize', onResize)
   radarRo?.disconnect()
   radarRo = null
@@ -4361,6 +4373,12 @@ onBeforeUnmount(() => {
   color: #909399;
   width: 40px;
   text-align: right;
+}
+.eta-live {
+  margin-top: 6px;
+  font-size: 12px;
+  color: #a61b1b;
+  line-height: 1.4;
 }
 .upload-mode-picker {
   display: grid;
@@ -5527,23 +5545,11 @@ svg.aux-icon .chip {
   align-items: stretch;
 }
 .audio-cap {
+  grid-column: 1 / -1;
   font-size: 15px;
   font-weight: 600;
   line-height: 22px;
   color: #1f1f1f;
-}
-.audio-cap-wait {
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-}
-.audio-cap-wait b {
-  font-weight: 600;
-}
-.audio-cap-wait span {
-  font-size: 12px;
-  font-weight: 500;
-  color: #8a8a8a;
 }
 .audio-cell {
   display: flex;
@@ -5551,22 +5557,14 @@ svg.aux-icon .chip {
   min-width: 0;
   min-height: 0;
 }
+.audio-wave {
+  grid-column: 1 / -1;
+}
 .audio-cell img {
   display: block;
   width: 100%;
   height: auto;
   background: #fff;
-}
-.audio-wait {
-  position: relative;
-  min-height: 0;
-}
-.audio-wait img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
 }
 .audio-line span,
 .audio-stack > span {
