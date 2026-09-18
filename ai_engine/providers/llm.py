@@ -34,8 +34,8 @@ class OpenAICompatLLM(LLMProvider):
     def _headers(self) -> dict[str, str]:
         if not self.api_key:
             raise ProviderError(
-                f"缺少 API Key：请在 .env 中设置 {self.api_key_env}（可在 "
-                "https://bailian.console.aliyun.com/ 获取）。"
+                f"缺少 API Key：请在环境配置中设置 {self.api_key_env}，"
+                "并从对应模型服务商控制台获取密钥。"
             )
         return {
             "Authorization": f"Bearer {self.api_key}",
