@@ -923,7 +923,7 @@
               <section v-if="audioPage.got" class="pace-block">
                 <header class="pace-head">
                   <p>
-                    融合音轨声学分析与转写质量，已获得
+                    融合音轨声学分析、提问等待与转写时序质量，已获得
                     {{ audioPage.got }} / {{ audioPage.expected }} 项
                   </p>
                 </header>
@@ -938,11 +938,23 @@
                 </div>
                 <div class="audio-charts">
                   <div class="audio-cap">音轨与声学变化</div>
+                  <div class="audio-cap audio-cap-wait">
+                    <b>提问等待</b>
+                    <span v-if="audioPage.waitMean">平均 {{ audioPage.waitMean }}</span>
+                    <span v-if="audioPage.waitMedian">中位数 {{ audioPage.waitMedian }}</span>
+                  </div>
                   <div class="audio-cell audio-wave">
                     <img
                       v-if="activeId"
                       :src="evaluationApi.chartUrl(activeId, 'audio_wave')"
                       alt="音轨波形"
+                    />
+                  </div>
+                  <div class="audio-cell audio-wait">
+                    <img
+                      v-if="activeId"
+                      :src="evaluationApi.chartUrl(activeId, 'wait_samples')"
+                      alt="提问等待样本"
                     />
                   </div>
                   <div class="audio-cell audio-line">
@@ -954,6 +966,23 @@
                     />
                   </div>
                   <div class="audio-cell audio-dist">
+                    <div v-if="audioPage.waitQuality.length" class="audio-stack">
+                      <span>等待质量分布</span>
+                      <div class="audio-bar">
+                        <i
+                          v-for="s in audioPage.waitQuality"
+                          :key="s.key"
+                          :style="{ width: s.pct + '%', background: s.color }"
+                        />
+                      </div>
+                      <ul>
+                        <li v-for="s in audioPage.waitQuality" :key="s.key">
+                          <i :style="{ background: s.color }" />
+                          {{ s.label }}
+                          <b>{{ s.pct }}%</b>
+                        </li>
+                      </ul>
+                    </div>
                     <div v-if="audioPage.asrStack.length" class="audio-stack">
                       <span>ASR置信度分布</span>
                       <div class="audio-bar">
@@ -1514,7 +1543,7 @@ function goToFeature(path) {
 const FEATURE_GROUPS = [
   { key: 'text', label: '文本特征', short: '文本', expected: 19, origin: '转写文本统计' },
   { key: 'audio', label: '声学特征', short: '声学', expected: 10, origin: 'librosa 音轨分析' },
-  { key: 'timeline', label: '转写置信度', short: '转写', expected: 2, origin: 'ASR 解码指标' },
+  { key: 'timeline', label: '时序特征', short: '时序', expected: 6, origin: 'ASR 时间戳与解码指标' },
   { key: 'vision', label: '视觉观测统计', short: '视觉', expected: 15, origin: 'VLM 逐帧标注后聚合' },
   { key: 'courseware', label: '上传课件观测', short: '课件', expected: 7, origin: '教师上传课件，VLM 逐页标注' },
   { key: 'slides', label: '课件时序特征', short: '切换', expected: 6, origin: '本地帧差检测，不经大模型' },
@@ -1544,6 +1573,8 @@ const PACE_GUIDE = {
   open_question_ratio: { range: '建议 ≥ 40%', min: 40 },
   higher_order_question_ratio: { range: '建议 ≥ 30%', min: 30 },
   question_gini: { range: '建议 0.20 – 0.50', band: [0.2, 0.5] },
+  wait_time_mean: { range: '建议 ≥ 3 秒', min: 3 },
+  wait_time_effective_ratio: { range: '建议 ≥ 50%', min: 50 },
   asr_low_confidence_ratio: { range: '建议 ≤ 10%', max: 10 },
 }
 // 声学页展示用参考区间，不进 Judge
@@ -1557,6 +1588,9 @@ const AUDIO_GUIDE = {
   long_pause_per_10min: { range: '建议 ≤ 6 次', max: 6, ok: '良好' },
   silence_ratio: { range: '建议 ≤ 25%', max: 25, ok: '良好' },
   snr_estimate: { range: '建议 ≥ 15 dB', min: 15, ok: '良好' },
+  wait_time_mean: { range: '3 ~ 6 秒', band: [3, 6], ok: '适中' },
+  wait_time_median: { range: '3 ~ 6 秒', band: [3, 6], ok: '适中' },
+  wait_time_effective_ratio: { range: '建议 ≥ 50%', min: 50, ok: '良好' },
   asr_confidence: { range: '建议 ≥ −0.40', min: -0.4, ok: '良好' },
   asr_low_confidence_ratio: { range: '建议 ≤ 10%', max: 10, ok: '良好' },
 }
@@ -1570,6 +1604,9 @@ const AUDIO_ORDER = [
   'pitch_variation',
   'emphasis_per_min',
   'long_pause_per_10min',
+  'wait_time_mean',
+  'wait_time_median',
+  'wait_time_effective_ratio',
   'asr_confidence',
   'asr_low_confidence_ratio',
 ]
@@ -1672,6 +1709,8 @@ const PACE_LABELS = {
   open_question_ratio: '开放性问题比例',
   higher_order_question_ratio: '高阶问题比例',
   question_gini: '提问集中度',
+  wait_time_mean: '平均等待时间',
+  wait_time_effective_ratio: '有效等待比例',
   asr_confidence: '转写置信度',
   asr_low_confidence_ratio: '低置信转写比例',
   classified_question_count: '可分类提问',
@@ -1685,6 +1724,8 @@ const PACE_LABELS = {
   filler_density: '口头禅密度',
   transition_count: '过渡衔接',
   student_speech_count: '学生发言线索',
+  wait_time_median: '等待中位数',
+  wait_time_sample_count: '等待样本数',
   loudness_db: '平均响度',
   loudness_std: '响度波动',
   snr_estimate: '信噪比',
@@ -1922,7 +1963,7 @@ const featureGroups = computed(() => {
   const groups = result.value?.objective_features || {}
   return FEATURE_GROUPS.map((g) => ({
     ...g,
-    rows: (groups[g.key] || []).filter((f) => !f.key?.startsWith('wait_time_') && f.key !== 'wait_samples').map((f) => ({ ...f, meter: featureMeter(f) })),
+    rows: (groups[g.key] || []).map((f) => ({ ...f, meter: featureMeter(f) })),
   })).filter((g) => g.rows.length)
 })
 const featureGroupMap = computed(() => {
@@ -1931,7 +1972,7 @@ const featureGroupMap = computed(() => {
   for (const g of FEATURE_GROUPS) {
     map[g.key] = {
       ...g,
-      rows: (groups[g.key] || []).filter((f) => !f.key?.startsWith('wait_time_') && f.key !== 'wait_samples').map((f) => ({ ...f, meter: featureMeter(f) })),
+      rows: (groups[g.key] || []).map((f) => ({ ...f, meter: featureMeter(f) })),
     }
   }
   return map
@@ -2052,6 +2093,9 @@ function paceNote(row, status) {
   if (key === 'question_gini') {
     return status.tone === 'ok' ? '提问分布比较均匀' : '提问分布略集中，建议分散到更多教学环节'
   }
+  if (key === 'wait_time_mean' || key === 'wait_time_effective_ratio') {
+    return status.tone === 'ok' ? '提问后给学生留了思考时间' : '等待时间偏短'
+  }
   if (key === 'asr_low_confidence_ratio') {
     return status.tone === 'ok' ? '转写整体可靠' : '低置信转写偏多，数字要谨慎看'
   }
@@ -2075,6 +2119,9 @@ function paceNote(row, status) {
   }
   if (key === 'long_pause_per_10min') {
     return status.tone === 'ok' ? '非正常长停顿不多' : '长停顿偏多'
+  }
+  if (key === 'wait_time_median') {
+    return status.tone === 'ok' ? '等待中位数落在推荐区间' : '等待中位数偏离 3–6 秒'
   }
   if (key === 'asr_confidence') {
     return status.tone === 'ok' ? '转写解码较有把握' : '平均对数概率偏低'
@@ -2193,6 +2240,27 @@ function audioFactItems() {
     }))
 }
 
+function waitQuality(samples, effectiveRatio) {
+  const list = (samples || []).map(Number).filter((n) => Number.isFinite(n))
+  if (list.length) {
+    const short = list.filter((g) => g < 3).length
+    const good = list.filter((g) => g >= 3 && g <= 6).length
+    const long = list.filter((g) => g > 6).length
+    const total = list.length
+    return [
+      { key: 'good', label: '有效等待 (3-6秒)', pct: Math.round((1000 * good) / total) / 10, color: '#67c23a' },
+      { key: 'short', label: '偏短 (<3秒)', pct: Math.round((1000 * short) / total) / 10, color: '#e6a23c' },
+      { key: 'long', label: '偏长 (>6秒)', pct: Math.round((1000 * long) / total) / 10, color: '#c0c4cc' },
+    ].filter((s) => s.pct > 0)
+  }
+  if (effectiveRatio == null) return []
+  const good = Math.min(100, Math.max(0, effectiveRatio))
+    return [
+      { key: 'good', label: '有效等待 (≥3秒)', pct: good, color: '#67c23a' },
+      { key: 'short', label: '偏短 (<3秒)', pct: Math.round(10 * (100 - good)) / 10, color: '#e6a23c' },
+    ].filter((s) => s.pct > 0)
+}
+
 function paceObsIcon(key) {
   const d = PACE_OBS_PATHS[key] || PACE_OBS_PATHS.default
   return `<svg viewBox="0 0 24 24" fill="none" stroke="#a61b1b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`
@@ -2217,6 +2285,10 @@ const PACE_OBS_PATHS = {
     '<path d="M9 17.5h6M10 21h4"/><path d="M12 2.8a6.6 6.6 0 0 0-4.1 11.7V16h8.2v-1.5A6.6 6.6 0 0 0 12 2.8z"/><path d="M10.5 9.2h3"/>',
   year_ref_count:
     '<rect x="3.5" y="5" width="17" height="16" rx="2"/><path d="M3.5 10h17M8 3.2v4.2M16 3.2v4.2"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01"/>',
+  wait_time_median:
+    '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.2v5.1l3.2 1.9"/>',
+  wait_time_sample_count:
+    '<circle cx="12" cy="12" r="8.5"/><path d="M12 7.2v5.1l3.2 1.9"/>',
   long_pause_count:
     '<rect x="7" y="5" width="3.2" height="14" rx="0.8"/><rect x="13.8" y="5" width="3.2" height="14" rx="0.8"/>',
   slide_change_per_10min:
@@ -2253,6 +2325,8 @@ const pacePage = computed(() => {
       { value: featText('text', 'higher_order_question_ratio'), label: '高阶问题' },
     ],
     timeHeroes: [
+      { value: featText('timeline', 'wait_time_mean'), label: '平均等待' },
+      { value: featText('timeline', 'wait_time_effective_ratio'), label: '有效等待' },
       { value: featText('timeline', 'asr_confidence'), label: '转写置信' },
       { value: featText('timeline', 'asr_low_confidence_ratio'), label: '低置信转写' },
     ].filter((h) => h.value !== '—'),
@@ -2271,15 +2345,18 @@ const audioPage = computed(() => {
   const audioCount = featureGroupMap.value.audio?.rows.length || 0
   const timeCount = featureGroupMap.value.timeline?.rows.length || 0
   const expected =
-    (featureGroupMap.value.audio?.expected || 10) + (featureGroupMap.value.timeline?.expected || 2)
+    (featureGroupMap.value.audio?.expected || 10) + (featureGroupMap.value.timeline?.expected || 6)
   const snr = featNum('audio', 'snr_estimate')
   const silence = featNum('audio', 'silence_ratio')
   const loud = featNum('audio', 'loudness_db')
   const voiceOk = snr != null && snr >= 15 && (silence == null || silence <= 25)
   const low = featNum('timeline', 'asr_low_confidence_ratio')
   const asrPct = low == null ? null : Math.min(100, Math.max(0, 100 - low))
+  const samples = result.value?.raw_features?.timeline?.wait_samples
   const judgeRows = audioTableRows()
   const facts = audioFactItems()
+  const waitMean = featRow('timeline', 'wait_time_mean')
+  const waitMedian = featRow('timeline', 'wait_time_median')
   return {
     got: audioCount + timeCount,
     expected,
@@ -2287,6 +2364,7 @@ const audioPage = computed(() => {
     timeCount,
     judgeRows,
     facts,
+    waitQuality: waitQuality(samples, featNum('timeline', 'wait_time_effective_ratio')),
     asrStack:
       low == null
         ? []
@@ -2294,6 +2372,8 @@ const audioPage = computed(() => {
             { key: 'high', label: '高置信 (≥90%)', pct: Math.round(10 * asrPct) / 10, color: '#a61b1b' },
             { key: 'low', label: '低置信 (<90%)', pct: Math.round(10 * low) / 10, color: '#c0c4cc' },
           ].filter((s) => s.pct > 0),
+    waitMean: waitMean ? `${waitMean.value}${waitMean.unit || ''}` : '',
+    waitMedian: waitMedian ? `${waitMedian.value}${waitMedian.unit || ''}` : '',
     heroes: [
       {
         value: loud == null ? '—' : `${trimNum(loud)} dB`,
@@ -2302,7 +2382,7 @@ const audioPage = computed(() => {
         tone: 'ok',
       },
       { value: featText('audio', 'snr_estimate'), label: '信噪比' },
-      { value: featText('audio', 'silence_ratio'), label: '静音占比' },
+      { value: featText('timeline', 'wait_time_mean'), label: '平均等待' },
       {
         value: asrPct == null ? featText('timeline', 'asr_confidence') : `${trimNum(asrPct)} %`,
         label: 'ASR置信度',
@@ -5429,11 +5509,23 @@ svg.aux-icon .chip {
   align-items: stretch;
 }
 .audio-cap {
-  grid-column: 1 / -1;
   font-size: 15px;
   font-weight: 600;
   line-height: 22px;
   color: #1f1f1f;
+}
+.audio-cap-wait {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.audio-cap-wait b {
+  font-weight: 600;
+}
+.audio-cap-wait span {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8a8a8a;
 }
 .audio-cell {
   display: flex;
@@ -5441,14 +5533,22 @@ svg.aux-icon .chip {
   min-width: 0;
   min-height: 0;
 }
-.audio-wave {
-  grid-column: 1 / -1;
-}
 .audio-cell img {
   display: block;
   width: 100%;
   height: auto;
   background: #fff;
+}
+.audio-wait {
+  position: relative;
+  min-height: 0;
+}
+.audio-wait img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 .audio-line span,
 .audio-stack > span {
