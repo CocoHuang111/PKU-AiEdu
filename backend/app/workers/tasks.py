@@ -78,12 +78,26 @@ async def _run_evaluation(
     last_write = 0.0
     last_log = 0.0
     last_step = None
+    stage_started = started
+    timed_stage = 'starting'
+    stage_seconds = {}
+    timing_finished = False
+
+    def finish_stage(now):
+        nonlocal stage_started
+        stage_seconds[timed_stage] = stage_seconds.get(timed_stage, 0.0) + now - stage_started
+        stage_started = now
 
     def progress(pct: int, step: str, detail: dict | None = None) -> None:
-        nonlocal last_write, last_log, last_step
+        nonlocal last_write, last_log, last_step, timed_stage
         if db.is_task_cancelled(task_id):
             raise EvaluationCancelled()
         now = time.monotonic()
+        phase = (detail or {}).get('phase')
+        stage = f'{step}:{phase}' if phase else step
+        if stage != timed_stage:
+            finish_stage(now)
+            timed_stage = stage
         if step != last_step or now - last_log >= 30:
             memory = "unknown"
             try:
@@ -111,6 +125,7 @@ async def _run_evaluation(
         if not owner:
             raise ValueError("任务缺少文件所有者")
         references = (video_path, syllabus_path, courseware_path, transcript_path)
+        progress(2, 'restore_materials')
         video_path, syllabus_path, courseware_path, transcript_path = await asyncio.to_thread(
             lambda: tuple(resolve_material(ref, owner=owner, task_id=task_id) for ref in references)
         )
@@ -128,6 +143,10 @@ async def _run_evaluation(
             await db.finalize_eval_cancellation(task_id)
             return
         result["_processing_seconds"] = round(time.monotonic() - started, 2)
+        finish_stage(time.monotonic())
+        timing_finished = True
+        result['_stage_seconds'] = {k: round(v, 2) for k, v in stage_seconds.items()}
+        print(f'[evaluation-timing] task={task_id} stages={result["_stage_seconds"]}', flush=True)
         if not await db.complete_eval_task(task_id, result):
             await db.finalize_eval_cancellation(task_id)
             return
@@ -146,6 +165,9 @@ async def _run_evaluation(
         if not await db.fail_eval_task(task_id, str(e)):
             await db.finalize_eval_cancellation(task_id)
     finally:
+        if not timing_finished:
+            finish_stage(time.monotonic())
+        print(f'[evaluation-timing-final] task={task_id} elapsed={time.monotonic()-started:.2f}s stages={stage_seconds}', flush=True)
         if "references" in locals() and owner:
             for ref in references:
                 try:
