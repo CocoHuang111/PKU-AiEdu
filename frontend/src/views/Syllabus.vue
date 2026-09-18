@@ -107,10 +107,12 @@
           <section class="compose">
             <div class="mode-row">
               <span class="mode-label">优化模式</span>
-              <el-radio-group v-model="promptMode" size="small" class="mode-group">
-                <el-radio-button value="markdown">原文微调</el-radio-button>
-                <el-radio-button value="markdown_schema">重构框架</el-radio-button>
-              </el-radio-group>
+              <div class="mode-group" role="group" aria-label="优化模式">
+                <button type="button" :class="{ active: promptMode === 'markdown' }"
+                  :aria-pressed="promptMode === 'markdown'" @click="promptMode = 'markdown'">原文微调</button>
+                <button type="button" :class="{ active: promptMode === 'markdown_schema' }"
+                  :aria-pressed="promptMode === 'markdown_schema'" @click="promptMode = 'markdown_schema'">重构框架</button>
+              </div>
             </div>
 
             <div class="file-slot">
@@ -1011,9 +1013,27 @@ onUnmounted(() => clearTimeout(pollTimer))
   font-weight: 500;
 }
 .mode-group {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+.mode-group button {
+  padding: 7px 18px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #606266;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.mode-group button.active {
+  background: #fff;
+  color: #a61b1b;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
 }
 
 .file-slot {
