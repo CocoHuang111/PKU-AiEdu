@@ -1008,9 +1008,9 @@ onUnmounted(() => clearTimeout(pollTimer))
   margin-bottom: 18px;
 }
 .mode-label {
-  font-size: 13px;
-  color: #606266;
-  font-weight: 500;
+  font-size: 16px;
+  color: #303133;
+  font-weight: 600;
 }
 .mode-group {
   display: inline-flex;
