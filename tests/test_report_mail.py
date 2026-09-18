@@ -30,14 +30,28 @@ class ReportMailTests(unittest.TestCase):
                "SMTP_USERNAME": "user", "SMTP_PASSWORD": "test-only"}
         connection = MagicMock()
         connection.__enter__.return_value = connection
-        with patch.dict(os.environ, env, clear=True), patch("backend.app.core.report_mail.smtplib.SMTP", return_value=connection):
-            send_report("teacher@example.org", SimpleNamespace(id="test-task"))
+        task = SimpleNamespace(id='test-task', filename='课堂.mp4', result={'report': '# 报告'},
+                               created_at=None, transcript=None, transcript_path=None,
+                               syllabus_path=None, courseware_path=None)
+        with patch.dict(os.environ, env, clear=True), patch("backend.app.core.report_mail.smtplib.SMTP", return_value=connection), patch('backend.app.core.report_mail.render_report_pdf', return_value=(b'%PDF-test', '课堂.pdf')):
+            send_report("teacher@example.org", task, '张三', '1234')
         connection.starttls.assert_called_once()
         connection.login.assert_called_once_with("user", "test-only")
         message = connection.send_message.call_args.args[0]
         self.assertEqual(message["To"], "teacher@example.org")
-        self.assertIn("/#/evaluation?task=test-task", message.get_content())
-        self.assertEqual(len(list(message.iter_attachments())), 0)
+        body = message.get_body(preferencelist=('plain',)).get_content()
+        self.assertIn("/#/evaluation?task=test-task", body)
+        self.assertIn('尊敬的张三老师（工号1234）：', body)
+        self.assertIn('您的课堂.mp4视频评估任务已完成，报告见附件', body)
+        attachments = list(message.iter_attachments())
+        self.assertEqual(len(attachments), 1)
+        self.assertEqual(attachments[0].get_content_type(), 'application/pdf')
+        self.assertEqual(attachments[0].get_payload(decode=True), b'%PDF-test')
+        with patch.dict(os.environ, env, clear=True), patch("backend.app.core.report_mail.smtplib.SMTP", return_value=connection), patch('backend.app.core.report_mail.render_report_pdf', return_value=(b'%PDF-test', '课堂.pdf')):
+            send_report('teacher@example.org', task)
+        body = connection.send_message.call_args.args[0].get_body(preferencelist=('plain',)).get_content()
+        self.assertIn('尊敬的老师：', body)
+        self.assertNotIn('工号', body)
 
     def test_duration_scaled_estimate_includes_queue(self):
         result = estimate_seconds([1200, 2400], 1, 7200, [3600, 7200])

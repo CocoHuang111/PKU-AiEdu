@@ -663,54 +663,8 @@ def _format_local_time(ts) -> str:
 
 
 def _build_export_markdown(task: dict, report: str) -> str:
-    """导出前补标题、日期、得分等页头；不改库里存的报告正文。"""
-    result = task.get("result") or {}
-    overall = result.get("overall") or {}
-    lines = [f"# {_report_title(task)}", ""]
-
-    generated = _format_local_time(task.get("created_at") or task.get("updated_at"))
-    if generated:
-        lines.append(f"- **生成日期**：{generated}")
-
-    score = overall.get("score")
-    if score is not None:
-        grade = overall.get("grade") or ""
-        label = overall.get("grade_label") or ""
-        extra = ""
-        if grade:
-            extra = f"（{grade} 级"
-            if label:
-                extra += f" · {label}"
-            extra += "）"
-        lines.append(f"- **综合得分**：{score} / 100{extra}")
-
-    minutes = overall.get("duration_minutes")
-    if minutes not in (None, ""):
-        lines.append(f"- **课堂时长**：{minutes} 分钟")
-
-    source = "讲稿评估" if result.get("source") == "transcript" else "视频评估"
-    lines.append(f"- **评估方式**：{source}")
-
-    mods = [
-        _MODALITY_LABEL.get(m, m)
-        for m in (overall.get("modalities") or [])
-        if m
-    ]
-    if mods:
-        lines.append(f"- **可用模态**：{'、'.join(mods)}")
-
-    used: list[str] = []
-    if result.get("transcript_source") == "script" or task.get("has_script"):
-        used.append("讲稿")
-    if result.get("has_syllabus") or task.get("has_syllabus"):
-        used.append("课程大纲")
-    if result.get("has_courseware") or task.get("has_courseware"):
-        used.append("上传课件")
-    if used:
-        lines.append(f"- **对照材料**：{'、'.join(used)}")
-
-    lines.extend(["", "---", "", strip_report_digest(report).strip(), ""])
-    return "\n".join(lines)
+    from ..core.report_export import build_export_markdown
+    return build_export_markdown(task, report)
 
 
 _FILE_MEDIA = {

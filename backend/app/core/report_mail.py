@@ -17,6 +17,7 @@ from fastapi import HTTPException
 from sqlalchemy import select
 from .database import session_scope
 from ..models import EvalTask, User, UserProfile, UserSettings
+from .report_export import render_report_pdf
 
 KEY = "eval_report_mail"
 
@@ -138,14 +139,26 @@ async def unsubscribe(task_id, owner):
         return {"status": "cancelled"}
 
 
-def send_report(email, task):
+def send_report(email, task, name='', staff_id=''):
+    # Generate the same PDF as the download endpoint before contacting SMTP.
+    payload = {'filename': task.filename, 'result': task.result,
+               'created_at': task.created_at.timestamp() if task.created_at else None,
+               'has_script': bool(task.transcript or task.transcript_path),
+               'has_syllabus': bool(task.syllabus_path), 'has_courseware': bool(task.courseware_path)}
+    pdf, filename = render_report_pdf(payload)
     message = EmailMessage()
     message["From"] = os.environ["SMTP_FROM"]
     message["To"] = email
     message["Subject"] = "北大问教：视频评估报告已完成"
     message["Message-ID"] = f"<askedu-report-{task.id}@{urlsplit(os.environ['APP_PUBLIC_URL']).hostname}>"
     link = os.environ["APP_PUBLIC_URL"].rstrip("/") + f"/#/evaluation?task={task.id}"
-    message.set_content(f"您的视频评估已完成。\n\n请登录北大问教查看报告：\n{link}\n\n报告链接需登录本人账号访问，不附带原视频。")
+    salutation = f"尊敬的{name.strip()}老师" + (f"（工号{staff_id.strip()}）" if staff_id.strip() else '') + '：'
+    message.set_content(
+        f"{salutation}\n\n您的{task.filename or '教学视频'}视频评估任务已完成，报告见附件；"
+        f"更多详细解析请登录{link}（报告链接需登录本人账号访问）。\n\n"
+        "感谢您的耐心等待和对北大问教系统的支持！如使用过程中存在不便体验或相关问题，"
+        "欢迎随时邮件beidawenjiao@163.com，非常感谢您的宝贵意见！")
+    message.add_attachment(pdf, maintype='application', subtype='pdf', filename=filename)
     security = os.getenv("SMTP_SECURITY", "starttls")
     port = int(os.getenv("SMTP_PORT", "465" if security == "ssl" else "587"))
     context = ssl.create_default_context()
@@ -191,7 +204,7 @@ async def dispatch_reports():
                     item["status"] = "needs_email"
                     continue
                 try:
-                    await asyncio.to_thread(send_report, profile.email, task)
+                    await asyncio.to_thread(send_report, profile.email, task, profile.name or '', profile.staff_id or '')
                 except Exception:
                     attempts = item.get("attempts", 0) + 1
                     item.update(attempts=attempts, status="failed" if attempts >= 5 else "pending",
