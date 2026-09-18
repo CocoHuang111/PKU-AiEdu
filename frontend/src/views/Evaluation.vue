@@ -236,7 +236,7 @@
                     :disabled="uploading"
                     @click="chooseVideoSource('link')"
                   >
-                    北大网盘链接提取
+                    链接提取
                   </button>
                   <button
                     type="button"
@@ -244,7 +244,7 @@
                     :disabled="uploading"
                     @click="chooseVideoSource('file')"
                   >
-                    上传本地视频
+                    本地视频
                   </button>
                   </div>
                 </div>
@@ -261,12 +261,12 @@
                   <div class="upload-text">
                     拖入视频文件，或<span class="pick">点击选择</span>
                   </div>
-                  <div class="upload-hint">支持 MP4、MOV、MKV 等格式，建议上传 5–90 分钟的视频</div>
+                  <div class="upload-hint">支持 MP4、MOV、MKV 等格式</div>
                 </el-upload>
                 <div v-else class="video-link-panel">
                   <div class="link-copy">
                     <el-icon class="link-icon" :size="20"><Link /></el-icon>
-                    <span>粘贴北大网盘公开分享链接或视频下载地址</span>
+                    <span>粘贴北大网盘分享链接/粘贴视频下载地址</span>
                   </div>
                   <div class="video-link-input-row">
                     <el-input
@@ -281,7 +281,7 @@
                     @click="readRemoteShare()">读取链接</el-button>
                   </div>
                   <div class="upload-hint">
-                    网盘导入目前仅支持北大网盘无需登录、无需访问密码的公开分享，且文件须允许下载。其他网盘请下载后本地上传。
+                    当前支持北大网盘导入，请确认：1. 共享任意用户 2.允许下载权限 3. 无需提取码
                   </div>
                   <div v-if="remoteShare" class="remote-file-picker">
                     <div class="upload-hint">{{ remoteShare.provider_name }} · {{ remoteShare.notice }}</div>

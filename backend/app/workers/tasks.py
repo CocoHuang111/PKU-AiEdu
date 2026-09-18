@@ -20,6 +20,7 @@ STEP_LABELS = {
     "upload_failed": "上传失败",
     "queued": "排队中",
     "starting": "准备中",
+    "restore_materials": "读取材料",
     "extracting_audio": "抽取音频",
     "parse_materials": "解析大纲与课件",
     "keyframe_sampling": "抽取关键帧",
@@ -125,7 +126,8 @@ async def _run_evaluation(
         if not owner:
             raise ValueError("任务缺少文件所有者")
         references = (video_path, syllabus_path, courseware_path, transcript_path)
-        progress(2, 'restore_materials')
+        # progress waits synchronously for the event loop: never call it on that loop.
+        await asyncio.to_thread(progress, 2, 'restore_materials')
         video_path, syllabus_path, courseware_path, transcript_path = await asyncio.to_thread(
             lambda: tuple(resolve_material(ref, owner=owner, task_id=task_id) for ref in references)
         )
@@ -162,7 +164,8 @@ async def _run_evaluation(
             await db.finalize_eval_cancellation(task_id)
             return
         traceback.print_exc()
-        if not await db.fail_eval_task(task_id, str(e)):
+        error_message = str(e).strip() or f'{type(e).__name__}：评估阶段 {timed_stage} 执行失败'
+        if not await db.fail_eval_task(task_id, error_message):
             await db.finalize_eval_cancellation(task_id)
     finally:
         if not timing_finished:
