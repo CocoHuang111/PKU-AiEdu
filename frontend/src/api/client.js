@@ -173,6 +173,7 @@ export const evaluationApi = {
   getTask: (id) => client.get(`/api/evaluation/task/${id}`),
   followUp: (id) => client.get(`/api/evaluation/task/${id}/follow-up`),
   requestEmail: (id) => client.post(`/api/evaluation/task/${id}/email-notification`),
+  cancelEmail: (id) => client.delete(`/api/evaluation/task/${id}/email-notification`),
   cancelTask: (id) => client.post(`/api/evaluation/task/${id}/cancel`),
   deleteTask: (id) => client.delete(`/api/evaluation/task/${id}`),
   evaluateTranscript: (text, durationSec, reference) =>

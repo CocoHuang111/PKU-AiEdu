@@ -47,6 +47,13 @@
               <el-icon class="task-icon" :size="18"><VideoCamera /></el-icon>
               <div class="task-body">
                 <div class="task-name">{{ t.filename }}</div>
+                <div class="task-notification-tags" @click.stop>
+                  <el-tag size="small" :type="t.status === 'processing' ? 'warning' : 'info'">{{ statusText(t.status) }}</el-tag>
+                  <el-tag size="small" :type="emailEnabled(t) ? 'success' : 'info'">{{ emailTagText(t) }}</el-tag>
+                  <el-switch v-if="['queued', 'processing', 'uploading'].includes(t.status)"
+                    :model-value="emailEnabled(t)" :loading="mailUpdatingIds.includes(t.id)"
+                    size="small" aria-label="邮件通知" @change="toggleTaskMail(t, $event)" />
+                </div>
                 <div v-if="isRunning(t)" class="task-run">
                   <span>{{ taskRunningText(t) }} {{ taskProgress(t) }}%</span>
                   <el-progress :percentage="taskProgress(t)" :stroke-width="4" :show-text="false" />
@@ -1414,7 +1421,7 @@ export default { name: 'Evaluation' }
 <script setup>
 import { computed, nextTick, onActivated, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import * as echarts from 'echarts'
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
@@ -1453,6 +1460,38 @@ const TASK_FILTERS = [
 ]
 
 const route = useRoute()
+const router = useRouter()
+const mailUpdatingIds = ref([])
+
+function emailEnabled(task) {
+  return ['pending', 'waiting_service', 'needs_email', 'sent'].includes(task.notification_status)
+}
+function emailTagText(task) {
+  if (task.notification_status === 'sent') return '邮件已发送'
+  if (task.notification_status === 'failed') return '邮件发送失败'
+  return emailEnabled(task) ? '邮件通知已开启' : '邮件通知未开启'
+}
+async function toggleTaskMail(task, enabled) {
+  if (mailUpdatingIds.value.includes(task.id)) return
+  mailUpdatingIds.value.push(task.id)
+  try {
+    if (enabled) {
+      const info = await evaluationApi.followUp(task.id)
+      if (!info.has_email) {
+        ElMessage.info('请先完善个人资料中的邮箱')
+        await router.push({ path: '/profile', query: { reportMailTask: task.id } })
+        return
+      }
+    }
+    const response = enabled ? await evaluationApi.requestEmail(task.id) : await evaluationApi.cancelEmail(task.id)
+    task.notification_status = response.status
+    await loadTasks()
+  } catch {
+    // 公共请求拦截器显示错误，不乐观切换，确保标签反映持久化状态。
+  } finally {
+    mailUpdatingIds.value = mailUpdatingIds.value.filter(id => id !== task.id)
+  }
+}
 
 // 分组即证据来源。把来源标出来，是为了让人一眼看出哪些数字是算的、哪些是模型看的
 const FEATURE_GROUPS = [
@@ -3275,7 +3314,7 @@ function statusText(s) {
     uploading: '上传中',
     upload_failed: '上传失败',
     completed: '已完成',
-    processing: '处理中',
+    processing: '解析中',
     failed: '失败',
     queued: '排队中',
     cancel_requested: '正在停止',
@@ -4026,6 +4065,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+.task-notification-tags { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; margin: 6px 0; }
 .eval {
   height: calc(100vh - 56px);
   display: flex;

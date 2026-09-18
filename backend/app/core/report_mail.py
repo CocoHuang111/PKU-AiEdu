@@ -69,21 +69,11 @@ async def follow_up(task_id, owner):
         task = await session.get(EvalTask, uuid.UUID(task_id))
         if task is None or task.user_id != uuid.UUID(owner):
             raise HTTPException(404, "任务不存在")
-        ahead = (await session.scalars(select(EvalTask.id).where(
-            EvalTask.id != task.id,
-            (EvalTask.status == "processing") | ((EvalTask.status == "queued") & (EvalTask.created_at <= task.created_at)),
-        ))).all()
-        recent = (await session.scalars(select(EvalTask.result).where(EvalTask.status == "completed")
-                                       .order_by(EvalTask.updated_at.desc()).limit(30))).all()
         profile = await session.get(UserProfile, task.user_id)
         preferences = await session.get(UserSettings, task.user_id)
         notification = ((preferences.settings or {}).get(KEY, {}).get(task_id, {})
                         if preferences else {})
-        results = [r for r in recent if isinstance(r, dict)]
-        duration = await asyncio.to_thread(local_video_duration, task.video_path)
-        return {"status": task.status, "estimate": estimate_seconds(
-                    [r.get("_processing_seconds") for r in results], len(ahead), duration,
-                    [((r.get('overall') or {}).get('duration_minutes') or 0) * 60 for r in results]),
+        return {"status": task.status,
                 "has_email": bool(profile and profile.email.strip()), "mail_ready": mail_ready(),
                 "notification_status": notification.get("status", "")}
 
@@ -120,6 +110,32 @@ async def subscribe(task_id, owner):
         row.settings = values
         row.updated_at = datetime.now(timezone.utc)
         return {"status": state}
+
+
+async def notification_states(owner):
+    async with session_scope() as session:
+        row = await session.get(UserSettings, uuid.UUID(owner))
+        return (row.settings or {}).get(KEY, {}) if row else {}
+
+
+async def unsubscribe(task_id, owner):
+    uid = uuid.UUID(owner)
+    async with session_scope() as session:
+        await session.scalar(select(User).where(User.id == uid).with_for_update())
+        row = await session.scalar(select(UserSettings).where(UserSettings.user_id == uid).with_for_update())
+        task = await session.get(EvalTask, uuid.UUID(task_id))
+        if task is None or task.user_id != uid:
+            raise HTTPException(404, "任务不存在")
+        if task.status not in {'queued', 'processing', 'uploading'}:
+            raise HTTPException(409, "仅未完成的任务可以修改邮件通知")
+        if row:
+            values = dict(row.settings or {})
+            requests = dict(values.get(KEY) or {})
+            requests[task_id] = {"status": "cancelled"}
+            values[KEY] = requests
+            row.settings = values
+            row.updated_at = datetime.now(timezone.utc)
+        return {"status": "cancelled"}
 
 
 def send_report(email, task):

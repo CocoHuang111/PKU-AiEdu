@@ -21,6 +21,7 @@ from ..core.audit import audit
 from ..core.auth import current_user
 from ..core.browser_evidence import save_browser_evidence
 from ..core.database import session_scope
+from ..core.report_mail import notification_states
 from ..core.remote_video import ALLOWED_VIDEO_EXT, download_remote_video
 from ..core.cloud_drives import inspect_share
 from ..core.upload_sessions import (
@@ -627,7 +628,9 @@ async def list_tasks(
         status=status,
         limit=min(max(limit, 1), 200),
     )
+    notifications = await notification_states(user['id'])
     for t in tasks:
+        t['notification_status'] = notifications.get(t['id'], {}).get('status', '')
         t["step_label"] = STEP_LABELS.get(t["current_step"], t["current_step"])
     return tasks
 
@@ -637,6 +640,8 @@ async def get_task(task_id: str, user: dict = Depends(current_user)) -> dict:
     task = await db.get_task(task_id, user_id=user["id"])
     if not task:
         raise HTTPException(404, "任务不存在")
+    notifications = await notification_states(user['id'])
+    task['notification_status'] = notifications.get(task['id'], {}).get('status', '')
     task["step_label"] = STEP_LABELS.get(task["current_step"], task["current_step"])
     return task
 

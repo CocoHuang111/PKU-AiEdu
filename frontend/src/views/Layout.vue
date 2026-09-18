@@ -8,8 +8,8 @@
       @closed="closeFollowup"
     >
       <template #header><span class="eval-followup-title">视频已加入评估队列！</span></template>
-      <p>{{ estimateText }}</p>
-      <p class="eval-followup-hint">预计时间仅供参考，视频时长及服务器负载会影响实际耗时。关闭标签页不会停止已入队的解析，进度可在历史任务中查看。</p>
+      <p>当前视频正在排队中，预计耗时较长，请耐心等待</p>
+      <p class="eval-followup-hint">视频时长及服务器负载会影响实际耗时。关闭标签页不会停止已入队的解析，进度可在历史任务中查看。</p>
       <p class="eval-followup-question">是否在报告完成后发送邮件通知？</p>
       <p v-if="mailStatus === 'waiting_service'" class="eval-followup-hint">通知申请已保存；邮件服务尚未配置，暂不能发送。报告仍可在系统内查看。</p>
       <p v-else-if="mailStatus === 'pending'" class="eval-followup-success"><el-icon><CircleCheckFilled /></el-icon>已开启完成邮件通知。</p>
@@ -63,7 +63,6 @@ import { resetQa } from '../qaStore'
 import {
   closeFollowup,
   enableReportMail,
-  estimateText,
   followupVisible,
   goToFeature,
   mailDeclined,

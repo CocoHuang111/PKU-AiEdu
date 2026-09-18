@@ -2,7 +2,7 @@
  * 评估入队后的跟进弹窗放在页面组件外面：切到问答 / 大纲 / 我的，或浏览器切到后台，
  * 上传结束后仍能弹出。刷新后若尚未关掉弹窗，会按 sessionStorage 再打开一次。
  */
-import { computed, ref, watch } from 'vue'
+import { ref, watch } from 'vue'
 import { evaluationApi } from './api/client'
 import router from './router'
 
@@ -14,14 +14,6 @@ export const followupInfo = ref(null)
 export const mailStatus = ref('')
 export const mailDeclined = ref(false)
 export const mailSaving = ref(false)
-
-export const estimateText = computed(() => {
-  if (followupInfo.value?.status === 'completed') return '评估已完成，可以查看报告。'
-  const estimate = followupInfo.value?.estimate
-  if (!estimate) return '预计时间暂不可用，请稍后查看任务进度。'
-  if (estimate.preliminary) return '暂无足够的历史耗时数据，暂无法可靠估计完成时间。'
-  return `${estimate.preliminary ? '初步估算' : '根据近期解析耗时估算'}，预计约 ${estimate.min_minutes}–${estimate.max_minutes} 分钟完成（含等待）。`
-})
 
 function persistPending(taskId) {
   try {

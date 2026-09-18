@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from ..core.auth import current_user
-from ..core.report_mail import follow_up, subscribe
+from ..core.report_mail import follow_up, subscribe, unsubscribe
 import uuid
 
 router = APIRouter()
@@ -21,3 +21,8 @@ async def get_follow_up(task_id: str, user: dict = Depends(current_user)):
 @router.post("/task/{task_id}/email-notification")
 async def request_email(task_id: str, user: dict = Depends(current_user)):
     return await subscribe(valid_id(task_id), user["id"])
+
+
+@router.delete("/task/{task_id}/email-notification")
+async def cancel_email(task_id: str, user: dict = Depends(current_user)):
+    return await unsubscribe(valid_id(task_id), user["id"])

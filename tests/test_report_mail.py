@@ -1,8 +1,10 @@
 import os
 import unittest
 from types import SimpleNamespace
-from unittest.mock import MagicMock, patch
-from backend.app.core.report_mail import mail_ready, estimate_seconds, send_report
+from unittest.mock import MagicMock, AsyncMock, patch
+import uuid
+from fastapi import HTTPException
+from backend.app.core.report_mail import mail_ready, estimate_seconds, send_report, unsubscribe, notification_states, KEY
 
 
 class ReportMailTests(unittest.TestCase):
@@ -40,6 +42,39 @@ class ReportMailTests(unittest.TestCase):
     def test_duration_scaled_estimate_includes_queue(self):
         result = estimate_seconds([1200, 2400], 1, 7200, [3600, 7200])
         self.assertEqual(result, {"min_minutes": 35, "max_minutes": 105, "preliminary": False})
+
+
+class NotificationToggleTests(unittest.IsolatedAsyncioTestCase):
+    async def test_disable_persists_and_preserves_other_settings(self):
+        uid, tid = uuid.uuid4(), uuid.uuid4()
+        row = SimpleNamespace(settings={'other': True, KEY: {str(tid): {'status': 'pending'}}})
+        task = SimpleNamespace(user_id=uid, status='processing')
+        session = MagicMock()
+        session.scalar = AsyncMock(side_effect=[None, row])
+        session.get = AsyncMock(return_value=task)
+        context = MagicMock()
+        context.__aenter__ = AsyncMock(return_value=session)
+        context.__aexit__ = AsyncMock(return_value=False)
+        with patch('backend.app.core.report_mail.session_scope', return_value=context):
+            result = await unsubscribe(str(tid), str(uid))
+        self.assertEqual(result['status'], 'cancelled')
+        self.assertTrue(row.settings['other'])
+        self.assertEqual(row.settings[KEY][str(tid)]['status'], 'cancelled')
+
+    async def test_disable_rejects_other_owner_and_finished_task(self):
+        uid, tid = uuid.uuid4(), uuid.uuid4()
+        for task, code in [(SimpleNamespace(user_id=uuid.uuid4(), status='queued'), 404),
+                           (SimpleNamespace(user_id=uid, status='completed'), 409)]:
+            session = MagicMock()
+            session.scalar = AsyncMock(return_value=None)
+            session.get = AsyncMock(return_value=task)
+            context = MagicMock()
+            context.__aenter__ = AsyncMock(return_value=session)
+            context.__aexit__ = AsyncMock(return_value=False)
+            with patch('backend.app.core.report_mail.session_scope', return_value=context):
+                with self.assertRaises(HTTPException) as error:
+                    await unsubscribe(str(tid), str(uid))
+            self.assertEqual(error.exception.status_code, code)
 
 
 if __name__ == "__main__":
