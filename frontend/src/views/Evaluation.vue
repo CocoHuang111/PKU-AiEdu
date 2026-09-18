@@ -280,7 +280,7 @@
                   <el-button type="primary" size="large" :loading="remoteShareLoading" :disabled="uploading || !validRemoteVideoLink"
                     @click="readRemoteShare()">读取链接</el-button>
                   </div>
-                  <div class="upload-hint">
+                  <div class="upload-hint drive-import-hint">
                     当前支持北大网盘导入，请确认：1. 共享任意用户 2.允许下载权限 3. 无需提取码
                   </div>
                   <div v-if="remoteShare" class="remote-file-picker">
@@ -4532,6 +4532,9 @@ onBeforeUnmount(() => {
   padding: 18px 20px 20px;
   border: 1px dashed #d8d8d8;
   border-radius: 10px;
+}
+.drive-import-hint {
+  text-align: center;
 }
 .link-icon {
   color: #a61b1b;
