@@ -19,6 +19,7 @@ export const estimateText = computed(() => {
   if (followupInfo.value?.status === 'completed') return '评估已完成，可以查看报告。'
   const estimate = followupInfo.value?.estimate
   if (!estimate) return '预计时间暂不可用，请稍后查看任务进度。'
+  if (estimate.preliminary) return '暂无足够的历史耗时数据，暂无法可靠估计完成时间。'
   return `${estimate.preliminary ? '初步估算' : '根据近期解析耗时估算'}，预计约 ${estimate.min_minutes}–${estimate.max_minutes} 分钟完成（含等待）。`
 })
 

@@ -6,9 +6,11 @@ import os
 import smtplib
 import ssl
 import statistics
+import subprocess
 import uuid
 from datetime import datetime, timedelta, timezone
 from email.message import EmailMessage
+from pathlib import Path
 from urllib.parse import urlsplit
 
 from fastapi import HTTPException
@@ -31,17 +33,35 @@ def mail_ready():
                 (not os.getenv("SMTP_USERNAME") or bool(os.getenv("SMTP_PASSWORD"))))
 
 
-def estimate_seconds(samples, tasks_ahead):
+def estimate_seconds(samples, tasks_ahead, duration=None, historical_durations=None):
     valid = [float(n) for n in samples if isinstance(n, (int, float)) and 60 <= n <= 86400]
     try:
         fallback = min(86400, max(300, int(os.getenv("EVALUATION_ESTIMATE_SECONDS", "7200"))))
     except ValueError:
         fallback = 7200
     typical = statistics.median(valid) if valid else fallback
-    total = typical * (tasks_ahead + 1)
+    rates = [float(s) / float(d) for s, d in zip(samples, historical_durations or [])
+             if isinstance(s, (int, float)) and 60 <= s <= 86400
+             and isinstance(d, (int, float)) and 0 < d <= 86400]
+    own = max(60, statistics.median(rates) * duration) if rates and duration else typical
+    total = typical * tasks_ahead + own
     return {"min_minutes": max(1, round(total * .5 / 60)),
             "max_minutes": max(2, round(total * 1.5 / 60)),
             "preliminary": not bool(valid)}
+
+
+def local_video_duration(path):
+    # Never download an OSS source just to estimate, nor run ASR on this endpoint.
+    if not path or '://' in path or not Path(path).is_file():
+        return None
+    try:
+        probe = subprocess.run(['ffprobe', '-v', 'error', '-show_entries',
+                                'format=duration', '-of', 'default=nw=1:nk=1', path],
+                               capture_output=True, text=True, timeout=5, check=True)
+        value = float(probe.stdout.strip())
+        return value if 0 < value <= 86400 else None
+    except (OSError, ValueError, subprocess.SubprocessError):
+        return None
 
 
 async def follow_up(task_id, owner):
@@ -59,7 +79,11 @@ async def follow_up(task_id, owner):
         preferences = await session.get(UserSettings, task.user_id)
         notification = ((preferences.settings or {}).get(KEY, {}).get(task_id, {})
                         if preferences else {})
-        return {"status": task.status, "estimate": estimate_seconds([r.get("_processing_seconds") for r in recent if isinstance(r, dict)], len(ahead)),
+        results = [r for r in recent if isinstance(r, dict)]
+        duration = await asyncio.to_thread(local_video_duration, task.video_path)
+        return {"status": task.status, "estimate": estimate_seconds(
+                    [r.get("_processing_seconds") for r in results], len(ahead), duration,
+                    [((r.get('overall') or {}).get('duration_minutes') or 0) * 60 for r in results]),
                 "has_email": bool(profile and profile.email.strip()), "mail_ready": mail_ready(),
                 "notification_status": notification.get("status", "")}
 

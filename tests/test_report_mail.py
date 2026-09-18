@@ -37,6 +37,10 @@ class ReportMailTests(unittest.TestCase):
         self.assertIn("/#/evaluation?task=test-task", message.get_content())
         self.assertEqual(len(list(message.iter_attachments())), 0)
 
+    def test_duration_scaled_estimate_includes_queue(self):
+        result = estimate_seconds([1200, 2400], 1, 7200, [3600, 7200])
+        self.assertEqual(result, {"min_minutes": 35, "max_minutes": 105, "preliminary": False})
+
 
 if __name__ == "__main__":
     unittest.main()
