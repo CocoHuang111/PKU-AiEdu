@@ -42,6 +42,8 @@ from ..schemas import (
 from ..workers.tasks import STEP_LABELS
 
 router = APIRouter(prefix="/api/evaluation", tags=["教学视频质量评估"])
+from .evaluation_followup import router as followup_router
+router.include_router(followup_router)
 
 ALLOWED_EXT = ALLOWED_VIDEO_EXT
 SYLLABUS_MAX_BYTES = 30 * 1024 * 1024

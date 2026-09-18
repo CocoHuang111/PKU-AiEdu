@@ -1,5 +1,19 @@
 <template>
   <div class="eval">
+    <el-dialog v-model="followupVisible" title="视频已提交，可离开此页面" width="min(540px, 92vw)">
+      <p>视频已进入评估流程。{{ estimateText }}</p>
+      <p class="upload-hint">预计时间仅供参考，视频时长及服务器负载会影响实际耗时。关闭页面不会停止处理，进度可在历史任务中查看。</p>
+      <p>是否在报告完成后发送邮件通知？</p>
+      <p v-if="mailStatus === 'waiting_service'" class="upload-hint">通知申请已保存；邮件服务尚未配置，暂不能发送。报告仍可在系统内查看。</p>
+      <p v-else-if="mailStatus === 'pending'">已开启完成邮件通知。</p>
+      <p v-else-if="mailStatus === 'sent'">报告通知已发送。</p>
+      <el-button v-if="!['pending', 'sent', 'waiting_service'].includes(mailStatus)" :loading="mailSaving" @click="enableReportMail">是，完成后通知我</el-button>
+      <el-button v-if="!['pending', 'sent', 'waiting_service'].includes(mailStatus)" @click="mailDeclined = true">{{ mailDeclined ? '已选择暂不需要' : '暂不需要' }}</el-button>
+      <p>等待期间，是否先试试其他教学功能？</p>
+      <el-button type="primary" @click="goToFeature('/qa')">前往智能问答</el-button>
+      <el-button @click="goToFeature('/syllabus')">前往大纲优化</el-button>
+      <template #footer><el-button @click="followupVisible = false">留在评估页面</el-button></template>
+    </el-dialog>
     <aside class="sidebar" :class="{ open: sidebarOpen }">
       <div class="sidebar-inner">
         <div class="drawer-head">
@@ -231,7 +245,7 @@
                     :disabled="uploading"
                     @click="chooseVideoSource('link')"
                   >
-                    视频链接
+                    北大网盘链接
                   </button>
                 </div>
                 <el-upload
@@ -1433,6 +1447,7 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
+import { useRouter, useRoute } from 'vue-router'
 import * as echarts from 'echarts'
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
@@ -1468,6 +1483,57 @@ const TASK_FILTERS = [
   { key: 'completed', label: '已完成' },
   { key: 'failed', label: '失败' },
 ]
+
+const router = useRouter()
+const route = useRoute()
+const followupVisible = ref(false)
+const followupTask = ref(null)
+const followupInfo = ref(null)
+const mailStatus = ref('')
+const mailDeclined = ref(false)
+const mailSaving = ref(false)
+const estimateText = computed(() => {
+  if (followupInfo.value?.status === 'completed') return '评估已完成，可以查看报告。'
+  const estimate = followupInfo.value?.estimate
+  if (!estimate) return '预计时间暂不可用，请稍后查看任务进度。'
+  return `${estimate.preliminary ? '初步估算' : '根据近期解析耗时估算'}，预计约 ${estimate.min_minutes}–${estimate.max_minutes} 分钟完成（含等待）。`
+})
+
+async function showFollowup(taskId) {
+  followupTask.value = taskId
+  followupInfo.value = null
+  mailStatus.value = ''
+  mailDeclined.value = false
+  followupVisible.value = true
+  try {
+    const info = await evaluationApi.followUp(taskId)
+    if (followupTask.value !== taskId) return
+    followupInfo.value = info
+    mailStatus.value = info.notification_status || ''
+  } catch { /* 任务已成功提交，后续提示失败不影响解析 */ }
+}
+
+async function enableReportMail() {
+  if (!followupTask.value) return
+  mailSaving.value = true
+  mailDeclined.value = false
+  try {
+    const info = await evaluationApi.followUp(followupTask.value)
+    if (!info.has_email) {
+      followupVisible.value = false
+      await router.push({ path: '/profile', query: { reportMailTask: followupTask.value } })
+      return
+    }
+    const response = await evaluationApi.requestEmail(followupTask.value)
+    mailStatus.value = response.status
+  } catch { /* 错误由公共拦截器提示 */ }
+  finally { mailSaving.value = false }
+}
+
+function goToFeature(path) {
+  followupVisible.value = false
+  router.push(path)
+}
 
 // 分组即证据来源。把来源标出来，是为了让人一眼看出哪些数字是算的、哪些是模型看的
 const FEATURE_GROUPS = [
@@ -1719,7 +1785,7 @@ const featureSubTab = ref('content')
 const uploading = ref(false)
 const uploadPercent = ref(0)
 const uploadMode = ref('original')
-const videoSource = ref('file')
+const videoSource = ref('link')
 const remoteVideoLink = ref('')
 const remoteSharePassword = ref('')
 const remoteShare = ref(null)
@@ -3806,6 +3872,7 @@ async function startUpload() {
     if (fingerprint) resumeTools.forgetTask(fingerprint)
     tasks.value = [submitted, ...tasks.value.filter((t) => t.id !== created.id)]
     ElMessage.success('上传成功，已加入评估队列')
+    void showFollowup(created.id)
     await loadTasks()
     if (activeId.value === created.id) {
       const latest = tasks.value.find((t) => t.id === created.id) || submitted
@@ -3908,8 +3975,12 @@ watch(reportTab, (tab) => {
   }
 })
 
-onMounted(() => {
-  loadTasks()
+onMounted(async () => {
+  await loadTasks()
+  if (typeof route.query.task === 'string' && /^[0-9a-f-]{36}$/i.test(route.query.task)) {
+    await selectTask(route.query.task)
+    if (route.query.submitted === '1') void showFollowup(route.query.task)
+  }
   window.addEventListener('resize', onResize)
 })
 

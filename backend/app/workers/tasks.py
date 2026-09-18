@@ -127,6 +127,7 @@ async def _run_evaluation(
         if db.is_task_cancelled(task_id):
             await db.finalize_eval_cancellation(task_id)
             return
+        result["_processing_seconds"] = round(time.monotonic() - started, 2)
         if not await db.complete_eval_task(task_id, result):
             await db.finalize_eval_cancellation(task_id)
             return

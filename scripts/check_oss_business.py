@@ -86,6 +86,26 @@ async def check():
         await process(task, primary)
         await download(task, primary)
         stages.append("原视频、课件、授权下载、Worker 恢复和源文件清理")
+        info = await client.get(f"/api/evaluation/task/{task}/follow-up")
+        assert info.status_code == 200 and info.json()["estimate"]["min_minutes"] > 0
+        assert "queue_count" not in info.json()
+        absent = await client.post(f"/api/evaluation/task/{task}/email-notification")
+        assert absent.status_code == 409, "没有邮箱仍接受发送申请"
+        updated = await client.patch("/api/auth/me", json={"email": "smoke@example.org"})
+        assert updated.status_code == 200
+        requested = await client.post(f"/api/evaluation/task/{task}/email-notification")
+        assert requested.status_code == 200 and requested.json()["status"] == "waiting_service"
+        from backend.app.core.report_mail import dispatch_reports
+        with patch("backend.app.core.report_mail.mail_ready", return_value=True), \
+             patch("backend.app.core.report_mail.send_report") as send:
+            await dispatch_reports()
+            await dispatch_reports()
+            send.assert_called_once()
+            assert send.call_args.args[0] == "smoke@example.org"
+        info = await client.get(f"/api/evaluation/task/{task}/follow-up")
+        assert info.json()["notification_status"] == "sent", "发送状态未持久化"
+        assert (await client.get("/api/evaluation/task/not-a-uuid/follow-up")).status_code == 404
+        stages.append("预计时间、无邮箱拒绝、完善资料、等待邮件配置、模拟发送和发送幂等")
 
         chunk_task = await new_task()
         response = await client.post(f"/api/evaluation/tasks/{chunk_task}/upload-session", json={
@@ -120,6 +140,15 @@ async def check():
         assert response.status_code == 200, "网盘落地材料未持久化"
         await download(task_remote, primary)
         await process(task_remote, primary)
+        assert (await client.post(f"/api/evaluation/task/{task_remote}/email-notification")).status_code == 200
+        with patch("backend.app.core.report_mail.mail_ready", return_value=True), \
+             patch("backend.app.core.report_mail.send_report", side_effect=RuntimeError("test-only")) as send:
+            await dispatch_reports()
+            await dispatch_reports()
+            send.assert_called_once()  # second call respects backoff instead of sending again
+        info = await client.get(f"/api/evaluation/task/{task_remote}/follow-up")
+        assert info.json()["notification_status"] == "pending", "邮件失败后未保留重试状态"
+        stages.append("邮件失败退避重试（模拟发送）")
         stages.append("链接导入落地文件转 OSS（下载器模拟）")
 
         raw = {"version": 1, "original_filename": "lesson.mp4", "original_size": 100,

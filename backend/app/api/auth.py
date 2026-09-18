@@ -245,7 +245,8 @@ async def update_settings(
     allowed = {"default_corpora", "syllabus_prompt_mode", "export_format"}
     incoming = {k: v for k, v in (form.settings or {}).items() if k in allowed}
     async with session_scope() as session:
-        row = await session.get(UserSettings, user["_id"])
+        await session.scalar(select(User).where(User.id == user["_id"]).with_for_update())
+        row = await session.scalar(select(UserSettings).where(UserSettings.user_id == user["_id"]).with_for_update())
         if row is None:
             row = UserSettings(user_id=user["_id"], settings=incoming)
             session.add(row)
