@@ -1,4 +1,4 @@
-"""用 matplotlib 画出声学特征页的波形、响度和基频。
+"""用 matplotlib 画出声学特征页的波形、响度、基频和等待样本。
 
 默认用稿子上的示意数据；传 --from-task 则读评估结果 JSON。
 
@@ -37,6 +37,7 @@ def _demo_result() -> dict:
         wobble = math.sin(i / 90 * 6.2)
         loud.append([round(t, 1), round(-22.4 + 6.5 * wobble, 1)])
         pitch.append([round(t, 1), round(176 + 22 * math.sin(i / 90 * 4.8), 1)])
+    waits = [4.2, 3.1, 5.4, 2.1, 3.8, 6.8, 3.4, 2.6, 4.9, 3.0, 5.2]
     return {
         "overall": {"duration_minutes": round(duration / 60, 1)},
         "raw_features": {
@@ -53,12 +54,21 @@ def _demo_result() -> dict:
                 "pitch_curve": pitch,
                 "long_pause_times": [253, 747, 1076],
             },
+            "timeline": {
+                "wait_samples": waits,
+                "wait_time_mean": 3.8,
+                "wait_time_median": 3.4,
+            },
         },
         "objective_features": {
             "audio": [
                 {"key": "loudness_db", "value": -22.4},
                 {"key": "snr_estimate", "value": 20.8},
                 {"key": "pitch_median", "value": 176},
+            ],
+            "timeline": [
+                {"key": "wait_time_mean", "value": 3.8},
+                {"key": "wait_time_median", "value": 3.4},
             ],
         },
     }

@@ -123,6 +123,7 @@ dimensions:
         criteria:
           - 提问次数
           - 开放性问题占比合理
+          - 提问后保留有效思考等待时间
       - key: inspiration
         label: 启发设计
         weight: 1.0
@@ -271,6 +272,10 @@ objective_features:
     silence_ratio: { label: 静音占比, unit: "%" }
     snr_estimate: { label: 信噪比估计, unit: dB }
   timeline:
+    wait_time_mean: { label: 提问后平均等待时间, unit: 秒 }
+    wait_time_median: { label: 提问后等待时间中位数, unit: 秒 }
+    wait_time_effective_ratio: { label: 等待≥3秒的提问占比, unit: "%" }
+    wait_time_sample_count: { label: 等待时间有效样本数, unit: 次 }
     asr_confidence: { label: 转写平均对数概率（越接近0越清晰）, unit: "" }
     asr_low_confidence_ratio: { label: 低置信转写时长占比, unit: "%" }
   vision:

@@ -1,7 +1,7 @@
-"""声学特征页的图：波形、响度、基频。
+"""声学特征页的图：波形、响度、基频、提问等待样本。
 
-用 matplotlib 出 PNG。新任务把声学曲线写进 raw_features；
-旧任务没有采样时，波形/响度/基频按均值生成示意。
+用 matplotlib 出 PNG。新任务把曲线和 wait_samples 写进 raw_features；
+旧任务没有采样时，波形/响度/基频按均值生成示意，等待图留空。
 """
 
 from __future__ import annotations
@@ -21,10 +21,15 @@ from .pace_charts import (
     _zh_font,
 )
 
+WAIT_GOOD = (3.0, 6.0)
 
 
 def _audio(result: dict[str, Any]) -> dict[str, Any]:
     return ((result.get("raw_features") or {}).get("audio") or {})
+
+
+def _timeline(result: dict[str, Any]) -> dict[str, Any]:
+    return ((result.get("raw_features") or {}).get("timeline") or {})
 
 
 def _duration(result: dict[str, Any]) -> float:
@@ -46,6 +51,19 @@ def _duration(result: dict[str, Any]) -> float:
 def _clock(sec: float) -> str:
     m, s = divmod(max(int(sec), 0), 60)
     return f"{m:02d}:{s:02d}"
+
+
+def _wait_samples(result: dict[str, Any]) -> list[float]:
+    raw = _timeline(result).get("wait_samples")
+    if isinstance(raw, list) and raw:
+        out = []
+        for v in raw:
+            try:
+                out.append(float(v))
+            except (TypeError, ValueError):
+                continue
+        return out
+    return []
 
 
 def _synth_envelope(result: dict[str, Any], n: int = 360) -> list[float]:
@@ -191,10 +209,51 @@ def render_pitch_series(result: dict[str, Any]) -> bytes:
     return _line_chart(result, series, "Hz", ylim, yticks)
 
 
+def render_wait_samples(result: dict[str, Any]) -> bytes:
+    plt = _setup()
+    font = _zh_font()
+    samples = _wait_samples(result)
+    fig, ax = plt.subplots(figsize=(7.2, 1.45), layout="constrained")
+    if not samples:
+        ax.text(0.5, 0.5, "暂无逐次等待样本", ha="center", va="center", fontproperties=font, color=MUTED)
+        ax.set_axis_off()
+        return _to_png(fig)
+
+    xs = list(range(1, len(samples) + 1))
+    peak = max(samples)
+    ymax = max(7.0, peak * 1.2)
+    ax.axhspan(WAIT_GOOD[0], WAIT_GOOD[1], color=BAND, zorder=0)
+    ax.vlines(xs, 0, samples, colors=RED, linewidth=1.4, zorder=1)
+    ax.scatter(xs, samples, s=28, facecolors="white", edgecolors=RED, linewidths=1.5, zorder=2)
+    labels = [f"Q{i}" for i in xs]
+    if len(labels) > 12:
+        labels = [lab if i % 2 == 0 or i == len(labels) - 1 else "" for i, lab in enumerate(labels)]
+    ax.set_xlim(0.4, len(xs) + 0.6)
+    ax.set_ylim(0, ymax)
+    ax.set_xticks(xs)
+    ax.set_xticklabels(labels, fontproperties=font, fontsize=8)
+    ax.set_ylabel("秒", fontproperties=font, fontsize=9, color=MUTED, labelpad=6)
+    ax.yaxis.grid(True, color=GRID, linewidth=0.7)
+    ax.set_axisbelow(True)
+    ax.text(
+        len(xs) + 0.35,
+        (WAIT_GOOD[0] + WAIT_GOOD[1]) / 2,
+        "推荐区间 3-6秒",
+        ha="right",
+        va="center",
+        color=BAND_EDGE,
+        fontsize=8,
+        fontproperties=font,
+        clip_on=False,
+    )
+    return _to_png(fig)
+
+
 CHARTS = {
     "audio_wave": render_audio_wave,
     "loudness_series": render_loudness_series,
     "pitch_series": render_pitch_series,
+    "wait_samples": render_wait_samples,
 }
 
 
