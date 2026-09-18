@@ -1,6 +1,6 @@
 <template>
   <div class="profile">
-    <el-alert v-if="reportMailTask" title="请填写邮箱并保存，系统将为刚提交的视频登记完成通知。" type="info" :closable="false" show-icon style="margin-bottom: 16px" />
+    <el-alert v-if="reportMailTask" title="请填写邮箱并保存，系统将为刚提交的任务登记完成通知。" type="info" :closable="false" show-icon style="margin-bottom: 16px" />
     <el-card shadow="never" class="hero">
       <div class="hero-inner">
         <div class="avatar-wrap">
@@ -125,7 +125,7 @@
 import { computed, nextTick, onMounted, reactive, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
-import { authApi, evaluationApi } from '../api/client'
+import { authApi, evaluationApi, syllabusApi } from '../api/client'
 import { authState, setUser } from '../authStore'
 
 const TITLES = ['教授', '副教授', '讲师', '助教', '研究员', '副研究员', '其他']
@@ -233,9 +233,10 @@ async function save() {
     ElMessage.success('已保存')
     if (reportMailTask.value) {
       const task = reportMailTask.value
-      const notification = await evaluationApi.requestEmail(task)
+      const syllabus = route.query.reportMailKind === 'syllabus'
+      const notification = await (syllabus ? syllabusApi : evaluationApi).requestEmail(task)
       ElMessage.info(notification.status === 'waiting_service' ? '通知申请已保存，邮件服务待配置；报告可在系统内查看' : '已登记报告完成通知')
-      await router.push({ path: '/evaluation', query: { task, submitted: '1' } })
+      await router.push({ path: syllabus ? '/syllabus' : '/evaluation', query: { task, submitted: '1' } })
     }
   } catch {
     /* 错误已由 axios 拦截器提示 */

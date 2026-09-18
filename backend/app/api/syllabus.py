@@ -13,6 +13,8 @@ from ..core import db
 from ..core.audit import audit
 from ..core.auth import current_user
 from ..core.database import session_scope
+from ..core.report_mail import follow_up, subscribe, unsubscribe, notification_states
+from .evaluation_followup import valid_id
 from ..core.uploads import new_task_id, record_upload, save_user_upload
 from ..core.material_storage import material_reference, mark_task_files_deleted, purge_deleted_oss_files, release_uploaded_paths
 from ..schemas import SyllabusTextForm
@@ -21,6 +23,21 @@ from ..workers.syllabus_tasks import STEP_LABELS, run_syllabus_optimization
 router = APIRouter(prefix="/api/syllabus", tags=["教学大纲优化"])
 
 ALLOWED_EXT = {".pdf", ".docx", ".doc", ".txt", ".md"}
+
+
+@router.get('/task/{task_id}/follow-up')
+async def task_followup(task_id: str, user: dict = Depends(current_user)):
+    return await follow_up(valid_id(task_id), user['id'], 'syllabus')
+
+
+@router.post('/task/{task_id}/email-notification')
+async def task_email(task_id: str, user: dict = Depends(current_user)):
+    return await subscribe(valid_id(task_id), user['id'], 'syllabus')
+
+
+@router.delete('/task/{task_id}/email-notification')
+async def task_email_cancel(task_id: str, user: dict = Depends(current_user)):
+    return await unsubscribe(valid_id(task_id), user['id'], 'syllabus')
 
 
 @router.post("/optimize")
@@ -91,7 +108,9 @@ async def optimize_from_file(
 @router.get("/tasks")
 async def list_tasks(user: dict = Depends(current_user)) -> list[dict]:
     tasks = await db.list_syllabus_tasks(user_id=user["id"])
+    states = await notification_states(user['id'], 'syllabus')
     for task in tasks:
+        task['notification_status'] = states.get(task['id'], {}).get('status', '')
         task["step_label"] = STEP_LABELS.get(task["current_step"], task["current_step"])
     return tasks
 
@@ -101,6 +120,8 @@ async def get_task(task_id: str, user: dict = Depends(current_user)) -> dict:
     task = await db.get_syllabus_task(task_id, user_id=user["id"])
     if not task:
         raise HTTPException(404, "任务不存在")
+    states = await notification_states(user['id'], 'syllabus')
+    task['notification_status'] = states.get(task['id'], {}).get('status', '')
     task["step_label"] = STEP_LABELS.get(task["current_step"], task["current_step"])
     return task
 

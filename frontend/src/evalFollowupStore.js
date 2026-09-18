@@ -3,13 +3,14 @@
  * 上传结束后仍能弹出。刷新后若尚未关掉弹窗，会按 sessionStorage 再打开一次。
  */
 import { ref, watch } from 'vue'
-import { evaluationApi } from './api/client'
+import { evaluationApi, syllabusApi } from './api/client'
 import router from './router'
 
 const STORAGE_KEY = 'pku-askedu-eval-queued-followup'
 
 export const followupVisible = ref(false)
 export const followupTask = ref(null)
+export const followupKind = ref('evaluation')
 export const followupInfo = ref(null)
 export const mailStatus = ref('')
 export const mailDeclined = ref(false)
@@ -71,21 +72,22 @@ function notifyDesktop(taskId) {
   }
 }
 
-export async function showEvalQueuedFollowup(taskId, { desktop = true } = {}) {
+export async function showEvalQueuedFollowup(taskId, { desktop = true, kind = 'evaluation' } = {}) {
   if (!taskId) return
-  const sameOpen = followupVisible.value && followupTask.value === taskId
+  const sameOpen = followupVisible.value && followupTask.value === taskId && followupKind.value === kind
+  followupKind.value = kind
   followupTask.value = taskId
-  persistPending(taskId)
+  persistPending(kind === 'syllabus' ? `syllabus:${taskId}` : taskId)
   followupVisible.value = true
   if (!sameOpen) {
     followupInfo.value = null
     mailStatus.value = ''
     mailDeclined.value = false
   }
-  if (desktop) notifyDesktop(taskId)
+  if (desktop && kind === 'evaluation') notifyDesktop(taskId)
   try {
-    const info = await evaluationApi.followUp(taskId)
-    if (followupTask.value !== taskId) return
+    const info = await (kind === 'syllabus' ? syllabusApi : evaluationApi).followUp(taskId)
+    if (followupTask.value !== taskId || followupKind.value !== kind) return
     followupInfo.value = info
     mailStatus.value = info.notification_status || ''
   } catch {
@@ -95,7 +97,7 @@ export async function showEvalQueuedFollowup(taskId, { desktop = true } = {}) {
 
 export function restorePendingFollowup() {
   const id = readPending()
-  if (id) void showEvalQueuedFollowup(id, { desktop: false })
+  if (id) void showEvalQueuedFollowup(id.replace(/^syllabus:/, ''), { desktop: false, kind: id.startsWith('syllabus:') ? 'syllabus' : 'evaluation' })
 }
 
 export async function enableReportMail() {
@@ -103,14 +105,15 @@ export async function enableReportMail() {
   mailSaving.value = true
   mailDeclined.value = false
   try {
-    const info = await evaluationApi.followUp(followupTask.value)
+    const api = followupKind.value === 'syllabus' ? syllabusApi : evaluationApi
+    const info = await api.followUp(followupTask.value)
     if (!info.has_email) {
       const taskId = followupTask.value
       closeFollowup()
-      await router.push({ path: '/profile', query: { reportMailTask: taskId } })
+      await router.push({ path: '/profile', query: { reportMailTask: taskId, reportMailKind: followupKind.value } })
       return
     }
-    const response = await evaluationApi.requestEmail(followupTask.value)
+    const response = await api.requestEmail(followupTask.value)
     mailStatus.value = response.status
   } catch {
     /* 错误由公共拦截器提示 */

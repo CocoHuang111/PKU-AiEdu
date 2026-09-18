@@ -16,7 +16,7 @@ from urllib.parse import urlsplit
 from fastapi import HTTPException
 from sqlalchemy import select
 from .database import session_scope
-from ..models import EvalTask, User, UserProfile, UserSettings
+from ..models import EvalTask, SyllabusTask, User, UserProfile, UserSettings
 from .report_export import render_report_pdf
 
 KEY = "eval_report_mail"
@@ -65,26 +65,27 @@ def local_video_duration(path):
         return None
 
 
-async def follow_up(task_id, owner):
+async def follow_up(task_id, owner, kind='evaluation'):
     async with session_scope() as session:
-        task = await session.get(EvalTask, uuid.UUID(task_id))
+        task = await session.get(SyllabusTask if kind == 'syllabus' else EvalTask, uuid.UUID(task_id))
         if task is None or task.user_id != uuid.UUID(owner):
             raise HTTPException(404, "任务不存在")
         profile = await session.get(UserProfile, task.user_id)
         preferences = await session.get(UserSettings, task.user_id)
-        notification = ((preferences.settings or {}).get(KEY, {}).get(task_id, {})
+        request_id = 'syllabus:' + task_id if kind == 'syllabus' else task_id
+        notification = ((preferences.settings or {}).get(KEY, {}).get(request_id, {})
                         if preferences else {})
         return {"status": task.status,
                 "has_email": bool(profile and profile.email.strip()), "mail_ready": mail_ready(),
                 "notification_status": notification.get("status", "")}
 
 
-async def subscribe(task_id, owner):
+async def subscribe(task_id, owner, kind='evaluation'):
     uid = uuid.UUID(owner)
     async with session_scope() as session:
         # Serialize first-time settings creation and JSON updates for this user.
         await session.scalar(select(User).where(User.id == uid).with_for_update())
-        task = await session.get(EvalTask, uuid.UUID(task_id))
+        task = await session.get(SyllabusTask if kind == 'syllabus' else EvalTask, uuid.UUID(task_id))
         if task is None or task.user_id != uid:
             raise HTTPException(404, "任务不存在")
         if task.status in {"failed", "cancelled", "upload_failed"}:
@@ -98,6 +99,7 @@ async def subscribe(task_id, owner):
             session.add(row)
         values = dict(row.settings or {})
         requests = dict(values.get(KEY) or {})
+        task_id = 'syllabus:' + task_id if kind == 'syllabus' else task_id
         existing = requests.get(task_id, {})
         if existing.get("status") == "sent":
             return {"status": "sent"}
@@ -113,23 +115,27 @@ async def subscribe(task_id, owner):
         return {"status": state}
 
 
-async def notification_states(owner):
+async def notification_states(owner, kind='evaluation'):
     async with session_scope() as session:
         row = await session.get(UserSettings, uuid.UUID(owner))
-        return (row.settings or {}).get(KEY, {}) if row else {}
+        states = (row.settings or {}).get(KEY, {}) if row else {}
+        if kind == 'syllabus':
+            return {key.removeprefix('syllabus:'): value for key, value in states.items() if key.startswith('syllabus:')}
+        return {key: value for key, value in states.items() if not key.startswith('syllabus:')}
 
 
-async def unsubscribe(task_id, owner):
+async def unsubscribe(task_id, owner, kind='evaluation'):
     uid = uuid.UUID(owner)
     async with session_scope() as session:
         await session.scalar(select(User).where(User.id == uid).with_for_update())
         row = await session.scalar(select(UserSettings).where(UserSettings.user_id == uid).with_for_update())
-        task = await session.get(EvalTask, uuid.UUID(task_id))
+        task = await session.get(SyllabusTask if kind == 'syllabus' else EvalTask, uuid.UUID(task_id))
         if task is None or task.user_id != uid:
             raise HTTPException(404, "任务不存在")
         if task.status not in {'queued', 'processing', 'uploading'}:
             raise HTTPException(409, "仅未完成的任务可以修改邮件通知")
         if row:
+            task_id = 'syllabus:' + task_id if kind == 'syllabus' else task_id
             values = dict(row.settings or {})
             requests = dict(values.get(KEY) or {})
             requests[task_id] = {"status": "cancelled"}
@@ -139,22 +145,32 @@ async def unsubscribe(task_id, owner):
         return {"status": "cancelled"}
 
 
-def send_report(email, task, name='', staff_id=''):
+def send_report(email, task, name='', staff_id='', kind='evaluation'):
     # Generate the same PDF as the download endpoint before contacting SMTP.
-    payload = {'filename': task.filename, 'result': task.result,
-               'created_at': task.created_at.timestamp() if task.created_at else None,
-               'has_script': bool(task.transcript or task.transcript_path),
-               'has_syllabus': bool(task.syllabus_path), 'has_courseware': bool(task.courseware_path)}
-    pdf, filename = render_report_pdf(payload)
+    if kind == 'syllabus':
+        from ai_engine.syllabus import export_syllabus
+        from ai_engine.syllabus.export import export_filename
+        result = task.result or {}
+        if not result.get('xml'):
+            raise ValueError('没有可导出的大纲优化结果')
+        pdf, _, suffix = export_syllabus(result['xml'], 'pdf')
+        filename = export_filename(result.get('course_name') or task.filename or '优化大纲', suffix)
+    else:
+        payload = {'filename': task.filename, 'result': task.result,
+                   'created_at': task.created_at.timestamp() if task.created_at else None,
+                   'has_script': bool(task.transcript or task.transcript_path),
+                   'has_syllabus': bool(task.syllabus_path), 'has_courseware': bool(task.courseware_path)}
+        pdf, filename = render_report_pdf(payload)
     message = EmailMessage()
     message["From"] = os.environ["SMTP_FROM"]
     message["To"] = email
-    message["Subject"] = "北大问教：视频评估报告已完成"
+    message["Subject"] = "北大问教：大纲优化已完成" if kind == 'syllabus' else "北大问教：视频评估报告已完成"
     message["Message-ID"] = f"<askedu-report-{task.id}@{urlsplit(os.environ['APP_PUBLIC_URL']).hostname}>"
-    link = os.environ["APP_PUBLIC_URL"].rstrip("/") + f"/#/evaluation?task={task.id}"
+    page = 'syllabus' if kind == 'syllabus' else 'evaluation'
+    link = os.environ["APP_PUBLIC_URL"].rstrip("/") + f"/#/{page}?task={task.id}"
     salutation = f"尊敬的{name.strip()}老师" + (f"（工号{staff_id.strip()}）" if staff_id.strip() else '') + '：'
     message.set_content(
-        f"{salutation}\n\n您的{task.filename or '教学视频'}视频评估任务已完成，报告见附件；"
+        f"{salutation}\n\n您的{task.filename or '教学材料'}{'大纲优化任务已完成，优化结果' if kind == 'syllabus' else '视频评估任务已完成，报告'}见附件；"
         f"更多详细解析请登录{link}（报告链接需登录本人账号访问）。\n\n"
         "感谢您的耐心等待和对北大问教系统的支持！如使用过程中存在不便体验或相关问题，"
         "欢迎随时邮件beidawenjiao@163.com，非常感谢您的宝贵意见！")
@@ -194,7 +210,9 @@ async def dispatch_reports():
                 now = datetime.now(timezone.utc)
                 if item.get("retry_at") and datetime.fromisoformat(item["retry_at"]) > now:
                     continue
-                task = await session.get(EvalTask, uuid.UUID(task_id))
+                kind = 'syllabus' if task_id.startswith('syllabus:') else 'evaluation'
+                task = await session.get(SyllabusTask if kind == 'syllabus' else EvalTask,
+                                         uuid.UUID(task_id.removeprefix('syllabus:')))
                 if task is None or task.user_id != row.user_id or task.status in {"failed", "cancelled", "upload_failed"}:
                     item["status"] = "cancelled"
                     continue
@@ -204,7 +222,7 @@ async def dispatch_reports():
                     item["status"] = "needs_email"
                     continue
                 try:
-                    await asyncio.to_thread(send_report, profile.email, task, profile.name or '', profile.staff_id or '')
+                    await asyncio.to_thread(send_report, profile.email, task, profile.name or '', profile.staff_id or '', kind)
                 except Exception:
                     attempts = item.get("attempts", 0) + 1
                     item.update(attempts=attempts, status="failed" if attempts >= 5 else "pending",

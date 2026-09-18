@@ -204,6 +204,9 @@ export const syllabusApi = {
     })
   },
   listTasks: () => client.get('/api/syllabus/tasks'),
+  followUp: (id) => client.get(`/api/syllabus/task/${id}/follow-up`),
+  requestEmail: (id) => client.post(`/api/syllabus/task/${id}/email-notification`),
+  cancelEmail: (id) => client.delete(`/api/syllabus/task/${id}/email-notification`),
   getTask: (id) => client.get(`/api/syllabus/task/${id}`),
   cancelTask: (id) => client.post(`/api/syllabus/task/${id}/cancel`),
   deleteTask: (id) => client.delete(`/api/syllabus/task/${id}`),

@@ -47,9 +47,14 @@
               <el-icon class="task-icon" :size="18"><Document /></el-icon>
               <div class="task-body">
                 <div class="task-name">{{ t.filename }}</div>
+                <div class="task-notification-tags" @click.stop>
+                  <el-tag size="small" :type="t.status === 'processing' ? 'warning' : 'info'">{{ statusText(t.status) }}</el-tag>
+                  <el-tag size="small" :type="emailEnabled(t) ? 'success' : 'info'">{{ t.notification_status === 'sent' ? '邮件已发送' : t.notification_status === 'failed' ? '邮件发送失败' : emailEnabled(t) ? '邮件通知已开启' : '邮件通知未开启' }}</el-tag>
+                  <el-switch v-if="isRunning(t)" :model-value="emailEnabled(t)" :loading="mailUpdatingIds.includes(t.id)" size="small" aria-label="邮件通知" @change="toggleTaskMail(t, $event)" />
+                </div>
                 <div v-if="isRunning(t)" class="task-run">
-                  <span>优化中 {{ t.progress }}%</span>
-                  <el-progress :percentage="t.progress" :stroke-width="4" :show-text="false" />
+                  <span>{{ t.status === 'queued' ? '排队中' : `优化中 ${t.progress}%` }}</span>
+                  <el-progress v-if="t.status !== 'queued'" :percentage="t.progress" :stroke-width="4" :show-text="false" />
                   <div class="task-meta">{{ t.step_label }}{{ stepDetail(t) }}</div>
                 </div>
                 <div v-else class="task-status-row">
@@ -322,6 +327,30 @@ import {
 import DOMPurify from 'dompurify'
 import { marked } from 'marked'
 import { syllabusApi } from '../api/client'
+import { useRoute, useRouter } from 'vue-router'
+import { showEvalQueuedFollowup } from '../evalFollowupStore'
+
+const route = useRoute()
+const router = useRouter()
+const mailUpdatingIds = ref([])
+function emailEnabled(task) {
+  return ['pending', 'waiting_service', 'needs_email', 'sent'].includes(task.notification_status)
+}
+async function toggleTaskMail(task, enabled) {
+  if (mailUpdatingIds.value.includes(task.id)) return
+  mailUpdatingIds.value.push(task.id)
+  try {
+    if (enabled && !(await syllabusApi.followUp(task.id)).has_email) {
+      ElMessage.info('请先完善个人资料中的邮箱')
+      await router.push({ path: '/profile', query: { reportMailTask: task.id, reportMailKind: 'syllabus' } })
+      return
+    }
+    const response = enabled ? await syllabusApi.requestEmail(task.id) : await syllabusApi.cancelEmail(task.id)
+    task.notification_status = response.status
+    await loadTasks()
+  } catch { /* 公共拦截器显示错误 */ }
+  finally { mailUpdatingIds.value = mailUpdatingIds.value.filter(id => id !== task.id) }
+}
 
 const POLL_INTERVAL = 2500
 const TASK_FILTERS = [
@@ -414,7 +443,7 @@ function isRunning(t) {
 
 function statusText(status) {
   return (
-    { completed: '已完成', processing: '处理中', failed: '失败', queued: '排队中', cancelled: '已停止' }[
+    { completed: '已完成', processing: '优化中', failed: '失败', queued: '排队中', cancelled: '已停止' }[
       status
     ] || status
   )
@@ -667,6 +696,7 @@ async function startOptimize() {
   try {
     const payload = await syllabusApi.optimizeFile(sourceFile.value, promptMode.value)
     await startTask(payload)
+    void showEvalQueuedFollowup(payload.task_id, { kind: 'syllabus', desktop: false })
   } catch {
     /* 拦截器已提示 */
   } finally {
@@ -695,11 +725,18 @@ function exportAs(format) {
   ElMessage.success(`正在下载 ${format.toUpperCase()}…`)
 }
 
-onMounted(loadTasks)
+onMounted(async () => {
+  await loadTasks()
+  if (typeof route.query.task === 'string' && /^[0-9a-f-]{36}$/i.test(route.query.task)) {
+    await selectTask(route.query.task)
+    if (route.query.submitted === '1') void showEvalQueuedFollowup(route.query.task, { kind: 'syllabus', desktop: false })
+  }
+})
 onUnmounted(() => clearTimeout(pollTimer))
 </script>
 
 <style scoped>
+.task-notification-tags { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; margin: 6px 0; }
 .syllabus {
   height: calc(100vh - 56px);
   display: flex;
