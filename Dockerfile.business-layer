@@ -1,0 +1,6 @@
+# Incremental application release atop the existing verified dependency image.
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+COPY --chown=app:app backend /app/backend
+COPY --chown=app:app ai_engine /app/ai_engine
+COPY --chown=app:app scripts /app/scripts

@@ -9,7 +9,6 @@ import uuid
 from ..core.report_mail import dispatch_reports
 
 from ..core import db
-from ..core.material_storage import archive_pending_eval_materials, purge_deleted_oss_files
 from .tasks import run_evaluation
 
 POLL_SECONDS = max(0.5, float(os.getenv("EVALUATION_WORKER_POLL_SECONDS") or "2"))
@@ -50,8 +49,6 @@ async def main() -> None:
             if idle_cycles * POLL_SECONDS >= LEASE_SECONDS:
                 await db.recover_stale_eval_tasks(LEASE_SECONDS)
                 await db.expire_stale_uploads(UPLOAD_MAX_AGE_SECONDS)
-                await purge_deleted_oss_files()
-                await archive_pending_eval_materials()
                 idle_cycles = 0
             await asyncio.sleep(POLL_SECONDS)
             continue

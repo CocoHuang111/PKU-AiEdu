@@ -15,3 +15,6 @@ services:
   worker:
     environment:
       <<: *oss-env
+  archive-worker:
+    environment:
+      <<: *oss-env

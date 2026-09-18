@@ -6,12 +6,13 @@ import json
 import os
 import shutil
 import tempfile
+import time
 import uuid
 import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 
-from sqlalchemy import select
+from sqlalchemy import select, or_
 
 from ai_engine.config import settings
 from .database import session_scope
@@ -253,7 +254,7 @@ async def _archive_local_path(owner: str, task_id: str, path: str | None, *, evi
         return path
     disk = Path(path)
     if not disk.is_file():
-        return path
+        raise FileNotFoundError('待归档源文件不存在')
     key = local_storage_key(path)
     bundle = None
     try:
@@ -295,7 +296,7 @@ async def _archive_local_path(owner: str, task_id: str, path: str | None, *, evi
 
 
 async def archive_eval_task_materials(owner: str, task_id: str) -> None:
-    """Push completed evaluation sources to OSS, then free the local copies.
+    """Push terminal evaluation sources to OSS, then free the local copies.
 
     Scoring already finished; failure here must not reopen the task. Idle
     workers retry remaining local paths.
@@ -309,7 +310,7 @@ async def archive_eval_task_materials(owner: str, task_id: str) -> None:
                 EvalTask.user_id == uuid.UUID(owner),
             )
         )
-        if row is None:
+        if row is None or row.status not in {'completed', 'failed', 'cancelled'}:
             return
         paths = {
             "video_path": row.video_path,
@@ -331,8 +332,11 @@ async def archive_eval_task_materials(owner: str, task_id: str) -> None:
             )
         )
         if row is None:
+            await mark_task_files_deleted(owner, task_id)
             return
         for field, value in updates.items():
+            if getattr(row, field) != paths[field]:
+                raise RuntimeError('归档期间材料引用发生变化，保留本地文件')
             setattr(row, field, value)
     for field, old in paths.items():
         new = updates.get(field)
@@ -341,18 +345,20 @@ async def archive_eval_task_materials(owner: str, task_id: str) -> None:
             Path(old).unlink(missing_ok=True)
 
 
-async def archive_pending_eval_materials(limit: int = 5) -> None:
+async def archive_pending_eval_materials(limit: int = 5, *, retry_after=None) -> None:
     if upload_backend() != "oss":
         return
+    now = time.monotonic()
+    blocked = [uuid.UUID(key) for key, deadline in (retry_after or {}).items() if deadline > now]
     async with session_scope() as session:
         rows = (
             await session.scalars(
                 select(EvalTask)
                 .where(
-                    EvalTask.status == "completed",
-                    EvalTask.video_path.is_not(None),
-                    EvalTask.video_path.notlike(PREFIX + "%"),
-                    EvalTask.video_path.notlike(EVIDENCE_PREFIX + "%"),
+                    EvalTask.id.not_in(blocked),
+                    EvalTask.status.in_(['completed', 'failed', 'cancelled']),
+                    or_(*(field.is_not(None) & field.notlike(PREFIX + '%') & field.notlike(EVIDENCE_PREFIX + '%')
+                          for field in (EvalTask.video_path, EvalTask.syllabus_path, EvalTask.courseware_path, EvalTask.transcript_path))),
                 )
                 .order_by(EvalTask.updated_at.asc())
                 .limit(limit)
@@ -362,7 +368,11 @@ async def archive_pending_eval_materials(limit: int = 5) -> None:
     for owner, task_id in pending:
         try:
             await archive_eval_task_materials(owner, task_id)
+            if retry_after is not None:
+                retry_after.pop(task_id, None)
         except Exception:
+            if retry_after is not None:
+                retry_after[task_id] = time.monotonic() + 300
             print(f"[storage] 评估结束后归档 OSS 失败，将重试 task={task_id}", flush=True)
 
 

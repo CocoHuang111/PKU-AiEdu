@@ -12,7 +12,6 @@ from ai_engine.evaluation.exceptions import EvaluationCancelled
 
 from ..core import db
 from ..core.material_storage import (
-    archive_eval_task_materials,
     clear_eval_scratch,
     clear_staged_material,
     is_oss_reference,
@@ -163,10 +162,6 @@ async def _run_evaluation(
         await asyncio.to_thread(
             index_report, task_id, result, (task or {}).get("user_id")
         )
-        try:
-            await archive_eval_task_materials(owner, task_id)
-        except Exception:
-            print("[storage] 评估已完成，OSS 归档将在空闲时重试", flush=True)
     except EvaluationCancelled:
         await db.finalize_eval_cancellation(task_id)
     except Exception as e:
