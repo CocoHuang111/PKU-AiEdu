@@ -426,6 +426,7 @@ export async function send() {
     ? [...selectedEvalTaskIds.value]
     : null
   applyEvalTaskSelection([])
+  selectedCorpora.value = [...selectableNames.value]
 
   stopPoll()
   pollingId.value = null
