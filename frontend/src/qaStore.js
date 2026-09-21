@@ -418,6 +418,15 @@ export async function send() {
   const question = input.value.trim()
   if (!question || sending.value) return
 
+  // The attached evaluation reports apply to this question only. Snapshot them
+  // before resetting the composer so the next question returns to the default
+  // state without changing the user's static knowledge-base selection.
+  const corporaForRequest = [...selectedCorpora.value]
+  const evalTaskIdsForRequest = corporaForRequest.includes('eval_reports')
+    ? [...selectedEvalTaskIds.value]
+    : null
+  applyEvalTaskSelection([])
+
   stopPoll()
   pollingId.value = null
   input.value = ''
@@ -449,10 +458,8 @@ export async function send() {
       {
         question,
         sessionId: job.sessionId,
-        corpora: selectedCorpora.value,
-        evalTaskIds: selectedCorpora.value.includes('eval_reports')
-          ? selectedEvalTaskIds.value
-          : null,
+        corpora: corporaForRequest,
+        evalTaskIds: evalTaskIdsForRequest,
       },
       (event) => {
         if (event.type === 'plan') reply.plan = event.data
