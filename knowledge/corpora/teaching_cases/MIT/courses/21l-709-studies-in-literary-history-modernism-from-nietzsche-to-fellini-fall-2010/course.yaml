@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-709-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.709"
+cross_listed_codes: []
+course_title: "Studies in Literary History: Modernism: From Nietzsche to Fellini"
+course_slug: "21l-709-studies-in-literary-history-modernism-from-nietzsche-to-fellini-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Howard Eiland"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "Intellectual History"
+  - "Literature"
+  - "Comparative Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Intellectual History"
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  How do literature, philosophy, film and other arts respond to the profound changes in world view and lifestyle that mark the twentieth century? This course considers a broad range of works from different countries, different media, and different genres, in exploring the transition to a decentered “Einsteinian” universe.
+course_url: "https://ocw.mit.edu/courses/21l-709-studies-in-literary-history-modernism-from-nietzsche-to-fellini-fall-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-709-studies-in-literary-history-modernism-from-nietzsche-to-fellini-fall-2010/8cb1688c60bf5be48a17852bb90650d9_21l-709f10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

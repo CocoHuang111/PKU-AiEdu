@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-24-906j-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.906J"
+cross_listed_codes:
+  - "21G.024J"
+course_title: "Linguistic Studies of Bilingualism"
+course_slug: "24-906j-linguistic-studies-of-bilingualism-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Suzanne Flynn"
+subject_primary: "Language"
+subject_secondary:
+  - "Linguistics"
+  - "Semantics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties: []
+      - name: "Linguistics"
+        specialties:
+          - "Semantics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course studies the development of bilingualism in human history (from Australopithecus to present day). It focuses on linguistic aspects of bilingualism; models of bilingualism and language acquisition; competence versus performance; effects of bilingualism on other domains of human cognition; brain imaging studies; early versus late bilingualism; opportunities to observe and conduct original research; and implications for educational policies among others. The course is taught in English.
+course_url: "https://ocw.mit.edu/courses/24-906j-linguistic-studies-of-bilingualism-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/24-906j-linguistic-studies-of-bilingualism-fall-2012/78dac14f804ca77cf6265072911f7095_24-906f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-031j-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.031J"
+cross_listed_codes:
+  - "4.608J"
+course_title: "Topics in the Avant-Garde in Literature and Cinema"
+course_slug: "21g-031j-topics-in-the-avant-garde-in-literature-and-cinema-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Charity Scribner"
+subject_primary: "Art History"
+subject_secondary:
+  - "Visual Arts"
+  - "Film and Video"
+  - "Humanities"
+  - "Literature"
+  - "Comparative Literature"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Art History"
+        specialties: []
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  21G.031 examines the terms “avant garde” and “Kulturindustrie” in French and German culture of the early twentieth century. Considering the origins of these concepts in surrealist and dadaist literature, art, and cinema, the course then expands to engage parallel formations across Europe, particularly in the former Soviet Union. Emphasis on the specific historical conditions that enabled these interventions. Guiding questions are these: What was original about the historical avant-garde? What connections between art and revolution did avant-garde writers and artists imagine? What strategies did they deploy to meet their modernist imperatives? To what extent did their projects maintain a critical stance towards the culture industry? Surveying key interventions in the fields of poetry, painting, sculpture, photography, film, and music, the readings also include signal moments in critical thought of the last century. Figures to be considered are: Adorno, Aragon, Bataille, Beckett, Brecht, Breton, Bürger, Duchamp, Eisenstein, Ernst, Jünger, Greenberg, Kandinsky, Malevich, Mayakovsky, and Tzara. Taught in English, but students are encouraged to consult original sources when possible.
+course_url: "https://ocw.mit.edu/courses/21g-031j-topics-in-the-avant-garde-in-literature-and-cinema-spring-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-031j-topics-in-the-avant-garde-in-literature-and-cinema-spring-2003/12dee8e4581b6e628a582fb8f8868f16_21g-031js03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

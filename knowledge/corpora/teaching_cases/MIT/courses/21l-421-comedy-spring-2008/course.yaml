@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-421-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.421"
+cross_listed_codes: []
+course_title: "Comedy"
+course_slug: "21l-421-comedy-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Wyn Kelley"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comedy"
+  - "Comparative Literature"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comedy"
+          - "Comparative Literature"
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course looks at comedy in drama, novels, and films from Classical Greece to the twentieth century. Focusing on examples from Aristophanes, Shakespeare, Cervantes, Molière, Wilde, Chaplin, and Billy Wilder, along with theoretical contexts, the class examines comedy as a transgressive mode with revolutionary social and political implications. This is a Communications Intensive (CI) class with emphasis on discussion, and frequent, short essays.
+course_url: "https://ocw.mit.edu/courses/21l-421-comedy-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/21l-421-comedy-spring-2008/c7c0221b4795ff42360897a2665744b8_21l-421s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

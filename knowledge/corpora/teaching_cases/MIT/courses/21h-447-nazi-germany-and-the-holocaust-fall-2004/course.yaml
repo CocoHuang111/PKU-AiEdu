@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-447-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.447"
+cross_listed_codes: []
+course_title: "Nazi Germany and the Holocaust"
+course_slug: "21h-447-nazi-germany-and-the-holocaust-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Ciarlo"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "Modern History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Political Science"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+          - "Modern History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Political Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The rise and fall of National Socialism is one of the most intensively-studied topics in European history. Nevertheless, after more than half a century, popular views of Nazism in the media and among the public remain simplistic-essentialized by equal parts fascination and horror. Adolf Hitler, for instance, is often portrayed as an evil genius of supernatural ability; while the Nazi state is similarly imagined to have held absolute power over every aspect of its subjects’ lives. Such characterizations allow ordinary Germans to be portrayed as helpless victims of Nazism, ensnared or coerced into submission by forces beyond their control. Another popular characterization is that German culture itself is fundamentally flawed - that all Germans were basically Nazis at heart. This schema conveniently erases the manifestations of fascism in other Western nations, and allows Americans and other Westerners to reassure themselves that the horrors of Nazism could never emerge in their own enlightened national cultures.
+course_url: "https://ocw.mit.edu/courses/21h-447-nazi-germany-and-the-holocaust-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/21h-447-nazi-germany-and-the-holocaust-fall-2004/9d3d8c269a204659a55c7bc08a5b2804_21h-447f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

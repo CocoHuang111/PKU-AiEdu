@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-teaching-humanities-designing-generative-ai-chatbots"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Teaching Humanities by Designing Generative AI Chatbots"
+slug: "teaching-humanities-designing-generative-ai-chatbots"
+source_url: "https://crlt.umich.edu/teaching-humanities-designing-generative-ai-chatbots"
+language: "en"
+published: null
+awarded_year: "2025"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "88f0ff8516ab6ffee30c95adc80e9b5a087b9b78b08ba19038f3d398228a6318"

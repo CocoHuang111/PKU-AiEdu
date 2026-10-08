@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-632-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.632"
+cross_listed_codes: []
+course_title: "Conversational Computer Systems"
+course_slug: "mas-632-conversational-computer-systems-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Mr. Christopher Schmandt"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Human-Computer Interfaces"
+  - "Electrical Engineering"
+  - "Telecommunications"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This class explores interaction with mobile computing systems and telephones by voice, including speech synthesis, recognition, digital recording, and browsing recorded speech. Emphasis on human interface design issues and interaction techniques appropriate for cognitive requirements of speech. Topics include human speech production and perception, speech recognition and text-to-speech algorithms, telephone networks, and spatial and time-compressed listening. Extensive reading from current research literature.
+course_url: "https://ocw.mit.edu/courses/mas-632-conversational-computer-systems-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/mas-632-conversational-computer-systems-fall-2008/2faa50e20f8c6305ba1be87c2719028e_mas-632f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

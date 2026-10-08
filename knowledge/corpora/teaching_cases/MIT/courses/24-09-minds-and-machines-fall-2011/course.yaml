@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-24-09-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.09"
+cross_listed_codes: []
+course_title: "Minds and Machines"
+course_slug: "24-09-minds-and-machines-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alex Byrne"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Humanities"
+  - "Philosophy"
+  - "Science"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: "This course is an introduction to many of the central issues in a branch of philosophy called philosophy of mind."
+course_url: "https://ocw.mit.edu/courses/24-09-minds-and-machines-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/24-09-minds-and-machines-fall-2011/9a372f5249adae1dbfe1d49115469ceb_24-09f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

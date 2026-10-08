@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-15-391-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.391"
+cross_listed_codes: []
+course_title: "Early Stage Capital"
+course_slug: "15-391-early-stage-capital-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Shari Loessberg"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Finance"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Finance"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  If you are an entrepreneur, one of your priorities, in addition to building your company, is ensuring you have enough money at the right times. Early Stage Capital will consider a broad range of questions that entrepreneurs deal with on this front, including the following: What should your strategy and your priorities be in raising early stage capital? What are the market norms and standards in structuring VC deals? What are the critical negotiating strategies and tactics? How will your company be valued? How can you obtain the optimal valuation for your new venture? What are the critical elements in the relationship between venture capitalists and entrepreneurs? How is the “venture model” evolving? Is it broken? What is the impact of Super Angels and micro VCs? These are key questions that face all entrepreneurs in 2010, particularly first-time entrepreneurs. This course aims to prepare you for these decisions, as either a potential entrepreneur or venture capitalist. Using live interactions with leading figures in the venture finance community, most of the class sessions will analyze fundamental strategies of the venture-capital investment process and the critical importance of the relationship between entrepreneur and investor. As well, we will have a tactical focus on demystifying the legalities and jargon of the term sheet and the “A round” financing process. Significantly for 2010, we will also frequently consider the rapid and arguably fundamental change in VC today as the “lean startup” model threatens much of the traditional role and value of the venture investor. Disclaimer: The websites for this course and the materials they offer are provided for educational use only. They are not a substitute for the advice of an attorney and no attorney-client relationship is created by using them. All materials are provided “as-is”, without any express or implied warranties.
+course_url: "https://ocw.mit.edu/courses/15-391-early-stage-capital-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/15-391-early-stage-capital-fall-2010/b8cb8ceba3fb91b97b254bed42c741e4_15-391f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

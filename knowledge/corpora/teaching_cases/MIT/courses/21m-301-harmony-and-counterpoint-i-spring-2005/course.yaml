@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-301-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.301"
+cross_listed_codes: []
+course_title: "Harmony and Counterpoint I"
+course_slug: "21m-301-harmony-and-counterpoint-i-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Brian Robison"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Performance"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Performance"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  In this subject we will study the basic harmonic, melodic, and formal practices of western music, principally the classical music of central Europe during the eighteenth century. Topics will include diatonic harmony, simple counterpoint in two parts, and tones of figuration. The coursework will combine composition, listening, analysis, and work in sight-singing and keyboard musicianship.
+course_url: "https://ocw.mit.edu/courses/21m-301-harmony-and-counterpoint-i-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/21m-301-harmony-and-counterpoint-i-spring-2005/b98cc3acc6f587077d153966785e29e7_21m-301s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

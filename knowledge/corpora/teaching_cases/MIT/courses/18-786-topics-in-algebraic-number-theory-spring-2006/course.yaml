@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-18-786-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.786"
+cross_listed_codes: []
+course_title: "Topics in Algebraic Number Theory"
+course_slug: "18-786-topics-in-algebraic-number-theory-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Kiran Kedlaya"
+subject_primary: "Algebra and Number Theory"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course is a first course in algebraic number theory. Topics to be covered include number fields, class numbers, Dirichlet’s units theorem, cyclotomic fields, local fields, valuations, decomposition and inertia groups, ramification, basic analytic methods, and basic class field theory. An additional theme running throughout the course will be the use of computer algebra to investigate number-theoretic questions; this theme will appear primarily in the problem sets.
+course_url: "https://ocw.mit.edu/courses/18-786-topics-in-algebraic-number-theory-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/18-786-topics-in-algebraic-number-theory-spring-2006/06e3b8f52ff0b481586b699a9f7c85ef_18-786s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

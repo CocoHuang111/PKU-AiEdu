@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-22-05-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.05"
+cross_listed_codes: []
+course_title: "Neutron Science and Reactor Physics"
+course_slug: "22-05-neutron-science-and-reactor-physics-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Benoit Forget"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "High Energy Physics"
+  - "Nuclear Physics"
+  - "Particle Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "High Energy Physics"
+          - "Nuclear Physics"
+          - "Particle Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces fundamental properties of the neutron. It covers reactions induced by neutrons, nuclear fission, slowing down of neutrons in infinite media, diffusion theory, the few-group approximation, point kinetics, and fission-product poisoning. It emphasizes the nuclear physics bases of reactor design and its relationship to reactor engineering problems.
+course_url: "https://ocw.mit.edu/courses/22-05-neutron-science-and-reactor-physics-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/22-05-neutron-science-and-reactor-physics-fall-2009/3451a78bfe068b80dbb35087d9fd72a8_22-68js03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

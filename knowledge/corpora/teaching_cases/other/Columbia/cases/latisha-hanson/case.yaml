@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-latisha-hanson"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Latisha Hanson, DNP, PMHNP-BC"
+slug: "latisha-hanson"
+source_url: "https://ctl.columbia.edu/transformations/faculty/latisha-hanson/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "7064de0911dc7302772853215cd9c4a60f2bbbc774119e260fcdf33a1f64b3ef"

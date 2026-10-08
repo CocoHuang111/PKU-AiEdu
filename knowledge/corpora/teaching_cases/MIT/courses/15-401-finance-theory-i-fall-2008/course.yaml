@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-15-401-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.401"
+cross_listed_codes: []
+course_title: "Finance Theory I"
+course_slug: "15-401-finance-theory-i-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Andrew Lo"
+subject_primary: "Finance"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course introduces the core theory of modern financial economics and financial management, with a focus on capital markets and investments. Topics include functions of capital markets and financial intermediaries, asset valuation, fixed-income securities, common stocks, capital budgeting, diversification and portfolio selection, equilibrium pricing of risky assets, the theory of efficient markets, and an introduction to derivatives and options.
+course_url: "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/5ec2e66e89b03d5c5c7806672a26167e_15-401f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

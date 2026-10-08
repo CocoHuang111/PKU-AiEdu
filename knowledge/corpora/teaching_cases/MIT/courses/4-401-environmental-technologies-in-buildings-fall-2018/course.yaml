@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-4-401-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.401"
+cross_listed_codes:
+  - "4.464"
+course_title: "Environmental Technologies in Buildings"
+course_slug: "4-401-environmental-technologies-in-buildings-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christoph Reinhart"
+subject_primary: "Buildings"
+subject_secondary:
+  - "Fine Arts"
+  - "Architecture"
+  - "Environmental Design"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Buildings"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course focuses on the thermal, luminous, and acoustic behavior of buildings, examining the basic scientific principles underlying these phenomena and introducing students to technologies and analysis techniques for designing comfortable indoor environments. Students are challenged to apply these techniques and explore the role light, energy, and sound can play in shaping architecture.
+course_url: "https://ocw.mit.edu/courses/4-401-environmental-technologies-in-buildings-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/4-401-environmental-technologies-in-buildings-fall-2018/3dabcea4815af7e1fdbc9fd88a814bab_4-401f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-350-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.350"
+cross_listed_codes: []
+course_title: "Social Study of Science and Technology"
+course_slug: "sts-350-social-study-of-science-and-technology-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Stefan Helmreich"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Philosophy"
+  - "Social Science"
+  - "Sociology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+      - name: "Philosophy"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course surveys canonical and recent theories and methods in science studies. We will organize our discussions around the concept of “reproduction,” referring variously to: Scientific reproduction (how results are replicated in lab, field, disciplinary contexts) Social reproduction (how social knowledge and relations are regenerated over time) Biological reproduction (how organic substance is managed in the genetic age) Electronic reproduction (how information is reassembled in techniques of transcription, simulation, computation). Examining intersections and disruptions of these genres of reproduction, we seek to map relations among our social, biological, and electronic lives.
+course_url: "https://ocw.mit.edu/courses/sts-350-social-study-of-science-and-technology-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/sts-350-social-study-of-science-and-technology-spring-2004/c5c0728bfb0c5e68c99dbfce89777ef7_sts-350s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

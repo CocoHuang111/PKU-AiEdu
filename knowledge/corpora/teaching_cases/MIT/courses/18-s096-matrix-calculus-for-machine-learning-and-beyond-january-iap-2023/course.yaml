@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-18-s096-january-iap-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.S096"
+cross_listed_codes: []
+course_title: "Matrix Calculus for Machine Learning and Beyond"
+course_slug: "18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023"
+term: "January IAP"
+year: 2023
+as_taught_in: "January IAP 2023"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alan Edelman"
+  - "Prof. Steven G. Johnson"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Calculus"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Calculus"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Readings"
+description: |
+  We all know that calculus courses such as 18.01 Single Variable Calculus and 18.02 Multivariable Calculus cover univariate and vector calculus, respectively. Modern applications such as machine learning and large-scale optimization require the next big step, “matrix calculus” and calculus on arbitrary vector spaces. This class covers a coherent approach to matrix calculus showing techniques that allow you to think of a matrix holistically (not just as an array of scalars), generalize and compute derivatives of important matrix factorizations and many other complicated-looking operations, and understand how differentiation formulas must be reimagined in large-scale computing.
+course_url: "https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/"
+image_url: "https://ocw.mit.edu/courses/18-s096-matrix-calculus-for-machine-learning-and-beyond-january-iap-2023/mit18_s096_iap23_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

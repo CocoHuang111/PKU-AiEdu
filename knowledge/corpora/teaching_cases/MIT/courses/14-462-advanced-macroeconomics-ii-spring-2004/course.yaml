@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-14-462-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.462"
+cross_listed_codes: []
+course_title: "Advanced Macroeconomics II"
+course_slug: "14-462-advanced-macroeconomics-ii-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. George-Marios Angeletos"
+  - "Prof. Gilles Saint-Paul"
+subject_primary: "Economics"
+subject_secondary:
+  - "Industrial Organization"
+  - "Macroeconomics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  14.462 is the second semester of the second-year Ph.D. macroeconomics sequence. The course is intended to introduce the students, not only to particular areas of current research, but also to some very useful analytical tools. It covers a selection of topics that varies from year to year. Recent topics include: Growth and Fluctuations Heterogeneity and Incomplete Markets Optimal Fiscal Policy Time Inconsistency Reputation Coordination Games and Macroeconomic Complementarities Information
+course_url: "https://ocw.mit.edu/courses/14-462-advanced-macroeconomics-ii-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/14-462-advanced-macroeconomics-ii-spring-2004/eb981c9f19c1563a1faca0d4422e090e_14-462s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

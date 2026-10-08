@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-963-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.963"
+cross_listed_codes: []
+course_title: "Advanced Strategy"
+course_slug: "15-963-advanced-strategy-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Rebecca Henderson"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Leadership"
+  - "Operations Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course draws on a wide range of perspectives to explore the roots of long term competitive advantage in unusually successful firms. Using a combination of cases, simulations, readings and, most importantly, lively discussion, the course will explore the ways in which long term advantage is built from first mover advantage, increasing returns, and unique organizational competencies. We will focus particularly on the ways in which the actions of senior management build competitive advantage over time, and on the strategic implications of understanding the roots of a firm’s success.
+course_url: "https://ocw.mit.edu/courses/15-963-advanced-strategy-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/15-963-advanced-strategy-spring-2008/075d066c8a51a4b1a0ff295dc4367338_15-963s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

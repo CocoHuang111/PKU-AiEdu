@@ -1,0 +1,15 @@
+> 检索摘要：9.458 Parkinson's Disease Workshop（Summer 2006，Undergraduate）的「Related Resources」。页内标题：Related Resources；Resources。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/9-458-parkinsons-disease-workshop-summer-2006/pages/related-resources/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Related Resources
+
+### Resources
+
+[Parkinson’s Disease Information](https://www.ninds.nih.gov/Disorders/All-Disorders/Parkinsons-Disease-Information-Page) compiled by the National Institute of Neurological Disorders and Stroke (NINDS).
+
+[MedlinePlus](http://www.nlm.nih.gov/medlineplus/parkinsonsdisease.html?itool=books&referralid=gnd.section.212) has links on Parkinson disease compiled by the National Library of Medicine.

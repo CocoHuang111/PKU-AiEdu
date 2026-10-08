@@ -1,0 +1,23 @@
+> 检索摘要：ESD.71 Engineering Systems Analysis for Design（Fall 2008，Graduate）的「Readings」。页内标题：Readings；Readings by Session。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/esd-71-engineering-systems-analysis-for-design-fall-2008/pages/readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Readings
+
+The primary text for the class consists of draft chapters from the new text that Prof. de Neufville is preparing in collaboration with Prof. Stephan Scholtes, his collaborator at the University of Cambridge.
+
+This material is supplemented by chapters from:
+
+de Neufville, Richard. *Applied Systems Analysis*. New York, NY: McGraw-Hill, 1990. ISBN: 9780070163720.
+
+Textbook chapters from *Applied Systems Analysis* can also be found [here](https://web.mit.edu/ardent/www/ASA_Text/asa_Text_index.html).
+
+### Readings by Session
+
+The following table shows the schedule of readings from *Applied Systems Analysis*.
+
+<table><tr><th>SES #</th><th>TOPICS</th><th>READINGS</th></tr><tr><td colspan="3">Introduction to course</td></tr><tr><td>L1</td><td>Motivation: paradigm shift from best outcome to moving distribution of outcomes to right</td><td></td></tr><tr><td colspan="3">Part 1: basics, recognition of uncertainty, valuation fundamentals, and timing issues</td></tr><tr><td colspan="3">Conventional valuation and recognition of uncertainty</td></tr><tr><td>L2</td><td>Discounted cash flow and present value <br> Criteria for valuation</td><td>Chapters 10, 11, 13</td></tr><tr><td>L3</td><td>Uncertainty recognition</td><td></td></tr><tr><td>L4</td><td>Choice of discount rate <br> Opportunity cost, weighted average cost of capital, capital asset pricing model</td><td>Chapter 12</td></tr><tr><td colspan="3">Timing of development</td></tr><tr><td colspan="3">Basic issue: build now or later?</td></tr><tr><td>L5</td><td>Asphalt vs. concrete highways <br> Basic system model: production function, economies of scale</td><td>Chapter 2</td></tr><tr><td>L6</td><td>Optimum expansion size deterministic case</td><td></td></tr><tr><td>L7</td><td>Determining economies of scale from cost function <br> Constrained optimization and marginal analysis</td><td></td></tr><tr><td>L8</td><td>Sources of flexibility <br> “On” systems-timing <br> “In” systems-timing and function <br> Case examples</td><td></td></tr><tr><td colspan="3">Part 2: uncertainty modeling and flexibility valuation methods</td></tr><tr><td colspan="3">Decision analysis</td></tr><tr><td>L9</td><td>Uncertainty assessment</td><td>Chapter 15</td></tr><tr><td>L10</td><td>Primitive models <br> Introduction to decision analysis</td><td>Chapter 16</td></tr><tr><td>L11</td><td>Practical issues <br> Solutions by “folding back” <br> Flaw of averages</td><td></td></tr><tr><td>L12</td><td>Distribution of outcomes for decision analysis <br> Value at risk and gain, multiple value metrics</td><td></td></tr><tr><td>L13</td><td>Benefits of waiting: value of information</td><td>Chapter 17</td></tr><tr><td>L14</td><td>Decision analysis examples: oil platform, wind energy, silicon wafer plant, Tokyo/Haneda runway</td><td></td></tr><tr><td>L15</td><td>Mid-semester review</td><td></td></tr><tr><td>L16</td><td>Midterm exam</td><td></td></tr><tr><td colspan="3">Lattice analysis</td></tr><tr><td>L17</td><td>Lattice model to represent uncertainty <br> Regression to determine trend and variability (μ and σ)</td><td></td></tr><tr><td>L18</td><td>Dynamic programming: systematic solution by “folding back”</td><td>Chapter 7</td></tr><tr><td>L19</td><td>Valuation of lattice by dynamic programming <br> Satellite case study</td><td></td></tr><tr><td>L20</td><td>Combining lattice and decision analysis <br> Case studies: aqua line tunnel</td><td></td></tr><tr><td>L21</td><td>Conceptual valuation and application</td><td></td></tr><tr><td>L22</td><td>Comparing decision analysis and lattice analysis</td><td></td></tr><tr><td>L23</td><td>Definition and analysis of “hotspots” using change propagation analysis <br> Path dependency <br> Comments on draft application portfolio <br> Case studies: car platforms, hydroelectric dam, mini unmanned aerial vehicle</td><td></td></tr><tr><td>L24</td><td>Perspective on flexibility in design and real options analysis (Part 1)</td><td></td></tr><tr><td>L25</td><td>Perspective on flexibility in design and real options analysis (Part 2)</td><td></td></tr><tr><td>L26</td><td>Review for final exam</td><td></td></tr></table>

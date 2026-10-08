@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-12-102-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.102"
+cross_listed_codes: []
+course_title: "Environmental Earth Science"
+course_slug: "12-102-environmental-earth-science-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Samuel Bowring"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Environmental Science"
+  - "Geochemistry"
+  - "Geology"
+  - "Planetary Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+          - "Geochemistry"
+          - "Geology"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  The geologic record demonstrates that our environment has changed over a variety of time scales from seconds to billions of years. This course explores the many ways in which geologic processes control and modify the Earth’s environment and serves as an introduction to Environmental Earth Science Field Course (12.120), which addresses field applications of these principles in the American Southwest.
+course_url: "https://ocw.mit.edu/courses/12-102-environmental-earth-science-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/12-102-environmental-earth-science-fall-2005/ba5db8a6258d44fcb3f67324e9a44d07_12-102f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

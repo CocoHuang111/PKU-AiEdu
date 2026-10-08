@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-20-420j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.420J"
+cross_listed_codes:
+  - "10.538J"
+course_title: "Biomolecular Kinetics and Cellular Dynamics (BE.420J)"
+course_slug: "20-420j-biomolecular-kinetics-and-cellular-dynamics-be-420j-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Bruce Tidor"
+  - "Prof. Karl Wittrup"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomechanics"
+  - "Computational Biology"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Cell Biology"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomechanics"
+          - "Computational Biology"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Cell Biology"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This subject deals primarily with kinetic and equilibrium mathematical models of biomolecular interactions, as well as the application of these quantitative analyses to biological problems across a wide range of levels of organization, from individual molecular interactions to populations of cells.
+course_url: "https://ocw.mit.edu/courses/20-420j-biomolecular-kinetics-and-cellular-dynamics-be-420j-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/20-420j-biomolecular-kinetics-and-cellular-dynamics-be-420j-fall-2004/ec443edc179b4dd44f89b6d9330ea3db_20-420jf04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

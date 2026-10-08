@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-225j-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.225J"
+cross_listed_codes:
+  - "WGS.161J"
+course_title: "Gender and the Law in U.S. History"
+course_slug: "21h-225j-gender-and-the-law-in-u-s-history-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "History"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christopher Capozzola"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Legal Studies"
+  - "Society"
+  - "Gender Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Legal Studies"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject explores the legal history of the United States as a gendered system. It examines how women have shaped the meanings of American citizenship through pursuit of political rights such as suffrage, jury duty, and military service, how those political struggles have varied for across race, religion, and class, as well as how the legal system has shaped gender relations for both women and men through regulation of such issues as marriage, divorce, work, reproduction, and the family. The course readings will draw from primary and secondary materials in American history, as well as some court cases. However, the focus of the class is on the broader relationship between law and society, and no technical legal knowledge is required or assumed.
+course_url: "https://ocw.mit.edu/courses/21h-225j-gender-and-the-law-in-u-s-history-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21h-225j-gender-and-the-law-in-u-s-history-spring-2004/f2b9402e211947c3e24d77f3c2a4c844_21h-225js04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

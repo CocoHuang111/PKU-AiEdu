@@ -1,0 +1,18 @@
+> 检索摘要：15.992 S-Lab: Laboratory for Sustainable Business（Spring 2008，Graduate）的「Calendar」。页内标题：Calendar；Speakers。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/15-992-s-lab-laboratory-for-sustainable-business-spring-2008/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+### Speakers
+
+Henderson = Rebecca M. Henderson
+Locke = Richard M. Locke
+Slaughter = Sarah Slaughter
+Sterman = John Sterman
+
+<table><tr><th>SES #</th><th>TOPICS</th><th>SPEAKERS</th><th>KEY DATES</th></tr><tr><td colspan="4">Framing the challenge</td></tr><tr><td colspan="4">I. Introduction</td></tr><tr><td>1</td><td>Course overview</td><td>Locke; Lorrie Vogel, Manager, Nike “Considered” Brand</td><td>Assignment 1 out</td></tr><tr><td>2</td><td>The state of the world</td><td>Sterman</td><td>Assignment 1 due</td></tr><tr><td>3</td><td>Organizational response</td><td>Henderson</td><td></td></tr><tr><td colspan="4">Framing a response</td></tr><tr><td colspan="4">I. Get your own house in order</td></tr><tr><td>4</td><td>Redefining traditional business models</td><td>Locke; Ricardo Marini, Banco Itau</td><td></td></tr><tr><td>5</td><td>Walking the talk: sustainability and new product development</td><td>Locke</td><td>Project bids due two days before Ses #5</td></tr><tr><td>6</td><td>Sustainable retail. Can big box stores really go green?</td><td>Sterman</td><td></td></tr><tr><td colspan="4">II. Restructure the supply chain</td></tr><tr><td>7</td><td>Ensuring sustainability along the supply chain</td><td>Locke</td><td></td></tr><tr><td>8</td><td>Ensuring the sustainability of shared resources</td><td>Henderson</td><td></td></tr><tr><td>9</td><td>Social sustainability and labor standards</td><td>Locke</td><td>Work plan due</td></tr><tr><td colspan="4">III. Be aware of what is possible</td></tr><tr><td>10</td><td>What is legal? What is politically feasible?</td><td>Locke; Jeff Shames, MIT Sloan</td><td></td></tr><tr><td>11</td><td>Pause for reflection: everything’s connected</td><td></td><td></td></tr><tr><td colspan="4">IV. Build a new industry (or rebuild an old one)</td></tr><tr><td>12</td><td>Alternative transportation networks: simulation</td><td>Sterman</td><td></td></tr><tr><td>13</td><td>Case example of alternative transportation opportunities</td><td>Sterman</td><td>Interim report due</td></tr><tr><td>14</td><td>Energy efficiency as a new market</td><td>Henderson</td><td>Assignment 2 out</td></tr><tr><td>15</td><td>Green buildings: new markets and services</td><td>Slaughter</td><td>Assignment 2 due</td></tr><tr><td>16</td><td>Sustainable infrastructure and international markets</td><td>Slaughter</td><td></td></tr><tr><td>17</td><td>Organic foods: creation of a new industry</td><td>Henderson</td><td></td></tr><tr><td>18</td><td>Growth with vision</td><td>Henderson</td><td></td></tr><tr><td colspan="4">V. Change the world</td></tr><tr><td>19</td><td>Action at the macro level: setting a price for carbon</td><td>Sterman</td><td></td></tr><tr><td>20</td><td>Action at the industry and societal levels: industry collaborations, certification efforts, and partnerships with NGOs</td><td>Locke; Peter Senge</td><td></td></tr><tr><td>21</td><td>Action at the community level</td><td>Henderson; Bill Reed</td><td></td></tr><tr><td>22</td><td>Individual action</td><td>Sterman</td><td>Draft final report due</td></tr><tr><td colspan="4">VI. Summary</td></tr><tr><td>23</td><td>Poster session: project presentations</td><td></td><td>Project poster due</td></tr><tr><td>24</td><td>Reflections</td><td></td><td>Final report due</td></tr></table>

@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-410j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.410J"
+cross_listed_codes:
+  - "6.07J"
+course_title: "Projects in Microscale Engineering for the Life Sciences"
+course_slug: "hst-410j-projects-in-microscale-engineering-for-the-life-sciences-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Dennis Freeman"
+  - "Prof. Martha Gray"
+  - "Prof. Alexander Aranyosi"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Cell and Tissue Engineering"
+  - "Mechanical Engineering"
+  - "Microtechnology"
+  - "Nanotechnology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Cell and Tissue Engineering"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Microtechnology"
+      - name: "Nanotechnology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course is a project-based introduction to manipulating and characterizing cells and biological molecules using microfabricated tools. It is designed for first year undergraduate students. In the first half of the term, students perform laboratory exercises designed to introduce (1) the design, manufacture, and use of microfluidic channels, (2) techniques for sorting and manipulating cells and biomolecules, and (3) making quantitative measurements using optical detection and fluorescent labeling. In the second half of the term, students work in small groups to design and test a microfluidic device to solve a real-world problem of their choosing. Includes exercises in written and oral communication and team building.
+course_url: "https://ocw.mit.edu/courses/hst-410j-projects-in-microscale-engineering-for-the-life-sciences-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/hst-410j-projects-in-microscale-engineering-for-the-life-sciences-spring-2007/ece33f1709abc4338e89140091f93da1_hst-410js07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-14-06-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.06"
+cross_listed_codes: []
+course_title: "Intermediate Macroeconomic Theory"
+course_slug: "14-06-intermediate-macroeconomic-theory-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. George-Marios Angeletos"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Systems Optimization"
+  - "Social Science"
+  - "Economics"
+  - "Macroeconomics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is a survey of modern macroeconomics at a quite advanced level. Topics include the neoclassical growth model, overlapping generations, endogenous growth models, business cycles, incomplete nominal adjustment, incomplete financial markets, fiscal and monetary policy, consumption and savings, and unemployment. The course is also an introduction to the mathematical tools used in modern macroeconomics, including dynamic systems, optimal control, and dynamic programming.
+course_url: "https://ocw.mit.edu/courses/14-06-intermediate-macroeconomic-theory-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/14-06-intermediate-macroeconomic-theory-spring-2004/f9bed8115c2b43da40c1ecb4bedf5e10_14-06s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

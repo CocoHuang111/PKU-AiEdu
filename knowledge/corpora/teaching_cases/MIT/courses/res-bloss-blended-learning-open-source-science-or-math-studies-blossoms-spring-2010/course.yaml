@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-res-bloss-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.BLOSS"
+cross_listed_codes: []
+course_title: "Blended Learning Open Source Science or Math Studies (BLOSSOMS)"
+course_slug: "res-bloss-blended-learning-open-source-science-or-math-studies-blossoms-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments: []
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Richard C. Larson"
+subject_primary: "Engineering"
+subject_secondary:
+  - "Mathematics"
+  - "Science"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+  - "Educational Technology"
+topic_tree:
+  - name: "Engineering"
+    subtopics: []
+  - name: "Mathematics"
+    subtopics: []
+  - name: "Science"
+    subtopics: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  BLOSSOMS stands for Blended Learning Science or Math Studies. It is a project sponsored by MIT LINC (Learning International Networks Consortium) a consortium of educators from around the world who are interested in using distance and e-Learning technologies to help their respective countries increase access to quality education for a larger percentage of the population. BLOSSOMS Online
+course_url: "https://ocw.mit.edu/courses/res-bloss-blended-learning-open-source-science-or-math-studies-blossoms-spring-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/res-bloss-blended-learning-open-source-science-or-math-studies-blossoms-spring-2010/2a9faef91f2365fd82e80c93b9d37a8b_res-blosss10.gif
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

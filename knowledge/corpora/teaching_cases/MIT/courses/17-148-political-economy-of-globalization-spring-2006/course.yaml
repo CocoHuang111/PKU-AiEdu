@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-17-148-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.148"
+cross_listed_codes: []
+course_title: "Political Economy of Globalization"
+course_slug: "17-148-political-economy-of-globalization-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Suzanne Berger"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "International Economics"
+  - "Political Economy"
+  - "Political Science"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "International Economics"
+          - "Political Economy"
+      - name: "Political Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This is a graduate seminar for students who already have some familiarity with issues in political economy and/or European politics. The objective is to examine the ways in which changes in the international economy and the regimes that regulate it interact with domestic politics, policy-making, and the institutional structures of the political economy in industrialized democracies.
+course_url: "https://ocw.mit.edu/courses/17-148-political-economy-of-globalization-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/17-148-political-economy-of-globalization-spring-2006/9df6be892545784adb14d04e3ae4cd6b_17-148s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

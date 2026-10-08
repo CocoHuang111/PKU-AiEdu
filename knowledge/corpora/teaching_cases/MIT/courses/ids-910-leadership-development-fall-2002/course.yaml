@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-ids-910-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "IDS.910"
+cross_listed_codes:
+  - "IDS.910 (formerly ESD.801)"
+course_title: "Leadership Development"
+course_slug: "ids-910-leadership-development-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Institute for Data, Systems, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joel Cutcher-Gershenfeld"
+subject_primary: "Leadership"
+subject_secondary: []
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Students work in a team environment to develop five core leadership capabilities: Visioning, Analyzing, Relating, Inventing and Enabling. In addition, students participate in a negotiation simulation, improve communication skills and learn about cross-cultural negotiation. A structured set of outdoor experiences complements classroom activities. Restricted to entering students in the Technology and Policy Program.
+course_url: "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2002/e14522d5d32e33a270c1602a248c85fa_ids-910f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

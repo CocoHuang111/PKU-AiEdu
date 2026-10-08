@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-263-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.263"
+cross_listed_codes: []
+course_title: "Music Since 1960"
+course_slug: "21m-263-music-since-1960-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Brian Robison"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Music"
+  - "Music History"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course begins with the premise that the 1960s mark a great dividing point in the history of 20th century Western musical culture, and explores the ways in which various social and artistic concerns of composers, performers, and listeners have evolved since that decade. It focuses on works by classical composers from around the world. Topics include the impact of rock, as it developed during the 1960s - 70s; the concurrent emergence of post serial, neotonal, minimalist, and new age styles; the globalization of Western musical traditions; the impact of new technologies; and the significance of music video, video games, and other versions of multimedia. The course interweaves discussion of these topics with close study of seminal musical works, evenly distributed across the four decades since 1960; works by MIT composers are included.
+course_url: "https://ocw.mit.edu/courses/21m-263-music-since-1960-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/21m-263-music-since-1960-spring-2006/238804a45b069272ea33ea6765c365a6_21m-263s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

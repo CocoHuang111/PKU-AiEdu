@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-458-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.458"
+cross_listed_codes: []
+course_title: "The Bible"
+course_slug: "21l-458-the-bible-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ina Lipkowitz"
+subject_primary: "History"
+subject_secondary:
+  - "Ancient History"
+  - "Literature"
+  - "Comparative Literature"
+  - "Criticism"
+  - "Religion"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Ancient History"
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+      - name: "Religion"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is an introduction to major books from both the Hebrew Bible and the New Testament. Particular attention has been given to literary techniques, issues resulting from translation from the original Hebrew and Greek, and the different historical periods that produced and are reflected in the Bible. Investigation of the Bible as influence in later narrative, philosophic, and artistic traditions.
+course_url: "https://ocw.mit.edu/courses/21l-458-the-bible-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/21l-458-the-bible-spring-2007/abd3b3899e44a43c3f6e411abb313bcc_21l-458s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-525-fall-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.525"
+cross_listed_codes: []
+course_title: "Oceans and Us"
+course_slug: "21a-525-oceans-and-us-fall-2025"
+term: "Fall"
+year: 2025
+as_taught_in: "Fall 2025"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Stefan Helmreich"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Climate Studies"
+  - "Environmental Science"
+  - "Oceanography"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+          - "Environmental Science"
+          - "Oceanography"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This course explores how people have understood and encountered the ocean, cross-culturally, as a site of danger, pleasure, travel, food-procurement, commerce, and tourism. Topics include imperial voyaging, piracy, the invention of seaside vacations, the politics of fishing, the culture of onboard living in surface and submarine ships, the rise of undersea entertainment and documentary, regimes of managing maritime spaces and species, and the emergence of the ocean as an object of global ecological concern, particularly around climate change and sea level rise.
+course_url: "https://ocw.mit.edu/courses/21a-525-oceans-and-us-fall-2025/"
+image_url: "https://ocw.mit.edu/courses/21a-525-oceans-and-us-fall-2025/mit21a_525_f25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

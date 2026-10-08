@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-927j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.927J"
+cross_listed_codes:
+  - "WGS.610J"
+course_title: "The Economic History of Work and Family"
+course_slug: "21h-927j-the-economic-history-of-work-and-family-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "History"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anne McCants"
+subject_primary: "History"
+subject_secondary:
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+  - "Economics"
+  - "Labor Economics"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+      - name: "Economics"
+        specialties:
+          - "Labor Economics"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course will explore the relation of women and men in both pre-industrial and modern societies to the changing map of public and private (household) work spaces, examining how that map affected their opportunities for both productive activity and the consumption of goods and leisure. The reproductive strategies of women, either in conjunction with or in opposition to their families, will be the third major theme of the course. We will consider how a place and an ideal of the “domestic” arose in the early modern west, to what extent it was effective in limiting the economic position of women, and how it has been challenged, and with what success, in the post-industrial period. Finally, we will consider some of the policy implications for contemporary societies as they respond to changes in the composition of the paid work force, as well as to radical changes in their national demographic profiles. Although most of the material for the course will focus on western Europe since the Middle Ages and on the United States, we will also consider how these issues have played themselves out in non-western cultures.
+course_url: "https://ocw.mit.edu/courses/21h-927j-the-economic-history-of-work-and-family-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/21h-927j-the-economic-history-of-work-and-family-spring-2005/c1cf2a3ba368f97b06633f94f688a2cf_21h-927js05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

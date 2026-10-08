@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-s898-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.S898"
+cross_listed_codes:
+  - "12.S992"
+course_title: "Climate Change Seminar"
+course_slug: "6-s898-climate-change-seminar-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Alan Edelman"
+  - "Prof. John Fernandez"
+  - "Prof. Ronald Rivest"
+  - "Henri Drake"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Modeling and Simulation"
+  - "Science"
+  - "Earth Science"
+  - "Climate Studies"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This course provides a broad overview of issues related to climate change, with an emphasis on those aspects most relevant to computer scientists. Topics include climate science, climate models and simulations, decision-making under uncertainty, economics, mitigation strategies, adaptation strategies, geoengineering, policy-making, messaging, and politics.The course will culminate in a presentation of a research project which might include a paper, a blog, software etc.
+course_url: "https://ocw.mit.edu/courses/6-s898-climate-change-seminar-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/6-s898-climate-change-seminar-fall-2019/a683d929b77335ed83e3baf8a1492a9f_6-s898f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

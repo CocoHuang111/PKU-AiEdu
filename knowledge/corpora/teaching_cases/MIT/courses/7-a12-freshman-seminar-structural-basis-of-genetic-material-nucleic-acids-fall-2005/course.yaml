@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-7-a12-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.A12"
+cross_listed_codes: []
+course_title: "Freshman Seminar: Structural Basis of Genetic Material: Nucleic Acids"
+course_slug: "7-a12-freshman-seminar-structural-basis-of-genetic-material-nucleic-acids-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Shuguang Zhang"
+subject_primary: "Biology"
+subject_secondary:
+  - "Genetics"
+  - "Structural Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Genetics"
+          - "Structural Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Since the discovery of the structure of the DNA double helix in 1953 by Watson and Crick, the information on detailed molecular structures of DNA and RNA, namely, the foundation of genetic material, has expanded rapidly. This discovery is the beginning of the “Big Bang” of molecular biology and biotechnology. In this seminar, students discuss, from a historical perspective and current developments, the importance of pursuing the detailed structural basis of genetic materials.
+course_url: "https://ocw.mit.edu/courses/7-a12-freshman-seminar-structural-basis-of-genetic-material-nucleic-acids-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/7-a12-freshman-seminar-structural-basis-of-genetic-material-nucleic-acids-fall-2005/f0b11184d1cae25b413329e174abb589_7-a12f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

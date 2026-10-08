@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-932-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.932"
+cross_listed_codes: []
+course_title: "Technology Policy Organizations"
+course_slug: "esd-932-technology-policy-organizations-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joel Cutcher-Gershenfeld"
+subject_primary: "Organizational Behavior"
+subject_secondary: []
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Technology Policy Organizations and its sequel, ESD.933, Technology Policy Negotiations and Dispute Resolution, form a sequence on Organizational Processes in Technology Policy. This course features an overall framework for understanding the increasingly networked, flat, flexible and diverse nature of organizations, as well as a close look at the many relevant types of organizations, including regulatory, entrepreneurial, multi-national, and non-governmental non-profit. Key organizational processes, including individual motivation, teamwork, and systems change are featured. The core assignment features a series of industry studies in which students conduct field interviews (in phone or in person) of key stakeholders on a pressing policy challenge in that industry and analyze the impact of organizational factors on policy success.
+course_url: "https://ocw.mit.edu/courses/esd-932-technology-policy-organizations-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/esd-932-technology-policy-organizations-spring-2005/333e3f767e194aa7ed7d4fd384be4814_esd-932s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

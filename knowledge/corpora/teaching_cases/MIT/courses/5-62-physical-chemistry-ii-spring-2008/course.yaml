@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-5-62-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.62"
+cross_listed_codes: []
+course_title: "Physical Chemistry II"
+course_slug: "5-62-physical-chemistry-ii-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Robert Field"
+  - "Prof. Robert Guy Griffin"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course covers elementary statistical mechanics, transport properties, kinetic theory, solid state, reaction rate theory, and chemical reaction dynamics. Acknowledgements The staff for this course would like to acknowledge that these course materials include contributions from past instructors, textbooks, and other members of the MIT Chemistry Department affiliated with course #5.62. Since the following works have evolved over a period of many years, no single source can be attributed.
+course_url: "https://ocw.mit.edu/courses/5-62-physical-chemistry-ii-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/5-62-physical-chemistry-ii-spring-2008/7e210e0252be4b2092bce2aef84e994f_5-62s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

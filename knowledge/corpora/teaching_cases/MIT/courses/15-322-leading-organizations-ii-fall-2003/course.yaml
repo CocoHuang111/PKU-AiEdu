@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-15-322-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.322"
+cross_listed_codes: []
+course_title: "Leading Organizations II"
+course_slug: "15-322-leading-organizations-ii-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Van Maanen"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Management"
+  - "Organizational Behavior"
+  - "Social Science"
+  - "Sociology"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Through lectures, discussions, and class exercises, 15.322 analyzes the human processes underlying organizational behavior and change. The class makes students aware of the challenge of organizational change and equips them to better handle it. There are many psychological and sociological phenomena that regularly occur in organizations, though many of these forces are difficult to see. The aim is to increase the students’ understanding of these forces – in themselves and in others – so they become more visible and manageable. The prerequisite for this course is 15.321 Leading Organizations I .
+course_url: "https://ocw.mit.edu/courses/15-322-leading-organizations-ii-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/15-322-leading-organizations-ii-fall-2003/7f55ed21ef99622ec0f0045abcd5cb2f_15-322f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

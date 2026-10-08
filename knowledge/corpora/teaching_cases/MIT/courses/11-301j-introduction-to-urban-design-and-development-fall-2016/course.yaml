@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-301j-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.301J"
+cross_listed_codes:
+  - "4.252J"
+course_title: "Introduction to Urban Design and Development"
+course_slug: "11-301j-introduction-to-urban-design-and-development-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dennis Frenchman"
+  - "Colleen Xi Qiu"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course examines both the structure of cities and the ways they can be changed. It introduces graduate students to theories about how cities are formed, and the practice of urban design and development, using U.S. and international examples. The course is organized into two parts: Part 1 analyzes the forces which act to shape and to change cities; Part 2 surveys key models of physical form and social intervention that have been deployed to resolve competing forces acting on the city. This course includes models of urban analysis, contemporary theories of urban design, and implementation strategies. Lectures in this course are supplemented by discussion periods, student work, and field trips.
+course_url: "https://ocw.mit.edu/courses/11-301j-introduction-to-urban-design-and-development-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/11-301j-introduction-to-urban-design-and-development-fall-2016/e2e811b52da0b8152b35f4e4d7a58d35_11-301Jf16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

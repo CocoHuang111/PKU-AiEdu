@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-512-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.512"
+cross_listed_codes: []
+course_title: "American Authors: Autobiography and Memoir"
+course_slug: "21l-512-american-authors-autobiography-and-memoir-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Wyn Kelley"
+subject_primary: "Literature"
+subject_secondary:
+  - "American Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "American Literature"
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  What is a “life” when it’s written down? How does memory inform the present? Why are autobiographies and memoirs so popular? This course will address these questions among others, considering the relationship between biography, autobiography, and memoir and between personal and social themes. We will examine classic authors such as Mary Rowlandson, Benjamin Franklin, Frederick Douglass, Harriet Jacobs, and Mark Twain; then more recent examples like Tobias Wolff, Art Spiegelman, Sherman Alexie, Shirley Geok-lin Lim, Edwidge Danticat, and Alison Bechdel.
+course_url: "https://ocw.mit.edu/courses/21l-512-american-authors-autobiography-and-memoir-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/21l-512-american-authors-autobiography-and-memoir-fall-2013/0851a00afbc9c47fc37c47847045a887_21l-512f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

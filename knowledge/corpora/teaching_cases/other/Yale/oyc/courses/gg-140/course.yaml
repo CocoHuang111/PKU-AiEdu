@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-gg-140"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "GG 140"
+course_title: "The Atmosphere, the Ocean, and Environmental Change"
+course_slug: "gg-140"
+department_path: "geology and geophysics"
+professors:
+  - "Ronald B. Smith Damon Wells Professor of Geology & Geophysics"
+course_url: "https://oyc.yale.edu/geology-and-geophysics/gg-140"
+language: "en"
+description: |
+  This course explores the physical processes that control Earth's atmosphere, ocean, and climate. Quantitative methods for constructing mass and energy budgets. Topics include clouds, rain, severe storms, regional climate, the ozone layer, air pollution, ocean currents and productivity, the seasons, El Niño, the history of Earth's climate, global warming, energy, and water resources.
+license_url: ""
+session_count: 40
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

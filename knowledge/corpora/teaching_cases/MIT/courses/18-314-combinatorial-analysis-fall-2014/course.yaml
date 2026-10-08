@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-18-314-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.314"
+cross_listed_codes: []
+course_title: "Combinatorial Analysis"
+course_slug: "18-314-combinatorial-analysis-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Richard Stanley"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Discrete Mathematics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course analyzes combinatorial problems and methods for their solution. Topics include: enumeration, generating functions, recurrence relations, construction of bijections, introduction to graph theory, network algorithms, and extremal combinatorics.
+course_url: "https://ocw.mit.edu/courses/18-314-combinatorial-analysis-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/18-314-combinatorial-analysis-fall-2014/34e26b8c8cb14f7c42b18b1384814d01_18-314f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

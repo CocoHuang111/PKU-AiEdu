@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-pe-810-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "PE.810"
+cross_listed_codes: []
+course_title: "Sailing"
+course_slug: "pe-810-sailing-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Athletics, Physical Education and Recreation"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Francis Charles"
+subject_primary: "Physical Education and Recreation"
+subject_secondary: []
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Physical Education and Recreation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+description: |
+  The purpose of this class is to tell you something about our Tech Dinghy and how to sail it. This OCW site is arranged as a series of skills, explained both with lecture notes and videos. Please do not think of these skill checks as tests, but instead, as measures of your understanding of our sport. We don’t expect perfection from our beginners, but only that our members be able to safely handle the boats and themselves on the Charles. For those who wish it, there will be much more that can be learned about other boats and other waters, but what can be learned here will provide the basis to build on. For more detail, a text on sailing the Tech Dinghy is provided in the readings section.
+course_url: "https://ocw.mit.edu/courses/pe-810-sailing-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/pe-810-sailing-spring-2007/1342b186752a55dc2c03f810447aeac1_pe-810s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

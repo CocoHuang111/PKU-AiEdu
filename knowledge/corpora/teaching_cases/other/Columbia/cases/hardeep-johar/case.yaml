@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-hardeep-johar"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Hardeep Johar, Ph.D."
+slug: "hardeep-johar"
+source_url: "https://ctl.columbia.edu/transformations/faculty/hardeep-johar/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "be655c2b6970238ad6bae88bbb003167577ec0c52e50a179501146986806b1a9"

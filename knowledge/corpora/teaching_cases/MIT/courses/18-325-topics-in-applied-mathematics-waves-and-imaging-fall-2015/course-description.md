@@ -1,0 +1,29 @@
+> 检索摘要：18.325 Topics in Applied Mathematics: Waves and Imaging（Fall 2015，Graduate）的「Course Description」。页内标题：Course Description；Course Info；Instructor；Departments；As Taught In；Level。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/18-325-topics-in-applied-mathematics-waves-and-imaging-fall-2015/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Course Description
+
+
+
+## Course Info
+
+### Instructor
+
+- [Prof. Laurent Demanet](https://ocw.mit.edu/search/?q=Prof.+Laurent+Demanet)
+
+### Departments
+
+- [Mathematics](https://ocw.mit.edu/search/?d=Mathematics)
+
+### As Taught In
+
+Fall 2015
+
+### Level
+
+[Graduate](https://ocw.mit.edu/search/?l=Graduate)

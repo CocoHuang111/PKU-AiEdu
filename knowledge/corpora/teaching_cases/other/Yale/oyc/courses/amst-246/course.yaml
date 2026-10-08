@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-amst-246"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "AMST 246"
+course_title: "Hemingway, Fitzgerald, Faulkner"
+course_slug: "amst-246"
+department_path: "american studies"
+professors:
+  - "Wai Chee Dimock William Lampson Professor of English & American Studies"
+course_url: "https://oyc.yale.edu/american-studies/amst-246"
+language: "en"
+description: |
+  This course examines major works by Hemingway, Fitzgerald, and Faulkner, exploring their interconnections on three analytic scales: the macro history of the United States and the world; the formal and stylistic innovations of modernism; and the small details of sensory input and psychic life. Warning: Some of the lectures in this course contain graphic content and/or adult language that some users may find disturbing.
+license_url: ""
+session_count: 25
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

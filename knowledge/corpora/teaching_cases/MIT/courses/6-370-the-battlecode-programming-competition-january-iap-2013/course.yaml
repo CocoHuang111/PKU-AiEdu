@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-6-370-january-iap-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.370"
+cross_listed_codes: []
+course_title: "The Battlecode Programming Competition"
+course_slug: "6-370-the-battlecode-programming-competition-january-iap-2013"
+term: "January IAP"
+year: 2013
+as_taught_in: "January IAP 2013"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Maxwell Mann"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Programming Languages"
+  - "Fine Arts"
+  - "Game Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Programming Languages"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This course is conducted as an artificial intelligence programming contest in Java. Students work in teams to program virtual robots to play Battlecode, a real-time strategy game. Optional lectures are provided on topics and programming practices relevant to the game, and students learn and improve their programming skills experientially. The competition culminates in a live Battlecode tournament. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/6-370-the-battlecode-programming-competition-january-iap-2013/"
+image_url: "https://ocw.mit.edu/courses/6-370-the-battlecode-programming-competition-january-iap-2013/7a9458fa1205ca527ba893f8188b6933_6-370iap13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

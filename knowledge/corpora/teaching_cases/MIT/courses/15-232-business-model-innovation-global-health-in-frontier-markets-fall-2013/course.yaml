@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-15-232-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.232"
+cross_listed_codes: []
+course_title: "Business Model Innovation: Global Health in Frontier Markets"
+course_slug: "15-232-business-model-innovation-global-health-in-frontier-markets-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Anjali Sastry"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Management"
+  - "Health and Medicine"
+  - "Public Health"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This course explores successful approaches to delivering healthcare in challenging settings. We analyze organizations to find why some fall short while others grow in size and contribute to the health of the people they serve, and explore promising business models and social enterprise innovations.
+course_url: "https://ocw.mit.edu/courses/15-232-business-model-innovation-global-health-in-frontier-markets-fall-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/15-232-business-model-innovation-global-health-in-frontier-markets-fall-2013/b505202e505cef4ce0aa03880f7cd915_15-232f13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

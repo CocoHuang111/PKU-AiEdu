@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-plsc-270"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "PLSC 270"
+course_title: "Capitalism: Success, Crisis, and Reform"
+course_slug: "plsc-270"
+department_path: "political science"
+professors:
+  - "Douglas W. Rae Professor of Political Science and Richard Ely Professor of Management"
+course_url: "https://oyc.yale.edu/political-science/plsc-270"
+language: "en"
+description: |
+  In this course, we will seek to interpret capitalism using ideas from biological evolution: firms pursuing varied strategies and facing extinction when those strategies fail are analogous to organisms struggling for survival in nature. For this reason, it is less concerned with ultimate judgment of capitalism than with the ways it can be shaped to fit our more specific objectives--for the natural environment, public health, alleviation of poverty, and development of human potential in every child. Each book we read will be explicitly or implicitly an argument about good and bad consequences of capitalism.
+license_url: ""
+session_count: 24
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

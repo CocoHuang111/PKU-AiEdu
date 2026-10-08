@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-952-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.952"
+cross_listed_codes: []
+course_title: "Computing for Biomedical Scientists"
+course_slug: "hst-952-computing-for-biomedical-scientists-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Omolola Ogunyemi"
+  - "Dr. Qing Zeng"
+  - "Dr. Aziz Boxwala"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+  - "Computer Science"
+  - "Health and Medicine"
+  - "Biomedical Instrumentation"
+  - "Biomedicine"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+      - name: "Computer Science"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+      - name: "Biomedicine"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course introduces abstraction as an important mechanism for problem decomposition and solution formulation in the biomedical domain, and examines computer representation, storage, retrieval, and manipulation of biomedical data. As part of the course, we will briefly examine the effect of programming paradigm choice on problem-solving approaches, and introduce data structures and algorithms. We will also examine knowledge representation schemes for capturing biomedical domain complexity and principles of data modeling for efficient storage and retrieval. The final project involves building a medical information system that encompasses the different concepts taught in the course. Computer science basics covered in the first part of the course are integral to understanding topics covered in the latter part, and for completing the assigned homework.
+course_url: "https://ocw.mit.edu/courses/hst-952-computing-for-biomedical-scientists-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/hst-952-computing-for-biomedical-scientists-fall-2002/abf42c9a34c3c3c7a6c2f2871c990795_hst-952f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

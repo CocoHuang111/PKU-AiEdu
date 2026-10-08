@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-6-003-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.003"
+cross_listed_codes: []
+course_title: "Signals and Systems"
+course_slug: "6-003-signals-and-systems-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Dennis Freeman"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Digital Systems"
+  - "Signal Processing"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Signal Processing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  6.003 covers the fundamentals of signal and system analysis, focusing on representations of discrete-time and continuous-time signals (singularity functions, complex exponentials and geometrics, Fourier representations, Laplace and Z transforms, sampling) and representations of linear, time-invariant systems (difference and differential equations, block diagrams, system functions, poles and zeros, convolution, impulse and step responses, frequency responses). Applications are drawn broadly from engineering and physics, including feedback and control, communications, and signal processing.
+course_url: "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/237345edff62de720230b2390d01cf6e_6-003f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

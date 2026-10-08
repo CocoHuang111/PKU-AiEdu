@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-4-107-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.107"
+cross_listed_codes: []
+course_title: "MArch Portfolio Seminar"
+course_slug: "4-107-march-portfolio-seminar-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mark Jarzombek"
+  - "Prof. Meejin Yoon"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Architectural History and Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Architectural History and Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Written Assignments"
+description: |
+  The aim of the Portfolio Seminar is to assist in developing a critical position in relationship to their design work. By engaging multiple forms of representation, written and visual, students will explore methods that facilitate describing and representing their design work. Through a critical assessment of their existing portfolios, students will first be challenged to articulate design theses and interests in their past projects. Different mediums of representation will then be studied in order to hone an understanding of the relationship between form and content, and more specifically, the understanding of particular modes of representation as different filters through which their work can be read. Some of the questions that will be addressed are: How does one go about describing an image? How does one theorize representation? How does one articulate a design thesis in writing verses visual media? How can the two interact to enhance each other? How do different media, printed verses web publishing, affect the representation of work? How is your work best communicated?
+course_url: "https://ocw.mit.edu/courses/4-107-march-portfolio-seminar-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/4-107-march-portfolio-seminar-fall-2003/9e1d1a27af3f2831c4b862d8f6d030a7_4-107f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

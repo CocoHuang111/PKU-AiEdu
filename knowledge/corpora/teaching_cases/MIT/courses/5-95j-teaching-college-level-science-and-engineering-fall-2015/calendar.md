@@ -1,0 +1,25 @@
+> 检索摘要：5.95J Teaching College-Level Science and Engineering（Fall 2015，Graduate）的「Calendar」。页内标题：Calendar。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/5-95j-teaching-college-level-science-and-engineering-fall-2015/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+| SES # | TOPICS | INTENDED LEARNING OUTCOMES | KEY DATES |
+| --- | --- | --- | --- |
+| 1 | Introduction to the class <br> What is the purpose of college – now, then, tomorrow? | By the end of class 1, students should be able to: <br> Discuss the readings, and explain their relevance to you as a teacher in a higher ed STEM field. <br> Consider the “purpose” of a undergraduate education, specifically the “purpose” of a STEM education. <br> Consider how this purpose – or the instantiation of this purpose – may change over the next 10 years. |  |
+| 2 | What we know about student learning in higher education | By the end of Class 2, students should be able to: <br> Summarize the “big ideas” in cognition and learning research. <br> Apply findings from learning and cognition research to improve student learning in your classes. | Assignment 1 due |
+| 3 | Designing a Course: Developing Learning Outcomes | By the end of class 3, students should be able to: <br> Describe the components the constructive alignment & backward design model. <br> Explain the [4C-ID](http://edutechwiki.unige.ch/en/4C-ID) Framework to an intelligent non-expert. <br> Define content priorities for a class you may teach. <br> Create measurable learning outcomes for a course you may teach. | Assignment 2 due |
+| 4 | Teaching Methodologies: Part I – Organizing a Class | By the end of Class 4, students should be able to: <br> Articulate factors that promote effective lectures. <br> Consider ways you can gain students’ attention, help them to integrate new material & support their comprehension. <br> Make informed decisions about lecture structure & content to support your Intended Learning Outcomes. <br> Create an outline for a unit of instruction. | Assignment 3 due |
+| 5 | Teaching Methodologies: Part II – Active Learning: Why and How | By the end of Class 5, students should be able to: <br> Explain the impact of active learning exercises in the classroom. <br> Evaluate the time requirements for different active learning exercises. <br> Identify / develop active learning exercises that will help students achieve the desired learning outcomes. | Assignment 4 due |
+| 6 | What Can Nerds Learn from Actors? | By the end of Class 6, students should be able to: <br> Describe and implement strategies to control “stage fright.” <br> Utilize verbal, visual and vocal channels (3V’s) to deliver more effective lectures. | Assignment 5 due |
+| 7 | Designing Effective Assignments & Assessments | By the end of Class 7, students should be able to: <br> Formulate and organize the use of problem sets in your class-in order to better support student learning. <br> Create homework and / or test questions that help students acquire specific knowledge and / or skills and that are authentic. <br> Link course learning outcomes with assessments and assignments. | Assignment 6 due |
+| 8 | Teaching with Educational Technology | By this end of Class 8, students should be able to: <br> Identify an appropriate educational technology / tool(s) to advance an intended learning outcome. <br> Articulate an implementation and use strategy for chosen technologies. <br> Describe best practices and potential pitfalls of educational technologies. | Assignment 7 due |
+| 9 | Grading and Assessment | By the end of Class 9, students should be able to: <br> Describe Norm- and Criterion-based grading, and articulate the pros and cons of each. <br> Articulate the differences between grading and evaluation. <br> Select a grading system that best supports your course material, philosophy, student demographics and is consistent with departmental / institutional constraints. <br> Consider ways to grade group / team work. | Assignment 8 due |
+| 10 | Creating an Inclusive Classroom | By the end of Class 10, students should be able to: <br> Describe stereotype threat. <br> Explain how a lack of inclusiveness in your classroom can negatively impact student learning. <br> Identify one or more strategies for creating an inclusive classroom environment. | Assignment 9 due |
+| 11 | Developing Your Teaching Philosophy | By the end of Class 11, students should be able to: <br> Describe specific examples that you have used to advance student learning. <br> Explain how your teaching strategies, methods, and goals have evolved over time. <br> Consider what you will accept as proof that your teaching is effective. | Assignment 10 due ; Assignment 11 Part I due before Session 12 |
+| 12 | Microteaching – Group 1 |  | Assignment 11 Part II due |
+| 13 | Microteaching – Group 2 |  | Assignment 11 Part III due |

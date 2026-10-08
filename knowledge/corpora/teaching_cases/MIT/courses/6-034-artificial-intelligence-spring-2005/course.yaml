@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-6-034-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.034"
+cross_listed_codes: []
+course_title: "Artificial Intelligence"
+course_slug: "6-034-artificial-intelligence-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Leslie Kaelbling"
+  - "Prof. Tomás Lozano-Pérez"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Theory of Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Theory of Computation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course introduces representations, techniques, and architectures used to build applied systems and to account for intelligence from a computational point of view. This course also explores applications of rule chaining, heuristic search, logic, constraint propagation, constrained search, and other problem-solving paradigms. In addition, it covers applications of decision trees, neural nets, SVMs and other learning paradigms.
+course_url: "https://ocw.mit.edu/courses/6-034-artificial-intelligence-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/6-034-artificial-intelligence-spring-2005/8683b76db3f615e0e8717bbbe2379002_6-034s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

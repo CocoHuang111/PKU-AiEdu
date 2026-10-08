@@ -1,0 +1,45 @@
+> 检索摘要：21H.007J Empire: Introduction to Ancient and Medieval Studies（Fall 2012，Undergraduate）的「Readings」。页内标题：Readings；Required Books；Useful Reference Books；Online Resources；Readings by Session。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/21h-007j-empire-introduction-to-ancient-and-medieval-studies-fall-2012/pages/readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Readings
+
+### Required Books
+
+[AWH] = Wallace-Hadrill, Andrew. *Augustan Rome*. Bristol Classical Press, 2007. ISBN: 9781853991387.
+
+[TFXN] = Noble, Thomas F. X. *Charlemagne and Louis the Pious: Lives by Einhard, Notker, Ermoldus, Thegan, and the Astronomer*. Translated by Thomas F. X. Noble. Pennsylvania State University Press, 2009. ISBN: 9780271035734. [Preview with [Google Books](http://books.google.com/books?id=LUCPcwybApIC&pg=PAfrontcover)]
+
+[JF] = Froissart, Jean. *Chronicles*. Translated by Geoffrey Brereton. Corrected reprint edition. Penguin Classics, 1978. ISBN: 9780140442007.
+
+[SA] = Armitage, Simon. *Sir Gawain and the Green Knight*. Translated by Simon Armitage. Faber and Faber, 2007. ISBN: 9780571223275.
+
+[Virgil] = Virgil. *The Aeneid*. Translated by Robert Fagles. Penguin Classics, 2010. ISBN: 9780143106296.
+
+### Useful Reference Books
+
+Bowman, Alan, et al., eds. *The Cambridge Ancient History. Vol. X: The Augustan Empire, 43 BC—AD 69*. 2nd ed. Cambridge University Press, 1994. ISBN: 9780521264303.
+
+Hornblower, Simon, and Antony Spawforth, eds. *The Oxford Classical Dictionary*. 3rd ed. Oxford University Press, 1996. ISBN: 9780199545568.
+
+McKitterick, Rosamond, ed. *The New Cambridge Medieval History, Vol. 2: c.700–c.900*. Cambridge University Press, 1995. ISBN: 9780521362924. [Preview with [Google Books](http://books.google.com/books?id=u-SsbHs5zTAC&pg=PAfrontcover)]
+
+### Online Resources
+
+[JSTOR](http://www.jstor.org/)—The Scholarly Journal Archive, including several relevant classical studies and archaeology journals.
+
+[Lacus Curtius](http://penelope.uchicago.edu/Thayer/E/Roman/home.html)—Your source for Cassius Dio, Plutarch, and other ancient sources in translation, among other items of interest.
+
+[The Perseus Digital Library](http://www.perseus.tufts.edu/)—A wealth of information relevant to our subject: ancient texts and translations, extensive photo archives of an impressive range of sites, and plenty of secondary material.
+
+[Internet Medieval Sourcebook](http://www.fordham.edu/halsall/sbook.html)—A useful on-line collection of medieval sources translated into English.
+
+[Digital Atlas of Roman and Medieval Civilizations](http://darmc.harvard.edu/)—A wonderful series of maps and geodatabases related to multiple aspects of Roman and medieval civilization.
+
+### Readings by Session
+
+<table><tr><th>SES #</th><th>TOPICS</th><th>READINGS</th></tr><tr><td colspan="3">PART I: The Roman Empire in the Age of Augustus</td></tr><tr><td>2</td><td>Hard Power—From Octavian to Augustus</td><td>Wells. <br> The Roman Empire <br> . Harvard University Press, 1995, pp. 11–30. ISBN: 9780674777705. [Preview with <br> [Google Books](http://books.google.com/books?id=1urqHVQ0qQAC&pg=PA11) <br> ] <br> Gruen. “Augustus and the Making of the Principate.” In <br> The Cambridge Companion to the Age of Augustus. <br> Cambridge University Press, 2005, pp. 33–51. ISBN: 9780521807968. [Preview with <br> [Google Books](http://books.google.com/books?id=ftcx-5j7rjwC&pg=PA33) <br> ]</td></tr><tr><td>3</td><td>Soft Power—Persuasion and the Principate</td><td>[The Achievements of the Divine Augustus](http://classics.mit.edu/Augustus/deeds.html) <br> . <br> [AWH] “Augustan Rome,” pp. 1-42. <br> “ <br> [Augustus of Prima Porta](http://en.wikipedia.org/wiki/File:Statue-Augustus.jpg) <br> .” Photograph on Wikipedia.</td></tr><tr><td>4</td><td>Running the Empire</td><td>Levick. “Techniques of Management and the Feel-Good Factor.” In <br> Augustus: Image and Substance <br> . Pearson, 2010, pp. 115–63. ISBN: 9780582894211.</td></tr><tr><td>5</td><td>Empire and the Gods</td><td>[AWH] pp. 63–97. <br> [Virgil] Book 6. <br> Gransden, K.W. and S.J. Harrison. “Reading the <br> Aeneid <br> ” in <br> Virgil: The Aeneid <br> . Cambridge University Press, 2003, pp. 34–46. ISBN: 9780521539807.</td></tr><tr><td>6</td><td>Virgil’s Imperial Epic</td><td>[Virgil] Book 8.</td></tr><tr><td>7</td><td>Imperial Destiny: Aeneas and Dido</td><td>[Virgil] Book 4. <br> Ovid. <br> Ovid, Heroides 7: Dido’s Letter to Aeneas <br> . CANE Press, 2004. ISBN: 9781934971086.</td></tr><tr><td>8</td><td>The City of Rome and the Forum of Augustus</td><td>[AWH] pp. 43–62.</td></tr><tr><td>9</td><td>Assessing Augustus: Suetonius and Tacitus</td><td>Suetonius. <br> Lives of the Caesars <br> . Translated by Catherine Edwards. Oxford University Press, 2009. ISBN: 9780199537563. <br> Tacitus. <br> Annals <br> . Penguin Classics, 2013, pp. 1.1–15. ISBN: 9780140455649.</td></tr><tr><td colspan="3">PART II: Emperors of Europe—Charlemagne and Louis the Pious</td></tr><tr><td>10</td><td>Overview: The Reigns of Charlemagne and Louis the Pious</td><td>Costambeys, Marios, Matthew Innes, and Simon MacLean. <br> The Carolingian World <br> . Cambridge University Press, 2011, pp. 31–79, and 154–222. ISBN: 9780521564946. [Preview with <br> [Google Books](http://books.google.com/books?id=OkSG3X-M80oC&pg=PAfrontcover) <br> ]</td></tr><tr><td>11</td><td>Narrating Carolingian Triumphs: The Annales Regni Francorum</td><td>Jong, Mayke de de. <br> The Penitential State. Authority and Atonement in the Age of Louis the Pious, 814–840 <br> . Cambridge University Press, 2009, pp. 59–67. ISBN: 9780521881524. <br> Annals, Royal Frankish. <br> Carolingian Chronicles: Royal Frankish Annals and Nithard’s Histories <br> . Translated by Bernhard Walter Scholz. University of Michigan Press, 1970, pp. 73–125 (entries for years 794–829). ISBN: 9780472061860. [Preview with <br> [Google Books](http://books.google.com/books?id=sTzl6wFjehMC&pg=PAfrontcover) <br> ]</td></tr><tr><td>12</td><td>Assessing Charlemagne: Eingard’s Life of Charlemagne</td><td>Jong, Mayke de de. <br> The Penitential State. Authority and Atonement in the Age of Louis the Pious, 814–840 <br> . Cambridge University Press, 2009, pp. 67–72. ISBN: 9780521881524. <br> [TFXN] “Einhard, Life of Charles the Emperor.” pp. 1–50.</td></tr><tr><td>13</td><td>Assessing Louis the Pious, I: Thegan’s Deeds of Emperor Louis</td><td>Jong, Mayke de de. <br> The Penitential State. Authority and Atonement in the Age of Louis the Pious, 814–840 <br> . Cambridge University Press, 2009, pp. 72–79. ISBN: 9780521881524. <br> [TFXN] “Thegan, Deeds of Emperor Louis.” pp. 187–218.</td></tr><tr><td>14</td><td>Assessing Louis the Pious, II: The Astronomer’s Life of Emperor Louis</td><td>Jong, Mayke de de. <br> The Penitential State. Authority and Atonement in the Age of Louis the Pious, 814–840 <br> . Cambridge University Press, 2009, pp. 79–89. ISBN: 9780521881524. <br> [TFXN] “Astronomer, Life of Emperor Louis.” pp. 219–302.</td></tr><tr><td>15</td><td>Imperial Epics: Karolus Magnus et Leo Papa and Ermold the Black</td><td>Papa, Karolus Magnus et Leo. <br> Poetry of the Carolingian Renaissance <br> . Translated by Peter Godman. University of Oklahoma Press, 1985, pp. 22–4, and 197–207. ISBN: 9780806119397. <br> Jong, Mayke de de. <br> The Penitential State. Authority and Atonement in the Age of Louis the Pious, 814–840 <br> . Cambridge University Press, 2009, pp. 89–95. ISBN: 9780521881524. <br> [TFXN] “Ermold, In Honor of Louis, the Most Christian Caesar Augustus.” pp. 1197–86.</td></tr><tr><td>16</td><td>Apocryphal Stories: Notker’s Deeds of Charlemagne</td><td>[TFXN] “Notker, Deeds of Emperor Charles the Great.” pp. 51–118.</td></tr><tr><td colspan="3">PART III: The English Empire in the Age of Edward III</td></tr><tr><td>18</td><td>Origins: Legendary Antecedents for English Empire</td><td>Geoffrey of Monmouth. <br> History of the Kings of Britain <br> . Penguin Books, 1977, pp. 51–74 and 212–65. ISBN: 9780140441703.</td></tr><tr><td>19</td><td>Beginning the War: The Order of the Garter and the Battle of Crécy</td><td>[JF] pp. 37–45, 55–110.</td></tr><tr><td>20</td><td>Continuing the War: English Success, French Resurgence</td><td>[JF] pp. 111–92.</td></tr><tr><td>22</td><td>Ricardian Poetry, Edwardian Themes: Arthur’s Court Reappears</td><td>[SA] pp. 1–3.</td></tr><tr><td>23</td><td>Chivalry and Empire in a Post-Edwardian World</td><td>[SA] p. 4. <br> Mann. “ <br> [Courtly Aesthetics and Courtly Ethics in SGGK](http://muse.jhu.edu/login?auth=0&type=summary&url=/journals/studies_in_the_age_of_chaucer/v031/31.mann.pdf) <br> .” <br> Studies in the Age of Chaucer <br> 31 (2009): 231–65. <br> Ingledew. “SGGK and the Edwardian Era.” In <br> Sir Gawain and the Green Knight and the Order of the Garter <br> . University of Notre Dame Press, 2006. ISBN: 9780268031763.</td></tr><tr><td>24</td><td>Combat, Tournament, and the End of a Reign</td><td>[JF] pp. 309–15, 373–85, 402–8, and 421–71.</td></tr></table>

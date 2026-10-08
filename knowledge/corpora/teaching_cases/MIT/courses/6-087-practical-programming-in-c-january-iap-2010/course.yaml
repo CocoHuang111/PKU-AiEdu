@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-6-087-january-iap-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.087"
+cross_listed_codes: []
+course_title: "Practical Programming in C"
+course_slug: "6-087-practical-programming-in-c-january-iap-2010"
+term: "January IAP"
+year: 2010
+as_taught_in: "January IAP 2010"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Daniel Weller"
+  - "Sharat Chikkerur"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Programming Languages"
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Programming Languages"
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Programming Assignments with Examples"
+  - "Projects"
+description: |
+  This course provides a thorough introduction to the C programming language, the workhorse of the UNIX operating system and lingua franca of embedded processors and micro-controllers. The first two weeks will cover basic syntax and grammar, and expose students to practical programming techniques. The remaining lectures will focus on more advanced concepts, such as dynamic memory allocation, concurrency and synchronization, UNIX signals and process control, library development and usage. Daily programming assignments and weekly laboratory exercises are required. Knowledge of C is highly marketable for summer internships, UROPs, and full-time positions in software and embedded systems development.
+course_url: "https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/"
+image_url: "https://ocw.mit.edu/courses/6-087-practical-programming-in-c-january-iap-2010/ea7cfb3f6b1dc004d37c0b06ac102e62_6-087iap10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

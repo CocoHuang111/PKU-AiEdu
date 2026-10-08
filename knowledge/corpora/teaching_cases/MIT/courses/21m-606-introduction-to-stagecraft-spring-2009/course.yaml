@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-122-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.122"
+cross_listed_codes: []
+course_title: "Introduction to Stagecraft"
+course_slug: "21m-606-introduction-to-stagecraft-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Karen Perlow"
+  - "Leslie Cocuzzo Held"
+  - "Michael Katz"
+  - "Sara Brown"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theatrical Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theatrical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+description: |
+  Offered in the spring and fall terms, Introduction to Stagecraft is a hands-on course that gets students working with the tools and techniques of theatrical production in a practical way. It is not a design course but one devoted to artisanship. Among the many remarkable final projects that have been proposed and presented at the end of the course have been a Renaissance hourglass blown in the MIT glass shop and set into a frame turned on our set shop lathe; a four harness loom built by a student who then wove cloth on it; a number of chain mail tunics and coifs; a wide variety of costume and furniture pieces and electrified period lighting fixtures.
+course_url: "https://ocw.mit.edu/courses/21m-606-introduction-to-stagecraft-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/21m-606-introduction-to-stagecraft-spring-2009/8883ee544cb3b613db07207a8eea29c7_21m-606s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

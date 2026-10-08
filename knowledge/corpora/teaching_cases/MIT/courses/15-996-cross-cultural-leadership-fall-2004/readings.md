@@ -1,0 +1,17 @@
+> 检索摘要：15.996 Cross-Cultural Leadership（Fall 2004，Graduate）的「Readings」。页内标题：Readings。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/15-996-cross-cultural-leadership-fall-2004/pages/readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Readings
+
+| lec # | TOPICS | subtopics | readings |
+| --- | --- | --- | --- |
+| 1 | Introduction and Overview | Set the baseline. What understanding of leaders and leadership has each of us already acquired? How does that reflect our global experiences? <br> Identify Teams <br> Introductory Presentation of each Team’s Region: Geography, History, Regional Differences, Politics, Economic Issues <br> Brief Overview of the Theories and Themes in this Course |  |
+| 2 | Cultural Styles | Universalism vs. Particularism <br> Individualism vs. Collectivism <br> Neutral vs. Emotional <br> Achievement vs. Ascription <br> Cross-cultural Dialogue | Trompenaars, Fons, and Charles Hampden-Turner. <br> Riding the Waves of Culture: Understanding Cultural Diversity in Global Business <br> . 2nd ed. New York: McGraw-Hill, 1998, pp. 1-10, 29-37, 49-53, 68-75, 80-82, 105-111, 121-122. ISBN: 0786311258. |
+| 3 | Social Dimensions | Assertiveness <br> Gender Differentiation <br> Uncertainty Avoidance <br> Power Distance <br> Cross-cultural Dialogue | Javidan, Mansour, and Robert J. House. “Cultural Acumen for the Global Manager: Lessons from Project GLOBE.” <br> Organizational Dynamics <br> 29, no. 4 (Spring 2001): 289-304. <br> House, Robert J., Paul J. Hanges, Mansour Javidan, Peter W. Dorfman, and Vipin Gupta. <br> Culture, Leadership, and Organizations: The GLOBE Study of 62 Societies <br> . Thousand Oaks, California: SAGE Publications, 2004, pp. 410-411, 365-366, 622-623, 539-540, 250-251, 573-574. ISBN: 0761924019. <br> Schneider, Susan, and Jean-Louis Barsoux. <br> Managing Across Cultures <br> . 2nd ed. Essex, England: Pearson Education Limited, 2003, pp. 87-95. |
+| 4 | Orientation to Time and Space | Focus on Past, Present or Future: Short or Long-term Horizon <br> Monochronic or Polychronic Activities: Rigid or Fluid Schedules <br> Space: Public, Private or Mixed <br> Cross-cultural Dialogue | Trompenaars, Fons, and Charles Hampden-Turner. <br> Riding the Waves of Culture: Understanding Cultural Diversity in Global Business <br> . 2nd ed. New York: McGraw-Hill, 1998, pp. 123-128, 132-144. ISBN: 0786311258. <br> Gesteland, Richard R. <br> Cross-Cultural Business Behavior: Marketing, Negotiating and Managing across Cultures <br> . 2nd ed. Copenhagen: Copenhagen Business School Press, 1999, pp. 55-62. ISBN: 8763000253. |
+| 5 | Leadership Effectiveness | Leadership Traits <br> Leadership Styles <br> Presentation of Student Papers <br> Critique of Course | Kouzes, James, and Barry Posner. <br> The Leadership Challenge <br> . 3rd ed. San Francisco: Jossey-Bass, 2002, pp. 13-22, 24-25. ISBN: 0787956783. <br> Goleman, Daniel. “Leadership that Gets Results.” <br> Harvard Business Review <br> , March-April 2000, pp. 78-90. <br> Derr, C. Brooklyn, Sylvie Roussillon, and Frank Bournois. <br> Cross-Cultural Approaches to Leadership Development <br> . Westport, Connecticut: Quorum Books, 2002, pp. 290-292. ISBN: 156720466X. <br> Graham, John L. and N. Mark Lam. “The Chinese Negotiation.” <br> Harvard Business Review <br> , October 2003, pp. 82-91. |

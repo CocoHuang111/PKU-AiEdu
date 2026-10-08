@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-20-430j-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.430J"
+cross_listed_codes:
+  - "2.795J"
+  - "6.561J"
+  - "10.539J"
+course_title: "Fields, Forces, and Flows in Biological Systems"
+course_slug: "20-430j-fields-forces-and-flows-in-biological-systems-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Mechanical Engineering"
+  - "Electrical Engineering and Computer Science"
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mark Bathe"
+  - "Prof. Alan Grodzinsky"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Chemical Engineering"
+  - "Transport Processes"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course covers the fundamental driving forces for transport—chemical gradients, electrical interactions, and fluid flow—as applied to the biology and biophysics of molecules, cells, and tissues.
+course_url: "https://ocw.mit.edu/courses/20-430j-fields-forces-and-flows-in-biological-systems-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/20-430j-fields-forces-and-flows-in-biological-systems-fall-2015/461f2d024957828df403538f21e6e3dd_20-430jf15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

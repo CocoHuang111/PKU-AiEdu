@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-18-755-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.755"
+cross_listed_codes: []
+course_title: "Introduction to Lie Groups"
+course_slug: "18-755-introduction-to-lie-groups-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Sigurdur Helgason"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Differential Equations"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is devoted to the theory of Lie Groups with emphasis on its connections with Differential Geometry. The text for this class is Differential Geometry, Lie Groups and Symmetric Spaces by Sigurdur Helgason (American Mathematical Society, 2001). Much of the course material is based on Chapter I (first half) and Chapter II of the text. The text however develops basic Riemannian Geometry, Complex Manifolds, as well as a detailed theory of Semisimple Lie Groups and Symmetric Spaces.
+course_url: "https://ocw.mit.edu/courses/18-755-introduction-to-lie-groups-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/18-755-introduction-to-lie-groups-fall-2004/b1061f3c51168f06a49c00484b0d175d_18-755f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-s63-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.S63"
+cross_listed_codes:
+  - "CMS.S99"
+course_title: "Playful Augmented Reality Audio Design Exploration"
+course_slug: "cms-s63-playful-augmented-reality-audio-design-exploration-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Mikael Jakobsson"
+  - "Philip B. Tan"
+subject_primary: "Game Design"
+subject_secondary:
+  - "Media Studies"
+  - "Social Science"
+  - "Game Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+      - name: "Media Studies"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Design Assignments"
+  - "Lecture Videos"
+description: |
+  Students explore augmented reality audio through the design and evaluation of prototypes. Participants will probe design space and illuminate creative possibilities. This includes productive, playful, and social applications, as well as the intersection between games and music. The course builds understanding of the limitations and strengths of iterative design and rapid prototyping as research methods, familiarizes students with the theoretical foundations of design exploration, and practices working with physical and digital materials.
+course_url: "https://ocw.mit.edu/courses/cms-s63-playful-augmented-reality-audio-design-exploration-fall-2019/"
+image_url: |
+  https://ocw.mit.edu/courses/cms-s63-playful-augmented-reality-audio-design-exploration-fall-2019/012b91c8fbb3d01295db57ff18b1c829_cms-s63f19.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

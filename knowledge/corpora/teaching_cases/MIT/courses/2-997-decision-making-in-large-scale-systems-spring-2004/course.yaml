@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-2-997-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.997"
+cross_listed_codes: []
+course_title: "Decision Making in Large Scale Systems"
+course_slug: "2-997-decision-making-in-large-scale-systems-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniela Pucci De Farias"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Systems Optimization"
+  - "Social Science"
+  - "Game Theory"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Systems Optimization"
+  - name: "Social Science"
+    subtopics:
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course is an introduction to the theory and application of large-scale dynamic programming. Topics include Markov decision processes, dynamic programming algorithms, simulation-based algorithms, theory and algorithms for value function approximation, and policy search methods. The course examines games and applications in areas such as dynamic resource allocation, finance and queueing networks.
+course_url: "https://ocw.mit.edu/courses/2-997-decision-making-in-large-scale-systems-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/2-997-decision-making-in-large-scale-systems-spring-2004/efa3a05337188bb5a7202f87fe6fcf79_2-997s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

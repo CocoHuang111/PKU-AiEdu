@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-7-00-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.00"
+cross_listed_codes: []
+course_title: "COVID-19, SARS-CoV-2, and the Pandemic"
+course_slug: "7-00-covid-19-sars-cov-2-and-the-pandemic-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "MIT Department of Biology "
+subject_primary: "Biology"
+subject_secondary:
+  - "Cell Biology"
+  - "Genetics"
+  - "Microbiology"
+  - "Molecular Biology"
+  - "Virology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+          - "Genetics"
+          - "Microbiology"
+          - "Molecular Biology"
+          - "Virology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  During Fall 2021, all MIT students and the general public are welcome to join Professors Richard Young and Facundo Batista as they discuss the science of the COVID-19 pandemic. The livestream of the lectures is available to the public, but only registered students are able to ask questions during the Q&A. Lectures will be given by leading experts on the fundamentals of coronavirus and host cell biology, immunology, epidemiology, clinical disease, and vaccine and therapeutic development. Guest faculty include Amy Barczak, Dan Barouch, Arup Chakraborty, Victoria Clark, Shane Crotty, Anthony Fauci, Britt Glaunsinger, Salim Karim, Shiv Pillai, Rochelle Walensky, Bruce Walker, Laura Walker, and Andrew Ward.
+course_url: "https://ocw.mit.edu/courses/7-00-covid-19-sars-cov-2-and-the-pandemic-fall-2021/"
+image_url: "https://ocw.mit.edu/courses/7-00-covid-19-sars-cov-2-and-the-pandemic-fall-2021/61632e35a3f9f70f1a34a2b14ebcd75a_7-00f21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

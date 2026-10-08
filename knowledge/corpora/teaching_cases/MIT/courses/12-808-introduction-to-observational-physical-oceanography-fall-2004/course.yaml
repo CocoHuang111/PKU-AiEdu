@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-12-808-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.808"
+cross_listed_codes: []
+course_title: "Introduction to Observational Physical Oceanography"
+course_slug: "12-808-introduction-to-observational-physical-oceanography-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Raffaele Ferrari"
+  - "Dr. Terrence Joyce"
+subject_primary: "Ocean Engineering"
+subject_secondary:
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Geophysics"
+  - "Oceanography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geophysics"
+          - "Oceanography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Observational physical oceanography includes topics such as the  physical description of the sea, the physical properties of seawater, methods and measurements, wind-driven ocean circulation, abyssal ocean circulation, boundary processes, and wave motions.
+course_url: "https://ocw.mit.edu/courses/12-808-introduction-to-observational-physical-oceanography-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/12-808-introduction-to-observational-physical-oceanography-fall-2004/1854d39ed47de0538092dba47f4b953e_12-808f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

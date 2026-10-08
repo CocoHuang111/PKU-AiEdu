@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-418-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.418"
+cross_listed_codes:
+  - "CMS.880"
+course_title: "From Print to Digital: Technologies of the Word, 1450-Present"
+course_slug: "21h-418-from-print-to-digital-technologies-of-the-word-1450-present-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeffrey S. Ravel"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Humanities"
+  - "History"
+  - "History of Science and Technology"
+  - "Intellectual History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Intellectual History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  There has been much discussion in recent years, on this campus and elsewhere, about the death of the book. Digitization and various forms of electronic media, some critics say, are rendering the printed text as obsolete as the writing quill. In this subject, we will examine the claims for and against the demise of the book, but we will also supplement these arguments with an historical perspective they lack: we will examine texts, printing technologies, and reading communities from roughly 1450 to the present. We will begin with the theoretical and historical overviews of Walter Ong and Elizabeth Eisenstein, after which we will study specific cases such as English chapbooks, Inkan knotted and dyed strings, late nineteenth-century recording devices, and newspapers online today. We will also visit a rare book library and make a poster on a hand-set printing press.
+course_url: "https://ocw.mit.edu/courses/21h-418-from-print-to-digital-technologies-of-the-word-1450-present-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/21h-418-from-print-to-digital-technologies-of-the-word-1450-present-fall-2005/b1fe1eaf86a18128ac4a25f064483d8e_21h-418f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

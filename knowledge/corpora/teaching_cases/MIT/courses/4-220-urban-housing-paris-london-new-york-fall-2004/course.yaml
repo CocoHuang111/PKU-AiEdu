@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-4-220-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.220"
+cross_listed_codes: []
+course_title: "Urban Housing: Paris, London, New York"
+course_slug: "4-220-urban-housing-paris-london-new-york-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Michael Dennis"
+subject_primary: "Urban Studies"
+subject_secondary:
+  - "Housing Development"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Housing Development"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This class presents an analysis of the development of housing models and their urban implications in Paris, London, and New York City from the seventeenth century to the present. The focus will be on three models: the French hotel, the London row house, and the New York City tenement and apartment building. Other topics covered will include twentieth-century housing reform movements and work by the London County Council, CIAM, and American public housing agencies.
+course_url: "https://ocw.mit.edu/courses/4-220-urban-housing-paris-london-new-york-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/4-220-urban-housing-paris-london-new-york-fall-2004/077f33d16aac55f58f9671e04d43cd85_4-220f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

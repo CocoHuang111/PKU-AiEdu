@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-14-13-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.13"
+cross_listed_codes:
+  - "14.131"
+course_title: "Psychology and Economics"
+course_slug: "14-13-psychology-and-economics-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Frank Schilbach"
+subject_primary: "Economics"
+subject_secondary:
+  - "Psychology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Psychology and Economics (aka Behavioral Economics) is a growing subfield of economics that incorporates insights from psychology and other social sciences into economics. This course covers recent advances in behavioral economics by reviewing some of the assumptions made in mainstream economic models, and by discussing how human behavior systematically departs from these assumptions. Applications will cover a wide range of fields, including labor and public economics, industrial organization, health economics, finance, and development economics.
+course_url: "https://ocw.mit.edu/courses/14-13-psychology-and-economics-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/14-13-psychology-and-economics-spring-2020/54c907ff4b73578998347a493375ad0c_14-13s20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

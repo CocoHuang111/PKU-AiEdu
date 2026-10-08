@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-4-540-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.540"
+cross_listed_codes: []
+course_title: "Introduction to Shape Grammars I"
+course_slug: "4-540-introduction-to-shape-grammars-i-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. George Stiny"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Mathematics"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Shape grammars are systems of visual rules by which one shape may be transformed into another. By applying these rules recursively, a simple shape can be elaborated into a complex pattern. This course offers an in-depth introduction to shape grammars and their applications in architecture and related areas of design. More specifically, it involves manipulation of shapes in the algebras Uij, in the algebras Vij and Wij incorporating labels and weights, and in algebras formed as composites of these. Discussions center on rules and computations, shape and structure, and designs.
+course_url: "https://ocw.mit.edu/courses/4-540-introduction-to-shape-grammars-i-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/4-540-introduction-to-shape-grammars-i-fall-2018/d9a1ba907a9d671e3f5ea4071c44453e_4-540f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

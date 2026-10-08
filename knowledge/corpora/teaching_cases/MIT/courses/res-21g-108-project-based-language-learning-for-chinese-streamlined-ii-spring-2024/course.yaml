@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-res-21g-108-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.21G-108"
+cross_listed_codes: []
+course_title: "Project-Based Language Learning for Chinese II (Streamlined)"
+course_slug: "res-21g-108-project-based-language-learning-for-chinese-streamlined-ii-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Min-Min Liang"
+subject_primary: "Language"
+subject_secondary:
+  - "Chinese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Chinese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+description: |
+  This is the student project for the Spring 2024 MIT course 21G.108 Chinese II (Streamlined) . In the project, Chinese heritage language students explore various topics, including the meaning of their Chinese names. Based on their discoveries, each student creates an online book.
+course_url: "https://ocw.mit.edu/courses/res-21g-108-project-based-language-learning-for-chinese-streamlined-ii-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/res-21g-108-project-based-language-learning-for-chinese-streamlined-ii-spring-2024/mit_res_21g_108.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

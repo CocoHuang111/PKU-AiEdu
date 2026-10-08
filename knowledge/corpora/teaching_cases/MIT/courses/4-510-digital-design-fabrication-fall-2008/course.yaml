@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-4-510-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.510"
+cross_listed_codes: []
+course_title: "Digital Design Fabrication"
+course_slug: "4-510-digital-design-fabrication-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lawrence Sass"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Science and Engineering"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This course will guide graduate students through the process of using rapid prototyping and CAD/CAM devices in a studio environment. The class has a theoretical focus on machine use within the process of design. Each student is expected to have completed one graduate level of design computing with a full understanding of solid modeling in CAD. Students are also expected to have completed at least one graduate design studio.
+course_url: "https://ocw.mit.edu/courses/4-510-digital-design-fabrication-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/4-510-digital-design-fabrication-fall-2008/505a6ea83ef01d1a60e07f0212c819e4_4-510f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

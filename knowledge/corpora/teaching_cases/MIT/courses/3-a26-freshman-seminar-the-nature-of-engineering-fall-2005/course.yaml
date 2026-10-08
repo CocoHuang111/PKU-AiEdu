@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-3-a26-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.A26"
+cross_listed_codes: []
+course_title: "Freshman Seminar: The Nature of Engineering"
+course_slug: "3-a26-freshman-seminar-the-nature-of-engineering-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Lorna Gibson"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Biomechanics"
+  - "Materials Science and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Biomechanics"
+      - name: "Materials Science and Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Are you interested in investigating how nature engineers itself? How engineers copy the shapes found in nature (“biomimetics”)? This Freshman Seminar investigates why similar shapes occur in so many natural things and how physics changes the shape of nature. Why are things in nature shaped the way they are? How do birds fly? Why do bird nests look the way they do? How do woodpeckers peck? Why can’t trees grow taller than they are? Why is grass skinny and hollow? What is the wood science behind musical instruments? Questions such as these are the subject of biomimetic research and they have been the focus of investigation in this course for the past three years.
+course_url: "https://ocw.mit.edu/courses/3-a26-freshman-seminar-the-nature-of-engineering-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/3-a26-freshman-seminar-the-nature-of-engineering-fall-2005/fe0777d63245a4656c1f16c3617e797f_3-a26f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

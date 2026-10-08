@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-res-15-004-january-iap-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.15-004"
+cross_listed_codes: []
+course_title: "System Dynamics: Systems Thinking and Modeling for a Complex World"
+course_slug: "res-15-004-system-dynamics-systems-thinking-and-modeling-for-a-complex-world-january-iap-2020"
+term: "January IAP"
+year: 2020
+as_taught_in: "January IAP 2020"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "James E. Paine"
+subject_primary: "Management"
+subject_secondary:
+  - "Operations Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  This one-day workshop provides a brief overview of system dynamics and a hands-on simulation experience. It also serves as a preview of the more in-depth coverage of the subject available in other courses offered at MIT Sloan.
+course_url: "https://ocw.mit.edu/courses/res-15-004-system-dynamics-systems-thinking-and-modeling-for-a-complex-world-january-iap-2020/"
+image_url: |
+  https://ocw.mit.edu/courses/res-15-004-system-dynamics-systems-thinking-and-modeling-for-a-complex-world-january-iap-2020/053b70bcb88e0ffc32bce16edfba06a9_MITRES15-004IAP20.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

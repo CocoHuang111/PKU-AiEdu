@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-david-helfand"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. David Helfand, PhD"
+slug: "david-helfand"
+source_url: "https://ctl.columbia.edu/transformations/faculty/david-helfand/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "98d0ffa6ae5eb3eaedebac288a207f225f429ab5c24b6c08a55771a8fc377278"

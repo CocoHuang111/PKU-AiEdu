@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-12-158-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.158"
+cross_listed_codes:
+  - "12.458"
+course_title: "Molecular Biogeochemistry"
+course_slug: "12-158-molecular-biogeochemistry-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Roger Summons"
+  - "Dr. Florence Schubotz"
+  - "Dr. Julio Sepulveda"
+  - "Dr. Paula Welander"
+subject_primary: "Biology"
+subject_secondary:
+  - "Ecology"
+  - "Molecular Biology"
+  - "Earth Science"
+  - "Geobiology"
+  - "Geochemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Ecology"
+          - "Molecular Biology"
+      - name: "Earth Science"
+        specialties:
+          - "Geobiology"
+          - "Geochemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+description: |
+  This course covers all aspects of molecular biosignatures, such as their pathways of lipid biosynthesis, the distribution patterns of lipid biosynthetic pathways with regard to phylogeny and physiology, isotopic contents, occurrence in modern organisms and environments, diagenetic pathways, analytical techniques and the occurrence of molecular fossils through the geological record. Students analyze in depth the recent literature on chemical fossils. Lectures provide background on the subject matter. Basic knowledge of organic chemistry required. Students taking graduate version complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/12-158-molecular-biogeochemistry-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/12-158-molecular-biogeochemistry-fall-2011/2425b796ba151e1a961da6a1bc51993c_12-158f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

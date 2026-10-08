@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-5-069-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.069"
+cross_listed_codes: []
+course_title: "Crystal Structure Analysis"
+course_slug: "5-069-crystal-structure-analysis-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Peter Mueller"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Analytical Chemistry"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Analytical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course covers the following topics: X-ray diffraction: symmetry, space groups, geometry of diffraction, structure factors, phase problem, direct methods, Patterson methods, electron density maps, structure refinement, how to grow good crystals, powder methods, limits of X-ray diffraction methods, and structure data bases.
+course_url: "https://ocw.mit.edu/courses/5-069-crystal-structure-analysis-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/5-069-crystal-structure-analysis-spring-2010/554135c46af1873203e11f6560f42e7c_5-069s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

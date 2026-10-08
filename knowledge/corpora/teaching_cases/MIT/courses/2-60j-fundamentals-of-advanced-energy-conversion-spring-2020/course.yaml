@@ -1,0 +1,99 @@
+schema_version: "1.0"
+course_id: "mitocw-2-60j-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.60J"
+cross_listed_codes:
+  - "2.62J"
+  - "10.392J"
+  - "22.40J"
+  - "10.390J"
+course_title: "Fundamentals of Advanced Energy Conversion"
+course_slug: "2-60j-fundamentals-of-advanced-energy-conversion-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Chemical Engineering"
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ahmed F. Ghoniem"
+subject_primary: "Combustion"
+subject_secondary:
+  - "Fossil Fuels"
+  - "Fuel Cells"
+  - "Hydrogen and Alternatives"
+  - "Nuclear Energy"
+  - "Renewables"
+  - "Engineering"
+  - "Chemical Engineering"
+  - "Transport Processes"
+  - "Systems Engineering"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Combustion"
+        specialties: []
+      - name: "Fossil Fuels"
+        specialties: []
+      - name: "Fuel Cells"
+        specialties: []
+      - name: "Hydrogen and Alternatives"
+        specialties: []
+      - name: "Nuclear Energy"
+        specialties: []
+      - name: "Renewables"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course covers fundamentals of thermodynamics, chemistry, and transport applied to energy systems. Topics include analysis of energy conversion and storage in thermal, mechanical, chemical, and electrochemical processes in power and transportation systems, with emphasis on efficiency, performance, and environmental impact. Applications include fuel reforming and alternative fuels, hydrogen, fuel cells and batteries, combustion, catalysis, combined and hybrid power cycles using fossil, nuclear and renewable resources.
+course_url: "https://ocw.mit.edu/courses/2-60j-fundamentals-of-advanced-energy-conversion-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/2-60j-fundamentals-of-advanced-energy-conversion-spring-2020/92fc5969d1aa2ec6a7e2ed62f781e38b_2-60js20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-11-942-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.942"
+cross_listed_codes: []
+course_title: "Regional Energy-Environmental Economic Modeling"
+course_slug: "11-942-regional-energy-environmental-economic-modeling-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Karen R. Polenske"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Climate Studies"
+  - "Environmental Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Economics"
+  - "Microeconomics"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+          - "Environmental Science"
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Microeconomics"
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This subject is on regional energy-environmental modeling rather than on general energy-environmental policies, but the models should have some policy relevance. We will start with some discussion of green accounting issues; then, we will cover a variety of theoretical and empirical topics related to spatial energy demand and supply, energy forecasts, national and regional energy prices, and environmental implications of regional energy consumption and production. Where feasible, the topics will have a spatial dimension. This is a new seminar, so we expect students to contribute material to the set of readings and topics covered during the semester.
+course_url: "https://ocw.mit.edu/courses/11-942-regional-energy-environmental-economic-modeling-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/11-942-regional-energy-environmental-economic-modeling-spring-2007/b708e6634d04d76a876ab619805a852a_11-942s07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

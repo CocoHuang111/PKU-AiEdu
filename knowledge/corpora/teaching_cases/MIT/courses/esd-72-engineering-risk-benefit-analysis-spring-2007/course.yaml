@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-72-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.72"
+cross_listed_codes:
+  - "1.155"
+  - "2.963"
+  - "3.577"
+  - "6.938"
+  - "10.816"
+  - "16.862"
+  - "22.82"
+course_title: "Engineering Risk-Benefit Analysis"
+course_slug: "esd-72-engineering-risk-benefit-analysis-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+  - "Civil and Environmental Engineering"
+  - "Mechanical Engineering"
+  - "Materials Science and Engineering"
+  - "Electrical Engineering and Computer Science"
+  - "Chemical Engineering"
+  - "Aeronautics and Astronautics"
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. George Apostolakis"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Modeling and Simulation"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  ERBA (ESD.72) emphasizes three methodologies - reliability and probabilistic risk assessment (RPRA), decision analysis (DA), and cost-benefit analysis (CBA). In this class, the issues of interest are: the risks associated with large engineering projects such as nuclear power reactors, the International Space Station, and critical infrastructures; the development of new products; the design of processes and operations with environmental externalities; and infrastructure renewal projects.
+course_url: "https://ocw.mit.edu/courses/esd-72-engineering-risk-benefit-analysis-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/esd-72-engineering-risk-benefit-analysis-spring-2007/c44a0f437b8d4e8907ab90563ec79430_esd-72s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

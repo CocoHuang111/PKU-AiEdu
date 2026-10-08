@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-310-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.310"
+cross_listed_codes: []
+course_title: "Bestsellers: Out for the Count"
+course_slug: "21l-310-bestsellers-out-for-the-count-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. William Donaldson"
+subject_primary: "Literature"
+subject_secondary:
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class uses a range of literary texts to trace the growth of the vampire trope from its first appearance in English-language fiction in the early years of the nineteenth century. Centering on classic works by Lord Byron, John Polidori, Sheridan le Fanu, Bram Stoker, and others, we learn about the formation of the modern literary canon, the folklore of the undead, and the creation of one of the most prolific popular culture genres—vampire fiction—which reached its first apotheosis in Stoker’s masterwork, Dracula .
+course_url: "https://ocw.mit.edu/courses/21l-310-bestsellers-out-for-the-count-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/21l-310-bestsellers-out-for-the-count-fall-2018/51a3f0ab6faf9451c3ae9a3a0ad58c6a_21L-310f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-6-883-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.883"
+cross_listed_codes: []
+course_title: "Pervasive Human Centric Computing (SMA 5508)"
+course_slug: "6-883-pervasive-human-centric-computing-sma-5508-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Larry Rudolph"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Human-Computer Interfaces"
+  - "Programming Languages"
+  - "Theory of Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+          - "Programming Languages"
+          - "Theory of Computation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is broad, covering a wide range of topics that have to do with the post-pc era of computing. It is a hands-on project course that also includes some foundational subjects. Students will program iPAQ handheld computers, cell phones (series 60 phones), speech processing, vision, Cricket location systems, GPS, and more. Most of the programming will be using Python®, but Python® can be learned and mastered during the course. This course was also taught as part of the Singapore-MIT Alliance (SMA) programme as course number SMA 5508 (Pervasive Computing).
+course_url: "https://ocw.mit.edu/courses/6-883-pervasive-human-centric-computing-sma-5508-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/6-883-pervasive-human-centric-computing-sma-5508-spring-2006/f6d37d09eaef7b57ce124b114839e448_6-883s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

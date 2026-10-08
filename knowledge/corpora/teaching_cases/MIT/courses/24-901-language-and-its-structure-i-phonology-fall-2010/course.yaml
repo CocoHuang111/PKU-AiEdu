@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-24-901-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.901"
+cross_listed_codes:
+  - "24.931"
+course_title: "Language and Its Structure I: Phonology"
+course_slug: "24-901-language-and-its-structure-i-phonology-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Michael Kenstowicz"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Phonology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Phonology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  24.901 is designed to give you a preliminary understanding of how the sound systems of different languages are structured, how and why they may differ from each other. The course also aims to provide you with analytical tools in phonology, enough to allow you to sketch the analysis of an entire phonological system by the end of the term. On a non-linguistic level, the course aims to teach you by example the virtues of formulating precise and explicit descriptive statements; and to develop your skills in making and evaluating arguments.
+course_url: "https://ocw.mit.edu/courses/24-901-language-and-its-structure-i-phonology-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/24-901-language-and-its-structure-i-phonology-fall-2010/92f6ccfa16cfa2baf3d48321adacac4f_24-901f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

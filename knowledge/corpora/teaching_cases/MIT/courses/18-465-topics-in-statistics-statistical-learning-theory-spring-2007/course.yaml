@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-18-465-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.465"
+cross_listed_codes: []
+course_title: "Topics in Statistics: Statistical Learning Theory"
+course_slug: "18-465-topics-in-statistics-statistical-learning-theory-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dmitry Panchenko"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Artificial Intelligence"
+  - "Mathematics"
+  - "Probability and Statistics"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Artificial Intelligence"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The main goal of this course is to study the generalization ability of a number of popular machine learning algorithms such as boosting, support vector machines and neural networks. Topics include Vapnik-Chervonenkis theory, concentration inequalities in product spaces, and other elements of empirical process theory.
+course_url: "https://ocw.mit.edu/courses/18-465-topics-in-statistics-statistical-learning-theory-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/18-465-topics-in-statistics-statistical-learning-theory-spring-2007/00d896340dedef11b2ef02c3af894892_18-465s07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

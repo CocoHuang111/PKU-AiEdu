@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-2-tha-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.ThA"
+cross_listed_codes: []
+course_title: "Undergraduate Thesis for Course 2-A"
+course_slug: "2-tha-undergraduate-thesis-for-course-2-a-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "David Custer"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Academic Writing"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course is taken by mechanical engineering majors during their senior year to prepare a detailed thesis proposal under the guidance of staff from the Writing Program. The thesis proposal must bear the endorsement of the thesis supervisor and indicate the number of units planned. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/2-tha-undergraduate-thesis-for-course-2-a-january-iap-2007/"
+image_url: "https://ocw.mit.edu/courses/2-tha-undergraduate-thesis-for-course-2-a-january-iap-2007/7160346d55f2f2de4f03016615898280_2-THAiap07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

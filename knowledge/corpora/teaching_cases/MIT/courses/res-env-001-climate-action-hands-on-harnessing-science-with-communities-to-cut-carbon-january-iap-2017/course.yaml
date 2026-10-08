@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-res-env-001-january-iap-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.ENV-001"
+cross_listed_codes: []
+course_title: "Climate Action Hands-On: Harnessing Science with Communities to Cut Carbon"
+course_slug: "res-env-001-climate-action-hands-on-harnessing-science-with-communities-to-cut-carbon-january-iap-2017"
+term: "January IAP"
+year: 2017
+as_taught_in: "January IAP 2017"
+language: "en"
+departments: []
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "David Damm-Luhr"
+  - "Rajesh Kasturirangan"
+  - "Zeyneb Magavi"
+  - "Chris Nidel"
+  - "Nathan Phillips"
+  - "Audrey Schulman"
+  - "Britta Voss"
+  - "Jeff Warren"
+  - "Ory Zik"
+subject_primary: "Climate"
+subject_secondary:
+  - "Fossil Fuels"
+  - "Engineering"
+  - "Environmental Engineering"
+  - "Environmental Management"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+      - name: "Fossil Fuels"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Video Materials"
+  - "Workshop Videos"
+description: |
+  This course explores how citizen science can support community actions to combat climate change. Participants will learn about framing problems, design ways to gather data, gather some of their own field data, and consider how the results can enable action. Leaks in the natural gas system—a major source of methane emissions, and a powerful contributor to climate change—will be a particular focus. The course was organized by ClimateX and Fossil Free MIT , with support from the National Science Foundation for the methane monitoring equipment. It was offered during the Independent Activities Period (IAP), which is a special 4-week January term at MIT.
+course_url: "https://ocw.mit.edu/courses/res-env-001-climate-action-hands-on-harnessing-science-with-communities-to-cut-carbon-january-iap-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/res-env-001-climate-action-hands-on-harnessing-science-with-communities-to-cut-carbon-january-iap-2017/6c42c4fa9fd610ae5240d92dacf971a5_res-env-001iap17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-18-s096-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.S096"
+cross_listed_codes: []
+course_title: "Topics in Mathematics of Data Science"
+course_slug: "18-s096-topics-in-mathematics-of-data-science-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Afonso Bandeira"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This is a mostly self-contained research-oriented course designed for undergraduate students (but also extremely welcoming to graduate students) with an interest in doing research in theoretical aspects of algorithms that aim to extract information from data. These often lie in overlaps of two or more of the following: Mathematics, Applied Mathematics, Computer Science, Electrical Engineering, Statistics, and / or Operations Research.
+course_url: "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-of-data-science-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-of-data-science-fall-2015/4c2db203773cbde2bfcad8df913ce1cc_18-s096f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

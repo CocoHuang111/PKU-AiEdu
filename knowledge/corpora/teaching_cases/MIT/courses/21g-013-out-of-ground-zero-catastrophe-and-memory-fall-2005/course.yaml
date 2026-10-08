@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-013-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.013"
+cross_listed_codes: []
+course_title: "Out of Ground Zero: Catastrophe and Memory"
+course_slug: "21g-013-out-of-ground-zero-catastrophe-and-memory-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Charity Scribner"
+subject_primary: "Literature"
+subject_secondary:
+  - "International Literature"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Sociology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Within twenty-four hours of the attack on the World Trade Center on September 11, 2001 politicians, artists, and cultural critics had begun to ask how to memorialize the deaths of thousands of people. This question persists today, but it can also be countered with another: is building a monument the best way to commemorate that moment in history? What might other discourses, media, and art forms offer in such a project of collective memory? How can these cultural formations help us to assess the immediate reaction to the attack? To approach these issues, “Out of Ground Zero” looks back to earlier sites of catastrophe in Germany and Japan.
+course_url: "https://ocw.mit.edu/courses/21g-013-out-of-ground-zero-catastrophe-and-memory-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21g-013-out-of-ground-zero-catastrophe-and-memory-fall-2005/cb7000089e705791c9805b107a2705d9_21g-013f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

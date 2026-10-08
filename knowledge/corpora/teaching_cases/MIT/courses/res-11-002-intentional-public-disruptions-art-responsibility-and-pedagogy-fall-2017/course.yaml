@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-res-11-002-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.11-002"
+cross_listed_codes: []
+course_title: "Intentional Public Disruptions: Art, Responsibility, and Pedagogy"
+course_slug: "res-11-002-intentional-public-disruptions-art-responsibility-and-pedagogy-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "B. Stephen Carpenter II"
+  - "Prof. Lawrence Susskind"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Social Science"
+  - "Public Administration"
+  - "Social Welfare"
+  - "Urban Studies"
+  - "Society"
+  - "Global Poverty"
+  - "Latin and Caribbean Studies"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Social Welfare"
+      - name: "Urban Studies"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+description: |
+  During the fall of 2017, art educator B. Stephen Carpenter II began a residency at the MIT Center for Art, Science & Technology (CAST). He provided new perspectives on issues of access, privilege, and the global water crisis through a series of seminars, performances, and workshops. Carpenter’s seminars illustrated ways of disrupting systems of oppression and ways to increase access to potable water in politically marginalized communites in the United States and abroad.
+course_url: "https://ocw.mit.edu/courses/res-11-002-intentional-public-disruptions-art-responsibility-and-pedagogy-fall-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/res-11-002-intentional-public-disruptions-art-responsibility-and-pedagogy-fall-2017/81234111740c864e9a34866bc6279b34_RES-11-002f17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

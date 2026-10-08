@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-8-962-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.962"
+cross_listed_codes: []
+course_title: "General Relativity"
+course_slug: "8-962-general-relativity-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Scott Hughes"
+subject_primary: "Physics"
+subject_secondary:
+  - "Relativity"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Relativity"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  8.962 is MIT's graduate course in general relativity, which covers the basic principles of Einstein's general theory of relativity, differential geometry, experimental tests of general relativity, black holes, and cosmology.
+course_url: "https://ocw.mit.edu/courses/8-962-general-relativity-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/8-962-general-relativity-spring-2020/450241916ecfacb4b9810cf958762651_8-962s20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

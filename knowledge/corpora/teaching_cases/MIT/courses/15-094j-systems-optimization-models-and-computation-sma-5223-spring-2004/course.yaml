@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-15-094j-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.094J"
+cross_listed_codes:
+  - "1.142J"
+course_title: "Systems Optimization: Models and Computation (SMA 5223)"
+course_slug: "15-094j-systems-optimization-models-and-computation-sma-5223-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jie Sun"
+  - "Prof. Robert Freund"
+  - "Prof. Thomas Magnanti"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Systems Optimization"
+  - "Mathematics"
+  - "Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Systems Optimization"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This class is an applications-oriented course covering the modeling of large-scale systems in decision-making domains and the optimization of such systems using state-of-the-art optimization tools. Application domains include: transportation and logistics planning, pattern classification and image processing, data mining, design of structures, scheduling in large systems, supply-chain management, financial engineering, and telecommunications systems planning. Modeling tools and techniques include linear, network, discrete and nonlinear optimization, heuristic methods, sensitivity and post-optimality analysis, decomposition methods for large-scale systems, and stochastic optimization. This course was also taught as part of the Singapore-MIT Alliance (SMA) programme as course number SMA 5223 (System Optimisation: Models and Computation).
+course_url: "https://ocw.mit.edu/courses/15-094j-systems-optimization-models-and-computation-sma-5223-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/15-094j-systems-optimization-models-and-computation-sma-5223-spring-2004/995ba6399e8d2e63387355e220776313_15-094js04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-15-567-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.567"
+cross_listed_codes: []
+course_title: "The Economics of Information: Strategy, Structure and Pricing"
+course_slug: "15-567-the-economics-of-information-strategy-structure-and-pricing-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Erik Brynjolfsson"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Organizational Behavior"
+  - "Social Science"
+  - "Economics"
+  - "Microeconomics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Microeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  15.567 The Economics of Information provides an analysis of the underlying economics of information with management implications. It studies the effects of digitization and technology on industry, organizational structure, and business strategy, and examines pricing, bundling, and versioning of digital goods, including music, video, software, and communication services. In addition, the course considers the managerial implications of social networks, search, targeted advertising, personalization, privacy, network externalities, open source, and alliances.
+course_url: "https://ocw.mit.edu/courses/15-567-the-economics-of-information-strategy-structure-and-pricing-fall-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/15-567-the-economics-of-information-strategy-structure-and-pricing-fall-2010/865a081fd74c71b86e95e13b91c2af76_15-567f10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

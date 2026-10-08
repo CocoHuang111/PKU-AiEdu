@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-18-013a-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.013A"
+cross_listed_codes: []
+course_title: "Calculus with Applications"
+course_slug: "18-013a-calculus-with-applications-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Daniel Kleitman"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Calculus"
+  - "Differential Equations"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This is an undergraduate course on differential calculus in one and several dimensions. It is intended as a one and a half term course in calculus for students who have studied calculus in high school. The format allows it to be entirely self contained, so that it is possible to follow it without any background in calculus.
+course_url: "https://ocw.mit.edu/courses/18-013a-calculus-with-applications-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/18-013a-calculus-with-applications-spring-2005/ee1d940f9656f4904a480cc98618a09d_18-013as05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

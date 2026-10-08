@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-10-40-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.40"
+cross_listed_codes: []
+course_title: "Chemical Engineering Thermodynamics"
+course_slug: "10-40-chemical-engineering-thermodynamics-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Bernhardt Trout"
+  - "Prof. Jefferson W. Tester"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Science"
+  - "Chemistry"
+  - "Analytical Chemistry"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Analytical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course aims to connect the principles, concepts, and laws/postulates of classical and statistical thermodynamics to applications that require quantitative knowledge of thermodynamic properties from a macroscopic to a molecular level. It covers their basic postulates of classical thermodynamics and their application to transient open and closed systems, criteria of stability and equilibria, as well as constitutive property models of pure materials and mixtures emphasizing molecular-level effects using the formalism of statistical mechanics. Phase and chemical equilibria of multicomponent systems are covered. Applications are emphasized through extensive problem work relating to practical cases.
+course_url: "https://ocw.mit.edu/courses/10-40-chemical-engineering-thermodynamics-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/10-40-chemical-engineering-thermodynamics-fall-2003/e95dfac16b288eb5e00dcb58b0be6c3f_10-40f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

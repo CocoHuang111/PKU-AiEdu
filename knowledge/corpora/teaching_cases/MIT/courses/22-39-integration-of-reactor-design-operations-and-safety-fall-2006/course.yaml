@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-22-39-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.39"
+cross_listed_codes: []
+course_title: "Integration of Reactor Design, Operations, and Safety"
+course_slug: "22-39-integration-of-reactor-design-operations-and-safety-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. George Apostolakis"
+  - "Prof. Neil Todreas"
+  - "Prof. Ronald Ballinger"
+  - "Prof. Andrew Kadak"
+subject_primary: "Nuclear Energy"
+subject_secondary:
+  - "Engineering"
+  - "Nuclear Engineering"
+  - "Nuclear Materials"
+  - "Nuclear Systems, Policy, and Economics"
+  - "Science"
+  - "Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Nuclear Energy"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Nuclear Materials"
+          - "Nuclear Systems, Policy, and Economics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course integrates studies of engineering sciences, reactor physics and safety assessment into nuclear power plant design. Topics include materials issues in plant design and operations, aspects of thermal design, fuel depletion and fission-product poisoning, and temperature effects on reactivity, safety considerations in regulations and operations, such as the evolution of the regulatory process, the concept of defense in depth, General Design Criteria, accident analysis, probabilistic risk assessment, and risk-informed regulations.
+course_url: "https://ocw.mit.edu/courses/22-39-integration-of-reactor-design-operations-and-safety-fall-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/22-39-integration-of-reactor-design-operations-and-safety-fall-2006/2c66dc4f15e2c7ad835c009b05242289_22-39f06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

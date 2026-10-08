@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-003-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.003"
+cross_listed_codes: []
+course_title: "Introduction to Fiction"
+course_slug: "21l-003-introduction-to-fiction-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Wyn Kelley"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course investigates the uses and boundaries of fiction in a range of novels and narrative styles–traditional and innovative, western and nonwestern–and raises questions about the pleasures and meanings of verbal texts in different cultures, times, and forms. Toward the end of the term, we will be particularly concerned with the relationship between art and war in a diverse selection of works.
+course_url: "https://ocw.mit.edu/courses/21l-003-introduction-to-fiction-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/21l-003-introduction-to-fiction-fall-2003/de4487ac0e4b9dda40999d9a94c50357_21l-003f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

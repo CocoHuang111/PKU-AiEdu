@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-18-315-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.315"
+cross_listed_codes: []
+course_title: "Combinatorial Theory: Hyperplane Arrangements"
+course_slug: "18-315-combinatorial-theory-hyperplane-arrangements-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Richard Stanley"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Discrete Mathematics"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This is a graduate-level course in combinatorial theory. The content varies year to year, according to the interests of the instructor and the students. The topic of this course is hyperplane arrangements, including background material from the theory of posets and matroids.
+course_url: "https://ocw.mit.edu/courses/18-315-combinatorial-theory-hyperplane-arrangements-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/18-315-combinatorial-theory-hyperplane-arrangements-fall-2004/27e8bdfd4f83898aba33aaf5f6ed4625_18-315f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

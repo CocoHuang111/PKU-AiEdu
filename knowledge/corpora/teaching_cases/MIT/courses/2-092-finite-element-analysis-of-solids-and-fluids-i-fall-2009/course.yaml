@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-2-092-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.092"
+cross_listed_codes:
+  - "2.093"
+course_title: "Finite Element Analysis of Solids and Fluids I"
+course_slug: "2-092-finite-element-analysis-of-solids-and-fluids-i-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Klaus-Jürgen Bathe"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Solid Mechanics"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Differential Equations"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Solid Mechanics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments"
+  - "Projects with Examples"
+description: |
+  This course introduces finite element methods for the analysis of solid, structural, fluid, field, and heat transfer problems. Steady-state, transient, and dynamic conditions are considered. Finite element methods and solution procedures for linear and nonlinear analyses are presented using largely physical arguments. The homework and a term project (for graduate students) involve use of the general purpose finite element analysis program ADINA . Applications include finite element analyses, modeling of problems, and interpretation of numerical results.
+course_url: "https://ocw.mit.edu/courses/2-092-finite-element-analysis-of-solids-and-fluids-i-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/2-092-finite-element-analysis-of-solids-and-fluids-i-fall-2009/ba34059d5c8c4c2731a873008e9f2631_2-092f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

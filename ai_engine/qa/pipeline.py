@@ -180,6 +180,7 @@ def _citations(contexts: list[dict]) -> list[dict]:
             "corpus": c["corpus"],
             "corpus_label": c["corpus_label"],
             "source": c["source"],
+            "source_url": c.get("source_url", ""),
             "score": c["score"],
             "snippet": c["text"][:200],
             "pinned": bool(c.get("pinned")),

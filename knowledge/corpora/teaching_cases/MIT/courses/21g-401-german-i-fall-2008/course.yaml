@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-401-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.401"
+cross_listed_codes:
+  - "21G.451"
+  - "21G.471"
+course_title: "German I"
+course_slug: "21g-401-german-i-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Peter Weise"
+subject_primary: "Language"
+subject_secondary:
+  - "German"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "German"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  This course gives an introduction to German language and culture. The focus is on acquisition of vocabulary and grammatical concepts through active communication. Audio, video, and printed materials provide direct exposure to authentic German language and culture. A self-paced language lab program is fully coordinated with the textbook/workbook. The first semester covers the development of effective basic communication skills.
+course_url: "https://ocw.mit.edu/courses/21g-401-german-i-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/21g-401-german-i-fall-2008/8d22365e210591b103bb3be4fcbb837e_21g-401f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

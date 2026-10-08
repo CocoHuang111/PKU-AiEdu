@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-16-61-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.61"
+cross_listed_codes: []
+course_title: "Aerospace Dynamics"
+course_slug: "16-61-aerospace-dynamics-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Deyst"
+  - "Prof. Jonathan P. How"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Aerodynamics"
+  - "Astrodynamics"
+  - "Mechanical Engineering"
+  - "Dynamics and Control"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Aerodynamics"
+          - "Astrodynamics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This undergraduate course builds upon the dynamics content of Unified Engineering, a sophomore course taught in the Department of Aeronautics and Astronautics at MIT. Vector kinematics are applied to translation and rotation of rigid bodies. Newtonian and Lagrangian methods are used to formulate and solve equations of motion. Additional numerical methods are presented for solving rigid body dynamics problems. Examples and problems describe applications to aircraft flight dynamics and spacecraft attitude dynamics.
+course_url: "https://ocw.mit.edu/courses/16-61-aerospace-dynamics-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/16-61-aerospace-dynamics-spring-2003/2b635ac99c48a5453881238d450daa98_16-61s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

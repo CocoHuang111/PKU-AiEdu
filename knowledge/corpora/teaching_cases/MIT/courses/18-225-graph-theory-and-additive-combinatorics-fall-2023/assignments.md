@@ -1,0 +1,20 @@
+> 检索摘要：18.225 Graph Theory and Additive Combinatorics（Fall 2023，Graduate）的「Problem Sets」。页内标题：Problem Sets。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/18-225-graph-theory-and-additive-combinatorics-fall-2023/pages/problem-sets/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Problem Sets
+
+[The problem set (PDF)](https://ocw.mit.edu/courses/18-225-graph-theory-and-additive-combinatorics-fall-2023/resources/mit18_225_f23_psets_pdf/) is a list of problems for practice. A subset of these problems will be designated as to-be-turned-in. Only the designated problems are required to be submitted. Bonus problems, marked by ★, are more challenging. You may attain a grade of A- by only solving the non-starred problems. To attain a grade of A or A+, you should solve a substantial number of starred problems.
+
+| PROBLEM SET | PROBLEMS |
+| --- | --- |
+| Problem set 1 | A3, A4, B1, B3, B4, B5★, B6★, B7★, B8★, B9★, and B12 |
+| Problem set 2 | B14, B15, B20–B22, B23★, C4, C5(a), C5(b)★, C6★, and C7★ |
+| Problem set 3 | C8, C9, C10★, C11★, C12–C14, C15★, C16★, C17★, and C18 |
+| Problem set 4 | D1, D3★, D5★, D7, D8, D11★, D12, D14★, D16, D17★, E2, E3, and E4★ |
+| Problem set 5 | E6, E7★, F2, F3, F11★, F12, F13★, F14★, G1, G2★, G3, G5★, and G6 |
+| Problem set 6 | G7, H1, H2★, H3★, H4★, H6★, H7–H9, H11★, and H12 |

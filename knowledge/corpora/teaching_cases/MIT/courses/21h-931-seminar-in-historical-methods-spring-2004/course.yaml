@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-931-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.931"
+cross_listed_codes: []
+course_title: "Seminar in Historical Methods"
+course_slug: "21h-931-seminar-in-historical-methods-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anne McCants"
+subject_primary: "History"
+subject_secondary:
+  - "Comparative History"
+  - "Historical Methods"
+  - "Historiography"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Comparative History"
+          - "Historical Methods"
+          - "Historiography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Written Assignments with Examples"
+description: |
+  This course is designed to acquaint students with a variety of approaches to the past used by historians writing in the twentieth century. The books we read have all made significant contributions to their respective sub-fields and have been selected to give as wide a coverage in both field and methodology as possible in one semester’s worth of reading. We examine how historians conceive of their object of study, how they use primary sources as a basis for their accounts, how they structure the narrative and analytic discussion of their topic, and what are the advantages and drawbacks of their various approaches.
+course_url: "https://ocw.mit.edu/courses/21h-931-seminar-in-historical-methods-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21h-931-seminar-in-historical-methods-spring-2004/d12bd9fbc1d02f4389f68e047c1f4ceb_21h-931s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

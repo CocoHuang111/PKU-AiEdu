@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-4-273-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.273"
+cross_listed_codes: []
+course_title: "Introduction to Design Inquiry"
+course_slug: "4-273-introduction-to-design-inquiry-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Terry Knight"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This subject explores the varied nature and practice of computation in design. We will view computation and design broadly. Computation will include both work done on the computer (digital computing) and by-hand. Design will include both the process of making designs and artifacts, as well as the designs and artifacts themselves. The aim of the course is to develop a view of computation and design beyond the specifics of techniques and tools, and a critical, self-awareness of our own approaches and metaphors for computation and design.
+course_url: "https://ocw.mit.edu/courses/4-273-introduction-to-design-inquiry-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/4-273-introduction-to-design-inquiry-fall-2004/cd95f461a9ba5785475a76cca5c87735_4-273f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

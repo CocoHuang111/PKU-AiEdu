@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-2-008-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.008"
+cross_listed_codes: []
+course_title: "Design and Manufacturing II"
+course_slug: "2-008-design-and-manufacturing-ii-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jung-Hoon Chun"
+  - "Dr. Josh Ramos"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Engineering"
+  - "Materials Science and Engineering"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course introduces you to modern manufacturing with four areas of emphasis: manufacturing processes, equipment/control, systems, and design for manufacturing. The course exposes you to integration of engineering disciplines for determining manufacturing rate, cost, quality, and flexibility. Topics include process physics, equipment design and control, quality, design for manufacturing, and systems design and operation. Labs are integral parts of the course, and expose you to various manufacturing fundamentals and practices.
+course_url: "https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2025/mit2_008_s25_v2.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

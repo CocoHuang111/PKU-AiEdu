@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-450-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.450"
+cross_listed_codes: []
+course_title: "Holographic Imaging"
+course_slug: "mas-450-holographic-imaging-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michael Halle"
+  - "Prof. Stephen Benton"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Science"
+  - "Cognitive Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Projects"
+description: |
+  MAS.450 is a laboratory course about holography and holographic imaging. This course teaches holography from a scientific and analytical point of view, moving from interference and diffraction to imaging of single points to the display of three-dimensional images. Using a “hands-on” approach, students explore the underlying physical phenomena that make holograms work, as well as designing laboratory setups to make their own images. The course also teaches mathematical techniques that allow the behavior of holography to be understood, predicted, and harnessed. Holography today brings together the fields of optics, chemistry, computer science, electrical engineering, visualization, three-dimensional display, and human perception in a unique and comprehensive way. As such, MAS.450 offers interesting and useful exposure to a wide range of principles and ideas. As a course satisfying the Institute Laboratory Requirement, MAS.450 teaches about science, scientific research, and the scientific method through observation and exploration, hinting at the excitement that inventors feel before they put their final equations to paper.
+course_url: "https://ocw.mit.edu/courses/mas-450-holographic-imaging-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/mas-450-holographic-imaging-spring-2003/e3986afb4e8937475499c11544fccbbc_mas-450s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-11-947-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.947"
+cross_listed_codes: []
+course_title: "Sustainable Economic Development"
+course_slug: "11-947-sustainable-economic-development-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Karl Seidman"
+  - "Prof. William Shutkin"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Sustainability"
+  - "Social Science"
+  - "Economics"
+  - "Developmental Economics"
+  - "Public Administration"
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course explores the application of environmental and economic development planning, policy and management approaches to urban neighborhood community development. Through an applied service learning approach, the course requires students to prepare a sustainable development plan for a community-based non-profit organization. Through this client-based planning project, students will have the opportunity to test how sustainable development concepts and different economic and environmental planning approaches can be applied to advance specific community goals within the constraints of specific neighborhoods and community organizations.
+course_url: "https://ocw.mit.edu/courses/11-947-sustainable-economic-development-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/11-947-sustainable-economic-development-spring-2004/015cb9487e2096939389aba43aaefb18_11-947s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

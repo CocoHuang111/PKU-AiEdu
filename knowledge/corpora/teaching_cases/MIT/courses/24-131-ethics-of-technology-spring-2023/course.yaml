@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-24-131-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.131"
+cross_listed_codes: []
+course_title: "Ethics of Technology"
+course_slug: "24-131-ethics-of-technology-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Kevin Mills"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Human-Computer Interfaces"
+  - "Humanities"
+  - "Philosophy"
+  - "Ethics"
+  - "Social Science"
+  - "Legal Studies"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Legal Studies"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This course introduces the tools of philosophical ethics through application to contemporary issues concerning technology. It takes up current debates on topics such as privacy and surveillance, algorithmic bias, the promise and peril of artificial intelligence, automation and the future of work, and threats to democracy in the digital age from the perspective of users, practitioners, and regulatory/governing bodies.
+course_url: "https://ocw.mit.edu/courses/24-131-ethics-of-technology-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/24-131-ethics-of-technology-spring-2023/24-131s23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

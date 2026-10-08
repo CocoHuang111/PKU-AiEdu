@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-04j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.04J"
+cross_listed_codes:
+  - "1.041J"
+  - "ESD.01J"
+course_title: "Frameworks and Models in Engineering Systems / Engineering System Design"
+course_slug: "esd-04j-frameworks-and-models-in-engineering-systems-engineering-system-design-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joseph Sussman"
+subject_primary: "Nuclear Energy"
+subject_secondary:
+  - "Engineering"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Systems Design"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Nuclear Energy"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Exams"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This class provides an introduction to quantitative models and qualitative frameworks for studying complex engineering systems. Also taught is the art of abstracting a complex system into a model for purposes of analysis and design while dealing with complexity, emergent behavior, stochasticity, non-linearities and the requirements of many stakeholders with divergent objectives. The successful completion of the class requires a semester-long class project that deals with critical contemporary issues which require an integrative, interdisciplinary approach using the above models and frameworks.
+course_url: "https://ocw.mit.edu/courses/esd-04j-frameworks-and-models-in-engineering-systems-engineering-system-design-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/esd-04j-frameworks-and-models-in-engineering-systems-engineering-system-design-spring-2007/cb708f01a05d5042adbd279a58a4aa3d_esd-04js07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

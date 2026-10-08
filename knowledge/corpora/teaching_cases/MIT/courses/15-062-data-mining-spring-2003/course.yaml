@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-15-062-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.062"
+cross_listed_codes: []
+course_title: "Data Mining"
+course_slug: "15-062-data-mining-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Nitin Patel"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Management"
+  - "Engineering"
+  - "Computer Science"
+  - "Data Mining"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Data that has relevance for managerial decisions is accumulating at an incredible rate due to a host of technological advances. Electronic data capture has become inexpensive and ubiquitous as a by-product of innovations such as the internet, e-commerce, electronic banking, point-of-sale devices, bar-code readers, and intelligent machines. Such data is often stored in data warehouses and data marts specifically intended for management decision support. Data mining is a rapidly growing field that is concerned with developing techniques to assist managers to make intelligent use of these repositories. A number of successful applications have been reported in areas such as credit rating, fraud detection, database marketing, customer relationship management, and stock market investments. The field of data mining has evolved from the disciplines of statistics and artificial intelligence. This course will examine methods that have emerged from both fields and proven to be of value in recognizing patterns and making predictions from an applications perspective. We will survey applications and provide an opportunity for hands-on experimentation with algorithms for data mining using easy-to-use software and cases.
+course_url: "https://ocw.mit.edu/courses/15-062-data-mining-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/15-062-data-mining-spring-2003/4a7476b85098f9833de199026f9cc35c_15-062s03.JPG"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

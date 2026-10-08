@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-cc-111-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CC.111"
+cross_listed_codes: []
+course_title: "Modern Conceptions of Freedom"
+course_slug: "cc-111-modern-conceptions-of-freedom-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Concourse"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Linda Rabieh"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Political Philosophy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course examines the modern definition of freedom, and the obligations that people accept in honoring it. It investigates how these obligations are captured in the principles of our political associations. This course also studies how the centrality of freedom plays out in the political thought of such authors as Hobbes, Locke, Rousseau, Burke and Montesquieu, as well as debating which notions of freedom inspire and sustain the American experiment by careful reading of the documents and arguments of the founding of the United States. This course is part of the Concourse program at MIT.
+course_url: "https://ocw.mit.edu/courses/cc-111-modern-conceptions-of-freedom-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/cc-111-modern-conceptions-of-freedom-spring-2013/570145f2dc2535544c89aebc302e4fc5_CC-111s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

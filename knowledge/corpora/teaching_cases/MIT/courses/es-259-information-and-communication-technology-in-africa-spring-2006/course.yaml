@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-es-259-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.259"
+cross_listed_codes: []
+course_title: "Information and Communication Technology in Africa"
+course_slug: "es-259-information-and-communication-technology-in-africa-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Raja Bobbili"
+  - "Prof. Shigeru Miyagawa"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Electrical Engineering"
+  - "Telecommunications"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This is a discussion-based, interactive seminar on the development of information and communication technology in Sub-Saharan Africa. The students will seek to understand the issues surrounding designing and instituting policy, and explore the possible ways in which they can make an impact on information and communication technology in Africa.
+course_url: "https://ocw.mit.edu/courses/es-259-information-and-communication-technology-in-africa-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/es-259-information-and-communication-technology-in-africa-spring-2006/5926b261b341f711f04d77d63c588d17_es-259s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

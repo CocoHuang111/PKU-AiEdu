@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-777-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.777"
+cross_listed_codes: []
+course_title: "Science Writing in Contemporary Society"
+course_slug: "21w-777-science-writing-in-contemporary-society-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Karen Boiko"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Creative Writing"
+  - "Criticism"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Creative Writing"
+          - "Criticism"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class addresses the craft of writing about science in and for contemporary society, both its pleasures and its challenges. We will read essays, reportage, op-eds, and web-based articles on a variety of topics concerning science, technology, medicine and nature. Readings by contemporary writers such as Elizabeth Kolbert, Atul Gawande, and Michael Pollan will serve as examples of the craft and sources of ideas for our own writing.
+course_url: "https://ocw.mit.edu/courses/21w-777-science-writing-in-contemporary-society-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/21w-777-science-writing-in-contemporary-society-spring-2017/55f5f0cdf973c8dac8f2d7c09f21a0bf_21W-777s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

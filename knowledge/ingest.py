@@ -20,6 +20,7 @@ from ai_engine.rag import (
     collection_stats,
     iter_documents,
     reset_collection,
+    source_url_for_document,
     split_text,
 )
 
@@ -43,9 +44,11 @@ def ingest_corpus(name: str, reset: bool = False) -> int:
         if not chunks:
             continue
         rel = path.relative_to(directory)
+        source_url = source_url_for_document(path, directory, text)
         metadatas = [
             {
                 "source": str(rel),
+                "source_url": source_url,
                 "corpus": name,
                 "chunk_index": i,
                 "total_chunks": len(chunks),

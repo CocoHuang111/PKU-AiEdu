@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-608-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.608"
+cross_listed_codes:
+  - "CMS.864"
+course_title: "Game Design"
+course_slug: "cms-608-game-design-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Philip B. Tan"
+  - "Jason Begy"
+subject_primary: "Game Design"
+subject_secondary:
+  - "Media Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+      - name: "Media Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Audio"
+  - "Projects with Examples"
+description: |
+  This course provides practical instruction in the design and analysis of non-digital games. Students cover the texts, tools, references and historical context to analyze and compare game designs across a variety of genres, including sports, game shows, games of chance, card games, schoolyard games, board games, and role–playing games. In teams, students design, develop, and thoroughly test their original games to understand the interaction and evolution of game rules. Students taking the graduate version complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/cms-608-game-design-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/cms-608-game-design-fall-2010/11d03f515ca1d981dd9895aa7f41a6c4_cms-608f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

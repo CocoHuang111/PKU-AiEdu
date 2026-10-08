@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-12-091-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.091"
+cross_listed_codes: []
+course_title: "Radon Research in Multidisciplines: A Review"
+course_slug: "12-091-radon-research-in-multidisciplines-a-review-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Ila Pillalamarri"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Nuclear Materials"
+  - "Health and Medicine"
+  - "Public Health"
+  - "Science"
+  - "Earth Science"
+  - "Environmental Science"
+  - "Geochemistry"
+  - "Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Nuclear Materials"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+          - "Geochemistry"
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This course introduces fundamentals of radon physics, geology, radiation biology; provides hands on experience of measurement of radon in MIT environments, and discusses current radon research in the fields of geology, environment, building and construction, medicine and health physics. The course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/12-091-radon-research-in-multidisciplines-a-review-january-iap-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/12-091-radon-research-in-multidisciplines-a-review-january-iap-2007/5e57e929eeab065c17bb759045082d67_12-091iap07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

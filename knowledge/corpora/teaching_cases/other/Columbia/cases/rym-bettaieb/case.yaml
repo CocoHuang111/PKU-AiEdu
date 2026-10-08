@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-rym-bettaieb"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Rym Bettaieb, PhD"
+slug: "rym-bettaieb"
+source_url: "https://ctl.columbia.edu/transformations/faculty/rym-bettaieb/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "88911ac2e5a754531443e177d2e1cd22e8c45e091507e3fa0af93f2d241ebe54"

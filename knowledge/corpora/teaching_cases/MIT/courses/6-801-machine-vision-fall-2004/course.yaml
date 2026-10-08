@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-6-801-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.801"
+cross_listed_codes:
+  - "6.866"
+course_title: "Machine Vision"
+course_slug: "6-801-machine-vision-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Berthold Horn"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+  - "Signal Processing"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+          - "Signal Processing"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  Machine Vision provides an intensive introduction to the process of generating a symbolic description of an environment from an image. Lectures describe the physics of image formation, motion vision, and recovering shapes from shading. Binary image processing and filtering are presented as preprocessing steps. Further topics include photogrammetry, object representation alignment, analog VLSI and computational vision. Applications to robotics and intelligent machine interaction are discussed.
+course_url: "https://ocw.mit.edu/courses/6-801-machine-vision-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/6-801-machine-vision-fall-2004/0e6182328b6e256d8e4aa86e6dcd2355_6-801f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

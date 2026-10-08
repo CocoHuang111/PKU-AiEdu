@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-15-317-summer-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.317"
+cross_listed_codes: []
+course_title: "Organizational Leadership and Change"
+course_slug: "15-317-organizational-leadership-and-change-summer-2009"
+term: "Summer"
+year: 2009
+as_taught_in: "Summer 2009"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Janice Klein"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Operations Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  15.317 Organizational Leadership and Change focuses on practical experience that blends theory and practice. Students reflect on prior leadership experiences and then apply lessons learned to further develop their leadership capabilities. The course requires active participation in all leadership classes and/or activities as well as short deliverables throughout the program.
+course_url: "https://ocw.mit.edu/courses/15-317-organizational-leadership-and-change-summer-2009/"
+image_url: "https://ocw.mit.edu/courses/15-317-organizational-leadership-and-change-summer-2009/08c7f3c8da5e67e541a809e389ef1dec_15-317su09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

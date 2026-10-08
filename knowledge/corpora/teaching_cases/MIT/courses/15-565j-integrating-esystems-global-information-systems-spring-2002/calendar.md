@@ -1,0 +1,15 @@
+> 检索摘要：15.565J Integrating eSystems & Global Information Systems（Spring 2002，Undergraduate、Graduate）的「Calendar」。页内标题：Calendar。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/15-565j-integrating-esystems-global-information-systems-spring-2002/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+Assignments: HW = Homework; TP = Term Project, CP = Computer Project;
+
+Due Dates: **bold** = 15.565 & 15.578; *italics* = 15.578 only; normal = 15.565 only;
+
+<table><tr><th>LEC #</th><th>Topics</th><th>Due Dates</th></tr><tr><td>1</td><td>Introduction</td><td></td></tr><tr><td colspan="3">I. Strategic Connectivity</td></tr><tr><td>2</td><td>Information Technology, Corporate Strategy, and Competitive Advantage (Interlinked Value Chains)</td><td></td></tr><tr><td>3</td><td>Strategic Case Study (Johnson & Johnson Case)</td><td>HW1: J&J</td></tr><tr><td>4</td><td>Business and Industry Transformation (McKesson Case)</td><td></td></tr><tr><td>5</td><td>Aggregators: Traveling the Internet “Fast Lane”</td><td></td></tr><tr><td colspan="3">II. Physical Connectivity</td></tr><tr><td>6</td><td>Basic Communications Technology and Concepts</td><td>CP1: Goals</td></tr><tr><td>7</td><td>Local Area Networks</td><td>TP & CP Team Members</td></tr><tr><td>8</td><td>Wide Area Networks (Packet Networks)</td><td></td></tr><tr><td>9</td><td>Network Protocols (ISO OSI)</td><td>CP2: LAN</td></tr><tr><td>10</td><td>Emerging Technologies I (Frame Relay, ATM, V-IP)</td><td></td></tr><tr><td>11</td><td>Emerging Technologies II (ADSL, Cable Modem)</td><td>HW2</td></tr><tr><td>12</td><td>Technical Case Study - MIT’s Network Configuration</td><td>TP Proposal <br> / CP3: WAN</td></tr><tr><td colspan="3">III. Logical Connectivity</td></tr><tr><td>13</td><td>Distributed Homogeneous Databases</td><td></td></tr><tr><td>14</td><td>Mid-term Exam</td><td></td></tr><tr><td>15</td><td>Distributed Heterogeneous Databases</td><td>HW3-A <br> / CP4: DB Design</td></tr><tr><td>16</td><td>View Integration Among Databases</td><td></td></tr><tr><td>17</td><td>Web as a Database (COIN Project)</td><td>CP5: View Integrate /ASP</td></tr><tr><td>18</td><td>Semantic Integration (COIN Project)</td><td></td></tr><tr><td>19</td><td>Component Architecture (CORBA) and Web Services</td><td></td></tr><tr><td colspan="3">IV. Organizational Connectivity</td></tr><tr><td>20</td><td>Loosely-coupled Organizations</td><td>CP6: Backend Integrate</td></tr><tr><td>21</td><td>Markets and Hierarchies: Organizational Coupling</td><td>HW4</td></tr><tr><td>22</td><td>Development of Standards</td><td>HW3-B</td></tr><tr><td>23</td><td>Motivating Strategic Alliances & Organizational Transformation</td><td>Term Project <br> / CP7: Final PAS</td></tr><tr><td colspan="3">V. Finale</td></tr><tr><td>24</td><td>Course Summary and Review</td><td></td></tr><tr><td>25</td><td>Selected Student Presentations</td><td></td></tr><tr><td>26</td><td>Final Exam</td><td></td></tr></table>

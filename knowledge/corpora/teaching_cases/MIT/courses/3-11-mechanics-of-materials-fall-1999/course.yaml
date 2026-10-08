@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-3-11-fall-1999"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.11"
+cross_listed_codes: []
+course_title: "Mechanics of Materials"
+course_slug: "3-11-mechanics-of-materials-fall-1999"
+term: "Fall"
+year: 1999
+as_taught_in: "Fall 1999"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Roylance"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Solid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+  - "Problem Sets"
+description: |
+  Overview of mechanical properties of ceramics, metals, and polymers, emphasizing the role of processing and microstructure in controlling these properties. Basic topics in mechanics of materials including: continuum stress and strain, truss forces, torsion of a circular shaft and beam bending. Design of engineering structures from a materials point of view.
+course_url: "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/"
+image_url: "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/783b1762d232cd1e174207b1afd5f268_3-11f99.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

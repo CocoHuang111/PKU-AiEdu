@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-460-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.460"
+cross_listed_codes: []
+course_title: "Medieval Literature: Dante, Boccaccio, Chaucer"
+course_slug: "21l-460-medieval-literature-dante-boccaccio-chaucer-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Cain"
+subject_primary: "History"
+subject_secondary:
+  - "Medieval History"
+  - "Literature"
+  - "Comparative Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Medieval History"
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The course explores the literary masterworks of three of the most celebrated authors of the Middle Ages in their original literary and historical contexts. The various themes they take up - the importance of writing in the vernacular; the discourse of love as a form of discipline practised upon the self; the personal and political aspirations of the self in society; the constitution of ideal forms of social organization; the role of religion in the life and works of lay authors - transformed the course of much of Western literature for the next five centuries. Readings will include the entire Divine Comedy , generous selections from the Decameron , and all of Troilus and Criseyde in the original Middle English, together with samplings from the Troubadour tradition and the dolce stil nuovo.
+course_url: "https://ocw.mit.edu/courses/21l-460-medieval-literature-dante-boccaccio-chaucer-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/21l-460-medieval-literature-dante-boccaccio-chaucer-spring-2005/64b686ecb16afbc89c4eadc766cf768f_21l-460s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-s50-january-iap-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.S50"
+cross_listed_codes: []
+course_title: "Poker Theory and Analytics"
+course_slug: "15-s50-poker-theory-and-analytics-january-iap-2015"
+term: "January IAP"
+year: 2015
+as_taught_in: "January IAP 2015"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Kevin Desmond"
+subject_primary: "Management"
+subject_secondary:
+  - "Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course takes a broad-based look at poker theory and applications of poker analytics to investment management and trading. This course is offered during the Independent Activities Period (IAP) , which is a special 4-week term at MIT in January. IAP provides members of the MIT community including students, faculty, staff, and alums with an opportunity to organize, sponsor and participate in a wide variety of activities and topics that are often outside of the regular MIT curriculum. Faculty Advisor : Paul Mende
+course_url: "https://ocw.mit.edu/courses/15-s50-poker-theory-and-analytics-january-iap-2015/"
+image_url: "https://ocw.mit.edu/courses/15-s50-poker-theory-and-analytics-january-iap-2015/d0f93b2cd45af686cfe4b6c19e96d0b4_15-s50iap15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

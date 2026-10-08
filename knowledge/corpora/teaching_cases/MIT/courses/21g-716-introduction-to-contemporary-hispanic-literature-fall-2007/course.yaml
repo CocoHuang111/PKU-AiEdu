@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-716-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.716"
+cross_listed_codes: []
+course_title: "Introduction to Contemporary Hispanic Literature"
+course_slug: "21g-716-introduction-to-contemporary-hispanic-literature-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Elizabeth Garrels"
+subject_primary: "Language"
+subject_secondary:
+  - "Spanish"
+  - "Literature"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Spanish"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course studies representative twentieth and twenty-first-century texts and films from Hispanic America and Spain. Emphasis is on developing strategies for analyzing the genres of the novel, the short story, the poem, the fictional film, and the theatrical script. The novels read this semester are Magali García Ramis’s Felices días , Tío Sergio (1986, Puerto Rico) and Javier Cercas’s Soldados de Salamina (2001, Spain). We will study Lorca’s play “La casa de Bernarda Alba” (1936, Spain), films from Spain, México, and Cuba, poems by Darío (Nicaragua), Machado (Spain), Lorca (Spain), Hernández (Spain), Vallejo (Perú), Cernuda (Spain), and Luis Palés Matos (Puerto Rico), and short stories from México (by an exiled Spanish writer), Chile, Argentina, and Cuba. Thematic emphasis is on the Spanish Civil War, changing attitudes toward gender, the Spanish-speaking Caribbean, and the history of race in the Americas.
+course_url: "https://ocw.mit.edu/courses/21g-716-introduction-to-contemporary-hispanic-literature-fall-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-716-introduction-to-contemporary-hispanic-literature-fall-2007/89223c86db5f27c43567cbd807849efc_21g-716f07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

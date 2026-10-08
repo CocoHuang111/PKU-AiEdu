@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-es-s60-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.S60"
+cross_listed_codes: []
+course_title: "The Art and Science of Happiness"
+course_slug: "es-s60-the-art-and-science-of-happiness-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Holly Sweet"
+subject_primary: "Psychology"
+subject_secondary: []
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments with Examples"
+description: |
+  This seminar looks at current theories on happiness and positive psychology as well as practical implications of those theories for our own lives. It explores the concept of happiness, different cultural definitions of happiness, and the connection between happiness, optimism, and meaning. Also explored are practical strategies for creating more opportunities for happiness in our lives and for learning how to deal more effectively with sources of unhappiness. This seminar is part of the Experimental Study Group at MIT.
+course_url: "https://ocw.mit.edu/courses/es-s60-the-art-and-science-of-happiness-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/es-s60-the-art-and-science-of-happiness-spring-2013/b87da46586472a5d75f47e832c2e00e9_ES-S60s13.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

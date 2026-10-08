@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-11-401-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.401"
+cross_listed_codes: []
+course_title: "Introduction to Housing, Community and Economic Development"
+course_slug: "11-401-introduction-to-housing-community-and-economic-development-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Langley Keyes"
+subject_primary: "Economics"
+subject_secondary:
+  - "Public Administration"
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Housing Development"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Housing Development"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  As an introduction to the field of Housing, Community, and Economic Development (HCED), the course is structured to: Advance student’s understanding of how public policy and private markets affect housing, economic development, the local economy, and neighborhood institutions; Provide an overview of techniques for framing public and private interventions to meet housing and community development agendas, broadly defined, of inner city and low income neighborhoods; Review and critique specific programs, policies and strategies that are (and have been) directed at local development and neighborhood regeneration issues; Give students an opportunity to reflect on their personal sense of the “housing, community, and economic development” process and the various roles that planners play in implementing the elements of that agenda.
+course_url: "https://ocw.mit.edu/courses/11-401-introduction-to-housing-community-and-economic-development-fall-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/11-401-introduction-to-housing-community-and-economic-development-fall-2003/e6b0f3402786f525c477b37c94851d30_11-401f03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

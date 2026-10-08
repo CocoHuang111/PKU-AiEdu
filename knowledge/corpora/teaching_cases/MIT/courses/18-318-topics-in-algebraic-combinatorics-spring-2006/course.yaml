@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-18-318-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.318"
+cross_listed_codes: []
+course_title: "Topics in Algebraic Combinatorics"
+course_slug: "18-318-topics-in-algebraic-combinatorics-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Richard Stanley"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Discrete Mathematics"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The course consists of a sampling of topics from algebraic combinatorics. The topics include the matrix-tree theorem and other applications of linear algebra, applications of commutative and exterior algebra to counting faces of simplicial complexes, and applications of algebra to tilings.
+course_url: "https://ocw.mit.edu/courses/18-318-topics-in-algebraic-combinatorics-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/18-318-topics-in-algebraic-combinatorics-spring-2006/9358c983098c4fa75bc1b9480858f302_18-318s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-11-401-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.401"
+cross_listed_codes: []
+course_title: "Introduction to Housing, Community, and Economic Development"
+course_slug: "11-401-introduction-to-housing-community-and-economic-development-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. J. Phillip Thompson"
+  - "Prof. Justin Steil"
+subject_primary: "Economics"
+subject_secondary:
+  - "Public Administration"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Housing Development"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+      - name: "Public Administration"
+        specialties: []
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Housing Development"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Written Assignments with Examples"
+description: |
+  This course provides students with a critical introduction to: social and economic inequality in America; equitable development as a response framework for planners; social capital and community building as planning concepts; and the history, development, and current prospects of the fields of housing (with an emphasis on affordability and inclusion) and local economic development.
+course_url: "https://ocw.mit.edu/courses/11-401-introduction-to-housing-community-and-economic-development-fall-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/11-401-introduction-to-housing-community-and-economic-development-fall-2015/5dfb514c72c8b8bb83f3d96efc5e3d6a_11-401f15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

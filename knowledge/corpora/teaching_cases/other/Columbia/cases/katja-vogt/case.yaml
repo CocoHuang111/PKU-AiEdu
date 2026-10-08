@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-katja-vogt"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Katja Vogt, PhD"
+slug: "katja-vogt"
+source_url: "https://ctl.columbia.edu/transformations/faculty/katja-vogt/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "5f8a7530c07f2364cd970e5db16909b0b4af42e5a09358c7091afdc849013c95"

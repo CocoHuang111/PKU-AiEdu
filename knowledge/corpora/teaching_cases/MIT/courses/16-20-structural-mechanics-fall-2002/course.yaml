@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-16-20-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.20"
+cross_listed_codes: []
+course_title: "Structural Mechanics"
+course_slug: "16-20-structural-mechanics-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Paul A. Lagace"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Structural Mechanics"
+  - "Mechanical Engineering"
+  - "Solid Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Structural Mechanics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Applies solid mechanics to analysis of high-technology structures. Structural design considerations. Review of three-dimensional elasticity theory; stress, strain, anisotropic materials, and heating effects. Two-dimensional plane stress and plane strain problems. Torsion theory for arbitrary sections. Bending of unsymmetrical section and mixed material beams. Bending, shear, and torsion of thin-wall shell beams. Buckling of columns and stability phenomena. Introduction to structural dynamics. Exercises in the design of general and aerospace structures.
+course_url: "https://ocw.mit.edu/courses/16-20-structural-mechanics-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/16-20-structural-mechanics-fall-2002/4a43947d888832920df15e7cdc705e33_16-20f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

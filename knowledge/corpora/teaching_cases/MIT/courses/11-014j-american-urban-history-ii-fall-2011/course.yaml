@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-014j-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.014J"
+cross_listed_codes:
+  - "21H.232J"
+course_title: "American Urban History II"
+course_slug: "11-014j-american-urban-history-ii-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Robert Fogelson"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Social Science"
+  - "Public Administration"
+  - "Urban Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties: []
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This is a seminar course that explores the history of selected features of the physical environment of urban America. Among the features considered are parks, cemeteries, tenements, suburbs, zoos, skyscrapers, department stores, supermarkets, and amusement parks. The course gives students experience in working with primary documentation sources through its selection of readings and class discussions. Students then have the opportunity to apply this experience by researching their own historical questions and writing a term paper.
+course_url: "https://ocw.mit.edu/courses/11-014j-american-urban-history-ii-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/11-014j-american-urban-history-ii-fall-2011/c325bcdf6f4e1125b0e2767c7112526b_11-014jf11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

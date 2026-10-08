@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-engl-300"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "ENGL 300"
+course_title: "Introduction to Theory of Literature"
+course_slug: "engl-300"
+department_path: "english"
+professors:
+  - "Paul H. Fry William Lampson Professor Emeritus of English"
+course_url: "https://oyc.yale.edu/english/engl-300"
+language: "en"
+description: |
+  This is a survey of the main trends in twentieth-century literary theory. Lectures will provide background for the readings and explicate them where appropriate, while attempting to develop a coherent overall context that incorporates philosophical and social perspectives on the recurrent questions: what is literature, how is it produced, how can it be understood, and what is its purpose?
+license_url: ""
+session_count: 26
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

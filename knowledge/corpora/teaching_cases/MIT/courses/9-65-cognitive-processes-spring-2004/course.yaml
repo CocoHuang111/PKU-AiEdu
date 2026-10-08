@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-9-65-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.65"
+cross_listed_codes: []
+course_title: "Cognitive Processes"
+course_slug: "9-65-cognitive-processes-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Mary C. Potter"
+subject_primary: "Cognitive Science"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This undergraduate course is designed to introduce students to cognitive processes. The broad range of topics covers each of the areas in the field of cognition, and presents the current thinking in this discipline. As an introduction to human information processing and learning, the topics include the nature of mental representation and processing, the architecture of memory, pattern recognition, attention, imagery and mental codes, concepts and prototypes, reasoning and problem solving.
+course_url: "https://ocw.mit.edu/courses/9-65-cognitive-processes-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/9-65-cognitive-processes-spring-2004/cb933a095b1b3f28b1c18a155dbc00db_9-65s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

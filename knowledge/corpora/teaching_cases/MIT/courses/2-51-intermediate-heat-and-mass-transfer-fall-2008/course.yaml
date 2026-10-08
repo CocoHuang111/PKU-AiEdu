@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-2-51-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.51"
+cross_listed_codes: []
+course_title: "Intermediate Heat and Mass Transfer"
+course_slug: "2-51-intermediate-heat-and-mass-transfer-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Bora Mikic"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  2.51 is a 12-unit subject, serving as the Mechanical Engineering Department’s advanced undergraduate course in heat and mass transfer. The prerequisites for this course are the undergraduate courses in thermodynamics and fluid mechanics, specifically Thermal Fluids Engineering I and Thermal Fluids Engineering II or their equivalents. This course covers problems of heat and mass transfer in greater depth and complexity than is done in those courses and incorporates many subjects that are not included or are treated lightly in those courses; analysis is given greater emphasis than the use of correlations. Course 2.51 is directed at undergraduates having a strong interest in thermal science and graduate students who have not previously studied heat transfer.
+course_url: "https://ocw.mit.edu/courses/2-51-intermediate-heat-and-mass-transfer-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/2-51-intermediate-heat-and-mass-transfer-fall-2008/4cdf7e60386d364f58dd5b7127301d5e_2-51f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

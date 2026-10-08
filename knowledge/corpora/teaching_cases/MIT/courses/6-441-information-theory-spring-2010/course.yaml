@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-6-441-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.441"
+cross_listed_codes: []
+course_title: "Information Theory"
+course_slug: "6-441-information-theory-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Muriel Médard"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Electrical Engineering"
+  - "Signal Processing"
+  - "Telecommunications"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+          - "Telecommunications"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  6.441 offers an introduction to the quantitative theory of information and its applications to reliable, efficient communication systems. Topics include mathematical definition and properties of information, source coding theorem, lossless compression of data, optimal lossless coding, noisy communication channels, channel coding theorem, the source channel separation theorem, multiple access channels, broadcast channels, Gaussian noise, and time-varying channels.
+course_url: "https://ocw.mit.edu/courses/6-441-information-theory-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/6-441-information-theory-spring-2010/f72cccae546f0f9e94c015b30801eadb_6-441s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

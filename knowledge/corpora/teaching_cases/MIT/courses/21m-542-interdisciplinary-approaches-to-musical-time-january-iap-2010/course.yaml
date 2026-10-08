@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-542-january-iap-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.542"
+cross_listed_codes: []
+course_title: "Interdisciplinary Approaches to Musical Time"
+course_slug: "21m-542-interdisciplinary-approaches-to-musical-time-january-iap-2010"
+term: "January IAP"
+year: 2010
+as_taught_in: "January IAP 2010"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Martin Marks"
+  - "Prof. Marcus A Thompson"
+  - "Prof. Charles Shadle"
+subject_primary: "Music"
+subject_secondary:
+  - "Music Theory"
+  - "Humanities"
+  - "Philosophy"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music Theory"
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Music Audio"
+  - "Other Video"
+  - "Presentation Assignments with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This course is an interdisciplinary exploration of three broad topics concerning music in relation to time. Music as Architecture: the creation of musical shapes in time; Music as Memory: how musical understanding depends upon memory and reminiscence, with attention to analysis of musical structures; and Time as the Substance of Music: how different disciplines such as philosophy and neuroscience view the temporal dimension of musical processes and/or performances. Classroom discussion of these topics is complemented by three weekend concerts with pre-concert forums, jointly presented by the Boston Chamber Music Society (BCMS) and MIT Music & Theater Arts.
+course_url: "https://ocw.mit.edu/courses/21m-542-interdisciplinary-approaches-to-musical-time-january-iap-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/21m-542-interdisciplinary-approaches-to-musical-time-january-iap-2010/f5c3635c6020ba5909eef3980c0553fd_21m-542iap10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

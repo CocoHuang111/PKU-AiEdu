@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-1-101-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.101"
+cross_listed_codes: []
+course_title: "Introduction to Civil and Environmental Engineering Design I"
+course_slug: "1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Harold Hemond"
+  - "Prof. Heidi Nepf"
+  - "Prof. Louis Bucciarelli"
+  - "Sheila Frankel"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Environmental Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+      - name: "Environmental Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This sophomore-level course is a project-oriented introduction to the principles and practice of engineering design. Design projects and exercises are chosen that relate to the built and natural environments. Emphasis is placed on achieving function and sustainability through choice of materials and processes, compatibility with natural cycles, and the use of active or adaptive systems. The course also encourages development of hands-on skills, teamwork, and communication; exercises and projects engage students in the building, implementation, and testing of their designs.
+course_url: "https://ocw.mit.edu/courses/1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2005/171f2a2730533552622d882edd1151d4_1-101f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-802-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.802"
+cross_listed_codes: []
+course_title: "Modern Latin America, 1808-Present: Revolution, Dictatorship, Democracy"
+course_slug: "21h-802-modern-latin-america-1808-present-revolution-dictatorship-democracy-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeffrey S. Ravel"
+subject_primary: "History"
+subject_secondary:
+  - "Latin American History"
+  - "Modern History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "Latin and Caribbean Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Latin American History"
+          - "Modern History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This class is a selective survey of Latin American history from the beginning of the twentieth century to the present. Issues studied include Latin America in the global economy, relations between Latin America and the U.S., dictatorships and democracies in the twentieth century, African and Indigenous cultures, feminism and gender, cultural politics, revolution in Mexico, Cuba, and Central America, and Latin American identity.
+course_url: "https://ocw.mit.edu/courses/21h-802-modern-latin-america-1808-present-revolution-dictatorship-democracy-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/21h-802-modern-latin-america-1808-present-revolution-dictatorship-democracy-spring-2005/2c0bd1b31914bef7157e88f422e95605_21h-802s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

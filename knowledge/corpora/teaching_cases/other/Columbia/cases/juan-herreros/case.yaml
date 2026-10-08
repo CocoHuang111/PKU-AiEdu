@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-juan-herreros"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Juan Herreros, PhD, M. Arch"
+slug: "juan-herreros"
+source_url: "https://ctl.columbia.edu/transformations/faculty/juan-herreros/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "63f58023115570eca16e0c793b740817e836305111a628e69c7520656b39de17"

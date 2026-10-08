@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-4-105-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.105"
+cross_listed_codes: []
+course_title: "Geometric Disciplines and Architecture Skills: Reciprocal Methodologies"
+course_slug: "4-105-geometric-disciplines-and-architecture-skills-reciprocal-methodologies-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Brandon Clifford"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Design Assignments"
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course is an intensive introduction to architectural design tools and process, and is taught through a series of short exercises. The conceptual basis of each exercise is in the interrogation of the geometric principles that lie at the core of each skill. Skills covered in this course range from techniques of hand drafting, to generation of 3D computer models, physical model-building, sketching, and diagramming. Weekly lectures and pin-ups address the conventions associated with modes of architectural representation and their capacity to convey ideas. This course is tailored and offered only to first-year M.Arch students.
+course_url: "https://ocw.mit.edu/courses/4-105-geometric-disciplines-and-architecture-skills-reciprocal-methodologies-fall-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/4-105-geometric-disciplines-and-architecture-skills-reciprocal-methodologies-fall-2012/0ea6f62ce7c589f12d6fce9ee89a75d1_4-105f12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-026-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.026"
+cross_listed_codes:
+  - "21G.326"
+course_title: "Global Africa: Creative Cultures"
+course_slug: "21g-026-global-africa-creative-cultures-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. M. Amah Edoh"
+subject_primary: "Music"
+subject_secondary:
+  - "Music Performance"
+  - "Visual Arts"
+  - "Film and Video"
+  - "Humanities"
+  - "History"
+  - "African History"
+  - "Literature"
+  - "International Literature"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music Performance"
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "African History"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Podcasts"
+  - "Written Assignments with Examples"
+description: |
+  This course examines contemporary and historical cultural production on and from Africa across a range of registers, including literary, musical and visual arts, material culture, and science and technology. It employs key theoretical concepts from anthropology and social theory to analyze these forms and phenomena. It also uses case studies to consider how Africa articulates its place in, and relationship to, the world through creative practices. Discussion topics are largely drawn from Francophone and sub-Saharan Africa, but also from throughout the continent and the African diaspora.
+course_url: "https://ocw.mit.edu/courses/21g-026-global-africa-creative-cultures-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/21g-026-global-africa-creative-cultures-spring-2018/aedaa6f4c6d220a7c9bc78eb1d8fdb71_21G-026s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-8-701-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.701"
+cross_listed_codes: []
+course_title: "Introduction to Nuclear and Particle Physics"
+course_slug: "8-701-introduction-to-nuclear-and-particle-physics-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Markus  Klute"
+subject_primary: "Physics"
+subject_secondary:
+  - "Nuclear Physics"
+  - "Particle Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+          - "Particle Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Presentation Assignments"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This is an introductory graduate-level course on the phenomenology and experimental foundations of nuclear and particle physics, including the fundamental forces and particles, as well as composites. Emphasis is on the experimental establishment of the leading models, and the theoretical tools and experimental apparatus used to establish them.
+course_url: "https://ocw.mit.edu/courses/8-701-introduction-to-nuclear-and-particle-physics-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/8-701-introduction-to-nuclear-and-particle-physics-fall-2020/ab26e5922052acb98b149656576487f4_8-701f20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

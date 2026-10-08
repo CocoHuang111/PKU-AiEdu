@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-rlst-145"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "RLST 145"
+course_title: "Introduction to the Old Testament (Hebrew Bible)"
+course_slug: "rlst-145"
+department_path: "religious studies"
+professors:
+  - "Christine Hayes Robert F. and Patricia Ross Weis Professor of Religious Studies"
+course_url: "https://oyc.yale.edu/religious-studies/rlst-145"
+language: "en"
+description: |
+  This course examines the Old Testament (Hebrew Bible) as an expression of the religious life and thought of ancient Israel, and a foundational document of Western civilization. A wide range of methodologies, including source criticism and the historical-critical school, tradition criticism, redaction criticism, and literary and canonical approaches are applied to the study and interpretation of the Bible. Special emphasis is placed on the Bible against the backdrop of its historical and cultural setting in the Ancient Near East.
+license_url: ""
+session_count: 25
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

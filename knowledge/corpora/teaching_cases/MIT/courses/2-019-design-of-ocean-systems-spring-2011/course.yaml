@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-2-019-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.019"
+cross_listed_codes: []
+course_title: "Design of Ocean Systems"
+course_slug: "2-019-design-of-ocean-systems-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Chryssostomos Chryssostomidis"
+  - "Dr. Yuming Liu"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Structural Mechanics"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Ocean Structures"
+  - "Systems Engineering"
+  - "Computational Science and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Structural Mechanics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Ocean Structures"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course covers the complete cycle of designing an ocean system using computational design tools for the conceptual and preliminary design stages. Students complete the projects in teams with each student responsible for a specific subsystem. Lectures cover such topics as hydrodynamics; structures; power and thermal aspects of ocean vehicles; environment, materials, and construction for ocean use; and generation and evaluation of design alternatives. The course focuses on innovative design concepts chosen from high-speed ships, submersibles, autonomous vehicles, and floating and submerged deep-water offshore platforms. Lectures on ethics in engineering practice are included, and instruction and practice in oral and written communication is provided.
+course_url: "https://ocw.mit.edu/courses/2-019-design-of-ocean-systems-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/2-019-design-of-ocean-systems-spring-2011/61f798e00021a09a044f3f1bfc8e079e_2-019s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

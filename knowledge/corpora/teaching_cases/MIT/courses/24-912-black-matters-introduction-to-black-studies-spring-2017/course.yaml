@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-24-912-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.912"
+cross_listed_codes:
+  - "WGS.190"
+  - "21H.106"
+  - "21L.008"
+  - "21W.741"
+  - "21A.125"
+course_title: "Black Matters: Introduction to Black Studies"
+course_slug: "24-912-black-matters-introduction-to-black-studies-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+  - "Women's and Gender Studies"
+  - "History"
+  - "Literature"
+  - "Comparative Media Studies/Writing"
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michel DeGraff"
+subject_primary: "Language"
+subject_secondary:
+  - "Literature"
+  - "Philosophy"
+  - "Society"
+  - "African American Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties: []
+      - name: "Literature"
+        specialties: []
+      - name: "Philosophy"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "African American Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Presentation Assignments with Examples"
+  - "Written Assignments"
+description: |
+  Interdisciplinary survey of people of African descent that draws on the overlapping approaches of history, literature, anthropology, legal studies, media studies, performance, linguistics, and creative writing. This course connects the experiences of African-Americans and of other American minorities, focusing on social, political, and cultural histories, and on linguistic patterns.
+course_url: "https://ocw.mit.edu/courses/24-912-black-matters-introduction-to-black-studies-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/24-912-black-matters-introduction-to-black-studies-spring-2017/5397de05867bd4a28fa3135ea46cdc7d_24-912s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

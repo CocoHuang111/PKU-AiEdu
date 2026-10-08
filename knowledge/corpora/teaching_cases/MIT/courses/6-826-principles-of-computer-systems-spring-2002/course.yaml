@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-6-826-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.826"
+cross_listed_codes: []
+course_title: "Principles of Computer Systems"
+course_slug: "6-826-principles-of-computer-systems-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Butler Lampson"
+  - "Prof. Martin Rinard"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Design and Engineering"
+  - "Theory of Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Design and Engineering"
+          - "Theory of Computation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  6.826 provides an introduction to the basic principles of computer systems, with emphasis on the use of rigorous techniques as an aid to understanding and building modern computing systems. Particular attention is paid to concurrent and distributed systems. Topics covered include: specification and verification, concurrent algorithms, synchronization, naming, networking, replication techniques (including distributed cache management), and principles and algorithms for achieving reliability.
+course_url: "https://ocw.mit.edu/courses/6-826-principles-of-computer-systems-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/6-826-principles-of-computer-systems-spring-2002/da6fc5925d059e248ef490fe2e99a608_6-826s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

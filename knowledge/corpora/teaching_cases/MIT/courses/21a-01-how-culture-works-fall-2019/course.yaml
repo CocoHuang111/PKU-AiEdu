@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-01-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.01"
+cross_listed_codes: []
+course_title: "How Culture Works"
+course_slug: "21a-01-how-culture-works-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Xenia Cherkaev"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Ethnography"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course introduces diverse meanings and uses of the concept of culture with historical and contemporary examples from scholarship and popular media around the globe. It includes first-hand observations, synthesized histories and ethnographies, quantitative representations, and visual and fictionalized accounts of human experiences. Students conduct empirical research on cultural differences through the systematic observation of human interaction, employ methods of interpretative analysis, and practice convincing others of the accuracy of their findings.
+course_url: "https://ocw.mit.edu/courses/21a-01-how-culture-works-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/21a-01-how-culture-works-fall-2019/85a54a5d97bb616cbff1e5d0664123a1_21A-01f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

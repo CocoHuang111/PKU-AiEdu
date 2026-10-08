@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-12-581-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.581"
+cross_listed_codes: []
+course_title: "Phase Transitions in the Earth's Interior"
+course_slug: "12-581-phase-transitions-in-the-earths-interior-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Sang-Heon (Dan) Shim"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geochemistry"
+  - "Geology"
+  - "Geophysics"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geochemistry"
+          - "Geology"
+          - "Geophysics"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+description: |
+  This course discusses phase transitions in Earth’s interior. Phase transitions in Earth materials at high pressures and temperatures cause the seismic discontinuities and affect the convections in the Earth’s interior. On the other hand, they enable us to constrain temperature and chemical compositions in the Earth’s interior. However, among many known phase transitions in mineral physics, only a few have been investigated in seismology and geodynamics. This course reviews important papers about phase transitions in mantle and core materials.
+course_url: "https://ocw.mit.edu/courses/12-581-phase-transitions-in-the-earths-interior-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/12-581-phase-transitions-in-the-earths-interior-spring-2005/e39d4f24e668c1dee6df6b748020a783_12-581s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

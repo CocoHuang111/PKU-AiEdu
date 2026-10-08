@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-18-917-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.917"
+cross_listed_codes: []
+course_title: "Topics in Algebraic Topology: The Sullivan Conjecture"
+course_slug: "18-917-topics-in-algebraic-topology-the-sullivan-conjecture-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jacob Lurie"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: "The goal of this course is to describe some of the tools which enter into the proof of Sullivan's conjecture."
+course_url: "https://ocw.mit.edu/courses/18-917-topics-in-algebraic-topology-the-sullivan-conjecture-fall-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/18-917-topics-in-algebraic-topology-the-sullivan-conjecture-fall-2007/974c53d171e35a7e4d95dacbf1e23cc3_18-917f07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

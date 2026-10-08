@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-20-462j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.462J"
+cross_listed_codes:
+  - "3.962J"
+course_title: "Molecular Principles of Biomaterials"
+course_slug: "20-462j-molecular-principles-of-biomaterials-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Darrell Irvine"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Biotechnology"
+  - "Synthetic Biology"
+  - "Nanotechnology"
+  - "Science"
+  - "Biology"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Biotechnology"
+          - "Synthetic Biology"
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers the analysis and design at a molecular scale of materials used in contact with biological systems, including biotechnology and biomedical engineering. Topics include molecular interactions between bio- and synthetic molecules and surfaces; design, synthesis, and processing approaches for materials that control cell functions; and application of state-of-the-art materials science to problems in tissue engineering, drug delivery, vaccines, and cell-guiding surfaces.
+course_url: "https://ocw.mit.edu/courses/20-462j-molecular-principles-of-biomaterials-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/20-462j-molecular-principles-of-biomaterials-spring-2006/9c4127c2192a822360d00de4774d1c47_20-462js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

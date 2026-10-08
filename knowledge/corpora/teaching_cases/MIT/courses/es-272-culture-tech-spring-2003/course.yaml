@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-es-272-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.272"
+cross_listed_codes: []
+course_title: "Culture Tech"
+course_slug: "es-272-culture-tech-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "James Rising"
+  - "Amilio Aviles"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Humanities"
+  - "History"
+  - "History of Science and Technology"
+  - "Social Science"
+  - "Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class is divided into a series of sections or “modules”, each of which concentrates on a particular large technology-related topic in a cultural context. The class will start with a four-week module on Samurai Swords and Blacksmithing, followed by smaller units on Chinese Cooking, the Invention of Clocks, and Andean Weaving, and end with a four-week module on Automobiles and Engines. In addition, there will be a series of hands-on projects that tie theory and practice together. The class discussions range across anthropology, history, and individual development, emphasizing recurring themes, such as the interaction between technology and culture and the relation between “skill” knowledge and “craft” knowledge. Culture Tech evolved from a more extensive, two-semester course which formed the centerpiece of the Integrated Studies Program at MIT. For 13 years, ISP was an alternative first-year program combining humanities, physics, learning-by-doing, and weekly luncheons. Culture Tech represents the core principles of ISP distilled into a 6-unit seminar. Although many collections of topics have been used over the years, the modules presented here are a representative sequence.
+course_url: "https://ocw.mit.edu/courses/es-272-culture-tech-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/es-272-culture-tech-spring-2003/76c3d3ab7eae0f4fa4c7d7c24e88f158_es-272s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

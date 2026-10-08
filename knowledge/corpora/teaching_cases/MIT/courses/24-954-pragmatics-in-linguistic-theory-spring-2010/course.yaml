@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-24-954-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.954"
+cross_listed_codes: []
+course_title: "Pragmatics in Linguistic Theory"
+course_slug: "24-954-pragmatics-in-linguistic-theory-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Danny Fox"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Semantics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Semantics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is the third and final part of our graduate introduction to semantics. The other two classes are 24.970 Introduction to Semantics and 24.973 Advanced Semantics . The semester will be divided into somewhat independent units. One unit will be devoted to conversational implicatures (mainly scalar implicatures) and another to presupposition. In each unit, we will discuss basic concepts and technical tools and then devote some time to recent work which illustrates their application.
+course_url: "https://ocw.mit.edu/courses/24-954-pragmatics-in-linguistic-theory-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/24-954-pragmatics-in-linguistic-theory-spring-2010/06b9288c06e8b36377ac3328130a7a01_24-954s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

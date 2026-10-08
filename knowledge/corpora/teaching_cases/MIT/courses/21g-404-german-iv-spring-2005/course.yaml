@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-404-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.404"
+cross_listed_codes: []
+course_title: "German IV"
+course_slug: "21g-404-german-iv-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ellen Crocker"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Language"
+  - "German"
+  - "Literature"
+  - "International Literature"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "German"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Written Assignments with Examples"
+description: |
+  This course focuses on development of interpretive skills, using literary texts (B. Brecht, S. Zweig) and contemporary media texts (film, TV broadcasts, Web materials). The emphasis is on discussion and exploration of cultural topics in their current social, political, and historical context via hypermedia documentaries. It also covers further refinement of oral and written expression and expansion of communicative competence in practical everyday situations.
+course_url: "https://ocw.mit.edu/courses/21g-404-german-iv-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/21g-404-german-iv-spring-2005/325168c95469b56d507db2d3fb6b71f2_21g-404s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

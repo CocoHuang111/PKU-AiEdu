@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-18-781-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.781"
+cross_listed_codes: []
+course_title: "Theory of Numbers"
+course_slug: "18-781-theory-of-numbers-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Abhinav Kumar"
+subject_primary: "Algebra and Number Theory"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is an elementary introduction to number theory with no algebraic prerequisites. Topics covered include primes, congruences, quadratic reciprocity, diophantine equations, irrational numbers, continued fractions, and partitions.
+course_url: "https://ocw.mit.edu/courses/18-781-theory-of-numbers-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/18-781-theory-of-numbers-spring-2012/bf03a874c1b7c5c3eb194d0086a8a97b_18-781s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

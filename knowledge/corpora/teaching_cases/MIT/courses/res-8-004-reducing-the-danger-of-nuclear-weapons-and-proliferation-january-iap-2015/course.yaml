@@ -1,0 +1,86 @@
+schema_version: "1.0"
+course_id: "mitocw-res-8-004-january-iap-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.8-004"
+cross_listed_codes: []
+course_title: "Reducing the Danger of Nuclear Weapons and Proliferation"
+course_slug: "res-8-004-reducing-the-danger-of-nuclear-weapons-and-proliferation-january-iap-2015"
+term: "January IAP"
+year: 2015
+as_taught_in: "January IAP 2015"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Aron M Bernstein"
+  - "Vipin Narang"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Nuclear Systems, Policy, and Economics"
+  - "Humanities"
+  - "History"
+  - "History of Science and Technology"
+  - "Military History"
+  - "Social Science"
+  - "Political Science"
+  - "International Relations"
+  - "Public Administration"
+  - "Science and Technology Policy"
+  - "Security Studies"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Nuclear Systems, Policy, and Economics"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Military History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+          - "Security Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  This course, organized as a series of lectures, aims to provide an interdisciplinary view of the history and current climate of nuclear weapons and non-proliferation policy. The first lecture begins the series by discusses nuclear developments in one of the world’s most likely nuclear flash points, and the second lecture presents a broad discussion of the dangers of current nuclear weapons policies as well as evaluations of current situations and an outlook for future nuclear weapons reductions.
+course_url: "https://ocw.mit.edu/courses/res-8-004-reducing-the-danger-of-nuclear-weapons-and-proliferation-january-iap-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/res-8-004-reducing-the-danger-of-nuclear-weapons-and-proliferation-january-iap-2015/48f6e3f8258a0efdf044cb2a5794790c_res-8-004iap15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

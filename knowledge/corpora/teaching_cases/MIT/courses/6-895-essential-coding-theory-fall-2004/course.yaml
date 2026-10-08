@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-6-895-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.895"
+cross_listed_codes: []
+course_title: "Essential Coding Theory"
+course_slug: "6-895-essential-coding-theory-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Madhu Sudan"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Theory of Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Theory of Computation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course introduces the theory of error-correcting codes to computer scientists. This theory, dating back to the works of Shannon and Hamming from the late 40’s, overflows with theorems, techniques, and notions of interest to theoretical computer scientists. The course will focus on results of asymptotic and algorithmic significance. Principal topics include: Construction and existence results for error-correcting codes. Limitations on the combinatorial performance of error-correcting codes. Decoding algorithms. Applications in computer science.
+course_url: "https://ocw.mit.edu/courses/6-895-essential-coding-theory-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/6-895-essential-coding-theory-fall-2004/a80f4c62934bdb3d073a169e12bc820f_6-895f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,147 @@
+> 检索摘要：6.01SC Introduction to Electrical Engineering and Computer Science I（Spring 2011，Undergraduate）的「Instructor Insights」。页内标题：Instructor Insights；Course Overview；Course Outcomes；Course Goals for Students；Possibilities for Further Study/Careers；Instructor Insights；Curriculum Information；Prerequisites；Requirements Satisfied；Offered；Assessment；Instructor Insights on Assessment。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Instructor Insights
+
+« [Previous](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/syllabus/) | [Next](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/software-and-tools/) »
+
+### Course Overview
+
+This page focuses on the course *6.01 Introduction to Electrical Engineering and Computer Science I* as it is typically taught at MIT. Professor Dennis Freeman, who has taught the course since its development, and Visiting Professor Sanjoy Mahajan, who has taught the course in recent semesters, share their insights about the pedagogy behind this core learning experience in EECS. The course was developed by Professors Hal Abelson, Leslie Kaelbling, Tomás Lozano-Peréz, and Jacob White, with substantial inputs from the EECS Curriculum Initiative Committee.
+
+Taught using substantial laboratory experiments with mobile robots, this course provides an integrated introduction to electrical engineering and computer science. Key issues in the design of engineered artifacts operating in the natural world are addressed, including measuring and modeling system behaviors; assessing errors in sensors and effectors; specifying tasks; designing solutions based on analytical and computational models; planning, executing, and evaluating experimental tests of performance; and refining models and designs. These issues are addressed in the context of computer programs, control systems, probabilistic inference problems, and circuits and transducers, which all play important roles in achieving robust operation of a large variety of engineered systems.
+
+### Course Outcomes
+
+#### Course Goals for Students
+
+- Learn to appreciate and use the fundamental design principles of modularity and abstraction in a variety of contexts from electrical engineering and computer science.
+- Understand that making mathematical models of real systems can help in the design and analysis of those systems.
+- Practice making decisions about which aspects of the real world are important to the problem being solved and how to model them in ways that give insight into the problem.
+- Gain exposure to basic material from electrical engineering and computer science, including modern software engineering, linear systems analysis, electronic circuits, and decision-making.
+
+#### Possibilities for Further Study/Careers
+
+This course prepares students to take [*6.02 Introduction to EESC II: Digital Communication Systems*](https://ocw.mit.edu/courses/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012), [*6.002 Circuits and Electronics*](https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007) and [*6.007 Electromagnetic Energy: From Motors to Lasers*](https://ocw.mit.edu/courses/6-007-electromagnetic-energy-from-motors-to-lasers-spring-2011).
+
+### Instructor Insights
+
+*In the following pages, Professor Dennis Freeman and Visiting Professor Sanjoy Mahajan describe various aspects of how they teach* 6.01 Introduction to Electrical Engineering and Computer Science I.
+
+- [Shifting to a Practice-Theory-Practice Approach](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/shifting-to-a-practice-theory-practice-approach/)
+- [Becoming More Cognizant of Students’ Learning](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/becoming-more-cognizant-of-students2019-learning/)
+- [Flipping the Classroom to Facilitate Active Learning](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/flipping-the-classroom-to-facilitate-active-learning/)
+- [Using an Online Tutoring Environment to Promote Student Self-Assessment](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/using-an-online-tutoring-environment-to-promote-student-self-assessment/)
+- [Formative Assessment during Design Labs](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/formative-assessment-during-design-labs/)
+- [Reflecting on Assessment](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/reflecting-on-assessment/)
+- [Co-Teaching the Course](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/co-teaching-the-course/)
+
+*Learn more! In a video at the following Residential Digital Innovations page, Professor Freeman discusses task-centered learning as a pedagogical approach in* 6.01 Introduction to Electrical Engineering and Computer Science I.
+
+- [Task-Centered Learning: Intro to EECS Robotics](https://openlearning.mit.edu/campus/digital-innovations/task-centered-learning-intro-eecs-robotics)
+
+### Curriculum Information
+
+#### Prerequisites
+
+6.01 has no formal pre-requisites. Students at MIT are expected to take [*8.02 Physics II: Electricity and Magnetism*](https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007) as a co-requisite.
+
+#### Requirements Satisfied
+
+- GIR ![image](https://ocw.mit.edu/images/educator/icon-question-gir.png)
+- 6.01 satisfies 1/2 of the Institute Lab Requirement.
+- 6.01 can be applied toward a [Bachelor of Science in Electrical Science and Engineering](http://catalog.mit.edu/degree-charts/electrical-science-engineering-course-6-1/); [Electrical Engineering and Computer Science](http://catalog.mit.edu/degree-charts/electrical-engineering-computer-science-course-6-2/); or [Computer Science and Engineering](http://catalog.mit.edu/degree-charts/computer-science-engineering-course-6-3/).
+
+#### Offered
+
+Every fall and spring semester
+
+### Assessment
+
+The students’ grades are based on the following activities:
+
+- 10% Software labs
+- 20% Design labs and interviews
+- 5% Additional exercises
+- 5% Homework assignments
+- 60% Quizzes and exams
+
+#### Instructor Insights on Assessment
+
+- [Using an Online Tutoring Environment to Promote Student Self-Assessment](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/using-an-online-tutoring-environment-to-promote-student-self-assessment/)
+- [Formative Assessment during Design Labs](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/formative-assessment-during-design-labs/)
+- [Reflecting on Summative Assessment](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/instructor-insights/reflecting-on-assessment/)
+
+### Student Information
+
+#### Enrollment
+
+Enrollment ranges from 250 to 400 students.
+
+#### Breakdown by Year
+
+Mostly freshmen and sophomores.
+
+#### Breakdown by Major
+
+About 35% EECS majors and 65% from other departments.
+
+### How Student Time Was Spent
+
+During an average week, students were expected to spend 12.5 hours on the course, roughly divided as follows:
+
+#### Lecture
+
+- Typically meets 1 time per week for 1.5 hours per session; usually about 11 sessions total; mandatory attendance.
+- Interactive lectures
+
+#### Software Lab
+
+- Typically meets 1 time per week for 1.5 hours per session; usually about 13 sessions total; mandatory attendance.
+- Students develop software, and sometimes hardware, that they use in their design lab sessions.
+
+#### Design Lab
+
+- Typically meets 1 time per week for 2 hours per session; usually 14 sessions total; mandatory attendance.
+- Students build and work with mobile robots to apply their understanding of key concepts taught during the lectures and software labs.
+
+#### Out of Class
+
+- Online tutor exercises
+- Required readings
+- Course notes review
+- Exam preparation
+
+### Course Team Roles
+
+When offered in the spring semester, *6.01 Introduction to Electrical Engineering and Computer Science I* enrolls about 400 students and the course team is as follows:
+
+#### Faculty Members (typically 6 or 7)
+
+- Generally, the lead faculty member provides the lectures for all of the sections.
+- This faculty member may also facilitate the design and software labs for one section of students.
+- Other faculty members on the teaching team facilitate the design and software labs for the remaining sections.
+- If a section is particularly large (around 80 or 90 students), two faculty members will co-facilitate the labs.
+
+#### Graduate Teaching Assistants (typically 6)
+
+- Graduate Teaching Assistants help with teaching and assessment in the course; they also support students during labs.
+
+#### Undergraduate Teaching Assistants (typically 5 or 6)
+
+- Undergraduate Teaching Assistants have previously taken the course; they support current students during labs.
+
+#### Lab Assistants (typically 30)
+
+- Lab Assistants have taken the course in a previous semester; they support current students during labs.
+
+#### Student Lab Assistants (typically 30)
+
+- Student Lab Assistants are currently taking the class, but are working ahead; they support other students as they complete the lab experiences.
+
+« [Previous](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/syllabus/) | [Next](https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/pages/software-and-tools/) »

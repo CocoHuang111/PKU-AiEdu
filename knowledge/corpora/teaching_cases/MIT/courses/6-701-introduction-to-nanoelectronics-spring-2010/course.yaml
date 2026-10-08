@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-6-701-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.701"
+cross_listed_codes:
+  - "6.719"
+course_title: "Introduction to Nanoelectronics"
+course_slug: "6-701-introduction-to-nanoelectronics-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Marc  Baldo"
+subject_primary: "Technology"
+subject_secondary:
+  - "Engineering"
+  - "Electrical Engineering"
+  - "Electronics"
+  - "Nanotechnology"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Open Textbooks"
+  - "Problem Sets"
+description: |
+  Traditionally, progress in electronics has been driven by miniaturization. But as electronic devices approach the molecular scale, classical models for device behavior must be abandoned. To prepare for the next generation of electronic devices, this class teaches the theory of current, voltage and resistance from atoms up. To describe electrons at the nanoscale, we will begin with an introduction to the principles of quantum mechanics, including quantization, the wave-particle duality, wavefunctions and Schrödinger’s equation. Then we will consider the electronic properties of molecules, carbon nanotubes and crystals, including energy band formation and the origin of metals, insulators and semiconductors. Electron conduction will be taught beginning with ballistic transport and concluding with a derivation of Ohm’s law. We will then compare ballistic to bulk MOSFETs. The class will conclude with a discussion of possible fundamental limits to computation.
+course_url: "https://ocw.mit.edu/courses/6-701-introduction-to-nanoelectronics-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/6-701-introduction-to-nanoelectronics-spring-2010/5729e958bbbaf54431c781cbaba74d4e_6-701s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

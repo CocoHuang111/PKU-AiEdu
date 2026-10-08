@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-004-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.004"
+cross_listed_codes: []
+course_title: "Reading Poetry"
+course_slug: "21l-004-reading-poetry-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Mary Fuller"
+subject_primary: "Literature"
+subject_secondary:
+  - "American Literature"
+  - "Criticism"
+  - "Poetry"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "American Literature"
+          - "Criticism"
+          - "Poetry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  How do you read a poem? Intuition is not the only answer. In this class, we will investigate some of the formal tools poets use—meter, sound, syntax, word-choice, and other properties of language—as well as exploring a range of approaches to reading poetry, from the old (memorization and reading out loud) to the new (digitally enabled visualization and annotation). We will use readings available online via the generosity of the Poetry Foundation and the Academy of American Poets. We will also think collectively about how to approach difficult poems.
+course_url: "https://ocw.mit.edu/courses/21l-004-reading-poetry-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/21l-004-reading-poetry-spring-2018/83436146aa135aadda5a4b0dcfc5a171_21l-004s18.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

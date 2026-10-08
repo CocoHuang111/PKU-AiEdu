@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-6-046j-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.046J"
+cross_listed_codes:
+  - "18.410J"
+course_title: "Design and Analysis of Algorithms"
+course_slug: "6-046j-design-and-analysis-of-algorithms-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Erik Demaine"
+  - "Prof. Srini Devadas"
+  - "Prof. Nancy Lynch"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Computer Networks"
+  - "Cryptography"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Computer Networks"
+          - "Cryptography"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Problem-solving Videos"
+description: |
+  This is an intermediate algorithms course with an emphasis on teaching techniques for the design and analysis of efficient algorithms, emphasizing methods of application. Topics include divide-and-conquer, randomization, dynamic programming, greedy algorithms, incremental improvement, complexity, and cryptography.
+course_url: "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/6afddb714577eef8db0746c89641b178_6-046js15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

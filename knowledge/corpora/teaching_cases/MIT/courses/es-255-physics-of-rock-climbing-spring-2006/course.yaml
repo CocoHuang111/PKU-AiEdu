@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-es-255-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.255"
+cross_listed_codes: []
+course_title: "Physics of Rock Climbing"
+course_slug: "es-255-physics-of-rock-climbing-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "David Custer"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Science"
+  - "Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  SP.255 is a lecture, discussion, and project based seminar about the physics of rock climbing. Participants are first exposed to the unsolved problems in the climbing community that could be answered by research and then asked to solve a small part of one of these problems. The seminar provides an introduction to engineering problems, an opportunity to practice communication skills, and a brief stab at doing some research. This seminar explicitly does not include climbing instruction nor is climbing/mountaineering experience a prerequisite.
+course_url: "https://ocw.mit.edu/courses/es-255-physics-of-rock-climbing-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/es-255-physics-of-rock-climbing-spring-2006/f3a14e8e66093ae412a36490fef12387_es-255s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-410-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.410"
+cross_listed_codes:
+  - "21M.515"
+course_title: "Vocal Repertoire and Performance: Women Composers"
+course_slug: "21m-410-vocal-repertoire-and-performance-women-composers-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ms. Pamela Wood"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Performance"
+  - "Society"
+  - "Women's Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Performance"
+  - name: "Society"
+    subtopics:
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course is for the singer and/or pianist interested in collaborative study of solo vocal performance. This term we will focus upon the works of Women Composers. Students will gather biographical data and explore art songs, operatic arias, choral masterpieces, and arrangements employing sacred and secular texts. Additionally, students will conduct inquiry into works indicative of their own heritage.
+course_url: "https://ocw.mit.edu/courses/21m-410-vocal-repertoire-and-performance-women-composers-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/21m-410-vocal-repertoire-and-performance-women-composers-spring-2007/b9f51c82e74a1ce663943ce5a9b97cdf_21m-410s07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-9-70-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.70"
+cross_listed_codes: []
+course_title: "Social Psychology"
+course_slug: "9-70-social-psychology-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Stephan L. Chorover"
+subject_primary: "Psychology"
+subject_secondary: []
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course examines interpersonal and group dynamics, considers how the thoughts, feelings, and actions of individuals are influenced by (and influence) the beliefs, values, and practices of large and small groups. Learning occurs through a combination of lectures, demonstrations and in-class activities complemented by participation in small study groups and completion of homework assignments.
+course_url: "https://ocw.mit.edu/courses/9-70-social-psychology-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/9-70-social-psychology-spring-2013/8db7f5ceb1665b9bd07edfb48a658742_9-70s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

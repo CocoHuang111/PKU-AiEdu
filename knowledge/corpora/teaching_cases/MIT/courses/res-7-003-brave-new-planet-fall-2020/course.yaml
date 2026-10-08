@@ -1,0 +1,94 @@
+schema_version: "1.0"
+course_id: "mitocw-res-7-003-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.7-003"
+cross_listed_codes: []
+course_title: "Brave New Planet"
+course_slug: "res-7-003-brave-new-planet-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Eric Lander"
+subject_primary: "Climate"
+subject_secondary:
+  - "Renewables"
+  - "Engineering"
+  - "Computer Science"
+  - "Artificial Intelligence"
+  - "Humanities"
+  - "Philosophy"
+  - "Ethics"
+  - "Science"
+  - "Biology"
+  - "Genetics"
+  - "Earth Science"
+  - "Climate Studies"
+  - "Social Science"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+      - name: "Renewables"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Genetics"
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Utopia or dystopia? It’s up to us. In the 21st century, powerful technologies have been appearing at a breathtaking pace—related to the internet, artificial intelligence, genetic engineering, and more. They have amazing potential upsides, but we can’t ignore the serious risks that come with them. Brave New Planet is a podcast that delves deep into the most exciting and challenging scientific frontiers, helping us understand them and grapple with their implications. Dr. Eric Lander, president and founding director of the Broad Institute of MIT and Harvard, is a geneticist, molecular biologist, and mathematician who was a leader of the Human Genome Project and for eight years served as a science advisor to the White House for President Obama. He’s also the host of Brave New Planet , and he’s talked to leading researchers, journalists, doctors, policy makers, activists, and legal experts to illuminate how this generation’s choices will shape the future as never before. Brave New Planet is a partnership between the Broad Institute , Pushkin Industries , and the Boston Globe .
+course_url: "https://ocw.mit.edu/courses/res-7-003-brave-new-planet-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/res-7-003-brave-new-planet-fall-2020/24f98cd436fe0d7bac8108118827eaca_RES.7-003F20.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-059-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.059"
+cross_listed_codes: []
+course_title: "European Thought and Culture"
+course_slug: "21g-059-european-thought-and-culture-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Thomas Nolden"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject surveys main currents of European cultural and intellectual history in the modern period. Such a foundation course is central to the humanities in Europe. The curriculum introduces a set of ideas and arguments that have played a formative role in European cultural history, and acquaints them with some exemplars of critical thought. Among the topics to be considered: the critique of religion, the promise of independence, the advance of capitalism, the temptations of Marxism, the origins of totalitarianism, and the dialects of enlightenment. In addition to texts, we will also discuss pieces of art, incl. paintings and film.
+course_url: "https://ocw.mit.edu/courses/21g-059-european-thought-and-culture-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/21g-059-european-thought-and-culture-spring-2008/e6db543d0805379f7662947cff6e23f9_21g-059s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

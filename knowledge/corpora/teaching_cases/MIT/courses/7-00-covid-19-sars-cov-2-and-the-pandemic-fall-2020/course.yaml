@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-7-00-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.00"
+cross_listed_codes: []
+course_title: "COVID-19, SARS-CoV-2 and the Pandemic"
+course_slug: "7-00-covid-19-sars-cov-2-and-the-pandemic-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "MIT Department of Biology "
+subject_primary: "Biology"
+subject_secondary:
+  - "Cell Biology"
+  - "Microbiology"
+  - "Molecular Biology"
+  - "Virology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+          - "Microbiology"
+          - "Molecular Biology"
+          - "Virology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  During Fall 2020, all MIT students and the general public were welcomed to join Professors Richard Young and Facundo Batista as they discussed the science of the pandemic during this new class. The livestream of the lectures was available to the public, but only registered students were able to ask questions during the Q&A. Special guest speakers included: Drs. Anthony Fauci, David Baltimore, James Bradner, Victoria Clark, Kizzmekia Corbett, Britt Glaunsinger, Akiko Iwasaki, Eric Lander, Michael Mina, Michel Nussenzweig, Shiv Pillai, Arlene Sharpe, Skip Virgin, and Bruce Walker. NOTE: This class ran from September 1, 2020 through December 8, 2020.
+course_url: "https://ocw.mit.edu/courses/7-00-covid-19-sars-cov-2-and-the-pandemic-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/7-00-covid-19-sars-cov-2-and-the-pandemic-fall-2020/17497d485988c885f44fbbdfce060462_7-00F20.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

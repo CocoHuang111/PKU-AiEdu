@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-704-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.704"
+cross_listed_codes: []
+course_title: "Spanish IV"
+course_slug: "21g-704-spanish-iv-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Margarita Ribas Groeger"
+  - "Solivia Márquez"
+subject_primary: "Language"
+subject_secondary:
+  - "Spanish"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Spanish"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Exams"
+description: |
+  Course Sequences Spanish IV aims at developing and improving student’s oral and written communication through the continued study of the language, literature and culture of Spain, Latin America and Hispanic communities in the United States. It also seeks to improve students’ ability to read and appreciate literary and non-literary texts in Spanish, deepening this way students’ awareness and understanding of the cultural diversity of the Spanish-speaking world. The course is organized by themes based on contemporary social, political and cultural issues of Spanish-speaking societies such as: cultural identity, the changing roles of women and family, economic development and its effects on cultural heritage and environment, and the individual’s rights in the political system.
+course_url: "https://ocw.mit.edu/courses/21g-704-spanish-iv-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/21g-704-spanish-iv-spring-2005/dc54994aa49a50d71e50dcfd01a81c85_21g-704s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

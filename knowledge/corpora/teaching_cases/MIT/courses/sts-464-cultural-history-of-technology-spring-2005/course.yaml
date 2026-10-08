@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-464-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.464"
+cross_listed_codes: []
+course_title: "Cultural History of Technology"
+course_slug: "sts-464-cultural-history-of-technology-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Leo Marx"
+  - "Prof. Rosalind Williams"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Intellectual History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Intellectual History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  The subject of this course is the historical process by which the meaning of “technology” has been constructed. Although the word itself is traceable to the ancient Greek root teckhne (meaning art), it did not enter the English language until the 17th century, and did not acquire its current meaning until after World War I. The aim of the course, then, is to explore various sectors of industrializing 19th and 20th century Western society and culture with a view to explaining and assessing the emergence of technology as a pivotal word (and concept) in contemporary (especially Anglo-American) thought and expression. Note: In the interests of freshness and topicality we regard the STS.464 syllabus as sufficiently flexible to permit some — mostly minor — variations from year to year. One example of a different STS.464 syllabus can be found in STS.464 Technology and the Literary Imagination , Spring 2008.
+course_url: "https://ocw.mit.edu/courses/sts-464-cultural-history-of-technology-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/sts-464-cultural-history-of-technology-spring-2005/84cd4c039927b4c80cabdcdda9244094_sts-464s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

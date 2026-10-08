@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-16-842-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.842"
+cross_listed_codes: []
+course_title: "Fundamentals of Systems Engineering"
+course_slug: "16-842-fundamentals-of-systems-engineering-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Olivier de Weck"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Systems Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  General introduction to systems engineering using both the classical V-model and the new Meta approach. Topics include stakeholder analysis, requirements definition, system architecture and concept generation, trade-space exploration and concept selection, design definition and optimization, system integration and interface management, system safety, verification and validation, and commissioning and operations. Discusses the trade-offs between performance, lifecycle cost and system operability. Readings based on systems engineering standards and papers. Students apply the concepts of systems engineering to a cyber-electro-mechanical system, which is subsequently entered into a design competition. Students will prepare a PDR (Preliminary Design Review)-level design intended for the Cansat Competition .This year’s class will be taught in the form of a Small-Private-Online-Course (SPOC) and offered simultaneously to students at MIT under number 16.842 and Ecole Polytechnique Fédérale de Lausanne (EPFL) as ENG-421.
+course_url: "https://ocw.mit.edu/courses/16-842-fundamentals-of-systems-engineering-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/16-842-fundamentals-of-systems-engineering-fall-2015/726dfc67e86050ec2c1f83c5c248961d_16-842f15.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

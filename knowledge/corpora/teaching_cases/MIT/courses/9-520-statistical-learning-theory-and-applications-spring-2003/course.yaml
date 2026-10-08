@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-9-520-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.520"
+cross_listed_codes: []
+course_title: "Statistical Learning Theory and Applications"
+course_slug: "9-520-statistical-learning-theory-and-applications-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Ryan Rifkin"
+  - "Dr. Sayan Mukherjee"
+  - "Prof. Tomaso Poggio"
+  - "Alex Rakhlin"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Artificial Intelligence"
+  - "Mathematics"
+  - "Probability and Statistics"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Artificial Intelligence"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Focuses on the problem of supervised learning from the perspective of modern statistical learning theory starting with the theory of multivariate function approximation from sparse data. Develops basic tools such as Regularization including Support Vector Machines for regression and classification. Derives generalization bounds using both stability and VC theory. Discusses topics such as boosting and feature selection. Examines applications in several areas: computer vision, computer graphics, text classification and bioinformatics. Final projects and hands-on applications and exercises are planned, paralleling the rapidly increasing practical uses of the techniques described in the subject.
+course_url: "https://ocw.mit.edu/courses/9-520-statistical-learning-theory-and-applications-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/9-520-statistical-learning-theory-and-applications-spring-2003/486b2444cb41036fa4357f1663aa371f_9-520s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

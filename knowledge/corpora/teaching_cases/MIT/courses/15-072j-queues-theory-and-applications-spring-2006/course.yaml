@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-15-072j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.072J"
+cross_listed_codes:
+  - "6.264J"
+course_title: "Queues: Theory and Applications"
+course_slug: "15-072j-queues-theory-and-applications-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Gamarnik"
+  - "Premal Shah"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Engineering"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Numerical Simulation"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Numerical Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This class deals with the modeling and analysis of queueing systems, with applications in communications, manufacturing, computers, call centers, service industries and transportation. Topics include birth-death processes and simple Markovian queues, networks of queues and product form networks, single and multi-server queues, multi-class queueing networks, fluid models, adversarial queueing networks, heavy-traffic theory and diffusion approximations. The course will cover state of the art results which lead to research opportunities.
+course_url: "https://ocw.mit.edu/courses/15-072j-queues-theory-and-applications-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/15-072j-queues-theory-and-applications-spring-2006/0f852e82b57e1ed729cdc8c5e331d7b8_15-072js06-.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

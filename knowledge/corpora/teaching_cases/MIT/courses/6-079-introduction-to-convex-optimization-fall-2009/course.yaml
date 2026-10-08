@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-079-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.079"
+cross_listed_codes:
+  - "6.975"
+course_title: "Introduction to Convex Optimization"
+course_slug: "6-079-introduction-to-convex-optimization-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Stephen Boyd"
+  - "Prof. Pablo Parrilo"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Systems Engineering"
+  - "Systems Optimization"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Programming Assignments"
+description: |
+  This course aims to give students the tools and training to recognize convex optimization problems that arise in scientific and engineering applications, presenting the basic theory, and concentrating on modeling aspects and results that are useful in applications. Topics include convex sets, convex functions, optimization problems, least-squares, linear and quadratic programs, semidefinite programming, optimality conditions, and duality theory. Applications to signal processing, control, machine learning, finance, digital and analog circuit design, computational geometry, statistics, and mechanical engineering are presented. Students complete hands-on exercises using high-level numerical software. Acknowledgements The course materials were developed jointly by Prof. Stephen Boyd (Stanford), who was a visiting professor at MIT when this course was taught, and Prof. Lieven Vanderberghe (UCLA).
+course_url: "https://ocw.mit.edu/courses/6-079-introduction-to-convex-optimization-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/6-079-introduction-to-convex-optimization-fall-2009/ff244db70860619b9beccf7a3306e569_6-079f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

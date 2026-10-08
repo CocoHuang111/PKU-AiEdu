@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-24-906j-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.906J"
+cross_listed_codes:
+  - "21F.024"
+course_title: "The Linguistic Study of Bilingualism"
+course_slug: "24-906j-the-linguistic-study-of-bilingualism-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Suzanne Flynn"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  One mind, two languages. The basic focus of this class will be on the linguistic and psycholinguistic underpinnings of the bilingual brain, seeking to understand what it means to “acquire” a new language. How did we learn our first language(s)? Were we taught English? Japanese? Chinese? Spanish? If so, how did we do it so quickly or so slowly? Is the learning of a new target language different from the learning of a first language? Is there a critical period for language learning? To answer these questions, we will consider topics including different models of bilingualism, how it is possible to make grammaticality judgments about code-switches, how bilingualism affects other domains of human cognition, and what imaging studies of the human brain tell us about the bilingual/multilingual brain.
+course_url: "https://ocw.mit.edu/courses/24-906j-the-linguistic-study-of-bilingualism-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/24-906j-the-linguistic-study-of-bilingualism-fall-2024/mit24-906j-f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

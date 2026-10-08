@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-4-406-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.406"
+cross_listed_codes: []
+course_title: "Ecologies of Construction"
+course_slug: "4-406-ecologies-of-construction-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Fernandez"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Engineering"
+  - "Environmental Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Engineering"
+          - "Environmental Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Ecologies of Construction examines the resource requirements for the making and maintenance of the contemporary built environment. This course introduces the field of industrial ecology as a primary source of concepts and methods in the mapping of material and energy expenditures dedicated to construction activities.
+course_url: "https://ocw.mit.edu/courses/4-406-ecologies-of-construction-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/4-406-ecologies-of-construction-spring-2007/ebfa98a9aee91be67864e63f5261ed65_4-406s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

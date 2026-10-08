@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-007-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.007"
+cross_listed_codes: []
+course_title: "World Literatures: Travel Writing"
+course_slug: "21l-007-world-literatures-travel-writing-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Mary Fuller"
+subject_primary: "Literature"
+subject_secondary:
+  - "International Literature"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Written Assignments"
+description: |
+  This semester, we will read writing about travel and place from Columbus’s Diario through the present. Travel writing has some special features that will shape both the content and the work for this subject: reflecting the point of view, narrative choices, and style of individuals, it also responds to the pressures of a real world only marginally under their control. Whether the traveler is a curious tourist, the leader of a national expedition, or a starving, half-naked survivor, the encounter with place shapes what travel writing can be. Accordingly, we will pay attention not only to narrative texts but to maps, objects, archives, and facts of various kinds. Our materials are organized around three regions: North America, Africa and the Atlantic world, the Arctic and Antarctic. The historical scope of these readings will allow us to know something not only about the experiences and writing strategies of individual travelers, but about the progressive integration of these regions into global economic, political, and knowledge systems. Whether we are looking at the production of an Inuit film for global audiences, or the mapping of a route across the North American continent by water, these materials do more than simply record or narrate experiences and territories: they also participate in shaping the world and what it means to us. Authors will include Olaudah Equiano, Caryl Philips, Claude Lévi-Strauss, Joseph Conrad, Jamaica Kincaid, William Least Heat Moon, Louise Erdrich, Álvar Núñez Cabeza de Vaca. Expeditions will include those of Lewis and Clark (North America), Henry Morton Stanley (Africa), Ernest Shackleton and Robert F. Scott (Antarctica).
+course_url: "https://ocw.mit.edu/courses/21l-007-world-literatures-travel-writing-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/21l-007-world-literatures-travel-writing-fall-2008/9e49665b50571c588783c537d153c8ea_21l-007f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

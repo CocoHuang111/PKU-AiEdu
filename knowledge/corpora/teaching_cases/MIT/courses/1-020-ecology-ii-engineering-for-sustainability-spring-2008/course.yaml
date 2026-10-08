@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-1-020-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.020"
+cross_listed_codes: []
+course_title: "Ecology II: Engineering for Sustainability"
+course_slug: "1-020-ecology-ii-engineering-for-sustainability-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Dennis McLaughlin"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Ecology"
+  - "Earth Science"
+  - "Environmental Science"
+  - "Sustainability"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Ecology"
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+          - "Sustainability"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides a review of physical, chemical, ecological, and economic principles used to examine interactions between humans and the natural environment. Mass balance concepts are applied to ecology, chemical kinetics, hydrology, and transportation; energy balance concepts are applied to building design, ecology, and climate change; and economic and life cycle concepts are applied to resource evaluation and engineering design. Numerical models are used to integrate concepts and to assess environmental impacts of human activities. Problem sets involve development of MATLAB® models for particular engineering applications. Some experience with computer programming is helpful but not essential.
+course_url: "https://ocw.mit.edu/courses/1-020-ecology-ii-engineering-for-sustainability-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/1-020-ecology-ii-engineering-for-sustainability-spring-2008/1f6e6928aa30d00ffac1baf0fe2ce516_1-020s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

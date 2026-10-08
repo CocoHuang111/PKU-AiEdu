@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-res-9-009-january-iap-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.9-009"
+cross_listed_codes: []
+course_title: "Introduction to Computational Neuroscience with Neuroblox"
+course_slug: "res-9-009-introduction-to-computational-neuroscience-with-neuroblox-january-iap-2025"
+term: "January IAP"
+year: 2025
+as_taught_in: "January IAP 2025"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+  - "Non-Credit"
+instructors:
+  - "Prof. Lilianne Mujica-Parodi"
+  - "Prof. Helmut Strey"
+  - "Dr. Haris Organtzidis"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Health and Medicine"
+  - "Biomedical Signal and Image Processing"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Signal and Image Processing"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Programming Assignments"
+description: |
+  In this course, you will learn the basics of computational neuroscience via hands-on model building in Neuroblox and Julia. You will simulate models from the literature, from single neurons to large circuits with synaptic plasticity, and fit them to neural data. By the end of the course, you will be able to model your data, build your own custom circuit “blox” that may be incorporated into the Neuroblox library, and explore how interventions such as drugs and stimulation probes affect neural circuits. Computational neuroscience aims to simulate the brain in silico , from single synapses to brain-wide networks. The field has matured in tandem with experimental neuroscience, to the point where computational modeling has become an indispensable tool for understanding neuroscience data and motivating future experiments. However, building such models can involve a painstaking process of translating concepts from the literature into working code, then optimizing it to run in a reasonable timeframe. Neuroblox is a new software platform for computational neuroscience that aims to break down these barriers. It is based on the Julia programming language, built with simplicity, modularity, and performance in mind. It consists of a library of modular computational building blocks (“blox”) that can be easily assembled to simulate brain dynamics in code or via an easy-to-use graphical interface. Our tools bridge scales from spiking neurons to brain waves and fMRI, and have applications to neurology and psychiatry. Moreover, the behavior of multiple model variants can be compared to discriminate between competing hypotheses. To learn more about computational neuroscience and the team’s research, visit the Laboratory for Computational Neurodiagnostics website . Course Audience: Anyone interested in exploring how the brain works, including how it leads to cognition. Course Prerequisites: Prior coding experience is beneficial but not necessary. Course Structure: Brief presentation of background material, followed by hands-on exercises and open-ended challenges.
+course_url: "https://ocw.mit.edu/courses/res-9-009-introduction-to-computational-neuroscience-with-neuroblox-january-iap-2025/"
+image_url: "https://ocw.mit.edu/courses/res-9-009-introduction-to-computational-neuroscience-with-neuroblox-january-iap-2025/mitres9_009_iap2025.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-res-8-009-summer-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.8-009"
+cross_listed_codes: []
+course_title: "Introduction to Oscillations and Waves"
+course_slug: "res-8-009-introduction-to-oscillations-and-waves-summer-2017"
+term: "Summer"
+year: 2017
+as_taught_in: "Summer 2017"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "High School"
+instructors:
+  - "Dr. Mobolaji Williams"
+subject_primary: "Physics"
+subject_secondary:
+  - "Atomic, Molecular, Optical Physics"
+  - "Classical Mechanics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Classical Mechanics"
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Introduction to Oscillations and Waves covers the basic mathematics and physics of oscillatory and wave phenomena. By the end of the course, students should be able to explain why oscillations appear in many near equilibrium systems, the various mathematical properties of those oscillations in various contexts, how oscillations and waves are related, and the basic mathematical description and properties of a wave. This course was offered as part of MITES Summer , a six-week, residential STEM experience for rising high school seniors. MIT Introduction to Technology, Engineering, and Science (MITES) provides transformative experiences that bolster confidence, create lifelong community, and build an exciting, challenging foundation in STEM for highly motivated 7th–12th grade students from diverse and underrepresented backgrounds.
+course_url: "https://ocw.mit.edu/courses/res-8-009-introduction-to-oscillations-and-waves-summer-2017/"
+image_url: "https://ocw.mit.edu/courses/res-8-009-introduction-to-oscillations-and-waves-summer-2017/res-8-009-sum17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-6-5630-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.5630"
+cross_listed_codes: []
+course_title: "Advanced Topics in Cryptography"
+course_slug: "6-5630-advanced-topics-in-cryptography-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Yael Tauman Kalai"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Cryptography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Cryptography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This course is about the evolution of proofs in computer science. We will learn about the power of interactive proofs, multi-prover interactive proofs, and probabilistically checkable proofs. We will then show how to use cryptography to convert these powerful proof systems into computationally sound non-interactive arguments (SNARGs).
+course_url: "https://ocw.mit.edu/courses/6-5630-advanced-topics-in-cryptography-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/6-5630-advanced-topics-in-cryptography-fall-2023/mit6_5630_f23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

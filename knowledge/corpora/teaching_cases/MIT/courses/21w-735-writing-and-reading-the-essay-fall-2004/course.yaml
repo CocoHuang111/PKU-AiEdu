@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-735-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.735"
+cross_listed_codes: []
+course_title: "Writing and Reading the Essay"
+course_slug: "21w-735-writing-and-reading-the-essay-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anthony Lioi"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Creative Writing"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Creative Writing"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  As the course title suggests, this class is meant to acquaint you with the literary and rhetorical tradition of the essay, a genre which has been described by one scholar as “the meeting ground between art and philosophy,” and by another as “the place where the self finds a pattern in the world, and the world finds a pattern in the self”. Though the essay is part of a tradition of prose which stretches back to antiquity, it is also a thoroughly modern and popular form of writing, found in print media and on the web.
+course_url: "https://ocw.mit.edu/courses/21w-735-writing-and-reading-the-essay-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/21w-735-writing-and-reading-the-essay-fall-2004/3c7dfa29d0028c001ac8fd4a126aada5_21w-735f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

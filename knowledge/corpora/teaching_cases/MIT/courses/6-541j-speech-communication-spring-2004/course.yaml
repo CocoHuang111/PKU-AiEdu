@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-6-541j-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.541J"
+cross_listed_codes:
+  - "24.968J"
+  - "HST.710J"
+course_title: "Speech Communication"
+course_slug: "6-541j-speech-communication-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Linguistics and Philosophy"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Kenneth Stevens"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Health and Medicine"
+  - "Speech Pathology"
+  - "Humanities"
+  - "Linguistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Speech Pathology"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  6.541J surveys the structural properties of natural languages, with special emphasis on the sound pattern. Topics covered include: representation of the lexicon; physiology of speech production; articulatory phonetics; acoustical theory of speech production; acoustical and articulatory descriptions of phonetic features and of prosodic aspects of speech; perception of speech; models of lexical access and of speech production and planning; and applications to recognition and generation of speech by machine, and to the study of speech disorders.
+course_url: "https://ocw.mit.edu/courses/6-541j-speech-communication-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/6-541j-speech-communication-spring-2004/a2bb06f52a0a9d6b616be60b2c52f4ad_6-541js04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-15-660-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.660"
+cross_listed_codes: []
+course_title: "Strategic HR Management"
+course_slug: "15-660-strategic-hr-management-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Diane Burton"
+  - "Prof. Paul Osterman"
+subject_primary: "Industrial Relations and Human Resource Management"
+subject_secondary: []
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course is about both the design and execution of human resource management strategies. This course has two central themes: (1) How to think systematically and strategically about aspects of managing the organization’s human assets, and (2) What really needs to be done to implement these policies and to achieve competitive advantage. It adopts the perspective of a general manager and addresses human resource topics (including reward systems, performance management, high-performance human resource systems, training and development, recruitment, retention, equal employment opportunity laws, work-force diversity, and union-management relationships) from a strategic perspective.
+course_url: "https://ocw.mit.edu/courses/15-660-strategic-hr-management-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/15-660-strategic-hr-management-spring-2003/10124a7188f51cee59a8bd9b3a0aad44_15-660s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

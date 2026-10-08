@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-105-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.105"
+cross_listed_codes: []
+course_title: "American Classics"
+course_slug: "21h-105-american-classics-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Pauline Maier"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Literature"
+  - "Classics"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+      - name: "Literature"
+        specialties:
+          - "Classics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This subject is devoted to reading and discussing basic American historical texts that are often cited but often remain unread, understanding their meaning, and assessing their continuing significance in American culture. Since it is a “Communications Intensive” subject, 21H.105 is also dedicated to improving students’ capacities to write and speak well. It requires a substantial amount of writing, participation in discussions, and individual presentations to the class.
+course_url: "https://ocw.mit.edu/courses/21h-105-american-classics-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/21h-105-american-classics-spring-2006/44c87787840bd0d94d9e541e4e3d9877_21h-105s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-11-225-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.225"
+cross_listed_codes: []
+course_title: "Argumentation and Communication"
+course_slug: "11-225-argumentation-and-communication-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Cherie Miot Abbanat"
+subject_primary: "Literature"
+subject_secondary:
+  - "Nonfiction Prose"
+  - "Rhetoric"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Nonfiction Prose"
+          - "Rhetoric"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This Communication and Argumentation seminar is an intensive writing workshop that focuses on argumentation and communication. Students learn to write and present their ideas in cogent, persuasive arguments and other analytical frameworks. Reading and writing assignments and other exercises stress the connections between clear thinking, critical reading, and effective writing.
+course_url: "https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/11-225-argumentation-and-communication-fall-2006/1f977ee87736240390182c8ef64f3485_11-225f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

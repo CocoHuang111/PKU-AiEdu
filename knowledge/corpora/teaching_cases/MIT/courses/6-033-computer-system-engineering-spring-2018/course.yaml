@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-6-033-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.033"
+cross_listed_codes: []
+course_title: "Computer System Engineering"
+course_slug: "6-033-computer-system-engineering-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Katrina LaCurts"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Design and Engineering"
+  - "Computer Networks"
+  - "Operating Systems"
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Design and Engineering"
+          - "Computer Networks"
+          - "Operating Systems"
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This class covers topics on the engineering of computer software and hardware systems. Topics include techniques for controlling complexity; strong modularity using client-server design, operating systems; performance, networks; naming; security and privacy; fault-tolerant systems, atomicity and coordination of concurrent activities, and recovery; impact of computer systems on society.
+course_url: "https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/6-033-computer-system-engineering-spring-2018/a79fa5e068ab51b3cf0477c51c15a9b9_6-033s18.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

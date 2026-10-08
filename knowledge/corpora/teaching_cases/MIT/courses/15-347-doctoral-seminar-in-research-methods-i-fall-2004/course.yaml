@@ -1,0 +1,54 @@
+schema_version: "1.0"
+course_id: "mitocw-15-347-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.347"
+cross_listed_codes: []
+course_title: "Doctoral Seminar in Research Methods I"
+course_slug: "15-347-doctoral-seminar-in-research-methods-i-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jesper B. Sorensen"
+  - "Prof. Lotte Bailyn"
+subject_primary: "Social Science"
+subject_secondary: []
+topic_tree:
+  - name: "Social Science"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course is designed to lay the foundations of good empirical research in the social sciences. It does not deal with specific techniques per se, but rather with the assumptions and the logic underlying social research. Students become acquainted with a variety of approaches to research design, and are helped to develop their own research projects and to evaluate the products of empirical research.
+course_url: "https://ocw.mit.edu/courses/15-347-doctoral-seminar-in-research-methods-i-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/15-347-doctoral-seminar-in-research-methods-i-fall-2004/045c4385af53ec583c49811cd0fc0067_15-347f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

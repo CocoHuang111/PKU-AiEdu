@@ -1,0 +1,15 @@
+> 检索摘要：21W.759 Writing Science Fiction（Spring 2016，Undergraduate）的「Assignments」。页内标题：Assignments。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+Every student will write two pieces of fiction. These may be short stories or chapters in a longer work. If a student chooses to write long fiction, a short summary of the rest of the story should be appended to the final revised version of the second piece. Each major piece will be submitted to workshop and rewritten.
+
+These MIT students have agreed to share their writing as examples of student work.
+
+<table><tr><th>STUDENTS</th><th>WRITINGS</th></tr><tr><td rowspan="2">Maximilien Baas-Thomas</td><td>[Bespoke Ocean (Draft 1) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_bespoke1/) <br> [Bespoke Ocean (Draft 2) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_bespoke2/)</td></tr><tr><td>[The Gift of the Stone Astronaut (Draft 1) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_thegift/) <br> [Someday There’ll Be Stone-Black Skies (Draft 2) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_someday/)</td></tr><tr><td rowspan="2">James Gilles</td><td>[On Call (Draft 1) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_oncall1/) <br> [On Call (Draft 2) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_oncall2/)</td></tr><tr><td>[Sacrifice (Draft 1) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_sacrifice1/) <br> [Sacrifice (Draft 2) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_sacrifice2/)</td></tr><tr><td rowspan="2">Jake Isenhart</td><td>[Dark Was The Night, Cold Was the Ground (Draft 1) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_darknight/)</td></tr><tr><td>[Dopple (Draft 1) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_dopple/)</td></tr><tr><td>Marissa Stephens</td><td>[The Abyss (Draft 1) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_abyss1/) <br> [The Abyss (Draft 2) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_abyss2/)</td></tr><tr><td>An MIT Student</td><td>[A Journey to the End of the World (Draft 1) (PDF)](https://ocw.mit.edu/courses/21w-759-writing-science-fiction-spring-2016/resources/mit21w_759s16_ajourney/)</td></tr></table>

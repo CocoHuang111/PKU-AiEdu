@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-3-185-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.185"
+cross_listed_codes: []
+course_title: "Transport Phenomena in Materials Engineering"
+course_slug: "3-185-transport-phenomena-in-materials-engineering-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Adam Powell"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Materials Science and Engineering"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Solid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Solid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course deals with solid-state diffusion, homogeneous and heterogeneous chemical reactions, and spinodal decomposition. Topics covered include: heat conduction in solids, convective and radiative heat transfer boundary conditions; fluid dynamics, 1-D solutions to the Navier-Stokes equations, boundary layer theory, turbulent flow, and coupling with heat conduction and diffusion in fluids to calculate heat and mass transfer coefficients.
+course_url: "https://ocw.mit.edu/courses/3-185-transport-phenomena-in-materials-engineering-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/3-185-transport-phenomena-in-materials-engineering-fall-2003/88102af85025cbf69bfed7cc9669d9ef_3-185f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

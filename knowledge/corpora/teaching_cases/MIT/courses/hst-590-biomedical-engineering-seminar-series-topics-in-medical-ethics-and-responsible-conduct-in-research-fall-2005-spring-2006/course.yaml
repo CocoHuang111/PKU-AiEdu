@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-590-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.590"
+cross_listed_codes:
+  - "HST.502"
+course_title: "Biomedical Engineering Seminar Series: Topics in Medical Ethics and Responsible Conduct in Research"
+course_slug: "hst-590-biomedical-engineering-seminar-series-topics-in-medical-ethics-and-responsible-conduct-in-research-fall-2005-spring-2006"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Jonathan Rosen"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Humanities"
+  - "Philosophy"
+  - "Ethics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This seminar based course explores techniques for recognizing, analyzing, and resolving ethical dilemmas facing healthcare professionals and biomedical researchers in today’s highly regulated environment. Guest lectures by practicing clinicians, technologists, researchers, and regulators will include case studies, interactive small group discussions, and role-playing simulations. Professional conduct topics will include authorship, conflict of interest, data acquisition and management, and the protection of human subjects and animals involved in research programs.
+course_url: |
+  https://ocw.mit.edu/courses/hst-590-biomedical-engineering-seminar-series-topics-in-medical-ethics-and-responsible-conduct-in-research-fall-2005-spring-2006/
+image_url: |
+  https://ocw.mit.edu/courses/hst-590-biomedical-engineering-seminar-series-topics-in-medical-ethics-and-responsible-conduct-in-research-fall-2005-spring-2006/40f513f555f6a73707553f97c7d9c43c_hst-590f05s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

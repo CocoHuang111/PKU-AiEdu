@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-1-00-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.00"
+cross_listed_codes: []
+course_title: "Introduction to Computers and Engineering Problem Solving"
+course_slug: "1-00-introduction-to-computers-and-engineering-problem-solving-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Dr. George Kocur"
+  - "Dr. Christopher Cassa"
+  - "Prof. Marta C. Gonzalez"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Programming Languages"
+  - "Software Design and Engineering"
+  - "Systems Engineering"
+  - "Computational Science and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Programming Languages"
+          - "Software Design and Engineering"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Programming Assignments with Examples"
+description: |
+  This course presents the fundamentals of object-oriented software design and development, computational methods and sensing for engineering, and scientific and managerial applications. It cover topics, including design of classes, inheritance, graphical user interfaces, numerical methods, streams, threads, sensors, and data structures. Students use Java ® programming language to complete weekly software assignments. How is 1.00 different from other intro programming courses offered at MIT? 1.00 is a first course in programming. It assumes no prior experience, and it focuses on the use of computation to solve problems in engineering, science and management. The audience for 1.00 is non-computer science majors. 1.00 does not focus on writing compilers or parsers or computing tools where the computer is the system; it focuses on engineering problems where the computer is part of the system, or is used to model a physical or logical system. 1.00 teaches the Java programming language, and it focuses on the design and development of object-oriented software for technical problems. 1.00 is taught in an active learning style. Lecture segments alternating with laboratory exercises are used in every class to allow students to put concepts into practice immediately; this teaching style generates questions and feedback, and allows the teaching staff and students to interact when concepts are first introduced to ensure that core ideas are understood. Like many MIT classes, 1.00 has weekly assignments, which are programs based on actual engineering, science or management applications. The weekly assignments build on the class material from the previous week, and require students to put the concepts taught in the small in-class labs into a larger program that uses multiple elements of Java together.
+course_url: "https://ocw.mit.edu/courses/1-00-introduction-to-computers-and-engineering-problem-solving-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/1-00-introduction-to-computers-and-engineering-problem-solving-spring-2012/457598d84426c61f83ab06ad2aa39c04_1-00s12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

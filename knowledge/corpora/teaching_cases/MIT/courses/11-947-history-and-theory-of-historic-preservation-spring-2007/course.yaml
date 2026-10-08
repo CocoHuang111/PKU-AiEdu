@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-11-947-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.947"
+cross_listed_codes: []
+course_title: "History and Theory of Historic Preservation"
+course_slug: "11-947-history-and-theory-of-historic-preservation-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Max Page"
+subject_primary: "History"
+subject_secondary:
+  - "Social Science"
+  - "Urban Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This class examines the history and theory of historic preservation, focusing on the United States, but with reference to traditions and practices in other countries. The class is designed to examine the largely untold history of the historic preservation movement in this country, and explore how laws, public policies and cultural attitudes shape how we preserve or do not preserve the built environment. The class will give students a grounding in the history, theory and practice of historic preservation, but is not an applied, technical course.
+course_url: "https://ocw.mit.edu/courses/11-947-history-and-theory-of-historic-preservation-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/11-947-history-and-theory-of-historic-preservation-spring-2007/d208eafb5d0acfdb5ebd146eb81c60ca_11-947s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

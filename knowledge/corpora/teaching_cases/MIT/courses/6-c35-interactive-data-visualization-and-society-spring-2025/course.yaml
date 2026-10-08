@@ -1,0 +1,91 @@
+schema_version: "1.0"
+course_id: "mitocw-6-c35-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.C35"
+cross_listed_codes:
+  - "CMS.C35"
+  - "IDS.C35"
+  - "11.C35"
+  - "6.C85"
+  - "11.C85"
+  - "CMS.C85"
+  - "IDS.C85"
+course_title: "Interactive Data Visualization and Society"
+course_slug: "6-c35-interactive-data-visualization-and-society-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Urban Studies and Planning"
+  - "Comparative Media Studies/Writing"
+  - "Institute for Data, Systems, and Society"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Arvind Satyanarayan"
+  - "Prof. Catherine D'Ignazio"
+  - "Prof. Crystal Lee"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Humanities"
+  - "Philosophy"
+  - "Ethics"
+  - "Social Science"
+  - "Urban Studies"
+  - "Housing Development"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Housing Development"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Laboratory Assignments"
+  - "Lecture Notes"
+  - "Multiple Assignment Types"
+  - "Projects"
+  - "Readings"
+description: |
+  The world is awash with increasing amounts of data, and we must keep afloat with our relatively constant perceptual and cognitive abilities. Visualization provides one means of combating information overload, as a well-designed visual encoding can supplant cognitive calculations with simpler perceptual inferences and improve comprehension, memory, and decision-making. Moreover, visual representations may help engage more diverse audiences in the process of analytic thinking. This course covers the design, ethical, and technical skills for creating effective visualizations. Short assignments will build familiarity with the data analysis and visualization design process and weekly lab sessions present coding and technical skills. A final project provides experience working with real-world big data, provided by external partners, in order to expose and communicate insights about societal issues. Students taking the graduate version of the course complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/6-c35-interactive-data-visualization-and-society-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/6-c35-interactive-data-visualization-and-society-spring-2025/mit6_c35_s25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

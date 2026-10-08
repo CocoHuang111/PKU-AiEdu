@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-110-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.110"
+cross_listed_codes: []
+course_title: "Fundamentals of Computational Media Design"
+course_slug: "mas-110-fundamentals-of-computational-media-design-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Barry Vercoe"
+  - "Prof. David Small"
+  - "Dr. Henry Holtzman"
+  - "Dr. V. Michael Bove"
+subject_primary: "Art History"
+subject_secondary:
+  - "Media Studies"
+  - "Digital Media"
+  - "Visual Arts"
+  - "Graphic Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Art History"
+        specialties: []
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Visual Arts"
+        specialties:
+          - "Graphic Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Problem Sets"
+  - "Programming Assignments"
+  - "Written Assignments"
+description: |
+  This class covers the history of 20th century art and design from the perspective of the technologist. Methods for visual analysis, oral critique, and digital expression are introduced. Class projects this term use the OLPC XO (One Laptop Per Child) laptop, Csound and Python software.
+course_url: "https://ocw.mit.edu/courses/mas-110-fundamentals-of-computational-media-design-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/mas-110-fundamentals-of-computational-media-design-fall-2008/8f54107db0feaf5d14fbc3b12fc05dc5_mas-110f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

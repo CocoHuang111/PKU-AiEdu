@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "michigan-closing-loop-positioning-formerly-incarcerated-students-co-instructors-equity-focused-community"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: |
+  Closing the Loop: Positioning Formerly-Incarcerated Students as Co-Instructors in Equity-Focused, Community-Engaged Decarceration Courses on Campus
+slug: "closing-loop-positioning-formerly-incarcerated-students-co-instructors-equity-focused-community"
+source_url: "https://crlt.umich.edu/closing-loop-positioning-formerly-incarcerated-students-co-instructors-equity-focused-community"
+language: "en"
+published: null
+awarded_year: "2024"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "5ffa0d28f92405c875d4ebab4d0666227e062e2c90bd6860ff5d4ba07011933d"

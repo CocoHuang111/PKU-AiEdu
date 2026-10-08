@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-22-616-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.616"
+cross_listed_codes: []
+course_title: "Plasma Transport Theory"
+course_slug: "22-616-plasma-transport-theory-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Kim Molvig"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "High Energy Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "High Energy Physics"
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course describes the processes by which mass, momentum, and energy are transported in plasmas, with special reference to magnetic confinement fusion applications. The Fokker-Planck collision operator and its limiting forms, as well as collisional relaxation and equilibrium, are considered in detail. Special applications include a Lorentz gas, Brownian motion, alpha particles, and runaway electrons. The Braginskii formulation of classical collisional transport in general geometry based on the Fokker-Planck equation is presented. Neoclassical transport in tokamaks, which is sensitive to the details of the magnetic geometry, is considered in the high (Pfirsch-Schluter), low (banana) and intermediate (plateau) regimes of collisionality.
+course_url: "https://ocw.mit.edu/courses/22-616-plasma-transport-theory-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/22-616-plasma-transport-theory-fall-2003/2e452b25b18549d6efd1369b00e0d7df_22-616f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

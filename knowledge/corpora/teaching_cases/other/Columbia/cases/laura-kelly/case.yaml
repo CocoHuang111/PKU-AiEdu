@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-laura-kelly"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Laura Kelly, PhD, NP, PMHCNS-BC"
+slug: "laura-kelly"
+source_url: "https://ctl.columbia.edu/transformations/faculty/laura-kelly/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "0a7766777048267cd1b6042d1c1201b308b09c7349a3909a19292948e6df751a"

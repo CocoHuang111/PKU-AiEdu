@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-devon-rupley"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Devon Rupley, MD"
+slug: "devon-rupley"
+source_url: "https://ctl.columbia.edu/transformations/faculty/devon-rupley/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "04ef92dab809c281b3360751342be9e87071a3060c5a2a9cdd5f746080e14f4f"

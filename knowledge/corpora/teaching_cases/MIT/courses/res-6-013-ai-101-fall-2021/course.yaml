@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-res-6-013-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.6-013"
+cross_listed_codes: []
+course_title: "AI 101"
+course_slug: "res-6-013-ai-101-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Brandon Leshchinskiy"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Video Materials"
+description: |
+  Machine vision. Data wrangling. Reinforcement learning. What do these terms even mean? In AI 101, MIT researcher Brandon Leshchinskiy offers an introduction to artificial intelligence that’s designed specifically for those with little to no background in the subject. The workshop starts with a summary of key concepts in AI, followed by an interactive exercise where participants train their own algorithm. Finally, it closes with a summary of key takeaways and Q/A. All are welcome!
+course_url: "https://ocw.mit.edu/courses/res-6-013-ai-101-fall-2021/"
+image_url: "https://ocw.mit.edu/courses/res-6-013-ai-101-fall-2021/res-6-013f21.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-brent-stockwell"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Brent Stockwell, PhD"
+slug: "brent-stockwell"
+source_url: "https://ctl.columbia.edu/transformations/faculty/brent-stockwell/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "c3b82cfc49082c4fbfca89766e6388aa546d011f7d403f83ffd9374ea153d015"

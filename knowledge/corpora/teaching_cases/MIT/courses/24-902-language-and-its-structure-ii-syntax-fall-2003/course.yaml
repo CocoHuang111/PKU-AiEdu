@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-24-902-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.902"
+cross_listed_codes: []
+course_title: "Language and its Structure II: Syntax"
+course_slug: "24-902-language-and-its-structure-ii-syntax-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Pesetsky"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Syntax"
+  - "Philosophy"
+  - "Philosophy of Language"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Syntax"
+      - name: "Philosophy"
+        specialties:
+          - "Philosophy of Language"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course will acquaint you with some of the important results and ideas of the last half - century of research in syntax. We will explore a large number of issues and a large amount of data so that you can learn something of what this field is all about. From time to time, we will discuss related work in language acquisition and processing. The class will emphasize ideas and arguments for these ideas in addition to the the details of particular analyses. At the same time, you will learn the mechanics of one particular approach (sometimes called Principles and Parameters syntax). Most of all, the course tries to show why the study of syntax is exciting, and why its results are important to researchers in other language sciences. The class assumes some familiarity with basic concepts of theoretical linguistics, of the sort you could acquire in 24.900 .
+course_url: "https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/7815bf446962e07d2c907e907ecd5ef1_24-902f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

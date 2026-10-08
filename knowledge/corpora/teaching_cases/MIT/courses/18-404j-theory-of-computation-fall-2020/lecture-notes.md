@@ -1,0 +1,38 @@
+> 检索摘要：18.404J Theory of Computation（Fall 2020，Undergraduate、Graduate）的「Lecture Notes」。页内标题：Lecture Notes。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/pages/lecture-notes/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Lecture Notes
+
+| LEC # | TOPICS | PDF | PPT |
+| --- | --- | --- | --- |
+| 1 | Introduction, Finite Automata, Regular Expressions | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/lecture-1-introduction-finite-automata-regular-expressions/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec1/) <br> ) |
+| 2 | Nondeterminism, Closure Properties, Regular Expressions → Finite Automata | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec2-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec2/) <br> ) |
+| 3 | The Regular Pumping Lemma, Finite Automata → Regular Expressions, CFGs | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec3-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec3/) <br> ) |
+| 4 | Pushdown Automata, CFG ↔ PDA | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec4-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec4/) <br> ) |
+| 5 | The CF Pumping Lemma, Turing Machines | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec5-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec5/) <br> ) |
+| 6 | TM Variants, the Church-Turing Thesis | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec6-1/) <br> ) | ( <br> [PPT - 2.4MB](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec6/) <br> ) |
+| 7 | Decision Problems for Automata and Grammars | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec7-1/) <br> ) | ( <br> [PPT - 1.9MB](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec7/) <br> ) |
+| 8 | Undecidability | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec8-1/) <br> ) | ( <br> [PPT - 1.2MB](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec8/) <br> ) |
+| 9 | Reducibility | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec9-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec9/) <br> ) |
+| 10 | The Computation History Method | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec10-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec10/) <br> ) |
+| 11 | The Recursion Theorem and Logic | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec11-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec11/) <br> ) |
+| 12 | Time Complexity | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec12-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec12/) <br> ) |
+| 13 | Midterm Exam [no lecture] |  |  |
+| 14 | P and NP, SAT, Poly-time Reducibility | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec14-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec14/) <br> ) |
+| 15 | NP-Completeness | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec15-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec15/) <br> ) |
+| 16 | Cook-Levin Theorem | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec16-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec16/) <br> ) |
+| 17 | Space Complexity, PSPACE, Savitch’s Theorem | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec17-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec17/) <br> ) |
+| 18 | PSPACE-Completeness | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec18-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec18/) <br> ) |
+| 19 | Games, Generalized Geography | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec19-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec19/) <br> ) |
+| 20 | L and NL, NL = coNL | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec20-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec20/) <br> ) |
+| 21 | Hierarchy Theorems | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec21-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec21/) <br> ) |
+| 22 | Provably Intractable Problems, Oracles | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec22-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec22/) <br> ) |
+| 23 | Probabilistic Computation, BPP | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec23-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec23/) <br> ) |
+| 24 | Probabilistic Computation (cont.) | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec24-1/) <br> ) | ( <br> [PPT](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec24/) <br> ) |
+| 25 | Interactive Proof Systems, IP | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec25-1/) <br> ) | ( <br> [PPT - 3.4MB](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec25/) <br> ) |
+| 26 | coNP ⊆ IP | ( <br> [PDF](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/lecture-26-conp-and-ip/) <br> ) | ( <br> [PPT - 1.1MB](https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/resources/mit18_404f20_lec26/) <br> ) |

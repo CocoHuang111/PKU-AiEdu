@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-pluralism-workbook-building-skills-talk-across-differences-hard-topics"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "The Pluralism Workbook: Building the Skills to Talk across Differences on Hard Topics"
+slug: "pluralism-workbook-building-skills-talk-across-differences-hard-topics"
+source_url: "https://crlt.umich.edu/pluralism-workbook-building-skills-talk-across-differences-hard-topics"
+language: "en"
+published: null
+awarded_year: "2025"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "0cac0b0afbf2448b2a5353eb20f19c92728818ec759e1a258431f912e2ecbfd7"

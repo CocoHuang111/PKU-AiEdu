@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-961-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.961"
+cross_listed_codes: []
+course_title: "Seminar on Deep Engagement"
+course_slug: "mas-961-seminar-on-deep-engagement-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Cynthia Breazeal"
+  - "Prof. Glorianna Davenport"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Social Science"
+  - "Communication"
+  - "Psychology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  Innovation in expression, as realized in media, tangible objects, performance and more, generates new questions and new potentials for human engagement. When and how does expression engage us deeply? Many personal stories confirm the hypothesis that once we experience deep engagement, it is a state we long for, remember, and want to repeat. This class will explore what underlying principles and innovative methods can ensure the development of higher-quality “deep engagement” products (artifacts, experiences, environments, performances, etc.) that appeal to a broad audience and that have lasting value over the long term.
+course_url: "https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/a51909935fdfae2c5745851fcb9f1ef1_mas-961f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

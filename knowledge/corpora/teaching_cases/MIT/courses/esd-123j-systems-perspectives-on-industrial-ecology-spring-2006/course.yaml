@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-123j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.123J"
+cross_listed_codes:
+  - "1.814J"
+  - "3.560J"
+course_title: "Systems Perspectives on Industrial Ecology"
+course_slug: "esd-123j-systems-perspectives-on-industrial-ecology-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+  - "Civil and Environmental Engineering"
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Frank Field"
+  - "Dr. Jeremy Gregory"
+  - "Prof. Randolph Kirchain"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Systems Engineering"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course examines quantitative techniques for life cycle analysis of the impacts of materials extraction, processing use, and recycling; and economic analysis of materials processing, products, and markets. Student teams undertake a major case study using the latest methods of analysis and computer-based models of materials process.
+course_url: "https://ocw.mit.edu/courses/esd-123j-systems-perspectives-on-industrial-ecology-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/esd-123j-systems-perspectives-on-industrial-ecology-spring-2006/8ad52071c05db1e5a904cfa6a4baf25a_esd-123js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

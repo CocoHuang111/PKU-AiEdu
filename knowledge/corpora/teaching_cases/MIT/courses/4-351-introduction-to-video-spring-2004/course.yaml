@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-4-351-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.351"
+cross_listed_codes: []
+course_title: "Introduction to Video"
+course_slug: "4-351-introduction-to-video-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joe Gibbons"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Visual Arts"
+  - "Film and Video"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Media Assignments"
+  - "Projects with Examples"
+description: |
+  This class serves as an introduction to video recording and editing, presenting video as a tool of personal apprehension and expression, with an emphasis on self-exploration, performance, social critique, and the organization of raw experience into aesthetic form (narrative, abstract, documentary, essay). Students are required to complete a variety of assignments to learn the basics of video capture and editing, culminating in a final assignment that has to do with personal storytelling.
+course_url: "https://ocw.mit.edu/courses/4-351-introduction-to-video-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/4-351-introduction-to-video-spring-2004/b38cc7b61ace544f708b59eb124387e4_4-351s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

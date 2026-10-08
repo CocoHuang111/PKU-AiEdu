@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-20-310j-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.310J"
+cross_listed_codes:
+  - "3.053J"
+  - "6.024J"
+  - "2.797J"
+course_title: "Molecular, Cellular, and Tissue Biomechanics"
+course_slug: "20-310j-molecular-cellular-and-tissue-biomechanics-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Materials Science and Engineering"
+  - "Electrical Engineering and Computer Science"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Roger Kamm"
+  - "Prof. Alan Grodzinsky"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomechanics"
+  - "Cell and Tissue Engineering"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomechanics"
+          - "Cell and Tissue Engineering"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course develops and applies scaling laws and the methods of continuum and statistical mechanics to biomechanical phenomena over a range of length scales, from molecular to cellular to tissue or organ level.
+course_url: "https://ocw.mit.edu/courses/20-310j-molecular-cellular-and-tissue-biomechanics-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/20-310j-molecular-cellular-and-tissue-biomechanics-spring-2015/da998b322ebfd224e91101606a61d96b_20-310js15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

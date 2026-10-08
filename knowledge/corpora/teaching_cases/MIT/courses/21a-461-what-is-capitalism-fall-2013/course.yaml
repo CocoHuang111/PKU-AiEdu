@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-461-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.461"
+cross_listed_codes: []
+course_title: "What is Capitalism?"
+course_slug: "21a-461-what-is-capitalism-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christine Walley"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Ethnography"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  As we live in the aftermath of the Financial Crisis of 2008, there are renewed questions about the nature of the economic system—capitalism—within which we live. What are its benefits and drawbacks? Why does it garner both so much opposition and support? What are its moral, economic, social and political implications? Is it even a “system”? How has capitalism played out in different historical moments and regions of the world? This class addresses the question “what is capitalism?” from a social scientific point of view, rather than a classical economic one.
+course_url: "https://ocw.mit.edu/courses/21a-461-what-is-capitalism-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/21a-461-what-is-capitalism-fall-2013/39f82fb8615a8881c498d4883ef522c6_21A-461s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

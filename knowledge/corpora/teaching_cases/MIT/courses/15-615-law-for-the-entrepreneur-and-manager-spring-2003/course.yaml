@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-615-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.615"
+cross_listed_codes:
+  - "15.647"
+course_title: "Law for the Entrepreneur and Manager"
+course_slug: "15-615-law-for-the-entrepreneur-and-manager-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. John Akula"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Management"
+  - "Social Science"
+  - "Legal Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Legal Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course provides a basic understanding of legal issues that corporations face during their existence. The course starts by providing the basic building blocks of business law. We then follow a firm through its life cycle from its “breakaway” from an established firm through it going public. The materials covered during 15.647 (the first half of the semester) emphasize the organization and financing of the company. In the second half of the course we examine a broad array of law-sensitive issues relating to intellectual property, product development, M&A transactions, international trade, the duties of directors and officers, business disputes, and bankruptcy and reorganization. The goal of the course is not to impart technical legal skills, but to enhance the judgment which students will bring to their responsibilities as entrepreneurs, managers in established companies, or consultants and advisors. There are two take-home exercises, and no exams. Students wishing to take only the first half of the Manager’s Legal Function should register for 15.647, which meets only during the H1 period.
+course_url: "https://ocw.mit.edu/courses/15-615-law-for-the-entrepreneur-and-manager-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/15-615-law-for-the-entrepreneur-and-manager-spring-2003/6fc04c8bcfc3ad96ead69240014c1288_15-615s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

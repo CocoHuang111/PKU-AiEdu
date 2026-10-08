@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-18-s190-january-iap-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.S190"
+cross_listed_codes: []
+course_title: "Introduction to Metric Spaces"
+course_slug: "18-s190-introduction-to-metric-spaces-january-iap-2023"
+term: "January IAP"
+year: 2023
+as_taught_in: "January IAP 2023"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Paige Bright"
+subject_primary: "Mathematical Analysis"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This course provides a basic introduction to metric spaces. It covers metrics, open and closed sets, continuous functions (in the topological sense), function spaces, completeness, and compactness.
+course_url: "https://ocw.mit.edu/courses/18-s190-introduction-to-metric-spaces-january-iap-2023/"
+image_url: "https://ocw.mit.edu/courses/18-s190-introduction-to-metric-spaces-january-iap-2023/18-s190iap23.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

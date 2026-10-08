@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-14-42-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.42"
+cross_listed_codes:
+  - "14.420"
+course_title: "Environmental Policy and Economics"
+course_slug: "14-42-environmental-policy-and-economics-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Hunt Allcott"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Sustainability"
+  - "Social Science"
+  - "Economics"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Public Policy"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course explores the proper role of government in the regulation of the environment. It will help students develop the tools to estimate the costs and benefits of environmental regulations. These tools will be used to evaluate a series of current policy questions, including: Should air and water pollution regulations be tightened or loosened? What are the costs of climate change in the U.S. and abroad? Is there a “Race to the Bottom” in environmental regulation? What is “sustainable development”? How do environmental problems differ in developing countries? Are we running out of oil and other natural resources? Should we be more energy efficient? To gain real world experience, the course is scheduled to include a visit to the MIT cogeneration plant. We will also do an in-class simulation of an air pollution emissions market.
+course_url: "https://ocw.mit.edu/courses/14-42-environmental-policy-and-economics-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/14-42-environmental-policy-and-economics-spring-2011/cc02626b6e233fba160abb49b0517a18_14-42s11.JPG"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

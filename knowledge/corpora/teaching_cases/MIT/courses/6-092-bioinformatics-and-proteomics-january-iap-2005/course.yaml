@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-6-092-january-iap-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.092"
+cross_listed_codes: []
+course_title: "Bioinformatics and Proteomics"
+course_slug: "6-092-bioinformatics-and-proteomics-january-iap-2005"
+term: "January IAP"
+year: 2005
+as_taught_in: "January IAP 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gil Alterovitz"
+  - "Prof. Manolis Kellis"
+  - "Prof. Marco Ramoni"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+  - "Computer Science"
+  - "Data Mining"
+  - "Science"
+  - "Biology"
+  - "Proteomics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Proteomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This interdisciplinary course provides a hands-on approach to students in the topics of bioinformatics and proteomics. Lectures and labs cover sequence analysis, microarray expression analysis, Bayesian methods, control theory, scale-free networks, and biotechnology applications. Designed for those with a computational and/or engineering background, it will include current real-world examples, actual implementations, and engineering design issues. Where applicable, engineering issues from signal processing, network theory, machine learning, robotics and other domains will be expounded upon.
+course_url: "https://ocw.mit.edu/courses/6-092-bioinformatics-and-proteomics-january-iap-2005/"
+image_url: "https://ocw.mit.edu/courses/6-092-bioinformatics-and-proteomics-january-iap-2005/e4e79080957ef92ce6b6fa697f38919f_6-092iap05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

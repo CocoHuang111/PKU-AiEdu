@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-11-942-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.942"
+cross_listed_codes: []
+course_title: "Use of Joint Fact Finding in Science Intensive Policy Disputes, Part II"
+course_slug: "11-942-use-of-joint-fact-finding-in-science-intensive-policy-disputes-part-ii-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Herman Karl"
+  - "Prof. Lawrence Susskind"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+description: |
+  This course makes up the second half of a year-long seminar on Joint Fact Finding in Science-Intensive Disputes. In 11.941 , the first half of the seminar, students analyzed and discussed cases that involved or that should have involved Joint Fact Finding of various kinds. In this portion, students concentrate on gathering information to assist in resolving the Cape Wind project, the dispute concerning the placement of wind farms in waters adjacent to Nantucket. Students will lay the groundwork for a collaborative project that includes Federal and State agencies, academic institutions and non-profits.
+course_url: "https://ocw.mit.edu/courses/11-942-use-of-joint-fact-finding-in-science-intensive-policy-disputes-part-ii-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/11-942-use-of-joint-fact-finding-in-science-intensive-policy-disputes-part-ii-spring-2004/fdb4f6078a020f7fd8f11cba9a3091f2_11-942s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

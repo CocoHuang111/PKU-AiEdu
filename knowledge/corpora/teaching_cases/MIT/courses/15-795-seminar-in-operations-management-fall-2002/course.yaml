@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-15-795-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.795"
+cross_listed_codes: []
+course_title: "Seminar in Operations Management"
+course_slug: "15-795-seminar-in-operations-management-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles H. Fine"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Supply Chain Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This seminar will explore the purposes and development of Technology Roadmaps for systematically mapping out possible development paths for various technological domains and the industries that build on them. Data of importance for such roadmaps include rates of innovation, key bottlenecks, physical limitations, improvement trendlines, corporate intent, and value chain and industry evolutionary paths. The course will build on ongoing work on the MIT Communications Technology Roadmap project, but will explore other domains selected from Nanotechnology, Bio-informatics, Geno/Proteino/Celleomics, Neurotechnology, Imaging & Diagnostics, etc. Thesis and Special Project opportunities will be offered.
+course_url: "https://ocw.mit.edu/courses/15-795-seminar-in-operations-management-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/15-795-seminar-in-operations-management-fall-2002/3283cfa6a154cb2b955581b84da4b4d4_15-795f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

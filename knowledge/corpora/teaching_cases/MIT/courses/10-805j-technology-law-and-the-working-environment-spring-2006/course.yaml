@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-10-805j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.805J"
+cross_listed_codes:
+  - "IDS.436 (formerly ESD.136J)"
+course_title: "Technology, Law, and the Working Environment"
+course_slug: "10-805j-technology-law-and-the-working-environment-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Chemical Engineering"
+  - "Institute for Data, Systems, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles Caldart"
+  - "Prof. Nicholas Ashford"
+subject_primary: "Industrial Relations and Human Resource Management"
+subject_secondary:
+  - "Engineering"
+  - "Environmental Engineering"
+  - "Environmental Management"
+  - "Health and Medicine"
+  - "Public Health"
+  - "Social Science"
+  - "Legal Studies"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Legal Studies"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course addresses the relationship between technology-related problems and the law applicable to work environment. The National Labor Relations Act, the Occupational Safety and Health Act, the Toxic Substances Control Act, state worker’s compensation, and suits by workers in the courts are discussed in the course. Problems related to occupational health and safety, collective bargaining as a mechanism for altering technology in the workplace, job alienation, productivity, and the organization of work are also addressed. Prior courses or experience in environmental, public health, or law-related areas will be useful.
+course_url: "https://ocw.mit.edu/courses/10-805j-technology-law-and-the-working-environment-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/10-805j-technology-law-and-the-working-environment-spring-2006/e3691271310ab6309b114e785daf6605_10-805js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

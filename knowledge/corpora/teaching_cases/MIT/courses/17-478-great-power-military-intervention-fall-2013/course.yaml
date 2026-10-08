@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-17-478-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.478"
+cross_listed_codes: []
+course_title: "Great Power Military Intervention"
+course_slug: "17-478-great-power-military-intervention-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Roger Petersen"
+  - "Prof. Barry Posen"
+subject_primary: "Political Science"
+subject_secondary:
+  - "International Relations"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  This course examines systematically, and comparatively, great and middle power military interventions, and candidate military interventions, into civil wars from the 1990s to the present. These civil wars did not easily fit into the traditional category of vital interest. These interventions may therefore tell us something about broad trends in international politics including the nature of unipolarity, the erosion of sovereignty, the security implications of globalization, and the nature of modern western military power.
+course_url: "https://ocw.mit.edu/courses/17-478-great-power-military-intervention-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/17-478-great-power-military-intervention-fall-2013/83d18055e1621afef1d6619faedbc18a_17-478f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

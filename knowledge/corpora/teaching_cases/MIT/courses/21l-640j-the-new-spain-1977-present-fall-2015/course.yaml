@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-640j-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.640J"
+cross_listed_codes:
+  - "21G.740J"
+course_title: "The New Spain:1977-Present"
+course_slug: "21l-640j-the-new-spain-1977-present-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Literature"
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Margery Resnick"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "Modern History"
+  - "Language"
+  - "Spanish"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+          - "Modern History"
+      - name: "Language"
+        specialties:
+          - "Spanish"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+description: |
+  In this class we will come to understand the vast changes in Spanish life that have taken place since Franco’s death in 1975. We will focus on the new freedom from censorship, the re-emergence of movements for regional autonomy, the new cinema, reforms in education and changes in daily life: Sex roles, work, and family that have occurred in the last decade. In so doing, we will examine myths that are often considered commonplaces when describing Spain and its people.
+course_url: "https://ocw.mit.edu/courses/21l-640j-the-new-spain-1977-present-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/21l-640j-the-new-spain-1977-present-fall-2015/894b346edfcb7b1696f45ef67cea1b52_21l-640jf15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

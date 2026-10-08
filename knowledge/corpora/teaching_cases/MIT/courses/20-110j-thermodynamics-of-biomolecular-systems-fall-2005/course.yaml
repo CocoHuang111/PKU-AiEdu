@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-20-110j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.110J"
+cross_listed_codes:
+  - "5.601J"
+  - "2.772J"
+course_title: "Thermodynamics of Biomolecular Systems"
+course_slug: "20-110j-thermodynamics-of-biomolecular-systems-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Chemistry"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kim Hamad-Schifferli"
+  - "Prof. Linda Griffith"
+  - "Prof. Moungi Bawendi"
+  - "Prof. Robert Field"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This subject deals primarily with equilibrium properties of macroscopic and microscopic systems, basic thermodynamics, chemical equilibrium of reactions in gas and solution phase, and macromolecular interactions.
+course_url: "https://ocw.mit.edu/courses/20-110j-thermodynamics-of-biomolecular-systems-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/20-110j-thermodynamics-of-biomolecular-systems-fall-2005/5e3823edb0ed118f8fbd4d5ed960a079_20-110jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

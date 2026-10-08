@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-102-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.102"
+cross_listed_codes:
+  - "21G.152"
+course_title: "Chinese II (Regular)"
+course_slug: "21g-102-chinese-ii-regular-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Haohsiang Liao"
+subject_primary: "Language"
+subject_secondary:
+  - "Chinese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Chinese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  This subject is the second semester of four that forms an introduction to modern standard Chinese, commonly called Mandarin. The emphasis is on further developing students’ abilities to participate in simple, practical conversations on everyday topics as well as enhancing their abilities on reading and writing. The relationship between Chinese language and culture and the sociolinguistically appropriate use of language will be stressed throughout. A typical class includes performance of memorized basic conversations, drills, questions and discussion, and various types of communicative exercises. At the end of this course, students are expected to develop an understanding of the language learning process so that they will be able to continue studying effectively on their own.
+course_url: "https://ocw.mit.edu/courses/21g-102-chinese-ii-regular-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/21g-102-chinese-ii-regular-spring-2015/24f29a3734cf969e5ba420b785133cab_21g-102s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

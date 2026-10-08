@@ -1,0 +1,90 @@
+schema_version: "1.0"
+course_id: "mitocw-2-785j-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.785J"
+cross_listed_codes:
+  - "HST.523J"
+course_title: "Cell-Matrix Mechanics"
+course_slug: "2-785j-cell-matrix-mechanics-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Myron Spector"
+  - "Prof. Ioannis Yannas"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Biomechanics"
+  - "Cell and Tissue Engineering"
+  - "Materials Science and Engineering"
+  - "Mechanical Engineering"
+  - "Health and Medicine"
+  - "Anatomy and Physiology"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Cell Biology"
+  - "Developmental Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Biomechanics"
+          - "Cell and Tissue Engineering"
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Cell Biology"
+          - "Developmental Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Readings"
+description: |
+  This course teaches the effects of mechanical forces (strains) on cells and how cells generate mechanical forces by their contraction. Critical to both topics is the mechanical behavior of the extracellular matrix (ECM), which the cells have synthesized and remodeled. The ECM affects cell behavior by mediating exogenous mechanical strains, which stimulate certain cellular processes.
+course_url: "https://ocw.mit.edu/courses/2-785j-cell-matrix-mechanics-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/2-785j-cell-matrix-mechanics-fall-2016/mit2_785j_f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

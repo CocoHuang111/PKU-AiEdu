@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-15-821-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.821"
+cross_listed_codes: []
+course_title: "Listening to the Customer"
+course_slug: "15-821-listening-to-the-customer-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Drazen Prelec"
+subject_primary: "Marketing"
+subject_secondary:
+  - "Social Science"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Marketing"
+        specialties: []
+  - name: "Social Science"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The 15.821 and 15.822 Sequence Marketing research may be divided into methods that emphasize understanding “the customer” and methods that emphasize understanding “the market.” This course (15.821) deals with the customer and emphasizes qualitative methods (interviews, focus groups, Voice of the Customer, composing questions for a survey). The companion course (15.822) deals with the market and emphasizes quantitative methods (sampling, survey execution, quantitative data interpretation, conjoint analysis, factor analysis). The methods covered in 15.821 are often used in the “front-end” of market research project, whose second-stage is a quantitative survey. The quality of information gathered in the second-stage is greatly enhanced in this way. 15.821 is designed for the nonspecialist, e.g., someone planning a career in general management, product or project management, R&D, advertising, or entrepreneurship. 15.822 teaches analytical techniques that are standard in consulting or marketing research, and is ideally suited for students planning careers in those fields.
+course_url: "https://ocw.mit.edu/courses/15-821-listening-to-the-customer-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/15-821-listening-to-the-customer-fall-2002/10aaf0d928c41e4d8258fa35efee0628_15-821f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

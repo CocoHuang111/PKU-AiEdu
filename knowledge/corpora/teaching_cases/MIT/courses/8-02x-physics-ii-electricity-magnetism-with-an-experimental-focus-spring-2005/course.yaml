@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-8-02x-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.02X"
+cross_listed_codes:
+  - "ES.802X"
+course_title: "Physics II: Electricity & Magnetism with an Experimental Focus"
+course_slug: "8-02x-physics-ii-electricity-magnetism-with-an-experimental-focus-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Physics"
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gunther M. Roland"
+  - "Dr. Peter Dourmashkin"
+subject_primary: "Physics"
+subject_secondary:
+  - "Electromagnetism"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is an introduction to electromagnetism and electrostatics. Topics include: electric charge, Coulomb’s law, electric structure of matter, conductors and dielectrics, concepts of electrostatic field and potential, electrostatic energy, electric currents, magnetic fields, Ampere’s law, magnetic materials, time-varying fields, Faraday’s law of induction, basic electric circuits, electromagnetic waves, and Maxwell’s equations. The course has an experimental focus, and includes several experiments that are intended to illustrate the concepts being studied. Acknowledgements Prof. Roland wishes to acknowledge that the structure and content of this course owe much to the contributions of Prof. Ambrogio Fasoli.
+course_url: "https://ocw.mit.edu/courses/8-02x-physics-ii-electricity-magnetism-with-an-experimental-focus-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/8-02x-physics-ii-electricity-magnetism-with-an-experimental-focus-spring-2005/3a69054b74979fcaaad791260394da2c_8-02xs05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

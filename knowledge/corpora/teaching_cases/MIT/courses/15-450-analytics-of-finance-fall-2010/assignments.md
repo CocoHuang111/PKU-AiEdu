@@ -1,0 +1,20 @@
+> 检索摘要：15.450 Analytics of Finance（Fall 2010，Graduate）的「Assignments」。页内标题：Assignments。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+The assigned problem sets should be completed in groups unless otherwise indicated.
+
+| PROBLEM SETS |
+| --- |
+| Problem set 1 ( <br> [PDF](https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/resources/mit15_450f10_assn01/) <br> ) |
+| Problem set 2 ( <br> [PDF](https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/resources/mit15_450f10_assn02/) <br> ) |
+| Problem set 3 ( <br> [PDF](https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/resources/mit15_450f10_assn03/) <br> ) |
+| Problem set 4 ( <br> [PDF](https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/resources/mit15_450f10_assn04/) <br> ) |
+| Problem set 5 ( <br> [PDF](https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/resources/mit15_450f10_assn05/) <br> ) |
+| Problem set 6 ( <br> [PDF](https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/resources/mit15_450f10_assn06/) <br> ) |

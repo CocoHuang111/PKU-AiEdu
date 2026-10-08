@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-2-800-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.800"
+cross_listed_codes: []
+course_title: "Tribology"
+course_slug: "2-800-tribology-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Nam Suh"
+  - "Dr. Nannaji Saka"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+  - "Nanotechnology"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course addresses the design of tribological systems: the interfaces between two or more bodies in relative motion. Fundamental topics include: geometric, chemical, and physical characterization of surfaces; friction and wear mechanisms for metals, polymers, and ceramics, including abrasive wear, delamination theory, tool wear, erosive wear, wear of polymers and composites; and boundary lubrication and solid-film lubrication. The course also considers the relationship between nano-tribology and macro-tribology, rolling contacts, tribological problems in magnetic recording and electrical contacts, and monitoring and diagnosis of friction and wear. Case studies are used to illustrate key points.
+course_url: "https://ocw.mit.edu/courses/2-800-tribology-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/2-800-tribology-fall-2004/1313c86055c3e44c8cb0e4b836d8ab55_2-800f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

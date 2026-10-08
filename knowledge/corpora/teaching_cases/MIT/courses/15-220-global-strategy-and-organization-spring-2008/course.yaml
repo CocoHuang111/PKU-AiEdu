@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-15-220-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.220"
+cross_listed_codes: []
+course_title: "Global Strategy and Organization"
+course_slug: "15-220-global-strategy-and-organization-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Donald Lessard"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Management"
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Companies today confront an increasing array of choices regarding markets, locations for key activities, outsourcing and ownership modes, and organization and processes for managing across borders. This course provides students with the conceptual tools necessary to understand and work effectively in today’s interconnected world by developing strategic perspectives that link this changing environment, the state of the global industry, and the capabilities and position of the firm. The goal of this subject is to provide the foundations for taking effective action in the multi-layered world of international business. The first section of the course provides frameworks for identifying and taking advantage of the opportunities presented in a dynamic global environment at the level of the country and industry. The second section of the course focuses on firm-level strategic choices regarding where to engage in which activities. The third section focuses on the challenges of integrating the multiple perspectives, functions, and interests that constitute the multinational firm.
+course_url: "https://ocw.mit.edu/courses/15-220-global-strategy-and-organization-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/15-220-global-strategy-and-organization-spring-2008/4261355ede8bd74c5e64589a3c9e12d8_15-220s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

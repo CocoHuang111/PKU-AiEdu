@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-breaking-ap-calculus-hold-stem"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Breaking the AP Calculus Hold in STEM"
+slug: "breaking-ap-calculus-hold-stem"
+source_url: "https://crlt.umich.edu/breaking-ap-calculus-hold-stem"
+language: "en"
+published: null
+awarded_year: "2021"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "5884de0185e35d56ebfa0d818c64c3813f67cb47d4d9130ece7521563a8eb740"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-pe-720-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "PE.720"
+cross_listed_codes: []
+course_title: "Weight Training"
+course_slug: "pe-720-weight-training-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Athletics, Physical Education and Recreation"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Halston Taylor"
+subject_primary: "Health and Exercise Science"
+subject_secondary:
+  - "Physical Education and Recreation"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Health and Exercise Science"
+        specialties: []
+      - name: "Physical Education and Recreation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Lecture Notes"
+description: |
+  This 12 session course is designed for the beginning or novice weight lifter, or for those who have experience lifting but lack proper instruction. We will provide an understanding of the biomechanics involved, muscles used for a given exercise, and program development.
+course_url: "https://ocw.mit.edu/courses/pe-720-weight-training-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/pe-720-weight-training-spring-2006/c6ca61c4d0217b8291e38502b3c93e72_pe-720s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

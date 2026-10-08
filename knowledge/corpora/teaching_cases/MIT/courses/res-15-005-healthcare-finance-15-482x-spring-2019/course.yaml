@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-res-15-005-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.15-005"
+cross_listed_codes:
+  - "15.482x"
+  - "15.482"
+course_title: "Healthcare Finance (15.482x)"
+course_slug: "res-15-005-healthcare-finance-15-482x-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Andrew Lo"
+subject_primary: "Finance"
+subject_secondary:
+  - "Health Care Management"
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+      - name: "Health Care Management"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  Healthcare Finance (15.482x) provides students with the background, resources, and framework to influence the healthcare industry. Topics include applying financial techniques such as portfolio theory, securitization, and option pricing to biomedical contexts to develop more efficient funding structures to reduce financial risks, lower the cost of capital, and bring more life-saving therapies to patients faster. As part of the Open Learning Library , this course is free to use. You have the option to sign up and enroll if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/res-15-005-healthcare-finance-15-482x-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/res-15-005-healthcare-finance-15-482x-spring-2019/48c72b1201995811dc3ec811a422f476_MIT15-005.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

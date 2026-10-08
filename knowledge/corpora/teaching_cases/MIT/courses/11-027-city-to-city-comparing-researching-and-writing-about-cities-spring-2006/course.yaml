@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-11-027-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.027"
+cross_listed_codes: []
+course_title: "City to City: Comparing, Researching and Writing about Cities"
+course_slug: "11-027-city-to-city-comparing-researching-and-writing-about-cities-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Cherie Miot Abbanat"
+subject_primary: "Urban Studies"
+subject_secondary: []
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Image Gallery"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course introduces undergraduate planning students to the role of the planner in researching issues in cities both in the United States and abroad. This course is a practical, hands-on workshop that challenges students to research, write and present their ideas on two different cities: A U.S. City (preferably somewhere close) and Copenhagen. Students will be equipped to: select and research a thesis topic, work professionally with faculty and other experts on the topic of their choice, and research, write and present.
+course_url: "https://ocw.mit.edu/courses/11-027-city-to-city-comparing-researching-and-writing-about-cities-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/11-027-city-to-city-comparing-researching-and-writing-about-cities-spring-2006/7d85889a263c12764a3791c26a1b11d0_11-027s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

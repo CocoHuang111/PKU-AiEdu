@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-880-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.880"
+cross_listed_codes:
+  - "21G.855"
+course_title: "Accelerated Introductory Portuguese for Spanish Speakers"
+course_slug: "21g-880-accelerated-introductory-portuguese-for-spanish-speakers-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Nilma Dominique"
+subject_primary: "Language"
+subject_secondary:
+  - "Portuguese"
+  - "Society"
+  - "Latin and Caribbean Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Portuguese"
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  Accelerated Introductory Portuguese for Spanish Speakers covers the basics of Portuguese grammar and presents selected cultural aspects of the Lusophone world, with special emphasis on Brazil. Designed as an intensive introductory course equivalent to Portuguese I and II, it is a Portuguese course for native speakers of Spanish or speakers of other languages who have a native-like command of Spanish.
+course_url: "https://ocw.mit.edu/courses/21g-880-accelerated-introductory-portuguese-for-spanish-speakers-fall-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-880-accelerated-introductory-portuguese-for-spanish-speakers-fall-2013/f19dbf0a5777bf21b710953c52133337_21g-880f13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

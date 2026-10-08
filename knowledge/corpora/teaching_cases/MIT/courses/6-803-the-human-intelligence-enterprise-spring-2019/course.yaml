@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-6-803-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.803"
+cross_listed_codes:
+  - "6.833"
+course_title: "The Human Intelligence Enterprise"
+course_slug: "6-803-the-human-intelligence-enterprise-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Patrick Henry Winston"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course analyzes seminal work directed at the development of a computational understanding of human intelligence, such as work on learning, language, vision, event representation, commonsense reasoning, self reflection, story understanding, and analogy. It reviews visionary ideas of Turing, Minsky, and other influential thinkers and examines the implications of work on brain scanning, developmental psychology, and cognitive psychology. There is an emphasis on discussion and analysis of original papers; students taking the graduate version complete additional exercises and a substantial term project.
+course_url: "https://ocw.mit.edu/courses/6-803-the-human-intelligence-enterprise-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/6-803-the-human-intelligence-enterprise-spring-2019/b9da7816a378c9ab58fffde8acdf9639_6-803s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "partial"

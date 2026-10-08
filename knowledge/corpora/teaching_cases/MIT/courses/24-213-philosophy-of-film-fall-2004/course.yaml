@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-24-213-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.213"
+cross_listed_codes: []
+course_title: "Philosophy of Film"
+course_slug: "24-213-philosophy-of-film-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Irving Singer"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Film and Video"
+  - "Humanities"
+  - "Philosophy"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Written Assignments with Examples"
+description: |
+  This course is a seminar on the philosophical analysis of film art, with an emphasis on the ways in which it creates meaning through techniques that define a formal structure. There is a particular focus on aesthetic problems about appearance and reality, literary and visual effects, communication and alienation through film technology.
+course_url: "https://ocw.mit.edu/courses/24-213-philosophy-of-film-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/24-213-philosophy-of-film-fall-2004/59e9f61fdf404dc9014e08a3d7c3128f_24-213f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-3-071-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.071"
+cross_listed_codes: []
+course_title: "Amorphous Materials"
+course_slug: "3-071-amorphous-materials-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Juejun Hu"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Polymeric Materials"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Polymeric Materials"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course discusses the fundamental material science behind amorphous solids, or non-crystalline materials. It covers formation of amorphous solids; amorphous structures and their electrical and optical properties; and characterization methods and technical applications.
+course_url: "https://ocw.mit.edu/courses/3-071-amorphous-materials-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/3-071-amorphous-materials-fall-2015/8fdc47472b0918a8b5212a7350605502_3-071f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-351-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.351"
+cross_listed_codes:
+  - "21M.505"
+course_title: "Music Composition"
+course_slug: "21m-351-music-composition-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Peter Child"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Performance"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Performance"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Music Audio"
+  - "Projects with Examples"
+description: |
+  This course features directed composition of larger forms of original writing involving voices and/or instruments. It includes a weekly seminar in composition for the presentation and discussion of work in progress. Students are expected to produce at least one substantive work, performed in public, by the end of the term. Contemporary compositions and major works from 20th-century music literature are studied.
+course_url: "https://ocw.mit.edu/courses/21m-351-music-composition-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/21m-351-music-composition-fall-2008/2b89b024286e0d2f6045acf28f546b66_21m-351f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-983-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.983"
+cross_listed_codes: []
+course_title: "Gender"
+course_slug: "21h-983-gender-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lerna Ekmekcioglu"
+  - "Prof. Elizabeth A. Wood"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "European History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Social Anthropology"
+  - "Society"
+  - "Gender Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "European History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Social Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course examines the definition of gender in scientific, societal, and historical contexts. It explores how gender influences state formation and the work of the state, what role gender plays in imperialism and in the welfare state, the ever-present relationship between gender and war, and different states’ regulation of the body in gendered ways at different times. It investigates new directions in the study of gender as historians, anthropologists and others have taken on this fascinating set of problems.
+course_url: "https://ocw.mit.edu/courses/21h-983-gender-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/21h-983-gender-spring-2017/10a1f84887da6677e37b1f5030ee8469_21H-983s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

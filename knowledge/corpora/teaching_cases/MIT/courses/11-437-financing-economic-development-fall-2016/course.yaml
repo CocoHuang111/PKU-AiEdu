@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-437-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.437"
+cross_listed_codes: []
+course_title: "Financing Economic Development"
+course_slug: "11-437-financing-economic-development-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Karl Seidman"
+subject_primary: "Finance"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Developmental Economics"
+  - "Public Administration"
+  - "Urban Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+      - name: "Public Administration"
+        specialties: []
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course focuses on the tools and programs available to economic development practitioners to address capital needs for businesses and economic development projects. It provides an overview of private capital markets and financing sources to understand capital market imperfections that constrain economic development, business accounting, financial statement analysis, federal economic development programs, and public finance tools. The course covers policies and program models, including revolving loan funds, guarantee programs, venture capital funds, bank holding companies, community development loan funds and credit unions, micro-enterprise funds, and the Community Reinvestment Act. The objective of this course is to provide students with a comprehensive overview of economic development finance practice in the United States, and to develop a knowledge base and skills to either be a development finance practitioner, or apply economic development finance approaches to other fields of planning and community development.
+course_url: "https://ocw.mit.edu/courses/11-437-financing-economic-development-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/11-437-financing-economic-development-fall-2016/b7410a9edf1f312462c563dbc63f7fe8_11-437f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

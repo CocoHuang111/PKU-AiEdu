@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-709-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.709"
+cross_listed_codes: []
+course_title: "Ethnic Literature in America"
+course_slug: "21l-709-ethnic-literature-in-america-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Wyn Kelley"
+subject_primary: "Literature"
+subject_secondary:
+  - "American Literature"
+  - "Comparative Literature"
+  - "Creative Writing"
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "American Literature"
+          - "Comparative Literature"
+          - "Creative Writing"
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  Although this class starts by critically examining the term “ethnic” as it defines a wide range of cultural forms over time, we will focus mostly on contemporary writers. Questions to consider will include: How has ethnic writing changed American culture and renovated forms of literary expression? What are the varieties and nuances of what we might call an ethnic subjectivity? What could it mean to harbor fugitives within the self: transgressive thoughts or a “foreign” identity? And what is the future of “ethnic” literature in a global space?
+course_url: "https://ocw.mit.edu/courses/21l-709-ethnic-literature-in-america-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/21l-709-ethnic-literature-in-america-spring-2017/a640b753a49a29e7bbe44dbb8a7163cd_21L-709S17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

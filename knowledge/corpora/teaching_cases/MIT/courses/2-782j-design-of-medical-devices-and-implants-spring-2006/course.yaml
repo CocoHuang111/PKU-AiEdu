@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-2-782j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.782J"
+cross_listed_codes:
+  - "3.961J"
+  - "20.451J"
+  - "HST.524J"
+course_title: "Design of Medical Devices and Implants"
+course_slug: "2-782j-design-of-medical-devices-and-implants-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Materials Science and Engineering"
+  - "Biological Engineering"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ioannis Yannas"
+  - "Prof. Myron Spector"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This design course targets the solution of clinical problems by use of implants and other medical devices. Topics include the systematic use of cell-matrix control volumes; the role of stress analysis in the design process; anatomic fit, shape and size of implants; selection of biomaterials; instrumentation for surgical implantation procedures; preclinical testing for safety and efficacy, including risk/benefit ratio assessment evaluation of clinical performance and design of clinical trials. Student project materials are drawn from orthopedic devices, soft tissue implants, artificial organs, and dental implants.
+course_url: "https://ocw.mit.edu/courses/2-782j-design-of-medical-devices-and-implants-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/2-782j-design-of-medical-devices-and-implants-spring-2006/65650082d488092ca06baf6e4050018b_2-782js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

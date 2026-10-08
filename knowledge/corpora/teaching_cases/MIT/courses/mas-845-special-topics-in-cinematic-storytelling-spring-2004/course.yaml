@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-845-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.845"
+cross_listed_codes: []
+course_title: "Special Topics in Cinematic Storytelling"
+course_slug: "mas-845-special-topics-in-cinematic-storytelling-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Glorianna Davenport"
+  - "Barbara Barry"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Visual Arts"
+  - "Film and Video"
+  - "Humanities"
+  - "Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This seminar explores approaches to representation for distributed cinematic storytelling. The relationship between story creation and story appreciation is analyzed. Readings are drawn from literary and cinematic criticism, as well as from descriptions of interactive, distributed works. Students analyze a range of storytelling techniques; they develop a proposal using visualization techniques; and they prototype a working story experience, culminating in a final project displayed at the end of the semester.
+course_url: "https://ocw.mit.edu/courses/mas-845-special-topics-in-cinematic-storytelling-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/mas-845-special-topics-in-cinematic-storytelling-spring-2004/96044f409959b603307d50fdebc596d1_mas-845s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

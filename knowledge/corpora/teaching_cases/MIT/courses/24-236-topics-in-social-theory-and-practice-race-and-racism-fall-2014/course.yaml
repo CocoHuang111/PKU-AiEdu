@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-24-236-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.236"
+cross_listed_codes:
+  - "24.636"
+course_title: "Topics in Social Theory and Practice: Race and Racism"
+course_slug: "24-236-topics-in-social-theory-and-practice-race-and-racism-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Sally Haslanger"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Philosophy"
+  - "Social Science"
+  - "Sociology"
+  - "Society"
+  - "African American Studies"
+  - "Gender Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+      - name: "Philosophy"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "African American Studies"
+        specialties: []
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  Courses in the Topics in Social Theory and Practice series feature in-depth considerations of such topics with reflections on their implications for social change. The topic for Fall 2014 is race and racism. We will consider a variety of arguments for and against the biological and / or social “reality” of race—taking into account purported races other than those defined by the black / white binary and the intersection of race with other social categories. We will then consider a number of accounts of racism, contemporary manifestations of racism, and potential counter-measures.
+course_url: "https://ocw.mit.edu/courses/24-236-topics-in-social-theory-and-practice-race-and-racism-fall-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/24-236-topics-in-social-theory-and-practice-race-and-racism-fall-2014/a88ab74ef122d8fbcccf29a88084da13_24-236f14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

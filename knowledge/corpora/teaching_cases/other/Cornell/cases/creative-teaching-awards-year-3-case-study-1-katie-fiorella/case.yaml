@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "cornell-creative-teaching-awards-year-3-case-study-1-katie-fiorella"
+institution: "Cornell University"
+platform: "Cornell Teaching Case Studies"
+collection: "Teaching Innovation Case Study Library"
+title: "Creative Teaching Awards – Year 3 – Case Study 1: Katie Fiorella"
+slug: "creative-teaching-awards-year-3-case-study-1-katie-fiorella"
+source_url: |
+  https://blogs.cornell.edu/teachingcasestudies/learning-outside-the-classroom-experiential-learning/creative-teaching-awards-year-3-case-study-1-katie-fiorella/
+language: "en"
+published: "2026-04-06"
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  published: "source"
+extraction_status: "complete"
+content_sha256: "8f1768d3a612466fd2b88f8623bb21cfaf5703bec056c106930da22f388a08bb"

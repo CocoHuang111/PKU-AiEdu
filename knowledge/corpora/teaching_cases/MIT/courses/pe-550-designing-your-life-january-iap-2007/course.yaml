@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-pe-550-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "PE.550"
+cross_listed_codes: []
+course_title: "Designing Your Life"
+course_slug: "pe-550-designing-your-life-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Athletics, Physical Education and Recreation"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Gabriella Jordan"
+  - "Lauren Zander"
+subject_primary: "Mental Health"
+subject_secondary: []
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Mental Health"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course provides an exciting, eye-opening, and thoroughly useful inquiry into what it takes to live an extraordinary life, on your own terms. The instructors address what it takes to succeed, to be proud of your life, and to be happy in it. Participants tackle career satisfaction, money, body, vices, and relationship to themselves and others. They learn how to address issues in their lives, how to live life, and how to learn from it. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month. This not-for-credit course is sponsored by the Department of Science, Technology, and Society. A similar, semester-long version of this course is taught in the Sloan Fellows Program. A semester-long extension of the IAP course is also taught to the population at large of MIT (please see PE.550, Spring). Acknowledgment The instructors would like to thank Prof. David Mindell for his sponsorship of this course, his intention for its continued expansion, and his commitment to the well-being of MIT students.
+course_url: "https://ocw.mit.edu/courses/pe-550-designing-your-life-january-iap-2007/"
+image_url: "https://ocw.mit.edu/courses/pe-550-designing-your-life-january-iap-2007/57642935d9b50d50ed23317d2303214c_pe-550iap07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

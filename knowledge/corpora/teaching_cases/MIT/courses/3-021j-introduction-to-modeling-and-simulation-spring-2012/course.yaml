@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-3-021j-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.021J"
+cross_listed_codes:
+  - "1.021J"
+  - "10.333J"
+  - "18.361J"
+  - "22.00J"
+course_title: "Introduction to Modeling and Simulation"
+course_slug: "3-021j-introduction-to-modeling-and-simulation-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+  - "Civil and Environmental Engineering"
+  - "Chemical Engineering"
+  - "Mathematics"
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Markus Buehler"
+  - "Prof. Jeffrey Grossman"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This subject provides an introduction to modeling and simulation, covering continuum methods, atomistic and molecular simulation, and quantum mechanics. Hands-on training is provided in the fundamentals and applications of these methods to key engineering problems. The lectures provide exposure to areas of application based on the scientific exploitation of the power of computation. We use web based applets for simulations, thus extensive programming skills are not required.
+course_url: "https://ocw.mit.edu/courses/3-021j-introduction-to-modeling-and-simulation-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/3-021j-introduction-to-modeling-and-simulation-spring-2012/b719d59519dedf1007701a7a298cc80c_3-021js12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

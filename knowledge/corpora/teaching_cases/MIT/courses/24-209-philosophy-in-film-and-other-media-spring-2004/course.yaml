@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-24-209-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.209"
+cross_listed_codes: []
+course_title: "Philosophy In Film and Other Media"
+course_slug: "24-209-philosophy-in-film-and-other-media-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Irving Singer"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Visual Arts"
+  - "Film and Video"
+  - "Humanities"
+  - "Literature"
+  - "Philosophy"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties: []
+      - name: "Philosophy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Written Assignments with Examples"
+description: |
+  This course examines works of film in relation to thematic issues of philosophical importance that also occur in other arts, particularly literature and opera. Emphasis is put on film’s ability to represent and express feeling as well as cognition. Both written and cinematic works by Sturges, Shaw, Cocteau, Hitchcock, Joyce, and Bergman, among others, are considered. There are no tests or quizzes, however students write two major papers on media/philosophical research topics of their choosing.
+course_url: "https://ocw.mit.edu/courses/24-209-philosophy-in-film-and-other-media-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/24-209-philosophy-in-film-and-other-media-spring-2004/628bb5cd1f6f2a3f30ddcb0e561c63ff_24-209s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

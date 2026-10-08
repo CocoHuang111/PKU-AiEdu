@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-12-620j-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.620J"
+cross_listed_codes:
+  - "6.946J"
+  - "8.351J"
+course_title: "Classical Mechanics: A Computational Approach"
+course_slug: "12-620j-classical-mechanics-a-computational-approach-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+  - "Electrical Engineering and Computer Science"
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gerald Sussman"
+  - "Prof. Jack Wisdom"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Modeling and Simulation"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  We will study the fundamental principles of classical mechanics, with a modern emphasis on the qualitative structure of phase space. We will use computational ideas to formulate the principles of mechanics precisely. Expression in a computational framework encourages clear thinking and active exploration. We will consider the following topics: the Lagrangian formulation; action, variational principles, and equations of motion; Hamilton’s principle; conserved quantities; rigid bodies and tops; Hamiltonian formulation and canonical equations; surfaces of section; chaos; canonical transformations and generating functions; Liouville’s theorem and Poincaré integral invariants; Poincaré-Birkhoff and KAM theorems; invariant curves and cantori; nonlinear resonances; resonance overlap and transition to chaos; properties of chaotic motion. Ideas will be illustrated and supported with physical examples. We will make extensive use of computing to capture methods, for simulation, and for symbolic analysis.
+course_url: "https://ocw.mit.edu/courses/12-620j-classical-mechanics-a-computational-approach-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/12-620j-classical-mechanics-a-computational-approach-fall-2008/e574505a076be36995ab7eb41d3444fc_12-620jf08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

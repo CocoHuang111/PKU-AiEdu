@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-11-941-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.941"
+cross_listed_codes: []
+course_title: "Learning by Comparison: First World/Third World Cities"
+course_slug: "11-941-learning-by-comparison-first-world-third-world-cities-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Aseem Inam"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Social Science"
+  - "Sociology"
+  - "Urban Studies"
+  - "Society"
+  - "Global Poverty"
+  - "The Developing World"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties: []
+      - name: "Urban Studies"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  The primary purpose of this seminar is to enable students to craft approaches to so-called “First World”/ “Third World” city comparisons that are theoretically sophisticated, methodologically rigorous, contextually grounded, and significantly beneficial. Since there exists very little literature and very few projects which compare “First World” and “Third World” cities in a sophisticated and genuinely useful manner, the seminar is structured around a series of readings, case studies, and discussions to assist students in becoming mindful of the potential and pitfalls of comparative analysis, the types of data, the methods of analysis, and the urban issues or sectors which may benefit the most from such approaches. The course is designed to be interdisciplinary and interactive, and is geared towards masters and doctoral students.
+course_url: "https://ocw.mit.edu/courses/11-941-learning-by-comparison-first-world-third-world-cities-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/11-941-learning-by-comparison-first-world-third-world-cities-fall-2008/5c10a17a8718e30540fdfa9b5d6251be_11-941f08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

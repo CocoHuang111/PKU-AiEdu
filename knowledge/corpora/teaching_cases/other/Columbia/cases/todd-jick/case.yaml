@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-todd-jick"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Todd Jick, PhD"
+slug: "todd-jick"
+source_url: "https://ctl.columbia.edu/transformations/faculty/todd-jick/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "d77598abf058cba685b31c12094c222de75a6bc9b1ad4e91c45af64b3871e5be"

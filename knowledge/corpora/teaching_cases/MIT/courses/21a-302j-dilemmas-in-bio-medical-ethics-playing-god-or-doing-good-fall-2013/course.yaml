@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-302j-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.302J"
+cross_listed_codes:
+  - "WGS.271J"
+course_title: "Dilemmas in Bio-Medical Ethics: Playing God or Doing Good?"
+course_slug: "21a-302j-dilemmas-in-bio-medical-ethics-playing-god-or-doing-good-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Erica James"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Ethics"
+  - "Social Science"
+  - "Anthropology"
+  - "Society"
+  - "African American Studies"
+  - "Gender Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "African American Studies"
+        specialties: []
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course is an introduction to the cross-cultural study of biomedical ethics, examining moral foundations of the science and practice of Western biomedicine through case studies of abortion, contraception, cloning, organ transplantation and other issues. It evaluates challenges that new medical technologies pose to the practice and availability of medical services around the globe, and to cross-cultural ideas of kinship and personhood. Also discussed are critiques of the biomedical tradition from anthropological, feminist, legal, religious, and cross-cultural theorists.
+course_url: "https://ocw.mit.edu/courses/21a-302j-dilemmas-in-bio-medical-ethics-playing-god-or-doing-good-fall-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/21a-302j-dilemmas-in-bio-medical-ethics-playing-god-or-doing-good-fall-2013/abcb55b25c4b6ab4265e8338ca0eede3_21a-302jf13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

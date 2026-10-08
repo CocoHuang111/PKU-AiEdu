@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-1-010-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.010"
+cross_listed_codes: []
+course_title: "Uncertainty in Engineering"
+course_slug: "1-010-uncertainty-in-engineering-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Daniele Veneziano"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course gives an introduction to probability and statistics, with emphasis on engineering applications. Course topics include events and their probability, the total probability and Bayes’ theorems, discrete and continuous random variables and vectors, uncertainty propagation and conditional analysis. Second-moment representation of uncertainty, random sampling, estimation of distribution parameters (method of moments, maximum likelihood, Bayesian estimation), and simple and multiple linear regression. Concepts illustrated with examples from various areas of engineering and everyday life.
+course_url: "https://ocw.mit.edu/courses/1-010-uncertainty-in-engineering-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/1-010-uncertainty-in-engineering-fall-2008/7c5e8d87cb6fb29f75ce8c7b1ae69189_1-010f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

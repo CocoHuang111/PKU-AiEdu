@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-res-6-015-spring-2026"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.6-015"
+cross_listed_codes: []
+course_title: "Discrete-Time Signals and Systems: An Operator Approach"
+course_slug: "res-6-015-discrete-time-signals-and-systems-an-operator-approach"
+term: "Spring"
+year: 2026
+as_taught_in: "Spring 2026"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels: []
+instructors:
+  - "Sanjoy Mahajan"
+  - "Prof. Dennis Freeman"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Digital Systems"
+  - "Signal Processing"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Signal Processing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+description: |
+  This online textbook introduces a powerful analytical framework for designing systems across engineering disciplines, from electronics to mechanical and thermal applications. Derived from MIT’s foundational Signals and Systems course (6.003), it takes a modern perspective. While traditional courses emphasize continuous-time analog circuits, today’s engineers rely primarily on digital technology and discrete-time simulation.
+course_url: "https://ocw.mit.edu/courses/res-6-015-discrete-time-signals-and-systems-an-operator-approach/"
+image_url: "https://ocw.mit.edu/courses/res-6-015-discrete-time-signals-and-systems-an-operator-approach/mitres6_015_s26.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

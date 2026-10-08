@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-15-967-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.967"
+cross_listed_codes: []
+course_title: "Managing and Volunteering In the Non-Profit Sector"
+course_slug: "15-967-managing-and-volunteering-in-the-non-profit-sector-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Paul Osterman"
+subject_primary: "Industrial Relations and Human Resource Management"
+subject_secondary:
+  - "Management"
+  - "Social Science"
+  - "Public Administration"
+  - "Social Welfare"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Social Welfare"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This is a course intended to give students a broad overview of the management challenges of the non-profit sector. It is not a detailed management course but rather is aimed at students who will likely relate to non-profits in a variety of ways (on the boards, as volunteers, as fund-raisers, and occasionally as staff).
+course_url: "https://ocw.mit.edu/courses/15-967-managing-and-volunteering-in-the-non-profit-sector-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/15-967-managing-and-volunteering-in-the-non-profit-sector-spring-2005/4818aa451216ec00831b3801bf2ab803_15-967s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

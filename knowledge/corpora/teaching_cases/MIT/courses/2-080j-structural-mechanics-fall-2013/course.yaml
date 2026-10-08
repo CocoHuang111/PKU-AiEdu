@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-2-080j-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.080J"
+cross_listed_codes:
+  - "1.573J"
+course_title: "Structural Mechanics"
+course_slug: "2-080j-structural-mechanics-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Tomasz Wierzbicki"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+  - "Solid Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+          - "Solid Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers the fundamental concepts of structural mechanics with applications to marine, civil, and mechanical structures. Topics include analysis of small deflections of beams, moderately large deflections of beams, columns, cables, and shafts; elastic and plastic buckling of columns, thin walled sections and plates; exact and approximate methods; energy methods; principle of virtual work; introduction to failure analysis of structures. We will include examples from civil, mechanical, offshore, and ship structures such as the collision and grounding of ships.
+course_url: "https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/2-080j-structural-mechanics-fall-2013/969a1ebf4a9ff1f78b9a8dd01f084516_2-080jf13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

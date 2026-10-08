@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-965-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.965"
+cross_listed_codes: []
+course_title: "Special Topics in Media Technology: Cooperative Machines"
+course_slug: "mas-965-special-topics-in-media-technology-cooperative-machines-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Cynthia Breazeal"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This course examines the issues, principles, and challenges toward building machines that cooperate with humans and with other machines. Philosophical, scientific, and theoretical insights into this subject will be covered, as well as how these ideas are manifest in both natural and artificial systems (e.g. software agents and robots).
+course_url: "https://ocw.mit.edu/courses/mas-965-special-topics-in-media-technology-cooperative-machines-fall-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/mas-965-special-topics-in-media-technology-cooperative-machines-fall-2003/dc372971d9009e706c92f0429714978f_mas-965f03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

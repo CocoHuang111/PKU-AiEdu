@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-15-761-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.761"
+cross_listed_codes: []
+course_title: "Introduction to Operations Management"
+course_slug: "15-761-introduction-to-operations-management-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles H. Fine"
+  - "Prof. Tauhid Zaman"
+subject_primary: "Business"
+subject_secondary:
+  - "Mathematics"
+  - "Social Science"
+topic_tree:
+  - name: "Business"
+    subtopics: []
+  - name: "Mathematics"
+    subtopics: []
+  - name: "Social Science"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course provides students with concepts, techniques and tools to design, analyze, and improve core operational capabilities, and apply them to a broad range of application domains and industries. It emphasizes the effect of uncertainty in decision-making, as well as the interplay between high-level financial objectives and operational capabilities. Topics covered include production control, risk pooling, quality management, process design, and revenue management. Also included are case studies, guest lectures, and simulation games which demonstrate central concepts.
+course_url: "https://ocw.mit.edu/courses/15-761-introduction-to-operations-management-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/15-761-introduction-to-operations-management-spring-2013/829292a0a3d386faf7dce7250049abd1_15-761s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

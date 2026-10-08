@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-14-462-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.462"
+cross_listed_codes: []
+course_title: "Advanced Macroeconomics II"
+course_slug: "14-462-advanced-macroeconomics-ii-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Guido Lorenzoni"
+  - "Prof. Olivier Blanchard"
+subject_primary: "Economics"
+subject_secondary:
+  - "Financial Economics"
+  - "Labor Economics"
+  - "Macroeconomics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+          - "Labor Economics"
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Professor Blanchard will discuss shocks, labor markets and unemployment, and dynamic stochastic general equilibrium models (DSGE models). Professor Lorenzoni will cover demand shocks, macroeconomic effects of news (with or without nominal rigidities), investment with credit constraints, and liquidity with its aggregate effects.
+course_url: "https://ocw.mit.edu/courses/14-462-advanced-macroeconomics-ii-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/14-462-advanced-macroeconomics-ii-spring-2007/7df967565f0db8d118d21bdd10441f03_14-462s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

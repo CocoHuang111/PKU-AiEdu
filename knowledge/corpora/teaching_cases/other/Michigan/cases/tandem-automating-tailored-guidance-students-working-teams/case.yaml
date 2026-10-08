@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-tandem-automating-tailored-guidance-students-working-teams"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Tandem: Automating Tailored Guidance for Students Working in Teams"
+slug: "tandem-automating-tailored-guidance-students-working-teams"
+source_url: "https://crlt.umich.edu/tandem-automating-tailored-guidance-students-working-teams"
+language: "en"
+published: null
+awarded_year: "2020"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "f7f1de1aedd395c130d5b71ea070be082061cc8644d683689df09c21b08e461c"

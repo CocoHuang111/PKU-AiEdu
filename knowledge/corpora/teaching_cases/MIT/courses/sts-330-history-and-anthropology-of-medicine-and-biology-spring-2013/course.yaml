@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-330-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.330"
+cross_listed_codes:
+  - "21A.319"
+course_title: "History and Anthropology of Medicine and Biology"
+course_slug: "sts-330-history-and-anthropology-of-medicine-and-biology-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+  - "Anthropology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Stefan Helmreich"
+  - "Prof. David Jones"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course explores recent historical and anthropological approaches to the study of medicine and biology. Topics might include interaction of disease and society; science, colonialism, and international health; impact of new technologies on medicine and the life sciences; neuroscience and psychiatry; race, biology and medicine. Specific emphasis varies from year to year.
+course_url: "https://ocw.mit.edu/courses/sts-330-history-and-anthropology-of-medicine-and-biology-spring-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/sts-330-history-and-anthropology-of-medicine-and-biology-spring-2013/40daf3963cac93557871ea6e96019fd6_sts-330s13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

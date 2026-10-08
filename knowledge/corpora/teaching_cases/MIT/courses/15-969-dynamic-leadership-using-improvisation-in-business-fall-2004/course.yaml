@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-15-969-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.969"
+cross_listed_codes: []
+course_title: "Dynamic Leadership: Using Improvisation in Business"
+course_slug: "15-969-dynamic-leadership-using-improvisation-in-business-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lakshmi Balachandra"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Leadership"
+  - "Management"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Presentation Assignments"
+description: |
+  The first two weeks of this course are an overview of performing improvisation with introductory and advanced exercises in the techniques of improvisation. The final four weeks focus on applying these concepts in business situations to practice and mastering these improvisation tools in leadership learning.
+course_url: "https://ocw.mit.edu/courses/15-969-dynamic-leadership-using-improvisation-in-business-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/15-969-dynamic-leadership-using-improvisation-in-business-fall-2004/f234d7e6cfdcb3a840c9b2c73a91d11a_15-969f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

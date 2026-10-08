@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-5-73-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.73"
+cross_listed_codes: []
+course_title: "Introductory Quantum Mechanics I"
+course_slug: "5-73-introductory-quantum-mechanics-i-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Troy Van Voorhis"
+subject_primary: "Physics"
+subject_secondary:
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  5.73 covers fundamental concepts of quantum mechanics: wave properties, uncertainty principles, Schrödinger equation, and operator and matrix methods. Basic applications of the following are discussed: one-dimensional potentials (harmonic oscillator), three-dimensional centrosymmetric potentials (hydrogen atom), and angular momentum and spin. The course also examines approximation methods: variational principle and perturbation theory.
+course_url: "https://ocw.mit.edu/courses/5-73-introductory-quantum-mechanics-i-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/5-73-introductory-quantum-mechanics-i-fall-2005/b5276fba9ebe0d234be2539ef9a6e3c7_5-73f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

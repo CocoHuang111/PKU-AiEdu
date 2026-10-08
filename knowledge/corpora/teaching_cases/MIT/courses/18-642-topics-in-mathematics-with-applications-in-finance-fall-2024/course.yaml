@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-18-642-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.642"
+cross_listed_codes: []
+course_title: "Topics in Mathematics with Applications in Finance"
+course_slug: "18-642-topics-in-mathematics-with-applications-in-finance-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Peter Kempthorne"
+  - "Dr. Vasily Strela"
+  - "Dr. Jake Xia"
+subject_primary: "Finance"
+subject_secondary:
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Projects"
+  - "Readings"
+description: |
+  This is an updated version of 18.S096 Topics in Mathematics with Applications in Finance from Fall 2013. Please visit the 18.S096 site for more materials and lecture recordings. An investment game is also available as an additional learning resource. The purpose of the class is to expose undergraduate and graduate students to the mathematical concepts and techniques used in the financial industry. The course will consist of a set of mathematics lectures on topics in linear algebra, probability, statistics, stochastic processes, and numerical methods. Mathematics lectures will be mixed with lectures illustrating the corresponding application in the financial industry. MIT mathematicians will teach the mathematics part while industry professionals will give the lectures on applications in finance.
+course_url: "https://ocw.mit.edu/courses/18-642-topics-in-mathematics-with-applications-in-finance-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/18-642-topics-in-mathematics-with-applications-in-finance-fall-2024/mit18_642_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

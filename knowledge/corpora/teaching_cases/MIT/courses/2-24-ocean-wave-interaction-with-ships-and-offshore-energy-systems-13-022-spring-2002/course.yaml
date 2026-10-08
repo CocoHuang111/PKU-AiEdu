@@ -1,0 +1,88 @@
+schema_version: "1.0"
+course_id: "mitocw-2-24-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.24"
+cross_listed_codes: []
+course_title: "Ocean Wave Interaction with Ships and Offshore Energy Systems (13.022)"
+course_slug: "2-24-ocean-wave-interaction-with-ships-and-offshore-energy-systems-13-022-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Paul D. Sclavounos"
+subject_primary: "Fossil Fuels"
+subject_secondary:
+  - "Renewables"
+  - "Engineering"
+  - "Civil Engineering"
+  - "Structural Engineering"
+  - "Environmental Engineering"
+  - "Hydrodynamics and Coastal Engineering"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Ocean Structures"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Fossil Fuels"
+        specialties: []
+      - name: "Renewables"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Structural Engineering"
+      - name: "Environmental Engineering"
+        specialties:
+          - "Hydrodynamics and Coastal Engineering"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+          - "Ocean Structures"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The subject introduces the principles of ocean surface waves and their interactions with ships, offshore platforms and advanced marine vehicles. Surface wave theory is developed for linear and nonlinear deterministic and random waves excited by the environment, ships, or floating structures. Following the development of the physics and mathematics of surface waves, several applications from the field of naval architecture and offshore engineering are addressed. They include the ship Kelvin wave pattern and wave resistance, the interaction of surface waves with floating bodies, the seakeeping of ships high-speed vessels and offshore platforms, the evaluation of the drift forces and other nonlinear wave effects responsible for the slow-drift responses of compliant offshore platforms and their mooring systems designed for hydrocarbon recovery from large water depths. This course was originally offered in Course 13 (Department of Ocean Engineering) as 13.022. In 2005, ocean engineering subjects became part of Course 2 (Department of Mechanical Engineering), and this course was renumbered 2.24.
+course_url: "https://ocw.mit.edu/courses/2-24-ocean-wave-interaction-with-ships-and-offshore-energy-systems-13-022-spring-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/2-24-ocean-wave-interaction-with-ships-and-offshore-energy-systems-13-022-spring-2002/44dbf398b0a490378ce0d0d494a33014_2-24s02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

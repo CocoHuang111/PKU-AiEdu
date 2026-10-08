@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-res-11-004-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.11-004"
+cross_listed_codes: []
+course_title: "Facilitative Leadership in the Public Sector"
+course_slug: "res-11-004-facilitative-leadership-in-the-public-sector-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+  - "Non-Credit"
+instructors:
+  - "Prof. Lawrence Susskind"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Social Science"
+  - "Communication"
+  - "Public Administration"
+  - "Urban Studies"
+  - "Regional Planning"
+  - "Urban Planning"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Public Administration"
+        specialties: []
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Workshop Videos"
+description: |
+  This four-part dinner series was created by Prof. Lawrence Susskind at the request of a group of students in MIT’s Department of Urban Studies and Planning ( DUSP ) who felt the need for a graduate-level leadership course that would be attuned specifically to the needs of public sector professionals. The trailer and session videos may be freely viewed, downloaded, and reused under MIT OpenCourseWare’s Creative Commons BY-NC-SA license.
+course_url: "https://ocw.mit.edu/courses/res-11-004-facilitative-leadership-in-the-public-sector-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/res-11-004-facilitative-leadership-in-the-public-sector-fall-2024/mitres-11-004-f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

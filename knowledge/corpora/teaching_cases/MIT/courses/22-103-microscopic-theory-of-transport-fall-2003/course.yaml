@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-22-103-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.103"
+cross_listed_codes: []
+course_title: "Microscopic Theory of Transport"
+course_slug: "22-103-microscopic-theory-of-transport-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sidney Yip"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Transport is among the most fundamental and widely studied phenomena in science and engineering. This subject will lay out the essential concepts and current understanding, with emphasis on the molecular view, that cut across all disciplinary boundaries. (Suitable for all students in research.) Broad perspectives of transport phenomena From theory and models to computations and simulations Micro/macro coupling Current research insights
+course_url: "https://ocw.mit.edu/courses/22-103-microscopic-theory-of-transport-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/22-103-microscopic-theory-of-transport-fall-2003/c8baab8e1f3b05127ba99dbb6e82ac5a_22-103f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-16-333-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.333"
+cross_listed_codes: []
+course_title: "Aircraft Stability and Control"
+course_slug: "16-333-aircraft-stability-and-control-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jonathan P. How"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Aerodynamics"
+  - "Avionics"
+  - "Guidance and Control Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Aerodynamics"
+          - "Avionics"
+          - "Guidance and Control Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This class includes a brief review of applied aerodynamics and modern approaches in aircraft stability and control. Topics covered include static stability and trim; stability derivatives and characteristic longitudinal and lateral-directional motions; and physical effects of the wing, fuselage, and tail on aircraft motion. Control methods and systems are discussed, with emphasis on flight vehicle stabilization by classical and modern control techniques; time and frequency domain analysis of control system performance; and human-pilot models and pilot-in-the-loop controls with applications. Other topics covered include V/STOL stability, dynamics, and control during transition from hover to forward flight; parameter sensitivity; and handling quality analysis of aircraft through variable flight conditions. There will be a brief discussion of motion at high angles-of-attack, roll coupling, and other nonlinear flight regimes.
+course_url: "https://ocw.mit.edu/courses/16-333-aircraft-stability-and-control-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/16-333-aircraft-stability-and-control-fall-2004/135e2d2d162803422022ba25154c7b52_16-333f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

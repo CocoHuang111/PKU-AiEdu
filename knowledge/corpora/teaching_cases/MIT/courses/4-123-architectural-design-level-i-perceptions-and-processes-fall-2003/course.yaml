@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-4-123-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.123"
+cross_listed_codes: []
+course_title: "Architectural Design, Level I: Perceptions and Processes"
+course_slug: "4-123-architectural-design-level-i-perceptions-and-processes-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Meejin Yoon"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Environmental Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Environmental Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+description: |
+  This studio explores the notion of in-between by engaging several relationships; the relationship between intervention and perception, between representation and notation and between the fixed and the temporal. In the Exactitude in Science , Jorge Luis Borges tells the perverse tale of the one to one scale map, where the desire for precision and power leads to the escalating production of larger and more accurate maps of the territory. For Jean Baudrillard, “The territory no longer precedes the map nor survives it. …it is the map that precedes the territory… and thus, it would be the territory whose shreds are slowly rotting across the map.” The map or the territory, left to ruin-shredding across the ‘other’, beautifully captures the tension between reality and representation. Mediating between collective desire and territorial surface, maps filter, create, frame, scale, orient, and project. A map has agency. It is not merely representational but operational, the experience and discursive potential of this process lies in the reciprocity between the representation and the real. It is in-between these specific sets of relationships that this studio positions itself.
+course_url: "https://ocw.mit.edu/courses/4-123-architectural-design-level-i-perceptions-and-processes-fall-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/4-123-architectural-design-level-i-perceptions-and-processes-fall-2003/186fcfedbb5dc4311322cf100c7c66e0_4-123f03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

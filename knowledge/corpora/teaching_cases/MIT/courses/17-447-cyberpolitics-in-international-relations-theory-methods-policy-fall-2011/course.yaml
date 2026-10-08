@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-17-447-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.447"
+cross_listed_codes:
+  - "17.448"
+course_title: "Cyberpolitics in International Relations: Theory, Methods, Policy"
+course_slug: "17-447-cyberpolitics-in-international-relations-theory-methods-policy-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Nazli Choucri"
+  - "Prof. Stuart Madnick"
+  - "Dr. David D. Clark"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+  - "Social Science"
+  - "Political Science"
+  - "International Relations"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+description: |
+  This course focuses on cyberspace and its implications for private and public, sub-national, national, and international actors and entities.
+course_url: "https://ocw.mit.edu/courses/17-447-cyberpolitics-in-international-relations-theory-methods-policy-fall-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/17-447-cyberpolitics-in-international-relations-theory-methods-policy-fall-2011/0c493b07a929e1c45eb96460cef62189_17-447f11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "partial"

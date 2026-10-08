@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-15-025-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.025"
+cross_listed_codes: []
+course_title: "Game Theory for Strategic Advantage"
+course_slug: "15-025-game-theory-for-strategic-advantage-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Alessandro Bonatti"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Management"
+  - "Social Science"
+  - "Game Theory"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course develops and applies principles of game theory relevant to managers’ strategic decisions. Topics include how to reason about strategies and opponents; strategic commitment, reputation, and “irrational” actions; brinkmanship and negotiation; auctions; and the design of markets and contests. Applications to a variety of business decisions that arise in different industries, both within and outside the firm.
+course_url: "https://ocw.mit.edu/courses/15-025-game-theory-for-strategic-advantage-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/15-025-game-theory-for-strategic-advantage-spring-2015/e34677edbfec2edffa15537ee2711e0e_15-025s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

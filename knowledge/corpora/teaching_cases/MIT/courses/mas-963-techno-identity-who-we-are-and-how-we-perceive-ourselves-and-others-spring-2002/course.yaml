@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-963-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.963"
+cross_listed_codes: []
+course_title: "Techno-identity: Who we are and how we perceive ourselves and others"
+course_slug: "mas-963-techno-identity-who-we-are-and-how-we-perceive-ourselves-and-others-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Judith Donath"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The nature of human identity - how we think of ourselves, how we perceive others - is a mutable concept, changing with the rise and fall of religious beliefs, social mores, philosophical theories. Today, we live in a world in which science and technology are among the most powerful forces reshaping our culture - and thus our definitions and perceptions of identity. In this seminar, we will examine the impact of science and technology on identity. The instructor’s course page may be viewed at http://smg.media.mit.edu/classes/IdentitySeminar/
+course_url: "https://ocw.mit.edu/courses/mas-963-techno-identity-who-we-are-and-how-we-perceive-ourselves-and-others-spring-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/mas-963-techno-identity-who-we-are-and-how-we-perceive-ourselves-and-others-spring-2002/815df0b94b36f8dc071acac7a7a9ea3c_mas-963s02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

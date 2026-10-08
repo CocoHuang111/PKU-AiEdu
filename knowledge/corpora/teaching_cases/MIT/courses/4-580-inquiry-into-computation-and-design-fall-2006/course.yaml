@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-4-580-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.580"
+cross_listed_codes: []
+course_title: "Inquiry into Computation and Design"
+course_slug: "4-580-inquiry-into-computation-and-design-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Terry Knight"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Science and Engineering"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This subject explores the varied nature and practice of computation in design. We will view computation and design broadly. Computation will include both work done on the computer (digital computing) and by-hand. Design will include both the process of making designs and artifacts, as well as the designs and artifacts themselves. The aim of the course is to develop a view of computation and design beyond the specifics of techniques and tools, and a critical, self-awareness of our own approaches and metaphors for computation and design.
+course_url: "https://ocw.mit.edu/courses/4-580-inquiry-into-computation-and-design-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/4-580-inquiry-into-computation-and-design-fall-2006/37aeabd4e7dd9b466df76d7b599e801b_4-580f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

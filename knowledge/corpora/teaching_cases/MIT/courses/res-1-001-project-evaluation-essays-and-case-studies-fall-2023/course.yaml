@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-res-1-001-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.1-001"
+cross_listed_codes: []
+course_title: "Project Evaluation: Essays and Case Studies"
+course_slug: "res-1-001-project-evaluation-essays-and-case-studies-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Carl D. Martland"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Real Estate"
+  - "Energy"
+  - "Buildings"
+  - "Transportation"
+  - "Engineering"
+  - "Civil Engineering"
+  - "Social Science"
+  - "Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+      - name: "Real Estate"
+        specialties: []
+  - name: "Energy"
+    subtopics:
+      - name: "Buildings"
+        specialties: []
+      - name: "Transportation"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This book, Project Evaluation: Essays and Case Studies, is based primarily upon materials prepared between 1997 and 2010 by Carl D. Martland for 1.011 Project Evaluation , a required course within MIT’s Department of Civil & Environmental Engineering that he designed, developed, and taught for many years. It is structured to be of interest to anyone focused on infrastructure systems, especially engineers, planners, and managers who design, build and operate such systems. The book may also be of interest to students in planning or engineering who are interested in transportation, water resources, energy, city planning, or real estate development. Project Evaluation: Essays and Case Studies is published in two stand-alone volumes. Volume I provides an overview of project evaluation as a multi-dimensional process aimed at creating projects that meet the needs of society. Volume II examines the equivalence relationships that can be used to compare cash flows or economic costs and benefits over the life of a project.
+course_url: "https://ocw.mit.edu/courses/res-1-001-project-evaluation-essays-and-case-studies-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/res-1-001-project-evaluation-essays-and-case-studies-fall-2023/mitres_1_001_f23_chp.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

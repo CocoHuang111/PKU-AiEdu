@@ -1,0 +1,921 @@
+{
+  "catalog": {
+    "td": "齐惠颖 王静 王路漫 王晨 郭建光 白星月",
+    "KCDM": "CCF561A6FBE49B2BE050007F01004683",
+    "IMG": "/dad/tp/0016186026/jxjbxx/wdkc/5c875a4e-05ed-4e32-ad17-6d3775ec755d.jpg",
+    "DADM": "CCF457358CC2272EE050007F01002577",
+    "JSXM": "王晨",
+    "KCMC": "医学生信息素养课程-大学计算机",
+    "ROW_ID": 41
+  },
+  "base": {
+    "sfxz": 1,
+    "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+    "kcmc": "医学生信息素养课程-大学计算机",
+    "kksj": null,
+    "ssxk": null,
+    "sszy": null,
+    "xf": null,
+    "xs": null,
+    "cjr": "0016186026",
+    "cjsj": "2021-09-27T14:50:37.000+08:00",
+    "xgsj": "2024-01-04T22:38:51.000+08:00",
+    "kkjd": null,
+    "skjs": "0016186026",
+    "sfbxkc": "1",
+    "skyx": "10895",
+    "kcjj": "医学生信息素养公共基础课程-大学计算机（课程代码：89530342）\n信息技术的飞速发展，使得现代医学正在经历巨大变革，其研究需要计算机技术和方法与之融合并提供支持，并且人工智能、大数据在医学领域的应用，也成为未来医疗发展的必然方向。医学生迫切需要计算机与医学结合的课程来获取相关知识、信息和技术，以提高其信息素养，培养创新型医学人才。\n本课程作为教育部计算机教学指导委员会指定的本科生通识教育课程，以培养计算思维能力和跨学科应用能力为主线，除了介绍计算机基础知识和信息技术在医学领域应用的知识（如个性化医疗、医学图像、智能可穿戴设备等），还通过Python编程实践，培养学生以计算思维解决实际问题的基本思维方法。从自然语言描述问题，到形式语言描述模型，到算法和程序实现的这一过程，通过一系列医学应用案例的讲解和分析，培养学生发现问题、分析问题、解决问题的基本思路、方法和能力。",
+    "img": "/dad/tp/0016186026/jxjbxx/wdkc/5c875a4e-05ed-4e32-ad17-6d3775ec755d.jpg",
+    "zgh": null,
+    "jsxm": null,
+    "yxmc": null,
+    "yxdm": null,
+    "kckdm": null,
+    "fjList": [
+
+    ]
+  },
+  "detail": {
+    "id": "0E05687F484D8089E060007F01007298",
+    "cjr": "0016186026",
+    "cjsj": "2024-01-04T22:38:51.000+08:00",
+    "zhxgr": "0016186026",
+    "zhxgsj": "2024-01-04T22:38:51.000+08:00",
+    "rsylj": "<p style=\"line-height: 2;\">国无德不兴，人无德不立。本课程思政建设的思路是围绕着立德树人根本任务，探索如何将思想政治教育元素（包括思想政治教育的理论知识、价值理念以及精神追求等）融入课程当中，潜移默化地对学生的思想意识、行为举止产生影响，实现价值引领与知识能力培养相融合。<br />主要实现方式是将科学知识的传递向思想教育的领域延伸，找到两者之间的无缝衔接纽带，实现全员、全程、全方位育人格局的形式。具体来说，作为一门公共基础课程，在传授信息相关知识和技术，培养学生使用计算思维分析问题和解决问题的能力同时，引领学生建立正确的核心价值观，把思政教育贯穿教育教学的全过程；作为一门实践教学课程，在进行实践操作的过程中，应注重培养学生勇于提出问题并解决问题的创新精神与实践能力，并锻炼其面对实践难点时坚持不懈的意志品质；作为一门面向医学生的课程，应注重传授如何利用先进技术促进国家医药卫生领域的发展，帮助学生建立跨学科思维，并鼓励其利用跨学科思维发现问题并解决问题，培养综合能力，提升综合素养。</p>",
+    "rsyljfjlj": "/dad/fj/f2999ced-9b97-45a7-a306-577fc0361bc0.mp4",
+    "rsyljfjmc": "思政课理解.mp4",
+    "kcmb": "<p style=\"line-height: 2;\"><span style=\"color: #ba372a; font-size: 16px;\"><strong>一、知识目标</strong></span></p>\n<p style=\"line-height: 2;\">1. 计算机与医学、信息数字化、计算机系统的基础知识内容</p>\n<p style=\"line-height: 2;\">2. 基本程序设计、医学数据处理、数据可视化的编程知识和医学应用内容</p>\n<p style=\"line-height: 2;\"><span style=\"color: #ba372a; font-size: 16px;\"><strong>二、能力目标</strong></span></p>\n<p style=\"line-height: 2;\">1. 拓宽信息技术的知识、培养计算思维</p>\n<p style=\"line-height: 2;\">2. 面向医学应用，培养学生发现问题、分析问题、解决问题的能力和创新能力</p>\n<p style=\"line-height: 2;\"><span style=\"font-size: 16px;\"><strong><span style=\"color: #ba372a;\">三、思政目标</span></strong></span></p>\n<p style=\"line-height: 2;\">1. 给学生传递家国情怀、民族自豪感/自信心、敬业精神</p>\n<p style=\"line-height: 2;\">2. 培养学生科教兴国的思想和医德医风建设</p>\n<p style=\"line-height: 2;\">3. 培养学生科学思维，跨学科综合素养，全人教育</p>",
+    "jxff": "<p style=\"line-height: 2;\"><span style=\"color: #ba372a; font-size: 16px;\"><strong>一、教学设计以学生为主体</strong></span></p>\n<p style=\"line-height: 2;\">依据构建主义学习理论，强调充分发挥学生个体的主观能动性。在整个学习过程中，围绕学生从已掌握的知识点出发，引导学生主动思考，由学生用探究、讨论等不同方法在头脑中主动构建新的知识点，培养学生分析问题、解决问题和创造性思维的能力，教师及时总结。</p>\n<p style=\"line-height: 2;\">例：以&ldquo;人工智能医生&rdquo;案例提出问题，引导学生思考，&ldquo;人工智能医生&rdquo;带来的医学进步是如何实现的？实现的核心是什么？</p>\n<p style=\"line-height: 2;\"><img src=\"../../../tp/0016186026/0ce60133-f8f6-4a54-a40f-3bd2da52cff3.jpg\" alt=\"\" width=\"680\" height=\"453\" /></p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\"><span style=\"font-size: 16px;\"><strong><span style=\"color: #ba372a;\">二、教学模式以案例化为主导</span></strong></span></p>\n<p style=\"line-height: 2;\">创设问题情境，激发学习动机进行有效学习。将专业实例&ldquo;抽象化&rdquo;，实现从问题到程序的升华，帮助学生更好地理解教学中的知识点，培养学生学科融合的思维。</p>\n<p style=\"line-height: 2;\">例：在字符串数组的学习中，判断几个DNA序列中是否存在聚-T序列？</p>\n<p style=\"line-height: 2;\"><img src=\"../../../tp/0016186026/2f6e5f2a-8f9a-4716-adc6-8d37310d4503.png\" alt=\"\" width=\"680\" height=\"383\" /></p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\"><span style=\"font-size: 16px;\"><strong><span style=\"color: #ba372a;\">三、教学策略采用多元化教学</span></strong></span></p>\n<p style=\"line-height: 2;\">教学方法多元化，采用线上和线下教学相结合的方式，增加了自主设计型小组作业，设置了作业学生互评环节，激发学生的学习兴趣。</p>\n<p style=\"line-height: 2;\"><img src=\"../../../tp/0016186026/e09eb785-0c93-46c2-803c-26871cf327d4.png\" alt=\"\" width=\"680\" height=\"379\" /></p>\n<p style=\"line-height: 2;\">此外，充分利用微信交流，开展课后线上辅助答疑。在这一过程中，感受到了学生学习本门课程的积极性。</p>\n<p style=\"line-height: 2;\">例：课后学生通过咨询问题的截图</p>\n<p style=\"line-height: 2;\"><img src=\"../../../tp/0016186026/cc41564b-dffd-45f2-9d20-4a1521893297.png\" alt=\"\" width=\"680\" height=\"522\" /></p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\"><span style=\"font-size: 16px;\"><strong><span style=\"color: #ba372a;\">四、教材编写以跟随时代发展为目标</span></strong></span></p>\n<p style=\"line-height: 2;\"><img src=\"../../../tp/0016186026/44d0aa3e-8e7f-4a3d-80b3-04bcae9e4239.jpg\" width=\"680\" /></p>\n<p style=\"line-height: 2;\">课程配套教材由历年该课程团队的一线教师进行编写，自1994年第一次出版以来，随着教学内容的不断更新历次改版，目前已修订出版第七版。</p>\n<p style=\"line-height: 2;\">第一版教材参考北京、上海普通高校非计算机专业计算机应用水平测试大纲进行编写，由基础篇、FoxBASE+、Lotus1-2-3内容组成。</p>\n<p style=\"line-height: 2;\">第二版教材保留了基础篇、FoxBASE+，增加了Windows3.1和Office97内容。</p>\n<p style=\"line-height: 2;\">第三版教材将Windows3.1升级到Windows98，Office97升级到Office2000，FoxBASE+改为Visual FoxPro6.0。</p>\n<p style=\"line-height: 2;\">第四版深化原有内容，增加新的篇章，改为上下两册，并配有实习指导。上册为基础篇、网络篇，WindowsXP、OfficeXP，下册为Visual FoxPro6.0和Visual Basic6.0。</p>\n<p style=\"line-height: 2;\">第五版结合教育部高等学校计算机基础课程教学指导委员会提出的1+X模式，重新调整内容，将上下两册合并为一册，并改名为《计算机应用基础》，将基础知识和网络合并为一章，原有内容版本更新，数据库采用Access， 程序设计采用VBA。教材被评为普通高等教育&ldquo;十一五&rdquo;国家级规划教材。</p>\n<p style=\"line-height: 2;\">第六版编写是在2010年教育版高等学校教学指导委员会发布的《高等学校计算机基础教学发展战略报告暨计算机基础课程教学基本要求》的整体原则框架下进行的，再版压缩了Office内容，增加了新的信息技术内容和信息技术在医学中的应用案例，同时增加了医学信息学的内容。</p>\n<p style=\"line-height: 2;\">第七版改版的宗旨是把握时代的脉搏，将人工智能、云计算和物联网技术等前沿技术和观念增加到教材中，采用Python语言环境讲解程序设计知识，并将信息技术知识和医学应用深度融合。</p>",
+    "pjfa": "<p style=\"margin: 0cm 0cm 0.0001pt; line-height: 2; background: white;\"><span style=\"font-size: 10.5pt; line-height: 200%; font-family: '微软雅黑',sans-serif; color: #333333;\">采用多维度评价体系，强调过程性评价，促进学生平时学习和思考，提升学习效果。</span></p>\n<p style=\"margin: 0cm 0cm 0.0001pt; line-height: 2; background: white;\"><span style=\"font-size: 10.5pt; line-height: 200%; font-family: '微软雅黑',sans-serif; color: #333333;\"><img src=\"../../../tp/0016186026/4bfc7d85-3011-4bcd-ab79-210ea1b7b711.png\" alt=\"\" width=\"680\" height=\"383\" /></span></p>\n<p style=\"margin: 0cm 0cm 0.0001pt; line-height: 2; background: white;\"><span style=\"font-size: 10.5pt; line-height: 200%; font-family: '微软雅黑',sans-serif; color: #333333;\">1、授课目标达成度评价（授课老师自评）<br />&nbsp; &nbsp; &nbsp;从教学目标、教学内容和教学方法三个维度评价<br />2、学习效果完成度评价（学生考核统计得分、大学生思想政治素质量表）<br />&nbsp; &nbsp; &nbsp;从教学知识点、思政内容、学生能力提升三个方面考核学生学习效果<br />3、思政设计结合度评价（有教学督导老师和所在系党支部评价）<br />&nbsp; &nbsp; &nbsp;从目标体现、内容结合、成效展现角度来评价</span></p>",
+    "xgyq": "<p>1. 课堂出勤：不定期记录学生出勤情况，并作为平时成绩的一部分</p>\n<p>2. 活动参与：团队项目中应明确各人分工及实际贡献，以此作为团队项目打分的因素之一</p>",
+    "jxffjal": "<p style=\"line-height: 2;\"><span style=\"font-size: 14px; color: #000000;\">在课程知识学习和能力培养教学基础上，紧紧围绕立德树人这一根本任务，在课程内容设计时融入思政元素，力求在讲课时将思政教育以润物细无声的方式自然和谐地融入到教学中，增强思政教育的亲和力与感染力，实现培养社会主义建设者和接班人的课程育人目标。</span></p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\"><span style=\"font-size: 16px;\"><strong><span style=\"color: #ba372a;\">一、算法和程序</span></strong></span></p>\n<p style=\"line-height: 2;\">在学习编程语言的细节知识之前，需要学生了解算法和程序的关系与区别，从以下3个方面开展课程思政建设：</p>\n<p style=\"line-height: 2;\">1. 科技强国：介绍IBM开发的沃森机器人医生在短时间内能够快速确诊病情，给出详细的诊疗方案，并且与经验丰富的临床医生给出的诊断完全相同，从而让学生了解与医学领域密切相关的先进科技，以探寻科技强国之路。</p>\n<p style=\"line-height: 2;\">2. 严谨审慎：讲述由于算法中的一点错误，导致亚马逊出售天价书籍的故事，说明算法正确的重要性，引导学生在解决问题和编程实现的过程中养成严谨、细致、认真的习惯和态度。</p>\n<p style=\"line-height: 2;\">3. 科学精神：通过对于算法（特别是人工智能算法）为人类社会带来的利与弊的思考与讨论，提高学生正确认识问题、分析问题和解决问题的能力，同时为课程注入了人文性，时代性和开放性。</p>\n<p style=\"line-height: 2;\"><span style=\"color: #ba372a;\">各专业学生对于算法（人工智能）的利与弊的思考作业展示</span></p>\n<p style=\"line-height: 2;\"><span style=\"color: #000000;\">（1）口腔专业学生的思考作业</span></p>\n<p style=\"line-height: 2;\"><span style=\"color: #ba372a;\"><img src=\"../../../tp/0016186026/d240c3af-226e-491f-bf50-de4a8e844c48.png\" alt=\"\" width=\"680\" height=\"425\" /></span></p>\n<p style=\"line-height: 2;\"><span style=\"color: #000000;\">（2）护理专业学生的思考作业</span></p>\n<p style=\"line-height: 2;\"><span style=\"color: #000000;\"><img src=\"../../../tp/0016186026/0a81d6a4-42e9-4bd0-a8b0-155d82204a8b.png\" alt=\"\" width=\"680\" height=\"425\" /></span></p>\n<p style=\"line-height: 2;\"><span style=\"color: #000000;\">（3）医学检验专业学生的思考作业</span></p>\n<p style=\"line-height: 2;\"><span style=\"color: #000000;\"><img src=\"../../../tp/0016186026/7add1225-5f61-4bb6-8e00-3535152403f9.png\" alt=\"\" width=\"680\" height=\"425\" /></span></p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\"><strong><span style=\"font-size: 16px; color: #ba372a;\">二、循环语句</span></strong></p>\n<p style=\"line-height: 2;\">循环语句是程序设计中的重要内容，课程从以下几个方面渗透思政因素：</p>\n<p style=\"line-height: 2;\">1. 科学思维：为了学生能学以致用，课程以设计疫情防控中对病人体温的定时监测小程序为例，培养学生采用程序设计解决问题的能力，培养学生科学的思维方法.</p>\n<p style=\"line-height: 2;\">2. 科学精神：通过对程序的优化，培养学生精益求精的专业精神。</p>\n<p style=\"line-height: 2;\">3. 社会责任感：通过所学解决当今社会中的问题，渗透培养学生对社会和民族的责任感。中华民族面对各种艰难困苦及其复杂局面，培养学生勇于担当、革故鼎新、披荆斩棘、攻坚克难，持续推进中国传统包括中国精神的现代转化。&nbsp;</p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\"><strong><span style=\"font-size: 16px; color: #ba372a;\">三、字符串</span></strong></p>\n<p style=\"line-height: 2;\">数据类型中字符串的概念及使用比较抽象，为了给学生留下深刻直观的印象，我们从以下3个方面开展课程思政建设：</p>\n<p style=\"line-height: 2;\">1. 科学精神：DNA双螺旋结构的发现过程，是打破常规，勇于追求真理，不断探索的过程。通过介绍DNA之父詹姆斯沃森到访北京大学医学部，并进行了精彩的演讲的过程，拉近学生与最前沿科学的距离，激发学生科学精神。以大师为榜样，打造医学传奇，实现人生价值。</p>\n<p style=\"line-height: 2;\">2. 国际视野：在案例中穿插了诺奖得主詹姆斯沃森发现DNA双螺旋结构的例子，开拓学生的思维，多角度理解程序设计语言及其应用。</p>\n<p style=\"line-height: 2;\">3. 应用价值：新冠病毒实质上也是DNA变异引起的，新冠疫苗离不开沃森的基因理论，这也是沃森的伟大贡献之一。通过事例讲解，使学生体会到编程的实际应用价值，激发学生学习兴趣。</p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\"><strong><span style=\"color: #ba372a; font-size: 16px;\">四、数据可视化--词云</span></strong></p>\n<p style=\"line-height: 2;\">数据可视化有众多展现方式，不同的数据类型要选择适合的展现方法，词云是文本数据可视化的典型展现形式。词云图通过强大的呈现方式不仅可以直观展示文本的主题，还能吸引人们的注意力并对其产生兴趣。该课程从以下几个方面开展课程思政建设：</p>\n<p style=\"line-height: 2;\">1. 北大医学精神：本案例是在词云程序设计实现的案例设计中，以习近平总书记给北京大学援鄂医疗队全体&ldquo;90后&rdquo;党员回信为例制作词云，使学生领会作为北大医学人应具有怎样的责任担当。</p>\n<p style=\"line-height: 2;\">2. 医德医风：引入新冠疫情北大援鄂医疗队的事迹，通过身边人在疫情面前表现出的救死扶伤，展现医者仁心的医风医德。</p>\n<p style=\"line-height: 2;\">3. 家国情怀：疫情在哪里，党员就战斗在哪里，通过教学实例展现出党员的发挥先锋模范作用，体现出广大党员的大局意识。</p>\n<p style=\"line-height: 2;\"><span style=\"color: #ba372a;\">各专业学生制作词云的案例展示</span></p>\n<p style=\"line-height: 2;\"><span style=\"color: #000000;\">（1）护理专业学生使用《健康中国2030规划纲要》制作词云</span></p>\n<p style=\"line-height: 2;\"><img src=\"../../../tp/0016186026/85f6f0b3-4095-4bd5-b5bd-f28156e7e96d.png\" width=\"680\" /></p>\n<p style=\"line-height: 2;\">（2）临床专业留学生使用《习近平给北京大学的留学生们的回信》制作词云</p>\n<p style=\"line-height: 2;\"><img src=\"../../../tp/0016186026/113b20d2-1af2-42dc-bfbe-98d5c990a2b1.png\" width=\"680\" /></p>",
+    "jxffjalfjlj": "/dad/fj/17ce736c-d31b-482c-b876-f1b64927d18e.mp4",
+    "jxffjalfjmc": "字符串-wlm-加片头.mp4",
+    "xgpj": "<p style=\"line-height: 2;\"><span style=\"color: #ba372a; font-size: 16px;\"><strong>一、构建多维度、过程化考核评价体系，在教学过程中通过教学督导专家进行课程思政课改效果、教学效果、育人效果的评价</strong></span></p>\n<p style=\"line-height: 2;\"><img src=\"../../../tp/0016186026/36df5a86-96a5-491c-88e5-0980a741dfd2\" alt=\"\" width=\"420\" height=\"603\" /><img src=\"../../../tp/0016186026/f45e084c-cbe7-47c5-83ab-78bb101e5dc3\" alt=\"\" width=\"420\" height=\"601\" /></p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\"><span style=\"color: #ba372a; font-size: 16px;\"><strong>二、课程结课后通过学生的评价，反馈课程教学效果，推进课程思政建设的持续改进</strong></span></p>\n<p style=\"line-height: 2;\"><strong>1. 学生评教评语</strong></p>\n<p style=\"line-height: 2;\">为全面及时掌握课堂教学状况，同时为教师教学提供有效参考，从而提高本科教育教学质量，学校持续开展了针对本科课程和授课教师的学生评教工作。部分评价如下：</p>\n<p style=\"line-height: 2;\"><strong><img src=\"../../../tp/0016186026/5cb3c9bc-015a-451e-8d1f-8acd80a40677.png\" width=\"680\" /></strong></p>\n<p style=\"line-height: 2;\"><strong>2. 学生评教报告</strong></p>\n<p style=\"line-height: 2;\">在北京大学医学部2019-2020学年第一学期的本科生评教中，共有202门课（必修课125门，选修课77门）和568名教师被评。其中理论课教师评价以参评率50%为前提（该教师任一门课参评率低于50%则不纳入排名）。根据对学生评教结果的分析，得出全校最受学生喜爱的理论课教师前五位中有该课程团队的王路漫老师，参评的课程为《大学计算机》。</p>\n<p style=\"line-height: 2;\"><img src=\"../../../tp/0016186026/80a4b0cb-de79-41d3-b3e7-503ba3fc9115.jpg\" width=\"680\" /></p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\"><span style=\"font-size: 16px;\"><strong><span style=\"color: #ba372a;\">三、通过参加会议，主题报告等形式，与兄弟院校一线教师进行思政教学成果交流</span></strong></span></p>\n<p style=\"line-height: 2;\"><span style=\"color: #000000;\">全国高等院校计算机基础教育研究会医学专委会2021年度学术会议，南昌，2021.7.25</span></p>\n<p style=\"line-height: 2;\"><span style=\"color: #000000;\"><img src=\"../../../tp/0016186026/97e47a20-3d2b-4ec0-804c-f1a59df3edc1.jpg\" alt=\"\" width=\"680\" height=\"510\" /></span></p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\">&nbsp;</p>\n<p style=\"line-height: 2;\">&nbsp;</p>",
+    "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+    "fjList": [
+      {
+        "id": "0E05687F484F8089E060007F01007298",
+        "cjr": "0016186026",
+        "cjsj": "2024-01-04T22:38:52.000+08:00",
+        "zhxgr": "0016186026",
+        "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+        "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+        "wjmc": "字符串.mp4",
+        "wjlj": "/dad/fj/2bf342ff-8cf8-4b4d-878e-60b1ece55dd6.mp4",
+        "bs": "jxffjal"
+      },
+      {
+        "id": "0E05687F484E8089E060007F01007298",
+        "cjr": "0016186026",
+        "cjsj": "2024-01-04T22:38:52.000+08:00",
+        "zhxgr": "0016186026",
+        "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+        "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+        "wjmc": "循环语句.mp4",
+        "wjlj": "/dad/fj/f7f02d35-8aee-4186-a32d-a78615eeb3d2.mp4",
+        "bs": "jxffjal"
+      },
+      {
+        "id": "0E05687F48508089E060007F01007298",
+        "cjr": "0016186026",
+        "cjsj": "2024-01-04T22:38:52.000+08:00",
+        "zhxgr": "0016186026",
+        "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+        "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+        "wjmc": "算法和程序.mp4",
+        "wjlj": "/dad/fj/20b5fd6c-f9f6-4389-8ddb-2dc11d906caa.mp4",
+        "bs": "jxffjal"
+      },
+      {
+        "id": "0E05687F48518089E060007F01007298",
+        "cjr": "0016186026",
+        "cjsj": "2024-01-04T22:38:52.000+08:00",
+        "zhxgr": "0016186026",
+        "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+        "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+        "wjmc": "词云.mp4",
+        "wjlj": "/dad/fj/21ad72fb-1330-4d3f-9353-5686162be058.mp4",
+        "bs": "jxffjal"
+      }
+    ]
+  },
+  "elements": [
+    {
+      "id": "05396AD9A19B511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:51.000+08:00",
+      "zj": "信息与医学",
+      "zsd": "计算机在医学应用发展历程",
+      "szys": "健康中国2030",
+      "szwd": "思政教育",
+      "jxff": "联系发展式教学",
+      "xssx": 1,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "时代精神",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A19C511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:51.000+08:00",
+      "zj": null,
+      "zsd": "可穿戴设备、移动医疗",
+      "szys": "智能化医疗",
+      "szwd": "思政教育",
+      "jxff": "举证式教学",
+      "xssx": 2,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "科技强国",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A19D511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:51.000+08:00",
+      "zj": null,
+      "zsd": "远程医疗",
+      "szys": "医联体",
+      "szwd": "思政教育",
+      "jxff": "举证式教学",
+      "xssx": 3,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "制度自信",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A19E511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:51.000+08:00",
+      "zj": null,
+      "zsd": "前沿技术在医学中应用",
+      "szys": "新冠疫情大数据分析",
+      "szwd": "思政教育",
+      "jxff": "举证式教学",
+      "xssx": 4,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "科教兴国",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A19F511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:51.000+08:00",
+      "zj": null,
+      "zsd": "医学数据隐私与伦理",
+      "szys": "学术道德和学术规范",
+      "szwd": "如何做人",
+      "jxff": "举证式教学",
+      "xssx": 5,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "法治精神",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A0511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:51.000+08:00",
+      "zj": "信息技术基础",
+      "zsd": "计算机发展史",
+      "szys": "算筹",
+      "szwd": "思政教育",
+      "jxff": "举证式教学",
+      "xssx": 6,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "文化自信",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A1511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:51.000+08:00",
+      "zj": null,
+      "zsd": "计算机运行原理",
+      "szys": "图灵生平和图灵奖",
+      "szwd": "如何做事",
+      "jxff": "融入式教学",
+      "xssx": 7,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "科学精神",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A2511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:51.000+08:00",
+      "zj": null,
+      "zsd": "数的表示",
+      "szys": "中国古代最早提出负数概念",
+      "szwd": "思政教育",
+      "jxff": "融入式教学",
+      "xssx": 8,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "文化自信",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A3511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": "计算机系统",
+      "zsd": "基本组成",
+      "szys": "全球巨型机500强榜单",
+      "szwd": "思政教育",
+      "jxff": "融入式教学",
+      "xssx": 9,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "大国工匠",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A4511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "五大部件",
+      "szys": "协同工作",
+      "szwd": "如何做事",
+      "jxff": "融入式教学",
+      "xssx": 10,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "团队合作",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A5511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "中央处理器",
+      "szys": "华为公司",
+      "szwd": "思政教育",
+      "jxff": "反思式教学",
+      "xssx": 11,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "家国情怀",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A6511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "控制器",
+      "szys": "高通反垄断案",
+      "szwd": "如何做人",
+      "jxff": "反思式教学",
+      "xssx": 12,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "社会责任",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A7511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "软件系统",
+      "szys": "自主知识产权",
+      "szwd": "思政教育",
+      "jxff": "类比式教学",
+      "xssx": 13,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "科技强国",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A8511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": "程序设计",
+      "zsd": "感性认识程序",
+      "szys": "AlphaGo打败围棋职业高手",
+      "szwd": "思政教育",
+      "jxff": "启发式教学",
+      "xssx": 14,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "科技进取",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1A9511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "从问题到程序",
+      "szys": "模块化设计",
+      "szwd": "如何做事",
+      "jxff": "启发式教学",
+      "xssx": 15,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "团队合作",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1AA511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "Python语言的历史",
+      "szys": "创作者Guido利用短短圣诞假期创作了Python语言",
+      "szwd": "如何做事",
+      "jxff": "融入式教学",
+      "xssx": 16,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "科学精神",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1AB511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "Python语言的特点",
+      "szys": "免费开源软件",
+      "szwd": "思政教育",
+      "jxff": "融入式教学",
+      "xssx": 17,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "开放精神",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1AC511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "数据类型",
+      "szys": "阿利亚纳五号坠落",
+      "szwd": "如何做事",
+      "jxff": "融入式教学",
+      "xssx": 18,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "严谨审慎",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1AD511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "运算符类型",
+      "szys": "计算精度悲剧",
+      "szwd": "如何思考",
+      "jxff": "类比式教学",
+      "xssx": 19,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "严谨治学",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1AE511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "运算符应用",
+      "szys": "好好学习，天天向上",
+      "szwd": "思政教育",
+      "jxff": "启发式教学",
+      "xssx": 20,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "社会主义核心价值观",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1AF511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "数组",
+      "szys": "杨辉三角",
+      "szwd": "思政教育",
+      "jxff": "融入式教学",
+      "xssx": 21,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "文化自信",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B0511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "顺序结构和传输",
+      "szys": "疫情统计",
+      "szwd": "思政教育",
+      "jxff": "类比式教学",
+      "xssx": 22,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "政治认同",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B1511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "分支结构",
+      "szys": "鱼和熊掌不可兼得",
+      "szwd": "思政教育",
+      "jxff": "启发式教学",
+      "xssx": 23,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "社会公德",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B2511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "循环结构",
+      "szys": "程序书写规范",
+      "szwd": "思政教育",
+      "jxff": "启发式教学",
+      "xssx": 24,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "大国工匠",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B3511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "字符串",
+      "szys": "从DNA到蛋白质的转换",
+      "szwd": "如何思考",
+      "jxff": "举证式教学",
+      "xssx": 25,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "跨学科思维",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B4511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "列表",
+      "szys": "患者基线数据",
+      "szwd": "如何做人",
+      "jxff": "举证式教学",
+      "xssx": 26,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "医者仁心",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B5511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "元组与字典",
+      "szys": "医生出诊字典的设计和访问",
+      "szwd": "如何做事",
+      "jxff": "举证式教学",
+      "xssx": 27,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "实证精神",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B6511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "统计和累加函数",
+      "szys": "折纸到珠峰高度",
+      "szwd": "思政教育",
+      "jxff": "启发式教学",
+      "xssx": 28,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "社会主义核心价值观",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B7511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "随机函数",
+      "szys": "双盲随机临床实验",
+      "szwd": "如何做事",
+      "jxff": "举证式教学",
+      "xssx": 29,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "科研严谨精神",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B8511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "函数的参数传递及调用",
+      "szys": "体能消耗计算函数",
+      "szwd": "如何做事",
+      "jxff": "举证式教学",
+      "xssx": 30,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "团队合作",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1B9511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": "数据分析",
+      "zsd": "文件的读写",
+      "szys": "DNA，RNA文件读取和转换",
+      "szwd": "如何思考",
+      "jxff": "举证式教学",
+      "xssx": 31,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "跨学科思维",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1BA511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "数据爬虫",
+      "szys": "数据安全法、人遗条例",
+      "szwd": "如何思考",
+      "jxff": "举证式教学",
+      "xssx": 32,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "法律意识",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1BB511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "数据分析方法",
+      "szys": "《本草纲目》数据分析",
+      "szwd": "思政教育",
+      "jxff": "举证式教学",
+      "xssx": 33,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "文化自信",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "05396AD9A1BC511FE060007F010001C2",
+      "cjr": "0016186026",
+      "cjsj": "2023-09-13T20:35:20.000+08:00",
+      "zhxgr": "0016186026",
+      "zhxgsj": "2024-01-04T22:38:52.000+08:00",
+      "zj": null,
+      "zsd": "数据可视化及应用",
+      "szys": "总书记给北京大学援鄂医疗队全体“90后”党员的回信主题词云制作",
+      "szwd": "思政教育",
+      "jxff": "举证式教学",
+      "xssx": 34,
+      "kcdm": "CCF561A6FBE49B2BE050007F01004683",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "北大医学精神--厚道",
+      "wjm": null,
+      "wjUrl": null
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-346-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.346"
+cross_listed_codes: []
+course_title: "Topics in Modern French Literature and Culture: Global Paris"
+course_slug: "21g-346-topics-in-modern-french-literature-and-culture-global-paris-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Catherine E Clark"
+subject_primary: "Language"
+subject_secondary:
+  - "French"
+  - "Literature"
+  - "Criticism"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course investigates Paris's oversized status as a global capital by looking at the events, transformations, cultures, and arts for which the city is known to help us better understand Paris and its place in French and global cultures today. Taught in French.
+course_url: "https://ocw.mit.edu/courses/21g-346-topics-in-modern-french-literature-and-culture-global-paris-fall-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-346-topics-in-modern-french-literature-and-culture-global-paris-fall-2014/fecf75ecfc923438bb2781204898a11b_21g-346f14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-15-361-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.361"
+cross_listed_codes: []
+course_title: "Executing Strategy for Results"
+course_slug: "15-361-executing-strategy-for-results-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Donald Sull"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Leadership"
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course provides business students an alternative to the mechanistic view of strategy execution that reframes an organization as a complex network of teams continuously adjusting to market conditions and to other teams. The Flexible Execution Model is introduced consisting of seven elements that together shape how well an organization executes its strategy. Practical tools that help leaders achieve their organizations’ strategic priorities are discussed. The course also explores novel ways to use data including surveys, Glassdoor reviews, and other sources to measure strategy execution and identify what is and is not working.
+course_url: "https://ocw.mit.edu/courses/15-361-executing-strategy-for-results-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/15-361-executing-strategy-for-results-fall-2017/8e080ffa8439bed1f3a3f9fbd4cbe815_15-361f17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

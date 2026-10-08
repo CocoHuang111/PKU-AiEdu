@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-11-201-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.201"
+cross_listed_codes: []
+course_title: "Gateway to the Profession of Planning"
+course_slug: "11-201-gateway-to-the-profession-of-planning-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Bishwapriya Sanyal"
+subject_primary: "Urban Studies"
+subject_secondary:
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  The purpose of the course is to cultivate the sensibilities necessary for effective planning practice. This objective rests on one key assumption: that a set of key sensibilities creates the right mindset for practice.
+course_url: "https://ocw.mit.edu/courses/11-201-gateway-to-the-profession-of-planning-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/11-201-gateway-to-the-profession-of-planning-fall-2010/bc71a7535c3bb7280fddfa1aa9b784a7_11-201f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-res-9-007-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.9-007"
+cross_listed_codes: []
+course_title: "MEG Workshop"
+course_slug: "res-9-007-meg-workshop-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Matti Hämäläinen"
+  - "Dimitrios Pantazis"
+  - "Dr. David Gow"
+subject_primary: "Biomedical Signal and Image Processing"
+subject_secondary:
+  - "Medical Imaging"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Signal and Image Processing"
+        specialties: []
+      - name: "Medical Imaging"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Workshop Videos"
+description: |
+  This series helps learners understand magnetoencephalography (MEG) signals through the lens of source estimation, decoding, and connectivity: principles, pitfalls, and perspectives. MEG methodological approaches have grown remarkably during the 50-year history of MEG. A breadth of source estimation tools can localize brain activity even in challenging situations. Pattern analysis of brain activity can perform feats of mind reading by revealing what a person is seeing, perceiving, attending to, or remembering. Functional connectivity approaches can assess the role of large-scale brain networks in cognitive function. The aim of this workshop is to deconstruct these tools, overview the challenges and limitations, and demonstrate MEG data analysis procedures to a novice researcher. This workshop was sponsored by the Center for Brains, Minds, and Machines (CBMM), a multi-institutional NSF Science and Technology Center headquartered at MIT that is dedicated to the study of intelligence—how the brain produces intelligent behavior and how we may be able to replicate intelligence in machines.
+course_url: "https://ocw.mit.edu/courses/res-9-007-meg-workshop-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/res-9-007-meg-workshop-spring-2019/mitres9_007s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

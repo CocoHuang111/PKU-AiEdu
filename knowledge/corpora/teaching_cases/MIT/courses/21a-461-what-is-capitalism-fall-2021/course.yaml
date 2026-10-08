@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-461-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.461"
+cross_listed_codes: []
+course_title: "What is Capitalism?"
+course_slug: "21a-461-what-is-capitalism-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christine Walley"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Ethnography"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This course introduces academic debates on the nature of capitalism, drawing upon the ideas of scholars as diverse as Adam Smith and Karl Marx. It examines anthropological studies of how contemporary capitalism plays out in people’s daily lives in a range of geographic and social settings, and implications for how we understand capitalism today. Settings range from Wall Street investment banks to auto assembly plants, from family businesses to consumer shopping malls.
+course_url: "https://ocw.mit.edu/courses/21a-461-what-is-capitalism-fall-2021/"
+image_url: "https://ocw.mit.edu/courses/21a-461-what-is-capitalism-fall-2021/21a-461f21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

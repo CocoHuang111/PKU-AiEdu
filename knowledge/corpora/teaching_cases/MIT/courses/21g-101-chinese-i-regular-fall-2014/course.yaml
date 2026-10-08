@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-101-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.101"
+cross_listed_codes:
+  - "21G.171"
+  - "21G.151"
+course_title: "Chinese I (Regular)"
+course_slug: "21g-101-chinese-i-regular-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Haohsiang Liao"
+subject_primary: "Language"
+subject_secondary:
+  - "Chinese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Chinese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+description: |
+  This subject is the first semester of four that forms an introduction to modern standard Chinese, commonly called Mandarin, the language with the largest number of native speakers in the world. It is the official language of Mainland China and Taiwan, and one of the official languages of Singapore. The course presupposes no prior background in the language. Course objectives are to master Mandarin pronunciation, including the recognition and writing of Pinyin romanization, basic reading and writing skills (around 150 characters in the traditional character set or the simplified set), and to develop the ability to participate in simple, practical conversations on everyday topics. The relationship between Chinese language and culture and the sociolinguistically appropriate use of language will be stressed throughout. Typical class format will include performance of memorized basic conversations, drills, questions and discussion, and various types of communicative exercises.
+course_url: "https://ocw.mit.edu/courses/21g-101-chinese-i-regular-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/21g-101-chinese-i-regular-fall-2014/6e394c993518381e5b68c5c502948801_21g-101f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

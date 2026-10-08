@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-2-25-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.25"
+cross_listed_codes: []
+course_title: "Advanced Fluid Mechanics"
+course_slug: "2-25-advanced-fluid-mechanics-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gareth McKinley"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is a survey of principal concepts and methods of fluid dynamics. Topics include mass conservation, momentum, and energy equations for continua; Navier-Stokes equation for viscous flows; similarity and dimensional analysis; lubrication theory; boundary layers and separation; circulation and vorticity theorems; potential flow; introduction to turbulence; lift and drag; surface tension and surface tension driven flows.
+course_url: "https://ocw.mit.edu/courses/2-25-advanced-fluid-mechanics-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/2-25-advanced-fluid-mechanics-fall-2013/fe0b243e81452333f3abd2b462058f44_2-25f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

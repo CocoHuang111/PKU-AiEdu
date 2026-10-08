@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-24-902-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.902"
+cross_listed_codes:
+  - "24.932"
+course_title: "Language and its Structure II: Syntax"
+course_slug: "24-902-language-and-its-structure-ii-syntax-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Sabine Iatridou"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Syntax"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Syntax"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: "This course covers some of the basic ideas in the subfield syntax, within the framework often referred to as \"Generative Grammar\"."
+course_url: "https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2015/2da8eb4032528eb0e958de6c32951331_24-902f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

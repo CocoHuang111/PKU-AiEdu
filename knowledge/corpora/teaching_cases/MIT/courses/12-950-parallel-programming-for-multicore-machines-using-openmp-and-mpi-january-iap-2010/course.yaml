@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-12-950-january-iap-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.950"
+cross_listed_codes: []
+course_title: "Parallel Programming for Multicore Machines Using OpenMP and MPI"
+course_slug: "12-950-parallel-programming-for-multicore-machines-using-openmp-and-mpi-january-iap-2010"
+term: "January IAP"
+year: 2010
+as_taught_in: "January IAP 2010"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Constantinos Evangelinos"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces fundamentals of shared and distributed memory programming, teaches you how to code using openMP and MPI respectively, and provides hands-on experience of parallel computing geared towards numerical applications.
+course_url: "https://ocw.mit.edu/courses/12-950-parallel-programming-for-multicore-machines-using-openmp-and-mpi-january-iap-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/12-950-parallel-programming-for-multicore-machines-using-openmp-and-mpi-january-iap-2010/915021e454921b7e4798d22cf186dbb2_12-950iap10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

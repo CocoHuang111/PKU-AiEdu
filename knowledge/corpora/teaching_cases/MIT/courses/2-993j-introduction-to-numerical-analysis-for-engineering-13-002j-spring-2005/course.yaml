@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-2-993j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.993J"
+cross_listed_codes:
+  - "10.002J"
+course_title: "Introduction to Numerical Analysis for Engineering (13.002J)"
+course_slug: "2-993j-introduction-to-numerical-analysis-for-engineering-13-002j-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Henrik Schmidt"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Mathematics"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Programming Assignments with Examples"
+description: |
+  This course is offered to undergraduates and introduces students to the formulation, methodology, and techniques for numerical solution of engineering problems. Topics covered include: fundamental principles of digital computing and the implications for algorithm accuracy and stability, error propagation and stability, the solution of systems of linear equations, including direct and iterative techniques, roots of equations and systems of equations, numerical interpolation, differentiation and integration, fundamentals of finite-difference solutions to ordinary differential equations, and error and convergence analysis. The subject is taught the first half of the term. This subject was originally offered in Course 13 (Department of Ocean Engineering) as 13.002J. In 2005, ocean engineering became part of Course 2 (Department of Mechanical Engineering), and this subject was renumbered 2.993J.
+course_url: "https://ocw.mit.edu/courses/2-993j-introduction-to-numerical-analysis-for-engineering-13-002j-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/2-993j-introduction-to-numerical-analysis-for-engineering-13-002j-spring-2005/42c023fdcb96e8fb3e8ff7c9c8ca197f_2-993js05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

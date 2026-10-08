@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-3-034-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.034"
+cross_listed_codes: []
+course_title: "Organic & Biomaterials Chemistry"
+course_slug: "3-034-organic-biomaterials-chemistry-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Krystyn van Vliet"
+  - "Prof. Michael Rubner"
+  - "Prof. Angela M. Belcher"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Chemical Engineering"
+  - "Polymers"
+  - "Materials Science and Engineering"
+  - "Polymeric Materials"
+  - "Nanotechnology"
+  - "Science"
+  - "Chemistry"
+  - "Organic Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+      - name: "Chemical Engineering"
+        specialties:
+          - "Polymers"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Polymeric Materials"
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Organic Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers principles of materials chemistry common to organic materials ranging from biological polypeptides to engineered block copolymers. Topics include molecular structure, polymer synthesis reactions, protein-protein interactions, multifunctional organic materials including polymeric nanoreactors, conducting polymers and virus-mediated biomineralization. WARNING NOTICE The experiments described in these materials are potentially hazardous and require a high level of safety training, special facilities and equipment, and supervision by appropriate individuals. You bear the sole responsibility, liability, and risk for the implementation of such safety procedures and measures. MIT shall have no responsibility, liability, or risk for the content or implementation of any of the material presented. Legal Notice
+course_url: "https://ocw.mit.edu/courses/3-034-organic-biomaterials-chemistry-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/3-034-organic-biomaterials-chemistry-fall-2005/dac291f29467a1d776bbc8045c61119c_3-034f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

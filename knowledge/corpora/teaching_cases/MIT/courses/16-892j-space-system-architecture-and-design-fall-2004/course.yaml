@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-16-892j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.892J"
+cross_listed_codes:
+  - "ESD.353J"
+course_title: "Space System Architecture and Design"
+course_slug: "16-892j-space-system-architecture-and-design-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniel Hastings"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Systems Engineering"
+  - "Systems Design"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Space System Architecture and Design incorporates lectures, readings and discussion on topics in the architecting of space systems. The class reviews existing space system architectures and the classical methods of designing them. Sessions focus on multi-attribute utility theory as a new design paradigm for space systems, when combined with integrated concurrent engineering and efficient searches of large architectural tradespaces. Designing for flexibility and uncertainty is considered, as are policy and product development issues.
+course_url: "https://ocw.mit.edu/courses/16-892j-space-system-architecture-and-design-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/16-892j-space-system-architecture-and-design-fall-2004/5e8057f1968d9efcc7bf4fb0d8cfed53_16-892jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

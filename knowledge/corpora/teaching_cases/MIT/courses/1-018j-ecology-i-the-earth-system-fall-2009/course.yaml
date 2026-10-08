@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-1-018j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.018J"
+cross_listed_codes:
+  - "7.30J"
+course_title: "Ecology I: The Earth System"
+course_slug: "1-018j-ecology-i-the-earth-system-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Edward DeLong"
+  - "Prof. Penny Chisholm"
+subject_primary: "Biology"
+subject_secondary:
+  - "Ecology"
+  - "Earth Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Ecology"
+      - name: "Earth Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  We will cover fundamentals of ecology, considering Earth as an integrated dynamic system. Topics include coevolution of the biosphere, geosphere, atmosphere and oceans; photosynthesis and respiration; the hydrologic, carbon and nitrogen cycles. We will examine the flow of energy and materials through ecosystems; regulation of the distribution and abundance of organisms; structure and function of ecosystems, including evolution and natural selection; metabolic diversity; productivity; trophic dynamics; models of population growth, competition, mutualism and predation. This course is designated as Communication-Intensive; instruction and practice in oral and written communication provided. Biology is a recommended prerequisite.
+course_url: "https://ocw.mit.edu/courses/1-018j-ecology-i-the-earth-system-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/1-018j-ecology-i-the-earth-system-fall-2009/6fb954a330c3fe950f2305df362b755a_1-018jf09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

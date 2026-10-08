@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-22-68j-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.68J"
+cross_listed_codes:
+  - "2.64J"
+course_title: "Superconducting Magnets"
+course_slug: "22-68j-superconducting-magnets-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Joseph Minervini"
+  - "Res. Prof. Yukikazu Iwasa"
+subject_primary: "Physics"
+subject_secondary:
+  - "Condensed Matter Physics"
+  - "Electromagnetism"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Condensed Matter Physics"
+          - "Electromagnetism"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course focuses on one important engineering application of superconductors – the generation of large-scale and intense magnetic fields. It includes a review of electromagnetic theory; detailed treatment of magnet design and operational issues, including “usable” superconductors, field and stress analyses, magnet instabilities, ac losses and mechanical disturbances, quench and protection, experimental techniques, and cryogenics. The course also examines new high-temperature superconductors for magnets, as well as design and operational issues at high temperatures.
+course_url: "https://ocw.mit.edu/courses/22-68j-superconducting-magnets-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/22-68j-superconducting-magnets-spring-2003/a23f486d2b0b1148ace5f5c787fff897_22-68js03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

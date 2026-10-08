@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-11-501-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.501"
+cross_listed_codes: []
+course_title: "Introduction to Technology and Cities"
+course_slug: "11-501-introduction-to-technology-and-cities-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joseph Ferreira"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Graphics and Visualization"
+  - "Social Science"
+  - "Public Administration"
+  - "Science and Technology Policy"
+  - "Sociology"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+      - name: "Sociology"
+        specialties: []
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This seminar is an introduction to the usage and impacts of information and communication technologies (ICTs) on urban planning, the urban environment and communities. Students will explore how social relationships, our sense of community, the urban infrastructure, and planning practice have been affected by technological change. Literature reviews, guest speakers, and web surfing will provide examples and issues that are debated in class and homework exercises. We will examine metropolitan information infrastructures, urban modeling and visualization, e-government, collaborative planning, and cyber communities. Students will attend a regular Tuesday seminar and occasional seminars of invited speakers during lunchtime on Fridays or Mondays. During the past two decades, ICTs have become so pervasive and disruptive that their impact on urban planning and social relationships has begun to reach far beyond their immediate use as efficient bookkeeping and automation tools. This seminar will examine ICT impacts on our sense of community, urban planning practice, the meaning of ‘place’, and the nature of metropolitan governance. In each of the four areas, we will utilize readings, class discussion, guest lectures, and homework exercises to identify and critique key trends, relevant theories, and promising directions for research and professional practice.
+course_url: "https://ocw.mit.edu/courses/11-501-introduction-to-technology-and-cities-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/11-501-introduction-to-technology-and-cities-fall-2002/ab9621ac6e93e26a5b118021ca0834e3_11-501f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

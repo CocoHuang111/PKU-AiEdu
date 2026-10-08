@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-8-321-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.321"
+cross_listed_codes: []
+course_title: "Quantum Theory I"
+course_slug: "8-321-quantum-theory-i-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Senthil Todadri"
+subject_primary: "Physics"
+subject_secondary:
+  - "Quantum Mechanics"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This is the first semester of a two-semester graduate-level subject on quantum theory, stressing principles. Quantum theory explains the nature and behavior of matter and energy on the atomic and subatomic level. Topics include Fundamental Concepts, Quantum Dynamics, Composite Systems, Symmetries in Quantum Mechanics, and Approximation Methods.
+course_url: "https://ocw.mit.edu/courses/8-321-quantum-theory-i-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/8-321-quantum-theory-i-fall-2017/e9f2c428e97c73f5deb9746c34da7edc_8-321f17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

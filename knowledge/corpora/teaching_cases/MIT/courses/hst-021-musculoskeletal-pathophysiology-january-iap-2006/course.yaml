@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-021-january-iap-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.021"
+cross_listed_codes: []
+course_title: "Musculoskeletal Pathophysiology"
+course_slug: "hst-021-musculoskeletal-pathophysiology-january-iap-2006"
+term: "January IAP"
+year: 2006
+as_taught_in: "January IAP 2006"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Dwight R. Robinson"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomechanics"
+  - "Health and Medicine"
+  - "Anatomy and Physiology"
+  - "Pathology and Pathophysiology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomechanics"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+      - name: "Pathology and Pathophysiology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers the growth, development and structure of normal bone and joints, the biomechanics of bone connective tissues, and their response to stress, calcium and phosphate homeostasis. Additional topics include regulation by parathyroid hormone and vitamin D, the pathogenesis of metabolic bone diseases and diseases of connective tissues, joints and muscle with consideration of possible mechanisms and underlying metabolic derangements.
+course_url: "https://ocw.mit.edu/courses/hst-021-musculoskeletal-pathophysiology-january-iap-2006/"
+image_url: "https://ocw.mit.edu/courses/hst-021-musculoskeletal-pathophysiology-january-iap-2006/e5dc070bc8cd13517ab1e575f0f208a6_hst-021iap06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

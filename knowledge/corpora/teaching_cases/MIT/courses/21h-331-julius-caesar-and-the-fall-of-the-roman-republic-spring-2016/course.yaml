@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-331-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.331"
+cross_listed_codes: []
+course_title: "Julius Caesar and the Fall of the Roman Republic"
+course_slug: "21h-331-julius-caesar-and-the-fall-of-the-roman-republic-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. William Broadhead"
+subject_primary: "History"
+subject_secondary:
+  - "Ancient History"
+  - "European History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Ancient History"
+          - "European History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course explores the political, social, and economic factors commonly offered to explain the fall of the Roman Republic: growth of the territorial empire, increased intensity of aristocratic competition, transformation of the Italian economy, growth of the city of Rome and dependence of the urban plebs, changes in military recruitment and dependence of soldiers on their generals. There is an emphasis on the reading of ancient sources in translation, including Cicero, Sallust, Caesar, Augustus, Appian, Plutarch, and Suetonius.
+course_url: "https://ocw.mit.edu/courses/21h-331-julius-caesar-and-the-fall-of-the-roman-republic-spring-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/21h-331-julius-caesar-and-the-fall-of-the-roman-republic-spring-2016/fc1f054495c7d9b9ac9aa026742c9f88_21h-331s16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

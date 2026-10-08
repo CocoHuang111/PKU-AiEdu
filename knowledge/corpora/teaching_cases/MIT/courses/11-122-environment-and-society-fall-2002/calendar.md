@@ -1,0 +1,52 @@
+> 检索摘要：11.122 Environment and Society（Fall 2002，Undergraduate）的「Calendar」。页内标题：Calendar；Environment and Society；Case Studies；Responses。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/11-122-environment-and-society-fall-2002/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+Please note: Reading locations are noted below as: available as Books (B) at the COOP; in the Reader (R); or on the Web (W).
+
+### Environment and Society
+
+| Topics | Readings | Assignments |
+| --- | --- | --- |
+| Introduction to the Course | No Readings | Turn in bio |
+| State of the Environment | Brown, Lester, “Challenges of the New Century,” Chapter 1 in State of the World 2000, The Worldwatch Institute, New York, W. W. Norton, 2000, pp: 3-21. (B) <br> Bright, Chris, “Anticipating Environmental ‘Surprise’,” Chapter 2 in State of the World 2000, The Worldwatch Institute, New York, W. W. Norton, 2000, pp: 22-38. (B) <br> Worldwide Fund for Nature, Living Planet Report 2000. |  |
+| Industry and the Environment | Hawken, Paul, Amory Lovins, and L. Hunter Lovins, “The Next Industrial Revolution,” and “Waste Not,” <br> Natural Capitalism <br> , Boston, Little, Brown and Company, 1999, pp:1-21, pp: 48-61. (B) <br> “Redefining Progress,” <br> The Ecological Footprint. |  |
+| Technology and Democracy | Sclove, Richard, <br> Democracy and Technology <br> , Chapters 1 and 2, New York, The Guilford Press, 1995, pp.: 3-24. (R) <br> Mander, Jerry, “Technologies of Globalization,” in Mander and Goldsmith (eds.) <br> The Case Against the Global Economy, San Francisco <br> , Sierra Club Books, 1996, pp: 344-359. (R) | Calculate your Ecological Footprint before class |
+| Globalization | French, Hilary, “Coping with Ecological Globalization,” Chapter 10 in State of the World 2000, The Worldwatch Institute, New York, W. W. Norton, 2000, pp: 184-202. (B) <br> Chomsky, Noam, “The Contours of the World Order,” Year 501, Boston, South End Press, 1993, pp.: 33-64. (R) <br> Mobilization for Global Justice, September 30th Protest in D.C., <br> [http://www.september30.org/s30/](http://www.september30.org/s30/) <br> (W) |  |
+| Environmental Regulation | Kraft, Michael E., and Norman J. Vig, “Environmental Policy from the 1970s to 2000: An Overview,” in Vig and Kraft (eds.) <br> Environmental Policy – New Directions for the Twenty-First Century <br> , Washington, D.C., CQ Press, 2000, pp:1-31. (R) <br> Mazmanian, Daniel A., and Michael E. Kraft, “The Three Epochs of the Environmental Movement,” in Mazmanian and Kraft (eds.) <br> Toward Sustainable Communities – Transition and Transformations in environmental Policy <br> , Cambridge, MIT Press, 1999, pp; 3-41. (R) |  |
+| Pollution Regulation | Gottlieb, Robert and Maureen Smith, “The Pollution Control System: Themes and Frameworks,” <br> Reducing Toxics <br> , Washington, D.C., Island Press, 1995, pp:10-24. (R) <br> Fiorino, Daniel J., “Challenges,” <br> Making Environmental Policy <br> , Berkeley, UC Press, 1995, pp:1-21. (R) <br> Hammitt, J.K., “Data, Risk and Science, Foundations for Analysis” in M. Chertow and D. Esty (eds.) Thinking Ecologically, The Next Generation of Environmental Policy, New Haven, Yale University Press, 1997, pp.: 150-169. (R) |  |
+
+### Case Studies
+
+| Topics | Readings | Assignments |
+| --- | --- | --- |
+| Better Living Through Chemistry? | Thornton, Joe, “Organochlorines Around the World,” and “The Damage Done: Health Impacts in People and Wildlife,” in <br> Pandora’s Poison: Chlorine, Health, and a New Environmental Strategy <br> , Cambridge, MIT Press, 2000, pp:23-55, 116-154. |  |
+| Toxic Ignorance | Steingraber, Sandra, “The Social Production of Cancer: A Walk Upstream,” in Hofricter (ed.) <br> Reclaiming the Environmental Debate – The Politics of Health in a Toxic Culture <br> , Cambridge, MIT Press, 2000, pp:19-38. (R) <br> Roe, David and William Pease, “Toxic Ignorance,” <br> The Environmental Forum <br> , May/June 1998, pp.: 24-35. (R) <br> McGinn, Anne Platt, “Phasing Out Persistent Organic Pollutants,” Chapter 5 in State of the World 2000, The Worldwatch Institute, New York, W. W. Norton, 2000, pp: 77-100. (B) | Video: Trade Secrets or Rachel’s Daughters |
+| Biotech and Food | Rifkin, <br> The Biotech Century – Harnessing the Gene and Remaking the World <br> , New York, Penguin Putnam, 1998, pp: 1-36. (R) <br> Mann, Charles, “Biotech Goes Wild,” <br> Technology Review <br> , July/August, 1999. <br> Friends of the Earth, “Genetically Modified Food,” policy briefing, (W) |  |
+| Biotech and You | Bereano , Philip, “Don’t Take Liberties With Our Genes,”. <br> Walker, Casey, “An Interview with Rich Hayes,” <br> Wild Duck Review <br> , vol. V, no. 2, Summer, 1999, pp.: 19-25. (R) <br> Hayes, Richard, “The Threat of the New Human Techno-Eugenics: An Overview,” unpublished manuscript, August 1999, 14 pages. (R) |  |
+| Computer Production | Cook, Christopher D., and A. Clay Thompson, “Silicon Hell,” <br> The San Francisco Bay Guardian <br> , April 26, 2000. <br> Silicon Valley Toxics Coalition, “Right-to-know a little… Exposing double standards in global high-tech production.” <br> Goldberg, Carey, “Where Do Computers Go When They Die?” <br> The New York Times <br> , March 12, 1998. <br> Matthews, H. Scott, et. al., “Disposition and End-of-Life Options for Personal Computers,” <br> Green Design Initiative Technical Report #97-10 <br> , Carnegie Mellon University, July, 1997. |  |
+| E-Commerce and the Internet | Hendrickson, Chris, H. Scott Matthews and Luis Ochoa, “Environmental Implications of E-Commerce, the Internet and the New Economy,”. <br> Davis, Christopher. “CMU researchers say e-commerce could be environmentally friendly. Findings indicate delivery process needs to be tweaked.” <br> Bizjournal.com <br> , Dec. 8, 2000. <br> Leahy, Stephen, “E-commerce: friend or foe of the environment?” <br> Environmental News Network <br> , Monday, December 11, 2000. <br> Levitt, James, “The Interconnected Futures of the Internet and Conservation,” <br> White Paper for the Internet and Conservation Project <br> , Kennedy School of Government, Harvard University. | Electronics Problem Set Due |
+| Cities and the Environment | McMahon, Edward, “Stopping Sprawl by Growing Smarter,” 1997. <br> Hawken, Paul, Amory Lovins, and L. Hunter Lovins, “Human Capitalism,” <br> Natural Capitalism <br> , Boston, Little, Brown and Company, 1999, pp:285-308. (B) |  |
+| Equity and Environment | Faber, Danny, “Unequal Exposure to Ecological Hazards," <br> Environmental Injustices in the Commonwealth of Massachusetts Report <br> , Northeastern University, January 16th, 2001, pp: i-viii and 38-41. <br> Motavalli, Jim, “Toxic Targets – Polluters that Dump on Communities of Color are Finally Being Brought to Justice,” <br> E – The Environmental Magazine <br> , July-August, 12 pages, 1998. | Video: A Civil Action |
+| The Return of Sweatshops | O’Rourke, Dara, “Sweatshops 101,” <br> Dollars and Sense <br> , September, 2001 (W) <br> Bonacich, Edna, and Richard Appelbaum, “The Return of the Sweatshop,” <br> Introduction to Behind The Label: Inequality in the Los Angeles Apparel Industry <br> , Berkeley, University of California Press, 2000, pp:1-25. (R) <br> Maquila Solidarity Network, “How Our Clothes Are Made,”. |  |
+| Sweatshops and You | Bonacich, Edna, and Richard Appelbaum, “Workers,” Chapter 6 in <br> Behind The Label: Inequality in the Los Angeles Apparel Industry <br> , Berkeley: University of California Press, 2000, pp:164-199. (R) <br> Press, Eyal, “Sweatshopping,” in Ross (ed.) <br> No Sweat <br> , New York, Verso, 1997, pp: 221-226. (R) | Sweatshop Survey Due |
+
+### Responses
+
+| Topics | Readings | Assignments |
+| --- | --- | --- |
+| Rethinking Regulation | National Academy of Public Administration, Environment.gov – <br> Transforming Environmental Protection for the 21st Century <br> , Washington, DC, NAPA, November 2000, pp: 17-29, 183-194. <br> Rondinelli, Dennis, “Rethinking US Environmental Protection Policy,” Nov. 2000, pp: 5-7, 24-33. |  |
+| Information-Based Regulation | O’Meara, Molly, “Harnessing Information Technologies for the Environment,” Chapter 7 in <br> State of the World 2000 <br> , The Worldwatch Institute, New York, W. W. Norton, 2000, pp: 121-141. (B) <br> Fung, Archon, and Dara O’Rourke, “Reinventing Environmental Regulation from the Grassroots Up: Explaining and Expanding the Success of the Toxics Release Inventory,” <br> Environmental Management <br> , 2000, vol. 25, no. 2, pp.:115-127. (R) <br> Visit <br> [http://www.scorecard.org](https://web.archive.org/web/20021202080648/http://www.scorecard.org/) <br> . (Archived version from Wayback Machine) | Evaluate your home zipcode in Scorecard |
+| Corporate Strategies | Hawken, Paul, Amory Lovins, and L. Hunter Lovins, “Making the World,” “Tunneling Through the Cost Barrier,” and “Muda, Service, and Flow,” <br> Natural Capitalism <br> , Boston, Little, Brown and Company, pp:62-81 and 111-143, 1999. (B) |  |
+| Corporate Strategies | DeSimone, Livio, and Frank Popoff, “Eco-Efficiency and Sustainable Development,” in <br> Eco-Efficiency – The Business Link to Sustainable Development <br> , Cambridge, MIT Press, pp:1-22, 1997. (R) <br> Allenby, Braden R., <br> Industrial Ecology – Policy Framework and Implementation <br> , Upper Saddle River, New Jersey, Prentice Hall, 1999, pp:40-53. (R) |  |
+| Community Strategies | Darnovsky, Marcy, “Green Living in a Toxic World: The Pitfalls and Promises of Everyday Environmentalism,” in Hofricter (ed.) <br> Reclaiming the Environmental Debate – The Politics of Health in a Toxic Culture <br> , Cambridge, MIT Press, 2000, pp:219-237. (R) <br> Morris, David, “Communities – Building Authority, Responsibility, and Capacity,” in Mander and Goldsmith (eds.) The Case Against the Global Economy, San Francisco, Sierra Club Books, 1996, pp: 434-445. (R) |  |
+| Community strategies | O’Brien, Mary, <br> Making Better Environmental Decisions – An Alternative to Risk Assessment <br> , Cambridge, MIT Press, 2000, pp: 3-15. (R) <br> Hawken, Paul, Amory Lovins, and L. Hunter Lovins, “Once Upon a Planet,” Natural Capitalism, Boston, Little, Brown and Company, 1999, pp:309-322. (B) |  |
+| Class Presentations | No Readings | Presentations |
+| Class Presentations | No Readings | Presentations |
+| Summary and Conclusions | No Readings | Term Projects Due |

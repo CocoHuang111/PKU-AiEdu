@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-11-006-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.006"
+cross_listed_codes: []
+course_title: "Poverty and Economic Security"
+course_slug: "11-006-poverty-and-economic-security-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Amy Glasmeier"
+subject_primary: "Sociology"
+subject_secondary:
+  - "Social Justice"
+  - "Urban Studies"
+  - "Society"
+  - "Global Poverty"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+      - name: "Urban Studies"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the evolution of poverty and economic security in the United States, within a global context. It examines the impact of recent economic restructuring and globalization, and reviews the current debate about the fate of the middle class, sources of increasing inequality, and approaches to advancing economic opportunity and security. In this class, students will study the topic of poverty and economic security through the lens of the lived experience of Americans: individuals, families, and households; exploring the history, geography, and forces shaping the likelihood of being poor in America.
+course_url: "https://ocw.mit.edu/courses/11-006-poverty-and-economic-security-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/11-006-poverty-and-economic-security-fall-2016/70c3b8778ab25288be164e63169c1301_11-006f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

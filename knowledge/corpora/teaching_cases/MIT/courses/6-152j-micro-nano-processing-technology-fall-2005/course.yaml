@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-6-152j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.152J"
+cross_listed_codes:
+  - "3.155J"
+course_title: "Micro/Nano Processing Technology"
+course_slug: "6-152j-micro-nano-processing-technology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Martin Schmidt"
+  - "Susan Ruff"
+  - "Dr. Robert O’Handley"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Microtechnology"
+  - "Nanotechnology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Microtechnology"
+      - name: "Nanotechnology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course introduces the theory and technology of micro/nano fabrication. Lectures and laboratory sessions focus on basic processing techniques such as diffusion, oxidation, photolithography, chemical vapor deposition, and more. Through team lab assignments, students are expected to gain an understanding of these processing techniques, and how they are applied in concert to device fabrication. Students enrolled in this course have a unique opportunity to fashion and test micro/nano-devices, using modern techniques and technology.
+course_url: "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/6-152j-micro-nano-processing-technology-fall-2005/29a9543f74f2a77aa606d3f7898a4d08_6-152jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

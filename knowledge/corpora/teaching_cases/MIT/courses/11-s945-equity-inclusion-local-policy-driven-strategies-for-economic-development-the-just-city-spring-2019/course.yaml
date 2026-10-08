@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-11-s945-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.S945"
+cross_listed_codes: []
+course_title: "Equity & Inclusion: Local Policy-Driven Strategies for Economic Development & the Just City"
+course_slug: "11-s945-equity-inclusion-local-policy-driven-strategies-for-economic-development-the-just-city-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Karilyn Crockett"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+  - "Social Justice"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+          - "Social Justice"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course explores equity as a key value, measure, and framework for operationalizing local economic development plans and policies. It examines the implementation of local policy initiatives for equity in U.S. cities and investigates a wide range of contemporary theory and practice in the field of urban economic development, from contracting and municipal procurement to arts and culture-driven approaches.
+course_url: "https://ocw.mit.edu/courses/11-s945-equity-inclusion-local-policy-driven-strategies-for-economic-development-the-just-city-spring-2019/"
+image_url: |
+  https://ocw.mit.edu/courses/11-s945-equity-inclusion-local-policy-driven-strategies-for-economic-development-the-just-city-spring-2019/803b0a61363ba1fe348464e4ae5f2ef7_11-S945s19.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-11-360-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.360"
+cross_listed_codes: []
+course_title: "Community Growth and Land Use Planning"
+course_slug: "11-360-community-growth-and-land-use-planning-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Eran Ben-Joseph"
+  - "Prof. Terry Szold"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course combines a seminar format with fieldwork to examine strategies of planning and control for growth and land use, chiefly at the municipal level. Specific topics include growth and its local consequences; land use planning approaches; and implementation tools including innovative zoning and regulatory techniques, physical design, and natural systems integration. Projects are arranged with small teams serving municipal clients.
+course_url: "https://ocw.mit.edu/courses/11-360-community-growth-and-land-use-planning-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/11-360-community-growth-and-land-use-planning-fall-2005/26ea51673e49273bab2b19286cc23499_11-360f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

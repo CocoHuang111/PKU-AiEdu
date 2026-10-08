@@ -1,0 +1,40 @@
+> 检索摘要：8.334 Statistical Mechanics II: Statistical Physics of Fields（Spring 2014，Graduate）的「Lecture Notes」。页内标题：Lecture Notes。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/pages/lecture-notes/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Lecture Notes
+
+The lecture notes are from an earlier version of this course, but still correspond to the topics covered in this version.
+
+| SES # | TOPICS | LECTURE NOTES |
+| --- | --- | --- |
+| L1 | Collective Behavior, from Particles to Fields <br> Introduction, Phonons and Elasticity | [Lecture Note 1 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec1/) |
+| L2 | Collective Behavior, from Particles to Fields (cont.) <br> Phase Transitions, Critical Behavior <br> The Landau-Ginzburg Approach <br> Introduction, Saddle Point Approximation, and Mean-field Theory | [Lecture Note 2 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec2/) |
+| L3 | The Landau-Ginzburg Approach (cont.) <br> Spontaneous Symmetry Breaking and Goldstone Modes | [Lecture Note 3 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec3/) |
+| L4 | The Landau-Ginzburg Approach (cont.) <br> Scattering and Fluctuations, Correlation Functions and Susceptibilities, Comparison to Experiments | [Lecture Note 4 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec4/) |
+| L5 | The Landau-Ginzburg Approach (cont.) <br> Gaussian Integrals, Fluctuation Corrections to the Saddle Point, The Ginzburg Criterion | [Lecture Note 5 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec5/) |
+| L6 | The Scaling Hypothesis <br> The Homogeneity Assumption, Divergence of the Correlation Length, Critical Correlation Functions and Self-similarity | [Lecture Note 6 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec6/) |
+| L7 | The Scaling Hypothesis (cont.) <br> The Renormalization Group (Conceptual), The Renormalization Group (Formal) | [Lecture Note 7 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec7/) |
+| L8 | The Scaling Hypothesis (cont.) <br> The Gaussian Model (Direct Solution), The Gaussian Model (Renormalization Group) | [Lecture Note 8 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec8/) |
+| L9 | Perturbative Renormalization Group <br> Expectation Values in the Gaussian Model, Expectation Values in Perturbation Theory, Diagrammatic Representation of Perturbation Theory, Susceptibility | [Lecture Note 9 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec9/) |
+| L10 | Perturbative Renormalization Group (cont.) <br> Perturbative RG (First Order) | [Lecture Note 10 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec10/) |
+| L11 | Perturbative Renormalization Group (cont.) <br> Perturbative RG (Second Order), The ε-expansion | [Lecture Note 11 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec11/) |
+| L12 | Perturbative Renormalization Group (cont.) <br> Irrelevance of Other Interactions, Comments on the ε-expansion | [Lecture Note 12 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec12/) |
+| L13 | Position Space Renormalization Group <br> Lattice Models, Exact Treatment in d=1 | [Lecture Note 13 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec13/) |
+| L14 | Position Space Renormalization Group (cont.) <br> The Niemeijer-van Leeuwen Cumulant Approximation, The Migdal-Kadanoff Bond Moving Approximation | [Lecture Note 14 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec14/) |
+| L15 | Series Expansions <br> Low-temperature Expansions, High-temperature Expansions, Exact Solution of the One Dimensional Ising Model | [Lecture Note 15 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec15/) |
+| L16 | Series Expansions (cont.) <br> Self-duality in the Two Dimensional Ising Model, Dual of the Three Dimensional Ising Model | [Lecture Note 16 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec16/) |
+| L17 | Series Expansions (cont.) <br> Summing Over Phantom Loops | [Lecture Note 17 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec17/) |
+| L18 | Series Expansions (cont.) <br> Exact Free Energy of the Square Lattice Ising Model | [Lecture Note 18 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec18/) |
+| L19 | Series Expansions (cont.) <br> Critical Behavior of the Two Dimensional Ising Model | [Lecture Note 19 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec19/) |
+| L20 | Continuous Spins at Low Temperatures <br> The Non-linear σ-model | [Lecture Note 20 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec20/) |
+| L21 | Continuous Spins at Low Temperatures (cont.) <br> Topological Defects in the XY Model | [Lecture Note 21 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec21/) |
+| L22 | Continuous Spins at Low Temperatures (cont.) <br> Renormalization Group for the Coulomb Gas | [Lecture Note 22 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec22/) |
+| L23 | Continuous Spins at Low Temperatures (cont.) <br> Two Dimensional Solids, Two Dimensional Melting | [Lecture Note 23 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec23/) |
+| L24 | Dissipative Dynamics <br> Brownian Motion of a Particle | [Lecture Note 24 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec24/) |
+| L25 | Continuous Spins at Low Temperatures (cont.) <br> Equilibrium Dynamics of a Field, Dynamics of a Conserved Field | [Lecture Note 25 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec25/) |
+| L26 | Continuous Spins at Low Temperatures (cont.) <br> Generic Scale Invariance in Equilibrium Systems, Non-equilibrium Dynamics of Open Systems, Dynamics of a Growing Surface | [Lecture Note 26 (PDF)](https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/resources/mit8_334s14_lec26/) |

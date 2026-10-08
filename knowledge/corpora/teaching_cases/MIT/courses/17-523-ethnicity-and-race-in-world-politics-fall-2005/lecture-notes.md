@@ -1,0 +1,28 @@
+> 检索摘要：17.523 Ethnicity and Race in World Politics（Fall 2005，Undergraduate）的「Lecture Notes」。页内标题：Lecture Notes。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/pages/lecture-notes/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Lecture Notes
+
+The following lecture notes appear courtesy of an OCW note taker. The notes do not represent a literal transcription of the lecture but rather the broad ideas presented in class. The outlines are documents the professor used in lecture to guide the class in discussion.
+
+| Lec # | Topics | LECTURE OUTLINES | LECTURE NOTES |
+| --- | --- | --- | --- |
+| 1 | Introduction: Objectives and Requirements of the Course |  |  |
+| 2-3 | Rethinking Ethnicity and Race | Lec #2 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/o_l02/) <br> ) <br> Lec #3 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/o_l03/) <br> ) |  |
+| 4 | Ethnic and Racial Identities in Comparative Perspective | ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/o_l04/) <br> ) | ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_04/) <br> ) |
+| 5-7 | What are the Political Dimensions of Ethnicity and Race? | Lec #5 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/o_l05/) <br> ) | Lec #5 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_05/) <br> ) <br> Lec #6 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_06/) <br> ) <br> Lec #7 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_07/) <br> ) |
+| 8 | A Framework for Analysis of Ethnopolitical Mobilization |  | ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_08/) <br> ) |
+| 9-10 | The Sources of Discontent: The Intersections of Race and Class | Lec #9 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/o_l09/) <br> ) | Lec #9 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_09/) <br> ) <br> Lec #10 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_10/) <br> ) |
+| 11-12 | Government Responses to Ethnopolitical Demands and Group Disadvantage | Lec #11 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/o_l11/) <br> ) | Lec #11 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_11/) <br> ) |
+| 13 | International Dimensions of National Ethnopolitical Conflicts | ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/o_l13/) <br> ) | ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_13/) <br> ) |
+| 14-15 | The Emergence of International Human Rights | Lec #14 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/o_l4/) <br> ) | Lec #14 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_14/) <br> ) <br> Lec #15 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_15/) <br> ) |
+| 16-18 | Are Human Rights Universal?: Women’s Rights versus Cultural Practices | Lec #16 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/o_l16/) <br> ) | Lec #16 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_16/) <br> ) <br> Lec #17 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_17/) <br> ) <br> Lec #18 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_18/) <br> ) |
+| 19 | Human Rights and Foreign Policy: Should Outsiders Assist the Ethnic/Racial Groups of Another Country? |  | ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_19/) <br> ) |
+| 20-23 | International Humanitarian Intervention: Bosnia vs. Darfur, Sudan and Rwanda |  | Lec #20 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_20/) <br> ) <br> Lec #21 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_21/) <br> ) <br> Lec #22 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_22/) <br> ) <br> Lec #23 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_23/) <br> ) |
+| 24 | Ethnic Minority Rights, Human Rights, and Sovereignty |  | ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_24/) <br> ) |
+| 25-26 | Review Class - Lessons Learned and Looking Forward |  | Lec #25 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_25/) <br> ) <br> Lec #26 ( <br> [PDF](https://ocw.mit.edu/courses/17-523-ethnicity-and-race-in-world-politics-fall-2005/resources/l_26/) <br> ) |

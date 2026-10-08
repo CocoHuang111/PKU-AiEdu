@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-9-s915-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.S915"
+cross_listed_codes: []
+course_title: "Developmental Cognitive Neuroscience"
+course_slug: "9-s915-developmental-cognitive-neuroscience-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Susan Carey"
+  - "Prof. Rebecca Saxe"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course uses neuroscience methods to study the cognitive development of human infants and children. Case studies draw from research on face recognition, language, executive function, representations of objects, number and theory of mind.
+course_url: "https://ocw.mit.edu/courses/9-s915-developmental-cognitive-neuroscience-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/9-s915-developmental-cognitive-neuroscience-spring-2012/8c0fe3ffcd8d02c23efc929cf76303f3_9-s915s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

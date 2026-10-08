@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-11-362-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.362"
+cross_listed_codes: []
+course_title: "Environmental Management Practicum: Brownfield Redevelopment"
+course_slug: "11-362-environmental-management-practicum-brownfield-redevelopment-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "James Hamilton"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Fine Arts"
+  - "Architecture"
+  - "Environmental Design"
+  - "Social Science"
+  - "Public Administration"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties: []
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  Through site-specific client-based work, this course will allow students to materially contribute to redevelopment decision-making regarding a former inner-city industrial site. The course will focus on generating and analyzing pragmatic redevelopment scenarios given the issues of brownfields and environmental contamination, community preferences, regulatory constraints and economic realities. The course is designed along two parallel and mutually reinforcing educational tracks: Field learning and classroom reflection, with ample time built into the schedule for both. As the course will focus on an actual site, there will be a sizeable portion of student time spent on location and in the surrounding community.
+course_url: "https://ocw.mit.edu/courses/11-362-environmental-management-practicum-brownfield-redevelopment-fall-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/11-362-environmental-management-practicum-brownfield-redevelopment-fall-2006/4de10935d2409a9446792c0ae48732ed_11-362f06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

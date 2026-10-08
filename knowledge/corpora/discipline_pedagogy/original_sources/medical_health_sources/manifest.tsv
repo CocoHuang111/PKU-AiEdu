@@ -1,0 +1,23 @@
+id	category	organization	title	source_url	local_file	format	use
+01	共通	AAMC	Competency-Based Medical Education	https://www.aamc.org/about-us/medical-education/cbme	01-aamc-cbme.html	HTML	胜任力本位医学教育
+02	共通	WHO	Transforming and Scaling Up Health Professionals' Education and Training	https://www.who.int/publications/i/item/transforming-and-scaling-up-health-professionals%E2%80%99-education-and-training	02-who-transforming-health-professions-education.pdf	PDF	卫生专业教育转型
+03	共通	WHO	Global Competency and Outcomes Framework for Universal Health Coverage	https://www.who.int/publications/i/item/9789240034662	03-who-uhc-competency-framework.html	HTML	跨专业共同能力
+04	共通	WFME	Basic Medical Education Global Standards 2020	https://wfme.org/standards/bme/	04-wfme-bme-standards-2020.pdf	PDF	基本医学教育质量标准
+05	共通	IPEC	Core Competencies for Interprofessional Collaborative Practice Version 3	https://www.ipecollaborative.org/core-competencies	05-ipec-core-competencies-2023.pdf	PDF	跨专业协作
+06	护理	INACSL	Healthcare Simulation Standards of Best Practice	https://www.inacsl.org/healthcare-simulation-standards	06-inacsl-simulation-standards.html	HTML	模拟设计与复盘
+07	药学	AACP	Educational Outcomes and Entrustable Professional Activities	https://www.aacp.org/resource/educational-outcomes-and-epas	07-aacp-pharmacy-outcomes-epas.html	HTML	药学教育结果与专业活动
+08	公共卫生	CEPH	Accreditation Criteria Schools of Public Health and Public Health Programs	https://ceph.org/about/org-info/criteria-procedures-documents/criteria-procedures/	08-ceph-2024-criteria.pdf	PDF	公共卫生实践与综合成果
+09	共通	教育部	关于加快医学教育创新发展的指导意见	https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/202009/t20200923_490164.html	09-moe-medical-education-innovation-2020.html	HTML	国内医学教育改革
+10	共通	教育部等	关于加强医教协同实施卓越医生教育培养计划2.0的意见	https://www.moe.gov.cn/srcsite/A08/moe_740/s7952/201810/t20181017_351901.html	10-moe-excellent-doctor-2-2018.html	HTML	胜任力与医教协同
+11	共通	教育部、卫生部	本科医学教育标准—临床医学专业（试行）	https://www.moe.gov.cn/s78/A08/gjs_left/moe_740/s7955/201001/t20100129_110767.html	11-moe-clinical-medicine-standard-2008.html	HTML	国内医学教育标准背景
+12	方法	Academic Medicine	Simulation-Based Medical Education with Deliberate Practice: Meta-analytic Review	https://pmc.ncbi.nlm.nih.gov/articles/PMC3102783/	12-simulation-deliberate-practice-meta-analysis.html	HTML	模拟与刻意练习证据
+13	方法	BMC Medical Education	Team-Based Learning in Health Professions Education: Umbrella Review	https://pmc.ncbi.nlm.nih.gov/articles/PMC11468256/	13-team-based-learning-umbrella-review.html	HTML	TBL证据边界
+14	护理	QSEN	QSEN Competencies	https://www.qsen.org/competencies	14-qsen-nursing-competencies.html	HTML	护理六项核心能力
+16	基础医学	北京大学基础医学院	学院概况与院长致辞	https://sbms.bjmu.edu.cn/xygk/yczc/index.htm	16-pku-basic-medical-sciences.html	HTML	学院定位
+17	药学	北京大学药学院	人才培养	https://sps.bjmu.edu.cn/rcpy/index.htm	17-pku-pharmaceutical-sciences.html	HTML	学院培养定位
+18	公共卫生	北京大学公共卫生学院	学院简介	https://sph.pku.edu.cn/info/1012/1039.htm	18-pku-public-health.html	HTML	学院定位
+19	护理	北京大学护理学院	护理学专业介绍	https://nursing.bjmu.edu.cn/jyjx/bksjy/zyjs/d5f361561a2e46539a93f96df617d606.htm	19-pku-nursing.html	HTML	学院培养定位
+20	医学人文	北京大学医学人文学院	学院介绍	https://shh.bjmu.edu.cn/xyjj/xyjs/	20-pku-medical-humanities.html	HTML	学院定位
+21	医学继续教育	北京大学医学继续教育学院	学院简介	https://scme.bjmu.edu.cn/gyxy/xyjj/index.htm	21-pku-continuing-medical-education.html	HTML	学院定位
+22	医学人文	AAMC	Arts and Humanities in Health Professions Education	https://communities.aamc.org/resources1/resource-bundles/arts-and-humanities-in-health-professions	22-aamc-arts-humanities-health-professions.html	HTML	医学人文课程资源
+25	医学继续教育	WFME	Continuing Professional Development of Medical Doctors: Global Standards	https://wfme.org/standards/cpd/	25-wfme-cpd-standards.html	HTML	继续职业发展标准

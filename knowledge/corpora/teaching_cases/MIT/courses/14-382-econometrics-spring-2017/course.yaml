@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-14-382-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.382"
+cross_listed_codes: []
+course_title: "Econometrics"
+course_slug: "14-382-econometrics-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Victor Chernozhukov"
+subject_primary: "Economics"
+subject_secondary:
+  - "Econometrics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Econometrics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The course will cover several key models as well as identification and estimation methods used in modern econometrics. We shall being with exploring some leading models of econometrics, then seeing structures, then providing methods of identification, estimation, and inference. You will get lots of hands-on experience with using the methods on real data sets.
+course_url: "https://ocw.mit.edu/courses/14-382-econometrics-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/14-382-econometrics-spring-2017/a555d61b6f6aa37ec7d121ac246e9286_14-382s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

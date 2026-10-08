@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-11-471-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.471"
+cross_listed_codes: []
+course_title: "Targeting the Poor: Local Economic Development in Developing Countries"
+course_slug: "11-471-targeting-the-poor-local-economic-development-in-developing-countries-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Judith Tendler"
+  - "Karin Brandt"
+subject_primary: "Economics"
+subject_secondary:
+  - "Developmental Economics"
+  - "Sociology"
+  - "Community Development"
+  - "Social Justice"
+  - "Urban Studies"
+  - "Regional Planning"
+  - "Society"
+  - "Global Poverty"
+  - "The Developing World"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+          - "Social Justice"
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This course treats public-sector policies, programs, and projects that attempt to increase employment through development-promoting measures in the economic realm, through support and regulation. It discusses the types of initiatives, tasks, and environments that are most conducive to equitable outcomes, and emphasizes throughout the understandings gained about why certain initiatives work and others don’t.
+course_url: "https://ocw.mit.edu/courses/11-471-targeting-the-poor-local-economic-development-in-developing-countries-spring-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/11-471-targeting-the-poor-local-economic-development-in-developing-countries-spring-2010/1cf61d30a11434c9b61b1cac2d7f5c2d_11-471s10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-11-s940-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.S940"
+cross_listed_codes: []
+course_title: "Development, Planning, and Implementation: The Dialectic of Theory and Practice"
+course_slug: "11-s940-development-planning-and-implementation-the-dialectic-of-theory-and-practice-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Bishwapriya Sanyal"
+  - "Cauam Ferreira Cardoso"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Regional Planning"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties: []
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This is an advanced seminar that will analyze the effectiveness of development and planning theories from the perspective of practitioners who implement projects and policies based on such theories. The ultimate goal is to create new planning sensibilities, which theorize from practice, not the other way around.
+course_url: "https://ocw.mit.edu/courses/11-s940-development-planning-and-implementation-the-dialectic-of-theory-and-practice-fall-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/11-s940-development-planning-and-implementation-the-dialectic-of-theory-and-practice-fall-2015/92d5f243969cb308a762a177e4e0e502_11-s940f15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

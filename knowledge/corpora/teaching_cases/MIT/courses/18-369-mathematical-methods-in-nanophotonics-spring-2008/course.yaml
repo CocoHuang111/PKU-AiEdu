@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-18-369-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.369"
+cross_listed_codes: []
+course_title: "Mathematical Methods in Nanophotonics"
+course_slug: "18-369-mathematical-methods-in-nanophotonics-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Steven G. Johnson"
+subject_primary: "Nanotechnology"
+subject_secondary:
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Linear Algebra"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  Find out what solid-state physics has brought to Electromagnetism in the last 20 years. This course surveys the physics and mathematics of nanophotonics—electromagnetic waves in media structured on the scale of the wavelength. Topics include computational methods combined with high-level algebraic techniques borrowed from solid-state quantum mechanics: linear algebra and eigensystems, group theory, Bloch’s theorem and conservation laws, perturbation methods, and coupled-mode theories, to understand surprising optical phenomena from band gaps to slow light to nonlinear filters. Note: An earlier version of this course was published on OCW as 18.325 Topics in Applied Mathematics: Mathematical Methods in Nanophotonics, Fall 2005.
+course_url: "https://ocw.mit.edu/courses/18-369-mathematical-methods-in-nanophotonics-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/18-369-mathematical-methods-in-nanophotonics-spring-2008/4eb8ee24f1c9f1c05b5614738e706921_18-369s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

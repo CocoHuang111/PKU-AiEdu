@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-17-955-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.955"
+cross_listed_codes: []
+course_title: "Civil Society, Social Capital, and the State in Comparative Perspective"
+course_slug: "17-955-civil-society-social-capital-and-the-state-in-comparative-perspective-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lily L. Tsai"
+subject_primary: "Political Science"
+subject_secondary:
+  - "Sociology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  In recent years both scholars and policymakers have expressed a remarkable amount of interest in the concepts of social capital and civil society. A growing body of research suggests that the social networks, community norms, and associational activities signified by these concepts can have important effects on social welfare, political stability, economic development, and governmental performance. This discussion based course examines the roles played by these networks, norms, and organizations in outcomes ranging from local public goods provision and the performance of democracies to ethnic conflict and funding for terrorism.
+course_url: "https://ocw.mit.edu/courses/17-955-civil-society-social-capital-and-the-state-in-comparative-perspective-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/17-955-civil-society-social-capital-and-the-state-in-comparative-perspective-fall-2004/0d308946fdd2489073671e0f9ced9c1a_17-955f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

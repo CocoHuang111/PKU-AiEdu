@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-7-60-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.60"
+cross_listed_codes: []
+course_title: "Cell Biology: Structure and Functions of the Nucleus"
+course_slug: "7-60-cell-biology-structure-and-functions-of-the-nucleus-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Phillip Sharp"
+  - "Prof. Richard Young"
+subject_primary: "Biology"
+subject_secondary:
+  - "Cell Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The goal of this course is to teach both the fundamentals of nuclear cell biology as well as the methodological and experimental approaches upon which they are based. Lectures and class discussions will cover the background and fundamental findings in a particular area of nuclear cell biology. The assigned readings will provide concrete examples of the experimental approaches and logic used to establish these findings. Some examples of topics include genome and systems biology, transcription, and gene expression.
+course_url: "https://ocw.mit.edu/courses/7-60-cell-biology-structure-and-functions-of-the-nucleus-spring-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/7-60-cell-biology-structure-and-functions-of-the-nucleus-spring-2010/f51354139555da14896829ccf365b3eb_7-60s10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

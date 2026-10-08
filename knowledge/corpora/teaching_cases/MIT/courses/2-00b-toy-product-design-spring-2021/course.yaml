@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-2-00b-spring-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.00B"
+cross_listed_codes: []
+course_title: "Toy Product Design"
+course_slug: "2-00b-toy-product-design-spring-2021"
+term: "Spring"
+year: 2021
+as_taught_in: "Spring 2021"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Wallace"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Videos"
+description: |
+  Toy Product Design is an introduction to the product design process with a focus on designing for play and entertainment. It is a project-centric class offered in the Spring semester. Students work in small teams of 5–6 members to design and prototype new toys. Students will be introduced to various design topics, including: brainstorming; estimation; sketching; graphic design; drawing and marker rendering; sketch modeling; concept development; design aesthetics; prototyping; and written, visual, and oral communication.
+course_url: "https://ocw.mit.edu/courses/2-00b-toy-product-design-spring-2021/"
+image_url: "https://ocw.mit.edu/courses/2-00b-toy-product-design-spring-2021/0b041769992e2841d2d316087eedb2cb_2-00bs21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

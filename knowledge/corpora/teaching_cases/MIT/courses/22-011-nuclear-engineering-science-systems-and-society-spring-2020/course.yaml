@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-22-011-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.011"
+cross_listed_codes: []
+course_title: "Nuclear Engineering: Science, Systems and Society"
+course_slug: "22-011-nuclear-engineering-science-systems-and-society-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Marina Dang"
+  - "Prof. Michael Short"
+  - "Prof. Anne E. White"
+subject_primary: "Climate"
+subject_secondary:
+  - "Hydrogen and Alternatives"
+  - "Nuclear Energy"
+  - "Technology"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+      - name: "Hydrogen and Alternatives"
+        specialties: []
+      - name: "Nuclear Energy"
+        specialties: []
+      - name: "Technology"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Podcasts"
+description: |
+  In this exploratory seminar, first-year undergraduate students learn the basic physics of nuclear energy and radiation, and learn to communicate their knowledge and perspective by writing a traditional Op-Ed piece. The technical content emphasizes the unique attributes and challenges of nuclear energy as a low-carbon solution as well as the peaceful applications of ionizing radiation to help humankind. The open-ended writing project combines personal creativity and technical knowledge to share important messages about science. The course employs blended learning, as students use the online course 22.011x , freely available on the MIT Open Learning Library , to learn the technical content, and meet together in person for the communication component, developing and polishing their Op-Eds.
+course_url: "https://ocw.mit.edu/courses/22-011-nuclear-engineering-science-systems-and-society-spring-2020/"
+image_url: |
+  https://ocw.mit.edu/courses/22-011-nuclear-engineering-science-systems-and-society-spring-2020/1ef47499189cef79995e0dfa7138fb35_22-011s20.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

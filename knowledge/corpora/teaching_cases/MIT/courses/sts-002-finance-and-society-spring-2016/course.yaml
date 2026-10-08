@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-002-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.002"
+cross_listed_codes: []
+course_title: "Finance and Society"
+course_slug: "sts-002-finance-and-society-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. William Deringer"
+subject_primary: "Finance"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "History of Science and Technology"
+  - "World History"
+  - "Social Science"
+  - "Economics"
+  - "Society"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "World History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+  - name: "Society"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course provides students with a broad historical and social-scientific introduction to a central aspect of modern economic life: Finance. By drawing upon a variety of disciplinary perspectives from the humanities and social sciences, the course offers a multi-dimentional picture of finance, not only as an economic phenomenon, but as a political, cultural, intellectual, material, and technological one. The course offers an introduction to foundational financial concepts and technologies, and will help students understand finance as a complex and multifaceted phenomenon. This course also provides students with the opportunity to improve skills in written communication, and to learn tools for historical analysis and textual interpretation.
+course_url: "https://ocw.mit.edu/courses/sts-002-finance-and-society-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/sts-002-finance-and-society-spring-2016/8d7ef90460c5050b860ee1f1039555c6_sts-002s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

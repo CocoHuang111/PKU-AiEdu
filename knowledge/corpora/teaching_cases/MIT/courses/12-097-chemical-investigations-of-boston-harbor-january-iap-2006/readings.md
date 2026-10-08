@@ -1,0 +1,11 @@
+> 检索摘要：12.097 Chemical Investigations of Boston Harbor（January IAP 2006，Undergraduate）的「Readings」。页内标题：Readings。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/12-097-chemical-investigations-of-boston-harbor-january-iap-2006/pages/readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Readings
+
+<table><tr><th>TOPICS</th><th>READINGS</th></tr><tr><td colspan="2">Readings for Science Lectures</td></tr><tr><td>Physical Oceanography</td><td>Turekian, Karl. “The oceans in motion.” Chapter 5 in <br> Oceans <br> . Edited by A. Lee McAlester. <br> Foundations of Earth Science Series <br> . Englewood Cliffs, NJ: Prentice-Hall, Inc., 1976, pp. 73-87. ISBN: 9780136304265.</td></tr><tr><td>Nutrient Cycles</td><td>Valiela, Ivan. “Nutrient Cycles and Ecosystem Stoichiometry.” Chapter 14 in <br> Marine Ecological Processes <br> . 2nd ed. New York, NY: Springer, 1995, pp. 425-466. ISBN: 9780387943213.</td></tr><tr><td>Carbon Cycle</td><td>Valiela, Ivan. “The Carbon Cycle: Production and Transformations of Organic Matter.” Chapter 13 in <br> Marine Ecological Processes <br> . 2nd ed. New York, NY: Springer, 1995, pp. 385-423. ISBN: 9780387943213.</td></tr><tr><td>Trace Metals</td><td>Morel, F. M. M., A. J. Milligan, and M. A. Saito. “Marine Bioinorganic Chemistry: The Role of Trace Metals in the Oceanic Cycles of Major Nutrients.” In <br> Treatise on Geochemistry. <br> Volume 6: <br> The Oceans and Marine Geochemistry <br> . Edited by H. Elderfield. Executive editors: H. D. Holland and K. K. Turekian. Oxford, UK: Elsevier Ltd, 2003, pp. 113-143. ISBN: 9780080437514.</td></tr><tr><td colspan="2">Readings for Engineering Lectures</td></tr><tr><td>Sensors</td><td>DeGranpre, M. D., and R. G. J. Bellerby. “Chemical Sensors in Marine Science.” <br> Oceanus <br> 38, no. 1 (1995): 30-32. <br> Daly, K. L., et al. “Chemical and biological sensors for time-series research: current status and new directions.” <br> MTS Journal <br> 38, no. 2 (2004): 121-143.</td></tr><tr><td>Engineering for The Marine Environment</td><td>Fornari, D. “Realizing the dreams of da Vinci and Verne.” <br> Oceanus <br> 42, no. 2 (2004): 20-24.</td></tr></table>

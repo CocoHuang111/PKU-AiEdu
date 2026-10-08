@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-3-15-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.15"
+cross_listed_codes: []
+course_title: "Electrical, Optical & Magnetic Materials and Devices"
+course_slug: "3-15-electrical-optical-magnetic-materials-and-devices-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Caroline Ross"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Materials Science and Engineering"
+  - "Electronic Materials"
+  - "Science"
+  - "Physics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Electronic Materials"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course explores the relationships which exist between the performance of electrical, optical, and magnetic devices and the microstructural characteristics of the materials from which they are constructed. The class uses a device-motivated approach which emphasizes emerging technologies. Device applications of physical phenomena are considered, including electrical conductivity and doping, transistors, photodetectors and photovoltaics, luminescence, light emitting diodes, lasers, optical phenomena, photonics, ferromagnetism, and magnetoresistance.
+course_url: "https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/452409ad0bded548e967f03e0b6a22e0_3-15f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

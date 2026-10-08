@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-12-753-spring-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.753"
+cross_listed_codes: []
+course_title: "Geodynamics Seminar"
+course_slug: "12-753-geodynamics-seminar-spring-2001"
+term: "Spring"
+year: 2001
+as_taught_in: "Spring 2001"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Robert Sohn"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geology"
+  - "Geophysics"
+  - "Planetary Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+          - "Geophysics"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+description: |
+  The Earth’s crust is primarily composed of melting products from mantle plumes and mid-ocean ridges - both presently and over the course of Earth history. While both systems represent upwelling features in a convective mantle, they can be viewed as end-member systems in that plumes represent buoyant flow whereas mid-ocean ridges represent passive corner flow. This paradigm is not strict - flow beneath ridges may be buoyant in some places, for example, but it does provide a reasonable framework for enquiry. Plumes and ridges can be studied independently, but in many places across the globe the systems interact, often in intriguing fashion. The nature of these interactions provides an opportunity to improve our understanding of both systems, and provides new perspectives on the mantle, crustal, and water column processes associated converting heat from the Earth’s interior into new crust, hydrothermal flow, and biological communities on the seafloor. The approach taken for the 2001 Plume-Ridge Interactions Seminar series was to start with basic ideas about mantle convection and tectonics, and an overview of the global hotspot and ridge systems. We then addressed three case studies of plume-ridge interactions in detail. Our first case was the interaction of the. Each of these systems provides a different perspective on the nature of plume-ridge interactions, and by comparison and contrast we are able to distill the fundamental aspects out of the complex array of geophysical and geochemical data associated with plume-ridge systems.
+course_url: "https://ocw.mit.edu/courses/12-753-geodynamics-seminar-spring-2001/"
+image_url: "https://ocw.mit.edu/courses/12-753-geodynamics-seminar-spring-2001/b9e0ed98d4c9472b5389deb4013bdf61_12-753s01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

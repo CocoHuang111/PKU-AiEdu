@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-9-14-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.14"
+cross_listed_codes: []
+course_title: "Brain Structure and Its Origins"
+course_slug: "9-14-brain-structure-and-its-origins-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gerald E. Schneider"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Neurobiology"
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Audio"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides an outline of vertebrate functional neuroanatomy, aided by studies of comparative neuroanatomy and evolution, and by studies of brain development. Topics include early steps to a central nervous system, basic patterns of brain and spinal cord connections, regional development and differentiation, regeneration, motor and sensory pathways and structures, systems underlying motivations, innate action patterns, formation of habits, and various cognitive functions. In addition, lab techniques are reviewed and students perform brain dissections.
+course_url: "https://ocw.mit.edu/courses/9-14-brain-structure-and-its-origins-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/9-14-brain-structure-and-its-origins-spring-2014/43a6573560702518ef1dc30f7e92512c_9-14s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

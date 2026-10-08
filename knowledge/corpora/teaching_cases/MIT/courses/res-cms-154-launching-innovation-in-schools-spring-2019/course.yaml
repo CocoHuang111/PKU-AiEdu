@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-res-cms-154-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.CMS-154"
+cross_listed_codes: []
+course_title: "Launching Innovation in Schools"
+course_slug: "res-cms-154-launching-innovation-in-schools-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Justin Reich"
+  - "Dr. Peter Senge"
+subject_primary: "Curriculum and Teaching"
+subject_secondary:
+  - "Education Policy"
+  - "Educational Technology"
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Education Policy"
+        specialties: []
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Every great teacher and every great school constantly work towards creating better learning conditions for students. Just as we hope our students become lifelong learners, we as educators should be constantly learning and improving. This education course is for school leaders of all kinds (from teacher-leaders to principals to superintendents) who are launching innovation in schools—starting new efforts to work together to improve teaching and learning. You will complete a cycle of study, experimentation, and reflection to gain confidence and skills to lead instructional improvement efforts. Through experiential activities and assignments, you will begin working with colleagues to envision the next level of work for your team or organization, to launch a new initiative, and to measure your progress along the way. Based on the work of Prof. Justin Reich and Dr. Peter Senge, this course will focus on visioning and capacity-building, with an emphasis on collaboration and building partnerships with stakeholders at multiple levels. At the end of the course, you will have started the process of launching an instructional improvement initiative in your school or learning environment, and you will better understand yourself as a leader and change agent. You will have made connections with peers who are also undertaking this important work. This course is part of the Open Learning Library , which is free to use. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/res-cms-154-launching-innovation-in-schools-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/res-cms-154-launching-innovation-in-schools-spring-2019/afcbb03b7e970bea8ada3745e82c3bcd_RES-CMS-154S19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

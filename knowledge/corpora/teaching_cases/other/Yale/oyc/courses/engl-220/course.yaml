@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-engl-220"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "ENGL 220"
+course_title: "Milton"
+course_slug: "engl-220"
+department_path: "english"
+professors:
+  - "John Rogers Professor Emeritus of English"
+course_url: "https://oyc.yale.edu/english/engl-220"
+language: "en"
+description: |
+  This class is a study of Milton's poetry, with attention paid to his literary sources, his contemporaries, his controversial prose, and his decisive influence on the course of English poetry. Throughout the course, Professor Rogers explores the advantages and limitations of a diverse range of interpretive techniques and theoretical concerns in Milton scholarship and criticism. Lectures include close readings of lyric and epic poetry, prose, and letters; biographical inquiries; examinations of historical and political contexts; and engagement with critical debates.
+license_url: ""
+session_count: 23
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

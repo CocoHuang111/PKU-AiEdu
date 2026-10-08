@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-245j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.245J"
+cross_listed_codes:
+  - "17.045J"
+course_title: "Power: Interpersonal, Organizational and Global Dimensions"
+course_slug: "21a-245j-power-interpersonal-organizational-and-global-dimensions-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Susan S. Silbey"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Humanities"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+  - "Sociology"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  Using examples from anthropology and sociology alongside classical and contemporary social theory, this course explores the nature of dominant and subordinate relationships, types of legitimate authority, and practices of resistance. The course also examines how we are influenced in subtle ways by the people around us, who makes controlling decisions in the family, how people get ahead at work, and whether democracies, in fact, reflect the “will of the people.”
+course_url: "https://ocw.mit.edu/courses/21a-245j-power-interpersonal-organizational-and-global-dimensions-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/21a-245j-power-interpersonal-organizational-and-global-dimensions-fall-2005/ee3f4633921395dae83a40dfea6c7b0f_21a-245jf05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

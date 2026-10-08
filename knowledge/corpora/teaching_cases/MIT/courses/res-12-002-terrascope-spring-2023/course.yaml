@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-res-12-002-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.12-002"
+cross_listed_codes: []
+course_title: "Terrascope"
+course_slug: "res-12-002-terrascope-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David McGee"
+  - "Dr. Ari Epstein"
+  - "Dr. Libby Hsu"
+  - "Dr. Joel Grimm"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Science"
+  - "Earth Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Podcasts"
+description: |
+  At the core of Terrascope is one basic but important idea: MIT students, even in their first year, are ready to take control of their own education and tackle big, important problems. Every year Terrascope explores a different issue, and it’s the students who take command. You will work in teams to develop solutions, drawing on diverse perspectives, interdisciplinary research and the resources of the Terrascope community. Along the way, you’ll develop the real-world skills necessary to address sustainability-related challenges, and you will learn about how to organize teams around complex problems of any kind.​ In the fall class, Solving Complex Problems , you will develop solutions and present them to a panel of experts. In the spring semester there are two optional classes: Design for Complex Environmental Issues , in which you will design and prototype specific technologies that address aspects of the year’s Terrascope challenge; and Terrascope Radio , in which you will create a radio program to communicate your ideas to the general public.
+course_url: "https://ocw.mit.edu/courses/res-12-002-terrascope-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/res-12-002-terrascope-spring-2023/mitres_12_002_s23_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

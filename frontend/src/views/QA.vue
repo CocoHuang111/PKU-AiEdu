@@ -157,7 +157,14 @@
                       <div class="citation-head">
                         <el-tag size="small" effect="plain">[{{ c.index }}]</el-tag>
                         <span class="citation-corpus">{{ c.corpus_label }}</span>
-                        <span class="citation-source">{{ c.source }}</span>
+                        <a
+                          v-if="c.source_url"
+                          class="citation-source citation-link"
+                          :href="c.source_url"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >{{ c.source }}</a>
+                        <span v-else class="citation-source">{{ c.source }}</span>
                         <span class="citation-score">
                           {{ c.pinned ? '指定带入' : `相似度 ${c.score}` }}
                         </span>
@@ -656,6 +663,14 @@ onActivated(() => {
 }
 .citation-source {
   color: #909399;
+}
+.citation-link {
+  color: #606266;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.citation-link:hover {
+  color: #a61b1b;
 }
 .citation-score {
   margin-left: auto;

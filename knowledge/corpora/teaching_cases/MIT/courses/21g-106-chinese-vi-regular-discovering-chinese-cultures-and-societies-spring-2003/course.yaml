@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-106-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.106"
+cross_listed_codes: []
+course_title: "Chinese VI (Regular): Discovering Chinese Cultures and Societies"
+course_slug: "21g-106-chinese-vi-regular-discovering-chinese-cultures-and-societies-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Tong Chen"
+subject_primary: "Language"
+subject_secondary:
+  - "Chinese"
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Chinese"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Other Video"
+description: |
+  This course is the continuation of 21G.105 . It is designed to further help students develop sophisticated conversational, reading and writing skills by combining traditional textbook material with their own explorations of Chinese speaking societies, using the human, literary, and electronic resources available at MIT and in the Boston area. Some special features of Chinese society, its culture, its customs and habits, its history, and the psychology of its people are introduced. The class consists of reading, discussion, composition, network exploration, and conversational practice. The course is conducted in Mandarin.
+course_url: "https://ocw.mit.edu/courses/21g-106-chinese-vi-regular-discovering-chinese-cultures-and-societies-spring-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-106-chinese-vi-regular-discovering-chinese-cultures-and-societies-spring-2003/815ee7589f18ca4bac069940b998cdcd_21g-106s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

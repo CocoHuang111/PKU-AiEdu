@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-176-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.176"
+cross_listed_codes: []
+course_title: "Cellular and Molecular Immunology"
+course_slug: "hst-176-cellular-and-molecular-immunology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Shiv Pillai"
+subject_primary: "Cellular and Molecular Medicine"
+subject_secondary:
+  - "Immunology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Cellular and Molecular Medicine"
+        specialties: []
+      - name: "Immunology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course covers cells and tissues of the immune system, lymphocyte development, the structure and function of antigen receptors, the cell biology of antigen processing and presentation, including molecular structure and assembly of MHC molecules, the biology of cytokines, leukocyte-endothelial interactions, and the pathogenesis of immunologically mediated diseases. The course is structured as a series of lectures and tutorials in which clinical cases are discussed with faculty tutors. Lecturers Frederick W. Alt, Marcus Altfeld, Paul Anderson, Jon C. Aster, Hugh Auchincloss, Steven P. Balk, Samuel M. Behar, Richard S. Blumberg, Francisco Bonilla, Bobby Cherayil, Benjamin Davis, David Hafler, Nir Harcohen, Bruce Horwitz, David M. Lee, Andrew Lichtman, Diane Mathis, Richard Mitchell, Hidde Ploegh, Emmett Schmidt, Arlene Sharpe, Megan Sykes, Shannon Turley, Dale T. Umetsu, Ulrich von Andrian, Bruce Walker, Kai Wucherpfennig, Ramnik Xavier, Sarah Henrickson
+course_url: "https://ocw.mit.edu/courses/hst-176-cellular-and-molecular-immunology-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-176-cellular-and-molecular-immunology-fall-2005/bc0cde9879876d11efef2d06a14f4141_hst-176f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

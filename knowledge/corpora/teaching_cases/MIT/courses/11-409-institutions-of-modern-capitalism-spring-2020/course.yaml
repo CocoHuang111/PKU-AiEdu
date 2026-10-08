@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-11-409-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.409"
+cross_listed_codes: []
+course_title: "Institutions of Modern Capitalism"
+course_slug: "11-409-institutions-of-modern-capitalism-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jason Jackson"
+subject_primary: "Economics"
+subject_secondary:
+  - "Political Science"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+      - name: "Political Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course introduces students to a set of analytic tools and conceptual frameworks through which to assess the origins and evolution of the institutions that constitute modern capitalism. The course takes an inter-disciplinary political economy approach that draws insights from economics, sociology, political science, history, geography, science and technology studies, and law.
+course_url: "https://ocw.mit.edu/courses/11-409-institutions-of-modern-capitalism-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/11-409-institutions-of-modern-capitalism-spring-2020/6bd38a5f85619792e1d8cb153eaeae22_11-409s20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-17-s914-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.S914"
+cross_listed_codes: []
+course_title: "Conversations You Can't Have on Campus: Race, Ethnicity, Gender and Identity"
+course_slug: "17-s914-conversations-you-cant-have-on-campus-race-ethnicity-gender-and-identity-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Tobie Weiner"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Ethnography"
+  - "Social Anthropology"
+  - "Political Science"
+  - "Society"
+  - "Gender Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Ethnography"
+          - "Social Anthropology"
+      - name: "Political Science"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Written Assignments with Examples"
+description: |
+  What is race? What is ethnicity? How can communication and relationships between men and women be improved? What causes segregation in our society? How do stereotypes develop and why do they persist? How do an individual’s racial, ethnic, and sexual identities form and develop? This course explores these topics and more.
+course_url: "https://ocw.mit.edu/courses/17-s914-conversations-you-cant-have-on-campus-race-ethnicity-gender-and-identity-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/17-s914-conversations-you-cant-have-on-campus-race-ethnicity-gender-and-identity-spring-2012/4851fe3daeaf2f5fa8d4a6faa1bdcab7_17-s914s12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

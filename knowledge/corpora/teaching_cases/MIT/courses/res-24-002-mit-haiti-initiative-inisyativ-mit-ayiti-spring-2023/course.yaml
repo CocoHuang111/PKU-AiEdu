@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-res-24-002-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.24-002"
+cross_listed_codes: []
+course_title: "MIT-Haiti Initiative / Inisyativ MIT-Ayiti"
+course_slug: "res-24-002-mit-haiti-initiative-inisyativ-mit-ayiti-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Michel DeGraff"
+  - "Prof. Haynes Miller"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Society"
+  - "Latin and Caribbean Studies"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+description: |
+  The mission of the MIT-Haiti Initiative is to promote active learning in Kreyòl so that Haitians can have universal access to quality education in the language that most of them speak at home. Platfòm MIT-Ayiti , launched in 2019, offers a wealth of freely accessible educational resources in Kreyòl, including downloadable lesson plans and picture books categorized by topic, alongside official curricula from Haiti’s Ministry of National Education. The target audience for these resources includes students at all levels from pre-kindergarten through high school, and we offer materials in all disciplines. We also host and invite contributions from all educators who are willing to submit their own materials in Kreyòl. We work with these contributions, in konbit (collaborative) mode, to improve these submissions before publication. Men anpil, chay pa lou! (That is, many hands make light work!) The Initiative’s original website , launched in 2010, includes software tools for math, physics, genetics, and biochemistry education, as well as a preliminary (work-in-progress) glossary of Kreyòl equivalents for English words commonly used in the STEM disciplines.
+course_url: "https://ocw.mit.edu/courses/res-24-002-mit-haiti-initiative-inisyativ-mit-ayiti-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/res-24-002-mit-haiti-initiative-inisyativ-mit-ayiti-spring-2023/res-24-002s23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

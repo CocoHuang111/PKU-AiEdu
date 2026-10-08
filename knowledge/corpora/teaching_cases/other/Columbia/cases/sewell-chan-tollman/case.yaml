@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-sewell-chan-tollman"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "CTL spotlight or announcement"
+title: "Faculty Spotlight: Taylor Sewell, Carri Chan, and Peter Tollman on Redesigning Their Interdisciplinary Course"
+slug: "sewell-chan-tollman"
+source_url: "https://ctl.columbia.edu/spotlight/sewell-chan-tollman/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "04e25aef39a1252b8298d4dc520af0a93247333fc4e3e706574d11d63c822dbc"

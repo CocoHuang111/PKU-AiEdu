@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-16-36-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.36"
+cross_listed_codes: []
+course_title: "Communication Systems Engineering"
+course_slug: "16-36-communication-systems-engineering-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Eytan Modiano"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Networks"
+  - "Electrical Engineering"
+  - "Digital Systems"
+  - "Telecommunications"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Networks"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Telecommunications"
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This course will cover fundamentals of digital communications and networking. We will study the basics of information theory, sampling and quantization, coding, modulation, signal detection and system performance in the presence of noise. The study of data networking will include multiple access, reliable packet transmission, routing and protocols of the internet. The concepts taught in class will be discussed in the context of aerospace communication systems: aircraft communications, satellite communications, and deep space communications.
+course_url: "https://ocw.mit.edu/courses/16-36-communication-systems-engineering-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/16-36-communication-systems-engineering-spring-2009/507700b1314befc395d36d7651b0e5a1_16-36s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

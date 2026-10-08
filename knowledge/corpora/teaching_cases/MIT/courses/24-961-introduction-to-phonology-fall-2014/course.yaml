@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-24-961-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.961"
+cross_listed_codes: []
+course_title: "Introduction to Phonology"
+course_slug: "24-961-introduction-to-phonology-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Michael Kenstowicz"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Phonology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Phonology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course serves as an introduction to the current research questions in phonological theory. Topics include metrical and prosodic structure, features and their phonetic basis in speech, acquisition and parsing, phonological domains, morphology, and language change and reconstruction. Activities include problem solving, squibs, and data collection.
+course_url: "https://ocw.mit.edu/courses/24-961-introduction-to-phonology-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/24-961-introduction-to-phonology-fall-2014/8833857c7f65edbfc3f2eb1952306ae5_24-961f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

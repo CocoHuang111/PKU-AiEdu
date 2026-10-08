@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-11-958-january-iap-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.958"
+cross_listed_codes: []
+course_title: "Getting Things Implemented: Strategy, People, Performance, and Leadership"
+course_slug: "11-958-getting-things-implemented-strategy-people-performance-and-leadership-january-iap-2009"
+term: "January IAP"
+year: 2009
+as_taught_in: "January IAP 2009"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Xavier de Souza Briggs"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Management"
+  - "Organizational Behavior"
+  - "Social Science"
+  - "Urban Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  An old saying holds that “there are many more good ideas in the world than good ideas implemented.” This is a case based introduction to the fundamentals of effective implementation. Developed with the needs and interests of planners—but also with broad potential application—in mind, this course is a fast paced, case driven introduction to developing strategy for organizations and projects, managing operations, recruiting and developing talent, taking calculated risks, measuring results (performance), and leading adaptive change, for example where new mental models and habits are required but also challenging to promote. Our cases are set in the U.S. and the developing world and in multiple work sectors (urban redevelopment, transportation, workforce development, housing, etc.). We will draw on public, private, and nonprofit implementation concepts and experience. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/11-958-getting-things-implemented-strategy-people-performance-and-leadership-january-iap-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/11-958-getting-things-implemented-strategy-people-performance-and-leadership-january-iap-2009/f936f4d43ac87d6c204ddec6b3b38c43_11-958iap09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

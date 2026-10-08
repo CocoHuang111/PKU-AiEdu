@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-16-982-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.982"
+cross_listed_codes: []
+course_title: "Bio-Inspired Structures"
+course_slug: "16-982-bio-inspired-structures-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Leo Daniel"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Materials Selection"
+  - "Structural Mechanics"
+  - "Nanotechnology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Materials Selection"
+          - "Structural Mechanics"
+      - name: "Nanotechnology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course is offered for graduate students who are interested in the interdisciplinary study of bio-inspired structures. The intent is to introduce students to newly inspired modern advanced structures and their applications. It aims to link traditional advanced composites to bio-inspired structures and to discuss their generic properties. A link between materials design, strength and structural behavior at different levels (material, element, structural and system levels) is made. For each level, various concepts will be introduced. The importance of structural, dynamic, thermodynamic and kinetic theories related to such processing is highlighted. The pedagogy is based on active learning and a balance of guest lectures and hands-on activities.
+course_url: "https://ocw.mit.edu/courses/16-982-bio-inspired-structures-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/16-982-bio-inspired-structures-spring-2009/60074637ce7370e0ecdb4160e5ebfc07_16-982s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

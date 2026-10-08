@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-030-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.030"
+cross_listed_codes: []
+course_title: "Introduction to World Music"
+course_slug: "21m-030-introduction-to-world-music-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Patricia Tang"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Performance"
+  - "Music Theory"
+  - "Performance Arts"
+  - "Dance"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Performance"
+          - "Music Theory"
+      - name: "Performance Arts"
+        specialties:
+          - "Dance"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course is an introduction to diverse musical traditions of the world. Music from a wide range of geographical areas is studied in terms of structure, performance practice, social use, aesthetics, and cross-cultural contact. Course work includes hands-on music making, live demonstrations by guest artists, and ethnographic research projects.
+course_url: "https://ocw.mit.edu/courses/21m-030-introduction-to-world-music-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/21m-030-introduction-to-world-music-spring-2013/5e036c2c42ca440f576f2cf3989b031e_21m-030s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

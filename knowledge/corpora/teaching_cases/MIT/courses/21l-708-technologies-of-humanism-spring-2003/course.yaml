@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-708-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.708"
+cross_listed_codes:
+  - "CMS.910"
+course_title: "Technologies of Humanism"
+course_slug: "21l-708-technologies-of-humanism-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Kurt Fendt"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Humanities"
+  - "Literature"
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+  - "Written Assignments"
+description: |
+  This course explores the properties of non-sequential, multi-linear, and interactive forms of narratives as they have evolved from print to digital media. Works covered in this course range from the Talmud, classics of non-linear novels, experimental literature, early sound and film experiments to recent multi-linear and interactive films and games. The study of the structural properties of narratives that experiment with digression, multiple points of view, disruptions of time, space, and of storyline is complemented by theoretical texts about authorship/readership, plot/story, properties of digital media and hypertext. Questions that will be addressed in this course include: How can we define ‘non-sequentiality/multi-linearity’, ‘interactivity’, ‘narrative’. To what extend are these aspects determined by the text, the reader, the digital format? What are the roles of the reader and the author? What kinds of narratives are especially suited for a non-linear/interactive format? Are there stories that can only be told in a digital format? What can we learn from early non-digital examples of non-linear and interactive story telling?
+course_url: "https://ocw.mit.edu/courses/21l-708-technologies-of-humanism-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/21l-708-technologies-of-humanism-spring-2003/a3a6ea491655a7fc1fd5889b1a4eb85b_21l-708s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

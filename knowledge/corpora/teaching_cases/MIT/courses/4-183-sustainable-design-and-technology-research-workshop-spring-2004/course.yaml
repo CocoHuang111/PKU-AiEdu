@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-4-183-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.183"
+cross_listed_codes: []
+course_title: "Sustainable Design and Technology Research Workshop"
+course_slug: "4-183-sustainable-design-and-technology-research-workshop-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Leon Glicksman"
+  - "Prof. Andrew Scott"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Written Assignments"
+description: |
+  This workshop investigates the current state of sustainability in regards to architecture, from the level of the tectonic detail to the urban environment. Current research and case studies will be investigated, and students will propose their own solutions as part of the final project.
+course_url: "https://ocw.mit.edu/courses/4-183-sustainable-design-and-technology-research-workshop-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/4-183-sustainable-design-and-technology-research-workshop-spring-2004/9e4e90143a2063cd0af24f6730d905fe_4-183s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

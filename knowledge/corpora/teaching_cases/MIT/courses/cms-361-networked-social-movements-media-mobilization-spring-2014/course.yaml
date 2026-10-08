@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-361-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.361"
+cross_listed_codes:
+  - "CMS.861"
+course_title: "Networked Social Movements: Media & Mobilization"
+course_slug: "cms-361-networked-social-movements-media-mobilization-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sasha Costanza-Chock"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Social Science"
+  - "Communication"
+  - "Sociology"
+  - "Social Justice"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This seminar is a space for collaborative inquiry into the relationships between social movements and the media. We’ll review these relationships through the lens of social movement theory, and function as a workshop to develop student projects. Seminar participants will work together to explore frameworks, methods, and tools for understanding networked social movements in the digital media ecology. We will engage with social movement studies as a body of theoretical and empirical work, and learn about key concepts including: resource mobilization; political process; framing; New Social Movements; collective identity; tactical media; protest cycles; movement structure; and more. We’ll explore methods of social movement investigation, examine new data sources and tools for movement analysis, and grapple with recent innovations in social movement theory and research. Assignments include short blog posts, a book review, co-facilitation of a seminar discussion, and a final research project focused on social movement media practices in comparative perspective.
+course_url: "https://ocw.mit.edu/courses/cms-361-networked-social-movements-media-mobilization-spring-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/cms-361-networked-social-movements-media-mobilization-spring-2014/fbfbae675df97e42a9973cde471fa53f_cms-361s14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

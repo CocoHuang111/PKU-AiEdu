@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-cc-s10-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CC.S10"
+cross_listed_codes: []
+course_title: "Prohibition and Permission"
+course_slug: "cc-s10-prohibition-and-permission-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Concourse"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeremy Wolfe"
+  - "Dr. Wyn Kelley"
+subject_primary: "Literature"
+subject_secondary:
+  - "Philosophy"
+  - "Ethics"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Legal Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties: []
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Legal Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Explore where the prohibitions and permissions that occur in every day life come from, why they exist, and what gives them force. For example: food—you are only willing and able to eat a subset of the world’s edible substances. Marriage—some marriages are prohibited by law or by custom. This course addresses questions of prohibition and permission using psychological sources and literary works from ancient to modern. Texts include works by Shakespeare, Melville, Mary Rowlandson, and Anita Desai. Students give group and individual oral presentations.
+course_url: "https://ocw.mit.edu/courses/cc-s10-prohibition-and-permission-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/cc-s10-prohibition-and-permission-spring-2007/7dd059c22fd19733e92b4b324b46d5a4_cc-s10s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

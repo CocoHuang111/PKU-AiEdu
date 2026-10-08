@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-150-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.150"
+cross_listed_codes: []
+course_title: "Teaching and Learning: Cross-Cultural Perspectives"
+course_slug: "21a-150-teaching-and-learning-cross-cultural-perspectives-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Graham Jones"
+subject_primary: "Language"
+subject_secondary:
+  - "Linguistics"
+  - "Social Science"
+  - "Anthropology"
+  - "Communication"
+  - "Sociology"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+  - "Educational Technology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties: []
+      - name: "Linguistics"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties: []
+      - name: "Communication"
+        specialties: []
+      - name: "Sociology"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the diverse ways that people teach and learn—in different countries, in different disciplines, and in different subcultures. We will discuss how theories of learning can be applied to a variety of hands-on, in-class learning activities. We compare schooling to other forms of knowledge transmission from initiation and apprenticeship to recent innovations in online education such as MOOCs. Students will employ a range of qualitative methods in conducting original research on topics of their choice.
+course_url: "https://ocw.mit.edu/courses/21a-150-teaching-and-learning-cross-cultural-perspectives-fall-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/21a-150-teaching-and-learning-cross-cultural-perspectives-fall-2014/a83a547e9d5a04812889a3d6f1d25ac2_21a-150f14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-11-165-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.165"
+cross_listed_codes:
+  - "11.477"
+course_title: "Infrastructure and Energy Technology Challenges"
+course_slug: "11-165-infrastructure-and-energy-technology-challenges-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Karen R. Polenske"
+  - "Prof. Apiwat Ratanawaraha"
+subject_primary: "Technology"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Developmental Economics"
+  - "International Development"
+  - "Public Administration"
+  - "Public Policy"
+  - "Science and Technology Policy"
+  - "Security Studies"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Technology"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+          - "International Development"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+          - "Science and Technology Policy"
+          - "Security Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This seminar examines efforts in developing and advanced nations and regions to create, finance, and regulate infrastructure and energy technologies from a variety of methodological and disciplinary perspectives. It is conducted with intensive in-class discussions and debates.
+course_url: "https://ocw.mit.edu/courses/11-165-infrastructure-and-energy-technology-challenges-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/11-165-infrastructure-and-energy-technology-challenges-fall-2011/b1000c986b5e8e604fd30cc6ad5bfa04_11-165f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

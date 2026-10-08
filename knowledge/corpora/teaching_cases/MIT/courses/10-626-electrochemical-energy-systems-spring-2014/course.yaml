@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-10-626-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.626"
+cross_listed_codes:
+  - "10.426"
+course_title: "Electrochemical Energy Systems"
+course_slug: "10-626-electrochemical-energy-systems-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Martin Bazant"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Materials Science and Engineering"
+  - "Electronic Materials"
+  - "Science"
+  - "Chemistry"
+  - "Analytical Chemistry"
+  - "Physical Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Electronic Materials"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Analytical Chemistry"
+          - "Physical Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces principles and mathematical models of electrochemical energy conversion and storage. Students study equivalent circuits, thermodynamics, reaction kinetics, transport phenomena, electrostatics, porous media, and phase transformations. In addition, this course includes applications to batteries, fuel cells, supercapacitors, and electrokinetics.
+course_url: "https://ocw.mit.edu/courses/10-626-electrochemical-energy-systems-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/10-626-electrochemical-energy-systems-spring-2014/5a6cbfd9b7dc6a716189faf1f70f86d8_10-626s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

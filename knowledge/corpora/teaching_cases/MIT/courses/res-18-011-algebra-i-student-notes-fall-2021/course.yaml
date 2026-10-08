@@ -1,0 +1,54 @@
+schema_version: "1.0"
+course_id: "mitocw-res-18-011-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.18-011"
+cross_listed_codes: []
+course_title: "Algebra I Student Notes"
+course_slug: "res-18-011-algebra-i-student-notes-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Non-Credit"
+instructors: []
+subject_primary: "Algebra and Number Theory"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Algebra I is the first semester of a year-long introduction to modern algebra. Algebra is a fundamental subject, used in many advanced math courses and with applications in computer science, chemistry, etc. The focus of this class is studying groups, linear algebra, and geometry in different forms. These notes, which were created by students in a recent on-campus 18.701 Algebra I class, are offered here to supplement the materials included in OCW’s version of 18.701 . They have not been checked for accuracy by the instructors of that class or by other MIT faculty members.
+course_url: "https://ocw.mit.edu/courses/res-18-011-algebra-i-student-notes-fall-2021/"
+image_url: "https://ocw.mit.edu/courses/res-18-011-algebra-i-student-notes-fall-2021/res_18_011f21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

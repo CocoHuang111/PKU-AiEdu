@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-12-114-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.114"
+cross_listed_codes: []
+course_title: "Field Geology I"
+course_slug: "12-114-field-geology-i-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ben Crosby"
+  - "Prof. B. Clark Burchfiel"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geology"
+  - "Social Science"
+  - "Geography"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+  - name: "Social Science"
+    subtopics:
+      - name: "Geography"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Image Gallery"
+description: |
+  The course provides students with (1) an introduction to the geologic history of western North America, with particular emphasis on our field camp location and (2) an introduction to both digital and traditional techniques of geological field study. The weather permitting, several weekend field exercises provide practical experience in preparation for Field Geology II (12.115). It presents introductory material on the regional geology of the locale of 12.115.
+course_url: "https://ocw.mit.edu/courses/12-114-field-geology-i-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/12-114-field-geology-i-fall-2005/a1da26043e46b0834c09c0793daf9f50_12-114f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

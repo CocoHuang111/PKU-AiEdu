@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-15-564-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.564"
+cross_listed_codes: []
+course_title: "Information Technology I"
+course_slug: "15-564-information-technology-i-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Chrysanthos Dellarocas"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Computer Networks"
+  - "Data Mining"
+  - "Electrical Engineering"
+  - "Telecommunications"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Networks"
+          - "Data Mining"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Information Technology I helps students understand technical concepts underlying current and future developments in information technology. There will be a special emphasis on networks and distributed computing. Students will also gain some hands-on exposure to powerful, high-level tools for making computers do amazing things, without the need for conventional programming languages. Since 15.564 is an introductory course, no knowledge of how computers work or are programmed is assumed.
+course_url: "https://ocw.mit.edu/courses/15-564-information-technology-i-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/15-564-information-technology-i-spring-2003/c2d7aa34c1be673fc60c01b89c4a8a86_15-564s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

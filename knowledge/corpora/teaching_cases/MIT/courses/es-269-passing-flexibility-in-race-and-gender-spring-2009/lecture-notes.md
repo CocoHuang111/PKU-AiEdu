@@ -1,0 +1,27 @@
+> 检索摘要：ES.269 Passing: Flexibility in Race and Gender（Spring 2009，Undergraduate）的「Lecture Notes and Readings」。页内标题：Lecture Notes and Readings。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/pages/lecture-notes-and-readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Lecture Notes and Readings
+
+Unless otherwise stated, the notes in this section were created by an OpenCourseWare staff member who observed the course. Currently the notes for week #2, #8, and #13 are not available.
+
+| WEEK # | Lecture notes | READINGS |
+| --- | --- | --- |
+| 1 | Racial passing ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec1_class1/) <br> ) (Courtesy of Rachel Dillon.) | Craft, William, and Ellen Craft. <br> Running a Thousand Miles for Freedom <br> . Atlanta, GA: University of Georgia Press, 1999. ISBN: 9780820321042. [ <br> [Read](http://docsouth.unc.edu/neh/craft/craft.html) <br> the book online] |
+| 2 | Interplay between race, gender, class, and literacy | Continue with <br> Running a Thousand Miles for Freedom <br> . |
+| 3 | Interplay between race, gender, class, and literacy (cont.) ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec3_class3/) <br> ) | Continue with <br> Running a Thousand Miles for Freedom. <br> Taylor, Edward. “A Primer on Critical Race Theory.” <br> The Journal of Blacks in Higher Education <br> 19 (1998): 122-124. <br> McCaskill, Barbara. “ <br> [Yours Very Truly: Ellen Craft-The Fugitive as Text and Artifact](http://findarticles.com/p/articles/mi_m2838/is_n4_v28/ai_16836581/) <br> .” <br> African American Review <br> (Winter 1994). |
+| 4 | Discussion about <br> Incognegro <br> ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec4_class4/) <br> ) <br> Special Guest: <br> [Zanele Muholi](http://en.wikipedia.org/wiki/Zanele_Muholi) | Johnson, Mat, and Warren Pierce. <br> Incognegro <br> . New York, NY: Vertigo, 2008. ISBN: 9781401210977. |
+| 5 | Gender theory ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec5_class5/) <br> ) | Foucault, Michel. <br> The History of Sexuality, Volume 1: An Introduction <br> . New York, NY: Vintage Press, 1990. ISBN: 9780679724698. <br> Hackney, James R., Jr. “ <br> [Review: Derrick Bell’s Re-Sounding: W.E.B. DuBois, Modernism, and Critical Race Scholarship](http://www.jstor.org/pss/828765) <br> .” <br> Law and Social Inquiry <br> 23, no. 1 (1998): 141-164. <br> Butler, Judith. “Peformative Acts and Gender Constitution: An Essay in Phenomenology and Feminist Theory.” (1988). ( <br> [PDF](https://www.semanticscholar.org/paper/PERFORMATIVE-ACTS-AND-GENDER-CONSTITUTION%3A-AN-ESSAY-Butler/d1e62d0320a1dba2c3dba52441b83211fff7353e) <br> ) |
+| 6 | Transgender issues ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec6_class6/) <br> ) | Raymond, Janice. <br> The Transsexual Empire: The Making of the She-Male <br> . New York, NY: Teachers College Press, 1994. ISBN: 9780807762721. |
+| 7 | Nella Larsen’s <br> Passing <br> ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec7_class7/) <br> ) | Larsen, Nella. <br> Passing <br> . New York, NY: W.W. Norton & Co., 2007. ISBN: 9780393979169. [ <br> [Preview](http://books.google.com/books?id=eGtk2HVLYoMC&pg=PAfrontcover) <br> in Google Books] |
+| 8 | Doris Grumbach’s <br> Chamber Music | Grumbach, Doris. <br> Chamber Music <br> . Wainscott, New York, NY: Pushcart Press, 2008. ISBN: 9781888889536. |
+| 9 | Transsexuality and the medical community ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec9_class9/) <br> ) <br> (Courtesy of Rachel Dillon.) | Serano, Julia. <br> Whipping Girl: A Transsexual Woman on Sexism and the Scapegoating of Femininity <br> . Berkeley, CA: Seal Press, 2007. ISBN: 9781580051545. pp. 23-64. <br> Prosser, Jay. <br> Second Skins <br> . New York, NY: Columbia University Press, 1998. ISBN: 9780231109345. Chapter 2. <br> Califia, Patrick. “Transsexual Autobiography.” In <br> Sex Changes: Transgender Politics <br> . San Francisco, CA: Cleis Press, 2003. ISBN: 9781573441805. |
+| 10 | Essays from <br> Nobody Passes <br> ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec10_class10/) <br> ) | Sycamore, Matt Bernstein. <br> Nobody Passes: Rejecting the Rules of Gender and Conformity <br> . Berkeley, CA: Seal Press, 2006. ISBN: 9781580051842. |
+| 11 | Nobody Passes <br> (cont.) ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec11_class11/) <br> ) | Comeau, Joey. <br> [*Lockpick Pornography*](http://cargocollective.com/joeycomeau/Lockpick-Pornography) <br> . Vancouver, BC: Loose Teeth Press, 2008. |
+| 12 | Nobody Passes <br> (cont.) ( <br> [PDF](https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/resources/mites_269s09_lec12_class12/) <br> ) |  |
+| 13 | Student presentations <br> (See Projects section) |  |

@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-715-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.715"
+cross_listed_codes: []
+course_title: "D-Lab: Disseminating Innovations for the Common Good"
+course_slug: "ec-715-d-lab-disseminating-innovations-for-the-common-good-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Susan Murcott"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Developmental Economics"
+  - "International Development"
+  - "Sociology"
+  - "Community Development"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+          - "International Development"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Other Video"
+  - "Projects with Examples"
+description: |
+  In the trilogy of D-Lab courses, D-Lab: Dissemination focuses on disseminating innovations among underserved communities, especially in developing countries. Students acquire skills related to building partnerships and piloting, financing, implementing, and scaling-up a selected innovation for the common good. The course is structured around MIT and outside competitions. Teams develop an idea, project or (social) business plan that is “ready to roll” by term’s end. Course includes an on-line forum discussion board, student-led case studies and a final proposal or business plan for realizing your dream innovation.
+course_url: "https://ocw.mit.edu/courses/ec-715-d-lab-disseminating-innovations-for-the-common-good-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/ec-715-d-lab-disseminating-innovations-for-the-common-good-spring-2007/c97fe7bd4a9c7ddad96fed19e3552d97_ec-715s07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-4-111-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.111"
+cross_listed_codes: []
+course_title: "Introduction to Architecture & Environmental Design"
+course_slug: "4-111-introduction-to-architecture-environmental-design-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Lorena Bello Gomez"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Environmental Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Environmental Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Written Assignments with Examples"
+description: |
+  This course provides a foundation to the design of the environment from the scale of the object, to the building to the larger territory. The design disciplines of architecture as well as urbanism and landscape are examined in context of the larger influence of the arts and sciences. Students are expected to develop skills in thinking and analysis, spatial representation, and design methodologies. Through lectures and design exercises, students are provided an opportunity to establish a reference for understanding the discipline of architecture and environmental design, and are given an introduction to design fundamentals and the design process.
+course_url: "https://ocw.mit.edu/courses/4-111-introduction-to-architecture-environmental-design-spring-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/4-111-introduction-to-architecture-environmental-design-spring-2014/b8ed9900fbd0f1085de7b220cd6454a2_4-111s14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

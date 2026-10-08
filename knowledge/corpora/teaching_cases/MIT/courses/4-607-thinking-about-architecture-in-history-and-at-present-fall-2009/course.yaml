@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-4-607-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.607"
+cross_listed_codes: []
+course_title: "Thinking About Architecture: In History and at Present"
+course_slug: "4-607-thinking-about-architecture-in-history-and-at-present-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mark Jarzombek"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural History and Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural History and Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This class will be constructed as a lecture-discussion, the purpose being to engage important theoretical issues while simultaneously studying their continuing historical significance. To enhance discussion, three debates will be held in class. Each student will be required to participate in one of these debates. Each student will also be required to write three short papers. Class participation is essential and will be factored into the final grade. The course will portray the history of theory neither as the history of architectural theory exclusively, nor as a series of prepackaged static pronouncements, but as part of a broader set of issues with an active history that must be continually probed and queried. The sequence of topics will not be absolutely predetermined, but some of the primary issues that will be addressed are: pedagogy, professionalism, nature, modernity and the Enlightenment. Classroom discussions and debates are intended to demonstrate differences of opinion and enhance awareness of the consequences that these differences had in specific historical contexts.
+course_url: "https://ocw.mit.edu/courses/4-607-thinking-about-architecture-in-history-and-at-present-fall-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/4-607-thinking-about-architecture-in-history-and-at-present-fall-2009/f975a0905845682e31125fc094b59797_4-607f09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

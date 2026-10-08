@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-1-731-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.731"
+cross_listed_codes: []
+course_title: "Water Resource Systems"
+course_slug: "1-731-water-resource-systems-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dennis McLaughlin"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Aquatic Sciences and Water Quality Control"
+  - "Hydrodynamics and Coastal Engineering"
+  - "Hydrology and Water Resource Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Aquatic Sciences and Water Quality Control"
+          - "Hydrodynamics and Coastal Engineering"
+          - "Hydrology and Water Resource Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This subject is concerned with quantitative methods for analyzing large-scale water resource problems. Topics covered include the design and management of facilities for river basin development, flood control, water supply, groundwater remediation, and other activities related to water resources. Simulation models and optimization methods are often used to support analyses of water resource problems. In this subject we will be constructing simulation models with the MATLAB® programming language and solving numerical optimization problems with the GAMS optimization package.
+course_url: "https://ocw.mit.edu/courses/1-731-water-resource-systems-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/1-731-water-resource-systems-fall-2006/7ddf960729a6748d9d037592aecf12c6_1-731f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

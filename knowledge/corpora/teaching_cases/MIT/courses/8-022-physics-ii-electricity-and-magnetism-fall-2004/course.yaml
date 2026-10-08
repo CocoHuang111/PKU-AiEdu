@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-8-022-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.022"
+cross_listed_codes: []
+course_title: "Physics II: Electricity and Magnetism"
+course_slug: "8-022-physics-ii-electricity-and-magnetism-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gabriella Sciolla"
+subject_primary: "Physics"
+subject_secondary:
+  - "Electromagnetism"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Course 8.022 is one of several second-term freshman physics courses offered at MIT. It is geared towards students who are looking for a thorough and challenging introduction to electricity and magnetism. Topics covered include: Electric and magnetic field and potential; introduction to special relativity; Maxwell’s equations, in both differential and integral form; and properties of dielectrics and magnetic materials. In addition to the theoretical subject matter, several experiments in electricity and magnetism are performed by the students in the laboratory. Acknowledgments Prof. Sciolla would like to acknowledge the contributions of MIT Professors Scott Hughes and Peter Fisher to the development of this course. She would also like to acknowledge that these course materials include contributions from past instructors, textbooks, and other members of the MIT Physics Department affiliated with course 8.022. Since the following works have evolved over a period of many years, no single source can be attributed.
+course_url: "https://ocw.mit.edu/courses/8-022-physics-ii-electricity-and-magnetism-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/8-022-physics-ii-electricity-and-magnetism-fall-2004/9afec2c0ef4caef7752705763d72d274_8-022f04.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

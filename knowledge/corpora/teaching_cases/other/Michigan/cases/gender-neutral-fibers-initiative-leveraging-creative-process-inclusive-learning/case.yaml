@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-gender-neutral-fibers-initiative-leveraging-creative-process-inclusive-learning"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "The Gender-Neutral Fibers Initiative: Leveraging the Creative Process for Inclusive Learning"
+slug: "gender-neutral-fibers-initiative-leveraging-creative-process-inclusive-learning"
+source_url: "https://crlt.umich.edu/gender-neutral-fibers-initiative-leveraging-creative-process-inclusive-learning"
+language: "en"
+published: null
+awarded_year: "2020"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "a6063d8c5ae99355009e4a2bab8534217f3006744369ac1d7301753adb58be67"

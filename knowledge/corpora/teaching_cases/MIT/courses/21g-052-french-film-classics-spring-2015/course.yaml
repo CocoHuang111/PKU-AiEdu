@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-052-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.052"
+cross_listed_codes: []
+course_title: "French Film Classics"
+course_slug: "21g-052-french-film-classics-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Catherine E Clark"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Film and Video"
+  - "Humanities"
+  - "Language"
+  - "French"
+  - "Literature"
+  - "International Literature"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course covers the history and aesthetics of French cinema from the advent of sound to present-day. It treats films in the context of technical processes, the art of narration, directorial style, role of the scriptwriter, the development of schools and movements, the impact of political events and ideologies, and the relation between French and other national cinemas. Taught in English, the films are screened with English subtitles. Students may complete written assignments in French.
+course_url: "https://ocw.mit.edu/courses/21g-052-french-film-classics-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/21g-052-french-film-classics-spring-2015/b61c1e2eb6f8c873da32a22522734e21_21g-052s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

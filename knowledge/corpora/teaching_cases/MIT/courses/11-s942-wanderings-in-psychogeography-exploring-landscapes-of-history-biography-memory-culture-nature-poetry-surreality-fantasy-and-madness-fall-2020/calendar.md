@@ -1,0 +1,28 @@
+> 检索摘要：11.S942 Wanderings in Psychogeography: Exploring Landscapes of History, Biography, Memory, Culture, Nature, Poetry, Surreality, Fantasy, and Madness（Fall 2020，Graduate）的「Schedule of Readings」。页内标题：Schedule of Readings。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/11-s942-wanderings-in-psychogeography-exploring-landscapes-of-history-biography-memory-culture-nature-poetry-surreality-fantasy-and-madness-fall-2020/pages/schedule-of-readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Schedule of Readings
+
+For full details of the texts listed below, see the [Bibliography](https://ocw.mit.edu/courses/11-s942-wanderings-in-psychogeography-exploring-landscapes-of-history-biography-memory-culture-nature-poetry-surreality-fantasy-and-madness-fall-2020/pages/schedule-of-readings/bibliography/) page.
+
+| WeekLY TOPICS | Readings |
+| --- | --- |
+| 1. Introductions, Logistics, and First Impressions; Guy Debord and the Situationists: Ludo-Political Psychogeography | Chtcheglov, “Formulary for a New Urbanism” <br> Debord, “Introduction to a Critique of Urban Geography” <br> Debord, “Theory of the Dérive ” <br> Lettrist International, “Proposals for Rationally Improving the City of Paris” <br> Constant, “Another City for Another Life” <br> Wark, The Beach Beneath the Street, chapters 2 (“No More Temples of the Sun”) and 5 (“A Provisional Micro-Society”) <br> Coverley, Psychogeography , chapter 3 (“Guy Debord and the Situationist International”) <br> Self, Psychogeography , “Introduction: Walking to New York” |
+| 2. Some Urban Planning Roots: Socio-Spatial Psychogeography | Park and Burgess, The City , chapter 1 (“The City”) <br> Jacobs, “Looking at Cities” <br> Lynch, The Image of the City , chapters 1 (“The Image of the Environment” and 2 (“Three Cities”) <br> Clay, Close-Up (selections) <br> Wood, “Lynch Debord” |
+| 3. 18 <br> th <br> - and 19 <br> th <br> -Century London and Paris: Literary Ur-Psychogeography | Defoe, Journal of the Plague Year <br> Blake, “London_”_ <br> Poe, “The Man of the Crowd” <br> Baudelaire, “The Parisian Prowler” |
+| 4. Weimar Wandering in Berlin and Paris, 1920–1940: Philosopho-Critical Psychogeography [Special Guest: Howard Eiland] | Hessel, Walking in Berlin , “The Suspect,” “I Learn a Thing or Two,” “A Bit of Work,” and “A Tour” <br> Benjamin, The Arcades Project , “Paris, the Capital of the Nineteenth Century” and “Convolutes M: The Flâneur” <br> Eiland, “Reality as Palimpsest” <br> Certeau, The Practice of Everyday Life , chapter VII, “Walking in the City” <br> Ruttmann, Berlin [film] <br> Optional: <br> Benjamin, One-Way Street <br> Woolf, Street Haunting |
+| 5. Smells, Sounds, Sickness, and Sensing the City: Hidden Patterns of Data-Driven Psychogeography | Tufte, Visual Explanations , chapter 2 (“The Cholera Epidemic in London, 1854”) <br> McHarg, Design with Nature (selections) <br> Wurman, Making the City Observable <br> Whyte, City (selections) <br> Westerkamp, “Soundwalking” <br> Ruttmann, Weekend (Wochenende) [film] |
+| 6. Flights of Fancy: Journeys in Imaginato-Occult Psychogeography | Coleridge, “Kubla Khan” <br> Shelley, “Ozymandias” <br> Sinclair, Lud Heat <br> Calvino, Invisible Cities <br> Sís, The Three Golden Keys |
+| 7. Madness and Altered States: Insanito-Psychedelic Psychogeography | Ginsberg, Howl and Other Poems <br> Ferlinghetti, “Bickford’s Buddha” <br> Wallace, Infinite Jest , pp. 128–135. <br> One of the following: <br> De Quincey, Confessions of an English Opium Eater <br> Stevenson, The Strange Case of Dr. Jekyll and Mr. Hyde |
+| 8. Language, Ethnicity, and Race: Subaltern Psychogeographies | Du Bois, The Philadelphia Negro (selections) <br> García Lorca, Poet in New York <br> Cadogan, “Walking while Black” <br> Optional: <br> Sayles, The Brother from Another Planet [film] |
+| 9. Gender: Feminist Psychogeography | Solnit, Wanderlust , chapter 14 (“Walking after Midnight: Women, Sex, and Public Space”) <br> Elkin, Flâneuse , pp. 3–93. <br> Varda, Cléo de 5 à 7 (Cléo from 5 to 7) [film] |
+| 10. Undergrounds and Underworlds: Cops and Robbers; Detectives and Voyeurs; Explorers and Stalkers; Pushers and Pickpockets; Hackneys, Hobos, Hustlers, and Hookers; Perversive-Subversive Psychogeography | Park and Burgess, The City , chapter 9 (“The Mind of the Hobo”) <br> Delany, Times Square Red, Times Square Blue <br> Manaugh, A Burglar’s Guide to the City , chapter 3 (“Your Building Is the Target”) <br> Skim/Browse: <br> Weegee, Naked City <br> David Macaulay, Underground |
+| 11. Jaywalking, <br> Détournement <br> , Hacking, Squatting, Occupying: Trespassive Psychogeography | Debord and Wolman, “A User’s Guide to Détournement ” <br> Wark, “Zuccotti Park” <br> Garrett, Explore Everything <br> Skim/Browse: <br> Piranesi, The Prisons / Le Carceri <br> Banksy, Wall and Piece <br> Optional: <br> Banksy, Exit through the Gift Shop [film] |
+| 12. Branches, Twigs, Sprouts, Leaves, Debris: 1975–present | Perec, An Attempt at Exhausting a Place in Paris <br> Sebald, Rings of Saturn , chapters V and VII <br> Sinclair, Lights Out for the Territory , chapter 1 (“Skating on Thin Eyes: The First Walk”) <br> Wenders, Wings of Desire (Der Himmel über Berlin) [film] <br> Keiller, London [film] <br> Optional: <br> Williams, Paterson |
+| 13. New Directions: Student Projects | [No readings assigned] |
+| 14. Last Class, Wrap-Up, Next Steps | [No readings assigned] |

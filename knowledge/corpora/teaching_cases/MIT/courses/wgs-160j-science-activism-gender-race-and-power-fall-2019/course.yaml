@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-160j-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.160J"
+cross_listed_codes:
+  - "STS.021J"
+course_title: "Science Activism: Gender, Race, and Power"
+course_slug: "wgs-160j-science-activism-gender-race-and-power-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Edmund Bertschinger"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Climate Studies"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject examines the role scientists have played as activists in social movements in the U.S. following World War II. Themes include scientific responsibility and social justice, the roles of gender, race, and power, the motivation of individual scientists, strategies for organizing, and scientists’ impact within social movements. Case studies include atmospheric testing of nuclear weapons and the nuclear freeze campaign, climate science and environmental justice, the civil rights movement, Vietnam War protests, the March 4 movement at MIT, concerns about genetic engineering, gender equality, intersectional feminism, and student activism at MIT. Read a profile of the class “ Scientists as Engaged Citizens ” by the MIT School of Humanities, Arts, and Social Sciences.
+course_url: "https://ocw.mit.edu/courses/wgs-160j-science-activism-gender-race-and-power-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/wgs-160j-science-activism-gender-race-and-power-fall-2019/617943f26aa7e9b945f1db07e427effd_WGS-160f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

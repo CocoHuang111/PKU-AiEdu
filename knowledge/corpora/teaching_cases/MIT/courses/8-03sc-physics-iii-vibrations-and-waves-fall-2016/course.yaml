@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-8-03sc-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.03SC"
+cross_listed_codes: []
+course_title: "Physics III: Vibrations and Waves"
+course_slug: "8-03sc-physics-iii-vibrations-and-waves-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Yen-Jie Lee"
+subject_primary: "Physics"
+subject_secondary:
+  - "Atomic, Molecular, Optical Physics"
+  - "Classical Mechanics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Classical Mechanics"
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  Vibrations and waves are everywhere. If you take any system and disturb it from a stable equilibrium, the resultant motion will be waves and vibrations. Think of a guitar string—pluck the string, and it vibrates. The sound waves generated make their way to our ears, and we hear the string’s sound. Our eyes see what’s happening because they receive the electromagnetic waves of the light reflected from the guitar string, so that we can recognize the beautiful sinusoidal waves on the string. In fact, without vibrations and waves, we could not recognize the universe around us at all! The amazing thing is that we can describe many fascinating phenomena arising from very different physical systems with mathematics. This course will provide you with the concepts and mathematical tools necessary to understand and explain a broad range of vibrations and waves. You will learn that waves come from many interconnected (coupled) objects when they are vibrating together. We will discuss many of these phenomena, along with related topics, including mechanical vibrations and waves, sound waves, electromagnetic waves, optics, and gravitational waves.
+course_url: "https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/05c7b1fd95fc1100e7528e7f1a0a2a2b_8-03scf16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

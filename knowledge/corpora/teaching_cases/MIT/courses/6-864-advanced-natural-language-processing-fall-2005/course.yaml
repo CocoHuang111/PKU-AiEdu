@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-6-864-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.864"
+cross_listed_codes: []
+course_title: "Advanced Natural Language Processing"
+course_slug: "6-864-advanced-natural-language-processing-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Michael Collins"
+  - "Prof. Regina Barzilay"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Theory of Computation"
+  - "Humanities"
+  - "Linguistics"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Theory of Computation"
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is a graduate introduction to natural language processing - the study of human language from a computational perspective. It covers syntactic, semantic and discourse processing models, emphasizing machine learning or corpus-based methods and algorithms. It also covers applications of these methods and models in syntactic parsing, information extraction, statistical machine translation, dialogue systems, and summarization. The subject qualifies as an Artificial Intelligence and Applications concentration subject.
+course_url: "https://ocw.mit.edu/courses/6-864-advanced-natural-language-processing-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/6-864-advanced-natural-language-processing-fall-2005/0372fc2f25740026a775180dae62a8a6_6-864f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

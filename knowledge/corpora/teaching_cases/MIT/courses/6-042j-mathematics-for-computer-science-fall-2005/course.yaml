@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-6-042j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.042J"
+cross_listed_codes:
+  - "18.062J"
+course_title: "Mathematics for Computer Science"
+course_slug: "6-042j-mathematics-for-computer-science-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ronitt Rubinfeld"
+  - "Prof. Albert R. Meyer"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Discrete Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This is an introductory course in Discrete Mathematics oriented toward Computer Science and Engineering. The course divides roughly into thirds: Fundamental Concepts of Mathematics: Definitions, Proofs, Sets, Functions, Relations Discrete Structures: Modular Arithmetic, Graphs, State Machines, Counting Discrete Probability Theory A version of this course from a previous term was also taught as part of the Singapore-MIT Alliance (SMA) programme as course number SMA 5512 (Mathematics for Computer Science).
+course_url: "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2005/2c12187139252b95b36930712f616406_6-042jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

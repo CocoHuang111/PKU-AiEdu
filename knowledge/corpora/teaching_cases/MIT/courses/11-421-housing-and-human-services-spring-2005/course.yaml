@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-421-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.421"
+cross_listed_codes: []
+course_title: "Housing and Human Services"
+course_slug: "11-421-housing-and-human-services-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Langley Keyes"
+  - "Prof. Martin Rein"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Public Policy"
+  - "Social Welfare"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Housing Development"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+          - "Social Welfare"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Housing Development"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This class focuses on how the housing and human service systems interact: how networks and social capital can build between elements of the two systems. It explores ways in which the differing world views, professional perspectives, and institutional needs of the two systems play out operationally. Part I establishes the nature of the action frames of these two systems. Part II applies these insights to particular vulnerable groups: “at risk” households in transitional housing, the chronically mentally ill, and the frail elderly.
+course_url: "https://ocw.mit.edu/courses/11-421-housing-and-human-services-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/11-421-housing-and-human-services-spring-2005/f0bb1bb7dd6359cd3e7b4c8965013a54_11-421s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

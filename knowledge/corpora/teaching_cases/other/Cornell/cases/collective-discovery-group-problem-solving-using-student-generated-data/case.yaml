@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "cornell-collective-discovery-group-problem-solving-using-student-generated-data"
+institution: "Cornell University"
+platform: "Cornell Center for Teaching Innovation"
+collection: "Teaching Innovation Case Study Library"
+title: "Collective Discovery: Group Problem-Solving Using Student-Generated Data"
+slug: "collective-discovery-group-problem-solving-using-student-generated-data"
+source_url: "https://teaching.cornell.edu/collective-discovery-group-problem-solving-using-student-generated-data"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "4fe4de800e861e415ca2d06ffb70695943ef93a927a379e4b659cfc08991ca12"

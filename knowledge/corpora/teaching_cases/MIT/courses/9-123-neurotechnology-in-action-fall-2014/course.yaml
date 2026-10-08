@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-9-123-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.123"
+cross_listed_codes:
+  - "20.203"
+course_title: "Neurotechnology in Action"
+course_slug: "9-123-neurotechnology-in-action-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+  - "Biological Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Alan Jasanoff"
+  - "Prof. Edward Boyden"
+  - "Maxine Jonas"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biotechnology"
+  - "Health and Medicine"
+  - "Biomedical Instrumentation"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biotechnology"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course, as a part of MIT’s Center for Neurobiological Engineering curriculum , explores cutting-edge neurotechnology that is essential for advances in all aspects of neuroscience, including improvements in existing methods as well as the development, testing and discussion of completely new paradigms. Readings and in-class sessions cover the fields of electrophysiology, light microscopy, cellular engineering, optogenetics, electron microscopy, MRI / fMRI, and MEG / EEG. The course is designed with lectures that cover the background, context, and theoretical descriptions of neurotechnologies, and labs, which provide firsthand demonstrations as well as in situ lab tours.
+course_url: "https://ocw.mit.edu/courses/9-123-neurotechnology-in-action-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/9-123-neurotechnology-in-action-fall-2014/690f3e03ec2fe4ff38ac5349f74336a1_9-123f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

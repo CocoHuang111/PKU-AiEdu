@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-441-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.441"
+cross_listed_codes: []
+course_title: "Information Theory"
+course_slug: "6-441-information-theory-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Yury Polyanskiy"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Computation"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This is a graduate-level introduction to mathematics of information theory. We will cover both classical and modern topics, including information entropy, lossless data compression, binary hypothesis testing, channel coding, and lossy data compression.
+course_url: "https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/436e16d6e7b8777f0fccc9e2c0d4c32d_6-441S16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

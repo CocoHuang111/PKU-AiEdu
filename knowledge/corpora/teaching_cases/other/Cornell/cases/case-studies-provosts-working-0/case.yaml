@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "cornell-case-studies-provosts-working-0"
+institution: "Cornell University"
+platform: "Cornell Center for Teaching Innovation"
+collection: "Teaching Innovation Case Study Library"
+title: "Using Oral Exams to Motivate and Assess Learning from Ungraded Homework in Engineering"
+slug: "case-studies-provosts-working-0"
+source_url: "https://teaching.cornell.edu/teaching-spotlight/provosts-working-group-innovation-assessment/case-studies-provosts-working-0"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "f726423817f674ee17ddb81b09b856bfbd9376a39980a10db623eb97ade36bd2"

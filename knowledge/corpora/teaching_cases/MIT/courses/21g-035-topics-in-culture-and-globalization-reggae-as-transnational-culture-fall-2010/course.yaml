@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-035-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.035"
+cross_listed_codes:
+  - "21G.037"
+  - "21M.539"
+course_title: "Topics in Culture and Globalization: Reggae as Transnational Culture"
+course_slug: "21g-035-topics-in-culture-and-globalization-reggae-as-transnational-culture-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Wayne G. Marshall"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Fine Arts"
+  - "Media Studies"
+  - "Music"
+  - "Music History"
+  - "Society"
+  - "Latin and Caribbean Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Music"
+        specialties:
+          - "Music History"
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course considers reggae, or Jamaican popular music more generally—in its various forms (ska, rocksteady, roots, dancehall)—as constituted by international movements and exchanges and as a product that circulates globally in complex ways. By reading across the reggae literature, as well as considering reggae texts themselves (songs, films, videos, and images), students will scrutinize the different interpretations of reggae’s significance and the implications of different interpretations of the story of Jamaica and its music. Beginning with a consideration of how Jamaica’s popular music industry emerged out of transnational exchanges, the course will proceed to focus on reggae’s circulation outside of Jamaica via diasporic networks and commercial mediascapes. Among other sites, we will consider reggae’s resonance and impact elsewhere in the Anglo Caribbean (e.g., Trinidad, Barbados), the United Kingdom (including British reggae styles but also such progeny as jungle, grime, and dubstep), the United States (both as reggae per se and in hip-hop), Panama and Puerto Rico and other Latin American locales (e.g., Brazil), Japan and Australia, as well as West, South, and East Africa (Côte d’Ivoire, Tanzania, Uganda).
+course_url: "https://ocw.mit.edu/courses/21g-035-topics-in-culture-and-globalization-reggae-as-transnational-culture-fall-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-035-topics-in-culture-and-globalization-reggae-as-transnational-culture-fall-2010/47b4d2f195665a337dd87ac341b96952_21g-035f10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

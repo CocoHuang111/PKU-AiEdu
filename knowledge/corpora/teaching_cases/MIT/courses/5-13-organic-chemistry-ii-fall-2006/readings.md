@@ -1,0 +1,70 @@
+> 检索摘要：5.13 Organic Chemistry II（Fall 2006，Undergraduate）的「Readings」。页内标题：Readings；Key；Required Text；Additional Texts。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/5-13-organic-chemistry-ii-fall-2006/pages/readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Readings
+
+### Key
+
+EA = Elemental Analysis
+MS = Mass Spectrometry
+IR = Infrared Spectroscopy
+NMR = Nuclear Magnetic Resonance
+
+### Required Text
+
+McMurry, John. *Fundamentals of Organic Chemistry*. 6th ed. Pacific Grove, CA: Thomson-Brooks/Cole, 2006. ISBN: 9780495012030.
+
+### Additional Texts
+
+McMurry, Susan. *Study Guide and Student Solutions Manual for John McMurry’s Organic Chemistry.* 6th ed. Belmont, CA: Thomson-Brooks/Cole, 2003. ISBN: 9780534409340.
+
+Wade, L. G., Jr. *Organic Chemistry.* 5th ed. Upper Saddle River, NJ: Prentice Hall, 2002. ISBN: 9780130338327.
+
+Clayden, J., et al. *Organic Chemistry.* Oxford, England: Oxford University Press, 2000. ISBN: 9780198503460.
+
+| SES # | TOPICS | READINGS |
+| --- | --- | --- |
+| L1 | Molecular Formula and Index of Hydrogen Deficiency [EA] | McMurry. Chapter 12, pp. 393-423, and Chapter 13, pp. 424-463. |
+| L2 | Molecular Formula and Index of Hydrogen Deficiency [MS] |  |
+| L3 | Functional Groups [IR] |  |
+| L4 | Functional Groups: Fragmentation [MS] |  |
+| L5 | Functional Groups [13C NMR] |  |
+| L6 | Connectivity [1H NMR] |  |
+| L7 | Connectivity [1H NMR] (cont.) |  |
+| L8 | Organic Structure Elucidation |  |
+| L9 | Organic Structure Elucidation (cont.) |  |
+|  | Exam 1 |  |
+| L10 | Ethers, Epoxides, and Sulfides | McMurry. Chapter 18, pp. 639-671. |
+| L11 | Ethers, Epoxides, and Sulfides (cont.) |  |
+| L12 | Conjugated Systems and Molecular Orbital Theory |  |
+| L13 | Conjugated Systems and Molecular Orbital Theory (cont.) |  |
+| L14 | Pericyclic Reactions - Introduction | McMurry. Chapter 14, pp. 464-497. <br> (Also review McMurry. Chapter 15, pp. 498-527.) |
+| L15 | Pericyclic Reactions - Electrocyclic Processes |  |
+| L16 | Pericyclic Reactions - Cycloadditions |  |
+| L17 | Pericyclic Reactions - Cycloadditions, Sigmatropic Rearrangements |  |
+| L18 | Pericyclic Reactions - Sigmatropic Rearrangements |  |
+|  | Exam 2 |  |
+| L19 | Amines | Suggested Reading <br> McMurry. Chapter 24. |
+| L20 | Amines (cont.) |  |
+| L21 | Carboxylic Acids and Derivatives | Suggested Reading <br> McMurry. Sections 19.2-19.8, 19.11, 20.1-20.9, and 21.1-21.7. |
+| L22 | Carboxylic Acids and Derivatives (cont.) |  |
+| L23 | Carboxylic Acids and Derivatives (cont.) |  |
+| L24 | Carboxylic Acids and Derivatives (cont.) |  |
+| L25 | Enols and Enolates |  |
+|  | Exam 3 |  |
+| L26 | Enols and Enolates (cont.) |  |
+| L27 | Enols and Enolates (cont.) |  |
+| L28 | Enols and Enolates (cont.) |  |
+| L29 | Carbocations |  |
+| L30 | Carbocations (cont.) |  |
+| L31 | Carbocations (cont.) |  |
+| L32 | Carbocations (cont.) |  |
+|  | Exam 4 |  |
+| L33 | Radicals |  |
+| L34 | Radicals (cont.) |  |
+| L35 | Photochemistry |  |

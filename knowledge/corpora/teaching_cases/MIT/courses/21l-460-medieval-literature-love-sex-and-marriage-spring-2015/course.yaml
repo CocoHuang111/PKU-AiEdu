@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-460-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.460"
+cross_listed_codes: []
+course_title: "Medieval Literature: Love, Sex, and Marriage"
+course_slug: "21l-460-medieval-literature-love-sex-and-marriage-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Emily Griffiths Jones"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "Criticism"
+  - "Periodic Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+          - "Periodic Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  It is easy to think of love as a “universal language” - but do ideas about love translate easily across history, culture, and identity? In this course, we will encounter some surprising, even disturbing ideas about love and sex from medieval writers and characters: For instance, that married people can never be in love, that the most satisfying romantic love incorporates pain and violence, and that intense erotic pleasure can be found in celibate service to God. Through Arthurian romances, Chaucer’s Canterbury Tales , love letters, mystical visions, and more, we will explore medieval attitudes toward marriage, sexuality, and gender roles. What can these perspectives teach us about the uniqueness of the Middle Ages—and how do medieval ideas about love continue to influence the beliefs and fantasies of our own culture?
+course_url: "https://ocw.mit.edu/courses/21l-460-medieval-literature-love-sex-and-marriage-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/21l-460-medieval-literature-love-sex-and-marriage-spring-2015/4021734f38df1062d4495d2c0b132c8c_21l-460s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

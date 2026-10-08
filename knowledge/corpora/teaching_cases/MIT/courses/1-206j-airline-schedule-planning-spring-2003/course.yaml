@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-1-206j-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.206J"
+cross_listed_codes:
+  - "16.77J"
+  - "ESD.215J"
+course_title: "Airline Schedule Planning"
+course_slug: "1-206j-airline-schedule-planning-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Aeronautics and Astronautics"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Cynthia Barnhart"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Systems Optimization"
+  - "Social Science"
+  - "Urban Studies"
+  - "Transportation Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Transportation Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Explores a variety of models and optimization techniques for the solution of airline schedule planning and operations problems. Schedule design, fleet assignment, aircraft maintenance routing, crew scheduling, passenger mix, and other topics are covered. Recent models and algorithms addressing issues of model integration, robustness, and operations recovery are introduced. Modeling and solution techniques designed specifically for large-scale problems, and state-of-the-art applications of these techniques to airline problems are detailed.
+course_url: "https://ocw.mit.edu/courses/1-206j-airline-schedule-planning-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/1-206j-airline-schedule-planning-spring-2003/aa0c42369bc09b11f258a91b3245f612_1-206js03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

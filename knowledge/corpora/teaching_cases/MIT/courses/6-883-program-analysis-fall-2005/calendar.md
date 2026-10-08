@@ -1,0 +1,11 @@
+> 检索摘要：6.883 Program Analysis（Fall 2005，Graduate）的「Calendar」。页内标题：Calendar。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/6-883-program-analysis-fall-2005/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+<table><tr><th>Lec #</th><th>topics</th><th>key dates</th></tr><tr><td>1</td><td>Introduction <br> Static and Dynamic Analysis</td><td>Assignment 1 out</td></tr><tr><td colspan="3">Abstract Interpretation</td></tr><tr><td>2</td><td>A Semantics-based Tool for Program Analysis</td><td>Assignment 1 due</td></tr><tr><td>3</td><td>A Unified Lattice Model for Static Analysis of Programs by Construction or Approximation of Fixpoints</td><td></td></tr><tr><td colspan="3">Dynamic Analysis</td></tr><tr><td>4</td><td>Chaining Approach for Software Test Data Generation</td><td></td></tr><tr><td>5</td><td>Efficient Path Profiling</td><td></td></tr><tr><td>6</td><td>Simplifying and Isolating Failure-inducing Input</td><td></td></tr><tr><td>7</td><td>Dynamically Discovering Likely Program Invariants to Support Program Evolution</td><td></td></tr><tr><td colspan="3">Types</td></tr><tr><td>8</td><td>Principal Type-schemes for Functional Programs <br> Proofs about a Folklore Let-polymorphic Type Inference Algorithm</td><td></td></tr><tr><td>9</td><td>Introduction to Part II, Polymorphic Lambda Calculus</td><td></td></tr><tr><td>10</td><td>Lackwit: A Program Understanding Tool based on Type Inference <br> Finding User/Kernel Pointer Bugs with Type Inference</td><td></td></tr><tr><td>11</td><td>Points-to Analysis <br> In Almost Linear Time <br> By Type Inference of Programs with Structures and Unions</td><td></td></tr><tr><td colspan="3">Model Checking</td></tr><tr><td>12</td><td>The Spin Model Checker</td><td></td></tr><tr><td>13</td><td>Optimizing Symbolic Model Checking for Statecharts</td><td></td></tr><tr><td>14</td><td>Constructing Compact Models of Concurrent Java® Programs <br> Using Predicate Abstraction to Reduce Object-oriented Programs for Model Checking</td><td></td></tr><tr><td>15-17</td><td>Student Project Presentations</td><td></td></tr></table>

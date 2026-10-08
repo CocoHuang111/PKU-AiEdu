@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-18-024-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.024"
+cross_listed_codes: []
+course_title: "Multivariable Calculus with Theory"
+course_slug: "18-024-multivariable-calculus-with-theory-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Christine Breiner"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is a continuation of [*18.014 Calculus with Theory*](/courses/18-014-calculus-with-theory-fall-2010/)*.* It covers the same material as [*18.02 Multivariable Calculus*](/courses/18-02sc-multivariable-calculus-fall-2010/), but at a deeper level, emphasizing careful reasoning and understanding of proofs. There is considerable emphasis on linear algebra and vector integral calculus.
+course_url: "https://ocw.mit.edu/courses/18-024-multivariable-calculus-with-theory-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/18-024-multivariable-calculus-with-theory-spring-2011/afb0ad5b77bc215a5dcf21ed42822457_18-024s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

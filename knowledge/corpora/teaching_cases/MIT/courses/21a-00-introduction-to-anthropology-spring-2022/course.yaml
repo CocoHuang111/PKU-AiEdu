@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-00-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.00"
+cross_listed_codes: []
+course_title: "Introduction to Anthropology"
+course_slug: "21a-00-introduction-to-anthropology-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Graham Jones"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+  - "Readings"
+  - "Written Assignments with Examples"
+description: |
+  Through the comparative study of different cultures, anthropology explores fundamental questions about what it means to be human. It seeks to understand how culture shapes societies, from the smallest island in the South Pacific to the largest Asian metropolis, and affects the way institutions work, from scientific laboratories to Christian megachurches. This course will provide a framework for analyzing diverse facets of human experience, such as gender, ethnicity, language, politics, economics, and art.
+course_url: "https://ocw.mit.edu/courses/21a-00-introduction-to-anthropology-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/21a-00-introduction-to-anthropology-spring-2022/21a-00s22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

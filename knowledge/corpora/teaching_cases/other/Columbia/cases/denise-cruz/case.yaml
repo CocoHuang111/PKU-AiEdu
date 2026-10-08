@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-denise-cruz"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Denise Cruz, PhD"
+slug: "denise-cruz"
+source_url: "https://ctl.columbia.edu/transformations/faculty/denise-cruz/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "e6ff2ad13b126e13f314dde4ea01917f23228654abdb98f1a77f93af0691e4db"

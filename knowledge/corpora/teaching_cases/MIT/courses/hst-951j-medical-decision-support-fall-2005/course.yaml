@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-951j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.951J"
+cross_listed_codes:
+  - "6.873J"
+course_title: "Medical Decision Support"
+course_slug: "hst-951j-medical-decision-support-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lucila Ohno-Machado"
+  - "Prof. Staal Vinterbo"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Biological Engineering"
+  - "Computational Biology"
+  - "Computer Science"
+  - "Artificial Intelligence"
+  - "Health and Medicine"
+  - "Biomedicine"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedicine"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course presents the main concepts of decision analysis, artificial intelligence, and predictive model construction and evaluation in the specific context of medical applications. The advantages and disadvantages of using these methods in real-world systems are emphasized, while students gain hands-on experience with application specific methods. The technical focus of the course includes decision analysis, knowledge-based systems (qualitative and quantitative), learning systems (including logistic regression, classification trees, neural networks), and techniques to evaluate the performance of such systems.
+course_url: "https://ocw.mit.edu/courses/hst-951j-medical-decision-support-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-951j-medical-decision-support-fall-2005/8a285c60f3f901db6ae5f9a768bcb678_hst-951jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

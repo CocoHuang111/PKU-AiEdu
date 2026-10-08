@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-702-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.702"
+cross_listed_codes: []
+course_title: "Studies in Fiction: Stowe, Twain, and the Transformation of 19th-Century America"
+course_slug: "21l-702-studies-in-fiction-stowe-twain-and-the-transformation-of-19th-century-america-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Wyn Kelley"
+subject_primary: "Literature"
+subject_secondary:
+  - "American Literature"
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "American Literature"
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This seminar looks at two bestselling nineteenth-century American authors whose works made the subject of slavery popular among mainstream readers. Uncle Tom’s Cabin by Harriet Beecher Stowe and The Adventures of Huckleberry Finn by Mark Twain have subsequently become canonized and reviled, embraced and banned by individuals and groups at both ends of the political and cultural spectrum and everywhere in between.
+course_url: "https://ocw.mit.edu/courses/21l-702-studies-in-fiction-stowe-twain-and-the-transformation-of-19th-century-america-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-702-studies-in-fiction-stowe-twain-and-the-transformation-of-19th-century-america-fall-2004/56ddca74ad80e279ffe141ba2797655c_21l-702f04.gif
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

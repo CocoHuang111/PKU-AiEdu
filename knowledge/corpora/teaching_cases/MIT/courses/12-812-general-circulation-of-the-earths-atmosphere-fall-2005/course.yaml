@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-12-812-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.812"
+cross_listed_codes: []
+course_title: "General Circulation of the Earth's Atmosphere"
+course_slug: "12-812-general-circulation-of-the-earths-atmosphere-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Peter Stone"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Hydrology and Water Resource Systems"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Geophysics"
+  - "Oceanography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Hydrology and Water Resource Systems"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geophysics"
+          - "Oceanography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course examines diagnostic studies of the Earth's atmosphere and discusses their implications for the theory of the structure and general circulation of the Earth's atmosphere. It includes some discussion of the validation and use of general circulation models as atmospheric analogs.
+course_url: "https://ocw.mit.edu/courses/12-812-general-circulation-of-the-earths-atmosphere-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/12-812-general-circulation-of-the-earths-atmosphere-fall-2005/48077eb1692f83c401125fe7a5e92459_12-812f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

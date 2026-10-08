@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-11-947-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.947"
+cross_listed_codes: []
+course_title: "Urbanization and Development"
+course_slug: "11-947-urbanization-and-development-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Daniel Esser"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Political Philosophy"
+  - "Social Science"
+  - "Public Administration"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties: []
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Exam Solutions"
+  - "Exams"
+description: |
+  The course examines the causes and effects of rapid urbanization in developing countries. Using case studies from the world’s four major developing regions, including (among others) Mexico City, Buenos Aires, Managua, Singapore, Hong Kong, Guangzhou, Kabul, Beirut, Cairo, Kinshasa, Cape Town and Johannesburg, it explores the economic and political dynamics that grease the wheels of contemporary patterns of growth. In addition to examining both local and transnational forces that drive contemporary urbanization, the course focuses on key issues that emerge in rapidly growing cities of the developing world, ranging from growing income inequality and socio-economic exclusion, environmental challenges, and rising violence. Class sessions are discussion-based and focus on a critical analysis of the arguments presented in the readings .
+course_url: "https://ocw.mit.edu/courses/11-947-urbanization-and-development-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/11-947-urbanization-and-development-spring-2009/a852eb1fbc5cbbf9e9661335fe624b67_11-947s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

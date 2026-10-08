@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-18-700-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.700"
+cross_listed_codes: []
+course_title: "Linear Algebra"
+course_slug: "18-700-linear-algebra-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "David Vogan"
+subject_primary: "Linear Algebra"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This course offers a rigorous treatment of linear algebra, including vector spaces, systems of linear equations, bases, linear independence, matrices, determinants, eigenvalues, inner products, quadratic forms, and canonical forms of matrices. Compared with 18.06 Linear Algebra , more emphasis is placed on theory and proofs.
+course_url: "https://ocw.mit.edu/courses/18-700-linear-algebra-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/18-700-linear-algebra-fall-2013/6cde8d0d6f20c8b94910655107a062ee_18-700f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

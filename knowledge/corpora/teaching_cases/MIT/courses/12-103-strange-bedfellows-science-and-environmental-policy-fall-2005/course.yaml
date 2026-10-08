@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-12-103-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.103"
+cross_listed_codes: []
+course_title: "Strange Bedfellows: Science and Environmental Policy"
+course_slug: "12-103-strange-bedfellows-science-and-environmental-policy-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Stephen M. Meyer"
+  - "Prof. Kip Hodges"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Science"
+  - "Earth Science"
+  - "Environmental Science"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+  - "Written Assignments with Examples"
+description: |
+  12.103 explores the role of scientific knowledge, discovery, method, and argument in environmental policymaking from both idealistic and realistic perspectives. The course will use case studies of science-intensive environmental controversies to study how science was used and abused in the policymaking process. Case studies include: global warming, biodiversity loss, and nuclear waste disposal siting. Subject includes intensive practice in the writing and presentation of “position statements” on environmental science issues.
+course_url: "https://ocw.mit.edu/courses/12-103-strange-bedfellows-science-and-environmental-policy-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/12-103-strange-bedfellows-science-and-environmental-policy-fall-2005/1447def2583a590a07d143f02251760d_12-103f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-9-357-fall-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.357"
+cross_listed_codes: []
+course_title: "Special Topics in Vision Science"
+course_slug: "9-357-special-topics-in-vision-science-fall-2001"
+term: "Fall"
+year: 2001
+as_taught_in: "Fall 2001"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Edward Adelson"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Health and Medicine"
+  - "Sensory-Neural Systems"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  An advanced seminar on issues of current interest in human and machine vision. Topics vary from year to year. This year, the class will involve studying the perception of materials. Participants discuss current literature as well as their ongoing research. Topics are tackled from multiple standpoints, including optics, psychophysics, computer graphics and computer vision.
+course_url: "https://ocw.mit.edu/courses/9-357-special-topics-in-vision-science-fall-2001/"
+image_url: "https://ocw.mit.edu/courses/9-357-special-topics-in-vision-science-fall-2001/1e80bfe160e0d5b2f7723d1b7d23cc56_9-357f01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

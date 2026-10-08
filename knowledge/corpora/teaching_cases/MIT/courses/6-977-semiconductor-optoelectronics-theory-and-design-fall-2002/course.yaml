@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-977-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.977"
+cross_listed_codes: []
+course_title: "Semiconductor Optoelectronics: Theory and Design"
+course_slug: "6-977-semiconductor-optoelectronics-theory-and-design-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Rajeev Ram"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Materials Science and Engineering"
+  - "Electronic Materials"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Condensed Matter Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Electronic Materials"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Condensed Matter Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  6.977 focuses on the physics of the interaction of photons with semiconductor materials. The band theory of solids is used to calculate the absorption and gain of semiconductor media. The rate equation formalism is used to develop the concepts of laser threshold, population inversion and modulation response. Matrix methods and coupled mode theory are applied to resonator structures such as distributed feedback lasers, tunable lasers and microring devices. The course is also intended to introduce students to noise models for semiconductor devices and to applications of optoelectronic devices to fiber optic communications. This course is worth 12 Engineering Design points.
+course_url: "https://ocw.mit.edu/courses/6-977-semiconductor-optoelectronics-theory-and-design-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/6-977-semiconductor-optoelectronics-theory-and-design-fall-2002/30f2cd760b1a24e7c27d9fc901fc24b0_6-977f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

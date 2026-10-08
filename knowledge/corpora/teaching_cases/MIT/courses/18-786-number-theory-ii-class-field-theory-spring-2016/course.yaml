@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-18-786-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.786"
+cross_listed_codes: []
+course_title: "Number Theory II: Class Field Theory"
+course_slug: "18-786-number-theory-ii-class-field-theory-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Sam Raskin"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is the continuation of 18.785 Number Theory I . It begins with an analysis of the quadratic case of Class Field Theory via Hilbert symbols, in order to give a more hands-on introduction to the ideas of Class Field Theory. More advanced topics in number theory are discussed in this course, such as Galois cohomology, proofs of class field theory, modular forms and automorphic forms, Galois representations, and quadratic forms.
+course_url: "https://ocw.mit.edu/courses/18-786-number-theory-ii-class-field-theory-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/18-786-number-theory-ii-class-field-theory-spring-2016/ba708ad42cb68fbea3d0f9ec2e1f79ca_18-786s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

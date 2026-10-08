@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-16-522-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.522"
+cross_listed_codes: []
+course_title: "Space Propulsion"
+course_slug: "16-522-space-propulsion-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Manuel Martinez-Sanchez"
+  - "Prof. Paulo Lozano"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Propulsion Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Propulsion Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course covers the fundamentals of rocket propulsion and discusses advanced concepts in space propulsion ranging from chemical to electrical engines. Topics include advanced mission analysis, physics and engineering of microthrusters, solid propellant rockets, electrothermal, electrostatic, and electromagnetic schemes for accelerating propellants. Additionally, satellite power systems and their relation to propulsion systems are discussed. The course includes laboratory work emphasizing the design and characterization of electric propulsion engines.
+course_url: "https://ocw.mit.edu/courses/16-522-space-propulsion-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/16-522-space-propulsion-spring-2015/3795abdba0da0d591132325dd394900d_16-522s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

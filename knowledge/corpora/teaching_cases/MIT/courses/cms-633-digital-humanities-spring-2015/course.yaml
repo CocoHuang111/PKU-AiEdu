@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-633-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.633"
+cross_listed_codes:
+  - "CMS.833"
+course_title: "Digital Humanities"
+course_slug: "cms-633-digital-humanities-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Kurt Fendt"
+  - "Andy Kelleher Stuhl"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+  - "Humanities"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Humanities"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Projects with Examples"
+description: |
+  This course examines the theory and practice of using computational methods in the emerging field of digital humanities. It develops an understanding of key digital humanities concepts, such as data representation, digital archives, information visualization, and user interaction through the study of contemporary research, in conjunction with working on real-world projects for scholarly, educational, and public needs. Students create prototypes, write design papers, and conduct user studies.
+course_url: "https://ocw.mit.edu/courses/cms-633-digital-humanities-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/cms-633-digital-humanities-spring-2015/770113bf75cb37848fd0f498f2403c47_cms-633s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-11-432j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.432J"
+cross_listed_codes:
+  - "15.427J"
+course_title: "Real Estate Capital Markets"
+course_slug: "11-432j-real-estate-capital-markets-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Geltner"
+  - "Prof. Tod McGrath"
+subject_primary: "Finance"
+subject_secondary:
+  - "Real Estate"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+      - name: "Real Estate"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This half-semester course introduces and surveys the major public capital market real estate vehicles, REITs and MBS (with primary emphasis on CMBS). Some background is also included in basic modern portfolio theory and equilibrium asset pricing. This course is primarily designed to provide MSRED students with a basic introduction to the public capital market sources of financial capital for real estate, and how those markets value such capital investments.
+course_url: "https://ocw.mit.edu/courses/11-432j-real-estate-capital-markets-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/11-432j-real-estate-capital-markets-spring-2007/ca215971ad6cb213cf6ea465f799b70f_11-432js07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

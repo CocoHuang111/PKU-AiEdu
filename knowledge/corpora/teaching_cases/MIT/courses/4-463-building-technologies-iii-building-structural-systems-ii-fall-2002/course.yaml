@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-4-463-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.463"
+cross_listed_codes:
+  - "4.442"
+course_title: "Building Technologies III: Building Structural Systems II"
+course_slug: "4-463-building-technologies-iii-building-structural-systems-ii-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Ochsendorf"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Structural Engineering"
+  - "Materials Science and Engineering"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Structural Engineering"
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course addresses advanced topics in structures, exterior envelopes and contemporary production technologies. It continues the exploration of structural elements and systems; expanding to include more complex determinant, indeterminate, long-span and high-rise systems. Some of the topics covered include reinforced concrete, steel and engineered wood design, and an introduction to tensile systems. The contemporary exterior envelope is discussed with an emphasis on the classification of systems, their performance attributes and advanced manufacturing technologies. This course is the second of two graduate structures courses, the first of which is 4.462. They offer an expanded version of the content presented in the undergraduate course, 4.440.
+course_url: "https://ocw.mit.edu/courses/4-463-building-technologies-iii-building-structural-systems-ii-fall-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/4-463-building-technologies-iii-building-structural-systems-ii-fall-2002/8c5d2a142bf92e7cb06f0a67570a64ad_4-463f02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

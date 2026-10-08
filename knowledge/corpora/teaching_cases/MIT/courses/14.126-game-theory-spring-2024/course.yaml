@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-14-126-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.126"
+cross_listed_codes: []
+course_title: "Game Theory"
+course_slug: "14.126-game-theory-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Muhamet Yildiz"
+  - "Prof. Alexander Wolitzky"
+subject_primary: "Economics"
+subject_secondary:
+  - "Game Theory"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Readings"
+description: |
+  This course investigates equilibrium and non-equilibrium solution concepts and their foundations as the result of learning or evolution. Among the topics covered are the equilibria of supermodular games, global games, repeated games, signaling games, and models of bargaining, cheap talk, and reputation.
+course_url: "https://ocw.mit.edu/courses/14.126-game-theory-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/14.126-game-theory-spring-2024/mit14_126_s24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

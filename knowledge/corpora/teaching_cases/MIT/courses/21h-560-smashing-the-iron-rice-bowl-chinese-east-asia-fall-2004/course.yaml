@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-560-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.560"
+cross_listed_codes:
+  - "21G.191"
+  - "21G.991"
+course_title: "Smashing the Iron Rice Bowl: Chinese East Asia"
+course_slug: "21h-560-smashing-the-iron-rice-bowl-chinese-east-asia-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "History"
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Peter C. Perdue"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This subject examines the experiences of ordinary Chinese people as they lived through the tumultuous changes of the nineteenth and twentieth centuries. We look at personal narratives, primary sources, films alongside a textbook to think about how individual and family lives connect with the broader processes of change in modern China. In the readings and discussions, you should focus on how major political events have an impact on the characters’ daily lives, and how the decisions they make cause large-scale social transformation.
+course_url: "https://ocw.mit.edu/courses/21h-560-smashing-the-iron-rice-bowl-chinese-east-asia-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/21h-560-smashing-the-iron-rice-bowl-chinese-east-asia-fall-2004/bbf82e91d46cbdb1602a08bbadb9c9ed_21h-560f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

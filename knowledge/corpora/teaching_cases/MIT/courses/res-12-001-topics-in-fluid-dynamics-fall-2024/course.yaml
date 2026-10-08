@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-res-12-001-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.12-001"
+cross_listed_codes: []
+course_title: "Topics in Fluid Dynamics"
+course_slug: "res-12-001-topics-in-fluid-dynamics-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. James F. Price"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Geophysics"
+  - "Oceanography"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geophysics"
+          - "Oceanography"
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This resource presents a collection of essays developed from the author’s experience teaching the course 12.800 Fluid Dynamics of the Atmosphere and Ocean , offered to graduate students entering the MIT/WHOI Joint Program in Oceanography . The collection includes the following three essays: Essay 1: Lagrangian and Eulerian Representations of Fluid Flow Part 1: Kinematics and the Equations of Motion Part 2: Advection of Parcels and Fields Essay 2: Dimensional Analysis of Models and Data Sets: Similarity Solutions and Scaling Analysis Essay 3: A Coriolis Tutorial Part 1: The Coriolis Force, Inertial and Geostrophic Motion Part 2: A Rotating Shallow Water Model and Geostrophic Adjustment Part 3: Beta Effects and Western Propagation Part 4: Wind-Driven Ocean Circulation and the Sverdrup Relation Part 5: On the Seasonally-Varying Circulation of the Arabian Sea The goal of this resource is to help each student master the concepts and mathematical tools that make up the foundation of classical and geophysical fluid dynamics. These essays treat these topics in considerably greater depth than a comprehensive fluids textbook can afford, and they are accompanied by data files (MATLAB® and Fortran) to allow some application and experimentation. They should be suitable for self-study.
+course_url: "https://ocw.mit.edu/courses/res-12-001-topics-in-fluid-dynamics-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/res-12-001-topics-in-fluid-dynamics-fall-2024/mitres_12_001_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-9-458-summer-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.458"
+cross_listed_codes: []
+course_title: "Parkinson's Disease Workshop"
+course_slug: "9-458-parkinsons-disease-workshop-summer-2006"
+term: "Summer"
+year: 2006
+as_taught_in: "Summer 2006"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Suzanne Corkin"
+subject_primary: "Medical Imaging"
+subject_secondary:
+  - "Pathology and Pathophysiology"
+  - "Science"
+  - "Biology"
+  - "Neuroscience"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Medical Imaging"
+        specialties: []
+      - name: "Pathology and Pathophysiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Parkinson’s disease (PD) is a chronic, progressive, degenerative disease of the brain that produces movement disorders and deficits in executive functions, working memory, visuospatial functions, and internal control of attention. It is named after James Parkinson (1755-1824), the English neurologist who described the first case. This six-week summer workshop explored different aspects of PD, including clinical characteristics, structural neuroimaging, neuropathology, genetics, and cognitive function (mental status, cognitive control processes, working memory, and long-term declarative memory). The workshop did not take up the topics of motor control, nondeclarative memory, or treatment.
+course_url: "https://ocw.mit.edu/courses/9-458-parkinsons-disease-workshop-summer-2006/"
+image_url: "https://ocw.mit.edu/courses/9-458-parkinsons-disease-workshop-summer-2006/e62092fa2b17b419eb4a6ce902cfb6b2_9-458su06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

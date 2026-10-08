@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-693-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.693"
+cross_listed_codes: []
+course_title: "Gender, Race, and the Complexities of Science and Technology: A Problem-Based Learning Experiment"
+course_slug: "wgs-693-gender-race-and-the-complexities-of-science-and-technology-a-problem-based-learning-experiment-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Peter Taylor"
+  - "Prof. Anne Fausto-Sterling"
+subject_primary: "Gender Studies"
+subject_secondary:
+  - "Women's Studies"
+  - "Teaching and Education"
+topic_tree:
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  What can we learn about science and technology–and what can we do with that knowledge? Who are “we” in these questions?–whose knowledge and expertise gets made into public policy, new medicines, topics of cultural and political discourse, science education, and so on? How can expertise and lay knowledge about science and technology be reconciled in a democratic society? How can we make sense of the interactions of living and non-living, humans and non-humans, individual and collectivities in the production of scientific knowledge and technologies? The course takes these questions as entry points into an ever-growing body of work to which feminist, anti-racist, and other critical analysts and activists have made significant contributions. The course also takes these questions as an invitation to practice challenging the barriers of expertise, gender, race, class, and place that restrict wider access to and understanding of the production of scientific knowledge and technologies. In that spirit, students participate in an innovative, problem-based learning (PBL) approach that allows them to shape their own directions of inquiry and develop their skills as investigators and prospective teachers. At the same time the PBL cases engage students’ critical faculties as they learn about existing analyses of gender, race, and the complexities of science and technology, guided by individualized bibliographies co-constructed with the instructors and by the projects of the other students. Students from all fields and levels of preparation are encouraged to join the course.
+course_url: |
+  https://ocw.mit.edu/courses/wgs-693-gender-race-and-the-complexities-of-science-and-technology-a-problem-based-learning-experiment-spring-2009/
+image_url: |
+  https://ocw.mit.edu/courses/wgs-693-gender-race-and-the-complexities-of-science-and-technology-a-problem-based-learning-experiment-spring-2009/c11565561694f45600702fd2f42d9e46_wgs-693s09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

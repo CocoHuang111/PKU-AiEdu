@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-1-76-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.76"
+cross_listed_codes: []
+course_title: "Aquatic Chemistry"
+course_slug: "1-76-aquatic-chemistry-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Jeff Seewald"
+  - "Dr. Jim Moffett"
+  - "Dr. Meg Tivey"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Aquatic Sciences and Water Quality Control"
+  - "Hydrodynamics and Coastal Engineering"
+  - "Hydrology and Water Resource Systems"
+  - "Science"
+  - "Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Aquatic Sciences and Water Quality Control"
+          - "Hydrodynamics and Coastal Engineering"
+          - "Hydrology and Water Resource Systems"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course details the quantitative treatment of chemical processes in aquatic systems such as lakes, oceans, rivers, estuaries, groundwaters, and wastewaters. It includes a brief review of chemical thermodynamics that is followed by discussion of acid-base, precipitation-dissolution, coordination, and reduction-oxidation reactions. Emphasis is on equilibrium calculations as a tool for understanding the variables that govern the chemical composition of aquatic systems and the fate of inorganic pollutants. This course is offered through The MIT/WHOI Joint Program . The MIT/WHOI Joint Program is one of the premier marine science graduate programs in the world. It draws on the complementary strengths and approaches of two great institutions: the Massachusetts Institute of Technology (MIT) and the Woods Hole Oceanographic Institution (WHOI).
+course_url: "https://ocw.mit.edu/courses/1-76-aquatic-chemistry-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/1-76-aquatic-chemistry-fall-2005/56c864c93177fa867fc6deae47940c96_1-76f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

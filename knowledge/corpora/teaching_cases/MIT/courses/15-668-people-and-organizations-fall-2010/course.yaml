@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-668-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.668"
+cross_listed_codes: []
+course_title: "People and Organizations"
+course_slug: "15-668-people-and-organizations-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Thomas A. Kochan"
+subject_primary: "Industrial Relations and Human Resource Management"
+subject_secondary:
+  - "Leadership"
+  - "Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  15.668 People and Organizations examines the historical evolution and current human and organizational contexts in which scientists, engineers and other professionals work. It outlines today’s major challenges facing the management profession. The course uses interactive exercises, simulations and problems to develop critical skills in negotiations, teamwork and leadership. Students will be introduced to concepts and tools to analyze work and leadership experiences in optional undergraduate fieldwork projects.
+course_url: "https://ocw.mit.edu/courses/15-668-people-and-organizations-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/15-668-people-and-organizations-fall-2010/ef68e6edf73d5b102c004d27c1bebc4f_15-668f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

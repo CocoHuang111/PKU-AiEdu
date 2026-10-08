@@ -140,6 +140,8 @@ python -m scripts.import_sqlite --db data/app.db --user-id <UUID> --execute
 | `python -m scripts.import_sqlite --user-id <UUID>` | 可选：预览把旧 `data/app.db` 记录挂到指定用户（加 `--execute` 才写入） |
 | `python -m scripts.purge_user_data --user-id <UUID>` | 预览清理某用户；加 `--execute` 才删除 |
 | `make ingest` | 增量构建向量库 |
+| `python3 scripts/crawl_other_cases.py --rate 4` | 按来源页保存 `teaching_cases/other/` 的英文原文。已完成的会跳过 |
+| `python3 scripts/crawl_other_cases.py --only oyc` | 只续跑 Open Yale Courses。`--only` 还可取 `cornell`、`columbia`、`michigan`、`poorvu` |
 | `make ingest-reset` | 清空后重建向量库（换 embedding 模型后必须） |
 | `make salon` | 沙龙 mp4 → ASR(small) 转写 + LLM 提取教学知识 → Markdown |
 | `make salon-transcribe` | 只做沙龙 ASR 转写（结果在 `.work/`） |
@@ -269,6 +271,8 @@ ai_engine/         AI 能力层，不依赖任何 Web 框架，可独立在脚�
                              # / build_eval_dataset / test_eval_dataset / test_gb
                              # / train_gb_* / compare_gb / draw_feat_overview / draw_pace_page
                              # / create_admin / import_sqlite / purge_user_data / test_auth_system
+                             # / crawl_mit_ocw.py  MIT OCW 课程目录（可续跑）
+                             # / crawl_other_cases.py  Cornell / Columbia / Michigan / Yale 来源页原文（可续跑）
 ```
 
 ### 数据流
@@ -898,6 +902,9 @@ MAE 0.836），但样本极少，且宋晨仍被高估 1.675 分，不能据此�
 knowledge/corpora/edu_theory/      # 教育学基础理论
 knowledge/corpora/pku_salon/       # 北大教学沙龙
 knowledge/corpora/course_syllabi/  # 课程大纲参考
+knowledge/corpora/discipline_pedagogy/ # 分学科教学特点与方法
+knowledge/corpora/teaching_cases/  # 北大与美国高校教学设计案例
+knowledge/corpora/AIMES/           # 斯坦福 AIMES：AI 教学策略、政策、学生指南、案例库
 
 # 2. 重建
 make ingest
@@ -924,6 +931,35 @@ make ingest
 `course_syllabi/` 已收录 11 门公开 syllabus **原版 HTML**（MIT OCW、Stanford、Yale OYC、
 CMU、Harvard CS50），按院校分子目录；目录与各课「参考价值」见
 `knowledge/corpora/course_syllabi/README.md`。
+
+`discipline_pedagogy/` 仅保留 `literature_reviews/`：三份综述逐一覆盖北京大学30个院系方向，
+八大类汇总稿整合学科教育特点、方法、国内改革反思及来源。培养方案只用于确认院系范围。
+全部本地原始网页/PDF集中在 `literature_reviews/original_sources/`，按综述优先文献、外部专业
+资料和北大官方快照分目录保存，并附来源清单、抓取状态和SHA-256校验值。
+
+`AIMES/` 是斯坦福 CTL「AI Meets Education at Stanford」的原文归档，目录说明见
+`knowledge/corpora/AIMES/README.md`。策略页拆成总览和三条路径；案例库按课程合并；
+教学技术工具只记详情页和产品入口。CTL 大纲模板的示例条文在 Google 文档里，本库只有使用说明和文档地址。
+
+`teaching_cases/` 中，2016–2018年北大教改汇编的29篇已按结题报告重写为设计思路、实施过程、实施成果、存在问题和可迁移场景；
+`source/` 保留教务部原始 PDF。`other/` 是 Cornell、Columbia、Michigan、Yale 来源页的英文原文，不再保留中文改写稿。完整目录见 `knowledge/corpora/teaching_cases/README.md`。
+
+`teaching_cases/MIT/` 是 MIT OpenCourseWare 课程库，不是上面那种改写过的教学案例。
+2587 个课程版本都有目录和实际栏目的英文原文；2582 门抽取完整，5 门只有部分页面。
+作业、讲义 PDF 和视频没有下载。说明见 `knowledge/corpora/teaching_cases/MIT/README.md`。
+正文还没有写进向量库，要进问答需再执行 `make ingest`。
+
+```bash
+# 续跑目录。已经写好的课程会跳过。
+python3 scripts/crawl_mit_ocw.py discover
+
+# 正文已抽过一遍。再跑会跳过 complete，并重试 5 门 partial。
+python3 scripts/crawl_mit_ocw.py --rate 4 extract --all
+
+# other/ 四校来源页。已完成的案例和课程会跳过。
+python3 scripts/crawl_other_cases.py --rate 4
+python3 scripts/crawl_other_cases.py --only oyc
+```
 
 仓库里现有的「种子-*.md」只是用来验证链路，放入真实资料后可以删掉。
 
@@ -1114,6 +1150,7 @@ make install-local                      # 装 pyannote.audio
 | 新加的客观特征前端看不到 | 忘了在 `evaluation_rubric.yaml` 的 `objective_features` 里登记标签。跑 `make check-features` 会指出缺哪个 key |
 | `make check-features` 报「无未登记的特征 key」失败 | 同上，按提示把 key 加到 rubric 对应分组里 |
 | 问答检索不到内容 / 语料库计数为 0 | 没建库。`make ingest`，并确认语料目录里确实有文档 |
+| `crawl_other_cases.py` 抓密歇根失败，或只有 2019–2025 | CRLT 对脚本返回 HTTP 403，正文来自当时的浏览器抓取。获奖名单第二页 `?page=1` 返回 HTTP 500，2018 及更早没有收。抓取文件缺失时，脚本留下已保存案例并跳过该校 |
 | 问答里「历史评估报告」是空的 / 勾不了某次课 | 只有评估**成功完成**才会入库。进行中、失败、取消的不会出现。从评估页删掉任务会同步删向量。点「+」里的「历史评估报告」打开弹窗；切回问答页会刷新列表 |
 | `dimension mismatch` 之类的 Chroma 报错 | 换过 embedding 模型。`make ingest-reset` 重建 |
 | 打开页面立刻跳到登录 | 正常。先 `make db-up && make db-migrate`，再注册或用 `create_admin` 创建的账号登录 |
@@ -1159,6 +1196,7 @@ make install-local                      # 装 pyannote.audio
 | **沙龙语料需从 mp4 生成** | 脚本已就绪（`make salon`），但需用户放入真实录像；种子 md 可删 | 视频放 `raw_video/` → `make salon` → `ingest --corpus pku_salon` |
 | **建库需手动触发** | 新增/更新文档后容易忘记 ingest，检索结果过时 | 加 `ingest --watch` 或上传文档后自动增量入库 |
 | **噪声文档进库** | `course_syllabi/` 里的 `README.md` 会被切块检索，干扰问答 | ingest 时排除 README/说明类文件，或按 glob 白名单入库 |
+| **密歇根 TIP 名单第二页打不开** | `other/Michigan/` 只有 2019–2025 的 35 篇。2018 及更早的获奖页不在库里 | 等 <https://crlt.umich.edu/tip-winners?page=1> 不再返回 HTTP 500 后，用 `crawl_other_cases.py` 补抓 |
 | **换 embedding 需全量重建** | 切换云端/本地 embedding 后维度不一致，Chroma 报错 | 已在 store 里做了维度冲突提示；文档化「换模型必跑 `make ingest-reset`」流程 |
 
 #### B. 检索链路
@@ -1280,6 +1318,42 @@ make install-local                      # 装 pyannote.audio
 ## 十三、变更记录
 
 倒序排列，最新在最上面。每条写清楚**为什么这么改**。
+
+### 2026-10-08 · other/ 每篇原文前加一句主要内容
+
+**问题**：`other/` 的检索摘要只重复机构和页内标题。打开一篇哥伦比亚或耶鲁的原文，看不出这页到底在讲哪一种做法或哪一段内容。
+**思路**：摘要仍放在 `---` 之前，不改英文原文，也不改 `content_sha256`。每个文件加一句中文，只根据该页正文来写：案例页看做法，Open Yale Courses 的课次看页面上的 Overview。续跑时如果文件里已经有这句，重写页面会把它留住。
+**影响**：Cornell、Columbia、Michigan、Poorvu 的案例和 Open Yale Courses 的课程说明、课次页都会带上这句。问答仍要另跑 `make ingest` 才会用到。
+
+### 2026-10-08 · other/ 四校案例改为来源页原文，并收齐同站同类材料
+
+**问题**：`teaching_cases/other/` 里 Cornell、Columbia、Michigan、Yale 是中文改写稿，外加一份原始 HTML。改写稿不能拿来核对出处；来源站上同一类案例也只收了其中几篇。
+**思路**：打开原来的来源页，按 MIT OCW 的办法保存英文原文：一篇来源页一个 Markdown，中文检索摘要和原文分开，视频和 PDF 只记 URL。来源站上同一清单里还能打开的案例一并收下。康奈尔用案例库和博客接口，哥伦比亚用 Teaching Transformations 教师名单并保留 4 篇旧链接，密歇根用浏览器取回的 TIP 获奖页（脚本直接请求会被 403），耶鲁分开收 Open Yale Courses 课次页和 Poorvu 的教学故事。课次链接若落在另一条院系路径或 `/node/` 下，仍按课程主页的 Sessions 表收录。
+**影响**：Cornell 27 篇，Columbia 53 篇，Michigan 35 篇（2019–2025；名单第二页 HTTP 500，更早的没有收），Poorvu 14 篇教学故事（19 条新闻 URL 记在 `skipped_news.txt`），Open Yale Courses 40 门课、1060 个课次、1100 份 Markdown。中文改写稿和 `source/` HTML 已删除。北大整理稿仍是 98 篇。`config.yaml` 里该语料库的说明改成与现在的目录一致。本次没有 `make ingest`。增量入库不会删掉向量库里已经不在磁盘上的旧改写稿，若要让问答改用这些原文，需要重建 `teaching_cases`。
+
+### 2026-10-08 · MIT OCW 正文已从样例扩到全库
+
+**问题**：目录阶段只抽了 20 门样例，README 仍写着其余 2567 门没有正文。全量 `extract --all` 已经跑完，文档还停在抽样口径，后续的人会以为库是空的，或者再跑一遍全量抽取。
+**思路**：以 `catalog.jsonl` 和每门 `course.yaml` 的 `extraction_status` 为准。2582 门完整，5 门部分页面抽不出来，原因记在 MIT 目录说明里，不把失败页写成空正文。
+**影响**：`knowledge/corpora/teaching_cases/MIT/` 现有 14663 份 Markdown。问答仍要另跑 `make ingest` 才会引用到这些正文。待解决问题里删掉「只完成 20 门样例」这一条。
+
+### 2026-10-03 · 建立 MIT OCW 课程目录，并抽 20 门样例原文
+
+**问题**：教学案例库里没有 MIT 课程的大纲、日历和作业结构，课程匹配和来源追溯没有可核对的 OCW 原文。
+**思路**：OCW 每门课的栏目不一样，所以先用公开检索接口拿到 2587 个课程版本，再打开课程主页读真实导航，不按固定地址猜栏目。PDF、视频和压缩包只记标题和 URL。正文先抽 20 门、覆盖不同开课院系的样例，其余课程标成待抽，避免一次抓完全部正文后才发现表格或链接被写坏。
+**影响**：新增 `knowledge/corpora/teaching_cases/MIT/` 和 `scripts/crawl_mit_ocw.py`。尚未 `make ingest`。样例确认后再跑 `extract --all`。
+
+### 2026-10-02 · 收入斯坦福 AIMES 原文语料
+
+**问题**：问答里已有一篇中文归纳的 AIMES 框架，但指定/限制/禁止三条策略、课程政策、学生指南、共同负责人反思和案例库都没有可引用的英文原文。
+**思路**：按 CTL 网站的实际页面拆，而不是按栏目名硬套。三条策略共用的做法单独做总览；两篇反思各一份，活动预告不收；案例库 41 条材料按课程合并；教学技术工具只记详情页 URL，产品入口和课程政策的外链资源放到 `Tool/`。
+**影响**：新增语料库 `AIMES`（`config.yaml` 与 `knowledge/corpora/AIMES/`）。CTL 大纲模板正文在需登录的 Google 文档里，只保存了说明页和文档地址。入库执行 `make ingest`。
+
+### 2026-09-25 · 教改汇编案例按结题报告栏目重写
+
+**问题**：2016–2018年优秀本科教改项目的整理稿把设计、实施和问题压成很短的几段，检索时拿不到原文里的具体做法和限制。
+**思路**：按汇编目录的29篇结题报告重写，栏目与原文对齐：设计思路、实施过程、实施成果、存在问题；另加「项目亮点与可迁移场景」，只从原文已写的做法里抽可复用流程。成效仍标为项目自述。护理、医学免疫学、学习科学3例不在这份PDF里，未改。
+**影响**：`knowledge/corpora/teaching_cases/PKU/2016-2018北京大学优秀本科教学改革项目案例/` 下29份案例稿。入库需重新 `ingest` 该语料库。
 
 ### 2026-09-18 · 上传中显示剩余时间，入队后跨页提示
 

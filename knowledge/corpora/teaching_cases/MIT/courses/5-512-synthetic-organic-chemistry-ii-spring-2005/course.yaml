@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-5-512-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.512"
+cross_listed_codes: []
+course_title: "Synthetic Organic Chemistry II"
+course_slug: "5-512-synthetic-organic-chemistry-ii-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Rick Danheiser"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Molecular Biology"
+  - "Chemistry"
+  - "Organic Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Molecular Biology"
+      - name: "Chemistry"
+        specialties:
+          - "Organic Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course focuses on general methods and strategies for the synthesis of complex organic molecules. Emphasis is on strategies for stereoselective synthesis, including stereocontrolled synthesis of complex acyclic compounds.
+course_url: "https://ocw.mit.edu/courses/5-512-synthetic-organic-chemistry-ii-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/5-512-synthetic-organic-chemistry-ii-spring-2005/4997b774663b6be3d3580a6cd780a4c7_5-512s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

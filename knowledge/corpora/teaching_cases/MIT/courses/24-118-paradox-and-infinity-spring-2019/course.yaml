@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-24-118-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.118"
+cross_listed_codes: []
+course_title: "Paradox and Infinity"
+course_slug: "24-118-paradox-and-infinity-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Agustín Rayo"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Metaphysics"
+  - "Mathematics"
+  - "Computation"
+  - "Mathematical Logic"
+  - "Social Science"
+  - "Game Theory"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Metaphysics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+      - name: "Mathematical Logic"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course presents highlights of the more technical side of philosophy. It studies a cluster of puzzles, paradoxes, and intellectual wonders — from the higher infinite to Gödel's Theorem — and discusses their philosophical implications.
+course_url: "https://ocw.mit.edu/courses/24-118-paradox-and-infinity-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/24-118-paradox-and-infinity-spring-2019/c582410dc333b697f175cdf5b4ed2bc2_24-118s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

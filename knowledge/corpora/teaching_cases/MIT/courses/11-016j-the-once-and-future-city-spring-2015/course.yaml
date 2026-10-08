@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-11-016j-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.016J"
+cross_listed_codes:
+  - "4.211J"
+course_title: "The Once and Future City"
+course_slug: "11-016j-the-once-and-future-city-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anne Whiston Spirn"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "American History"
+  - "Social Science"
+  - "Geography"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Geography"
+        specialties: []
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Other Video"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  Class website: The Once & Future City What is a city? What shapes it? How does its history influence future development? How do physical form and institutions vary from city to city and how are these differences significant? How are cities changing and what is their future? This course will explore these and other questions, with emphasis upon twentieth-century American cities. A major focus will be on the physical form of cities—from downtown and inner-city to suburb and edge city—and the processes that shape them. These questions and more are explored through lectures, readings, workshops, field trips, and analysis of particular places, with the city itself as a primary text. In light of the 2016 centennial of MIT’s move from Boston to Cambridge, the 2015 iteration of the course focused on MIT’s original campus in Boston’s Back Bay, and the university’s current neighborhood in Cambridge. Short field assignments, culminating in a final project, will provide students opportunities to use, develop, and refine new skills in “reading” the city.
+course_url: "https://ocw.mit.edu/courses/11-016j-the-once-and-future-city-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/11-016j-the-once-and-future-city-spring-2015/9ae5dbc53596262f9c45b5f013d85363_11-016js16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

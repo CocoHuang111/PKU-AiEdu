@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-6-189-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.189"
+cross_listed_codes: []
+course_title: "Multicore Programming Primer"
+course_slug: "6-189-multicore-programming-primer-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Rodric Rabbah"
+  - "Prof. Saman Amarasinghe"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Programming Languages"
+  - "Software Design and Engineering"
+  - "Theory of Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Programming Languages"
+          - "Software Design and Engineering"
+          - "Theory of Computation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Competition Videos"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Other Video"
+  - "Projects"
+description: |
+  The course serves as an introductory course in parallel programming. It offers a series of lectures on parallel programming concepts as well as a group project providing hands-on experience with parallel programming. The students will have the unique opportunity to use the cutting-edge PLAYSTATION 3 development platform as they learn how to design and implement exciting applications for multicore architectures. At the end of the course, students will have an understanding of: Fundamental design philosophies that multicore architectures address. Parallel programming philosophies and emerging best practices. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month. The course can be tailored to a normal semester time line. Acknowledgements The course instructors are extremely grateful to Sony , IBM , and Toshiba for their support.
+course_url: "https://ocw.mit.edu/courses/6-189-multicore-programming-primer-january-iap-2007/"
+image_url: "https://ocw.mit.edu/courses/6-189-multicore-programming-primer-january-iap-2007/29adf97891c3856cb3652b9848e93c55_6-189iap07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

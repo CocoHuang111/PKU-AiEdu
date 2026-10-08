@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-064-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.064"
+cross_listed_codes:
+  - "21G.592"
+course_title: "Intro to Japanese Culture"
+course_slug: "21g-064-intro-to-japanese-culture-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ian Condry"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course examines the major aesthetic, social, and political elements which have shaped modern Japanese culture and society. There are readings on contemporary Japan and historical evolution of the culture are coordinated with study of literary texts, film, and art, along with an analysis of everyday life and leisure activities.
+course_url: "https://ocw.mit.edu/courses/21g-064-intro-to-japanese-culture-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/21g-064-intro-to-japanese-culture-spring-2012/d9f18af60619a31df65bd8c6b2d7543c_21g-064s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

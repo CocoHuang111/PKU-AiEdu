@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-211-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.211"
+cross_listed_codes: []
+course_title: "Magic, Witchcraft, and the Spirit World"
+course_slug: "21a-211-magic-witchcraft-and-the-spirit-world-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Howe"
+subject_primary: "History"
+subject_secondary:
+  - "Historical Methods"
+  - "Religion"
+  - "Social Science"
+  - "Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Historical Methods"
+      - name: "Religion"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Spiritual, magical, and “occult” aspects of human behavior in anthropological and historical perspective: magic, ritual curing, trance, spirit possession, sorcery, and accusations of witchcraft. Material drawn from traditional nonwestern societies, medieval and early modern Europe, and colonial and contemporary North America.
+course_url: "https://ocw.mit.edu/courses/21a-211-magic-witchcraft-and-the-spirit-world-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/21a-211-magic-witchcraft-and-the-spirit-world-fall-2003/2e918937697b3e988994518abd52b784_21a-211f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

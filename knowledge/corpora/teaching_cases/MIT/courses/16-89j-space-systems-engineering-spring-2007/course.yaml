@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-16-89j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.89J"
+cross_listed_codes:
+  - "IDS.339J (formerly ESD.352J)"
+course_title: "Space Systems Engineering"
+course_slug: "16-89j-space-systems-engineering-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Institute for Data, Systems, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Edward Crawley"
+  - "Prof. Olivier de Weck"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Engineering"
+  - "Aerospace Engineering"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Presentation Assignments with Examples"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  In 16.89 / ESD.352 the students will first be asked to understand the key challenges in designing ground and space telescopes, the stakeholder structure and value flows, and the particular pros and cons of the proposed project. The first half of the class will concentrate on performing a thorough architectural analysis of the key astrophysical, engineering, human, budgetary and broader policy issues that are involved in this decision. This will require the students to carry out a qualitative and quantitative conceptual study during the first half of the semester and recommend a small set of promising architectures for further study at the Preliminary Design Review (PDR). Both lunar surface telescopes as well as orbital locations should be considered. The second half of the class will then pick 1-2 of the top-rated architectures for a lunar telescope facility and develop the concept in more detail and present the detailed design at the Critical Design Review (CDR). This should not only sketch out the science program, telescope architecture and design, but also the stakeholder relationships, a rough estimate of budget and timeline, and also clarify the role that human explorers could or should play during both deployment and servicing/operations of such a facility (if any).
+course_url: "https://ocw.mit.edu/courses/16-89j-space-systems-engineering-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/16-89j-space-systems-engineering-spring-2007/2a01cea04000d318a1d63c46d451a0d4_16-89js07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

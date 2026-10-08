@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-9-35-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.35"
+cross_listed_codes: []
+course_title: "Sensation And Perception"
+course_slug: "9-35-sensation-and-perception-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Benjamin Balas"
+subject_primary: "Sensory-Neural Systems"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Neuroscience"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to important philosophical questions about the mind, specifically those that are intimately connected with contemporary psychology and neuroscience. Are our concepts innate, or are they acquired by experience? (And what does it even mean to call a concept ‘innate’?) Are ‘mental images’ pictures in the head? Is color in the mind or in the world? Is the mind nothing more than the brain? Can there be a science of consciousness? The course will include guest lectures by Professors.
+course_url: "https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/9-35-sensation-and-perception-spring-2009/a2ef9bd6d361d5b3cf369e1035151d67_9-35s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

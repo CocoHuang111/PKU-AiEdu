@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-9-22j-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.22J"
+cross_listed_codes:
+  - "HST.422J"
+course_title: "A Clinical Approach to the Human Brain"
+course_slug: "9-22j-a-clinical-approach-to-the-human-brain-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Thomas Byrne"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Neurobiology"
+  - "Neuroscience"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course is designed to provide an understanding of how the human brain works in health and disease, and is intended for both the Brain and Cognitive Sciences major and the non-Brain and Cognitive Sciences major. Knowledge of how the human brain works is important for all citizens, and the lessons to be learned have enormous implications for public policy makers and educators. The course will cover the regional anatomy of the brain and provide an introduction to the cellular function of neurons, synapses and neurotransmitters. Commonly used drugs that alter brain function can be understood through a knowledge of neurotransmitters. Along similar lines, common diseases that illustrate normal brain function will be discussed. Experimental animal studies that reveal how the brain works will be reviewed. Throughout the seminar we will discuss clinical cases from Dr. Byrne’s experience that illustrate brain function; in addition, articles from the scientific literature will be discussed in each class.
+course_url: "https://ocw.mit.edu/courses/9-22j-a-clinical-approach-to-the-human-brain-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/9-22j-a-clinical-approach-to-the-human-brain-fall-2006/665e69cc2a76d951ecbe0544dd6c05e3_9-22jf06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

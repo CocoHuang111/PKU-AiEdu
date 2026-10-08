@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-18-03sc-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.03SC"
+cross_listed_codes: []
+course_title: "Differential Equations"
+course_slug: "18-03sc-differential-equations-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Arthur Mattuck"
+  - "Prof. Haynes Miller"
+  - "Dr. Jeremy Orloff"
+  - "Dr. John Lewis"
+subject_primary: "Differential Equations"
+subject_secondary:
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Problem-solving Videos"
+description: |
+  The laws of nature are expressed as differential equations. Scientists and engineers must know how to model the world in terms of differential equations, and how to solve those equations and interpret the solutions. This course focuses on the equations and techniques most useful in science and engineering. Course Format This course has been designed for independent study. It provides everything you will need to understand the concepts covered in the course. The materials include: Lecture Videos by Professor Arthur Mattuck. Course Notes on every topic. Practice Problems with Solutions . Problem Solving Videos taught by experienced MIT Recitation Instructors. Problem Sets to do on your own with Solutions to check your answers against when you’re done. A selection of Interactive Java® Demonstrations called Mathlets to illustrate key concepts. A full set of Exams with Solutions , including practice exams to help you prepare. Content Development Haynes Miller Jeremy Orloff Dr. John Lewis Arthur Mattuck
+course_url: "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/41623c6eccbf82e137bebd7e69b8a4d8_18-03scf11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

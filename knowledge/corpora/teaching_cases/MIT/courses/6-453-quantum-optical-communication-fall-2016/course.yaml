@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-6-453-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.453"
+cross_listed_codes: []
+course_title: "Quantum Optical Communication"
+course_slug: "6-453-quantum-optical-communication-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jeffrey Shapiro"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Digital Systems"
+  - "Telecommunications"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Telecommunications"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  _6.453 Quantum Optical Communication_ is one of a collection of MIT classes that deals with aspects of an emerging field known as quantum information science. This course covers Quantum Optics, Single-Mode and Two-Mode Quantum Systems, Multi-Mode Quantum Systems, Nonlinear Optics, and Quantum System Theory.
+course_url: "https://ocw.mit.edu/courses/6-453-quantum-optical-communication-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/6-453-quantum-optical-communication-fall-2016/7a2efa0e38cb39ab8a5524d32bcb8e15_6-453F16.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

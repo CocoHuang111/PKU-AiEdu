@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-16-55-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.55"
+cross_listed_codes: []
+course_title: "Ionized Gases"
+course_slug: "16-55-ionized-gases-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Manuel Martinez-Sanchez"
+  - "Prof. Paulo Lozano"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Propulsion Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Propulsion Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course highlights the properties and behavior of low-temperature plasmas in relation to energy conversion, plasma propulsion, and gas lasers. The course includes material on the equilibrium (energy states, statistical mechanics, and relationship to thermodynamics) and kinetic theory of ionized gases (motion of charged particles, distribution function, collisions, characteristic lengths and times, cross sections, and transport properties). In addition, the course discusses gas surface interactions (thermionic emission, sheaths, and probe theory) and radiation in plasmas and diagnostics.
+course_url: "https://ocw.mit.edu/courses/16-55-ionized-gases-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/16-55-ionized-gases-fall-2014/1d356d606ef1272ff8aa3719c7e74ecb_16_55f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

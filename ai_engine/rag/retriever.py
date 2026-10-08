@@ -106,6 +106,7 @@ def build_contexts(
                     "label", hit["corpus"]
                 ),
                 "source": meta.get("source", "未知来源"),
+                "source_url": meta.get("source_url", ""),
                 "score": hit["score"],
             }
         )

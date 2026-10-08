@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-9-520-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.520"
+cross_listed_codes: []
+course_title: "Statistical Learning Theory and Applications"
+course_slug: "9-520-statistical-learning-theory-and-applications-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Tomaso Poggio"
+subject_primary: "Probability and Statistics"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Computation and Systems Biology"
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is for upper-level graduate students who are planning careers in computational neuroscience. This course focuses on the problem of supervised learning from the perspective of modern statistical learning theory starting with the theory of multivariate function approximation from sparse data. It develops basic tools such as Regularization including Support Vector Machines for regression and classification. It derives generalization bounds using both stability and VC theory. It also discusses topics such as boosting and feature selection and examines applications in several areas: Computer Vision, Computer Graphics, Text Classification, and Bioinformatics. The final projects, hands-on applications, and exercises are designed to illustrate the rapidly increasing practical uses of the techniques described throughout the course.
+course_url: "https://ocw.mit.edu/courses/9-520-statistical-learning-theory-and-applications-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/9-520-statistical-learning-theory-and-applications-spring-2006/316d39a39abfbe64400b8d63f6a14bb2_9-520s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

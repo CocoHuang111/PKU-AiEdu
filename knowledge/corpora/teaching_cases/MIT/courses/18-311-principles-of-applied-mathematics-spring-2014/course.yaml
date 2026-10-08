@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-18-311-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.311"
+cross_listed_codes: []
+course_title: "Principles of Applied Mathematics"
+course_slug: "18-311-principles-of-applied-mathematics-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Rodolfo Rosales"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Differential Equations"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  18.311 Principles of Continuum Applied Mathematics covers fundamental concepts in continuous applied mathematics, including applications from traffic flow, fluids, elasticity, granular flows, etc. The class also covers continuum limit; conservation laws, quasi-equilibrium; kinematic waves; characteristics, simple waves, shocks; diffusion (linear and nonlinear); numerical solution of wave equations; finite differences, consistency, stability; discrete and fast Fourier transforms; spectral methods; transforms and series (Fourier, Laplace). Additional topics may include sonic booms, Mach cone, caustics, lattices, dispersion, and group velocity.
+course_url: "https://ocw.mit.edu/courses/18-311-principles-of-applied-mathematics-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/18-311-principles-of-applied-mathematics-spring-2014/c4467586a509f48a0a3a28a4e6a62e43_18-311s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

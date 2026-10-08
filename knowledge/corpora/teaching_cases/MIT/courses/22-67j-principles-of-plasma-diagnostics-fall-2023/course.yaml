@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-22-67j-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.67J"
+cross_listed_codes:
+  - "8.670J"
+course_title: "Principles of Plasma Diagnostics"
+course_slug: "22-67j-principles-of-plasma-diagnostics-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jack D. Hare"
+subject_primary: "Physics"
+subject_secondary:
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Supplemental Exam Materials"
+description: |
+  This course is an introduction to the physical processes used to measure the properties of plasmas. It will cover diagnostics suitable for a wide range of plasmas, including magnetically confined fusion plasmas and high-energy-density plasmas. Techniques include the measurements of magnetic and electric fields, particle flux, refractive index, emission and scattering of electromagnetic waves, and nuclear diagnostics.
+course_url: "https://ocw.mit.edu/courses/22-67j-principles-of-plasma-diagnostics-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/22-67j-principles-of-plasma-diagnostics-fall-2023/mit22_67j_f23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

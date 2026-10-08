@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-12-001-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.001"
+cross_listed_codes: []
+course_title: "Introduction to Geology"
+course_slug: "12-001-introduction-to-geology-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Taylor Perron"
+  - "Prof. Oliver Jagoutz"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Geology is the core discipline of the earth sciences and encompasses many different phenomena, including plate tectonics and mountain building, volcanoes and earthquakes, and the long-term evolution of Earth’s atmosphere, surface and life. Because of the ever-increasing demand for resources, the growing exposure to natural hazards, and the changing climate, geology is of considerable societal relevance. This course introduces students to the basics of geology. Through a combination of lectures, labs, and field observations, we will address topics ranging from mineral and rock identification to the origin of the continents, from geologic mapping to plate tectonics, and from erosion by rivers and glaciers to the history of life.
+course_url: "https://ocw.mit.edu/courses/12-001-introduction-to-geology-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/12-001-introduction-to-geology-fall-2013/76ea2d54123485055dd1e6621b9edf6a_12-001f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-rachel-austin"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Rachel Narehood Austin"
+slug: "rachel-austin"
+source_url: "https://ctl.columbia.edu/transformations/faculty/rachel-austin/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "0e10b74a6636d9d3bf2918e9a1fd7999f48f5d0d4c359f78ccbc04da41648a90"

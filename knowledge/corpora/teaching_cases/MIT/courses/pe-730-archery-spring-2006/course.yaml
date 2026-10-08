@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-pe-730-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "PE.730"
+cross_listed_codes: []
+course_title: "Archery"
+course_slug: "pe-730-archery-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Athletics, Physical Education and Recreation"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Cheryl Silva"
+  - "Prof. Jaroslav Koniusz"
+subject_primary: "Physical Education and Recreation"
+subject_secondary: []
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Physical Education and Recreation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Lecture Notes"
+description: |
+  This 12 session course is designed for the beginning or novice archer and uses recurve indoor target bows and equipment. The purpose of the course is to introduce students to the basic techniques of indoor target archery emphasizing the care and use of equipment, range safety, stance and shooting techniques, scoring and competition.
+course_url: "https://ocw.mit.edu/courses/pe-730-archery-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/pe-730-archery-spring-2006/468d2091d406d924060c6e625898b4bb_pe-730s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

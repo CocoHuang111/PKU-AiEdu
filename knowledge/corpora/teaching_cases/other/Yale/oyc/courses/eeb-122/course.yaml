@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-eeb-122"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "EEB 122"
+course_title: "Principles of Evolution, Ecology and Behavior"
+course_slug: "eeb-122"
+department_path: "ecology and evolutionary biology"
+professors:
+  - "Stephen C. Stearns Edward P. Bass Professor of Ecology and Evolutionary Biology"
+course_url: "https://oyc.yale.edu/ecology-and-evolutionary-biology/eeb-122"
+language: "en"
+description: |
+  This course presents the principles of evolution, ecology, and behavior for students beginning their study of biology and of the environment. It discusses major ideas and results in a manner accessible to all Yale College undergraduates. Recent advances have energized these fields with results that have implications well beyond their boundaries: ideas, mechanisms, and processes that should form part of the toolkit of all biologists and educated citizens.
+license_url: ""
+session_count: 38
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

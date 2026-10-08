@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-res-tll-007-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.TLL-007"
+cross_listed_codes: []
+course_title: "Case Studies in Social and Ethical Responsibilities of Computing"
+course_slug: "res-tll-007-case-studies-in-social-and-ethical-responsibilities-of-computing-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments: []
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. David Kaiser"
+  - "Prof. Julie Shah"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Humanities"
+  - "Philosophy"
+  - "Ethics"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The MIT Case Studies in Social and Ethical Responsibilities of Computing ( SERC ) aims to advance new efforts within and beyond MIT’s Stephen A. Schwarzman College of Computing . The specially commissioned and peer-reviewed cases are brief and intended to be effective for undergraduate instruction across a range of classes and fields of study. The series editors expect the cases will also be of interest for computing professionals, policy specialists, and general readers. All cases will be made freely available via open-access publishing, with author retained copyright, through Creative Commons licensing. The Series Editors interpret “social and ethical responsibilities of computing” broadly. Some cases focus closely on particular technologies, others on trends across technological platforms. Still others examine social, historical, philosophical, legal, and cultural facets that are essential for thinking critically about present-day efforts in computing and data sciences.
+course_url: "https://ocw.mit.edu/courses/res-tll-007-case-studies-in-social-and-ethical-responsibilities-of-computing-fall-2021/"
+image_url: |
+  https://ocw.mit.edu/courses/res-tll-007-case-studies-in-social-and-ethical-responsibilities-of-computing-fall-2021/dd415622e03e116c99342eeb0ef13a3a_res-tll-007f21.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

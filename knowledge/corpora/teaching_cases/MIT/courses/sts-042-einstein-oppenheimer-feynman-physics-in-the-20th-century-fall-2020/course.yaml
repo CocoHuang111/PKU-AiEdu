@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-042j-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.042J"
+cross_listed_codes:
+  - "8.225J"
+course_title: "Einstein, Oppenheimer, Feynman: Physics in the 20th Century"
+course_slug: "sts-042-einstein-oppenheimer-feynman-physics-in-the-20th-century-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Kaiser"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Modern History"
+  - "Science"
+  - "Physics"
+  - "Society"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Modern History"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties: []
+  - name: "Society"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This class explores the changing roles of physics and physicists during the 20th century. Topics range from relativity theory and quantum mechanics to high-energy physics and cosmology. We examine the development of modern physics and the role of physicists within shifting institutional, cultural, and political contexts, such as Imperial Britain, Nazi Germany, and the US during World War II, and the Cold War.
+course_url: "https://ocw.mit.edu/courses/sts-042-einstein-oppenheimer-feynman-physics-in-the-20th-century-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/sts-042-einstein-oppenheimer-feynman-physics-in-the-20th-century-fall-2020/sts-042jf20.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

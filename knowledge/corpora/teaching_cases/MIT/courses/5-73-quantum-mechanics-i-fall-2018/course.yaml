@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-5-73-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.73"
+cross_listed_codes: []
+course_title: "Quantum Mechanics I"
+course_slug: "5-73-quantum-mechanics-i-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Robert Field"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Physical Chemistry"
+  - "Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course presents the fundamental concepts of quantum mechanics: wave properties, uncertainty principles, the Schrödinger equation, and operator and matrix methods. Key topics include commutation rule definitions of scalar, vector, and spherical tensor operators; the Wigner-Eckart theorem; and 3j (Clebsch-Gordan) coefficients. In addition, we deal with many-body systems, exemplified by many-electron atoms (“electronic structure”), anharmonically coupled harmonic oscillators (“intramolecular vibrational redistribution: IVR”), and periodic solids.
+course_url: "https://ocw.mit.edu/courses/5-73-quantum-mechanics-i-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/5-73-quantum-mechanics-i-fall-2018/db0a558feb6fa1511bb1b3f4515dfb5d_5-73f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

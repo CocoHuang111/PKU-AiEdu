@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-res-tll-004-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.TLL-004"
+cross_listed_codes: []
+course_title: "STEM Concept Videos"
+course_slug: "res-tll-004-stem-concept-videos-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments: []
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Teaching and Learning Laboratory (TLL)"
+  - "Singapore University of Technology and Design (SUTD)"
+subject_primary: "Engineering"
+subject_secondary:
+  - "Mathematics"
+  - "Calculus"
+  - "Differential Equations"
+  - "Science"
+  - "Chemistry"
+  - "Physics"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Engineering"
+    subtopics: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties: []
+      - name: "Physics"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  The STEM Concept Videos are designed to help students learn a pivotal concept in science, technology, engineering, and/or mathematics (STEM). These ideas are the building blocks of many engineering curricula, and learning them will help students master more difficult material. The STEM Concept Videos were produced by the Teaching and Learning Lab (TLL) at MIT for the Singapore University of Technology and Design (SUTD). For more information on how these videos were developed, please see the paper presented by TLL researchers at the American Society for Engineering Education (ASEE) 2013 conference. Shah, D.N., JE French, J. Rankin, L. Breslow. “ Using Video to Tie Engineering Themes to Foundational Concepts .” American Society for Engineering Education Annual Conference, June 23-26, 2013.
+course_url: "https://ocw.mit.edu/courses/res-tll-004-stem-concept-videos-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/res-tll-004-stem-concept-videos-fall-2013/53b4d019a6dc6ccc1fb86c6a12d9c5f6_res-tl-004f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

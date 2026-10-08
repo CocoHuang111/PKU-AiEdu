@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-6-186-january-iap-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.186"
+cross_listed_codes: []
+course_title: "Mobile Autonomous Systems Laboratory"
+course_slug: "6-186-mobile-autonomous-systems-laboratory-january-iap-2005"
+term: "January IAP"
+year: 2005
+as_taught_in: "January IAP 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "No Faculty"
+  - "Prof. Leslie Kaelbling"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+  - "Mechanical Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+      - name: "Mechanical Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  MASLab (Mobile Autonomous System Laboratory), also known as 6.186, is a robotics contest. The contest takes place during MIT’s Independent Activities Period and participants earn 6 units of P/F credit and 6 Engineering Design Points. Teams of three to four students have less than a month to build and program sophisticated robots which must explore an unknown playing field and perform a series of tasks. MASLab provides a significantly more difficult robotics problem than many other university-level robotics contests. Although students know the general size, shape, and color of the floors and walls, the students do not know the exact layout of the playing field. In addition, MASLab robots are completely autonomous, or in other words, the robots operate, calculate, and plan without human intervention. Finally, MASLab is one of the few robotics contests in the country to use a vision based robotics problem.
+course_url: "https://ocw.mit.edu/courses/6-186-mobile-autonomous-systems-laboratory-january-iap-2005/"
+image_url: "https://ocw.mit.edu/courses/6-186-mobile-autonomous-systems-laboratory-january-iap-2005/37b562c923c6954768a4d8c6d79ddd5c_6-186iap05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

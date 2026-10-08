@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-mcdb-150"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "MCDB 150"
+course_title: "Global Problems of Population Growth"
+course_slug: "mcdb-150"
+department_path: "molecular cellular and developmental biology"
+professors:
+  - "Robert Wyman Professor Emeritus of Molecular, Cellular, and Developmental Biology"
+course_url: "https://oyc.yale.edu/molecular-cellular-and-developmental-biology/mcdb-150"
+language: "en"
+description: |
+  This survey course introduces students to the important and basic material on human fertility, population growth, the demographic transition and population policy. Topics include: the human and environmental dimensions of population pressure, demographic history, economic and cultural causes of demographic change, environmental carrying capacity and sustainability. Political, religious and ethical issues surrounding fertility are also addressed. The lectures and readings attempt to balance theoretical and demographic scale analyzes with studies of individual humans and communities. The perspective is global with both developed and developing countries included.
+license_url: ""
+session_count: 24
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

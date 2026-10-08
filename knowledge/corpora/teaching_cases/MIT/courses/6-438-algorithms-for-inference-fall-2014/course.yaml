@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-6-438-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.438"
+cross_listed_codes: []
+course_title: "Algorithms for Inference"
+course_slug: "6-438-algorithms-for-inference-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Devavrat Shah"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Graphics and Visualization"
+  - "Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Graphics and Visualization"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This is a graduate-level introduction to the principles of statistical inference with probabilistic models defined using graphical representations. The material in this course constitutes a common foundation for work in machine learning, signal processing, artificial intelligence, computer vision, control, and communication. Ultimately, the subject is about teaching you contemporary approaches to, and perspectives on, problems of statistical inference.
+course_url: "https://ocw.mit.edu/courses/6-438-algorithms-for-inference-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/6-438-algorithms-for-inference-fall-2014/2c2a7ac05a8f65b6bc11a4311a31f9b2_6-438f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

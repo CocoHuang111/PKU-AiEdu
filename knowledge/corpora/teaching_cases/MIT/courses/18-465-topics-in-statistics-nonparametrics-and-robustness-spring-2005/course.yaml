@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-18-465-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.465"
+cross_listed_codes: []
+course_title: "Topics in Statistics: Nonparametrics and Robustness"
+course_slug: "18-465-topics-in-statistics-nonparametrics-and-robustness-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Richard Dudley"
+subject_primary: "Probability and Statistics"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This graduate-level course focuses on one-dimensional nonparametric statistics developed mainly from around 1945 and deals with order statistics and ranks, allowing very general distributions. For multidimensional nonparametric statistics, an early approach was to choose a fixed coordinate system and work with order statistics and ranks in each coordinate. A more modern method, to be followed in this course, is to look for rotationally or affine invariant procedures. These can be based on empirical processes as in computer learning theory. Robustness, which developed mainly from around 1964, provides methods that are resistant to errors or outliers in the data, which can be arbitrarily large. Nonparametric methods tend to be robust.
+course_url: "https://ocw.mit.edu/courses/18-465-topics-in-statistics-nonparametrics-and-robustness-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/18-465-topics-in-statistics-nonparametrics-and-robustness-spring-2005/e4689bd84e821cbef0e93289d30e0fc2_18-465s05.JPG
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

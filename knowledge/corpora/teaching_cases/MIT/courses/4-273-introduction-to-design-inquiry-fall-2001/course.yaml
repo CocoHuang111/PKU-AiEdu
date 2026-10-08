@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-4-273-fall-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.273"
+cross_listed_codes: []
+course_title: "Introduction to Design Inquiry"
+course_slug: "4-273-introduction-to-design-inquiry-fall-2001"
+term: "Fall"
+year: 2001
+as_taught_in: "Fall 2001"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Edith Ackermann"
+  - "Prof. William Porter"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Introduction to Design Inquiry explores the nature and exercise of design intelligence. It aims to open avenues for further research and, along them, to open vistas on the teaching of design and on more mindful professional design practices. We see design as processes located in individuals and groups, shaped by the formation and experience of each individual and by the characteristics of the groups that play a role in the design process. People construct the worlds they inhabit out of what they know and have experienced. So also does the designer, but the designer’s worlds must be possible for others to inhabit and, therefore, to construct. Indeed the success of a design depends in large part on the degree to which these constructive processes yield similar results.
+course_url: "https://ocw.mit.edu/courses/4-273-introduction-to-design-inquiry-fall-2001/"
+image_url: "https://ocw.mit.edu/courses/4-273-introduction-to-design-inquiry-fall-2001/08b3ff8cbf8ad65fd216c6ab3f64a690_4-273f01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

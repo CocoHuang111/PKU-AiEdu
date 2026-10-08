@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-747-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.747"
+cross_listed_codes: []
+course_title: "Classical Rhetoric and Modern Political Discourse"
+course_slug: "21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Leslie Perelman"
+subject_primary: "Literature"
+subject_secondary:
+  - "Classics"
+  - "Criticism"
+  - "Nonfiction Prose"
+  - "Rhetoric"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Classics"
+          - "Criticism"
+          - "Nonfiction Prose"
+          - "Rhetoric"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course is an introduction to the history, theory, practice, and implications of rhetoric, the art and craft of persuasion through Analyzing persuasive texts and speeches Creating persuasive texts and speeches Through class discussions, presentations, and written assignments, you will get to practice your own rhetorical prowess. Through the readings, you’ll also learn some ways to make yourself a more efficient reader, as you turn your analytical skills on the texts themselves. This combination of reading, speaking, and writing will help you succeed in: learning to read and think critically techniques of rhetorical analysis techniques of argument to enhance your written and oral discourse with appropriate figures of speech some techniques of oral presentation and the use of visual aids and visual rhetoric.
+course_url: "https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/21w-747-classical-rhetoric-and-modern-political-discourse-fall-2009/813a78a1f2b62c03d1a06303aa2e2043_21w-747f09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

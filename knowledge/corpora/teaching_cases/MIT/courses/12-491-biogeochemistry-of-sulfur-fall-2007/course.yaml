@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-12-491-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.491"
+cross_listed_codes: []
+course_title: "Biogeochemistry of Sulfur"
+course_slug: "12-491-biogeochemistry-of-sulfur-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Roger Summons"
+  - "Prof. Shuhei Ono"
+subject_primary: "Biology"
+subject_secondary:
+  - "Biochemistry"
+  - "Earth Science"
+  - "Geobiology"
+  - "Geochemistry"
+  - "Planetary Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+      - name: "Earth Science"
+        specialties:
+          - "Geobiology"
+          - "Geochemistry"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  This course is designed for advanced undergraduate and graduate students with an interest in using primary research literature to discuss and learn about current research around sulfur biogeochemistry and astrobiology.
+course_url: "https://ocw.mit.edu/courses/12-491-biogeochemistry-of-sulfur-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/12-491-biogeochemistry-of-sulfur-fall-2007/689c15ee3507bdec27bec7f0c11fbfd0_12-491f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

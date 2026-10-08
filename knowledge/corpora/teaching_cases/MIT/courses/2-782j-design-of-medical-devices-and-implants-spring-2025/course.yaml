@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-2-782j-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.782J"
+cross_listed_codes:
+  - "HST.524J"
+course_title: "Design of Medical Devices and Implants"
+course_slug: "2-782j-design-of-medical-devices-and-implants-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Myron Spector"
+  - "Prof. Ioannis Yannas"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Biotechnology"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Biotechnology"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Projects"
+  - "Readings"
+description: |
+  This design course teaches a systematic approach for development of an implantable or injectable medical device to treat a specific and well-defined clinical problem, criteria for preparing applications to the US Food and Drug Administration for approval to conduct clinical trials, and the steps to start a company to make it available to the patient. Students work in teams to develop the design for an FDA Class III medical device or combination product (incorporating drugs and/or biologics). The emphasis is on the science and engineering underlying the design of novel treatments for problems in any one of the 78 organs of the body.
+course_url: "https://ocw.mit.edu/courses/2-782j-design-of-medical-devices-and-implants-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/2-782j-design-of-medical-devices-and-implants-spring-2025/mit2_782j_s25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

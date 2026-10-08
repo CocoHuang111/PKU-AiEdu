@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-s10-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.S10"
+cross_listed_codes: []
+course_title: "Gender, Power, Leadership, and the Workplace"
+course_slug: "wgs-s10-gender-power-leadership-and-the-workplace-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Mindy Fried"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Social Science"
+  - "Political Science"
+  - "American Politics"
+  - "Public Administration"
+  - "Public Policy"
+  - "Social Welfare"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+          - "Social Welfare"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  This course will provide students with an analytic framework to understand the roles that gender, race, and class play in defining and determining access to leadership and power in the U.S., especially in the context of the workplace. We will explore women and men in leadership positions within the corporate, political and non-profit sectors, with attention to the roles of women of color and immigrant women within this context. We will also look at specific policies such as affirmative action, parental leave, child-care policy, and working-time policies and the role they play–or could play–in achieving parity. We will further investigate ways in which these policies address gender, racial, and class inequities, and think critically about mechanisms for change. The course will be highly interactive, and will combine texts, theater, videos and visual arts.
+course_url: "https://ocw.mit.edu/courses/wgs-s10-gender-power-leadership-and-the-workplace-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/wgs-s10-gender-power-leadership-and-the-workplace-spring-2014/2888e7c93814bc3ade6901fbee38bb10_wgs-s10s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

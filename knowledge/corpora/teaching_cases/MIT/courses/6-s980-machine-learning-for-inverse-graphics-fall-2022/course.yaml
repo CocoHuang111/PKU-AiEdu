@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-6-s980-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.S980"
+cross_listed_codes: []
+course_title: "Machine Learning for Inverse Graphics"
+course_slug: "6-s980-machine-learning-for-inverse-graphics-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Vincent Sitzmann"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Graphics and Visualization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Graphics and Visualization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Programming Assignments"
+description: |
+  This course covers fundamental and advanced techniques in this field at the intersection of computer vision, computer graphics, and geometric deep learning. It will lay the foundations of how cameras see the world, how we can represent 3D scenes for artificial intelligence, how we can learn to reconstruct these representations from only a single image, how we can guarantee certain kinds of generalizations, and how we can train these models in a self-supervised way.
+course_url: "https://ocw.mit.edu/courses/6-s980-machine-learning-for-inverse-graphics-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/6-s980-machine-learning-for-inverse-graphics-fall-2022/6-s980f22.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

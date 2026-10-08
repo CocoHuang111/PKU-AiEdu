@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-6-435-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.435"
+cross_listed_codes: []
+course_title: "System Identification"
+course_slug: "6-435-system-identification-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Munther Dahleh"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Science and Engineering"
+  - "Numerical Simulation"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+          - "Numerical Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course is offered to graduates and includes topics such as mathematical models of systems from observations of their behavior; time series, state-space, and input-output models; model structures, parametrization, and identifiability; non-parametric methods; prediction error methods for parameter estimation, convergence, consistency, and asymptotic distribution; relations to maximum likelihood estimation; recursive estimation; relation to Kalman filters; structure determination; order estimation; Akaike criterion; bounded but unknown noise model; and robustness and practical issues.
+course_url: "https://ocw.mit.edu/courses/6-435-system-identification-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/6-435-system-identification-spring-2005/d6e46c726cc13b8eef0fa7afae58d3b9_6-435s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

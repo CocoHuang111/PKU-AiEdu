@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-9-07-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.07"
+cross_listed_codes: []
+course_title: "Statistics for Brain and Cognitive Science"
+course_slug: "9-07-statistics-for-brain-and-cognitive-science-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Emery N Brown"
+subject_primary: "Probability and Statistics"
+subject_secondary:
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Provides students with the basic tools for analyzing experimental data, properly interpreting statistical reports in the literature, and reasoning under uncertain situations. Topics organized around three key theories: Probability, statistical, and the linear model. Probability theory covers axioms of probability, discrete and continuous probability models, law of large numbers, and the Central Limit Theorem. Statistical theory covers estimation, likelihood theory, Bayesian methods, bootstrap and other Monte Carlo methods, as well as hypothesis testing, confidence intervals, elementary design of experiments principles and goodness-of-fit. The linear model theory covers the simple regression model and the analysis of variance. Places equal emphasis on theory, data analyses, and simulation studies.
+course_url: "https://ocw.mit.edu/courses/9-07-statistics-for-brain-and-cognitive-science-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/9-07-statistics-for-brain-and-cognitive-science-fall-2016/c3753145cf296381ccd5de77976b8225_9-07f16.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

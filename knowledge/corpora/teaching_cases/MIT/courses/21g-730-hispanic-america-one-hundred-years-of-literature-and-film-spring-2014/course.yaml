@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-730-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.730"
+cross_listed_codes: []
+course_title: "Hispanic America: One Hundred Years of Literature and Film"
+course_slug: "21g-730-hispanic-america-one-hundred-years-of-literature-and-film-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Elizabeth Garrels"
+subject_primary: "History"
+subject_secondary:
+  - "Latin American History"
+  - "Language"
+  - "Spanish"
+  - "Literature"
+  - "Classics"
+  - "Comparative Literature"
+  - "International Literature"
+  - "Poetry"
+  - "Society"
+  - "Latin and Caribbean Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Latin American History"
+      - name: "Language"
+        specialties:
+          - "Spanish"
+      - name: "Literature"
+        specialties:
+          - "Classics"
+          - "Comparative Literature"
+          - "International Literature"
+          - "Poetry"
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course explores artistic achievement in a culture that over the past century has engaged in constant and intense imaginative self-renewal. The class studies film, narrative (e.g., Márquez's _One Hundred Years of Solitude_), and poetry. Conducted in Spanish.
+course_url: "https://ocw.mit.edu/courses/21g-730-hispanic-america-one-hundred-years-of-literature-and-film-spring-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-730-hispanic-america-one-hundred-years-of-literature-and-film-spring-2014/fea772e030e5aa1f1ed5af2d1fb63773_21g-730s14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

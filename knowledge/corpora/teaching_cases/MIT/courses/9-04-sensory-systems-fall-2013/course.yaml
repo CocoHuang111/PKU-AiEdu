@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-9-04-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.04"
+cross_listed_codes: []
+course_title: "Sensory Systems"
+course_slug: "9-04-sensory-systems-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Peter H. Schiller"
+  - "Prof. M. Christian Brown"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Sensory-Neural Systems"
+  - "Science"
+  - "Biology"
+  - "Neurobiology"
+  - "Neuroscience"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  This course examines the neural bases of sensory perception. The focus is on physiological and anatomical studies of the mammalian nervous system as well as behavioral studies of animals and humans. Topics include visual pattern, color and depth perception, auditory responses and sound localization, and somatosensory perception.
+course_url: "https://ocw.mit.edu/courses/9-04-sensory-systems-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/9-04-sensory-systems-fall-2013/f620eb0ee65a809a76c00f2e4f51acdf_9-04f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

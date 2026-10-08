@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-15-075j-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.075J"
+cross_listed_codes:
+  - "IDS.013J (formerly ESD.07J)"
+course_title: "Statistical Thinking and Data Analysis"
+course_slug: "15-075j-statistical-thinking-and-data-analysis-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Institute for Data, Systems, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Cynthia Rudin"
+  - "Allison Chang"
+  - "Dimitrios Bisias"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments with Examples"
+description: |
+  This course is an introduction to statistical data analysis. Topics are chosen from applied probability, sampling, estimation, hypothesis testing, linear regression, analysis of variance, categorical data analysis, and nonparametric statistics.
+course_url: "https://ocw.mit.edu/courses/15-075j-statistical-thinking-and-data-analysis-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/15-075j-statistical-thinking-and-data-analysis-fall-2011/c3ba8e3261f34300d7ffebdbecb89f43_15-075f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

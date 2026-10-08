@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-271-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.271"
+cross_listed_codes: []
+course_title: "Symphony and Concerto"
+course_slug: "21m-271-symphony-and-concerto-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Lowell Lindgren"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Presentation Assignments"
+description: |
+  This course is a survey of significant orchestral masterworks composed during three centuries. Listening assignments include 34 symphonies and 24 concertos, composed from the 1720s to the 1990s. Class discussion and oral presentations focus on the works in 18 miniature scores; prior score-reading experience is helpful. Each of the three written papers reviews a concert attended during the term. Since this is a participatory subject, each student will give oral presentations concerning composers and their symphonies and/or concertos.
+course_url: "https://ocw.mit.edu/courses/21m-271-symphony-and-concerto-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/21m-271-symphony-and-concerto-spring-2007/bd7e9a15945a2d18b343c85c63e74368_21m-271s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

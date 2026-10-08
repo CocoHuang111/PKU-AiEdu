@@ -1,0 +1,91 @@
+schema_version: "1.0"
+course_id: "mitocw-4-s33-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.S33"
+cross_listed_codes: []
+course_title: "Unmanageability: Pathless Realities and Approaches"
+course_slug: "4-s33-unmanageability-pathless-realities-and-approaches-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Gabriel Kahan"
+  - "Howard Chen"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Organizational Behavior"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Humanities"
+  - "History"
+  - "American History"
+  - "History of Science and Technology"
+  - "Modern History"
+  - "Philosophy"
+  - "Social Science"
+  - "Sociology"
+  - "Teaching and Education"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "History of Science and Technology"
+          - "Modern History"
+      - name: "Philosophy"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+description: |
+  Over the last 40 years, new managerial technologies in Western democratic societies have emerged to dominate our perceived and lived reality. Demands for autonomy and a creative life, which have been the touchstones for artistic endeavors, have been readily absorbed into management philosophies, becoming normative values for self-management and entrepreneurial innovation. Is this art’s triumph or demise? Can we imagine other worlds beyond our managed reality and propose forms of living not yet captured by the rationality of network capitalism? We will explore the “creative” figure and how it can shape renewed critical expressions in fields such as technology, design, science, philosophy, etc.
+course_url: "https://ocw.mit.edu/courses/4-s33-unmanageability-pathless-realities-and-approaches-spring-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/4-s33-unmanageability-pathless-realities-and-approaches-spring-2015/4cc9736587b9373b95d5cac0ea545731_4-s33s15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

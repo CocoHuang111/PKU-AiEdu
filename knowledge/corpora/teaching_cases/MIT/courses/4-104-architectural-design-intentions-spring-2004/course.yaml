@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-4-104-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.104"
+cross_listed_codes: []
+course_title: "Architectural Design: Intentions"
+course_slug: "4-104-architectural-design-intentions-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Paul Lukez"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This is the second undergraduate design studio. It introduces a full range of architectural ideas and issues through drawing exercises, analyses of precedents, and explored design methods. Students will develop design skills by conceptualizing and representing architectural ideas and making aesthetic judgments about building design. Discussions regarding architecture’s role in mediating culture, nature and technology will help develop the students’ architectural vocabulary.
+course_url: "https://ocw.mit.edu/courses/4-104-architectural-design-intentions-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/4-104-architectural-design-intentions-spring-2004/748532cdc3b6779735410bf70b3aedbc_4-104s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

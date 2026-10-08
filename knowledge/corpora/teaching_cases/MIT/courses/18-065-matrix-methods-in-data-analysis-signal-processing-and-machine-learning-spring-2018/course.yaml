@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-18-065-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.065"
+cross_listed_codes:
+  - "18.0651"
+course_title: "Matrix Methods in Data Analysis, Signal Processing, and Machine Learning"
+course_slug: "18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gilbert Strang"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Computation"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Problem Sets"
+description: |
+  Linear algebra concepts are key for understanding and creating machine learning algorithms, especially as applied to deep learning and neural networks. This course reviews linear algebra with applications to probability and statistics and optimization–and above all a full explanation of deep learning.
+course_url: "https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/"
+image_url: |
+  https://ocw.mit.edu/courses/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/a24ae149b417e01db75f22ca566124e1_18-065s18.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

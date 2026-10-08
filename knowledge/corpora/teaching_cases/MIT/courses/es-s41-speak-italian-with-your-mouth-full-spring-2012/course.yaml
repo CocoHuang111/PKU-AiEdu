@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-es-s41-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.S41"
+cross_listed_codes: []
+course_title: "Speak Italian With Your Mouth Full"
+course_slug: "es-s41-speak-italian-with-your-mouth-full-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Paola Rebusco"
+  - "Graham Gordon Ramsay"
+subject_primary: "Language"
+subject_secondary:
+  - "Italian"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Italian"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+  - "Lecture Videos"
+description: |
+  The participants in this seminar will dive into learning basic conversational Italian, Italian culture, and the Mediterranean diet. Each class is based on the preparation of a delicious dish and on the bite-sized acquisition of parts of the Italian language and culture. A good diet is not based on recipes only, it is also rooted in healthy habits and in culture. At the end of the seminar the participants will be able to cook some healthy and tasty recipes and to understand and speak basic Italian.
+course_url: "https://ocw.mit.edu/courses/es-s41-speak-italian-with-your-mouth-full-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/es-s41-speak-italian-with-your-mouth-full-spring-2012/d0dde8482e079ce6210132b295d34fa3_es-s41s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

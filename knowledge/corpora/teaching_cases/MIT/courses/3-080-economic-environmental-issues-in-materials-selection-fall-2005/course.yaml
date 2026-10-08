@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-3-080-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.080"
+cross_listed_codes: []
+course_title: "Economic & Environmental Issues in Materials Selection"
+course_slug: "3-080-economic-environmental-issues-in-materials-selection-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Randolph Kirchain"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Science"
+  - "Earth Science"
+  - "Environmental Science"
+  - "Social Science"
+  - "Economics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+  - "Written Assignments with Examples"
+description: |
+  Choice of material has implications throughout the life-cycle of a product, influencing many aspects of economic and environmental performance. This course will provide a survey of methods for evaluating those implications. Lectures will cover topics in material choice concepts, fundamentals of engineering economics, manufacturing economics modeling methods, and life-cycle environmental evaluation.
+course_url: "https://ocw.mit.edu/courses/3-080-economic-environmental-issues-in-materials-selection-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/3-080-economic-environmental-issues-in-materials-selection-fall-2005/de22d5ac8537cc7b8cd7732c43e234e3_3-080f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

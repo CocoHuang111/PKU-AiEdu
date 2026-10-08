@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-12-815-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.815"
+cross_listed_codes: []
+course_title: "Atmospheric Radiation"
+course_slug: "12-815-atmospheric-radiation-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Robert McClatchey"
+  - "Prof. Ronald G Prinn"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Atmospheric Science"
+  - "Geophysics"
+  - "Physics"
+  - "Electromagnetism"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geophysics"
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This is an introduction to the physics of atmospheric radiation and remote sensing including use of computer codes. Subjects covered include: radiative transfer equation including emission and scattering, spectroscopy, Mie theory, and numerical solutions. We examine the solution of inverse problems in remote sensing of atmospheric temperature and composition.
+course_url: "https://ocw.mit.edu/courses/12-815-atmospheric-radiation-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/12-815-atmospheric-radiation-fall-2006/d0347267f3b31777bea60750caa254d6_12-815f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

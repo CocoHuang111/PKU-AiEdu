@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-9-913-a-january-iap-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.913-A"
+cross_listed_codes: []
+course_title: "Intensive Neuroanatomy"
+course_slug: "9-913-a-intensive-neuroanatomy-january-iap-2002"
+term: "January IAP"
+year: 2002
+as_taught_in: "January IAP 2002"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Elly Nedivi"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Neurobiology"
+  - "Neuroscience"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The course will start with an overview of the central and peripheral nervous systems (CNS and PNS), the development of their structure and major divisions. The major functional components of the CNS will then be reviewed individually. Topography, functional distribution of nerve cell bodies, ascending and descending tracts in the spinal cord. Brainstem organization and functional components, including cranial nerve nuclei, ascending / descending pathways, amine-containing cells, structure and information flow in the cerebellar and vestibular systems. Distribution of the cranial nerves, resolution of their skeletal and branchial arch components. Functional divisions of the Diencephalon and Telencephalon. The course will then continue with how these various CNS pieces and parts work together. Motor systems, motor neurons and motor units, medial and lateral pathways, cortical versus cerebellar systems and their functional integration. The sensory systems, visual, auditory and somatosensory. Olfaction will be covered in the context of the limbic system, which will also include autonomic control and the Papez circuit. To conclude, functional organization and information flow in the neocortex will be discussed.
+course_url: "https://ocw.mit.edu/courses/9-913-a-intensive-neuroanatomy-january-iap-2002/"
+image_url: "https://ocw.mit.edu/courses/9-913-a-intensive-neuroanatomy-january-iap-2002/6ed48db26113a9064cfb9f43ad729edf_9-913aiap02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

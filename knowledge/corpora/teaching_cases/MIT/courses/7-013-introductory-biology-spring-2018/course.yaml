@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-7-013-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.013"
+cross_listed_codes: []
+course_title: "Introductory Biology"
+course_slug: "7-013-introductory-biology-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Angelika Amon"
+  - "Prof. Hazel Sive"
+  - "Dr. Diviya Ray"
+subject_primary: "Biology"
+subject_secondary:
+  - "Biochemistry"
+  - "Cell Biology"
+  - "Developmental Biology"
+  - "Genetics"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+          - "Cell Biology"
+          - "Developmental Biology"
+          - "Genetics"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The MIT Biology Department core Introductory Biology courses, 7.012, 7.013, 7.014, 7.015, and 7.016 all cover the same core material, which includes the fundamental principles of biochemistry, genetics, molecular biology, and cell biology. The focus of 7.013 is on genomic approaches to human biology, including neuroscience, development, immunology, tissue repair and stem cells, tissue engineering, and infectious and inherited diseases, including cancer.
+course_url: "https://ocw.mit.edu/courses/7-013-introductory-biology-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/7-013-introductory-biology-spring-2018/79a18906b43fd04853724bc6754be30d_7.013-s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

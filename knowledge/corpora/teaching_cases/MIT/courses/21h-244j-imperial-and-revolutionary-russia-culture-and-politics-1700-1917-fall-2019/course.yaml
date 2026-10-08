@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-244j-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.244J"
+cross_listed_codes:
+  - "21G.085J"
+course_title: "Imperial and Revolutionary Russia: Culture and Politics, 1700-1917"
+course_slug: "21h-244j-imperial-and-revolutionary-russia-culture-and-politics-1700-1917-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "History"
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Elizabeth A. Wood"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "European History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+          - "European History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course analyzes Russia’s social, cultural, and political heritage in the 18th and 19th centuries, up to and including the Russian Revolution of 1917. It compares reforming and revolutionary impulses in the context of serfdom, the rise of the intelligentsia, and debates over capitalism, while focusing on historical and literary texts, especially the intersections between the two.
+course_url: "https://ocw.mit.edu/courses/21h-244j-imperial-and-revolutionary-russia-culture-and-politics-1700-1917-fall-2019/"
+image_url: |
+  https://ocw.mit.edu/courses/21h-244j-imperial-and-revolutionary-russia-culture-and-politics-1700-1917-fall-2019/41749229d4cac72499fdfd11bc629c14_21H-244Jf19.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

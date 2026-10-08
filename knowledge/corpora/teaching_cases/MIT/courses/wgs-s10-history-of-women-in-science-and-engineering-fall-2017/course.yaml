@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-s10-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.S10"
+cross_listed_codes: []
+course_title: "History of Women in Science and Engineering"
+course_slug: "wgs-s10-history-of-women-in-science-and-engineering-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Maia Weinstock"
+subject_primary: "Engineering"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "History of Science and Technology"
+  - "Science"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Engineering"
+    subtopics: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+  - name: "Science"
+    subtopics: []
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course provides a basic overview of the history of women in science, technology, engineering, and mathematics (STEM). Students will learn about specific contributions of women across a variety of disciplines and will gain a broad perspective on how these contributions played a larger role in the advancement of human knowledge and technological achievement. The class will also grapple with how both historic and modern biases within the STEM disciplines, as well as in representations of women and girls in media and popular culture, can affect outcomes in these areas.
+course_url: "https://ocw.mit.edu/courses/wgs-s10-history-of-women-in-science-and-engineering-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/wgs-s10-history-of-women-in-science-and-engineering-fall-2017/a96965e0508a67321a7eb034cf908958_wgs-s10f17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

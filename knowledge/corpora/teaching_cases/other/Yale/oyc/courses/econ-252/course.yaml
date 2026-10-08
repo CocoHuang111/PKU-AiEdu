@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-econ-252"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "ECON 252"
+course_title: "Financial Markets (2011)"
+course_slug: "econ-252"
+department_path: "economics"
+professors:
+  - "Robert J. Shiller Arthur M. Okun Professor of Economics"
+course_url: "https://oyc.yale.edu/economics/econ-252"
+language: "en"
+description: |
+  An overview of the ideas, methods, and institutions that permit human society to manage risks and foster enterprise. Description of practices today and analysis of prospects for the future. Introduction to risk management and behavioral finance principles to understand the functioning of securities, insurance, and banking industries.
+license_url: ""
+session_count: 26
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-14-770-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.770"
+cross_listed_codes: []
+course_title: "Introduction to Political Economy"
+course_slug: "14-770-introduction-to-political-economy-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daron Acemoglu"
+  - "Prof. Benjamin Olken"
+subject_primary: "Economics"
+subject_secondary:
+  - "Political Economy"
+  - "Political Science"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Political Economy"
+      - name: "Political Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is intended as an introduction to the field of political economy. It is the first part of a two-part sequence in political economy, along with 14.773 Political Economy: Institutions and Development . Combined, the purpose of the two classes is to give you both a sense of the frontier research topics and a good command of the tools in the area.
+course_url: "https://ocw.mit.edu/courses/14-770-introduction-to-political-economy-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/14-770-introduction-to-political-economy-fall-2017/cbe011c3729fd18afe2e0478f843b68d_14-770F17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

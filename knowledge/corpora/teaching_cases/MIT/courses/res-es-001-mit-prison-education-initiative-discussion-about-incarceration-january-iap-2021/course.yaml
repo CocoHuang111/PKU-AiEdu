@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-res-es-001-january-iap-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.ES-001"
+cross_listed_codes: []
+course_title: "MIT Prison Education Initiative Discussion About Incarceration"
+course_slug: "res-es-001-mit-prison-education-initiative-discussion-about-incarceration-january-iap-2021"
+term: "January IAP"
+year: 2021
+as_taught_in: "January IAP 2021"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "MIT Prison Education Initiative "
+subject_primary: "Social Science"
+subject_secondary:
+  - "Society"
+topic_tree:
+  - name: "Social Science"
+    subtopics: []
+  - name: "Society"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The MIT Prison Education Initiative (PEI) hosted this non-credit January IAP course to give the MIT community an opportunity to engage in discussions about mass incarceration and criminal justice reform. The Independent Activities Period (IAP) is a special four week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/res-es-001-mit-prison-education-initiative-discussion-about-incarceration-january-iap-2021/"
+image_url: |
+  https://ocw.mit.edu/courses/res-es-001-mit-prison-education-initiative-discussion-about-incarceration-january-iap-2021/5f65b9d2f13ca1b0ff15d56b535bee6f_res-es-001.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

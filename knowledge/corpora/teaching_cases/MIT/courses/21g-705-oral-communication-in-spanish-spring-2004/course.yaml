@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-705-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.705"
+cross_listed_codes: []
+course_title: "Oral Communication in Spanish"
+course_slug: "21g-705-oral-communication-in-spanish-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Douglas Morgenstern"
+subject_primary: "Language"
+subject_secondary:
+  - "Spanish"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Spanish"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  A second-year intermediate course that includes vocabulary enhancement and limited review of selected points of grammar. Focuses on listening comprehension and speaking, with group activities, discussions and individual oral reports based on readings, films, music and art.
+course_url: "https://ocw.mit.edu/courses/21g-705-oral-communication-in-spanish-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21g-705-oral-communication-in-spanish-spring-2004/35f941d29467fe8d22b65cde818a3321_21G-705s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

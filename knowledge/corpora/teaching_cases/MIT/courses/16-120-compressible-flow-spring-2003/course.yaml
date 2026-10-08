@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-16-120-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.120"
+cross_listed_codes: []
+course_title: "Compressible Flow"
+course_slug: "16-120-compressible-flow-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Wesley Harris"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  The course begins with the basics of compressible fluid dynamics, including governing equations, thermodynamic context and characteristic parameters. The next large block of lectures covers quasi-one-dimensional flow, followed by a discussion of disturbances and unsteady flows. The second half of the course comprises gas dynamic discontinuities, including shock waves and detonations, and concludes with another large block dealing with two-dimensional flows, both linear and non-linear.
+course_url: "https://ocw.mit.edu/courses/16-120-compressible-flow-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/16-120-compressible-flow-spring-2003/307c45f159d8b1d9f045da588399890c_16-120s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

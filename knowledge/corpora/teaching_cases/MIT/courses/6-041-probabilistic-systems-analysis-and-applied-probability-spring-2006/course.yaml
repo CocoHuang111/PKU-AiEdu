@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-6-041-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.041"
+cross_listed_codes:
+  - "6.431"
+course_title: "Probabilistic Systems Analysis and Applied Probability"
+course_slug: "6-041-probabilistic-systems-analysis-and-applied-probability-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Munther Dahleh"
+subject_primary: "Discrete Mathematics"
+subject_secondary:
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Simulation Videos"
+description: |
+  This course is offered both to undergraduates (6.041) and graduates (6.431), but the assignments differ. 6.041/6.431 introduces students to the modeling, quantification, and analysis of uncertainty. Topics covered include: formulation and solution in sample space, random variables, transform techniques, simple random processes and their probability distributions, Markov processes, limit theorems, and elements of statistical inference.
+course_url: "https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-spring-2006/e35e08a5ba1b33a4173d82637524d915_6-041s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

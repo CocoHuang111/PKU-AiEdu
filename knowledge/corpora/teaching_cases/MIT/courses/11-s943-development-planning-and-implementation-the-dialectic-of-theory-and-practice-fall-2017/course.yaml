@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-11-s943-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.S943"
+cross_listed_codes: []
+course_title: "Development, Planning, and Implementation: The Dialectic of Theory and Practice"
+course_slug: "11-s943-development-planning-and-implementation-the-dialectic-of-theory-and-practice-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Bishwapriya Sanyal"
+  - "Cauam Ferreira Cardoso"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Public Policy"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This is an advanced graduate-level seminar that will analyze the effectiveness of development and planning theories from the perspective of practitioners who implement projects and policies based on such theories. The course will be organized around 12 implementation puzzles, which should be considered for re-theorizing both developmental and planning processes.
+course_url: "https://ocw.mit.edu/courses/11-s943-development-planning-and-implementation-the-dialectic-of-theory-and-practice-fall-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/11-s943-development-planning-and-implementation-the-dialectic-of-theory-and-practice-fall-2017/fbcc34b8e5cc0e401c99d134908720c8_11-s943f17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

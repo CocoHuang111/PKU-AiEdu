@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-10-442-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.442"
+cross_listed_codes:
+  - "10.542"
+course_title: "Biochemical Engineering"
+course_slug: "10-442-biochemical-engineering-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kristala L. Jones Prather"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Biochemistry"
+  - "Microbiology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+          - "Microbiology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This course focuses on the interaction of chemical engineering, biochemistry, and microbiology. Mathematical representations of microbial systems are featured among lecture topics. Kinetics of growth, death, and metabolism are also covered. Continuous fermentation, agitation, mass transfer, and scale-up in fermentation systems, and enzyme technology round out the subject material.
+course_url: "https://ocw.mit.edu/courses/10-442-biochemical-engineering-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/10-442-biochemical-engineering-spring-2005/336be85fd2547401b271b202ae71a8da_10-442s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

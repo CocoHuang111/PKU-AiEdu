@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-6-635-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.635"
+cross_listed_codes: []
+course_title: "Advanced Electromagnetism"
+course_slug: "6-635-advanced-electromagnetism-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jin Au Kong"
+subject_primary: "Physics"
+subject_secondary:
+  - "Atomic, Molecular, Optical Physics"
+  - "Electromagnetism"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Electromagnetism"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Simulation Videos"
+description: |
+  In 6.635, topics covered include: special relativity, electrodynamics of moving media, waves in dispersive media, microstrip integrated circuits, quantum optics, remote sensing, radiative transfer theory, scattering by rough surfaces, effective permittivities, random media, Green’s functions for planarly layered media, integral equations in electromagnetics, method of moments, time domain method of moments, EM waves in periodic structures: photonic crystals and negative refraction.
+course_url: "https://ocw.mit.edu/courses/6-635-advanced-electromagnetism-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/6-635-advanced-electromagnetism-spring-2003/b427498412c1d67f3ceaf35e64662353_6-635s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

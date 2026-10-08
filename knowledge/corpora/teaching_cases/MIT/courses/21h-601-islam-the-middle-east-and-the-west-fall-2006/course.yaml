@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-601-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.601"
+cross_listed_codes: []
+course_title: "Islam, the Middle East, and the West"
+course_slug: "21h-601-islam-the-middle-east-and-the-west-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Mériam Belli"
+subject_primary: "History"
+subject_secondary:
+  - "Middle Eastern History"
+  - "World History"
+  - "Society"
+  - "Middle Eastern Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Middle Eastern History"
+          - "World History"
+  - name: "Society"
+    subtopics:
+      - name: "Middle Eastern Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course aims to provide students with a general overview of basic themes and issues in Middle Eastern history from the rise of Islam to the present, with an emphasis on the encounters and exchanges between the "Middle East" (Southwest Asia and North Africa) and the "West" (Europe and the United States).
+course_url: "https://ocw.mit.edu/courses/21h-601-islam-the-middle-east-and-the-west-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21h-601-islam-the-middle-east-and-the-west-fall-2006/4e1079ecbede2a077728654ead4f3eb0_21h-601f06.JPG"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-s01-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.S01"
+cross_listed_codes: []
+course_title: "Anthro-Engineering: Decarbonization at the Million-Person Scale"
+course_slug: "21a-s01-anthro-engineering-decarbonization-at-the-million-person-scale-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michael Short"
+  - "Dr. Lauren Bonilla"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Humanities"
+  - "Social Science"
+  - "Anthropology"
+  - "Urban Studies"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties: []
+  - name: "Humanities"
+    subtopics: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties: []
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Design Assignments"
+  - "Presentation Assignments"
+description: |
+  This course examines and experiments with pathways to decarbonization at the million-person scale. Our field site is Ulaanbaatar, Mongolia—the coldest capital on Earth and one of the world’s most polluted cities, largely as a result of coal combustion. We will explore the design and implementation of a molten salt heat bank to be used as an alternative to coal for household heating. Our approach is holistic and interdisciplinary: to prototype a locally specific, culturally acceptable, and socio-economically viable reusable energy source, we combine anthropology and engineering to understand and address the complex social, environmental, material, economic, and political conditions that shape energy and sustainability dilemmas in Ulaanbaatar. In doing so, we will move back and forth between prototyping the heat bank and considering practical constraints specific to the place and people.
+course_url: "https://ocw.mit.edu/courses/21a-s01-anthro-engineering-decarbonization-at-the-million-person-scale-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/21a-s01-anthro-engineering-decarbonization-at-the-million-person-scale-fall-2023/mit21a_s01_f23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

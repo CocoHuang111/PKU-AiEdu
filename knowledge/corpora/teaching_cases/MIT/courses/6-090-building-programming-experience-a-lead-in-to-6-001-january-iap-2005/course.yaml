@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-6-090-january-iap-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.090"
+cross_listed_codes: []
+course_title: "Building Programming Experience: A Lead-In to 6.001"
+course_slug: "6-090-building-programming-experience-a-lead-in-to-6-001-january-iap-2005"
+term: "January IAP"
+year: 2005
+as_taught_in: "January IAP 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Benjamin Vandiver"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Programming Languages"
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Programming Languages"
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Programming Assignments with Examples"
+description: |
+  This course will serve as a two-week aggressively gentle introduction to programming for those students who lack background in the field. Specifically targeted at students with little or no programming experience, the course seeks to reach students who intend to take 6.001 and feel they would struggle because they lack the necessary background. The main focus of the subject will be acquiring programming experience: instruction in programming fundamentals coupled with lots of practice problems. Lots of programming required, but lots of support provided.
+course_url: "https://ocw.mit.edu/courses/6-090-building-programming-experience-a-lead-in-to-6-001-january-iap-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/6-090-building-programming-experience-a-lead-in-to-6-001-january-iap-2005/e967432d137015cbf51f77ceece93dfa_6-090iap05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

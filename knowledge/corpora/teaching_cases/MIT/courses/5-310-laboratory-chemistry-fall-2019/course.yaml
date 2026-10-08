@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-5-310-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.310"
+cross_listed_codes: []
+course_title: "Laboratory Chemistry"
+course_slug: "5-310-laboratory-chemistry-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. John J. Dolhun"
+  - "Dr. Sarah Hewett"
+subject_primary: "Chemistry"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Podcasts"
+description: |
+  This course introduces experimental chemistry for students who are not majoring in chemistry. The course covers principles and applications of chemical laboratory techniques, including preparation and analysis of chemical materials, measurement of pH, gas and liquid chromatography, visible-ultraviolet spectrophotometry, infrared spectroscopy, nuclear magnetic resonance, mass spectrometry, polarimetry, X-ray diffraction, kinetics, data analysis, and organic synthesis. Acknowledgements Dr. Dolhun and Dr. Hewett would like to acknowledge the contributions of past instructors over the years to the development of this course and its materials. WARNING NOTICE The experiments described in these materials are potentially hazardous and require a high level of safety training, special facilities and equipment, and supervision by appropriate individuals. You bear the sole responsibility, liability, and risk for the implementation of such safety procedures and measures. MIT shall have no responsibility, liability, or risk for the content or implementation of any of the material presented. Legal Notice
+course_url: "https://ocw.mit.edu/courses/5-310-laboratory-chemistry-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/5-310-laboratory-chemistry-fall-2019/52c765b12e4e9e210ea3daab31337f61_5-310f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

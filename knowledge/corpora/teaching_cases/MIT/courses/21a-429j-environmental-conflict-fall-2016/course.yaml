@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-429j-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.429J"
+cross_listed_codes:
+  - "STS.320J"
+course_title: "Environmental Conflict"
+course_slug: "21a-429j-environmental-conflict-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Christine Walley"
+subject_primary: "Biology"
+subject_secondary:
+  - "Ecology"
+  - "Earth Science"
+  - "Environmental Science"
+  - "Social Science"
+  - "Anthropology"
+  - "Ethnography"
+  - "Sociology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Ecology"
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Ethnography"
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the complex interrelationships among humans and natural environments, focusing on non-western parts of the world in addition to Europe and the United States. It uses environmental conflict to draw attention to competing understandings and uses of “nature” as well as the local, national and transnational power relationships in which environmental interactions are embedded. In addition to utilizing a range of theoretical perspectives, this subject draws upon a series of ethnographic case studies of environmental conflicts in various parts of the world.
+course_url: "https://ocw.mit.edu/courses/21a-429j-environmental-conflict-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/21a-429j-environmental-conflict-fall-2016/38d349147a2d4f09e7e8f31377fc6436_21A-429Jf16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

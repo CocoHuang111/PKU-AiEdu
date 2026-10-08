@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-115-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.115"
+cross_listed_codes: []
+course_title: "Gender and Technology"
+course_slug: "wgs-115-gender-and-technology-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. K.J. Surkan"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Society"
+  - "Gender Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course considers a wide range of issues related to the contemporary and historical use of technology, the development of new technologies, and the cultural representation of technology, including the role women have played in the development of technology and the effect of technological change on the roles of women and ideas of gender. It discusses the social implications of technology and its understanding and deployment in different cultural contexts. It investigates the relationships between technology and identity categories, such as gender, race, class, and sexuality, and examines how technology offers possibilities for new social relations and how to evaluate them.
+course_url: "https://ocw.mit.edu/courses/wgs-115-gender-and-technology-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/wgs-115-gender-and-technology-spring-2013/8fe3eed8ebb96fdb5e7914315f3040bc_wgs-115s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

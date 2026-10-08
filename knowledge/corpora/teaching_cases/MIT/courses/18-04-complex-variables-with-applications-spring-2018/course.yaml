@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-18-04-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.04"
+cross_listed_codes: []
+course_title: "Complex Variables with Applications"
+course_slug: "18-04-complex-variables-with-applications-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Jeremy Orloff"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Calculus"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Calculus"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Problem-solving Notes"
+description: |
+  Complex analysis is a basic tool with a great many practical applications to the solution of physical problems. It revolves around complex analytic functions—functions that have a complex derivative. Unlike calculus using real variables, the mere existence of a complex derivative has strong implications for the properties of the function. Applications reviewed in this class include harmonic functions, two dimensional fluid flow, easy methods for computing (seemingly) hard integrals, Laplace transforms, and Fourier transforms with applications to engineering and physics.
+course_url: "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/b097c95ca6e3dbf3714cc8bceb594396_18-04s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

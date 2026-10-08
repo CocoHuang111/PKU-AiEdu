@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-950j-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.950J"
+cross_listed_codes:
+  - "6.872"
+course_title: "Biomedical Computing"
+course_slug: "hst-950j-biomedical-computing-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Peter Szolovits"
+  - "Prof. Gil Alterovitz"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Biological Engineering"
+  - "Computational Biology"
+  - "Health and Medicine"
+  - "Biomedical Instrumentation"
+  - "Biomedicine"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+      - name: "Biomedicine"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Problem Sets"
+description: |
+  Analyzes computational needs of clinical medicine reviews systems and approaches that have been used to support those needs, and the relationship between clinical data and gene and protein measurements. Topics: the nature of clinical data; architecture and design of healthcare information systems; privacy and security issues; medical expertsystems; introduction to bioinformatics. Case studies and guest lectures describe contemporary systems and research projects. Term project using large clinical and genomic data sets integrates classroom topics.
+course_url: "https://ocw.mit.edu/courses/hst-950j-biomedical-computing-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/hst-950j-biomedical-computing-fall-2010/1f87c2f4f9a30de17a9303f9dcf57578_hst-950jf10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-jessica-goldstein"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Jessica Goldstein, PhD"
+slug: "jessica-goldstein"
+source_url: "https://ctl.columbia.edu/transformations/faculty/jessica-goldstein/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "0be68e33fc96f62b951aac16d6ed871ce87527f09027ad05751c06bca507f33c"

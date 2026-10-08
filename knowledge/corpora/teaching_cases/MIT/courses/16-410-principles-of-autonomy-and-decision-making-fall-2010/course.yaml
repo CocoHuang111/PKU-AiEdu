@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-16-410-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.410"
+cross_listed_codes:
+  - "16.413"
+course_title: "Principles of Autonomy and Decision Making"
+course_slug: "16-410-principles-of-autonomy-and-decision-making-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Brian Charles Williams"
+  - "Prof. Emilio Frazzoli"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Artificial Intelligence"
+  - "Systems Engineering"
+  - "Systems Optimization"
+  - "Science"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Game Theory"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Artificial Intelligence"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments with Examples"
+description: |
+  This course surveys a variety of reasoning, optimization and decision making methodologies for creating highly autonomous systems and decision support aids. The focus is on principles, algorithms, and their application, taken from the disciplines of artificial intelligence and operations research. Reasoning paradigms include logic and deduction, heuristic and constraint-based search, model-based reasoning, planning and execution, and machine learning. Optimization paradigms include linear programming, integer programming, and dynamic programming. Decision-making paradigms include decision theoretic planning, and Markov decision processes.
+course_url: "https://ocw.mit.edu/courses/16-410-principles-of-autonomy-and-decision-making-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/16-410-principles-of-autonomy-and-decision-making-fall-2010/559a0686d643e1459e7bdb572688a022_16-410f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

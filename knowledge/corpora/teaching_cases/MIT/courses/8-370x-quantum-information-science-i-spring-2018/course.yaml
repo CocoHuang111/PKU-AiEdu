@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-8-370x-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.370x"
+cross_listed_codes: []
+course_title: "Quantum Information Science I"
+course_slug: "8-370x-quantum-information-science-i-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Isaac Chuang"
+  - "Prof. Peter Shor"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Cryptography"
+  - "Theory of Computation"
+  - "Mathematics"
+  - "Computation"
+  - "Discrete Mathematics"
+  - "Science"
+  - "Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Cryptography"
+          - "Theory of Computation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course is a three-course series that provides an introduction to the theory and practice of quantum computation. The three-course series comprises: 8.370.1x : Foundations of Quantum and Classical computing—quantum mechanics, reversible computation, and quantum measurement 8.370.2x : Simple Quantum Protocols and Algorithms—teleportation and superdense coding, the Deutsch-Jozsa and Simon’s algorithm, Grover’s quantum search algorithm, and Shor’s quantum factoring algorithm 8.370.3x : Foundations of Quantum communication—noise and quantum channels, and quantum key distribution Prior knowledge of quantum mechanics is helpful but not required. It is best if you know some linear algebra. This course was organized as a three-part series on MITx by MIT’s Department of Physics and is now archived on the Open Learning Library , which is free to use. You have the option to sign up and enroll in each module if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/8-370x-quantum-information-science-i-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/8-370x-quantum-information-science-i-spring-2018/5b5df7cb09bbec13ad7c9b12f06971b3_8-370xs18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

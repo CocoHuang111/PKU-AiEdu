@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-716-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.716"
+cross_listed_codes:
+  - "EC.786"
+course_title: "D-Lab: Waste"
+course_slug: "ec-716-d-lab-waste-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Kate Mytty"
+  - "Pedro Reynolds-Cuellar"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Sustainability"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Urban Studies"
+  - "Urban Planning"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This introductory course will provide you with a multidisciplinary approach to managing waste in low- and middle-income countries, with strategies that diminish greenhouse gas emissions and provide enterprise opportunities for marginalized populations. You will focus on understanding some of the multiple dimensions of waste generation and management. Topics are presented in real contexts through case studies, field visits, civic engagement and research, and include consumer culture, waste streams, waste management, entrepreneurship and innovation on waste, technology evaluation, downcycling / upcycling, Life Cycle Analysis and waste assessment. Labs include building low-cost, small scale technology, field trips to waste-related institutions and businesses, art workshops and e-waste scrapping taught by practitioners, artists and waste enthusiasts.
+course_url: "https://ocw.mit.edu/courses/ec-716-d-lab-waste-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/ec-716-d-lab-waste-fall-2015/72667318ef9eaaec29fd0276687649c4_ec-716f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

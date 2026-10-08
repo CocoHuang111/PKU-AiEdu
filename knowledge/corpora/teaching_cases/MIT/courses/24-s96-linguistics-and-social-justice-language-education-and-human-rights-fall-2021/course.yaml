@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-24-s96-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.S96"
+cross_listed_codes: []
+course_title: "Linguistics and Social Justice: Language, Education, and Human Rights"
+course_slug: "24-s96-linguistics-and-social-justice-language-education-and-human-rights-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Michel DeGraff"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Social Science"
+  - "Sociology"
+  - "Social Justice"
+  - "Society"
+  - "Indigenous Studies"
+  - "The Developing World"
+  - "Teaching and Education"
+  - "Education Policy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+  - name: "Society"
+    subtopics:
+      - name: "Indigenous Studies"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Education Policy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  Linguists take it for granted that all languages, including languages in the Global South, are worthy of study. Yet some 40% of children in the world are prevented from studying in and valorizing their home languages—including some of the very languages that linguists study with such fondness. So much research in linguistics and the benefits thereof remain inaccessible to the bulk of the very speech communities whose languages linguists study. This seminar examines efforts by linguists and educators to make their research more inclusive, accessible, and hospitable, and to reduce linguistic-discrimination practices in various communities world-wide.
+course_url: "https://ocw.mit.edu/courses/24-s96-linguistics-and-social-justice-language-education-and-human-rights-fall-2021/"
+image_url: "https://ocw.mit.edu/courses/24-s96-linguistics-and-social-justice-language-education-and-human-rights-fall-2021/24-s96f21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

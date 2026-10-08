@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-181-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.181"
+cross_listed_codes: []
+course_title: "Libertarianism in History"
+course_slug: "21h-181-libertarianism-in-history-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Malick Ghachem"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Social Science"
+  - "Political Science"
+  - "American Politics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course explores the history of the ideal of personal freedom with an eye towards contemporary debates over the pros and cons of the regulatory state. The first part of the course surveys the sociological and theological sources of the concepts of freedom and civil society, and introduces liberty’s leading relatives or competitors: property, equality, community, and republicanism. The second part consists of a series of case studies in the rise of modern liberty and libertarianism: the abolition of slavery, the struggle for religious freedom, and the twentieth-century American civil liberties movement. In the last part of the course, we take up debates over the role of libertarianism vs. the regulatory state in a variety of contexts: counter-terrorism, health care, the financial markets, and the Internet.
+course_url: "https://ocw.mit.edu/courses/21h-181-libertarianism-in-history-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/21h-181-libertarianism-in-history-spring-2014/ea3474dcd3c1eceffe19969753a31676_21h-181s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

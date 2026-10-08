@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-436-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.436"
+cross_listed_codes: []
+course_title: "Cold War Science"
+course_slug: "sts-436-cold-war-science-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Kaiser"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Military History"
+  - "Modern History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Military History"
+          - "Modern History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This seminar examines the history and legacy of the Cold War on American science. It explores scientist’s new political roles after World War II, ranging from elite policy makers in the nuclear age to victims of domestic anti Communism. It also examines the changing institutions in which the physical sciences and social sciences were conducted during the postwar decades, investigating possible epistemic effects on forms of knowledge. The subject closes by considering the place of science in the post-Cold War era.
+course_url: "https://ocw.mit.edu/courses/sts-436-cold-war-science-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/sts-436-cold-war-science-fall-2008/42ddc305accda720f1550239bb7c2fc2_sts-436f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

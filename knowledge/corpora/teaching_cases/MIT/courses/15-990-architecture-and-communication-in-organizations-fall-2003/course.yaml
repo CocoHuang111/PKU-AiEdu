@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-15-990-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.990"
+cross_listed_codes: []
+course_title: "Architecture and Communication in Organizations"
+course_slug: "15-990-architecture-and-communication-in-organizations-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Diane Burton"
+  - "Prof. Frank Duffy"
+  - "Prof. Tom Allen"
+subject_primary: "Management"
+subject_secondary:
+  - "Organizational Behavior"
+  - "Fine Arts"
+  - "Architecture"
+  - "Environmental Design"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  While no businesses succeed based on their architecture or space design, many fail as a result of inattention to the power of spatial relationships. This course demonstrates through live case studies with managers and architects the value of strategic space planning and decision making in relation to business needs. The course presents conceptual frameworks for thinking about architecture, communication and organizations. This course is offered during the Sloan Innovation Period (SIP), which is a one-week period at the MIT Sloan School of Management that occurs midway through each semester.
+course_url: "https://ocw.mit.edu/courses/15-990-architecture-and-communication-in-organizations-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/15-990-architecture-and-communication-in-organizations-fall-2003/ff82b8fe9d08f5b4674cbb676efc9c8a_15-990f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

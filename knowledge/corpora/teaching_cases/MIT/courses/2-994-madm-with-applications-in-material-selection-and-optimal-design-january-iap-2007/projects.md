@@ -1,0 +1,14 @@
+> 检索摘要：2.994 MADM with Applications in Material Selection and Optimal Design（January IAP 2007，Graduate）的「Projects」。页内标题：Projects。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/2-994-madm-with-applications-in-material-selection-and-optimal-design-january-iap-2007/pages/projects/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Projects
+
+| PROJECTS | STUDENTS | ABSTRACTS | REFERENCES |
+| --- | --- | --- | --- |
+| Weight Critical Ship Material Selection using MADM | Joseph Benjaman Torrez | A modified digital logic method is first used to quantify design preferences for a ship material selection problem, based on available experts’ knowledge data in the literature. Next, a set of linear and non-linear normalization combinations are applied to a list of catalogue materials and each case is solved with a weighted sum method (WSM). Finally, to test the stability of the solution obtained in each case, a set of evaluative criteria regarding potential decision abnormalities are conducted. According to the results, DUCTAL-High Performance Composite Concrete proved to be the most promising material for this study. | Projects built with DUCTAL: <br> [Canopies for Shawnessy Light Rail Transit Station (Calgary, Alberta)](https://www.ductal.com/en/architecture/shawnessy-station) <br> [Jumping Trout Public Art Project (Calgary, Alberta)](http://www.cpci.ca/?sc=potm&pn=monthly112006) |
+| An Evaluation of the Consistency of MADM to Materials Expertise | John Decker Ringo | A new evaluative criterion for the application of MADM in material selection is sought in this project. The goal is to base a set of different weight extraction processes (including both continuous and discrete methods) on a materials expert’s experience. In doing so, it is assumed that no uncertainty in the decision maker’s mind exists and identical care is taken in each and every weight extraction process. As a result, using a standard solution method such as WSM, one expects to arrive at the same ranking order of candidate materials given an application. The study is made through a material selection example adapted from [1] for the wing spar of a human-powered aircraft (HPA). | [1] Dehghan-Manshadi, B., H. Mahmudi, A. Abedian, and R. Mahmudi. “A Novel Method for Materials Selection in Mechanical Design: Combination of Non-linear Normalization and a Modified Digital Logic Method.” <br> Materials and Design <br> 28, no. 1 (2007): 8-15. <br> [“Flycycle” Human Powered Aircraft](http://peswiki.com/index.php/Directory:Flycycle) |

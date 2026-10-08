@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-9-03-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.03"
+cross_listed_codes: []
+course_title: "Neural Basis of Learning and Memory"
+course_slug: "9-03-neural-basis-of-learning-and-memory-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Matt Wilson"
+  - "Prof. Suzanne Corkin"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neurobiology"
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course highlights the interplay between cellular and molecular storage mechanisms and the cognitive neuroscience of memory, with an emphasis on human and animal models of hippocampal mechanisms and function. Class sessions include lectures and discussion of papers.
+course_url: "https://ocw.mit.edu/courses/9-03-neural-basis-of-learning-and-memory-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/9-03-neural-basis-of-learning-and-memory-fall-2007/c6040a5145150cf6fc64e81a4020714d_9-03f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

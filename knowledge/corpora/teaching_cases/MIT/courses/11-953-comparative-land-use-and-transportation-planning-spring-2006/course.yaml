@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-11-953-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.953"
+cross_listed_codes: []
+course_title: "Comparative Land Use and Transportation Planning"
+course_slug: "11-953-comparative-land-use-and-transportation-planning-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Pericles (Chris) Zegras"
+subject_primary: "Urban Studies"
+subject_secondary:
+  - "Regional Planning"
+  - "Transportation Planning"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+          - "Transportation Planning"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course focuses on the land use-transportation “interaction space” in metropolitan settings. The course aims to develop an understanding of relevant theories and analytical techniques, through the exploration of various cases drawn from different parts of the world. The course begins with an overview of the role of transportation in patterns of urban development and metropolitan growth. It introduces the concept of accessibility and related issues of individual and firm travel demand. Later in the semester, students will explore the influence of the metropolitan built environment on travel behavior and the role of transportation on metropolitan land development. The course will conclude with an examination of the implications of the land use-transportation interaction space for metropolitan futures, and our abilities to forecast them.
+course_url: "https://ocw.mit.edu/courses/11-953-comparative-land-use-and-transportation-planning-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/11-953-comparative-land-use-and-transportation-planning-spring-2006/9e033d19d499233e42e4e13add0faa2e_11-953s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

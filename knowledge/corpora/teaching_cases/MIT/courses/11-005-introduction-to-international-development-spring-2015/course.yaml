@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-11-005-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.005"
+cross_listed_codes: []
+course_title: "Introduction to International Development"
+course_slug: "11-005-introduction-to-international-development-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Cauam Ferreira Cardoso"
+subject_primary: "History"
+subject_secondary:
+  - "Comparative History"
+  - "Modern History"
+  - "World History"
+  - "Social Science"
+  - "Economics"
+  - "International Development"
+  - "Society"
+  - "Global Poverty"
+  - "The Developing World"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Comparative History"
+          - "Modern History"
+          - "World History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "International Development"
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This course introduces undergraduates to the basic theory, institutional architecture, and practice of international development. We take an applied, interdisciplinary approach to some of the “big questions” in our field. This course will unpack these questions by providing an overview of existing knowledge and best practices in the field. The goal of this class is to go beyond traditional dichotomies and narrow definitions of progress, well-being, and culture. Instead, we will invite students to develop a more nuanced understanding of international development by offering an innovative set of tools and content flexibility.
+course_url: "https://ocw.mit.edu/courses/11-005-introduction-to-international-development-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/11-005-introduction-to-international-development-spring-2015/550cbab9aa2deb327b01735b37216b50_11-005s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

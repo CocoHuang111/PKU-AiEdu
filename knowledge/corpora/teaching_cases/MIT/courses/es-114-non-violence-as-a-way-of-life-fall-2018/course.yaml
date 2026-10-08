@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-es-114-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.114"
+cross_listed_codes: []
+course_title: "Non-violence as a Way of Life"
+course_slug: "es-114-non-violence-as-a-way-of-life-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Lee Perlman"
+subject_primary: "Literature"
+subject_secondary:
+  - "Classics"
+  - "Philosophy"
+  - "Ethics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Classics"
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course addresses the philosophical question of what a non-violent life entails. It investigates its ethical dimensions and challenges, and considers whether we can derive a comprehensive moral theory from the principle of non-violence. In addition, it discusses the issues of lying, the duty to forgive, non-violent communication, the ethics of our relationship to anger, the possibility of loving enemies, and the ethics of punishment and rehabilitation. Readings are included from primary exponents of non-violence, such as Tolstoy, Gandhi, and King. This course is part of the Experimental Study Group at MIT.
+course_url: "https://ocw.mit.edu/courses/es-114-non-violence-as-a-way-of-life-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/es-114-non-violence-as-a-way-of-life-fall-2018/6b26ae891a3f47c13b87f141e7cff815_ES-114f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

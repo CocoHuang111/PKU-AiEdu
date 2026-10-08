@@ -1,0 +1,59 @@
+> 检索摘要：15.310 Managerial Psychology Laboratory（Spring 2003，Graduate）的「Syllabus」。页内标题：Syllabus；Course Meeting Times；15.301 Undergraduate Syllabus；Textbooks；Grading；15.310 Graduate Syllabus；Textbooks；Grading。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/15-310-managerial-psychology-laboratory-spring-2003/pages/syllabus/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Syllabus
+
+### Course Meeting Times
+
+Lectures: 2 sessions / week, 1 hour / session
+Recitations: 1 session / week, 1 hour / session
+
+**Note:** There are some differences in the required textbooks and grading between the undergraduate and graduate versions of the course. Both are presented below.
+
+### 15.301 Undergraduate Syllabus
+
+#### Textbooks
+
+Robbins, Stephen P. *Organizational Behavior.* 10th Edition. Prentice Hall, 2003.
+
+Leavitt, Harold J., Louis R. Pondy, and David M. Boje (Ed.). *Readings in Managerial Psychology.* 4th Edition. The University of Chicago Press, 1989.
+
+Hoyle, Rick H., Monica J. Harris, and Charles M. Judd. Research, 2002.
+
+Wadsworth. *Methods in Social Relations.* 7th Edition. Thomson Learning.
+
+#### Grading
+
+| Components | Percentages |
+| --- | --- |
+| Group Project (decomposed as 10% for proposal, 25% for final report, and 5% for final presentation) | 40% |
+| Midterm Quiz | 20% |
+| Final Quiz | 20% |
+| Individual Writing Assignment (decomposed as 5% for content and 5% for writing quality) | 10% |
+| Homework and Participation in Recitations | 10% |
+| Participation in Lecture Discussions |  |
+
+### 15.310 Graduate Syllabus
+
+#### Textbooks
+
+Robbins, Stephen P. *Organizational Behavior.* 10th Edition. Prentice Hall, 2003.
+
+Leavitt, Harold J., Louis R. Pondy, and David M. Boje (Ed.). *Readings in Managerial Psychology.* 4th Edition. The University of Chicago Press, 1989.
+
+#### Grading
+
+| Components | Percentages |
+| --- | --- |
+| Midterm Paper (5-7 Pages) - Any Topic of Choice Related to Course (please pass topic by me before writing paper) or Answer 3-5 Questions from Different Chapters in Robbins: Questions for Critical Thinking | 15% |
+| Class Participation | 20% |
+| 1 Two Page Write Up on Any of the Cases (due before recitation) | 10% |
+| Individual 10 min Presentation About a Topic of Interest (please pass topic by me before preparing presentation) | 10% |
+| 1 Key Question/Issue for Every Reading With a Paragraph of Your Thoughts On It | 10% |
+| Midterm Quiz | 15% |
+| Final Quiz | 20% |

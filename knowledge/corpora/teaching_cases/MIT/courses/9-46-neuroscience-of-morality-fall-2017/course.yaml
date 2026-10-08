@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-9-46-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.46"
+cross_listed_codes: []
+course_title: "Neuroscience of Morality"
+course_slug: "9-46-neuroscience-of-morality-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Rebecca Saxe"
+subject_primary: "Cognitive Science"
+subject_secondary:
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Written Assignments"
+description: |
+  How do we decide whether an action is morally wrong? How do we choose to do what is right? When and why do we punish wrong-doers? Moral behavior and moral evaluation are functions of the human brain. It is just becoming possible to use neuroscientific methods to understand how they work. This course will consider the mechanisms of morality as a question for neuroscientists.
+course_url: "https://ocw.mit.edu/courses/9-46-neuroscience-of-morality-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/9-46-neuroscience-of-morality-fall-2017/af0e49b01c46cac001c50974fa7389bc_MIT9_46F17_chp.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

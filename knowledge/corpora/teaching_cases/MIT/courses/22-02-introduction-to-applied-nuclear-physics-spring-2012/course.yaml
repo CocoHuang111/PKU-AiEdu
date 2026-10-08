@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-22-02-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.02"
+cross_listed_codes: []
+course_title: "Introduction to Applied Nuclear Physics"
+course_slug: "22-02-introduction-to-applied-nuclear-physics-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Paola Cappellaro"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Nuclear Engineering"
+  - "Science"
+  - "Physics"
+  - "Nuclear Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+      - name: "Nuclear Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This class covers basic concepts of nuclear physics with emphasis on nuclear structure and interactions of radiation with matter. Topics include elementary quantum theory; nuclear forces; shell structure of the nucleus; alpha, beta and gamma radioactive decays; interactions of nuclear radiations (charged particles, gammas, and neutrons) with matter; nuclear reactions; fission and fusion.
+course_url: "https://ocw.mit.edu/courses/22-02-introduction-to-applied-nuclear-physics-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/22-02-introduction-to-applied-nuclear-physics-spring-2012/65bb8bf80d67af92e9142405fb040ccb_22-02s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

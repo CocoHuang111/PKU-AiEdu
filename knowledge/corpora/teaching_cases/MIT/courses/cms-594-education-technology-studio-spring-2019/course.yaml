@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-594-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.594"
+cross_listed_codes:
+  - "CMS.894"
+course_title: "Education Technology Studio"
+course_slug: "cms-594-education-technology-studio-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Rachel Slama"
+  - "Garron Hillaire"
+  - "Dr. Joshua Littenberg-Tobias"
+  - "Dr. Jose Ruiperez-Valiente"
+subject_primary: "Educational Technology"
+subject_secondary: []
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  Students use media and technology to develop new forms of learning experiences in schools, workplaces, and informal settings. Students participate in a range of new and ongoing projects that hone understanding and skills in learning science, instructional design, development and evaluation.
+course_url: "https://ocw.mit.edu/courses/cms-594-education-technology-studio-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/cms-594-education-technology-studio-spring-2019/8c5f3ffc4f4f97e8428d0a43c73cf69d_CMS-594S19.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

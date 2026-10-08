@@ -1,0 +1,102 @@
+schema_version: "1.0"
+course_id: "mitocw-ids-410j-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "IDS.410J"
+cross_listed_codes:
+  - "12.844J"
+  - "IDS.410J (formerly ESD.864)"
+course_title: "Modeling and Assessment for Policy"
+course_slug: "ids-410j-modeling-and-assessment-for-policy-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Institute for Data, Systems, and Society"
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Noelle Selin"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Environmental Engineering"
+  - "Environmental Management"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Climate Studies"
+  - "Environmental Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Public Policy"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Climate Studies"
+          - "Environmental Science"
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Public Policy"
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  IDS.410J Modeling and Assessment for Policy explores how scientific information and quantitative models can be used to inform policy decision-making. Students will develop an understanding of quantitative modeling techniques and their role in the policy process through case studies and interactive activities. The course addresses issues such as analysis of scientific assessment processes, uses of integrated assessment models, public perception of quantitative information, methods for dealing with uncertainties, and design choices in building policy-relevant models. Examples used in this class focus on models and information used in earth system governance.
+course_url: "https://ocw.mit.edu/courses/ids-410j-modeling-and-assessment-for-policy-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/ids-410j-modeling-and-assessment-for-policy-spring-2013/8d1465f89eaf61f058e2381d62bd1ac4_ids-410js13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

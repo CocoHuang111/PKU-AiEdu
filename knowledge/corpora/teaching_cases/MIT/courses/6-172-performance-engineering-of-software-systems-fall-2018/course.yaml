@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-172-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.172"
+cross_listed_codes: []
+course_title: "Performance Engineering of Software Systems"
+course_slug: "6-172-performance-engineering-of-software-systems-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Charles Leiserson"
+  - "Prof. Julian Shun"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Software Design and Engineering"
+  - "Systems Engineering"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Software Design and Engineering"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Programming Assignments"
+  - "Projects"
+description: |
+  6.172 is an 18-unit class that provides a hands-on, project-based introduction to building scalable and high-performance software systems. Topics include performance analysis, algorithmic techniques for high performance, instruction-level optimizations, caching optimizations, parallel programming, and building scalable systems. The course programming language is C.
+course_url: "https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/6-172-performance-engineering-of-software-systems-fall-2018/2ea5b1550197db095fcb82df55203675_6-172f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

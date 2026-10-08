@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-423-january-iap-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.423"
+cross_listed_codes: []
+course_title: "Theater Arts Topics - Suburbia"
+course_slug: "21m-873-theater-arts-topics-suburbia-january-iap-2008"
+term: "January IAP"
+year: 2008
+as_taught_in: "January IAP 2008"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "David R. Gammons"
+  - "Michael Katz"
+  - "Leslie Cocuzzo Held"
+  - "Karen Perlow"
+  - "Peter Whincop"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Theatrical Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+          - "Theatrical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Lecture Notes"
+  - "Music Audio"
+description: |
+  Directed practice in acting, production, or design on a sustained theater piece, either one-act or full length, from pre-rehearsal preparation to workshop production. Consult Theater Arts Office. Includes directed practice in stagecraft. Dramashop rehearses a production of Eric Bogosian’s play “subUrbia” for presentation the first two weekends in February. Visiting artist, David R. Gammons, directs. Approximately 10 roles filled by auditions. Students can receive up to six credits for acting or technical positions. Schedule of rehearsals to be arranged, but actors should be available during the afternoon. Students must be available for performances in early February. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/21m-873-theater-arts-topics-suburbia-january-iap-2008/"
+image_url: "https://ocw.mit.edu/courses/21m-873-theater-arts-topics-suburbia-january-iap-2008/56954804e5a6b8bcc1585ee86cb2d1da_21m-873iap08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

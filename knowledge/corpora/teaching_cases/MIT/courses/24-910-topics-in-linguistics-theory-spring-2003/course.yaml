@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-24-910-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.910"
+cross_listed_codes: []
+course_title: "Topics in Linguistics Theory"
+course_slug: "24-910-topics-in-linguistics-theory-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kai von Fintel"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Semantics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Semantics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  I realize that “Modes of Assertion” is a rather cryptic title for the course. What we will explore are ways of modulating the force of an assertion. This will engage us in formal semantics and pragmatics, the theory of speech acts and performative utterances, and quite a bit of empirical work on a not-too-well understood complex of data. “He obviously made a big mistake.” “It is obvious that he made a big mistake.” If you’re like me you didn’t feel much of a difference. But now see what happens when you embed the two sentences: “We have to fire him, because he obviously made a big mistake.” “We have to fire him, because it is obvious that he made a big mistake.” One of the two examples is unremarkable, the other suggests that the reason he needs to be fired is not that he made a big mistake but the fact that it is obvious that he did. We will try to understand what is going on here and look at related constructions not just in English but also German (with its famous discourse particles like ja ) and Quechua and Tibetan (with their systems of evidentiality-marking, as recently studied in dissertations from Stanford and UCLA).
+course_url: "https://ocw.mit.edu/courses/24-910-topics-in-linguistics-theory-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/24-910-topics-in-linguistics-theory-spring-2003/c07edffa639650576de7e1fab8773e16_24-910s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

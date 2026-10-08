@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-15-s12-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.S12"
+cross_listed_codes: []
+course_title: "Blockchain and Money"
+course_slug: "15-s12-blockchain-and-money-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gary Gensler"
+subject_primary: "Finance"
+subject_secondary:
+  - "Information Technology"
+  - "Engineering"
+  - "Computer Science"
+  - "Algorithms and Data Structures"
+  - "Computer Networks"
+  - "Cryptography"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Computer Networks"
+          - "Cryptography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  This course is for students wishing to explore blockchain technology’s potential use—by entrepreneurs and incumbents—to change the world of money and finance. The course begins with a review of Bitcoin and an understanding of the commercial, technical, and public policy fundamentals of blockchain technology, distributed ledgers, and smart contracts. The class then continues on to current and potential blockchain applications in the financial sector.
+course_url: "https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/15-s12-blockchain-and-money-fall-2018/bb820e6651426bde62c060277dfbb042_15-S12F18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

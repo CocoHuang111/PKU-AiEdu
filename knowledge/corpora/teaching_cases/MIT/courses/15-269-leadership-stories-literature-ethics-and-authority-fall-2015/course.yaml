@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-15-269-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.269"
+cross_listed_codes: []
+course_title: "Leadership Stories: Literature, Ethics, and Authority"
+course_slug: "15-269-leadership-stories-literature-ethics-and-authority-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Leigh Hafrey"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Leadership"
+  - "Management"
+  - "Humanities"
+  - "Literature"
+  - "Comparative Literature"
+  - "Fiction"
+  - "Philosophy"
+  - "Ethics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Fiction"
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  This course explores how we use story to articulate ethical norms. The syllabus consists of short fiction, novels, plays, feature films and some non-fiction. Major topics include leadership and authority, professionalism, the nature of ethical standards, social enterprise, and questions of gender, cultural and individual identity, and work / life balance. Materials vary from year to year, but past readings have included work by Robert Bolt, Michael Frayn, Timothy Mo, Wole Soyinka, H. D. Thoreau, and others; films have included Crouching Tiger, Hidden Dragon, Hotel Rwanda, The Descendants, Motorcycle Diaries, Three Kings , and others. Draws on various professions and national cultures, and is run as a series of moderated discussions, with students centrally engaged in the teaching process.
+course_url: "https://ocw.mit.edu/courses/15-269-leadership-stories-literature-ethics-and-authority-fall-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/15-269-leadership-stories-literature-ethics-and-authority-fall-2015/b143aa75a4905f49c6f7e234f0f97525_15-269f15.gif
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

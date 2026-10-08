@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-961-fall-1998"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.961"
+cross_listed_codes: []
+course_title: "Numeric Photography"
+course_slug: "mas-961-numeric-photography-fall-1998"
+term: "Fall"
+year: 1998
+as_taught_in: "Fall 1998"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Maeda"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Software Design and Engineering"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+  - "Visual Arts"
+  - "Photography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Software Design and Engineering"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Visual Arts"
+        specialties:
+          - "Photography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The aim of the students from the Numeric Photography class at the MIT Media Laboratory was to present an exhibition of digital artworks which blend photography and computation, in the context of scene capture, image play, and interaction. Equipped with low end digital cameras, students created weekly software projects to explore aesthetic issues in signal processing and interaction design. The results are more than a hundred Java® applets, many of which are interactive, that suggest new avenues for image play on the computer. These weekly exercises led to the final product, an exhibition of the student work.
+course_url: "https://ocw.mit.edu/courses/mas-961-numeric-photography-fall-1998/"
+image_url: "https://ocw.mit.edu/courses/mas-961-numeric-photography-fall-1998/cfa783346ec143a8a9cf0742d8b6a35e_mas-961f98.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

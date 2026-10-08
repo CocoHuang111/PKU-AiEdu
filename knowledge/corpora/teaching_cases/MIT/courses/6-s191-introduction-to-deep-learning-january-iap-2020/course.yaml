@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-6-s191-january-iap-2026"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.S191"
+cross_listed_codes: []
+course_title: "Introduction to Deep Learning"
+course_slug: "6-s191-introduction-to-deep-learning-january-iap-2020"
+term: "January IAP"
+year: 2026
+as_taught_in: "January IAP 2026"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Alexander Amini"
+  - "Ava Soleimany"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Graphics and Visualization"
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Graphics and Visualization"
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This is MIT’s introductory course on deep learning methods with applications to computer vision, natural language processing, biology, and more! Students will gain foundational knowledge of deep learning algorithms and get practical experience in building neural networks in TensorFlow. Course concludes with a project proposal competition with feedback from staff and panel of industry sponsors. Prerequisites assume calculus (i.e. taking derivatives) and linear algebra (i.e. matrix multiplication), and we’ll try to explain everything else along the way! Experience in Python is helpful but not necessary.
+course_url: "https://ocw.mit.edu/courses/6-s191-introduction-to-deep-learning-january-iap-2020/"
+image_url: "https://ocw.mit.edu/courses/6-s191-introduction-to-deep-learning-january-iap-2020/5c27f47a367c35a4db16a70d574747bd_6-s191iap20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

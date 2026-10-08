@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-equity-analytics-new-course-addressing-societal-inequality"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Equity Analytics: A new course for addressing societal inequality"
+slug: "equity-analytics-new-course-addressing-societal-inequality"
+source_url: "https://crlt.umich.edu/equity-analytics-new-course-addressing-societal-inequality"
+language: "en"
+published: null
+awarded_year: "2024"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "0f76cba8f38a27c85c3c29791d4dc2abbc0e7c4d1a816a9de4f6081c83242883"

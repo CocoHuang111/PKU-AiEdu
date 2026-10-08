@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-s01-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.S01"
+cross_listed_codes: []
+course_title: "Internet Technology in Local and Global Communities"
+course_slug: "ec-s01-internet-technology-in-local-and-global-communities-spring-2005-summer-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Mr. Manish Gaudi"
+  - "Prof. Paul Gray"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Engineering"
+  - "Electrical Engineering"
+  - "Telecommunications"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+  - "Teaching and Education"
+  - "Educational Technology"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Programming Assignments"
+description: |
+  This course is based on the work of the MIT-African Internet Technology Initiative (MIT-AITI). MIT-AITI is an innovative approach by MIT students to integrate computers and internet technology into the education of students in African schools. The program focuses upon programming principles, cutting-edge internet technology, free open-source systems, and even an entrepreneurship seminar to introduce students in Africa to the power of information technology in today’s world. MIT-AITI achieves this goal by sending MIT students to three African nations in order to teach both students and teachers through intensive classroom and lab sessions for six weeks. The AITI program is implemented with emphasis on classroom teaching, community-oriented projects, and independent learning. This course has two major components: Content from a spring 2005 preparatory seminar offered by the MIT-AITI leadership. The goal of this seminar is to adequately prepare the AITI student teachers for their upcoming summer experiences in Africa. A snapshot of the summer 2005 MIT-AITI program. This includes the Java®-based curriculum that MIT-AITI ambassadors teach in Africa each year, as well as content from an entrepreneurship seminar offered concurrently with the IT class.
+course_url: "https://ocw.mit.edu/courses/ec-s01-internet-technology-in-local-and-global-communities-spring-2005-summer-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/ec-s01-internet-technology-in-local-and-global-communities-spring-2005-summer-2005/6abfe297c6c1b514356f4b56f629a9c4_ec-s01s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-6-370-january-iap-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.370"
+cross_listed_codes: []
+course_title: "Robocraft Programming Competition"
+course_slug: "6-370-robocraft-programming-competition-january-iap-2005"
+term: "January IAP"
+year: 2005
+as_taught_in: "January IAP 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michael Ernst"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Software Design and Engineering"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+  - "Fine Arts"
+  - "Game Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Software Design and Engineering"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The 6.370 Robocraft programming competition is a unique challenge that combines battle strategy and software engineering. In short, the objective is to write the best player program for the computer game Robocraft.
+course_url: "https://ocw.mit.edu/courses/6-370-robocraft-programming-competition-january-iap-2005/"
+image_url: "https://ocw.mit.edu/courses/6-370-robocraft-programming-competition-january-iap-2005/cb408504b610f76e6a0c7b9b4f4ff2a5_6-370iap05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

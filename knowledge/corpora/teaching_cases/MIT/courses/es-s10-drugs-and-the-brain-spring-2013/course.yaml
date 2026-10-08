@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-es-s10-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.S10"
+cross_listed_codes: []
+course_title: "Drugs and the Brain"
+course_slug: "es-s10-drugs-and-the-brain-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Zak Fallows"
+subject_primary: "Pharmacology and Toxicology"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Biochemistry"
+  - "Neurobiology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Pharmacology and Toxicology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+          - "Neurobiology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+description: |
+  This class is a multidisciplinary introduction to pharmacology, neurotransmitters, drug mechanisms, and brain diseases from addiction to schizophrenia. From Abilify® to Zyrtec®, the world is full of fascinating drugs. If you are poisoned by sarin nerve gas, you may be able to save your life by huffing some BZ nerve gas. This class will explain that chemical curiosity, along with a host of other interesting tidbits of pharmacology. The structure of the class interleaves basic concepts with specific examples and entertaining tangents, so it is not loaded with boring abstract theory. In the first class you will learn what a neurotransmitter is, and you will immediately apply that knowledge when we discuss the mechanism of caffeine. The class is highly multidisciplinary, including topics such as patent law, medical ethics, history, and the physics of crack pipes.
+course_url: "https://ocw.mit.edu/courses/es-s10-drugs-and-the-brain-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/es-s10-drugs-and-the-brain-spring-2013/49ed4bea11bfab420b4b1c9511f267a9_ES-S10s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

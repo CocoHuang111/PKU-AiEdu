@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-2-693-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.693"
+cross_listed_codes: []
+course_title: "Principles of Oceanographic Instrument Systems -- Sensors and Measurements (13.998)"
+course_slug: "2-693-principles-of-oceanographic-instrument-systems-sensors-and-measurements-13-998-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. James D. Irish"
+  - "Dr. Albert J. Williams"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Ocean Engineering"
+  - "Ocean Exploration"
+  - "Science"
+  - "Earth Science"
+  - "Environmental Science"
+  - "Oceanography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Ocean Exploration"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+          - "Oceanography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Problem Sets"
+description: |
+  This course introduces theoretical and practical principles of design of oceanographic sensor systems. Topics include: transducer characteristics for acoustic, current, temperature, pressure, electric, magnetic, gravity, salinity, velocity, heat flow, and optical devices; limitations on these devices imposed by ocean environments; signal conditioning and recording; noise, sensitivity, and sampling limitations; and standards. Lectures by experts cover the principles of state-of-the-art systems being used in physical oceanography, geophysics, submersibles, acoustics. For lab work, day cruises in local waters allow students to prepare, deploy and analyze observations from standard oceanographic instruments.
+course_url: "https://ocw.mit.edu/courses/2-693-principles-of-oceanographic-instrument-systems-sensors-and-measurements-13-998-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/2-693-principles-of-oceanographic-instrument-systems-sensors-and-measurements-13-998-spring-2004/689802667f8b1b734b251097371b2fee_2-693s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

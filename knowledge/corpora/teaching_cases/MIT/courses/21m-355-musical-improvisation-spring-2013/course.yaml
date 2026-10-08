@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-355-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.355"
+cross_listed_codes: []
+course_title: "Musical Improvisation"
+course_slug: "21m-355-musical-improvisation-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Mark Harvey"
+  - "Tom Hall"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Performance"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Performance"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Other Video"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  In this course, students study concepts and practice techniques of improvisation in solo and ensemble contexts. The course examines relationships between improvisation, composition, and performance based in traditional and experimental approaches. Hands-on music making will be complemented by discussion of the aesthetics of improvisation. Weekly lab sessions support work on musical technique. Guest artist / lecturers will engage students through mini-residencies in jazz with film, Indian music, electronic music, and blending improvisation with classic music; and an accompanying concert series will feature these artists in performance. Open by audition to instrumental or vocal performers.
+course_url: "https://ocw.mit.edu/courses/21m-355-musical-improvisation-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/21m-355-musical-improvisation-spring-2013/8239e3494b005d5f5c6551fb66cc1ec7_21M-355s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

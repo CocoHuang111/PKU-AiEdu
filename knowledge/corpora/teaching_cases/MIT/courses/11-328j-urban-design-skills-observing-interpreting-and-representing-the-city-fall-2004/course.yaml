@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-328j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.328J"
+cross_listed_codes:
+  - "4.240J"
+course_title: "Urban Design Skills: Observing, Interpreting, and Representing the City"
+course_slug: "11-328j-urban-design-skills-observing-interpreting-and-representing-the-city-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Eran Ben-Joseph"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Social Science"
+  - "Urban Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Design Assignments"
+  - "Written Assignments"
+description: |
+  The course is designed to be an introduction to methods of analyzing, evaluating, and recording the urban environment first hand. Its aim is to supplement existing courses that cover theory and history of city design and planning and to better prepare students without prior design background for the studio sequence.
+course_url: "https://ocw.mit.edu/courses/11-328j-urban-design-skills-observing-interpreting-and-representing-the-city-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/11-328j-urban-design-skills-observing-interpreting-and-representing-the-city-fall-2004/9a522ab06d15947e341015dbc8361752_11-328jf04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

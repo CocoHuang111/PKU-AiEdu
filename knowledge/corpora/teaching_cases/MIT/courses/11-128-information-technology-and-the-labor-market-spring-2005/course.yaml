@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-11-128-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.128"
+cross_listed_codes:
+  - "11.248"
+  - "14.49"
+course_title: "Information Technology and the Labor Market"
+course_slug: "11-128-information-technology-and-the-labor-market-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Frank Levy"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Labor Economics"
+  - "Public Administration"
+  - "Science and Technology Policy"
+  - "Sociology"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Labor Economics"
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course explores how information technology is reshaping different dimensions of the U.S. labor market: the way work is organized, the mix of occupations, the skills required to perform in an occupation, economy-wide labor productivity, and the distribution of wages.
+course_url: "https://ocw.mit.edu/courses/11-128-information-technology-and-the-labor-market-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/11-128-information-technology-and-the-labor-market-spring-2005/78544b50ccd0a1eba04b4fd5c0de4985_11-128s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

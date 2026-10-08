@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-17-261-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.261"
+cross_listed_codes:
+  - "17.262"
+course_title: "Congress and the American Political System II"
+course_slug: "17-261-congress-and-the-american-political-system-ii-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Charles Stewart"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Social Science"
+  - "Political Science"
+  - "American Politics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course analyzes the development of the United States Congress by focusing on the competing theoretical lenses through which legislatures have been studied. In particular, it compares sociological and economic models of legislative behavior, applying those models to floor decision-making, committee behavior, political parties, relations with other branches of the Federal government, and elections. Graduate students are expected to pursue the subject in greater depth through reading and individual research.
+course_url: "https://ocw.mit.edu/courses/17-261-congress-and-the-american-political-system-ii-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/17-261-congress-and-the-american-political-system-ii-fall-2005/de11c6848c821bff0b3e187de2d97bf9_17-261f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

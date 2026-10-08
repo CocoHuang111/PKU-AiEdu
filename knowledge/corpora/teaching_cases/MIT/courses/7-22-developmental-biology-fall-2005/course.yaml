@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-7-22-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.22"
+cross_listed_codes:
+  - "7.72"
+course_title: "Developmental Biology"
+course_slug: "7-22-developmental-biology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Hazel Sive"
+  - "Prof. Martha Constantine-Paton"
+subject_primary: "Biology"
+subject_secondary:
+  - "Developmental Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Developmental Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This graduate and advanced undergraduate level lecture and literature discussion course covers the current understanding of the molecular mechanisms that regulate animal development. Evolutionary mechanisms are emphasized as well as the discussion of relevant diseases. Vertebrate (mouse, chick, frog, fish) and invertebrate (fly, worm) models are covered. Specific topics include formation of early body plan, cell type determination, organogenesis, morphogenesis, stem cells, cloning, and issues in human development.
+course_url: "https://ocw.mit.edu/courses/7-22-developmental-biology-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/7-22-developmental-biology-fall-2005/5b2b58c7caf9ac5aa922a4f795488535_7-22f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

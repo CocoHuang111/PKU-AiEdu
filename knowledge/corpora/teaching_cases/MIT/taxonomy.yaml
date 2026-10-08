@@ -1,0 +1,390 @@
+schema_version: "1.0"
+source: "MIT OpenCourseWare course homepages"
+capture_date: "2026-10-03"
+course_count: 2587
+note: "Counts are labels printed on OCW course pages. subject_primary uses MIT's first subtopic when the page provides one."
+departments:
+  - name: "Electrical Engineering and Computer Science"
+    course_count: 285
+  - name: "Urban Studies and Planning"
+    course_count: 199
+  - name: "Mathematics"
+    course_count: 199
+  - name: "Sloan School of Management"
+    course_count: 192
+  - name: "Mechanical Engineering"
+    course_count: 148
+  - name: "Literature"
+    course_count: 127
+  - name: "Global Studies and Languages"
+    course_count: 119
+  - name: "Architecture"
+    course_count: 115
+  - name: "Earth, Atmospheric, and Planetary Sciences"
+    course_count: 110
+  - name: "Civil and Environmental Engineering"
+    course_count: 104
+  - name: "Political Science"
+    course_count: 97
+  - name: "Brain and Cognitive Sciences"
+    course_count: 93
+  - name: "History"
+    course_count: 92
+  - name: "Physics"
+    course_count: 87
+  - name: "Aeronautics and Astronautics"
+    course_count: 86
+  - name: "Linguistics and Philosophy"
+    course_count: 78
+  - name: "Economics"
+    course_count: 77
+  - name: "Comparative Media Studies/Writing"
+    course_count: 75
+  - name: "Science, Technology, and Society"
+    course_count: 71
+  - name: "Health Sciences and Technology"
+    course_count: 69
+  - name: "Anthropology"
+    course_count: 67
+  - name: "Engineering Systems Division"
+    course_count: 66
+  - name: "Materials Science and Engineering"
+    course_count: 66
+  - name: "Women's and Gender Studies"
+    course_count: 57
+  - name: "Nuclear Science and Engineering"
+    course_count: 51
+  - name: "Media Arts and Sciences"
+    course_count: 47
+  - name: "Music"
+    course_count: 46
+  - name: "Chemical Engineering"
+    course_count: 45
+  - name: "Biology"
+    course_count: 42
+  - name: "Chemistry"
+    course_count: 38
+  - name: "Biological Engineering"
+    course_count: 38
+  - name: "Experimental Study Group"
+    course_count: 30
+  - name: "Edgerton Center"
+    course_count: 27
+  - name: "Institute for Data, Systems, and Society"
+    course_count: 21
+  - name: "Theater Arts"
+    course_count: 19
+  - name: "Athletics, Physical Education and Recreation"
+    course_count: 10
+  - name: "Concourse"
+    course_count: 5
+  - name: "Special Programs"
+    course_count: 2
+academic_levels:
+  - name: "Undergraduate"
+    course_count: 1378
+  - name: "Graduate"
+    course_count: 1201
+  - name: "Non-Credit"
+    course_count: 70
+  - name: "High School"
+    course_count: 11
+terms:
+  - name: "Spring"
+    course_count: 1260
+  - name: "Fall"
+    course_count: 1183
+  - name: "January IAP"
+    course_count: 107
+  - name: "Summer"
+    course_count: 33
+subject_primary:
+  - name: "Computer Science"
+    course_count: 255
+  - name: "History"
+    course_count: 163
+  - name: "Literature"
+    course_count: 129
+  - name: "Electrical Engineering"
+    course_count: 78
+  - name: "Architecture"
+    course_count: 77
+  - name: "Language"
+    course_count: 75
+  - name: "Mechanical Engineering"
+    course_count: 74
+  - name: "Economics"
+    course_count: 74
+  - name: "Media Studies"
+    course_count: 72
+  - name: "Physics"
+    course_count: 71
+  - name: "Biological Engineering"
+    course_count: 66
+  - name: "Biology"
+    course_count: 62
+  - name: "Systems Engineering"
+    course_count: 54
+  - name: "Earth Science"
+    course_count: 54
+  - name: "Aerospace Engineering"
+    course_count: 51
+  - name: "Philosophy"
+    course_count: 50
+  - name: "Algebra and Number Theory"
+    course_count: 44
+  - name: "Political Science"
+    course_count: 43
+  - name: "Chemical Engineering"
+    course_count: 41
+  - name: "Information Technology"
+    course_count: 40
+  - name: "Music"
+    course_count: 40
+  - name: "Anthropology"
+    course_count: 38
+  - name: "Civil Engineering"
+    course_count: 37
+  - name: "Environmental Engineering"
+    course_count: 37
+  - name: "Entrepreneurship"
+    course_count: 37
+  - name: "Materials Science and Engineering"
+    course_count: 37
+  - name: "Linguistics"
+    course_count: 36
+  - name: "Operations Management"
+    course_count: 34
+  - name: "Globalization"
+    course_count: 34
+  - name: "Chemistry"
+    course_count: 33
+  - name: "Probability and Statistics"
+    course_count: 29
+  - name: "Applied Mathematics"
+    course_count: 28
+  - name: "Calculus"
+    course_count: 28
+  - name: "Visual Arts"
+    course_count: 27
+  - name: "Finance"
+    course_count: 26
+  - name: "Management"
+    course_count: 24
+  - name: "Leadership"
+    course_count: 22
+  - name: "Performance Arts"
+    course_count: 22
+  - name: "Innovation"
+    course_count: 21
+  - name: "Climate"
+    course_count: 19
+  - name: "Public Administration"
+    course_count: 19
+  - name: "Nuclear Engineering"
+    course_count: 19
+  - name: "Curriculum and Teaching"
+    course_count: 16
+  - name: "Project Management"
+    course_count: 15
+  - name: "Organizational Behavior"
+    course_count: 14
+  - name: "Differential Equations"
+    course_count: 14
+  - name: "Business Ethics"
+    course_count: 14
+  - name: "Anatomy and Physiology"
+    course_count: 14
+  - name: "Health Care Management"
+    course_count: 13
+  - name: "Urban Studies"
+    course_count: 12
+  - name: "Engineering"
+    course_count: 11
+  - name: "Ocean Engineering"
+    course_count: 11
+  - name: "Game Design"
+    course_count: 10
+  - name: "Cognitive Science"
+    course_count: 10
+  - name: "Accounting"
+    course_count: 9
+  - name: "Nuclear Energy"
+    course_count: 9
+  - name: "Sensory-Neural Systems"
+    course_count: 9
+  - name: "Linear Algebra"
+    course_count: 8
+  - name: "Industrial Relations and Human Resource Management"
+    course_count: 7
+  - name: "Electricity"
+    course_count: 7
+  - name: "Discrete Mathematics"
+    course_count: 7
+  - name: "Art History"
+    course_count: 7
+  - name: "Technology"
+    course_count: 6
+  - name: "Real Estate"
+    course_count: 6
+  - name: "Topology and Geometry"
+    course_count: 6
+  - name: "Buildings"
+    course_count: 6
+  - name: "Physical Education and Recreation"
+    course_count: 6
+  - name: "Teaching and Education"
+    course_count: 5
+  - name: "Energy"
+    course_count: 5
+  - name: "Social Science"
+    course_count: 5
+  - name: "Public Health"
+    course_count: 5
+  - name: "Marketing"
+    course_count: 5
+  - name: "Mathematical Analysis"
+    course_count: 5
+  - name: "Pharmacology and Toxicology"
+    course_count: 5
+  - name: "Gender Studies"
+    course_count: 5
+  - name: "Biomedicine"
+    course_count: 4
+  - name: "Combustion"
+    course_count: 4
+  - name: "Biomedical Instrumentation"
+    course_count: 4
+  - name: "Sociology"
+    course_count: 3
+  - name: "Communication"
+    course_count: 3
+  - name: "Supply Chain Management"
+    course_count: 3
+  - name: "Legal Studies"
+    course_count: 3
+  - name: "Fossil Fuels"
+    course_count: 3
+  - name: "Spectroscopy"
+    course_count: 3
+  - name: "Cancer"
+    course_count: 3
+  - name: "Medical Imaging"
+    course_count: 3
+  - name: "Psychology"
+    course_count: 3
+  - name: "Mental Health"
+    course_count: 3
+  - name: "Educational Technology"
+    course_count: 3
+  - name: "Health and Exercise Science"
+    course_count: 3
+  - name: "Religion"
+    course_count: 2
+  - name: "Transportation"
+    course_count: 2
+  - name: "Computation"
+    course_count: 2
+  - name: "Mathematics"
+    course_count: 2
+  - name: "Epidemiology"
+    course_count: 2
+  - name: "Pathology and Pathophysiology"
+    course_count: 2
+  - name: "Functional Genomics"
+    course_count: 2
+  - name: "Biomedical Signal and Image Processing"
+    course_count: 2
+  - name: "Business"
+    course_count: 1
+  - name: "Game Theory"
+    course_count: 1
+  - name: "Nanotechnology"
+    course_count: 1
+  - name: "Fine Arts"
+    course_count: 1
+  - name: "Humanities"
+    course_count: 1
+  - name: "Archaeology"
+    course_count: 1
+  - name: "Speech Pathology"
+    course_count: 1
+  - name: "Cellular and Molecular Medicine"
+    course_count: 1
+  - name: "Health and Medicine"
+    course_count: 1
+  - name: "Biomedical Enterprise"
+    course_count: 1
+  - name: "Fuel Cells"
+    course_count: 1
+  - name: "Society"
+    course_count: 1
+  - name: "Education Policy"
+    course_count: 1
+  - name: "Renewables"
+    course_count: 1
+  - name: "Geography"
+    course_count: 1
+  - name: "Social Medicine"
+    course_count: 1
+years:
+  - year: 1997
+    course_count: 2
+  - year: 1998
+    course_count: 6
+  - year: 1999
+    course_count: 3
+  - year: 2000
+    course_count: 6
+  - year: 2001
+    course_count: 23
+  - year: 2002
+    course_count: 95
+  - year: 2003
+    course_count: 191
+  - year: 2004
+    course_count: 238
+  - year: 2005
+    course_count: 275
+  - year: 2006
+    course_count: 212
+  - year: 2007
+    course_count: 140
+  - year: 2008
+    course_count: 120
+  - year: 2009
+    course_count: 135
+  - year: 2010
+    course_count: 117
+  - year: 2011
+    course_count: 94
+  - year: 2012
+    course_count: 93
+  - year: 2013
+    course_count: 108
+  - year: 2014
+    course_count: 95
+  - year: 2015
+    course_count: 100
+  - year: 2016
+    course_count: 99
+  - year: 2017
+    course_count: 52
+  - year: 2018
+    course_count: 48
+  - year: 2019
+    course_count: 47
+  - year: 2020
+    course_count: 55
+  - year: 2021
+    course_count: 41
+  - year: 2022
+    course_count: 41
+  - year: 2023
+    course_count: 54
+  - year: 2024
+    course_count: 46
+  - year: 2025
+    course_count: 34
+  - year: 2026
+    course_count: 13

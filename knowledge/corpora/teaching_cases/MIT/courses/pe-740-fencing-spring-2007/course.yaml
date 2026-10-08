@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-pe-740-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "PE.740"
+cross_listed_codes: []
+course_title: "Fencing"
+course_slug: "pe-740-fencing-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Athletics, Physical Education and Recreation"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jaroslav Koniusz"
+subject_primary: "Physical Education and Recreation"
+subject_secondary: []
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Physical Education and Recreation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+description: |
+  This course is intended to provide students with the fundamentals of fencing, including footwork, bladework, bouting and refereeing. It will allow students to develop the ability to analyze a fencing bout, and promotes creativity in applying acquired skills in a fencing bout.
+course_url: "https://ocw.mit.edu/courses/pe-740-fencing-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/pe-740-fencing-spring-2007/def042500e576559b4d6b2a05e74bde5_pe-740s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-165-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.165"
+cross_listed_codes: []
+course_title: "Modern African History"
+course_slug: "21h-165-modern-african-history-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kenda Mutongi"
+subject_primary: "History"
+subject_secondary:
+  - "African History"
+  - "Asian History"
+  - "European History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "African History"
+          - "Asian History"
+          - "European History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  This course surveys the history of 19th and 20th century Africa. It focuses on the European conquest of Africa and the dynamics of colonial rule, especially its socioeconomic and cultural consequences. It looks at how the rising tide of African nationalism, in the form of labor strikes and guerrilla wars, ushered out colonialism. It also examines the postcolonial states, focusing on the politics of development, recent civil wars in countries like Rwanda and Liberia, the AIDS epidemic, and the history of apartheid in South Africa up to 1994. Finally, it surveys the entrepreneurship in the post-colonial period and China’s recent involvement in Africa.
+course_url: "https://ocw.mit.edu/courses/21h-165-modern-african-history-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/21h-165-modern-african-history-spring-2019/34fb8fc7e34c7c8fe9e33de65490efff_21H-165s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

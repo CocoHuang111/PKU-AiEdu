@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-6-252j-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.252J"
+cross_listed_codes:
+  - "15.084J"
+course_title: "Nonlinear Programming"
+course_slug: "6-252j-nonlinear-programming-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dimitri Bertsekas"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Systems Engineering"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  6.252J is a course in the department’s “Communication, Control, and Signal Processing” concentration. This course provides a unified analytical and computational approach to nonlinear optimization problems. The topics covered in this course include: unconstrained optimization methods, constrained optimization methods, convex analysis, Lagrangian relaxation, nondifferentiable optimization, and applications in integer programming. There is also a comprehensive treatment of optimality conditions, Lagrange multiplier theory, and duality theory. Throughout the course, applications are drawn from control, communications, power systems, and resource allocation problems.
+course_url: "https://ocw.mit.edu/courses/6-252j-nonlinear-programming-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/6-252j-nonlinear-programming-spring-2003/c12ae12dacf33b5f6608291268c9f861_6-252js03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,17 @@
+> 检索摘要：12.010 Computational Methods of Scientific Programming（Fall 2011，Undergraduate）的「Calendar」。页内标题：Calendar；Instructors。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/12-010-computational-methods-of-scientific-programming-fall-2011/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+### Instructors
+
+TH: Tom Herring
+
+CH: Chris Hill
+
+<table><tr><th>LEC #</th><th>TOPICS</th><th>INSTRUCTORS</th><th>KEY DATES</th></tr><tr><td>1</td><td rowspan="2">Introduction: Problem formulation, algorithm development, algorithm implementation, and algorithm verification. Structure and documentation</td><td>TH</td><td></td></tr><tr><td>2</td><td>CH</td><td></td></tr><tr><td>3</td><td rowspan="2">Fortran: “Formula Translation”. Program creation, compilation and linking, variables and parameters, flow control, subroutines and functions. Structure and documentation. Use of libraries, internal and external communication, and interaction with other languages. Fortran: Implementation issues: Compilation errors, segmentation violations, Not-a-Number (NaN), Input/Output (IOSTAT) errors, Runtime errors. Transportable code, standard extensions. Fortran 90 differences and similarities to Fortran 77</td><td>CH</td><td></td></tr><tr><td>4–7</td><td>TH</td><td>Homework 1 due in Lec #7</td></tr><tr><td>8–11</td><td>C for Scientific uses. Representation of data through arrays, pointers, and data structures. Function calls, argument passing and scoping rules, IO, profiling, system calls, and signals <br> C++ objects. Encapsulation and inheritance, polymorphic operators</td><td>TH</td><td></td></tr><tr><td>12–13</td><td>Mathematica. What it is and what it can do; structure of Mathematica; symbols, exact numbers, and machine numbers; lists, vectors, and matrices. <br> Working with Mathematica: numerical calculations, symbolic calculations, and graphics. Importing and exporting information.</td><td>TH</td><td>Homework 2 due in Lec #13</td></tr><tr><td>14–17</td><td>MATLAB®. “Matrix Laboratory”. MATLAB syntax, workspace, variables. Script M-files, IO, control flow, debugging, and profiling tools. Object-oriented programming <br> MATLAB applications, polynomials, interpolation, integration, differentiation, ODE. Graphics, 2-D, 3-D, Graphical User Interface (GUI)</td><td>TH</td><td>Homework 3 due in Lec #17</td></tr><tr><td>18–19</td><td>Python scripting language program</td><td>TH</td><td></td></tr><tr><td>20</td><td>Advanced graphics in MATLAB, 3-D representation and exportable animations</td><td>TH</td><td>Homework 4 due in Lec #20 <br> Group pairs and project descriptions due in Lec #20</td></tr><tr><td>21</td><td>Ordinary differential equation (ODE) solutions used MATLAB and Mathematica</td><td>TH</td><td></td></tr><tr><td>22–24</td><td>Advanced Topics: Parallel computing with large memory and large numbers of CPUs <br> Advanced topics: Parallel MATLAB <br> Discussion of final projects <br> Order of the presentations will be decided in the last class</td><td>CH</td><td>Homework 5 due in Lec #23</td></tr><tr><td></td><td>Final Project Presentations</td><td>All</td><td>Final Project due</td></tr></table>

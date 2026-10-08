@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-8-20-january-iap-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.20"
+cross_listed_codes: []
+course_title: "Introduction to Special Relativity"
+course_slug: "8-20-introduction-to-special-relativity-january-iap-2021"
+term: "January IAP"
+year: 2021
+as_taught_in: "January IAP 2021"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Markus  Klute"
+subject_primary: "Physics"
+subject_secondary:
+  - "Relativity"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Relativity"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The theory of special relativity, originally proposed by Albert Einstein in his famous 1905 paper, has had profound consequences on our view of physics, space, and time. This course will introduce you to the concepts behind special relativity including, but not limited to, length contraction, time dilation, the Lorentz transformation, relativistic kinematics, Doppler shifts, and even so-called “paradoxes.”
+course_url: "https://ocw.mit.edu/courses/8-20-introduction-to-special-relativity-january-iap-2021/"
+image_url: "https://ocw.mit.edu/courses/8-20-introduction-to-special-relativity-january-iap-2021/5bdb52627692c4121441232c89de0a02_8-20iap21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-24-949-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.949"
+cross_listed_codes: []
+course_title: "Language Acquisition I"
+course_slug: "24-949-language-acquisition-i-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Athulya Aravind"
+subject_primary: "Linguistics"
+subject_secondary: []
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course focuses on the process by which native speakers of a language acquire the ability to speak and understand that language. It covers some of the major results in the study of first-language acquisition, concentrating on morpho-syntax, semantics, and pragmatics. The findings primarily come from English, but cross-linguistic differences in the phenomena of interest and corresponding differences in acquisition patterns are considered where appropriate. Of interest throughout is how these developmental data inform linguistic theory and/or learnability theory.
+course_url: "https://ocw.mit.edu/courses/24-949-language-acquisition-i-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/24-949-language-acquisition-i-fall-2020/bb9bdcae9ef18d7f943edabec4a2d0d9_24-949f20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-17-581-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.581"
+cross_listed_codes: []
+course_title: "Riots, Rebellions, Revolutions"
+course_slug: "17-581-riots-rebellions-revolutions-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Roger Petersen"
+subject_primary: "History"
+subject_secondary:
+  - "Social Science"
+  - "Political Science"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course examines different types of violent political conflict. It compares and contrasts several social science approaches (psychological, sociological, and political) and analyzes their ability to explain variation in outbreak, duration and outcome of conflict. Incidents such as riots in the U.S. during the 1960’s, riots in India, the Yugoslav wars, and the Russian Revolution, as well as current international events are discussed.
+course_url: "https://ocw.mit.edu/courses/17-581-riots-rebellions-revolutions-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/17-581-riots-rebellions-revolutions-spring-2013/9737ce13953caf2927b4ee55e8f3777f_17-581s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

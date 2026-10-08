@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "cornell-spanish-language-students-showcase-creativity-and-cultural-competencie-at-zine-fest"
+institution: "Cornell University"
+platform: "Cornell Teaching Case Studies"
+collection: "Teaching Innovation Case Study Library"
+title: "Creative Teaching Awards – Year 2 – Case Study 4: Silvia Amigo-Silvestre & Emilia Illana Mahiques"
+slug: "spanish-language-students-showcase-creativity-and-cultural-competencie-at-zine-fest"
+source_url: |
+  https://blogs.cornell.edu/teachingcasestudies/assessment/spanish-language-students-showcase-creativity-and-cultural-competencie-at-zine-fest/
+language: "en"
+published: "2025-04-18"
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  published: "source"
+extraction_status: "complete"
+content_sha256: "63e109eb388cd9e3cf856cab741a7a9fc2e17bf69dc46c1fda15c7e1cafbd510"

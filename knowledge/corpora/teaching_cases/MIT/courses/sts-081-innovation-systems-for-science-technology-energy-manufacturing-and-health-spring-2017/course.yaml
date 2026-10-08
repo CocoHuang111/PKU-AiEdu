@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-081-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.081"
+cross_listed_codes:
+  - "17.395J"
+course_title: "Innovation Systems for Science, Technology, Energy, Manufacturing, and Health"
+course_slug: "sts-081-innovation-systems-for-science-technology-energy-manufacturing-and-health-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "William Bonvillian"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Public Economics"
+  - "Society"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Public Economics"
+  - name: "Society"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  This course focuses on science and technology policy—it will examine the science and technology innovation system, including case studies on energy, computing, advanced manufacturing, and health sectors, with an emphasis on public policy and the federal government's role in that system.
+course_url: "https://ocw.mit.edu/courses/sts-081-innovation-systems-for-science-technology-energy-manufacturing-and-health-spring-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/sts-081-innovation-systems-for-science-technology-energy-manufacturing-and-health-spring-2017/9ae6895d9c36f212a37890131aeeb259_sts-081js17.JPG
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

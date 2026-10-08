@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-011-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.011"
+cross_listed_codes: []
+course_title: "Writing and Rhetoric: Rhetoric and Contemporary Issues"
+course_slug: "21w-011-writing-and-rhetoric-rhetoric-and-contemporary-issues-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Andrea Walsh"
+subject_primary: "Literature"
+subject_secondary:
+  - "Rhetoric"
+  - "Social Science"
+  - "Communication"
+  - "Public Administration"
+  - "Public Policy"
+  - "Social Welfare"
+  - "Society"
+  - "Global Poverty"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Rhetoric"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+          - "Social Welfare"
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course seeks to provide a supportive context for students to grow significantly as writers by discovering and engaging with issues that matter to them. Writing on social and ethical issues, we can see ourselves within a tradition of authors such as Charles Dickens, Frederick Douglass, Elizabeth Cady Stanton, George Orwell, Rachel Carson, John F. Kennedy and Martin Luther King, Jr., who have used the power of the pen to inspire social change.
+course_url: "https://ocw.mit.edu/courses/21w-011-writing-and-rhetoric-rhetoric-and-contemporary-issues-fall-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/21w-011-writing-and-rhetoric-rhetoric-and-contemporary-issues-fall-2015/5d0d69ffac7ef25fba0c834470bf924f_21w-011f15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

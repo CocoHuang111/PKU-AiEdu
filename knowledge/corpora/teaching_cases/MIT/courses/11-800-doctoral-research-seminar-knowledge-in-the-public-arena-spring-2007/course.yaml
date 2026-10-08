@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-11-800-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.800"
+cross_listed_codes: []
+course_title: "Doctoral Research Seminar: Knowledge in the Public Arena"
+course_slug: "11-800-doctoral-research-seminar-knowledge-in-the-public-arena-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Frank Levy"
+  - "Prof. Martin Rein"
+  - "Prof. Xavier de Souza Briggs"
+subject_primary: "Communication"
+subject_secondary:
+  - "Political Science"
+  - "Public Administration"
+  - "Public Policy"
+  - "Sociology"
+  - "Social Justice"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This is a course about how research knowledge and other types of knowledge come to be actionable and influential in the world — or not. The course explores ways to make research knowledge more accessible, credible, and useful in the realm of public policy and practice, a project in which the course faculty collectively bring decades of professional experience, in both academic and non-academic roles. The course addresses the politics of the policymaking process, the power of framing and agenda-setting, fads and paradigms in the design professions and society in general, how knowledge diffuses along knowledge and influence networks, and how varied types of knowledge (rational, craft, other) and deliberation shape decision-making and action. The course engages a number of guests to present case studies of research in use (and abuse) in varied fields, highlighting rich areas for potential research contributions, along with major conflicts in public values, political interests, ethical obligations, and more. The resulting dilemmas confront scholars, policymakers, practitioners, and others as they look to research — sometimes — for useful guidance, influence, or both.
+course_url: "https://ocw.mit.edu/courses/11-800-doctoral-research-seminar-knowledge-in-the-public-arena-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/11-800-doctoral-research-seminar-knowledge-in-the-public-arena-spring-2007/cdb0d2986689bdb87d463c73a6577f60_11-800s07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

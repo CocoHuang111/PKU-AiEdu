@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-120-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.120"
+cross_listed_codes: []
+course_title: "American Dream: Using Storytelling to Explore Social Class in the United States"
+course_slug: "21a-120-american-dream-using-storytelling-to-explore-social-class-in-the-united-states-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christine Walley"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Ethnography"
+  - "Sociology"
+  - "Social Justice"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course explores the experiences and understandings of class among Americans positioned at different points along the U.S. social spectrum. It considers a variety of classic frameworks for analyzing social class and uses memoirs, novels, and ethnographies to gain a sense of how class is experienced in daily life and how it intersects with other forms of social difference such as race and gender.
+course_url: "https://ocw.mit.edu/courses/21a-120-american-dream-using-storytelling-to-explore-social-class-in-the-united-states-spring-2018/"
+image_url: |
+  https://ocw.mit.edu/courses/21a-120-american-dream-using-storytelling-to-explore-social-class-in-the-united-states-spring-2018/4fcc372c00183a6007ed8a6b4875655f_21A-120s18.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-756-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.756"
+cross_listed_codes: []
+course_title: "Writing and Reading Poems"
+course_slug: "21w-756-writing-and-reading-poems-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "William Corbett"
+subject_primary: "Literature"
+subject_secondary:
+  - "Creative Writing"
+  - "Criticism"
+  - "Poetry"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Criticism"
+          - "Poetry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course is an examination of the formal structural and textual variety in poetry. Students engage in extensive practice in the making of poems and the analysis of both students’ manuscripts and 20th-century poetry. The course attempts to make relevant the traditional elements of poetry and their contemporary alternatives. There are weekly writing assignments, including some exercises in prosody.
+course_url: "https://ocw.mit.edu/courses/21w-756-writing-and-reading-poems-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21w-756-writing-and-reading-poems-fall-2006/885365bfba43ae4427d0672c7f5089a9_21w-756f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

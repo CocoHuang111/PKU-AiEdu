@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-705-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.705"
+cross_listed_codes:
+  - "WGS.512"
+course_title: "Major Authors: Melville and Morrison"
+course_slug: "21l-705-major-authors-melville-and-morrison-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Literature"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Wyn Kelley"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "American Literature"
+  - "Criticism"
+  - "Fiction"
+  - "Society"
+  - "Women's Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "American Literature"
+          - "Criticism"
+          - "Fiction"
+  - name: "Society"
+    subtopics:
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Written Assignments"
+description: |
+  This seminar provides intensive study of texts by two American authors (Herman Melville, 1819-1891, and Toni Morrison, 1931-) who, using lyrical, radically innovative prose, explore in different ways epic notions of American identity. Focusing on Melville’s Typee (1846), Moby-Dick (1851), and The Confidence-Man (1857) and Morrison’s Sula (1973), Beloved (1987), Jazz (1992), and Paradise (1998), the class will address their common concerns with issues of gender, race, language, and nationhood. Be prepared to read deeply (i.e. a small number of texts with considerable care), to draw on a variety of sources in different media, and to employ them in creative research, writing, and multimedia projects.
+course_url: "https://ocw.mit.edu/courses/21l-705-major-authors-melville-and-morrison-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/21l-705-major-authors-melville-and-morrison-fall-2003/8b016ac05f780297f33433f3d97ef38b_21l-705f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-3-012-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.012"
+cross_listed_codes: []
+course_title: "Fundamentals of Materials Science"
+course_slug: "3-012-fundamentals-of-materials-science-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Darrell Irvine"
+  - "Prof. Nicola Marzari"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Written Assignments with Examples"
+description: |
+  This course focuses on the fundamentals of structure, energetics, and bonding that underpin materials science. It is the introductory lecture class for sophomore students in Materials Science and Engineering, taken with 3.014 and 3.016 to create a unified introduction to the subject. Topics include: an introduction to thermodynamic functions and laws governing equilibrium properties, relating macroscopic behavior to atomistic and molecular models of materials; the role of electronic bonding in determining the energy, structure, and stability of materials; quantum mechanical descriptions of interacting electrons and atoms; materials phenomena, such as heat capacities, phase transformations, and multiphase equilibria to chemical reactions and magnetism; symmetry properties of molecules and solids; structure of complex, disordered, and amorphous materials; tensors and constraints on physical properties imposed by symmetry; and determination of structure through diffraction. Real-world applications include engineered alloys, electronic and magnetic materials, ionic and network solids, polymers, and biomaterials. This course is a core subject in MIT’s undergraduate Energy Studies Minor . This Institute-wide program complements the deep expertise obtained in any major with a broad understanding of the interlinked realms of science, technology, and social sciences as they relate to energy and associated environmental challenges.
+course_url: "https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/3-012-fundamentals-of-materials-science-fall-2005/72486bb4a3f8dce1d2f2316e9158751e_3-012f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

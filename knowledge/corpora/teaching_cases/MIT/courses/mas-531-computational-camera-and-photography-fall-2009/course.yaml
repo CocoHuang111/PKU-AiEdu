@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-531-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.531"
+cross_listed_codes:
+  - "MAS.131"
+course_title: "Computational Camera and Photography"
+course_slug: "mas-531-computational-camera-and-photography-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ramesh Raskar"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Electrical Engineering"
+  - "Signal Processing"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+  - "Visual Arts"
+  - "Photography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Visual Arts"
+        specialties:
+          - "Photography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Audio"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments"
+  - "Projects with Examples"
+description: |
+  A computational camera attempts to digitally capture the essence of visual information by exploiting the synergistic combination of task-specific optics, illumination, sensors and processing. In this course we will study this emerging multi-disciplinary field at the intersection of signal processing, applied optics, computer graphics and vision, electronics, art, and online sharing through social networks. If novel cameras can be designed to sample light in radically new ways, then rich and useful forms of visual information may be recorded — beyond those present in traditional photographs. Furthermore, if computational process can be made aware of these novel imaging models, them the scene can be analyzed in higher dimensions and novel aesthetic renderings of the visual information can be synthesized. We will discuss and play with thermal cameras, multi-spectral cameras, high-speed, and 3D range-sensing cameras and camera arrays. We will learn about opportunities in scientific and medical imaging, mobile-phone based photography, camera for HCI and sensors mimicking animal eyes. We will learn about the complete camera pipeline. In several hands-on projects we will build physical imaging prototypes and understand how each stage of the imaging process can be manipulated.
+course_url: "https://ocw.mit.edu/courses/mas-531-computational-camera-and-photography-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/mas-531-computational-camera-and-photography-fall-2009/e384ffa6dc782eac4a6775c56f709083_mas-531f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

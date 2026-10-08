@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-12-109-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.109"
+cross_listed_codes: []
+course_title: "Petrology"
+course_slug: "12-109-petrology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Timothy Grove"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geochemistry"
+  - "Geology"
+  - "Geophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geochemistry"
+          - "Geology"
+          - "Geophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This undergraduate petrology course surveys the distribution, chemical composition, and mineral associations in rocks of the earth's crust and upper mantle, and establishes its relation to tectonic environment. The emphasis of the course is on the use of chemistry and physics to interpret rock forming processes.
+course_url: "https://ocw.mit.edu/courses/12-109-petrology-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/12-109-petrology-fall-2005/0aabe767a4c6c76ba3572d10c2e042f2_12-109f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

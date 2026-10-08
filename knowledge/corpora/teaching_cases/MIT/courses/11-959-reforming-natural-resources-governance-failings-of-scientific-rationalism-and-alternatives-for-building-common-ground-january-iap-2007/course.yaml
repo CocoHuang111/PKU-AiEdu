@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-11-959-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.959"
+cross_listed_codes: []
+course_title: "Reforming Natural Resources Governance: Failings of Scientific Rationalism and Alternatives for Building Common Ground"
+course_slug: |
+  11-959-reforming-natural-resources-governance-failings-of-scientific-rationalism-and-alternatives-for-building-common-ground-january-iap-2007
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. David Mattson"
+  - "Dr. Herman Karl"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  For the last century, precepts of scientific management and administrative rationality have concentrated power in the hands of technical specialists, which in recent decades has contributed to widespread disenfranchisement and discontent among stakeholders in natural resources cases. In this seminar we examine the limitations of scientific management as a model both for governance and for gathering and using information, and describe alternative methods for informing and organizing decision-making processes. We feature cases involving large carnivores in the West (mountain lions and grizzly bears), Northeast coastal fisheries, and adaptive management of the Colorado River. There will be nightly readings and a short written assignment.
+course_url: |
+  https://ocw.mit.edu/courses/11-959-reforming-natural-resources-governance-failings-of-scientific-rationalism-and-alternatives-for-building-common-ground-january-iap-2007/
+image_url: |
+  https://ocw.mit.edu/courses/11-959-reforming-natural-resources-governance-failings-of-scientific-rationalism-and-alternatives-for-building-common-ground-january-iap-2007/10f811220281c3bb357711b6abea3dc6_11-959iap07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

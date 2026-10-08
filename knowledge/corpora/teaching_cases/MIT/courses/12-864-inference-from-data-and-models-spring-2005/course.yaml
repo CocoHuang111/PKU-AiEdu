@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-12-864-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.864"
+cross_listed_codes: []
+course_title: "Inference from Data and Models"
+course_slug: "12-864-inference-from-data-and-models-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Carl Wunsch"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Differential Equations"
+  - "Probability and Statistics"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This course covers the fundamental methods used for exploring the information content of observations related to kinematical and dynamical models.
+course_url: "https://ocw.mit.edu/courses/12-864-inference-from-data-and-models-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/12-864-inference-from-data-and-models-spring-2005/14c7bc8135c934c7e051f0f505bce5f2_12-864s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

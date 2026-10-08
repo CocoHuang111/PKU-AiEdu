@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-14-05-fall-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.05"
+cross_listed_codes: []
+course_title: "Intermediate Macroeconomics"
+course_slug: "14-05-intermediate-macroeconomics-fall-2025"
+term: "Fall"
+year: 2025
+as_taught_in: "Fall 2025"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Christian Wolf"
+subject_primary: "Economics"
+subject_secondary:
+  - "Macroeconomics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course introduces you to modern macroeconomics and uses the tools of macroeconomics to investigate various macroeconomic issues in depth. Topics range from economic growth and inequality in the long run to economic stability and financial crises in the short run. The course also surveys many economic models used today.
+course_url: "https://ocw.mit.edu/courses/14-05-intermediate-macroeconomics-fall-2025/"
+image_url: "https://ocw.mit.edu/courses/14-05-intermediate-macroeconomics-fall-2025/mit14_05_f25_chpimage_map.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

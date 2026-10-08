@@ -1,0 +1,32 @@
+> 检索摘要：ESD.342 Advanced System Architecture（Spring 2006，Graduate）的「Course Description」。页内标题：Course Description；Course Info；Instructors；Departments；As Taught In；Level。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/esd-342-advanced-system-architecture-spring-2006/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Course Description
+
+This course provides a deep understanding of engineering systems at a level intended for research on complex engineering systems. It provides a review and extension of what is known about system architecture and complexity from a theoretical point of view while examining the origins of and recent developments in the field. The class considers how and where the theory has been applied, and uses key analytical methods proposed. Students examine the level of observational (qualitative and quantitative) understanding necessary for successful use of the theoretical framework for a specific engineering system. Case studies apply the theory and principles to engineering systems.
+
+
+## Course Info
+
+### Instructors
+
+- [Dr. Daniel E. Whitney](https://ocw.mit.edu/search/?q=Dr.+Daniel+E.+Whitney)
+- [Prof. Joel Moses](https://ocw.mit.edu/search/?q=Prof.+Joel+Moses)
+- [Dr. Christopher L. Magee](https://ocw.mit.edu/search/?q=Dr.+Christopher+L.+Magee)
+
+### Departments
+
+- [Engineering Systems Division](https://ocw.mit.edu/search/?d=Engineering+Systems+Division)
+
+### As Taught In
+
+Spring 2006
+
+### Level
+
+[Graduate](https://ocw.mit.edu/search/?l=Graduate)

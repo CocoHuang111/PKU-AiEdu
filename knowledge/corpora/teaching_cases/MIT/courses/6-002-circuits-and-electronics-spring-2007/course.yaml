@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-6-002-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.002"
+cross_listed_codes: []
+course_title: "Circuits and Electronics"
+course_slug: "6-002-circuits-and-electronics-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anant Agarwal"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  6.002 is designed to serve as a first course in an undergraduate electrical engineering (EE), or electrical engineering and computer science (EECS) curriculum. At MIT, 6.002 is in the core of department subjects required for all undergraduates in EECS. The course introduces the fundamentals of the lumped circuit abstraction. Topics covered include: resistive elements and networks; independent and dependent sources; switches and MOS transistors; digital abstraction; amplifiers; energy storage elements; dynamics of first- and second-order networks; design in the time and frequency domains; and analog and digital circuits and applications. Design and lab exercises are also significant components of the course. 6.002 is worth 4 Engineering Design Points. The 6.002 content was created collaboratively by Profs. Anant Agarwal and Jeffrey H. Lang. The course uses the required textbook Foundations of Analog and Digital Electronic Circuits . Agarwal, Anant, and Jeffrey H. Lang. San Mateo, CA: Morgan Kaufmann Publishers, Elsevier, July 2005. ISBN: 9781558607354.
+course_url: "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/057c5af7b1e9cccd3b069dfe3797a5c8_6-002s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

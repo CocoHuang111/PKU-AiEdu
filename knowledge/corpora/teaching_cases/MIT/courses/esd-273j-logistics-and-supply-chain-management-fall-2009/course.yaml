@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-273j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.273J"
+cross_listed_codes:
+  - "1.270J"
+course_title: "Logistics and Supply Chain Management"
+course_slug: "esd-273j-logistics-and-supply-chain-management-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Simchi-Levi"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Supply Chain Management"
+  - "Engineering"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course surveys operations research models and techniques developed for a variety of problems arising in logistical planning of multi-echelon systems. There is a focus on planning models for production/inventory/distribution strategies in general multi-echelon multi-item systems. Topics include vehicle routing problems, dynamic lot sizing inventory models, stochastic and deterministic multi-echelon inventory systems, the bullwhip effect, pricing models, and integration problems arising in supply chain management. Probability and linear programming experience required.
+course_url: "https://ocw.mit.edu/courses/esd-273j-logistics-and-supply-chain-management-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/esd-273j-logistics-and-supply-chain-management-fall-2009/d6c0ba942db999a9a5126ba375296175_esd-273jf09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-34-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.34"
+cross_listed_codes: []
+course_title: "System Architecture"
+course_slug: "esd-34-system-architecture-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Edward Crawley"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Systems Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+description: |
+  This course covers principles and methods for technical System Architecture. It presents a synthetic view including: the resolution of ambiguity to identify system goals and boundaries; the creative process of mapping form to function; and the analysis of complexity and methods of decomposition and re-integration. Industrial speakers and faculty present examples from various industries. Heuristic and formal methods are presented. Restricted to SDM (System Design and Management) students.
+course_url: "https://ocw.mit.edu/courses/esd-34-system-architecture-january-iap-2007/"
+image_url: "https://ocw.mit.edu/courses/esd-34-system-architecture-january-iap-2007/76ca7f7ab12a87bafb4f5b3fa92b74e7_esd-34iap07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

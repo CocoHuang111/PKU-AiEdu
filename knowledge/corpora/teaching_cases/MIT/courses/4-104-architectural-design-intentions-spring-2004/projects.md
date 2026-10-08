@@ -1,0 +1,13 @@
+> 检索摘要：4.104 Architectural Design: Intentions（Spring 2004，Undergraduate）的「Projects」。页内标题：Projects。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/4-104-architectural-design-intentions-spring-2004/pages/projects/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Projects
+
+This section contains a compilation of student work from the semester, showing work from all the assignments. All the work is courtesy of the students named, and used with permission.
+
+- **Compilation of Student Work ([PDF](https://ocw.mit.edu/courses/4-104-architectural-design-intentions-spring-2004/resources/final/))**

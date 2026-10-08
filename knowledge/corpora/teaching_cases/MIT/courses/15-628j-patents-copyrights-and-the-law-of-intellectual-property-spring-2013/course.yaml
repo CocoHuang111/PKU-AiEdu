@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-15-628j-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.628J"
+cross_listed_codes:
+  - "6.903J"
+course_title: "Patents, Copyrights, and the Law of Intellectual Property"
+course_slug: "15-628j-patents-copyrights-and-the-law-of-intellectual-property-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors: []
+subject_primary: "Management"
+subject_secondary:
+  - "Social Science"
+  - "Legal Studies"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Legal Studies"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course is an intensive introduction to the U.S. law of intellectual property with major emphasis on patents, including what can be patented, the process of patent application, and the remedies for patent infringement.
+course_url: "https://ocw.mit.edu/courses/15-628j-patents-copyrights-and-the-law-of-intellectual-property-spring-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/15-628j-patents-copyrights-and-the-law-of-intellectual-property-spring-2013/339a5a3afd29bd75cf5f5229d61319d5_15-628js13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

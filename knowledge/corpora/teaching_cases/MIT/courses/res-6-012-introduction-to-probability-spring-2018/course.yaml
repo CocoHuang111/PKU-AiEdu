@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-res-6-012-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.6-012"
+cross_listed_codes: []
+course_title: "Introduction to Probability"
+course_slug: "res-6-012-introduction-to-probability-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Tsitsiklis"
+  - "Prof. Patrick Jaillet"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  The tools of probability theory, and of the related field of statistical inference, are the keys for being able to analyze and make sense of data. These tools underlie important advances in many fields, from the basic sciences to engineering and management. This resource is a companion site to 6.041SC Probabilistic Systems Analysis and Applied Probability . It covers the same content, using videos developed for an edX version of the course.
+course_url: "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/res-6-012-introduction-to-probability-spring-2018/15f66b6f0289f4b4f3e9577b7c264182_res-6-012s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

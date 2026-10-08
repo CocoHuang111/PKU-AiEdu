@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-001-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.001"
+cross_listed_codes: []
+course_title: "How to Stage a Revolution"
+course_slug: "21h-001-how-to-stage-a-revolution-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Malick Ghachem"
+  - "Prof. Jeffrey S. Ravel"
+  - "Prof. Craig Wilder"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Middle Eastern History"
+  - "Modern History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "Middle Eastern History"
+          - "Modern History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course explores fundamental questions about the causes and nature of revolutions by looking at how people overthrow their rulers and establish new governments. Considers a set of major political transformations throughout the world and across centuries to understand the meaning of revolution and evaluate its impact. Examines how revolutionaries have attempted to establish their ideals and realize their goals. Asks whether radical upheavals require bloodshed, violence, or even terror. Seeks to explain why some revolutions succeed and others fail. Materials include the writings of revolutionaries, declarations and constitutions, music, films, art, novels, memoirs, and newspapers.
+course_url: "https://ocw.mit.edu/courses/21h-001-how-to-stage-a-revolution-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/21h-001-how-to-stage-a-revolution-fall-2013/ded05441da7291e4accfc755cec9f62f_21h-001f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-601j-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.601J"
+cross_listed_codes:
+  - "24.916J"
+course_title: "Old English and Beowulf"
+course_slug: "21l-601j-old-english-and-beowulf-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Literature"
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Arthur Bahr"
+subject_primary: "Language"
+subject_secondary:
+  - "Literature"
+  - "Fiction"
+  - "Periodic Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties: []
+      - name: "Literature"
+        specialties:
+          - "Fiction"
+          - "Periodic Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Readings"
+description: |
+  This course is an intensive introduction to Old English (also called Anglo-Saxon), the ancestor of modern English that was spoken in England ca. 600–1100. In the first half of the term, students use short prose texts to study the basics of Old English grammar. They go on to read short poems, and conclude by tackling portions of the epic Beowulf in the last third of the term. Assessment is based upon translation work, daily vocabulary quizzes, and three exams.
+course_url: "https://ocw.mit.edu/courses/21l-601j-old-english-and-beowulf-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/21l-601j-old-english-and-beowulf-spring-2023/21l-601js23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

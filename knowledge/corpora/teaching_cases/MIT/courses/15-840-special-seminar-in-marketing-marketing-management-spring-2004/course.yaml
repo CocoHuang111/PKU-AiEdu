@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-15-840-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.840"
+cross_listed_codes: []
+course_title: "Special Seminar in Marketing: Marketing Management"
+course_slug: "15-840-special-seminar-in-marketing-marketing-management-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dan Ariely"
+  - "Prof. Michael Norton"
+subject_primary: "Marketing"
+subject_secondary: []
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Marketing"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The purpose of 15.840 is to: Introduce key marketing ideas and phenomena. Develop students’ skills in marketing analysis and planning. Provide a forum (both written and oral) for presenting and defending recommendations and critically examining and discussing those of others. An emphasis is placed on theory and practice that draws on market research, competitive analysis, and marketing science.
+course_url: "https://ocw.mit.edu/courses/15-840-special-seminar-in-marketing-marketing-management-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/15-840-special-seminar-in-marketing-marketing-management-spring-2004/1647f8810ecc6ccd01fbb0de2903d28b_15-840s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

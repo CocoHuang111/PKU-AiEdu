@@ -1,0 +1,11 @@
+> 检索摘要：21H.342 The Royal Family（Fall 2003，Undergraduate）的「Calendar」。页内标题：Calendar。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/21h-342-the-royal-family-fall-2003/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+<table><tr><th>LEC #</th><th>TOPICS</th><th>KEY DATES</th></tr><tr><td colspan="3">Unit 1: Background</td></tr><tr><td>1</td><td>Tudors and Stuarts</td><td></td></tr><tr><td>2</td><td>Royal Pageantry and Royal Politics</td><td>First Paper Due</td></tr><tr><td>3</td><td>Discussion</td><td></td></tr><tr><td colspan="3">Unit 2: German Kings of England</td></tr><tr><td>4</td><td>George I and George II</td><td></td></tr><tr><td colspan="3">Unit 3: The Father of His Country</td></tr><tr><td>5</td><td>George III</td><td></td></tr><tr><td>6</td><td>Movie: <br> The Madness of King George</td><td></td></tr><tr><td>7</td><td>Discussion</td><td></td></tr><tr><td colspan="3">Unit 4: Style and Scandal</td></tr><tr><td>8</td><td>Prince Regent and George IV</td><td></td></tr><tr><td>9</td><td>Discussion</td><td></td></tr><tr><td>10</td><td>Video: <br> A Royal Scandal</td><td></td></tr><tr><td colspan="3">Unit 5: The Mother of Her Country</td></tr><tr><td>11</td><td>Transition: William IV to Victoria</td><td></td></tr><tr><td>12</td><td>The Young Queen</td><td>Second Paper Due</td></tr><tr><td>13</td><td>Victoria and Albert</td><td></td></tr><tr><td>14</td><td>Discussion</td><td></td></tr><tr><td>15</td><td>Empress of India</td><td></td></tr><tr><td>16</td><td>Discussion</td><td></td></tr><tr><td colspan="3">Unit 6: The Shadow of War</td></tr><tr><td>17</td><td>Edward VII and George V</td><td></td></tr><tr><td>18</td><td>Discussion</td><td></td></tr><tr><td colspan="3">Unit 7: Constitutional Crises and Recovery</td></tr><tr><td>19</td><td>The Abdication of Edward VIII</td><td></td></tr><tr><td>20</td><td>Discussion</td><td></td></tr><tr><td>21</td><td>George VI: Their Finest Hour</td><td>Progress Report Due</td></tr><tr><td colspan="3">Unit 8: The Monarchy in Modern Britain</td></tr><tr><td>22</td><td>Elizabeth II</td><td></td></tr><tr><td>23</td><td>Discussion</td><td></td></tr><tr><td>24</td><td>Class Presentations</td><td>Final Paper Due</td></tr><tr><td>25</td><td>Class Presentation</td><td></td></tr></table>

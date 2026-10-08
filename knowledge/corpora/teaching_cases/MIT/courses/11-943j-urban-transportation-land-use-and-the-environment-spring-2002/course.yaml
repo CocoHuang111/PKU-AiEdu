@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-11-943j-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.943J"
+cross_listed_codes:
+  - "ESD.935"
+course_title: "Urban Transportation, Land Use, and the Environment"
+course_slug: "11-943j-urban-transportation-land-use-and-the-environment-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Pericles (Chris) Zegras"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Sustainability"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Urban Studies"
+  - "Regional Planning"
+  - "Transportation Planning"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+          - "Transportation Planning"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is aimed at the aspiring planning practitioner, policy-maker, or industry decision-maker with an interest in urban transportation and environmental issues in Latin America. The course will focus on current transport-related themes confronting many cities in the region, including: rapid motorization and suburbanization and subsequent impacts on transportation infrastructure and quality of life; public sector management and improvement of privately-owned and operated transit systems; and, transportation air pollution problems and potential solutions. The course will be geared towards interactive problem-solving, taking advantage of students’ skills and experiences in: institutional analysis, policy analysis, and project and program evaluation and implementation. Detailed knowledge of transportation planning is not required; instead, the course will attempt to place the general practitioner into a specific transportation public policy situation and draw from her skills to devise real solutions. To fulfill this problem-solving orientation, the course will be divided into two parts. Part I of the course will consist of a series of lectures on the principal issues surrounding transportation in the developing world (including motorization, fiscal pressures, urban sprawl), concepts of sustainability as they relate to urban transportation, regional strategic planning approaches, and transportation policy and technology options and examples of successful implementation. After these lectures, Part II of the course will be dedicated to the two case studies, where students will apply the knowledge gained in Part I to develop strategic solutions to the transport-land use-environment challenges in two different cities.
+course_url: "https://ocw.mit.edu/courses/11-943j-urban-transportation-land-use-and-the-environment-spring-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/11-943j-urban-transportation-land-use-and-the-environment-spring-2002/d0b3b99c0ca705bb5066975e4c6235b9_11-943js02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

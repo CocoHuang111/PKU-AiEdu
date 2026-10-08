@@ -1,0 +1,21 @@
+> 检索摘要：16.885J Aircraft Systems Engineering（Fall 2005，Graduate）的「Related Resources」。页内标题：Related Resources；Shuttle Operations Video；Space Suit Image Gallery。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Related Resources
+
+### Shuttle Operations Video
+
+This video is adapted from NASA footage that shows several different views of the space shuttle in operation; including a view of the launch from the shuttle cockpit; the payload doors opening; a night launch; and the shuttle landing.
+
+Your browser does not support some features required to play this video. Please update your browser to the latest version for the best experience. You can also [download the video](http://archive.org/download/MIT16.885JF05/ocwnasalaunch-220k.mp4) to watch it offline.           [View video page](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/resources/shuttle-operations-video/)
+
+- [Download video](http://archive.org/download/MIT16.885JF05/ocwnasalaunch-220k.mp4)
+
+### Space Suit Image Gallery
+
+The following images show some sample pages from the STS-75 EVA guide worn on the arm of the astronaut, as well as material layer samples from a space suit.  [An early generation version of the space suit is shown here.](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/8e0f2ce00135720beb8879c1990f75d1_apollosuit.jpg) [An astronaut uses the Manned Maneuvering Unit (MMU), a nitrogen-propelled backpack.](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/e19ec52d3aa510b6b135691940bdbf9f_mmupack.jpg) [Extra-vehicular activity (EVA) guide and armband attachment for shuttle mission STS-75](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/5541ccc3d9df3b99b5609ef35f1ec8f3_P1010012.jpg) [Pages 6 and 7 show the process for aborting and terminating an EVA;](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/d6a48afa3d406530ef14d8b099d5eeed_P1010008.jpg) [Page 32 shows how to use the CL latch tool; Page 33 shows how to disconnect the airlock latch.](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/2978be60a08c966883007253f1c8e649_P1010022.jpg) [Sample Liquid Cooling Garment layer of an American space suit](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/87ba399c74ad049340442b814678a7a0_P1010016.jpg) [Sample Bladder layer of an American space suit](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/03345d59211e04b4c4de63e31e16a514_P1010017.jpg) [Sample Pressure Garment layer of an American space suit](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/675ebdff48c10bc922307423dda1e77c_P1010018.jpg) [Sample Liner layer of an American space suit](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/b3c5caf995f5e99a9bb7919266b317c0_P1010019.jpg) [Sample Multi-layer Insulation (MLI) of an American space suit](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/c039a0ac2f5a539774285d444fc6a4dd_P1010020.jpg) [Sample Thermal Micro-Meteroid layer of an American space suit](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/67f0561c5698950e7738e377ab0e7944_P1010021.jpg) [Human waste collection was one major engineering obstacle for the space program. The space suit urine collection device (UCD) is shown here.](https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/pages/related-resources/e90f656ac4d2291832a248044f7b61b2_P1010006.jpg)

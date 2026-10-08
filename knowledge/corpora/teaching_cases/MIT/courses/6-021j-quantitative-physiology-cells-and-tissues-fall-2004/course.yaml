@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-6-021j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.021J"
+cross_listed_codes:
+  - "2.791J"
+  - "2.794J"
+  - "6.521J"
+  - "20.370J"
+  - "20.470J"
+  - "HST.541J"
+course_title: "Quantitative Physiology: Cells and Tissues"
+course_slug: "6-021j-quantitative-physiology-cells-and-tissues-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mechanical Engineering"
+  - "Biological Engineering"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Dennis Freeman"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Cell Biology"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Cell Biology"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Projects"
+description: |
+  In this subject, we consider two basic topics in cellular biophysics, posed here as questions: Which molecules are transported across cellular membranes, and what are the mechanisms of transport? How do cells maintain their compositions, volume, and membrane potential? How are potentials generated across the membranes of cells? What do these potentials do? Although the questions posed are fundamentally biological questions, the methods for answering these questions are inherently multidisciplinary. As we will see throughout the course, the role of mathematical models is to express concepts precisely enough that precise conclusions can be drawn. In connection with all the topics covered, we will consider both theory and experiment. For the student, the educational value of examining the interplay between theory and experiment transcends the value of the specific knowledge gained in the subject matter. This course is jointly offered through four departments, available to both undergraduates and graduates.
+course_url: "https://ocw.mit.edu/courses/6-021j-quantitative-physiology-cells-and-tissues-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/6-021j-quantitative-physiology-cells-and-tissues-fall-2004/17364cc98645e0ab3e6f218d8cc93e7c_6-021jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

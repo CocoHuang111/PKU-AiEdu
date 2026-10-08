@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-res-16-001-january-iap-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.16-001"
+cross_listed_codes: []
+course_title: "Lean Enterprise en Español"
+course_slug: "res-16-001-lean-enterprise-en-espanol-january-iap-2012"
+term: "January IAP"
+year: 2012
+as_taught_in: "January IAP 2012"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Earll Murman"
+  - "Hugh McManus"
+  - "Luis Fernando Alarcón Cardenas"
+  - "Isabel Alarcón González"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Leadership"
+  - "Operations Management"
+  - "Project Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+      - name: "Project Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  Este curso contiene un subconjunto de material en español del curso 16.660J (en Inglés). Para la versión en Inglés, por favor vea 16.660J Introduction to Lean Six Sigma Methods January IAP 2012 . El programa presenta los fundamentos del pensamiento Lean a través de conceptos y herramientas prácticas y aplicables. Este curso cubre los principios fundamentales, prácticas y herramientas de una empresa Lean, incluyendo Lean Six Sigma y otros métodos de enfoques modernos para la productividad organizacional. El curso incluye ejemplos y ejercicios aplicados en la industria aeroespacial, automotriz, servicios de salud y otros sectores. La metodología es altamente interactiva con simulaciones y ejercicios orientados hacia el aprendizaje de conceptos aplicados en experiencias grupales, incluyendo una simulación Lego®, tour virtual a fábricas, charlas de expertos entre otros. Este curso fue ofrecido en la Pontificia Universidad Católica de Chile a través del Centro de Excelencia en Gestión de Producción (GEPUC) de 17 a 19 abril, 2013. MIT Professional Education Conecta A Los Profesionales Con Conocimiento Y Expertise Avanzado A Traves De Entrenamiento Y Capacitacion Los cursos y programas ofrecidos por MIT Professional Education son diseñados por expertos de MIT para conectar a profesionales de la industria con los últimos avances tecnológicos y de conocimiento. La inmersión en un intenso ambiente de aprendizaje permite a profesionales alrededor del mundo la oportunidad de acceder a información crucial para nutrir sus carreras, generar un mayor desarrollo empresarial e impactar al mundo. Nuestros programas le entregan a los participantes acceso inigualable a los mayores expertos de cada área. Esta experiencia de aprendizaje altamente focalizada les permite acceder a tópicos de interés vital y compartir con expertos reconocidos a nivel mundial además de incorporarse a una red internacional de colegas talentosos. Para mayor información acerca de los programas de MIT Professional Education favor visitar: http://professionaleducation.mit.edu .
+course_url: "https://ocw.mit.edu/courses/res-16-001-lean-enterprise-en-espanol-january-iap-2012/"
+image_url: "https://ocw.mit.edu/courses/res-16-001-lean-enterprise-en-espanol-january-iap-2012/f39077c65e71361964e2f2ffaa061426_res-16-001iap2012.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

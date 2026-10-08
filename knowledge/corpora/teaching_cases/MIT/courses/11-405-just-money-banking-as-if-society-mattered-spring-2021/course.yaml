@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-11-405-spring-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.405"
+cross_listed_codes: []
+course_title: "Just Money: Banking as if Society Mattered"
+course_slug: "11-405-just-money-banking-as-if-society-mattered-spring-2021"
+term: "Spring"
+year: 2021
+as_taught_in: "Spring 2021"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Katrin Käufer"
+  - "Prof. J. Phillip Thompson"
+subject_primary: "Finance"
+subject_secondary:
+  - "Social Science"
+  - "Sociology"
+  - "Social Justice"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Do you know what your bank does with your money? What is the role of a bank in producing societal well-being? This course looks into banks that operate differently, namely, “just banks" that use capital and finance as a tool to address social and ecological challenges. This course is for anyone who wants to understand the unique role banks play as intermediaries in our economy and how they can leverage that position to produce positive social, environmental, and economic change. Go to OCW’s Open Learning Library site for 11.405x: Just Money: Banking as if Society Mattered . The site is free to use, just like all OCW sites. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/11-405-just-money-banking-as-if-society-mattered-spring-2021/"
+image_url: "https://ocw.mit.edu/courses/11-405-just-money-banking-as-if-society-mattered-spring-2021/df428d951eb8872531fb78b5bb5c9182_11-405s21.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

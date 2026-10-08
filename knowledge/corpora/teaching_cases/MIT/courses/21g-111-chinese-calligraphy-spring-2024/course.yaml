@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-111-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.111"
+cross_listed_codes: []
+course_title: "Chinese Calligraphy"
+course_slug: "21g-111-chinese-calligraphy-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Kang Zhou"
+subject_primary: "Language"
+subject_secondary:
+  - "Chinese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Chinese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Instructor Insights"
+  - "Videos"
+description: |
+  Chinese calligraphy (书法 / 書法, shūfǎ)—the art of expressive brush writing—is one of the most esteemed and enduring artistic traditions in China. This introductory course invites students to explore calligraphy as both a classical discipline and a living art form that continues to evolve in contemporary contexts. The course integrates technical training, historical and cultural study, and reflective practice. Students will not only gain hands-on experience with the brush and ink, but also investigate the evolving role of calligraphy in Chinese society, from antiquity to the present day. Through museum visits, interdisciplinary exploration, and individual projects, students will gain a deeper understanding of Chinese culture, philosophy, and aesthetic values. A final video project allows students to reflect on their personal journey with calligraphy and document their artistic growth. No prior knowledge of the Chinese language is required.
+course_url: "https://ocw.mit.edu/courses/21g-111-chinese-calligraphy-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/21g-111-chinese-calligraphy-spring-2024/mit21g_111_s24.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

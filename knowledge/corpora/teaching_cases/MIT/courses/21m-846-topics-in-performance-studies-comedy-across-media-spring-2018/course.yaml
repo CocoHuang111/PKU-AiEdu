@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-424-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.424"
+cross_listed_codes: []
+course_title: "Topics in Performance Studies: Comedy Across Media"
+course_slug: "21m-846-topics-in-performance-studies-comedy-across-media-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "James Stanley"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Performance Arts"
+  - "Theater"
+  - "Humanities"
+  - "Literature"
+  - "Comedy"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comedy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This multidisciplinary lecture / workshop engages students in a variety of approaches to the study and practice of performance as an area of aesthetic and social interaction. Special attention is paid to the use of diverse media in performance. Interdisciplinary approaches to study encourage students to seek out material histories of performance and practice.
+course_url: "https://ocw.mit.edu/courses/21m-846-topics-in-performance-studies-comedy-across-media-spring-2018/"
+image_url: |
+  https://ocw.mit.edu/courses/21m-846-topics-in-performance-studies-comedy-across-media-spring-2018/446aa55229e3403d780be888d3ceb6b9_21M-846s18.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

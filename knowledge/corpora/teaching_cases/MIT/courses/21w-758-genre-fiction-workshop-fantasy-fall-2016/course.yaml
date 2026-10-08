@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-758-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.758"
+cross_listed_codes: []
+course_title: "Genre Fiction Workshop: Fantasy"
+course_slug: "21w-758-genre-fiction-workshop-fantasy-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Shariann Lewitt"
+subject_primary: "Literature"
+subject_secondary:
+  - "Creative Writing"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  Fantasy is currently one of the most popular genres across every platform in fiction. From film to gaming to literature, fantasy tops the charts. Why? Why do people who believe in democracy and live with the magic technology appear to long for wizards and dragons and the matters of kingship? In this class, we will explore this question, and from that base read articles, novels, write exercises and stories in this genre.
+course_url: "https://ocw.mit.edu/courses/21w-758-genre-fiction-workshop-fantasy-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/21w-758-genre-fiction-workshop-fantasy-fall-2016/e2974112c888c8a8b43754cbc8ce3a82_21W-758f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

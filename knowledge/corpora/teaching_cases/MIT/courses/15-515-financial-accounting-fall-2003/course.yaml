@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-15-515-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.515"
+cross_listed_codes: []
+course_title: "Financial Accounting"
+course_slug: "15-515-financial-accounting-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. George Plesko"
+  - "Prof. Kin Lo"
+  - "Prof. Richard Frankel"
+subject_primary: "Accounting"
+subject_secondary:
+  - "Finance"
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Accounting"
+        specialties: []
+      - name: "Finance"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Our goal is to help you develop a framework for understanding financial, managerial, and tax reports. The course goal is divided into five subordinate challenges that can help you organize the way you learn accounting: The record keeping and reporting challenge The computation challenge The judgment challenge The usage challenge The search challenge The course adopts a decision-maker perspective of accounting by emphasizing the relation between accounting data and the underlying economic events generating them. Restricted to first-year Sloan MBA students. Acknowledgements Acknowledgment is hereby given to Professor G. Peter Wilson for his authorship of the following content in this course: The Five Challenges (see Syllabus and Lecture 1) “What Do Intel and Accountants Have in Common?” (see Lecture 1) A Conceptual Framework for Financial Accounting (see Lecture 1)
+course_url: "https://ocw.mit.edu/courses/15-515-financial-accounting-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/15-515-financial-accounting-fall-2003/2e6c015844f1f7bcde46be9fb0a8b4f8_15-515f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

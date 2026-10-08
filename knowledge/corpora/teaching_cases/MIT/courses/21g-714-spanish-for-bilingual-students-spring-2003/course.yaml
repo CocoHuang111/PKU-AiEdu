@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-714-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.714"
+cross_listed_codes: []
+course_title: "Spanish for Bilingual Students"
+course_slug: "21g-714-spanish-for-bilingual-students-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Douglas Morgenstern"
+subject_primary: "Language"
+subject_secondary:
+  - "Spanish"
+  - "Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Spanish"
+      - name: "Literature"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  Spanish for Bilingual Students is an intermediate course designed principally for heritage learners, but which includes other students interested in specific content areas, such as US Latino immigration, identity, ethnicity, education and representation in the media. Linguistic goals include vocabulary acquisition, improvement in writing, and enhancement of formal communicative skills.
+course_url: "https://ocw.mit.edu/courses/21g-714-spanish-for-bilingual-students-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/21g-714-spanish-for-bilingual-students-spring-2003/609b26809ed730898705f97c026b8f7f_21g-714s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

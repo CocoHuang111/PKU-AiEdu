@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-24-910-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.910"
+cross_listed_codes: []
+course_title: "Topics in Linguistic Theory: Propositional Attitudes"
+course_slug: "24-910-topics-in-linguistic-theory-propositional-attitudes-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Tamina Stephenson"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Semantics"
+  - "Syntax"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Semantics"
+          - "Syntax"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course explores topics related to the representation and expression of propositional attitudes ( e.g. belief, knowledge, and desires) and speech acts ( e.g. saying and asking) in natural language. The main focus will be on semantics of predicates such as believe, know, want, say, ask , etc. Other topics will include the syntax of main and embedded clauses and formal representation of the pragmatics of conversation. The course provides practice in written and oral communication.
+course_url: "https://ocw.mit.edu/courses/24-910-topics-in-linguistic-theory-propositional-attitudes-spring-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/24-910-topics-in-linguistic-theory-propositional-attitudes-spring-2009/d876ffda0e2e79fcec23ba49e3c51473_24-910s09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

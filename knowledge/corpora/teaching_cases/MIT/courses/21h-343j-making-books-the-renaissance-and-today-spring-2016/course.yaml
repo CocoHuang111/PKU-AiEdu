@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-343j-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.343J"
+cross_listed_codes:
+  - "CC.120J"
+course_title: "Making Books: The Renaissance and Today"
+course_slug: "21h-343j-making-books-the-renaissance-and-today-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "History"
+  - "Concourse"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anne McCants"
+  - "Prof. Jeffrey S. Ravel"
+  - "Kenneth Stone"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "History of Science and Technology"
+  - "Literature"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+          - "History of Science and Technology"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course explores the impact of new technology on the recording and distribution of words and images at three different times: The invention of the printing press ca. 1450; the adaptation of electricity to communication technology in the 19th century (telegraph, telephone, phonograph); and the emergence of digital media today. Assignments include essays and online projects. Students also participate in the design and construction of a hand-set printing press. This course is also part of the Concourse program at MIT.
+course_url: "https://ocw.mit.edu/courses/21h-343j-making-books-the-renaissance-and-today-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/21h-343j-making-books-the-renaissance-and-today-spring-2016/fd722bbbe7df11aa1787ff2a1e257f8d_21h-343js16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

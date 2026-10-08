@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-7-13-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.13"
+cross_listed_codes: []
+course_title: "Experimental Microbial Genetics"
+course_slug: "7-13-experimental-microbial-genetics-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Dianne Newman"
+  - "Dr. Janis Melvold"
+  - "Dr. Laura Croal"
+  - "Prof. Michael Laub"
+subject_primary: "Biology"
+subject_secondary:
+  - "Genetics"
+  - "Microbiology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Genetics"
+          - "Microbiology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Projects"
+  - "Written Assignments"
+description: |
+  In this class, students engage in independent research projects to probe various aspects of the physiology of the bacterium Pseudomonas aeruginosa PA14, an opportunistic pathogen isolated from the lungs of cystic fibrosis patients. Students use molecular genetics to examine survival in stationary phase, antibiotic resistance, phase variation, toxin production, and secondary metabolite production. Projects aim to discover the molecular basis for these processes using both classical and cutting-edge techniques. These include plasmid manipulation, genetic complementation, mutagenesis, PCR, DNA sequencing, enzyme assays, and gene expression studies. Instruction and practice in written and oral communication are also emphasized. WARNING NOTICE The experiments described in these materials are potentially hazardous and require a high level of safety training, special facilities and equipment, and supervision by appropriate individuals. You bear the sole responsibility, liability, and risk for the implementation of such safety procedures and measures. MIT shall have no responsibility, liability, or risk for the content or implementation of any of the material presented. Legal Notice
+course_url: "https://ocw.mit.edu/courses/7-13-experimental-microbial-genetics-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/7-13-experimental-microbial-genetics-fall-2008/af93dd24cf205e5f686a19b1e214c87c_7-13f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

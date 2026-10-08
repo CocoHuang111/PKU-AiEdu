@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-20-180-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.180"
+cross_listed_codes: []
+course_title: "Biological Engineering Programming"
+course_slug: "20-180-biological-engineering-programming-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Biological Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Andrew Endy"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computer Science"
+  - "Theory of Computation"
+  - "Systems Engineering"
+  - "Computational Science and Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Programming Assignments with Examples"
+description: |
+  In this course problems from biological engineering are used to develop structured computer programming skills and explore the theory and practice of complex systems design and construction. The official course Web site can be viewed at: BE.180 Biological Engineering Programming .
+course_url: "https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/bbde5980c3ab16fe17fac2a3cac2f783_20-180s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

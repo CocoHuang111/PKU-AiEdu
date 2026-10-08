@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-11-488-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.488"
+cross_listed_codes: []
+course_title: "Urban Development in Conflict Cities: Planning Challenges and Policy Innovations"
+course_slug: "11-488-urban-development-in-conflict-cities-planning-challenges-and-policy-innovations-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Jota Samper"
+subject_primary: "Religion"
+subject_secondary:
+  - "Social Science"
+  - "Public Administration"
+  - "Military Studies"
+  - "Public Policy"
+  - "Regional Politics"
+  - "Urban Studies"
+  - "Regional Planning"
+  - "Urban Planning"
+  - "Society"
+  - "Global Poverty"
+  - "The Developing World"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Religion"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+          - "Public Policy"
+          - "Regional Politics"
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+          - "Urban Planning"
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  Economic, religious, gender, and ethnic differences must be negotiated every day in the urban arena. When tensions and conflict escalate into violence, the urban space becomes the battlespace in which these tensions are negotiated. This course examines urban development challenges in conflict cities through multiple disciplinary perspectives on urban conflict. This course also reviews literature that focuses on when violence and cities intersect. Students will learn about policy innovations, and study potential planning, design, and policy solutions.
+course_url: "https://ocw.mit.edu/courses/11-488-urban-development-in-conflict-cities-planning-challenges-and-policy-innovations-fall-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/11-488-urban-development-in-conflict-cities-planning-challenges-and-policy-innovations-fall-2015/a17d5ca10af2593263771c43fabd7694_11-488f15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-914-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.914"
+cross_listed_codes: []
+course_title: "Planning Communication"
+course_slug: "11-914-planning-communication-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Deborah Kobes"
+  - "Prof. Langley Keyes"
+  - "Prof. Susan Silberberg"
+  - "Prof. Xavier de Souza Briggs"
+subject_primary: "Communication"
+subject_secondary:
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Projects"
+description: |
+  This three-week module, centered on a focal case, represents the second part of the Department’s introduction to the challenges of reflection and action in professional planning practice. As such, it builds on the concepts and tools in 11.201 and 11.202 in the fall semester. Working in teams, students will deliver a 20-minute oral briefing, with an additional 10 minutes for questions and comments, in the last week of the class (as detailed on the assignment and posted course schedule). The teams will brief invited guests (“briefees”) taking the roles of decision makers. DUSP faculty and fellow students may also be in attendance.
+course_url: "https://ocw.mit.edu/courses/11-914-planning-communication-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/11-914-planning-communication-spring-2007/d007564af27fffbac8d7c5d7677f024e_11-914s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

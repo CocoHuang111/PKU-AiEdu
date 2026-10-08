@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-453-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.453"
+cross_listed_codes: []
+course_title: "Anthropology of the Middle East"
+course_slug: "21a-453-anthropology-of-the-middle-east-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Susan Slyomovics"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "Middle Eastern History"
+  - "Literature"
+  - "International Literature"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "Middle Eastern Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Middle Eastern History"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Middle Eastern Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Other Video"
+description: |
+  This course examines traditional performances of the Arabic-speaking populations of the Middle East and North Africa. Starting with the history of the ways in which the West has discovered, translated and written about the Orient, we will consider how power and politics play roles in the production of culture, narrative and performance. This approach assumes that performance, verbal art, and oral literature lend themselves to spontaneous adaptation and to oblique expression of ideas and opinions whose utterance would otherwise be censorable or disruptive. In particular we will be concerned with the way traditional performance practices are affected by and respond to the consequences of modernization. Topics include oral epic performance, sacred narrative, Koranic chant performance, the folktale, solo performance, cultural production and resistance.
+course_url: "https://ocw.mit.edu/courses/21a-453-anthropology-of-the-middle-east-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21a-453-anthropology-of-the-middle-east-spring-2004/f262ed11b74ed38024bba76fd15a7465_21a-453s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

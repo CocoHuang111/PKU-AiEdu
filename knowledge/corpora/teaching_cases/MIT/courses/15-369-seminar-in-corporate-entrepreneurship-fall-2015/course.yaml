@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-15-369-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.369"
+cross_listed_codes: []
+course_title: "Seminar in Corporate Entrepreneurship"
+course_slug: "15-369-seminar-in-corporate-entrepreneurship-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Aleksandra J. Kacperczyk"
+  - "Charles Kiefer"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Innovation"
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course addresses the practical challenges of making an established company entrepreneurial and examines various roles related to corporate entrepreneurship. Outside speakers complement faculty lectures.
+course_url: "https://ocw.mit.edu/courses/15-369-seminar-in-corporate-entrepreneurship-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/15-369-seminar-in-corporate-entrepreneurship-fall-2015/f88c817eb1a61ca7f7b9832a40aac375_15-369f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

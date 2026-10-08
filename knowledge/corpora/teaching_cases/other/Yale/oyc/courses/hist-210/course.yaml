@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-hist-210"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "HIST 210"
+course_title: "The Early Middle Ages, 284–1000"
+course_slug: "hist-210"
+department_path: "history"
+professors:
+  - "Paul Freedman Chester D. Tripp Professor of History"
+course_url: "https://oyc.yale.edu/history/hist-210"
+language: "en"
+description: |
+  Major developments in the political, social, and religious history of Western Europe from the accession of Diocletian to the feudal transformation. Topics include the conversion of Europe to Christianity, the fall of the Roman Empire, the rise of Islam and the Arabs, the "Dark Ages," Charlemagne and the Carolingian renaissance, and the Viking and Hungarian invasions.
+license_url: ""
+session_count: 22
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

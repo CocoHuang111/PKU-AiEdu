@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-ital-310"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "ITAL 310"
+course_title: "Dante in Translation"
+course_slug: "ital-310"
+department_path: "italian language and literature"
+professors:
+  - "Giuseppe Mazzotta Sterling Professor Emeritus of Humanities for Italian"
+course_url: "https://oyc.yale.edu/italian-language-and-literature/ital-310"
+language: "en"
+description: |
+  The course is an introduction to Dante and his cultural milieu through a critical reading of the Divine Comedy and selected minor works ( Vita nuova , Convivio , De vulgari eloquentia , Epistle to Cangrande ). An analysis of Dante's autobiography, the Vita nuova , establishes the poetic and political circumstances of the Comedy 's composition. Readings of Inferno , Purgatory and Paradise seek to situate Dante's work within the intellectual and social context of the late Middle Ages, with special attention paid to political, philosophical and theological concerns. Topics in the Divine Comedy explored over the course of the semester include the relationship between ethics and aesthetics; love and knowledge; and exile and history.
+license_url: ""
+session_count: 26
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-modules-introduce-social-issues-foundational-engineering-courses"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Modules to Introduce Social Issues into the Foundational Engineering Courses"
+slug: "modules-introduce-social-issues-foundational-engineering-courses"
+source_url: "https://crlt.umich.edu/modules-introduce-social-issues-foundational-engineering-courses"
+language: "en"
+published: null
+awarded_year: "2025"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "eb6a93a123b168eaddc5c7fafbbbc75a38770f8a1238c4eb8841d73e1f953887"

@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-hist-251"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "HIST 251"
+course_title: "Early Modern England: Politics, Religion, and Society under the Tudors and Stuarts"
+course_slug: "hist-251"
+department_path: "history"
+professors:
+  - "Keith E. Wrightson Randolph W. Townsend Jr. Professor Emeritus of History"
+course_url: "https://oyc.yale.edu/history/hist-251"
+language: "en"
+description: |
+  This course is intended to provide an up-to-date introduction to the development of English society between the late fifteenth and the early eighteenth centuries. Particular issues addressed in the lectures will include: the changing social structure; households; local communities; gender roles; economic development; urbanization; religious change from the Reformation to the Act of Toleration; the Tudor and Stuart monarchies; rebellion, popular protest and civil war; witchcraft; education, literacy and print culture; crime and the law; poverty and social welfare; the changing structures and dynamics of political participation and the emergence of parliamentary government.
+license_url: ""
+session_count: 25
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-24-947-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.947"
+cross_listed_codes: []
+course_title: "Language Disorders in Children"
+course_slug: "24-947-language-disorders-in-children-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Suzanne Flynn"
+subject_primary: "Language"
+subject_secondary:
+  - "Linguistics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties: []
+      - name: "Linguistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This seminar focuses on reading and discussion of current linguistic theory, first language acquisition and language disorders in young children. It also focuses on development of a principled understanding of language disorders at the phonological, morphological and syntactic levels, examining ways in which these disorders confront theories of language and acquisition.
+course_url: "https://ocw.mit.edu/courses/24-947-language-disorders-in-children-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/24-947-language-disorders-in-children-spring-2013/161b3245e42dc6b9ee16d321c958b881_24-947s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

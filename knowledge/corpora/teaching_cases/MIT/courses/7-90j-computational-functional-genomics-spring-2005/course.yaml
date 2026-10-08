@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-7-90j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.90J"
+cross_listed_codes:
+  - "6.874J"
+course_title: "Computational Functional Genomics"
+course_slug: "7-90j-computational-functional-genomics-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Biology"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Gifford"
+  - "Prof. Tommi Jaakkola"
+subject_primary: "Functional Genomics"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Computation and Systems Biology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Functional Genomics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  The course focuses on casting contemporary problems in systems biology and functional genomics in computational terms and providing appropriate tools and methods to solve them. Topics include genome structure and function, transcriptional regulation, and stem cell biology in particular; measurement technologies such as microarrays (expression, protein-DNA interactions, chromatin structure); statistical data analysis, predictive and causal inference, and experiment design. The emphasis is on coupling problem structures (biological questions) with appropriate computational approaches.
+course_url: "https://ocw.mit.edu/courses/7-90j-computational-functional-genomics-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/7-90j-computational-functional-genomics-spring-2005/b1bd18d898fab1bfabd1026a6379b3ae_7-90js05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-4-663-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.663"
+cross_listed_codes: []
+course_title: "History of Urban Form: Locating Capitalism: Producing Early Modern Cities and Objects"
+course_slug: "4-663-history-of-urban-form-locating-capitalism-producing-early-modern-cities-and-objects-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Lauren Jacobi"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural History and Criticism"
+  - "Art History"
+  - "Humanities"
+  - "History"
+  - "Historiography"
+  - "Modern History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural History and Criticism"
+      - name: "Art History"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Historiography"
+          - "Modern History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments"
+  - "Written Assignments with Examples"
+description: |
+  What was the early modern economy like, and how did monetization impact artistic production, consumption, and the afterlife of objects? This seminar-format class explores major topics and themes concerning interconnections between early modern artistic and architectural creation and the economy. We will approach capitalism not as an inevitable system, but rather as a particular historical formation. Core course themes: commodification, production, and consumption, using case studies of the impact of the mercantile economy on chapels; palaces; prints and paintings, and their replication; and other material objects, including coins.
+course_url: "https://ocw.mit.edu/courses/4-663-history-of-urban-form-locating-capitalism-producing-early-modern-cities-and-objects-spring-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/4-663-history-of-urban-form-locating-capitalism-producing-early-modern-cities-and-objects-spring-2014/62827744125d49b2e06612e873b6a2d6_4-663s14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

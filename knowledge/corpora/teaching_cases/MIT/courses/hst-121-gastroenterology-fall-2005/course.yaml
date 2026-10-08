@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-121-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.121"
+cross_listed_codes: []
+course_title: "Gastroenterology"
+course_slug: "hst-121-gastroenterology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Daniel C. Chung"
+  - "Dr. Jonathan N. Glickman"
+  - "Dr. Martin C. Carey"
+  - "Dr. Raymond T. Chung"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Pathology and Pathophysiology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+      - name: "Pathology and Pathophysiology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The most recent knowledge of the anatomy, physiology, biochemistry, biophysics, and bioengineering of the gastrointestinal tract and the associated pancreatic, liver and biliary tract systems is presented and discussed. Gross and microscopic pathology and the clinical aspects of important gastroenterological diseases are then presented, with emphasis on integrating the molecular, cellular and pathophysiological aspects of the disease processes to their related symptoms and signs.
+course_url: "https://ocw.mit.edu/courses/hst-121-gastroenterology-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-121-gastroenterology-fall-2005/176b629e3729608bc5e472d9dbadb7ab_hst-121f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-2-12-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.12"
+cross_listed_codes: []
+course_title: "Introduction to Robotics"
+course_slug: "2-12-introduction-to-robotics-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Harry Asada"
+  - "Prof. John Leonard"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Robotics and Control Systems"
+  - "Mechanical Engineering"
+  - "Dynamics and Control"
+  - "Mechanical Design"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+          - "Mechanical Design"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments"
+  - "Projects with Examples"
+description: |
+  This course provides an overview of robot mechanisms, dynamics, and intelligent controls. Topics include planar and spatial kinematics, and motion planning; mechanism design for manipulators and mobile robots, multi-rigid-body dynamics, 3D graphic simulation; control design, actuators, and sensors; wireless networking, task modeling, human-machine interface, and embedded software. Weekly laboratories provide experience with servo drives, real-time control, and embedded software. Students will design and fabricate working robotic systems in a group-based term project.
+course_url: "https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/f18fe14051d490b79151933ab9f29d35_2-12f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

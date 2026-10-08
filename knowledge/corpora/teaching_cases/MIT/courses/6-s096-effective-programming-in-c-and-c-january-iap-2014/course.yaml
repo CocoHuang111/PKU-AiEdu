@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-6-s096-january-iap-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.S096"
+cross_listed_codes: []
+course_title: "Effective Programming in C and C++"
+course_slug: "6-s096-effective-programming-in-c-and-c-january-iap-2014"
+term: "January IAP"
+year: 2014
+as_taught_in: "January IAP 2014"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Andre Kessler"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Programming Languages"
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Programming Languages"
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments with Examples"
+description: |
+  This course is a fast-paced introduction to the C and C++ programming languages, with an emphasis on good programming practices and how to be an effective programmer in these languages. Topics include object-oriented programming, memory management, advantages of C and C++, optimization, and others. Students are given weekly coding assignments and a final project to hone their skills. Recommended for programmers with some background and experience in other languages. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/6-s096-effective-programming-in-c-and-c-january-iap-2014/"
+image_url: "https://ocw.mit.edu/courses/6-s096-effective-programming-in-c-and-c-january-iap-2014/d53719a1ec6b7082a02269813d83dced_6-s096iap14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

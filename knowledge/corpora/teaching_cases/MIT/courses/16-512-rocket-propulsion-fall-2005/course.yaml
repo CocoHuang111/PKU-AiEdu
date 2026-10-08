@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-16-512-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.512"
+cross_listed_codes: []
+course_title: "Rocket Propulsion"
+course_slug: "16-512-rocket-propulsion-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Manuel Martinez-Sanchez"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Propulsion Systems"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Propulsion Systems"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This class focuses on chemical rocket propulsion systems for launch, orbital, and interplanetary flight. It studies the modeling of solid, liquid-bipropellant, and hybrid rocket engines. Thermochemistry, prediction of specific impulse, and nozzle flows including real gas and kinetic effects will also be covered. Other topics to be covered include structural constraints, propellant feed systems, turbopumps, and combustion processes in solid, liquid, and hybrid rockets.
+course_url: "https://ocw.mit.edu/courses/16-512-rocket-propulsion-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/16-512-rocket-propulsion-fall-2005/69bdff0f76c07bfda8f37bae4776087e_16-512f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

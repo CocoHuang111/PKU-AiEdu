@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-1-133-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.133"
+cross_listed_codes: []
+course_title: "Masters of Engineering Concepts of Engineering Practice"
+course_slug: "1-133-masters-of-engineering-concepts-of-engineering-practice-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Eric Adams"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Civil Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Lecture Notes"
+description: |
+  This course is a core requirement for the Masters in Engineering program, designed to teach students about the roles of today’s professional engineer and expose them to team-building skills through lectures, team workshops, and seminars. Topics include: written and oral communication, job placement skills, trends in the engineering and construction industry, risk analysis and risk management, managing public information, proposal preparation, project evaluation, project management, liability, professional ethics, and negotiation. The course draws on relevant large-scale projects to illustrate each component of the subject.
+course_url: "https://ocw.mit.edu/courses/1-133-masters-of-engineering-concepts-of-engineering-practice-fall-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/1-133-masters-of-engineering-concepts-of-engineering-practice-fall-2007/99305f837f221444496dac011f478796_1-133f07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

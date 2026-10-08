@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-6-042j-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.042J"
+cross_listed_codes:
+  - "18.062J"
+course_title: "Mathematics for Computer Science"
+course_slug: "6-042j-mathematics-for-computer-science-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Albert R. Meyer"
+  - "Prof. Adam Chlipala"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Open Textbooks"
+  - "Problem Sets"
+description: |
+  This subject offers an interactive introduction to discrete mathematics oriented toward computer science and engineering. The subject coverage divides roughly into thirds: Fundamental concepts of mathematics: Definitions, proofs, sets, functions, relations. Discrete structures: graphs, state machines, modular arithmetic, counting. Discrete probability theory. On completion of 6.042J, students will be able to explain and apply the basic methods of discrete (noncontinuous) mathematics in computer science. They will be able to use these methods in subsequent courses in the design and analysis of algorithms, computability theory, software engineering, and computer systems. This course is part of the Open Learning Library , which is free to use. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/6-042js15.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-22-611j-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.611J"
+cross_listed_codes:
+  - "6.651J"
+  - "8.613J"
+course_title: "Introduction to Plasma Physics I"
+course_slug: "22-611j-introduction-to-plasma-physics-i-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+  - "Electrical Engineering and Computer Science"
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ian Hutchinson"
+  - "Prof. Jeffrey Freidberg"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Physical Chemistry"
+  - "Physics"
+  - "Astrophysics"
+  - "High Energy Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+          - "High Energy Physics"
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  In this course, students will learn about plasmas, the fourth state of matter. The plasma state dominates the visible universe, and is of increasing economic importance. Plasmas behave in lots of interesting and sometimes unexpected ways. The course is intended only as a first plasma physics course, but includes critical concepts needed for a foundation for further study. A solid undergraduate background in classical physics, electromagnetic theory including Maxwell’s equations, and mathematical familiarity with partial differential equations and complex analysis are prerequisites. The course introduces plasma phenomena relevant to energy generation by controlled thermonuclear fusion and to astrophysics, coulomb collisions and transport processes, motion of charged particles in magnetic fields, plasma confinement schemes, MHD models, simple equilibrium and stability analysis. It also covers two-fluid hydrodynamic plasma models, wave propagation in a magnetic field, kinetic theory, Vlasov plasma model, electron plasma waves and Landau damping, ion-acoustic waves, and streaming instabilities. A subject description tailored to fit the background and interests of the attending students is distributed shortly before and at the beginning of the subject.
+course_url: "https://ocw.mit.edu/courses/22-611j-introduction-to-plasma-physics-i-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/22-611j-introduction-to-plasma-physics-i-fall-2003/00ac4e8e28b0067dc35f123d743ba91d_22-611jf03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

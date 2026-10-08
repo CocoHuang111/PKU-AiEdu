@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-18-712-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.712"
+cross_listed_codes: []
+course_title: "Introduction to Representation Theory"
+course_slug: "18-712-introduction-to-representation-theory-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Pavel Etingof"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The goal of this course is to give an undergraduate-level introduction to representation theory (of groups, Lie algebras, and associative algebras). Representation theory is an area of mathematics which, roughly speaking, studies symmetry in linear spaces.
+course_url: "https://ocw.mit.edu/courses/18-712-introduction-to-representation-theory-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/18-712-introduction-to-representation-theory-fall-2010/f84b09761c1daa7db84fd057d192f1c7_18-712f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

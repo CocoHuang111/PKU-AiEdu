@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-350-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.350"
+cross_listed_codes: []
+course_title: "Musical Analysis"
+course_slug: "21m-350-musical-analysis-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Peter Child"
+subject_primary: "Music"
+subject_secondary:
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class is an introduction to the analysis of tonal music. Students develop analytical techniques based upon concepts learned in 21M.301-21M.302. Students study rhythm and form, harmony, line and motivic relationships at local and large scale levels of musical structure. Three papers (totaling 20 pages, one to be revised) and one oral presentation are required.
+course_url: "https://ocw.mit.edu/courses/21m-350-musical-analysis-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/21m-350-musical-analysis-spring-2008/fed3fe9b647f64ff7819f9294fae8895_21m-350s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,11 @@
+> 检索摘要：15.649 The Law of Mergers and Acquisitions（Spring 2003，Graduate）的「Lecture Notes」。页内标题：Lecture Notes。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/15-649-the-law-of-mergers-and-acquisitions-spring-2003/pages/lecture-notes/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Lecture Notes
+
+<table><tr><th>Class #</th><th>Topics</th></tr><tr><td colspan="2">Module I - An Overview of Fundamentals</td></tr><tr><td>1</td><td>An Overview of Key Players, Their Legal Responsibilities and Early Roles</td></tr><tr><td>2 and 3</td><td>Tax Considerations in Deal Structures ( <br> [PDF](https://ocw.mit.edu/courses/15-649-the-law-of-mergers-and-acquisitions-spring-2003/resources/lec2and3/) <br> )</td></tr><tr><td>4</td><td>Putting the Deal Together ( <br> [PDF](https://ocw.mit.edu/courses/15-649-the-law-of-mergers-and-acquisitions-spring-2003/resources/lec4/) <br> )</td></tr><tr><td>5</td><td>Employment Law: The Perspectives of Key Employees and of the Corporation as an Employer ( <br> [PDF](https://ocw.mit.edu/courses/15-649-the-law-of-mergers-and-acquisitions-spring-2003/resources/lec5/) <br> )</td></tr><tr><td>6</td><td>LBOs and the Perspective of Financial Sponsors</td></tr><tr><td colspan="2">Module II - Some Complications</td></tr><tr><td>7</td><td>Intellectual Property as an Asset; Selling and Buying the Hi-tech Start-up ( <br> [PDF](https://ocw.mit.edu/courses/15-649-the-law-of-mergers-and-acquisitions-spring-2003/resources/lec7/) <br> )</td></tr><tr><td>8</td><td>The Legal Liability of Managers and Board Members ( <br> [PDF](https://ocw.mit.edu/courses/15-649-the-law-of-mergers-and-acquisitions-spring-2003/resources/lec8/) <br> )</td></tr><tr><td>9</td><td>Antitrust Concerns and Regulatory Clearance ( <br> [PDF](https://ocw.mit.edu/courses/15-649-the-law-of-mergers-and-acquisitions-spring-2003/resources/lec9/) <br> )</td></tr><tr><td>10</td><td>The Distressed Company ( <br> [PDF](https://ocw.mit.edu/courses/15-649-the-law-of-mergers-and-acquisitions-spring-2003/resources/lec10/) <br> )</td></tr><tr><td>11 and 12</td><td>Some Complex Deal Terms, Including Issues That Arise in the Purchase of a Publicly-Held Company</td></tr><tr><td>13</td><td>Wrap-up</td></tr></table>

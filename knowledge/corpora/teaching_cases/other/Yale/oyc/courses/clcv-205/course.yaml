@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-clcv-205"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "CLCV 205"
+course_title: "Introduction to Ancient Greek History"
+course_slug: "clcv-205"
+department_path: "classics"
+professors:
+  - "Donald Kagan Sterling Professor of Classics and History"
+course_url: "https://oyc.yale.edu/classics/clcv-205"
+language: "en"
+description: |
+  This is an introductory course in Greek history tracing the development of Greek civilization as manifested in political, intellectual, and creative achievements from the Bronze Age to the end of the classical period. Students read original sources in translation as well as the works of modern scholars.
+license_url: ""
+session_count: 24
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

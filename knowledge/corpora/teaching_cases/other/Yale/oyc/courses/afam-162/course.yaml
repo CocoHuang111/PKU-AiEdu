@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-afam-162"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "AFAM 162"
+course_title: "African American History: From Emancipation to the Present (2010)"
+course_slug: "afam-162"
+department_path: "african american studies"
+professors:
+  - "Jonathan Holloway Professor of History, African American Studies, and American Studies"
+course_url: "https://oyc.yale.edu/african-american-studies/afam-162"
+language: "en"
+description: |
+  The purpose of this course is to examine the African American experience in the United States from 1863 to the present (2010). Prominent themes include the end of the Civil War and the beginning of Reconstruction; African Americans’ urbanization experiences; the development of the modern civil rights movement and its aftermath; and the thought and leadership of Booker T. Washington, Ida B. Wells-Barnett, W.E.B. Du Bois, Marcus Garvey, Martin Luther King Jr., and Malcolm X. Warning: Some of the lectures in this course contain graphic content and/or adult language that some users may find disturbing. Please note: This course was captured in 2010.
+license_url: ""
+session_count: 25
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

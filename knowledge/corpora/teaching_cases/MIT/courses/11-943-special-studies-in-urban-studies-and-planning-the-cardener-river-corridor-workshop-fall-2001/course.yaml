@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-11-943-fall-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.943"
+cross_listed_codes: []
+course_title: "Special Studies in Urban Studies and Planning - The Cardener River Corridor Workshop"
+course_slug: "11-943-special-studies-in-urban-studies-and-planning-the-cardener-river-corridor-workshop-fall-2001"
+term: "Fall"
+year: 2001
+as_taught_in: "Fall 2001"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Eran Ben-Joseph"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Fine Arts"
+  - "Architecture"
+  - "Environmental Design"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+description: |
+  This landscape and environmental planning workshop investigates and propose a framework for the enhancement, development and preservation of the natural and cultural landscape of the Cardener River Corridor in Catalunya, Spain. The workshop is carried out in conjunction with the Polytechnic University of Catalunya, and the Barcelona Provincial Council (Diputació de Barcelona).
+course_url: "https://ocw.mit.edu/courses/11-943-special-studies-in-urban-studies-and-planning-the-cardener-river-corridor-workshop-fall-2001/"
+image_url: |
+  https://ocw.mit.edu/courses/11-943-special-studies-in-urban-studies-and-planning-the-cardener-river-corridor-workshop-fall-2001/55cb207bf8a8656ee25331761ced9da4_11-943f01.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

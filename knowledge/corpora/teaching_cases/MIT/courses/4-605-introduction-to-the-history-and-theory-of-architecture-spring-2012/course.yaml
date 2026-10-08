@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-4-605-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.605"
+cross_listed_codes: []
+course_title: "Introduction to the History and Theory of Architecture"
+course_slug: "4-605-introduction-to-the-history-and-theory-of-architecture-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Mark Jarzombek"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural History and Criticism"
+  - "Humanities"
+  - "History"
+  - "World History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural History and Criticism"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "World History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is a global-oriented survey of the history of architecture, from the prehistoric to the sixteenth century. It treats buildings and environments, including cities, in the context of the cultural and civilizational history. It offers an introduction to design principles and analysis. Being global, it aims to give the student perspective on the larger pushes and pulls that influence architecture and its meanings, whether these be economic, political, religious or climatic.
+course_url: "https://ocw.mit.edu/courses/4-605-introduction-to-the-history-and-theory-of-architecture-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/4-605-introduction-to-the-history-and-theory-of-architecture-spring-2012/c36227f176d7ae5e632dc3adbcb91f4d_4-605s12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

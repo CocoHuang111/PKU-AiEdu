@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-012-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.012"
+cross_listed_codes: []
+course_title: "Forms of Western Narrative"
+course_slug: "21l-012-forms-of-western-narrative-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Cain"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Comparative Literature"
+  - "Criticism"
+  - "Fiction"
+  - "International Literature"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+          - "Fiction"
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Written Assignments"
+description: |
+  This class will investigate the ways in which the formal aspects of Western storytelling in various media have shaped both fantasies and perceptions, making certain understandings of experience possible through the selection, arrangement, and processing of narrative material. Surveying the field chronologically across the major narrative genres and sub-genres from Homeric epic through the novel and across media to include live performance, film, and video games, we will be examining the ways in which new ideologies and psychological insights become available through the development of various narrative techniques and new technologies. Emphasis will be placed on the generic conventions of story-telling as well as on literary and cultural issues, the role of media and modes of transmission, the artistic significance of the chosen texts and their identity as anthropological artifacts whose conventions and assumptions are rooted in particular times, places, and technologies. Authors will include: Homer, Sophocles, Herodotus, Christian evangelists, Marie de France, Cervantes, La Clos, Poe, Lang, Cocteau, Disney-Pixar, and Maxis-Electronic Arts, with theoretical readings in Propp, Bakhtin, Girard, Freud, and Marx.
+course_url: "https://ocw.mit.edu/courses/21l-012-forms-of-western-narrative-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21l-012-forms-of-western-narrative-spring-2004/16390da7fe6e8c00d7620171376813f9_21l-012s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-2-004-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.004"
+cross_listed_codes: []
+course_title: "Systems, Modeling, and Control II"
+course_slug: "2-004-systems-modeling-and-control-ii-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Franz Hover"
+  - "Prof. David Gossard"
+  - "Prof. George Barbastathis"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Dynamics and Control"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Mathematics"
+  - "Differential Equations"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Upon successful completion of this course, students will be able to: Create lumped parameter models (expressed as ODEs) of simple dynamic systems in the electrical and mechanical energy domains Make quantitative estimates of model parameters from experimental measurements Obtain the time-domain response of linear systems to initial conditions and/or common forcing functions (specifically; impulse, step and ramp input) by both analytical and computational methods Obtain the frequency-domain response of linear systems to sinusoidal inputs Compensate the transient response of dynamic systems using feedback techniques Design, implement and test an active control system to achieve a desired performance measure Mastery of these topics will be assessed via homework, quizzes/exams, and lab assignments.
+course_url: "https://ocw.mit.edu/courses/2-004-systems-modeling-and-control-ii-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/2-004-systems-modeling-and-control-ii-fall-2007/8c89016f9ed05205333d55306875a3e1_2-004f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

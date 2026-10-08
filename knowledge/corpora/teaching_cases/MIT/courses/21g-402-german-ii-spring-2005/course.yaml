@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-402-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.402"
+cross_listed_codes:
+  - "21G.452"
+course_title: "German II"
+course_slug: "21g-402-german-ii-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ellen Crocker"
+subject_primary: "Language"
+subject_secondary:
+  - "German"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "German"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  In this course students are exposed to history and culture of German-speaking countries through audio, video, and Web materials. It focuses on the expansion of basic communication skills and further development of linguistic competency, and includes the review and completion of basic grammar, building of vocabulary, and practice in writing short essays. Students will also read short literary texts.
+course_url: "https://ocw.mit.edu/courses/21g-402-german-ii-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/21g-402-german-ii-spring-2005/bfa10aea6a91947012d6dc67af86ce3b_21g-402s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

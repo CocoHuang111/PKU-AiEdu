@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-res-2-008-summer-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.2-008"
+cross_listed_codes: []
+course_title: "Thermodynamics and Climate Change"
+course_slug: "res-2-008-thermodynamics-and-climate-change-summer-2020"
+term: "Summer"
+year: 2022
+as_taught_in: "Summer 2022"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "High School"
+instructors:
+  - "Dr. Peter Godart"
+subject_primary: "Fuel Cells"
+subject_secondary:
+  - "Hydrogen and Alternatives"
+  - "Technology"
+  - "Science"
+  - "Earth Science"
+  - "Climate Studies"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Fuel Cells"
+        specialties: []
+      - name: "Hydrogen and Alternatives"
+        specialties: []
+      - name: "Technology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Open Textbooks"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  In this course you will learn the three laws of thermodynamics, explore concepts like entropy and enthalpy, and investigate the causes and effects of global warming from a thermodynamics perspective. We will also apply these concepts to learning about state-of-the-art energy conversion and storage technologies, for example heat pumps, hydrogen fuel cells, metal-air batteries, artificial photosynthesis, molten salt storage, and concentrated solar power. This course was offered as part of MITES Semester (formerly MOSTEC) in Summer 2022. MITES Semester is a 6-month online program for rising high-school seniors. The program offers students an opportunity to learn about diverse science and engineering fields, strengthen their academic STEM foundation, build 21st-century skills in networking, interviewing, collaboration and presentation delivery, prepare for college, and build a strong community of peers and mentors. MITES Semester is part of MIT Introduction to Technology, Engineering, and Science (MITES) , which provides transformative experiences that bolster confidence, create lifelong community, and build an exciting, challenging foundation in STEM for highly motivated 7th–12th grade students from diverse and underrepresented backgrounds.
+course_url: "https://ocw.mit.edu/courses/res-2-008-thermodynamics-and-climate-change-summer-2020/"
+image_url: "https://ocw.mit.edu/courses/res-2-008-thermodynamics-and-climate-change-summer-2020/res-2-008-sum22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

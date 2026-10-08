@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-6-042j-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.042J"
+cross_listed_codes:
+  - "18.062J"
+course_title: "Mathematics for Computer Science"
+course_slug: "6-042j-mathematics-for-computer-science-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Tom Leighton"
+  - "Dr. Marten van Dijk"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Discrete Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This course covers elementary discrete mathematics for computer science and engineering. It emphasizes mathematical definitions and proofs as well as applicable methods. Topics include formal logic notation, proof methods; induction, well-ordering; sets, relations; elementary graph theory; integer congruences; asymptotic notation and growth of functions; permutations and combinations, counting principles; discrete probability. Further selected topics may also be covered, such as recursive definition and structural induction; state machines and invariants; recurrences; generating functions.
+course_url: "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/42ba5c4fb2e9df43aa8b2bc0566b459f_6-042jf10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

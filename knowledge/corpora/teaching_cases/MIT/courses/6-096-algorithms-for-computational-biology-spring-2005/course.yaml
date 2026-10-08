@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-6-096-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.096"
+cross_listed_codes: []
+course_title: "Algorithms for Computational Biology"
+course_slug: "6-096-algorithms-for-computational-biology-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Manolis Kellis"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+  - "Computer Science"
+  - "Algorithms and Data Structures"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This course is offered to undergraduates and addresses several algorithmic challenges in computational biology. The principles of algorithmic design for biological datasets are studied and existing algorithms analyzed for application to real datasets. Topics covered include: biological sequence analysis, gene identification, regulatory motif discovery, genome assembly, genome duplication and rearrangements, evolutionary theory, clustering algorithms, and scale-free networks.
+course_url: "https://ocw.mit.edu/courses/6-096-algorithms-for-computational-biology-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/6-096-algorithms-for-computational-biology-spring-2005/fadd4873c4a4520288acb3753dd67fe4_6-096s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

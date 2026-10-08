@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-381j-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.381J"
+cross_listed_codes:
+  - "WGS.222J"
+course_title: "Women and War in the 20th Century"
+course_slug: "21h-381j-women-and-war-in-the-20th-century-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "History"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Lerna Ekmekcioglu"
+subject_primary: "History"
+subject_secondary:
+  - "World History"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "World History"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This seminar examines women's experiences during and after war, revolution, and genocide. The focus of the course is mostly on the 20th century and on North America, Europe and the Middle East.
+course_url: "https://ocw.mit.edu/courses/21h-381j-women-and-war-in-the-20th-century-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/21h-381j-women-and-war-in-the-20th-century-fall-2015/b6e216e267df3d75151c2319c31cc01c_21h-381jf15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

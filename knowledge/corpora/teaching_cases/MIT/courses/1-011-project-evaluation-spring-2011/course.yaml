@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-1-011-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.011"
+cross_listed_codes: []
+course_title: "Project Evaluation"
+course_slug: "1-011-project-evaluation-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joseph Sussman"
+  - "Carl D. Martland"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Civil Engineering"
+  - "Construction Management"
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Construction Management"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  1.011 Project Evaluation covers methodologies for evaluating civil engineering projects, which typically are large-scale and long-lived and involve many economic, financial, social and environmental factors. The course places an emphasis on dealing with uncertainty. Students learn basic techniques of engineering economics, including net present value analysis, life-cycle costing, benefit-cost analysis, and other approaches to project evaluation. Examples are drawn from both contemporary and historical projects in various fields, including transportation systems, urban development, energy and environmental projects, water resource management, telecommunications systems, and other elements of the public and private projects and programs.
+course_url: "https://ocw.mit.edu/courses/1-011-project-evaluation-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/1-011-project-evaluation-spring-2011/4c61af83eb0702badcf9de1eeecc4487_1-011s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

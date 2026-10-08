@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-18-705-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.705"
+cross_listed_codes: []
+course_title: "Commutative Algebra"
+course_slug: "18-705-commutative-algebra-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Steven Kleiman"
+subject_primary: "Algebra and Number Theory"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  In this course students will learn about Noetherian rings and modules, Hilbert basis theorem, Cayley-Hamilton theorem, integral dependence, Noether normalization, the Nullstellensatz, localization, primary decomposition, DVRs, filtrations, length, Artin rings, Hilbert polynomials, tensor products, and dimension theory.
+course_url: "https://ocw.mit.edu/courses/18-705-commutative-algebra-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/18-705-commutative-algebra-fall-2008/362f45b568d4e1c1891f5a303714aa9d_18-705f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

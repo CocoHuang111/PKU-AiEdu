@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-1-224j-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.224J"
+cross_listed_codes:
+  - "ESD.204J"
+course_title: "Carrier Systems"
+course_slug: "1-224j-carrier-systems-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Cynthia Barnhart"
+  - "Prof. Nigel Wilson"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Engineering"
+  - "Civil Engineering"
+  - "Transportation Engineering"
+  - "Social Science"
+  - "Urban Studies"
+  - "Transportation Planning"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Transportation Engineering"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Transportation Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Carrier systems involve the design, operation and management of transportation networks, assets, personnel, freight and passengers. In this course, we will present models and tools for analyzing, optimizing, planning, managing and controlling carrier systems.
+course_url: "https://ocw.mit.edu/courses/1-224j-carrier-systems-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/1-224j-carrier-systems-fall-2003/ac46175ca6bf59bd6e6a5d431ce53594_1-224jf03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

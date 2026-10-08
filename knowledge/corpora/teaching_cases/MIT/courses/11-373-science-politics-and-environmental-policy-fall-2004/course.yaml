@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-373-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.373"
+cross_listed_codes: []
+course_title: "Science, Politics, and Environmental Policy"
+course_slug: "11-373-science-politics-and-environmental-policy-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Judith Layzer"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+  - "Comparative Politics"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Public Policy"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+          - "Comparative Politics"
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Public Policy"
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This class examines the role of science in the US environmental policy-making process. It investigates the methods scientists use to learn about the natural world, the way scientific knowledge accumulates, the treatment of science by advocates and the media, and the role of science in legislative, administrative and judicial decision making. It also considers how other political systems use science in an effort to put the US approach in comparative perspective.
+course_url: "https://ocw.mit.edu/courses/11-373-science-politics-and-environmental-policy-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/11-373-science-politics-and-environmental-policy-fall-2004/e6305a7fdecf2d3de8de4bae2ea9bdbe_11-373f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

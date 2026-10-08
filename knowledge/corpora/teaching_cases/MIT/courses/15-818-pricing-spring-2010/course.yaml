@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-15-818-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.818"
+cross_listed_codes: []
+course_title: "Pricing"
+course_slug: "15-818-pricing-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Catherine Tucker"
+subject_primary: "Marketing"
+subject_secondary:
+  - "Operations Management"
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+  - "Microeconomics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Marketing"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "Microeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Projects"
+  - "Written Assignments"
+description: |
+  This course is designed to teach students how to price goods and services by providing a framework for understanding pricing strategies and tactics. Topics covered include economic value analysis, price elasticities, price customization, pricing complementary products, pricing in platform markets and anticipating competitive price responses.
+course_url: "https://ocw.mit.edu/courses/15-818-pricing-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/15-818-pricing-spring-2010/47abe09fd375913b9636aa3305aa092a_15-818s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,88 @@
+schema_version: "1.0"
+course_id: "mitocw-2-062j-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.062J"
+cross_listed_codes:
+  - "1.138J"
+  - "18.376J"
+course_title: "Wave Propagation"
+course_slug: "2-062j-wave-propagation-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Civil and Environmental Engineering"
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Triantaphyllos Akylas"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Hydrodynamics and Coastal Engineering"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Geophysics"
+  - "Physics"
+  - "Classical Mechanics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Hydrodynamics and Coastal Engineering"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geophysics"
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course discusses theoretical concepts and analysis of wave problems in science and engineering. Examples are chosen from elasticity, acoustics, geophysics, hydrodynamics, blood flow, nondestructive evaluation, and other applications.
+course_url: "https://ocw.mit.edu/courses/2-062j-wave-propagation-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/2-062j-wave-propagation-spring-2017/ea2eda724319cfa0fe266291b8b0f0de_2-062js17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

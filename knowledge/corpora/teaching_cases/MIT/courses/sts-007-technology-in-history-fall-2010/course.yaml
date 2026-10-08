@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-007-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.007"
+cross_listed_codes: []
+course_title: "Technology in History"
+course_slug: "sts-007-technology-in-history-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Rosalind Williams"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Today many people assume that technological change is the major factor in historical change and that it tends to lead to historical progress. This class turns these assumptions into a question—what is the role of technology in history?—by focusing on four key historical transitions: the human revolution (the emergence of humans as a history-making species), the Neolithic Revolution (the emergence of agriculture-based civilizations); the great leap in productivity (also known as the industrial revolution), and the great acceleration that has come with the rise of human empire on the planet. These topics are studied through a mix of textbook reading (David Christian’s “Maps of Time”), supplementary readings (ranging from Auel, “The Clan of the Cave Bear” to Hersey, “Hiroshima”), illustrated lectures, class discussions, guest lectures/discussions, short “problem paper” assignments, and a final project defined by the student. Because MIT is celebrating its 150th anniversary in 2011, this version of the class will also focus on connections between MIT as an institution and technology in the history of the last 150 years.
+course_url: "https://ocw.mit.edu/courses/sts-007-technology-in-history-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/sts-007-technology-in-history-fall-2010/67f0513b2cd59b2e7327f0409e51d842_sts-007f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

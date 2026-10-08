@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-12-340x-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.340x"
+cross_listed_codes: []
+course_title: "Global Warming Science"
+course_slug: "12-340x-global-warming-science-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kerry Emanuel"
+  - "Prof. Daniel Cziczo"
+  - "Prof. David McGee"
+subject_primary: "Climate"
+subject_secondary:
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Climate Studies"
+  - "Environmental Science"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Climate Studies"
+          - "Environmental Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This course introduces the basic science underpinning our knowledge of the climate system, how climate has changed in the past, and how it may change in the future. The course focuses on the fundamental energy balance between incoming solar radiation and outgoing infrared radiation in the climate system, and how this balance is affected by greenhouse gases. We will also discuss physical processes that shape the climate, such as atmospheric and oceanic convection and large-scale circulation, solar variability, orbital mechanics, and aerosols, as well as the evidence for past and present climate change. We will discuss climate models of varying degrees of complexity, and you will be able to run a model of a single column of the Earth’s atmosphere to simulate many of the important elements of climate change. This course is part of the Open Learning Library , which is free to use. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/12-340x-global-warming-science-spring-2020/12-340xs20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

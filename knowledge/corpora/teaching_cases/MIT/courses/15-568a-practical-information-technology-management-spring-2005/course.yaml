@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-15-568a-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.568A"
+cross_listed_codes: []
+course_title: "Practical Information Technology Management"
+course_slug: "15-568a-practical-information-technology-management-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Benjamin Grosof"
+  - "Prof. Cyrus Gibson"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Management"
+  - "Operations Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  The course purpose is to provide the substance and skill necessary to make sound business decisions relating to information systems and to work with senior line managers in the resolution of issues and problems in this area. Categories of issues which will be addressed in the course include: How do IT and its various manifestations in business, such as the Internet, affect current and future COMPETITIVENESS? How do we align business strategy and plans with IT strategy and IT plans? How can we ENGAGE executives in learning and leading IT-related change? How do we IMPLEMENT new systems, CHANGE work behavior, MANAGE projects? How should we ORGANIZE and GOVERN IT in an organization?
+course_url: "https://ocw.mit.edu/courses/15-568a-practical-information-technology-management-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/15-568a-practical-information-technology-management-spring-2005/a3519df1ca1a47f5420d5944c78b602e_15-568as05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

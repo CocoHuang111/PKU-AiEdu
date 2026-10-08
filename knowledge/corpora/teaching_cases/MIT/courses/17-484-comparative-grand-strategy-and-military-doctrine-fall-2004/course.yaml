@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-17-484-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.484"
+cross_listed_codes: []
+course_title: "Comparative Grand Strategy and Military Doctrine"
+course_slug: "17-484-comparative-grand-strategy-and-military-doctrine-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Barry Posen"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "Comparative History"
+  - "Military History"
+  - "Social Science"
+  - "Political Science"
+  - "International Relations"
+  - "Public Administration"
+  - "Military Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Comparative History"
+          - "Military History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course will conduct a comparative study of the grand strategies of the great powers (Britain, France, Germany and Russia) competing for mastery of Europe from the late nineteenth to the mid-twentieth century. Grand strategy is the collection of political and military means and ends with which a state attempts to achieve security. We will examine strategic developments in the years preceding World Wars I and II, and how those developments played themselves out in these wars. The following questions will guide the inquiry: What is grand strategy and what are its critical aspects? What recurring factors have exerted the greatest influence on the strategies of the states selected for study? How may the quality of a grand strategy be judged? What consequences seem to follow from grand strategies of different types? A second theme of the course is methodological. We will pay close attention to how comparative historical case studies are conducted.
+course_url: "https://ocw.mit.edu/courses/17-484-comparative-grand-strategy-and-military-doctrine-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/17-484-comparative-grand-strategy-and-military-doctrine-fall-2004/0a6bdcf33b720f32c108d7f3ce2be800_17-484f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

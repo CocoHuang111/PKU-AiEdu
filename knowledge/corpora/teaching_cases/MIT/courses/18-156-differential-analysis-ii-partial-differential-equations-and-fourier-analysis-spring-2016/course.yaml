@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-18-156-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.156"
+cross_listed_codes: []
+course_title: "Differential Analysis II: Partial Differential Equations and Fourier Analysis"
+course_slug: "18-156-differential-analysis-ii-partial-differential-equations-and-fourier-analysis-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lawrence D Guth"
+subject_primary: "Differential Equations"
+subject_secondary:
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  In this course, we study elliptic Partial Differential Equations (PDEs) with variable coefficients building up to the minimal surface equation. Then we study Fourier and harmonic analysis, emphasizing applications of Fourier analysis. We will see some applications in combinatorics / number theory, like the Gauss circle problem, but mostly focus on applications in PDE, like the Calderon-Zygmund inequality for the Laplacian, and the Strichartz inequality for the Schrodinger equation. In the last part of the course, we study solutions to the linear and the non-linear Schrodinger equation. All through the course, we work on the craft of proving estimates.
+course_url: "https://ocw.mit.edu/courses/18-156-differential-analysis-ii-partial-differential-equations-and-fourier-analysis-spring-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/18-156-differential-analysis-ii-partial-differential-equations-and-fourier-analysis-spring-2016/da71a9757eb20c0f278233119ff54d21_18-156s16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

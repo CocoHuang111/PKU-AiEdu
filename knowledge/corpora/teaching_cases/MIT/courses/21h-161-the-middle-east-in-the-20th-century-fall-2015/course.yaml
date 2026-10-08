@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-161-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.161"
+cross_listed_codes: []
+course_title: "The Middle East in the 20th Century"
+course_slug: "21h-161-the-middle-east-in-the-20th-century-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Abigail Jacobson"
+subject_primary: "History"
+subject_secondary:
+  - "Middle Eastern History"
+  - "Modern History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Middle Eastern History"
+          - "Modern History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course surveys the history of the Middle East, from the end of the 19th century to the present. It examines major political, social, intellectual and cultural issues and practices. It also focuses on important events, movements, and ideas that prevailed during the last century and affect its current realities.
+course_url: "https://ocw.mit.edu/courses/21h-161-the-middle-east-in-the-20th-century-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/21h-161-the-middle-east-in-the-20th-century-fall-2015/6906dbf6f37993129236623d57e78708_21h-161f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

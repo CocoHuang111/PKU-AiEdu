@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-11-229-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.229"
+cross_listed_codes: []
+course_title: "Advanced Writing Seminar"
+course_slug: "11-229-advanced-writing-seminar-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Cherie Miot Abbanat"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  The purpose of this seminar is to expose the student to a number of different types of writing that one may encounter in a professional career. The class is an opportunity to write, review, rewrite and present a point of view both orally and in written form.
+course_url: "https://ocw.mit.edu/courses/11-229-advanced-writing-seminar-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/11-229-advanced-writing-seminar-spring-2004/23b5b3683cccd4cb10e320458a9634af_11-229s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

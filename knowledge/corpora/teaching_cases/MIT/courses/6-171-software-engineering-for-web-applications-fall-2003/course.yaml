@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-6-171-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.171"
+cross_listed_codes: []
+course_title: "Software Engineering for Web Applications"
+course_slug: "6-171-software-engineering-for-web-applications-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Harold Abelson"
+  - "Dr. Philip Greenspun"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Software Design and Engineering"
+  - "Electrical Engineering"
+  - "Telecommunications"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Software Design and Engineering"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Exams"
+description: |
+  6.171 is a course for students who already have some programming and software engineering experience. The goal is to give students some experience in dealing with those challenges that are unique to Internet applications, such as: concurrency; unpredictable load; security risks; opportunity for wide-area distributed computing; creating a reliable and stateful user experience on top of unreliable connections and stateless protocols; extreme requirements and absurd development schedules; requirements that change mid-way through a project, sometimes because of experience gained from testing with users; user demands for a multi-modal interface.
+course_url: "https://ocw.mit.edu/courses/6-171-software-engineering-for-web-applications-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/6-171-software-engineering-for-web-applications-fall-2003/b086dd2a905e4674a28e94436d5ae02b_6-171f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

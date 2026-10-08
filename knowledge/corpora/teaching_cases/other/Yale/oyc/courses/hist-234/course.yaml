@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-hist-234"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "HIST 234"
+course_title: "Epidemics in Western Society Since 1600"
+course_slug: "hist-234"
+department_path: "history"
+professors:
+  - "Frank Snowden Andrew Downey Orrick Professor Emeritus of History"
+course_url: "https://oyc.yale.edu/history/hist-234"
+language: "en"
+description: |
+  This course consists of an international analysis of the impact of epidemic diseases on western society and culture from the bubonic plague to HIV/AIDS and the recent experience of SARS and swine flu. Leading themes include: infectious disease and its impact on society; the development of public health measures; the role of medical ethics; the genre of plague literature; the social reactions of mass hysteria and violence; the rise of the germ theory of disease; the development of tropical medicine; a comparison of the social, cultural, and historical impact of major infectious diseases; and the issue of emerging and re-emerging diseases.
+license_url: ""
+session_count: 28
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-18-02-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.02"
+cross_listed_codes: []
+course_title: "Multivariable Calculus"
+course_slug: "18-02-multivariable-calculus-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Denis Auroux"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This course covers vector and multi-variable calculus. It is the second semester in the freshman calculus sequence. Topics include vectors and matrices, partial derivatives, double and triple integrals, and vector calculus in 2 and 3-space. MIT OpenCourseWare offers another version of 18.02, from the Spring 2006 term. Both versions cover the same material, although they are taught by different faculty and rely on different textbooks. Multivariable Calculus (18.02) is taught during the Fall and Spring terms at MIT, and is a required subject for all MIT undergraduates.
+course_url: "https://ocw.mit.edu/courses/18-02-multivariable-calculus-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/18-02-multivariable-calculus-fall-2007/78c8aad99135431364661fa7434333e2_18-02f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

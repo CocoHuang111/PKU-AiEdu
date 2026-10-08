@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-124-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.124"
+cross_listed_codes: []
+course_title: "Introduction to Education: Looking Forward and Looking Back on Education"
+course_slug: "11-124-introduction-to-education-looking-forward-and-looking-back-on-education-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Eric Klopfer"
+  - "Wendy Huang"
+  - "Jo-Ann Graziano"
+  - "Jason Haas"
+subject_primary: "Curriculum and Teaching"
+subject_secondary:
+  - "Education Policy"
+  - "Educational Technology"
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Education Policy"
+        specialties: []
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  An introductory course on teaching and learning science and mathematics in a variety of K-12 settings. Topics include education and media, education reform, the history of education, simulations, games, and the digital divide.
+course_url: "https://ocw.mit.edu/courses/11-124-introduction-to-education-looking-forward-and-looking-back-on-education-fall-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/11-124-introduction-to-education-looking-forward-and-looking-back-on-education-fall-2011/040054801cf28114b44397f79433d0b6_11-124f11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

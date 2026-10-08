@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-15-521-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.521"
+cross_listed_codes: []
+course_title: "Management Accounting and Control"
+course_slug: "15-521-management-accounting-and-control-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joseph Weber"
+subject_primary: "Accounting"
+subject_secondary:
+  - "Operations Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Accounting"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course examines management accounting and related analytical methodologies for decision making and control in profit-directed organizations. It also defines product costing, budgetary control systems, and performance evaluation systems for planning, coordinating, and monitoring the performance of a business. This course defines principles of measurement and develops framework for assessing behavioral dimensions of control systems; impact of different managerial styles on motivation and performance in an organization.
+course_url: "https://ocw.mit.edu/courses/15-521-management-accounting-and-control-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/15-521-management-accounting-and-control-spring-2003/254875684fcb025d1cc35c9d79cc2e80_15-521s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-15-875-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.875"
+cross_listed_codes: []
+course_title: "Applications of System Dynamics"
+course_slug: "15-875-applications-of-system-dynamics-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. James Hines"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Engineering"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  15.875 is a project-based course that explores how organizations can use system dynamics to achieve important goals. In small groups, students learn modeling and consulting skills by working on a term-long project with real-life managers. A diverse set of businesses and organizations sponsor class projects, from start-ups to the Fortune 500. The course focuses on gaining practical insight from the system dynamics process, and appeals to people interested in system dynamics, consulting, or managerial policy-making.
+course_url: "https://ocw.mit.edu/courses/15-875-applications-of-system-dynamics-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/15-875-applications-of-system-dynamics-spring-2004/e76030b6a2b7481014b09c88ea400bd6_15-875s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-res-15-002-summer-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.15-002"
+cross_listed_codes: []
+course_title: "Mission & Metrics: Finance Training for Federal Credit Program Professionals"
+course_slug: "res-15-002-mission-metrics-finance-training-for-federal-credit-program-professionals-summer-2016"
+term: "Summer"
+year: 2016
+as_taught_in: "Summer 2016"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Deborah Lucas"
+  - "Douglas Criscitello"
+  - "Charles Tansey"
+subject_primary: "Accounting"
+subject_secondary:
+  - "Finance"
+  - "Management"
+  - "Social Science"
+  - "Economics"
+  - "Public Economics"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Accounting"
+        specialties: []
+      - name: "Finance"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Public Economics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Federal credit programs involve a unique set of challenges and opportunities. This practical training course for executive and legislative branch decision-makers and staff is aimed at enhancing the understanding of the core financial principles necessary to most effectively design and run those programs. It brings together institutional analysis, risk management and corporate finance disciplines for the purpose of improving the management of federal credit agency resources.
+course_url: "https://ocw.mit.edu/courses/res-15-002-mission-metrics-finance-training-for-federal-credit-program-professionals-summer-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/res-15-002-mission-metrics-finance-training-for-federal-credit-program-professionals-summer-2016/fae8027142b3a1e4fe8652f19fc47b1b_res-15-002sum16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

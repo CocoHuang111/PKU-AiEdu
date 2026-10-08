@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "cornell-writing-about-controversies-in-american-politics-using-ai-to-examine-counterarguments-and-definitions"
+institution: "Cornell University"
+platform: "Cornell Teaching Case Studies"
+collection: "Teaching Innovation Case Study Library"
+title: "Writing about Controversies in American Politics: Using AI to Examine Counterarguments and Definitions"
+slug: "writing-about-controversies-in-american-politics-using-ai-to-examine-counterarguments-and-definitions"
+source_url: |
+  https://blogs.cornell.edu/teachingcasestudies/gai/writing-about-controversies-in-american-politics-using-ai-to-examine-counterarguments-and-definitions/
+language: "en"
+published: "2024-04-05"
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  published: "source"
+extraction_status: "complete"
+content_sha256: "c1bdf7344af4cf6a49bb7301d8538d7e39ed31e10a4dedae1aba2af0b468c742"

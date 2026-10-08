@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-s61-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.S61"
+cross_listed_codes:
+  - "CMS.S97"
+course_title: "STEAM Learning Architecture: A Framework for Educational Innovation"
+course_slug: "cms-s61-steam-learning-architecture-a-framework-for-educational-innovation-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Claudia Urrea"
+  - "Emily Glass"
+  - "Joe Diaz"
+  - "Kirky DeLong"
+subject_primary: "Curriculum and Teaching"
+subject_secondary:
+  - "Education Policy"
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Education Policy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This course explores the creation of new learning environments and experiences through the lens of the STEAM Learning Architecture, a framework developed by the pK-12 group at MIT Open Learning to guide approaches to teaching and learning for educational innovation. The framework prioritizes student-centered, hands-on learning, rooted in the Constructionist theory that the most powerful learning occurs through discovery, exploration, and creation. Guest speakers and site visits will provide context for final projects that produce innovative learning experiences for K-12 audiences.
+course_url: "https://ocw.mit.edu/courses/cms-s61-steam-learning-architecture-a-framework-for-educational-innovation-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/cms-s61-steam-learning-architecture-a-framework-for-educational-innovation-spring-2024/mitcms_s61_s24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

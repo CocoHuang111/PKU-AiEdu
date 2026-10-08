@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-10-01-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.01"
+cross_listed_codes:
+  - "1.082"
+  - "2.900"
+  - "22.014"
+  - "6.904"
+  - "16.676"
+course_title: "Ethics for Engineers: Artificial Intelligence"
+course_slug: "10-01-ethics-for-engineers-artificial-intelligence-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Chemical Engineering"
+  - "Civil and Environmental Engineering"
+  - "Mechanical Engineering"
+  - "Nuclear Science and Engineering"
+  - "Electrical Engineering and Computer Science"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Bernhardt Trout"
+  - "Daniel Doneson"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Humanities"
+  - "Philosophy"
+  - "Ethics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+  - "Written Assignments"
+description: |
+  Artificial Intelligence (AI), and the algorithmic judgment at its core, is developing at breakneck speed. This version of the popular Ethics for Engineers course focuses on the ethics issues involved in the latest developments of computer science.
+course_url: "https://ocw.mit.edu/courses/10-01-ethics-for-engineers-artificial-intelligence-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/10-01-ethics-for-engineers-artificial-intelligence-spring-2020/ada7d23d0198f4fd05b613e6fb374b6c_10-01s20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

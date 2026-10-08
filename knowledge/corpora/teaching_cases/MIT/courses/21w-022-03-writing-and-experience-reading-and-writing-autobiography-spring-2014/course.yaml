@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-022-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.022"
+cross_listed_codes: []
+course_title: "Writing and Experience: Reading and Writing Autobiography"
+course_slug: "21w-022-03-writing-and-experience-reading-and-writing-autobiography-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Andrea Walsh"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Creative Writing"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  The reading and writing in this course will focus on the art of self-narrative or autobiographical writing. Such writing can be crafted in the form of a longer autobiography or of separate, shorter autobiographically-inspired essays. The various forms of autobiographical narrative can both reflect on personal experience and comment on larger issues in society. This course explores, through reading and writing, what it means to construct a sense of self-and a life narrative-in relation to the larger social world of family and friends, education, media, work, and community. What does it mean to see ourselves as embodying particular ethical values or belonging to a certain ethnic, racial, national or religious group(s)? How do we imagine ourselves within larger “family narrative(s)” and friendship groups? In what ways do we view our identities as connected to and expressed by our educational and work experiences, including experiences at MIT? How do we see ourselves as shaping and shaped by the popular media culture of our society? How do we think about our ethical and social responsibility to our friends, families and communities (large and small)? Readings will include autobiographically-inspired nonfiction and fiction.
+course_url: "https://ocw.mit.edu/courses/21w-022-03-writing-and-experience-reading-and-writing-autobiography-spring-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/21w-022-03-writing-and-experience-reading-and-writing-autobiography-spring-2014/ee857d5b8d5ec856abc9ae6a89a00488_21w-022.03s14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

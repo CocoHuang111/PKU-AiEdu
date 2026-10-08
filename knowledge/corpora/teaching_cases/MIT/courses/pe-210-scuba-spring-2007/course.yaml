@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-pe-210-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "PE.210"
+cross_listed_codes: []
+course_title: "SCUBA"
+course_slug: "pe-210-scuba-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Athletics, Physical Education and Recreation"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Halston Taylor"
+subject_primary: "Physical Education and Recreation"
+subject_secondary: []
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Physical Education and Recreation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Lecture Videos"
+description: |
+  This course will thoroughly educate the successful student with the knowledge and skills necessary to be a certified beginning SCUBA diver. The prerequisite for the course is passing the MIT SCUBA swim test and demonstrating a “comfort level” in the water. At the end of the class, students will attempt to pass the certification exam to become certified divers. The class is taught in two parts each week: a classroom session and a pool session. The classroom sessions along with the reading material will provide the student with the knowledge necessary to pass the written exam. At the pool, the water skills are taught in progressions that build on the previous skills, making the difficult skills seem easy.
+course_url: "https://ocw.mit.edu/courses/pe-210-scuba-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/pe-210-scuba-spring-2007/6b45d9859e5da887fd7b263e80da3f0e_pe-210s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

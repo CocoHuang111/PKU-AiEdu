@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "cornell-constructive-learning-through-peer-review-and-feedback-literacy"
+institution: "Cornell University"
+platform: "Cornell Center for Teaching Innovation"
+collection: "Teaching Innovation Case Study Library"
+title: "Constructive Learning through Peer Review and Feedback Literacy"
+slug: "constructive-learning-through-peer-review-and-feedback-literacy"
+source_url: "https://teaching.cornell.edu/constructive-learning-through-peer-review-and-feedback-literacy"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "a88c4a69d88e18b2a7a9006bdf46b2937c0ba829534c1053fce5191d5cc351e1"

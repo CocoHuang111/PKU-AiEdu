@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-15-229-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.229"
+cross_listed_codes: []
+course_title: "Managing Global Integration"
+course_slug: "15-229-managing-global-integration-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. José Santos"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course on global integration brings together matters of global markets and institutions, global strategy, organization, and leadership. Global integration, the process by which an organization with units around the world becomes united, will be presented as a link to entrepreneurship and general management. The seminar is offered only to those enrolled in the MIT Sloan Fellows Program and challenges the participants to draw upon their past managerial experiences, especially those affiliated with multinational companies.
+course_url: "https://ocw.mit.edu/courses/15-229-managing-global-integration-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/15-229-managing-global-integration-spring-2012/49f57fa6b961cbfbebd53a54c1ea5381_15-229s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

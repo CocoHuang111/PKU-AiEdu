@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-295-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.295"
+cross_listed_codes: []
+course_title: "American Popular Music"
+course_slug: "21m-295-american-popular-music-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Teresa M. Neff"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  This course surveys the development of popular music in the United States and in a cross-cultural milieu relative to the history and sociology of the last two hundred years. It examines the ethnic mixture that characterizes modern music, how it reflects many rich traditions and styles, and provides a background for understanding the musical vocabulary of current popular music styles.
+course_url: "https://ocw.mit.edu/courses/21m-295-american-popular-music-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/21m-295-american-popular-music-fall-2014/a57dec71093e5b2433d7f4fd060d667e_21m-295f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

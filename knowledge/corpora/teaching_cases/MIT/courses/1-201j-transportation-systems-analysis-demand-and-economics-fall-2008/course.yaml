@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-1-201j-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.201J"
+cross_listed_codes:
+  - "11.545J"
+  - "ESD.210J"
+course_title: "Transportation Systems Analysis: Demand and Economics"
+course_slug: "1-201j-transportation-systems-analysis-demand-and-economics-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Urban Studies and Planning"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Michael Frumin"
+  - "Prof. Moshe Ben-Akiva"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Transportation Engineering"
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+  - "Urban Studies"
+  - "Transportation Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Transportation Engineering"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+      - name: "Urban Studies"
+        specialties:
+          - "Transportation Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The main objective of this course is to give broad insight into the different facets of transportation systems, while providing a solid introduction to transportation demand and cost analyses. As part of the core in the Master of Science in Transportation program, the course will not focus on a specific transportation mode but will use the various modes to apply the theoretical and analytical concepts presented in the lectures and readings. Introduces transportation systems analysis, stressing demand and economic aspects. Covers the key principles governing transportation planning, investment, operations and maintenance. Introduces the microeconomic concepts central to transportation systems. Topics covered include economic theories of the firm, the consumer, and the market, demand models, discrete choice analysis, cost models and production functions, and pricing theory. Application to transportation systems include congestion pricing, technological change, resource allocation, market structure and regulation, revenue forecasting, public and private transportation finance, and project evaluation; covering urban passenger transportation, freight, aviation and intelligent transportation systems.
+course_url: "https://ocw.mit.edu/courses/1-201j-transportation-systems-analysis-demand-and-economics-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/1-201j-transportation-systems-analysis-demand-and-economics-fall-2008/0c62366c41d2af0b8e1ec4b9dc3748d7_1-201jf08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

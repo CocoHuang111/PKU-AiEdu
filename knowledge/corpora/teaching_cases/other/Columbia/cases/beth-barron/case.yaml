@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-beth-barron"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Beth Barron, MD"
+slug: "beth-barron"
+source_url: "https://ctl.columbia.edu/transformations/faculty/beth-barron/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "e5c6bcd6e66a95b6424ea03baaeede414eb60f7242b4f7276fafe3613f22de26"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-4-463-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.463"
+cross_listed_codes: []
+course_title: "Building Technology III: Building Structural Systems"
+course_slug: "4-463-building-technology-iii-building-structural-systems-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Fernandez"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Structural Engineering"
+  - "Materials Science and Engineering"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Structural Engineering"
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course addresses advanced structures, exterior envelopes and contemporary production technologies. It continues the exploration of structural elements and systems, and expands to include more complex determinate, indeterminate, long-span and high-rise systems. It covers topics such as reinforced concrete, steel and engineered wood design, and provides an introduction to tensile systems. Lectures also address the contemporary exterior envelope with an emphasis on their performance attributes and advanced manufacturing technologies. This course is required of MArch students.
+course_url: "https://ocw.mit.edu/courses/4-463-building-technology-iii-building-structural-systems-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/4-463-building-technology-iii-building-structural-systems-fall-2004/4a6143f97837b83c56370f22dfc7d7df_4-463f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

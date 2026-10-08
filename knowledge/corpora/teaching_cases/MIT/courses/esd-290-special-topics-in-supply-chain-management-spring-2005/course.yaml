@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-290-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.290"
+cross_listed_codes: []
+course_title: "Special Topics in Supply Chain Management"
+course_slug: "esd-290-special-topics-in-supply-chain-management-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Brian Subirana"
+  - "Prof. John Williams"
+  - "Prof. Sanjay Sarma"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Supply Chain Management"
+  - "Engineering"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Workshop Videos"
+  - "Written Assignments"
+description: |
+  This subject presents a range of advanced topics in integrated logistics and supply chain management. The course was conducted in a lecture-discussion format, with participation of corporate executives as guest lecturers. Students prepare industry assessment analyses and make formal classroom presentations. Specific topics alternate from year to year, but basic content includes procurement strategies and strategic sourcing, dynamic pricing and revenue management tactics, mitigation of supply chain risk through supply contracts, strategic outsourcing of supply chain functions and operations, management and operation of third party logistics providers, and management of supply chain security.
+course_url: "https://ocw.mit.edu/courses/esd-290-special-topics-in-supply-chain-management-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/esd-290-special-topics-in-supply-chain-management-spring-2005/5995f6955d977807a417de47faad9335_esd-290s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

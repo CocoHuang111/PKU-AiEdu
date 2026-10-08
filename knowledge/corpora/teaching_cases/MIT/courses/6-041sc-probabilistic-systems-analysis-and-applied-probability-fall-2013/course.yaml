@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-041sc-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.041SC"
+cross_listed_codes: []
+course_title: "Probabilistic Systems Analysis and Applied Probability"
+course_slug: "6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Tsitsiklis"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Mathematics"
+  - "Discrete Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Problem-solving Videos"
+description: |
+  This course introduces students to the modeling, quantification, and analysis of uncertainty. The tools of probability theory, and of the related field of statistical inference, are the keys for being able to analyze and make sense of data. These tools underlie important advances in many fields, from the basic sciences to engineering and management. Course Format This course has been designed for independent study. It provides everything you will need to understand the concepts covered in the course. The materials include: Lecture Videos by MIT Professor John Tsitsiklis Lecture Slides and Readings Recitation Problems and Solutions Recitation Help Videos by MIT Teaching Assistants Tutorial Problems and Solutions Tutorial Help Videos by MIT Teaching Assistants Problem Sets with Solutions Exams with Solutions Related Resource A complementary resource, Introduction to Probability , is provided by the videos developed for an EdX version of 6.041. These videos cover more or less the same content, in somewhat different order, and in somewhat more detail than the videotaped live lectures.
+course_url: "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/b0d2d1dd8f89cb4bbb4870f857dcdeed_6-041SCf13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

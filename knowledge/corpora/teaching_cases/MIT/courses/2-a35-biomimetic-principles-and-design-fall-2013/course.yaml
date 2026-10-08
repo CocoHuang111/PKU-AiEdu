@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-2-a35-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.A35"
+cross_listed_codes: []
+course_title: "Biomimetic Principles and Design"
+course_slug: "2-a35-biomimetic-principles-and-design-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michael Triantafyllou"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomechanics"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Mechanical Design"
+  - "Ocean Engineering"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomechanics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Mechanical Design"
+      - name: "Ocean Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  Biomimetics is based on the belief that nature, at least at times, is a good engineer. Biomimesis is the scientific method of learning new principles and processes based on systematic study, observation and experimentation with live animals and organisms. This Freshman Advising Seminar on the topic is a way for freshmen to explore some of MIT’s richness and learn more about what they may want to study in later years.
+course_url: "https://ocw.mit.edu/courses/2-a35-biomimetic-principles-and-design-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/2-a35-biomimetic-principles-and-design-fall-2013/34443a93a4a1f10596bb7ba42c99cb69_2-a35f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

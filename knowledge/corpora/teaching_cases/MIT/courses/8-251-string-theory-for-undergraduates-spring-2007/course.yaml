@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-8-251-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.251"
+cross_listed_codes: []
+course_title: "String Theory for Undergraduates"
+course_slug: "8-251-string-theory-for-undergraduates-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Barton Zwiebach"
+  - "Prof. Alan Guth"
+subject_primary: "Physics"
+subject_secondary:
+  - "Quantum Mechanics"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces string theory to undergraduate and is based upon Prof. Zwiebach’s textbook entitled A First Course in String Theory . Since string theory is quantum mechanics of a relativistic string, the foundations of the subject can be explained to students exposed to both special relativity and basic quantum mechanics. This course develops the aspects of string theory and makes it accessible to students familiar with basic electromagnetism and statistical mechanics.
+course_url: "https://ocw.mit.edu/courses/8-251-string-theory-for-undergraduates-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/8-251-string-theory-for-undergraduates-spring-2007/b70bbfb17f7f695dd69f7191714d7246_8-251s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

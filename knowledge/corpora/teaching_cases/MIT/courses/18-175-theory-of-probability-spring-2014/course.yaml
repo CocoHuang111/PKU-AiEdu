@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-18-175-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.175"
+cross_listed_codes: []
+course_title: "Theory of Probability"
+course_slug: "18-175-theory-of-probability-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Scott Sheffield"
+subject_primary: "Mathematical Analysis"
+subject_secondary:
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Mathematical Analysis"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course covers topics such as sums of independent random variables, central limit phenomena, infinitely divisible laws, Levy processes, Brownian motion, conditioning, and martingales.
+course_url: "https://ocw.mit.edu/courses/18-175-theory-of-probability-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/18-175-theory-of-probability-spring-2014/27c7527c8726658ad43f1e098d73b67e_18-175s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

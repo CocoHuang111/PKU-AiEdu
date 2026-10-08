@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-1-204-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.204"
+cross_listed_codes: []
+course_title: "Computer Algorithms in Systems Engineering"
+course_slug: "1-204-computer-algorithms-in-systems-engineering-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. George Kocur"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Programming Assignments"
+description: |
+  This course covers concepts of computation used in analysis of engineering systems. It includes the following topics: data structures, relational database representations of engineering data, algorithms for the solution and optimization of engineering system designs (greedy, dynamic programming, branch and bound, graph algorithms, nonlinear optimization), and introduction to complexity analysis. Object-oriented, efficient implementations of algorithms are emphasized.
+course_url: "https://ocw.mit.edu/courses/1-204-computer-algorithms-in-systems-engineering-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/1-204-computer-algorithms-in-systems-engineering-spring-2010/525f640b5d015b557de808df09f4acb3_1-204s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-9-97-january-iap-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.97"
+cross_listed_codes: []
+course_title: "Introduction to Neuroanatomy"
+course_slug: "9-97-introduction-to-neuroanatomy-january-iap-2003"
+term: "January IAP"
+year: 2003
+as_taught_in: "January IAP 2003"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Chris Moore"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Neurobiology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This subject will be an intensive introduction to neuroanatomy, involving lectures, demonstrations, and hands-on laboratories, including a brain dissection. The course will not assume any prior knowledge of neuroanatomy, though some general knowledge of brain structures will be helpful.
+course_url: "https://ocw.mit.edu/courses/9-97-introduction-to-neuroanatomy-january-iap-2003/"
+image_url: "https://ocw.mit.edu/courses/9-97-introduction-to-neuroanatomy-january-iap-2003/d99596cba32e4e29269cc926ec77d997_9-97iap03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

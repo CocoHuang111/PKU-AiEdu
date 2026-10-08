@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-1-151-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.151"
+cross_listed_codes: []
+course_title: "Probability and Statistics in Engineering"
+course_slug: "1-151-probability-and-statistics-in-engineering-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniele Veneziano"
+subject_primary: "Engineering"
+subject_secondary:
+  - "Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This class covers quantitative analysis of uncertainty and risk for engineering applications. Fundamentals of probability, random processes, statistics, and decision analysis are covered, along with random variables and vectors, uncertainty propagation, conditional distributions, and second-moment analysis. System reliability is introduced. Other topics covered include Bayesian analysis and risk-based decision, estimation of distribution parameters, hypothesis testing, simple and multiple linear regressions, and Poisson and Markov processes. There is an emphasis placed on real-world applications to engineering problems.
+course_url: "https://ocw.mit.edu/courses/1-151-probability-and-statistics-in-engineering-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/1-151-probability-and-statistics-in-engineering-spring-2005/cc0e239e2d730454459867f54eedd719_1-151s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

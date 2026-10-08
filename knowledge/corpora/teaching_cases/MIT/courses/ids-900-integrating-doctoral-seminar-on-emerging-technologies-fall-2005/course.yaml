@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-ids-900-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "IDS.900"
+cross_listed_codes:
+  - "17.312J"
+  - "STS.461J"
+  - "IDS.900 (formerly ESD.85J)"
+course_title: "Integrating Doctoral Seminar on Emerging Technologies"
+course_slug: "ids-900-integrating-doctoral-seminar-on-emerging-technologies-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Institute for Data, Systems, and Society"
+  - "Political Science"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniel Hastings"
+  - "Dr. Jason Black"
+  - "Dr. Lawrence McCray"
+subject_primary: "Systems Engineering"
+subject_secondary: []
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This team-taught subject is for doctoral students working on emerging technologies at the interface of technology, policy and societal issues. It integrates concepts of research strategy and design from a variety of disciplines. The class addresses problem identification and formulation of research topics, the role of qualitative and quantitative research methods, and the use of various data collection techniques. Coursework focuses on students’ thesis proposals, faculty-student study panels, critical evaluation of research design, and ethical issues in conducting research and gathering data.
+course_url: "https://ocw.mit.edu/courses/ids-900-integrating-doctoral-seminar-on-emerging-technologies-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/ids-900-integrating-doctoral-seminar-on-emerging-technologies-fall-2005/4d63e1c36654adeeea823324382715be_ids-900jf05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

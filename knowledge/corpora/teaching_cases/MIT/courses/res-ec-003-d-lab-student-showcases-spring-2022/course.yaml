@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-res-ec-003-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.EC-003"
+cross_listed_codes: []
+course_title: "D-Lab Student Showcases"
+course_slug: "res-ec-003-d-lab-student-showcases-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "MIT D-Lab"
+subject_primary: "Energy"
+subject_secondary:
+  - "Engineering"
+  - "Health and Medicine"
+  - "Social Science"
+  - "Society"
+  - "Teaching and Education"
+topic_tree:
+  - name: "Energy"
+    subtopics: []
+  - name: "Engineering"
+    subtopics: []
+  - name: "Health and Medicine"
+    subtopics: []
+  - name: "Social Science"
+    subtopics: []
+  - name: "Society"
+    subtopics: []
+  - name: "Teaching and Education"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  Student projects in D-Lab classes are defined by community partners and social ventures around the world. We don’t always know what is needed, but our community partners do, and our students have technical knowledge and skills to contribute to that work. Each semester, through a selection of full-semester classes, our students form into teams to work on projects framed by community partners – NGOs, local nonprofits, and social entrepreneurs. At the end of each semester, students present their work to their peers, partners, and guests.
+course_url: "https://ocw.mit.edu/courses/res-ec-003-d-lab-student-showcases-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/res-ec-003-d-lab-student-showcases-spring-2022/res-ec-003s22.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

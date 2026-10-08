@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-5-12-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.12"
+cross_listed_codes: []
+course_title: "Organic Chemistry I"
+course_slug: "5-12-organic-chemistry-i-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Kimberly Berkowski"
+  - "Prof. Sarah O’Connor"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Organic Chemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Organic Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This subject deals primarily with the basic principles to understand the structure and reactivity of organic molecules. Emphasis is on substitution and elimination reactions and chemistry of the carbonyl group. The course also provides an introduction to the chemistry of aromatic compounds.
+course_url: "https://ocw.mit.edu/courses/5-12-organic-chemistry-i-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/5-12-organic-chemistry-i-spring-2005/d68dbfbd307333faf9def14ad70db65f_5-12s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-542j-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.542J"
+cross_listed_codes:
+  - "2.792J"
+  - "20.371J"
+  - "6.022J"
+course_title: "Quantitative Physiology: Organ Transport Systems"
+course_slug: "hst-542j-quantitative-physiology-organ-transport-systems-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Mechanical Engineering"
+  - "Biological Engineering"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jose Venegas"
+  - "Prof. Roger Mark"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Health and Medicine"
+  - "Anatomy and Physiology"
+  - "Science"
+  - "Biology"
+  - "Biochemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course elaborates on the application of the principles of energy and mass flow to major human organ systems. It discusses mechanisms of regulation and homeostasis. It also discusses anatomical, physiological, and pathophysiological features of the cardiovascular, respiratory, and renal systems. There is emphasis on those systems, features, and devices that are most illuminated by the methods of physical sciences.
+course_url: "https://ocw.mit.edu/courses/hst-542j-quantitative-physiology-organ-transport-systems-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/hst-542j-quantitative-physiology-organ-transport-systems-spring-2004/9c3c4cb6c0240523b5574088fa8a7722_hst-542js04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

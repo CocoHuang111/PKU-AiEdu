@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-410-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.410"
+cross_listed_codes: []
+course_title: "Advanced German: Professional Communication"
+course_slug: "21g-410-advanced-german-professional-communication-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Peter Weise"
+subject_primary: "Language"
+subject_secondary:
+  - "German"
+  - "Social Science"
+  - "Economics"
+  - "International Development"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "German"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "International Development"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  This course exposes students to current issues and language use in German technology, business, and international industrial relations, and discusses ramifications of these issues in a larger social and cultural context. We seek to prepare students who wish to work or study in a German-speaking country by focusing on specialized vocabulary and systematic training in speaking and writing skills to improve fluency and style and emphasizing communicative strategies that are crucial in a working environment. Discussion and analysis of newspaper and magazine articles, modern expository prose, and extensive use of online material are included. Taught in German.
+course_url: "https://ocw.mit.edu/courses/21g-410-advanced-german-professional-communication-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/21g-410-advanced-german-professional-communication-spring-2017/6658c610b0f7f4724a99b6c1014e008b_21g-410s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

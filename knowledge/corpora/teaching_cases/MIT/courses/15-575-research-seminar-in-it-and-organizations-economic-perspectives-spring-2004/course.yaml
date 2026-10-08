@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-15-575-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.575"
+cross_listed_codes: []
+course_title: "Research Seminar in IT and Organizations: Economic Perspectives"
+course_slug: "15-575-research-seminar-in-it-and-organizations-economic-perspectives-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Erik Brynjolfsson"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Operations Management"
+  - "Social Science"
+  - "Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Business organizations and markets use a bewildering variety of structures to coordinate the productive activities of their stakeholders. Dramatic changes in information technology and the nature of economic competition are forcing firms to come up with new ways of organizing work. This course uses economic theory to investigate the roles of information and technology in the existing diversity of organizations and markets and in enabling the creating of new organizational forms.
+course_url: "https://ocw.mit.edu/courses/15-575-research-seminar-in-it-and-organizations-economic-perspectives-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/15-575-research-seminar-in-it-and-organizations-economic-perspectives-spring-2004/024ddbb681847d71525f9d51830739d9_15-575s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

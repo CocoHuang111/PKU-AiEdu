@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-280-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.280"
+cross_listed_codes: []
+course_title: "Communication for Managers"
+course_slug: "15-280-communication-for-managers-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Neal Hartman"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Management"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  In this course, students develop and polish communication strategies and methods through discussion, examples, and practice with an emphasizes on writing and speaking skills necessary for effective leaders. The course includes several oral and written assignments which are integrated with other subjects, and with career development activities, when possible. This course is part of the MBA core and is restricted to first-year Sloan graduate students. Find out more about the Sloan MBA core on OCW .
+course_url: "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/15-280-communication-for-managers-fall-2016/701c4ab59ec656e697a309ae50a1cbee_15-280f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

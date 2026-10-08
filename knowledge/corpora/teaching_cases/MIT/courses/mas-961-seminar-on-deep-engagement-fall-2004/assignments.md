@@ -1,0 +1,21 @@
+> 检索摘要：MAS.961 Seminar on Deep Engagement（Fall 2004，Graduate）的「Assignments」。页内标题：Assignments。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+The assignments of the class are presented here, along with selected student responses. All of the responses are courtesy of the students named, and used with permission.
+
+| assignments | responses |
+| --- | --- |
+| Assignment 1 ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/assn01wk02/) <br> ) | Hyemin Chung ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/hyemin_chung2-1/) <br> ) <br> Mathew Laibowitz ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/mat_laibowitz2/) <br> ) <br> Orit Zuckerman ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/orit_zuckerman2/) <br> ) |
+| Assignment 2 ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/assn02wk03/) <br> ) | Hyemin Chung ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/hyemin_chung3-1/) <br> ) <br> Orit Zuckerman ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/orit_zuckerman3/) <br> ) |
+| Assignment 3 ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/assn03wk04/) <br> ) | Instructor Comments ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/instructorcoment/) <br> ) <br> Hyemin Chung ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/hyemin_chung4/) <br> ) <br> Orit Zuckerman ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/orit_zuckerman4/) <br> ) |
+| Assignment 4 ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/assn04wk05/) <br> ) | Hyemin Chung ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/hyemin_chung5/) <br> ) <br> Orit Zuckerman ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/orit_zuckerman5/) <br> ) |
+| Assignment 5 ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/assn05wk08/) <br> ) | Hyemin Chung ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/hyemin_chung8/) <br> ) <br> Mathew Laibowitz ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/mat_laibowitz8/) <br> ) <br> Orit Zuckerman ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/orit_zuckerman8/) <br> ) |
+| Assignment 6 ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/assn06wk09/) <br> ) | Hyemin Chung ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/hyemin_chung9/) <br> ) <br> Mathew Laibowitz ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/mat_laibowitz9/) <br> ) |
+| Assignment 7 ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/assn07wk10/) <br> ) | Hyemin Chung ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/hyemin_chung10-1/) <br> ) <br> Mathew Laibowitz ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/mat_laibowitz10/) <br> ) <br> Orit Zuckerman ( <br> [PDF](https://ocw.mit.edu/courses/mas-961-seminar-on-deep-engagement-fall-2004/resources/orit_zuckerman10/) <br> ) |

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-16-400-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.400"
+cross_listed_codes:
+  - "16.453"
+course_title: "Human Factors Engineering"
+course_slug: "16-400-human-factors-engineering-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Laurence R. Young"
+  - "Dr. Divya C. Chandra"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Bioastronautics"
+  - "Computer Science"
+  - "Human-Computer Interfaces"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Bioastronautics"
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course is designed to provide both undergraduate and graduate students with a fundamental understanding of human factors that must be taken into account in the design and engineering of complex aviation and space systems. The primary focus is the derivation of human engineering design criteria from sensory, motor, and cognitive sources to include principles of displays, controls and ergonomics, manual control, the nature of human error, basic experimental design, and human-computer interaction in supervisory control settings. Undergraduate students will demonstrate proficiency through aviation accident case presentations, quizzes, homework assignments, and hands-on projects. Graduate students will complete all the undergraduate assignments; however, they are expected to complete a research-oriented project with a final written report and an oral presentation.
+course_url: "https://ocw.mit.edu/courses/16-400-human-factors-engineering-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/16-400-human-factors-engineering-fall-2011/6bdfd812de298a9626647c1c8480568a_16-400f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

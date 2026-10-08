@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-6-828-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.828"
+cross_listed_codes: []
+course_title: "Operating System Engineering"
+course_slug: "6-828-operating-system-engineering-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Frans Kaashoek"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Operating Systems"
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Operating Systems"
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Programming Assignments"
+  - "Projects with Examples"
+description: |
+  This course studies fundamental design and implementation ideas in the engineering of operating systems. Lectures are based on a study of UNIX and research papers. Topics include virtual memory, threads, context switches, kernels, interrupts, system calls, interprocess communication, coordination, and the interaction between software and hardware. Individual laboratory assignments involve implementation of a small operating system in C, with some x86 assembly.
+course_url: "https://ocw.mit.edu/courses/6-828-operating-system-engineering-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/6-828-operating-system-engineering-fall-2012/4a52efefb94f3abfe18f4a53cc2b74a7_6-828f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

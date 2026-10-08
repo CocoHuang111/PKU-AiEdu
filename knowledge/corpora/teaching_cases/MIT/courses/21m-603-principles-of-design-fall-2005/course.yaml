@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-120-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.120"
+cross_listed_codes: []
+course_title: "Principles of Design"
+course_slug: "21m-603-principles-of-design-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Karen Perlow"
+  - "Leslie Cocuzzo Held"
+  - "Michael Katz"
+  - "William Fregosi"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Theatrical Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+          - "Theatrical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Image Gallery"
+description: |
+  This course deals with advanced design theories and textual analysis. Emphasis is placed on script analysis in general, as well as the investigation of design principles from a designer’s perspective. Students also refine technical skills in rendering and presentation, historical research, and analysis. Class sessions include interaction with student/faculty directors and other staff designers. The goal of this course is for students to approach text with a fresh vision and translate that vision into design for performance.
+course_url: "https://ocw.mit.edu/courses/21m-603-principles-of-design-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21m-603-principles-of-design-fall-2005/76de31c9236b052d0ce9f55491e977e6_21m-603f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

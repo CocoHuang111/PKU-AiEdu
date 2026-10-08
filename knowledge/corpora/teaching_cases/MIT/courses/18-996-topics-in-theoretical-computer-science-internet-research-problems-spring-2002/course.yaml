@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-18-996-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.996"
+cross_listed_codes: []
+course_title: "Topics in Theoretical Computer Science : Internet Research Problems"
+course_slug: "18-996-topics-in-theoretical-computer-science-internet-research-problems-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Bruce Maggs"
+  - "Ravi Sundaram"
+  - "Prof. Shang-Hua Teng"
+  - "Prof. Tom Leighton"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Computer Networks"
+  - "Theory of Computation"
+  - "Electrical Engineering"
+  - "Telecommunications"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Computer Networks"
+          - "Theory of Computation"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  We will discuss numerous research problems that are related to the internet. Sample topics include: routing algorithms such as BGP, communication protocols such as TCP, algorithms for intelligently selecting a resource in the face of uncertainty, bandwidth sensing tools, load balancing algorithms, streaming protocols, determining the structure of the internet, cost optimization, DNS-related problems, visualization, and large-scale data processing. The seminar is intended for students who are ready to work on challenging research problems. Each lecture will discuss: methods used today issues and problems formulation of concrete problems potential new lines of research A modest amount of background information will be provided so that the importance and context of the problems can be understood. No previous study of the internet is required, but experience with algorithms and/or theoretical computer science at the graduate/research level is needed.
+course_url: "https://ocw.mit.edu/courses/18-996-topics-in-theoretical-computer-science-internet-research-problems-spring-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/18-996-topics-in-theoretical-computer-science-internet-research-problems-spring-2002/687f335c38b538fe65f2e8c5e0a657f7_18-996as04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

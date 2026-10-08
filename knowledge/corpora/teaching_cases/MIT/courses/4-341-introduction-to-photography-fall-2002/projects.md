@@ -1,0 +1,55 @@
+> 检索摘要：4.341 Introduction to Photography（Fall 2002，Undergraduate）的「Projects」。页内标题：Projects；Andrew Carvey；Simon Halpern；Alana Lafferty；Laura Noren；Mariana Shneyderman；Ran Tao。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/pages/projects/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Projects
+
+*Introduction to Photography* (4.341) and *Photography and Related Media* (4.343) are workshop-centered courses in the **Visual Arts Program**. They combine practical instruction, readings, lectures, field trips, visiting artists and group discussions intended to foster an aesthetic appreciation of photography/ digital imaging, and a critical awareness of how images in our culture are produced and constructed. A student-initiated term project provides opportunities to develop technical skills as well as for personal exploration. Projects are continuously presented in a critical forum.
+
+The images below are samples of student work from the course. All images are courtesy of the student named and are used with permission.
+
+### Andrew Carvey
+
+|  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/3888cca73d9c7e193cc7bd2f2661e3ea_carvey11.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/carvey1/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/b0bc129eceb07cf1783bb1d0e67ad29b_carvey12.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/carvey2/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/29aa348e73dd58b34b794b6595f0924b_carvey13.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/carvey3/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/e205aa8bbb413851002dfcb185a375dd_carvey14.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/carvey4/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/322e428205bd3d2b51087572a43986a8_carvey15.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/carvey5/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/1b7d789b180e9f115b049792a1895afc_carvey16.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/carvey6/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/8e6efb3089adc6f9fef2c14381098d97_carvey17.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/carvey7/) |
+| Slide 1 | Slide 2 | Slide 3 | Slide 4 | Slide 5 | Slide 6 | Slide 7 |
+
+### Simon Halpern
+
+|  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/2a07d57d5de4fa9ba7d10780cadc781f_halpern11.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/halpern1/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/af07551c3b9d9d4b9b0a1f1a61b46c20_halpern12.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/halpern2/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/e3f4f5b12daa1c40bdd8be16156cee86_halpern13.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/halpern3/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/5c3bab31658c4eb288f6ff73cb34b539_halpern14.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/halpern4/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/09abc31d1742ee8c11b59dfdc0f5e76e_halpern15.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/halpern5/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/c57b9c8f9d995bdf636ed2f0ad3ce8ed_halpern16.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/halpern6/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/60b7b53745544e19bb33e3908cca512f_halpern17.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/halpern7/) |
+| Slide 1 | Slide 2 | Slide 3 | Slide 4 | Slide 5 | Slide 6 | Slide 7 |
+
+### Alana Lafferty
+
+|  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/f9c97e5d01664e25b50c5cbc1c0e4957_lafferty11.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/lafferty1/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/375e1783aaf1c417d0c28fd827611786_lafferty12.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/lafferty2/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/e02fd01b9fa60e2d38b435c05d360c3c_lafferty13.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/lafferty3/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/fe479732c69b7bf84e275dd91f5e0727_lafferty14.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/lafferty4/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/ed83289f4a8832e56b6c01951ef16356_lafferty15.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/lafferty5/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/733ef8e4e4b77354d8b0160af61c721d_lafferty16.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/lafferty6/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/275ec26680b0fbb75e7a6975dca2467b_lafferty17.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/lafferty7/) |
+| Slide 1 | Slide 2 | Slide 3 | Slide 4 | Slide 5 | Slide 6 | Slide 7 |
+
+### Laura Noren
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/ccb11237d2ca970d36c3bf474bd22a41_noren11.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/noren1/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/da2bcb34149b93cc13c70e8a3096ed02_noren12.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/noren2/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/49c84ece163c6176e13850275a763694_noren13.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/noren3/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/036261de4cf0d31dfdb2e4d26ead41d8_noren14.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/noren4/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/2972f8611b411cd6a48923c8ddbde183_noren15.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/noren5/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/70d4dbbd37d622b4d9acbadd9cc0504c_noren16.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/noren6/) |
+| Slide 1 | Slide 2 | Slide 3 | Slide 4 | Slide 5 | Slide 6 |
+
+### Mariana Shneyderman
+
+|  |  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- | --- |
+| [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/5ce143b26c462cf1bf212270e3c29d95_shnayderman11.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/shnayderman1/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/0e8d3e877110b606770cc8dd07b6815e_shnayderman12.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/shnayderman2/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/94d9f85ae54b70e3ab0e689bf48611fe_shnayderman13.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/shnayderman3/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/979773125f522278a8ce86f6770069a6_shnayderman14.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/shnayderman4/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/4bf529d02d9551a8fa60aef4eaac1e4d_shnayderman15.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/shnayderman5/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/dc2241980c4fee32ac1c9a8ecf90a37d_shnayderman16.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/shnayderman6/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/f80ece274343ebe52b79c06e29b10df3_shnayderman17.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/shnayderman7/) |
+| Slide 1 | Slide 2 | Slide 3 | Slide 4 | Slide 5 | Slide 6 | Slide 7 |
+
+### Ran Tao
+
+|  |  |  |  |  |  |
+| --- | --- | --- | --- | --- | --- |
+| [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/e2828fe883027c48236b6cdcc4de43dc_tao11.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/tao1/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/f5c76b70b81ceba8c23c24f7c32f2090_tao12.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/tao2/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/261871d57238b72ec0a9774175f7303d_tao13.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/tao3/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/e45330ce7b9f01859d5d46a73ff2a3f4_tao14.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/tao4/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/6c1c2bda5714788d6dbf5214779fbc39_tao15.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/tao5/) | [![image](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/c2932fe91829c1eb3e68b9c4fad429a7_tao16.jpg)](https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/resources/tao6/) |
+| Slide 1 | Slide 2 | Slide 3 | Slide 4 | Slide 5 | Slide 6 |

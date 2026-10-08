@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-11-368-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.368"
+cross_listed_codes:
+  - "11.148"
+course_title: "Environmental Justice Law and Policy"
+course_slug: "11-368-environmental-justice-law-and-policy-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Justin Steil"
+  - "Enjoli Hall"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Political Philosophy"
+  - "Social Science"
+  - "Political Science"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This seminar introduces students to basic principles of environmental justice and presents frameworks for analyzing and addressing inequalities in the distribution of environmental benefits and burdens from the perspectives of social science, public policy, and law.
+course_url: "https://ocw.mit.edu/courses/11-368-environmental-justice-law-and-policy-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/11-368-environmental-justice-law-and-policy-fall-2019/49583ec79c4968974f599225abedc75f_11-368f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-084j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.084J"
+cross_listed_codes:
+  - "21A.130J (formerly 21A.224J)"
+  - "17.55"
+course_title: "Introduction to Latin American Studies"
+course_slug: "21g-084j-introduction-to-latin-american-studies-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+  - "Anthropology"
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Chappell Lawson"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Political Philosophy"
+  - "Social Science"
+  - "Political Science"
+  - "Society"
+  - "Latin and Caribbean Studies"
+  - "The Developing World"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  This course is designed as an introduction to Latin American politics and society for undergraduates at MIT. No background on the region is required. Overall workload (reading, writing, class participation, and examinations) is similar to that of other HASS-D courses. Many of the themes raised here are covered in greater detail in other courses: 21G.020J (New World Literature), 21G.716 (Introduction to Contemporary Hispanic Literature), 21G.730 (Twentieth and Twentyfirst-Century Spanish American Literaturere), 21G.735 (Advanced Topics in Hispanic Literature and Film), 21A.220 (The Conquest of America), 21H.802 (Modern Latin America), 3.982 (The Ancient Andean World), 3.983 (Ancient Mesoamerican Civilization), 17.507 (Democratization and Democratic Collapse), and 17.554 (Political Economy of Latin America).F
+course_url: "https://ocw.mit.edu/courses/21g-084j-introduction-to-latin-american-studies-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21g-084j-introduction-to-latin-american-studies-fall-2005/6dbc00c0dff727c16c3e9fd17919dc70_21g-084jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

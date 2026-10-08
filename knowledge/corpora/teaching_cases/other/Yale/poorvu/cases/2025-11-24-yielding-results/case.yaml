@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "poorvu-2025-11-24-yielding-results"
+institution: "Yale University"
+platform: "Poorvu Center for Teaching and Learning"
+collection: "Poorvu Center teaching stories"
+title: "Yielding Results"
+slug: "2025-11-24-yielding-results"
+source_url: "https://poorvucenter.yale.edu/posts/2025-11-24-yielding-results"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "a886388cc890126184bcefe55a342eb02becc3de41410b011606d2bb34e7ca71"

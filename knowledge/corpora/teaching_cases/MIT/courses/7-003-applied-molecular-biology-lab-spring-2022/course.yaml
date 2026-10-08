@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-7-003-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.003"
+cross_listed_codes: []
+course_title: "Applied Molecular Biology Lab"
+course_slug: "7-003-applied-molecular-biology-lab-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Vanessa Cheung"
+  - "Dr. Eric Chu"
+subject_primary: "Biology"
+subject_secondary:
+  - "Cell Biology"
+  - "Genetics"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+          - "Genetics"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Laboratory Assignments"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  7.003 is an experimental biology course. You will spend most of your time in the teaching laboratory practicing fundamental techniques in molecular biology, genetics, and cell biology, and working with the model organism Saccharomyces cerevisiae (budding yeast). In addition to learning how to accurately and safely perform these techniques, we want to help you understand how and why they work and what scientific questions they can address. The goal is for you to be able to design your own experiments to perform by the end of the semester.
+course_url: "https://ocw.mit.edu/courses/7-003-applied-molecular-biology-lab-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/7-003-applied-molecular-biology-lab-spring-2022/7-003s22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

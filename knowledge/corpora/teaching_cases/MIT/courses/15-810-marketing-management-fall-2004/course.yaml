@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-15-810-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.810"
+cross_listed_codes: []
+course_title: "Marketing Management"
+course_slug: "15-810-marketing-management-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Duncan Simester"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Management"
+  - "Marketing"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Marketing"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course provides an introduction to the fundamental concepts of marketing, including a customer orientation, matched with attention to competition and core strengths. It is organized so that each class is either a lecture or a case discussion. This course is a half semester MBA course taught to students in their first semester at Sloan. Together with their other core courses, students have the option of taking this course or an introductory finance course. This course is a prerequisite for all of the advanced marketing courses.
+course_url: "https://ocw.mit.edu/courses/15-810-marketing-management-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/15-810-marketing-management-fall-2004/e47d0a49773ff8f4eeca78dc321f6620_15-810f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

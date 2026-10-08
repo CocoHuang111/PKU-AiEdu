@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-6-912-january-iap-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.912"
+cross_listed_codes: []
+course_title: "Introduction to Copyright Law"
+course_slug: "6-912-introduction-to-copyright-law-january-iap-2006"
+term: "January IAP"
+year: 2006
+as_taught_in: "January IAP 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Keith Winstein"
+subject_primary: "Legal Studies"
+subject_secondary: []
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Legal Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This course is an introduction to copyright law and American law in general. Topics covered include: structure of federal law; basics of legal research; legal citations; how to use LexisNexis®; the 1976 Copyright Act; copyright as applied to music, computers, broadcasting, and education; fair use; Napster®, Grokster®, and Peer-to-Peer file-sharing; Library Access to Music Project; The 1998 Digital Millennium Copyright Act; DVDs and encryption; software licensing; the GNU® General Public License and free software.
+course_url: "https://ocw.mit.edu/courses/6-912-introduction-to-copyright-law-january-iap-2006/"
+image_url: "https://ocw.mit.edu/courses/6-912-introduction-to-copyright-law-january-iap-2006/43a640bfce3884091d9ab2303e0985ad_6-912iap06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

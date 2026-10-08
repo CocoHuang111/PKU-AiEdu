@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-1-101-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.101"
+cross_listed_codes: []
+course_title: "Introduction to Civil and Environmental Engineering Design I"
+course_slug: "1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Heidi Nepf"
+  - "Prof. Herbert Einstein"
+  - "Prof. Louis Bucciarelli"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Environmental Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+      - name: "Environmental Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  In this sophomore design course, you will be challenged with three design tasks: a first concerning water resources/treatment, a second concerning structural design, and a third focusing on the conceptual (re)design of a large system, Boston’s Back Bay. The first two tasks require the design, fabrication and testing of hardware. Several laboratory experiments will be carried out and lectures will be presented to introduce students to the conceptual and experimental basis for design in both domains. This course was based in large part on the Fall 2005 offering of 1.101, developed by Prof. Harold Hemond.
+course_url: "https://ocw.mit.edu/courses/1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/1-101-introduction-to-civil-and-environmental-engineering-design-i-fall-2006/7315eeb76ec2f89fdaa0c31e38a417ca_1-101f06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

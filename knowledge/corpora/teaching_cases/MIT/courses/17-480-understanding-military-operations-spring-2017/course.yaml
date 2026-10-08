@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-17-480-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.480"
+cross_listed_codes: []
+course_title: "Understanding Military Operations"
+course_slug: "17-480-understanding-military-operations-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Owen Cote"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Social Science"
+  - "Public Administration"
+  - "Military Studies"
+  - "Science and Technology Policy"
+  - "Security Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+          - "Science and Technology Policy"
+          - "Security Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course examines selected past, current, and future sea, air, space, and land battlefields and looks at the interaction in each of these warfare areas between existing military doctrine and weapons, sensors, communications, and information processing technologies. It also explores how technological development, whether innovative or stagnant, is influenced in each warfare area by military doctrine.
+course_url: "https://ocw.mit.edu/courses/17-480-understanding-military-operations-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/17-480-understanding-military-operations-spring-2017/7ef69c9bbccb6db7860d8df79fc3598d_17-480s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

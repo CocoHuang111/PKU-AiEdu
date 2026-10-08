@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-7-89j-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.89J"
+cross_listed_codes:
+  - "CSB.100J"
+course_title: "Topics in Computational and Systems Biology"
+course_slug: "7-89j-topics-in-computational-and-systems-biology-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Christopher Burge"
+  - "Prof. Jeff Gore"
+  - "Prof. Wendy Gilbert"
+  - "Prof. Bruce Tidor"
+  - "Prof. Forest White"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+  - "Science"
+  - "Biology"
+  - "Computation and Systems Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This is a seminar based on research literature. Papers covered are selected to illustrate important problems and approaches in the field of computational and systems biology, and provide students a framework from which to evaluate new developments. The MIT Initiative in Computational and Systems Biology ( CSBi ) is a campus-wide research and education program that links biology, engineering, and computer science in a multidisciplinary approach to the systematic analysis and modeling of complex biological phenomena. This course is one of a series of core subjects offered through the CSB Ph.D. program, for students with an interest in interdisciplinary training and research in the area of computational and systems biology.
+course_url: "https://ocw.mit.edu/courses/7-89j-topics-in-computational-and-systems-biology-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/7-89j-topics-in-computational-and-systems-biology-fall-2010/83b6d76b02613a3076201184db03d76a_7-89jf10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

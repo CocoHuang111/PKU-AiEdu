@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-1-050-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.050"
+cross_listed_codes: []
+course_title: "Engineering Mechanics I"
+course_slug: "1-050-engineering-mechanics-i-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Franz-Josef Ulm"
+  - "Prof. Markus Buehler"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Structural Mechanics"
+  - "Civil Engineering"
+  - "Structural Engineering"
+  - "Mechanical Engineering"
+  - "Solid Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Structural Mechanics"
+      - name: "Civil Engineering"
+        specialties:
+          - "Structural Engineering"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This subject provides an introduction to the mechanics of materials and structures. You will be introduced to and become familiar with all relevant physical properties and fundamental laws governing the behavior of materials and structures and you will learn how to solve a variety of problems of interest to civil and environmental engineers. While there will be a chance for you to put your mathematical skills obtained in 18.01, 18.02, and eventually 18.03 to use in this subject, the emphasis is on the physical understanding of why a material or structure behaves the way it does in the engineering design of materials and structures.
+course_url: "https://ocw.mit.edu/courses/1-050-engineering-mechanics-i-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/1-050-engineering-mechanics-i-fall-2007/ba36b42898988e4581d42067ac439546_1-050f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

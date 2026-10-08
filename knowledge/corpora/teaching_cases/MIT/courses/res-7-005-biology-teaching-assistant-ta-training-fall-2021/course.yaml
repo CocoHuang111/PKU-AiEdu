@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-res-7-005-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.7-005"
+cross_listed_codes: []
+course_title: "Biology Teaching Assistant (TA) Training"
+course_slug: "res-7-005-biology-teaching-assistant-ta-training-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+  - "Non-Credit"
+instructors:
+  - "Dr. Summer Morrill"
+subject_primary: "Curriculum and Teaching"
+subject_secondary: []
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Lecture Notes"
+  - "Podcasts"
+description: |
+  The MIT Biology Department supports TAs’ teaching by providing a specialized Teaching Assistant (TA) training program in Biology Pedagogy, for which TAs can earn a training certificate. This program has been developed in response to the feedback of previous TAs, and is designed to actively meet each TA’s needs as they are teaching. It provides practical knowledge that directly relates to their teaching responsibilities each week, and provides them with the opportunity to practice different skills and techniques in a supportive environment.
+course_url: "https://ocw.mit.edu/courses/res-7-005-biology-teaching-assistant-ta-training-fall-2021/"
+image_url: "https://ocw.mit.edu/courses/res-7-005-biology-teaching-assistant-ta-training-fall-2021/res7-005-s20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

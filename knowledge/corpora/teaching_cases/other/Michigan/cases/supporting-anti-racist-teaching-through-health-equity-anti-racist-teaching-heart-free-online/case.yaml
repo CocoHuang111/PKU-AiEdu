@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-supporting-anti-racist-teaching-through-health-equity-anti-racist-teaching-heart-free-online"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Supporting anti-racist teaching through the Health Equity via Anti-Racist Teaching (HEART) free online training course"
+slug: "supporting-anti-racist-teaching-through-health-equity-anti-racist-teaching-heart-free-online"
+source_url: "https://crlt.umich.edu/supporting-anti-racist-teaching-through-health-equity-anti-racist-teaching-heart-free-online"
+language: "en"
+published: null
+awarded_year: "2024"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "bf6b5598b124d3afd050636ea8b2e068f07bd5f6c0d4a218171d6d913edff94b"

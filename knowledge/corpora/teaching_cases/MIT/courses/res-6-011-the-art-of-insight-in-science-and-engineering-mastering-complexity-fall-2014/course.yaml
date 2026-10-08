@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-res-6-011-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.6-011"
+cross_listed_codes: []
+course_title: "The Art of Insight in Science and Engineering: Mastering Complexity"
+course_slug: "res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Sanjoy Mahajan"
+subject_primary: "Engineering"
+subject_secondary:
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Computation"
+  - "Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+  - name: "Science"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+description: |
+  In this book, Sanjoy Mahajan shows us that the way to master complexity is through insight rather than precision. Precision can overwhelm us with information, whereas insight connects seemingly disparate pieces of information into a simple picture. Unlike computers, humans depend on insight. Based on the author’s fifteen years of teaching at MIT, Cambridge University, and Olin College, The Art of Insight in Science and Engineering shows us how to build insight and find understanding, giving readers tools to help them solve any problem in science and engineering. (Description courtesy of MIT Press.)
+course_url: "https://ocw.mit.edu/courses/res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/res-6-011-the-art-of-insight-in-science-and-engineering-mastering-complexity-fall-2014/394db128e086710dca67d3beaa62116c_res-6-011f14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

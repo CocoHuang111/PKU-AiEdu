@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-2-23-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.23"
+cross_listed_codes: []
+course_title: "Hydrofoils and Propellers"
+course_slug: "2-23-hydrofoils-and-propellers-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Paul D. Sclavounos"
+  - "Prof. Richard Kimball"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Propulsion Systems"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Ocean Structures"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Propulsion Systems"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+          - "Ocean Structures"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This course develops the theory and design of hydrofoil sections, including lifting and thickness problems for sub-cavitating sections, unsteady flow problems, and computer-aided design of low drag cavitation-free sections. It also covers lifting line and lifting surface theory with applications to hydrofoil craft, rudder, control surface, propeller and wind turbine rotor design. Other topics include computer-aided design of wake adapted propellers; steady and unsteady propeller thrust and torque; performance analysis and design of wind turbine rotors in steady and stochastic wind; and numerical principles of vortex lattice and lifting surface panel methods. Projects illustrate the development of computational methods for lifting, propeller and wind turbine flows, and use of state-of-the-art simulation methods for lifting, propulsion and wind turbine applications.
+course_url: "https://ocw.mit.edu/courses/2-23-hydrofoils-and-propellers-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/2-23-hydrofoils-and-propellers-spring-2007/59b885a6d9dd9952c200cc2aaec106a7_2-23s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

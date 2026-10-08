@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-051j-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.051J"
+cross_listed_codes:
+  - "6.902J"
+course_title: "Engineering Innovation and Design"
+course_slug: "esd-051j-engineering-innovation-and-design-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Blade Kotelly"
+  - "Prof. Joel E Schindall"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Project Management"
+  - "Engineering"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Design Assignments"
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Projects"
+description: |
+  Learn to produce great designs, be a more effective engineer, and communicate with high emotional and intellectual impact. This project based course gives students the ability to understand, contextualize, and analyze engineering designs and systems. By learning and applying design thinking, students will more effectively solve problems in any domain. Lectures focus on teaching a tested, iterative design process as well as techniques to sharpen creative analysis. Guest lectures from all disciplines illustrate different approaches to design thinking. This course develops students’ skills to conceive, organize, lead, implement, and evaluate successful projects in any engineering discipline. Additionally, students learn how to give compelling in-person presentations. Open to all majors, all years.
+course_url: "https://ocw.mit.edu/courses/esd-051j-engineering-innovation-and-design-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/esd-051j-engineering-innovation-and-design-fall-2012/45660c6542bf440492b093a89f0f5df1_esd-051jf12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

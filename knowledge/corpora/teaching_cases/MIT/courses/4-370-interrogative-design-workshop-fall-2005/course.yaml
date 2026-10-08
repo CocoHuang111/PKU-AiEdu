@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-4-370-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.370"
+cross_listed_codes: []
+course_title: "Interrogative Design Workshop"
+course_slug: "4-370-interrogative-design-workshop-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Krzysztof Wodiczko"
+subject_primary: "Art History"
+subject_secondary:
+  - "Media Studies"
+  - "Visual Arts"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Art History"
+        specialties: []
+      - name: "Media Studies"
+        specialties: []
+      - name: "Visual Arts"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Lecture Videos"
+description: |
+  “Parrhesia” was an Athenian right to frank and open speaking, the right that, like the First Amendment, demands a “fearless speaker” who must challenge political powers with criticism and unsolicited advice. Can designer and artist respond today to such a democratic call and demand? Is it possible to do so despite the (increasing) restrictions imposed on our liberties today? Can the designer or public artist operate as a proactive “parrhesiatic” agent and contribute to the protection, development and dissemination of “fearless speaking” in Public Space?
+course_url: "https://ocw.mit.edu/courses/4-370-interrogative-design-workshop-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/4-370-interrogative-design-workshop-fall-2005/768958767e6302f3e2a1365ab738d72e_4-370f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

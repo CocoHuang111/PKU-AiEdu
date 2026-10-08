@@ -1,0 +1,93 @@
+schema_version: "1.0"
+course_id: "mitocw-15-136j-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.136J"
+cross_listed_codes:
+  - "7.547J"
+  - "10.547J"
+  - "IDS.620J (formerly ESD.691J)"
+  - "HST.920J"
+course_title: "Principles and Practice of Drug Development"
+course_slug: "15-136j-principles-and-practice-of-drug-development-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Biology"
+  - "Chemical Engineering"
+  - "Institute for Data, Systems, and Society"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles Cooney"
+  - "Stan Finkelstein, MD"
+  - "Dr. G. K. Raju"
+  - "Prof. Anthony Sinskey"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Engineering"
+  - "Chemical Engineering"
+  - "Health and Medicine"
+  - "Pharmacology and Toxicology"
+  - "Science"
+  - "Biology"
+  - "Biochemistry"
+  - "Cell Biology"
+  - "Stem Cells"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Pharmacology and Toxicology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+          - "Cell Biology"
+          - "Stem Cells"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Projects"
+description: |
+  This course serves as a description and critical assessment of the major issues and stages of developing a pharmaceutical or biopharmaceutical. Topics covered include drug discovery, preclinical development, clinical investigation, manufacturing and regulatory issues considered for small and large molecules, and economic and financial considerations of the drug development process. A multidisciplinary perspective is provided by the faculty, who represent clinical, life, and management sciences. Various industry guests also participate.
+course_url: "https://ocw.mit.edu/courses/15-136j-principles-and-practice-of-drug-development-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/15-136j-principles-and-practice-of-drug-development-fall-2013/6a1650c5646197f89ec68035e81a19f4_15-136f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

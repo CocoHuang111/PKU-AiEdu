@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-18-404j-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.404J"
+cross_listed_codes:
+  - "18.4041J"
+  - "6.840J"
+course_title: "Theory of Computation"
+course_slug: "18-404j-theory-of-computation-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Michael Sipser"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Mathematics"
+  - "Computation"
+  - "Discrete Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This course emphasizes computability and computational complexity theory. Topics include regular and context-free languages, decidable and undecidable problems, reducibility, recursive function theory, time and space measures on computation, completeness, hierarchy theorems, inherently complex problems, oracles, probabilistic computation, and interactive proof systems.
+course_url: "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/25eb14e154bff97af5173a45a625ab51_18-404jf20_v2.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

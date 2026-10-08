@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-18-212-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.212"
+cross_listed_codes: []
+course_title: "Algebraic Combinatorics"
+course_slug: "18-212-algebraic-combinatorics-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alexander Postnikov"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Discrete Mathematics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course covers the applications of algebra to combinatorics. Topics include enumeration methods, permutations, partitions, partially ordered sets and lattices, Young tableaux, graph theory, matrix tree theorem, electrical networks, convex polytopes, and more.
+course_url: "https://ocw.mit.edu/courses/18-212-algebraic-combinatorics-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/18-212-algebraic-combinatorics-spring-2019/87640fa832c222479c69e9518d0555b3_18-212s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

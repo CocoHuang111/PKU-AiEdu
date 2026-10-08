@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-14-126-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.126"
+cross_listed_codes: []
+course_title: "Game Theory"
+course_slug: "14-126-game-theory-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mihai Manea"
+subject_primary: "Economics"
+subject_secondary:
+  - "Game Theory"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides a rigorous treatment of non-cooperative solution concepts in game theory, including rationalizability and Nash, sequential, and stable equilibria. It covers topics such as epistemic foundations, higher order beliefs, bargaining, repeated games, reputation, supermodular games, and global games. It also introduces cooperative solution concepts—Nash bargaining solution, core, Shapley value—and develops corresponding non-cooperative foundations.
+course_url: "https://ocw.mit.edu/courses/14-126-game-theory-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/14-126-game-theory-spring-2016/99bac9f27050a36246a0a6227839776a_14-126s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

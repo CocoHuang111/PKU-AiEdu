@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-9-05-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.05"
+cross_listed_codes: []
+course_title: "Neural Basis of Movement"
+course_slug: "9-05-neural-basis-of-movement-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Chris Moore"
+  - "Prof. Emilio Bizzi"
+  - "Prof. Mriganka Sur"
+  - "Prof. Peter H. Schiller"
+  - "Prof. Ann M. Graybiel"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Sensory-Neural Systems"
+  - "Science"
+  - "Biology"
+  - "Neurobiology"
+  - "Neuroscience"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Surveys general principles and specific examples of motor control in biological systems. Emphasizes the neural mechanisms underlying different aspects of movement and movement planning. Covers sensory reception, reflex arcs, spinal cord organization, pattern generators, muscle function, locomotion, eye movement, and cognitive aspects of motor control. Functions of central motor structures including cerebellum, basal ganglia, and cerebral cortex considered. Cortical plasticity, motor learning and computational approaches to motor control, and motor disorders are discussed.
+course_url: "https://ocw.mit.edu/courses/9-05-neural-basis-of-movement-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/9-05-neural-basis-of-movement-spring-2003/b5322ecc701cdea075fe38e479f99ff4_9-05s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

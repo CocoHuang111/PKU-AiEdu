@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-6-5950-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.5950"
+cross_listed_codes:
+  - "6.5951"
+course_title: "Secure Hardware Design"
+course_slug: "6-5950-secure-hardware-design-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+  - "Undergraduate"
+instructors:
+  - "Prof. Mengija Yan"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Programming Assignments"
+description: |
+  MIT’s Secure Hardware Design Class (6.5950/6.5951) is an open-source course that teaches students both how to attack modern CPUs and how to design architectures resilient to those attacks. Students gain hands-on experience hacking real processors and are taught various state-of-the-art hardware attacks and defenses. Secure Hardware Design is the culmination of years of effort by Prof. Yan and a team of students. The course philosophy involves three pillars⁠—Think, Play, Do: Think In lecture, students are encouraged to think critically about hardware security as a part of greater systems. Play In recitation, students are encouraged to play with the course materials through interactive hands-on games. Recitations consist of interactive learning sessions, leveraging the Capture-the-Flag (CTF) format for friendly competitions amongst students. Students team up and work with their peers to conquer various challenges together.‍ Do In labs, students have a chance to actually put the concepts from class to work. The attack labs involve implementing attacks taught in class on real hardware. No simulators, no trickery, no nonsense. Real implementations on real hardware.‍
+course_url: "https://ocw.mit.edu/courses/6-5950-secure-hardware-design-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/6-5950-secure-hardware-design-spring-2025/mit6_5950_s25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

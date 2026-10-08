@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-933-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.933"
+cross_listed_codes: []
+course_title: "Technology Policy Negotiations and Dispute Resolution"
+course_slug: "esd-933-technology-policy-negotiations-and-dispute-resolution-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joel Cutcher-Gershenfeld"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Social Science"
+  - "Communication"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Technology Policy Negotiations and its prequel, ESD.932, Technology Policy Organizations, form a sequence on Organizational Processes in Technology Policy. This course provides a core framework for an interest-based approach to negotiations, along with a systems approach to dispute resolution in organizations. Core interactive skills are developed, including communication skills, negotiating over the “rules of game,” and cross-cultural negotiations. Key assignments center on ethical debates in technology policy, regional economic development challenges, and assessment of organizational dispute resolution systems.
+course_url: "https://ocw.mit.edu/courses/esd-933-technology-policy-negotiations-and-dispute-resolution-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/esd-933-technology-policy-negotiations-and-dispute-resolution-spring-2005/1025004256504cd33fbb0dc5e6e4dd0c_esd-933s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

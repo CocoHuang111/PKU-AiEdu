@@ -1,0 +1,89 @@
+schema_version: "1.0"
+course_id: "mitocw-2-611-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.611"
+cross_listed_codes:
+  - "2.612"
+course_title: "Marine Power and Propulsion"
+course_slug: "2-611-marine-power-and-propulsion-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Burke"
+  - "Prof. Michael Triantafyllou"
+subject_primary: "Transportation"
+subject_secondary:
+  - "Engineering"
+  - "Chemical Engineering"
+  - "Transport Processes"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Transportation"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments"
+  - "Projects"
+description: |
+  This course discusses the selection and evaluation of commercial and naval ship power and propulsion systems. It will cover the analysis of propulsors, prime mover thermodynamic cycles, propeller-engine matching, propeller selection, waterjet analysis, and reviews alternative propulsors. The course also investigates thermodynamic analyses of Rankine, Brayton, Diesel, and Combined cycles, reduction gears and integrated electric drive. Battery operated vehicles and fuel cells are also discussed. The term project requires analysis of alternatives in propulsion plant design for given physical, performance, and economic constraints. Graduate students complete different assignments and exams.
+course_url: "https://ocw.mit.edu/courses/2-611-marine-power-and-propulsion-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/2-611-marine-power-and-propulsion-fall-2006/ef5b019484bd5b5ff23d364a13aaa146_2-611f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

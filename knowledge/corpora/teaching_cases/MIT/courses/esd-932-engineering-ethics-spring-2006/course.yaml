@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-932-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.932"
+cross_listed_codes: []
+course_title: "Engineering Ethics"
+course_slug: "esd-932-engineering-ethics-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Taft Broome"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Engineering"
+  - "Humanities"
+  - "Philosophy"
+  - "Ethics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+  - name: "Engineering"
+    subtopics: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Audio"
+description: |
+  This course introduces the theory and the practice of engineering ethics using a multi-disciplinary and cross-cultural approach. Theory includes ethics and philosophy of engineering. Historical cases are taken primarily from the scholarly literatures on engineering ethics, and hypothetical cases are written by students. Each student will write a story by selecting an ancestor or mythic hero as a substitute for a character in a historical case. Students will compare these cases and recommend action.
+course_url: "https://ocw.mit.edu/courses/esd-932-engineering-ethics-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/esd-932-engineering-ethics-spring-2006/fa0cc388e46ca92918869ad918ef07c8_esd-932s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-1-022-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.022"
+cross_listed_codes: []
+course_title: "Introduction to Network Models"
+course_slug: "1-022-introduction-to-network-models-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Amir Ajorlou"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Modeling and Simulation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course provides an introduction to complex networks and their structure and function, with examples from engineering, applied mathematics, and social sciences. Topics include spectral graph theory, notions of centrality, random graph models, contagion phenomena, cascades and diffusion, and opinion dynamics.
+course_url: "https://ocw.mit.edu/courses/1-022-introduction-to-network-models-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/1-022-introduction-to-network-models-fall-2018/b0e554b2867acd3580bce8938a2986dc_1-022f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

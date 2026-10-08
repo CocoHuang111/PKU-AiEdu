@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-780-fall-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.780"
+cross_listed_codes: []
+course_title: "Communicating in Technical Organizations"
+course_slug: "21w-780-communicating-in-technical-organizations-fall-2001"
+term: "Fall"
+year: 2001
+as_taught_in: "Fall 2001"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Edward C. Barrett"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Academic Writing"
+  - "Nonfiction Prose"
+  - "Technical Writing"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Nonfiction Prose"
+          - "Technical Writing"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course focuses on an exploration of the role that communication plays in the work of the contemporary engineering and science professional. Emphasis is placed on analyzing how composition and publication contribute to work management and knowledge production, as well as the “how-to” aspects of writing specific kinds of documents in a clear style. Topics include: communication as organizational process, electronic modes such as e-mail and the Internet, the informational and social roles of specific document forms, writing as collaboration, the writing process, the elements of style, methods of oral presentation, and communication ethics. Case studies used as the basis for class discussion and some writing assignments. Several short documents, a longer report or article, and a short oral presentation are required.
+course_url: "https://ocw.mit.edu/courses/21w-780-communicating-in-technical-organizations-fall-2001/"
+image_url: "https://ocw.mit.edu/courses/21w-780-communicating-in-technical-organizations-fall-2001/dd23dcbe3fd73de7e47eed6fbba1f719_21w-780f01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "partial"

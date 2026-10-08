@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-res-hs-002-undated-undated"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.HS-002"
+cross_listed_codes: []
+course_title: "Chemistry Behind the Magic: Chemical Demonstrations for the Classroom"
+course_slug: "res-hs-002-chemistry-behind-the-magic-chemical-demonstrations-for-the-classroom"
+term: null
+year: null
+as_taught_in: null
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "High School"
+instructors:
+  - "Dr. John J. Dolhun"
+  - "Bassam Shakhashiri"
+subject_primary: "Chemistry"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Instructor Insights"
+  - "Lecture Notes"
+description: |
+  Chemistry Behind the Magic features videos of exciting live chemistry demonstrations. The videos are enhanced by explanations of the science behind the demonstration, in a fun and easy-to-understand format. This set of videos showcases exciting live chemistry demonstrations held at MIT. Through the magic of chemistry, Dr. John Dolhun and Dr. Bassam Shakhashiri create things that steam, fizzle, and glow. Each video also provides a deeper look into the chemistry that makes it all possible. For teachers, we have provided supporting materials to help you understand and replicate the experiments in your own classrooms. These videos can be watched in any order. WARNING NOTICE The experiments described in these materials are potentially hazardous. Among other things, the experiments should include the following safety measures: a high level of safety training, special facilities and equipment, the use of proper personal protective equipment, and supervision by appropriate individuals. You bear the sole responsibility, liability, and risk for the implementation of such safety procedures and measures. MIT and Dow shall have no responsibility, liability, or risk for the content or implementation of any of the material presented. Legal Notice
+course_url: "https://ocw.mit.edu/courses/res-hs-002-chemistry-behind-the-magic-chemical-demonstrations-for-the-classroom/"
+image_url: "https://ocw.mit.edu/courses/res-hs-002-chemistry-behind-the-magic-chemical-demonstrations-for-the-classroom/chp_hands.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

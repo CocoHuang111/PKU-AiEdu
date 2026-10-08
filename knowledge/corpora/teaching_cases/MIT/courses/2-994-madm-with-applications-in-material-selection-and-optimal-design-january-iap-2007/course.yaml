@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-2-994-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.994"
+cross_listed_codes: []
+course_title: "MADM with Applications in Material Selection and Optimal Design"
+course_slug: "2-994-madm-with-applications-in-material-selection-and-optimal-design-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Abbas Sadeghzadeh Milani"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Engineering"
+  - "Materials Science and Engineering"
+  - "Systems Engineering"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course begins with a comparative review of conventional and advanced multiple attribute decision making (MADM) models in engineering practice. Next, a new application of particular MADM models in reliable material selection of sensitive structural components as well as a multi-criteria Taguchi optimization method is discussed. Other specific topics include dealing with uncertainties in material properties, incommensurability in decision-makers opinions for the same design, objective ways of weighting performance indices, rank stability analysis, compensations and non-compensations. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/2-994-madm-with-applications-in-material-selection-and-optimal-design-january-iap-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/2-994-madm-with-applications-in-material-selection-and-optimal-design-january-iap-2007/0669d2f5ce3405526c1721d9757e584f_2-994iap07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

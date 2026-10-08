@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-10-520-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.520"
+cross_listed_codes:
+  - "10.420"
+course_title: "Molecular Aspects of Chemical Engineering"
+course_slug: "10-520-molecular-aspects-of-chemical-engineering-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Paula Hammond"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Molecular Engineering"
+  - "Science"
+  - "Chemistry"
+  - "Analytical Chemistry"
+  - "Organic Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Molecular Engineering"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Analytical Chemistry"
+          - "Organic Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This class covers molecular-level engineering and analysis of chemical processes. The use of chemical bonding, reactivity, and other key concepts in the design and tailoring of organic systems are discussed in this class. Specific class topics include application and development of structure-property relationships, and descriptions of the chemical forces and structural factors that govern supramolecular and interfacial phenomena for molecular and polymeric systems.
+course_url: "https://ocw.mit.edu/courses/10-520-molecular-aspects-of-chemical-engineering-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/10-520-molecular-aspects-of-chemical-engineering-fall-2004/17cc828df8e9a5986ec838e785ef61b8_10-520f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

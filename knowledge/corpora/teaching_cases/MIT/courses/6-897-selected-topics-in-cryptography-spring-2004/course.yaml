@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-6-897-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.897"
+cross_listed_codes: []
+course_title: "Selected Topics in Cryptography"
+course_slug: "6-897-selected-topics-in-cryptography-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ran Canetti"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Cryptography"
+  - "Theory of Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Cryptography"
+          - "Theory of Computation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course covers a number of advanced “selected topics” in the field of cryptography. The first part of the course tackles the foundational question of how to define security of cryptographic protocols in a way that is appropriate for modern computer networks, and how to construct protocols that satisfy these security definitions. For this purpose, the framework of “universally composable security” is studied and used. The second part of the course concentrates on the many challenges involved in building secure electronic voting systems, from both theoretical and practical points of view. In the third part, an introduction to cryptographic constructions based on bilinear pairings is given.
+course_url: "https://ocw.mit.edu/courses/6-897-selected-topics-in-cryptography-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/6-897-selected-topics-in-cryptography-spring-2004/a38c75b4a7e4954aaa47a4362e363ba4_6-897s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

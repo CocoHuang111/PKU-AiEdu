@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-17-565-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.565"
+cross_listed_codes: []
+course_title: "Israel: History, Politics, Culture, Identity"
+course_slug: "17-565-israel-history-politics-culture-identity-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Nahum Karlinsky"
+subject_primary: "History"
+subject_secondary:
+  - "Jewish History"
+  - "Middle Eastern History"
+  - "Modern History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Political Science"
+  - "International Relations"
+  - "Public Administration"
+  - "Regional Politics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Jewish History"
+          - "Middle Eastern History"
+          - "Modern History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Regional Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course examines Israeli identity using a broad array of materials, including popular music, film, documentaries, and art, in addition to academic historical writings. Topics include Israel’s political system and society, ethnic relations, settlement projects, and the Arab minorities in the Jewish state. Students also discuss whether there is a unique Israeli culture and the struggle for Israel’s identity. Preference is given to students in the MISTI MIT-Israel program.
+course_url: "https://ocw.mit.edu/courses/17-565-israel-history-politics-culture-identity-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/17-565-israel-history-politics-culture-identity-spring-2019/b7feb615bc4ad25bf8d25b6be695ee1d_17-565s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

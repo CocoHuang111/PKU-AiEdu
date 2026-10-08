@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-001x-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.001X"
+cross_listed_codes: []
+course_title: "Foundations of World Culture I: World Civilizations and Texts"
+course_slug: "21l-001x-foundations-of-world-culture-i-world-civilizations-and-texts-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Ghenwa Hayek"
+subject_primary: "Literature"
+subject_secondary:
+  - "Classics"
+  - "Comparative Literature"
+  - "International Literature"
+  - "Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Classics"
+          - "Comparative Literature"
+          - "International Literature"
+      - name: "Philosophy"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course aims to introduce students to the rich diversity of human culture from antiquity to the early 17th century. In this course, we will explore human culture in its myriad expressions, focusing on the study of literary, religious and philosophical texts as ways of narrating, symbolizing, and commenting on all aspects of human social and material life. We will work comparatively, reading texts from various cultures: Mesopotamian, Greek, Judeo-Christian, Chinese, Indian, and Muslim. Throughout the semester, we will be asking questions like: How have different cultures imagined themselves? What are the rules that they draw up for human behavior? How do they represent the role of the individual in society? How do they imagine ‘universal’ concepts like love, family, duty? How have their writers and artists dealt with encounters with other cultures and other civilizations?
+course_url: "https://ocw.mit.edu/courses/21l-001x-foundations-of-world-culture-i-world-civilizations-and-texts-fall-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-001x-foundations-of-world-culture-i-world-civilizations-and-texts-fall-2011/eb25ca67b98c1ca9bf7a0ef0eb0f39dc_21L-001xf11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

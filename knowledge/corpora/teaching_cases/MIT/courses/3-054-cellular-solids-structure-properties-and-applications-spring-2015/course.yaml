@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-3-054-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.054"
+cross_listed_codes:
+  - "3.36"
+course_title: "Cellular Solids: Structure, Properties and Applications"
+course_slug: "3-054-cellular-solids-structure-properties-and-applications-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Lorna Gibson"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Cell and Tissue Engineering"
+  - "Materials Science and Engineering"
+  - "Mechanical Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Cell and Tissue Engineering"
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Other Video"
+  - "Projects with Examples"
+description: |
+  This course reviews the processing and structure of cellular materials as they are created from polymers, metals, ceramics, glasses, and composites, develops models for the mechanical behavior of cellular solids, and shows how the unique properties of honeycombs and foams are exploited in applications such as lightweight structural panels, energy absorption devices and thermal insulation. The applications of cellular solids in medicine include increased fracture risk due to trabecular bone loss in patients with osteoporosis, the development of metal foam coatings for orthopaedic implants, and designing porous scaffolds for tissue engineering that mimic the extracellular matrix. Modelling of cellular materials applied to natural materials and biomimicking is explored. Students taking the graduate version of the class are required to complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/3-054-cellular-solids-structure-properties-and-applications-spring-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/3-054-cellular-solids-structure-properties-and-applications-spring-2015/e320e9d8b7f51ef01a9ffaf53a3e9246_3-054s15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

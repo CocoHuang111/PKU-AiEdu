@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-18-915-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.915"
+cross_listed_codes: []
+course_title: "Graduate Topology Seminar: Kan Seminar"
+course_slug: "18-915-graduate-topology-seminar-kan-seminar-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Haynes Miller"
+subject_primary: "Topology and Geometry"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Podcasts"
+  - "Presentation Assignments"
+  - "Written Assignments with Examples"
+description: |
+  This is a literature seminar with a focus on classic papers in Algebraic Topology. It is named after the late MIT professor Daniel Kan . Each student gives one or two talks on each of three papers, chosen in consultation with the instructor, reads all the papers presented by other students, and writes reactions to the papers. This course is useful not only to students pursuing algebraic topology as a field of study, but also to those interested in symplectic geometry, representation theory, and combinatorics.
+course_url: "https://ocw.mit.edu/courses/18-915-graduate-topology-seminar-kan-seminar-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/18-915-graduate-topology-seminar-kan-seminar-fall-2014/470a8f4542a58b76a97f3cf6fc6c95d9_18-915f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

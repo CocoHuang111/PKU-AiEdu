@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-15-352-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.352"
+cross_listed_codes: []
+course_title: "Managing Innovation: Emerging Trends"
+course_slug: "15-352-managing-innovation-emerging-trends-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Eric von Hippel"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Important emerging trends in innovation are identified, and their implications for innovation management are explored. Major topics to be discussed include the trend to open information (“open source”) rather than protected intellectual property; the distribution of innovation over many independent but collaborating actors; and toolkits that empower users to innovate for themselves.
+course_url: "https://ocw.mit.edu/courses/15-352-managing-innovation-emerging-trends-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/15-352-managing-innovation-emerging-trends-spring-2005/e44c77ef19f6f320ee0cba33dcd5839c_15-352s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

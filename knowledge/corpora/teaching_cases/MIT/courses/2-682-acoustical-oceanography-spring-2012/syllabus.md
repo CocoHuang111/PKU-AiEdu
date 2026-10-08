@@ -1,0 +1,39 @@
+> 检索摘要：2.682 Acoustical Oceanography（Spring 2012，Graduate）的「Syllabus」。页内标题：Syllabus；Course Meeting Times；Description；Requirements；Special Course Notes；Grading；Calendar。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/2-682-acoustical-oceanography-spring-2012/pages/syllabus/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Syllabus
+
+### Course Meeting Times
+
+Lectures: 1 session / week, 3 hours / session (mandatory coffee break in the middle of class)
+
+### Description
+
+The Spring 2012 offering of “2.682: Acoustical Oceanography” was, for reasons of course scheduling and student needs, somewhat of an amalgam of three courses: 1) “Ocean and Seabed Acoustics”, based on the book of the same name by George Frisk, 2) “Computational Ocean Acoustics,” based on the book of that name and taught by MIT Professor Henrik Schmidt, and 3) “Acoustical Oceanography,” taught by WHOI Senior Scientist Jim Lynch. The inclusion of the wave propagation theory and numerical modeling components made the course more general; but it also meant sacrificing some of the depth of the usual acoustical oceanography component. This “realization” of the course should provide a good graduate level introduction to all three areas treated, especially if the student works seriously at the homework and term projects.
+
+### Requirements
+
+MATLAB® is required for the homework and term projects.
+
+### Special Course Notes
+
+- Students will be sent class notes and problem sets as PDF files before class.
+- I will schedule talks with each student very early in the semester to determine both their background and research interests (and thus the term project). This project has actually been fun for students in my previous courses, and I hope it will continue to be in this course.
+- I would appreciate getting an e-mail note from you with a bit of preliminary information about your background and research interests, so our meeting is not a “cold start.” Also, would appreciate your phone number if you wish to give it out—that way I can contact you (as well as by e-mail) about any class schedule changes or other events. However, given how things are nowadays, I certainly won’t insist on that last piece of information.
+- I traditionally have a “post term” lunch with students, my treat.
+
+### Grading
+
+| ACTIVITies | PERCENTAGEs |
+| --- | --- |
+| Homework | 60 |
+| Term Project | 40 |
+
+### Calendar
+
+<table><tr><th>SES #</th><th>TOPICS</th><th>KEY DATES</th></tr><tr><td colspan="3">Part I. Basics of Ocean Acoustics and Numerical Methods</td></tr><tr><td colspan="3">Fundamentals</td></tr><tr><td>1</td><td>Why bother? <br> Acoustic wave equation in 3D <br> A look at the acoustic environment <br> Simple solutions to wave equation</td><td></td></tr><tr><td>2</td><td>Potentials, Impedance, Intensity and other basic quantities <br> Boundary conditions <br> Plane wave reflection coefficient <br> Rayleigh and Fresnel reflection formulae</td><td></td></tr><tr><td>3</td><td>Basics of Green functions <br> Method of images in a waveguide <br> Lloyd mirror effect</td><td>Problem set #1 assigned</td></tr><tr><td colspan="3">Ray Theory</td></tr><tr><td>4</td><td>Basic assumptions <br> Eikonal and transport equation derivations <br> Solution of transport equation (ray tube) <br> Solution of eikonal equation (ray codes/numerical solutions)</td><td></td></tr><tr><td>5</td><td>Coherent and incoherent propagation loss <br> Fermat’s principle <br> Fresnel sones/Fresnel tubes <br> Gaussian beams <br> WKB ray theory and transition from rays to modes</td><td>Problem set #1 due <br> Problem set #2 assigned</td></tr><tr><td colspan="3">Normal mode theory and wavenumber integration</td></tr><tr><td>6</td><td>Sturm-Liouville problem <br> Separation of variables solutions <br> Hard bottom waveguide <br> Intro to modal continuum <br> Mode cycle distance, phase velocity, group velocity <br> Pekeris waveguide</td><td></td></tr><tr><td>7</td><td>Continuum effects—EJP branch line integral <br> Hankel transform and wavenumber integration techniques <br> Range dependence and coupled mode theory <br> The adiabatic mode approximation <br> Some real-world examples of mode-coupling solutions <br> A simplified coupled equation system <br> Supplemental material on endpoint methods and normal modes</td><td>Problem set #2 due <br> Problem set #3 assigned</td></tr><tr><td>8</td><td>Ray-mode picture connection <br> Rays as interfering modes <br> Horizontal rays and vertical modes—a simple 3D acoustics approach <br> Modal propagation in a coastal wedge <br> The “horizontal Lloyd’s mirror” <br> Perturbation theory approach to attenuation, soundspeed changes, and group velocity</td><td></td></tr><tr><td>9</td><td>Normal mode numerical methods—general discussion <br> Finite difference mode solution <br> Shooting method solution <br> Root finder solution <br> “Stepwise coupled modes” solution to full range dependent waveguide <br> Wavenumber integration techniques—general discussion <br> Fast field approximation to Hankel transform <br> Truncation of integration intervals, discretization, aliasing</td><td>Problem set #3 due <br> Problem set #4 assigned</td></tr><tr><td colspan="3">Parabolic Equation—PE</td></tr><tr><td>10</td><td>Derivation of simple PE <br> Numerical solution to PE—marching solution <br> Comparison of PE with normal mode solution <br> Wide angle PE and the Pade approximation <br> Implicit Finite Difference (IFD) solution to PE <br> A simple PE Code (needed for term project on numerical methods)</td><td></td></tr><tr><td colspan="3">Assorted Topics of Interest</td></tr><tr><td>11</td><td>Ray/mode picture revisited—modes as interfering rays and how to distinguish ray vs. mode multipath arrivals <br> Filtration of modes and rays using vertical and horizontal arrays <br> Matched field processing <br> Time reversal mirror of the sound field</td><td>Problem set #4 due</td></tr><tr><td colspan="3">Rough Surface Scattering in a Nutshell</td></tr><tr><td>12</td><td>Verbal description of surface, volume, and bottom scatterers in the ocean <br> Statistical characterization of rough surfaces <br> Method of small perturbations (MSP) <br> Average intensity in MSP <br> Attenuation of the coherent component <br> Helmholtz integral and scattering approximations to it <br> Modal scattering in a shallow water waveguide</td><td>Problem set #5 assigned</td></tr><tr><td colspan="3">Part II. Acoustical Oceanography and Inverse Methods</td></tr><tr><td colspan="3">Acoustical Oceanography</td></tr><tr><td>13</td><td>Brief review of physical oceanography and its acoustic effects <br> Munk Award Lecture on “Acoustical oceanography and shallow water acoustics”</td><td></td></tr><tr><td colspan="3">Acoustical Oceanography Instrumentation—Brief Overview</td></tr><tr><td>14</td><td>Ocean acoustic tomography <br> RAFOS and SOFAR floats <br> Inverted Echo sounders <br> Pegasus profiler <br> Acoustic backscatter imaging of buoyant plumes <br> Acoustic Doppler Current Profilers (ADCPs)</td><td>Problem set #5 due</td></tr><tr><td colspan="3">Inverse theory</td></tr><tr><td>15</td><td>Classes of inverse problems and some examples <br> Empirical Orthogonal Functions and objective analysis interpolation <br> Linear inversion basics—the Lanczos decomposition and generalized inverse <br> Resolution and variance <br> Tikhonov regularization, ill-posedness, condition number <br> Additional regularization constraints—bounds and Lagrange multipliers <br> An example of inversion—ocean seabed properties</td><td></td></tr><tr><td>16</td><td>Bayesian methods <br> Example of Bayesian inversion for seabed properties <br> Nonlinear methods—simulated annealing and genetic algorithms <br> Example of nonlinear inverse for seabed properties</td><td>Term project due</td></tr></table>

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-15-014-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.014"
+cross_listed_codes: []
+course_title: "Applied Macro- and International Economics II"
+course_slug: "15-014-applied-macro-and-international-economics-ii-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Roberto Rigobon"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+  - "International Economics"
+  - "Macroeconomics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "International Economics"
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Open Textbooks"
+  - "Written Assignments"
+description: |
+  This course seeks to establish understanding of the development processes of societies and economies by studying several dimensions of sustainability (environmental, social, political, institutional, economy, organizational, relational, and personal) and the balance among them. It explores the basics of governmental intervention, focusing on areas such as the judicial system, environment, social security, and health, and builds skills to determine what type of policy is most appropriate. We also consider implications of new technologies on the financial sector: Internationalization of currencies, mobile payment systems, and cryptocurrencies, and discuss the institutional framework to ensure choices are sustainable across all dimensions and applications.
+course_url: "https://ocw.mit.edu/courses/15-014-applied-macro-and-international-economics-ii-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/15-014-applied-macro-and-international-economics-ii-spring-2016/d686cf6a333355c598562fc4aa8b4cdc_15-014s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

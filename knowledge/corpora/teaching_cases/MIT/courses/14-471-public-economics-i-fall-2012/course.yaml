@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-14-471-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.471"
+cross_listed_codes: []
+course_title: "Public Economics I"
+course_slug: "14-471-public-economics-i-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. James Poterba"
+  - "Prof. Iván Werning"
+subject_primary: "Economics"
+subject_secondary:
+  - "Public Economics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Public Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers theory and evidence on government taxation policy. Topics include tax incidence, optimal tax theory, the effect of taxation on labor supply and savings, taxation and corporate behavior, and tax expenditure policy.
+course_url: "https://ocw.mit.edu/courses/14-471-public-economics-i-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/14-471-public-economics-i-fall-2012/fc3e7c73337605fb7f4ace9f7cd5c8e8_14-471f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

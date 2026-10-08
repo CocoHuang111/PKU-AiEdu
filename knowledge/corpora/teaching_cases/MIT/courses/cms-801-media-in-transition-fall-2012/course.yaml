@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-801-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.801"
+cross_listed_codes: []
+course_title: "Media in Transition"
+course_slug: "cms-801-media-in-transition-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jeffrey S. Ravel"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course centers on historical eras in which the form and function of media technologies were radically transformed. It includes consideration of the “Gutenberg Revolution,” the rise of modern mass media, and the “digital revolution,” among other case studies of media transformation and cultural change. Readings are in cultural and social history and historiographic method.
+course_url: "https://ocw.mit.edu/courses/cms-801-media-in-transition-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/cms-801-media-in-transition-fall-2012/e4e1a4be085930d7fb9bf9f41c52ad67_cms-801f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,26 @@
+> 检索摘要：18.440 Probability and Random Variables（Spring 2014，Undergraduate）的「Assignments」。页内标题：Assignments。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+Assignments include problems from the required textbook.
+
+Ross, Sheldon. *A First Course in Probability*. 8th ed. Pearson Prentice Hall, 2009. ISBN: 9780136033134.
+
+| DUE IN SES # | ASSIGNMENTS |
+| --- | --- |
+| 5 | [Problem Set 1 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset1/) |
+| 9 | [Problem Set 2 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset2/) |
+| 11 | [Problem Set 3 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset3/) |
+| 14 | [Problem Set 4 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset4/) |
+| 20 | [Problem Set 5 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset5/) |
+| 23 | [Problem Set 6 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset6/) |
+| 26 | [Problem Set 7 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset7/) |
+| 31 | [Problem Set 8 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset8/) |
+| 34 | [Problem Set 9 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset9/) |
+| 37 | [Problem Set 10 (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_problemset10/) <br> , plus <br> [Martingale Note (PDF)](https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/resources/mit18_440s14_mrtingalenote/) |

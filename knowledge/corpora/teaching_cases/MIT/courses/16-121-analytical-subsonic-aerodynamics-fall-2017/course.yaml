@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-16-121-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.121"
+cross_listed_codes: []
+course_title: "Analytical Subsonic Aerodynamics"
+course_slug: "16-121-analytical-subsonic-aerodynamics-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Wesley Harris"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Aerodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Aerodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This subject is designed to inform students on the analytical foundations of inviscid subsonic aerodynamics. A primary goal of this subject is to equip students with the scientific rigor, applied mathematical complexity, and physical understanding that form the foundation of classical subsonic aerodynamics. Perturbation methods that both simplify mathematical complexity and expand physical understanding of critical phenomenon in fluid flow provides a framework for the subject. The subject offers lectures in classical subsonic aerodynamics at the graduate level on inviscid, subsonic, steady flow over slender aerodynamic bodies. Topics will be selected from: fundamentals of fluid mechanics [review]; singular-perturbation methods [introduction, JIT]; similitude; subsonic flows with axial symmetry; linearized subsonic flow; slender body theory; similarity rules for subsonic flows; two-dimensional flow past a wave-shaped wall; thin wing theory; Kaplan’s higher approximations.
+course_url: "https://ocw.mit.edu/courses/16-121-analytical-subsonic-aerodynamics-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/16-121-analytical-subsonic-aerodynamics-fall-2017/f90f8d184d192834954581bd81377a46_16-121f17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-6-896-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.896"
+cross_listed_codes: []
+course_title: "Theory of Parallel Hardware (SMA 5511)"
+course_slug: "6-896-theory-of-parallel-hardware-sma-5511-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Bradley Kuszmaul"
+  - "Prof. Charles Leiserson"
+  - "Prof. Michael Bender"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Computer Design and Engineering"
+  - "Theory of Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Computer Design and Engineering"
+          - "Theory of Computation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  6.896 covers mathematical foundations of parallel hardware, from computer arithmetic to physical design, focusing on algorithmic underpinnings. Topics covered include: arithmetic circuits, parallel prefix, systolic arrays, retiming, clocking methodologies, boolean logic, sorting networks, interconnection networks, hypercubic networks, P-completeness, VLSI layout theory, reconfigurable wiring, fat-trees, and area-time complexity. This course was also taught as part of the Singapore-MIT Alliance (SMA) programme as course number SMA 5511 (Theory of Parallel Hardware).
+course_url: "https://ocw.mit.edu/courses/6-896-theory-of-parallel-hardware-sma-5511-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/6-896-theory-of-parallel-hardware-sma-5511-spring-2004/e8e0828faea77f59f1e7dc81ac31674d_6-896s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

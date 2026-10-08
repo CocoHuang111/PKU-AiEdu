@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-871-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.871"
+cross_listed_codes: []
+course_title: "Knowledge-Based Applications Systems"
+course_slug: "6-871-knowledge-based-applications-systems-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Randall Davis"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Artificial Intelligence"
+  - "Data Mining"
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Data Mining"
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course covers the development of programs containing a significant amount of knowledge about their application domain. The course includes a brief review of relevant AI techniques; case studies from a number of application domains, chosen to illustrate principles of system development; a discussion of technical issues encountered in building a system, including selection of knowledge representation, knowledge acquisition, etc.; and a discussion of current and future research. The course also provides hands-on experience in building an expert system (term project).
+course_url: "https://ocw.mit.edu/courses/6-871-knowledge-based-applications-systems-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/6-871-knowledge-based-applications-systems-spring-2005/d56b8cb5b67c4cd669c5714057c2981a_6-871s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

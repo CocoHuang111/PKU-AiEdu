@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-951-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.951"
+cross_listed_codes: []
+course_title: "Workshop II: Qualitative Social Science Methods for Media Studies"
+course_slug: "cms-951-workshop-ii-qualitative-social-science-methods-for-media-studies-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ian Condry"
+  - "Prof. T. L. Taylor"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Social Science"
+  - "Anthropology"
+  - "Ethnography"
+  - "Social Anthropology"
+  - "Communication"
+  - "Sociology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Ethnography"
+          - "Social Anthropology"
+      - name: "Communication"
+        specialties: []
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course focuses on a number of qualitative social science methods that can be productively used in media studies research including interviewing, participant observation, focus groups, cultural probes, visual sociology, and ethnography. The emphasis will primarily be on understanding and learning concrete techniques that can be evaluated for their usefulness in any given project and utilized as needed. Data organization and analysis will be addressed. Several advanced critical thematics will also be covered, including ethics, reciprocity, “studying up,” and risk. The course will be taught via a combination of lectures, class discussions, group exercises, and assignments. This course requires a willingness to work hands-on with learning various social science methods and a commitment to the preparation for such (including reading, discussion, and reflection).
+course_url: "https://ocw.mit.edu/courses/cms-951-workshop-ii-qualitative-social-science-methods-for-media-studies-spring-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/cms-951-workshop-ii-qualitative-social-science-methods-for-media-studies-spring-2015/6b07d0ab39cadeacf4395312ec699e48_cms-951s15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-110-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.110"
+cross_listed_codes: []
+course_title: "Anthropological Theory"
+course_slug: "21a-110-anthropological-theory-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Susan S. Silbey"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course introduces students to some of the major social theories and debates that inspire and inform anthropological analysis. Over the course of the semester, we will investigate a range of theoretical propositions concerning such topics as agency, structure, subjectivity, history, social change, power, culture, and the politics of representation. Ultimately, all theories can be read as statements about human beings and the worlds they create and inhabit. We will approach each theoretical perspective or proposition on three levels: (1) in terms of its analytical or explanatory power for understanding human behavior and the social world; (2) in the context of the social and historical circumstances in which they were produced; and (3) as contributions to ongoing dialogues and debate.
+course_url: "https://ocw.mit.edu/courses/21a-110-anthropological-theory-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/21a-110-anthropological-theory-spring-2003/cdbd328e4d6a45b1003606f6b7eb5646_21a-110s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

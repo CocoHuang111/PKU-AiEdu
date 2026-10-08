@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-14-54-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.54"
+cross_listed_codes: []
+course_title: "International Trade"
+course_slug: "14-54-international-trade-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Arnaud Costinot"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+  - "International Economics"
+  - "Macroeconomics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+          - "International Economics"
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course will analyze the causes and consequences of international trade and investment. We will investigate why nations trade, what they trade, and who gains (or not) from this trade. We will then analyze the motives for countries or organizations to restrict or regulate international trade and study the effects of such policies on economic welfare. Topics covered will include the effects of trade on economic growth and wage inequality, multinationals and foreign direct investment, international trade agreements and current trade policy disputes.
+course_url: "https://ocw.mit.edu/courses/14-54-international-trade-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/14-54-international-trade-fall-2016/7f6a4910fef95f7f4009e920f4403986_14-54f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

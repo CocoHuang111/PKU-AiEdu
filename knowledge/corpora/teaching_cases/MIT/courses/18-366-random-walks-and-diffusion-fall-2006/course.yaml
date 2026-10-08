@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-18-366-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.366"
+cross_listed_codes: []
+course_title: "Random Walks and Diffusion"
+course_slug: "18-366-random-walks-and-diffusion-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Martin Bazant"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This graduate-level subject explores various mathematical aspects of (discrete) random walks and (continuum) diffusion. Applications include polymers, disordered media, turbulence, diffusion-limited aggregation, granular flow, and derivative securities.
+course_url: "https://ocw.mit.edu/courses/18-366-random-walks-and-diffusion-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/18-366-random-walks-and-diffusion-fall-2006/f3789f44aae2de9cf675ad3fbd78e4c8_18-366f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

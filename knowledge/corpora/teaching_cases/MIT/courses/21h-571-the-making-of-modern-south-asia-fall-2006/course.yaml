@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-571-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.571"
+cross_listed_codes: []
+course_title: "The Making of Modern South Asia"
+course_slug: "21h-571-the-making-of-modern-south-asia-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Haimanti Roy"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Survey of Indian civilization from 2500 BC to present-day. Traces major political events as well as economic, social, ecological, and cultural developments. Primary and secondary readings enhance understanding of this unique civilization, and shape and improve understanding in analyzing and interpreting historical data. Examines major thematic debates in Indian history through class discussion.
+course_url: "https://ocw.mit.edu/courses/21h-571-the-making-of-modern-south-asia-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21h-571-the-making-of-modern-south-asia-fall-2006/a4ad8e00d9ad1d0068f49be2a556c272_21h-571f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

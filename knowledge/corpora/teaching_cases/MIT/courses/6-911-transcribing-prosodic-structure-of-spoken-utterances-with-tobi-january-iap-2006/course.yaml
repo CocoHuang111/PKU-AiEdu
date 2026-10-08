@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-6-911-january-iap-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.911"
+cross_listed_codes: []
+course_title: "Transcribing Prosodic Structure of Spoken Utterances with ToBI"
+course_slug: "6-911-transcribing-prosodic-structure-of-spoken-utterances-with-tobi-january-iap-2006"
+term: "January IAP"
+year: 2006
+as_taught_in: "January IAP 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Nanette Veilleux"
+  - "Dr. Stefanie Shattuck-Hufnagel"
+  - "Dr. Alejna Brugos"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Electrical Engineering"
+  - "Signal Processing"
+  - "Humanities"
+  - "Linguistics"
+  - "Phonology"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Phonology"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+description: |
+  This course presents a tutorial on the ToBI (Tones and Break Indices) system, for labelling certain aspects of prosody in Mainstream American English (MAE-ToBI). The course is appropriate for undergrad or grad students with background in linguistics (phonology or phonetics), cognitive psychology (psycholinguistics), speech acoustics or music, who wish to learn about the prosody of speech, i.e. the intonation, rhythm, grouping and prominence patterns of spoken utterances, prosodic differences that signal meaning and phonetic implementation. Please submit any feedback about the course content using the user survey .
+course_url: "https://ocw.mit.edu/courses/6-911-transcribing-prosodic-structure-of-spoken-utterances-with-tobi-january-iap-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/6-911-transcribing-prosodic-structure-of-spoken-utterances-with-tobi-january-iap-2006/e4ecc12291e49a631adb607b623dc5cf_6-911iap06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

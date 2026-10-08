@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-14-15-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.15"
+cross_listed_codes:
+  - "6.207"
+  - "14.150"
+course_title: "Networks"
+course_slug: "14-15-networks-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "Economics"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Alexander Wolitzky"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Networks"
+  - "Social Science"
+  - "Economics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Networks"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Networks are ubiquitous in our modern society. The World Wide Web that links us to the rest of the world is the most visible example. But it is only one of many networks in which we are situated. Our social life is organized around networks of friends and colleagues. These networks determine our information, influence our opinions, and shape our political attitudes. They also link us, often through weak but important ties, to everybody else in the United States and in the world. This course will introduce the tools for the study of networks. It will show how certain common principles permeate the functioning of these diverse networks and how the same issues related to robustness, fragility, and interlinkages arise in many different types of networks.
+course_url: "https://ocw.mit.edu/courses/14-15-networks-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/14-15-networks-spring-2022/14-15s22.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

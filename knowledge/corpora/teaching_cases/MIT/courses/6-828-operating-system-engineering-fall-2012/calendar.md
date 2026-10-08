@@ -1,0 +1,38 @@
+> 检索摘要：6.828 Operating System Engineering（Fall 2012，Graduate）的「Calendar」。页内标题：Calendar。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/6-828-operating-system-engineering-fall-2012/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+| LEC # | TOPICS | KEY DATES |
+| --- | --- | --- |
+| 1 | Operating Systems | Lab 1 Out |
+| 2 | PC Hardware and x86 Programming |  |
+| 3 | Overview of Major Internals, System Call Interface | Lab 1 due one day after Lecture 3 <br> Lab 2 Out |
+| 4 | Virtual Memory |  |
+| 5 | Interrupts, Exceptions |  |
+| 6 | Multiprocessors and Locking |  |
+| 7 | Processes and Switching | Lab 2 due one day after Lecture 7 <br> Lab 3 Out |
+| 8 | Sleep & Wakeup |  |
+| 9 | File Systems | Lab 3 (part A) due one day after Lecture 9 |
+| 10 | Crash Recovery | Lab 3 (part B) due one day after Lecture 10 <br> Lab 4 Out |
+| 11 | File System Performance and Fast Crash Recovery |  |
+| 12 | Project Introduction and Discussion | Lab 4 (part A) due one day after Lecture 12 |
+| 13 | OS Organization |  |
+| 14 | In-class Hacking Session | Lab 4 (part B) due one day after Lecture 14 |
+| 15 | Project Conferences | Lab 4 (part C) due one day after Lecture 15 <br> Lab 5 Out |
+| 16 | Project Conferences (cont.) |  |
+| 17 | Language / OS Co-design | Lab 5 due one day after Lecture 17 |
+| Quiz | Quiz (Open Book and Notes) |  |
+| 18 | Scalable Locks | Initial Project Demo Due |
+| 19 | Project Conferences |  |
+| 20 | Project Conferences (cont.) |  |
+| 21 | Lock-free Coordination |  |
+| 22 | Virtual Machines |  |
+| 23 | No lecture; work on final projects |  |
+| 24 | Demos in class |  |
+| 25 | Demos in class (cont.) |  |

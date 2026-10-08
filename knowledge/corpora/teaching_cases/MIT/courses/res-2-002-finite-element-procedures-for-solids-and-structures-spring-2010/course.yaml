@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-res-2-002-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.2-002"
+cross_listed_codes: []
+course_title: "Finite Element Procedures for Solids and Structures"
+course_slug: "res-2-002-finite-element-procedures-for-solids-and-structures-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Klaus-Jürgen Bathe"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Solid Mechanics"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Numerical Simulation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Numerical Simulation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  Finite element analysis is now widely used for solving complex static and dynamic problems encountered in engineering and the sciences. In these two video courses, Professor K. J. Bathe , a researcher of world renown in the field of finite element analysis, teaches the basic principles used for effective finite element analysis, describes the general assumptions, and discusses the implementation of finite element procedures for linear and nonlinear analyses. These videos were produced in 1982 and 1986 by the MIT Center for Advanced Engineering Study.
+course_url: "https://ocw.mit.edu/courses/res-2-002-finite-element-procedures-for-solids-and-structures-spring-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/res-2-002-finite-element-procedures-for-solids-and-structures-spring-2010/ef055f740523e2ff98b3dc664239d9a6_res-2-002s10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

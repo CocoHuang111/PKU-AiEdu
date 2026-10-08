@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-s10-spring-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.S10"
+cross_listed_codes: []
+course_title: "Black Feminist Health Science Studies"
+course_slug: "wgs-s10-black-feminist-health-science-studies-spring-2021"
+term: "Spring"
+year: 2021
+as_taught_in: "Spring 2021"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Moya Bailey"
+subject_primary: "Social Medicine"
+subject_secondary:
+  - "Social Science"
+  - "Sociology"
+  - "Social Justice"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Social Medicine"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Media Assignments with Examples"
+description: |
+  Black feminist health science studies is a critical intervention into a number of intersecting arenas of scholarship and activism, including feminist health studies, contemporary medical curriculum reform conversations, and feminist technoscience studies. We argue towards a theory of Black feminist health science studies that builds on social justice science, which has as its focus the health and well-being of marginalized groups. Students will engage feminist science theories such as the linguistic metaphors of the immune system, the medicalization of race, and critiques of the sexual binary. We will use contemporary as well as historical moments to investigate the evolution of “scientific truth” and its impact on the U.S. cultural landscape.
+course_url: "https://ocw.mit.edu/courses/wgs-s10-black-feminist-health-science-studies-spring-2021/"
+image_url: "https://ocw.mit.edu/courses/wgs-s10-black-feminist-health-science-studies-spring-2021/ab9fee221168801d4d3129c9f06437d2_WGS-S10s21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

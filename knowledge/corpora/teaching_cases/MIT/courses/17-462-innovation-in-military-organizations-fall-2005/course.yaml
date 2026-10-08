@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-17-462-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.462"
+cross_listed_codes: []
+course_title: "Innovation in Military Organizations"
+course_slug: "17-462-innovation-in-military-organizations-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Barry Posen"
+  - "Prof. Harvey Sapolsky"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Organizational Behavior"
+  - "Humanities"
+  - "History"
+  - "Military History"
+  - "Social Science"
+  - "Public Administration"
+  - "Military Studies"
+  - "Security Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Military History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+          - "Security Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This seminar has three purposes. One, it inquires into the causes of military innovation by examining a number of the most outstanding historical cases. Two, it views military innovations through the lens of organization theory to develop generalizations about the innovation process within militaries. Three, it uses the empirical study of military innovations as a way to examine the strength and credibility of hypotheses that organization theorists have generated about innovation in non-military organizations.
+course_url: "https://ocw.mit.edu/courses/17-462-innovation-in-military-organizations-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/17-462-innovation-in-military-organizations-fall-2005/4df219e12d88b904cb1780beb0cbf296_17-462f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

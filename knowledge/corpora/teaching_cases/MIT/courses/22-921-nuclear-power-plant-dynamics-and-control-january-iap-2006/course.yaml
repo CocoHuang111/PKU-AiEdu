@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-22-921-january-iap-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.921"
+cross_listed_codes: []
+course_title: "Nuclear Power Plant Dynamics and Control"
+course_slug: "22-921-nuclear-power-plant-dynamics-and-control-january-iap-2006"
+term: "January IAP"
+year: 2006
+as_taught_in: "January IAP 2006"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. John A. Bernard"
+subject_primary: "Nuclear Energy"
+subject_secondary:
+  - "Engineering"
+  - "Mechanical Engineering"
+  - "Dynamics and Control"
+  - "Nuclear Engineering"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Nuclear Energy"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+      - name: "Nuclear Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This short course provides an introduction to reactor dynamics including subcritical multiplication, critical operation in absence of thermal feedback effects and effects of Xenon, fuel and moderator temperature, etc. Topics include the derivation of point kinetics and dynamic period equations; techniques for reactor control including signal validation, supervisory algorithms, model-based trajectory tracking, and rule-based control; and an overview of light-water reactor startup. Lectures and demonstrations employ computer simulation and the use of the MIT Research Reactor. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/22-921-nuclear-power-plant-dynamics-and-control-january-iap-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/22-921-nuclear-power-plant-dynamics-and-control-january-iap-2006/49e8c791b9a4332cbd2e60860cfd5cb8_22-921iap06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,11 @@
+> 检索摘要：11.S196 Global Freshwater Crisis（Spring 2011，Undergraduate）的「Calendar」。页内标题：Calendar。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/11-s196-global-freshwater-crisis-spring-2011/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+<table><tr><th>WEEK #</th><th>TOPICS</th><th>KEY DATES</th></tr><tr><td>1</td><td>Water for life: Commons, commodity, nature/culture</td><td></td></tr><tr><td>2</td><td>Water, history, and culture</td><td></td></tr><tr><td rowspan="2">3</td><td>Water resources: The physical system, weather, and climate</td><td rowspan="2">Quiz 1</td></tr><tr><td>Water law</td></tr><tr><td rowspan="2">4</td><td>Water power; Field trip 1: Lowell National Historical Park</td></tr><tr><td>Water management</td></tr><tr><td rowspan="2">5</td><td>China’s Three Gorges Dam Controversy</td><td rowspan="2"></td></tr><tr><td>Dams, reservoirs, and hydropower</td></tr><tr><td rowspan="3">6</td><td>Water scarcity</td></tr><tr><td>Water pollution</td></tr><tr><td>Water and energy: Hydraulic fracturing</td></tr><tr><td rowspan="2">7</td><td>Field trip 2: Cambridge Water Treatment Plant</td><td rowspan="2">Quiz 2</td></tr><tr><td>Water, sanitation, hygiene (WASH)</td></tr><tr><td rowspan="2">8</td><td>WASH; Pure Home Water (NGO in Ghana)</td></tr><tr><td>Water and climate change</td></tr><tr><td rowspan="2">9</td><td>Water conflict and cooperation</td><td rowspan="2">Term project due</td></tr><tr><td>Watersheds, landscape and urban design; Adaption through policy planning, management, and economic tools</td></tr><tr><td rowspan="2">10</td><td>Adaptive technologies</td><td rowspan="2">Quiz 3</td></tr><tr><td>Adaption: Integrated water resources management</td></tr><tr><td>11</td><td>Ecological waterscapes</td><td></td></tr><tr><td rowspan="2">12</td><td>Protecting water: Green roofs, rainwater harvesting, and waste stabilization ponds</td></tr><tr><td>Water footprint</td></tr><tr><td rowspan="2">13</td><td>Water, food security, and agriculture</td><td rowspan="2">Quiz 4</td></tr><tr><td>Field trip 3: New Charles River Dam and Massachusetts Dams</td></tr><tr><td>14</td><td>Student presentations; Water visions: The next 50 years</td><td>Extra credit term project upgrade due</td></tr></table>

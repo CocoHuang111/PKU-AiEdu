@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-15-778-summer-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.778"
+cross_listed_codes: []
+course_title: "Management of Supply Networks for Products and Services"
+course_slug: "15-778-management-of-supply-networks-for-products-and-services-summer-2004"
+term: "Summer"
+year: 2004
+as_taught_in: "Summer 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gabriel Bitran"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Supply Chain Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course covers organizational, strategic and operational aspects of managing Supply Networks (SNs) from domestic and international perspectives. Topics include alternative SN structures, strategic alliances, design of delivery systems and the role of third party logistics providers. Many of the activities exchanged among enterprises in a SN are of a service nature, and the final output is often a combination of tangible products and services which the end-customer purchases. A series of concepts, frameworks and analytic tools are provided to better understand the management of service operations. Guest speakers share their experiences in managing SNs and services. Restricted to MIT Sloan Fellows in Innovation and Global Leadership.
+course_url: "https://ocw.mit.edu/courses/15-778-management-of-supply-networks-for-products-and-services-summer-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/15-778-management-of-supply-networks-for-products-and-services-summer-2004/9bf35c1430ffa1e1c8a85a3f1ddab849_15-778su07.JPG
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-224-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.224"
+cross_listed_codes: []
+course_title: "Technical Design: Scenery, Mechanisms, and Special Effects"
+course_slug: "21m-735-technical-design-scenery-mechanisms-and-special-effects-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Michael Katz"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+  - "Fine Arts"
+  - "Performance Arts"
+  - "Theatrical Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theatrical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This class looks at the special structural and practical needs of theatrical scenery and effects and how they can be constructed. We map the technical design process from initial meetings to realization on stage. The class emphasizes safety, budgeting, and problem solving. Ten 1-3 page Tech notes are required as well as a final project. Work includes actual production assignments as well as paper design projects.
+course_url: "https://ocw.mit.edu/courses/21m-735-technical-design-scenery-mechanisms-and-special-effects-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/21m-735-technical-design-scenery-mechanisms-and-special-effects-spring-2004/bcf9fbca09e63a787bedeb10e4c2a4df_21m-735s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

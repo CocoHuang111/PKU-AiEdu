@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-11-946j-summer-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.946J"
+cross_listed_codes:
+  - "4.185J"
+course_title: "Beijing Urban Design Studio"
+course_slug: "11-946j-beijing-urban-design-studio-summer-2004"
+term: "Summer"
+year: 2004
+as_taught_in: "Summer 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dennis Frenchman"
+  - "Prof. Jan Wampler"
+  - "Kenneth Kruckemeyer"
+  - "Prof. Paul Lukez"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Social Science"
+  - "Economics"
+  - "International Development"
+  - "Political Science"
+  - "International Relations"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "International Development"
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Projects with Examples"
+description: |
+  The Beijing Urban Design Studio is a joint program between the MIT and Tsinghua University Schools of Architecture and Planning. The goal of the studio is to foster international cooperation through the undertaking of a joint urban design and planning initiative in the city of Beijing involving important, often controversial, sites and projects. Since 1995, almost 250 MIT and Tsinghua University students and faculty have participated in this annual studio, making it one of the most successful and enduring international academic programs between China and the US. It has received the Irwin Sizer Award from MIT for outstanding innovation in education. The studio takes place over five weeks in June and July including several weeks in residence at Tsinghua University and two brief study tours to locations and projects that inform the work. It will include 18-20 MIT and 10-15 Tsinghua Architecture and Planning students. The Beijing City Planning Institute, responsible for strategic planning in the city, participates in the studio as the client.
+course_url: "https://ocw.mit.edu/courses/11-946j-beijing-urban-design-studio-summer-2004/"
+image_url: "https://ocw.mit.edu/courses/11-946j-beijing-urban-design-studio-summer-2004/f1495a8bea5c73d67ea413a4929c9b92_11-946jsu04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

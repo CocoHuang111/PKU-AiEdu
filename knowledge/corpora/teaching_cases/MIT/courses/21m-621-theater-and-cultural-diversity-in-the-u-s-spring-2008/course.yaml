@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-1001-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.1001"
+cross_listed_codes:
+  - "WGS.595"
+course_title: "Theater and Cultural Diversity in the U.S."
+course_slug: "21m-621-theater-and-cultural-diversity-in-the-u-s-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Thomas DeFrantz"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Humanities"
+  - "Literature"
+  - "Creative Writing"
+  - "Criticism"
+  - "Drama"
+  - "Social Science"
+  - "Anthropology"
+  - "Ethnography"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Criticism"
+          - "Drama"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Ethnography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This course explores contemporary American theatrical expression as it may be organized around issues of gender and cultural identity. This exploration will include the analysis of performances, scripts, and video documentation, as well as the invention of original documents of theatrical expression. Class lectures and discussions will analyze samples of Native American, Chicano, African American, and Asian American theater, taking into consideration the historical and political context for the creation of these works. Performance exercises will help students identify theatrical forms and techniques used by these theaters, and how these techniques contribute to the overall goals of specific theatrical expressions.
+course_url: "https://ocw.mit.edu/courses/21m-621-theater-and-cultural-diversity-in-the-u-s-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/21m-621-theater-and-cultural-diversity-in-the-u-s-spring-2008/c99384308b183e2d43602269f11150dc_21m-621s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

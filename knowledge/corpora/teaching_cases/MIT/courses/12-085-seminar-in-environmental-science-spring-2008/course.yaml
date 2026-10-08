@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-12-085-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.085"
+cross_listed_codes: []
+course_title: "Seminar in Environmental Science"
+course_slug: "12-085-seminar-in-environmental-science-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Daniel Rothman"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Climate Studies"
+  - "Environmental Science"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+          - "Environmental Science"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  Required for all Earth, Atmospheric, and Planetary Sciences majors in the Environmental Science track, this course is an introduction to current research in the field. Stresses integration of central scientific concepts in environmental policy making and the chemistry, biology, and geology environmental science tracks. Revisits selected core themes for students who have already acquired a basic understanding of environmental science concepts. The topic for this term is geoengineering.
+course_url: "https://ocw.mit.edu/courses/12-085-seminar-in-environmental-science-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/12-085-seminar-in-environmental-science-spring-2008/12-085s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

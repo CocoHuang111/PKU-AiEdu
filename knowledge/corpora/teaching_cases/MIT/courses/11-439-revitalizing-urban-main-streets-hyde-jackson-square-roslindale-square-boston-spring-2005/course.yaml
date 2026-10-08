@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-11-439-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.439"
+cross_listed_codes: []
+course_title: "Revitalizing Urban Main Streets: Hyde/Jackson Square & Roslindale Square, Boston"
+course_slug: "11-439-revitalizing-urban-main-streets-hyde-jackson-square-roslindale-square-boston-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Karl Seidman"
+  - "Prof. Susan Silberberg"
+subject_primary: "Economics"
+subject_secondary:
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course focuses on the physical and economic renewal of urban neighborhood Main Streets by combining classroom work with an applied class project. The course content covers four broad areas: an overview of the causes for urban business district decline, the challenges faced in revitalization and the type of revitalization strategies employed; the physical and economic development planning tools used to understand and assess urban Main Streets from physical design and economic development perspectives; the policies, interventions, and investments used to foster urban commercial revitalization; and the formulation of a revitalization plan for an urban commercial district.
+course_url: "https://ocw.mit.edu/courses/11-439-revitalizing-urban-main-streets-hyde-jackson-square-roslindale-square-boston-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/11-439-revitalizing-urban-main-streets-hyde-jackson-square-roslindale-square-boston-spring-2005/1636a77f3cbcbef89872d529bb319f7f_chp_gateways.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

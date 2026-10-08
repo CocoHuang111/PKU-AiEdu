@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-342-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.342"
+cross_listed_codes: []
+course_title: "Environmental Struggles"
+course_slug: "21a-342-environmental-struggles-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christine Walley"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Ethnography"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class explores the interrelationship between humans and natural environments. It does so by focusing on conflict over access to and use of the environment as well as ideas about "nature" in various parts of the world.
+course_url: "https://ocw.mit.edu/courses/21a-342-environmental-struggles-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/21a-342-environmental-struggles-fall-2004/730bba11ceccc7917404e1accf97f4e2_21a-342f04.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

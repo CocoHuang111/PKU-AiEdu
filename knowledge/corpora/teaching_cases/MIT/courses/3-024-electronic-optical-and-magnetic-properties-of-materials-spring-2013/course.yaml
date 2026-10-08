@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-3-024-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.024"
+cross_listed_codes: []
+course_title: "Electronic, Optical and Magnetic Properties of Materials"
+course_slug: "3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Polina Anikeeva"
+  - "Prof. Geoffrey Beach"
+  - "Niels Holten-Andersen"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Nanotechnology"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course describes how electronic, optical and magnetic properties of materials originate from their electronic and molecular structure and how these properties can be designed for particular applications. It offers experimental exploration of the electronic, optical and magnetic properties of materials through hands-on experimentation and practical materials examples.
+course_url: "https://ocw.mit.edu/courses/3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/3-024-electronic-optical-and-magnetic-properties-of-materials-spring-2013/4732d5a94384da4f4312fb62d35e5800_3-024s13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

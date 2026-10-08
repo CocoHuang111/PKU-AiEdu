@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-15-356-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.356"
+cross_listed_codes: []
+course_title: "How to Develop \"Breakthrough\" Products and Services"
+course_slug: "15-356-how-to-develop-breakthrough-products-and-services-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Eric von Hippel"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Innovation"
+  - "Marketing"
+  - "Engineering"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+      - name: "Marketing"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  To prosper, firms must develop major product and service innovations. Often, though, they don’t know how. Recent research into the innovation process has made it possible to develop “breakthroughs” systematically. 15.356 presents several practical concept development methods, such as the “Lead User Method,” where manufacturers learn from innovative customers. Expert guest speakers present case studies that show the “art” required to implement a concept development method. 15.356 is a half-term subject.
+course_url: "https://ocw.mit.edu/courses/15-356-how-to-develop-breakthrough-products-and-services-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/15-356-how-to-develop-breakthrough-products-and-services-spring-2004/b752b33951623ddf62664ec89412aae9_15-356s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

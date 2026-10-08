@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-18-091-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.091"
+cross_listed_codes: []
+course_title: "Mathematical Exposition"
+course_slug: "18-091-mathematical-exposition-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Emma Carberry"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Mathematics"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+  - name: "Mathematics"
+    subtopics: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course provides techniques of effective presentation of mathematical material. Each section of this course is associated with a regular mathematics subject, and uses the material of that subject as a basis for written and oral presentations. The section presented here is on chaotic dynamical systems.
+course_url: "https://ocw.mit.edu/courses/18-091-mathematical-exposition-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/18-091-mathematical-exposition-spring-2005/5ff1f0b6938ffa773a66d3e0f9687768_18-091s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

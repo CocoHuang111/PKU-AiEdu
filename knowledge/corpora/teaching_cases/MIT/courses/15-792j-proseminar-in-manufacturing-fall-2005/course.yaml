@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-15-792j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.792J"
+cross_listed_codes:
+  - "2.890J"
+  - "3.80J"
+  - "10.792J"
+  - "16.985J"
+course_title: "Proseminar in Manufacturing"
+course_slug: "15-792j-proseminar-in-manufacturing-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Mechanical Engineering"
+  - "Materials Science and Engineering"
+  - "Chemical Engineering"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Donald Rosenfield"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Leadership"
+  - "Operations Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course provides an integrative forum for operations and manufacturing students and is the focus for projects in leadership, service, and improvement. It covers a set of integrative manufacturing topics or issues such as leadership and related topics, and includes presentations by guest speakers such as senior level managers of manufacturing companies. The subject is largely managed by students. Primarily for LFM Fellows and Masters students interested in focusing in operations and manufacturing.
+course_url: "https://ocw.mit.edu/courses/15-792j-proseminar-in-manufacturing-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/15-792j-proseminar-in-manufacturing-fall-2005/5198fc5d8fbf5889a017358952253827_15-792jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

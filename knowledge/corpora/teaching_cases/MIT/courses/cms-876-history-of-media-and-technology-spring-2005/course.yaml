@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-876-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.876"
+cross_listed_codes: []
+course_title: "History of Media and Technology"
+course_slug: "cms-876-history-of-media-and-technology-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Beth Coleman"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "History of Science and Technology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  History of Media and Technology addresses the mutually influential histories of communications media and technological development, focusing on the shift from analog to digital cultures that began mid-century and continues to the present. The approach the series takes to the study of media and technology is a multifaceted one that includes theoretical and philosophical works, histories canonical and minority, literature and art, as well as hands-on production issues toward the advancement of student projects and research papers. The topic for this term is Eternal War.
+course_url: "https://ocw.mit.edu/courses/cms-876-history-of-media-and-technology-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/cms-876-history-of-media-and-technology-spring-2005/4fcd21be6633b98173c6567b94f591a7_cms-876s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

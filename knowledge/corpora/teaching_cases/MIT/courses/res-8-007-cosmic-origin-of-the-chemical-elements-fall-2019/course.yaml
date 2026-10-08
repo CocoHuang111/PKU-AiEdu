@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-res-8-007-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.8-007"
+cross_listed_codes: []
+course_title: "Cosmic Origin of the Chemical Elements"
+course_slug: "res-8-007-cosmic-origin-of-the-chemical-elements-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anna Frebel"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Organic Chemistry"
+  - "Physics"
+  - "Astrophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Organic Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Podcasts"
+description: |
+  Everything around us is made from different chemical elements: carbon, silicon, iron, and all the other elements from the Periodic Table. The lighter elements were mostly produced in the Big Bang, but the rest were (and are) formed within stars and in the explosions of supernovae. In this series of short lecture videos, created to accompany her book Searching for the Oldest Stars: Ancient Relics from the Early Universe (Princeton University Press, 2019), Professor Anna Frebel reveals the secrets of stardust and explains the cosmic origin of the elements.
+course_url: "https://ocw.mit.edu/courses/res-8-007-cosmic-origin-of-the-chemical-elements-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/res-8-007-cosmic-origin-of-the-chemical-elements-fall-2019/5aa51be2c9a31a5bd87adaa05a6eca61_RES.8-007f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

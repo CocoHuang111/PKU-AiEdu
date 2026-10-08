@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-8-04-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.04"
+cross_listed_codes: []
+course_title: "Quantum Physics I"
+course_slug: "8-04-quantum-physics-i-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Barton Zwiebach"
+subject_primary: "Physics"
+subject_secondary:
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This is the first course in the undergraduate Quantum Physics sequence. It introduces the basic features of quantum mechanics. It covers the experimental basis of quantum physics, introduces wave mechanics, Schrödinger’s equation in a single dimension, and Schrödinger’s equation in three dimensions. The lectures and lecture notes for this course form the basis of Zwiebach’s textbook Mastering Quantum Mechanics published by MIT Press in April 2022. This presentation of 8.04 by Barton Zwiebach (2016) differs somewhat and complements nicely the presentation of Allan Adams (2013) . Adams covers a larger set of ideas; Zwiebach tends to go deeper into a smaller set of ideas, offering a systematic and detailed treatment. Adams begins with the subtleties of superpostion, while Zwiebach discusses the surprises of interaction-free measurements. While both courses overlap over a sizable amount of standard material, Adams discussed applications to condensed matter physics, while Zwiebach focused on scattering and resonances. The different perspectives of the instructors make the problem sets in the two courses rather different.
+course_url: "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/458fa90d4ae8b2d71bca7578a12923af_8-04s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-9-914-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.914"
+cross_listed_codes: []
+course_title: "Special Topics: Genetics, Neurobiology, and Pathophysiology of Psychiatric Disorders"
+course_slug: "9-914-special-topics-genetics-neurobiology-and-pathophysiology-of-psychiatric-disorders-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Edward Scolnick"
+  - "Prof. Li-Huei Tsai"
+subject_primary: "Mental Health"
+subject_secondary:
+  - "Pathology and Pathophysiology"
+  - "Science"
+  - "Biology"
+  - "Genetics"
+  - "Neurobiology"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Mental Health"
+        specialties: []
+      - name: "Pathology and Pathophysiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Genetics"
+          - "Neurobiology"
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  An opportunity for graduate study of advanced subjects in Brain and Cognitive Sciences not included in other subject listings. The key topics covered in this course are Bipolar Disorder, Psychosis, Schizophrenia, Genetics of Psychiatric Disorder, DISC1, Ca++ Signaling, Neurogenesis and Depression, Lithium and GSK3 Hypothesis, Behavioral Assays, CREB in Addiction and Depressive Behaviors, The GABA System-I, The GABA System-II, The Glutamate Hypothesis of Schizophrenia, The Dopamine Pathway and DARPP32.
+course_url: "https://ocw.mit.edu/courses/9-914-special-topics-genetics-neurobiology-and-pathophysiology-of-psychiatric-disorders-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/9-914-special-topics-genetics-neurobiology-and-pathophysiology-of-psychiatric-disorders-fall-2008/467854e47f20952358af482bd60adced_9-914f08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

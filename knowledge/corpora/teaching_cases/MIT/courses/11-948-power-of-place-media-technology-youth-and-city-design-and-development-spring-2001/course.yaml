@@ -1,0 +1,86 @@
+schema_version: "1.0"
+course_id: "mitocw-11-948-spring-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.948"
+cross_listed_codes:
+  - "4.285"
+course_title: "Power of Place: Media Technology, Youth, and City Design and Development"
+course_slug: "11-948-power-of-place-media-technology-youth-and-city-design-and-development-spring-2001"
+term: "Spring"
+year: 2001
+as_taught_in: "Spring 2001"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Anne Whiston Spirn"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Fine Arts"
+  - "Architecture"
+  - "Environmental Design"
+  - "Social Science"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This workshop provides an introduction to urban environmental design and explores the potential of information technology and the Internet to transform public education, city design, and community development in inner-city neighborhoods. Integration of comprehensive (“top-down”) and grassroots (“bottom-up”) approaches to design and planning is a major theme. Students will work in a real neighborhood with real people on a real project, putting theory into practice and reflecting on insights gained in the process. We will study environmental and community history and devise designs for vacant land near a middle school in West Philadelphia within the context of planning for the larger community and watershed.
+course_url: "https://ocw.mit.edu/courses/11-948-power-of-place-media-technology-youth-and-city-design-and-development-spring-2001/"
+image_url: |
+  https://ocw.mit.edu/courses/11-948-power-of-place-media-technology-youth-and-city-design-and-development-spring-2001/d14e74bc7d602a8b7688d8c2ba253ed4_11-948s01.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

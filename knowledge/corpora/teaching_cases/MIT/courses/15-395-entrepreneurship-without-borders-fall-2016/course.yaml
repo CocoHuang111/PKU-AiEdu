@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-15-395-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.395"
+cross_listed_codes: []
+course_title: "Entrepreneurship Without Borders"
+course_slug: "15-395-entrepreneurship-without-borders-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Michael Casey"
+  - "Brian Forde"
+  - "Prof. Simon Johnson"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Finance"
+  - "Social Science"
+  - "Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Finance"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course examines opportunities and problems for entrepreneurs globally, including Europe, Latin America, and Asia. Linkages between the business environment, the institutional framework, and new venture creation are covered with a special focus on blockchain technology. In addition to discussing a range of global entrepreneurial situations, student groups pick one particular cluster on which to focus and to understand what further development would entail. Classroom interactions are based primarily on case studies.
+course_url: "https://ocw.mit.edu/courses/15-395-entrepreneurship-without-borders-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/15-395-entrepreneurship-without-borders-fall-2016/499843eaf4c82850da0830494b51eee7_15-395f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

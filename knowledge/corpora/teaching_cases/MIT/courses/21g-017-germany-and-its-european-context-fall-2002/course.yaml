@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-017-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.017"
+cross_listed_codes: []
+course_title: "Germany and its European Context"
+course_slug: "21g-017-germany-and-its-european-context-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Charity Scribner"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "International Literature"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "International Literature"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course focuses on main currents in contemporary German literary and visual culture. Taking Nietzsche’s thought as a point of departure, students will survey the dialectics of tradition and modernity in both Germany and other European countries, particularly the UK, France, Denmark, and Poland. Primary works are drawn from literature, cinema, art, and performance, including works by Peter Sloterdijk, Thomas Vinterberg, and Michel Houellebecq.
+course_url: "https://ocw.mit.edu/courses/21g-017-germany-and-its-european-context-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/21g-017-germany-and-its-european-context-fall-2002/9899e298c7fd3ee9bd90102e5ec5c6a8_21g-017f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

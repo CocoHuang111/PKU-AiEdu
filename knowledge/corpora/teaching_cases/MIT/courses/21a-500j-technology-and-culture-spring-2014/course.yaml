@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-500j-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.500J"
+cross_listed_codes:
+  - "STS.075J"
+course_title: "Technology and Culture"
+course_slug: "21a-500j-technology-and-culture-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Stefan Helmreich"
+  - "Prof. Heather Paxson"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This subject examines relationships among technology, culture, and politics in a range of social and historical settings. The class is organized around two topics: Identity and infrastructure, and will combine interactive lectures, film screenings, readings, and discussion.
+course_url: "https://ocw.mit.edu/courses/21a-500j-technology-and-culture-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/21a-500j-technology-and-culture-spring-2014/f1cd6bcadcafa863724bd6c0fabc3bb8_21a-500js14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

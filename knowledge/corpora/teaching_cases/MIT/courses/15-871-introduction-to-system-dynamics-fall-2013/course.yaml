@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-15-871-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.871"
+cross_listed_codes: []
+course_title: "Introduction to System Dynamics"
+course_slug: "15-871-introduction-to-system-dynamics-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Sterman"
+  - "Prof. Hazhir Rahmandad"
+subject_primary: "Management"
+subject_secondary:
+  - "Operations Management"
+  - "Organizational Behavior"
+  - "Engineering"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Problem Sets"
+description: |
+  Introduction to systems thinking and system dynamics modeling applied to strategy, organizational change, and policy design. Students use simulation models, management flight simulators, and case studies to develop conceptual and modeling skills for the design and management of high-performance organizations in a dynamic world.
+course_url: "https://ocw.mit.edu/courses/15-871-introduction-to-system-dynamics-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/15-871-introduction-to-system-dynamics-fall-2013/7d1a72c4fd00949ba9c1d38212b92232_15-871f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

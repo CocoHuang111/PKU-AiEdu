@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-260-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.260"
+cross_listed_codes: []
+course_title: "Stravinsky to the Present"
+course_slug: "21m-260-stravinsky-to-the-present-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Emily Richmond Pollock"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  This course provides an overview of the musical styles and techniques developed over the past 115 years. The anthology and supplemental listening will present a range of art music aesthetics in a variety of genres such as chamber music, symphonic and choral music, and opera. While tuning your ears to novel sounds, you will hone your own preferences and aim to understand the motivations behind and importance of a wide diversity of compositional orientations, including Expressionism, Impressionism, atonality, neo-Classicism, serialism, nationalism, the influence of jazz and popular idioms, post-tonality, electronic music, aleatory, performance art, post-modernism, minimalism, spectralism, the New Complexity, neo-Romanticism, and post-minimalism.
+course_url: "https://ocw.mit.edu/courses/21m-260-stravinsky-to-the-present-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/21m-260-stravinsky-to-the-present-spring-2016/285bebc10d1bda46f06709838cb753f3_21m-260s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

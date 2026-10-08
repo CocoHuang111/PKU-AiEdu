@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-17-40-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.40"
+cross_listed_codes: []
+course_title: "American Foreign Policy: Past, Present, and Future"
+course_slug: "17-40-american-foreign-policy-past-present-and-future-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Stephen Van Evera"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+  - "International Relations"
+  - "Public Administration"
+  - "Military Studies"
+  - "Public Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course explores the reasons for America’s past wars and interventions. It covers the consequences of American policies, and evaluates these consequences for the U.S. and the world. History covered includes World Wars I and II, the Korean and Indochina wars, the Cuban Missile Crisis and current conflicts, including those in in Iraq and Afghanistan, and against Al Qaeda.
+course_url: "https://ocw.mit.edu/courses/17-40-american-foreign-policy-past-present-and-future-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/17-40-american-foreign-policy-past-present-and-future-fall-2017/516c3bbfaceead240a19df4e328bb1fe_17-40f17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-6-772-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.772"
+cross_listed_codes: []
+course_title: "Compound Semiconductor Devices"
+course_slug: "6-772-compound-semiconductor-devices-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Clifton Fonstad"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Materials Science and Engineering"
+  - "Electronic Materials"
+  - "Science"
+  - "Physics"
+  - "Condensed Matter Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Electronic Materials"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Condensed Matter Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course outlines the physics, modeling, application, and technology of compound semiconductors (primarily III-Vs) in electronic, optoelectronic, and photonic devices and integrated circuits. Topics include: properties, preparation, and processing of compound semiconductors; theory and practice of heterojunctions, quantum structures, and pseudomorphic strained layers; metal-semiconductor field effect transistors (MESFETs); heterojunction field effect transistors (HFETs) and bipolar transistors (HBTs); photodiodes, vertical-and in-plane-cavity laser diodes, and other optoelectronic devices.
+course_url: "https://ocw.mit.edu/courses/6-772-compound-semiconductor-devices-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/6-772-compound-semiconductor-devices-spring-2003/3a3931b8c2f2cbf7bb2b4b80e96fc1d2_6-772s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

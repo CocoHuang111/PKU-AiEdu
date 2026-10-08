@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "cornell-ai-literacy-instruction-in-first-year-writing-courses"
+institution: "Cornell University"
+platform: "Cornell Teaching Case Studies"
+collection: "Teaching Innovation Case Study Library"
+title: "AI Literacy Instruction in First-Year Writing Courses"
+slug: "ai-literacy-instruction-in-first-year-writing-courses"
+source_url: "https://blogs.cornell.edu/teachingcasestudies/gai/ai-literacy-instruction-in-first-year-writing-courses/"
+language: "en"
+published: "2024-04-05"
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  published: "source"
+extraction_status: "complete"
+content_sha256: "df4030b7f41019b35fb0181734a223c3ffec1eea6b1ca70c9945604788ef2d30"

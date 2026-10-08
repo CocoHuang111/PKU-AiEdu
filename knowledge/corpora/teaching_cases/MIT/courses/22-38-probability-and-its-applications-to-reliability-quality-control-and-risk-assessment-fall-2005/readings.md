@@ -1,0 +1,37 @@
+> 检索摘要：22.38 Probability And Its Applications To Reliability, Quality Control, And Risk Assessment（Fall 2005，Graduate）的「Readings」。页内标题：Readings；Textbooks；Reference Books。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/22-38-probability-and-its-applications-to-reliability-quality-control-and-risk-assessment-fall-2005/pages/readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Readings
+
+Students are assigned readings from the textbooks for each class lecture topic, as listed in the following table. Additional reference books are also listed after the table.
+
+### Textbooks
+
+Ang, A. H-S., and W. H. Tang. *Probability Concepts in Engineering Planning and Design,* vol. 1, *Basic Principles*. New York, NY: John Wiley & Sons, 1975. ISBN: 9780471032007.
+
+Rausand, M., and A. Hoyland. *System Reliability Theory: Models, Statistical Methods, and Applications*. 2nd ed. New York, NY: John Wiley & Sons, 2003. ISBN: 9780471471332.
+
+<table><tr><th>LEC #</th><th>TOPICS</th><th>READINGS</th></tr><tr><td colspan="3">I. The Logic of Certainty</td></tr><tr><td>1-2</td><td>I.1 Events and Boolean Operations <br> I.2 Event Sequence Identification (Failure Modes and Effects Analysis; Hazard and Operability Analysis; Fault Tree Analysis; Event Tree Analysis) <br> I.3 Coherent Structure Functions <br> I.4 Minimal Cut (Path) Sets</td><td>Ang and Tang: Chapters 1 and 2. <br> Rausand and Hoyland: Sections 3.9-3.11.</td></tr><tr><td colspan="3">II. Probability</td></tr><tr><td>3-4</td><td>II.1 Definitions and Interpretations (Axiomatic; Subjectivistic; Frequentistic) <br> II.2 Basic Rules <br> II.3 Theorem of Total Probability <br> II.4 Bayes’ Theorem</td><td></td></tr><tr><td colspan="3">III. Random Variables and Distribution Functions</td></tr><tr><td>5-6</td><td>III.1 Discrete and Continuous Random Variables <br> III.2 Cumulative Distribution Functions <br> III.3 Probability Mass and Density Functions <br> III.4 Moments <br> III.5 Failure Models and Reliability <br> III.6 Failure Rates</td><td>Ang and Tang: Sections 3.1 and 3.2. <br> Rausand and Hoyland: Chapters 2, 4 and 6. <br> Henley, E. J., and H. Kumamoto. “Risk Study Comparison.” Table 1.4 in <br> Probabilistic Risk Assessment <br> . Piscataway, NJ: IEEE Press, 1991, pp. I.6. ISBN: 9780879422905.</td></tr><tr><td colspan="3">IV. Useful Probability Distributions</td></tr><tr><td>7-8</td><td>IV.1 Bernoulli Trials and the Binomial Distribution <br> IV.2 The Poisson Distribution <br> IV.3 The Exponential Distribution <br> IV.4 The Normal and Lognormal Distributions <br> IV.5 The Concept of Correlation</td><td></td></tr><tr><td colspan="3">V. Multivariate Distributions</td></tr><tr><td>9-10</td><td>V.1 Joint and Conditional Distribution Functions <br> V.2 Moments <br> V.3 The Multivariate Normal and Lognormal Distributions</td><td>Ang and Tang: Section 3.3. <br> Rausand and Hoyland: Chapter 7.</td></tr><tr><td></td><td>Exam 1</td><td></td></tr><tr><td colspan="3">VI. Functions of Random Variables</td></tr><tr><td>11-12</td><td>VI.1 Single Random Variable <br> VI.2 Multiple Random Variables <br> VI.3 Moments of Functions of Random Variables <br> VI.4 Approximate Evaluation of the Mean and Variance of a Function <br> VI.5 Analytical Results for the Normal and Lognormal <br> Distributions</td><td>Ang and Tang: Chapter 4.</td></tr><tr><td colspan="3">VII. Statistical Methods</td></tr><tr><td>13-14</td><td>VII.1 Student’s t-distribution <br> VII.2 Chi-Squared Distribution <br> VII.3 Hypothesis Testing</td><td>Ang and Tang: Chapters 5 and 6. <br> Rausand and Hoyland: Chapters 11 and 14.</td></tr><tr><td colspan="3">VIII. Elements of Statistics</td></tr><tr><td>15</td><td>VIII.1 Random Samples <br> VIII.2 Method of Moments <br> VIII.3 Method of Maximum Likelihood <br> VIII.4 Probability Plotting</td><td></td></tr><tr><td colspan="3">IX. Applications to Reliability</td></tr><tr><td>16</td><td>IX.1 Simple Logical Configurations (Series; Parallel; Standby Redundancy) <br> IX.2 Complex Systems <br> IX.3 Stress-Strength Interference Theory <br> IX.4 Modeling of Loads and Strength <br> IX.5 Reliability-Based Design <br> IX.6 Elementary Markov Models</td><td>Ang and Tang: Chapter 9. <br> Rausand and Hoyland: Chapters 8 and 9. <br> Rausand, Marvin. “Reliability centered maintenance.” <br> Reliability Engineering and System Safety <br> 60 (1998): 121-132. <br> Vatn, J., P. Hokstad, and L. Bodsberg. “An overall model for maintenance optimization.” <br> Reliability Engineering and System Safety <br> 51 (1996): 241-257.</td></tr><tr><td colspan="3">X. Bayesian Statistics</td></tr><tr><td>17</td><td>X.1 Bayes’ Theorem and Inference <br> X.2 Conjugate Families of Distributions <br> X.3 Comparison with Frequentist Statistics <br> X.4 Elicitation and Utilization of Expert Opinions</td><td>Ang and Tang: Chapter 8. <br> Rausand and Hoyland: Chapter 13. <br> Huelsenbeck, J. P., et al. “Bayesian Inference of Phylogeny and Its Impact on Evolutionary Biology.” <br> Science <br> 294, no. 5550 (December 14, 2001): 2310-2314.</td></tr><tr><td></td><td>Exam 2</td><td></td></tr><tr><td colspan="3">XI. Monte Carlo Simulation</td></tr><tr><td>18</td><td>XI.1 The Concept of Simulation <br> XI.2 Generation of Random Numbers <br> XI.3 Generation of Jointly Distributed Random Numbers <br> XI.4 Latin Hypercube Sampling <br> XI.5 Examples from Risk and Reliability Assessment</td><td></td></tr><tr><td colspan="3">XII. Probabilistic Risk Assessment of Complex Systems</td></tr><tr><td>19-23</td><td>XII.1 Risk Curves and Accident Scenario Identification <br> XII.2 Event-Tree and Fault-Tree Analysis <br> XII.3 Unavailability Theory of Repairable and Periodically Tested Systems <br> XII.4 Dependent (Common-Cause) Failures <br> XII.5 Human Reliability Models <br> XII.6 Component Importance <br> XII.7 Examples from Risk Assessments for Nuclear <br> Reactors, Chemical Process Systems, and Waste Repositories</td><td>Rausand and Hoyland: Chapters 5 and 10.</td></tr><tr><td></td><td>Final Exam</td><td></td></tr></table>
+
+### Reference Books
+
+In addition to the course textbooks, the following books may be useful.
+
+Benjamin, Jack R., and C. Allin Cornell. *Probability, Statistics, and Decision for Civil Engineers*. 2nd ed. New York, NY: McGraw-Hill, 1963. ISBN: 9780070045583.
+
+Center for Chemical Process Safety. *Guidelines for Chemical Process Quantitative Risk Analysis*. New York, NY: The American Institute of Chemical Engineers, 1989. ISBN: 9780816904020 .
+
+DelMar, Donald, and George W. Sheldon. *Introduction to Quality Control*. St. Paul, MN: West Publishing Co., 1988. ISBN: 9780314684592.
+
+Henley, Ernest J., and Hiromitsu Kumamoto. *Probabilistic Risk Assessment: Reliability Engineering, Design, and Analysis*. New York, NY: IEEE Press, 1991. ISBN: 9780879422905.
+
+Juran, Joseph M., and Frank M. Gryna. *Quality Planning and Analysis: From Product Development Through Use*. 2nd ed. New York, NY: McGraw-Hill, 1980. ISBN: 9780070331785.
+
+Papoulis, Athanasios. *Probability and Statistics*. Englewood Cliffs, NJ: Prentice Hall, 1990. ISBN: 9780137116980.
+
+Rao, Singiresu S. *Reliability-Based Design*. New York, NY: McGraw-Hill, 1992. ISBN: 9780070511927.

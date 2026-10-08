@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-6-832-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.832"
+cross_listed_codes: []
+course_title: "Underactuated Robotics"
+course_slug: "6-832-underactuated-robotics-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Russell Tedrake"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  Robots today move far too conservatively, using control systems that attempt to maintain full control authority at all times. Humans and animals move much more aggressively by routinely executing motions which involve a loss of instantaneous control authority. Controlling nonlinear systems without complete control authority requires methods that can reason about and exploit the natural dynamics of our machines. This course introduces nonlinear dynamics and control of underactuated mechanical systems, with an emphasis on computational methods. Topics include the nonlinear dynamics of robotic manipulators, applied optimal and robust control and motion planning. Discussions include examples from biology and applications to legged locomotion, compliant manipulation, underwater robots, and flying machines.
+course_url: "https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2022/6-832s22.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

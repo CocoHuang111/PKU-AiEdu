@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-2-700-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.700"
+cross_listed_codes:
+  - "2.701"
+course_title: "Principles of Naval Architecture"
+course_slug: "2-700-principles-of-naval-architecture-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joel Harbour"
+  - "Prof. Themistoklis Sapsis"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Mechanical Design"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Ocean Structures"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Mechanical Design"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+          - "Ocean Structures"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Projects"
+description: |
+  This course presents principles of naval architecture, ship geometry, hydrostatics, calculation and drawing of curves of form, intact and damage stability, hull structure strength calculations and ship resistance. It introduces computer-aided naval ship design and analysis tools. Projects include analysis of ship lines drawings, calculation of ship hydrostatic characteristics, analysis of intact and damaged stability, ship model testing, and hull structure strength calculations.
+course_url: "https://ocw.mit.edu/courses/2-700-principles-of-naval-architecture-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/2-700-principles-of-naval-architecture-fall-2014/81d6461a3c43b239713b9676d980940a_2-700f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

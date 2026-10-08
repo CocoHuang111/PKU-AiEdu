@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-1-033-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.033"
+cross_listed_codes:
+  - "1.57"
+course_title: "Mechanics of Material Systems: An Energy Approach"
+course_slug: "1-033-mechanics-of-material-systems-an-energy-approach-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Franz-Josef Ulm"
+subject_primary: "Technology"
+subject_secondary:
+  - "Engineering"
+  - "Materials Science and Engineering"
+  - "Mechanical Engineering"
+  - "Solid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  1.033 provides an introduction to continuum mechanics and material modeling of engineering materials based on first energy principles: deformation and strain; momentum balance, stress and stress states; elasticity and elasticity bounds; plasticity and yield design. The overarching theme is a unified mechanistic language using thermodynamics, which allows understanding, modeling and design of a large range of engineering materials. This course is offered both to undergraduate (1.033) and graduate (1.57) students.
+course_url: "https://ocw.mit.edu/courses/1-033-mechanics-of-material-systems-an-energy-approach-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/1-033-mechanics-of-material-systems-an-energy-approach-fall-2003/7aed83844e32314844b43b8f604b3af9_1-033f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

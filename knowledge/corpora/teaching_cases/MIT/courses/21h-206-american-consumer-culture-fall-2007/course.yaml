@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-206-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.206"
+cross_listed_codes: []
+course_title: "American Consumer Culture"
+course_slug: "21h-206-american-consumer-culture-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Meg Jacobs"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class examines how and why twentieth-century Americans came to define the “good life” through consumption, leisure, and material abundance. We will explore how such things as department stores, nationally advertised brand-name goods, mass-produced cars, and suburbs transformed the American economy, society, and politics. The course is organized both thematically and chronologically. Each period deals with a new development in the history of consumer culture. Throughout we explore both celebrations and critiques of mass consumption and abundance.
+course_url: "https://ocw.mit.edu/courses/21h-206-american-consumer-culture-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/21h-206-american-consumer-culture-fall-2007/cc80e09ea92f62f67790300fe4176345_21h-206f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-863-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.863"
+cross_listed_codes: []
+course_title: "How to Make (Almost) Anything"
+course_slug: "mas-863-how-to-make-almost-anything-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Isaac Chuang"
+  - "Prof. Neil Gershenfeld"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Digital Systems"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course provides a hands-on introduction to the resources for designing and fabricating smart systems, including CAD/CAM/CAE; NC machining, 3-D printing, injection molding, laser cutting; PCB layout and fabrication; sensors and actuators; analog instrumentation; embedded digital processing; wired and wireless communications. This course also puts emphasis on learning how to use the tools as well as understand how they work.
+course_url: "https://ocw.mit.edu/courses/mas-863-how-to-make-almost-anything-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/mas-863-how-to-make-almost-anything-fall-2002/2163303b679d345cd6e715248a29fd20_mas-863f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

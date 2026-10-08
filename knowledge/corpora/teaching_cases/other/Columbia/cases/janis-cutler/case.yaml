@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-janis-cutler"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Janis Cutler, MD"
+slug: "janis-cutler"
+source_url: "https://ctl.columbia.edu/transformations/faculty/janis-cutler/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "888be0b4dc2eef365d83dc75793ef39ddba4e3e759ae08179c1f0908ddd1aef0"

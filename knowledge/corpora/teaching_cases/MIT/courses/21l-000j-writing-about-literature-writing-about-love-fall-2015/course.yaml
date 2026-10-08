@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-000j-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.000J"
+cross_listed_codes: []
+course_title: "Writing About Literature: Writing About Love"
+course_slug: "21l-000j-writing-about-literature-writing-about-love-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Rosa Martínez"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Drama"
+  - "Fiction"
+  - "Poetry"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Drama"
+          - "Fiction"
+          - "Poetry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course is designed around analyzing intimate bonds and the permutations of heartbreak . Through the analysis of a set of relations in novels, short stories, poetry, music videos, and live theatre, we will consider the transformative states of the lover’s (un)becoming, for how consciousness is constituted by bonds yet how the lover transcends crisis in the moment of the epiphany that surfaces in love’s very failure; indeed, love itself becomes narcissistically yet optimistically illuminating, even in its oppressive hold.
+course_url: "https://ocw.mit.edu/courses/21l-000j-writing-about-literature-writing-about-love-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/21l-000j-writing-about-literature-writing-about-love-fall-2015/6fe908182c479520c368b021051ee4ca_21L-000f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

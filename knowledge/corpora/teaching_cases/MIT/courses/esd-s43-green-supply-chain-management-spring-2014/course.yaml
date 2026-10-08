@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-s43-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.S43"
+cross_listed_codes: []
+course_title: "Green Supply Chain Management"
+course_slug: "esd-s43-green-supply-chain-management-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Edgar Blanco"
+  - "Dr. Alexis Bateman"
+  - "Prof. Anthony Craig"
+subject_primary: "Supply Chain Management"
+subject_secondary:
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Supply Chain Management"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  The half-semester graduate course in Green Supply Chain Management will focus on the fundamental strategies, tools and techniques required to analyze and design environmentally sustainable supply chain systems. Topics covered include: Closed-loop supply chains, reverse logistics systems, carbon footprinting, life-cycle analysis and supply chain sustainability strategy. Class sessions will combine presentations, case discussions and guest speakers. All students will work on a course-long team project that critically evaluates the environmental supply chain strategy of an industry or a publicly traded company. Grades will be based on class participation, case study assignments and the team project.
+course_url: "https://ocw.mit.edu/courses/esd-s43-green-supply-chain-management-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/esd-s43-green-supply-chain-management-spring-2014/9e1606ae077c270fb7f1f10d3d23d366_esd-s43s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

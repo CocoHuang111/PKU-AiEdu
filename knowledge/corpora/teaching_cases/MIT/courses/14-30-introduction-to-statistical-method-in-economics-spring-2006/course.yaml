@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-14-30-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.30"
+cross_listed_codes: []
+course_title: "Introduction to Statistical Method in Economics"
+course_slug: "14-30-introduction-to-statistical-method-in-economics-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Herman Bennett"
+subject_primary: "Probability and Statistics"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Econometrics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Econometrics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is a self-contained introduction to statistics with economic applications. Elements of probability theory, sampling theory, statistical estimation, regression analysis, and hypothesis testing. It uses elementary econometrics and other applications of statistical tools to economic data. It also provides a solid foundation in probability and statistics for economists and other social scientists. We will emphasize topics needed in the further study of econometrics and provide basic preparation for 14.32 Econometrics . No prior preparation in probability and statistics is required, but familiarity with basic algebra and calculus is assumed.
+course_url: "https://ocw.mit.edu/courses/14-30-introduction-to-statistical-method-in-economics-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/14-30-introduction-to-statistical-method-in-economics-spring-2006/14db030c7a7703f7242ed86c233bf6c3_14-30s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

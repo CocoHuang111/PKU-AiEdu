@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-4-511-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.511"
+cross_listed_codes: []
+course_title: "Digital Mock-Up Workshop"
+course_slug: "4-511-digital-mock-up-workshop-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lawrence Sass"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Modeling and Simulation"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Presentation Assignments"
+description: |
+  This is an advanced subject in computer modeling and CAD CAM fabrication, with a focus on building large-scale prototypes and digital mock-ups within a classroom setting. Prototypes and mock-ups are developed with the aid of outside designers, consultants, and fabricators. Field trips and in-depth relationships with building fabricators demonstrate new methods for building design. The class analyzes complex shapes, shape relationships, and curved surfaces fabrication at a macro scale leading to new architectural languages, based on methods of construction.
+course_url: "https://ocw.mit.edu/courses/4-511-digital-mock-up-workshop-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/4-511-digital-mock-up-workshop-spring-2006/3d436501c1efd879a2745f7204dfa148_4-511s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

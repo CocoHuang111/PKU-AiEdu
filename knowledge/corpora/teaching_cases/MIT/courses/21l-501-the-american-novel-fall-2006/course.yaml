@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-501-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.501"
+cross_listed_codes: []
+course_title: "The American Novel"
+course_slug: "21l-501-the-american-novel-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sandy Alexandre"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Literature"
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the metaphorical, historical, social, and psychological value of ghosts in the American novel. Using the theme of “haunting” as a flashpoint for class discussion and a thematic center for our readerly attention, this course examines the American novel in the context of the various histories which might be said to haunt fictional characters in the American novel, to haunt the American novel itself, and ultimately to haunt us: America’s colonial past, its slave past, and other memorable and painful chapters in its past.
+course_url: "https://ocw.mit.edu/courses/21l-501-the-american-novel-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21l-501-the-american-novel-fall-2006/1357ffe6103291e91f1d5372d87fd311_21l-501f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

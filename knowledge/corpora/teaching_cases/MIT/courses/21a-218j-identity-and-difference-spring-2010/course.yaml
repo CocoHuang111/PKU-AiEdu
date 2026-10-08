@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-101j-formerly-21a-218j-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.101J (formerly 21A.218J)"
+cross_listed_codes:
+  - "WGS.170J"
+course_title: "Identity and Difference"
+course_slug: "21a-218j-identity-and-difference-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jean Jackson"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Ethnography"
+  - "Social Anthropology"
+  - "Society"
+  - "Gender Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+          - "Social Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course explores how identities, whether of individuals or groups, are produced, maintained, and transformed. Students will be introduced to various theoretical perspectives that deal with identity formation, including constructions of “the normal.” We will explore the utility of these perspectives for understanding identity components such as gender, sexual orientation, race, ethnicity, religion, language, social class, and bodily difference. By semester’s end students will understand better how an individual can be at once cause and consequence of society, a unique agent of social action as well as a social product.
+course_url: "https://ocw.mit.edu/courses/21a-218j-identity-and-difference-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/21a-218j-identity-and-difference-spring-2010/bb54a408b882c7abb12bf5a2e9a2fdd1_21a-218js10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

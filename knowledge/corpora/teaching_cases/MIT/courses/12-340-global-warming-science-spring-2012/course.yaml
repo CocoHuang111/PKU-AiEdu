@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-12-340-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.340"
+cross_listed_codes: []
+course_title: "Global Warming Science"
+course_slug: "12-340-global-warming-science-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kerry Emanuel"
+  - "Prof. Sara Seager"
+  - "Prof. Daniel Cziczo"
+  - "Prof. David McGee"
+subject_primary: "Climate"
+subject_secondary:
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Climate Studies"
+  - "Environmental Science"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Climate Studies"
+          - "Environmental Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course provides students with a scientific foundation of anthropogenic climate change and an introduction to climate models. It focuses on fundamental physical processes that shape climate (e.g. solar variability, orbital mechanics, greenhouse gases, atmospheric and oceanic circulation, and volcanic and soil aerosols) and on evidence for past and present climate change. During the course they discuss material consequences of climate change, including sea level change, variations in precipitation, vegetation, storminess, and the incidence of disease. This course also examines the science behind mitigation and adaptation proposals.
+course_url: "https://ocw.mit.edu/courses/12-340-global-warming-science-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/12-340-global-warming-science-spring-2012/8421859d4d573156342e293dc7114232_12-340s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-22-313j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.313J"
+cross_listed_codes:
+  - "2.59J"
+  - "10.536J"
+course_title: "Thermal Hydraulics in Power Technology"
+course_slug: "22-313j-thermal-hydraulics-in-power-technology-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+  - "Mechanical Engineering"
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jacopo Buongiorno"
+subject_primary: "Fossil Fuels"
+subject_secondary:
+  - "Nuclear Energy"
+  - "Engineering"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Nuclear Engineering"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Fossil Fuels"
+        specialties: []
+      - name: "Nuclear Energy"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Nuclear Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course covers the thermo-fluid dynamic phenomena and analysis methods for conventional and nuclear power stations. Specific topics include: kinematics and dynamics of two-phase flows; steam separation; boiling, instabilities, and critical conditions; single-channel transient analysis; multiple channels connected at plena; loop analysis including single and two-phase natural circulation; and subchannel analysis.
+course_url: "https://ocw.mit.edu/courses/22-313j-thermal-hydraulics-in-power-technology-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/22-313j-thermal-hydraulics-in-power-technology-spring-2007/dd95060549e1144887b9d0dc3a37ecc4_22-313js07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

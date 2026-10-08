@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-5-36-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.36"
+cross_listed_codes: []
+course_title: "Biochemistry Laboratory"
+course_slug: "5-36-biochemistry-laboratory-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Elizabeth Vogel Taylor"
+subject_primary: "Biology"
+subject_secondary:
+  - "Biochemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Lecture Notes"
+description: |
+  The course, which spans two thirds of a semester, provides students with a research-inspired laboratory experience that introduces standard biochemical techniques in the context of investigating a current and exciting research topic, acquired resistance to the cancer drug Gleevec. Techniques include protein expression, purification, and gel analysis, PCR, site-directed mutagenesis, kinase activity assays, and protein structure viewing. This class is part of the new laboratory curriculum in the MIT Department of Chemistry. Undergraduate Research-Inspired Experimental Chemistry Alternatives ( URIECA ) introduces students to cutting edge research topics in a modular format. Acknowledgments Development of this course was funded through an HHMI Professors grant to Professor Catherine L. Drennan.
+course_url: "https://ocw.mit.edu/courses/5-36-biochemistry-laboratory-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/5-36-biochemistry-laboratory-spring-2009/ac1586bc3d2b67f4782780f48ccca8f2_5-36S09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

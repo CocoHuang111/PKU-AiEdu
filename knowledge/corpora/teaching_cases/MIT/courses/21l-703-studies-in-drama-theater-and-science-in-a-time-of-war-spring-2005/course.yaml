@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-703-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.703"
+cross_listed_codes: []
+course_title: "Studies in Drama: Theater and Science in a Time of War"
+course_slug: "21l-703-studies-in-drama-theater-and-science-in-a-time-of-war-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Diana Henderson"
+  - "Prof. Janet Sonenberg"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Humanities"
+  - "History"
+  - "Intellectual History"
+  - "Literature"
+  - "Criticism"
+  - "Drama"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Intellectual History"
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Drama"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This course explores the creation (and creativity) of the modern scientific and cultural world through study of western Europe in the 17th century, the age of Descartes and Newton, Shakespeare, Rembrandt and Molière. The class compares period thinking to present-day debates about the scientific method, art, religion, and society. This team-taught, interdisciplinary subject draws on a wide range of literary, dramatic, historical, and scientific texts and images, and involves theatrical experimentation as well as reading, writing, researching and conversing.
+course_url: "https://ocw.mit.edu/courses/21l-703-studies-in-drama-theater-and-science-in-a-time-of-war-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-703-studies-in-drama-theater-and-science-in-a-time-of-war-spring-2005/2061fab9bbc476743f39885ea8faf114_21l-703s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

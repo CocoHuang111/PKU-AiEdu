@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-991-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.991"
+cross_listed_codes: []
+course_title: "Theories and Methods in the Study of History"
+course_slug: "21h-991-theories-and-methods-in-the-study-of-history-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Anne McCants"
+subject_primary: "History"
+subject_secondary: []
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  This subject examines some of the many ways that contemporary historians interpret the past, as well as the multiple types of sources on which they rely for evidence. It is by no means an exhaustive survey, but the topics and readings have been chosen to give a sense of the diversity of work that is encompassed in the discipline of history.
+course_url: "https://ocw.mit.edu/courses/21h-991-theories-and-methods-in-the-study-of-history-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/21h-991-theories-and-methods-in-the-study-of-history-fall-2014/1756d5451262d90eae869dbbcf1415a1_21h-991f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

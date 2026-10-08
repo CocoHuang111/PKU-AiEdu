@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-4-112-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.112"
+cross_listed_codes: []
+course_title: "Architecture Design Fundamentals I: Nano-Machines"
+course_slug: "4-112-architecture-design-fundamentals-i-nano-machines-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Skylar Tibbits"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Design Assignments with Examples"
+  - "Media Assignments with Examples"
+  - "Projects with Examples"
+description: |
+  This is the second undergraduate architecture design studio, which introduces design logic and skills that enable design thinking, representation, and development. Through the lens of nano-scale machines, technologies, and phenomena, students are asked to explore techniques for describing form, space, and architecture. Exercises encourage various connotations of the “machine” and challenge students to translate conceptual strategies into more integrated design propositions through both digital and analog means.
+course_url: "https://ocw.mit.edu/courses/4-112-architecture-design-fundamentals-i-nano-machines-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/4-112-architecture-design-fundamentals-i-nano-machines-fall-2012/1eb20339cf00914bf6a0fcd6c63c78b8_4-112f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

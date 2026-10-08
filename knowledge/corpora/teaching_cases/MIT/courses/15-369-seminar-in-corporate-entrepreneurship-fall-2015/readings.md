@@ -1,0 +1,25 @@
+> 检索摘要：15.369 Seminar in Corporate Entrepreneurship（Fall 2015，Graduate）的「Readings」。页内标题：Readings。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/15-369-seminar-in-corporate-entrepreneurship-fall-2015/pages/readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Readings
+
+[CE] = Burns, P. *Corporate Entrepreneurship: Entrepreneurship and Innovation in Large Organizations*. Palgrave Macmillan, 2013. ISBN: 9780230304031.
+
+[CE&I] = Morris, M. H., D. Kuratko, et al. *Corporate Entrepreneurship and Innovation*. Cengage Learning, 2010. ISBN: 9780538478922.
+
+[Kiefer] = Kiefer, C. [Monograph: “Notes on the Practice of Corporate Entrepreneurship.” (PDF)](https://ocw.mit.edu/courses/15-369-seminar-in-corporate-entrepreneurship-fall-2015/resources/mit15_369f15_prcticecrprt/) 2016.
+
+| SES # | TOPICS | READINGS |
+| --- | --- | --- |
+| 1 | Introduction: Why aren’t established firms more entrepreneurial? | [CE] Chapter 1, pp. 3–29. <br> [CE&I] Chapter 2, pp. 28–57. <br> If you have not taken Sloan’s core <br> Organizational Processes <br> course, 15.311, you should familiarize yourself with the three lenses: <br> Carroll, John. “The Three Lenses: A Guide to Understanding Organizations.” Teaching Note 11–122. |
+| 2 | Initiating new businesses and ventures inside the corporation <br> Part 1: The Entrepreneur Inside | [CE] Chapters 2 and 8, pp. 31–65 and 243–51. <br> [Kiefer] pp. 8–21. <br> Optional <br> : Some of the material in Class 1 can be reviewed by reading pages 1–7. <br> Optional <br> Ancona, D., T. Kochan, E. Westney, and J. Van Maanen. “The Political Lens.” Teaching Note 12–141. |
+| 3 | Corporate Entrepreneurship Frameworks | [Pre-reading for Session 4 (PDF)](https://ocw.mit.edu/courses/15-369-seminar-in-corporate-entrepreneurship-fall-2015/resources/mit15_369f15_pre-reading/) |
+| 4 | Initiating new businesses and ventures inside the corporation <br> Part 2: Managing the Entrepreneur Inside | [CE] pp. 90–93 and 225–9. <br> Hindo, B. “ <br> [At 3M, A Struggle between Efficiency and Creativity](http://www.bloomberg.com/news/articles/2007-06-10/at-3m-a-struggle-between-efficiency-and-creativity) <br> .” <br> BusinessWeek. <br> June 11, 2007. <br> 3M Innovation Brochure, Pages 10–12 on History of Innovation. <br> [Kiefer] pp. 35–43. <br> [CE&I] Chapter 12, pp. 331 and 337–47. |
+| 5 | Designing the Entrepreneurial Organization. Leadership and the Role of the Executive | [CE] pp. 209–11. <br> [CE&I] Chapter 12, pp. 331–8. <br> [Kiefer] pp. 21–27. <br> Delker, Wayne. “A Brief History of Clorox.” <br> Christensen, C. M., S. P. Kaufman, and W. C. Shih. <br> [*Innovation Killers: How Financial Tools Destroy Your Capacity to Do New Things*](https://hbr.org/2008/01/innovation-killers-how-financial-tools-destroy-your-capacity-to-do-new-things) <br> . Harvard Business Review Press, 2010. <br> Optional <br> Ancona, D., T. Kochan, E. Westney, and J. Van Maanen. “The Strategic Design Lens.” Teaching Note 12–142. |
+| 6 | Accelerating new business growth: The external tools and methods that can be employed by a firm | Case <br> : Chesbrough, Henry W. “ <br> [GE’s Ecomagination Challenge: An Experiment in Open Innovation](https://journals.sagepub.com/doi/10.1525/cmr.2012.54.3.140) <br> .” <br> Berkeley-Haas Case Series <br> . Case: B5672, 2012. <br> [CE] Chapter 8, pp. 251–65. <br> [CE&I] Chapter 4, pp. 109–11. <br> Chesbrough, H. “ <br> [The Era of Open Innovation](http://sloanreview.mit.edu/article/the-era-of-open-innovation/) <br> .” <br> Sloan Review <br> , Spring 2003. <br> Optional <br> Stinson, Liz. “ <br> [How GE Plans to Act like a Startup and Crowdsource Breakthrough Ideas](http://www.wired.com/2014/04/how-ge-plans-to-act-like-a-startup-and-crowdsource-great-ideas/) <br> .” <br> Wired <br> . April 11, 2014. |
+| 7 | Managing an “entrepreneur friendly” organization—architecture and culture | [CE] Chapter 5. <br> Brown, B., and S. Anthony. “ <br> [How P&G Tripled Its Innovation Success Rate](https://hbr.org/2011/06/how-pg-tripled-its-innovation-success-rate) <br> .” <br> Harvard Business Review <br> , June 2011. [ <br> [Download from innosight.com](http://www.innosight.com/innovation-resources/how-pg-tripled-its-innovation-success-rate.cfm) <br> ] <br> Nagji, B., and G. Tuff. “ <br> [Managing Your Innovation Portfolio](https://hbr.org/2012/05/managing-your-innovation-portfolio) <br> .” <br> Harvard Business Review <br> , May 2012. <br> Keeley, L., H. Walters, R. Pikkel, et al. Chapters 1, 2, 18, and 19 in <br> Ten Types of Innovation: The Discipline of Building Breakthroughs <br> . Wiley, 2013. ISBN: 9781118504246. <br> Optional <br> Ancona, D., T. Kochan, E. Westney, and J. Van Maanen. “The Cultural Lens.” Teaching Note 12–140. <br> Gilbert, C.G. “ <br> [Two Routes to Resilience](https://hbr.org/2012/12/two-routes-to-resilience) <br> .” <br> Harvard Business Review <br> , December 2012. [ <br> [Download from innosight.com](http://www.innosight.com/innovation-resources/two-routes-to-resilience-article.cfm) <br> ] |

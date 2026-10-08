@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "cornell-creative-teaching-awards-year-3-case-study-2-misha-ailsworth"
+institution: "Cornell University"
+platform: "Cornell Teaching Case Studies"
+collection: "Teaching Innovation Case Study Library"
+title: "Creative Teaching Awards – Year 3 – Case Study 2: Misha Ailsworth"
+slug: "creative-teaching-awards-year-3-case-study-2-misha-ailsworth"
+source_url: |
+  https://blogs.cornell.edu/teachingcasestudies/learning-outside-the-classroom-experiential-learning/creative-teaching-awards-year-3-case-study-2-misha-ailsworth/
+language: "en"
+published: "2026-04-06"
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  published: "source"
+extraction_status: "complete"
+content_sha256: "a8b69f15a7421d4ce2a54b8708e3f4acfc52c0f55d471cbdeaa0918075aa58a5"

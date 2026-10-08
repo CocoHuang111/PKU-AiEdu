@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-430-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.430"
+cross_listed_codes:
+  - "CMS.920"
+course_title: "Popular Culture and Narrative: Use and Abuse of the Fairy Tale"
+course_slug: "21l-430-popular-culture-and-narrative-use-and-abuse-of-the-fairy-tale-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Literature"
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. William Donaldson"
+subject_primary: "Literature"
+subject_secondary:
+  - "Fiction"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Fiction"
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course takes a deep look at a big subject. We ask where Fairy Tales come from and we examine the structure of Fairy Tales. We'll also look at how Fairy Tales are conditioned by oral transmission and inherited story-telling techniques.
+course_url: "https://ocw.mit.edu/courses/21l-430-popular-culture-and-narrative-use-and-abuse-of-the-fairy-tale-fall-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-430-popular-culture-and-narrative-use-and-abuse-of-the-fairy-tale-fall-2015/4fef6e3d7378250919b91c418a426a21_21l-430f15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

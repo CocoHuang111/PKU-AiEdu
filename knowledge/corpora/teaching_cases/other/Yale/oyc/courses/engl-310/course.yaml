@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-engl-310"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "ENGL 310"
+course_title: "Modern Poetry"
+course_slug: "engl-310"
+department_path: "english"
+professors:
+  - "Langdon Hammer Professor of English, Chair, Department of English"
+course_url: "https://oyc.yale.edu/english/engl-310"
+language: "en"
+description: |
+  This course covers the body of modern poetry, its characteristic techniques, concerns, and major practitioners. The authors discussed range from Yeats, Eliot, and Pound, to Stevens, Moore, Bishop, and Frost with additional lectures on the poetry of World War One, Imagism, and the Harlem Renaissance. Diverse methods of literary criticism are employed, such as historical, biographical, and gender criticism.
+license_url: ""
+session_count: 26
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

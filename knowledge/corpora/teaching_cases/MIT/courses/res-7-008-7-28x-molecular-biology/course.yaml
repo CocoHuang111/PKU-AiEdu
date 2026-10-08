@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-res-7-008-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.7-008"
+cross_listed_codes:
+  - "7.58"
+course_title: "7.28x Molecular Biology"
+course_slug: "res-7-008-7-28x-molecular-biology"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Stephen P. Bell"
+  - "Prof. Tania Baker"
+  - "Dr. Mary Ellen Wiltrout"
+  - "Dr. Sera Thornton"
+  - "Dr. Nathaniel Schafheimer"
+  - "Dr. Swati Carr"
+subject_primary: "Biology"
+subject_secondary:
+  - "Cell Biology"
+  - "Genetics"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+          - "Genetics"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is an in-depth adventure through the molecular mechanisms that control the maintenance, expression, and evolution of prokaryotic and eukaryotic genomes. Through lectures and readings of relevant literature, students will explore gene regulation, DNA replication, genetic recombination, transcription, and mRNA translation. The quizzes are designed to build students’ experimental design and data analysis skills. This course, based on the MIT course 7.28/7.58 Molecular Biology taken by enrolled MIT students, was organized as a three-part series offered through the MITx program by MIT’s Department of Biology . It is self-paced and free as long as you enroll in the Audit Track option, which you can select after creating a free account on MITx Online.
+course_url: "https://ocw.mit.edu/courses/res-7-008-7-28x-molecular-biology/"
+image_url: "https://ocw.mit.edu/courses/res-7-008-7-28x-molecular-biology/res7-008.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

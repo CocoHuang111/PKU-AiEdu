@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-003-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.003"
+cross_listed_codes: []
+course_title: "Reading Fiction: Imaginary Journeys"
+course_slug: "21l-003-reading-fiction-imaginary-journeys-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Buzard"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Great works of fiction often take us to far-off places; they sometimes conduct us on journeys toward a deeper understanding of what’s right next door. We’ll read, discuss, and interpret a range of short and short-ish works: The reading list will be chosen from among such texts as “Gilgamesh,” Homer’s Odyssey (excerpts), Bunyan’s The Pilgrim’s Progress (excerpts), Swift’s Gulliver’s Travels , Mary Shelley’s Frankenstein , Conrad’s Heart of Darkness , Saleh’s Season of Migration to the North , Woolf’s To the Lighthouse , John Cheever’s “The Swimmer,” Coetzee’s The Life and Times of Michael K , Irving’s “Rip Van Winkle,” Toni Morrison’s Jazz , H. G. Wells’ The Time Machine , Twain’s The Adventures of Huckleberry Finn , Beckett’s How It Is , Calvino’s Invisible Cities , Forster’s A Passage to India . As a CI-H class, this subject will involve substantial practice in argumentative writing and oral communication.
+course_url: "https://ocw.mit.edu/courses/21l-003-reading-fiction-imaginary-journeys-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/21l-003-reading-fiction-imaginary-journeys-fall-2015/4bd0437d99c317a27a3d496e81c83516_21l-003f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

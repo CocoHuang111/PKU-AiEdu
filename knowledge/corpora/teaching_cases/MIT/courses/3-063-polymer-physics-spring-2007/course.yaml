@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-3-063-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.063"
+cross_listed_codes: []
+course_title: "Polymer Physics"
+course_slug: "3-063-polymer-physics-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Edwin (Ned) Thomas"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Polymers"
+  - "Materials Science and Engineering"
+  - "Polymeric Materials"
+  - "Nanotechnology"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Polymers"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Polymeric Materials"
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments with Examples"
+description: |
+  This course presents the mechanical, optical, and transport properties of polymers with respect to the underlying physics and physical chemistry of polymers in melt, solution, and solid state. Topics include conformation and molecular dimensions of polymer chains in solutions, melts, blends, and block copolymers; an examination of the structure of glassy, crystalline, and rubbery elastic states of polymers; thermodynamics of polymer solutions, blends, crystallization; liquid crystallinity, microphase separation, and self-assembled organic-inorganic nanocomposites. Case studies include relationships between structure and function in technologically important polymeric systems.
+course_url: "https://ocw.mit.edu/courses/3-063-polymer-physics-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/3-063-polymer-physics-spring-2007/69e38b3df93239bbdc3a91409bb2ecb6_3-063s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

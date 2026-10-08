@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-17-46-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.46"
+cross_listed_codes: []
+course_title: "U.S. National Security Policy"
+course_slug: "17-46-u-s-national-security-policy-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Erik Lin-Greenberg"
+subject_primary: "Political Science"
+subject_secondary:
+  - "International Relations"
+  - "Public Administration"
+  - "Security Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Security Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This course provides a comprehensive introduction to the making of US foreign and national security policy. It examines the laws that guide policy-making, studies the actors and organizations involved in the inter-agency process, and explores how interaction between the executive, legislative, and judicial branches shapes policy development and implementation. Students acquire practical experience through policy writing and a crisis simulation. This course is designed for students interested in international relations, security, and public policy.
+course_url: "https://ocw.mit.edu/courses/17-46-u-s-national-security-policy-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/17-46-u-s-national-security-policy-fall-2023/mit17_46_f23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

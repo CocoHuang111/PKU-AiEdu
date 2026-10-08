@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-10-491-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.491"
+cross_listed_codes: []
+course_title: "Integrated Chemical Engineering II"
+course_slug: "10-491-integrated-chemical-engineering-ii-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gregory McRae"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Environmental Engineering"
+  - "Environmental Management"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course introduces students to methods and background needed for the conceptual design of continuously operating chemical plants. Particular attention is paid to the use of process modeling tools such as Aspen that are used in industry and to problems of current interest. Each student team is assigned to evaluate and design a different technology and prepare a final design report. For spring 2006, the theme of the course is to design technologies for lowering the emissions of climatically active gases from processes that use coal as the primary fuel.
+course_url: "https://ocw.mit.edu/courses/10-491-integrated-chemical-engineering-ii-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/10-491-integrated-chemical-engineering-ii-spring-2006/c835ea5d7c58875e9efc4476bdcd01cb_10-491s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

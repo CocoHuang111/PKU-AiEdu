@@ -1,0 +1,25 @@
+> 检索摘要：11.946 Planning in Transition Economies for Growth and Equity（Spring 2004，Graduate）的「Assignments」。页内标题：Assignments。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+The discussion questions below correspond to the [readings](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/pages/readings/) for this course. The student writes a response to each class session’s discussion questions listed in the course syllabus. Some student examples are provided. All work is courtesy of the student named and used with permission.
+
+| WEEK# | TOPICS | DISCUSSION QUESTIONS | STUDENT EXAMPLES |
+| --- | --- | --- | --- |
+| 1 | Introduction to Transition: Comparative Statistics and Stories <br> Transition Paths | What are we transitioning from and what are we transitioning towards? |  |
+| 2 | The Importance of Institutions | What are some answers to Mark Granovetter’s call (2002) for integrating such different ideas about the key institutions necessary for transition to a market economy? What could be the benefit to such an integration? | Example by Berhanu Woldetensae. ( <br> [PDF](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/resources/week2_berhanu/) <br> ) |
+| 3 | The Rule of Law and Property Rights in Transition | Why are property rights and the rule of law so important and not so important to transition? Why have property rights reforms varied so much between transition countries? What seems to be the correlation between property rights and growth? |  |
+| 4 | Liberalization and Privatization | Discuss the challenges of privatizing state-owned enterprises in the transition countries - what extra challenges might they face compared to other countries? | Example by Assel Nussupova. ( <br> [PDF](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/resources/week4_nussupova/) <br> ) <br> Example by Berhanu Woldetensae. ( <br> [PDF](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/resources/week4_berhanu/) <br> ) <br> Example by Shahid Sadruddin Nanavati. ( <br> [PDF](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/resources/nanavati_mar_12/) <br> ) |
+| 5 | Asian versus European Transition? | Does there seem to be an Asian style of transition versus European style? Or is there some more appropriate way to categorize transitions? What is accounting for the differences? | Example by Shahid Sadruddin Nanavati.( <br> [PDF](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/resources/nanavati_march_5/) <br> ) <br> Example by William Massaquoi. ( <br> [PDF](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/resources/massaquoi_mrch_5/) <br> ) |
+| 6 | A Rising Tide? The Growth of Inequality in Transition | Is inequality an inevitable fact of transition? Why might some transition countries have greater inequality than others? |  |
+| 7 | The Emergence of the Private Firm | What do empirical studies of the firm do to enlighten our understanding of transition? |  |
+| 8 | Relations with Local Government | What are some of the important characteristics of the ways that firms and local government interact that are productive for economic development? | Example by Robin Macgregor. ( <br> [PDF](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/resources/week8_macgregor/) <br> ) <br> Example by William Massaquoi. ( <br> [PDF](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/resources/massaquoi_apr_2/) <br> ) |
+| 9 | Are Foreign firms privileged by their host governments? | How determinant has FDI been in accounting for different growth rates between transition countries? What are the other factors related to FDI’s role in a transition country? | Example by Robin Macgregor. ( <br> [PDF](https://ocw.mit.edu/courses/11-946-planning-in-transition-economies-for-growth-and-equity-spring-2004/resources/week9_macgregor/) <br> ) |
+| 10 | The Shape of Transition: Cities under Transition | Has the transformation of the physical landscape of transition cities changed primarily from economic forces? |  |
+| 11 | The Emergence of Entrepreneurs | Where do entrepreneurs come from? What niche do they fill in the transition economy? |  |

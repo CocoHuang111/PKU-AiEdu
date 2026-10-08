@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-403-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.403"
+cross_listed_codes: []
+course_title: "German III"
+course_slug: "21g-403-german-iii-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dagmar Jaeger"
+subject_primary: "Language"
+subject_secondary:
+  - "German"
+  - "Literature"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "German"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course expands skills in speaking, reading, listening, and writing. Students develop analytic and interpretative skills through the reading of a full-length drama as well as short prose and poetry (Biermann, Brecht, Dürrenmatt, Tawada and others) and through media selections on contemporary issues in German-speaking cultures. Coursework includes discussions and compositions based on these texts, and review of grammar and development of vocabulary-building strategies. It is recommended for students with two years of high school German.
+course_url: "https://ocw.mit.edu/courses/21g-403-german-iii-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21g-403-german-iii-spring-2004/d0fb310a62c00c8c61d34202dd001673_21g-403s04.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

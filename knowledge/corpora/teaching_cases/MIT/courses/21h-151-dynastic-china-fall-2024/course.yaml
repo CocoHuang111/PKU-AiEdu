@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-151-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.151"
+cross_listed_codes: []
+course_title: "Dynastic China"
+course_slug: "21h-151-dynastic-china-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Tristan G. Brown"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "World History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+          - "World History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Videos"
+  - "Readings"
+  - "Student Work"
+  - "Written Assignments"
+description: |
+  This course surveys the history of China from the first dynasty to the year 1800. It traces the rise of the world’s first centralized bureaucratic state, the development of the world’s oldest living written culture, and the formation of the pre-modern world’s largest single commercial market. It also studies women and men as they founded dynasties, engaged in philosophy, challenged orthodoxies, and invented technologies used around the globe. Finally, the course explores China’s past to understand the country’s present, and reflects on what its stories mean for the global world.
+course_url: "https://ocw.mit.edu/courses/21h-151-dynastic-china-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/21h-151-dynastic-china-fall-2024/mit21h_151_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

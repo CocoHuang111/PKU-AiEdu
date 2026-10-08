@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-18-906-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.906"
+cross_listed_codes: []
+course_title: "Algebraic Topology II"
+course_slug: "18-906-algebraic-topology-ii-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Haynes Miller"
+subject_primary: "Topology and Geometry"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This is the second part of the two-course series on algebraic topology. Topics include basic homotopy theory, obstruction theory, classifying spaces, spectral sequences, characteristic classes, and Steenrod operations.
+course_url: "https://ocw.mit.edu/courses/18-906-algebraic-topology-ii-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/18-906-algebraic-topology-ii-spring-2020/dcced4a09bccf2620e2522bf6b1b3d26_18-906s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

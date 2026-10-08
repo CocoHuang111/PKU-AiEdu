@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-7-002-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.002"
+cross_listed_codes: []
+course_title: "Fundamentals of Experimental Molecular Biology"
+course_slug: "7-002-fundamentals-of-experimental-molecular-biology-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Eric Chu"
+  - "Dr. Vanessa Cheung"
+subject_primary: "Biology"
+subject_secondary:
+  - "Cell Biology"
+  - "Genetics"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+          - "Genetics"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+  - "Laboratory Assignments"
+  - "Written Assignments"
+description: |
+  7.002 is a laboratory course that teaches fundamental skills for performing biological research. Through experiments with an E. coli bacterial ATPase called ClpX, you will learn essential molecular biology techniques commonly used in modern research labs. These techniques include site-directed mutagenesis, DNA isolation, molecular cloning, bacteria transformations, recombinant protein expression and purification, gel electrophoresis, and western blotting. Learning these techniques will give you a taste of life in a molecular biochemistry lab and prepare you for future research work. Our focus is on helping you integrate factual knowledge with an understanding of experimental design and data analysis.
+course_url: "https://ocw.mit.edu/courses/7-002-fundamentals-of-experimental-molecular-biology-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/7-002-fundamentals-of-experimental-molecular-biology-spring-2025/7-002s25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

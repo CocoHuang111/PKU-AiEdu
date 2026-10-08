@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-4-661-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.661"
+cross_listed_codes: []
+course_title: "Theory and Method in the Study of Architecture and Art"
+course_slug: "4-661-theory-and-method-in-the-study-of-architecture-and-art-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Caroline Jones"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural History and Criticism"
+  - "Art History"
+  - "Humanities"
+  - "History"
+  - "Historiography"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural History and Criticism"
+      - name: "Art History"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Historiography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This seminar is open to graduate students, and is intended to offer a synoptic view of selected methodologies and thinkers in art and architectural history (with many theorists from other fields). The syllabus outlines the structure of the course and the readings and assignments for each week; the goal is to become aware of the apparatuses of discourse, and find your own voice within them.
+course_url: "https://ocw.mit.edu/courses/4-661-theory-and-method-in-the-study-of-architecture-and-art-fall-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/4-661-theory-and-method-in-the-study-of-architecture-and-art-fall-2015/5ed4545d5706593591164dd139d313fa_4-661f15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

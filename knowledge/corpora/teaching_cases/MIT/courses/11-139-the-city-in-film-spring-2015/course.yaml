@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-11-139-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.139"
+cross_listed_codes:
+  - "11.239"
+course_title: "The City in Film"
+course_slug: "11-139-the-city-in-film-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ezra Haber Glenn"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Film and Video"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  Using film as a lens to explore and interpret various aspects of the urban experience in both the U.S. and abroad, this course presents a survey of important developments in urbanism from 1900 to the present day, including changes in technology, bureaucracy, and industrialization; immigration and national identity; race, class, gender, and economic inequality; politics, conformity, and urban anomie; and planning, development, private property, displacement, sprawl, environmental degradation, and suburbanization.
+course_url: "https://ocw.mit.edu/courses/11-139-the-city-in-film-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/11-139-the-city-in-film-spring-2015/4081a69e620986d07bbd7e9d23501216_11-139s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

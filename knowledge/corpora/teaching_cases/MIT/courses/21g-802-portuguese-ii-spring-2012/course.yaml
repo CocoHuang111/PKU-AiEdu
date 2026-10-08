@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-802-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.802"
+cross_listed_codes:
+  - "21G.852"
+course_title: "Portuguese II"
+course_slug: "21g-802-portuguese-ii-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Dr. Nilma Dominique"
+subject_primary: "Language"
+subject_secondary:
+  - "Portuguese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Portuguese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  This course is a continuation of 21G.801. It focuses on expanding communication skills and further development of linguistic competency using a variety of authentic sources, such as the Internet, audio, video, and printed materials, to help develop cultural awareness and linguistic proficiency. This course is conducted entirely in Portuguese.
+course_url: "https://ocw.mit.edu/courses/21g-802-portuguese-ii-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/21g-802-portuguese-ii-spring-2012/a4273af33ceb0d89d7988797054ac414_21g-802s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

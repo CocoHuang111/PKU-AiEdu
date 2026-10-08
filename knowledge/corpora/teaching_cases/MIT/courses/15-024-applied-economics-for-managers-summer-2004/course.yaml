@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-15-024-summer-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.024"
+cross_listed_codes: []
+course_title: "Applied Economics for Managers"
+course_slug: "15-024-applied-economics-for-managers-summer-2004"
+term: "Summer"
+year: 2004
+as_taught_in: "Summer 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniel Richards"
+subject_primary: "Management"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+  - "Microeconomics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "Microeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The fact of scarcity forces individuals, firms, and societies to choose among alternative uses – or allocations – of its limited resources. Accordingly, the first part of this summer course seeks to understand how economists model the choice process of individual consumers and firms, and how markets work to coordinate these choices. It also examines how well markets perform this function using the economist’s criterion of market efficiency. Overall, this course focuses on microeconomics, with some topics from macroeconomics and international trade. It emphasizes the integration of theory, data, and judgment in the analysis of corporate decisions and public policy, and in the assessment of changing U.S. and international business environments.
+course_url: "https://ocw.mit.edu/courses/15-024-applied-economics-for-managers-summer-2004/"
+image_url: "https://ocw.mit.edu/courses/15-024-applied-economics-for-managers-summer-2004/f9f4d234035f91f302fb02550358a462_15-024su04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

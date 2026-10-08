@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-24-942-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.942"
+cross_listed_codes: []
+course_title: "Grammar of a Less Familiar Language"
+course_slug: "24-942-grammar-of-a-less-familiar-language-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Michael Kenstowicz"
+  - "Prof. Norvin W. Richards"
+subject_primary: "Linguistics"
+subject_secondary: []
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course is designed to allow participants to engage in the exploration of the grammatical structure of a language that is unknown to them (and typically to the instructors as well). In some ways it simulates traditional field methods research. In terms of format, we work in both group and individual meetings with the consultant. Each student identifies some grammatical construction (e.g. wh questions, agreement, palatalization, interrogative intonation) to focus their research: they elicit and share data and write a report on the material gathered that is to be turned in at the end of the term. Ideally, we can put together a volume of grammatical sketches. The first three to four weeks of the term, our group meetings will explore the basic phonology, morphology and surface syntax for a first pass overview of the language, looking for interesting areas to be explored in more detail later. During this period individual sessions can review material from the general session as well as explore new areas. At roughly the fifth meeting, individual students (typically two to three per session) guide the group elicitations to explore their research topic.
+course_url: "https://ocw.mit.edu/courses/24-942-grammar-of-a-less-familiar-language-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/24-942-grammar-of-a-less-familiar-language-spring-2003/66db9946c9235e52aca0b97c1758c2fa_24-942s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

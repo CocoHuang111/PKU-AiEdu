@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-9-51-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.51"
+cross_listed_codes: []
+course_title: "Affective Priming at Short and Extremely Short Exposures"
+course_slug: "9-51-affective-priming-at-short-and-extremely-short-exposures-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Suzanne Corkin"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Media Assignments"
+  - "Written Assignments"
+description: |
+  This course is an investigation of affective priming and creation of rigorously counterbalanced, fully computerized testing paradigm. Includes background readings, study design, counterbalancing, study execution, data analysis, presentation of poster, and final paper.
+course_url: "https://ocw.mit.edu/courses/9-51-affective-priming-at-short-and-extremely-short-exposures-spring-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/9-51-affective-priming-at-short-and-extremely-short-exposures-spring-2003/1277fef5cd6fda4ca4b710ad0cfc5334_9-51s03.gif
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

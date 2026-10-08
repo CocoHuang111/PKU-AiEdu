@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-141-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.141"
+cross_listed_codes: []
+course_title: "Renaissance To Revolution: Europe, 1300-1800"
+course_slug: "21h-141-renaissance-to-revolution-europe-1300-1800-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeffrey S. Ravel"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "History of Science and Technology"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Religion"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+          - "History of Science and Technology"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+      - name: "Religion"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments with Examples"
+description: |
+  This course provides an introduction to major political, social, cultural and intellectual changes in Europe from the beginnings of the Renaissance in Italy around 1300 to the outbreak of the French Revolution at the end of the 1700s. It focuses on the porous boundaries between categories of theology, magic and science, as well as print. It examines how developments in these areas altered European political institutions, social structures, and cultural practices. It also studies men and women, nobles and commoners, as well as Europeans and some non-Europeans with whom they came into contact.
+course_url: "https://ocw.mit.edu/courses/21h-141-renaissance-to-revolution-europe-1300-1800-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/21h-141-renaissance-to-revolution-europe-1300-1800-spring-2015/df4fa8836c85d35e5af216f706594c06_21h-141s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

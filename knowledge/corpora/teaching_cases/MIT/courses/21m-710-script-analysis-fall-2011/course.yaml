@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-131-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.131"
+cross_listed_codes: []
+course_title: "Script Analysis"
+course_slug: "21m-710-script-analysis-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alan Brody"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Humanities"
+  - "Literature"
+  - "Criticism"
+  - "Drama"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Drama"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course focuses on reading a script theatrically with a view to mounting a coherent production. Through careful, intensive reading of a variety of plays from different periods and different aesthetics, a pattern emerges for discerning what options exist for interpretating a script. The Fall 2005 version of this course contains alternate readings and assignments sections.
+course_url: "https://ocw.mit.edu/courses/21m-710-script-analysis-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/21m-710-script-analysis-fall-2011/a7b95908860c552a83ff738878453987_21m-710f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

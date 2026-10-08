@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-18-354j-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.354J"
+cross_listed_codes:
+  - "1.062J"
+  - "12.207J"
+course_title: "Nonlinear Dynamics II: Continuum Systems"
+course_slug: "18-354j-nonlinear-dynamics-ii-continuum-systems-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Civil and Environmental Engineering"
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jörn Dunkel"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course introduces the basic ideas for understanding the dynamics of continuum systems, by studying specific examples from a range of different fields. Our goal will be to explain the general principles, and also to illustrate them via important physical effects. A parallel goal of this course is to give you an introduction to mathematical modeling.
+course_url: "https://ocw.mit.edu/courses/18-354j-nonlinear-dynamics-ii-continuum-systems-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/18-354j-nonlinear-dynamics-ii-continuum-systems-spring-2015/5f04d067eae392953c52e25806c392cc_18-354js15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

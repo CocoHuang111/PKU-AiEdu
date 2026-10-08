@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-5-80-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.80"
+cross_listed_codes: []
+course_title: "Small-Molecule Spectroscopy and Dynamics"
+course_slug: "5-80-small-molecule-spectroscopy-and-dynamics-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Robert Field"
+subject_primary: "Spectroscopy"
+subject_secondary:
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Spectroscopy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The goal of this course is to illustrate the spectroscopy of small molecules in the gas phase: quantum mechanical effective Hamiltonian models for rotational, vibrational, and electronic structure; transition selection rules and relative intensities; diagnostic patterns and experimental methods for the assignment of non-textbook spectra; breakdown of the Born-Oppenheimer approximation (spectroscopic perturbations); the stationary phase approximation; nondegenerate and quasidegenerate perturbation theory (van Vleck transformation); qualitative molecular orbital theory (Walsh diagrams); the notation of atomic and molecular spectroscopy.
+course_url: "https://ocw.mit.edu/courses/5-80-small-molecule-spectroscopy-and-dynamics-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/5-80-small-molecule-spectroscopy-and-dynamics-fall-2008/1f1e281d715b992b19eb4f3a56e58e34_5-80f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-16-s498-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.S498"
+cross_listed_codes: []
+course_title: "Risk Aware and Robust Nonlinear Planning"
+course_slug: "16-s498-risk-aware-and-robust-nonlinear-planning-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Ashkan Jasour"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Robotics and Control Systems"
+  - "Systems Engineering"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  In this course, Dr. Ashkan Jasour addresses advanced probabilistic and robust optimization-based techniques for control and safety verification of nonlinear dynamical systems in the presence of uncertainties. Specifically, we will learn how to leverage rigorous mathematical tools, such as the theory of measures and moments, the theory of nonnegative polynomials, and semidefinite programming, to develop convex optimization formulations to control and analyze uncertain nonlinear dynamical systems with applications in autonomous systems and robotics.
+course_url: "https://ocw.mit.edu/courses/16-s498-risk-aware-and-robust-nonlinear-planning-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/16-s498-risk-aware-and-robust-nonlinear-planning-fall-2019/ddd4674d0074bae8c31ca7558f944cd4_16-s498f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

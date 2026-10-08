@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北京大学教学档案平台-课程思政</title>
+    <link rel="stylesheet" href="/iview/iview.css">
+    <script src="/js/vue.min.js"></script>
+    <script src="/iview/iview.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/httpVueLoader.js"></script>
+    <style>
+        ul{
+            list-style: none;
+        }
+        #app{
+            width: 100%;
+            font-family: 'PingFang SC',"微软雅黑";
+            font-size: 14px;
+        }
+        .kcszsfk-banner{
+            height: 196px;
+            width: 100%;
+            min-width: 1200px;
+            background: url(/kcsz/imgs/banner2.png) center repeat;
+        }
+        .kcszsfk-content{
+            width: 1200px;
+            margin: auto;
+        }
+
+
+        .kcszsfk-content-yxfl{
+            margin-top: 32px;
+        }
+
+        .kcszsfk-content-yxfl .yx{
+            display:inline-block;
+            padding: 0 15px;
+            cursor: pointer;
+            /* height: 30px; */
+            box-sizing: border-box;
+            margin-top: 11px;
+
+        }
+        .kcszsfk-content-yxfl .yx.active{
+            color: #94070A;
+        }
+
+        .kcszsfk-content-yxfl .ivu-btn{
+            color: #94070A;
+            border-color: #94070A;
+        }
+        .kcszsfk-content-yxfl .ivu-btn:focus {
+            -webkit-box-shadow: 0 0 0 2px rgba(148,7,10,0.2);
+            box-shadow: 0 0 0 2px rgba(148,7,10,0.2);
+        }
+
+        .kcszsfk-content-list{
+            list-style: none;
+
+        }
+
+        .kcszsfk-content-list li{
+            list-style: none;
+            display:inline-block;
+            width: 278px;
+            height: 270px;
+            border-radius: 2px;
+            background-color: #F9FAFE;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .kcszsfk-content-list li:not(:nth-child(4n+1)){
+            margin-left:29px;
+        }
+        .kcszsfk-content-list li .img{
+            height: 183px;
+            background-size: cover;
+            background-position: top center;
+        }
+
+
+        .kcszsfk-content-list li:hover .content{
+            background: #94070A;
+        }
+
+        .kcszsfk-content-list li:hover .content .kcmc,.kcszsfk-content-list li:hover .content .kctds{
+            color:#FFF;
+        }
+        .kcszsfk-content-list li .content{
+            box-sizing: border-box;
+            padding:0 10px;
+            height: 87px;
+            overflow: hidden;
+        }
+
+
+        .kcszsfk-content-list li .content .kcmc{
+            font-weight: bold;
+            color: #2A2A2A;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 10px;
+            display: block;
+        }
+
+        .kcszsfk-content-list li .content .kctds{
+            display: block;
+            height: 54px;
+            font-size: 12px;
+            color: #5D5D5D;
+        }
+
+        .kcszsfk-title-wrapper{
+            margin-top: 30px;
+        }
+
+        .kcszsfk-title-wrapper .kcszsfk-title{
+            display: inline-block;
+            height: 30px;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            vertical-align: bottom;
+        }
+
+        .kcszsfk-title-wrapper .ivu-input{
+            border: 1px solid #94070A;
+            height: 30px;
+            padding-left: 15px;
+            border-radius: 14px;
+        }
+        .kcszsfk-title-wrapper .ivu-input-icon{
+            height: 30px;
+            line-height: 30px;
+            color: #94070A;
+        }
+        .kcszsfk-title-wrapper .ivu-input:focus{
+            border: 1px solid #94070A;
+            box-shadow: 0 0 0 1px rgba(148,7,10,0.2);
+        }
+
+        .kcszsfk-content .ivu-page-prev,.kcszsfk-content .ivu-page-next{
+            border: none;
+        }
+        .custom-page{
+            /*background: #F8F9FB;*/
+            display: inline-block;
+            /*letter-spacing: -.3333em;*/
+            /*font-size: 0;*/
+        }
+
+        .custom-page li{
+            background: #F8F9FB;
+            width: 52px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            margin-right:0;
+            letter-spacing:0
+        }
+
+        .custom-page .ivu-page-item-active{
+            background: #94070A;
+            color: #FFF;
+        }
+
+        .custom-page .ivu-page-item-active a{
+            color: #fff;
+        }
+        .custom-page li:not(.ivu-page-item-active):not(.ivu-page-disabled):hover{
+            background:#C5CDD8;
+        }
+
+        .custom-page li:not(.ivu-page-item-active):not(.ivu-page-disabled):hover a{
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+<link rel="stylesheet" href="/dad/index/css/header.css">
+<meta name="_csrf" content="e123076b-7746-4ea2-b46c-818e7263d48c"/>
+<meta name="_csrf_header" content="X-CSRF-TOKEN"/>
+<!--<link type="image/png"  href="https://iaaa.pku.edu.cn/favicon.ico" rel="shortcut icon">-->
+<script src="/js/jquery.form.js"></script>
+
+<div class="menuHeader headertop" id="menuHeaderHeaderApp">
+    <div class="menuHeader-box">
+        <div class="menuHeader-logo" onclick="handleClickLogo()" style="cursor:pointer;">
+            <img src="/dad/index/images/logo2.png" alt="北京大学教学档案袋平台" />
+        </div>
+        <div class="menuHeader-center">
+            <ul class="menuHeader-nav">
+                <li ><span><a href="/">首页</a></span></li>
+                <li >
+                    <span><a href="/dad/ms/list">教学档案袋</a></span>
+                    <div class="menuHeader-sub-box">
+                        <ul class="menuHeader-sub-list" style="width: 30em;">
+                            <li><a href="/dad/hhsjxsjglal/index">混合式教学设计国际案例</a></li>
+                            <li><a href="/dad/teac/aw/show/index">2023年北京大学教学奖励候选人材料征求意见</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li ><span><a href="/dad/xmsb/xmsb/ztxm">专题项目</a></span></li>
+                <li ><span><a href="/dad/open/jxlt">教学问答</a></span></li>
+
+                <!-- <li ><span><a href="javascript:void (0)">预约咨询</a></span> -->
+                <div class="menuHeader-sub-box">
+                    <ul class="menuHeader-sub-list">
+                        <li><a href="/dad/yyzx">我要预约</a></li>
+<!--                        <li><a onclick="initUser('/dad/yyzx/wdyy', 2)" href="javascript:">发起预约（仅限教师与助教）</a></li>-->
+                        <li><a href="/dad/yyzx/wdyy" target="_blank">发起预约（仅限教师与助教）</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li >
+                <span><a href="javascript:void(0)">学生服务</a></span>
+                <div class="menuHeader-sub-box">
+                    <ul class="menuHeader-sub-list">
+                        <li><a href="/dad/cyyfz/zjpx">助教培训及证书</a></li>
+                        <li><a href="/dad/yyzx">预约咨询</a></li>
+                    </ul>
+                </div>
+                </li>
+<!--                <li >-->
+<!--                <span><a href="/iaaa/aboutUs">关于我们</a></span>-->
+<!--                </li>-->
+<!--                <li >-->
+<!--                    <span><a href="/dad/kcsz" style="color: #640e0e;">课程思政</a></span>-->
+<!--                  <div class="menuHeader-sub-box">-->
+<!--                        <ul class="menuHeader-sub-list">-->
+<!--                            <li><a href="/dad/kcsz/da/list">课程思政示范课程</a></li>-->
+<!--&lt;!&ndash;                            <li><a href="/dad/kcsz/da/lists">课程思政示范专业/院系</a></li>&ndash;&gt;-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </li>-->
+                <!--<li ><span><a href="javascript:void (0)">预约咨询</a></span>-->
+                <!--<div class="menuHeader-sub-box">-->
+                    <!--<ul class="menuHeader-sub-list">-->
+                        <!--<li><a href="/dad/yyzx">我要预约</a></li>-->
+                        <!--<li><a href="/dad/yyzx/wdyy" target="_blank">发起预约（仅限教师与助教）</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li >
+                    <span><a href="/dad/dzjxdad">创建资源</a></span>
+                    &lt;!&ndash;<div class="menuHeader-sub-box">
+                        <ul class="menuHeader-sub-list">
+                            <li><a href="/dad/dzjxdad">电子教学档案袋</a></li>
+                            <li><a href="/dad/dzjxdad">北大教学档案袋</a></li>
+                            <li><a href="/dad/dzjxdad">功能特点</a></li>
+                        </ul>
+                    </div>&ndash;&gt;
+                </li>
+                <li ><span><a href="/dad/ms/list">名师案例</a></span></li>
+                <li ><span><a href="/dad/cyyfz/hdsl">创新发展</a></span></li>
+                <li ><span><a href="/dad/fxjl">分享交流</a></span></li>
+                <li ><span><a href="javascript:void (0)">预约咨询</a></span>
+                <div class="menuHeader-sub-box">
+                    <ul class="menuHeader-sub-list">
+                        <li><a href="/dad/yyzx">我要预约</a></li>
+                        <li><a href="/dad/yyzx/wdyy" target="_blank">发起预约（仅限教师与助教）</a></li>
+                    </ul>
+                </div>
+                </li>
+                <li ><span><a href="/dad/kcsz" style="color: #640e0e;">课程思政</a></span></li>-->
+            </ul>
+        </div>
+        <div class="menuHeader-right">
+            <div class="menuHeader-dl">
+                <img class="menuHeader-dl-login" src="/dad/index/images/login.png" alt="登录"  onclick="login()"/>
+                <!-- <button class="menuHeader-dl-login" style="margin-top: 7px;cursor: pointer;" onclick="login()">登录</button> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        function getDh() {
+            $.ajax({
+                url:"/dad/dhwh/queryDhByKyf",
+                type:"post",
+                async:false,
+                data:{kyf:1},
+                success:function (res) {
+                    var $nav=$(".menuHeader-nav");
+                    for (var i = 0; i < res.length; i++) {
+                        var item=res[i]
+                        var $li=$("<li><span><a href=\""+item.url+"\">"+item.mc+"</a></span></li>");
+                        var $div=null;
+                        if (item.children.length > 0) {
+                            $div=$("<div class=\"menuHeader-sub-box\"></div>");
+                            var $ul=$("<ul class=\"menuHeader-sub-list\"></ul>");
+                            var $lis="";
+                            for (var j = 0; j < item.children.length; j++) {
+                                var el=item.children[j];
+                                $lis=$lis+"<li><a href='"+el.url+"'>"+el.mc+"</a></li>"
+                            }
+                            $ul.append($lis);
+                            $div.append($ul);
+                            $div.css({display:"block",'visibility': 'hidden'})
+                            $div.appendTo($('body'));
+                            var width=$div.width();
+                            $div.remove();
+                            $div.removeAttr("style");
+                            $div.css({"margin-left":(-width/2)+"px",width:width+"px"})
+                            $li.append($div);
+                        }
+                        $nav.append($li);
+                    }
+                }
+            })
+        }
+
+        // $(function () {
+        //     $('.menuHeader-sub-box').each(function () {
+        //         $(this).css({display:"block",'visibility': 'hidden'});
+        //         var width=$(this).width();
+        //         $(this).removeAttr("style");
+        //         $(this).css({"margin-left":(-width/2)+"px",width:width+"px"})
+        //     })
+        // })
+        //getDh();
+    </script>
+    <div class="searchTop-box">
+        <div class="searchTop-box-main">
+            <input type="text" class="searchTop-box-txt" placeholder="请输入需要检索的文章关键字" onkeypress="return onKeyPress(event)">
+            <span class="searchTop-box-btn" onclick="searchtzfn()">
+                <img src="/dad/index/images/s2.png" alt="" />
+            </span>
+        </div>
+    </div>
+</div>
+<div class="dad-jsxx-mask">
+    <div class="dad-jsxx">
+        <div class="dad-jsxx-header">
+            <span>完善信息</span>
+        </div>
+        <div class="dad-form">
+            <div class="dad-form-item">
+                <label><span class="dad-form-item-required">*</span>电子邮箱：</label><input name="dzyx">
+            </div>
+            <div class="dad-form-item">
+                <label><span class="dad-form-item-required">*</span>手机号码：</label><input name="sjh">
+            </div>
+            <div class="dad-form-item">
+                <label><span class="dad-form-item-required">*</span>职称：</label><input name="zcmc">
+            </div>
+        </div>
+        <div class="dad-jsxx-footer">
+            <button class="btn btn-qx" onclick="handleClickQx()">取消</button>
+            <button class="btn" onclick="handleSaveXx()">确定</button>
+        </div>
+    </div>
+</div>
+<script>
+    var myVue = new Vue({
+        el: '#menuHeaderHeaderApp',
+        data() {
+            return {
+                sysJsList: ['08','10','93','94','95','96','97','99'],
+                jsdmList:[],
+                // sysAllow:false,
+            };
+        },
+        mounted () {
+            this.getUser();
+        },
+        computed: {
+            sysAllow() {
+                var _this = this;
+                var jsdm = _this.jsdmList;
+                var sysJsList = _this.sysJsList;
+                var allow = false; 
+                for (let i = 0; i < jsdm.length; i++) {
+                        if (sysJsList.indexOf(jsdm[i]) !== -1) {
+                            allow =  true;
+                            break;
+                        }
+                }
+                return allow;
+            }
+        },
+        methods: {
+            getUser() {
+                var _this = this;
+                $.post("/user/me", this.item, function (res) {
+                    var jsdm = Object.keys(res.dataAuth);
+                    var sysJsList = _this.sysJsList;
+                    var allow = false; 
+                    for (let i = 0; i < jsdm.length; i++) {
+                            if (sysJsList.indexOf(jsdm[i]) !== -1) {
+                                allow =  true;
+                                break;
+                            }
+                    }
+                    if(allow){
+                        $('.htgl').show()
+                    }
+                })
+            }
+        },
+    })
+    /**
+     * 登录
+     */
+    function login() {
+        var pathname = window.location.pathname;
+        var host="http://"+window.location.host+"/";
+        if (pathname.match(/^\/dad\/.*/gi)) {
+            document.write("<form action='https://iaaa.pku.edu.cn/iaaa/oauth.jsp' method=post name='formx1' style='display:none'>");
+            document.write("<input type=hidden name='appID' value='jxdadglxt2020'>");
+            document.write("<input type=hidden name='appName' value='教学档案袋管理系统'>");
+            document.write("<input type=hidden name='redirectUrl' value='http://teaching.pku.edu.cn/authentication/iaaa?redirect="+pathname+"'>");
+            document.write("<input type=hidden name='redirectLogonUrl' value='"+host+"iaaa/login?redirect="+encodeURI(pathname)+"'>");
+            document.write("</form>");
+            document.formx1.submit();
+        }
+        else if(pathname === "/") {
+            document.write("<form action='https://iaaa.pku.edu.cn/iaaa/oauth.jsp' method=post name='formx1' style='display:none'>");
+            document.write("<input type=hidden name='appID' value='jxdadglxt2020'>");
+            document.write("<input type=hidden name='appName' value='教学档案袋管理系统'>");
+            document.write("<input type=hidden name='redirectUrl' value='http://teaching.pku.edu.cn/authentication/iaaa?redirect=/dad/index'>");
+            document.write("<input type=hidden name='redirectLogonUrl' value='"+host+"iaaa/login?redirect="+encodeURI("/dad/index")+"'>");
+            document.write("</form>");
+            document.formx1.submit();
+        }
+        else {
+            document.write("<form action='https://iaaa.pku.edu.cn/iaaa/oauth.jsp' method=post name='formx1' style='display:none'>");
+            document.write("<input type=hidden name='appID' value='jxdadglxt2020'>");
+            document.write("<input type=hidden name='appName' value='教学档案袋管理系统'>");
+            document.write("<input type=hidden name='redirectUrl' value='http://teaching.pku.edu.cn/authentication/iaaa'>");
+            document.write("<input type=hidden name='redirectLogonUrl' value='"+host+"iaaa/login'>");
+            document.write("</form>");
+            document.formx1.submit();
+        }
+
+    }
+
+    function clickJyfx() {
+        var url="/dad/ht/list"
+        document.write("<form action='"+url+"' method=post name='formx2' style='display:none'>");
+        document.write("<input type=hidden name='ssfl' value='AC2DDDDD1C9333EAE055000000000001'>");
+        document.write("<input type=hidden name='pageNum' value='1'>");
+        document.write("<input type=hidden name='pageSize' value='8'>");
+        document.write("</form>");
+        document.formx2.submit();
+    }
+
+    function logout() {
+        var pathname = window.location.pathname;
+        if (pathname.match(/^\/dad\/.*/gi)) {
+            window.location.href="/layout?redirect="+pathname;
+        }else {
+            window.location.href="/layout";
+        }
+    }
+    /**
+     * 获取头像
+     */
+    function getTx() {
+        $.post("/getTxAndXb",{},function (res) {
+            if (res != null) {
+                if (res.TX===null || res.TX===''){
+                    if (res.XBM=='2'){
+                        $("#tx").css("background-image" ,"url(/style03/images/tx06.png)");
+                    }else {
+                        $("#tx").css("background-image","url(/style03/images/tx02.png)");
+                    }
+                } else {
+                    $("#tx").css("background-image" ,"url("+res.TX+")");
+                }
+                // if (res.sfxs!=='1'&&(res.DZYX===null || res.SJH===null || res.ZCMC===null)&&res.qtjs==='0'){
+                //     var maxZIndex = getMaxZIndex();
+                //     $(".dad-jsxx-mask").show().css("z-index",maxZIndex+1);
+                //     $('body').css("overflow","hidden")
+                //     $(".dad-form input[name='dzyx']").val(res.DZYX)
+                //     $(".dad-form input[name='sjh']").val(res.SJH)
+                //     $(".dad-form input[name='zcmc']").val(res.ZCMC)
+                // }
+            }
+        })
+        
+    }
+
+
+
+    function handleClickLogo() {
+        window.location.href="/";
+    };
+
+    $(function () {
+        $(".searchHeader-btn").on("click", function() {
+            $(".searchTop-box").slideDown();
+            $(".searchTop-box .searchTop-box-txt").focus();
+            return false;
+        });
+        $("body").on("click", function() {
+            $(".searchTop-box").slideUp();
+        });
+        $(".searchTop-box").on("click", function() {
+            return false;
+        });
+
+    })
+    function searchtzfn() {
+        var seartxt = $.trim($(".searchTop-box-txt").val());
+        if (seartxt == "") {
+            alert("请输入搜索内容")
+        } else {
+           $.form("/dad/search",{search:seartxt},"_self","POST")
+        }
+    };
+    var token = $("meta[name='_csrf']").attr("content");
+    var header = $("meta[name='_csrf_header']").attr("content");
+    $.ajaxSetup({
+        beforeSend: function (xhr) {
+            if(header && token ){
+                xhr.setRequestHeader(header, token);
+            }
+        }}
+    );
+
+    function onKeyPress(e) {
+        var keyCode = null;
+        if(e.which)
+            keyCode = e.which;
+        else if(e.keyCode)
+            keyCode = e.keyCode;
+        if(keyCode == 13) {
+            SendMessage();
+            return false;
+        }
+        return true;
+    }
+
+    function SendMessage() {
+        searchtzfn();
+    }
+
+    function switchLanguage(){
+        var url = window.location.href;
+        var language = 'zh';
+        var zh = "zh_CN";
+        var en = "en_US";
+        url = url.replace("?_lang="+zh, "");
+        url = url.replace("?_lang="+en, "");
+        var str = "?_lang=" + (language.indexOf("zh") > -1 ? en : zh);
+        url += str;
+        window.location.href = url;
+    }
+    // 获取当前页面最大z-index元素值
+    function getMaxZIndex() {
+        var maxZ = Math.max.apply(null, $.map($('body *'), function(e,n) {
+                if ($(e).css('position') != 'static') {
+                    return parseInt($(e).css('z-index')) || -1;
+                }
+            }
+        ));
+        return maxZ;
+    }
+    function handleSaveXx() {
+       var dzyx=$(".dad-form input[name='dzyx']").val();
+       var sjh= $(".dad-form input[name='sjh']").val();
+       var zcmc= $(".dad-form input[name='zcmc']").val();
+       $.post("/szgl/jsxx/wsxx",{dzyx:dzyx,sjh:sjh,zcmc:zcmc},function (res) {
+           if (res.code === 200) {
+               alert("操作成功");
+               $(".dad-jsxx-mask").hide();
+               $('body').css("overflow","auto")
+           }else {
+               alert(res.msg);
+           }
+       })
+    }
+
+    function handleClickQx() {
+        logout();
+    }
+
+    function initUser(url, lx) {
+
+        $.ajax({
+            url:"/sys/xx/isBdUser",
+            type:'GET',
+            success: function(res){
+                if(res.content){
+                    if(lx == 1){
+                        window.location.href = url;
+                    }else {
+                        window.open(url);
+                    }
+                }else {
+                    alert("非北大用户无权使用!");
+                }
+            },
+            error:function(response){
+                if(response.status == 401){
+                    login();
+                }
+            }
+        });
+
+        /*$.get("/sys/xx/isBdUser", function (res){
+            if(res.content){
+                if(lx == 1){
+                    window.location.href = url;
+                }else {
+                    window.open(url);
+                }
+            }else {
+                alert("非北大用户无权使用!");
+            }
+        });*/
+    }
+
+    function isXlHdQx() {
+        $.get("/sys/xx/isBdUser", function (res){
+            if(!res.content){
+               $(".inco-is-qx").remove();
+            }
+        });
+    }
+    $(function (){
+        isXlHdQx();
+    })
+
+
+    function changePassword() {
+        var iHeight = 300;//新打开页面的高
+        var iWidth = 380;//新打开页面的宽
+        //获得窗口的垂直位置
+        var iTop = (window.screen.availHeight - 30 - iHeight) / 2;
+        //获得窗口的水平位置
+        var iLeft = (window.screen.availLeft || 0) + (window.screen.availWidth - 10 - iWidth) / 2;
+        window.open("/sys/iaaa/registerUser/changePassword", "修改密码",
+            'width=' + iWidth + ',height=' + iHeight + ',top=' + iTop + ',left=' + iLeft + ',location=no,resizable=no,status=no,toolbar=no,menubar=no');
+    }
+
+</script>
+    <div id="app">
+        <div class="kcszsfk-banner"></div>
+        <div class="kcszsfk-content">
+            <div class="kcszsfk-content-main">
+                <!--<div class="kcszsfk-content-yxfl">
+                    <i-button @click="handleClickYx()">全部院系</i-button>
+                    <span class="yx" v-for="item in yxList" :key="item" :class="{active:active===item.yxdm}" @click="handleClickYx(item)">{{item.yxmc}}</span>
+                </div>-->
+                <div class="kcszsfk-title-wrapper">
+                    <span class="kcszsfk-title">示范课程（{{page.total}}）</span>
+                    <i-Input search placeholder="查找课程" style="width:143px;float: right;" v-mode="kcmc" @on-search="handleSearch"></i-Input>
+                </div>
+                <template v-if="page.total!==0">
+                    <div style="margin-bottom: 46px;">
+                        <ul class="kcszsfk-content-list">
+                            <li v-for="item in list" @click="handleClickKcsz(item.DADM)">
+                                <div class="img" :style="{'background-image':'url('+baseUrl+(item.IMG===null?'/dad/kcsz/images/kc.png':item.IMG)+')'}"></div>
+                                <div class="content">
+                                    <span class="kcmc">{{item.KCMC}}</span>
+                                    <span class="kctds">{{item.td}}</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div style="text-align: center;margin-top: 46px;" v-show="page.total>page.pageSize">
+                            <Page :total="page.total"
+                                  show-total
+                                  :page-size='page.pageSize' class-name="custom-page" @on-change="handleChangePage"></Page>
+                        </div>
+                    </div>
+                </template>
+                <inco-empty v-else></inco-empty>
+            </div>
+        </div>
+    </div>
+<link rel="stylesheet" href="/dad/index/css/footer.css">
+<div class="footer-mainbox">
+    <div class="footer-mainbox-nr">
+        <div class="footer-nr-box">
+            <div class="footer-nr-logo">
+                <img src="/dad/index/images/index/footer-logo.png" alt="">
+            </div>
+            <div class="footer-nr-gy">
+                <h5><a target="_blank" href="/dad/dzjxdad" style="color: inherit;">北大教师教学档案袋平台</a></h5>
+                <div class="footer-nr-text">教学档案袋是教师改进教学的重要工具，它有序地整合教师的教学信息，帮助教师开展教学反思，从而促进教师教学能力的提升。北京大学教师教学发展中心通过推进教学档案袋项目，帮助北大教师全方位、立体化地整合教学资源，形成电子教学档案袋，促进教师的教学发展与交流。</div>
+            </div>
+
+            <div class="footer-nr-nav">
+                <div class="footer-nr-list">
+                    <h5>友情链接</h5>
+                    <ul class="footer-nr-sub">
+                        <li>
+                            <a href="https://www.pku.edu.cn" target="_blank">北京大学</a>
+                        </li>
+                        <li>
+                            <a href="http://course.pku.edu.cn" target="_blank">北大教学网</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="http://cetl.pku.edu.cn" target="_blank">北京大学教师教学发展中心</a>
+                        </li>
+                        <li style="margin: 0;">
+                            <a href="http://tl.bjmu.edu.cn" target="_blank">医学部教师教学发展中心</a>
+                        <br>
+                        </li>
+                        <br>
+                        <li>
+                            <a  href="http://www.dean.pku.edu.cn" target="_blank">北京大学教务部</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-wtfk-r">
+                <div class="footer-wtfk-text"><a href="/dad/lxfk">问题反馈</a></div>
+            </div>
+        </div>
+        <div class="footer-nr-bqsy">
+            <span>版权所有：北京大学</span>
+            <span>地址：北京市海淀区颐和园路5号</span>
+            <span>京CP备：05065075号-1</span>
+            <span>京公网安备 110402430047 号</span>
+        </div>
+    </div>
+</div>
+    <script>
+        var vm=new Vue({
+            el:"#app",
+            components:{
+                "inco-empty":httpVueLoader("/qnjsdad/components/empty.vue")
+            },
+            data:function(){
+                return{
+                    active:"",
+                    fllx:"1",
+                    list:[],
+                    yxList:[],
+                    kcmc:"",
+                    page:{pageNum:1,pageSize:8,total:0},
+                    baseUrl:""
+                }
+            },
+            methods:{
+                handleClickYx:function(yx){
+                    if(typeof yx==="undefined"){
+                        this.active="";
+                    }else{
+                        this.active=yx.yxdm;
+                    }
+                    this.page.pageNum=1;
+                    this.queryByPage();
+                },
+                queryYxList:function () {
+                    var self=this;
+                    $.post("/dad/kcsz/da/queryYxList",{},function (res) {
+                        self.yxList=res;
+                    })
+                },
+                queryByPage:function () {
+                    var self=this;
+                    var params=$.extend({},this.page,{yxdm:this.active,kcmc:this.kcmc})
+                    $.get("/dad/kcsz/da/queryTjKcszkc",params,function (res) {
+                        self.list=res.list;
+                        self.page.total=res.total;
+                    })
+                },
+                handleChangePage:function (page) {
+                    this.page.pageNum=page;
+                    this.queryByPage();
+                },
+                handleSearch:function (val) {
+                    this.page.pageNum=1;
+                    this.kcmc=val;
+                    this.queryByPage();
+                },
+                handleClickKcsz:function (dadm) {
+                    // window.location.href="/dad/kcsz/da/view/"+dadm
+                    window.open("/dad/kcsz/da/foreignview/"+dadm)
+                }
+            },
+            mounted:function () {
+                this.queryByPage();
+                this.queryYxList();
+            }
+        })
+    </script>
+</body>
+</html>

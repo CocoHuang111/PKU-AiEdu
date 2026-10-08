@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-525j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.525J"
+cross_listed_codes:
+  - "10.548J"
+course_title: "Tumor Pathophysiology and Transport Phenomena"
+course_slug: "hst-525j-tumor-pathophysiology-and-transport-phenomena-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Rakesh Jain"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Health and Medicine"
+  - "Cancer"
+  - "Pathology and Pathophysiology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Cancer"
+        specialties: []
+      - name: "Pathology and Pathophysiology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Tumor pathophysiology plays a central role in the growth, invasion, metastasis and treatment of solid tumors. This class applies principles of transport phenomena to develop a systems-level, quantitative understanding of angiogenesis, blood flow and microcirculation, metabolism and microenvironment, transport and binding of small and large molecules, movement of cancer and immune cells, metastatic process, and treatment response. Additional Faculty Dr. Pat D’Amore Dr. Dan Duda Dr. Robert Langer Prof. Robert Weinberg Dr. Marsha Moses Dr. Raghu Kalluri Dr. Lance Munn
+course_url: "https://ocw.mit.edu/courses/hst-525j-tumor-pathophysiology-and-transport-phenomena-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/hst-525j-tumor-pathophysiology-and-transport-phenomena-fall-2005/08fd50a4d2cf05479beda0377b5ec497_hst-525jf05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

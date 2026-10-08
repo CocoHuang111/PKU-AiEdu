@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-9-012-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.012"
+cross_listed_codes: []
+course_title: "The Brain and Cognitive Sciences II"
+course_slug: "9-012-the-brain-and-cognitive-sciences-ii-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Earl Miller"
+  - "Prof. Nancy Kanwisher"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neuroscience"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course is the second half of the intensive survey of brain and behavioral studies for first-year graduate students in the Brain and Cognitive Sciences curriculum. Each module of this core course involves a series of overview lectures by leading researchers in the field. By offering a thorough introduction to the current state of the discipline while emphasizing critical thinking, the course aims to prepare students as cognitive scientists. Topics include: perception, attention, working memory, recognition and recall, language, and other issues in cognitive science. Topics are covered from the neural, behavioral and computational perspectives.
+course_url: "https://ocw.mit.edu/courses/9-012-the-brain-and-cognitive-sciences-ii-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/9-012-the-brain-and-cognitive-sciences-ii-spring-2002/85f00c06e81ae6f2e98f1cb6656759c2_9-012s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

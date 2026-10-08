@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-8-323-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.323"
+cross_listed_codes: []
+course_title: "Relativistic Quantum Field Theory I"
+course_slug: "8-323-relativistic-quantum-field-theory-i-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Hong Liu"
+subject_primary: "Physics"
+subject_secondary:
+  - "Condensed Matter Physics"
+  - "Particle Physics"
+  - "Quantum Mechanics"
+  - "Relativity"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Condensed Matter Physics"
+          - "Particle Physics"
+          - "Quantum Mechanics"
+          - "Relativity"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Problem-solving Notes"
+  - "Readings"
+description: |
+  This course is a one-term self-contained subject in quantum field theory. Concepts and basic techniques are developed through applications in elementary particle physics and condensed matter physics.
+course_url: "https://ocw.mit.edu/courses/8-323-relativistic-quantum-field-theory-i-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/8-323-relativistic-quantum-field-theory-i-spring-2023/mit8_323_s23_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

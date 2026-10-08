@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-141-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.141"
+cross_listed_codes: []
+course_title: "Technology Policy Negotiations"
+course_slug: "esd-141-technology-policy-negotiations-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joel Cutcher-Gershenfeld"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Engineering"
+  - "Systems Engineering"
+  - "Social Science"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course features a core framework for an interest-based, problem-solving approach to technology, logistics and other systems-oriented negotiations. A comprehensive approach to dispute resolution in organizations and complex engineered systems is also developed. The course builds key interactive skills, including communications skills, dealing with difficult people, negotiating over the “rules of game,” and cross-cultural negotiations. Assignments center on analysis of negotiated interactions and assessing dispute resolution systems.
+course_url: "https://ocw.mit.edu/courses/esd-141-technology-policy-negotiations-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/esd-141-technology-policy-negotiations-spring-2006/240e07385f470d1b0b5e325d86691b36_esd-141s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

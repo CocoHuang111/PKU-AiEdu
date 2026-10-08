@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-939-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.939"
+cross_listed_codes: []
+course_title: "Designing and Sustaining Technology Innovation for Global Health Practice"
+course_slug: "hst-939-designing-and-sustaining-technology-innovation-for-global-health-practice-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jeffrey Blander"
+  - "Prof. Utkan Demirci"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Innovation"
+  - "Health and Medicine"
+  - "Biomedical Enterprise"
+  - "Public Health"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Enterprise"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  Innovation in global health practice requires leaders who are trained to think and act like entrepreneurs. Whether at a hospital bedside or in a remote village, global healthcare leaders must understand both the business of running a social venture as well as how to plan for and provide access to life saving medicines and essential health services. Each week, the course features a lecture and skills-based tutorial session led by industry, non-profit foundation, technology, and academic leaders to think outside the box in tackling and solving problems in innovation for global health practice through the rationale design of technology and service solutions. The lectures provide the foundation for faculty-mentored pilot project from MOH, students, or non-profit sponsors that may involve creation of a market or business plan, product development, or a research study design.
+course_url: "https://ocw.mit.edu/courses/hst-939-designing-and-sustaining-technology-innovation-for-global-health-practice-spring-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/hst-939-designing-and-sustaining-technology-innovation-for-global-health-practice-spring-2008/021465f77927a52d6d932580d106fb92_hst-939s08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

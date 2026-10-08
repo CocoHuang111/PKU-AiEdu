@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-es-1803-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.1803"
+cross_listed_codes: []
+course_title: "Differential Equations"
+course_slug: "es-1803-differential-equations-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Jeremy Orloff"
+subject_primary: "Differential Equations"
+subject_secondary:
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Open Textbooks"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Readings"
+description: |
+  This course, taught to students in MIT’s Experimental Study Group, is equivalent to the Mathematics Department’s 18.03 Differential Equations . They satisfy the same prerequisites and are geared to preparing students for downstream science and engineering classes. MIT’s Experimental Study Group (ESG) is one of MIT’s first-year learning communities. Small class sizes allow for teaching interactively and staying in close touch with what every student is finding easy or difficult.
+course_url: "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/es-1803-differential-equations-spring-2024/mites_1803_s24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

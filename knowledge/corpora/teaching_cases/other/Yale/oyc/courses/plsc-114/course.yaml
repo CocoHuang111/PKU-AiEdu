@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-plsc-114"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "PLSC 114"
+course_title: "Introduction to Political Philosophy"
+course_slug: "plsc-114"
+department_path: "political science"
+professors:
+  - "Steven B. Smith Alfred Cowles Professor of Political Science"
+course_url: "https://oyc.yale.edu/political-science/plsc-114"
+language: "en"
+description: |
+  This course is intended as an introduction to political philosophy as seen through an examination of some of the major texts and thinkers of the Western political tradition. Three broad themes that are central to understanding political life are focused upon: the polis experience (Plato, Aristotle), the sovereign state (Machiavelli, Hobbes), constitutional government (Locke), and democracy (Rousseau, Tocqueville). The way in which different political philosophies have given expression to various forms of political institutions and our ways of life are examined throughout the course.
+license_url: ""
+session_count: 24
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

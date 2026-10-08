@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-18-994-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.994"
+cross_listed_codes: []
+course_title: "Seminar in Geometry"
+course_slug: "18-994-seminar-in-geometry-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Emma Carberry"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+  - "Linear Algebra"
+  - "Mathematical Analysis"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  In this course, students take turns in giving lectures. For the most part, the lectures are based on Robert Osserman's classic book _A Survey of Minimal Surfaces_, Dover Phoenix Editions. New York: Dover Publications, May 1, 2002. ISBN: 0486495140.
+course_url: "https://ocw.mit.edu/courses/18-994-seminar-in-geometry-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/18-994-seminar-in-geometry-fall-2004/1441213ed8ff74c265a0c0d8fdcb6c09_18-994f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

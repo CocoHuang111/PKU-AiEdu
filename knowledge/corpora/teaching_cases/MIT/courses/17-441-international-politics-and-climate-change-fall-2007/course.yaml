@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-17-441-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.441"
+cross_listed_codes:
+  - "17.442"
+course_title: "International Politics and Climate Change"
+course_slug: "17-441-international-politics-and-climate-change-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Nazli Choucri"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Engineering"
+  - "Environmental Engineering"
+  - "Environmental Management"
+  - "Science"
+  - "Earth Science"
+  - "Climate Studies"
+  - "Sustainability"
+  - "Social Science"
+  - "Political Science"
+  - "International Relations"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Written Assignments"
+description: |
+  This course examines the interconnections of international politics and climate change. Beginning with an analysis of the strategic and environmental legacies of the 20th Century, it explores the politicization of the natural environment, the role of science in this process, and the gradual shifts in political concerns to incorporate “nature”. Two general thrusts of climate-politics connections are pursued, namely those related to (a) conflict – focusing on threats to security due to environmental dislocations and (b) cooperation – focusing on the politics of international treaties that have contributed to emergent processes for global accord in response to evidence of climate change. The course concludes by addressing the question of: “What Next?”
+course_url: "https://ocw.mit.edu/courses/17-441-international-politics-and-climate-change-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/17-441-international-politics-and-climate-change-fall-2007/c9927fd8385e5be6d75038e76c7c6965_17-441f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

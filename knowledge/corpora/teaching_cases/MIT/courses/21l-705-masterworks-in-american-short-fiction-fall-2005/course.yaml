@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-705-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.705"
+cross_listed_codes: []
+course_title: "Masterworks in American Short Fiction"
+course_slug: "21l-705-masterworks-in-american-short-fiction-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Hildebidle"
+subject_primary: "Literature"
+subject_secondary:
+  - "American Literature"
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "American Literature"
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  For some reason, American literature (like French, Irish, and Russian, among others) has been especially productive in major works in fictional forms shorter than the novel. Our task in this course will be to survey that field, by looking at particular moments of high accomplishment. We will, in addition, consider some of the ways in which literary formulae can be used and varied, and some of the impacts of elements of narrative construction.
+course_url: "https://ocw.mit.edu/courses/21l-705-masterworks-in-american-short-fiction-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21l-705-masterworks-in-american-short-fiction-fall-2005/f87d2adf7e9584e652381800187b8015_21l-705f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

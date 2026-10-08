@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-6-849-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.849"
+cross_listed_codes: []
+course_title: "Geometric Folding Algorithms: Linkages, Origami, Polyhedra"
+course_slug: "6-849-geometric-folding-algorithms-linkages-origami-polyhedra-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Erik Demaine"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Fine Arts"
+  - "Visual Arts"
+  - "Mathematics"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course focuses on the algorithms for analyzing and designing geometric foldings. Topics include reconfiguration of foldable structures, linkages made from one-dimensional rods connected by hinges, folding two-dimensional paper (origami), and unfolding and folding three-dimensional polyhedra. Applications to architecture, robotics, manufacturing, and biology are also covered in this course. Acknowledgments Thanks to videographers Martin Demaine and Jayson Lynch.
+course_url: "https://ocw.mit.edu/courses/6-849-geometric-folding-algorithms-linkages-origami-polyhedra-fall-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/6-849-geometric-folding-algorithms-linkages-origami-polyhedra-fall-2012/f34024b4a6e0408be2f1bad03292c841_6-849f12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

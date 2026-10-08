@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-836-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.836"
+cross_listed_codes: []
+course_title: "Sensor Technologies for Interactive Environments"
+course_slug: "mas-836-sensor-technologies-for-interactive-environments-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joseph Paradiso"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Digital Systems"
+  - "Electronics"
+  - "Signal Processing"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Electronics"
+          - "Signal Processing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is a broad introduction to a host of sensor technologies, illustrated by applications drawn from human-computer interfaces and ubiquitous computing. After extensively reviewing electronics for sensor signal conditioning, the lectures cover the principles and operation of a variety of sensor architectures and modalities, including pressure, strain, displacement, proximity, thermal, electric and magnetic field, optical, acoustic, RF, inertial, and bioelectric. Simple sensor processing algorithms and wired and wireless network standards are also discussed. Students are required to complete written assignments, a set of laboratories, and a final project.
+course_url: "https://ocw.mit.edu/courses/mas-836-sensor-technologies-for-interactive-environments-spring-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/mas-836-sensor-technologies-for-interactive-environments-spring-2011/0d7be60808a4d0e0843f1a87c4c991d5_mas-836s11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

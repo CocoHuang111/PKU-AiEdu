@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-sally-aboelela"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Sally Aboelela, PhD, RN"
+slug: "sally-aboelela"
+source_url: "https://ctl.columbia.edu/transformations/faculty/sally-aboelela/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "23608af2b931925cfc39a7d0e28095f7b0dd11047edccc5b49f9417d233d8348"

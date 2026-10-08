@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-4-303-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.303"
+cross_listed_codes: []
+course_title: "Dialogue in Art, Architecture, and Urbanism"
+course_slug: "4-303-dialogue-in-art-architecture-and-urbanism-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Antonio Muntadas"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Visual Arts"
+  - "Social Science"
+  - "Urban Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+      - name: "Visual Arts"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Other Video"
+  - "Projects with Examples"
+description: |
+  In this class we will examine how the idea of the city has been “translated” by artists, architects, and other diverse disciplines. We will consider how collaborations between artists and architects might provide opportunities for rethinking / redesigning urban spaces. The class will look specifically at planned cities like Brasilia, Las Vegas, Canberra, and Celebration and compare such tabula rasa designs with the redesign of recyclable urban spaces demonstrated in projects such as Ground Zero, Barcelona 2004, and Boston’s Rose Kennedy Greenway. While the course will involve some reading and discussion, coursework will focus largely on the students’ own projects / interventions that should evolve over the course of the semester. Of the two weekly class meetings, one will be a group discussion or lecture with the whole class and visiting guests, and the other will be an individual meeting between the student and the instructor to discuss his or her work for the class, including the final project.
+course_url: "https://ocw.mit.edu/courses/4-303-dialogue-in-art-architecture-and-urbanism-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/4-303-dialogue-in-art-architecture-and-urbanism-fall-2003/527223122e7ce1ffab76254f4a9e09d7_4-303f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

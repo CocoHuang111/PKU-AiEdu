@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-9-00sc-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.00SC"
+cross_listed_codes: []
+course_title: "Introduction to Psychology"
+course_slug: "9-00sc-introduction-to-psychology-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John D. E. Gabrieli"
+subject_primary: "Cognitive Science"
+subject_secondary:
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Open Textbooks"
+description: |
+  This course is a survey of the scientific study of human nature, including how the mind works, and how the brain supports the mind. Topics include the mental and neural bases of perception, emotion, learning, memory, cognition, child development, personality, psychopathology, and social interaction. Students will consider how such knowledge relates to debates about nature and nurture, free will, consciousness, human differences, self, and society. Course Format This course has been designed for independent study. It includes all of the materials you will need to understand the concepts covered in this subject. The materials in this course include: A full set of Lecture Videos by Prof. John Gabrieli. Reading Assignments in several books, including one free online textbook and detailed notes on another book. Assorted multiple choice and short answer questions to Check Yourself on the material in each session. Supporting Discussion content that elaborates on the lectures and reading. A rich collection of online resources for Further Study on each session’s topics. A full set of Exams with solution keys, and extra practice questions for review.
+course_url: "https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/9-00sc-introduction-to-psychology-fall-2011/5e3bbd1def95cb7fe71f0f47db3bc5fb_9-00scf11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

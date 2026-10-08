@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-4-645-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.645"
+cross_listed_codes: []
+course_title: "Selected Topics in Architecture: Architecture from 1750 to the Present"
+course_slug: "4-645-selected-topics-in-architecture-architecture-from-1750-to-the-present-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Arindam Dutta"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural History and Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural History and Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This class is a general study of modern architecture as a response to important technological, cultural, environmental, aesthetic, and theoretical challenges after the European Enlightenment. It focuses on the theoretical, historiographic, and design approaches to architectural problems encountered in the age of industrial and post-industrial expansion across the globe, with specific attention to the dominance of European modernism in setting the agenda for the discourse of a global modernity at large. It explores modern architectural history through thematic exposition rather than as a simple chronological succession of ideas.
+course_url: "https://ocw.mit.edu/courses/4-645-selected-topics-in-architecture-architecture-from-1750-to-the-present-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/4-645-selected-topics-in-architecture-architecture-from-1750-to-the-present-fall-2004/d8d8194482eea424103c3f54758e0bc0_4-645f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

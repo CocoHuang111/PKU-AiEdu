@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-755-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.755"
+cross_listed_codes:
+  - "21W.757"
+course_title: "Writing and Reading Short Stories"
+course_slug: "21w-755-writing-and-reading-short-stories-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Shariann Lewitt"
+subject_primary: "Literature"
+subject_secondary:
+  - "Creative Writing"
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is an introduction to the short story. Students will write stories and short descriptive sketches. Students will read great short stories and participate in class discussions of students' writing and the assigned stories in their historical and social contexts.
+course_url: "https://ocw.mit.edu/courses/21w-755-writing-and-reading-short-stories-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/21w-755-writing-and-reading-short-stories-spring-2012/9ac987970871f8f4da20e5111c084ba7_21w-755s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

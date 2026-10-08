@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-15-763j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.763J"
+cross_listed_codes:
+  - "1.274J"
+  - "IDS.736J (formerly ESD.268J)"
+course_title: "Manufacturing System and Supply Chain Design"
+course_slug: "15-763j-manufacturing-system-and-supply-chain-design-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Civil and Environmental Engineering"
+  - "Institute for Data, Systems, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Simchi-Levi"
+  - "Prof. Stephen Graves"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Supply Chain Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  15.763J focuses on decision making for system design, as it arises in manufacturing systems and supply chains. Students are exposed to frameworks and models for structuring the key issues and trade-offs. The class presents and discusses new opportunities, issues and concepts introduced by the internet and e-commerce. It also introduces various models, methods and software tools for logistics network design, capacity planning and flexibility, make-buy, and integration with product development. Industry applications and cases illustrate concepts and challenges. The class is recommended for anyone concentrating in Operations Management, and is a second half-term subject.
+course_url: "https://ocw.mit.edu/courses/15-763j-manufacturing-system-and-supply-chain-design-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/15-763j-manufacturing-system-and-supply-chain-design-spring-2005/1a7951328ea94209e663d0aab03d627e_15-763js05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

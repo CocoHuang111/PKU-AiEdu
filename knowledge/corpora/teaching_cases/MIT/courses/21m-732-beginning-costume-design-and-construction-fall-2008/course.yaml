@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-222-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.222"
+cross_listed_codes: []
+course_title: "Beginning Costume Design and Construction"
+course_slug: "21m-732-beginning-costume-design-and-construction-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Leslie Cocuzzo Held"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theatrical Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theatrical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Image Gallery"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This is an intermediate workshop designed for students who have a basic understanding of the principles of theatrical design and who want a more intensive study of costume design and the psychology of clothing. Students develop designs that emerge through a process of character analysis, based on the script and directorial concept. Period research, design, and rendering skills are fostered through practical exercises. Instruction in basic costume construction, including drafting and draping, provide tools for students to produce final projects.
+course_url: "https://ocw.mit.edu/courses/21m-732-beginning-costume-design-and-construction-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/21m-732-beginning-costume-design-and-construction-fall-2008/73d3d6a46207126d2a2d5f0db3d177ec_21m-732f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

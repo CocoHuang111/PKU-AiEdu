@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-res-18-001-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.18-001"
+cross_listed_codes: []
+course_title: "Calculus Open Textbook"
+course_slug: "res-18-001-calculus-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gilbert Strang"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+description: |
+  First published in 1991 by Wellesley-Cambridge Press , this updated 3rd edition of the book is a useful resource for educators and self-learners alike. It is well organized, covers single variable and multivariable calculus in depth, and is rich with applications. There is also an online Instructor’s Manual and a student Study Guide .
+course_url: "https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/mitres_18_001_f23_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

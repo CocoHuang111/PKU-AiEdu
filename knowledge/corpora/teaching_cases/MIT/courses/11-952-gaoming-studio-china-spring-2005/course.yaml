@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-11-952-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.952"
+cross_listed_codes: []
+course_title: "Gaoming Studio - China"
+course_slug: "11-952-gaoming-studio-china-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Eran Ben-Joseph"
+  - "Prof. Tunney Lee"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Hydrology and Water Resource Systems"
+  - "Fine Arts"
+  - "Architecture"
+  - "Environmental Design"
+  - "Social Science"
+  - "Economics"
+  - "Developmental Economics"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Hydrology and Water Resource Systems"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  The studio will focus on the district of Gaoming, located in the northwest of the Pearl River Delta (PRD) - the fastest growing and most productive region of China. The District has recently completed a planning effort in which several design institutes and a Hong Kong planning firm prepared ideas for a new central area near the river. The class will complement these efforts by focusing on planning and design options on the waterfront of the proposed new district and ways of integrating water/hydrological factors into all aspects and land uses of a modern city (residential, commercial, industrial) - including watershed and natural ecosystem protection, economic and recreational activities, transportation, and tourism.
+course_url: "https://ocw.mit.edu/courses/11-952-gaoming-studio-china-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/11-952-gaoming-studio-china-spring-2005/db658d8b927dc7b4f20e90af90cb18e7_11-952s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

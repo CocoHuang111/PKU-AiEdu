@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-325-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.325"
+cross_listed_codes: []
+course_title: "Small Wonders: Staying Alive"
+course_slug: "21l-325-small-wonders-staying-alive-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Hildebidle"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Visual Arts"
+  - "Film and Video"
+  - "Humanities"
+  - "Literature"
+  - "Comparative Literature"
+  - "Fiction"
+  - "Periodic Literature"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Fiction"
+          - "Periodic Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course closely examines a coherent set of short texts and/or visual works. The selections may be the shorter works of one or more authors (poems, short stories or novellas), or short films and other visual media. Additionally, we will focus on formal issues and thematic meditations around the title of the course “Staying Alive.” Content varies from semester to semester.
+course_url: "https://ocw.mit.edu/courses/21l-325-small-wonders-staying-alive-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/21l-325-small-wonders-staying-alive-spring-2007/5243e6d301c68d2e932bcb015228129d_21l-325s07.JPG"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,86 @@
+schema_version: "1.0"
+course_id: "mitocw-22-058-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.058"
+cross_listed_codes: []
+course_title: "Principles of Medical Imaging"
+course_slug: "22-058-principles-of-medical-imaging-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. David Cory"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Radiological Engineering"
+  - "Health and Medicine"
+  - "Biomedical Instrumentation"
+  - "Biomedical Signal and Image Processing"
+  - "Medical Imaging"
+  - "Spectroscopy"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Radiological Engineering"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+      - name: "Biomedical Signal and Image Processing"
+        specialties: []
+      - name: "Medical Imaging"
+        specialties: []
+      - name: "Spectroscopy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  An introduction to the principles of tomographic imaging and its applications. It includes a series of lectures with a parallel set of recitations that provide demonstrations of basic principles. Both ionizing and non-ionizing radiation are covered, including x-ray, PET, MRI, and ultrasound. Emphasis on the physics and engineering of image formation.
+course_url: "https://ocw.mit.edu/courses/22-058-principles-of-medical-imaging-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/22-058-principles-of-medical-imaging-fall-2002/d2144a27abd7c43e11a1f11b6d90da47_22-058f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

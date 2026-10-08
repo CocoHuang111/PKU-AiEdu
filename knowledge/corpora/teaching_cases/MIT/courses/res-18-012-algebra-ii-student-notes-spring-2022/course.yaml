@@ -1,0 +1,54 @@
+schema_version: "1.0"
+course_id: "mitocw-res-18-012-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.18-012"
+cross_listed_codes: []
+course_title: "Algebra II Student Notes"
+course_slug: "res-18-012-algebra-ii-student-notes-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors: []
+subject_primary: "Algebra and Number Theory"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Algebra II is the second semester of a year-long introduction to modern algebra. The course focuses on group representations, rings, ideals, fields, polynomial rings, modules, factorization, integers in quadratic number fields, field extensions, and Galois theory. These notes, which were created by students in a recent on-campus 18.702 Algebra II class, are offered here to supplement the materials included in OCW’s version of 18.702 . They have not been checked for accuracy by the instructors of that class or by other MIT faculty members.
+course_url: "https://ocw.mit.edu/courses/res-18-012-algebra-ii-student-notes-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/res-18-012-algebra-ii-student-notes-spring-2022/res_18_012s22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

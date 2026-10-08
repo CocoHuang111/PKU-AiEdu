@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-seyhan-erden"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Seyhan Erden, PhD"
+slug: "seyhan-erden"
+source_url: "https://ctl.columbia.edu/transformations/faculty/seyhan-erden/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "01e8e8857584ab4caf9a6a97579e4d03464527b03c865f794e9c164ea3c23ca4"

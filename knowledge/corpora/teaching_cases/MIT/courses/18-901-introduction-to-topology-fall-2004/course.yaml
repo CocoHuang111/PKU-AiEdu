@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-18-901-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.901"
+cross_listed_codes: []
+course_title: "Introduction to Topology"
+course_slug: "18-901-introduction-to-topology-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Munkres"
+subject_primary: "Topology and Geometry"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces topology, covering topics fundamental to modern analysis and geometry. It also deals with subjects like topological spaces and continuous functions, connectedness, compactness, separation axioms, and selected further topics such as function spaces, metrization theorems, embedding theorems and the fundamental group.
+course_url: "https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/18-901-introduction-to-topology-fall-2004/fd6e6b71b2a84ed4cc62a976da33a264_18-901f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

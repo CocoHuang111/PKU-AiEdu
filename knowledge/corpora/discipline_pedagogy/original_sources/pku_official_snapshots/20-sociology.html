@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="Author" content="微普科技http://www.wiipu.com" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>本科教育教学审核评估院系巡礼 | 从实求知，实践育人——社会学系教育教学改革实践 - 新闻资讯 - 北京大学教务部</title>
+    <link rel="stylesheet" type="text/css" href="css/basic.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/query.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sHover.min.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!--[if IE 6]>
+    <script type="text/javascript" src="js/dd_belatedpng.min.js"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('img,div,span,p');
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="wrap">
+    <!--右侧菜单-->
+    <div class="iaaa-bar">
+            <a class="iaaa-link iaaa-login" href="https://dean.pku.edu.cn/web/iaaa_login.php?return=http%3A%2F%2Fdean.pku.edu.cn%2Fweb%2Fnews_details.php%3Fid%3D37">校内登录</a>
+    </div>
+<!--右侧菜单-->
+<script type="text/javascript" src="js/layer/layer.js"></script>
+<script type="text/javascript">
+    $(function(){
+        /**按Enter登录**/
+        $('.form').keyup(function(event){
+            if(event.keyCode ==13){
+                $("#sear_right_btn").trigger("click");
+            }
+        });
+        $('#sear_right_btn').click(function(){
+            var text = $('#sear_right_txt').val();
+            if (text.length == 0) {
+                return false;
+            }
+            $.ajax({
+                type        : 'POST',
+                data        : {
+                    text    : text
+                },
+                dataType    : 'json',
+                url         : 'right_do.php?act=search',
+                success     : function(data){
+                    var status = data.status;
+                    var msg = data.msg;
+                    if(status){
+                        $('#result').empty();
+                        $('#result').append(msg);
+                    }else {
+                        $('#result').empty();
+                    }
+                }
+            });
+        });
+    });
+</script>
+<div id="right_nav">
+    <div class="btn_closemark"></div>
+    <div class="right_tab right_sub_tab">
+        <div class="right_item">
+            <div class="right_pos">
+                <img src="images/icon_right_menu.png" alt="" />
+            </div>
+            <div class="toright">菜单</div>
+        </div>
+        <div class="right_item right_link">
+            <div class="right_pos">
+                <img src="images/icon_right5.png" alt="" />
+            </div>
+            <div class="toright">链接</div>
+        </div>
+        <div class="right_item right_link">
+            <div class="right_pos">
+                <img src="images/icon_right6.png" alt="" />
+            </div>
+            <div class="toright">搜索</div>
+        </div>
+    </div>
+    <div class="right_con">
+        <div class="subcon block">
+            <div class="student_nav">
+                <ul>
+                    <li>
+                        <p class="bdt tosubnav"><img src="images/public/public1.png" alt=""/><a>学生</a></p>
+                        <div class="sub_stunav">
+                            <span><a href="#" >学生服务中心</a></span><span><a href="student_info.php?type=1&id=8" >课程和培养</a></span><span><a href="student_info.php?type=2&id=15" >选课和退课</a></span><span><a href="student_info.php?type=3&id=18" >考试和成绩</a></span><span><a href="student_info.php?type=4&id=27" >课程评估</a></span><span><a href="student_info.php?type=5&id=28" >双专业/辅修</a></span><span><a href="student_info.php?type=6&id=22" >本科生科研</a></span><span><a href="student_info.php?type=7&id=21" >推免研究生</a></span><span><a href="student_info.php?type=8&id=40" >学籍异动</a></span><span><a href="student_info.php?type=9&id=29" >学籍信息</a></span><span><a href="student_info.php?type=10&id=46" >证件和证明</a></span><span><a href="student_info.php?type=11&id=23" >出境和转学分</a></span><span><a href="student_info.php?type=12&id=51" class="bdn">教室查询预约</a></span>                        </div>
+                    </li>
+                    <li>
+                        <p class="tosubnav"><img src="images/public/public2.png" alt="" /><a>教师</a></p>
+                        <div class="sub_stunav">
+                            <span><a href="teacher_info.php?type=1&id=1" >教师手册</a></span><span><a href="teacher_info.php?type=6&id=28" >教学日历</a></span><span><a href="teacher_info.php?type=2&id=19" >日常教学工作</a></span><span><a href="teacher_info.php?type=3&id=22" >课程和教学改革</a></span><span><a href="teacher_info.php?type=4&id=2" class="bdn">教学质量</a></span><span><a href="teacher_info.php?type=5&id=8" >教材</a></span>                        </div>
+                    </li>
+                    <li>
+                        <p class="tosubnav"><img src="images/public/public3.png" alt="" /><a>校友</a></p>
+                        <div class="sub_stunav">
+                            <span><a href="alumnus_info.php?id=1" >补办毕业/学位证明书（遗失证书者）</a></span><span><a href="alumnus_info.php?id=2" >本科成绩单、学历学位证明</a></span><span><a href="https://dean.pku.edu.cn/service/web/certificateVerification.php" >本科学历学位验证</a></span><span><a href="alumnus_info.php?id=4" class="bdn">学信网相关事项</a></span>                        </div>
+                    </li>
+                    <li>
+                        <p class="tosubnav"><img src="images/public/public4.png" alt="" /><a>公众</a></p>
+                        <div class="sub_stunav">
+                            <span><a href="public_info.php?id=1" >交换生</a></span><span><a href="public_info.php?id=2" >旁听</a></span><span><a href="bkzs.pku.edu.cn" >本科招生</a></span><span><a href="http://summer.pku.edu.cn/" >暑期学校</a></span><span><a href="https://dean.pku.edu.cn/service/web/certificateVerification.php" >学历学位验证</a></span><span><a href="public_info.php?id=8" >2025年教学成果奖材料</a></span><span><a href="public_info.php?id=11" class="bdn">北京大学成绩单验真方法</a></span>                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="subcon">
+            <div class="link_nav student_nav">
+                <div class="link_item">
+                    <div class="link_wrap">
+                        <a href="http://elective.pku.edu.cn" target="_blank">选课系统</a><a href="http://portal.pku.edu.cn" target="_blank">校内门户</a><a href="http://bdkj.pku.edu.cn/" target="_blank">教室预约</a><a href="https://dean.pku.edu.cn/service/web/courseSearch.php" target="_blank">课表查询</a><a href="http://kcpg.pku.edu.cn/" target="_blank">课程评估</a><a href="http://162.105.209.64/benyan" target="_blank">本科生科研</a><a href="https://dean.pku.edu.cn/service/web/login.php" target="_blank">申办成绩单</a><a href="http://dean.pku.edu.cn/web/student_info.php?type=12&amp;id=47" target="_blank">空闲教室查询</a>                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subcon">
+            <div class="search_nav student_nav">
+                <div class="form">
+                    <input type="text" name="sear_right_txt" id="sear_right_txt" placeholder="搜索"/>
+                    <input type="button" name="sear_right_btn" id="sear_right_btn"/>
+                </div>
+                <div id="result">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--点击右侧出现的遮罩层-->
+<div id="right_mark"></div>    <!--二级banner-->
+    <div id="sub_banner">
+        <img class="bg_sunbanner" src="images/banner/banner_news.jpg" alt="" />
+        <div class="w1200">
+            <div class="sub_log">
+	<a href="http://www.pku.edu.cn/" target="_blank">
+		<img src="images/subtop_logo1.png" alt="北京大学" />
+	</a>
+	<a href="../index.php">
+		<img src="images/subtop_logo2.png" alt="北京大学教务部" />
+	</a>
+</div>
+            <div class="sub_title">
+                <div class="banner_text">
+                    <h2>新闻资讯</h2>
+                    <span>NEWS</span>
+                    <div class="sub_title_l"></div>
+                    <div class="sub_title_r"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级内容部分-->
+    <div id="sub_content" class="news_info">
+        <div class="w1200">
+            <!--当前位置-->
+            <div class="top_page">
+                <a href="../index.php">首页</a>
+                <span>&gt;</span>
+                <a href="news.php">新闻资讯</a>
+                <span>&gt;</span>
+                <a class="active">本科教育教学审核评估院系巡礼 | 从实求知，实践育人——社会学系教育教学改革实践</a>
+            </div>
+            <div class="news_con">
+                <div class="newsinfo_box">
+                    <h1>本科教育教学审核评估院系巡礼 | 从实求知，实践育人——社会学系教育教学改革实践</h1>
+                    <span>2022-07-05&nbsp;&nbsp;&nbsp;作者：-</span>
+                    <p>北京大学社会学是国内历史最长的社会学学科，融合了北京大学、燕京大学和西南联合大学的学术积淀，肩负&ldquo;从实求知&rdquo;的社会学传统，和中国学术的发展历程息息相关。社会学系本科教学体系的核心理念和总体方针是&ldquo;通专结合，实践引领&rdquo;，形成了以学生为中心、课程教学与实践教学有机结合、垂直整合与横向整合紧密配合的社会学专业本科生人才培养模式，构建了以提升&ldquo;双能力&rdquo;（理论创新能力和实践参与能力）为核心，由浅入深、中西结合的本科专业教育培养体系。</p>
+
+<p style="text-align:center"><strong>培养模式：学生中心，全面成长</strong></p>
+
+<p>社会学系始终坚持以学生为中心，结合学生的特点，充分发挥北大社会学的学科优势，全方位促进学生全面成长。</p>
+
+<p>在专业教育上精益求精，建立多样化和开放的专业课程体系，力求满足不同特征学生的差异化需求；在通识教育改革上稳步推进，积极建设通识教育课程。社会学系目前已建设16门通识教育课程，其中通识教育核心课11门，占全校通识核心课总数的10%。其中&ldquo;社会性别研究&rdquo;为2021年春季学期最火爆的通选课，&ldquo;欧洲风土记&rdquo;为2021年秋季学期最火爆的通选课。另外，&ldquo;国外社会学学说（上）（下）&rdquo;课程每学期选课人数均在400人以上；在跨学科人才培养项目的建设上，与哲学系、政府管理学院、法学院、教育学院等多个院系合作，在满足学生多样化需求，培养跨学科人才中起到了关键节点的作用。</p>
+
+<p>针对学生理论学习与实践学习脱节的问题，开设&ldquo;小班课&rdquo;，实现实践课程&ldquo;手把手教学&rdquo;，通过配备助教，共读经典，鼓励学生&ldquo;干中学&rdquo;等一系列措施，帮助学生确立研究取向和问题意识，充分发挥学生自主探索、自主成长的能力。</p>
+
+<p style="text-align:center"><strong>实践教学：&ldquo;五位一体&rdquo;，实践育人</strong></p>
+
+<p>实践教学是社会学系本科教育的特色和优势所在，以参与实践，立足中国为导向，通过深化实践教学改革，使以田野工作为主的实践教学体系涵盖基础理论与方法学习、田野过程培育、有指导的科研竞赛与交流、论文写作等多个环节，并将不同环节有针对性地设置在本科的不同阶段，使本科生从入学到毕业都能感受到田野工作的实践育人功能。</p>
+
+<p>在具体实施过程中，针对本科生课外时间不集中、教师指导不充分、田野反思不系统、成果转化不顺畅等实际问题，社会学系整合社会学创新人才培养与实践教学优秀成果，注重各类田野教学环节之间的有机衔接、相互协调与融合促进，探索建立以&ldquo;从实求知&rdquo;为宗旨的&ldquo;五位一体&rdquo;田野教学体系，构建了全周期、全方位、全员参与的实践育人体系。</p>
+
+<p>&ldquo;五位&rdquo;指导师制、实践基地、小班课、工作坊、&ldquo;挑战杯&rdquo;五方面内容，分别解决田野教学中专业指导、田野地点、实操课程、交流渠道、应用平台五个关键问题；&ldquo;一体&rdquo;指全周期、全方位、全员参与的教学体系。</p>
+
+<p style="text-align:center"><img alt="" src="/userfiles/upload/ckeditor/202207051314365518.png" style="height:460px; width:600px" /></p>
+
+<p style="text-align:center">社会学系&ldquo;五位一体&rdquo;田野教学体系</p>
+
+<p>&nbsp;</p>
+
+<p>在这一体系中，导师制为田野教学专业指导奠定人员基础。本科生在课题选择、田野实践、研究论文写作各环节接受导师全方位指导。五年间社会学系全部在职教师均担任本科生导师，387名同学接受指导，师生参与率为100%；社会学系在全国9个省份建成13个教学与科研实践基地，先后有100余名同学在基地开展田野调查，形成了约20篇呈交国务院参事室的调研报告和20余篇学位论文；近五年来，社会学系学生在全国&ldquo;挑战杯&rdquo;和首都&ldquo;挑战杯&rdquo;中均获得过特等奖。在北京大学&ldquo;挑战杯&rdquo;正赛中投稿60余件，获奖36项，获奖比例高达60%，在获奖作品中，基于田野调查写成的论文占比50%以上，特别是2019年王思凝、贾宇婧同学的获奖作品《&ldquo;议彩礼&rdquo;：论农村彩礼形成机制中的道德嵌入性》经修订后发表在社会学顶级杂志《社会》上。</p>
+
+<p style="text-align:center"><img alt="" src="/userfiles/upload/ckeditor/202207051315131937.png" style="height:897px; width:1238px" /></p>
+
+<p style="text-align:center">&ldquo;五位一体&rdquo;田野教学体系作用机制图解</p>
+
+<p>学生在田野工作中有组织地走向中国各处，接触社会的不同侧面，在与研究对象的关系、与导师的关系、与同伴的关系中获得完善人格和与国家、社会同感共情的动力；真正扎进城镇乡村，见证基层社会近年来巨大的发展变化，同学们亲眼目睹在政治课上学的理论在百姓生活中一一兑现，对长期身处博雅塔的同学们来说，这是最好的思政课。&ldquo;五位一体&rdquo;的教学体系将深厚的学术传统和面对中国社会实情的前沿研究结合起来，在培养具有家国情怀、服务国家战略、了解中国社情、扎根中国大地的拔尖人才中成效显著。</p>
+
+<p style="text-align:center"><strong>课堂教学：深化课改，创新探索</strong></p>
+
+<p>社会学系着力打造&ldquo;一流课程&rdquo;，推动基础课程精品化建设。&ldquo;国外社会学学说&rdquo;是社会学系学生的基础理论课。课程自社会学系重建之始起设立，经过三十多年的精心建设，先后被认定为社会学系主干基础课、专业核心课和北大本科通识教育核心课程，2020年入选首批&ldquo;国家级一流本科课程&rdquo;。面对每学期超过400人的选课规模，李康老师坚持本人逐篇批阅作业并反馈评价；并将科研成果与教学实践互促互融，迄今完成专业译著30余部，1300余万字，其中《社会学的想象力》《社会的构成》《反思社会学导引》《教育思想的演进》等成为全国多所高校社会学乃至相关专业重要教参。</p>
+
+<p>&ldquo;社会统计学&rdquo;课程设立课程公众号&ldquo;统计课是纸老虎&rdquo;，根据课程进度不定期推送相关的趣味统计知识、社会调查知识或学习经验的短文，拓展学生的兴趣。</p>
+
+<p style="text-align:center"><img alt="" src="/userfiles/upload/ckeditor/202207051315418194.png" style="height:721px; width:822px" /></p>
+
+<p style="text-align:center">&ldquo;统计课是纸老虎&rdquo;公众号截图</p>
+
+<p>2022年正值北京大学社会学系重建40周年，肩负&ldquo;从实求知&rdquo;的社会学传统和社会建设、教书育人的历史使命，教师和学生秉承关心社会进步的公共价值，具有视野广阔、立足事实及运用专业方法的特色。北大社会学与改革开放的中国一起成长，在人才培养中砥砺前行，为我国社会学及相关领域输送了大批优秀人才。北大社会学的学问扎根于中国传统，紧跟时代步伐，与国人的生活和生命融为一体，与国家发展同呼吸、共命运。</p>
+
+<p style="margin-left:120px; text-align:right">信息来源：北京大学新闻网</p>
+                    <div class="share_ds">
+                        <div class="share_txt">分享到：</div>
+                        <div class="bdsharebuttonbox" data-tag="share_1">
+                            <a class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                            <a class="bds_qzone" data-cmd="qzone" title="分享到qq空间"></a>
+                            <a class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                                <div class="red_bar">
+                    <div class="red_con">
+                                                <div class="float_l">
+                            <p><a href="news_details.php?id=7">环境科学与工程学院环境综合实习纪实</a></p>
+                            <a class="cur" href="news_details.php?id=7">上一条</a>
+                        </div>
+                                                <div class="float_r">
+                            <p><a href="news_details.php?id=4">2017年城市与环境学院暑期实习纪实</a></p>
+                            <a class="cur" href="news_details.php?id=4">下一条</a>
+                        </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--二级公共底部-->
+    <!-- 二级公共底部 -->
+<div id="sub_footer">
+    <div class="w1200">
+        <div class="footer_l">
+            <a href="http://www.pku.edu.cn/" target="_blank">
+                <img src="images/sub_logo_footer.png" alt="logo"/>
+            </a>
+            <a href="../index.php">
+                <img src="images/sub_logo_footer2.png" alt="logo"/>
+            </a>
+        </div>
+        <div class="footer_r">
+            <div class="footer_rlink">
+                <a href="about.php">了解我们</a>
+                <a href="download.php">信息下载</a>
+                <a>友情链接</a>
+                <a>常用服务</a>
+            </div>
+            <p>Copyright©1998-2018  北京大学教务部  All Rights Reserved. 技术支持：<a href="http://www.wiipu.com" target="_blank">微普科技</a></p>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer_con">
+            <div class="footer_logo">
+                <a href="http://www.pku.edu.cn/" target="_blank">
+                    <img src="images/logo1.png" alt="北京大学Logo"/>
+                </a>
+                <a href="../index.php">
+                    <img src="images/logo2.png" alt="北大教务处Logo"/>
+                </a>
+            </div>
+            <ul class="footer_nav">
+                <li>
+                    <a class="a_top">了解我们</a>
+                    <a href="about.php">本科教育概览</a>
+                    <a href="about_inst.php">机构设置</a>
+                    <a href="http://dean.pku.edu.cn/">旧版网站</a>
+                </li>
+                <li>
+                    <a class="a_top">信息下载</a>
+                    <a href="openinfo.php">信息公开</a>
+                    <a href="http://xxgk.pku.edu.cn/" target="_blank">信息公开网</a>
+                    <a href="download.php" target="_blank">下载</a>
+                </li>
+                <li>
+                    <a class="a_top">友情链接</a>
+                    <a href="https://www.pku.edu.cn/campus.html#p3a" target="_blank">校历</a><a href="http://www.lib.pku.edu.cn" target="_blank">图书馆</a><a href="http://www.chsi.com.cn/" target="_blank">学信网</a><a href="http://xgb.pku.edu.cn/jxj/jxjxm/index.htm" target="_blank">奖励奖学金</a><a href="http://www.oir.pku.edu.cn/" target="_blank">国际交流</a><a href="http://hmt.pku.edu.cn/" target="_blank">港澳台交流</a><a href="https://scc.pku.edu.cn/" target="_blank">就业服务</a><a href="http://bdst.pku.edu.cn" target="_blank">北大社团</a><a href="http://bdjcjd.pku.edu.cn/index.php" target="_blank">北京大学教材基地</a>                </li>
+                <li class="last">
+                    <a class="a_top">常用服务</a>
+                    <a href="http://www.pku.edu.cn/academics/index.htm" target="_blank">本科院系</a><a href="http://elective.pku.edu.cn" target="_blank">选课系统</a><a href="http://portal.pku.edu.cn" target="_blank">校内门户</a><a href="https://dean.pku.edu.cn/service/web/courseSearch.php" target="_blank">课表查询</a><a href="http://bdkj.pku.edu.cn/" target="_blank">教室预约</a><a href="https://portal.pku.edu.cn/portal2017/#/pub/freeClassroom" target="_blank">空闲教室查询</a><a href="http://dean.pku.edu.cn/student/" target="_blank">申办成绩单</a><a href="http://kcpg.pku.edu.cn/" target="_blank">课程评估</a><a href="http://162.105.209.64/benyan" target="_blank">本科生科研</a>                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="footer_copy">Copyright©  北京大学教务部  All Rights Reserved. 技术支持：<a href="http://www.wiipu.com" target="_blank">微普科技</a></div>
+    </div>
+</div>    <div id="return">
+        <img src="images/return_arr.png" alt=""/>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        var title = $("title").text();
+        var title_H = $("#sub_content .newsinfo_box h2").text();
+        var content = $("#sub_content .newsinfo_box p").first().text();
+        var url = window.location.href;
+        var imgUrl = $("#sub_content .newsinfo_box img").first().attr("src");
+        console.log(content +"...."+ url +"...."+ imgUrl)
+        window._bd_share_config = {
+            common : {
+                bdText : title_H +" - "+ title,
+                bdDesc : content,
+                bdUrl : url,
+                bdPic : imgUrl
+            },
+            share : [{
+                "bdSize" : 16
+            }]
+        }
+        with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+    })
+</script>
+</html>

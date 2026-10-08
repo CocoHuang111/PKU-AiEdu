@@ -1,0 +1,86 @@
+schema_version: "1.0"
+course_id: "mitocw-18-s191-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.S191"
+cross_listed_codes:
+  - "6.S083"
+  - "22.S092"
+course_title: "Introduction to Computational Thinking"
+course_slug: "18-s191-introduction-to-computational-thinking-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Electrical Engineering and Computer Science"
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alan Edelman"
+  - "Prof. David P. Sanders"
+  - "Grant Sanderson"
+  - "Dr. James Schloss"
+  - "Henri Drake"
+subject_primary: "Climate"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Algorithms and Data Structures"
+  - "Computer Design and Engineering"
+  - "Computer Networks"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Computation"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Computer Design and Engineering"
+          - "Computer Networks"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This is an introductory course on computational thinking. We use the Julia programming language to approach real-world problems in varied areas, applying data analysis and computational and mathematical modeling. In this class you will learn computer science, software, algorithms, applications, and mathematics as an integrated whole. Topics include image analysis, particle dynamics and ray tracing, epidemic propagation, and climate modeling.
+course_url: "https://ocw.mit.edu/courses/18-s191-introduction-to-computational-thinking-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/18-s191-introduction-to-computational-thinking-fall-2020/fcf0a572dbb9cb7b4d22c768c8e2fc84_18-S191f20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

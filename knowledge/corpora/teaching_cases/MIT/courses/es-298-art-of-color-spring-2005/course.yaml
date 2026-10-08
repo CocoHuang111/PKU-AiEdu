@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-es-298-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.298"
+cross_listed_codes: []
+course_title: "Art of Color"
+course_slug: "es-298-art-of-color-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Peter Dourmashkin"
+subject_primary: "Visual Arts"
+subject_secondary: []
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This seminar introduces, through studio projects, the basic principles regarding the use of color in the visual arts. Students explore a range of topics, including the historical uses of color in the arts, the interactions between colors, and the psychology of color.
+course_url: "https://ocw.mit.edu/courses/es-298-art-of-color-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/es-298-art-of-color-spring-2005/5ebe2f8609b1a59e55f6afc5519c609a_es-298s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

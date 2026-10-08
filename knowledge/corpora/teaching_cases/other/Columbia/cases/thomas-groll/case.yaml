@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-thomas-groll"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Thomas Groll, PhD"
+slug: "thomas-groll"
+source_url: "https://ctl.columbia.edu/transformations/faculty/thomas-groll/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "ce765b5f6813a4b7d390c6955dfae31dcbc0e3953c1920972d7a0dd222d5fb9f"

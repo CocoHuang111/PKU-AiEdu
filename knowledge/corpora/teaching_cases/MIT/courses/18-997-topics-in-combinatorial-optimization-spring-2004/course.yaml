@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-18-997-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.997"
+cross_listed_codes: []
+course_title: "Topics in Combinatorial Optimization"
+course_slug: "18-997-topics-in-combinatorial-optimization-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Michel Goemans"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Systems Engineering"
+  - "Systems Optimization"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  In this graduate-level course, we will be covering advanced topics in combinatorial optimization. We will start with non-bipartite matchings and cover many results extending the fundamental results of matchings, flows and matroids. The emphasis is on the derivation of purely combinatorial results, including min-max relations, and not so much on the corresponding algorithmic questions of how to find such objects. The intended audience consists of Ph.D. students interested in optimization, combinatorics, or combinatorial algorithms.
+course_url: "https://ocw.mit.edu/courses/18-997-topics-in-combinatorial-optimization-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/18-997-topics-in-combinatorial-optimization-spring-2004/406879cfb3f4fb04d8b126b92e8b8cce_18-997s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

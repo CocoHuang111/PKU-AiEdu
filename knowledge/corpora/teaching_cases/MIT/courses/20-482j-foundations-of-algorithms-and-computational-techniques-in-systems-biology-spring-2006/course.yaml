@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-20-482j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.482J"
+cross_listed_codes:
+  - "6.581J"
+course_title: "Foundations of Algorithms and Computational Techniques in Systems Biology"
+course_slug: "20-482j-foundations-of-algorithms-and-computational-techniques-in-systems-biology-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Bruce Tidor"
+  - "Prof. Jacob White"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+  - "Computer Science"
+  - "Algorithms and Data Structures"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Science"
+  - "Biology"
+  - "Computation and Systems Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This subject describes and illustrates computational approaches to solving problems in systems biology. A series of case-studies will be explored that demonstrate how an effective match between the statement of a biological problem and the selection of an appropriate algorithm or computational technique can lead to fundamental advances. The subject will cover several discrete and numerical algorithms used in simulation, feature extraction, and optimization for molecular, network, and systems models in biology.
+course_url: "https://ocw.mit.edu/courses/20-482j-foundations-of-algorithms-and-computational-techniques-in-systems-biology-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/20-482j-foundations-of-algorithms-and-computational-techniques-in-systems-biology-spring-2006/33e5aa6847cd390a978c109e612e01e9_20-482js06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

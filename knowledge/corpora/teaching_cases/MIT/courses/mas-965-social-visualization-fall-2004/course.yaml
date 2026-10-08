@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-965-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.965"
+cross_listed_codes: []
+course_title: "Social Visualization"
+course_slug: "mas-965-social-visualization-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Judith Donath"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  Millions of people are on-line today and the number is rapidly growing - yet this virtual crowd is often invisible. In this course we will examine ways of visualizing people, their activities and their interactions. Students will study the cognitive and cultural basis for social visualization through readings drawn from sociology, psychology and interface design and they will explore new ways of depicting virtual crowds and mapping electronic spaces through a series of design exercises.
+course_url: "https://ocw.mit.edu/courses/mas-965-social-visualization-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/mas-965-social-visualization-fall-2004/9036e42f2ca60873fb5fbede44568d2e_mas-965f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

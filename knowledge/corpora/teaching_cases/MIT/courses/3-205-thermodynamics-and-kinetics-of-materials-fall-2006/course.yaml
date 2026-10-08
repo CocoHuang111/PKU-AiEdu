@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-3-205-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.205"
+cross_listed_codes: []
+course_title: "Thermodynamics and Kinetics of Materials"
+course_slug: "3-205-thermodynamics-and-kinetics-of-materials-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Samuel Allen"
+  - "Prof. Thomas Eagar"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course explores materials and materials processes from the perspective of thermodynamics and kinetics. The thermodynamics aspect includes laws of thermodynamics, solution theory and equilibrium diagrams. The kinetics aspect includes diffusion, phase transformations, and the development of microstructure.
+course_url: "https://ocw.mit.edu/courses/3-205-thermodynamics-and-kinetics-of-materials-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/3-205-thermodynamics-and-kinetics-of-materials-fall-2006/e36a3cb8c1066c086fd68559ce31ba3b_3-205f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

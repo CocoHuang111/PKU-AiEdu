@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-s01-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.S01"
+cross_listed_codes: []
+course_title: "Modern Mexico: Representations of Mexico City's Urban Life"
+course_slug: "21g-s01-modern-mexico-representations-of-mexico-citys-urban-life-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Maria Luisa Martinez"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "Latin American History"
+  - "Language"
+  - "Spanish"
+  - "Literature"
+  - "International Literature"
+  - "Society"
+  - "Latin and Caribbean Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Latin American History"
+      - name: "Language"
+        specialties:
+          - "Spanish"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The goal of this course is to offer a general introduction to 20th and 21st century literature and cultural production about Modern Mexico. Emphasis will be placed on the way intellectuals and artists have presented the changes in Mexico City’s urban life, and how these representations question themes and trends in national identity, state control, globalization, and immigration.
+course_url: "https://ocw.mit.edu/courses/21g-s01-modern-mexico-representations-of-mexico-citys-urban-life-spring-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-s01-modern-mexico-representations-of-mexico-citys-urban-life-spring-2015/23a68471b58e77666c7b1933bd1851f0_21g-s01s15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

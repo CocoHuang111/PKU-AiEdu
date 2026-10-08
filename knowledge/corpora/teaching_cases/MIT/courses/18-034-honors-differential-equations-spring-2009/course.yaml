@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-18-034-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.034"
+cross_listed_codes: []
+course_title: "Honors Differential Equations"
+course_slug: "18-034-honors-differential-equations-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Vera Mikyoung Hur"
+subject_primary: "Differential Equations"
+subject_secondary:
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course covers the same material as Differential Equations (18.03) with more emphasis on theory. In addition, it treats mathematical aspects of ordinary differential equations such as existence theorems.
+course_url: "https://ocw.mit.edu/courses/18-034-honors-differential-equations-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/18-034-honors-differential-equations-spring-2009/9192c90a33b36f289c6a0dc91834348a_18-034s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

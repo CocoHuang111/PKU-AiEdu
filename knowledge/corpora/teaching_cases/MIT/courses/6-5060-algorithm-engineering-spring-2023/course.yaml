@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-6-5060-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.5060"
+cross_listed_codes: []
+course_title: "Algorithm Engineering"
+course_slug: "6-5060-algorithm-engineering-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles Leiserson"
+  - "Prof. Julian Shun"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Readings"
+description: |
+  This is a research-oriented course on algorithm engineering, which will cover both the theory and practice of algorithms and data structures. Students will learn about models of computation, algorithm design and analysis, and performance engineering of algorithm implementations. We will study the design and implementation of sequential, parallel, cache-efficient, external-memory, and write-efficient algorithms for fundamental problems in computing. Many of the principles of algorithm engineering will be illustrated in the context of parallel algorithms and graph problems.
+course_url: "https://ocw.mit.edu/courses/6-5060-algorithm-engineering-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/6-5060-algorithm-engineering-spring-2023/6-5060s23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

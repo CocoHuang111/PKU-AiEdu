@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-res-env-005-undated-undated"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.ENV-005"
+cross_listed_codes: []
+course_title: "Climate Science, Risk & Solutions: A Climate Primer"
+course_slug: "res-env-005-climate-science-risk-solutions-a-climate-primer"
+term: null
+year: null
+as_taught_in: null
+language: "en"
+departments: []
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Kerry Emanuel"
+subject_primary: "Climate"
+subject_secondary:
+  - "Technology"
+  - "Science"
+  - "Earth Science"
+  - "Climate Studies"
+  - "Sustainability"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+      - name: "Technology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+          - "Sustainability"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Other Audio"
+  - "Other Video"
+description: |
+  The goal of the Climate Primer website is to summarize the most important lines of evidence for human-caused climate change. It confronts the stickier questions about uncertainty in our projections, engages in a discussion of risk and risk managment, and concludes by presenting different options for taking action. We hope that the facts prepare you for more effective conversations with your community about values, trade-offs, politics, and actions. In March 2024, the MIT Environmental Solutions Initiative launched the first major update to the Climate Primer. The updated Primer includes more precise estimates of future global warming and its effects on global temperatures and extreme weather events, important advances in climate modeling, new actions taken around the world to adapt to the impacts of climate change, and the latest data about the pace at which clean energy and other critical climate solutions are being deployed. Read more about the update on the MIT Environmental Solutions website .
+course_url: "https://ocw.mit.edu/courses/res-env-005-climate-science-risk-solutions-a-climate-primer/"
+image_url: "https://ocw.mit.edu/courses/res-env-005-climate-science-risk-solutions-a-climate-primer/37be82fa3a6b26e59b1086a57f553849_RES-ENV-005F20.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

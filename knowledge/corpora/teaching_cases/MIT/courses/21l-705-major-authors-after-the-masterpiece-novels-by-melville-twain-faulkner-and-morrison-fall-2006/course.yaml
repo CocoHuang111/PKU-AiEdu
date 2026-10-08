@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-705-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.705"
+cross_listed_codes:
+  - "WGS.512"
+course_title: "Major Authors: After the Masterpiece: Novels by Melville, Twain, Faulkner, and Morrison"
+course_slug: "21l-705-major-authors-after-the-masterpiece-novels-by-melville-twain-faulkner-and-morrison-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Literature"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Wyn Kelley"
+subject_primary: "Literature"
+subject_secondary:
+  - "American Literature"
+  - "Comparative Literature"
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "American Literature"
+          - "Comparative Literature"
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This seminar provides intensive study of exciting texts by four influential American authors. In studying paired works, we can enrich our sense of each author’s distinctive methods, get a deeper sense of the development of their careers, and shake up our preconceptions about what makes an author or a work “great.” Students will get an opportunity to research an author in depth, as well as making broader comparisons across the syllabus.
+course_url: "https://ocw.mit.edu/courses/21l-705-major-authors-after-the-masterpiece-novels-by-melville-twain-faulkner-and-morrison-fall-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-705-major-authors-after-the-masterpiece-novels-by-melville-twain-faulkner-and-morrison-fall-2006/8cf1c93f125afad592759f0c2c937812_21l-705f06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

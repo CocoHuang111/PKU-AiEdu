@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-maura-abbott"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Maura Abbott, PhD, NP"
+slug: "maura-abbott"
+source_url: "https://ctl.columbia.edu/transformations/faculty/maura-abbott/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "eea9b57446f54978ac90b6e76c12fe5b07eb43e8b83cc03cfe5b1bf1fc363090"

@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-380j-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.380J"
+cross_listed_codes:
+  - "21A.419J"
+  - "21H.980J"
+  - "21A.411J"
+course_title: "People and Other Animals"
+course_slug: "21h-380j-people-and-other-animals-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "History"
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Harriet Ritvo"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Intellectual History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Intellectual History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course is a historical exploration of the ways that people have interacted with their closest animal relatives, for example: hunting, domestication of livestock, exploitation of animal labor, scientific study of animals, display of exotic and performing animals, and pet-keeping. Themes include changing ideas about animal agency and intelligence, our moral obligations to animals, and the limits imposed on the use of animals. Students taking the graduate version complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/21h-380j-people-and-other-animals-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/21h-380j-people-and-other-animals-fall-2013/73cef401141a5e31c1e087e736c9172f_21h-380f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

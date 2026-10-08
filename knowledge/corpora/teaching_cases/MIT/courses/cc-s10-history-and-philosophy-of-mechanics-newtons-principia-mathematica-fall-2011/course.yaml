@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-cc-s10-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CC.S10"
+cross_listed_codes: []
+course_title: "History and Philosophy of Mechanics: Newton's Principia Mathematica"
+course_slug: "cc-s10-history-and-philosophy-of-mechanics-newtons-principia-mathematica-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Concourse"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Adam Schulman"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Intellectual History"
+  - "Philosophy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Intellectual History"
+      - name: "Philosophy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course focuses on an in-depth reading of _Principia Mathematica Philosophiae Naturalis_ by Isaac Newton, as well as several related commentaries and historical philosophical texts.
+course_url: "https://ocw.mit.edu/courses/cc-s10-history-and-philosophy-of-mechanics-newtons-principia-mathematica-fall-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/cc-s10-history-and-philosophy-of-mechanics-newtons-principia-mathematica-fall-2011/def07a7af9d6d9acaa6cfec6f3e63590_cc-s10f11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

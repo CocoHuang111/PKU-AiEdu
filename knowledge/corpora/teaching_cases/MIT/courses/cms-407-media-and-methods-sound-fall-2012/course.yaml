@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-407-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.407"
+cross_listed_codes: []
+course_title: "Media and Methods: Sound"
+course_slug: "cms-407-media-and-methods-sound-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Picker"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Music"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Music"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the ways in which humans experience the realm of sound and how perceptions and technologies of sound emerge from cultural, economic, and historical worlds. It examines how environmental, linguistic, and musical sounds are construed cross-culturally. It describes the rise of telephony, architectural acoustics, sound recording, and the globalized travel of these technologies. Students address questions of ownership, property, authorship, and copyright in the age of digital file sharing. There is a particular focus on how the sound/noise boundary is imagined, created and modeled across diverse sociocultural and scientific contexts. Auditory examples will be provided. Instruction and practice in written and oral communication provided. At MIT, this course is limited to 20 students.
+course_url: "https://ocw.mit.edu/courses/cms-407-media-and-methods-sound-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/cms-407-media-and-methods-sound-fall-2012/9ca5d33f4df1f0dd81715eab008606c4_cms-407f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

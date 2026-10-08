@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-techniques-for-just-in-time-teaching-in-a-medical-school-course"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "CTL spotlight or announcement"
+title: "Techniques for Just-in-Time Teaching in a Medical School Course"
+slug: "techniques-for-just-in-time-teaching-in-a-medical-school-course"
+source_url: "https://ctl.columbia.edu/announcements/techniques-for-just-in-time-teaching-in-a-medical-school-course/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "6a62cda1689827bdb67f69c6bddf1bfc77f874ebec0c2759a3c1d870725faf0c"

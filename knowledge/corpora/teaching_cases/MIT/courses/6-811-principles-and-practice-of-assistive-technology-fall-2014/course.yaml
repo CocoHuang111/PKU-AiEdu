@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-6-811-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.811"
+cross_listed_codes: []
+course_title: "Principles and Practice of Assistive Technology"
+course_slug: "6-811-principles-and-practice-of-assistive-technology-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "William Li"
+  - "Grace Teo"
+  - "Prof. Robert Miller"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Human-Computer Interfaces"
+  - "Electrical Engineering"
+  - "Electronics"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+  - "Health and Medicine"
+  - "Public Health"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Demonstration Videos"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Media Assignments with Examples"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  6.811: Principles and Practice of Assistive Technology (PPAT) is an interdisciplinary, project-based course, centered around a design project in which small teams of students work closely with a person with a disability in the Cambridge area to design a device, piece of equipment, app, or other solution that helps them live more independently.
+course_url: "https://ocw.mit.edu/courses/6-811-principles-and-practice-of-assistive-technology-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/6-811-principles-and-practice-of-assistive-technology-fall-2014/f3c950c058909aa1ccebafdf1909a27e_6-811f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-8-902-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.902"
+cross_listed_codes: []
+course_title: "Astrophysics II"
+course_slug: "8-902-astrophysics-ii-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Professor Prof. Mark Vogelsberger"
+subject_primary: "Physics"
+subject_secondary:
+  - "Astrophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course broadly covers galactic dynamics and large-scale structure in the universe. Major topics include: galaxies, cosmology, structure formation, cosmic microwave background, Big Bang nucleosynthesis, and thermal history of the universe.
+course_url: "https://ocw.mit.edu/courses/8-902-astrophysics-ii-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/8-902-astrophysics-ii-fall-2023/8-902f23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

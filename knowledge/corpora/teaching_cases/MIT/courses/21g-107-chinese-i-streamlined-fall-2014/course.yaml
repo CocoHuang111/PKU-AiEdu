@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-107-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.107"
+cross_listed_codes:
+  - "21G.157"
+  - "21G.181"
+course_title: "Chinese I (Streamlined)"
+course_slug: "21g-107-chinese-i-streamlined-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Min-Min Liang"
+subject_primary: "Language"
+subject_secondary:
+  - "Chinese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Chinese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course, along with 21G.108 / 158 offered in the spring, form the elementary level of the streamlined sequence, which is for students who have some basic conversational skills gained, typically, from growing up in a Chinese speaking environment, but lack a corresponding level of literacy. The focus of the course is on learning standard everyday usage, on reading in both full and simplified characters, and on writing. This course, along with 21G.108 / 158 offered in the spring, are conducted entirely in Chinese.
+course_url: "https://ocw.mit.edu/courses/21g-107-chinese-i-streamlined-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/21g-107-chinese-i-streamlined-fall-2014/09c7483503cc2dde85cde22c601db4cc_21g-107f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

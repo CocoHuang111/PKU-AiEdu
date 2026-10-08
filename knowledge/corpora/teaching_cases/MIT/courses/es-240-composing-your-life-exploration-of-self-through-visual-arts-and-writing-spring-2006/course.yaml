@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-es-240-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.240"
+cross_listed_codes: []
+course_title: "Composing Your Life: Exploration of Self through Visual Arts and Writing"
+course_slug: "es-240-composing-your-life-exploration-of-self-through-visual-arts-and-writing-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Graham Gordon Ramsay"
+  - "Dr. Holly Sweet"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Creative Writing"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Projects with Examples"
+description: |
+  In this interdisciplinary seminar, we explore a variety of visual and written tools for self exploration and self expression. Through discussion, written assignments, and directed exercises, students practice utilizing a variety of media to explore and express who they are.
+course_url: "https://ocw.mit.edu/courses/es-240-composing-your-life-exploration-of-self-through-visual-arts-and-writing-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/es-240-composing-your-life-exploration-of-self-through-visual-arts-and-writing-spring-2006/6160cfbde9814b8fb9d916003da106f2_es-240s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

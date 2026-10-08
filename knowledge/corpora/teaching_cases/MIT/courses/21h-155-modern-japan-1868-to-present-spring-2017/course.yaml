@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-155-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.155"
+cross_listed_codes: []
+course_title: "Modern Japan: 1868 to Present"
+course_slug: "21h-155-modern-japan-1868-to-present-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Hiromu Nagahara"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "Military History"
+  - "Modern History"
+  - "Social Science"
+  - "Political Science"
+  - "International Relations"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+          - "Military History"
+          - "Modern History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course surveys Japanese history from the establishment of the Tokugawa shogunate in 1603 to the present and explores the local and global nature of modernity in Japan. It highlights key themes, including the emergence of a modern nation-state, the rise and fall of the Japanese Empire, the development of mass consumer culture and the middle class, and the continued importance of historical memory in Japan today.
+course_url: "https://ocw.mit.edu/courses/21h-155-modern-japan-1868-to-present-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/21h-155-modern-japan-1868-to-present-spring-2017/c8d0f41a1acc499cef1d5f0d0f5a7226_21H-155s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

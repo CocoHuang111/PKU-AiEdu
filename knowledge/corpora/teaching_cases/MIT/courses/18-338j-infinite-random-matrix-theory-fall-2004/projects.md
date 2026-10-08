@@ -1,0 +1,44 @@
+> 检索摘要：18.338J Infinite Random Matrix Theory（Fall 2004，Graduate）的「Projects」。页内标题：Projects；Mid-term Project；Semester Project；Ideas for Projects。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/18-338j-infinite-random-matrix-theory-fall-2004/pages/projects/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Projects
+
+### Mid-term Project
+
+You will be asked to read a paper on a topic of interest to you that involves random matrix theory and present it via some mixture of the following perspectives:
+
+- Write a description of greater clarity than the original publication, or
+- Devise an improved solution to the problem under consideration, and write up your improvement (with appropriate discussion of the original solution).
+- Implement the result in MATLAB® in order to study its performance in practice when the random matrices are finite. Considerations include choice of random matrix result, design of good tests, interpretation of results, and design and analysis of heuristics for improving performance in practice.
+
+### Semester Project
+
+The semester project can be an extension of the mid-term project if it sustains your interest. Otherwise, you will be asked to come up with some insights into a random matrix problem that is of interest to you.
+
+Ideally, the topic you choose will be motivated by a computational problem you need to solve in your research. If the project is large, it may be tackled by a group. Otherwise, feel free to ask us for suggestions and ideas. Our goal is that you are able to get your hands wet trying to solve a problem while using computational and analytical tools that you’ve learned about.
+
+In the past, a student’s whole PhD thesis came out of such an exploration. While that might be the exception and rather than the norm we hope we can instil a sense of adventure in you to tackle an interesting random matrix problem and to, hopefully, help you get some useful results out of it.
+
+### Ideas for Projects
+
+| TOPICS | RELATED PAPERS |
+| --- | --- |
+| Random Growth Processes | [On the Second Eigenvalue and Random Walks in Random d-Regular Graphs](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.27.8473) <br> - Friedman <br> [Random Vicious Walks and Random Matrices](https://arxiv.org/abs/math/0001022) <br> - Baik <br> [Toeplitz Determinants, Random Growth and Determinantal Processes](http://arxiv.org/abs/math.PR/0304368) <br> - Johansson |
+| Proofs of Semicircle Law | [A Simple Approach to Global Regime of the Random Matrix Theory](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.1209) <br> - Pastrur <br> Some Elementary Results around the Wigner Semicircle Law ( <br> [PDF](https://bibos.math.uni-bielefeld.de/preprints/01-03-035.pdf) <br> ) - Khorunzhy |
+| Random Matrices with Complex Eigenvalues | Non-Hermition Random Matrices - Khoruzhenko <br> [Regular Spacings of Complex Eigenvalues in the One-Dimensional Non-Hermitian Anderson Model](https://link.springer.com/article/10.1007/s00220-003-0854-0) <br> - Khoruzhenko |
+| Functions for Random Matrices | [Correlation Functions, Cluster Functions and Spacing Distributions for Random Matrices](http://arxiv.org/abs/solv-int/9804004) <br> - Tracy and Widom <br> [Shape Fluctuations and Random Matrices](http://link.springer.com/article/10.1007%2Fs002200050027) <br> - Johansson |
+| Random Matrices and PCA | On the Distribution of the Largest Principal Component ( <br> [PDF](https://projecteuclid.org/euclid.aos/1009210544) <br> ) - Johnstone |
+| Communication Theory | Multiuser Receivers, Random Matrices, and Free Probability - Tse <br> [Asymptotic Eigenvalue Moments for Linear Multiuser Detection](http://web.mit.edu/18.325/www/asymptotic-eigenvalue-moments-for.pdf) <br> - Verdu <br> Statistical Analysis of the Capacity of MIMO Frequency Selective Reyleigh Fading Channels ( <br> [PDF](https://pdfs.semanticscholar.org/cfbf/48a5c3da40bbafc669c752baddf96c7ce90b.pdf) <br> ) - Scaglione <br> The Statistics of the MIMO Frequency Selective Fading AWGN Channel Capacity - Scaglione <br> [Capacity of Multi-antenna Gaussian Channels](https://dx.doi.org/10.1002/ett.4460100604) <br> - Telatar <br> Complex Random Matrices and Reyleigh Channel Capacity ( <br> [PDF](http://www.ims.cuhk.edu.hk/~cis/2003.2/cisfinal119.pdf) <br> ) - Ratnarajah and Vaillancourt <br> [Spectral Efficiency of CDMA with Random Spreading](https://ieeexplore.ieee.org/document/749007) <br> - Verdu and Shamai <br> [Upper Bounds on the Bit-Error Rate of Optimum Combining in Wireless Systems](https://ieeexplore.ieee.org/document/737400) <br> - Winters and Salz <br> [Bounds and Approximations for Optimum Combining of Signals in the Presence of Multiple Cochannel Interferers and Thermal Noise](https://ieeexplore.ieee.org/document/1190768) <br> - Chiani and Win <br> Environmental Issues for MIMO Capacity ( <br> [PDF](http://www.eecs.umich.edu/~hero/Preprints/bliss_tsp02.pdf) <br> ) - Bliss and Forsythe |
+| Free Probability and Addition of Random Matrices | Multiuser Receivers, Random Matrices, and Free Probability - Tse <br> Free Probability Theory and Random Matrices ( <br> [PS](http://www.mast.queensu.ca/~speicher/papers/Peters.ps) <br> ) - Speicher <br> [On the Law of Addition of Random Matrices](http://arxiv.org/abs/math-ph/0003043) <br> - Pastur and Vasilchuk <br> [Law of Addition in Random Matrix Theory](https://arxiv.org/abs/cond-mat/9602146) <br> - Zee |
+| Finite Fields | Random Matrix Theory over Finite Fields ( <br> [PDF](http://www.ams.org/bull/2002-39-01/S0273-0979-01-00920-X/S0273-0979-01-00920-X.pdf) <br> ) - Fulman |
+| Array Signal Processing | [Inferring the Eigenvalues of Covariance Matrices from Limited, Noisy Data](https://ieeexplore.ieee.org/abstract/document/847792?casa_token=7_ycRkeYIZkAAAAA:5EsaLG9IyQJMAhdkU9nZ02IND94eL8XJLC0J94jHlvemDt8XIy2uq1AGQ8lWegC35oDhSE_Nzw) <br> - Everson and Roberts <br> Large Dimensional Random Matrix Theory for Signal Detection and Estimation in Array Processing ( <br> [PDF](https://www.researchgate.net/publication/3531380_Large_dimensional_random_matrix_theory_for_signal_detection_and_estimation_in_array_processing) <br> ) - Silverstein and Combettes |
+| Random Networks | Eigenvalues of Random Power Law Graphs ( <br> [PDF](http://www.math.ucsd.edu/~fan/wp/eigen.pdf) <br> ) - Chung, Lu, and Vu <br> [The Web as a Graph: Measurements, Models and Methods](http://web.mit.edu/18.325/www/kleinberg99web.pdf) <br> - Kleinberg, et. al. <br> The Spectra of Random Graphs with Given Expected Degrees ( <br> [PDF](http://www.math.ucsd.edu/~fan/wp/specp.pdf) <br> ) - Chung, Lu, and Vu <br> Spectra and Eigenvectors of Scale-free Networks ( <br> [PDF](https://arxiv.org/abs/cond-mat/0103337) <br> ) - Goh, Kahng, and Kim <br> Spectra of Real World Graphs ( <br> [PDF](http://angel.elte.hu/lanczos/pdf/spectra.pdf) <br> ) - Farkas, et. al. |
+| Random Graphs | Eigenvalues of Random Power Law Graphs ( <br> [PDF](http://www.math.ucsd.edu/~fan/wp/eigen.pdf) <br> ) - Chung, Lu, and Vu <br> The Spectra of Random Graphs with Given Expected Degrees ( <br> [PDF](http://www.math.ucsd.edu/~fan/wp/specp.pdf) <br> ) - Chung, Lu, and Vu <br> Spectra of Real World Graphs ( <br> [PDF](http://angel.elte.hu/lanczos/pdf/spectra.pdf) <br> ) - Farkas, et. al. |
+| Computational Biology | [Theoretical Limitations of Massively Parallel Biology](http://slideplayer.com/slide/5222574/) <br> - Szallasi, Periwal, et. al. <br> [RNA Folding and Large N Matrix Theory](https://arxiv.org/abs/cond-mat/0106359) <br> - Zee |
+| Financial Analysis | Exponential Weighting and Random-Matrix-Theory-Based Filtering of Financial Covariance Matrices for Portfolio Optimization ( <br> [PDF](http://arxiv.org/pdf/cond-mat/0402573.pdf) <br> ) - Pafka, Potters, and Kondor <br> Noise Dressing of Financial Correlation Matrices ( <br> [PDF](http://arxiv.org/pdf/cond-mat/9810255.pdf) <br> ) - Laloux, Cizeau, Bouchaud, and Potters <br> Random Matrix Theory and Financial Correlations ( <br> [PDF](http://math.nyu.edu/faculty/avellane/LalouxPCA.pdf) <br> ) - Laloux, Cizeau, Bouchaud, and Potters <br> Rational Decisions, Random Matrices and Spin Glasses ( <br> [PDF](http://web.mit.edu/18.325/www/rmt_finance4.pdf) <br> ) - Galluccio, Bouchaud, and Potters |
+| Random Matrices and the Replica Method | Principal Component Analysis Eigenvalue Spectra from Data with Symmetry Breaking Structure ( <br> [PDF](https://pdfs.semanticscholar.org/ffee/e844427bbee931b6f6c3abb8f9f0849de00c.pdf) <br> ) - Hoyle and Rattray <br> [Asymptotic Corrections to the Wigner Semicircular Eigenvalue Spectrum of a Large Real Symmetric Random Matrix using the Replica Method](https://iopscience.iop.org/article/10.1088/0305-4470/23/23/029) <br> - Dhesi and Jones |

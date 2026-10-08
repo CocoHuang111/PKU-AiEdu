@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-good-words-transforming-teaching-public-speaking"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Good With Words: Transforming the Teaching of Public Speaking"
+slug: "good-words-transforming-teaching-public-speaking"
+source_url: "https://crlt.umich.edu/good-words-transforming-teaching-public-speaking"
+language: "en"
+published: null
+awarded_year: "2020"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "30c38cffbe44363bcee594247f544fe578976b004db17a0e156c98bd6c8a5117"

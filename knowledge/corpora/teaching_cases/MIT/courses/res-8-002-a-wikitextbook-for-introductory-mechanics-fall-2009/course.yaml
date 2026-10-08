@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-res-8-002-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.8-002"
+cross_listed_codes: []
+course_title: "A WikiTextBook for Introductory Mechanics"
+course_slug: "res-8-002-a-wikitextbook-for-introductory-mechanics-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Analia Barrantes"
+  - "Andrew Pawl"
+  - "David E. Pritchard"
+  - "Stephen E. Wilk"
+subject_primary: "Physics"
+subject_secondary:
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This e-Book is a first step toward a shift in the role of the printed textbook from authoritative serial repository to modular, customizable, linkable, interactive hub. The ideal modern textbook should provide a clear overview of the domain, short summaries of key content, links to more detailed online source material, embedded self-assessment, and a vehicle for instant student feedback. This open-source e-Book for introductory mechanics uses ideas from modeling physics to encourage strategic, concept-based problem solving and employs a wiki format to enable multiple parallel organizations of the material, links to resources and student comments. Online Publication
+course_url: "https://ocw.mit.edu/courses/res-8-002-a-wikitextbook-for-introductory-mechanics-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/res-8-002-a-wikitextbook-for-introductory-mechanics-fall-2009/80f81927d2cdea9b41da66e9b29453bd_res-8-002f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

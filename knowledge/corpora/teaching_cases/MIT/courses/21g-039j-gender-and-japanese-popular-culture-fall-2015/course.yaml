@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-039j-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.039J"
+cross_listed_codes:
+  - "21A.143J"
+  - "WGS.154J"
+  - "21G.591"
+course_title: "Gender and Japanese Popular Culture"
+course_slug: "21g-039j-gender-and-japanese-popular-culture-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+  - "Anthropology"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ian Condry"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Language"
+  - "Japanese"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "Asian Studies"
+  - "Gender Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Japanese"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments with Examples"
+description: |
+  This course examines relationships between identity and participation in Japanese popular culture as a way of understanding the changing character of media, capitalism, fan communities, and culture. It emphasizes contemporary popular culture and theories of gender, sexuality, race, and the workings of power and value in global culture industries. Topics include manga (comic books), hip-hop and other popular music, anime and feature films, video games, contemporary literature, and online communication. Students present analyses and develop a final project based on a particular aspect of gender and popular culture.
+course_url: "https://ocw.mit.edu/courses/21g-039j-gender-and-japanese-popular-culture-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/21g-039j-gender-and-japanese-popular-culture-fall-2015/73fb937ffa6d23b3a20076e5c240c571_21g-039jf15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

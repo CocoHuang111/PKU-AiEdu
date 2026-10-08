@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-362-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.362"
+cross_listed_codes:
+  - "CMS.862"
+course_title: "Civic Media Codesign Studio"
+course_slug: "cms-362-civic-media-codesign-studio-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Eric Gordon"
+subject_primary: "Communication"
+subject_secondary:
+  - "Public Administration"
+  - "Public Policy"
+  - "Social Welfare"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+          - "Social Welfare"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  The Civic Media Codesign Studio is a project-based studio course in collaborative design of civic media. Students work with a range of organizations to create civic media projects grounded in real-world community needs. It covers theory and practice of codesign, including methods for community participation in iterative stages of project ideation, design, prototyping, testing, launch, and stewardship. This semester, the course will focus on building systems of collaboration between municipal government and local care networks to facilitate effective cocreation of policy.
+course_url: "https://ocw.mit.edu/courses/cms-362-civic-media-codesign-studio-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/cms-362-civic-media-codesign-studio-fall-2020/715cd5eaf1138b6ab50775d3c01c3d07_cms-362f20.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

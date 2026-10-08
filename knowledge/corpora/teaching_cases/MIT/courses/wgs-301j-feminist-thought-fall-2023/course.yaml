@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-301j-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.301J"
+cross_listed_codes: []
+course_title: "Feminist Thought"
+course_slug: "wgs-301j-feminist-thought-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+  - "Political Science"
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Elizabeth A. Wood"
+subject_primary: "Gender Studies"
+subject_secondary:
+  - "Women's Studies"
+topic_tree:
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Readings"
+  - "Written Assignments with Examples"
+description: |
+  This course analyzes theories of gender and politics, especially ideologies of gender and their construction; definitions of public and private spheres; and gender issues in citizenship, the development of the welfare state, experiences of war and revolution, class formation, and the politics of sexuality.
+course_url: "https://ocw.mit.edu/courses/wgs-301j-feminist-thought-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/wgs-301j-feminist-thought-fall-2023/mitwgs_301j_f23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

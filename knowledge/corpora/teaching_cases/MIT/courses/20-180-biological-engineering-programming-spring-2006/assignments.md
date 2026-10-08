@@ -1,0 +1,16 @@
+> 检索摘要：20.180 Biological Engineering Programming（Spring 2006，Undergraduate）的「Assignments」。页内标题：Assignments。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+| ASSIGNMENTS | SUPPLEMENTAL FILES | SOLUTIONS |
+| --- | --- | --- |
+| Assignment 1 ( <br> [PDF](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/180assignment1/) <br> ) | Additional Information ( <br> [PDF](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/asg1_add_info/) <br> ) <br> Parts.txt ( <br> [TXT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/parts/) <br> ) | Solutions and Comments ( <br> [PDF](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/asg1_sol_comts/) <br> ) <br> Code (Q1q2code.txt) ( <br> [TXT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/q1q2code/) <br> ) <br> Test file (Q1tester.txt) ( <br> [TXT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/q1tester/) <br> ) |
+| Assignment 2 ( <br> [PDF](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/180assignment2/) <br> ) | Additional Information ( <br> [PDF](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/asg2_add_info/) <br> ) <br> parts.dict ( <br> [DICT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/parts-1/) <br> ) <br> map.dict ( <br> [DICT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/map/) <br> ) | Code (Pset2code.txt) ( <br> [TXT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/pset2code/) <br> ) |
+| Assignment 3 ( <br> [PDF](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/psetfour_final/) <br> ) | Additional Information ( <br> [PDF](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/asg3_add_info/) <br> ) <br> GeneticCode.dict ( <br> [DICT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/geneticcode/) <br> ) <br> Protein.txt ( <br> [TXT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/protein/) <br> ) <br> NC_003418.txt ( <br> [TXT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/nc_003418/) <br> ) | Solutions ( <br> [PDF](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/asg3_solution/) <br> ) <br> Code (Spencers_4.txt) ( <br> [TXT](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/spencers_4/) <br> ) |
+| Assignment 4 ( <br> [PDF - 3.0 MB](https://ocw.mit.edu/courses/20-180-biological-engineering-programming-spring-2006/resources/twenty180hw5/) <br> ) |  |  |

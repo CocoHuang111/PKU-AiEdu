@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-es-268-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.268"
+cross_listed_codes: []
+course_title: "The Mathematics in Toys and Games"
+course_slug: "es-268-the-mathematics-in-toys-and-games-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Jing Li"
+  - "Prof. Erik Demaine"
+  - "Melissa Gymrek"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Fine Arts"
+  - "Game Design"
+  - "Mathematics"
+  - "Social Science"
+  - "Game Theory"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+  - name: "Mathematics"
+    subtopics: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Design Assignments"
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  We will explore the mathematical strategies behind popular games, toys, and puzzles. Topics covered will combine basic fundamentals of game theory, probability, group theory, and elementary programming concepts. Each week will consist of a lecture and discussion followed by game play to implement the concepts learned in class.
+course_url: "https://ocw.mit.edu/courses/es-268-the-mathematics-in-toys-and-games-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/es-268-the-mathematics-in-toys-and-games-spring-2010/2d94c2b65d26bea7d2206e6736a3fc33_es-268s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-5-43-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.43"
+cross_listed_codes: []
+course_title: "Advanced Organic Chemistry"
+course_slug: "5-43-advanced-organic-chemistry-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Mohammad Movassaghi"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Organic Chemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Organic Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course deals with the application of structure and theory to the study of organic reaction mechanisms: Stereochemical features including conformation and stereoelectronic effects; reaction dynamics, isotope effects and molecular orbital theory applied to pericyclic and photochemical reactions; and special reactive intermediates including carbenes, carbanions, and free radicals.
+course_url: "https://ocw.mit.edu/courses/5-43-advanced-organic-chemistry-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/5-43-advanced-organic-chemistry-spring-2007/942a2e40f03f64ab3189562028f96cdf_5-43s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

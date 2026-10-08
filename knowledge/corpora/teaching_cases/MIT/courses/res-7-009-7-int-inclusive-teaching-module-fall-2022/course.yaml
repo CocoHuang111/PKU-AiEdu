@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-res-7-009-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.7-009"
+cross_listed_codes: []
+course_title: "7.InT: Inclusive Teaching Module"
+course_slug: "res-7-009-7-int-inclusive-teaching-module-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Dr. Darcy G. Gordon"
+  - "Prof. Catherine Drennan"
+subject_primary: "Curriculum and Teaching"
+subject_secondary: []
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Multiple Assignment Types with Solutions"
+  - "Readings"
+  - "Videos"
+description: |
+  The Inclusive Teaching Module is both a standalone online resource for those looking to explore materials related to inclusive teaching as well as an integral part of a blended workshop available to use at your own institution. If you are looking to facilitate a blended workshop using this material, please download the Facilitation Guide and Appendix files to get started! As part of the Open Learning Library (OLL) , this course is free to use. You have the option to sign up and enroll if you want to track your progress, or you can view and use all the materials without enrolling. Resources on OLL allow learners to learn at their own pace while receiving immediate feedback through interactive content and exercises.
+course_url: "https://ocw.mit.edu/courses/res-7-009-7-int-inclusive-teaching-module-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/res-7-009-7-int-inclusive-teaching-module-fall-2022/res7-009f22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-212-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.212"
+cross_listed_codes: []
+course_title: "Myth, Ritual, and Symbolism"
+course_slug: "21a-212-myth-ritual-and-symbolism-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Howe"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Semantics"
+  - "Religion"
+  - "Social Science"
+  - "Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Semantics"
+      - name: "Religion"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  Human beings are symbol-making as well as tool-making animals. We understand our world and shape our lives in large part by assigning meanings to objects, beings, and persons; by connecting things together in symbolic patterns; and by creating elaborate forms of symbolic action and narrative. In this introductory subject we consider how symbols are created and structured; how they draw on and give meaning to different domains of the human world; how they are woven into politics, family life, and the life cycle; and how we can interpret them. The semester will be devoted to a number of topics in symbolism. Metaphor and Other Figurative Language The Raw Materials of Symbolism, especially Animals and The Human Body Cosmology and Complex Symbolic Systems Ritual, including Symbolic Curing and Magic Narrative and Life Mythology
+course_url: "https://ocw.mit.edu/courses/21a-212-myth-ritual-and-symbolism-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21a-212-myth-ritual-and-symbolism-spring-2004/2226fd005b68f4d29283c086ea842323_21a-212s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

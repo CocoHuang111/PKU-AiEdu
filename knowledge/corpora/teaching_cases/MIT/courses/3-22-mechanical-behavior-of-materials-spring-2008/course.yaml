@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-3-22-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.22"
+cross_listed_codes: []
+course_title: "Mechanical Behavior of Materials"
+course_slug: "3-22-mechanical-behavior-of-materials-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Krystyn van Vliet"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Solid Mechanics"
+  - "Nanotechnology"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects"
+  - "Simulation Videos"
+description: |
+  Here we will learn about the mechanical behavior of structures and materials, from the continuum description of properties to the atomistic and molecular mechanisms that confer those properties to all materials. We will cover elastic and plastic deformation, creep, fracture and fatigue of materials including crystalline and amorphous metals, semiconductors, ceramics, and (bio)polymers, and will focus on the design and processing of materials from the atomic to the macroscale to achieve desired mechanical behavior. We will cover special topics in mechanical behavior for material systems of your choice, with reference to current research and publications.
+course_url: "https://ocw.mit.edu/courses/3-22-mechanical-behavior-of-materials-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/3-22-mechanical-behavior-of-materials-spring-2008/95f8215db2cceeed7ff925ffa389fe98_3-22s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-es-333-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.333"
+cross_listed_codes:
+  - "CMS.333"
+course_title: "Producing Educational Videos"
+course_slug: "es-333-producing-educational-videos-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "David Custer"
+  - "Graham Gordon Ramsay"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Film and Video"
+  - "Teaching and Education"
+  - "Educational Technology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Media Assignments"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  Production of Educational Videos is an introduction to technical communication that is situated in the production of educational videos; the assignments are all focused on the production of videos that teach some aspect of MIT’s first-year core curriculum. The objective of these assignments is improvement in both communication ability and communication habits; these improvements are effected by providing participants with instruction, practice, feedback, and the opportunity for reflection. In addition to improvements in communication skills, improvement is expected in students’ attitude towards writing, oral presentations, and collaboration; as the semester progresses, students should feel confident of their ability to write, present, and collaborate.
+course_url: "https://ocw.mit.edu/courses/es-333-producing-educational-videos-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/es-333-producing-educational-videos-spring-2015/748df246fb9c471f03a675ee8f9bd46a_ES-333s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

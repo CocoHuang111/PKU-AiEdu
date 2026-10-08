@@ -1,0 +1,20 @@
+> 检索摘要：8.592J Statistical Physics in Biology（Spring 2011，Graduate）的「Assignments」。页内标题：Assignments。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+| ASSIGNMENTS | RELATED FILES |
+| --- | --- |
+| [Problem Set 1 (PDF)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/mit8_592js11_ps1/) | The .fna file below contains the nucleic acid sequence of <br> E. coli <br> in the FASTA format. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. ( <br> [FNA - 4.5 MB](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/u00096/) <br> ) <br> [cSNPsAfricanEuropean (DAT)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/csnpsafricaneuropean/) <br> [cSNPsAfricanEuropeanType (DAT)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/csnpsafricaneuropeantype/) |
+| [Problem Set 2 (PDF)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/mit8_592js11_ps2/) | Altschul, S.F., et al. “ <br> [Gapped BLAST and PSI-BLAST: a new generation of protein database search programs](http://www.ncbi.nlm.nih.gov/pubmed/9254694) <br> .” <br> Nucleic Acids Res. <br> 25, no. 17 (1997): 3389-402. |
+| [Problem Set 3 (PDF)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/mit8_592js11_ps3/) |  |
+| [Problem Set 4 (PDF)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/mit8_592js11_ps4/) |  |
+| [Problem Set 5 (PDF)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/mit8_592js11_ps5/) | [1TEN.PDB (PDB)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/1ten/) <br> [2EBN.PDB (PDB)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/2ebn/) <br> [4HHB_A.PDB (PDB)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/4hhb_a/) <br> Miyazawa, Sanzo, and Robert L. Jernigan (MJ). “ <br> [Residue–Residue Potentials with a Favorable Contact Pair Term and an Unfavorable High Packing Density Term, for Simulation and Threading.](http://www.ncbi.nlm.nih.gov/pubmed/8604144) <br> ” <br> J. Mol Biol. <br> 256, no. 3 (1996): 623-44. <br> [MJ Interaction Table (3) (PDF)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/mj_table3/) |
+| [Problem Set 6 (PDF)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/mit8_592js11_ps6/) | [The RNA Puller @ Ohio-State University](http://bioserv.mps.ohio-state.edu/rna/) <br> Smith, S.B., et al. “ <br> [Overstretching B-DNA: The Elastic Response of Individual Double-Stranded and Single-Stranded DNA Molecules](http://www.ncbi.nlm.nih.gov/pubmed/8628994) <br> .” <br> Science <br> 271 no. 5250 (1996): 795–9. |
+| [Problem Set 7 (PDF)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/mit8_592js11_ps7/) |  |
+| [Problem Set 8 (PDF)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/mit8_592js11_ps8/) | [purR_sites (TXT)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/purr_sites/) <br> [gene_table (TXT)](https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/resources/gene_table/) |

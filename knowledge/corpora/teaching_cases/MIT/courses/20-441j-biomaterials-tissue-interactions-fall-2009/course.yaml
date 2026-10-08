@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-20-441j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.441J"
+cross_listed_codes:
+  - "2.79J"
+  - "3.96J"
+  - "HST.522J"
+course_title: "Biomaterials-Tissue Interactions"
+course_slug: "20-441j-biomaterials-tissue-interactions-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Mechanical Engineering"
+  - "Materials Science and Engineering"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ioannis Yannas"
+  - "Prof. Myron Spector"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Cell and Tissue Engineering"
+  - "Science"
+  - "Biology"
+  - "Cell Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Cell and Tissue Engineering"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course covers the principles of materials science and cell biology underlying the design of medical implants, artificial organs, and matrices for tissue engineering. Methods for biomaterials surface characterization and analysis of protein adsorption on biomaterials. Molecular and cellular interactions with biomaterials are analyzed in terms of unit cell processes, such as matrix synthesis, degradation, and contraction. Mechanisms underlying wound healing and tissue remodeling following implantation in various organs. Tissue and organ regeneration. Design of implants and prostheses based on control of biomaterials-tissue interactions. Comparative analysis of intact, biodegradable, and bioreplaceable implants by reference to case studies. Criteria for restoration of physiological function for tissues and organs.
+course_url: "https://ocw.mit.edu/courses/20-441j-biomaterials-tissue-interactions-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/20-441j-biomaterials-tissue-interactions-fall-2009/579634cee65ebf48d88003207b90f9f8_20-441jf09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

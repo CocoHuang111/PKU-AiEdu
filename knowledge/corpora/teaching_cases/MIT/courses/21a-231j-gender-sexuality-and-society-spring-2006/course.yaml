@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-231j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.231J"
+cross_listed_codes:
+  - "WGS.455J"
+course_title: "Gender, Sexuality, and Society"
+course_slug: "21a-231j-gender-sexuality-and-society-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Heather Paxson"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Social Anthropology"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Social Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course seeks to examine how people experience gender - what it means to be a man or a woman - and sexuality in a variety of historical and cultural contexts. We will explore how gender and sexuality relate to other categories of social identity and difference, such as race and ethnicity, economic and social standing, urban or rural life, etc. One goal of the class is to learn how to critically assess media and other popular representations of gender roles and stereotypes. Another is to gain a greater sense of the diversity of human social practices and beliefs in the United States and around the world.
+course_url: "https://ocw.mit.edu/courses/21a-231j-gender-sexuality-and-society-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/21a-231j-gender-sexuality-and-society-spring-2006/d45e1915290e1bc58192f77586c1e0c1_21a-231js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

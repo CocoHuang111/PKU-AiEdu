@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-10-450-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.450"
+cross_listed_codes: []
+course_title: "Process Dynamics, Operations, and Control"
+course_slug: "10-450-process-dynamics-operations-and-control-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Barry S. Johnston"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Process Control Systems"
+  - "Mechanical Engineering"
+  - "Dynamics and Control"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Process Control Systems"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course introduces dynamic processes and the engineering tasks of process operations and control. Subject covers modeling the static and dynamic behavior of processes; control strategies; design of feedback, feedforward, and other control structures; and applications to process equipment. Dedication In preparing this material, the author has recalled with pleasure his own introduction, many years ago, to Process Control. This OCW course is dedicated with gratitude, to Prof. W. C. Clements of the University of Alabama.
+course_url: "https://ocw.mit.edu/courses/10-450-process-dynamics-operations-and-control-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/10-450-process-dynamics-operations-and-control-spring-2006/19d71d773488c191173186e90d7bc362_10-450s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

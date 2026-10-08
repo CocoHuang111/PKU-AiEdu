@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-3-23-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.23"
+cross_listed_codes: []
+course_title: "Electrical, Optical, and Magnetic Properties of Materials"
+course_slug: "3-23-electrical-optical-and-magnetic-properties-of-materials-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Paul"
+  - "Prof. Nicola Marzari"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Electromagnetism"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Electromagnetism"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This class discusses the origin of electrical, magnetic and optical properties of materials, with a focus on the acquisition of quantum mechanical tools. It begins with an analysis of the properties of materials, presentation of the postulates of quantum mechanics, and close examination of the hydrogen atom, simple molecules and bonds, and the behavior of electrons in solids and energy bands. Introducing the variation principle as a method for the calculation of wavefunctions, the course continues with investigation of how and why materials respond to different electrical, magnetic and electromagnetic fields and probes and study of the conductivity, dielectric function, and magnetic permeability in metals, semiconductors, and insulators. A survey of common devices such as transistors, magnetic storage media, optical fibers concludes the semester. Note: The Magnetics unit was taught by co-instructor David Paul; that material is not available at this time.
+course_url: "https://ocw.mit.edu/courses/3-23-electrical-optical-and-magnetic-properties-of-materials-fall-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/3-23-electrical-optical-and-magnetic-properties-of-materials-fall-2007/00779c041c9b04377c3351a4090676bc_3-23f07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

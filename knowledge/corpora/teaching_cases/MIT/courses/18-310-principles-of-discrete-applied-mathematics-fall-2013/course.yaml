@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-18-310-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.310"
+cross_listed_codes: []
+course_title: "Principles of Discrete Applied Mathematics"
+course_slug: "18-310-principles-of-discrete-applied-mathematics-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michel Goemans"
+  - "Susan Ruff"
+  - "Dr. Lorenzo Orecchia"
+  - "Dr. Richard Peng"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Discrete Mathematics"
+  - "Probability and Statistics"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course is an introduction to discrete applied mathematics. Topics include probability, counting, linear programming, number-theoretic algorithms, sorting, data compression, and error-correcting codes. This is a Communication Intensive in the Major (CI-M) course, and thus includes a writing component.
+course_url: "https://ocw.mit.edu/courses/18-310-principles-of-discrete-applied-mathematics-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/18-310-principles-of-discrete-applied-mathematics-fall-2013/f6300cde552a98c22884c27ecca1b72e_18-310f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

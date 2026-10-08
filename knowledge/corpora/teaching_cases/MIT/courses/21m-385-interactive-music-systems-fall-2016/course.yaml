@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-385-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.385"
+cross_listed_codes:
+  - "6.809"
+  - "21M.585"
+course_title: "Interactive Music Systems"
+course_slug: "21m-385-interactive-music-systems-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Music"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Eran Egozy"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Human-Computer Interfaces"
+  - "Software Design and Engineering"
+  - "Fine Arts"
+  - "Music"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+          - "Software Design and Engineering"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course explores audio synthesis, musical structure, human computer interaction (HCI), and visual presentation for the creation of interactive musical experiences. Topics include audio synthesis; mixing and looping; MIDI sequencing; generative composition; motion sensors; music games; and graphics for UI, visualization, and aesthetics. Weekly programming assignments in python are included. Student teams build an original, dynamic, and engaging interactive music system for their final project.
+course_url: "https://ocw.mit.edu/courses/21m-385-interactive-music-systems-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/21m-385-interactive-music-systems-fall-2016/700473f1ebe2f1d427aa729724efd9b6_15-S50F16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

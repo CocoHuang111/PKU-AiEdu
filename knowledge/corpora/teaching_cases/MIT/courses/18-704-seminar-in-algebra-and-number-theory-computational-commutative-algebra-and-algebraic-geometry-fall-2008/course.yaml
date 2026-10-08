@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-18-704-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.704"
+cross_listed_codes: []
+course_title: "Seminar in Algebra and Number Theory: Computational Commutative Algebra and Algebraic Geometry"
+course_slug: "18-704-seminar-in-algebra-and-number-theory-computational-commutative-algebra-and-algebraic-geometry-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Steven Kleiman"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Computation"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  In this undergraduate level seminar series, topics vary from year to year. Students present and discuss the subject matter, and are provided with instruction and practice in written and oral communication. Some experience with proofs required. The topic for fall 2008: Computational algebra and algebraic geometry.
+course_url: "https://ocw.mit.edu/courses/18-704-seminar-in-algebra-and-number-theory-computational-commutative-algebra-and-algebraic-geometry-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/18-704-seminar-in-algebra-and-number-theory-computational-commutative-algebra-and-algebraic-geometry-fall-2008/ac106d0ab0e26e5051d6b47de9445f3d_18-704f08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

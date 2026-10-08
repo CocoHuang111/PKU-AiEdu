@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-15-393-january-iap-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.393"
+cross_listed_codes: []
+course_title: "Nuts and Bolts of New Ventures"
+course_slug: "15-393-nuts-and-bolts-of-new-ventures-january-iap-2025"
+term: "January IAP"
+year: 2025
+as_taught_in: "January IAP 2025"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Joseph Hadzima"
+subject_primary: "Entrepreneurship"
+subject_secondary: []
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Readings"
+description: |
+  For 36 years, Nuts and Bolts of New Ventures has been taught during the January Independent Activities Period (IAP) at MIT. It is designed to foster an understanding of how to start a new venture (for-profit and social/development). The course details the process from an idea’s inception to the development of a successful new venture to deliver products and services enabled by the idea. Explores customer identification, the business/economic models, financial projections, legal and operational issues, and financing alternatives and sources. All sessions are taught by people who have actually launched or have been involved in successful ventures. In 2026, we added an additional session called The Blues-Print for Innovation. Featuring Bob Jones, the session ties together Jones’s two passions: playing blues guitar and entrepreneurship.
+course_url: "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/"
+image_url: "https://ocw.mit.edu/courses/15-393-nuts-and-bolts-of-new-ventures-january-iap-2025/mit15_393_iap25_chpimage.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

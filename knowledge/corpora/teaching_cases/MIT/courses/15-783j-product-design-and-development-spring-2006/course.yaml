@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-15-783j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.783J"
+cross_listed_codes:
+  - "2.739J"
+course_title: "Product Design and Development"
+course_slug: "15-783j-product-design-and-development-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Matthew Kressy"
+  - "Prof. Steven Eppinger"
+  - "Prof. Thomas Roemer"
+  - "Prof. Warren Seering"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Marketing"
+  - "Operations Management"
+  - "Engineering"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Marketing"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  Product Design and Development is a project-based course that covers modern tools and methods for product design and development. The cornerstone is a project in which teams of management, engineering, and industrial design students conceive, design and prototype a physical product. Class sessions are conducted in workshop mode and employ cases and hands-on exercises to reinforce the key ideas. Topics include identifying customer needs, concept generation, product architecture, industrial design, and design-for-manufacturing.
+course_url: "https://ocw.mit.edu/courses/15-783j-product-design-and-development-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/15-783j-product-design-and-development-spring-2006/4aee7a25f2f6571b121c1a958a00c83e_15-783js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

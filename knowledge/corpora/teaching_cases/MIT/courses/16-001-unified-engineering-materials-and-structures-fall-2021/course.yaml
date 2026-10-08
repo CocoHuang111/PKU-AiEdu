@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-16-001-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.001"
+cross_listed_codes: []
+course_title: "Unified Engineering: Materials and Structures"
+course_slug: "16-001-unified-engineering-materials-and-structures-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Raúl Radovitzky"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Materials Selection"
+  - "Materials Science and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Materials Selection"
+      - name: "Materials Science and Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Laboratory Assignments"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Readings"
+description: |
+  This course presents fundamental principles and methods of materials and structures for aerospace engineering, and engineering analysis and design concepts applied to aerospace systems. The topics include statics; analysis of trusses; analysis of statically determinate and indeterminate systems; stress-strain behavior of materials; analysis of beam bending, buckling, and torsion; and material and structural failure, including plasticity, fracture, fatigue, and their physical causes. Experiential lab and aerospace system projects provide additional aerospace context.
+course_url: "https://ocw.mit.edu/courses/16-001-unified-engineering-materials-and-structures-fall-2021/"
+image_url: "https://ocw.mit.edu/courses/16-001-unified-engineering-materials-and-structures-fall-2021/16_001f21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-11-201-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.201"
+cross_listed_codes: []
+course_title: "Gateway: Planning Action"
+course_slug: "11-201-gateway-planning-action-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Cherie Miot Abbanat"
+  - "Prof. Lawrence Vale"
+  - "Prof. Xavier de Souza Briggs"
+  - "Prof. Annette M. Kim"
+  - "Prof. Balakrishnan Rajagopal"
+subject_primary: "Urban Studies"
+subject_secondary:
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+description: |
+  This course introduces persistent themes and challenges facing planners. It emphasizes the historical roots of contemporary urban planning problems and comparative study of practice in the U.S. and other countries. It is a nine week module intended for first semester Master in City Planning students.
+course_url: "https://ocw.mit.edu/courses/11-201-gateway-planning-action-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/11-201-gateway-planning-action-fall-2005/2ce9f03c8c2fe6b89f3228a62dfecf86_11-201f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

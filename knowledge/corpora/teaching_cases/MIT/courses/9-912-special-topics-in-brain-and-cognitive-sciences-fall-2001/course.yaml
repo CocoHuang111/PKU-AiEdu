@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-9-912-fall-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.912"
+cross_listed_codes: []
+course_title: "Special Topics in Brain and Cognitive Sciences"
+course_slug: "9-912-special-topics-in-brain-and-cognitive-sciences-fall-2001"
+term: "Fall"
+year: 2001
+as_taught_in: "Fall 2001"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Anthony Wagner"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neurobiology"
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Memory is not a unitary faculty, but rather consists of multiple forms of learning that differ in their operating characteristics and neurobiological substrates. This seminar will consider current debates regarding the cognitive and neural architectures of memory, specifically focusing on recent efforts to address these controversies through application of functional neuroimaging (primarily fMRI and PET).
+course_url: "https://ocw.mit.edu/courses/9-912-special-topics-in-brain-and-cognitive-sciences-fall-2001/"
+image_url: "https://ocw.mit.edu/courses/9-912-special-topics-in-brain-and-cognitive-sciences-fall-2001/7bc517eaac9a56667cc3603512ec8838_9-912f01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

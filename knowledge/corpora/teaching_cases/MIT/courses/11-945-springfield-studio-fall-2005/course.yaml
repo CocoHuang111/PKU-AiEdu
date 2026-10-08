@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-11-945-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.945"
+cross_listed_codes: []
+course_title: "Springfield Studio"
+course_slug: "11-945-springfield-studio-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ceasar McDowell"
+  - "Prof. Karl Seidman"
+subject_primary: "Economics"
+subject_secondary:
+  - "Developmental Economics"
+  - "Public Administration"
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Regional Planning"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  The Springfield Studio is a practicum course that focuses on the economic, programmatic and social renewal of an urban community in Springfield, Massachusetts by combining classroom work with an applied class project. The course content covers the areas of neighborhood economic development and the related analysis and planning tools used to understand and assess urban conditions from an economic and community development perspective.
+course_url: "https://ocw.mit.edu/courses/11-945-springfield-studio-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/11-945-springfield-studio-fall-2005/e420eaaf58e19c80bdf8d270a4312373_11-945f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-370-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.370"
+cross_listed_codes: []
+course_title: "Brownfields Policy and Practice"
+course_slug: "11-370-brownfields-policy-and-practice-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "James Hamilton"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Social Science"
+  - "Public Administration"
+  - "Public Policy"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  There are several hundred thousand Brownfield sites across the country. The large number of sites, combined with how a majority of these properties are located in urban and historically underserved communities, dictate that redevelopment of these sites stands to be a common theme in urban planning for the foreseeable future. Students form a grounded understanding of the Brownfield lifecycle: how and why they were created, their potential role in community revitalization, and the general processes governing their redevelopment. Using case studies and guest speakers from the public, private and non-profit sectors, students develop and hone skills to effectively address the problems posed by these inactive sites.
+course_url: "https://ocw.mit.edu/courses/11-370-brownfields-policy-and-practice-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/11-370-brownfields-policy-and-practice-fall-2005/58484e8338a1c115914dc5594bede894_11-370f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

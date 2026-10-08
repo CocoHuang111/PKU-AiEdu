@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-501-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.501"
+cross_listed_codes:
+  - "21G.551"
+course_title: "Japanese I"
+course_slug: "21g-501-japanese-i-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Takako Aikawa"
+  - "Masami Ikeda-Lamm"
+  - "Wakana Maekawa"
+  - "Emiko Rafique"
+subject_primary: "Language"
+subject_secondary:
+  - "Japanese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Japanese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Multiple Assignment Types"
+description: |
+  This course is designed for students with no previous knowledge of the language, providing opportunities to acquire basic skills for conversation, reading, and writing in Japanese. The program emphasizes active command of Japanese, not passive knowledge. Your goal is not simply to study the grammar and vocabulary, but to gain skills necessary to use them in a linguistically and culturally appropriate way.
+course_url: "https://ocw.mit.edu/courses/21g-501-japanese-i-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/21g-501-japanese-i-fall-2019/b24b34a84f0104fe547f1c38529fb848_21g501f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

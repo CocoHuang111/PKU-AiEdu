@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-6-s095-january-iap-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.S095"
+cross_listed_codes: []
+course_title: "Programming for the Puzzled"
+course_slug: "6-s095-programming-for-the-puzzled-january-iap-2018"
+term: "January IAP"
+year: 2018
+as_taught_in: "January IAP 2018"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Srini Devadas"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Programming Languages"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Programming Languages"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Programming Assignments with Examples"
+description: |
+  This class builds a bridge between the recreational world of algorithmic puzzles (puzzles that can be solved by algorithms) and the pragmatic world of computer programming, teaching students to program while solving puzzles. Python syntax and semantics required to understand the code are explained as needed for each puzzle.
+course_url: "https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/"
+image_url: "https://ocw.mit.edu/courses/6-s095-programming-for-the-puzzled-january-iap-2018/8a47e175cc72845e080f083fcfbc7c29_6-S095IAP18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

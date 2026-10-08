@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-18-104-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.104"
+cross_listed_codes: []
+course_title: "Seminar in Analysis: Applications to Number Theory"
+course_slug: "18-104-seminar-in-analysis-applications-to-number-theory-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Dan Ciubotaru"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+  - "Problem Sets"
+description: |
+  18.104 is an undergraduate level seminar for mathematics majors. Students present and discuss subject matter taken from current journals or books. Instruction and practice in written and oral communication is provided. The topics vary from year to year. The topic for this term is Applications to Number Theory.
+course_url: "https://ocw.mit.edu/courses/18-104-seminar-in-analysis-applications-to-number-theory-fall-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/18-104-seminar-in-analysis-applications-to-number-theory-fall-2006/f23162eb33cdccc6b5c541500488cb3b_18-104f06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

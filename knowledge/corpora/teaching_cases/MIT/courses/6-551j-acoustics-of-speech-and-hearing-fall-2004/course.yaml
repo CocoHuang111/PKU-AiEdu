@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-6-551j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.551J"
+cross_listed_codes:
+  - "HST.714J"
+course_title: "Acoustics of Speech and Hearing"
+course_slug: "6-551j-acoustics-of-speech-and-hearing-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Christopher Shera"
+  - "Prof. John Rosowski"
+  - "Prof. Kenneth Stevens"
+  - "Prof. Louis Braida"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Health and Medicine"
+  - "Anatomy and Physiology"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The Acoustics of Speech and Hearing is an H-Level graduate course that reviews the physical processes involved in the production, propagation and reception of human speech. Particular attention is paid to how the acoustics and mechanics of the speech and auditory system define what sounds we are capable of producing and what sounds we can sense. Areas of discussion include: the acoustic cues used in determining the direction of a sound source, the acoustic and mechanical mechanisms involved in speech production and the acoustic and mechanical mechanism used to transduce and analyze sounds in the ear.
+course_url: "https://ocw.mit.edu/courses/6-551j-acoustics-of-speech-and-hearing-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/6-551j-acoustics-of-speech-and-hearing-fall-2004/865bf987e40fc4b1c0e11563dacf4f0d_6-551jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

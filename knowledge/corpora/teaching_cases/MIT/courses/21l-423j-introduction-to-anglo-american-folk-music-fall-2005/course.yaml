@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-423j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.423J"
+cross_listed_codes:
+  - "21M.223J"
+course_title: "Introduction to Anglo-American Folk Music"
+course_slug: "21l-423j-introduction-to-anglo-american-folk-music-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Literature"
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. George Ruckert"
+  - "Prof. Ruth Perry"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Performance Arts"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+      - name: "Performance Arts"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  This course examines the production, transmission, preservation and qualities of folk music in the British Isles and North America from the 18th century to the folk revival of the 1960s and the present. There is a special emphasis on balladry, fiddle styles, and African-American influences. The class sings ballads and folk songs from the Child and Lomax collections as well as other sources as we examine them from literary, historical, and musical points of view. Readings supply critical and background materials from a number of sources. Visitors and films bring additional perspectives.
+course_url: "https://ocw.mit.edu/courses/21l-423j-introduction-to-anglo-american-folk-music-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21l-423j-introduction-to-anglo-american-folk-music-fall-2005/db83790a0876459da8e643cf46218a33_21l-423jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

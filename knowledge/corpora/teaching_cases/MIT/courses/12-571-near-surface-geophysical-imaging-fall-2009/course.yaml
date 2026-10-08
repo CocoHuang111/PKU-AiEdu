@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-12-571-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.571"
+cross_listed_codes: []
+course_title: "Near-Surface Geophysical Imaging"
+course_slug: "12-571-near-surface-geophysical-imaging-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jie Zhang"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Science"
+  - "Earth Science"
+  - "Geology"
+  - "Geophysics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+          - "Geophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This graduate level course presents theories, methodologies, and applications of seismic imaging for solving the shallow near-surface (0 - 500 m) effects on the seismic data processing for oil and gas exploration on land. It introduces both conventional and advanced imaging technologies that have been developed in academia and the seismic industry.
+course_url: "https://ocw.mit.edu/courses/12-571-near-surface-geophysical-imaging-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/12-571-near-surface-geophysical-imaging-fall-2009/6a72a48e5016195b8646abdfc838c316_12-571f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-16-622-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.622"
+cross_listed_codes: []
+course_title: "Experimental Projects II"
+course_slug: "16-622-experimental-projects-ii-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Edward Greitzer"
+  - "Prof. Jennifer L. Craig"
+  - "Prof. John Deyst"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Computer Science"
+  - "Data Mining"
+  - "Systems Engineering"
+  - "Systems Design"
+  - "Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+  - name: "Science"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  The Experimental Project Lab in the Department of Aeronautics and Astronautics is a two-semester course sequence: 16.621 Experimental Projects I and 16.622 Experimental Projects II (this course). Students in 16.622 gain practical insight and improved understanding of engineering experimentation through design and execution of “project” experiments. Building upon work in course 16.621, students construct and test equipment, make systematic experimental measurements of phenomena, analyze data, and compare theoretical predictions with results. Deliverables comprise a written final project report and formal oral presentations. Instructions on oral presentations and multi-section reporting are given. Experimental Projects I and II provide a valuable link between theory (16.621) and practice (16.622).
+course_url: "https://ocw.mit.edu/courses/16-622-experimental-projects-ii-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/16-622-experimental-projects-ii-fall-2003/a4d12fd9efd5d60f3e44642079636462_16-622f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

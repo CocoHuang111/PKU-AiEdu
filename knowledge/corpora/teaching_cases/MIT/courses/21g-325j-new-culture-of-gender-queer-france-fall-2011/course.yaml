@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-325j-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.325J"
+cross_listed_codes:
+  - "WGS.233J"
+course_title: "New Culture of Gender: Queer France"
+course_slug: "21g-325j-new-culture-of-gender-queer-france-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Bruno Perreau"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Language"
+  - "French"
+  - "Literature"
+  - "International Literature"
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+  - "Society"
+  - "Gender Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course addresses the place of contemporary queer identities in French discourse and discusses the new generation of queer authors and their principal concerns. Class discussions and readings will introduce students to the main classical references of queer subcultures, from Proust and Vivien to Hocquenghem and Wittig. Throughout the course, students will examines current debates on post-colonial and globalized queer identities through essays, songs, movies, and novels. Authors covered include Didier Eribon, Anne Garréta, Abdellah Taïa, Anne Scott, and Nina Bouraoui. This class is taught in French.
+course_url: "https://ocw.mit.edu/courses/21g-325j-new-culture-of-gender-queer-france-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/21g-325j-new-culture-of-gender-queer-france-fall-2011/c5e23bc2e3be0d21415a4fe66cf49c5e_21g-325jf11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

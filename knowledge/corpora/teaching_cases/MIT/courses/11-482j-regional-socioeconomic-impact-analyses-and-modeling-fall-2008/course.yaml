@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-11-482j-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.482J"
+cross_listed_codes:
+  - "1.825J"
+  - "ESD.193J"
+course_title: "Regional Socioeconomic Impact Analyses and Modeling"
+course_slug: "11-482j-regional-socioeconomic-impact-analyses-and-modeling-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Civil and Environmental Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Karen R. Polenske"
+subject_primary: "Economics"
+subject_secondary:
+  - "Macroeconomics"
+  - "Political Economy"
+  - "Urban Studies"
+  - "Regional Planning"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Macroeconomics"
+          - "Political Economy"
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  The seminar is designed to provide advanced graduate students with a thorough understanding of selected regional economic theories and techniques and with experience in using alternative socioeconomic impact assessment models and related regional techniques on microcomputers. Discussions will be held on particular theoretical modeling and economic issues; linkages among theories, accounts, and policies; relationships between national and regional economic structures; and methods of adjusting and estimating regional input-output accounts and tables. Examples from the Boston area and other U.S. cities/regions will be used to illustrate points throughout the seminar. We will also examine how such models are used in other countries. New material on analyzing regional development issues will be covered.
+course_url: "https://ocw.mit.edu/courses/11-482j-regional-socioeconomic-impact-analyses-and-modeling-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/11-482j-regional-socioeconomic-impact-analyses-and-modeling-fall-2008/d944e6acec36be2f827c8647ca05e12e_11-482jf08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

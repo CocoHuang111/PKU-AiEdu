@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-113-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.113"
+cross_listed_codes: []
+course_title: "Developing Musical Structures"
+course_slug: "21m-113-developing-musical-structures-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeanne Bamberger"
+subject_primary: "Music"
+subject_secondary:
+  - "Music Performance"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music Performance"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  The goal of this class is practical: to interrogate, make explicit, and thus to develop the powerful musical intuitions that are at work as you make sense of the music all around you. Reflecting, we will ask how this knowledge develops in ordinary and extraordinary ways.
+course_url: "https://ocw.mit.edu/courses/21m-113-developing-musical-structures-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/21m-113-developing-musical-structures-fall-2002/d68ef96e6b880a855278ba42dc3dec5c_21m-113f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

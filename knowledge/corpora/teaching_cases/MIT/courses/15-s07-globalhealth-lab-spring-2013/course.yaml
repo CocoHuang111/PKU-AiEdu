@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-15-s07-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.S07"
+cross_listed_codes: []
+course_title: "GlobalHealth Lab"
+course_slug: "15-s07-globalhealth-lab-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Anjali Sastry"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Health and Medicine"
+  - "Public Health"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course pairs faculty-mentored student teams with enterprises on the front lines of health care delivery in sub-Saharan Africa and South Asia. To tackle specific barriers identified by each partnering organization, the course is built around custom-designed projects in strategy, business model innovation, operations, marketing, and technology. Class sessions include interactive cases, practical exercises, and lively conversations with experts, all designed to support project work before, during, and after the intensive two-week onsite collaboration with entrepreneurs, leaders, staff, and stakeholders in the setting. Course assignments include a portfolio of host deliverable, a foundational toolkit designed to support each project, and a distillation of learning from the field. Acknowledgements Special thanks is given to Imperial Health Sciences, Unjani Clinic and L V Prasad Eye Institute for allowing their organizations to be featured in the sample student projects on this course site.
+course_url: "https://ocw.mit.edu/courses/15-s07-globalhealth-lab-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/15-s07-globalhealth-lab-spring-2013/44963b606160378480ca03449b5fee02_15-s07s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

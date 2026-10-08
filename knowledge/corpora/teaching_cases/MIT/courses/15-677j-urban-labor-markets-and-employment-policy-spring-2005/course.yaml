@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-677j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.677J"
+cross_listed_codes: []
+course_title: "Urban Labor Markets and Employment Policy"
+course_slug: "15-677j-urban-labor-markets-and-employment-policy-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Paul Osterman"
+subject_primary: "Industrial Relations and Human Resource Management"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+  - "Labor Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "Labor Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This subject discusses the broader trends in the labor market, how urban labor markets function, public and private training policy, other labor market programs, the link between labor market policy and economic development, and the organization of work within firms.
+course_url: "https://ocw.mit.edu/courses/15-677j-urban-labor-markets-and-employment-policy-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/15-677j-urban-labor-markets-and-employment-policy-spring-2005/bdb5f651751b19478d5d37007ce4ddb5_15-677js05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

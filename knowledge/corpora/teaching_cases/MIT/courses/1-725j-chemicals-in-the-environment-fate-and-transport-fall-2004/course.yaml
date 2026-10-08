@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-1-725j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.725J"
+cross_listed_codes: []
+course_title: "Chemicals in the Environment: Fate and Transport"
+course_slug: "1-725j-chemicals-in-the-environment-fate-and-transport-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Harold Hemond"
+  - "Janet Chuang"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Environmental Engineering"
+  - "Hydrology and Water Resource Systems"
+  - "Science"
+  - "Chemistry"
+  - "Earth Science"
+  - "Environmental Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Environmental Engineering"
+        specialties:
+          - "Hydrology and Water Resource Systems"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties: []
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This core class in the Environmental M.Eng. program is for all students interested in the behavior of chemicals in the environment. The emphasis is on man-made chemicals; their movement through water, air, and soil; and their eventual fate. Physical transport, as well as chemical and biological sources and sinks, are discussed. Linkages to health effects, sources and control, and policy aspects are discussed and debated.
+course_url: "https://ocw.mit.edu/courses/1-725j-chemicals-in-the-environment-fate-and-transport-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/1-725j-chemicals-in-the-environment-fate-and-transport-fall-2004/c697e232993c6233e589a1e866e7cd3e_1-725jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

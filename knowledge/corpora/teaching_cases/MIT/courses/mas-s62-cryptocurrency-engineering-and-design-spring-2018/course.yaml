@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-s62-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.S62"
+cross_listed_codes: []
+course_title: "Cryptocurrency Engineering and Design"
+course_slug: "mas-s62-cryptocurrency-engineering-and-design-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Neha Narula"
+  - "Tadge Dryja"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Data Mining"
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Data Mining"
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  Bitcoin and other cryptographic currencies have gained attention over the years as the systems continue to evolve. This course looks at the design of Bitcoin and other cryptocurrencies and how they function in practice, focusing on cryptography, game theory, and network architecture.
+course_url: "https://ocw.mit.edu/courses/mas-s62-cryptocurrency-engineering-and-design-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/mas-s62-cryptocurrency-engineering-and-design-spring-2018/3342fe0c3491729d56718ebf8f502fb8_mas-s62s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

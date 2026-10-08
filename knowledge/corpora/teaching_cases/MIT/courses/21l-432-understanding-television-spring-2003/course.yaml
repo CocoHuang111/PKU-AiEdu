@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-432-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.432"
+cross_listed_codes: []
+course_title: "Understanding Television"
+course_slug: "21l-432-understanding-television-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Thorburn"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Visual Arts"
+  - "Film and Video"
+  - "Humanities"
+  - "Literature"
+  - "Drama"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Drama"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  The subtitle of this course for the spring 2003 term is “American Television: A Cultural History.” The class takes a cultural approach to television’s evolution as a technology and system of representation, considering television as a system of storytelling and myth-making, and as a cultural practice, studied from anthropological, literary, and cinematic perspectives. The course focuses on prime-time commercial broadcasting, the medium’s technological and economic history, and theoretical perspectives. There is much required viewing as well as readings in media theory and cultural interpretation.
+course_url: "https://ocw.mit.edu/courses/21l-432-understanding-television-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/21l-432-understanding-television-spring-2003/8be74a16511d8b3c80eb1895747dae17_21l-432s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

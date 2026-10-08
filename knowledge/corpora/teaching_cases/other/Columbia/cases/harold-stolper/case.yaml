@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-harold-stolper"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Harold Stolper, PhD"
+slug: "harold-stolper"
+source_url: "https://ctl.columbia.edu/transformations/faculty/harold-stolper/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "7f9f11a4059bf22214caebe385e51e2ce996138837531d5dcb5ff2660977c73b"

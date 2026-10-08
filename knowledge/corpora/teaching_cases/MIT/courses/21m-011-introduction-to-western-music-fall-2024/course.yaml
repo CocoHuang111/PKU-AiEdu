@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-011-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.011"
+cross_listed_codes: []
+course_title: "Introduction to Western Music"
+course_slug: "21m-011-introduction-to-western-music-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Teresa M. Neff"
+  - "Michael Goetjen"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Humanities"
+  - "History"
+  - "European History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Media Assignments"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This class will convey a broad overview of the history, culture, styles, and repertoires of what is generally considered to be the core canon of Western classical music. It will begin with the earliest notated music in Western Europe (e.g., sacred plainchant) and end with recent pieces of concert music and opera written by contemporary composers.
+course_url: "https://ocw.mit.edu/courses/21m-011-introduction-to-western-music-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/21m-011-introduction-to-western-music-fall-2024/mitocw_21m_011_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

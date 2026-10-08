@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-15-351-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.351"
+cross_listed_codes: []
+course_title: "Managing the Innovation Process"
+course_slug: "15-351-managing-the-innovation-process-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jonathon Cummings"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course approaches “managing the innovation process” through five levels of analysis: individual, team, network, organizational, and industrial. At each level of analysis, particular attention is given to the conditions under which innovation processes succeed and fail. The weekly readings consist of a mixture of book chapters, journal articles, and cases, and an online forum will be used for further discussion of the required readings outside of class. Tuesday classes will begin with a reflection exercise that entails critical thinking about the topic for the week, followed by an activity and lecture introducing material found both within and outside of the readings. Thursday classes will begin with a case analysis completed in small groups, followed by a discussion based on the issues raised in the case and online forum. The primary goal of the course is to expose students to a variety of perspectives on innovation, while building on past work experiences and preparing for work experiences in the future.
+course_url: "https://ocw.mit.edu/courses/15-351-managing-the-innovation-process-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/15-351-managing-the-innovation-process-fall-2002/d5d2af8ff92da63b2d0806b560a5b5f2_15-351f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-12-090-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.090"
+cross_listed_codes: []
+course_title: "Introduction to Fluid Motions, Sediment Transport, and Current-Generated Sedimentary Structures"
+course_slug: "12-090-introduction-to-fluid-motions-sediment-transport-and-current-generated-sedimentary-structures-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Southard"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Geology"
+  - "Geophysics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+          - "Geophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Open Textbooks"
+  - "Projects"
+  - "Written Assignments"
+description: |
+  This course begins by introducing students to aspects of fluid dynamics relevant to transport and deposition of particulate sedimentary materials. Emphasis is on the structure of turbulent shear flows and the forces exerted by fluid motions on bed of loosed sediment. With fluid dynamics as background, the course deals with sediment movement as bed load and suspended load, and with the geometry, kinematics, and dynamics of ripple and dune bed forms. The course concludes with basic material on the styles of current-generated primary sedimentary structures, with emphasis on cross stratification.
+course_url: "https://ocw.mit.edu/courses/12-090-introduction-to-fluid-motions-sediment-transport-and-current-generated-sedimentary-structures-fall-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/12-090-introduction-to-fluid-motions-sediment-transport-and-current-generated-sedimentary-structures-fall-2006/15fe7ad329147b7f3783f3c33d60f326_12-090f06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

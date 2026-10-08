@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-3-986-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.986"
+cross_listed_codes: []
+course_title: "The Human Past: Introduction to Archaeology"
+course_slug: "3-986-the-human-past-introduction-to-archaeology-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Harry Merrick"
+subject_primary: "Archaeology"
+subject_secondary: []
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Archaeology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class introduces the multidisciplinary nature of archaeology, both in theory and practice. Lectures provide a comparative examination of the origins of agriculture and the rise of early civilizations in the ancient Near East and Mesoamerica. The laboratory sessions provide practical experience in aspects of archaeological field methods and analytical techniques including the examination of stone, ceramic, and metal artifacts and bone materials. Lab sessions have occasional problem sets which are completed outside of class.
+course_url: "https://ocw.mit.edu/courses/3-986-the-human-past-introduction-to-archaeology-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/3-986-the-human-past-introduction-to-archaeology-fall-2006/ebfda15a2e1eecdb1f4a47b70244981f_3-986f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

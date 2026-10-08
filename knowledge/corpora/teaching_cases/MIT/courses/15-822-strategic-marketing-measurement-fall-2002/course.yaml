@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-15-822-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.822"
+cross_listed_codes: []
+course_title: "Strategic Marketing Measurement"
+course_slug: "15-822-strategic-marketing-measurement-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Drazen Prelec"
+subject_primary: "Marketing"
+subject_secondary: []
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Marketing"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Marketing research may be divided into methods that emphasize understanding “the customer” and methods that emphasize understanding “the market.” This course (15.822) deals with the market. The companion course (15.821) deals with the customer. The course will teach you how to write, conduct and analyze a marketing research survey. The emphasis will be on discovering market structure and segmentation, but you can pursue other project applications. A major objective of the course is to give you some “hands-on” exposure to analysis techniques that are widely used in consulting and marketing research factor analysis, perceptual mapping, conjoint, and cluster analysis). These techniques used to be considered advanced but now involve just a few keystrokes on most stat software packages. The course assumes familiarity with basic probability, statistics, and multiple linear regression.
+course_url: "https://ocw.mit.edu/courses/15-822-strategic-marketing-measurement-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/15-822-strategic-marketing-measurement-fall-2002/cbf9a9b44a6af9af92484c00bb5276f0_15-822f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

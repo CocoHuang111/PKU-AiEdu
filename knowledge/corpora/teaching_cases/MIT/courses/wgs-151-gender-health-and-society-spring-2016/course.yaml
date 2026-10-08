@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-151-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.151"
+cross_listed_codes: []
+course_title: "Gender, Health, and Society"
+course_slug: "wgs-151-gender-health-and-society-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Brittany Charlton"
+subject_primary: "Cancer"
+subject_secondary:
+  - "Epidemiology"
+  - "Mental Health"
+  - "Society"
+  - "Women's Studies"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Cancer"
+        specialties: []
+      - name: "Epidemiology"
+        specialties: []
+      - name: "Mental Health"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course draws on different disciplines, conceptual frameworks, and methodological approaches to examine gender in relation to health, including public health practice, epidemiologic research, health policy, and clinical application. It discusses a variety of health-related issues that illustrate global, international, domestic, and historical perspectives, while considering other social determinants of health as well, including social class and race.
+course_url: "https://ocw.mit.edu/courses/wgs-151-gender-health-and-society-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/wgs-151-gender-health-and-society-spring-2016/0381e2932802f1050adcbba8af093a81_wgs-151s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

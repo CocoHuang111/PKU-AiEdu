@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-17-810-spring-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.810"
+cross_listed_codes:
+  - "17.811"
+course_title: "Game Theory"
+course_slug: "17-810-game-theory-spring-2021"
+term: "Spring"
+year: 2021
+as_taught_in: "Spring 2021"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Asya Magazinnik"
+subject_primary: "Game Theory"
+subject_secondary:
+  - "Political Science"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Game Theory"
+        specialties: []
+      - name: "Political Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Readings"
+description: |
+  This course introduces students to the rudiments of game theory as practiced in political science. It teaches students the basic elements of formal modeling and strategies for solving simple games. Readings draw from introductory texts on game theoretic modeling and applied articles in American politics, international relations, and comparative politics.
+course_url: "https://ocw.mit.edu/courses/17-810-game-theory-spring-2021/"
+image_url: "https://ocw.mit.edu/courses/17-810-game-theory-spring-2021/17-810s21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

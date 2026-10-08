@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-4-500-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.500"
+cross_listed_codes: []
+course_title: "Introduction to Design Computing"
+course_slug: "4-500-introduction-to-design-computing-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Lawrence Sass"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course will introduce students to architectural design and computation through the use of computer modeling, rendering and digital fabrication. The course focuses on teaching architectural design with CAD drawing, 3-D modeling, rendering and rapid prototyping. Students will be required to build computer models that will lead to a full package of architectural explorations with computers. Each semester we will explore the design process of a particular building type and building material. The course also investigates a few design processes of selected architects. The course is critical of design principles and building production methods. Student assignments are graded based on the quality of design, representation and constructability. Great design input is always encouraged.
+course_url: "https://ocw.mit.edu/courses/4-500-introduction-to-design-computing-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/4-500-introduction-to-design-computing-fall-2008/e55e2e3396a46a5b6b3caa6d8037888d_4-500f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

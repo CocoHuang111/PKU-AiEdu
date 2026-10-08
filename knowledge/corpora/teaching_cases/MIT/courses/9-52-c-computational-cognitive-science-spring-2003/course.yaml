@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-9-52-c-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.52-C"
+cross_listed_codes: []
+course_title: "Computational Cognitive Science"
+course_slug: "9-52-c-computational-cognitive-science-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joshua Tenenbaum"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Science and Engineering"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  An introduction to computational theories of human cognition. Emphasizes questions of inductive learning and inference, and the representation of knowledge. Project required for graduate credit. This class is suitable for intermediate to advanced undergraduates or graduate students specializing in cognitive science, artificial intelligence, and related fields.
+course_url: "https://ocw.mit.edu/courses/9-52-c-computational-cognitive-science-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/9-52-c-computational-cognitive-science-spring-2003/b9cc93b89d3a9eb2220016a6ee622813_9-52s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

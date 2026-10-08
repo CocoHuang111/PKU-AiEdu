@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-10-569-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.569"
+cross_listed_codes: []
+course_title: "Synthesis of Polymers"
+course_slug: "10-569-synthesis-of-polymers-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Paula Hammond"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Molecular Engineering"
+  - "Polymers"
+  - "Process Control Systems"
+  - "Materials Science and Engineering"
+  - "Polymeric Materials"
+  - "Nanotechnology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Molecular Engineering"
+          - "Polymers"
+          - "Process Control Systems"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Polymeric Materials"
+      - name: "Nanotechnology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  Studies synthesis of polymeric materials, emphasizing interrelationships of chemical pathways, process conditions, and microarchitecture of molecules produced. Chemical pathways include traditional approaches such as anionic polymerization, radical condensation, and ring-opening polymerizations. Other techniques are discussed, including stable free radical polymerizations and atom transfer free radical polymerizations (ARTP), catalytic approaches to well-defined architectures, and polymer functionalization in bulk and at surfaces. Process conditions include bulk, solution, emulsion, suspension, gas phase, and batch vs. continuous fluidized bed. Microarchitecture includes tacticity, molecular-weight distribution, sequence distributions in copolymers, errors in chains such as branches, head-to-head addition, and peroxide incorporation. Acknowledgements The instructor would like to thank Karen Shu and Karen Daniel for their work in preparing material for this course site.
+course_url: "https://ocw.mit.edu/courses/10-569-synthesis-of-polymers-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/10-569-synthesis-of-polymers-fall-2006/3095d349824ff0645f97e13262462970_10-569f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

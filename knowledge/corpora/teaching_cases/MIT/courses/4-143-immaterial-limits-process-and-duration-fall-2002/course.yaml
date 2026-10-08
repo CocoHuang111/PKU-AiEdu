@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-4-143-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.143"
+cross_listed_codes: []
+course_title: "Immaterial Limits: Process and Duration"
+course_slug: "4-143-immaterial-limits-process-and-duration-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Meejin Yoon"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Engineering"
+  - "Architectural History and Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Engineering"
+          - "Architectural History and Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This studio proposes to engage tectonics as a material process. By exploring transformation, indeterminacy and mutability inherent in material and landscape processes, students will be challenged to engage notions of duration as a design strategy for architecture and urbanism. While the second law of thermodynamics states that the material universe tends toward a state of increasing disorder, architects build and construct in opposition to these forces. Attempting to delay the processes of disorder, decay and collapse, tectonics is often seen as the embodied expression of an arrested moment the finite resolution of the building process. Yet the processes that enable and disable architecture extend beyond any arrested moment. A more detailed description can be found in the syllabus section.
+course_url: "https://ocw.mit.edu/courses/4-143-immaterial-limits-process-and-duration-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/4-143-immaterial-limits-process-and-duration-fall-2002/f7287222ebb66a1abfd720fe987c4d1d_4-143f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

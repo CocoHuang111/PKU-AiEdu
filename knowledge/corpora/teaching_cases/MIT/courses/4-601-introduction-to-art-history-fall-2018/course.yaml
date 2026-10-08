@@ -1,0 +1,53 @@
+schema_version: "1.0"
+course_id: "mitocw-4-601-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.601"
+cross_listed_codes: []
+course_title: "Introduction to Art History"
+course_slug: "4-601-introduction-to-art-history-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kristel R Smentek"
+subject_primary: "Art History"
+subject_secondary: []
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Art History"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course investigates the power of art in historical perspective, focusing on Euro-American traditions of art from the fourteenth to the twenty-first century. It examines changing conceptions of the artist, the work of art, and the discipline of art history, exploring the roles images and objects have played over time, how they functioned in various social, economic, and cultural contexts, and whose interests they served or sought to disrupt.
+course_url: "https://ocw.mit.edu/courses/4-601-introduction-to-art-history-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/4-601-introduction-to-art-history-fall-2018/0e12552343a6c667bf99846358e5ec50_4-601f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

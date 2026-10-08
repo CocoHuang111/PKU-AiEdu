@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-24-02-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.02"
+cross_listed_codes: []
+course_title: "Moral Problems and the Good Life"
+course_slug: "24-02-moral-problems-and-the-good-life-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sally Haslanger"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Ethics"
+  - "Social Science"
+  - "Sociology"
+  - "Social Justice"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course will focus on issues that arise in contemporary public debate concerning matters of social justice. Topics will likely include: euthanasia, gay marriage, racism and racial profiling, free speech, hunger and global inequality. Students will be exposed to multiple points of view on the topics and will be given guidance in analyzing the moral frameworks informing opposing positions. The goal will be to provide the basis for respectful and informed discussion of matters of common moral concern.
+course_url: "https://ocw.mit.edu/courses/24-02-moral-problems-and-the-good-life-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/24-02-moral-problems-and-the-good-life-fall-2008/c0784d4c3ff79381c442a30defd6b807_24-02f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

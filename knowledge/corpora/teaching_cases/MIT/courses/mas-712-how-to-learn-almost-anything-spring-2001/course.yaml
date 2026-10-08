@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-712-spring-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.712"
+cross_listed_codes: []
+course_title: "How to Learn (Almost) Anything"
+course_slug: "mas-712-how-to-learn-almost-anything-spring-2001"
+term: "Spring"
+year: 2001
+as_taught_in: "Spring 2001"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mitchel Resnick"
+  - "Prof. Bakhtiar Mikhak"
+subject_primary: "Curriculum and Teaching"
+subject_secondary: []
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  As the digital revolution brings with it radical changes in how and what we learn, people must continue to learn all the time. New technologies make possible new approaches to learning, new contexts for learning, new tools to support learning, and new ideas of what can be learned. This course will explore these new opportunities for learning with a special focus on what can be learned through immersive, hands-on activities. Students will participate in (and reflect on) a variety of learning situations, and will use Media Lab technologies to develop new workshops, iteratively run and refine the workshops, and analyze how and what the workshop participants learn.
+course_url: "https://ocw.mit.edu/courses/mas-712-how-to-learn-almost-anything-spring-2001/"
+image_url: "https://ocw.mit.edu/courses/mas-712-how-to-learn-almost-anything-spring-2001/da9f2616a119f1452fb39e957834f3c8_mas-712s01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

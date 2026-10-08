@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-14-452-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.452"
+cross_listed_codes: []
+course_title: "Economic Growth"
+course_slug: "14-452-economic-growth-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daron Acemoglu"
+subject_primary: "Economics"
+subject_secondary:
+  - "Developmental Economics"
+  - "Macroeconomics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This half semester class will present an introduction to macroeconomic modeling, particularly economic growth. It will focus both on models of economic growth and their empirical applications, and try to shed light on the mechanics of economic growth, technological change and sources of income and growth differences across countries.
+course_url: "https://ocw.mit.edu/courses/14-452-economic-growth-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/14-452-economic-growth-fall-2016/c7f5caa9821bc04c986b25b501465d09_14-452f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

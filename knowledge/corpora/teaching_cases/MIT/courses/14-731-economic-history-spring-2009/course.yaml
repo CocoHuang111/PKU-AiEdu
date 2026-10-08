@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-14-731-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.731"
+cross_listed_codes: []
+course_title: "Economic History"
+course_slug: "14-731-economic-history-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Richard A. Hornbeck"
+subject_primary: "History"
+subject_secondary:
+  - "World History"
+  - "Social Science"
+  - "Economics"
+  - "Labor Economics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "World History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Labor Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments with Examples"
+description: |
+  This course is a survey of world economic history, and it introduces economics students to the subject matter and methodology of economic history. It is designed to expand the range of empirical settings in students’ research by drawing upon historical material and long-run data. Topics are chosen to show a wide variety of historical experience and illuminate the process of industrialization. The emphasis will be on questions related to labor markets and economic growth.
+course_url: "https://ocw.mit.edu/courses/14-731-economic-history-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/14-731-economic-history-spring-2009/9a8deb65b125807fd27f10f3a5cbd562_14-731s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

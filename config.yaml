@@ -87,6 +87,15 @@ corpora:
   - name: course_syllabi
     label: 课程大纲参考
     description: 国内外公开课程大纲，用于大纲优化与教学设计参考
+  - name: discipline_pedagogy
+    label: 学科教学知识
+    description: 北京大学30个院系方向及八大学科类的教学特点、方法、国内改革反思与文献依据
+  - name: teaching_cases
+    label: 国内外高校教学案例
+    description: 北京大学教学设计案例的中文整理稿，以及 MIT、Cornell、Columbia、Michigan、Yale 来源页的英文原文
+  - name: AIMES
+    label: 斯坦福 AIMES
+    description: Stanford CTL「AI Meets Education at Stanford」的教学策略、课程政策、学生指南、共同负责人反思、课程案例和教学技术工具链接
   - name: eval_reports
     label: 历史评估报告
     description: 本系统产出的教学视频评估报告摘要，支持个性化追问

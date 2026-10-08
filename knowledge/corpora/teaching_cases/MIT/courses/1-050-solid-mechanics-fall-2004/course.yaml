@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-1-050-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.050"
+cross_listed_codes: []
+course_title: "Solid Mechanics"
+course_slug: "1-050-solid-mechanics-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Louis Bucciarelli"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Structural Mechanics"
+  - "Materials Science and Engineering"
+  - "Mechanical Engineering"
+  - "Solid Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Structural Mechanics"
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Design Assignments"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  1.050 is a sophomore-level engineering mechanics course, commonly labelled “Statics and Strength of Materials” or “Solid Mechanics I.” This course introduces students to the fundamental principles and methods of structural mechanics. Topics covered include: static equilibrium, force resultants, support conditions, analysis of determinate planar structures (beams, trusses, frames), stresses and strains in structural elements, states of stress (shear, bending, torsion), statically indeterminate systems, displacements and deformations, introduction to matrix methods, elastic stability, and approximate methods. Design exercises are used to encourage creative student initiative and systems thinking.
+course_url: "https://ocw.mit.edu/courses/1-050-solid-mechanics-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/1-050-solid-mechanics-fall-2004/4d081ba3e0fc2d081d37cad4861d70f5_1-050f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

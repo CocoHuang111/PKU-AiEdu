@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "cornell-group-quizzes-and-exams-alternative"
+institution: "Cornell University"
+platform: "Cornell Center for Teaching Innovation"
+collection: "Teaching Innovation Case Study Library"
+title: "Group Quizzes and Exams: Alternative Assessments One Small Step at a Time"
+slug: "group-quizzes-and-exams-alternative"
+source_url: "https://teaching.cornell.edu/teaching-spotlight/provosts-working-group-innovation-assessment/group-quizzes-and-exams-alternative"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "d9cdc98002ac034c627797baa24ae3198c14000567387b0a13a35b65f9984b13"

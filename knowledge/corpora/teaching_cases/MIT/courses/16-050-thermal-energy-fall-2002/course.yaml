@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-16-050-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.050"
+cross_listed_codes: []
+course_title: "Thermal Energy"
+course_slug: "16-050-thermal-energy-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Zoltan Spakovszky"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Propulsion Systems"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Propulsion Systems"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is taught in four main parts. The first is a review of fundamental thermodynamic concepts (e.g. energy exchange in propulsion and power processes), and is followed by the second law (e.g. reversibility and irreversibility, lost work). Next are applications of thermodynamics to engineering systems (e.g. propulsion and power cycles, thermo chemistry), and the course concludes with fundamentals of heat transfer (e.g. heat exchange in aerospace devices).
+course_url: "https://ocw.mit.edu/courses/16-050-thermal-energy-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/16-050-thermal-energy-fall-2002/5984462d8df0d53da9ca3ef8843f1905_16-050f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

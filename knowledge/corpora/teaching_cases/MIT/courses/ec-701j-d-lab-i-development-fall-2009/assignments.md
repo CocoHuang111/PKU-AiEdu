@@ -1,0 +1,31 @@
+> 检索摘要：EC.701J D-Lab I: Development（Fall 2009，Undergraduate）的「Assignments」。页内标题：Assignments。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+This page lists the homework assignments to be done individually by each student. The group project assignments are presented on the [projects](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/pages/projects/) page.
+
+[Smillie] = Smillie, Ian. *Mastering the Machine Revisited: Poverty, Aid and Technology*. Practical Action, 2000. ISBN: 9781853395147.
+
+| HOMEWORK # | DETAILS |
+| --- | --- |
+| Homework 1 | Discussion Questions: Mastering The Machine 1 <br> See [Smillie], pp. 3-47. Please answer the following questions (maximum 2 single-spaced pages). Make sure to use examples from the reading where applicable. <br> 1. What 2 major crises did the Brandt Report predict? How accurate were these predictions? <br> 2. What is the effect of tariffs on raw vs. processed vs. manufactured goods? <br> 3. On p. 4 the author states: “Never before in history have so many non-technical people exerted so much influence on the advancement, retardation, and movement of technology.” Comment on this trend and give an example that illustrates it. <br> Please also come to class prepared to discuss how the larger themes that you picked out from the reading have affected the way people think about “development” throughout the 20th century. |
+| Homework 2 | Stakeholder Analysis Writeup <br> Smith, Amy, and Shawn Frayne. “Fuel from the Fields: A Case Study of Sugarcane Charcoal Technology in Petite Anse, Haiti.” D-Lab Case Study. ( <br> [PDF - 1.4MB](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw2_1/) <br> ) <br> Blank stakeholder analysis form ( <br> [PDF](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw2_2/) <br> ) |
+| Homework 3 | Small is Beautiful Reaction Piece <br> Assignment description ( <br> [PDF](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw3/) <br> ) |
+| Homework 4 | Discussion Questions: Mastering The Machine 2 <br> See [Smillie], pp. 104-36. Please answer the following questions (maximum 2 single-spaced pages), using examples from the book where applicable. <br> 1. Do small farms have a place in the future of agriculture? The world economy? Food security? If so, how? <br> 2. How do the lessons learned from the Turkana rainwater harvesting project contrast with the actions taken during the green revolution? <br> 3. Why is there so much focus on post-harvest technology, and value-added production? |
+| Homework 5 | Country Selection <br> Project/country selection form ( <br> [PDF](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw5/) <br> ) |
+| Homework 6 | Travel Documentation <br> Fill out and submit the MIT Student Travel Form and emergency contact information sheet. |
+| Homework 7 | Current Events <br> Review both the national and international media to find a story that affects your D-Lab project country. Some sectors that might be of interest include: the environment, health and sanitation, agriculture, energy, education, humanitarian disaster, politics, economics and information technology. Each person on your D-Lab country team should select a different topic. Write a 2-page summary of the story making sure to comment on its implications for the nation, your D-Lab trip or another affected group. Make sure to properly cite all your sources. <br> Hand this summary in to your trip leader at your first country team meeting. The goal of this exercise is to learn as much as possible about your country’s current status. You should prepare a brief (5-minute) presentation for D-Lab Team to be given in your first country team meeting. |
+| Homework 8 | Personal Energy Consumption <br> Energy worksheet ( <br> [PDF](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw8/) <br> ) |
+| Homework 9 | Practical Photovoltaics Design <br> Assignment description ( <br> [PDF](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw9/) <br> ) |
+| Homework 10 | Trip Project Proposal <br> Proposal form ( <br> [PDF](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw10/) <br> ) <br> Sample proposal ( <br> [PDF](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw10_sample/) <br> ) |
+| Homework 11 | Discussion Questions: Mastering The Machine 3 <br> See [Smillie], pp. 44-66. Please answer the following questions (maximum 2 single-spaced pages), using examples from the book where applicable. <br> 1. According to the reading, what are some of the major reasons why NGOs and the Third Sector developed such an important role in what we call ‘international development’? <br> 2. What are some of the advantages and disadvantages of NGO organizational structure? Use some examples from the reading. <br> 3. What is meant by ‘civil society’? In what ways might the concepts described by this term influenced the development of D-Lab philosophy? |
+| Homework 12 | Drowned Out <br> If you can’t make it to the evening film screening, view DVD of <br> [Drowned Out](http://www.bullfrogfilms.com/catalog/dout.html) <br> on your own time prior to class on Ses #25. |
+| Homework 13 | Sector Paper <br> Assignment description ( <br> [PDF](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw13/) <br> ) |
+| Homework 14 | Practicing Poverty <br> Exercise and one-page paper assignment ( <br> [PDF](https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/resources/mitec_701jf09_hw15/) <br> ) |
+| Homework 15 | Living with AIDS <br> If you can’t make it to the evening film screening, view DVD of <br> [*Living with AIDS (On the Frontlines of AIDS)*](https://video.alexanderstreet.com/watch/living-with-aids) <br> on your own time prior to class in Ses #30. |

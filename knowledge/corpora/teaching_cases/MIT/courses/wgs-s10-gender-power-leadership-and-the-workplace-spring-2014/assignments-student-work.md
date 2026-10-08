@@ -1,0 +1,11 @@
+> 检索摘要：WGS.S10 Gender, Power, Leadership, and the Workplace（Spring 2014，Undergraduate）的「Assignments Student Work」。页内标题：Assignments Student Work。分隔线后是该页英文原文，未翻译、未改写。
+
+- Source: https://ocw.mit.edu/courses/wgs-s10-gender-power-leadership-and-the-workplace-spring-2014/pages/assignments/student-work/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments Student Work
+
+<table><tr><th>Student work</th><th>STUDENT name</th></tr><tr><td colspan="2">Final Papers</td></tr><tr><td>[“Every Woman is a Masterpiece.” (PDF)](https://ocw.mit.edu/courses/wgs-s10-gender-power-leadership-and-the-workplace-spring-2014/resources/mitwgs_s10s14_masterpiece/)</td><td>Noa Ghersin</td></tr><tr><td>[“Affirming the Need for Action: A Closer Look at Affirmative Action Policies.” (PDF)](https://ocw.mit.edu/courses/wgs-s10-gender-power-leadership-and-the-workplace-spring-2014/resources/mitwgs_s10s14_fin_affimat/)</td><td>An MIT student</td></tr><tr><td>[“The Division of Household Labor in Traditional Families.” (PDF)](https://ocw.mit.edu/courses/wgs-s10-gender-power-leadership-and-the-workplace-spring-2014/resources/mitwgs_s10s14_fin_labor/)</td><td>An MIT student</td></tr><tr><td colspan="2">Reaction Papers/ Presentations</td></tr><tr><td>Reaction paper from session 15. <br> [Government Policy (PDF)](https://ocw.mit.edu/courses/wgs-s10-gender-power-leadership-and-the-workplace-spring-2014/resources/mitwgs_s10s14_ses15_pap/)</td><td>An MIT student</td></tr><tr><td>Discussion presentation notes from sessions 16 and 17. <br> [International Women in Politics (PDF)](https://ocw.mit.edu/courses/wgs-s10-gender-power-leadership-and-the-workplace-spring-2014/resources/mitwgs_s10s14_pres_women/)</td><td>An MIT student</td></tr><tr><td>Discussion presentation notes from sessions 16 and 17 (cont.) <br> [Women in politics (PDF)](https://ocw.mit.edu/courses/wgs-s10-gender-power-leadership-and-the-workplace-spring-2014/resources/mitwgs_s10s14_pres_women2/)</td><td>Regina Cho</td></tr></table>

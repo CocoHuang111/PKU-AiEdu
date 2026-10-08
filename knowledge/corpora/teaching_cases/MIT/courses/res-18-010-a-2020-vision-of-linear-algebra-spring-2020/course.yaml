@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-res-18-010-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.18-010"
+cross_listed_codes: []
+course_title: "A Vision of Linear Algebra"
+course_slug: "res-18-010-a-2020-vision-of-linear-algebra-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gilbert Strang"
+subject_primary: "Linear Algebra"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This collection of videos presents Professor Strang’s updated vision of how linear algebra could be taught. It starts with six brief videos, recorded in 2020, containing many ideas and suggestions about the recommended order of topics in teaching and learning linear algebra. Topics include A New Way to Start Linear Algebra , The Column Space of a Matrix, The Big Picture of Linear Algebra, Orthogonal Vectors, Eigenvalues and Eigenvectors, and Singular Values and Singular Vectors. An additional brief video, recorded in 2021, Finding the Nullspace: Solving Ax = 0 by Elimination , computes the nullspace of any matrix A . In 2023, Professor Strang recorded a new one-hour video, Five Factorizations of a Matrix, providing an overall look at linear algebra by highlighting five different ways that a matrix gets factored. Two more videos were added in 2024: The Four Fundamental Subspaces and Least Squares and Elimination and Factorization A = CR
+course_url: "https://ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/res-18-010-a-2020-vision-of-linear-algebra-spring-2020/7cc0f4ea3cbe6ba10f16c1bad81fb872_RES-18-010S20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

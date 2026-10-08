@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-14-73-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.73"
+cross_listed_codes: []
+course_title: "The Challenge of World Poverty"
+course_slug: "14-73-the-challenge-of-world-poverty-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Esther Duflo"
+  - "Prof. Abhijit Banerjee"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Developmental Economics"
+  - "Public Administration"
+  - "Social Welfare"
+  - "Society"
+  - "Global Poverty"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+      - name: "Public Administration"
+        specialties:
+          - "Social Welfare"
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  This is a course for those who are interested in the challenge posed by massive and persistent world poverty, and are hopeful that economists might have something useful to say about this challenge. The questions we will take up include: Is extreme poverty a thing of the past? What is economic life like when living under a dollar per day? Why do some countries grow fast and others fall further behind? Does growth help the poor? Are famines unavoidable? How can we end child labor—or should we? How do we make schools work for poor citizens? How do we deal with the disease burden? Is micro finance invaluable or overrated? Without property rights, is life destined to be “nasty, brutish and short”? Has globalization been good to the poor? Should we leave economic development to the market? Should we leave economic development to non-governmental organizations (NGOs)? Does foreign aid help or hinder? Where is the best place to intervene? MITx Online Version This course is part of the Micromaster’s Program in Data, Economics, and Design of Policy through MITx Online. The course is entirely free to audit, though learners have the option to pay a fee, which is based on the learner’s ability to pay, to take the proctored exam, and earn a course certificate. To access the course, create an MITx Online account and enroll in the course 14.73x The Challenges of Global Poverty .
+course_url: "https://ocw.mit.edu/courses/14-73-the-challenge-of-world-poverty-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/14-73-the-challenge-of-world-poverty-spring-2011/7b1027ee0a8ca83157541417c999bcb4_14-73s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

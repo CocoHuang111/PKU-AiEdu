@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-s66-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.S66"
+cross_listed_codes: []
+course_title: "Indistinguishable From... Magic as Interface, Technology, and Tradition"
+course_slug: "mas-s66-indistinguishable-from-magic-as-interface-technology-and-tradition-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Greg Borenstein"
+  - "Dan Novy"
+subject_primary: "Game Design"
+subject_secondary:
+  - "Performance Arts"
+  - "Visual Arts"
+  - "Humanities"
+  - "History"
+  - "History of Science and Technology"
+  - "Science"
+  - "Biology"
+  - "Neuroscience"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+      - name: "Performance Arts"
+        specialties: []
+      - name: "Visual Arts"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Media Assignments"
+description: |
+  With a focus on the creation of functional prototypes and practicing real magical crafts, this class combines theatrical illusion, game design, sleight of hand, machine learning, camouflage, and neuroscience to explore how ideas from ancient magic and modern stage illusion can inform cutting edge technology.
+course_url: "https://ocw.mit.edu/courses/mas-s66-indistinguishable-from-magic-as-interface-technology-and-tradition-spring-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/mas-s66-indistinguishable-from-magic-as-interface-technology-and-tradition-spring-2015/45eccaaa78bc893bee33b215d7d19b02_mas-s66s15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

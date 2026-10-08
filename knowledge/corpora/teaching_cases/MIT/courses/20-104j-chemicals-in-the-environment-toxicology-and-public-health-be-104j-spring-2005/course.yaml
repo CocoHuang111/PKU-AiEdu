@@ -1,0 +1,88 @@
+schema_version: "1.0"
+course_id: "mitocw-20-104j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.104J"
+cross_listed_codes:
+  - "1.081J"
+  - "ESD.053J"
+course_title: "Chemicals in the Environment: Toxicology and Public Health (BE.104J)"
+course_slug: "20-104j-chemicals-in-the-environment-toxicology-and-public-health-be-104j-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Civil and Environmental Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Sherley"
+  - "Dr. Laura Green"
+  - "Prof. Steven Tannenbaum"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biostatistics"
+  - "Health and Medicine"
+  - "Pharmacology and Toxicology"
+  - "Public Health"
+  - "Science"
+  - "Earth Science"
+  - "Environmental Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biostatistics"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Pharmacology and Toxicology"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This course addresses the challenges of defining a relationship between exposure to environmental chemicals and human disease. Course topics include epidemiological approaches to understanding disease causation; biostatistical methods; evaluation of human exposure to chemicals, and their internal distribution, metabolism, reactions with cellular components, and biological effects; and qualitative and quantitative health risk assessment methods used in the U.S. as bases for regulatory decision-making. Throughout the term, students consider case studies of local and national interest.
+course_url: "https://ocw.mit.edu/courses/20-104j-chemicals-in-the-environment-toxicology-and-public-health-be-104j-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/20-104j-chemicals-in-the-environment-toxicology-and-public-health-be-104j-spring-2005/ab70931f359e46de9e431df1ed019aaf_20-104js05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

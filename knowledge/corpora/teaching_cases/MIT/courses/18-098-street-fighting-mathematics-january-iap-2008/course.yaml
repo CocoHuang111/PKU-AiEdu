@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-18-098-january-iap-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.098"
+cross_listed_codes:
+  - "6.099"
+course_title: "Street-Fighting Mathematics"
+course_slug: "18-098-street-fighting-mathematics-january-iap-2008"
+term: "January IAP"
+year: 2008
+as_taught_in: "January IAP 2008"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Sanjoy Mahajan"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Computation"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course teaches the art of guessing results and solving problems without doing a proof or an exact calculation. Techniques include extreme-cases reasoning, dimensional analysis, successive approximation, discretization, generalization, and pictorial analysis. Applications include mental calculation, solid geometry, musical intervals, logarithms, integration, infinite series, solitaire, and differential equations. (No epsilons or deltas are harmed by taking this course.) This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/18-098-street-fighting-mathematics-january-iap-2008/"
+image_url: "https://ocw.mit.edu/courses/18-098-street-fighting-mathematics-january-iap-2008/99d82e3449eef5b852fd2e5034e52fd2_18-098iap08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"
