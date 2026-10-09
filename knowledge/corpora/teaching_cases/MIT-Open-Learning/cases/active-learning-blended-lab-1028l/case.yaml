@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-active-learning-blended-lab-1028l"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Active Learning in a Blended Lab: 10.28L"
+slug: "active-learning-blended-lab-1028l"
+course_codes:
+  - "10.28L"
+departments:
+  - "Chemical Engineering (Course 10)"
+instructors:
+  - "Jean-François Hamel"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/active-learning-blended-lab-1028l"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "3c2812c72fb4926dfc952768a6fd615643bed0c6c55f15bb2ec4e999012f114b"

@@ -1,0 +1,24 @@
+- Source: https://ocw.mit.edu/courses/7-91j-foundations-of-computational-and-systems-biology-spring-2014/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+### Session Key
+
+[L] = Lecture
+[R] = Recitation
+[E] = Exam
+[P] = Presentation
+
+### Lecturer Key
+
+[CB] = Christopher Burge
+[DG] = David Gifford
+[EF] = Ernest Fraenkel
+[TA] = Teaching Assistant
+[GL] = Guest Lecturer
+
+<table><tr><th>SES #</th><th>TOPICS</th><th>LECTURERS</th><th>KEY DATES</th></tr><tr><td>L1</td><td>Course Introduction: History of Computational Biology; Overview of the Course; Course Policies and Mechanics; DNA Sequencing Technologies</td><td>CB, DG, EF</td><td></td></tr><tr><td colspan="4">Genomic Analysis</td></tr><tr><td>L2</td><td>Local Alignment (BLAST) and Statistics</td><td>CB</td><td></td></tr><tr><td>R1</td><td>Statistics; Significance Testing; Bonferroni Correction</td><td>TA</td><td></td></tr><tr><td>L3</td><td>Global Alignment of Protein Sequences (NW, SW, PAM, BLOSUM)</td><td>CB</td><td>Project: Interests Due</td></tr><tr><td>L4</td><td>Comparative Genomic Analysis of Gene Regulation</td><td>CB</td><td></td></tr><tr><td>R2</td><td>Clustering, Model Selection, and BIC Scores</td><td>TA</td><td></td></tr><tr><td colspan="4">Genomic Analysis—Next Gen Sequencing</td></tr><tr><td>L5</td><td>Library Complexity and Short Read Alignment (Mapping)</td><td>DG</td><td>Problem Set 1 Due</td></tr><tr><td>R3</td><td>Burrows–Wheeler Transform (BWT) and Alignments. Guest Lecture: Heng Li ( <br> [Broad Institute](http://www.broadinstitute.org/) <br> )</td><td>GL</td><td></td></tr><tr><td>L6</td><td>Genome Assembly</td><td>DG</td><td>Project: Teams Due</td></tr><tr><td>L7</td><td>ChIP-seq Analysis; DNA-protein Interactions</td><td>DG</td><td></td></tr><tr><td>R4</td><td>Simultaneous ChIP-seq Peak Discovery and Motif Sampling</td><td>TA</td><td></td></tr><tr><td>L8</td><td>RNA-sequence Analysis: Expression, Isoforms</td><td>DG</td><td></td></tr><tr><td colspan="4">Modeling Biological Function</td></tr><tr><td>L9</td><td>Modeling and Discovery of Sequence Motifs (Gibbs Sampler, Alternatives)</td><td>CB</td><td></td></tr><tr><td>R5</td><td>Gene Expression Program Discovery Using Topic Models</td><td>TA</td><td></td></tr><tr><td>L10</td><td>Markov and Hidden Markov Models of Genomic and Protein Features</td><td>CB</td><td></td></tr><tr><td>L11</td><td>RNA Secondary Structure—Biological Functions and Prediction</td><td>CB</td><td>Problem Set 2 Due</td></tr><tr><td>R6</td><td>Probabilistic Grammatical Models of RNA Structure</td><td>TA</td><td></td></tr><tr><td>E1</td><td colspan="3">Exam 1</td></tr><tr><td colspan="4">Proteomics</td></tr><tr><td>L12</td><td>Introduction to Protein Structure; Structure Comparison and Classification</td><td>EF</td><td></td></tr><tr><td>R7</td><td>Protein Amino Acid Sidechain Packing Using Markov Random Fields</td><td>TA</td><td>Project: Research Strategy Due</td></tr><tr><td>L13</td><td>Predicting Protein Structure</td><td>EF</td><td></td></tr><tr><td>L14</td><td>Predicting Protein Interactions</td><td>EF</td><td>Problem Set 3 Due</td></tr><tr><td>R8</td><td>Protein / Protein Interaction Prediction Using Threading</td><td>TA</td><td></td></tr><tr><td colspan="4">Regulatory Networks</td></tr><tr><td>L15</td><td>Gene Regulatory Networks</td><td>EF</td><td></td></tr><tr><td>L16</td><td>Protein Interaction Networks</td><td>EF</td><td></td></tr><tr><td>R9</td><td>Regression Trees</td><td>TA</td><td></td></tr><tr><td>L17</td><td>Logic Modeling of Cell Signaling Networks. Guest Lecture: <br> [Doug Lauffenburger](http://web.mit.edu/dallab/index.html)</td><td>GL</td><td></td></tr><tr><td>L18</td><td>Analysis of Chromatin Structure</td><td>DG</td><td>Problem Set 4 Due</td></tr><tr><td>R10</td><td>BayesNets</td><td>TA</td><td></td></tr><tr><td colspan="4">Computational Genetics</td></tr><tr><td>L19</td><td>Discovering Quantitative Trait Loci (QTLs)</td><td>DG</td><td>Project: Written Report Due</td></tr><tr><td>R11</td><td>Narrow Sense Heritability</td><td>TA</td><td></td></tr><tr><td>L20</td><td>Human Genetics, SNPs, and Genome Wide Associate Studies</td><td>DG</td><td></td></tr><tr><td>L21</td><td>Synthetic Biology: From Parts to Modules to Therapeutic Systems. Guest Lecture: <br> [Ron Weiss](http://groups.csail.mit.edu/synbio/)</td><td>GL</td><td>Problem Set 5 Due</td></tr><tr><td>R12</td><td>Exam Review</td><td>TA</td><td></td></tr><tr><td>E2</td><td colspan="3">Exam 2</td></tr><tr><td>L22</td><td>Causality, Natural Computing, and Engineering Genomes. Guest Lecture: <br> [George Church](http://arep.med.harvard.edu/gmc/)</td><td>GL</td><td></td></tr><tr><td>P1</td><td colspan="3">Presentations</td></tr><tr><td>P2</td><td colspan="3">Presentations (cont.)</td></tr></table>

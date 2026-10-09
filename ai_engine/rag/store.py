@@ -52,6 +52,14 @@ def reset_collection(name: str) -> None:
     _collection(name)
 
 
+def delete_collection(name: str) -> None:
+    """删除明确废弃的 collection；不存在时视为已清理。"""
+    try:
+        _client().delete_collection(name)
+    except Exception:
+        pass
+
+
 def add_chunks(
     corpus: str, chunks: list[str], metadatas: list[dict[str, Any]]
 ) -> int:

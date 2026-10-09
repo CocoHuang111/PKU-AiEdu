@@ -107,11 +107,11 @@
       <section class="chat">
         <div ref="bodyEl" class="chat-body">
           <div v-if="!messages.length" class="chat-empty">
-            <h1>有什么教学问题？</h1>
-            <p>基于教育学理论、教学沙龙记录与你的历史评估报告来回答。</p>
+            <h1>{{ currentMode.label }}</h1>
+            <p>{{ currentMode.description }}</p>
             <div class="samples">
               <button
-                v-for="q in SAMPLES"
+                v-for="q in currentMode.starter_questions"
                 :key="q"
                 type="button"
                 class="sample"
@@ -127,6 +127,7 @@
               <div v-if="m.role === 'user'" class="bubble user">{{ m.content }}</div>
               <div v-else class="assistant">
                 <div v-if="m.plan" class="plan">
+                  <span class="mode-badge">{{ m.plan.mode_label || modeLabel(m.mode) }}</span>
                   <span class="plan-label">检索</span>
                   <el-tag v-for="q in m.plan.queries" :key="q" size="small" effect="plain">
                     {{ q }}
@@ -143,6 +144,19 @@
                       ·已带入{{ m.plan.pinned_eval_reports }}份
                     </template>
                   </el-tag>
+                </div>
+                <div v-if="m.plan?.matched_cases?.length" class="matched-cases">
+                  <span class="matched-label">匹配课程</span>
+                  <a
+                    v-for="course in m.plan.matched_cases"
+                    :key="course.source"
+                    :href="course.source_url || undefined"
+                    :target="course.source_url ? '_blank' : undefined"
+                    :rel="course.source_url ? 'noopener noreferrer' : undefined"
+                    class="matched-course"
+                  >
+                    {{ course.source }}
+                  </a>
                 </div>
 
                 <div v-if="m.content" class="markdown" v-html="renderMd(m.content)"></div>
@@ -166,8 +180,11 @@
                         >{{ c.source }}</a>
                         <span v-else class="citation-source">{{ c.source }}</span>
                         <span class="citation-score">
-                          {{ c.pinned ? '指定带入' : `相似度 ${c.score}` }}
+                          {{ c.pinned ? '指定带入' : c.whole_case ? '完整案例' : `相似度 ${c.score}` }}
                         </span>
+                      </div>
+                      <div v-if="c.whole_case && c.documents?.length" class="citation-documents">
+                        已读取：{{ c.documents.join('、') }}
                       </div>
                       <div class="citation-text">{{ c.snippet }}</div>
                     </div>
@@ -180,6 +197,20 @@
 
         <footer class="composer-wrap">
           <div class="composer">
+            <div class="mode-switch" role="radiogroup" aria-label="问答模式">
+              <button
+                v-for="mode in qaModes"
+                :key="mode.name"
+                type="button"
+                class="mode-button"
+                :class="{ active: selectedMode === mode.name }"
+                :aria-pressed="selectedMode === mode.name"
+                :title="mode.description"
+                @click="setMode(mode.name)"
+              >
+                {{ mode.label }}
+              </button>
+            </div>
             <div class="composer-box">
               <el-popover
                 v-model:visible="corpusMenuOpen"
@@ -237,7 +268,7 @@
                 type="textarea"
                 :autosize="{ minRows: 1, maxRows: 6 }"
                 resize="none"
-                placeholder="问任何教学相关的问题"
+                :placeholder="currentMode.placeholder"
                 @keydown.enter.exact.prevent="send"
               />
               <el-button
@@ -309,6 +340,7 @@ import {
   applyEvalTaskSelection,
   corporaNarrowed,
   corpusLabel,
+  currentMode,
   currentPinned,
   currentTitle,
   evalCorpus,
@@ -319,12 +351,16 @@ import {
   input,
   loadEvalReports,
   messages,
+  modeLabel,
   newSession,
   onCurrentCommand,
   onQaActivated,
   onSessionCommand,
   openSession,
+  qaModes,
   selectedEvalTaskIds,
+  selectedMode,
+  setMode,
   sending,
   sessionId,
   sessionQuery,
@@ -337,13 +373,6 @@ import {
   visibleGroups,
   send,
 } from '../qaStore'
-
-const SAMPLES = [
-  '如何提高大班课的学生参与度？',
-  '教学目标怎么写才算可测量？',
-  '课堂提问后应该等待多久？',
-  '板书和课件应该怎么分工？',
-]
 
 const bodyEl = ref(null)
 const corpusMenuOpen = ref(false)
@@ -589,6 +618,36 @@ onActivated(() => {
   font-size: 12px;
   color: #a8abb2;
 }
+.mode-badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #f5e6e6;
+  color: #7b1113;
+  font-size: 12px;
+  font-weight: 600;
+}
+.matched-cases {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: -3px 0 10px;
+  font-size: 12px;
+}
+.matched-label {
+  color: #a8abb2;
+}
+.matched-course {
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: #f7f7f8;
+  color: #606266;
+  text-decoration: none;
+}
+.matched-course[href]:hover {
+  color: #7b1113;
+  text-decoration: underline;
+}
 
 .stream-status {
   display: inline-flex;
@@ -681,6 +740,11 @@ onActivated(() => {
   color: #606266;
   line-height: 1.7;
 }
+.citation-documents {
+  margin-bottom: 4px;
+  color: #909399;
+  font-size: 11px;
+}
 
 .markdown :deep(h2),
 .markdown :deep(h3) {
@@ -719,6 +783,38 @@ onActivated(() => {
 .composer {
   max-width: 768px;
   margin: 0 auto;
+}
+.mode-switch {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 8px 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.mode-switch::-webkit-scrollbar {
+  display: none;
+}
+.mode-button {
+  flex-shrink: 0;
+  padding: 6px 12px;
+  border: 1px solid #e4e4e4;
+  border-radius: 999px;
+  background: #fff;
+  color: #606266;
+  font-size: 13px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.mode-button:hover {
+  border-color: #c98f90;
+  color: #7b1113;
+}
+.mode-button.active {
+  border-color: #a61b1b;
+  background: #f5e6e6;
+  color: #7b1113;
+  font-weight: 600;
 }
 .composer-box {
   position: relative;

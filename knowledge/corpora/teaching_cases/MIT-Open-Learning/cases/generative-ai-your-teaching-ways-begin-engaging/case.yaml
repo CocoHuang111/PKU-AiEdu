@@ -1,0 +1,17 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-generative-ai-your-teaching-ways-begin-engaging"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Generative AI in your Teaching: Ways to Begin Engaging"
+slug: "generative-ai-your-teaching-ways-begin-engaging"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors: []
+digital_innovations_tools: []
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/generative-ai-your-teaching-ways-begin-engaging"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "058790459cd2258106270fe05919192893cc3bd67db7ecd5bd4f5b8f3044b4f3"

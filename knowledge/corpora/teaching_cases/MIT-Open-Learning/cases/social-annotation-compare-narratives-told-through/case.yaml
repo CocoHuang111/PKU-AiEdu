@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-social-annotation-compare-narratives-told-through"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Social Annotation to Compare Narratives Told Through Different Media"
+slug: "social-annotation-compare-narratives-told-through"
+course_codes:
+  - "21G.042, 21H.352"
+departments:
+  - "Global Languages (Course 21G)"
+instructors:
+  - "Emma Teng"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Flexible Course Delivery"
+  - "Remote Teaching"
+  - "Perusall"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/social-annotation-compare-narratives-told-through"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "0450eecee589b4582181cbcee08bbd60a1852abc762b8f75164f5a8d3c2ac522"

@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-using-mitx-teach-qualitative-research-methodology"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Using MITx to Teach Qualitative Research Methodology"
+slug: "using-mitx-teach-qualitative-research-methodology"
+course_codes:
+  - "21A.819.1x"
+departments:
+  - "Anthropology (Course 21A)"
+instructors:
+  - "Susan Silbey"
+  - "Megan Perdue"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/using-mitx-teach-qualitative-research-methodology"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "f88a6119bfeeb8442b26aa0c156fe8e62bf7093e9e1e08b579a133d8c6c07098"

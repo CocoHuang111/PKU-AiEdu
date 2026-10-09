@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-professional-communication-improved-giving-feedback"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Professional Communication Improved by Giving Feedback via Video"
+slug: "professional-communication-improved-giving-feedback"
+course_codes:
+  - "7.19"
+departments:
+  - "Biology (Course 7)"
+instructors:
+  - "Chris A. Kaiser"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/professional-communication-improved-giving-feedback"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "eb82e0dbf4409a1d76a0b94df26342aee1363002dd4f54b16752531ac61a254e"

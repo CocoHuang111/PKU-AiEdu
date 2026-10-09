@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-measuring-student-understanding-systems-biology"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Measuring Student Understanding in Systems Biology"
+slug: "measuring-student-understanding-systems-biology"
+course_codes:
+  - "8.591"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Jeff Gore"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/measuring-student-understanding-systems-biology"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "c32a29257bc6d424a85e2d2a5240f681677787affde52ef6cca47f38d33e4e13"

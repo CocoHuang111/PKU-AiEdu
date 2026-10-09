@@ -1,0 +1,12 @@
+- Source: https://ocw.mit.edu/courses/12-119-analytical-techniques-for-studying-environmental-and-geologic-samples-spring-2011/pages/readings/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Readings
+
+| TOPICS | READINGS |
+| --- | --- |
+| Thoreau’s bog | Whitney, Gordon G., and William C. Davis. “ <br> [From Primitive Woods to Cultivated Woodlots: Thoreau and the Forest History of Concord, Massachusetts](http://www.jstor.org/stable/4004930) <br> .” <br> Journal of Forest History <br> 30, no. 2 (1986): 70-81. <br> Hemond, Harold F. “ <br> [Biogeochemistry of Thoreau’s Bog, Concord, Massachusetts](http://www.jstor.org/pss/1942655) <br> .” <br> Ecological Monographs <br> 50, no. 4 (1980): 507-26. <br> Schofield, Edmund A. “ <br> [The Walden Ecosystem: ‘A Perennial Spring in the Midst of Pine and Oak Woods’](http://thoreaucountry.blogspot.com/) <br> .” <br> Hemond, Harold F. <br> Biogeochemistry of a New England Sphagnum Bog <br> . Massachusetts Institute of Technology, Dept. of Civil Engineering, 1977. <br> Corey, Cherrie. “ <br> [Gowing’s Swamp and Thoreau’s Bog](https://www.svtweb.org/properties/page/gowings-swamp-concord) <br> .” Sudbury Valley Trustees. |
+| Isotopes | West, Jason B., Janet M. Hurley, et al. “ <br> [The Stable Isotope Ratios of Marijuana. II. Strontium Isotopes Relate to Geographic Origin](http://www.ncbi.nlm.nih.gov/pubmed/19804525) <br> .” <br> Journal of Forensic Sciences <br> 54, no. 6 (2009): 1261-9. <br> Norton, S. A., G. C. Evans, et al. “ <br> [Comparison of Hg and Pb Fluxes to Hummocks and Hollows of Ombrotrophic Big Heath Bog and to Nearby Sargent Mt. Pond, Maine, USA](https://link.springer.com/article/10.1023/A:1018380610893) <br> .” <br> Water, Air, and Soil Pollution <br> 100 (1997): 271-86. <br> Shotyk, W., A. K. Cheburkin, et al. “ <br> [Lead in Three Peat Bog Profiles, Jura Mountains, Switzerland: Enrichment Factors, Isotopic Composition, and Chronology of Atmospheric Deposition](https://link.springer.com/article/10.1023/A:1018384711802) <br> .” <br> Water, Air, and Soil Pollution <br> 100 (1997): 297-310. <br> Weiss, D., W. Shotyk, et al. “ <br> [Atmospheric Lead Deposition from 12,400 to ca. 2,000 yrs BP in a Peat Bog Profile, Jura Mountains, Switzerland](https://link.springer.com/article/10.1023/A:1018341029549) <br> .” <br> Water, Air, and Soil Pollution <br> 100 (1997): 311-24. |

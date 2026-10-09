@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-preserving-synchronicity-when-teaching-remotely-15s08"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Preserving Synchronicity when Teaching Remotely: 15.S08 and 15.230"
+slug: "preserving-synchronicity-when-teaching-remotely-15s08"
+course_codes:
+  - "15.S08, 15.230"
+departments:
+  - "Management (Course 15)"
+instructors:
+  - "Gary Gensler"
+  - "Simon Johnson"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/preserving-synchronicity-when-teaching-remotely-15s08"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "ff0fdcf7469e0a4f47c5adce18c505ddf3c4beb675c75d15f63c2c46bd027dd4"

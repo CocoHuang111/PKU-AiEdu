@@ -1,0 +1,6 @@
+{"resource_type": "case_page", "title": "An Integrated, Feature-rich Learning Environment", "source_url": "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/integrated-feature-rich-learning-environment", "source_format": "html", "extraction_policy": "full_text", "extraction_status": "complete", "local_path": "case.md", "content_sha256": "8172ae6c168445ff7d9137dbec58d48a85ca71647d897c927c3630855fab27f0"}
+{"resource_type": "linked_resource", "title": "Comingle", "url": "https://github.com/edemaine/comingle"}
+{"resource_type": "linked_resource", "title": "Coauthor", "url": "https://github.com/edemaine/coauthor"}
+{"resource_type": "linked_resource", "title": "Cocreate", "url": "https://github.com/edemaine/cocreate"}
+{"resource_type": "linked_resource", "title": "github.com/edemaine/cosuite/", "url": "https://github.com/edemaine/cosuite/"}
+{"resource_type": "linked_resource", "title": "Residential Digital Innovations", "url": "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations"}

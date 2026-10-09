@@ -1,0 +1,24 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-teaching-remotely-intro-acting-mitso"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Teaching Remotely: Intro to Acting & MITSO"
+slug: "teaching-remotely-intro-acting-mitso"
+course_codes:
+  - "21M.600, 21M.421"
+departments:
+  - "Music and Theater Arts (Course 21M)"
+instructors:
+  - "Anna C Kohler"
+  - "Janet Sonenberg"
+  - "Evan Ziporyn"
+  - "Keeril Makan"
+digital_innovations_tools:
+  - "Flexible Course Delivery"
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/teaching-remotely-intro-acting-mitso"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "e05607f04148a0e6318d957d58edf2b0660dba226ad368022c366f204a17c727"

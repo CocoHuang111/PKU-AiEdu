@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-prototyping-creative-computation"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Prototyping in Creative Computation"
+slug: "prototyping-creative-computation"
+course_codes:
+  - "4.117"
+departments:
+  - "Architecture (Course 4)"
+instructors:
+  - "Axel Kilian"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/prototyping-creative-computation"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "f70def4fe369f1c209531eb307a59d12b0c408794930a8ae083d3681c3527766"

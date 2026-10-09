@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-blending-online-campus-courses"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Blending Online & Campus Courses"
+slug: "blending-online-campus-courses"
+course_codes:
+  - "15.662"
+departments:
+  - "Management (Course 15)"
+instructors:
+  - "Thomas Kochan"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/blending-online-campus-courses"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "0773fc7b57f534123c7ce78812110c22dc57daf3f9862cc5e68e7c28205f3d04"

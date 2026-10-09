@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-teaching-remotely-political-economy-171001567814781j"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Teaching Remotely: Political Economy (17.100/15.678/14.781J)"
+slug: "teaching-remotely-political-economy-171001567814781j"
+course_codes:
+  - "17.100/15.678/14.781J"
+departments:
+  - "Political Science (Course 17)"
+instructors:
+  - "Suzanne Berger"
+  - "Michael Piore"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/teaching-remotely-political-economy-171001567814781j"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "a12e9ba89939ed656dd3c93a9a711bd9d2fff3e7683a34704939426667b4f054"

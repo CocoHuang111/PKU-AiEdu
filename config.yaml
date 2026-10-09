@@ -84,9 +84,9 @@ corpora:
   - name: pku_salon
     label: 北大教学沙龙
     description: 北大青年教师教学沙龙、观摩活动的记录与案例
-  - name: course_syllabi
-    label: 课程大纲参考
-    description: 国内外公开课程大纲，用于大纲优化与教学设计参考
+  - name: course_cases
+    label: 国外公开课程案例
+    description: MIT OCW 与 Open Yale Courses 完整课程资料，用于相似课程匹配、大纲优化与教学设计参考
   - name: discipline_pedagogy
     label: 学科教学知识
     description: 北京大学30个院系方向及八大学科类的教学特点、方法、国内改革反思与文献依据

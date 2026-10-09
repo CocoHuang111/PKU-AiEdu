@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-student-engagement-online-biology-animations-video-p"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Student Engagement Online in Biology: Animations, Video, P-sets"
+slug: "student-engagement-online-biology-animations-video-p"
+course_codes:
+  - "7"
+departments:
+  - "Biology (Course 7)"
+instructors:
+  - "Mary Ellen Wiltrout"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/student-engagement-online-biology-animations-video-p"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "26c676d20f9a19cb0505965b1d23c1e633c582811a4e398695421eda5446f3ad"

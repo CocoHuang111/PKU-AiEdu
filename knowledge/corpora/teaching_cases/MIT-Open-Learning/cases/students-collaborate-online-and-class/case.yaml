@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-students-collaborate-online-and-class"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Students Collaborate Online and in Class"
+slug: "students-collaborate-online-and-class"
+course_codes:
+  - "6.892"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Erik Demaine"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/students-collaborate-online-and-class"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "1251e93fbe28f543a8c34d9c6ce3515f8d1cc2a0859b8950aa8230cd423c0061"

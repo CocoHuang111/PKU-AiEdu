@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-activating-computational-thinking-mitx-using-wolfram"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Activating Computational Thinking on MITx Using Wolfram Technologies"
+slug: "activating-computational-thinking-mitx-using-wolfram"
+course_codes:
+  - "interdisciplinary"
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Kyle Keane"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/activating-computational-thinking-mitx-using-wolfram"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "e0afd101f655ee868befc22927321f1f111fcddbbf617289e283eb43c721d724"

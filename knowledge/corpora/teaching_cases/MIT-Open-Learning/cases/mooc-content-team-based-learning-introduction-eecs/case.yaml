@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-mooc-content-team-based-learning-introduction-eecs"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "MOOC Content & Team-Based Learning: Introduction to EECS"
+slug: "mooc-content-team-based-learning-introduction-eecs"
+course_codes:
+  - "6.002"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Khosrow Ghadiri, SJSU, et al."
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/mooc-content-team-based-learning-introduction-eecs"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "e65e7581ab30079803039dfcb5b992454f75d8c4ca2f598410c8ad55728cda13"

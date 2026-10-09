@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-hands-chemistry-learning-3091"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Hands-on Chemistry Learning in 3.091"
+slug: "hands-chemistry-learning-3091"
+course_codes:
+  - "3.091"
+departments:
+  - "Chemistry (Course 5)"
+instructors:
+  - "Jeff Grossman"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/hands-chemistry-learning-3091"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "cdd491e32cf0145a65dd432e2af053cf2abe6677e7068109c6ca8bd6f9dc014d"

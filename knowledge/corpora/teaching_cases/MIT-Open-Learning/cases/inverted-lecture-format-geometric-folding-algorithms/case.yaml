@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-inverted-lecture-format-geometric-folding-algorithms"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Inverted Lecture Format in Geometric Folding Algorithms"
+slug: "inverted-lecture-format-geometric-folding-algorithms"
+course_codes:
+  - "6.849"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Erik Demaine"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/inverted-lecture-format-geometric-folding-algorithms"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "52016e6322bd82b8677f93425a4bb71c721ef7f2d54b9ef1a8eb5d017752865a"

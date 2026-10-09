@@ -1,0 +1,16 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-past-xtalks"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Past xTalks"
+slug: "past-xtalks"
+course_codes: []
+departments: []
+instructors: []
+digital_innovations_tools: []
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/past-xtalks"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "1c82765508428c9def7c922693754b46e119afe84ecf84a02e5fcb676506a8c2"

@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-container-sensors-helps-students-learn-home-during"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "A Container of Sensors Helps Students to Learn at Home during COVID"
+slug: "container-sensors-helps-students-learn-home-during"
+course_codes:
+  - "12.835"
+departments:
+  - "Earth, Atmospheric & Planetary Sciences (Course 12)"
+instructors:
+  - "Shuhei Ono"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/container-sensors-helps-students-learn-home-during"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "f1a0a6b072d32dbeee43e70a54b5b441416be9b5f3b909c4b1c2e25b8866e177"

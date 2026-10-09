@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-plasticity-demand"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Plasticity on Demand"
+slug: "plasticity-demand"
+course_codes:
+  - "MITili Research"
+departments:
+  - "Brain & Cognitive Sciences (Course 9)"
+instructors:
+  - "Pawan Sinha"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/plasticity-demand"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "2d64c6b0fcc100727e73f992fc51d25680500f8fca9d33f75dd9a4dfd2a05651"

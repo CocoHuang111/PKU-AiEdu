@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-mitx-improves-student-experience-better-leverages-ta"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "MITx Improves Student Experience & Better Leverages TA Resources"
+slug: "mitx-improves-student-experience-better-leverages-ta"
+course_codes:
+  - "15.415"
+departments:
+  - "Management (Course 15)"
+instructors:
+  - "Leonid Kogan"
+digital_innovations_tools:
+  - "Online Assessments & Rapid Feedback"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/mitx-improves-student-experience-better-leverages-ta"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "2c0ad08523e128b33aa5321ab45750d8f11e4b151ee71783c6a2563402e61f6b"

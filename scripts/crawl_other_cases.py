@@ -199,6 +199,18 @@ def header(summary: str, source_url: str, source_format: str, license_href: str)
     return "\n".join(lines)
 
 
+def course_source_header(source_url: str, source_format: str, license_href: str) -> str:
+    lines = [
+        f"- Source: {source_url}",
+        f"- source_format: {source_format}",
+        f"- capture_date: {CAPTURE_DATE}",
+    ]
+    if license_href:
+        lines.append(f"- license: {license_href}")
+    lines.extend(["", "---", ""])
+    return "\n".join(lines)
+
+
 def binary_rows(node, page_url: str, parent_title: str) -> list[dict]:
     if node is None:
         return []
@@ -655,13 +667,13 @@ def tidy_verbatim(body: str) -> str:
 
 def write_course_page(directory: Path, filename: str, summary: str, source_url: str, body: str, license_href: str) -> str:
     verbatim = tidy_verbatim(body)
-    document = header(summary, source_url, "html", license_href) + verbatim
+    document = course_source_header(source_url, "html", license_href) + verbatim
     (directory / filename).write_text(document, encoding="utf-8")
     return sha256_text(verbatim)
 
 
 def yale_oyc() -> list[dict]:
-    school = OTHER / "Yale" / "oyc"
+    school = ROOT / "knowledge" / "corpora" / "course_cases" / "Yale-OYC"
     courses = school / "courses"
     status, final, page = fetch_text("https://oyc.yale.edu/courses")
     if status != 200:

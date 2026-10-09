@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-grading-canvas-speedgrader"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Grading in Canvas: SpeedGrader"
+slug: "grading-canvas-speedgrader"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Lauren Totino"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/grading-canvas-speedgrader"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "b737d8876e53a0979c639ad35315e3875c6415abbe0f74569b4d577b60cac6d2"

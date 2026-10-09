@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Literal
+
 from pydantic import BaseModel, Field, field_validator
 
 
@@ -55,9 +57,12 @@ class UploadSessionCompleteForm(BaseModel):
 
 class QAForm(BaseModel):
     question: str = Field(..., min_length=1)
+    mode: Literal[
+        "ask", "syllabus_design", "teaching_design", "learning_diagnosis"
+    ] = Field("ask", description="问答工作模式")
     session_id: str | None = None
     corpora: list[str] | None = Field(
-        None, description="限定检索的语料库；省略则全库，空列表则不检索"
+        None, description="限定检索的语料库；省略则使用模式默认库，空列表则不检索"
     )
     eval_task_ids: list[str] | None = Field(
         None,

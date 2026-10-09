@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-moocs-benefit-residential-shaping-future-work"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "MOOCs Benefit Residential: Shaping the Future of Work"
+slug: "moocs-benefit-residential-shaping-future-work"
+course_codes:
+  - "15.662"
+departments:
+  - "Management (Course 15)"
+instructors:
+  - "Thomas Kochan"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/moocs-benefit-residential-shaping-future-work"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "034c54c80839543fbbb96593554902cbd44a6e6d7296065085aa0b19524adaac"

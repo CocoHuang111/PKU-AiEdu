@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-remote-learning-proactive-preparation-student-outreach"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Remote Learning: Proactive Preparation & Student Outreach"
+slug: "remote-learning-proactive-preparation-student-outreach"
+course_codes:
+  - "Decoders 1.4"
+departments:
+  - "Media Arts and Sciences (Course MAS)"
+instructors:
+  - "Canan Dagdeviren"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/remote-learning-proactive-preparation-student-outreach"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "2fb8b9f7d8f34e72fa4b357fcc5cd4a68659234bebdd2851a7ab4a0013e90a8f"

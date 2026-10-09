@@ -1,0 +1,27 @@
+- Source: https://ocw.mit.edu/courses/12-570-seminar-in-geophysics-mantle-convection-spring-1998/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Course Description
+
+
+
+## Course Info
+
+### Instructor
+
+- [Prof. Robert Van Der Hilst](https://ocw.mit.edu/search/?q=Prof.+Robert+Van+Der+Hilst)
+
+### Departments
+
+- [Earth, Atmospheric, and Planetary Sciences](https://ocw.mit.edu/search/?d=Earth%2C+Atmospheric%2C+and+Planetary+Sciences)
+
+### As Taught In
+
+Spring 1998
+
+### Level
+
+[Graduate](https://ocw.mit.edu/search/?l=Graduate)

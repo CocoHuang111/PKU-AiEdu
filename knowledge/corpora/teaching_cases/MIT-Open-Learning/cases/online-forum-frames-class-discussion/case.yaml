@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-online-forum-frames-class-discussion"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Online Forum Frames In-class Discussion"
+slug: "online-forum-frames-class-discussion"
+course_codes:
+  - "11.124"
+departments:
+  - "Urban Studies and Planning (Course 11)"
+instructors:
+  - "Eric Klopfer"
+  - "Wendy Huang"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/online-forum-frames-class-discussion"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "a00488a9c0160684136d6272e17684bbee8d4105cb62179fd2a97933b355cbf5"

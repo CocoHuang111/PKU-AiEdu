@@ -1,0 +1,4 @@
+{"resource_type": "case_page", "title": "Electromagnetism & TEAL Simulations", "source_url": "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/electromagnetism-teal-simulations", "source_format": "html", "extraction_policy": "full_text", "extraction_status": "complete", "local_path": "case.md", "content_sha256": "d24902f461c118b1b35449c5cc16fa79c1beeb8b4cbd8adf930afd4b8222b92d"}
+{"resource_type": "linked_resource", "title": "web.mit.edu/viz/soft/visualizations/visphysics/visphysics", "url": "http://web.mit.edu/viz/soft/visualizations/visphysics/visphysics.htm"}
+{"resource_type": "linked_resource", "title": "web.mit.edu/viz/EM/index", "url": "http://web.mit.edu/viz/EM/index.html"}
+{"resource_type": "linked_resource", "title": "Read More", "url": "http://web.mit.edu/viz/soft/visualizations/tealsim/biology.htm"}

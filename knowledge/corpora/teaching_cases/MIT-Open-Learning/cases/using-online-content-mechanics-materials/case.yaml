@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-using-online-content-mechanics-materials"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Using Online Content in Mechanics & Materials"
+slug: "using-online-content-mechanics-materials"
+course_codes:
+  - "2.01"
+departments:
+  - "Mechanical Engineering (Course 2)"
+instructors:
+  - "Simona Socrate"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/using-online-content-mechanics-materials"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "71594224743fb1c00d16dc223ed1c58e06890633c2b1e0e1668a9ac4f9f9fbe9"

@@ -8,7 +8,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import StreamingResponse
 
 from ai_engine.config import settings
-from ai_engine.qa import ask, ask_stream
+from ai_engine.qa import ask, ask_stream, public_modes
 from ai_engine.rag import collection_stats
 
 from ..core import db
@@ -31,12 +31,13 @@ def _spawn(coro) -> asyncio.Task:
     return task
 
 
-def _pending_history(history: list[dict], question: str) -> list[dict]:
+def _pending_history(history: list[dict], question: str, mode: str) -> list[dict]:
     return list(history) + [
-        {"role": "user", "content": question},
+        {"role": "user", "content": question, "mode": mode},
         {
             "role": "assistant",
             "content": "",
+            "mode": mode,
             "pending": True,
             "citations": [],
             "plan": None,
@@ -51,18 +52,32 @@ def _complete_history(
     answer: str,
     citations: list | None = None,
     plan: dict | None = None,
+    mode: str = "ask",
 ) -> list[dict]:
     assistant: dict = {
         "role": "assistant",
         "content": answer,
+        "mode": mode,
         "citations": citations or [],
     }
     if plan is not None:
         assistant["plan"] = plan
     return list(history) + [
-        {"role": "user", "content": question},
+        {"role": "user", "content": question, "mode": mode},
         assistant,
     ]
+
+
+@router.get("/modes")
+async def list_modes(user: dict = Depends(current_user)) -> list[dict]:
+    """返回前端可选工作模式；提示词内部指令不对外暴露。"""
+    valid_corpora = set(settings.corpus_names(include_auto=False))
+    result = public_modes()
+    for mode in result:
+        mode["default_corpora"] = [
+            name for name in mode["default_corpora"] if name in valid_corpora
+        ]
+    return result
 
 
 @router.get("/corpora")
@@ -179,14 +194,17 @@ async def ask_once(form: QAForm, user: dict = Depends(current_user)) -> dict:
         user["id"],
         eval_task_ids,
         pinned,
+        form.mode,
     )
 
     history = history + [
-        {"role": "user", "content": form.question},
+        {"role": "user", "content": form.question, "mode": form.mode},
         {
             "role": "assistant",
             "content": result["answer"],
+            "mode": form.mode,
             "citations": result["citations"],
+            "plan": result.get("plan"),
         },
     ]
     session_id = await db.save_session(
@@ -200,7 +218,7 @@ async def ask_streaming(
     form: QAForm, user: dict = Depends(current_user)
 ) -> StreamingResponse:
     history = await _load_history(form.session_id, user["id"])
-    pending = _pending_history(history, form.question)
+    pending = _pending_history(history, form.question, form.mode)
     session_id = await db.save_session(
         form.session_id, pending, user_id=user["id"]
     )
@@ -220,6 +238,7 @@ async def ask_streaming(
                 user["id"],
                 eval_task_ids,
                 pinned,
+                form.mode,
             ):
                 if event["type"] == "done":
                     result["final"] = event
@@ -243,6 +262,7 @@ async def ask_streaming(
                     answer=final.get("answer") or "",
                     citations=final.get("citations"),
                     plan=final.get("plan"),
+                    mode=form.mode,
                 )
             else:
                 err = result["error"] or "生成失败"
@@ -250,6 +270,7 @@ async def ask_streaming(
                     history,
                     form.question,
                     answer=f"（请求失败：{err}）",
+                    mode=form.mode,
                 )
             await db.save_session(session_id, new_history, user_id=user["id"])
         finally:

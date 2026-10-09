@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-quick-tips-organize-canvas-materials-mit-students"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Quick tips to organize Canvas materials, from MIT students"
+slug: "quick-tips-organize-canvas-materials-mit-students"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors: []
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/quick-tips-organize-canvas-materials-mit-students"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "a177bbd5829d99c4bcc8249c512e4a77130575fa2cd6b64786aa25ba6a9d1887"

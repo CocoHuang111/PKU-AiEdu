@@ -1,0 +1,27 @@
+- Source: https://ocw.mit.edu/courses/21a-342-environmental-struggles-fall-2004/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Course Description
+
+
+
+## Course Info
+
+### Instructor
+
+- [Prof. Christine Walley](https://ocw.mit.edu/search/?q=Prof.+Christine+Walley)
+
+### Departments
+
+- [Anthropology](https://ocw.mit.edu/search/?d=Anthropology)
+
+### As Taught In
+
+Fall 2004
+
+### Level
+
+[Undergraduate](https://ocw.mit.edu/search/?l=Undergraduate)

@@ -1,0 +1,25 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-saving-semester-learning-mits-emergency-transition"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Saving a semester of learning: MIT’s emergency transition to online instruction"
+slug: "saving-semester-learning-mits-emergency-transition"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Aaron Kessler"
+  - "Sheryl Barnes"
+  - "Janet Rankin"
+  - "Krishna Rajagopal"
+  - "Mark Silis"
+  - "Lauren Pouchak"
+  - "Wesley Esser"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/saving-semester-learning-mits-emergency-transition"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "6943d9dee600798f194f56726624943daa1f36ecc2d3ff348ed9fc0931cfb3bf"

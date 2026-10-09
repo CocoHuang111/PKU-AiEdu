@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-designing-fall-2020-courses"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Designing Fall 2020 Courses"
+slug: "designing-fall-2020-courses"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Aaron Kessler"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/designing-fall-2020-courses"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "74fbf2b25e1922c3909c01fa9d79bfb42764759671b5a4252de82cedfd603fcb"

@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-focusing-student-effort-where-it-matters-most-improving"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Focusing student effort where it matters most by improving Canvas course structure"
+slug: "focusing-student-effort-where-it-matters-most-improving"
+course_codes:
+  - "8.13"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Sean Robinson"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/focusing-student-effort-where-it-matters-most-improving"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "89dbd902ad9d8798c062c63e756ee5a9734fd2a4ff65e59486958718b3125ebf"

@@ -1,0 +1,17 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-5-quick-tips-maximize-instructor-time-canvas-integrated"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "5 Quick Tips to Maximize Instructor Time with Canvas-Integrated Tools"
+slug: "5-quick-tips-maximize-instructor-time-canvas-integrated"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors: []
+digital_innovations_tools: []
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/5-quick-tips-maximize-instructor-time-canvas-integrated"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "160b036f896b46a5a99dc00af5d5068b8a7936e79dfe84f03d8a9291f9e43bf5"

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build a resumable MIT OpenCourseWare catalog under knowledge/corpora/teaching_cases/MIT.
+"""Build a resumable MIT OpenCourseWare catalog under knowledge/corpora/course_cases/MIT-OCW.
 
 The course list comes from MIT's public search API (platform=ocw). Each course
 homepage is fetched and its real navigation is recorded. Full text is extracted
@@ -26,7 +26,7 @@ from pathlib import Path
 from urllib.parse import urljoin, urlparse, urlunparse
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "knowledge" / "corpora" / "teaching_cases" / "MIT"
+OUT = ROOT / "knowledge" / "corpora" / "course_cases" / "MIT-OCW"
 COURSES = OUT / "courses"
 CACHE = OUT / "_crawl"
 API_URL = "https://open.mit.edu/api/v0/search/"
@@ -1465,20 +1465,8 @@ def headings_of(markdown: str) -> list[str]:
 
 
 def retrieval_header(course: dict, page_title: str, markdown: str, source_url: str, source_format: str) -> str:
-    codes = ", ".join(course.get("course_codes") or []) or course["course_slug"]
-    term = course.get("term") or "学期未在页面标明"
-    year = course.get("year") or ""
-    levels = "、".join(course.get("academic_levels") or []) or "层次未在页面标明"
-    heads = headings_of(markdown)
-    head_text = f"页内标题：{'；'.join(heads[:12])}。" if heads else ""
-    summary = (
-        f"检索摘要：{codes} {course.get('course_title')}（{term} {year}，{levels}）的「{page_title}」。"
-        f"{head_text}分隔线后是该页英文原文，未翻译、未改写。"
-    )
     license_url = course.get("license_url") or ""
     header = [
-        f"> {summary}",
-        "",
         f"- Source: {source_url}",
         f"- source_format: {source_format}",
         f"- capture_date: {CAPTURE_DATE}",
@@ -1838,7 +1826,7 @@ def self_test():
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Crawl MIT OCW into the teaching_cases/MIT catalog")
+    parser = argparse.ArgumentParser(description="Crawl MIT OCW into the course_cases/MIT-OCW catalog")
     parser.add_argument("--rate", type=float, default=4, help="maximum HTTP requests per second")
     sub = parser.add_subparsers(dest="command", required=True)
     discover_parser = sub.add_parser("discover")

@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-online-assessments-mechanics-materials"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Online Assessments in Mechanics & Materials"
+slug: "online-assessments-mechanics-materials"
+course_codes:
+  - "2.001"
+departments:
+  - "Mechanical Engineering (Course 2)"
+instructors:
+  - "Simona Socrate"
+digital_innovations_tools:
+  - "Online Assessments & Rapid Feedback"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/online-assessments-mechanics-materials"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "9fa9d9123b0dfe656bc51d62e8c21875237324d56fdec6ac49c42a43c0c32942"

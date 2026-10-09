@@ -11,13 +11,14 @@
  */
 import { clearAuth } from '../authStore'
 
-export async function askStream({ question, sessionId, corpora, evalTaskIds }, onEvent, signal) {
+export async function askStream({ question, mode, sessionId, corpora, evalTaskIds }, onEvent, signal) {
   const resp = await fetch('/api/qa/ask/stream', {
     method: 'POST',
     credentials: 'include',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       question,
+      mode: mode || 'ask',
       session_id: sessionId || null,
       corpora: Array.isArray(corpora) ? corpora : null,
       eval_task_ids: Array.isArray(evalTaskIds) ? evalTaskIds : null,

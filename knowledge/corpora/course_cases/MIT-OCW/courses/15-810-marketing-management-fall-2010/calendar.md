@@ -1,0 +1,9 @@
+- Source: https://ocw.mit.edu/courses/15-810-marketing-management-fall-2010/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+<table><tr><th>SES #</th><th>TOPICS</th><th>DUE DATES</th></tr><tr><td colspan="3">A. Analyzing markets and identifying opportunities</td></tr><tr><td>1</td><td>Introduction and company analysis</td><td></td></tr><tr><td>2</td><td>Competitive analysis</td><td>Marketing survey due</td></tr><tr><td>3</td><td>Customer analysis I</td><td>Assignment 1 due</td></tr><tr><td>4</td><td>Customer analysis II and III: Value to the customer and customer lifetime value</td><td></td></tr><tr><td colspan="3">B. Developing marketing strategy</td></tr><tr><td>5</td><td>Developing market strategy</td><td></td></tr><tr><td>6</td><td>Segmentation, targeting and positioning</td><td>Assignment 2 due</td></tr><tr><td>7</td><td>EVC-based strategy</td><td></td></tr><tr><td>8</td><td>STP-based strategy and IBS</td><td>Assignment 3 due</td></tr><tr><td>9</td><td>IBS, social responsibility and marketing</td><td></td></tr><tr><td>10</td><td>Branding</td><td></td></tr><tr><td>11</td><td>Developing marketing strategy for innovation</td><td>Case-write up due</td></tr><tr><td colspan="3">C. Formulating marketing programs</td></tr><tr><td>12</td><td>Product</td><td></td></tr><tr><td>13</td><td>Marketing products for multi-sided demand markets</td><td>Assignment 4 due</td></tr><tr><td>14</td><td>Price</td><td></td></tr><tr><td>15</td><td>Promotion</td><td>Project proposal due</td></tr><tr><td>16</td><td>Distribution</td><td></td></tr><tr><td colspan="3">D. Special topics</td></tr><tr><td>17</td><td>International market entry</td><td></td></tr><tr><td>18</td><td>International branding</td><td></td></tr><tr><td>19</td><td>Course summary</td><td></td></tr><tr><td>20</td><td>Team presentations</td><td>Final project due</td></tr></table>

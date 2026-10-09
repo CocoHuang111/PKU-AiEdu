@@ -218,6 +218,7 @@ export const syllabusApi = {
 
 // ---------------------------------------------------------------- 问答
 export const qaApi = {
+  modes: () => client.get('/api/qa/modes'),
   corpora: () => client.get('/api/qa/corpora'),
   sessions: () => client.get('/api/qa/sessions'),
   getSession: (id) => client.get(`/api/qa/session/${id}`),

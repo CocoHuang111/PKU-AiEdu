@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-mathlets-illustrate-mathematical-concepts"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Mathlets Illustrate Mathematical Concepts"
+slug: "mathlets-illustrate-mathematical-concepts"
+course_codes:
+  - "18"
+departments:
+  - "Mathematics (Course 18)"
+instructors:
+  - "Haynes Miller"
+digital_innovations_tools:
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/mathlets-illustrate-mathematical-concepts"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "492bdad597de8a0f22b7cb3fa7911d5e2748951a70de53941c3e7d26d9f806c8"

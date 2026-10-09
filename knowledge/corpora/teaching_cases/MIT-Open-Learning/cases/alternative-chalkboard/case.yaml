@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-alternative-chalkboard"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "An Alternative to the Chalkboard"
+slug: "alternative-chalkboard"
+course_codes:
+  - "ESG 18.01, 18.02, 18.03"
+departments:
+  - "Mathematics (Course 18)"
+instructors:
+  - "Gabrielle Stoy"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/alternative-chalkboard"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "8e47d8d907b2da6a942471fcffca34abff34856609fe919232f64d6c0d4a8a34"

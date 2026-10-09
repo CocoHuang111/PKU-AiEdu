@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-digital-innovations-dmse-curriculum"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Digital Innovations in the DMSE Curriculum"
+slug: "digital-innovations-dmse-curriculum"
+course_codes:
+  - "3.086, 3.032, 3.024"
+departments:
+  - "Materials Science and Engineering (Course 3)"
+instructors:
+  - "Lorna Gibson"
+  - "Gene Fitzgerald"
+  - "Polina Anikeeva"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Online Assessments & Rapid Feedback"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/digital-innovations-dmse-curriculum"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "88e0841583f38b6a7b845c40bb7091e90570f5c198f228ea9c03de0f8f4e52a2"

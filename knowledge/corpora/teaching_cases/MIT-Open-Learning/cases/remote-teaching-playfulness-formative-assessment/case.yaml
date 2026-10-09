@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-remote-teaching-playfulness-formative-assessment"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Remote Teaching: playfulness & formative assessment in language classes"
+slug: "remote-teaching-playfulness-formative-assessment"
+course_codes:
+  - "21G.301"
+departments:
+  - "Global Languages (Course 21G)"
+instructors:
+  - "Isadora Nichols"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/remote-teaching-playfulness-formative-assessment"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "2d34d5616349c891d7a8b258e974bf5011de6517a828a52f5cc31bed691c8076"

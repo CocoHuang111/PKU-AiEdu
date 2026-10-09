@@ -108,6 +108,7 @@ def build_contexts(
                 "source": meta.get("source", "未知来源"),
                 "source_url": meta.get("source_url", ""),
                 "score": hit["score"],
+                "whole_case": bool(hit.get("whole_case")),
             }
         )
         used += len(text)
@@ -152,7 +153,11 @@ def merge_contexts(
         if key in seen:
             continue
         if used_rag + len(text) > rag_cap:
-            if used_rag == 0:
+            if item.get("whole_case"):
+                # 完整案例不从中间截断；已有内容时跳过这一整例，首例则完整保留。
+                if used_rag > 0:
+                    continue
+            elif used_rag == 0:
                 text = text[:rag_cap]
             else:
                 break

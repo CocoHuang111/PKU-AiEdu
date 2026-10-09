@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-residential-students-learning-online-circuits-and"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Residential Students Learning Online: Circuits and Electronics"
+slug: "residential-students-learning-online-circuits-and"
+course_codes:
+  - "6.S064"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Gerald Sussman"
+digital_innovations_tools:
+  - "Flexible Course Delivery"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/residential-students-learning-online-circuits-and"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "502205902a58136074b6797fea9b1884641470ef9e400c1f30d94a42beca0a75"

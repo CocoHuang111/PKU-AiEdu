@@ -1,0 +1,15 @@
+- Source: https://ocw.mit.edu/courses/15-974-practical-leadership-fall-2004/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+| ASSIGNMENTS | TOPICS |
+| --- | --- |
+| 1 | Leadership Frameworks ( <br> [PDF](https://ocw.mit.edu/courses/15-974-practical-leadership-fall-2004/resources/1st_assignmt/) <br> ) |
+| 2 | Communication ( <br> [PDF](https://ocw.mit.edu/courses/15-974-practical-leadership-fall-2004/resources/2nd_assignmt/) <br> ) |
+| 3 | Situational Leadership ( <br> [PDF](https://ocw.mit.edu/courses/15-974-practical-leadership-fall-2004/resources/3rd_assignmt/) <br> ) |
+| 4 | Influencing Others ( <br> [PDF](https://ocw.mit.edu/courses/15-974-practical-leadership-fall-2004/resources/4th_assignmt/) <br> ) |
+| 5 | Decision-making ( <br> [PDF](https://ocw.mit.edu/courses/15-974-practical-leadership-fall-2004/resources/5th_assignmt/) <br> ) |

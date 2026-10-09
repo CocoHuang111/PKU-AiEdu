@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-using-videos-allow-active-learning-lecture-tasks"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Using Videos to Allow for Active Learning Lecture Tasks"
+slug: "using-videos-allow-active-learning-lecture-tasks"
+course_codes:
+  - "15.010"
+departments:
+  - "Management (Course 15)"
+instructors:
+  - "Alessandro Bonatti"
+  - "Michael Whinston"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/using-videos-allow-active-learning-lecture-tasks"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "d16d6d8bd426a24f21797c6a5c5b85ff548c3fee16aa958d36eb6403801bda54"

@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-using-video-understand-experimental-techniques-cell"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Using Video to Understand Experimental Techniques in Cell Biology"
+slug: "using-video-understand-experimental-techniques-cell"
+course_codes:
+  - "7.06"
+departments:
+  - "Biology (Course 7)"
+instructors:
+  - "Frank Solomon"
+  - "Adam Martin"
+  - "Mary Ellen Wiltrout"
+  - "Sera Thornton"
+digital_innovations_tools:
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/using-video-understand-experimental-techniques-cell"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "0400208330dd5ccc775e73baf8925518f454e1f92893dbc0fb3b2d94e37f1aaf"

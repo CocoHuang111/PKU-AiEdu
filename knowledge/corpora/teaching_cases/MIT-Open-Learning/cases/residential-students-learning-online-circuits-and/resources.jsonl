@@ -1,0 +1,3 @@
+{"resource_type": "case_page", "title": "Residential Students Learning Online: Circuits and Electronics", "source_url": "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/residential-students-learning-online-circuits-and", "source_format": "html", "extraction_policy": "full_text", "extraction_status": "complete", "local_path": "case.md", "content_sha256": "502205902a58136074b6797fea9b1884641470ef9e400c1f30d94a42beca0a75"}
+{"resource_type": "linked_resource", "title": "Teaching & Learning Lab", "url": "http://tll.mit.edu/"}
+{"resource_type": "linked_resource", "title": "white paper", "url": "https://openlearning.mit.edu/sites/default/files/inline-files/PreliminaryAssessmentofMITonEdX.pdf"}

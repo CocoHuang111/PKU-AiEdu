@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-students-check-their-answers-intro-probability"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Students Check their Answers: Intro to Probability & Statistics"
+slug: "students-check-their-answers-intro-probability"
+course_codes:
+  - "18.05"
+departments:
+  - "Mathematics (Course 18)"
+instructors:
+  - "Jeremy Orloff"
+digital_innovations_tools:
+  - "Online Assessments & Rapid Feedback"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/students-check-their-answers-intro-probability"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "adb818af98593d4add0b6adcb0d83c032c6e7af5e2b07c652aa2a5f220331301"

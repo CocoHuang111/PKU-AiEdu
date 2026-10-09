@@ -22,6 +22,14 @@ def test_marked_source_url_is_extracted(tmp_path: Path):
     assert source_url_for_document(page, tmp_path, text) == "https://example.edu/case"
 
 
+def test_markdown_bold_source_url_is_extracted(tmp_path: Path):
+    page = tmp_path / "case.md"
+    text = "# Case\n\n**来源**：https://example.edu/case（访问 2026-10-02）\n"
+    page.write_text(text, encoding="utf-8")
+
+    assert source_url_for_document(page, tmp_path, text) == "https://example.edu/case"
+
+
 def test_readme_manifest_maps_local_file(tmp_path: Path):
     page = tmp_path / "University" / "course.html"
     page.parent.mkdir()

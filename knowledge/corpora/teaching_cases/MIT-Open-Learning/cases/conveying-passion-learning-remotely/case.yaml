@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-conveying-passion-learning-remotely"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Conveying a Passion for Learning - Remotely"
+slug: "conveying-passion-learning-remotely"
+course_codes:
+  - "2.671"
+departments:
+  - "Mechanical Engineering (Course 2)"
+instructors:
+  - "Barbara Hughey"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/conveying-passion-learning-remotely"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "0aabb8765acc8f3cbe6cb6c64d9ff5d1fb592420cc7936d38ce0503097e240ba"

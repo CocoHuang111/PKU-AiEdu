@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-online-forum-qa-benefits-all-students"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Online Forum for Q&A Benefits All Students"
+slug: "online-forum-qa-benefits-all-students"
+course_codes:
+  - "8.033, 8.233"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Tracy Slatyer"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Online Assessments & Rapid Feedback"
+  - "Piazza"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/online-forum-qa-benefits-all-students"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "306a60e0e41da5c2c19882990ec32f9e305267a61211676398bcdaeabbccb651"

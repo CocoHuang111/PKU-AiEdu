@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-digital-innovations-biology-curriculum"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Digital Innovations in Biology Curriculum"
+slug: "digital-innovations-biology-curriculum"
+course_codes:
+  - "7.28, 7.58, 7.06"
+departments:
+  - "Biology (Course 7)"
+instructors:
+  - "Biology Faculty"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/digital-innovations-biology-curriculum"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "5115178196e4095bf5b9e4d6fd5fe81efccaa7bc9068f187de31e9e4a511aef8"

@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-innovations-remote-language-instruction"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Innovations in Remote Language Instruction"
+slug: "innovations-remote-language-instruction"
+course_codes:
+  - "21G"
+departments:
+  - "Global Languages (Course 21G)"
+instructors:
+  - "Emma Teng"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/innovations-remote-language-instruction"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "2df5c3cf176926956bdf9830c3e8bb82265864ab1b0e72ba553a7420c0436c89"

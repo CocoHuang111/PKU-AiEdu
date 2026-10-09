@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-learning-visually-online-transition-remote-teaching"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Learning Visually Online: Transition to Remote Teaching in 4.501"
+slug: "learning-visually-online-transition-remote-teaching"
+course_codes:
+  - "4.501"
+departments:
+  - "Architecture (Course 4)"
+instructors:
+  - "Lawrence Sass"
+digital_innovations_tools:
+  - "Remote Teaching"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/learning-visually-online-transition-remote-teaching"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "7c8dd7f8f27fb90cb36d994acb01ef0988fd20ed542ab7243ebe8b900bb2b3e5"

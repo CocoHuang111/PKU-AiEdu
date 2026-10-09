@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-uxd-user-experience-design-remote-learning"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "UXD: User Experience Design in Remote Learning"
+slug: "uxd-user-experience-design-remote-learning"
+course_codes:
+  - "11.255"
+departments:
+  - "Urban Studies and Planning (Course 11)"
+instructors:
+  - "Lawrence Susskind"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/uxd-user-experience-design-remote-learning"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "cf78eb919137deae8813514685cbe7ea033bbbf1b8c1f50353656172d825d348"

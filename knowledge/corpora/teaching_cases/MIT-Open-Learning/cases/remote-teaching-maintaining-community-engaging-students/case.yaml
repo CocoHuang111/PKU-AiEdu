@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-remote-teaching-maintaining-community-engaging-students"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Remote Teaching: maintaining community, engaging students"
+slug: "remote-teaching-maintaining-community-engaging-students"
+course_codes:
+  - "21G.614"
+departments:
+  - "Global Languages (Course 21G)"
+instructors:
+  - "Maria Khotimsky"
+digital_innovations_tools:
+  - "Remote Teaching"
+  - "Piazza"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/remote-teaching-maintaining-community-engaging-students"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "90a0d1505f9cfaecd9122645a5b916493dd28c54b529dd05c60dca5e2d0213ed"

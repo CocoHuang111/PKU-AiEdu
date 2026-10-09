@@ -1,0 +1,3 @@
+{"resource_type": "case_page", "title": "MATLAB Integrated with MITx for Biological Computation", "source_url": "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/matlab-integrated-mitx-biological-computation", "source_format": "html", "extraction_policy": "full_text", "extraction_status": "complete", "local_path": "case.md", "content_sha256": "b6ef7d2e3148fc35c80d092b40431e49f8153077e42fed297f23bd3624faa0c7"}
+{"resource_type": "linked_resource", "title": "Quantitative Methods Workshop", "url": "http://biology.mit.edu/outreach/quantitative-methods-workshop/"}
+{"resource_type": "linked_resource", "title": "Quantitative Methods Course on edX", "url": "http://www.edx.org/course/quantitative-biology-workshop-mitx-7-qbwx-3"}

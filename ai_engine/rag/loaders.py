@@ -165,8 +165,8 @@ def _load_html(path: Path) -> str:
 
 
 _SOURCE_URL_RE = re.compile(
-    r"(?:原始\s*URL|Source\s*URL|原文链接|来源网址)\s*[:：]\s*"
-    r"<?(https?://[^\s)>\]|。，；;]+)",
+    r"(?:\*{0,2}(?:原始\s*URL|Source(?:\s*URL)?|原文链接|来源网址|来源)\*{0,2})\s*[:：]\s*"
+    r"<?(https?://[^\s)>）\]|。，；;（]+)",
     re.IGNORECASE,
 )
 _MANIFEST_ROW_RE = re.compile(

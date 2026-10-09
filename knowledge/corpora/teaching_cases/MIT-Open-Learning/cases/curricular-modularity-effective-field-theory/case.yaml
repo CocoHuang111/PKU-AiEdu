@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-curricular-modularity-effective-field-theory"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Curricular Modularity in Effective Field Theory"
+slug: "curricular-modularity-effective-field-theory"
+course_codes:
+  - "8.EFT"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Iain Stewart"
+digital_innovations_tools:
+  - "Flexible Course Delivery"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/curricular-modularity-effective-field-theory"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "9cf26d65069e3cd324fdafef56596c8a2d4fb817e2b65d3872e6a4e0317f14a3"

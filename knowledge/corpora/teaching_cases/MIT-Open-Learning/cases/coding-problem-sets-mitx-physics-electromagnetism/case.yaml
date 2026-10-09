@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-coding-problem-sets-mitx-physics-electromagnetism"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Coding Problem Sets into MITx: Physics Electromagnetism"
+slug: "coding-problem-sets-mitx-physics-electromagnetism"
+course_codes:
+  - "8.02"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Physics Faculty"
+digital_innovations_tools:
+  - "Online Assessments & Rapid Feedback"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/coding-problem-sets-mitx-physics-electromagnetism"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "e0477ddc221ee99c16b927268cae3b3f673399f837afca02bd854177621e9aba"

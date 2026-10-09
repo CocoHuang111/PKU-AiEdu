@@ -1,0 +1,25 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-adapting-laboratory-course-912-remote-environment"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Adapting Laboratory Course 9.12 to a Remote Environment"
+slug: "adapting-laboratory-course-912-remote-environment"
+course_codes:
+  - "9.12"
+departments:
+  - "Brain & Cognitive Sciences (Course 9)"
+instructors:
+  - "Michale Fee"
+  - "Gloria Choi"
+  - "Feng Zhang"
+  - "Steve Flavell"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Remote Teaching"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/adapting-laboratory-course-912-remote-environment"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "78d214f2e8591e4b42ad335ba11feaa8104cfce7bf628db28d9e832fa4a7f957"

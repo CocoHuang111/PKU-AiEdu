@@ -1,0 +1,31 @@
+- Source: https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/pages/lecture-notes/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Lecture Notes
+
+| LEC # | TOPICS | LECTURE NOTES | HANDOUTS |
+| --- | --- | --- | --- |
+| 1 | From Words to Phrases The Big Picture: Three Examples <br> The Cinque Hierarchy <br> Greenberg Universals <br> Parameters ( <br> wh <br> -movement) | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln1/) <br> ) | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/class_1_handout/) <br> ) |
+| 2 | Constituent Structure and Tests for Constituent Structure <br> Sentence Fragments, Movement, Ellipsis, Anaphora as Tests for Constituency <br> X-bar Theory: Heads <br> θ-roles <br> Complements and Modifiers <br> Specifiers | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln2_3/) <br> ) |  |
+| 3 | The Sisterhood Condition on Selection, and Some Consequences <br> Implications for Acquisition. <br> Modification of the Sisterhood Condition gives the Notion “Head” <br> CP and IP <br> Apparent Deviations from the Sisterhood Condition due to <br> Movement. <br> “Scrambling” in Japanese | See lecture notes for Lecture 2 for these notes | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/9_15jap_hndout1/) <br> ) |
+| 4 | The Architecture of the Grammar <br> The Rule <br> Move <br> : Scrambling in Japanese <br> What’s Universal? The <br> UTAH <br> Condition on Thematic Role Assignment | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln4sep_24_summary/) <br> ) |  |
+| 5 | Head Movement <br> Apparent Deviations from the Sisterhood Condition in <br> Verb-second languages <br> (German, Dutch, Swedish, Vata…) <br> Verb Movement to I in French <br> VSO Languages (Irish, Welsh…) and the VP-internal Subject Hypothesis | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln5_summary/) <br> ) | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/9_24_handout/) <br> ) |
+| 6 | The English Verb System | See lecture notes for Lecture 5 for these notes |  |
+| 7 | Case Theory <br> Morphological Case Systems <br> Case Theory and the Distribution of Complements | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln78_oct6_8_sum/) <br> ) | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/morpho_handout/) <br> ) |
+| 8 | DP vs. Non-DP; V&P vs. N&A <br> English as a Case Language! | See lecture notes for Lecture 7 for these notes |  |
+| 9 | A-Movement <br> Passive Sentences and Raising to Subject <br> Passive in the Clause and in NP <br> Long-distance Passive vs. Control (PRO) <br> Subject Control vs. Object Control | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln9oct_15_sum/) <br> ) |  |
+| 10 | Unaccusativity <br> The 1-Advancement Exclusiveness Law <br> Ne <br> -cliticization in Italian and Other Tests for Unaccusativity | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/mso12d/) <br> ) | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/10_27_handout/) <br> ) |
+| 11 | How Well Can We Predict Unaccusativity from Lexical Semantics? | See lecture notes for Lecture 10 for these notes |  |
+| 12 | Coreference and Constituent Structure <br> Principle A, Principle B, Principle C <br> Coreference, Binding and Disjoint Reference <br> Governing Category <br> Long-distance Reflexives in Dutch and Chinese | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln12_13/) <br> ) |  |
+| 13 | Binding vs. Coreference <br> Binding and Coreference in Language Acquisition and Language Disorders | See lecture notes for Lecture 12 for these notes |  |
+| 14 | Is it Real? | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln14_16_nov/) <br> ) | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/1117_handout_1/) <br> ) |
+| 15 | A-Bar Movement <br> Wh <br> -movement as Movement to Spec, CP <br> I-to-C Movement and <br> Wh <br> -movement in Questions and Relative Clauses | See lecture notes for Lecture 14 for these notes |  |
+| 16 | Wh <br> -phrases <br> Doubly-Filled Comp filter <br> Relative Clauses <br> The Model of Grammar: “Superiority Effects” and “Tucking In” | See lecture notes for Lecture 14 for these notes | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/1124_handout_2/) <br> ) |
+| 17 | Island Phenomena; the “Subjacency Condition” | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln17_18/) <br> ) |  |
+| 18 | Incorporation <br> The Condition on Extraction Domains (CED). Incorporation (Mohawk, Chichewa, Southern Tiwa) | See lecture notes for Lecture 17 for these notes |  |
+| 19 | Covert Movement and “Logical Form” <br> WH-movement in Japanese/Chinese-type Languages. Adjuncts vs. Arguments. Covert Movement | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/ln19final_sum/) <br> ) | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/12_1wh_3/) <br> ) |
+| 20 | Ellipsis and Quantifier Raising <br> Quantifier Raising, VP-ellipsis, Antecedent-Contained Deletion |  | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/12_8_intrmix/) <br> ) |
+| 21 | The Architecture of the Grammar <br> The “Minimalist Program” |  | ( <br> [PDF](https://ocw.mit.edu/courses/24-902-language-and-its-structure-ii-syntax-fall-2003/resources/12_10cover/) <br> ) |

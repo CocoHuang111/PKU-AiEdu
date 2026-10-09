@@ -14,6 +14,8 @@ const POLL_MS = 1500
 export const sessions = ref([])
 export const sessionId = ref(null)
 export const messages = ref([])
+export const qaModes = ref([])
+export const selectedMode = ref('ask')
 export const corpora = ref([])
 export const selectedCorpora = ref([])
 export const evalReports = ref([])
@@ -48,6 +50,8 @@ export function resetQa() {
   sessions.value = []
   sessionId.value = null
   messages.value = []
+  qaModes.value = []
+  selectedMode.value = 'ask'
   corpora.value = []
   selectedCorpora.value = []
   evalReports.value = []
@@ -94,6 +98,7 @@ function hydrateMessages(history) {
     const pending = !!m.pending
     return {
       ...m,
+      mode: m.mode || m.plan?.mode || 'ask',
       streaming: pending,
       thinking: pending && !m.content,
     }
@@ -118,6 +123,21 @@ export const currentTitle = computed(() => {
 export const currentPinned = computed(() => {
   return !!sessions.value.find((s) => s.id === sessionId.value)?.pinned
 })
+
+export const currentMode = computed(() =>
+  qaModes.value.find((m) => m.name === selectedMode.value) || {
+    name: 'ask',
+    label: '通用问答',
+    description: '解释教学问题，并给出有依据的可执行建议',
+    placeholder: '问任何教学相关的问题',
+    default_corpora: [],
+    starter_questions: [],
+  }
+)
+
+export function modeLabel(name) {
+  return qaModes.value.find((m) => m.name === name)?.label || '通用问答'
+}
 
 export const visibleGroups = computed(() => {
   const q = sessionQuery.value.trim().toLowerCase()
@@ -180,13 +200,39 @@ export async function loadSessions() {
   }
 }
 
+export async function loadModes() {
+  try {
+    qaModes.value = await qaApi.modes()
+    if (!qaModes.value.some((m) => m.name === selectedMode.value)) {
+      selectedMode.value = qaModes.value[0]?.name || 'ask'
+    }
+  } catch {
+    /* 拦截器已提示 */
+  }
+}
+
+function applyModeCorpora() {
+  const available = new Set(selectableNames.value)
+  const defaults = (currentMode.value.default_corpora || []).filter((name) =>
+    available.has(name)
+  )
+  const selected = defaults.length ? defaults : [...selectableNames.value]
+  selectedCorpora.value = selectedEvalTaskIds.value.length
+    ? [...selected, 'eval_reports']
+    : selected
+}
+
+export function setMode(name, { resetCorpora = true } = {}) {
+  if (!qaModes.value.some((m) => m.name === name)) name = 'ask'
+  selectedMode.value = name
+  if (resetCorpora) applyModeCorpora()
+}
+
 export async function loadCorpora() {
   try {
     corpora.value = await qaApi.corpora()
     if (!selectedCorpora.value.length) {
-      selectedCorpora.value = corpora.value
-        .filter((c) => c.count && c.name !== 'eval_reports')
-        .map((c) => c.name)
+      applyModeCorpora()
     }
   } catch {
     /* 拦截器已提示 */
@@ -239,6 +285,7 @@ export function newSession() {
   pollingId.value = null
   sessionId.value = null
   messages.value = []
+  setMode('ask')
   persistSessionId(null)
 }
 
@@ -252,6 +299,7 @@ export async function openSession(id) {
   if (liveJob) {
     sessionId.value = id
     messages.value = liveJob.messages
+    setMode(liveJob.mode || 'ask')
     persistSessionId(id)
     stopPoll()
     pollingId.value = null
@@ -262,6 +310,8 @@ export async function openSession(id) {
     const s = await qaApi.getSession(id)
     sessionId.value = id
     messages.value = hydrateMessages(s.history)
+    const lastMode = [...messages.value].reverse().find((m) => m.mode)?.mode || 'ask'
+    setMode(lastMode)
     persistSessionId(id)
     scrollDown()
     const last = messages.value[messages.value.length - 1]
@@ -419,23 +469,25 @@ export async function send() {
   if (!question || sending.value) return
 
   // The attached evaluation reports apply to this question only. Snapshot them
-  // before resetting the composer so the next question returns to the default
-  // state without changing the user's static knowledge-base selection.
+  // before resetting the composer so the next question returns to the current
+  // mode's recommended knowledge-base selection.
   const corporaForRequest = [...selectedCorpora.value]
+  const modeForRequest = selectedMode.value
   const evalTaskIdsForRequest = corporaForRequest.includes('eval_reports')
     ? [...selectedEvalTaskIds.value]
     : null
   applyEvalTaskSelection([])
-  selectedCorpora.value = [...selectableNames.value]
+  applyModeCorpora()
 
   stopPoll()
   pollingId.value = null
   input.value = ''
   const thread = messages.value
-  thread.push({ role: 'user', content: question })
+  thread.push({ role: 'user', content: question, mode: modeForRequest })
 
   const reply = {
     role: 'assistant',
+    mode: modeForRequest,
     content: '',
     citations: [],
     plan: null,
@@ -449,6 +501,7 @@ export async function send() {
     sessionId: sessionId.value,
     messages: thread,
     sending: true,
+    mode: modeForRequest,
   }
   jobs.value = [...jobs.value, job]
   const reveal = createLineRevealer(reply, job)
@@ -458,6 +511,7 @@ export async function send() {
     await askStream(
       {
         question,
+        mode: modeForRequest,
         sessionId: job.sessionId,
         corpora: corporaForRequest,
         evalTaskIds: evalTaskIdsForRequest,
@@ -499,6 +553,7 @@ export async function send() {
 
 export async function initQa(userId) {
   ensureQaOwner(userId)
+  if (!qaModes.value.length) await loadModes()
   if (!corpora.value.length) await loadCorpora()
   await loadEvalReports()
   await loadSessions()
@@ -513,6 +568,7 @@ export async function initQa(userId) {
 }
 
 export async function onQaActivated() {
+  await loadModes()
   await loadCorpora()
   await loadEvalReports()
   await loadSessions()

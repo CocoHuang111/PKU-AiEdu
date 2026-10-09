@@ -1,0 +1,19 @@
+- Source: https://ocw.mit.edu/courses/4-341-introduction-to-photography-and-related-media-fall-2007/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+<table><tr><th>SES #</th><th>TOPICS</th></tr><tr><td colspan="2">Week 1</td></tr><tr><td>1</td><td>Course philosophy, introduction to facilities, term assignment, introductory slide lecture</td></tr><tr><td colspan="2">Week 2</td></tr><tr><td>2</td><td>Introduction to 35mm camera (bring your camera if available), darkroom orientation: film development, contact printing</td></tr><tr><td>3</td><td>Site visit: Aude Oliva presentation, discuss Sacks reading <br> First class review</td></tr><tr><td colspan="2">Week 3</td></tr><tr><td>4</td><td>Darkroom workshop: printing, drying; production time / individual reviews</td></tr><tr><td>5</td><td>Student presentations, film: La Jetée / Chris Marker <br> Class review</td></tr><tr><td colspan="2">Week 4</td></tr><tr><td>6</td><td>Discussion of Mitchell and Elkins text, introduction to digital cameras <br> Class review</td></tr><tr><td>7</td><td>Introduction to digital imaging</td></tr><tr><td>8</td><td>Darkroom workshop: large format printing / experimental techniques</td></tr><tr><td colspan="2">Week 5</td></tr><tr><td>9</td><td>Pinhole camera presentation (James Smith) <br> Class review</td></tr><tr><td>10</td><td>Site visit: Pawan Sinha presentation, metal and wood workshop tour, experimental photographic techniques, discuss Hirsch reading</td></tr><tr><td colspan="2">Week 6</td></tr><tr><td>11</td><td>Student presentations, André Valente presentation <br> Class review</td></tr><tr><td colspan="2">Week 7</td></tr><tr><td>12</td><td>Adobe Photoshop workshop I, introduction to medium format cameras</td></tr><tr><td>13</td><td>Student presentations <br> Class review</td></tr><tr><td colspan="2">Week 8</td></tr><tr><td>14</td><td>Student presentations, view camera workshop, darkroom workshop: retouching and mounting, large format camera workshop with Charles Fendrock, MIT alum</td></tr><tr><td>15</td><td>Student presentations, site visit: Sebastian Seung, presentation <br> Class review</td></tr><tr><td colspan="2">Week 9</td></tr><tr><td>16</td><td>Midterm reviews <br> Guest critic: Donna Nield</td></tr><tr><td>17</td><td>Presentation of exhibition proposal with BCS</td></tr><tr><td colspan="2">Week 10</td></tr><tr><td>18</td><td>Student presentations, Adobe Photoshop workshop II, List Visual Arts Center exhibition visit</td></tr><tr><td>19</td><td>Student presentations, Anne Cahill (Nikon) digital camera and flash workshop</td></tr><tr><td colspan="2">Week 11</td></tr><tr><td>20</td><td>Tour of local art scene with Bill Arning</td></tr><tr><td colspan="2">Week 12</td></tr><tr><td>21</td><td>Student presentations, workshop: exhibition installation</td></tr><tr><td>22</td><td>Class review</td></tr><tr><td colspan="2">Week 13</td></tr><tr><td>23</td><td>Museum of Fine Arts visit</td></tr><tr><td>24</td><td>Artist presentations <br> Last class review before finals</td></tr><tr><td colspan="2">Week 14</td></tr><tr><td>25-26</td><td>Production day / individual reviews</td></tr><tr><td colspan="2">Week 15</td></tr><tr><td>27</td><td>Final reviews <br> Guest critic: Terence Gower</td></tr><tr><td>28</td><td>Clean up and film</td></tr></table>
+
+### Notes
+
+Class review: projects in progress are continuously presented and discussed in class context.
+
+Student presentation: all students are required to give a 10-15 minute presentation on one artist/photographer.
+
+Production time: each student works independently on their term project in the darkroom or computer lab; field work is possible (bring material).
+
+Final review: project must be completed and installed in exhibition. Submit CD documenting and describing the project.

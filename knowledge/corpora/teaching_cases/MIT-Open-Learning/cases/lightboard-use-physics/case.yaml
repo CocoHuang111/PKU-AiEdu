@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-lightboard-use-physics"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Lightboard Use in Physics"
+slug: "lightboard-use-physics"
+course_codes:
+  - "8"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Peter Dourmashkin"
+digital_innovations_tools:
+  - "Lightboard"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/lightboard-use-physics"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "575c7d7de574240e32d6d875fd886a31b890ceafdb1d61ef4d7a64c1a9297313"

@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-online-p-sets-thought-questions-introduction-finance"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Online P-sets & Thought Questions in Introduction to Finance"
+slug: "online-p-sets-thought-questions-introduction-finance"
+course_codes:
+  - "15.401"
+departments:
+  - "Management (Course 15)"
+instructors:
+  - "Andrew Lo"
+digital_innovations_tools:
+  - "Online Assessments & Rapid Feedback"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/online-p-sets-thought-questions-introduction-finance"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "94f7b23bb533664b16023271062d36eb6908ee0f3428754673c1d9a7176a3716"

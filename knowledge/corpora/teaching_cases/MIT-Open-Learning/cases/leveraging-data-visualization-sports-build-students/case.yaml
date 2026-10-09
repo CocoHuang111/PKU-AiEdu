@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-leveraging-data-visualization-sports-build-students"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Leveraging Data Visualization in Sports to Build Up Students’ Confidence as Writers"
+slug: "leveraging-data-visualization-sports-build-students"
+course_codes:
+  - "21W.015"
+departments:
+  - "Comparative Media Studies/Writing (Course CMS/21W)"
+instructors:
+  - "Andreas Karatsolis"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/leveraging-data-visualization-sports-build-students"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "5674524d2009e2564d040180db8823a425b7ffcb5b27c12a8b44b52165687134"

@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-deepening-student-discussions-visualizing-culture"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Deepening Student Discussions in Visualizing Culture"
+slug: "deepening-student-discussions-visualizing-culture"
+course_codes:
+  - "21G.027"
+departments:
+  - "Global Languages (Course 21G)"
+instructors:
+  - "Shigeru Miyagawa"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/deepening-student-discussions-visualizing-culture"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "bcc5b9bef5f1247d94f9977f3fe78312e6bc1205e35978939432c5e350d7c587"

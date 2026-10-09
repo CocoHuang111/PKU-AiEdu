@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-clickers-promote-learning-chemistry"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Clickers Promote Learning: Chemistry"
+slug: "clickers-promote-learning-chemistry"
+course_codes:
+  - "5.111"
+departments:
+  - "Chemistry (Course 5)"
+instructors:
+  - "Catherine Drennan"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/clickers-promote-learning-chemistry"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "0126028d35a846b95d365a35142c3cf9bb0b175cedf47bf468d75a33db111824"

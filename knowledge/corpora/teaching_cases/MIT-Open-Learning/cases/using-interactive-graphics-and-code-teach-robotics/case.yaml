@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-using-interactive-graphics-and-code-teach-robotics"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Using Interactive Graphics and Code to Teach Robotics"
+slug: "using-interactive-graphics-and-code-teach-robotics"
+course_codes:
+  - "6.8210 & 6.4210"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Russell Tedrake"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/using-interactive-graphics-and-code-teach-robotics"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "a4dd69ef93010b0267015721a9e472379c3b0cc90c077b69f698c2dff56fe5c8"

@@ -1,0 +1,9 @@
+- Source: https://ocw.mit.edu/courses/esd-290-special-topics-in-supply-chain-management-spring-2005/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+<table><tr><th>SES #</th><th>TOPICS</th><th>KEY DATES</th></tr><tr><td colspan="3">Part I: Introduction</td></tr><tr><td>1</td><td>Course Introduction. An Auto-ID Primer (I)</td><td></td></tr><tr><td>2</td><td>Course Introduction. An Auto-ID Primer (II)</td><td></td></tr><tr><td colspan="3">Part II: Auto-ID Technologies (RFID and Beyond)</td></tr><tr><td>3</td><td>Introduction to the RFID Appliance Assignment</td><td></td></tr><tr><td>4</td><td>RFID Appliance Assignment: Application Development and Technical Overview of an RFID System</td><td>Assignment 1 due</td></tr><tr><td>5</td><td>RFID Tags and Systems: Anatomy, Economics and Costing</td><td></td></tr><tr><td>6</td><td>The Physics of RFID</td><td></td></tr><tr><td colspan="3">Part III: Policy and Strategy</td></tr><tr><td>7</td><td>RFID Architecture and Industry Configuration</td><td></td></tr><tr><td>8</td><td>Auto-ID System Software Industry</td><td></td></tr><tr><td>9</td><td>Legal and Policy Issues Surrounding RFID eBusiness Applications</td><td>Assignment 2 due</td></tr><tr><td>10</td><td>Valuation of RFID Investments</td><td>Assignment 3 due</td></tr><tr><td colspan="3">Part IV: RFID, The Future and You</td></tr><tr><td>11</td><td>RFID and the Future of the Supply Chain: Toward the 5 Cent Tag</td><td></td></tr><tr><td>12</td><td>RFID and Future Business Models: Manufacturing Cost Simulations for Low Cost RFID Systems</td><td>Assignment 4 and 6 due</td></tr><tr><td>13</td><td>Planning for Future RFID Initiatives</td><td></td></tr><tr><td colspan="3">Part V: Final Papers and Presentations</td></tr><tr><td>14</td><td>Final Papers and Presentations: Student Presentations and Course Closure</td><td>Assignment 5 due</td></tr></table>

@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-sketch-tool-mathematics"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Sketch Tool in Mathematics"
+slug: "sketch-tool-mathematics"
+course_codes:
+  - "18.01"
+departments:
+  - "Mathematics (Course 18)"
+instructors:
+  - "Jennifer French"
+  - "Martin Segado"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Adaptive Hinting"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/sketch-tool-mathematics"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "aaa39ea68e89380f04368dddbd6ae2957623cb1bddf62de727dbbdf9081aee7d"

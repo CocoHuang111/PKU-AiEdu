@@ -524,6 +524,19 @@ Markdown 模式输出字数上限为 `syllabus.markdown_max_length_ratio`（默�
 
 ### ③ 教学智能问答
 
+#### 四种问答模式
+
+四种模式共用同一个 LLM 与 RAG 管线，不是四个独立模型，也不等同于简单调用四个 skill。
+模式注册表位于 `ai_engine/qa/modes.py`，每种模式分别规定输入提示、检索规划、默认语料库、
+检索策略和回答结构；用户在前端手动选择语料库时，会覆盖该模式的默认范围。
+
+- **通用问答**（`ask`）：解释教学概念、比较做法并给出可执行建议。采用普通文本块检索，默认调用教育学理论、北大教学沙龙、国外课程、学科教学、教学案例和 AIMES。
+- **大纲设计**（`syllabus_design`）：面向整门课程，匹配内容相近课程，设计课程目标、内容边界、进度、教学形式和考核，并检查目标—活动—评价的一致性。采用 `course_match`；匹配到 MIT OCW 课程后可按完整文档边界加载课程描述、大纲、日历和作业等材料。
+- **教学设计**（`teaching_design`）：根据问题粒度回答具体方法、课堂活动、课次或教学单元设计；依次组织为“学习目标—学情假设与难点—案例匹配—解决方案—形成性评价设计—实施风险”。有高相关教学案例时简要说明案例及可迁移做法，弱相关时不硬加，主体篇幅用于当前课程的解决方案。只有教师明确要求完整方案时才展开完整流程，不预设90分钟或其他固定时长。采用 `case_match`，重点调用教学案例、北大沙龙、学科教学、教育学理论和 AIMES。
+- **学情诊断**（`learning_diagnosis`）：根据作业、测验、课堂表现或历史评估报告，区分可观察现象与原因推断，形成学生分组、干预方案和下一轮验证办法。采用 `evidence_first`；没有学生数据时只返回诊断框架和最少材料清单。
+
+推荐输出结构并不完全相同：通用问答按“结论—依据—建议”组织；大纲设计按“需求与假设—相似课程—整体大纲—一致性”组织；教学设计按“学习目标—学情假设与难点—案例匹配—解决方案—形成性评价设计—实施风险”组织，有高相关案例时用不超过约四分之一的篇幅说明案例及可迁移内容，弱相关时省略案例，解决方案仍是主体；学情诊断按“数据限制—观察证据—可能原因与置信度—干预—验证”组织。所有模式都应区分来源事实与系统建议，并在有来源网址时提供追溯入口。
+
 默认左侧展开历史会话（可搜索；列表分成「置顶」「最近」，
 格式与教学评估的历史任务一致）。回答上方会显示这次用了哪些关键词、查了哪些语料库，下方可展开引用来源。
 输入框左侧「+」打开检索范围。公开语料库**默认全选**；取消勾选则不检索该库。
@@ -897,17 +910,38 @@ MAE 0.836），但样本极少，且宋晨仍被高估 1.675 分，不能据此�
 
 ## 九、加自己的知识语料
 
+### 当前知识库结构
+
+`knowledge/corpora/` 按知识的用途分库，而不是把所有文档放进一个目录：
+
+- **`course_cases/` 国外公开课程案例**：保存完整课程层面的资料，用于相似课程匹配、大纲设计和教学设计。目前包括 MIT OCW 2587 个课程版本和 Open Yale Courses 40 门，共 2627 个课程/课程版本。每门课程保存英文原文、来源网址、元数据和唯一一份课程级中文 `检索摘要.md`。
+- **`teaching_cases/` 国内外高校教学案例**：保存具体教学改革、课堂策略和教学干预。包括北京大学教改与课程思政材料、MIT Open Learning 146 项教学创新资料，以及 Cornell、Columbia、Michigan、Yale Poorvu 的英文案例原文。
+- **`edu_theory/` 教育学基础理论**：学习科学、课程与教学设计、课堂互动、评价反馈、生成式 AI、AI 素养、教学整合模型、学术诚信、无障碍与数据治理等通用理论和方法。
+- **`discipline_pedagogy/` 学科教学知识**：覆盖 30 个院系方向和医学六学院，记录不同学科的知识生产方式、常见学习困难、教学方法、评价对象和文献依据。
+- **`pku_salon/` 北大教学沙龙**：保存校内教学沙龙和教学观摩的整理文本，为问答提供北京大学的实际教学语境。
+- **`AIMES/` 斯坦福 AI 教学专题**：保存 AI 教学策略、课程政策、学生指南、课程实践案例、项目反思和教学技术工具入口。AIMES Library 属于具体教学实践，其余内容更接近 AI 专题教学知识。
+- **`eval_reports` 历史评估报告**：系统自动生成的用户级私有语料，不由常规 ingest 脚本读取。教师明确勾选报告后，报告会作为置顶上下文进入问答，并与公共知识检索分开计入上下文额度。
+
+课程与案例材料尽量保留英文原文和原始网址，中文摘要只用于提高中文检索召回，不替换原文。
+入库采用“索引与原文分离”：完整课程和教学案例只把课程级/案例级中文摘要写入向量库，
+命中后再从磁盘读取原文；教育理论、学科教学、沙龙和 AIMES 非案例材料按 Markdown 标题
+生成语义段。完整内容加载现已覆盖 MIT、Yale、`teaching_cases` 和 AIMES Library，原始网址
+随索引保留。删除或迁移语料后应全量重建，不能只依赖增量写入清理旧块。
+
 ```bash
 # 1. 把文档丢进对应目录（支持子目录）
 knowledge/corpora/edu_theory/      # 教育学基础理论
 knowledge/corpora/pku_salon/       # 北大教学沙龙
-knowledge/corpora/course_syllabi/  # 课程大纲参考
+knowledge/corpora/course_cases/    # 国外公开完整课程案例
 knowledge/corpora/discipline_pedagogy/ # 分学科教学特点与方法
 knowledge/corpora/teaching_cases/  # 北大与美国高校教学设计案例
 knowledge/corpora/AIMES/           # 斯坦福 AIMES：AI 教学策略、政策、学生指南、案例库
 
 # 2. 重建
 make ingest
+
+# 只检查记录数量、缺失摘要和目录结构，不调用 embedding、不写库
+python -m knowledge.ingest --dry-run
 ```
 
 支持 pdf / docx / md / txt / html。`edu_theory/` 已按主题分子目录，ingest 会递归入库：
@@ -928,26 +962,26 @@ make ingest
 **每篇语料均含「文献性质 / 核心出处 / 参考文献与可追溯来源」**，期刊论文标注 DOI，
 网页类标注访问日期，以保证可核查性。新增语料后执行 `make ingest` 增量入库。
 
-`course_syllabi/` 已收录 11 门公开 syllabus **原版 HTML**（MIT OCW、Stanford、Yale OYC、
-CMU、Harvard CS50），按院校分子目录；目录与各课「参考价值」见
-`knowledge/corpora/course_syllabi/README.md`。
+`course_cases/` 保存完整课程层面的英文原文和中文检索摘要：MIT OCW 2587 个课程版本、
+Open Yale Courses 40 门，共 15763 份英文页面和 2627 份课程级中文检索摘要。当前不包含
+Harvard、Stanford 或 CMU 课程材料。目录说明见 `knowledge/corpora/course_cases/README.md`。
 
-`discipline_pedagogy/` 仅保留 `literature_reviews/`：三份综述逐一覆盖北京大学30个院系方向，
-八大类汇总稿整合学科教育特点、方法、国内改革反思及来源。培养方案只用于确认院系范围。
-全部本地原始网页/PDF集中在 `literature_reviews/original_sources/`，按综述优先文献、外部专业
-资料和北大官方快照分目录保存，并附来源清单、抓取状态和SHA-256校验值。
+`discipline_pedagogy/` 根目录保存 5 份主文档：三份综述逐一覆盖北京大学30个院系方向，
+一份汇总九大学科门类，一份覆盖医学六学院。培养方案只用于确认院系范围。
+全部本地原始网页/PDF集中在 `original_sources/`，按综述优先文献、外部专业资料、北大官方快照
+和医学资料分目录保存，并附来源清单、抓取状态和SHA-256校验值。
 
 `AIMES/` 是斯坦福 CTL「AI Meets Education at Stanford」的原文归档，目录说明见
 `knowledge/corpora/AIMES/README.md`。策略页拆成总览和三条路径；案例库按课程合并；
 教学技术工具只记详情页和产品入口。CTL 大纲模板的示例条文在 Google 文档里，本库只有使用说明和文档地址。
 
 `teaching_cases/` 中，2016–2018年北大教改汇编的29篇已按结题报告重写为设计思路、实施过程、实施成果、存在问题和可迁移场景；
-`source/` 保留教务部原始 PDF。`other/` 是 Cornell、Columbia、Michigan、Yale 来源页的英文原文，不再保留中文改写稿。完整目录见 `knowledge/corpora/teaching_cases/README.md`。
+`PKU/source/` 保留教务部原始 PDF。`Cornell/`、`Columbia/`、`Michigan/`、`Yale/` 保存来源页英文原文，不再保留中文改写稿。完整目录见 `knowledge/corpora/teaching_cases/README.md`。
 
-`teaching_cases/MIT/` 是 MIT OpenCourseWare 课程库，不是上面那种改写过的教学案例。
-2587 个课程版本都有目录和实际栏目的英文原文；2582 门抽取完整，5 门只有部分页面。
-作业、讲义 PDF 和视频没有下载。说明见 `knowledge/corpora/teaching_cases/MIT/README.md`。
-正文还没有写进向量库，要进问答需再执行 `make ingest`。
+`teaching_cases/MIT-Open-Learning/` 保存 146 项 Residential Digital Innovations 教学创新资料；
+MIT OCW 与 Open Yale Courses 已按内容性质移动到 `course_cases/`。每项或每门课程另有中文
+`检索摘要.md`，英文正文和 `content_sha256` 不含中文摘要。当前向量库保存摘要索引，命中后
+由完整内容加载器读取相应课程级材料或教学案例全文。
 
 ```bash
 # 续跑目录。已经写好的课程会跳过。
@@ -1149,6 +1183,7 @@ make install-local                      # 装 pyannote.audio
 | 声学特征页波形/响度不像真实音轨 | 旧任务没有包络和曲线，页面按响度均值生成示意。新评估会写入 `wave_envelope` / `loudness_curve` / `pitch_curve` |
 | 新加的客观特征前端看不到 | 忘了在 `evaluation_rubric.yaml` 的 `objective_features` 里登记标签。跑 `make check-features` 会指出缺哪个 key |
 | `make check-features` 报「无未登记的特征 key」失败 | 同上，按提示把 key 加到 rubric 对应分组里 |
+| 问答提问后报 `'dict object' has no attribute 'whole_case'` | 普通检索切片没有 `whole_case` 字段，提示词在严格模式下读这个属性会失败。已改为缺省当普通切片；重启 `make backend` 后再问 |
 | 问答检索不到内容 / 语料库计数为 0 | 没建库。`make ingest`，并确认语料目录里确实有文档 |
 | `crawl_other_cases.py` 抓密歇根失败，或只有 2019–2025 | CRLT 对脚本返回 HTTP 403，正文来自当时的浏览器抓取。获奖名单第二页 `?page=1` 返回 HTTP 500，2018 及更早没有收。抓取文件缺失时，脚本留下已保存案例并跳过该校 |
 | 问答里「历史评估报告」是空的 / 勾不了某次课 | 只有评估**成功完成**才会入库。进行中、失败、取消的不会出现。从评估页删掉任务会同步删向量。点「+」里的「历史评估报告」打开弹窗；切回问答页会刷新列表 |
@@ -1195,8 +1230,9 @@ make install-local                      # 装 pyannote.audio
 | --- | --- | --- |
 | **沙龙语料需从 mp4 生成** | 脚本已就绪（`make salon`），但需用户放入真实录像；种子 md 可删 | 视频放 `raw_video/` → `make salon` → `ingest --corpus pku_salon` |
 | **建库需手动触发** | 新增/更新文档后容易忘记 ingest，检索结果过时 | 加 `ingest --watch` 或上传文档后自动增量入库 |
-| **噪声文档进库** | `course_syllabi/` 里的 `README.md` 会被切块检索，干扰问答 | ingest 时排除 README/说明类文件，或按 glob 白名单入库 |
+| **噪声文档进库** | `course_cases/` 里的 `README.md` 会被切块检索，干扰问答 | ingest 时排除 README/说明类文件，或按 glob 白名单入库 |
 | **密歇根 TIP 名单第二页打不开** | `other/Michigan/` 只有 2019–2025 的 35 篇。2018 及更早的获奖页不在库里 | 等 <https://crlt.umich.edu/tip-winners?page=1> 不再返回 HTTP 500 后，用 `crawl_other_cases.py` 补抓 |
+| **入库不是事务式切换** | 全量重建中途失败时，已处理 collection 是新索引，后续 collection 仍是旧索引 | 重建前已增加 Embedding 连通性检查；后续可用临时 collection 构建完成后原子切换 |
 | **换 embedding 需全量重建** | 切换云端/本地 embedding 后维度不一致，Chroma 报错 | 已在 store 里做了维度冲突提示；文档化「换模型必跑 `make ingest-reset`」流程 |
 
 #### B. 检索链路
@@ -1267,7 +1303,7 @@ make install-local                      # 装 pyannote.audio
 | --- | --- | --- |
 | **分阶段请求耗时增加** | 分阶段需多次 LLM 调用，同步 HTTP 请求内易超过前端 10 分钟超时；已改回默认单轮 | 需要时再开 `generation_strategy: staged`；或改异步任务并展示进度 |
 | **无人工反馈回路** | 用户看完结果无法说「第 3 章学时改一下」 | 支持选中章节/regenerate + 自然语言修订指令 |
-| **未利用参考语料库** | `course_syllabi` 已建向量库，但 optimizer 未做 RAG | 同类课程检索 2–3 份参考大纲，作为 few-shot 或约束 |
+| **超长课程内容需按任务选择** | Yale 讲课转写和部分 MIT 资料可能达到数十万字，不能无条件整门塞给模型 | 大纲模式优先加载摘要、课程说明、大纲、日历、作业和考试；具体知识点问题再增加课次级检索 |
 | **新增内容仍需人工复核** | 固定框架已禁止无依据补全，并用 `origin` 与 `<needs_confirmation>` 区分来源；但来源标记仍由模型自述 | 程序比对原文覆盖率和新增事实；前端按来源高亮 |
 
 #### C. 校验与质量
@@ -1319,11 +1355,53 @@ make install-local                      # 装 pyannote.audio
 
 倒序排列，最新在最上面。每条写清楚**为什么这么改**。
 
+### 2026-10-09 · 教学设计回答改为按问题粒度自适应
+
+**问题**：教学设计模式容易把一般方法咨询也展开为完整的90分钟课堂流程，回答生硬，也不符合北京大学不同课程在课时长度和组织方式上的差异。
+**思路**：先判断教师是在问方法、活动、单次课还是教学单元；回答依次保留学习目标、学情假设与难点、案例匹配、解决方案、形成性评价设计和实施风险，但各部分详略随问题粒度变化，只在明确要求完整方案时展开课时流程。不再默认90分钟或其他固定时长。仅在有高相关完整教学案例时简要列出案例及可迁移做法，弱相关时省略，解决方案始终是回答主体。
+**影响**：更新 `teaching_design` 的模式说明、回答指令和示例问题；在提示词中区分完整课程案例与完整教学案例，并明确北大沙龙、理论和学科知识只能作为补充依据；不改变其他三种模式、检索范围或向量库。
+
+### 2026-10-09 · 普通检索切片不再因缺少 whole_case 中断问答
+
+**问题**：完整案例加载会给上下文带上 `whole_case`，普通切片没有这个字段。提示词用 Jinja2 严格模式读取它，教师一提问就在拼提示词时失败，报 `'dict object' has no attribute 'whole_case'`。
+**思路**：切片上下文显式带上 `whole_case: false`；模板对缺字段按普通切片处理，避免以后别的来源漏字段时再次中断。
+**影响**：`ai_engine/rag/retriever.py`、`ai_engine/pedagogy/prompts/qa_answer.j2`。已有向量库和回答内容不变。
+
+### 2026-10-09 · 按课程/案例边界重建问答向量库
+
+**问题**：旧入库器对所有正文统一切成约500字的小块，课程和教学案例被拆散；完整内容加载只识别 MIT OCW，Yale、国内外教学案例和 AIMES 案例无法在摘要命中后回读全文。
+**思路**：新增按语料类型生成索引的入库器。`course_cases` 每门课程一条中文摘要索引，`teaching_cases` 每个案例一条摘要索引；AIMES Library 同样按案例处理；理论、学科知识、沙龙和 AIMES 非案例材料按 Markdown 标题形成语义段。完整内容加载器按 `item_key` 回读 MIT/Yale 课程级材料以及教学案例全文，并保持文档边界。
+**影响**：已用 `text-embedding-v3` 全量重建六个公共 collection：`edu_theory` 454、`pku_salon` 240、`course_cases` 2627、`discipline_pedagogy` 241、`teaching_cases` 373、`AIMES` 202；103条用户级 `eval_reports` 保留。新增 `--dry-run` 预检和重建前 Embedding 连通性检查。
+
+### 2026-10-09 · 按当前磁盘目录校正知识库说明
+
+**问题**：课程语料已经调整为只保留 MIT OCW 和 Open Yale Courses，但根 README、`course_cases/README.md` 与 `config.yaml` 仍把已经移除的 Harvard、Stanford 和 CMU 写成当前内容。
+**思路**：以 `knowledge/corpora/` 的实际目录和文件数量为准，统一校正当前知识库说明；历史变更记录保留，用新增记录说明后续调整。
+**影响**：当前 `course_cases` 为 2587 个 MIT 课程版本和 40 门 Yale 课程，共 15763 份英文页面与 2627 份课程级中文检索摘要。本次只修正文档与语料库展示描述，不改语料内容、检索代码或向量库。
+
+### 2026-10-09 · README 补充知识库结构与四种问答模式
+
+**问题**：README 分散记录了各语料目录和问答界面操作，但没有集中说明知识库之间的边界，也没有介绍四种模式如何改变检索与回答结构。
+**思路**：在智能问答章节简要说明通用问答、大纲设计、教学设计和学情诊断的任务、默认知识来源、检索策略与输出结构；在知识语料章节按完整课程、教学案例、理论、学科教学、校内实践、AI 专题和历史评估梳理当前目录。
+**影响**：只更新项目文档，不修改语料、模式配置、检索代码或向量库。
+
+### 2026-10-09 · 每门国外课程加一份中文检索摘要
+
+**问题**：MIT OpenCourseWare 和 Open Yale Courses 的正文是英文。用中文问某门课教什么、怎么上课、怎么考核时，检索对不上这些页面。
+**思路**：一门课写一份 `检索摘要.md`，不按课次拆，也不改英文页和 `content_sha256`。正文只有一段 200–300 字的中文，写页面上已有的学科、主题、概念、学生对象、先修、教学方式和考核，并给这些概念配上中文说法。页面没写的不补，也不写「未说明」。Cornell、Columbia、Michigan 和 Poorvu 的教师案例不在这次范围内。
+**影响**：MIT 2587 门、Open Yale Courses 40 门各有一份。入库时会收进 `检索摘要.md`（只跳过 `readme.md`）。本次没有 `make ingest`。增量入库不会删掉向量库里已经不在磁盘上的旧改写稿，若要让问答改用这些摘要和原文，需要重建 `teaching_cases`。
+
 ### 2026-10-08 · other/ 每篇原文前加一句主要内容
 
 **问题**：`other/` 的检索摘要只重复机构和页内标题。打开一篇哥伦比亚或耶鲁的原文，看不出这页到底在讲哪一种做法或哪一段内容。
 **思路**：摘要仍放在 `---` 之前，不改英文原文，也不改 `content_sha256`。每个文件加一句中文，只根据该页正文来写：案例页看做法，Open Yale Courses 的课次看页面上的 Overview。续跑时如果文件里已经有这句，重写页面会把它留住。
 **影响**：Cornell、Columbia、Michigan、Poorvu 的案例和 Open Yale Courses 的课程说明、课次页都会带上这句。问答仍要另跑 `make ingest` 才会用到。
+
+### 2026-10-09 · 拆分课程案例与教学案例，并补齐当前公开课程
+
+**问题**：MIT OCW、Open Yale Courses 等完整课程与教学改革案例混在 `teaching_cases`，旧 `course_syllabi` 又只保存少量 HTML，内容分类和版本都不一致。
+**思路**：建立 `course_cases/`，迁入 MIT OCW 2587 个课程版本和 Open Yale Courses 40 门；抓取 Harvard CS50 当前 11 门活跃课程、Stanford CS106A Autumn 2026 与 CMU 15-122 Fall 2026。另将 MIT Open Learning Residential Digital Innovations 的 146 项保存在 `teaching_cases/MIT-Open-Learning/`。所有新增材料保留英文原文、来源 URL 和中文检索摘要。
+**影响**：删除已被全量或新版资料覆盖的 `course_syllabi/`；配置与完整课程加载器改用 `course_cases`。本次没有执行 RAG 入库。
 
 ### 2026-10-08 · other/ 四校案例改为来源页原文，并收齐同站同类材料
 

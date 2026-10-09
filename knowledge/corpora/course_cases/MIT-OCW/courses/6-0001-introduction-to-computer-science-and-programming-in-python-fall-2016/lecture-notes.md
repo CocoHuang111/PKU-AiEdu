@@ -1,0 +1,24 @@
+- Source: https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/pages/lecture-slides-code/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Lecture Slides and Code
+
+The slides and code from each lecture are available below.
+
+| SES # | TOPICS | LECTURE SLIDES | LECTURE CODES |
+| --- | --- | --- | --- |
+| 1 | What is computation? | [Slides for Lecture 1 (PDF)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec1/) | [Code for Lecture 1 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec1/) |
+| 2 | Branching and Iteration | [Slides for Lecture 2 (PDF)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec2/) | [Code for Lecture 2 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec2_branch_loops/) |
+| 3 | String Manipulation, Guess and Check, Approximations, Bisection | [Slides for Lecture 3 (PDF)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec3/) | [Code for Lecture 3 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec3_strings_algos/) |
+| 4 | Decomposition, Abstractions, Functions | [Slides for Lecture 4 (PDF 1.1MB)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec4/) | [Code for Lecture 4 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec4_functions/) |
+| 5 | Tuples, Lists, Aliasing, Mutability, Cloning | [Slides for Lecture 5 (PDF)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec5/) | [Code for Lecture 5 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec5_tuples_lists/) |
+| 6 | Recursion, Dictionaries | [Slides for Lecture 6 (PDF - 1.3MB)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec6/) | [Code for Lecture 6 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec6_recursion_dictionaries/) |
+| 7 | Testing, Debugging, Exceptions, Assertions | [Slides for Lecture 7 (PDF)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec7/) | [Code for Lecture 7 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec7_debug_except/) |
+| 8 | Object Oriented Programming | [Slides for Lecture 8 (PDF)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec8/) | [Code for Lecture 8 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec8_classes/) |
+| 9 | Python Classes and Inheritance | [Slides for Lecture 9 (PDF - 1.6MB)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec9/) | [Code for Lecture 9 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec9_inheritance/) |
+| 10 | Understanding Program Efficiency, Part 1 | [Slides for Lecture 10 (PDF)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec10/) | [Code for Lecture 10 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec10_complexity_part1/) |
+| 11 | Understanding Program Efficiency, Part 2 | [Slides for Lecture 11 (PDF)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec11/) | [Code for Lecture 11 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec11_complexity_part2/) |
+| 12 | Searching and Sorting | [Slides for Lecture 12 (PDF - 2.4MB)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/mit6_0001f16_lec12/) | [Code for Lecture 12 (PY)](https://ocw.mit.edu/courses/6-0001-introduction-to-computer-science-and-programming-in-python-fall-2016/resources/lec12_sorting/) |

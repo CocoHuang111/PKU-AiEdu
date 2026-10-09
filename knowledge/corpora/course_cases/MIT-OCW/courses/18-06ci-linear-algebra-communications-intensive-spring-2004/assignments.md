@@ -1,0 +1,16 @@
+- Source: https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+Below are the homework assignments in three formats (.tex, .ps, and .pdf). The solutions are courtesy Juha Valkama, a student in the class, and are provided in two formats (.tex and .pdf). Used with permission. The week numbers referred to in the table are due dates for the final version of the homework assignments.
+
+| WEEK # | ASSIGNMENTS | SOLUTIONS |
+| --- | --- | --- |
+| 3 | Homework #1 ( <br> [TEX](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al1-12/) <br> ) ( <br> [PS](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al1-1/) <br> ) ( <br> [PDF](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al1/) <br> ) | ( <br> [TEX](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/hw12/) <br> ) ( <br> [PDF](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/hw1/) <br> ) |
+| 4 | Homework #2 ( <br> [TEX](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al2-12/) <br> ) ( <br> [PS](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al2-1/) <br> ) ( <br> [PDF](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al2/) <br> ) | ( <br> [TEX](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/hw22/) <br> ) ( <br> [PDF](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/hw2/) <br> ) |
+| 6 | Homework #3 ( <br> [TEX](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al32/) <br> ) ( <br> [PS](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al3-1/) <br> ) ( <br> [PDF](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al3/) <br> ) | ( <br> [TEX](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/hw3-1/) <br> ) ( <br> [PDF](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/hw3/) <br> ) |
+| 7 | Homework #4 ( <br> [TEX](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al4-2/) <br> ) ( <br> [PS](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al4/) <br> ) ( <br> [PDF](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/al4-1/) <br> ) | ( <br> [TEX](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/hw42/) <br> ) ( <br> [PDF](https://ocw.mit.edu/courses/18-06ci-linear-algebra-communications-intensive-spring-2004/resources/hw4/) <br> ) |
