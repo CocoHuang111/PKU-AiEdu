@@ -3,7 +3,7 @@
     <header class="nav">
       <div class="brand">
         北大问教
-        <span>PKU-AskEdu 2.0</span>
+        <span>PKU-AiEdu</span>
       </div>
     </header>
 

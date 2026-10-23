@@ -1,4 +1,4 @@
-# 北大问教 2.0 — 基础依赖
+# 北大问教 — 基础依赖
 # 需要 Python 3.11（3.13+ 缺 ctranslate2 / chromadb 的 arm64 wheel）
 #   conda create -n pku2 python=3.11 -y && conda activate pku2
 #   pip install -r requirements.txt
