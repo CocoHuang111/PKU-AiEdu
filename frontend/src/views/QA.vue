@@ -124,7 +124,14 @@
 
           <div v-else class="thread">
             <div v-for="(m, i) in messages" :key="i" class="msg" :class="m.role">
-              <div v-if="m.role === 'user'" class="bubble user">{{ m.content }}</div>
+              <div v-if="m.role === 'user'" class="user-message">
+                <div v-if="m.attachments?.length" class="message-attachments">
+                  <span v-for="file in m.attachments" :key="file.id" class="message-attachment">
+                    <el-icon><Document /></el-icon>{{ file.name }}
+                  </span>
+                </div>
+                <div class="bubble user">{{ m.content }}</div>
+              </div>
               <div v-else class="assistant">
                 <div v-if="m.plan" class="plan">
                   <span class="mode-badge">{{ m.plan.mode_label || modeLabel(m.mode) }}</span>
@@ -180,7 +187,7 @@
                         >{{ c.source }}</a>
                         <span v-else class="citation-source">{{ c.source }}</span>
                         <span class="citation-score">
-                          {{ c.pinned ? '指定带入' : c.whole_case ? '完整案例' : `相似度 ${c.score}` }}
+                          {{ c.context_type === 'attachment' ? '上传材料' : c.pinned ? '指定带入' : c.whole_case ? '完整案例' : `相似度 ${c.score}` }}
                         </span>
                       </div>
                       <div v-if="c.whole_case && c.documents?.length" class="citation-documents">
@@ -197,92 +204,179 @@
 
         <footer class="composer-wrap">
           <div class="composer">
-            <div class="mode-switch" role="radiogroup" aria-label="问答模式">
-              <button
-                v-for="mode in qaModes"
-                :key="mode.name"
-                type="button"
-                class="mode-button"
-                :class="{ active: selectedMode === mode.name }"
-                :aria-pressed="selectedMode === mode.name"
-                :title="mode.description"
-                @click="setMode(mode.name)"
-              >
-                {{ mode.label }}
-              </button>
-            </div>
             <div class="composer-box">
-              <el-popover
-                v-model:visible="corpusMenuOpen"
-                placement="top-start"
-                :width="300"
-                trigger="click"
-                @show="loadEvalReports"
-              >
-                <template #reference>
-                  <button
-                    class="plus-btn"
-                    type="button"
-                    :class="{ active: corporaNarrowed }"
-                    title="检索范围"
-                  >
-                    <el-icon :size="18"><Plus /></el-icon>
-                  </button>
-                </template>
-                <div class="corpus-menu">
-                  <div class="corpus-menu-title">检索范围</div>
-                  <el-checkbox-group v-model="staticSelectedCorpora">
-                    <el-checkbox
-                      v-for="c in staticCorpora"
-                      :key="c.name"
-                      :value="c.name"
-                      :disabled="!c.count"
-                    >
-                      {{ c.label }}（{{ c.count }}）
-                    </el-checkbox>
-                  </el-checkbox-group>
-                  <button
-                    class="eval-report-entry"
-                    type="button"
-                    :class="{ active: selectedEvalTaskIds.length }"
-                    @click="openEvalDialog"
-                  >
-                    <span class="eval-report-check" :class="{ on: selectedEvalTaskIds.length }" />
-                    <span class="eval-report-entry-text">
-                      <span>
-                        {{ evalCorpus?.label || '历史评估报告' }}（{{ evalCorpus?.count || 0 }}）
-                      </span>
-                      <span class="eval-report-entry-meta">
-                        {{
-                          selectedEvalTaskIds.length
-                            ? `已选 ${selectedEvalTaskIds.length} 份，点击更改`
-                            : '默认不检索，点击选择任务'
-                        }}
-                      </span>
+              <div v-if="selectedAttachments.length" class="attachment-tray">
+                <div
+                  v-for="file in selectedAttachments"
+                  :key="file.id"
+                  class="attachment-chip"
+                  :class="{ uploading: isUploading(file) }"
+                >
+                  <div class="attachment-type" :class="fileKind(file).tone">
+                    {{ fileKind(file).label }}
+                  </div>
+                  <div class="attachment-chip-content">
+                    <span class="attachment-chip-name" :title="file.name">{{ file.name }}</span>
+                    <span class="attachment-chip-size">{{ formatSize(file.size) }}</span>
+                    <span class="attachment-chip-status" :class="{ done: !isUploading(file) }">
+                      <template v-if="isUploading(file)">正在上传 {{ attachmentUploadProgress }}%</template>
+                      <template v-else>
+                        <el-icon :size="14"><CircleCheckFilled /></el-icon>
+                        上传完成
+                      </template>
                     </span>
+                  </div>
+                  <el-tooltip
+                    v-if="file.warnings?.length"
+                    :content="file.warnings.join(' ')"
+                    placement="top"
+                  >
+                    <span class="attachment-warning">!</span>
+                  </el-tooltip>
+                  <button type="button" title="移除并删除文件" @click="removeAttachment(file)">
+                    <el-icon><Close /></el-icon>
                   </button>
+                  <el-progress
+                    v-if="isUploading(file)"
+                    class="attachment-progress"
+                    :percentage="attachmentUploadProgress"
+                    :stroke-width="3"
+                    :show-text="false"
+                  />
                 </div>
-              </el-popover>
+              </div>
               <el-input
                 v-model="input"
+                class="composer-input"
                 type="textarea"
                 :autosize="{ minRows: 1, maxRows: 6 }"
                 resize="none"
                 :placeholder="currentMode.placeholder"
                 @keydown.enter.exact.prevent="send"
               />
-              <el-button
-                class="send-btn"
-                type="primary"
-                circle
-                :loading="sending"
-                :disabled="sending || !input.trim()"
-                @click="send"
-              >
-                <el-icon v-if="!sending" :size="16"><Promotion /></el-icon>
-              </el-button>
+              <div class="composer-toolbar">
+                <button
+                  class="composer-tool-btn upload-btn"
+                  type="button"
+                  :disabled="uploadingAttachments"
+                  title="上传作业、成绩、大纲、图片或其他材料"
+                  aria-label="上传文件"
+                  @click="uploadInput?.click()"
+                >
+                  <el-icon :size="18" :class="{ 'is-loading': uploadingAttachments }">
+                    <Loading v-if="uploadingAttachments" />
+                    <Plus v-else />
+                  </el-icon>
+                </button>
+                <input
+                  ref="uploadInput"
+                  class="visually-hidden"
+                  type="file"
+                  multiple
+                  accept=".pdf,.docx,.doc,.pptx,.xlsx,.csv,.tsv,.md,.txt,.html,.htm,.jpg,.jpeg,.png,.gif,.webp,image/jpeg,image/png,image/gif,image/webp"
+                  @change="onFilesChosen"
+                />
+                <div class="composer-toolbar-right">
+                  <el-popover
+                    v-model:visible="corpusMenuOpen"
+                    placement="top-end"
+                    :width="180"
+                    trigger="click"
+                    popper-class="mode-corpus-popper"
+                    @show="onCorpusMenuShow"
+                  >
+                    <template #reference>
+                      <button
+                        class="mode-trigger"
+                        type="button"
+                        :title="`当前模式：${currentMode.label}；点击选择模式与知识库`"
+                        aria-label="选择模式与知识库"
+                      >
+                        <el-icon :size="15" class="mode-icon">
+                          <component :is="modeIcon(currentMode.name)" />
+                        </el-icon>
+                        <span>{{ currentMode.label }}</span>
+                        <el-icon :size="13"><ArrowUp /></el-icon>
+                      </button>
+                    </template>
+                    <div ref="modeCorpusMenuEl" class="mode-corpus-menu">
+                      <div ref="modeMenuHeadEl" class="mode-menu-head">
+                        <div class="corpus-menu-title">问答模式</div>
+                        <div class="mode-menu" role="radiogroup" aria-label="问答模式">
+                          <el-tooltip
+                            v-for="mode in qaModes"
+                            :key="mode.name"
+                            :content="mode.description"
+                            placement="left"
+                            effect="dark"
+                            :show-after="180"
+                            :fallback-placements="['left-start', 'top']"
+                            popper-class="mode-option-tip"
+                          >
+                            <button
+                              type="button"
+                              class="mode-option"
+                              :class="{ active: selectedMode === mode.name }"
+                              :aria-pressed="selectedMode === mode.name"
+                              @click="setMode(mode.name)"
+                            >
+                              <el-icon :size="15" class="mode-icon">
+                                <component :is="modeIcon(mode.name)" />
+                              </el-icon>
+                              <span>{{ mode.label }}</span>
+                            </button>
+                          </el-tooltip>
+                        </div>
+                        <div class="corpus-menu-title knowledge-title">知识库</div>
+                      </div>
+                      <el-checkbox-group v-model="staticSelectedCorpora">
+                        <el-checkbox
+                          v-for="c in staticCorpora"
+                          :key="c.name"
+                          :value="c.name"
+                          :disabled="!c.count"
+                        >
+                          {{ c.label }}
+                        </el-checkbox>
+                      </el-checkbox-group>
+                      <button
+                        class="eval-report-entry"
+                        type="button"
+                        :class="{ active: selectedEvalTaskIds.length }"
+                        @click="openEvalDialog"
+                      >
+                        <span class="eval-report-check" :class="{ on: selectedEvalTaskIds.length }" />
+                        <span class="eval-report-entry-text">
+                          <span>
+                            {{ evalCorpus?.label || '历史评估报告' }}
+                          </span>
+                          <span class="eval-report-entry-meta">
+                            {{
+                              selectedEvalTaskIds.length
+                                ? `已选 ${selectedEvalTaskIds.length} 份，点击更改`
+                                : '点击选择任务'
+                            }}
+                          </span>
+                        </span>
+                      </button>
+                    </div>
+                  </el-popover>
+                  <el-button
+                    class="send-btn"
+                    type="primary"
+                    circle
+                    :loading="sending"
+                    :disabled="sending || uploadingAttachments || !input.trim()"
+                    @click="send"
+                  >
+                    <el-icon v-if="!sending" :size="16"><Promotion /></el-icon>
+                  </el-button>
+                </div>
+              </div>
             </div>
-            <div class="composer-hint">Enter 发送，Shift+Enter 换行</div>
+            <div class="composer-hint">
+              Enter 发送，Shift+Enter 换行
+            </div>
           </div>
         </footer>
       </section>
@@ -331,14 +425,30 @@ export default { name: 'QA' }
 </script>
 
 <script setup>
-import { onActivated, onMounted, ref } from 'vue'
-import { ChatDotRound, ChatLineRound, DArrowLeft, MoreFilled, Plus, Promotion, Search } from '@element-plus/icons-vue'
+import { nextTick, onActivated, onMounted, ref } from 'vue'
+import {
+  ArrowUp,
+  ChatDotRound,
+  ChatLineRound,
+  CircleCheckFilled,
+  Close,
+  DArrowLeft,
+  DataAnalysis,
+  Document,
+  EditPen,
+  Loading,
+  MoreFilled,
+  Notebook,
+  Plus,
+  Promotion,
+  Search,
+} from '@element-plus/icons-vue'
 import { marked } from 'marked'
 import DOMPurify from 'dompurify'
 import { authState } from '../authStore'
 import {
   applyEvalTaskSelection,
-  corporaNarrowed,
+  attachmentUploadProgress,
   corpusLabel,
   currentMode,
   currentPinned,
@@ -359,6 +469,7 @@ import {
   openSession,
   qaModes,
   selectedEvalTaskIds,
+  selectedAttachments,
   selectedMode,
   setMode,
   sending,
@@ -369,15 +480,38 @@ import {
   sidebarOpen,
   staticCorpora,
   staticSelectedCorpora,
+  uploadingAttachments,
+  uploadAttachments as uploadQaAttachments,
+  removeAttachment,
   useSample,
   visibleGroups,
   send,
 } from '../qaStore'
 
 const bodyEl = ref(null)
+const uploadInput = ref(null)
 const corpusMenuOpen = ref(false)
+const modeCorpusMenuEl = ref(null)
+const modeMenuHeadEl = ref(null)
 const evalDialogOpen = ref(false)
 const evalDraftIds = ref([])
+
+function clipMenuToKnowledgeTitle() {
+  const menu = modeCorpusMenuEl.value
+  const head = modeMenuHeadEl.value
+  if (!menu || !head || !head.offsetHeight) return false
+  menu.style.maxHeight = `${head.offsetHeight}px`
+  return true
+}
+
+async function onCorpusMenuShow() {
+  loadEvalReports()
+  for (let i = 0; i < 12; i += 1) {
+    await nextTick()
+    if (clipMenuToKnowledgeTitle()) return
+    await new Promise((resolve) => requestAnimationFrame(resolve))
+  }
+}
 
 async function openEvalDialog() {
   corpusMenuOpen.value = false
@@ -397,6 +531,54 @@ function clearEvalDraft() {
 function confirmEvalDialog() {
   applyEvalTaskSelection(evalDraftIds.value)
   evalDialogOpen.value = false
+}
+
+async function onFilesChosen(event) {
+  const files = event.target.files
+  try {
+    await uploadQaAttachments(files)
+  } finally {
+    event.target.value = ''
+  }
+}
+
+const MODE_ICONS = {
+  ask: ChatDotRound,
+  syllabus_design: Notebook,
+  teaching_design: EditPen,
+  learning_diagnosis: DataAnalysis,
+}
+
+function modeIcon(name) {
+  return MODE_ICONS[name] || ChatDotRound
+}
+
+function isUploading(file) {
+  return file?.status === 'uploading' || String(file?.id || '').startsWith('pending-')
+}
+
+function fileKind(file) {
+  const ext = String(file?.suffix || file?.name || '')
+    .replace(/^\./, '')
+    .split('.')
+    .pop()
+    .toLowerCase()
+  if (ext === 'pdf') return { label: 'PDF', tone: 'pdf' }
+  if (ext === 'doc' || ext === 'docx') return { label: 'DOC', tone: 'doc' }
+  if (['xls', 'xlsx', 'csv', 'tsv'].includes(ext)) return { label: 'XLS', tone: 'xls' }
+  if (ext === 'ppt' || ext === 'pptx') return { label: 'PPT', tone: 'ppt' }
+  if (ext === 'md') return { label: 'MD', tone: 'txt' }
+  if (ext === 'txt') return { label: 'TXT', tone: 'txt' }
+  if (ext === 'html' || ext === 'htm') return { label: 'HTML', tone: 'txt' }
+  if (['jpg', 'jpeg', 'png', 'gif', 'webp'].includes(ext)) return { label: 'IMG', tone: 'img' }
+  return { label: (ext || 'FILE').toUpperCase().slice(0, 4), tone: 'file' }
+}
+
+function formatSize(bytes) {
+  if (!Number.isFinite(bytes) || bytes < 0) return ''
+  if (bytes >= 1024 ** 2) return `${(bytes / 1024 ** 2).toFixed(1)} MB`
+  if (bytes >= 1024) return `${Math.round(bytes / 1024)} KB`
+  return `${bytes} B`
 }
 
 function renderMd(text) {
@@ -589,6 +771,13 @@ onActivated(() => {
   justify-content: flex-start;
 }
 
+.user-message {
+  max-width: 72%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
 .bubble.user {
   max-width: 72%;
   padding: 10px 16px;
@@ -598,6 +787,30 @@ onActivated(() => {
   font-size: 15px;
   line-height: 1.7;
   white-space: pre-wrap;
+}
+.user-message .bubble.user {
+  max-width: 100%;
+}
+.message-attachments {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.message-attachment {
+  max-width: 280px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  color: #606266;
+  background: #fff;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .assistant {
@@ -784,82 +997,98 @@ onActivated(() => {
   max-width: 768px;
   margin: 0 auto;
 }
-.mode-switch {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin: 0 8px 8px;
-  overflow-x: auto;
-  scrollbar-width: none;
-}
-.mode-switch::-webkit-scrollbar {
-  display: none;
-}
-.mode-button {
-  flex-shrink: 0;
-  padding: 6px 12px;
-  border: 1px solid #e4e4e4;
-  border-radius: 999px;
-  background: #fff;
-  color: #606266;
-  font-size: 13px;
-  line-height: 1.2;
-  cursor: pointer;
-}
-.mode-button:hover {
-  border-color: #c98f90;
-  color: #7b1113;
-}
-.mode-button.active {
-  border-color: #a61b1b;
-  background: #f5e6e6;
-  color: #7b1113;
-  font-weight: 600;
-}
 .composer-box {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e4e4e4;
-  border-radius: 26px;
+  border-radius: 24px;
   background: #fff;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-  padding: 10px 52px 10px 48px;
+  padding: 10px 12px 8px;
+  overflow: hidden;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 .composer-box:focus-within {
   border-color: #d0d0d0;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
 }
+.composer-input {
+  width: 100%;
+}
 .composer-box :deep(.el-textarea__inner) {
   box-shadow: none;
   border: none;
-  padding: 4px 0;
+  padding: 2px 4px 8px;
   background: transparent;
   font-size: 15px;
   line-height: 1.6;
 }
-.plus-btn {
-  position: absolute;
-  left: 8px;
-  bottom: 8px;
+.composer-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 34px;
+}
+.composer-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+.composer-tool-btn {
+  flex: 0 0 auto;
   width: 34px;
   height: 34px;
   border: none;
   border-radius: 50%;
-  background: #f4f4f4;
+  background: transparent;
   color: #4b4b4b;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-.plus-btn:hover,
-.plus-btn.active {
-  background: #f5e6e6;
-  color: #a61b1b;
+.composer-tool-btn:hover {
+  background: #f3f3f3;
+}
+.composer-tool-btn:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+.mode-trigger {
+  flex: 0 0 auto;
+  height: 34px;
+  padding: 0 5px 0 8px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: #4b4b4b;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.mode-trigger:hover {
+  background: #f3f3f3;
+}
+.mode-icon {
+  flex-shrink: 0;
+  color: inherit;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 .send-btn {
-  position: absolute;
-  right: 8px;
-  bottom: 8px;
+  flex: 0 0 auto;
   width: 34px;
   height: 34px;
 }
@@ -870,16 +1099,189 @@ onActivated(() => {
   margin-top: 8px;
 }
 
+.attachment-tray {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 2px 1px 10px;
+}
+.attachment-chip {
+  flex: 0 0 auto;
+  position: relative;
+  width: 248px;
+  min-height: 72px;
+  padding: 10px 28px 10px 10px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  background: #fff;
+  color: #303133;
+  overflow: hidden;
+}
+.attachment-type {
+  width: 44px;
+  height: 52px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.attachment-type.pdf {
+  background: #c0392b;
+}
+.attachment-type.doc {
+  background: #2b579a;
+}
+.attachment-type.xls {
+  background: #1d7a46;
+}
+.attachment-type.ppt {
+  background: #d24726;
+}
+.attachment-type.txt,
+.attachment-type.file {
+  background: #6b7280;
+}
+.attachment-type.img {
+  background: #0f766e;
+}
+.attachment-chip-content {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding-top: 1px;
+}
+.attachment-chip-name {
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.attachment-chip-size {
+  color: #909399;
+  font-size: 12px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+.attachment-chip-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #909399;
+  font-size: 12px;
+  line-height: 1.3;
+}
+.attachment-chip-status.done {
+  color: #1a9e5c;
+}
+.attachment-warning {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fdf0df;
+  color: #b36b00;
+  font-size: 11px;
+  font-weight: 700;
+}
+.attachment-chip button {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: #c0c4cc;
+  cursor: pointer;
+}
+.attachment-chip button:hover {
+  background: #f3f3f3;
+  color: #606266;
+}
+.attachment-progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  line-height: 0;
+}
+.attachment-progress :deep(.el-progress-bar__outer) {
+  border-radius: 0 0 12px 12px;
+  background: #f0f0f0;
+}
+.attachment-progress :deep(.el-progress-bar__inner) {
+  border-radius: 0;
+  background: #2b579a;
+}
+
+.mode-corpus-menu {
+  position: relative;
+  max-height: 220px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 .corpus-menu-title {
   font-size: 13px;
   font-weight: 600;
   color: #303133;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
-.corpus-menu :deep(.el-checkbox-group) {
+.mode-corpus-menu :deep(.el-checkbox-group) {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+.mode-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.mode-option {
+  width: 100%;
+  min-width: 0;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: #303133;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.mode-option:hover {
+  background: #f7f7f8;
+}
+.mode-option.active {
+  background: #fdf6f6;
+  color: #7b1113;
+  font-weight: 600;
+}
+.knowledge-title {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #f0f0f0;
 }
 .eval-report-entry {
   margin-top: 10px;
@@ -1110,10 +1512,35 @@ onActivated(() => {
   .bubble.user {
     max-width: 88%;
   }
+  .user-message {
+    max-width: 88%;
+  }
 }
 </style>
 
 <style>
+.mode-corpus-popper {
+  padding: 10px 8px !important;
+}
+.mode-corpus-popper .mode-corpus-menu {
+  scrollbar-width: thin;
+  scrollbar-color: #dcdcdc transparent;
+}
+.mode-option-tip.el-popper {
+  max-width: 180px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 8px;
+  background: #5c5c5c !important;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+.mode-option-tip.el-popper .el-popper__arrow::before {
+  background: #5c5c5c !important;
+  border: none;
+}
 .eval-report-dialog .eval-dialog-toolbar {
   display: flex;
   align-items: center;

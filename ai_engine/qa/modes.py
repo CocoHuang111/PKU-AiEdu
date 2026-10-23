@@ -130,7 +130,7 @@ MODES: tuple[QAMode, ...] = (
         name="learning_diagnosis",
         label="学情诊断",
         description="根据作业、课堂表现或评估报告识别问题并提出干预方案",
-        placeholder="粘贴或概述学生表现，也可以从“+”中选择历史评估报告",
+        placeholder="描述诊断问题，也可以上传作业、成绩表或选择历史评估报告",
         retrieval_strategy="evidence_first",
         default_corpora=(
             "edu_theory",

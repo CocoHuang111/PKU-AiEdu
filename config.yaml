@@ -109,6 +109,7 @@ rag:
   max_hits: 12 # 阈值过滤后最多引用条数
   max_context_chars: 6000 # 拼进提示词的检索上下文上限
   pinned_eval_max_chars: 12000 # 勾选的历史评估报告单独额度，不跟检索抢 6000
+  pinned_attachment_max_chars: 40000 # 本轮上传材料的总额度；超出时按文件顺序截断
 
 evaluation:
   segment_minutes: 5 # 转写按多少分钟切一段做客观特征统计

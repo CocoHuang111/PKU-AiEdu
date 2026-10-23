@@ -167,18 +167,23 @@ def _assemble_contexts(
     pinned_contexts: list[dict[str, Any]] | None,
 ) -> list[dict[str, Any]]:
     pinned = [c for c in (pinned_contexts or []) if c.get("text")]
-    if pinned:
+    eval_pinned = [c for c in pinned if c.get("context_type") == "eval_report"]
+    attachment_pinned = [c for c in pinned if c.get("context_type") == "attachment"]
+    if eval_pinned:
         names = list(plan.get("corpora") or [])
         if "eval_reports" not in names:
             names.append("eval_reports")
         plan["corpora"] = names
-        plan["pinned_eval_reports"] = len(pinned)
+        plan["pinned_eval_reports"] = len(eval_pinned)
+    if attachment_pinned:
+        plan["pinned_attachments"] = len(attachment_pinned)
+        plan["attachment_names"] = [c.get("source") for c in attachment_pinned]
     plan["eval_task_ids"] = eval_task_ids
     hits = _retrieve_hits(
         plan,
         user_id=user_id,
         eval_task_ids=eval_task_ids,
-        skip_eval_reports=bool(pinned),
+        skip_eval_reports=bool(eval_pinned),
     )
     strategy = str(plan.get("retrieval_strategy") or "chunk")
     case_contexts, matched_cases, consumed = hydrate_matched_cases(hits, strategy)
@@ -194,6 +199,24 @@ def _assemble_contexts(
     return merge_contexts(pinned, retrieved, max_chars=context_cap)
 
 
+def _image_blocks(contexts: list[dict]) -> list[dict]:
+    """把已内联的图片接到 user 消息末尾。图片不进入提示词正文。"""
+    blocks: list[dict] = []
+    for context in contexts:
+        if context.get("media_type") != "image":
+            continue
+        url = context.get("image_data_url") or ""
+        source = context.get("source") or "图片"
+        if not str(url).startswith("data:image/"):
+            raise ProviderError(f"图片「{source}」无法读取，请重新上传")
+        blocks.append({"type": "image_url", "image_url": {"url": url}})
+    if blocks and settings.mode != "cloud":
+        raise ProviderError(
+            "当前是本地文本模型，不能理解图片。请使用云端 deepseek-flash。"
+        )
+    return blocks
+
+
 def _build_messages(
     question: str,
     contexts: list[dict],
@@ -201,16 +224,22 @@ def _build_messages(
     mode: str = "ask",
 ) -> list[ChatMessage]:
     mode_config = get_mode(mode)
-    pinned = [c for c in contexts if c.get("pinned")]
+    pinned = [c for c in contexts if c.get("context_type") == "eval_report"]
+    attachments = [c for c in contexts if c.get("context_type") == "attachment"]
     retrieved = [c for c in contexts if not c.get("pinned")]
     prompt = render_prompt(
         "qa_answer.j2",
         contexts=contexts,
         pinned_contexts=pinned,
+        attachment_contexts=attachments,
         retrieved_contexts=retrieved,
         question=question,
         history=(history or [])[-MAX_HISTORY_TURNS:],
         mode=mode_config,
+    )
+    images = _image_blocks(contexts)
+    user_content: str | list = (
+        [{"type": "text", "text": prompt}, *images] if images else prompt
     )
     return [
         ChatMessage(
@@ -218,7 +247,7 @@ def _build_messages(
             f"你是面向高校教师的教学支持助手「北大问教」，"
             f"当前工作模式为「{mode_config.label}」。",
         ),
-        ChatMessage("user", prompt),
+        ChatMessage("user", user_content),
     ]
 
 
@@ -233,6 +262,7 @@ def _citations(contexts: list[dict]) -> list[dict]:
             "score": c["score"],
             "snippet": c["text"][:200],
             "pinned": bool(c.get("pinned")),
+            "context_type": c.get("context_type", ""),
             "whole_case": bool(c.get("whole_case")),
             "documents": c.get("documents", []),
         }
@@ -253,7 +283,9 @@ def ask(
         question,
         history,
         corpora,
-        eval_selected=bool(pinned_contexts),
+        eval_selected=any(
+            c.get("context_type") == "eval_report" for c in (pinned_contexts or [])
+        ),
         mode=mode,
     )
     contexts = _assemble_contexts(plan, user_id, eval_task_ids, pinned_contexts)
@@ -285,7 +317,9 @@ def ask_stream(
         question,
         history,
         corpora,
-        eval_selected=bool(pinned_contexts),
+        eval_selected=any(
+            c.get("context_type") == "eval_report" for c in (pinned_contexts or [])
+        ),
         mode=mode,
     )
     contexts = _assemble_contexts(plan, user_id, eval_task_ids, pinned_contexts)

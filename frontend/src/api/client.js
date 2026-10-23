@@ -220,6 +220,19 @@ export const syllabusApi = {
 export const qaApi = {
   modes: () => client.get('/api/qa/modes'),
   corpora: () => client.get('/api/qa/corpora'),
+  uploadAttachments(files, onProgress) {
+    const form = new FormData()
+    for (const file of files) form.append('files', file)
+    return client.post('/api/qa/attachments', form, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+      onUploadProgress: (event) => {
+        if (onProgress && event.total) {
+          onProgress(Math.round((event.loaded / event.total) * 100))
+        }
+      },
+    })
+  },
+  deleteAttachment: (id) => client.delete(`/api/qa/attachments/${id}`),
   sessions: () => client.get('/api/qa/sessions'),
   getSession: (id) => client.get(`/api/qa/session/${id}`),
   patchSession: (id, data) => client.patch(`/api/qa/session/${id}`, data),

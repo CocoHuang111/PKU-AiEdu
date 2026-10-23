@@ -20,6 +20,9 @@ export const corpora = ref([])
 export const selectedCorpora = ref([])
 export const evalReports = ref([])
 export const selectedEvalTaskIds = ref([])
+export const selectedAttachments = ref([])
+export const uploadingAttachments = ref(false)
+export const attachmentUploadProgress = ref(0)
 export const input = ref('')
 export const sidebarOpen = ref(true)
 export const sessionQuery = ref('')
@@ -56,6 +59,9 @@ export function resetQa() {
   selectedCorpora.value = []
   evalReports.value = []
   selectedEvalTaskIds.value = []
+  selectedAttachments.value = []
+  uploadingAttachments.value = false
+  attachmentUploadProgress.value = 0
   input.value = ''
   sessionQuery.value = ''
   try {
@@ -285,6 +291,7 @@ export function newSession() {
   pollingId.value = null
   sessionId.value = null
   messages.value = []
+  selectedAttachments.value = []
   setMode('ask')
   persistSessionId(null)
 }
@@ -299,6 +306,7 @@ export async function openSession(id) {
   if (liveJob) {
     sessionId.value = id
     messages.value = liveJob.messages
+    selectedAttachments.value = [...(liveJob.attachments || [])]
     setMode(liveJob.mode || 'ask')
     persistSessionId(id)
     stopPoll()
@@ -310,6 +318,9 @@ export async function openSession(id) {
     const s = await qaApi.getSession(id)
     sessionId.value = id
     messages.value = hydrateMessages(s.history)
+    selectedAttachments.value = [
+      ...([...messages.value].reverse().find((m) => m.role === 'user' && m.attachments)?.attachments || []),
+    ]
     const lastMode = [...messages.value].reverse().find((m) => m.mode)?.mode || 'ask'
     setMode(lastMode)
     persistSessionId(id)
@@ -407,6 +418,64 @@ export function useSample(q) {
   input.value = q
 }
 
+function isPendingAttachment(item) {
+  return !item || item.status === 'uploading' || String(item.id || '').startsWith('pending-')
+}
+
+export async function uploadAttachments(files) {
+  const pending = Array.from(files || [])
+  if (!pending.length || uploadingAttachments.value) return
+  if (selectedAttachments.value.length + pending.length > 8) {
+    ElMessage.warning('一次最多选择 8 个文件')
+    return
+  }
+  const placeholders = pending.map((file, index) => ({
+    id: `pending-${Date.now()}-${index}`,
+    name: file.name,
+    suffix: `.${String(file.name).split('.').pop() || ''}`.toLowerCase(),
+    size: file.size || 0,
+    status: 'uploading',
+    preview: '',
+    warnings: [],
+  }))
+  selectedAttachments.value = [...selectedAttachments.value, ...placeholders]
+  uploadingAttachments.value = true
+  attachmentUploadProgress.value = 0
+  try {
+    const result = await qaApi.uploadAttachments(pending, (progress) => {
+      attachmentUploadProgress.value = progress
+    })
+    const existing = new Set(
+      selectedAttachments.value.filter((item) => !isPendingAttachment(item)).map((item) => item.id)
+    )
+    selectedAttachments.value = [
+      ...selectedAttachments.value.filter((item) => !isPendingAttachment(item)),
+      ...(result.attachments || []).filter((item) => !existing.has(item.id)),
+    ]
+    for (const error of result.errors || []) {
+      ElMessage.warning(`${error.name}：${error.message}`)
+    }
+    if (result.attachments?.length) {
+      ElMessage.success(`已添加 ${result.attachments.length} 个文件`)
+    }
+  } catch {
+    selectedAttachments.value = selectedAttachments.value.filter((item) => !isPendingAttachment(item))
+  } finally {
+    uploadingAttachments.value = false
+    attachmentUploadProgress.value = 0
+  }
+}
+
+export async function removeAttachment(item) {
+  selectedAttachments.value = selectedAttachments.value.filter((a) => a.id !== item.id)
+  if (isPendingAttachment(item)) return
+  try {
+    await qaApi.deleteAttachment(item.id)
+  } catch {
+    // 已从当前问题移除；服务端不存在或删除失败由拦截器提示。
+  }
+}
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
@@ -466,7 +535,7 @@ function createLineRevealer(reply, job) {
 
 export async function send() {
   const question = input.value.trim()
-  if (!question || sending.value) return
+  if (!question || sending.value || uploadingAttachments.value) return
 
   // The attached evaluation reports apply to this question only. Snapshot them
   // before resetting the composer so the next question returns to the current
@@ -476,6 +545,7 @@ export async function send() {
   const evalTaskIdsForRequest = corporaForRequest.includes('eval_reports')
     ? [...selectedEvalTaskIds.value]
     : null
+  const attachmentsForRequest = selectedAttachments.value.map((item) => ({ ...item }))
   applyEvalTaskSelection([])
   applyModeCorpora()
 
@@ -483,7 +553,12 @@ export async function send() {
   pollingId.value = null
   input.value = ''
   const thread = messages.value
-  thread.push({ role: 'user', content: question, mode: modeForRequest })
+  thread.push({
+    role: 'user',
+    content: question,
+    mode: modeForRequest,
+    attachments: attachmentsForRequest,
+  })
 
   const reply = {
     role: 'assistant',
@@ -502,6 +577,7 @@ export async function send() {
     messages: thread,
     sending: true,
     mode: modeForRequest,
+    attachments: attachmentsForRequest,
   }
   jobs.value = [...jobs.value, job]
   const reveal = createLineRevealer(reply, job)
@@ -515,6 +591,7 @@ export async function send() {
         sessionId: job.sessionId,
         corpora: corporaForRequest,
         evalTaskIds: evalTaskIdsForRequest,
+        attachmentIds: attachmentsForRequest.map((item) => item.id),
       },
       (event) => {
         if (event.type === 'plan') reply.plan = event.data

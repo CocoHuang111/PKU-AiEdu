@@ -4,7 +4,7 @@ import asyncio
 import json
 from collections.abc import AsyncIterator
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
 from fastapi.responses import StreamingResponse
 
 from ai_engine.config import settings
@@ -16,6 +16,16 @@ from ..core.audit import audit
 from ..core.auth import current_user
 from ..core.database import session_scope
 from ..core.execution import run_qa
+from ..core.qa_attachments import (
+    MAX_FILE_BYTES,
+    MAX_FILES_PER_UPLOAD,
+    MAX_REQUEST_IMAGE_BYTES,
+    delete_attachment,
+    image_data_url,
+    load_attachment,
+    original_path,
+    save_attachment,
+)
 from ..schemas import QAForm, SessionPatch
 
 router = APIRouter(prefix="/api/qa", tags=["教学智能问答"])
@@ -31,9 +41,23 @@ def _spawn(coro) -> asyncio.Task:
     return task
 
 
-def _pending_history(history: list[dict], question: str, mode: str) -> list[dict]:
+def _user_turn(
+    question: str, mode: str, attachments: list[dict] | None = None
+) -> dict:
+    turn = {"role": "user", "content": question, "mode": mode}
+    if attachments:
+        turn["attachments"] = attachments
+    return turn
+
+
+def _pending_history(
+    history: list[dict],
+    question: str,
+    mode: str,
+    attachments: list[dict] | None = None,
+) -> list[dict]:
     return list(history) + [
-        {"role": "user", "content": question, "mode": mode},
+        _user_turn(question, mode, attachments),
         {
             "role": "assistant",
             "content": "",
@@ -53,6 +77,7 @@ def _complete_history(
     citations: list | None = None,
     plan: dict | None = None,
     mode: str = "ask",
+    attachments: list[dict] | None = None,
 ) -> list[dict]:
     assistant: dict = {
         "role": "assistant",
@@ -63,7 +88,7 @@ def _complete_history(
     if plan is not None:
         assistant["plan"] = plan
     return list(history) + [
-        {"role": "user", "content": question, "mode": mode},
+        _user_turn(question, mode, attachments),
         assistant,
     ]
 
@@ -144,6 +169,7 @@ def _format_eval_context(task: dict) -> dict | None:
         "source": f"评估报告-{name}",
         "score": 1.0,
         "pinned": True,
+        "context_type": "eval_report",
     }
 
 
@@ -161,6 +187,111 @@ async def _pinned_eval_contexts(
         if ctx:
             items.append(ctx)
     return items
+
+
+def _attachment_contexts(
+    user_id: str, attachment_ids: list[str] | None
+) -> tuple[list[dict], list[dict]]:
+    contexts: list[dict] = []
+    history_items: list[dict] = []
+    missing: list[str] = []
+    image_bytes = 0
+    for attachment_id in dict.fromkeys(attachment_ids or []):
+        loaded = load_attachment(user_id, attachment_id)
+        if not loaded:
+            missing.append(attachment_id)
+            continue
+        metadata, text = loaded
+        warnings = metadata.get("warnings") or []
+        warning_text = (
+            "\n解析说明：" + " ".join(str(item) for item in warnings) if warnings else ""
+        )
+        context = {
+            "corpus": "user_files",
+            "corpus_label": "本次上传材料",
+            "source": metadata["name"],
+            "score": 1.0,
+            "pinned": True,
+            "context_type": "attachment",
+            "warnings": warnings,
+        }
+        if metadata.get("kind") == "image":
+            path = original_path(user_id, attachment_id)
+            if path is None:
+                missing.append(attachment_id)
+                continue
+            image_bytes += int(metadata.get("size") or 0)
+            if image_bytes > MAX_REQUEST_IMAGE_BYTES:
+                raise HTTPException(
+                    400, "本次图片合计超过 30 MB，请减少图片后再提问"
+                )
+            mime = metadata.get("content_type") or "image/jpeg"
+            context["text"] = (
+                f"文件名：{metadata['name']}{warning_text}\n"
+                "这是一张图片，原图附在本条消息末尾。"
+            )
+            context["media_type"] = "image"
+            context["mime"] = mime
+            context["image_data_url"] = image_data_url(path, mime)
+        else:
+            context["text"] = f"文件名：{metadata['name']}{warning_text}\n\n{text}"
+        contexts.append(context)
+        history_items.append(
+            {
+                "id": metadata["id"],
+                "name": metadata["name"],
+                "size": metadata["size"],
+                "char_count": metadata["char_count"],
+                "kind": metadata.get("kind") or "text",
+                "warnings": warnings,
+            }
+        )
+    if missing:
+        raise HTTPException(400, "部分附件已不存在，请移除后重新上传")
+    if image_bytes and settings.mode != "cloud":
+        raise HTTPException(
+            400, "当前是本地文本模型，不能理解图片。请使用云端 deepseek-flash。"
+        )
+    return contexts, history_items
+
+
+@router.post("/attachments")
+async def upload_attachments(
+    files: list[UploadFile] = File(...), user: dict = Depends(current_user)
+) -> dict:
+    """上传并提取问答材料。提取结果私有保存，不进入向量库。"""
+    if not files or len(files) > MAX_FILES_PER_UPLOAD:
+        raise HTTPException(400, f"一次最多上传 {MAX_FILES_PER_UPLOAD} 个文件")
+    attachments: list[dict] = []
+    errors: list[dict] = []
+    for file in files:
+        name = file.filename or "未命名"
+        content = await file.read(MAX_FILE_BYTES + 1)
+        try:
+            item = await asyncio.to_thread(
+                save_attachment,
+                user_id=user["id"],
+                original_name=name,
+                content=content,
+                content_type=file.content_type or "",
+            )
+            attachments.append(item)
+        except Exception as exc:
+            errors.append({"name": name, "message": str(exc)})
+        finally:
+            await file.close()
+    if not attachments and errors:
+        raise HTTPException(422, errors)
+    return {"attachments": attachments, "errors": errors}
+
+
+@router.delete("/attachments/{attachment_id}")
+async def remove_attachment(
+    attachment_id: str, user: dict = Depends(current_user)
+) -> dict:
+    if not await asyncio.to_thread(delete_attachment, user["id"], attachment_id):
+        raise HTTPException(404, "附件不存在")
+    return {"ok": True}
 
 
 def _strip_pending_turn(history: list[dict] | None) -> list[dict]:
@@ -185,7 +316,11 @@ async def _load_history(session_id: str | None, user_id: str) -> list[dict]:
 async def ask_once(form: QAForm, user: dict = Depends(current_user)) -> dict:
     history = await _load_history(form.session_id, user["id"])
     eval_task_ids = await _owned_eval_task_ids(user["id"], form.eval_task_ids)
-    pinned = await _pinned_eval_contexts(user["id"], eval_task_ids)
+    eval_contexts = await _pinned_eval_contexts(user["id"], eval_task_ids)
+    attachment_contexts, attachment_history = await asyncio.to_thread(
+        _attachment_contexts, user["id"], form.attachment_ids
+    )
+    pinned = eval_contexts + attachment_contexts
     result = await run_qa(
         ask,
         form.question,
@@ -197,16 +332,15 @@ async def ask_once(form: QAForm, user: dict = Depends(current_user)) -> dict:
         form.mode,
     )
 
-    history = history + [
-        {"role": "user", "content": form.question, "mode": form.mode},
-        {
-            "role": "assistant",
-            "content": result["answer"],
-            "mode": form.mode,
-            "citations": result["citations"],
-            "plan": result.get("plan"),
-        },
-    ]
+    history = _complete_history(
+        history,
+        form.question,
+        answer=result["answer"],
+        citations=result["citations"],
+        plan=result.get("plan"),
+        mode=form.mode,
+        attachments=attachment_history,
+    )
     session_id = await db.save_session(
         form.session_id, history, user_id=user["id"]
     )
@@ -218,12 +352,18 @@ async def ask_streaming(
     form: QAForm, user: dict = Depends(current_user)
 ) -> StreamingResponse:
     history = await _load_history(form.session_id, user["id"])
-    pending = _pending_history(history, form.question, form.mode)
+    eval_task_ids = await _owned_eval_task_ids(user["id"], form.eval_task_ids)
+    eval_contexts = await _pinned_eval_contexts(user["id"], eval_task_ids)
+    attachment_contexts, attachment_history = await asyncio.to_thread(
+        _attachment_contexts, user["id"], form.attachment_ids
+    )
+    pinned = eval_contexts + attachment_contexts
+    pending = _pending_history(
+        history, form.question, form.mode, attachment_history
+    )
     session_id = await db.save_session(
         form.session_id, pending, user_id=user["id"]
     )
-    eval_task_ids = await _owned_eval_task_ids(user["id"], form.eval_task_ids)
-    pinned = await _pinned_eval_contexts(user["id"], eval_task_ids)
 
     queue: asyncio.Queue = asyncio.Queue()
     loop = asyncio.get_running_loop()
@@ -263,6 +403,7 @@ async def ask_streaming(
                     citations=final.get("citations"),
                     plan=final.get("plan"),
                     mode=form.mode,
+                    attachments=attachment_history,
                 )
             else:
                 err = result["error"] or "生成失败"
@@ -271,6 +412,7 @@ async def ask_streaming(
                     form.question,
                     answer=f"（请求失败：{err}）",
                     mode=form.mode,
+                    attachments=attachment_history,
                 )
             await db.save_session(session_id, new_history, user_id=user["id"])
         finally:

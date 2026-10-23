@@ -72,6 +72,11 @@ class QAForm(BaseModel):
         ),
         max_length=200,
     )
+    attachment_ids: list[str] | None = Field(
+        None,
+        description="本轮问答指定带入的私有上传材料 ID；不会写入公共知识库",
+        max_length=12,
+    )
 
 
 class SessionPatch(BaseModel):
