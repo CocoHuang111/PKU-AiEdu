@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-742-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.742"
+cross_listed_codes: []
+course_title: "Writing About Race"
+course_slug: "21w-742-writing-about-race-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Sarah King"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Does race still matter, as Cornel West proclaimed in his 1994 book of that title, or do we now live, as others maintain, in a post-racial society? The very notion of what constitutes race remains a complex and evolving question in cultural terms. In this course we will engage this question head-on, reading and writing about issues involving the construction of race and racial identity as reflected from a number of vantage points and via a rich array of voices and genres. Readings will include literary works by such writers as Toni Morrison, Junot Diaz, and Sherman Alexie, as well as perspectives on film and popular culture from figures such as Malcolm Gladwell and Touré.
+course_url: "https://ocw.mit.edu/courses/21w-742-writing-about-race-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/21w-742-writing-about-race-spring-2013/faaea677a4a2450b9b427c98c5407890_21w-742s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

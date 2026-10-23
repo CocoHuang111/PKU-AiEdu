@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-777-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.777"
+cross_listed_codes: []
+course_title: "The Science Essay"
+course_slug: "21w-777-the-science-essay-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Karen Boiko"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Creative Writing"
+  - "Criticism"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Creative Writing"
+          - "Criticism"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The science essay uses science to think about the human condition; it uses humanistic thinking to reflect on the possibilities and limits of science and technology. In this class we read and practice writing science essays of varied lengths and purposes. We will read a wide variety of science essays, ranging across disciplines, both to learn more about this genre and to inspire your own writing. This semester’s reading centers on “The Dark Side,” with essays ranging from Alan Lightman’s “Prisoner of the Wired World” through Robin Marantz Henig’s cautionary account of nano-technology (“Our Silver-Coated Future”) to David Quammen’s investigation of diseases that jump from animals to humans (“Deadly Contact”).
+course_url: "https://ocw.mit.edu/courses/21w-777-the-science-essay-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/21w-777-the-science-essay-spring-2009/76f9eaae1a456be12ab5ee4230ea3252_21w-777s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

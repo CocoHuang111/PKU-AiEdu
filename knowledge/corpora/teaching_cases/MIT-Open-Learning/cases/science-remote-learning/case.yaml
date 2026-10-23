@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-science-remote-learning"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Science of Remote Learning"
+slug: "science-remote-learning"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Aaron Kessler"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/science-remote-learning"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "a0f8063ae370adfcf7abd1c95b236112f1723b1b7b3308e5cf1a22bc0bf4c32d"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-4-602-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.602"
+cross_listed_codes: []
+course_title: "Modern Art and Mass Culture"
+course_slug: "4-602-modern-art-and-mass-culture-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Caroline Jones"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Visual Arts"
+  - "Humanities"
+  - "History"
+  - "Modern History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Visual Arts"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Modern History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This class provides an introduction to modern art and theories of modernism and postmodernism. It focuses on the way artists use the tension between fine art and mass culture to mobilize a critique of both. We will examine objects of visual art, including painting, sculpture, architecture, photography, prints, performance and video. These objects will be viewed in their interaction with advertising, caricature, comics, graffiti, television, fashion, folk art, and “primitive” art.
+course_url: "https://ocw.mit.edu/courses/4-602-modern-art-and-mass-culture-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/4-602-modern-art-and-mass-culture-spring-2012/ba6a6a64334211c716fc759afd500eed_4-602s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

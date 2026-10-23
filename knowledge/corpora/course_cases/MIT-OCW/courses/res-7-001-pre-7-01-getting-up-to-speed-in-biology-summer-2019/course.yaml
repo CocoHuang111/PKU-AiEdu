@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-res-7-001-summer-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.7-001"
+cross_listed_codes: []
+course_title: "Pre-7.01: Getting up to Speed in Biology"
+course_slug: "res-7-001-pre-7-01-getting-up-to-speed-in-biology-summer-2019"
+term: "Summer"
+year: 2019
+as_taught_in: "Summer 2019"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Dr. Diviya Ray"
+  - "Prof. Hazel Sive"
+subject_primary: "Biology"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+description: |
+  This self-paced course was originally designed to help prepare incoming MIT students for their first Introductory Biology Course (known at MIT as 7.01). It will also be useful for anyone preparing to take an equivalent college-level introductory biology class elsewhere. It includes lecture videos, interactive exercises, problem sets, and one exam. Lecture Topics: Molecules of Life, The Cell and How it Works, Information Transfer in Biology, Inheritance and Genetics, and Building with DNA. Go to OCW’s Open Learning Library site for Pre-7.01: Getting up to Speed in Biology . The site is free to use, just like all OCW sites. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/res-7-001-pre-7-01-getting-up-to-speed-in-biology-summer-2019/"
+image_url: |
+  https://ocw.mit.edu/courses/res-7-001-pre-7-01-getting-up-to-speed-in-biology-summer-2019/d6688ff44379ced8d7b1be571d1a72fa_RES.7-001sum19.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

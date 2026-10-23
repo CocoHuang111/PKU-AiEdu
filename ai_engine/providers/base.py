@@ -14,7 +14,9 @@ class ProviderError(RuntimeError):
 @dataclass
 class ChatMessage:
     role: str  # system | user | assistant
-    content: str
+    # 纯文本是字符串。带图片时是 OpenAI 兼容的 content 块数组，
+    # 且只放在 user 消息里（DeepSeek 不接受 system/assistant 中的图片）。
+    content: str | list
 
 
 @dataclass

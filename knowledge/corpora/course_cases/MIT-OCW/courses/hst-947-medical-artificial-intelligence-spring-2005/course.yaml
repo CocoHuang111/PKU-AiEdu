@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-947-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.947"
+cross_listed_codes: []
+course_title: "Medical Artificial Intelligence"
+course_slug: "hst-947-medical-artificial-intelligence-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lucila Ohno-Machado"
+  - "Prof. Peter Szolovits"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biotechnology"
+  - "Computer Science"
+  - "Artificial Intelligence"
+  - "Health and Medicine"
+  - "Biomedicine"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biotechnology"
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedicine"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course provides an intensive introduction to artificial intelligence and its applications to problems of medical diagnosis, therapy selection, and monitoring and learning from databases. It meets with lectures and recitations of 6.034 Artificial Intelligence, whose material is supplemented by additional medical-specific readings in a weekly discussion session. Students are responsible for completing all homework assignments in 6.034 and for additional problems and/or papers.
+course_url: "https://ocw.mit.edu/courses/hst-947-medical-artificial-intelligence-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-947-medical-artificial-intelligence-spring-2005/f70ee0f1c53625851ffc57f215cc120c_hst-947s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

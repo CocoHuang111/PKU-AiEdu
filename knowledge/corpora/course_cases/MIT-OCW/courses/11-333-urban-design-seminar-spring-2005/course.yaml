@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-11-333-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.333"
+cross_listed_codes: []
+course_title: "Urban Design Seminar"
+course_slug: "11-333-urban-design-seminar-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dennis Frenchman"
+  - "Prof. Susan Silberberg"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+  - "Written Assignments"
+description: |
+  This course is a requirement for completion of the Urban Design Certificate Program. It investigates the complex nature of ‘successful’ urban design and attempts to identify and evaluate examples of urban design that are at the leading edge of practice, anticipating the future. The seminar will deal with two parallel questions: what are the key trends that will shape the future form and function of cities, and how will these changes affect the role of the urban designer? The first part of the seminar focuses on the present, and the second part of the semester will consider the future. After the course surveys the landscape of contemporary urban design practice, the challenge it will pose to students will be to identify the trajectory of cities and city design from both physical and social perspectives.
+course_url: "https://ocw.mit.edu/courses/11-333-urban-design-seminar-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/11-333-urban-design-seminar-spring-2005/83b7903b99d298ef29c2777be81ad34e_11-333s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

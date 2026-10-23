@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-transitioning-back-campus-tips-designing-ay21-22"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Transitioning Back to Campus: Tips for Designing AY21-22 Courses"
+slug: "transitioning-back-campus-tips-designing-ay21-22"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Aaron Kessler"
+  - "Lauren Totino"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/transitioning-back-campus-tips-designing-ay21-22"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "459e2cc39386ed30f7f1f183e87fa2e248825120f1b81f27b95c33b0341c01b9"

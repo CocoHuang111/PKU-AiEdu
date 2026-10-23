@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-res-21g-01-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.21G-01"
+cross_listed_codes: []
+course_title: "Kana"
+course_slug: "res-21g-01-kana-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ikue Shingu"
+  - "Yoshimi Nagaya"
+  - "Masami Ikeda-Lamm"
+  - "Tomoko Graham"
+  - "Prof. Shigeru Miyagawa"
+subject_primary: "Language"
+subject_secondary:
+  - "Japanese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Japanese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  Learning hiragana and katakana is an important part of reading and speaking Japanese. The following pages contain: Hiragana - stroke order videos , pronunciation, and vocabulary for each character; reading and listening audio exercises ; handouts on how to construct words and sentences; interactive quizzes testing character recognition; and printable worksheets to practice writing characters. Katakana - pronunciation and vocabulary for each character ; reading and listening audio exercises ; interactive quizzes testing character and vocabulary recognition; and printable worksheets to practice writing characters. These materials were developed as part of the Japanese curriculum at MIT for students of all levels to learn and review. Students and instructors are encouraged to incorporate them directly or as supplements in their study of Japanese. Technical Requirements This site is encoded in Unicode (UTF-8); please check your browser settings if characters render incorrectly: Internet Explorer version 6.0+ (Windows) - View → Encoding Safari version 4.0+ (Mac OSX) - View → Text Encoding Firefox 3.0+ (all platforms) - View → Character Encoding Opera (all platforms) - View → Encoding
+course_url: "https://ocw.mit.edu/courses/res-21g-01-kana-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/res-21g-01-kana-spring-2010/5e499fe3b8bbacbefdf88f07279ca6e4_res-21g-01s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

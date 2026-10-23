@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-designing-remote-courses"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Designing Remote Courses"
+slug: "designing-remote-courses"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Lauren Totino"
+  - "Aaron Kessler"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/designing-remote-courses"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "5f4c771a2782af77412f86f1b1469102134c2407be515c356f7fd9f32eb92750"

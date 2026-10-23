@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-res-6-003-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.6-003"
+cross_listed_codes: []
+course_title: "Electromechanical Dynamics"
+course_slug: "res-6-003-electromechanical-dynamics-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Herbert H. Woodson"
+  - "James R. Melcher"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  First published in 1968 by John Wiley and Sons, Inc., Electromechanical Dynamics discusses the interaction of electromagnetic fields with media in motion. The subject combines classical mechanics and electromagnetic theory and provides opportunities to develop physical intuition. The book uses examples that emphasize the connections between physical reality and analytical models. Types of electromechanical interactions covered include rotating machinery, plasma dynamics, the electromechanics of biological systems, and magnetoelasticity. An accompanying solutions manual for the problems in the text is provided.
+course_url: "https://ocw.mit.edu/courses/res-6-003-electromechanical-dynamics-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/res-6-003-electromechanical-dynamics-spring-2009/5cd6eafeecc6a83623c7e4b03ec2ff1a_res-6-003s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

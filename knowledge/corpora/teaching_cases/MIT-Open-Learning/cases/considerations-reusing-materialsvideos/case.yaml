@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-considerations-reusing-materialsvideos"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Considerations for Reusing Materials/Videos"
+slug: "considerations-reusing-materialsvideos"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Aaron Kessler"
+  - "Lauren Totino"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/considerations-reusing-materialsvideos"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "29d135609880860ed4a2d9e39ff07cb8e080943109284a0e9e6f635a948eae5f"

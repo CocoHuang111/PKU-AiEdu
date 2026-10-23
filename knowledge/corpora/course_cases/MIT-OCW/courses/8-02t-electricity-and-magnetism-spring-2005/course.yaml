@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-8-02t-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.02T"
+cross_listed_codes: []
+course_title: "Electricity and Magnetism"
+course_slug: "8-02t-electricity-and-magnetism-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Bruce Knuteson"
+  - "Prof. Eric Hudson"
+  - "Dr. George Stephans"
+  - "Prof. John Belcher"
+  - "Prof. John Joannopoulos"
+  - "Prof. Michael Feld"
+  - "Dr. Peter Dourmashkin"
+subject_primary: "Physics"
+subject_secondary:
+  - "Electromagnetism"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Simulation Videos"
+description: |
+  This freshman-level course is the second semester of introductory physics. The focus is on electricity and magnetism. The subject is taught using the TEAL (Technology Enabled Active Learning) format which utilizes small group interaction and current technology. The TEAL/Studio Project at MIT is a new approach to physics education designed to help students develop much better intuition about, and conceptual models of, physical phenomena. Acknowledgements The TEAL project is supported by The Alex and Brit d’Arbeloff Fund for Excellence in MIT Education , MIT iCampus , the Davis Educational Foundation , the National Science Foundation , the Class of 1960 Endowment for Innovation in Education , the Class of 1951 Fund for Excellence in Education , the Class of 1955 Fund for Excellence in Teaching , and the Helena Foundation. Many people have contributed to the development of the course materials. ( PDF )
+course_url: "https://ocw.mit.edu/courses/8-02t-electricity-and-magnetism-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/8-02t-electricity-and-magnetism-spring-2005/b9ee12912399c3131f23ee62c24db3f3_8-02ts05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

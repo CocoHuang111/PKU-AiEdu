@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-24-134-summer-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.134"
+cross_listed_codes: []
+course_title: "Experiential Ethics"
+course_slug: "24-134-experiential-ethics-summer-2025"
+term: "Summer"
+year: 2025
+as_taught_in: "Summer 2025"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Sakinah Munday"
+  - "Karim Nader"
+  - "Bess Rothman"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Ethics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Presentation Assignments"
+  - "Readings"
+  - "Student Work"
+description: |
+  This course examines the ethical dimensions of students’ professional lives, summer internships, and research projects. Students explore their own moral values through a range of ethical frameworks and questions. The course runs for ten weeks over the summer and concludes with a showcase of students’ independent projects in the first week of the fall term.
+course_url: "https://ocw.mit.edu/courses/24-134-experiential-ethics-summer-2025/"
+image_url: "https://ocw.mit.edu/courses/24-134-experiential-ethics-summer-2025/mit24_134_summer25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

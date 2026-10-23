@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-030-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.030"
+cross_listed_codes: []
+course_title: "Introduction to World Music"
+course_slug: "21m-030-introduction-to-world-music-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. George Ruckert"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Performance"
+  - "Music Theory"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Performance"
+          - "Music Theory"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course explores the ways that music is both shaped by and gives shape to the cultural settings in which it is performed, through studying selected musical traditions from around the world. Specific case studies will be examined closely through listening, analysis, and hands-on instruction. The syllabus centers around weekly listening assignments and readings from a textbook with CDs, supplemented by hands-on workshops, lecture/demonstrations and concerts by master musicians from around the world.
+course_url: "https://ocw.mit.edu/courses/21m-030-introduction-to-world-music-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21m-030-introduction-to-world-music-fall-2006/bab2db8da2496f20de6b8b55cfa081f1_21m-030f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

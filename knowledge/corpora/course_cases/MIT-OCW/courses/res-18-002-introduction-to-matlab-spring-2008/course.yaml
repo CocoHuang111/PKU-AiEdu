@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-res-18-002-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.18-002"
+cross_listed_codes: []
+course_title: "Introduction to MATLAB"
+course_slug: "res-18-002-introduction-to-matlab-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Yossi Farjoun"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Programming Languages"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Programming Languages"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Programming Assignments"
+  - "Projects"
+description: |
+  This course was offered as a non-credit program during the Independent Activities Period (IAP) , January 2008. A more recent version is available as course 18.S997 Introduction To MATLAB Programming , including video lectures. The course, intended for students with no programming experience, provides the foundations of programming in MATLAB®. Variables, arrays, conditional statements, loops, functions, and plots are explained. At the end of the course, students should be able to use MATLAB in their own work, and be prepared to deepen their MATLAB programming skills and tackle other languages for computing, such as Java, C++, or Python. The course mostly follows the official MATLAB Manual , available from The MathWorks . We will cover material from chapters 2-5.
+course_url: "https://ocw.mit.edu/courses/res-18-002-introduction-to-matlab-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/res-18-002-introduction-to-matlab-spring-2008/830547395aefdce81c5e4f16624d5c3b_res-18-002s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

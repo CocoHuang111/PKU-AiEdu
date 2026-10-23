@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-9-20-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.20"
+cross_listed_codes: []
+course_title: "Animal Behavior"
+course_slug: "9-20-animal-behavior-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gerald E. Schneider"
+subject_primary: "Biology"
+subject_secondary:
+  - "Ecology"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Ecology"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Audio"
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+  - "Written Assignments"
+description: |
+  The introductory topics will cover various approaches to the study of animals and their behavior. Key concepts in studies of animal behavior, emphasizing ethology, are covered in class and in the assigned readings from Scott (2005), supplemented by selections from other books, especially from classics in the field as well as selected videos. Next, key concepts in sociobiology are covered using readings from Alcock (2001), supplemented by selections from additional books and some video presentations.
+course_url: "https://ocw.mit.edu/courses/9-20-animal-behavior-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/9-20-animal-behavior-fall-2013/d9241d6b1c35ce1a454d77032ea1cbe4_9-20f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

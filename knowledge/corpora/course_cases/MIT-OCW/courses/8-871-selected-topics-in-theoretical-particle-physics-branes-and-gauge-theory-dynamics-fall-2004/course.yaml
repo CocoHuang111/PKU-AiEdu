@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-8-871-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.871"
+cross_listed_codes: []
+course_title: "Selected Topics in Theoretical Particle Physics: Branes and Gauge Theory Dynamics"
+course_slug: "8-871-selected-topics-in-theoretical-particle-physics-branes-and-gauge-theory-dynamics-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Amihay Hanany"
+subject_primary: "Physics"
+subject_secondary:
+  - "Particle Physics"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Particle Physics"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is an introduction to branes in string theory and their world volume dynamics. Instead of looking at the theory from the point of view of the world-sheet observer, we will approach the problem from the point of view of an observer which lives on a brane. Instead of writing down conformal field theory on the world-sheet and studying the properties of these theories, we will look at various branes in string theory and ask how the physics on their world-volume looks like.
+course_url: "https://ocw.mit.edu/courses/8-871-selected-topics-in-theoretical-particle-physics-branes-and-gauge-theory-dynamics-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/8-871-selected-topics-in-theoretical-particle-physics-branes-and-gauge-theory-dynamics-fall-2004/b7d8df29da662e3bcd6f9495a53b120b_8-871f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

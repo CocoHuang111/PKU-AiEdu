@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-260-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.260"
+cross_listed_codes: []
+course_title: "Culture, Embodiment and the Senses"
+course_slug: "21a-260-culture-embodiment-and-the-senses-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Erica James"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Psychology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  Culture, Embodiment, and the Senses will provide an historical and cross-cultural analysis of the politics of sensory experience. The subject will address western philosophical debates about mind, brain, emotion, and the body and the historical value placed upon sight, reason, and rationality, versus smell, taste, and touch as acceptable modes of knowing and knowledge production. We will assess cultural traditions that challenge scientific interpretations of experience arising from western philosophical and physiological models. The class will examine how sensory experience lies beyond the realm of individual physiological or psychological responses and occurs within a culturally elaborated field of social relations. Finally, we will debate how discourse about the senses is a product of particular modes of knowledge production that are themselves contested fields of power relations.
+course_url: "https://ocw.mit.edu/courses/21a-260-culture-embodiment-and-the-senses-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21a-260-culture-embodiment-and-the-senses-fall-2005/7f10580f72a33fe0129512cdb2fd69fc_21a-260f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

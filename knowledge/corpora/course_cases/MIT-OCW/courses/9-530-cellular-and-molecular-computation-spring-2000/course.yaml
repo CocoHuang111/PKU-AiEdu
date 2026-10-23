@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-9-530-spring-2000"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.530"
+cross_listed_codes: []
+course_title: "Cellular and Molecular Computation"
+course_slug: "9-530-cellular-and-molecular-computation-spring-2000"
+term: "Spring"
+year: 2000
+as_taught_in: "Spring 2000"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Sebastian Seung"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+  - "Science"
+  - "Biology"
+  - "Cell Biology"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  Life as an emergent property of networks of chemical reactions involving proteins and nucleic acids. Mathematical theories of metabolism, gene regulation, signal transduction, chemotaxis, excitability, motility, mitosis, development, and immunity. Applications to directed molecular evolution, DNA computing, and metabolic and genetic engineering.
+course_url: "https://ocw.mit.edu/courses/9-530-cellular-and-molecular-computation-spring-2000/"
+image_url: "https://ocw.mit.edu/courses/9-530-cellular-and-molecular-computation-spring-2000/439b9e6603c122d6d14e25d3cc3a7304_9-530s00.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

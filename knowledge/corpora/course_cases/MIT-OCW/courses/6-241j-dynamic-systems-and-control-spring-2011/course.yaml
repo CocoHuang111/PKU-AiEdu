@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-6-241j-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.241J"
+cross_listed_codes:
+  - "16.338J"
+course_title: "Dynamic Systems and Control"
+course_slug: "6-241j-dynamic-systems-and-control-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Emilio Frazzoli"
+  - "Prof. Munther Dahleh"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+  - "Systems Engineering"
+  - "Systems Optimization"
+  - "Mathematics"
+  - "Discrete Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Open Textbooks"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The course addresses dynamic systems, i.e., systems that evolve with time. Typically these systems have inputs and outputs; it is of interest to understand how the input affects the output (or, vice-versa, what inputs should be given to generate a desired output). In particular, we will concentrate on systems that can be modeled by Ordinary Differential Equations (ODEs), and that satisfy certain linearity and time-invariance conditions. We will analyze the response of these systems to inputs and initial conditions. It is of particular interest to analyze systems obtained as interconnections (e.g., feedback) of two or more other systems. We will learn how to design (control) systems that ensure desirable properties (e.g., stability, performance) of the interconnection with a given dynamic system.
+course_url: "https://ocw.mit.edu/courses/6-241j-dynamic-systems-and-control-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/6-241j-dynamic-systems-and-control-spring-2011/1eea91bfc5791185e053d9b740cde269_6-241js11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

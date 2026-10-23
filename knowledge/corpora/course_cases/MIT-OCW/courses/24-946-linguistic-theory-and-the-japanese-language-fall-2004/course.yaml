@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-24-946-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.946"
+cross_listed_codes: []
+course_title: "Linguistic Theory and the Japanese Language"
+course_slug: "24-946-linguistic-theory-and-the-japanese-language-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Shigeru Miyagawa"
+subject_primary: "Language"
+subject_secondary:
+  - "Japanese"
+  - "Linguistics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Japanese"
+      - name: "Linguistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course is a detailed examination of the grammar of Japanese and its structure which is significantly different from English, with special emphasis on problems of interest in the study of linguistic universals. Data from a broad group of languages is studied for comparison with Japanese. This course assumes familiarity with linguistic theory.
+course_url: "https://ocw.mit.edu/courses/24-946-linguistic-theory-and-the-japanese-language-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/24-946-linguistic-theory-and-the-japanese-language-fall-2004/9e006b0c3e1eeb2a6ee2c55ddf9031c1_24-946f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

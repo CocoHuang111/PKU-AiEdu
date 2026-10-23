@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-18-409-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.409"
+cross_listed_codes: []
+course_title: "Algorithmic Aspects of Machine Learning"
+course_slug: "18-409-algorithmic-aspects-of-machine-learning-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ankur Moitra"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Theory of Computation"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Discrete Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Theory of Computation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course is organized around algorithmic issues that arise in machine learning. Modern machine learning systems are often built on top of algorithms that do not have provable guarantees, and it is the subject of debate when and why they work. In this class, we focus on designing algorithms whose performance we can rigorously analyze for fundamental machine learning problems.
+course_url: "https://ocw.mit.edu/courses/18-409-algorithmic-aspects-of-machine-learning-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/18-409-algorithmic-aspects-of-machine-learning-spring-2015/3d7ff2a0d791261f7077adb098c78ed1_18-409s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

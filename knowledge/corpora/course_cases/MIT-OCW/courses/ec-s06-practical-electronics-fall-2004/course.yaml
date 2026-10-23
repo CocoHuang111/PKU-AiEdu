@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-s06-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.S06"
+cross_listed_codes:
+  - "EC.S11"
+course_title: "Practical Electronics"
+course_slug: "ec-s06-practical-electronics-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. James Bales"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  You can build a wide range of practical electronic devices if you understand a few basic electronics concepts and follow some simple rules. These devices include light-activated and sound-activated toys and appliances, remote controls, timers and clocks, and motorized devices. The subject begins with an overview of the fundamental concepts, followed by a series of laboratory exercises that demonstrate the basic rules, and a final project.
+course_url: "https://ocw.mit.edu/courses/ec-s06-practical-electronics-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/ec-s06-practical-electronics-fall-2004/3e72b2232fd943361e35b21bdfbdc686_ec-s06f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-2-04a-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.04A"
+cross_listed_codes: []
+course_title: "Systems and Controls"
+course_slug: "2-04a-systems-and-controls-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. George Barbastathis"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Dynamics and Control"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to linear systems, transfer functions, and Laplace transforms. It covers stability and feedback, and provides basic design tools for specifications of transient response. It also briefly covers frequency-domain techniques.
+course_url: "https://ocw.mit.edu/courses/2-04a-systems-and-controls-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/2-04a-systems-and-controls-spring-2013/c06619c43540fbbbb938e4f826362fc1_2-04As13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

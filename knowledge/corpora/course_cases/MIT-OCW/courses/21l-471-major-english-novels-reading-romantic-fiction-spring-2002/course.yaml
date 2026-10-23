@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-471-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.471"
+cross_listed_codes: []
+course_title: "Major English Novels: Reading Romantic Fiction"
+course_slug: "21l-471-major-english-novels-reading-romantic-fiction-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Noel Jackson"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Though the era of British Romanticism (ca. 1790-1830) is sometimes exclusively associated with the poetry of these years, this period was just as importantly a time of great innovation in British prose fiction. Romantic novelists pioneered or revolutionized several genres, including social/philosophical problem novels, tales of sentiment and sensibility, and the historical novel. Writing in the years of the French Revolution, the Napoleonic wars, and the early industrial revolution, these writers conveyed a spirit of chaos and upheaval even in stories whose settings are seemingly farthest removed from those cataclysmic historical events. In this year’s offering of “Major English Novels,” we will read of plagues, wars, hysterics, monsters and more in novels by authors including William Godwin, Maria Edgeworth, Jane Austen, Mary Shelley, and Walter Scott. In the final weeks of the semester, we will read one major novel of the Victorian era, Charles Dickens’s Great Expectations , in light of these earlier texts. There will be two essay assignments, one 5-7 pages and one 8-10 pages in length, and required presentations.
+course_url: "https://ocw.mit.edu/courses/21l-471-major-english-novels-reading-romantic-fiction-spring-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-471-major-english-novels-reading-romantic-fiction-spring-2002/f979286b53f9a8619954ac033e64dd0b_21l-471s02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

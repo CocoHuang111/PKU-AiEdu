@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-5-08j-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.08J"
+cross_listed_codes:
+  - "7.08J"
+  - "7.80"
+course_title: "Biological Chemistry II"
+course_slug: "5-08j-biological-chemistry-ii-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Chemistry"
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joanne Stubbe"
+  - "Prof. Elizabeth Nolan"
+subject_primary: "Biology"
+subject_secondary:
+  - "Biochemistry"
+  - "Structural Biology"
+  - "Chemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+          - "Structural Biology"
+      - name: "Chemistry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Problem-solving Videos"
+description: |
+  This course is an advanced treatment of biochemical mechanisms that underlie biological processes. Topics include macromolecular machines such as the ribosome, the proteasome, fatty acid synthases as a paradigm for polyketide synthases and non-ribosomal polypeptide synthases, and polymerases. Emphasis will be given to the experimental methods used to unravel how these processes fit into the cellular context as well as the coordinated regulation of these processes.
+course_url: "https://ocw.mit.edu/courses/5-08j-biological-chemistry-ii-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/5-08j-biological-chemistry-ii-spring-2016/ca743816abd0bff648c7ead87a38d087_5-08js16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

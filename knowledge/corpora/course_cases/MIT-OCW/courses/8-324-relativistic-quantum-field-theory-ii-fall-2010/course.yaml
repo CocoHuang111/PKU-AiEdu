@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-8-324-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.324"
+cross_listed_codes: []
+course_title: "Relativistic Quantum Field Theory II"
+course_slug: "8-324-relativistic-quantum-field-theory-ii-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Hong Liu"
+subject_primary: "Physics"
+subject_secondary:
+  - "Condensed Matter Physics"
+  - "Particle Physics"
+  - "Quantum Mechanics"
+  - "Relativity"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Condensed Matter Physics"
+          - "Particle Physics"
+          - "Quantum Mechanics"
+          - "Relativity"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is the second course of the quantum field theory trimester sequence beginning with Relativistic Quantum Field Theory I (8.323) and ending with Relativistic Quantum Field Theory III (8.325). It develops in depth some of the topics discussed in 8.323 and introduces some advanced material.
+course_url: "https://ocw.mit.edu/courses/8-324-relativistic-quantum-field-theory-ii-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/8-324-relativistic-quantum-field-theory-ii-fall-2010/8858be968143551424887e0ca2e0c40e_8-324f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

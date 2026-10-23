@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-christopher-chen"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Christopher Vicente Hsin-Hung S. Chen"
+slug: "christopher-chen"
+source_url: "https://ctl.columbia.edu/transformations/faculty/christopher-chen/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "fbc92d7ca597caa77c4b0bdddc19035b01004dcc039275dff0218845aa114b7d"

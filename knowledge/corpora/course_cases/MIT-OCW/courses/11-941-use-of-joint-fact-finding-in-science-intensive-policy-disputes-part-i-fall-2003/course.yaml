@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-941-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.941"
+cross_listed_codes: []
+course_title: "Use of Joint Fact Finding in Science Intensive Policy Disputes, Part I"
+course_slug: "11-941-use-of-joint-fact-finding-in-science-intensive-policy-disputes-part-i-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Herman Karl"
+  - "Prof. Lawrence Susskind"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  11.941 and 11.942 make up a one-year seminar. The goal of this seminar is to explore the role of science and scientists in ecosystems and natural resources management focusing on joint fact finding as a new approach to environmental policy-making. Increasingly scientists and science organizations are confronting a conundrum: Why is science often ignored in important societal decisions even as the call for decisions based on sound science escalates? One reason is that decision-making is often driven by a variety of nonscientific, adversarial, and stakeholder dynamics. Thus, even though science helps inform choices, it is only one of many values and interests considered by each stakeholder. In response to this emerging challenge, scientists, and science agencies such as the U.S. Geological Survey, are embarking upon research that explores the problems of incorporating science into value-laden societal decisions. This research includes designing experiments that will assess the appropriateness of using the new and emerging approach of Joint Fact Finding to address some of the Nation’s most contentious environmental conflicts. In the first few sessions we will examine the problems of using science in environmental disputes. In following sessions, students will analyze and discuss cases that involved or that should have involved Joint Fact Finding of various kinds.
+course_url: "https://ocw.mit.edu/courses/11-941-use-of-joint-fact-finding-in-science-intensive-policy-disputes-part-i-fall-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/11-941-use-of-joint-fact-finding-in-science-intensive-policy-disputes-part-i-fall-2003/c7b0a28620632f7a7f1e3104d03ae80f_11-941f03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

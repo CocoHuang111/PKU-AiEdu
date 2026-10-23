@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-961-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.961"
+cross_listed_codes: []
+course_title: "Special Topics: Designing Sociable Media"
+course_slug: "mas-961-special-topics-designing-sociable-media-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Judith Donath"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This project-based course explores new design strategies for social interaction in the computer mediated world. Through weekly readings and design assignments we will examine topics such as: Data-based portraiture Depicting growth, change and the passage of time Visualizing conversations, crowds, and networks Interfaces for the connected city Mobile social technologies The course emphasizes developing visual and interactive literacy.
+course_url: "https://ocw.mit.edu/courses/mas-961-special-topics-designing-sociable-media-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/mas-961-special-topics-designing-sociable-media-spring-2008/8877ee4f9adfecbf6fdb504ebc29b999_mas-961s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-320-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.320"
+cross_listed_codes: []
+course_title: "Strategic Organizational Design"
+course_slug: "15-320-strategic-organizational-design-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Thomas Malone"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Leadership"
+  - "Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  15.320 Strategic Organizational Design focuses on effective organizational design in both traditional and innovative organizations, with special emphasis on innovative organizational forms that can provide strategic advantage. Topics include when to use functional, divisional, or matrix organizations, how IT creates new organizational possibilities, and examples of innovative organizational possibilities, such as democratic decision-making, crowd-based organizations, internal resource markets, and other forms of collective intelligence. Team projects include inventing new possibilities for real organizations.
+course_url: "https://ocw.mit.edu/courses/15-320-strategic-organizational-design-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/15-320-strategic-organizational-design-spring-2011/8c5e6f0657eb94af027539b8f47ba72a_15-320s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

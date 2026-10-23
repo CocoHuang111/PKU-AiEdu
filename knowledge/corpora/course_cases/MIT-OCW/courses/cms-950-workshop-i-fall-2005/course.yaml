@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-950-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.950"
+cross_listed_codes: []
+course_title: "Workshop I"
+course_slug: "cms-950-workshop-i-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Edward C. Barrett"
+subject_primary: "Media Studies"
+subject_secondary: []
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Media Assignments"
+description: |
+  This course fulfills the first half of the Comparative Media Studies workshop sequence requirement for entering graduate students. The workshop sequence provides an opportunity for a creative, hands-on project development experience and emphasizes intellectual growth as well as the acquisition of technical skills. The course is designed to provide practical, hands-on experience to complement students’ theoretical studies.
+course_url: "https://ocw.mit.edu/courses/cms-950-workshop-i-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/cms-950-workshop-i-fall-2005/6a7fedb0bb2c51cccef79ce494ab42b8_cms-950f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

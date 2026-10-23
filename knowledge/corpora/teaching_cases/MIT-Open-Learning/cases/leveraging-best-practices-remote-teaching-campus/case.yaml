@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-leveraging-best-practices-remote-teaching-campus"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Leveraging Best Practices from Remote Teaching for On-Campus Education"
+slug: "leveraging-best-practices-remote-teaching-campus"
+course_codes:
+  - "Multiple Subjects/Disciplines"
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "MIT Ad Hoc Committee"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/leveraging-best-practices-remote-teaching-campus"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "32363e8dea56e2617ef5d0d88cb47be79f70c76055b6951e85736cdf05cc87cb"

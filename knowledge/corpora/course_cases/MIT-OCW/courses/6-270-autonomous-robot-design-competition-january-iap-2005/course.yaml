@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-6-270-january-iap-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.270"
+cross_listed_codes: []
+course_title: "Autonomous Robot Design Competition"
+course_slug: "6-270-autonomous-robot-design-competition-january-iap-2005"
+term: "January IAP"
+year: 2005
+as_taught_in: "January IAP 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "No Faculty"
+  - "Michael Thilmont"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Computer Design and Engineering"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Computer Design and Engineering"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Competition Videos"
+  - "Design Assignments with Examples"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  6.270 is a hands-on, learn-by-doing class, in which participants design and build a robot that will play in a competition at the end of January. The goal for the students is to design a machine that will be able to navigate its way around the playing surface, recognize other opponents, and manipulate game objects. Unlike the machines in Design and Manufacturing I ( 2.007 ), 6.270 robots are totally autonomous, so once a round begins, there is no human intervention. The goal of 6.270 is to teach students about robotic design by giving them the hardware, software, and information they need to design, build, and debug their own robot. The subject includes concepts and applications that are related to various MIT classes (e.g. 6.001 , 6.002 , 6.004 , and 2.007 ), though there are no formal prerequisites for 6.270.
+course_url: "https://ocw.mit.edu/courses/6-270-autonomous-robot-design-competition-january-iap-2005/"
+image_url: "https://ocw.mit.edu/courses/6-270-autonomous-robot-design-competition-january-iap-2005/b04fbb5bb15ebeb947fe487eed84d37e_6-270iap05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

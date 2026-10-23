@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-14-05-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.05"
+cross_listed_codes: []
+course_title: "Intermediate Macroeconomics"
+course_slug: "14-05-intermediate-macroeconomics-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. George-Marios Angeletos"
+subject_primary: "Economics"
+subject_secondary:
+  - "Macroeconomics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course uses the tools of macroeconomics to study various macroeconomic policy problems in-depth. The problems range from economic growth in the long run, to government finances in the intermediate run, and economic stability in the short run. Many economic models used today are surveyed.
+course_url: "https://ocw.mit.edu/courses/14-05-intermediate-macroeconomics-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/14-05-intermediate-macroeconomics-spring-2013/c9cb05a46301f892adf8931fa52a00e4_14-05s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

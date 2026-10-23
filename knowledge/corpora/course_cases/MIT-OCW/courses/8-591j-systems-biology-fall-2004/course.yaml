@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-8-591j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.591J"
+cross_listed_codes:
+  - "7.81J"
+  - "9.531J"
+course_title: "Systems Biology"
+course_slug: "8-591j-systems-biology-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Physics"
+  - "Biology"
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Alexander van Oudenaarden"
+subject_primary: "Biology"
+subject_secondary:
+  - "Computation and Systems Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces the mathematical modeling techniques needed to address key questions in modern biology. An overview of modeling techniques in molecular biology and genetics, cell biology and developmental biology is covered. Key experiments that validate mathematical models are also discussed, as well as molecular, cellular, and developmental systems biology, bacterial chemotaxis, genetic oscillators, control theory and genetic networks, and gradient sensing systems. Additional specific topics include: constructing and modeling of genetic networks, lambda phage as a genetic switch, synthetic genetic switches, circadian rhythms, reaction diffusion equations, local activation and global inhibition models, center finding networks, general pattern formation models, modeling cell-cell communication, quorum sensing, and finally, models for Drosophila development.
+course_url: "https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2004/473af933df375114f7cb2ac0a6b66974_8-591jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

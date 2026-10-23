@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-ids-720j-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "IDS.720J"
+cross_listed_codes:
+  - "11.434"
+  - "15.428"
+  - "IDS.720J (formerly ESD.712)"
+course_title: "Tools for Analysis: Design for Real Estate and Infrastructure Development"
+course_slug: "ids-720j-tools-for-analysis-design-for-real-estate-and-infrastructure-development-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Institute for Data, Systems, and Society"
+  - "Urban Studies and Planning"
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Richard de Neufville"
+  - "Prof. David Geltner"
+subject_primary: "Real Estate"
+subject_secondary:
+  - "Engineering"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Systems Design"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Real Estate"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Systems Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  This course is an introduction to the analytical tools that support design and decision-making in real estate and infrastructure development. There is a particular focus on identifying and valuing sources of flexibility using “real options”, Monte-Carlo simulation, and other techniques from the field of engineering systems. This course integrates economic and engineering perspectives, and is suitable for students with various backgrounds. It serves to provide useful preparation for thesis work in the area. The course applies the approach to the design and phasing of a mega infrastructure real estate project. Note This MIT OpenCourseWare site is based, in part, on materials on Design for Real Estate and Infrastructure Development from Professor de Neufville’s and Professor Geltner’s Web site .
+course_url: "https://ocw.mit.edu/courses/ids-720j-tools-for-analysis-design-for-real-estate-and-infrastructure-development-spring-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/ids-720j-tools-for-analysis-design-for-real-estate-and-infrastructure-development-spring-2010/e91e3ad436df40c9fa47fddb025ba7b3_ids-712s10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-645-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.645"
+cross_listed_codes: []
+course_title: "Gender, Health and Marginalization Through a Critical Feminist Lens"
+course_slug: "wgs-645-gender-health-and-marginalization-through-a-critical-feminist-lens-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Chris Bobel"
+  - "Prof. Silvia Dominguez"
+  - "Norma Swenson"
+subject_primary: "Health and Exercise Science"
+subject_secondary:
+  - "Mental Health"
+  - "Public Health"
+  - "Social Medicine"
+  - "Society"
+  - "Gender Studies"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Health and Exercise Science"
+        specialties: []
+      - name: "Mental Health"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+      - name: "Social Medicine"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  In the course we will use a feminist interdisciplinary lens and invite students to look critically at how practices like privatization, shrinking public “safety nets”, de-regulation, and the commodification of health services intersect inevitably with gender, race and class, for both men and women. We will draw on a blend of empirical studies, policy materials, films and guest speakers to examine specific health issues like menstrual health, corporate obstetrics, abortion, obesity, intersex, harassment and other forms of gendered violence, mental health and stress, parent-child attachment, as well as ethics and pharmaceuticals. The Graduate Consortium in Women’s Studies (GCWS) This course is part of the Graduate Consortium in Women’s Studies. The GCWS at MIT brings together scholars and teachers at nine degree-granting institutions in the Boston area who are devoted to graduate teaching and research in Women’s Studies and to advancing interdisciplinary Women’s Studies scholarship. Learn more about the GCWS .
+course_url: "https://ocw.mit.edu/courses/wgs-645-gender-health-and-marginalization-through-a-critical-feminist-lens-fall-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/wgs-645-gender-health-and-marginalization-through-a-critical-feminist-lens-fall-2014/9ecc7bb59ba9cfe7d5039f43b0559119_wgs-645f14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

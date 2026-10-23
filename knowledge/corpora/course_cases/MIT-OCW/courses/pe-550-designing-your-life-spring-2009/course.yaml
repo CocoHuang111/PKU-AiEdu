@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-pe-550-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "PE.550"
+cross_listed_codes: []
+course_title: "Designing Your Life"
+course_slug: "pe-550-designing-your-life-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Athletics, Physical Education and Recreation"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Gabriella Jordan"
+  - "Lauren Zander"
+subject_primary: "Mental Health"
+subject_secondary: []
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Mental Health"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course provides an exciting, eye-opening, and thoroughly useful inquiry into what it takes to live an extraordinary life, on your own terms. The instructors address what it takes to succeed, to be proud of your life, and to be happy in it. Participants tackle career satisfaction, money, body, vices, and relationship to themselves. They learn how to confront issues in their lives, how to live life, and how to learn from it. A short version of this course meets during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month. Then this semester-long extension of the IAP course is taught to interested members of the MIT community. This not-for-credit course is sponsored by the Department of Science, Technology, and Society. A similar, semester-long version of this course is taught in the Sloan Fellows Program. Acknowledgment The instructors would like to thank Prof. David Mindell for his sponsorship of this course, his hopes for its continued expansion, and his commitment to the well-being of MIT students.
+course_url: "https://ocw.mit.edu/courses/pe-550-designing-your-life-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/pe-550-designing-your-life-spring-2009/16f8552dc3ed252d06dd13a261c06841_pe-550s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

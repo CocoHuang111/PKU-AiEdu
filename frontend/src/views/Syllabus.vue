@@ -47,9 +47,14 @@
               <el-icon class="task-icon" :size="18"><Document /></el-icon>
               <div class="task-body">
                 <div class="task-name">{{ t.filename }}</div>
+                <div class="task-notification-tags" @click.stop>
+                  <el-tag size="small" :type="t.status === 'processing' ? 'warning' : 'info'">{{ statusText(t.status) }}</el-tag>
+                  <el-tag size="small" :type="emailEnabled(t) ? 'success' : 'info'">{{ t.notification_status === 'sent' ? '邮件已发送' : t.notification_status === 'failed' ? '邮件发送失败' : emailEnabled(t) ? '邮件通知已开启' : '邮件通知未开启' }}</el-tag>
+                  <el-switch v-if="isRunning(t)" :model-value="emailEnabled(t)" :loading="mailUpdatingIds.includes(t.id)" size="small" aria-label="邮件通知" @change="toggleTaskMail(t, $event)" />
+                </div>
                 <div v-if="isRunning(t)" class="task-run">
-                  <span>优化中 {{ t.progress }}%</span>
-                  <el-progress :percentage="t.progress" :stroke-width="4" :show-text="false" />
+                  <span>{{ t.status === 'queued' ? '排队中' : `优化中 ${t.progress}%` }}</span>
+                  <el-progress v-if="t.status !== 'queued'" :percentage="t.progress" :stroke-width="4" :show-text="false" />
                   <div class="task-meta">{{ t.step_label }}{{ stepDetail(t) }}</div>
                 </div>
                 <div v-else class="task-status-row">
@@ -107,10 +112,12 @@
           <section class="compose">
             <div class="mode-row">
               <span class="mode-label">优化模式</span>
-              <el-radio-group v-model="promptMode" size="small" class="mode-group">
-                <el-radio-button value="markdown">原文微调</el-radio-button>
-                <el-radio-button value="markdown_schema">重构框架</el-radio-button>
-              </el-radio-group>
+              <div class="mode-group" role="group" aria-label="优化模式">
+                <button type="button" :class="{ active: promptMode === 'markdown' }"
+                  :aria-pressed="promptMode === 'markdown'" @click="promptMode = 'markdown'">原文微调</button>
+                <button type="button" :class="{ active: promptMode === 'markdown_schema' }"
+                  :aria-pressed="promptMode === 'markdown_schema'" @click="promptMode = 'markdown_schema'">重构框架</button>
+              </div>
             </div>
 
             <div class="file-slot">
@@ -197,7 +204,7 @@
                 <div class="upload-text">
                   拖入大纲文件，或<span class="pick">点击选择</span>
                 </div>
-                <div class="upload-hint">支持 PDF、Word、Markdown、纯文本</div>
+                <div class="upload-hint">支持 PDF、Word、Markdown、纯文本，单个文件不超过 50 MB</div>
               </el-upload>
             </div>
 
@@ -320,6 +327,30 @@ import {
 import DOMPurify from 'dompurify'
 import { marked } from 'marked'
 import { syllabusApi } from '../api/client'
+import { useRoute, useRouter } from 'vue-router'
+import { showEvalQueuedFollowup } from '../evalFollowupStore'
+
+const route = useRoute()
+const router = useRouter()
+const mailUpdatingIds = ref([])
+function emailEnabled(task) {
+  return ['pending', 'waiting_service', 'needs_email', 'sent'].includes(task.notification_status)
+}
+async function toggleTaskMail(task, enabled) {
+  if (mailUpdatingIds.value.includes(task.id)) return
+  mailUpdatingIds.value.push(task.id)
+  try {
+    if (enabled && !(await syllabusApi.followUp(task.id)).has_email) {
+      ElMessage.info('请先完善个人资料中的邮箱')
+      await router.push({ path: '/profile', query: { reportMailTask: task.id, reportMailKind: 'syllabus' } })
+      return
+    }
+    const response = enabled ? await syllabusApi.requestEmail(task.id) : await syllabusApi.cancelEmail(task.id)
+    task.notification_status = response.status
+    await loadTasks()
+  } catch { /* 公共拦截器显示错误 */ }
+  finally { mailUpdatingIds.value = mailUpdatingIds.value.filter(id => id !== task.id) }
+}
 
 const POLL_INTERVAL = 2500
 const TASK_FILTERS = [
@@ -412,7 +443,7 @@ function isRunning(t) {
 
 function statusText(status) {
   return (
-    { completed: '已完成', processing: '处理中', failed: '失败', queued: '排队中', cancelled: '已停止' }[
+    { completed: '已完成', processing: '优化中', failed: '失败', queued: '排队中', cancelled: '已停止' }[
       status
     ] || status
   )
@@ -521,13 +552,21 @@ function pickFile() {
 }
 
 function onFileChange(file) {
-  if (file?.raw) sourceFile.value = file.raw
+  if (file?.raw) setSourceFile(file.raw)
+}
+
+function setSourceFile(file) {
+  if (file.size > 50 * 1024 * 1024) {
+    ElMessage.warning('大纲超过大小限制（50 MB）')
+    return
+  }
+  sourceFile.value = file
 }
 
 function onFilePicked(ev) {
   const file = ev.target.files?.[0] || null
   ev.target.value = ''
-  if (file) sourceFile.value = file
+  if (file) setSourceFile(file)
 }
 
 async function startTask(payload) {
@@ -657,6 +696,7 @@ async function startOptimize() {
   try {
     const payload = await syllabusApi.optimizeFile(sourceFile.value, promptMode.value)
     await startTask(payload)
+    void showEvalQueuedFollowup(payload.task_id, { kind: 'syllabus', desktop: false })
   } catch {
     /* 拦截器已提示 */
   } finally {
@@ -685,11 +725,18 @@ function exportAs(format) {
   ElMessage.success(`正在下载 ${format.toUpperCase()}…`)
 }
 
-onMounted(loadTasks)
+onMounted(async () => {
+  await loadTasks()
+  if (typeof route.query.task === 'string' && /^[0-9a-f-]{36}$/i.test(route.query.task)) {
+    await selectTask(route.query.task)
+    if (route.query.submitted === '1') void showEvalQueuedFollowup(route.query.task, { kind: 'syllabus', desktop: false })
+  }
+})
 onUnmounted(() => clearTimeout(pollTimer))
 </script>
 
 <style scoped>
+.task-notification-tags { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; margin: 6px 0; }
 .syllabus {
   height: calc(100vh - 56px);
   display: flex;
@@ -831,9 +878,9 @@ onUnmounted(() => clearTimeout(pollTimer))
 
 .workspace {
   width: 100%;
-  max-width: 1100px;
+  max-width: 992px;
   margin: 0 auto;
-  padding: 24px 32px 48px;
+  padding: 32px 56px 48px;
   box-sizing: border-box;
 }
 
@@ -998,14 +1045,32 @@ onUnmounted(() => clearTimeout(pollTimer))
   margin-bottom: 18px;
 }
 .mode-label {
-  font-size: 13px;
-  color: #606266;
-  font-weight: 500;
+  font-size: 16px;
+  color: #303133;
+  font-weight: 600;
 }
 .mode-group {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
+  gap: 4px;
+  padding: 3px;
+  border-radius: 8px;
+  background: #f3f4f6;
+}
+.mode-group button {
+  padding: 7px 18px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #606266;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.mode-group button.active {
+  background: #fff;
+  color: #a61b1b;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  font-weight: 600;
 }
 
 .file-slot {

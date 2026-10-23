@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-4-493-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.493"
+cross_listed_codes: []
+course_title: "Emergent Materials II"
+course_slug: "4-493-emergent-materials-ii-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Fernandez"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course will focus on providing students with the tools needed to practice responsible architecture in a contemporary context. It will familiarize students with the materials currently used in responsible practice, as well as the material properties most relevant to assembly. The course will also introduce students to materials that are untested but hold promise for future usage. Finally, the course will challenge students to refine their understanding of responsible or sustainable design practice by looking at the evolution of those ideas within the field of architecture.
+course_url: "https://ocw.mit.edu/courses/4-493-emergent-materials-ii-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/4-493-emergent-materials-ii-spring-2005/2b9ea5643e14c1878243ff5f5d5aec76_4-493s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

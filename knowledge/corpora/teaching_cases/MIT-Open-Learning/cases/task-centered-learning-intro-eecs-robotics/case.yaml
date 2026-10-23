@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-task-centered-learning-intro-eecs-robotics"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Task-Centered Learning: Intro to EECS Robotics"
+slug: "task-centered-learning-intro-eecs-robotics"
+course_codes:
+  - "6.01"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Dennis Freeman"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/task-centered-learning-intro-eecs-robotics"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "f71b58ca20a2256c912ff8d6ca6303a1abee8d62b98d0eea4b70bc200f950cba"

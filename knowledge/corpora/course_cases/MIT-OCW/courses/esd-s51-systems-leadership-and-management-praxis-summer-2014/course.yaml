@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-s51-summer-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.S51"
+cross_listed_codes: []
+course_title: "Systems Leadership and Management Praxis"
+course_slug: "esd-s51-systems-leadership-and-management-praxis-summer-2014"
+term: "Summer"
+year: 2014
+as_taught_in: "Summer 2014"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Michael A. M. Davies"
+subject_primary: "Innovation"
+subject_secondary:
+  - "Leadership"
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Innovation"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+description: |
+  SLaM (Systems Leadership and Management) Praxis is a course is designed to introduce students to the dynamics of strategic decision making in corporate boardrooms through team exercises, simulations, and role playing. The case studies and team exercises will introduce students to strategy choices in the high tech sector, but these learnings are just as valid in other industries. We will also have invited guest speakers from the industry who have lived through difficult corporate situations and can provide insights into the cases discussed in class.
+course_url: "https://ocw.mit.edu/courses/esd-s51-systems-leadership-and-management-praxis-summer-2014/"
+image_url: "https://ocw.mit.edu/courses/esd-s51-systems-leadership-and-management-praxis-summer-2014/cda9645a8ad27c4c775878011a9b583c_esd-s51s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

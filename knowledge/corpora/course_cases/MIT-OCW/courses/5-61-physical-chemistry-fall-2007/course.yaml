@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-5-61-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.61"
+cross_listed_codes: []
+course_title: "Physical Chemistry"
+course_slug: "5-61-physical-chemistry-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Robert Guy Griffin"
+  - "Prof. Troy Van Voorhis"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Physical Chemistry"
+  - "Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course presents an introduction to quantum mechanics. It begins with an examination of the historical development of quantum theory, properties of particles and waves, wave mechanics and applications to simple systems — the particle in a box, the harmonic oscillator, the rigid rotor and the hydrogen atom. The lectures continue with a discussion of atomic structure and the Periodic Table. The final lectures cover applications to chemical bonding including valence bond and molecular orbital theory, molecular structure, spectroscopy. Acknowledgements The material for 5.61 has evolved over a period of many years, and, accordingly, several faculty members have contributed to the development of the course contents. The original version of the lecture notes that are available on OCW was prepared in the early 1990’s by Prof. Sylvia T. Ceyer. These were revised and transcribed to electronic form primarily by Prof. Keith A. Nelson. The current version includes additional contributions by Professors Moungi G. Bawendi, Robert W. Field, Robert G. Griffin, Robert J. Silbey and John S. Waugh, all of whom have taught the course in the recent past.
+course_url: "https://ocw.mit.edu/courses/5-61-physical-chemistry-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/5-61-physical-chemistry-fall-2007/1f705170357b16eb99e045a724316cde_5-61f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

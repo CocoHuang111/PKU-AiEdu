@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-18-075-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.075"
+cross_listed_codes: []
+course_title: "Advanced Calculus for Engineers"
+course_slug: "18-075-advanced-calculus-for-engineers-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Dionisios Margetis"
+  - "Prof. John W. M. Bush"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course analyzes the functions of a complex variable and the calculus of residues. It also covers subjects such as ordinary differential equations, partial differential equations, Bessel and Legendre functions, and the Sturm-Liouville theory.
+course_url: "https://ocw.mit.edu/courses/18-075-advanced-calculus-for-engineers-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/18-075-advanced-calculus-for-engineers-fall-2004/19c7083c5811de132a7372c64b38fc69_18-075f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

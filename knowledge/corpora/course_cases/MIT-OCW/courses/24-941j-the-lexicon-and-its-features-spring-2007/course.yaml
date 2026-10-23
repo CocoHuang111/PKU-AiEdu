@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-24-941j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.941J"
+cross_listed_codes:
+  - "6.543J"
+  - "9.587J"
+  - "HST.727J"
+course_title: "The Lexicon and Its Features"
+course_slug: "24-941j-the-lexicon-and-its-features-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+  - "Electrical Engineering and Computer Science"
+  - "Brain and Cognitive Sciences"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. David Gow"
+  - "Prof. Donca Steriade"
+  - "Prof. Edward Flemming"
+  - "Prof. Kenneth Stevens"
+  - "Dr. Stefanie Shattuck-Hufnagel"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course provides an overview of the distinctive features which distinguish sound categories of languages of the world. Theories which relate these categories to their acoustic and articulatory correlates, both universally and in particular languages, are covered. Models of word recognition by listeners, features, and phonological structure are also discussed. In addition, the course offers a variety of perspectives on these issues, drawn from Electrical Engineering, Linguistics and Cognitive Science.
+course_url: "https://ocw.mit.edu/courses/24-941j-the-lexicon-and-its-features-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/24-941j-the-lexicon-and-its-features-spring-2007/3eef0fc94114bc40d1628059a52595bb_24-941js07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

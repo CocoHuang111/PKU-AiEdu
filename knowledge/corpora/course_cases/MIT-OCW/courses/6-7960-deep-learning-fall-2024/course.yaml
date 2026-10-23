@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-6-7960-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.7960"
+cross_listed_codes: []
+course_title: "Deep Learning"
+course_slug: "6-7960-deep-learning-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Phillip Isola"
+  - "Prof. Sara Beery"
+  - "Dr. Jeremy Bernstein"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Graphics and Visualization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Graphics and Visualization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Projects with Examples"
+  - "Readings"
+description: |
+  This course covers the fundamentals of deep learning, including both theory and applications. Topics include neural net architectures (MLPs, CNNs, RNNs, graph nets, transformers), geometry and invariances in deep learning, backpropagation and automatic differentiation, learning theory and generalization in high dimensions, and applications to computer vision, natural language processing, and robotics. This course is supported for the 2026-2027 academic year in part by: Dr. Michael Borowitz SB ’71 Steven R. Weiss SB ‘66
+course_url: "https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/6-7960-deep-learning-fall-2024/mit6_7960_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

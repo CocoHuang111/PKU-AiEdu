@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-1-212j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.212J"
+cross_listed_codes:
+  - "ESD.221J"
+course_title: "An Introduction to Intelligent Transportation Systems"
+course_slug: "1-212j-an-introduction-to-intelligent-transportation-systems-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joseph Sussman"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Transportation Engineering"
+  - "Social Science"
+  - "Urban Studies"
+  - "Transportation Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Transportation Engineering"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Transportation Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  Intelligent Transportation Systems (ITS) represent a major transition in transportation on many dimensions. This course considers ITS as a lens through which one can view many transportation and societal issues. ITS is an international program intended to improve the effectiveness and efficiency of surface transportation systems through advanced technologies in information systems, communications, and sensors. In the United States, ITS represents the major post-Interstate-era program for advancing surface transportation in highways and public transportation, and is potentially comparable to the air traffic control system in impact. The readings for the class come primarily from the instructor’s own text: Sussman, Joseph. Perspectives on Intelligent Transportation Systems (ITS) . New York, NY: Springer, 2005. ISBN: 0387232575.
+course_url: "https://ocw.mit.edu/courses/1-212j-an-introduction-to-intelligent-transportation-systems-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/1-212j-an-introduction-to-intelligent-transportation-systems-spring-2005/ebb322261f4976e34d4b802e4573a686_1-212js05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

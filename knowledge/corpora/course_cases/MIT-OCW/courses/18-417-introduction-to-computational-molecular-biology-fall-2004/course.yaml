@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-18-417-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.417"
+cross_listed_codes: []
+course_title: "Introduction to Computational Molecular Biology"
+course_slug: "18-417-introduction-to-computational-molecular-biology-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Ross Lippert"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+  - "Mathematics"
+  - "Computation"
+  - "Science"
+  - "Biology"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course introduces the basic computational methods used to understand the cell on a molecular level. It covers subjects such as the sequence alignment algorithms: dynamic programming, hashing, suffix trees, and Gibbs sampling. Furthermore, it focuses on computational approaches to: genetic and physical mapping; genome sequencing, assembly, and annotation; RNA expression and secondary structure; protein structure and folding; and molecular interactions and dynamics.
+course_url: "https://ocw.mit.edu/courses/18-417-introduction-to-computational-molecular-biology-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/18-417-introduction-to-computational-molecular-biology-fall-2004/930803e1cdac4932b52e6b074834702b_18-417f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

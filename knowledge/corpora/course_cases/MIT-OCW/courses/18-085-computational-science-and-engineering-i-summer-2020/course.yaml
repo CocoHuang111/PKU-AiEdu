@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-18-085-summer-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.085"
+cross_listed_codes:
+  - "18.0851"
+course_title: "Computational Science and Engineering I"
+course_slug: "18-085-computational-science-and-engineering-i-summer-2020"
+term: "Summer"
+year: 2020
+as_taught_in: "Summer 2020"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Chengzhao (Richard)  Zhang"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Science and Engineering"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Differential Equations"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course provides the fundamental computational toolbox for solving science and engineering problems. Topics include review of linear algebra, applications to networks, structures, estimation, finite difference and finite element solutions of differential equations, Laplace’s equation and potential flow, boundary-value problems, Fourier series, the discrete Fourier transform, and convolution. We will also explore many topics in AI and machine learning throughout the course.
+course_url: "https://ocw.mit.edu/courses/18-085-computational-science-and-engineering-i-summer-2020/"
+image_url: "https://ocw.mit.edu/courses/18-085-computational-science-and-engineering-i-summer-2020/3bb95e8dd1c1e46c06c2a4a7139871f9_18-085su20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

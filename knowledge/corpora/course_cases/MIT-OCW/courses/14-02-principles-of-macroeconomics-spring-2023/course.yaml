@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-14-02-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.02"
+cross_listed_codes: []
+course_title: "Principles of Macroeconomics"
+course_slug: "14-02-principles-of-macroeconomics-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ricardo Caballero"
+subject_primary: "Economics"
+subject_secondary:
+  - "Macroeconomics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  What is a recession? What happened to the U.S. economy in 2020 and 2021, and how did the pandemic, tax and spending policies, and monetary policies affect it? What happened in 2008–2009, during the “Global Financial Crisis”? Why is inflation higher today than at any time in the last three decades? Why does the unemployment rate vary over time? Why is there unemployment at all? Why do exchange rates between currencies fluctuate? How do policies in one country affect other countries? Why do economies grow at different rates? Why has China’s growth rate exceeded that of the U.S. for more than 30 years, and will such disparities continue? What explains movements in the stock market? These are some of the core questions of macroeconomics. If you are curious about the answers, then this is the course for you. The course is organized around four major themes: the determinants of short-run economic fluctuations; the determinants of long-run growth; the investigation of government policies, including monetary policy, government spending, and exchange rate policy; and the analysis of key economic sectors, such as consumer spending, business investment, and financial markets.
+course_url: "https://ocw.mit.edu/courses/14-02-principles-of-macroeconomics-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/14-02-principles-of-macroeconomics-spring-2023/14_02_s23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

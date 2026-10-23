@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-12-091-january-iap-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.091"
+cross_listed_codes: []
+course_title: "Basics of Impact Cratering & Geological, Geophysical, Geochemical, Environmental Studies of Some Impact Craters of the Earth"
+course_slug: |
+  12-091-basics-of-impact-cratering-geological-geophysical-geochemical-environmental-studies-of-some-impact-craters-of-the-earth-january-iap-2008
+term: "January IAP"
+year: 2008
+as_taught_in: "January IAP 2008"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Ila Pillalamarri"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Environmental Science"
+  - "Geochemistry"
+  - "Geology"
+  - "Geophysics"
+  - "Planetary Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+          - "Geochemistry"
+          - "Geology"
+          - "Geophysics"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+  - "Written Assignments with Examples"
+description: |
+  There are now about 170 identified impact craters on the Earth, and this number is growing, ever since the well known discovery of Meteor Crater in 1920s. Currently, multi-interdisciplinary research studies of impact structures are getting conducted in fields like mineralogy, petrology, environmental geology, and marine biology. The course objectives are to introduce basic principles of impact cratering, understand the application of analytical tools, and become familiar with geological, geochemical and environmental studies. This course is offered during the Independent Activities Period ( IAP ), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: |
+  https://ocw.mit.edu/courses/12-091-basics-of-impact-cratering-geological-geophysical-geochemical-environmental-studies-of-some-impact-craters-of-the-earth-january-iap-2008/
+image_url: |
+  https://ocw.mit.edu/courses/12-091-basics-of-impact-cratering-geological-geophysical-geochemical-environmental-studies-of-some-impact-craters-of-the-earth-january-iap-2008/8d69a70f59df075bf70663712dcb2aa6_12-091iap08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

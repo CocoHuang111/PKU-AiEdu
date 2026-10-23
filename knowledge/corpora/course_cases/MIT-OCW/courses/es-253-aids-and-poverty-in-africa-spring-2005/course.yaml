@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-es-253-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.253"
+cross_listed_codes: []
+course_title: "AIDS and Poverty in Africa"
+course_slug: "es-253-aids-and-poverty-in-africa-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Lee Perlman"
+  - "Raja Bobbili"
+subject_primary: "Public Health"
+subject_secondary:
+  - "Society"
+  - "Global Poverty"
+  - "The Developing World"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  This is a discussion-based interactive seminar on the two major issues that affect Sub-Saharan Africa: HIV/AIDS and Poverty. AIDS and Poverty, seemingly different concepts, are more inter-related to each other in Africa than in any other continent. As MIT students, we feel it is important to engage ourselves in a dynamic discussion on the relation between the two - how to fight one and how to solve the other.
+course_url: "https://ocw.mit.edu/courses/es-253-aids-and-poverty-in-africa-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/es-253-aids-and-poverty-in-africa-spring-2005/dd50a4010a2a4b6272453828afed1e74_es-253s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

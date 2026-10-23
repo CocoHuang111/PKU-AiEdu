@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-004-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.004"
+cross_listed_codes: []
+course_title: "Reading Poetry: Social Poetics"
+course_slug: "21l-004-reading-poetry-social-poetics-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joshua Bennett"
+subject_primary: "Literature"
+subject_secondary:
+  - "Poetry"
+  - "Society"
+  - "African American Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Poetry"
+  - name: "Society"
+    subtopics:
+      - name: "African American Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Podcasts"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  The central concern of this class is the historical relationship between the social lives of everyday people and U.S. American poetics, with a special emphasis on what June Jordan once termed the “difficult miracle of Black poetry in America.” How does poetry help us to know one another? And how might we better understand the particular role of poetry, of poiesis, for those historically barred from the very practice of reading or writing, from ownership (even of one’s own body), and various generally recognized forms of belonging? For this course, these will be some of our animating questions.
+course_url: "https://ocw.mit.edu/courses/21l-004-reading-poetry-social-poetics-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/21l-004-reading-poetry-social-poetics-spring-2023/mit21l_004_s23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

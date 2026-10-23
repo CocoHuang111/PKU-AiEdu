@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-481-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.481"
+cross_listed_codes: []
+course_title: "Victorian Literature and Culture"
+course_slug: "21l-481-victorian-literature-and-culture-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Buzard"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "Literature"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+      - name: "Literature"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The course covers British literature and culture during Queen Victoria’s long reign, 1837-1901. This was the brilliant age of Charles Dickens, the Brontës, Lewis Carroll, George Eliot, Robert Browning, Oscar Wilde, Arthur Conan Doyle, Rudyard Kipling, Alfred, Lord Tennyson – and many others. It was also the age of urbanization, steam power, class conflict, Darwin, religious crisis, imperial expansion, information explosion, bureaucratization – and much more.
+course_url: "https://ocw.mit.edu/courses/21l-481-victorian-literature-and-culture-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/21l-481-victorian-literature-and-culture-spring-2003/510084a19d99801d2bd2b6c6bf3b7286_21l-481s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

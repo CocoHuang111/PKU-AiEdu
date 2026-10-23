@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-11-423-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.423"
+cross_listed_codes: []
+course_title: "Information and Communication Technologies in Community Development"
+course_slug: "11-423-information-and-communication-technologies-in-community-development-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Langley Keyes"
+  - "Prof. Lorlene Hoyt"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Social Science"
+  - "Communication"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+description: |
+  This practicum subject integrates theory and practice through the design, implementation, and evaluation of a comprehensive community information infrastructure that promotes democratic involvement and informs community development projects. Students work with Lawrence Community Works, Inc. to involve constituents and generate solutions to an important planning problem in the City of Lawrence, Massachusetts. Final project presentations take place in a public forum, and serve to inform future development of the information infrastructure. Subject begins with an overview of the digital divide, e-government, public participation GIS, and neighborhood information systems. Subject includes a reflection component and a deliberate investigation of race, class, and gender dynamics.
+course_url: "https://ocw.mit.edu/courses/11-423-information-and-communication-technologies-in-community-development-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/11-423-information-and-communication-technologies-in-community-development-spring-2004/dae8fd2b2c25190cd90f20aeb48f6d1a_11-423s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

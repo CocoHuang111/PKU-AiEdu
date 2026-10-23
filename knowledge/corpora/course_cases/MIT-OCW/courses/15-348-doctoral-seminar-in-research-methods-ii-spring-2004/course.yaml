@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-15-348-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.348"
+cross_listed_codes: []
+course_title: "Doctoral Seminar in Research Methods II"
+course_slug: "15-348-doctoral-seminar-in-research-methods-ii-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jesper B. Sorensen"
+subject_primary: "Probability and Statistics"
+subject_secondary:
+  - "Social Science"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Social Science"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  A large proportion of contemporary research on organizations, strategy and management relies on quantitative research methods. This course is designed to provide an introduction to some of the most commonly used quantitative techniques, including logit/probit models, count models, event history models, and pooled cross-section techniques.
+course_url: "https://ocw.mit.edu/courses/15-348-doctoral-seminar-in-research-methods-ii-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/15-348-doctoral-seminar-in-research-methods-ii-spring-2004/f258190ee7d271cf1c827e1f33306afa_15-348s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

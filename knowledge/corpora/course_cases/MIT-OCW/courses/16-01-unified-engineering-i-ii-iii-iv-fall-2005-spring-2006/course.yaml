@@ -1,0 +1,92 @@
+schema_version: "1.0"
+course_id: "mitocw-16-01-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.01"
+cross_listed_codes:
+  - "16.02"
+  - "16.03"
+  - "16.04"
+course_title: "Unified Engineering I, II, III, & IV"
+course_slug: "16-01-unified-engineering-i-ii-iii-iv-fall-2005-spring-2006"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Mark Drela"
+  - "Prof. Steven Hall"
+  - "Prof. Paul A. Lagace"
+  - "Prof. Ingrid Kristina Lundqvist"
+  - "Prof. Gustaf Naeser"
+  - "Prof. Heidi Perry"
+  - "Prof. Raúl Radovitzky"
+  - "Prof. Ian A. Waitz"
+  - "Col. Peter Young"
+  - "Prof. Jennifer L. Craig"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Aerospace Engineering"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Competition Videos"
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The basic objective of Unified Engineering is to give a solid understanding of the fundamental disciplines of aerospace engineering, as well as their interrelationships and applications. These disciplines are Materials and Structures (M); Computers and Programming (C); Fluid Mechanics (F); Thermodynamics (T); Propulsion (P); and Signals and Systems (S). In choosing to teach these subjects in a unified manner, the instructors seek to explain the common intellectual threads in these disciplines, as well as their combined application to solve engineering Systems Problems (SP). Throughout the year, the instructors emphasize the connections among the disciplines.
+course_url: "https://ocw.mit.edu/courses/16-01-unified-engineering-i-ii-iii-iv-fall-2005-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/16-01-unified-engineering-i-ii-iii-iv-fall-2005-spring-2006/8f56bbb35d0e456dc8b70911bec7cd0d_16-01f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

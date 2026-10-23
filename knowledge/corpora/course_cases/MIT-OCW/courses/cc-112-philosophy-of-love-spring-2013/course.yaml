@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-cc-112-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CC.112"
+cross_listed_codes: []
+course_title: "Philosophy of Love"
+course_slug: "cc-112-philosophy-of-love-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Concourse"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Lee Perlman"
+subject_primary: "Literature"
+subject_secondary:
+  - "Classics"
+  - "Philosophy"
+  - "Ethics"
+  - "Political Philosophy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Classics"
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+          - "Political Philosophy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course explores the nature of love through works of philosophy, literature, film, poetry, and individual experience. It investigates the distinction among eros, philia, and agape. Students discuss ideas of love as a feeling, an action, a species of ‘knowing someone,’ or a way to give or take. Authors studied include Plato, Kant, Buber, D. H. Lawrence, Rumi, and Aristotle. This course is part of the Concourse program at MIT.
+course_url: "https://ocw.mit.edu/courses/cc-112-philosophy-of-love-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/cc-112-philosophy-of-love-spring-2013/882ee59f952e689efa8dce3e404955bd_CC-112s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

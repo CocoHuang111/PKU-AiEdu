@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-1-253j-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.253J"
+cross_listed_codes:
+  - "11.543J"
+  - "ESD.222J"
+course_title: "Transportation Policy and Environmental Limits"
+course_slug: "1-253j-transportation-policy-and-environmental-limits-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Urban Studies and Planning"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Frederick Salvucci"
+  - "Prof. Joseph Coughlin"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Transportation Engineering"
+  - "Environmental Engineering"
+  - "Science"
+  - "Earth Science"
+  - "Environmental Science"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Public Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Transportation Engineering"
+      - name: "Environmental Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Through a combination of lectures, cases, and class discussions this subject examines the economic and political conflict between transportation and the environment. It investigates the role of government regulation, green business and transportation policy as facilitators of economic development and environmental sustainability. It analyzes a variety of international policy problems including government-business relations; the role of interest groups, non-governmental organizations, and the public and media in the regulation of the automobile; sustainable development; global warming; the politics of risk and siting of transport facilities; environmental justice; equity; and transportation and public health in the urban metropolis. It provides students with an opportunity to apply transportation and planning methods to developing policy alternatives in the context of environmental politics.
+course_url: "https://ocw.mit.edu/courses/1-253j-transportation-policy-and-environmental-limits-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/1-253j-transportation-policy-and-environmental-limits-spring-2004/1747d58e11d38e30fa944e969edc4752_1-253js04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

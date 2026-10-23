@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-306-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.306"
+cross_listed_codes: []
+course_title: "The Emergence of Europe: 500-1300"
+course_slug: "21h-306-the-emergence-of-europe-500-1300-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anne McCants"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "Medieval History"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+          - "Medieval History"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course surveys the social, cultural, and political development of western Europe between 500 and 1350. A number of topics are incorporated into the broad chronological sweep of the course, including: the Germanic conquest of the ancient Mediterranean world; the rise of a distinct northern culture and the Carolingian Renaissance; the emergence of feudalism and the breakdown of political order; contact with the Byzantine and Islamic East and the Crusading movement; the quality of religious life; the vitality of the high medieval economy and culture; and the catastrophes of the fourteenth century.
+course_url: "https://ocw.mit.edu/courses/21h-306-the-emergence-of-europe-500-1300-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/21h-306-the-emergence-of-europe-500-1300-fall-2003/ccdbfa471b7cc9b1515e89857cc16b45_21h-306f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

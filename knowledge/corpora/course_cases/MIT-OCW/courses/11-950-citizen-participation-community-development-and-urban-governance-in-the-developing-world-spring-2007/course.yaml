@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-950-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.950"
+cross_listed_codes: []
+course_title: "Citizen Participation, Community Development, and Urban Governance in the Developing World"
+course_slug: "11-950-citizen-participation-community-development-and-urban-governance-in-the-developing-world-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gianpaolo Baiocchi"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Citizen participation is everywhere. Invoking it has become de rigueur when discussing cities and regions in the developing world. From the World Bank to the World Social Forum, the virtues of participation are extolled: From its capacity to “deepen democracy” to its ability to improve governance, there is no shortage to the benefits it can bring. While it is clear that participation cannot possibly “do” all that is claimed, it is also clear that citizen participation cannot be dismissed, and that there must be something to it. Figuring out what that something is — whether it is identifying the types of participation or the contexts in which it happens that bring about desirable outcomes — is the goal of the class.
+course_url: "https://ocw.mit.edu/courses/11-950-citizen-participation-community-development-and-urban-governance-in-the-developing-world-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/11-950-citizen-participation-community-development-and-urban-governance-in-the-developing-world-spring-2007/e29baa975d06096739112ccb2562f159_11-950s07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

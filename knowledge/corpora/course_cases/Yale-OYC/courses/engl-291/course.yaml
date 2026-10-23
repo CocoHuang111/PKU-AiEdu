@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-engl-291"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "ENGL 291"
+course_title: "The American Novel Since 1945"
+course_slug: "engl-291"
+department_path: "english"
+professors:
+  - "Amy Hungerford Professor of English"
+course_url: "https://oyc.yale.edu/english/engl-291"
+language: "en"
+description: |
+  In "The American Novel Since 1945" students will study a wide range of works from 1945 to the present. The course traces the formal and thematic developments of the novel in this period, focusing on the relationship between writers and readers, the conditions of publishing, innovations in the novel's form, fiction's engagement with history, and the changing place of literature in American culture. The reading list includes works by Richard Wright, Flannery O'Connor, Vladimir Nabokov, Jack Kerouac, J. D. Salinger, Thomas Pynchon, John Barth, Maxine Hong Kingston, Toni Morrison, Marilynne Robinson, Cormac McCarthy, Philip Roth and Edward P. Jones. The course concludes with a contemporary novel chosen by the students in the class.
+license_url: ""
+session_count: 27
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

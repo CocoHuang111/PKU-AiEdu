@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-820-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.820"
+cross_listed_codes: []
+course_title: "The Beat of Brazil: Brazilian Society Through Its Music"
+course_slug: "21g-820-the-beat-of-brazil-brazilian-society-through-its-music-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Nilma Dominique"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Humanities"
+  - "History"
+  - "Latin American History"
+  - "Language"
+  - "Portuguese"
+  - "Society"
+  - "Latin and Caribbean Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Latin American History"
+      - name: "Language"
+        specialties:
+          - "Portuguese"
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course will present students with an overview of Brazilian popular music, from the late nineteenth century to the present day. Considered an advanced course, it aims to build vocabulary competence and improve oral communication through the study and discussion of topics about cultural aspects and current issues in Brazil. It is designed to give students extensive experience in Portuguese and emphasizes skill development and refinement in the area of critical reading and writing in Portuguese.
+course_url: "https://ocw.mit.edu/courses/21g-820-the-beat-of-brazil-brazilian-society-through-its-music-fall-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-820-the-beat-of-brazil-brazilian-society-through-its-music-fall-2016/f9bf45f1ef280a6cc4025cb3a3bddf27_21G-820f16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-dusp-sloan-courses-transition-successfully-online-11312"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "DUSP & Sloan courses transition successfully online: 11.312 and 15.679"
+slug: "dusp-sloan-courses-transition-successfully-online-11312"
+course_codes:
+  - "11.312, 15.679"
+departments:
+  - "Urban Studies and Planning (Course 11)"
+instructors:
+  - "Ceasar McDowell"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/dusp-sloan-courses-transition-successfully-online-11312"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "55de242e00a6bcbad2a78b41e614887edee22dcd0a9395567255950d66098e71"

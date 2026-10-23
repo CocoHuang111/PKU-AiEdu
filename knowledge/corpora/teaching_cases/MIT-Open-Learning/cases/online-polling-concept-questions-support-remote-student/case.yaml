@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-online-polling-concept-questions-support-remote-student"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Online Polling & Concept Questions Support Remote Student Engagement"
+slug: "online-polling-concept-questions-support-remote-student"
+course_codes:
+  - "ESD.411/412/413"
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Edward Crawley"
+  - "Bryan Moser"
+  - "Bruce Cameron"
+  - "Olivier de Weck"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/online-polling-concept-questions-support-remote-student"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "fc9e8b66dac269cfaac9928ca9d2ca37c97673ade5d507475efe7301a5f0e268"

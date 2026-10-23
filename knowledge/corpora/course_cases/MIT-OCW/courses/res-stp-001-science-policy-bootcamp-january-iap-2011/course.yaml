@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-res-stp-001-january-iap-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.STP-001"
+cross_listed_codes: []
+course_title: "Science Policy Bootcamp"
+course_slug: "res-stp-001-science-policy-bootcamp-january-iap-2011"
+term: "January IAP"
+year: 2011
+as_taught_in: "January IAP 2011"
+language: "en"
+departments: []
+academic_levels:
+  - "Graduate"
+instructors:
+  - "William Bonvillian"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The careers of MIT scientists and engineers are significantly determined by public policy decisions made in Washington by the government. However, their access to information on how this system works is limited. Meanwhile, we increasingly understand that science and technology-based innovation is deeply connected to society’s economic growth and its ability to generate societal wellbeing, so the public role of science is growing. This course will examine the public policy behind and the government’s role in the science and technology innovation system. Given the challenges to future federal science support, this seminar will aim to equip those planning careers in and around science and technology with a basic background for involvement in science policymaking. This course is offered during MIT’s Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month. It features student-led discussion incorporated into the course structure as well as opportunities to interact with MIT students and faculty involved in aspects of science policy. The course has been offered since 2006 and has developed as a collaborative effort between the instructor and MIT students from the Science Policy Initiative .
+course_url: "https://ocw.mit.edu/courses/res-stp-001-science-policy-bootcamp-january-iap-2011/"
+image_url: "https://ocw.mit.edu/courses/res-stp-001-science-policy-bootcamp-january-iap-2011/3317510df33f2dcf5ced0d5462fb4cf6_res-stp-001iap11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-486-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.486"
+cross_listed_codes: []
+course_title: "Modern Drama"
+course_slug: "21l-486-modern-drama-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Diana Henderson"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Performance Arts"
+  - "Theater"
+  - "Humanities"
+  - "Literature"
+  - "Drama"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Drama"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course analyzes major modern plays featuring works by Shaw, Pirandello, Beckett, Brecht, Williams, Soyinka, Hwang, Churchill, Wilson, Frayn, Stoppard, Deveare Smith, and Kushner. The class particularly considers performance, sociopolitical and aesthetic contexts, and the role of theater in the world of modern multimedia.
+course_url: "https://ocw.mit.edu/courses/21l-486-modern-drama-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/21l-486-modern-drama-spring-2006/4ed263d3abe096b847dc0f5a682730d4_21l-486s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

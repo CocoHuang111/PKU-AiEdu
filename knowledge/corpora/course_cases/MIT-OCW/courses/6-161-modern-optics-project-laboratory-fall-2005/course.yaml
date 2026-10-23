@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-6-161-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.161"
+cross_listed_codes:
+  - "6.637"
+course_title: "Modern Optics Project Laboratory"
+course_slug: "6-161-modern-optics-project-laboratory-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Cardinal Warde"
+  - "David Dunmeyer"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  6.161 offers an introduction to laboratory optics, optical principles, and optical devices and systems. This course covers a wide range of topics, including: polarization properties of light, reflection and refraction, coherence and interference, Fraunhofer and Fresnel diffraction, holography, imaging and transforming properties of lenses, spatial filtering, two-lens coherent optical processor, optical properties of materials, lasers, electro-optic, acousto-optic and liquid-crystal light modulators, optical detectors, optical waveguides and fiber-optic communication systems. Students engage in extensive oral and written communication exercises. There are 12 engineering design points associated with this subject.
+course_url: "https://ocw.mit.edu/courses/6-161-modern-optics-project-laboratory-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/6-161-modern-optics-project-laboratory-fall-2005/709a331fe24dcc75f7b052a0b84170d0_6-161f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

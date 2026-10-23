@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-152-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.152"
+cross_listed_codes: []
+course_title: "Modern China"
+course_slug: "21h-152-modern-china-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Tristan G. Brown"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "Modern History"
+  - "World History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+          - "Modern History"
+          - "World History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Videos"
+  - "Written Assignments with Examples"
+description: |
+  This course discusses China’s emergence as a global power, which has arisen out of two centuries of significant change. It explores those transformations from 1800 to the present by examining the advent of foreign imperialism in the nineteenth century, the collapse of the last imperial dynasty in 1911, China’s debilitating war against Japan, the communist revolution, and the tumultuous history of the People’s Republic of China from 1949. Also, this course addresses the historical transformations that have shaped contemporary Chinese politics, ethnicity, gender, environment, economics, and international relations.
+course_url: "https://ocw.mit.edu/courses/21h-152-modern-china-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/21h-152-modern-china-spring-2022/21h-152s22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

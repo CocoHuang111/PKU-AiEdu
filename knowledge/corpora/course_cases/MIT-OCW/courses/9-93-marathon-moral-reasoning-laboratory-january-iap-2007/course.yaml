@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-9-93-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.93"
+cross_listed_codes: []
+course_title: "Marathon Moral Reasoning Laboratory"
+course_slug: "9-93-marathon-moral-reasoning-laboratory-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Mikhail"
+  - "Prof. Joshua Tenenbaum"
+  - "Prof. Rebecca Saxe"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Ethics"
+  - "Science"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This seminar focuses on the cognitive science of moral reasoning. Philosophers debate how we decide which moral actions are permissible. Is it permissible to take one human life in order to save others? We have powerful and surprisingly rich and subtle intuitions to such questions. In this class, you will learn how intuitions can be studied using formal analytical paradigms and behavioral experiments. Thursday evening, meet to learn about recent advances in theories of moral reasoning. Overnight, formulate a hypothesis about the structure of moral reasoning and design a questionnaire-based experiment to test this. Friday, present and select 1-2 proposals and collect data; we will then reconvene to analyze and discuss results and implications for the structure of the moral mind. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/9-93-marathon-moral-reasoning-laboratory-january-iap-2007/"
+image_url: "https://ocw.mit.edu/courses/9-93-marathon-moral-reasoning-laboratory-january-iap-2007/5e1687114a7ead1910477cdfa8cfad19_9-93iap07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-441-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.441"
+cross_listed_codes: []
+course_title: "The Conquest of America"
+course_slug: "21a-441-the-conquest-of-america-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Howe"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "Indigenous Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Indigenous Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  In this course the conquest and colonization of the Americas is considered, with special attention to the struggles of native peoples in Guatemala, Canada, Brazil, Panama, and colonial New England. In two segments of the course-one devoted to the Jesuit missionization of the Huron in the 1630s, the other to struggles between the government of Panama and the Kuna between 1900 and 1925-students examine primary documents such as letters, reports, and court records, to draw their own conclusions. Attention focuses on how we know about and represent past eras and other peoples, as well as on the history of struggles between native Americans and Europeans.
+course_url: "https://ocw.mit.edu/courses/21a-441-the-conquest-of-america-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21a-441-the-conquest-of-america-spring-2004/d79bc5e100ef33c203b0f622501b2438_21a-441s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

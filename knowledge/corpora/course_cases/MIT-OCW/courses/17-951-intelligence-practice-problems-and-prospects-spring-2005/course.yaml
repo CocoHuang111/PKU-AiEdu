@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-17-951-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.951"
+cross_listed_codes: []
+course_title: "Intelligence: Practice, Problems and Prospects"
+course_slug: "17-951-intelligence-practice-problems-and-prospects-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Barry Posen"
+  - "Prof. Harvey Sapolsky"
+  - "Prof. Robert Vickers"
+subject_primary: "Political Science"
+subject_secondary:
+  - "Public Administration"
+  - "Military Studies"
+  - "Public Policy"
+  - "Security Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+          - "Public Policy"
+          - "Security Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course will explore the organization and functions of the U.S. Intelligence Community, its interaction with national security policymakers, key issues about its workings, and the challenges it faces in defining its future role. The events of 9/11 and the invasion of Iraq have focused new attention on national intelligence, including the most significant reorganization of the community since the National Security Act of 1947. The course will highlight some of the major debates about the role, practices, and problems of national intelligence.
+course_url: "https://ocw.mit.edu/courses/17-951-intelligence-practice-problems-and-prospects-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/17-951-intelligence-practice-problems-and-prospects-spring-2005/a6dd16c5904a180cfda2a2be33188ca5_17-951s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

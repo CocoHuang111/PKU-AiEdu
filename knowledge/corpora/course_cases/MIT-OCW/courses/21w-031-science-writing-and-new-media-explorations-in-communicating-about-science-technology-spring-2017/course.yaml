@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-031-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.031"
+cross_listed_codes: []
+course_title: "Science Writing and New Media: Explorations in Communicating about Science & Technology"
+course_slug: "21w-031-science-writing-and-new-media-explorations-in-communicating-about-science-technology-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Janis Melvold"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Technical Writing"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Technical Writing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  Proficiency in communicating about science and technology comes from both knowledge and practice, and this course emphasizes both. Through a variety of reading and writing assignments, we will examine general principles of good writing, as well as principles associated specifically with scientific and technical writing. We will also explore the effects of new media as avenues for communicating about science.
+course_url: "https://ocw.mit.edu/courses/21w-031-science-writing-and-new-media-explorations-in-communicating-about-science-technology-spring-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/21w-031-science-writing-and-new-media-explorations-in-communicating-about-science-technology-spring-2017/cdbb8b0d9f4b70afd53a51078b370c77_21W-031S17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

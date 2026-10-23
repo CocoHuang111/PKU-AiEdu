@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-22-52j-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.52J"
+cross_listed_codes:
+  - "8.575J"
+  - "10.44J"
+course_title: "Statistical Thermodynamics of Complex Liquids"
+course_slug: "22-52j-statistical-thermodynamics-of-complex-liquids-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+  - "Physics"
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Sow-Hsin Chen"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Mathematics"
+  - "Probability and Statistics"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course explores the theory of self-assembly in surfactant-water (micellar) and surfactant-water-oil (micro-emulsion) systems. It also introduces the theory of polymer solutions, as well as scattering techniques, light, x-ray, and neutron scattering applied to studies of the structure and dynamics of complex liquids, and modern theory of the liquid state relevant to structured (supramolecular) liquids.
+course_url: "https://ocw.mit.edu/courses/22-52j-statistical-thermodynamics-of-complex-liquids-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/22-52j-statistical-thermodynamics-of-complex-liquids-spring-2004/b810ec94d82d16488adde930a516473a_22-52js04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

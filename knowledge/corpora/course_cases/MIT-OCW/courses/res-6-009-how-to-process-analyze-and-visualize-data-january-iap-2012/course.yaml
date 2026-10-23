@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-res-6-009-january-iap-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.6-009"
+cross_listed_codes: []
+course_title: "How to Process, Analyze and Visualize Data"
+course_slug: "res-6-009-how-to-process-analyze-and-visualize-data-january-iap-2012"
+term: "January IAP"
+year: 2012
+as_taught_in: "January IAP 2012"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Adam Marcus"
+  - "Eugene Wu"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Graphics and Visualization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+          - "Graphics and Visualization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This course is an introduction to data cleaning, analysis and visualization. We will teach the basics of data analysis through concrete examples. You will learn how to take raw data, extract meaningful information, use statistical tools, and make visualizations. This was offered as a non-credit course during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/res-6-009-how-to-process-analyze-and-visualize-data-january-iap-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/res-6-009-how-to-process-analyze-and-visualize-data-january-iap-2012/81b5dd544383c0ee0251d67729594317_res-6-009iap12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

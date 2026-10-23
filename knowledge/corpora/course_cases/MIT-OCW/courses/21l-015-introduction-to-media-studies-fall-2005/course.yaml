@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-015-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.015"
+cross_listed_codes: []
+course_title: "Introduction to Media Studies"
+course_slug: "21l-015-introduction-to-media-studies-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Beth Coleman"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Comparative Literature"
+  - "Criticism"
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Media Assignments"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Introduction to Media Studies is designed for students who have grown up in a rapidly changing global multimedia environment and want to become more literate and critical consumers and producers of media. Through an interdisciplinary comparative and historical lens, the course defines “media” broadly as including oral, print, performance, photographic, broadcast, cinematic, and digital cultural forms and practices. The course looks at the nature of mediated communication, the functions of media, the history of transformations in media and the institutions that help define media’s place in society. This year’s course will focus on issues of network culture and media convergence, addressing such subjects as Intellectual Property, peer2peer authoring, blogging, and game modification.
+course_url: "https://ocw.mit.edu/courses/21l-015-introduction-to-media-studies-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21l-015-introduction-to-media-studies-fall-2005/ff45e294697960ad3a88b9873e8761c1_21l-015f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

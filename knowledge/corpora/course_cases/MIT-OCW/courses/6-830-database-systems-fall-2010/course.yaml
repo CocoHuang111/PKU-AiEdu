@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-6-830-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.830"
+cross_listed_codes:
+  - "6.814"
+course_title: "Database Systems"
+course_slug: "6-830-database-systems-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+  - "Undergraduate"
+instructors:
+  - "Prof. Samuel Madden"
+  - "Prof. Robert Morris"
+  - "Prof. Michael Stonebraker"
+  - "Dr. Carlo Curino"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Algorithms and Data Structures"
+  - "Data Mining"
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Data Mining"
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Programming Assignments"
+description: |
+  This course relies on primary readings from the database community to introduce graduate students to the foundations of database systems, focusing on basics such as the relational algebra and data model, schema normalization, query optimization, and transactions. It is designed for students who have taken 6.033 (or equivalent); no prior database experience is assumed, though students who have taken an undergraduate course in databases are encouraged to attend.
+course_url: "https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/6-830-database-systems-fall-2010/f6a4a8580e9f629729e14e358a682bf4_6-830f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-24-120-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.120"
+cross_listed_codes: []
+course_title: "Moral Psychology"
+course_slug: "24-120-moral-psychology-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Richard Holton"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Ethics"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course is an examination of philosophical theories of action and motivation in the light of empirical findings from social psychology, sociology, and neuroscience. Topics include belief, desire, and moral motivation; sympathy and empathy; intentions and other committing states; strength of will and weakness of will; free will; addiction and compulsion; guilt, shame and regret; evil; self-knowledge and self-deception; and, virtues and character traits. This course is a CI-M course.
+course_url: "https://ocw.mit.edu/courses/24-120-moral-psychology-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/24-120-moral-psychology-spring-2009/c6ce46faeee17ffacfa5bd8c8cda0a56_24-120s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

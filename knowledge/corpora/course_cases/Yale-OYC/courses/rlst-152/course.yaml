@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-rlst-152"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "RLST 152"
+course_title: "Introduction to the New Testament History and Literature"
+course_slug: "rlst-152"
+department_path: "religious studies"
+professors:
+  - "Dale B. Martin Woolsey Professor Emeritus of Religious Studies"
+course_url: "https://oyc.yale.edu/religious-studies/rlst-152"
+language: "en"
+description: |
+  This course provides a historical study of the origins of Christianity by analyzing the literature of the earliest Christian movements in historical context, concentrating on the New Testament. Although theological themes will occupy much of our attention, the course does not attempt a theological appropriation of the New Testament as scripture. Rather, the importance of the New Testament and other early Christian documents as ancient literature and as sources for historical study will be emphasized. A central organizing theme of the course will focus on the differences within early Christianity (-ies).
+license_url: ""
+session_count: 26
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

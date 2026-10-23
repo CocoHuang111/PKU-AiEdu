@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-20-219-january-iap-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.219"
+cross_listed_codes: []
+course_title: "Becoming the Next Bill Nye: Writing and Hosting the Educational Show"
+course_slug: "20-219-becoming-the-next-bill-nye-writing-and-hosting-the-educational-show-january-iap-2015"
+term: "January IAP"
+year: 2015
+as_taught_in: "January IAP 2015"
+language: "en"
+departments:
+  - "Biological Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Elizabeth Choe"
+  - "Jaime Goldstein"
+  - "Chris Boebel"
+  - "George Zaidan"
+  - "Joshua Gunn"
+  - "Ceri Riley"
+  - "Dr. Natalie Kuldell"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Visual Arts"
+  - "Film and Video"
+  - "Social Science"
+  - "Communication"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+  - "Educational Technology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Projects with Examples"
+description: |
+  Becoming the Next Bill Nye is about using video production techniques to develop your ability to engagingly convey your passions for science, technology, engineering, and / or math. You’ll have the opportunity to script and on-screen host 5-minute YouTube science, technology, engineering, and / or math-related shows to inspire youth to consider a future in science.
+course_url: "https://ocw.mit.edu/courses/20-219-becoming-the-next-bill-nye-writing-and-hosting-the-educational-show-january-iap-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/20-219-becoming-the-next-bill-nye-writing-and-hosting-the-educational-show-january-iap-2015/f54fa4be872261b4ccfca37e1a17100e_20-219iap15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

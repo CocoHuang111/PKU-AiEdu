@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-181-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.181"
+cross_listed_codes: []
+course_title: "Queer Cinema and Visual Culture"
+course_slug: "wgs-181-queer-cinema-and-visual-culture-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. K.J. Surkan"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Film and Video"
+  - "Humanities"
+  - "History"
+  - "American History"
+  - "Society"
+  - "African American Studies"
+  - "Gender Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+  - name: "Society"
+    subtopics:
+      - name: "African American Studies"
+        specialties: []
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course analyzes mainstream, popular films produced in the post-World War II 20th century U.S. as cultural texts that shed light on ongoing historical struggles over gender identity and appropriate sexual behaviors. It traces the history of LGBTQ/queer film through the 20th and into the 21st century. It also examines the effect of the Hollywood Production Code and censorship of sexual themes and content, and the subsequent subversion of queer cultural production in embedded codes and metaphors. In addition, this course also considers the significance of these films as artifacts and examples of various aspects of queer theory.
+course_url: "https://ocw.mit.edu/courses/wgs-181-queer-cinema-and-visual-culture-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/wgs-181-queer-cinema-and-visual-culture-fall-2017/cea6703e782cccd902a70e220a7ed2ba_WGS-181f17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

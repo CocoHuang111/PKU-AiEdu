@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-online-application-lets-students-hear-play-fundamentals"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Online Application Lets Students Hear & Play: Fundamentals of Music"
+slug: "online-application-lets-students-hear-play-fundamentals"
+course_codes:
+  - "21M.051"
+departments:
+  - "Music and Theater Arts (Course 21M)"
+instructors:
+  - "Michael Scott Cuthbert"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/online-application-lets-students-hear-play-fundamentals"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "9ab4f9dacf2c798aa127c2db0cf12da5a9756d764c7006ea8b20e8ee10ca7ec9"

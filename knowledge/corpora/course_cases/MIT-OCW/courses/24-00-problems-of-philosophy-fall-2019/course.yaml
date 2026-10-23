@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-24-00-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.00"
+cross_listed_codes: []
+course_title: "Problems of Philosophy"
+course_slug: "24-00-problems-of-philosophy-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Miriam Schoenfield"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Epistemology"
+  - "Ethics"
+  - "Logic"
+  - "Metaphysics"
+  - "Religion"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Epistemology"
+          - "Ethics"
+          - "Logic"
+          - "Metaphysics"
+      - name: "Religion"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is an introduction to the problems of philosophy—in particular, to problems in ethics, metaphysics, theory of knowledge, and philosophy of logic, language, and science. It takes a systematic rather than historical approach. Readings come from classical and contemporary sources, but emphasis is on examination and evaluation of proposed solutions to the problems.
+course_url: "https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/24-00-problems-of-philosophy-fall-2019/55837ae5c3d82b8c4ac4aba94836f742_24-00f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

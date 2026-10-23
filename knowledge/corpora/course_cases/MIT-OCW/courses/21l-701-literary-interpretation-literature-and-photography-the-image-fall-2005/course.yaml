@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-701-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.701"
+cross_listed_codes: []
+course_title: "Literary Interpretation: Literature and Photography: The Image"
+course_slug: "21l-701-literary-interpretation-literature-and-photography-the-image-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Marja Roholl"
+  - "Prof. Stephen Tapscott"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Photography"
+  - "Humanities"
+  - "Literature"
+  - "Comparative Literature"
+  - "Criticism"
+  - "Poetry"
+  - "Philosophy"
+  - "Philosophy of Language"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Photography"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+          - "Poetry"
+      - name: "Philosophy"
+        specialties:
+          - "Philosophy of Language"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course introduces the practice and theory of literary criticism. The seminar focuses on topics such as the history of critical methods and techniques, and the continuity of certain subjects in literary history. Instruction and practice in oral and written communication is a major component of the course. Other components include theory and use of figurative language and reading poetry.
+course_url: "https://ocw.mit.edu/courses/21l-701-literary-interpretation-literature-and-photography-the-image-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-701-literary-interpretation-literature-and-photography-the-image-fall-2005/a720e587acc3318e8b4db4452300e0c3_21l-701f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

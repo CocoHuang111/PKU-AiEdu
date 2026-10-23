@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-747-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.747"
+cross_listed_codes: []
+course_title: "Rhetoric"
+course_slug: "21w-747-rhetoric-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Aden Evens"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Nonfiction Prose"
+  - "Rhetoric"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Nonfiction Prose"
+          - "Rhetoric"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This course uses the study of rhetoric as an opportunity to offer instruction in critical thinking. Through extensive writing and speaking assignments, students will develop their abilities to analyze texts of all kinds and to generate original and incisive ideas of their own. Critical thinking and original analysis as expressed in writing and in speech are the paramount goals of this class. The course will thus divide its efforts between an examination of the subject matter and an examination of student writing and speaking, in order to encourage in both instances the principal aims of the course.
+course_url: "https://ocw.mit.edu/courses/21w-747-rhetoric-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/21w-747-rhetoric-spring-2005/25e343794da6a8cd92dca525a1147375_21w-747s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

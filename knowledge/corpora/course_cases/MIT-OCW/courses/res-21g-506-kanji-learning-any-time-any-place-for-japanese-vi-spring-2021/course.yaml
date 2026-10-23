@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-res-21g-506-spring-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.21G-506"
+cross_listed_codes: []
+course_title: "Kanji Learning Any Time, Any Place for Japanese VI"
+course_slug: "res-21g-506-kanji-learning-any-time-any-place-for-japanese-vi-spring-2021"
+term: "Spring"
+year: 2021
+as_taught_in: "Spring 2021"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Takako Aikawa"
+  - "Dr. Meghan Perdue"
+subject_primary: "Language"
+subject_secondary:
+  - "Japanese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Japanese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This resource aims to enhance students’ learning of kanji by providing a series of video lectures that cover the kanji characters in Tobira lessons 6–10. The video lectures not only teach how to write kanji but also provide stories behind the kanji characters.
+course_url: "https://ocw.mit.edu/courses/res-21g-506-kanji-learning-any-time-any-place-for-japanese-vi-spring-2021/"
+image_url: |
+  https://ocw.mit.edu/courses/res-21g-506-kanji-learning-any-time-any-place-for-japanese-vi-spring-2021/cb8e1aff341a8c610d2d664c7d4abb63_res-21g-506.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-9-59j-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.59J"
+cross_listed_codes:
+  - "24.905J"
+course_title: "Lab in Psycholinguistics"
+course_slug: "9-59j-lab-in-psycholinguistics-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Edward Gibson"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Semantics"
+  - "Syntax"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Semantics"
+          - "Syntax"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Programming Assignments"
+description: |
+  Hands-on experience designing, conducting, analyzing, and presenting experiments on the structure and processing of human language. Focuses on constructing, conducting, analyzing, and presenting an original and independent experimental project of publishable quality. Develops skills in reading and writing scientific research reports in cognitive science, including evaluating the methods section of a published paper, reading and understanding graphical displays and statistical claims about data, and evaluating theoretical claims based on experimental data. Instruction and practice in oral and written communication provided.
+course_url: "https://ocw.mit.edu/courses/9-59j-lab-in-psycholinguistics-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/9-59j-lab-in-psycholinguistics-spring-2017/07f28940cbcc62fe61a17e72d5734fef_9-59s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

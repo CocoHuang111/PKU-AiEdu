@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-2-61-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.61"
+cross_listed_codes: []
+course_title: "Internal Combustion Engines"
+course_slug: "2-61-internal-combustion-engines-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Wai Cheng"
+subject_primary: "Combustion"
+subject_secondary:
+  - "Fossil Fuels"
+  - "Transportation"
+  - "Engineering"
+  - "Chemical Engineering"
+  - "Transport Processes"
+  - "Mechanical Engineering"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Combustion"
+        specialties: []
+      - name: "Fossil Fuels"
+        specialties: []
+      - name: "Transportation"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course studies the fundamentals of how the design and operation of internal combustion engines affect their performance, efficiency, fuel requirements, and environmental impact. Topics include fluid flow, thermodynamics, combustion, heat transfer and friction phenomena, and fuel properties, with reference to engine power, efficiency, and emissions. Students examine the design features and operating characteristics of different types of internal combustion engines: spark-ignition, diesel, stratified-charge, and mixed-cycle engines. The class includes lab project in the Engine Laboratory.
+course_url: "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/2-61-internal-combustion-engines-spring-2017/e2db8a7d46a344f5225c442adfd0682a_2-61s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -9,9 +9,9 @@ mode: cloud # cloud（默认）| local（需显式开启，见 README）
 llm:
   cloud:
     provider: openai_compat
-    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
-    model: qwen3.7-plus
-    api_key_env: DASHSCOPE_API_KEY
+    base_url: https://api.deepseek.com
+    model: deepseek-flash
+    api_key_env: DEEPSEEK_API_KEY
     temperature: 0.3
     timeout: 300
   local:
@@ -66,6 +66,11 @@ asr:
   compute_type: int8
   vad_filter: true # 过滤静音段，长视频提速明显
   punctuate: true # 转写后用 LLM 只补中文标点（学 Atmos）；失败则规则断句，不中断评估
+  chunk_seconds: 600 # 每十分钟独立子进程转写，保存检查点，重启后续跑
+  overlap_seconds: 2 # 分块边界上下文；按片段中点归属去除重叠
+  cpu_threads: 4
+  chunk_timeout: 1800 # 每块最多30分钟，超时回收进程而不是无限等待
+  punctuation_budget_seconds: 180 # 总整理预算，超过后规则补标点
 
 vector_store:
   provider: chroma
@@ -79,9 +84,18 @@ corpora:
   - name: pku_salon
     label: 北大教学沙龙
     description: 北大青年教师教学沙龙、观摩活动的记录与案例
-  - name: course_syllabi
-    label: 课程大纲参考
-    description: 国内外公开课程大纲，用于大纲优化与教学设计参考
+  - name: course_cases
+    label: 国外公开课程案例
+    description: MIT OCW 与 Open Yale Courses 完整课程资料，用于相似课程匹配、大纲优化与教学设计参考
+  - name: discipline_pedagogy
+    label: 学科教学知识
+    description: 北京大学30个院系方向及八大学科类的教学特点、方法、国内改革反思与文献依据
+  - name: teaching_cases
+    label: 国内外高校教学案例
+    description: 北京大学教学设计案例的中文整理稿，以及 MIT、Cornell、Columbia、Michigan、Yale 来源页的英文原文
+  - name: AIMES
+    label: 斯坦福 AIMES
+    description: Stanford CTL「AI Meets Education at Stanford」的教学策略、课程政策、学生指南、共同负责人反思、课程案例和教学技术工具链接
   - name: eval_reports
     label: 历史评估报告
     description: 本系统产出的教学视频评估报告摘要，支持个性化追问
@@ -95,6 +109,7 @@ rag:
   max_hits: 12 # 阈值过滤后最多引用条数
   max_context_chars: 6000 # 拼进提示词的检索上下文上限
   pinned_eval_max_chars: 12000 # 勾选的历史评估报告单独额度，不跟检索抢 6000
+  pinned_attachment_max_chars: 40000 # 本轮上传材料的总额度；超出时按文件顺序截断
 
 evaluation:
   segment_minutes: 5 # 转写按多少分钟切一段做客观特征统计

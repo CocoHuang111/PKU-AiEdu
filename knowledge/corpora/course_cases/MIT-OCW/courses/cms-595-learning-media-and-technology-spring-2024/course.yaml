@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-595-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.595"
+cross_listed_codes:
+  - "CMS.895"
+course_title: "Learning, Media, and Technology"
+course_slug: "cms-595-learning-media-and-technology-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Justin Reich"
+subject_primary: "Educational Technology"
+subject_secondary: []
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  New digital technologies are transforming learning for all ages—reading apps for toddlers, intelligent tutors for school children, blended learning for college students, MOOCs for adults, and interest-based learning communities for hobbyists. In this course, we explore these technologies and how they shape people’s lives and learning. Coursework will help students explore learning, media, and technology through multiple lenses—history, policy, social theory, design, and evaluation. Students will refine their thinking about the opportunities, limits, and tradeoffs of educational technology. Graduate students will complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/cms-595-learning-media-and-technology-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/cms-595-learning-media-and-technology-spring-2024/mitcms_595_s24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

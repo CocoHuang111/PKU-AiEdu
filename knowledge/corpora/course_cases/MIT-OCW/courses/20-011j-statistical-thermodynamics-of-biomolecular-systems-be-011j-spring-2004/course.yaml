@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-20-011j-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.011J"
+cross_listed_codes:
+  - "2.772J"
+course_title: "Statistical Thermodynamics of Biomolecular Systems (BE.011J)"
+course_slug: "20-011j-statistical-thermodynamics-of-biomolecular-systems-be-011j-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kim Hamad-Schifferli"
+  - "Prof. Linda Griffith"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Biostatistics"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Computation and Systems Biology"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Biostatistics"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Computation and Systems Biology"
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to the physical chemistry of biological systems. Topics include: connection of macroscopic thermodynamic properties to microscopic molecular properties using statistical mechanics, chemical potentials, equilibrium states, binding cooperativity, behavior of macromolecules in solution and at interfaces, and solvation. Example problems include protein structure, genomic analysis, single molecule biomechanics, and biomaterials.
+course_url: "https://ocw.mit.edu/courses/20-011j-statistical-thermodynamics-of-biomolecular-systems-be-011j-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/20-011j-statistical-thermodynamics-of-biomolecular-systems-be-011j-spring-2004/9b735be947a92b7bc53688370345842b_20-011js04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

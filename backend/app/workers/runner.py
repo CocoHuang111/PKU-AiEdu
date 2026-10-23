@@ -6,6 +6,7 @@ import asyncio
 import os
 import socket
 import uuid
+from ..core.report_mail import dispatch_reports
 
 from ..core import db
 from .tasks import run_evaluation
@@ -23,6 +24,15 @@ async def _heartbeat(task_id: str, worker_id: str) -> None:
             return
 
 
+async def _report_mail_loop():
+    while True:
+        try:
+            await dispatch_reports()
+        except Exception:
+            print("[mail] 通知队列检查失败，下轮重试", flush=True)
+        await asyncio.sleep(60)
+
+
 async def main() -> None:
     worker_id = f"{socket.gethostname()}-{uuid.uuid4().hex[:10]}"
     recovered = await db.recover_stale_eval_tasks(LEASE_SECONDS)
@@ -31,6 +41,7 @@ async def main() -> None:
         print(f"[worker] recovered {recovered} stale evaluation task(s)", flush=True)
 
     idle_cycles = 0
+    mail_task = asyncio.create_task(_report_mail_loop())
     while True:
         task = await db.claim_next_eval_task(worker_id)
         if not task:

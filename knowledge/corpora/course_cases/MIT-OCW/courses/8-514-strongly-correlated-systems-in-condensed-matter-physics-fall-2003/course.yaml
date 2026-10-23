@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-8-514-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.514"
+cross_listed_codes: []
+course_title: "Strongly Correlated Systems in Condensed Matter Physics"
+course_slug: "8-514-strongly-correlated-systems-in-condensed-matter-physics-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Leonid Levitov"
+subject_primary: "Physics"
+subject_secondary:
+  - "Condensed Matter Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Condensed Matter Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  In this course we shall develop theoretical methods suitable for the description of the many-body phenomena, such as Hamiltonian second-quantized operator formalism, Greens functions, path integral, functional integral, and the quantum kinetic equation. The concepts to be introduced include, but are not limited to, the random phase approximation, the mean field theory (aka saddle-point, or semiclassical approximation), the tunneling dynamics in imaginary time, instantons, Berry phase, coherent state path integral, renormalization group.
+course_url: "https://ocw.mit.edu/courses/8-514-strongly-correlated-systems-in-condensed-matter-physics-fall-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/8-514-strongly-correlated-systems-in-condensed-matter-physics-fall-2003/5be6c96b00e7d62b2b324d5e4131f9b2_8-514f03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

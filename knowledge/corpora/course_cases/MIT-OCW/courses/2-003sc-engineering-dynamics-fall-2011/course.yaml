@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-2-003sc-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.003SC"
+cross_listed_codes:
+  - "1.053J"
+course_title: "Engineering Dynamics"
+course_slug: "2-003sc-engineering-dynamics-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. J. Kim Vandiver"
+  - "Prof. David Gossard"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Solid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Problem-solving Videos"
+description: |
+  This course is an introduction to the dynamics and vibrations of lumped-parameter models of mechanical systems. Topics covered include kinematics, force-momentum formulation for systems of particles and rigid bodies in planar motion, work-energy concepts, virtual displacements and virtual work. Students will also become familiar with the following topics: Lagrange’s equations for systems of particles and rigid bodies in planar motion, and linearization of equations of motion. After this course, students will be able to evaluate free and forced vibration of linear multi-degree of freedom models of mechanical systems and matrix eigenvalue problems.
+course_url: "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/2-003sc-engineering-dynamics-fall-2011/e541b119638faca8fbbefb815ef3cc30_2-003scf11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-1-964-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.964"
+cross_listed_codes: []
+course_title: "Design for Sustainability"
+course_slug: "1-964-design-for-sustainability-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Eric Adams"
+  - "Prof. Jerome Connor"
+  - "Prof. John Ochsendorf"
+  - "Rossella Nicolin"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Fine Arts"
+  - "Architecture"
+  - "Environmental Design"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  The course considers the growing popularity of sustainability and its implications for the practice of engineering, particularly for the built environment. Two particular methodologies are featured: life cycle assessment (LCA) and Leadership in Energy and Environmental Design (LEED). The fundamentals of each approach will be presented. Specific topics covered include water and wastewater management, energy use, material selection, and construction.
+course_url: "https://ocw.mit.edu/courses/1-964-design-for-sustainability-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/1-964-design-for-sustainability-fall-2006/74a3407b35f388485c9c87952957e353_1-964f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

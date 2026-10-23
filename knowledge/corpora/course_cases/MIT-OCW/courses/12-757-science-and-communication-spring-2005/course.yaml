@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-12-757-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.757"
+cross_listed_codes: []
+course_title: "Science and Communication"
+course_slug: "12-757-science-and-communication-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. James F. Price"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Science"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+  - name: "Science"
+    subtopics: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This seminar is intended to help students in the MIT/Woods Hole Oceanographic Institution Joint Program develop a broader perspective on their thesis research by considering some aspects of science in the large. The first part of the course challenges students to develop a thoughtful view towards major questions in science that can be incorporated in their own research process, and that will help them articulate research findings. The second part of the course emphasizes science as a social process and the important roles of written and oral communication. This course is offered through The MIT/WHOI Joint Program . The MIT/WHOI Joint Program is one of the premier marine science graduate programs in the world. It draws on the complementary strengths and approaches of two great institutions: the Massachusetts Institute of Technology (MIT) and the Woods Hole Oceanographic Institution (WHOI).
+course_url: "https://ocw.mit.edu/courses/12-757-science-and-communication-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/12-757-science-and-communication-spring-2005/558f127b1f2b8869d2ba2bbc1fc44f16_12-757s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

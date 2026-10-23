@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-22-251-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.251"
+cross_listed_codes: []
+course_title: "Systems Analysis of the Nuclear Fuel Cycle"
+course_slug: "22-251-systems-analysis-of-the-nuclear-fuel-cycle-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mujid S. Kazimi"
+  - "Dr. Edward E. Pilat"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Nuclear Materials"
+  - "Nuclear Systems, Policy, and Economics"
+  - "Systems Engineering"
+  - "Social Science"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Nuclear Materials"
+          - "Nuclear Systems, Policy, and Economics"
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This course provides an in-depth technical and policy analysis of various options for the nuclear fuel cycle. Topics include uranium supply, enrichment fuel fabrication, in-core physics and fuel management of uranium, thorium and other fuel types, reprocessing and waste disposal. Also covered are the principles of fuel cycle economics and the applied reactor physics of both contemporary and proposed thermal and fast reactors. Nonproliferation aspects, disposal of excess weapons plutonium, and transmutation of actinides and selected fission products in spent fuel are examined. Several state-of-the-art computer programs are provided for student use in problem sets and term papers.
+course_url: "https://ocw.mit.edu/courses/22-251-systems-analysis-of-the-nuclear-fuel-cycle-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/22-251-systems-analysis-of-the-nuclear-fuel-cycle-fall-2009/49b17e5a17b7945549b05b02624073ee_22-251f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

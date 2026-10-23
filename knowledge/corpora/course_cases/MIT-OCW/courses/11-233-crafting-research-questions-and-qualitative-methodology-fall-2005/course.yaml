@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-11-233-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.233"
+cross_listed_codes: []
+course_title: "Crafting Research Questions and Qualitative Methodology"
+course_slug: "11-233-crafting-research-questions-and-qualitative-methodology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Judith Tendler"
+  - "Salo Coslovsky"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Nonfiction Prose"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Nonfiction Prose"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course covers approaches to research and evaluation in the planning field, for those preparing to write 1st-year doctoral and other research papers. Topics include narrowing down research interests, using quantitative and qualitative techniques complementarily, and interviewing and other fieldwork challenges. The course uses a seminar-type format in which readings, class discussions, and assignments are built around (1) generic themes that run across the research interests and paper topics of students in the class, and (2) lessons about methodology to be learned from the case comparison studies assigned.
+course_url: "https://ocw.mit.edu/courses/11-233-crafting-research-questions-and-qualitative-methodology-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/11-233-crafting-research-questions-and-qualitative-methodology-fall-2005/fafab06477d177db57ca7d9859a2caa4_11-233f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

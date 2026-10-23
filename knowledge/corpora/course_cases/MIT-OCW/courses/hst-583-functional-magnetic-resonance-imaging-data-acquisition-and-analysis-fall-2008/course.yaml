@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-583-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.583"
+cross_listed_codes: []
+course_title: "Functional Magnetic Resonance Imaging: Data Acquisition and Analysis"
+course_slug: "hst-583-functional-magnetic-resonance-imaging-data-acquisition-and-analysis-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Randy Gollub"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Health and Medicine"
+  - "Biomedical Instrumentation"
+  - "Biomedical Signal and Image Processing"
+  - "Medical Imaging"
+  - "Spectroscopy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+      - name: "Biomedical Signal and Image Processing"
+        specialties: []
+      - name: "Medical Imaging"
+        specialties: []
+      - name: "Spectroscopy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This team-taught multidisciplinary course provides information relevant to the conduct and interpretation of human brain mapping studies. It begins with in-depth coverage of the physics of image formation, mechanisms of image contrast, and the physiological basis for image signals. Parenchymal and cerebrovascular neuroanatomy and application of sophisticated structural analysis algorithms for segmentation and registration of functional data are discussed. Additional topics include: fMRI experimental design including block design, event related and exploratory data analysis methods, and building and applying statistical models for fMRI data; and human subject issues including informed consent, institutional review board requirements and safety in the high field environment. Additional Faculty Div Bolar Dr. Bradford Dickerson Dr. John Gabrieli Dr. Doug Greve Dr. Karl Helmer Dr. Dara Manoach Dr. Jason Mitchell Dr. Christopher Moore Dr. Vitaly Napadow Dr. Jon Polimeni Dr. Sonia Pujol Dr. Bruce Rosen Dr. Mert Sabuncu Dr. David Salat Dr. Robert Savoy Dr. David Somers Dr. A. Gregory Sorensen Dr. Christina Triantafyllou Dr. Wim Vanduffel Dr. Mark Vangel Dr. Lawrence Wald Dr. Susan Whitfield-Gabrieli Dr. Anastasia Yendiki
+course_url: "https://ocw.mit.edu/courses/hst-583-functional-magnetic-resonance-imaging-data-acquisition-and-analysis-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/hst-583-functional-magnetic-resonance-imaging-data-acquisition-and-analysis-fall-2008/66a880585c28039e8b6e39f3c17544ff_hst-583f08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

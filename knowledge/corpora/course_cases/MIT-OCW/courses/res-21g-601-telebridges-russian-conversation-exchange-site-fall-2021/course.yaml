@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-res-21g-601-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.21G-601"
+cross_listed_codes: []
+course_title: "Телемосты (Telebridges) Russian Conversation Exchange Site"
+course_slug: "res-21g-601-telebridges-russian-conversation-exchange-site-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Dr. Maria Khotimsky"
+subject_primary: "Language"
+subject_secondary:
+  - "Russian"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Russian"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Other Video"
+description: |
+  This open-access conversation exchange site offers topics and conversation tasks for students learning Russian and English. The goal of this pilot project is to support exchanges between students in English-speaking and Russian-speaking countries. The conversation topics included are aligned with common college-level Russian language curricula, grouped by levels defined by ACTFL proficiency standards, and utilize OPI (Oral Proficiency Interview) practices. Topics include vocabulary, questions, and interactive activities that can be used in conversations as well as in individual practice. Maria Khotimsky (MIT) initiated this project based on conversation exchanges between SkolTech and MIT students, in collaboration with Dr. Marina Alexandrova (UT Austin) and Iringa Kogel (Davidson College). The Телемосты website is published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA) International license.
+course_url: "https://ocw.mit.edu/courses/res-21g-601-telebridges-russian-conversation-exchange-site-fall-2021/"
+image_url: "https://ocw.mit.edu/courses/res-21g-601-telebridges-russian-conversation-exchange-site-fall-2021/mitres21g_601f_21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

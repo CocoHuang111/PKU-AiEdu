@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-383-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.383"
+cross_listed_codes:
+  - "21H.982"
+course_title: "Technology and the Global Economy, 1000-2000"
+course_slug: "21h-383-technology-and-the-global-economy-1000-2000-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Anne McCants"
+subject_primary: "History"
+subject_secondary:
+  - "African History"
+  - "American History"
+  - "Medieval History"
+  - "World History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "African History"
+          - "American History"
+          - "Medieval History"
+          - "World History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This seminar examines the global history of the last millennium, including technological change, commodity exchange, systems of production, and economic growth. Students engage with economic history, medieval and early modern origins of modern systems of production, consumption and global exchange. Topics include the long pre-history of modern economic development; medieval world systems; the age of discovery; the global crisis of the 17th century; demographic systems; global population movements; the industrial revolution; the rise of the modern consumer; colonialism and empire building; patterns of inequality, within and across states; the curse of natural resources fate of Africa; and the threat of climate change to modern economic systems. Students taking the graduate version complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/21h-383-technology-and-the-global-economy-1000-2000-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/21h-383-technology-and-the-global-economy-1000-2000-fall-2016/c1e0b5c4b1cb2ea0f448f056e0ac928b_21h-383f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

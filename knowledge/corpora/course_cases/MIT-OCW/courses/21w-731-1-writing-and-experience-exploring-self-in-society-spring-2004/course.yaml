@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-731-1-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.731-1"
+cross_listed_codes: []
+course_title: "Writing and Experience: Exploring Self in Society"
+course_slug: "21w-731-1-writing-and-experience-exploring-self-in-society-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Andrea Walsh"
+subject_primary: "Literature"
+subject_secondary:
+  - "Creative Writing"
+  - "Criticism"
+  - "Fiction"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Criticism"
+          - "Fiction"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  The reading and writing for this course will focus on what it means to construct a sense of self and a life narrative in relation to the larger social world of family and friends, education, media, work, and community. Readings will include nonfiction and fiction works by authors such as Maya Angelou, James Baldwin, Andre Dubus, Anne Frank, Tim O’Brien, Flannery O’Connor, George Orwell, John Steinbeck, Amy Tan, Tobias Wolff, and Alice Walker. Students will explore the craft of storytelling and the multiple ways in which one can employ the tools of fiction in crafting creative nonfiction and fiction narratives.
+course_url: "https://ocw.mit.edu/courses/21w-731-1-writing-and-experience-exploring-self-in-society-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/21w-731-1-writing-and-experience-exploring-self-in-society-spring-2004/ed9a70a59d694d0e5c7ff07c9e0b1f4e_21w-731-1s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

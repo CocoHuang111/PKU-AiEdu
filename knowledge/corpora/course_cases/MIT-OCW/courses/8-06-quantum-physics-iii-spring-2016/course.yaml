@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-8-06-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.06"
+cross_listed_codes: []
+course_title: "Quantum Physics III"
+course_slug: "8-06-quantum-physics-iii-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Aram Harrow"
+subject_primary: "Physics"
+subject_secondary:
+  - "Quantum Mechanics"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  8.06 is the third course in the three-sequence physics undergraduate Quantum Mechanics curriculum. By the end of this course, you will be able to interpret and analyze a wide range of quantum mechanical systems using both exact analytic techniques and various approximation methods. This course will introduce some of the important model systems studied in contemporary physics, including two-dimensional electron systems, the fine structure of Hydrogen, lasers, and particle scattering.
+course_url: "https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2016/e46c57093bd056f283eeced3b3e5c765_8-06s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

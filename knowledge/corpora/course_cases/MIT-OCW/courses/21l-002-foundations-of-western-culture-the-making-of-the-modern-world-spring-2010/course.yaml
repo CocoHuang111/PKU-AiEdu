@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-002-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.002"
+cross_listed_codes: []
+course_title: "Foundations of Western Culture: The Making of the Modern World"
+course_slug: "21l-002-foundations-of-western-culture-the-making-of-the-modern-world-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Howard Eiland"
+subject_primary: "History"
+subject_secondary:
+  - "Comparative History"
+  - "Literature"
+  - "Comparative Literature"
+  - "Philosophy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Comparative History"
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+      - name: "Philosophy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course comprises a broad survey of texts, literary and philosophical, which trace the development of the modern world from the seventeenth to the early twentieth century. Intrinsic to this development is the growth of individualism in a world no longer understood to be at the center of the universe. The texts chosen for study exemplify the emergence of a new humanism, at once troubled and dynamic in comparison to the old. The leading theme of this course is thus the question of the difference between the ancient and the modern world. Students who have taken Foundations of Western Culture I will obviously have an advantage in dealing with this question. Classroom discussion approaches this question mainly through consideration of action and characters, voice and form.
+course_url: "https://ocw.mit.edu/courses/21l-002-foundations-of-western-culture-the-making-of-the-modern-world-spring-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-002-foundations-of-western-culture-the-making-of-the-modern-world-spring-2010/296008153522ab984c67fe447ac331eb_21l-002s10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

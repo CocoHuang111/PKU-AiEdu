@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-12-479-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.479"
+cross_listed_codes: []
+course_title: "Trace-Element Geochemistry"
+course_slug: "12-479-trace-element-geochemistry-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Frederick Frey"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Analytical Chemistry"
+  - "Earth Science"
+  - "Geochemistry"
+  - "Geology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Analytical Chemistry"
+      - name: "Earth Science"
+        specialties:
+          - "Geochemistry"
+          - "Geology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The emphasis of this course is to use Trace Element Geochemistry to understand the origin and evolution of igneous rocks. The approach is to discuss the parameters that control partitioning of trace elements between phases and to develop models for the partitioning of trace elements between phases in igneous systems, especially between minerals and melt. Subsequently, published papers that are examples of utilizing Trace Element Geochemistry are read and discussed.
+course_url: "https://ocw.mit.edu/courses/12-479-trace-element-geochemistry-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/12-479-trace-element-geochemistry-spring-2013/1d81547bcd4f84af092eff6b371053ed_12-479s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

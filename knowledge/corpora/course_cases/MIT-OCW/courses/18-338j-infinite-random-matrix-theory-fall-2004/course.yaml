@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-18-338j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.338J"
+cross_listed_codes:
+  - "16.394J"
+course_title: "Infinite Random Matrix Theory"
+course_slug: "18-338j-infinite-random-matrix-theory-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Moe Win"
+  - "Prof. Alan Edelman"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Differential Equations"
+  - "Linear Algebra"
+  - "Probability and Statistics"
+  - "Science"
+  - "Physics"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  In this course on the mathematics of infinite random matrices, students will learn about the tools such as the Stieltjes transform and Free Probability used to characterize infinite random matrices.
+course_url: "https://ocw.mit.edu/courses/18-338j-infinite-random-matrix-theory-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/18-338j-infinite-random-matrix-theory-fall-2004/c9bcb94e91dc1350b9d9fd260bbd9535_18-338jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

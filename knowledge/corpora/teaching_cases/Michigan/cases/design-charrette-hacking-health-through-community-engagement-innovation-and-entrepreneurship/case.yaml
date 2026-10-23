@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-design-charrette-hacking-health-through-community-engagement-innovation-and-entrepreneurship"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Design Charrette: Hacking Health Through Community Engagement, Innovation, and Entrepreneurship"
+slug: "design-charrette-hacking-health-through-community-engagement-innovation-and-entrepreneurship"
+source_url: "https://crlt.umich.edu/design-charrette-hacking-health-through-community-engagement-innovation-and-entrepreneurship"
+language: "en"
+published: null
+awarded_year: "2019"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "a2b35f6bdd05bc857446c0124d365d3c9e14897735ae532562aab32f645c6868"

@@ -12,6 +12,8 @@ client.interceptors.response.use(
   (resp) => resp.data,
   (err) => {
     if (axios.isCancel(err)) return Promise.reject(err)
+    // 登录表单自行展示错误；错误密码的 401 不表示现有会话失效。
+    if (err.config?.formErrorHandled) return Promise.reject(err)
     const status = err.response?.status
     const msg = err.response?.data?.detail || err.message || '请求失败'
     if (status !== 401) {
@@ -32,8 +34,8 @@ export default client
 
 export const authApi = {
   config: () => client.get('/api/auth/config'),
-  register: (data) => client.post('/api/auth/register', data),
-  login: (data) => client.post('/api/auth/login', data),
+  register: (data) => client.post('/api/auth/register', data, { formErrorHandled: true }),
+  login: (data) => client.post('/api/auth/login', data, { formErrorHandled: true }),
   logout: () => client.post('/api/auth/logout'),
   me: () => client.get('/api/auth/me'),
   updateMe: (data) => client.patch('/api/auth/me', data),
@@ -66,10 +68,59 @@ export const adminApi = {
 // ---------------------------------------------------------------- 视频评估
 export const evaluationApi = {
   createTask: (filename) => client.post('/api/evaluation/tasks', { filename }),
+  probeUpload: (blob, signal) =>
+    client.post('/api/evaluation/upload-probe', blob, {
+      headers: { 'Content-Type': 'application/octet-stream' },
+      signal,
+      timeout: 60000,
+    }),
+  createUploadSession: (id, data) =>
+    client.post(`/api/evaluation/tasks/${id}/upload-session`, data),
+  getUploadSession: (id) => client.get(`/api/evaluation/tasks/${id}/upload-session`),
+  resetUploadSession: (id) => client.delete(`/api/evaluation/tasks/${id}/upload-session`),
+  uploadPart(id, kind, index, blob, { sessionId, sha256, signal, onProgress } = {}) {
+    return client.put(`/api/evaluation/tasks/${id}/upload-session/parts/${kind}/${index}`, blob, {
+      headers: {
+        'Content-Type': 'application/octet-stream',
+        'X-Upload-Session': sessionId,
+        'X-Part-SHA256': sha256,
+      },
+      signal,
+      timeout: 0,
+      onUploadProgress: (event) => onProgress?.(event.loaded, event.total || blob.size),
+    })
+  },
+  completeUploadSession: (id, data) =>
+    client.post(`/api/evaluation/tasks/${id}/upload-session/complete`, data, { timeout: 0 }),
+  uploadAuxMaterials(id, files, signal) {
+    const opts = files || {}
+    const form = new FormData()
+    if (opts.syllabus) form.append('syllabus', opts.syllabus)
+    if (opts.courseware) form.append('courseware', opts.courseware)
+    if (opts.transcript) form.append('transcript', opts.transcript)
+    if (opts.transcriptText?.trim()) form.append('transcript_text', opts.transcriptText.trim())
+    if (opts.reference?.trim()) form.append('reference', opts.reference.trim())
+    return client.post(`/api/evaluation/tasks/${id}/aux-materials`, form, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+      signal,
+    })
+  },
+  inspectRemoteSource: (data) => client.post('/api/evaluation/remote-source', data, { timeout: 100000 }),
   uploadTaskMaterials(id, files, onProgress, signal) {
     const opts = files || {}
     const form = new FormData()
-    if (opts.video) form.append('file', opts.video)
+    if (opts.evidence) {
+      form.append('evidence_audio', opts.evidence.audio)
+      form.append('evidence_archive', opts.evidence.archive)
+      form.append('evidence_manifest', JSON.stringify(opts.evidence.manifest))
+    } else if (opts.video) {
+      form.append('file', opts.video)
+    } else if (opts.videoUrl) {
+      form.append('video_url', opts.videoUrl)
+      form.append('share_password', opts.sharePassword || '')
+      form.append('share_file_id', opts.shareFileId || '')
+      form.append('share_path', JSON.stringify(opts.sharePath || []))
+    }
     if (opts.syllabus) form.append('syllabus', opts.syllabus)
     if (opts.courseware) form.append('courseware', opts.courseware)
     if (opts.transcript) form.append('transcript', opts.transcript)
@@ -78,8 +129,11 @@ export const evaluationApi = {
     return client.post(`/api/evaluation/tasks/${id}/materials`, form, {
       headers: { 'Content-Type': 'multipart/form-data' },
       signal,
+      timeout: opts.videoUrl ? 0 : undefined,
       onUploadProgress: (e) => {
-        if (onProgress && e.total) onProgress(Math.round((e.loaded / e.total) * 100))
+        if (!opts.videoUrl && onProgress && e.total) {
+          onProgress(Math.round((e.loaded / e.total) * 100))
+        }
       },
     })
   },
@@ -117,6 +171,9 @@ export const evaluationApi = {
   },
   listTasks: (params) => client.get('/api/evaluation/tasks', { params }),
   getTask: (id) => client.get(`/api/evaluation/task/${id}`),
+  followUp: (id) => client.get(`/api/evaluation/task/${id}/follow-up`),
+  requestEmail: (id) => client.post(`/api/evaluation/task/${id}/email-notification`),
+  cancelEmail: (id) => client.delete(`/api/evaluation/task/${id}/email-notification`),
   cancelTask: (id) => client.post(`/api/evaluation/task/${id}/cancel`),
   deleteTask: (id) => client.delete(`/api/evaluation/task/${id}`),
   evaluateTranscript: (text, durationSec, reference) =>
@@ -147,6 +204,9 @@ export const syllabusApi = {
     })
   },
   listTasks: () => client.get('/api/syllabus/tasks'),
+  followUp: (id) => client.get(`/api/syllabus/task/${id}/follow-up`),
+  requestEmail: (id) => client.post(`/api/syllabus/task/${id}/email-notification`),
+  cancelEmail: (id) => client.delete(`/api/syllabus/task/${id}/email-notification`),
   getTask: (id) => client.get(`/api/syllabus/task/${id}`),
   cancelTask: (id) => client.post(`/api/syllabus/task/${id}/cancel`),
   deleteTask: (id) => client.delete(`/api/syllabus/task/${id}`),
@@ -158,7 +218,21 @@ export const syllabusApi = {
 
 // ---------------------------------------------------------------- 问答
 export const qaApi = {
+  modes: () => client.get('/api/qa/modes'),
   corpora: () => client.get('/api/qa/corpora'),
+  uploadAttachments(files, onProgress) {
+    const form = new FormData()
+    for (const file of files) form.append('files', file)
+    return client.post('/api/qa/attachments', form, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+      onUploadProgress: (event) => {
+        if (onProgress && event.total) {
+          onProgress(Math.round((event.loaded / event.total) * 100))
+        }
+      },
+    })
+  },
+  deleteAttachment: (id) => client.delete(`/api/qa/attachments/${id}`),
   sessions: () => client.get('/api/qa/sessions'),
   getSession: (id) => client.get(`/api/qa/session/${id}`),
   patchSession: (id, data) => client.patch(`/api/qa/session/${id}`, data),

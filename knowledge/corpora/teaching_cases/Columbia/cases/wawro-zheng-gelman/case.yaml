@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-wawro-zheng-gelman"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Gregory Wawro, PhD, Dr. Tian Zheng, PhD, and Dr. Andrew Gelman, PhD"
+slug: "wawro-zheng-gelman"
+source_url: "https://ctl.columbia.edu/transformations/faculty/wawro-zheng-gelman/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "72a7bdb5dae568280d7e0bfbebed28841dc121db5492b5e306263ee8b078c320"

@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-250-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.250"
+cross_listed_codes: []
+course_title: "Schubert to Debussy"
+course_slug: "21m-250-schubert-to-debussy-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Charles Shadle"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  This course is a survey of developments in Western musical style, 1815-1915. Students will study works by 35 composers, including the romantics: Schubert, Chopin, and Schumann; the post-romantics: Wagner, Verdi, and Brahms; the turn-of-the-centurians: Mahler, Debussy, and Ravel; and the Americans: Gottschalk, Beach, and Joplin. Score-reading ability is beneficial.
+course_url: "https://ocw.mit.edu/courses/21m-250-schubert-to-debussy-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21m-250-schubert-to-debussy-fall-2006/76761847cf9948bea016bcfde958de37_21m-250f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

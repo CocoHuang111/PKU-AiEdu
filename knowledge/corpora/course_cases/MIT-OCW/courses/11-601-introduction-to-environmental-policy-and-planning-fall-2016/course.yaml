@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-11-601-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.601"
+cross_listed_codes: []
+course_title: "Introduction to Environmental Policy and Planning"
+course_slug: "11-601-introduction-to-environmental-policy-and-planning-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lawrence Susskind"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Environmental Policy"
+  - "Urban Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Other Video"
+  - "Presentation Assignments with Examples"
+  - "Written Assignments"
+description: |
+  This course focuses on national environmental and energy policy-making; environmental ethics; the techniques of environmental analysis; and strategies for collaborative environmental decision-making. The primary objective of the course is to help students formulate a personal theory of environmental planning practice. The course is taught comparatively, with constant references to examples from around the world. It is required of all graduate students pursuing an environmental policy and planning specialization in the Department of Urban Studies and Planning at MIT. This course is the first subject in the Environmental Policy and Planning sequence. It reviews philosophical debates including growth vs. deep ecology, “command-and-control” vs. market-oriented approaches to regulation, and the importance of expertise vs. indigenous knowledge. Emphasis is placed on environmental planning techniques and strategies. Related topics include the management of sustainability, the politics of ecosystem management, environmental governance and the changing role of civil society, ecological economics, integrated assessment (combining environmental impact assessment (EIA) and risk assessment), joint fact finding in science-intensive policy disputes, environmental justice in poor communities of color, and environmental dispute resolution. Environmental Problem-Solving (Susskind et al., 2017, Anthem Press), a video-enhanced eBook, provides students with full access to all the assigned readings, faculty commentary on the readings, and examples of the best student performance on course assignments in previous years.
+course_url: "https://ocw.mit.edu/courses/11-601-introduction-to-environmental-policy-and-planning-fall-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/11-601-introduction-to-environmental-policy-and-planning-fall-2016/bef9c2d9c45d83d8cd33843988c3cadc_11-601F16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

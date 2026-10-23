@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-11-027-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.027"
+cross_listed_codes: []
+course_title: "City to City: Comparing, Researching and Writing about Cities: New Orleans"
+course_slug: "11-027-city-to-city-comparing-researching-and-writing-about-cities-new-orleans-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Cherie Miot Abbanat"
+subject_primary: "Urban Studies"
+subject_secondary: []
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Image Gallery"
+  - "Presentation Assignments"
+  - "Projects"
+  - "Written Assignments"
+description: |
+  City to City, as a class, will jump into the complexity of planning in New Orleans, a post-disaster city. City-to-City will ask how a post-disaster city grapple with its ideas of identity, what it is, who it represents, and how it projects its sense of self to residences, businesses, tourists, and to the outside world. In considering its people, how do city planners think about who lives where and why? At the same time, how can city planners celebrate a city’s history and its culture and how can these elements be woven into reconstruction? Students will travel from Cambridge to New Orleans over Spring Break to meet and consult with their alumni clients, and continue to work on projects.
+course_url: "https://ocw.mit.edu/courses/11-027-city-to-city-comparing-researching-and-writing-about-cities-new-orleans-spring-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/11-027-city-to-city-comparing-researching-and-writing-about-cities-new-orleans-spring-2011/fd4a82f129866419b30bab33640d0e25_11-027s11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

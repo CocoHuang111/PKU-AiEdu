@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-s06-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.S06"
+cross_listed_codes: []
+course_title: "Design for Demining"
+course_slug: "ec-s06-design-for-demining-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Mr. Benjamin Linder"
+  - "Mr. Andrew Heafitz"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Design Assignments with Examples"
+  - "Image Gallery"
+  - "Projects"
+  - "Written Assignments with Examples"
+description: |
+  Humanitarian Demining is the process of detecting, removing and disposing of landmines. Millions of landmines are buried in more than 80 countries resulting in more than 10,000 civilian victims every year. MIT Design for Demining is a design course that spans the entire product design and development process from identification of needs and idea generation to prototyping and blast testing to manufacture and deployment. Technical, business and customer aspects are addressed. Students learn about demining while they design, develop and deliver devices to aid the demining community. Past students have invented or improved hand tools, protective gear, safety equipment, educational graphics and teaching materials. Some tools designed in previous years are in use worldwide in the thousands. Course work is informed by a class field trip to a U.S. Army base for demining training and guest expert speakers.
+course_url: "https://ocw.mit.edu/courses/ec-s06-design-for-demining-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/ec-s06-design-for-demining-spring-2007/6589eee7d933fe2b54da738fd65b9100_ec-s06s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-es-256-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.256"
+cross_listed_codes: []
+course_title: "The Coming Years"
+course_slug: "es-256-the-coming-years-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "James Rising"
+subject_primary: "History"
+subject_secondary:
+  - "Historiography"
+  - "Modern History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Historiography"
+          - "Modern History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Explore the future through modeling, reading, and discussion in an open-ended seminar! Our fields of interest will include changes in science and technology, culture and lifestyles, and dominant paradigms and societies.
+course_url: "https://ocw.mit.edu/courses/es-256-the-coming-years-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/es-256-the-coming-years-spring-2008/1533156d4651e4302e3a35d27d233edc_es-256s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

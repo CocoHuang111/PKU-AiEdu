@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-3-987-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.987"
+cross_listed_codes: []
+course_title: "Human Origins and Evolution"
+course_slug: "3-987-human-origins-and-evolution-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Harry Merrick"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Biological Anthropology"
+  - "Archaeology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Biological Anthropology"
+      - name: "Archaeology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course examines the dynamic interrelations among physical and behavioral traits of humans, environment, and culture to provide an integrated framework for studying human biological evolution and modern diversity. Topics include issues in morphological evolution and adaptation; fossil and cultural evidence for human evolution from earliest times through the Pleistocene; evolution of tool use and social behavior; modern human variation and concepts of race. The class also studies stone artifacts and fossil specimens.
+course_url: "https://ocw.mit.edu/courses/3-987-human-origins-and-evolution-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/3-987-human-origins-and-evolution-spring-2006/245d13a62d5ad4a2d7d93c9a02935f03_3-987s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

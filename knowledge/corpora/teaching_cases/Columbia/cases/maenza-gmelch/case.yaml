@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-maenza-gmelch"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Terryanne Maenza-Gmelch, PhD"
+slug: "maenza-gmelch"
+source_url: "https://ctl.columbia.edu/transformations/faculty/maenza-gmelch/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "7da856728a6e82853aec25dfba2461eb7b8eb68df94c69617ccb2aa45e8d071c"

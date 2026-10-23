@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-24-973-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.973"
+cross_listed_codes: []
+course_title: "Advanced Semantics"
+course_slug: "24-973-advanced-semantics-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Kai von Fintel"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Semantics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Semantics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is the second of the three parts of our graduate introduction to semantics. The others are 24.970 Introduction to Semantics and 24.954 Pragmatics in Linguistic Theory . Like the other courses, this one is not meant as an overview of the field and its current developments. Our aim is to help you to develop the ability for semantic analysis, and we think that exploring a few topics in detail together with hands-on practical work is more effective than offering a bird’s-eye view of everything. Once you have gained some experience in doing semantic analysis, reading around in the many recent handbooks and in current issues of major journals and attending our seminars and colloquia will give you all you need to prosper. Because we want to focus, we need to make difficult choices as to which topics to cover. This year, we will focus on topics having to do with modality, conditionals, tense, and aspect.
+course_url: "https://ocw.mit.edu/courses/24-973-advanced-semantics-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/24-973-advanced-semantics-spring-2009/80907ed5c0ab7b722c17566906a2a7fe_24-973s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

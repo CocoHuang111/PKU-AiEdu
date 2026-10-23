@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-20-400j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.400J"
+cross_listed_codes:
+  - "7.548J"
+course_title: "Perspectives in Biological Engineering"
+course_slug: "20-400j-perspectives-in-biological-engineering-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Biology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Douglas Lauffenburger"
+  - "Prof. Peter Dedon"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Computation and Systems Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This seminar-format course provides an in-depth presentation and discussion of how engineering and biological approaches can be combined to solve problems in science and technology, emphasizing integration of biological information and methodologies with engineering analysis, synthesis, and design. Emphasis is placed on molecular mechanisms underlying cellular processes, including signal transduction, gene expression networks, and functional responses.
+course_url: "https://ocw.mit.edu/courses/20-400j-perspectives-in-biological-engineering-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/20-400j-perspectives-in-biological-engineering-spring-2006/69cabaea1c7006faaefb4f0c5e79283a_20-400js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

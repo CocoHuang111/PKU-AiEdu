@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-6-011-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.011"
+cross_listed_codes: []
+course_title: "Signals, Systems and Inference"
+course_slug: "6-011-signals-systems-and-inference-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. George Verghese"
+  - "Prof. Alan V. Oppenheim"
+  - "Prof. Peter Hagelstein"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Robotics and Control Systems"
+  - "Signal Processing"
+  - "Telecommunications"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+          - "Signal Processing"
+          - "Telecommunications"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course covers signals, systems and inference in communication, control and signal processing. Topics include input-output and state-space models of linear systems driven by deterministic and random signals; time- and transform-domain representations in discrete and continuous time; and group delay. State feedback and observers. Probabilistic models; stochastic processes, correlation functions, power spectra, spectral factorization. Least-mean square error estimation; Wiener filtering. Hypothesis testing; detection; matched filters.
+course_url: "https://ocw.mit.edu/courses/6-011-signals-systems-and-inference-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/6-011-signals-systems-and-inference-spring-2018/fbc7ad3f34645a629b640a8b078f750c_6-011s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

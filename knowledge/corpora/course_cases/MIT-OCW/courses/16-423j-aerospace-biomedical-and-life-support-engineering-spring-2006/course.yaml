@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-16-423j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.423J"
+cross_listed_codes:
+  - "HST.515J"
+  - "IDS.337J (formerly ESD.65J)"
+course_title: "Aerospace Biomedical and Life Support Engineering"
+course_slug: "16-423j-aerospace-biomedical-and-life-support-engineering-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Health Sciences and Technology"
+  - "Institute for Data, Systems, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dava Newman"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Bioastronautics"
+  - "Biological Engineering"
+  - "Biomechanics"
+  - "Health and Medicine"
+  - "Biomedical Instrumentation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Bioastronautics"
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomechanics"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course introduces students to a quantitative approach to studying the problems of physiological adaptation in altered environments, especially microgravity and partial gravity environments. The course curriculum starts with an Introduction and Selected Topics, which provides background information on the physiological problems associated with human space flight, as well as reviewing terminology and key engineering concepts. Then curriculum modules on Bone Mechanics, Muscle Mechanics, Musculoskeletal Dynamics and Control, and the Cardiovascular System are presented. These modules start out with qualitative and biological information regarding the system and its adaptation, and progresses to a quantitative endpoint in which engineering methods are used to analyze specific problems and countermeasures. Additional course curriculum focuses on interdisciplinary topics, suggestions include extravehicular activity and life support. The final module consists of student term project work.
+course_url: "https://ocw.mit.edu/courses/16-423j-aerospace-biomedical-and-life-support-engineering-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/16-423j-aerospace-biomedical-and-life-support-engineering-spring-2006/ae295f205947c1937ece436557f4e472_16-423js06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

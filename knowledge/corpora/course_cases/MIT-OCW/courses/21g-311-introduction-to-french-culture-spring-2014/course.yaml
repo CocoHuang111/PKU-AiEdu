@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-311-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.311"
+cross_listed_codes: []
+course_title: "Introduction to French Culture"
+course_slug: "21g-311-introduction-to-french-culture-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Catherine E Clark"
+subject_primary: "Language"
+subject_secondary:
+  - "French"
+  - "Literature"
+  - "International Literature"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course examines major social and political trends, events, debates and personalities which help place aspects of contemporary French culture in their historical perspective through fiction, films, essays, newspaper articles, and television. Topics include the heritage of the French Revolution, the growth and consequences of colonialism, the role of intellectuals in public debates, the impact of the Occupation, the modernization of the economy and of social structures. The sources and meanings of national symbols, monuments, myths and manifestoes are also studied. Recommended for students planning to study abroad. Taught in French.
+course_url: "https://ocw.mit.edu/courses/21g-311-introduction-to-french-culture-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/21g-311-introduction-to-french-culture-spring-2014/e40b0adaa5bff70b731795bf49e7a67e_21g.311s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

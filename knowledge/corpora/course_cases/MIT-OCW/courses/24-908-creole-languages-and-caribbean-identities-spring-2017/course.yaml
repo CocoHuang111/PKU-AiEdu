@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-24-908-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.908"
+cross_listed_codes: []
+course_title: "Creole Languages and Caribbean Identities"
+course_slug: "24-908-creole-languages-and-caribbean-identities-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michel DeGraff"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Society"
+  - "Latin and Caribbean Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Presentation Assignments with Examples"
+  - "Written Assignments"
+description: |
+  Caribbean Creole languages result from language contact via colonization and the slave trade. In this course we explore the history of Creole languages from cognitive, historical and comparative perspectives. We evaluate popular theories about “Creole genesis” and the role of language acquisition. Then we explore the non-linguistic aspects of Creole formation, using sources from literature, religion and music. We also look into issues of Caribbean identities as we examine Creole speakers’ and others’ beliefs and attitudes toward their cultures. We also make comparisons with relevant aspects of African-American culture in the U.S.
+course_url: "https://ocw.mit.edu/courses/24-908-creole-languages-and-caribbean-identities-spring-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/24-908-creole-languages-and-caribbean-identities-spring-2017/d56f1f88cfa5094342e35e41193127c1_MIT24_912S17_chp.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

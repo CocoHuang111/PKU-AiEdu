@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-20-410j-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.410J"
+cross_listed_codes:
+  - "2.798J"
+  - "6.524J"
+  - "10.537"
+course_title: "Molecular, Cellular and Tissue Biomechanics (BE.410J)"
+course_slug: "20-410j-molecular-cellular-and-tissue-biomechanics-be-410j-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Mechanical Engineering"
+  - "Electrical Engineering and Computer Science"
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Roger D. Kamm"
+  - "Prof. Patrick Doyle"
+  - "Maxine Jonas"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomechanics"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Cell Biology"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Cell Biology"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course develops and applies scaling laws and the methods of continuum mechanics to biomechanical phenomena over a range of length scales. Topics include: structure of tissues and the molecular basis for macroscopic properties; chemical and electrical effects on mechanical behavior; cell mechanics, motility and adhesion; biomembranes; biomolecular mechanics and molecular motors. Experimental methods for probing structures at the tissue, cellular, and molecular levels will also be investigated. This course was originally co-developed by Professors Alan Grodzinsky, Roger Kamm, and L. Mahadevan.
+course_url: "https://ocw.mit.edu/courses/20-410j-molecular-cellular-and-tissue-biomechanics-be-410j-spring-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/20-410j-molecular-cellular-and-tissue-biomechanics-be-410j-spring-2003/77a266ff2ecf2964113bf0502534441d_20-410js03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

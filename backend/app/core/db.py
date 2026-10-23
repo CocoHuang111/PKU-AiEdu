@@ -221,6 +221,10 @@ async def delete_task(task_id: str, user_id: str | None = None) -> dict[str, Any
         if row.status not in DELETABLE_EVAL_STATUSES:
             return {"ok": False, "reason": row.status}
         owner = str(row.user_id)
+        video_path = row.video_path
+        from .material_storage import is_oss_reference, object_key
+        if video_path and is_oss_reference(video_path):
+            video_path = str(get_storage("local").path_for(object_key(video_path, owner=owner, task_id=task_id)))
         await session.delete(row)
         stored = (
             await session.scalars(
@@ -234,6 +238,9 @@ async def delete_task(task_id: str, user_id: str | None = None) -> dict[str, Any
             item.deleted_at = _now()
     task_dir = (settings.upload_dir / owner / task_id).resolve()
     upload_root = settings.upload_dir.resolve()
+    if video_path and Path(video_path).resolve().is_relative_to(upload_root):
+        from ai_engine.evaluation.media import cleanup_video_artifacts
+        cleanup_video_artifacts(video_path)
     if task_dir.parent == upload_root / owner and task_dir.is_dir():
         shutil.rmtree(task_dir)
     try:
@@ -308,7 +315,18 @@ async def submit_task(task_id: str, user_id: str) -> dict[str, Any]:
             return {"ok": False, "reason": "not_found"}
         if row.status != "uploading":
             return {"ok": False, "reason": row.status}
-        if not row.video_path or not Path(row.video_path).is_file():
+        from .material_storage import is_oss_reference, object_key
+        if not row.video_path:
+            return {"ok": False, "reason": "missing_video"}
+        if is_oss_reference(row.video_path):
+            key = object_key(row.video_path, owner=user_id, task_id=task_id)
+            stored = await session.scalar(select(StoredFile.id).where(
+                StoredFile.user_id == row.user_id, StoredFile.storage_backend == "oss",
+                StoredFile.storage_key == key, StoredFile.deleted_at.is_(None),
+            ).limit(1))
+            if stored is None:
+                return {"ok": False, "reason": "missing_video"}
+        elif not Path(row.video_path).is_file():
             return {"ok": False, "reason": "missing_video"}
         row.status = "queued"
         row.current_step = "queued"
@@ -434,6 +452,10 @@ async def recover_stale_eval_tasks(lease_seconds: int) -> int:
             if row.status == "cancel_requested":
                 row.status = "cancelled"
                 row.current_step = "cancelled"
+            elif (row.attempt_count or 0) >= 3:
+                row.status = "failed"
+                row.current_step = "failed"
+                row.error = "解析进程连续中断3次，已停止自动重试。请检查服务器资源；已完成的解析检查点仍保留。"
             else:
                 row.status = "queued"
                 row.current_step = "queued"
@@ -564,6 +586,18 @@ async def create_syllabus_task(
         session.add(row)
         await session.flush()
         return str(row.id)
+
+
+async def start_syllabus_task(task_id: str) -> bool:
+    """Claim only when a syllabus execution slot is available; preserve cancellation."""
+    async with session_scope() as session:
+        result = await session.execute(
+            update(SyllabusTask)
+            .where(SyllabusTask.id == _uid(task_id), SyllabusTask.status == "queued")
+            .values(status="processing", progress=2, current_step="starting", updated_at=_now())
+            .returning(SyllabusTask.id)
+        )
+        return result.scalar_one_or_none() is not None
 
 
 async def update_syllabus_task(task_id: str, **fields) -> None:

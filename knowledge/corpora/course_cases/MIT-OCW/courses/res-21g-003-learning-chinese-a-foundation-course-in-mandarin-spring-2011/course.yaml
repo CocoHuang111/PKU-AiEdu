@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-res-21g-003-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.21G-003"
+cross_listed_codes: []
+course_title: "Learning Chinese: A Foundation Course in Mandarin (汉语基础教材)"
+course_slug: "res-21g-003-learning-chinese-a-foundation-course-in-mandarin-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Julian K. Wheatley"
+subject_primary: "Language"
+subject_secondary:
+  - "Chinese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Chinese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This online textbook represents materials that were used in the first four semesters (two years) of the Mandarin program at MIT. They eventually formed the basis of a print textbook of the same name, published by Yale University Press. The OCW course materials were extensively revised, and at times reordered, before publication, but the general principles of the original remain: to provide a comprehensive resource for the foundation levels of the Chinese language that separates the learning of oral skills from literary (the former being transcribed in pinyin, and the latter in characters). This resource contains the complete online version of the text and accompanying audio recordings.
+course_url: "https://ocw.mit.edu/courses/res-21g-003-learning-chinese-a-foundation-course-in-mandarin-spring-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/res-21g-003-learning-chinese-a-foundation-course-in-mandarin-spring-2011/1d623a64e38ae093a62c4e0816133435_res-21g-003s11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

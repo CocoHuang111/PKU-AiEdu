@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-18-156-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.156"
+cross_listed_codes: []
+course_title: "Projection Theory"
+course_slug: "18-156-projection-theory-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lawrence D Guth"
+subject_primary: "Differential Equations"
+subject_secondary:
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  The class studies projection theory, starting from the first questions and building up to recent developments. Projection theory studies how a set X behaves under different orthogonal projections. Questions of this type aren’t usually emphasized in the graduate analysis curriculum, but they come up in many areas of math, including harmonic analysis, analytic number theory, additive combinatorics, and homogeneous dynamics. We will survey several applications of projection theory. For each topic, we will introduce and motivate the topic and see how it connects with projection theory. We will prove something about each topic but not necessarily the strongest results.
+course_url: "https://ocw.mit.edu/courses/18-156-projection-theory-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/18-156-projection-theory-spring-2025/mit18_156_s25_v2.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

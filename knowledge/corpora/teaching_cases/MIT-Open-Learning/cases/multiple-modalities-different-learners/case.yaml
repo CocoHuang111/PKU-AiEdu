@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-multiple-modalities-different-learners"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Multiple Modalities for Different Learners"
+slug: "multiple-modalities-different-learners"
+course_codes:
+  - "SCM.260/SCM.266"
+departments:
+  - "Management (Course 15)"
+instructors:
+  - "Chris Caplice"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Online Assessments & Rapid Feedback"
+  - "Lightboard"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/multiple-modalities-different-learners"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "504a98474f1282d0c09705a200f2686415e72f6d36cd5fbc2086ab919a52a031"

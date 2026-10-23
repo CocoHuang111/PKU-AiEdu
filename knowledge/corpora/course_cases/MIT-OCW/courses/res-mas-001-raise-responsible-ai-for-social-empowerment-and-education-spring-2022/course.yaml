@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-res-mas-001-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.MAS-001"
+cross_listed_codes: []
+course_title: "RAISE (Responsible AI for Social Empowerment and Education)"
+course_slug: "res-mas-001-raise-responsible-ai-for-social-empowerment-and-education-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "MIT RAISE "
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  RAISE (Responsible AI for Social Empowerment and Education) is a new MIT-wide initiative headquartered in the MIT Media Lab and in collaboration with the MIT Schwarzman College of Computing and MIT Open Learning . MIT researchers continually develop curriculum modules and associated teaching materials that are available to all K-12 educators for free under a Creative Commons license.
+course_url: "https://ocw.mit.edu/courses/res-mas-001-raise-responsible-ai-for-social-empowerment-and-education-spring-2022/"
+image_url: |
+  https://ocw.mit.edu/courses/res-mas-001-raise-responsible-ai-for-social-empowerment-and-education-spring-2022/a24be09628556b3e46239599638a3c61_res-mas-001s22.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

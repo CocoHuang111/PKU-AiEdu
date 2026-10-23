@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-12-090-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.090"
+cross_listed_codes: []
+course_title: "The Environment of the Earth's Surface"
+course_slug: "12-090-the-environment-of-the-earths-surface-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Southard"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Hydrology and Water Resource Systems"
+  - "Science"
+  - "Earth Science"
+  - "Environmental Science"
+  - "Geology"
+  - "Geophysics"
+  - "Planetary Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Hydrology and Water Resource Systems"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+          - "Geology"
+          - "Geophysics"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Open Textbooks"
+description: |
+  A great variety of processes affect the surface of the Earth. Topics to be covered are production and movement of surficial materials; soils and soil erosion; precipitation; streams and lakes; groundwater flow; glaciers and their deposits. The course combines aspects of geology, climatology, hydrology, and soil science to present a coherent introduction to the surface of the Earth, with emphasis on both fundamental concepts and practical applications, as a basis for understanding and intelligent management of the Earth’s physical and chemical environment.
+course_url: "https://ocw.mit.edu/courses/12-090-the-environment-of-the-earths-surface-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/12-090-the-environment-of-the-earths-surface-spring-2007/6d5c85662cb71dbcf63f913786afa3d4_12-090s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

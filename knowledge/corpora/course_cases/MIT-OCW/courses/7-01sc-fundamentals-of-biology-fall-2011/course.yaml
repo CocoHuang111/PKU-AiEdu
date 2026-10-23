@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-7-01sc-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.01SC"
+cross_listed_codes: []
+course_title: "Fundamentals of Biology"
+course_slug: "7-01sc-fundamentals-of-biology-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Eric Lander"
+  - "Prof. Robert Weinberg"
+  - "Prof. Tyler Jacks"
+  - "Prof. Hazel Sive"
+  - "Prof. Graham Walker"
+  - "Prof. Sallie Chisholm"
+  - "Dr. Michelle Mischke"
+subject_primary: "Biology"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Tutorial Videos"
+description: |
+  Fundamentals of Biology focuses on the basic principles of biochemistry, molecular biology, genetics, and recombinant DNA. These principles are necessary to understanding the basic mechanisms of life and anchor the biological knowledge that is required to understand many of the challenges in everyday life, from human health and disease to loss of biodiversity and environmental quality. Course Format This course has been designed for independent study. It consists of four units, one for each topic. The units can be used individually or in combination. The materials for each unit include: Lecture Videos by MIT faculty. Learning activities, including Interactive Concept Quizzes , designed to reinforce main concepts from lectures. Problem Sets you do on your own and check your answers against the Solutions when you’re done. Problem Solving Video help sessions taught by experienced MIT Teaching Assistants. Lists of important Terms and Definitions. Suggested Topics and Links for further study. Exams with Solution Keys. Content Development Eric Lander Robert Weinberg Tyler Jacks Hazel Sive Graham Walker Sallie Chisholm Dr. Michelle Mischke
+course_url: "https://ocw.mit.edu/courses/7-01sc-fundamentals-of-biology-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/7-01sc-fundamentals-of-biology-fall-2011/533499c2943939be949d7aed93782793_7-01scf11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

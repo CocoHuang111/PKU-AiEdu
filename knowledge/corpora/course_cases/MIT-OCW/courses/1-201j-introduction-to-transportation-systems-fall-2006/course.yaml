@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-1-201j-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.201J"
+cross_listed_codes:
+  - "11.545J"
+  - "ESD.210J"
+course_title: "Introduction to Transportation Systems"
+course_slug: "1-201j-introduction-to-transportation-systems-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Urban Studies and Planning"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joseph Sussman"
+  - "Prof. Nigel Wilson"
+subject_primary: "Urban Studies"
+subject_secondary:
+  - "Transportation Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Transportation Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  1.201J/11.545J/ESD.210J is required for all first-year Master of Science in Transportation students. It would be of interest to, as well as accessible to, students in Urban Studies and Planning, Political Science, Technology and Policy, Management, and various engineering departments. It is a good subject for those who plan to take only one subject in transportation and serves as an entry point to other transportation subjects as well. The subject focuses on fundamental principles of transportation systems, introduces transportation systems components and networks, and addresses how one invests in and operates them effectively. The tie between transportation and related systems is emphasized.
+course_url: "https://ocw.mit.edu/courses/1-201j-introduction-to-transportation-systems-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/1-201j-introduction-to-transportation-systems-fall-2006/eff87cb32ec1a32b3d268b90e0a30ed0_1-201jf06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-matlab-integrated-mitx-biological-computation"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "MATLAB Integrated with MITx for Biological Computation"
+slug: "matlab-integrated-mitx-biological-computation"
+course_codes:
+  - "7.QBW"
+departments:
+  - "Biology (Course 7)"
+instructors:
+  - "Dr. Mandana Sassanfar"
+  - "Dr. Mary Ellen Wiltrout"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/matlab-integrated-mitx-biological-computation"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "b6ef7d2e3148fc35c80d092b40431e49f8153077e42fed297f23bd3624faa0c7"

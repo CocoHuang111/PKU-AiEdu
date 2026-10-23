@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-6-763-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.763"
+cross_listed_codes: []
+course_title: "Applied Superconductivity"
+course_slug: "6-763-applied-superconductivity-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Terry Orlando"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Materials Science and Engineering"
+  - "Electronic Materials"
+  - "Science"
+  - "Physics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Electronic Materials"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides a phenomenological approach to superconductivity, with emphasis on superconducting electronics. Topics include: electrodynamics of superconductors, London’s model, flux quantization, Josephson Junctions, superconducting quantum devices, equivalent circuits, high-speed superconducting electronics, and quantized circuits for quantum computing. The course also provides an overview of type II superconductors, critical magnetic fields, pinning, the critical state model, superconducting materials, and microscopic theory of superconductivity.
+course_url: "https://ocw.mit.edu/courses/6-763-applied-superconductivity-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/6-763-applied-superconductivity-fall-2005/6164064725932e5c829143c8052be490_6-763f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

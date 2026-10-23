@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-digital-tools-connect-students-across-globe"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Digital Tools Connect Students Across the Globe"
+slug: "digital-tools-connect-students-across-globe"
+course_codes:
+  - "21H.009"
+departments:
+  - "History (Course 21H)"
+instructors:
+  - "Sana Aiyar"
+  - "Hiromu Nagahara"
+  - "Meghan Perdue"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/digital-tools-connect-students-across-globe"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "cbce39a4885cb1d99eccb32420aa9b456c15f36ec5b548caa7e4a6775b052e5c"

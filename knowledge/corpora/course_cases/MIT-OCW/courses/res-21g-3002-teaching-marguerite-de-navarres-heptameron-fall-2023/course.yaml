@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-res-21g-3002-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.21G-3002"
+cross_listed_codes: []
+course_title: "Teaching Marguerite de Navarre's Heptaméron"
+course_slug: "res-21g-3002-teaching-marguerite-de-navarres-heptameron-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Leanna B. Rezvani"
+subject_primary: "Language"
+subject_secondary:
+  - "French"
+  - "Literature"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Other Video"
+description: |
+  This site is designed for scholars and students interested in exploring Marguerite de Navarre’s Heptaméron to help delve more deeply into this compelling writer and her texts. Resources are compiled on the site to allow easy access to information about Marguerite’s writings and her substantial influence in debates about religion and women in sixteenth-century France; these include extensive biographies, summaries, full texts, images and media, teaching resources, films, and a space to share ideas. The website is published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA) International license.
+course_url: "https://ocw.mit.edu/courses/res-21g-3002-teaching-marguerite-de-navarres-heptameron-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/res-21g-3002-teaching-marguerite-de-navarres-heptameron-fall-2023/mitres_21g_3002_f23.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-002-2-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.002-2"
+cross_listed_codes: []
+course_title: "Foundations of Western Culture II: Renaissance to Modernity"
+course_slug: "21l-002-2-foundations-of-western-culture-ii-renaissance-to-modernity-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alvin Kibel"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "International Literature"
+  - "Philosophy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "International Literature"
+      - name: "Philosophy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject offers a broad survey of texts (both literary and philosophical) drawn from the Western tradition and selected to trace the growth of ideas about the nature of mankind’s ethical and political life in the West since the renaissance. It will deal with the change in perspective imposed by scientific ideas, the general loss of a supernatural or religious perspective upon human events, and the effects for good or ill of the increasing authority of an intelligence uninformed by religion as a guide to life. The readings are roughly complementary to the readings in 21L001, and classroom discussion will stress appreciation and analysis of texts that came to represent the cultural heritage of the modern world.
+course_url: "https://ocw.mit.edu/courses/21l-002-2-foundations-of-western-culture-ii-renaissance-to-modernity-spring-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-002-2-foundations-of-western-culture-ii-renaissance-to-modernity-spring-2003/3a4237e01c2d66e52c76f0637ecc25f7_21l-002-2s03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

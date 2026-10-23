@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-71-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.71"
+cross_listed_codes:
+  - "1.146"
+  - "3.56"
+  - "16.861"
+course_title: "Engineering Systems Analysis for Design"
+course_slug: "esd-71-engineering-systems-analysis-for-design-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+  - "Civil and Environmental Engineering"
+  - "Materials Science and Engineering"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Richard de Neufville"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Systems Design"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  Engineering systems design must have the flexibility to take advantage of new opportunities while avoiding disasters. This subject develops “real options” analysis to create design flexibility and measure its value so that it can be incorporated into system optimization. It builds on essential concepts of system models, decision analysis, and financial concepts. Emphasis is placed on calculating value of real options with special attention given to efficient analysis and practical applications. The material is organized and presented to deal with the contextual reality of technological systems, that substantially distinguishes the analysis of real options in engineering systems from that of financial options. Note This MIT OpenCourseWare site is based on the materials from Professor de Neufville’s ESD.71 Web site . Additional materials, updated as needed by Professor de Neufville, can be found there.
+course_url: "https://ocw.mit.edu/courses/esd-71-engineering-systems-analysis-for-design-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/esd-71-engineering-systems-analysis-for-design-fall-2008/f9f2ec5403e745f4a459543023201fa5_esd-71f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

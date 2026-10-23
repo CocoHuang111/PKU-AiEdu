@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-res-ll-005-january-iap-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.LL-005"
+cross_listed_codes: []
+course_title: "Mathematics of Big Data and Machine Learning"
+course_slug: "res-ll-005-mathematics-of-big-data-and-machine-learning-january-iap-2020"
+term: "January IAP"
+year: 2020
+as_taught_in: "January IAP 2020"
+language: "en"
+departments: []
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Jeremy Kepner"
+  - "Dr. Vijay Gadepally"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Data Mining"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  This course introduces the Dynamic Distributed Dimensional Data Model (D4M), a breakthrough in computer programming that combines graph theory, linear algebra, and databases to address problems associated with Big Data. Search, social media, ad placement, mapping, tracking, spam filtering, fraud detection, wireless communication, drug discovery, and bioinformatics all attempt to find items of interest in vast quantities of data. This course teaches a signal processing approach to these problems by combining linear algebraic graph algorithms, group theory, and database design. This approach has been implemented in software. The class will begin with a number of practical problems, introduce the appropriate theory, and then apply the theory to these problems. Students will apply these ideas in the final project of their choosing. The course will contain a number of smaller assignments which will prepare the students with appropriate software infrastructure for completing their final projects.
+course_url: "https://ocw.mit.edu/courses/res-ll-005-mathematics-of-big-data-and-machine-learning-january-iap-2020/"
+image_url: |
+  https://ocw.mit.edu/courses/res-ll-005-mathematics-of-big-data-and-machine-learning-january-iap-2020/7311378c6e1194415d5bb278083d4987_res-ll-005iap20.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

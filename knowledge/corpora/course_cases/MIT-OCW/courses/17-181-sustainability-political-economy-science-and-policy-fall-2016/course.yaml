@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-17-181-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.181"
+cross_listed_codes:
+  - "17.182"
+course_title: "Sustainability: Political Economy, Science, and Policy"
+course_slug: "17-181-sustainability-political-economy-science-and-policy-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Nazli Choucri"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Environmental Science"
+  - "Social Science"
+  - "Economics"
+  - "Political Economy"
+  - "Political Science"
+  - "International Relations"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Political Economy"
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course examines alternative conceptions and theoretical underpinnings of sustainable development. It focuses on the sustainability problems of industrial countries, and of developing states and economies in transition. It also explores the sociology of knowledge regarding sustainability, the economic and technological dimensions, and institutional imperatives, along with implications for political constitution of economic performance. 17.181 fulfills the undergraduate public policy requirement in the Political Science major and minor . Graduate students are expected to explore the subject in greater depth through reading and individual research.
+course_url: "https://ocw.mit.edu/courses/17-181-sustainability-political-economy-science-and-policy-fall-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/17-181-sustainability-political-economy-science-and-policy-fall-2016/7c4a2f6d1e816a1b9de28aec6b24d74a_17-181f16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

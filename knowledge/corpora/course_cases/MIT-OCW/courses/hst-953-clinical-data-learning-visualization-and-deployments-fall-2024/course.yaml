@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-953-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.953"
+cross_listed_codes:
+  - "6.8850"
+course_title: "Clinical Data Learning, Visualization, and Deployments"
+course_slug: "hst-953-clinical-data-learning-visualization-and-deployments-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Marzyeh Ghassemi"
+  - "Leo A. Celi"
+  - "Adam Rodman"
+  - "Ned McCague"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Health and Medicine"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Health and Medicine"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Problem Sets"
+  - "Programming Assignments"
+  - "Readings"
+description: |
+  HST.953 is a course about the practical considerations for operationalizing machine learning in healthcare settings. We begin the course with a focus on robust, private and fair machine learning (ML) using real retrospective healthcare data. We follow this with experiences in visualization (VIS) that target utility and clinical value. Finally, we explore the intermediate “implementation science” (IMP) tying together how real models might be potentially used through a visual system by practicing clinical staff. ACKNOWLEDGEMENTS Rodrigo Gameiro assisted with organization of course materials for publication on MIT OpenCourseWare.
+course_url: "https://ocw.mit.edu/courses/hst-953-clinical-data-learning-visualization-and-deployments-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/hst-953-clinical-data-learning-visualization-and-deployments-fall-2024/mithst_953_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,51 @@
+schema_version: "1.0"
+course_id: "mitocw-11-129-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.129"
+cross_listed_codes: []
+course_title: "Educational Theory and Practice I"
+course_slug: "11-129-educational-theory-and-practice-i-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Reen Gibb"
+subject_primary: "Teaching and Education"
+subject_secondary: []
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course is designed to prepare you for a successful student teaching experience. Some of the major themes and activities are: analysis of yourself as a teacher and as a learner, subject knowledge, adolescent development, student learning styles, lesson planning, assessment strategies, classroom management techniques and differentiated instruction. The course requires significant personal involvement and time. You will observe high school classes, begin to pursue a more active role in the classroom in the latter part of the semester, do reflective writings on what you see and think (journal), design and teach a mini-lesson, design a major curriculum unit and engage in our classroom discussions and activities.
+course_url: "https://ocw.mit.edu/courses/11-129-educational-theory-and-practice-i-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/11-129-educational-theory-and-practice-i-fall-2011/07fe1e5e733fde0db4578f9b6767343d_11-129f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-8-901-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.901"
+cross_listed_codes: []
+course_title: "Astrophysics I"
+course_slug: "8-901-astrophysics-i-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Deepto Chakrabarty"
+subject_primary: "Physics"
+subject_secondary:
+  - "Astrophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This course provides a graduate-level introduction to stellar astrophysics. It covers a variety of topics, ranging from stellar structure and evolution to galactic dynamics and dark matter.
+course_url: "https://ocw.mit.edu/courses/8-901-astrophysics-i-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/8-901-astrophysics-i-spring-2006/9a67f4cef2d9dbe9258bd862f4145b02_8-901s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

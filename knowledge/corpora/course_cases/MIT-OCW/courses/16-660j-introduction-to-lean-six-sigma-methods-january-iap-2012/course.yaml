@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-16-660j-january-iap-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.660J"
+cross_listed_codes:
+  - "ESD.62J"
+  - "16.853"
+course_title: "Introduction to Lean Six Sigma Methods"
+course_slug: "16-660j-introduction-to-lean-six-sigma-methods-january-iap-2012"
+term: "January IAP"
+year: 2012
+as_taught_in: "January IAP 2012"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Earll Murman"
+  - "Hugh McManus"
+  - "Prof. Annalisa Weigel"
+  - "Dr. Bo Madsen"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Leadership"
+  - "Operations Management"
+  - "Organizational Behavior"
+  - "Project Management"
+  - "Engineering"
+  - "Aerospace Engineering"
+  - "Systems Engineering"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  This course covers the fundamental principles, practices and tools of Lean Six Sigma methods that underlay modern organizational productivity approaches applied in aerospace, automotive, health care, and other sectors. It includes lectures, active learning exercises, a plant tour, talks by industry practitioners, and videos. One third of the course is devoted to a physical simulation of an aircraft manufacturing enterprise or a clinic to illustrate the power of Lean Six Sigma methods. The course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/16-660j-introduction-to-lean-six-sigma-methods-january-iap-2012/"
+image_url: "https://ocw.mit.edu/courses/16-660j-introduction-to-lean-six-sigma-methods-january-iap-2012/bb2b9f6f539febfaab4c819728f1a081_16-660iap12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

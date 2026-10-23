@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-11-366j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.366J"
+cross_listed_codes:
+  - "1.817J"
+course_title: "Planning for Sustainable Development"
+course_slug: "11-366j-planning-for-sustainable-development-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Laws"
+  - "Prof. Martin Rein"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+description: |
+  This course explores policy and planning for sustainable development. It critically examines concept of sustainability as a process of social, organizational, and political development drawing on cases from the U.S. and Europe. It also explores pathways to sustainability through debates on ecological modernization; sustainable technology development, international and intergenerational fairness, and democratic governance.
+course_url: "https://ocw.mit.edu/courses/11-366j-planning-for-sustainable-development-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/11-366j-planning-for-sustainable-development-spring-2006/bfa1234211b56196fe404888c286314c_11-366js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

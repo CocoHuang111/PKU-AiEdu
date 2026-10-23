@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-722-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.722"
+cross_listed_codes: []
+course_title: "Special Topics at Edgerton Center:Developing World Prosthetics"
+course_slug: "ec-722-special-topics-at-edgerton-center-developing-world-prosthetics-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ken Endo"
+  - "Robert Emerson"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+  - "Health and Medicine"
+  - "Biomedicine"
+  - "Public Health"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedicine"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  D-Lab World Prosthetics is a collaboration between the Massachusetts Institute of Technology and the Jaipur Foot Organization to improve the design, manufacture, and distribution of rehabilitation devices in the developing world. The course welcomes individuals interested in physical rehabilitation to work on multidisciplinary teams of students with bioengineering, mechanical engineering, material science, and medical or pre-medical backgrounds. Students will learn about the basics of human walking, different types of gait disabilities, as well as the technologies that seek to address those disabilities. Patient perspectives and current research areas are presented. Lecture topics focus on lower-limb disabilities, including polio and above-knee and below-knee amputation, and will cover both developed and developing world techniques for overcoming these disabilities. Students form teams to design and prototype low-cost orthotic and prosthetic devices, and present their work at the end of the course.
+course_url: "https://ocw.mit.edu/courses/ec-722-special-topics-at-edgerton-center-developing-world-prosthetics-spring-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/ec-722-special-topics-at-edgerton-center-developing-world-prosthetics-spring-2010/9fc182ae05acef67a364c80379721ca4_ec-722s10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

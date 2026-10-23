@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-s55-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.S55"
+cross_listed_codes: []
+course_title: "Japanese V"
+course_slug: "21g-s55-japanese-v-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Takako Aikawa"
+subject_primary: "Language"
+subject_secondary:
+  - "Japanese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Japanese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Videos"
+description: |
+  This is an experimental version of 21G.505, which offers a combination of in-person and synchronous remote instruction. It aims to achieve simultaneous progression of four skills—listening, speaking, reading, and writing. It immerses students in various aspects of Japanese culture through authentic everyday Japanese media.
+course_url: "https://ocw.mit.edu/courses/21g-s55-japanese-v-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/21g-s55-japanese-v-fall-2022/21g-s55f22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

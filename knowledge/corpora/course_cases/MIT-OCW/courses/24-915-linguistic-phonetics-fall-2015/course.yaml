@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-24-915-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.915"
+cross_listed_codes:
+  - "24.963"
+course_title: "Linguistic Phonetics"
+course_slug: "24-915-linguistic-phonetics-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Edward Flemming"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Phonology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Phonology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course is about the study of speech sounds; how we produce and perceive them and their acoustic properties. Topics include the influence of the production and perception systems on phonological patterns and sound change, students learn acoustic analysis and experimental techniques. Students taking the graduate version complete different assignments.
+course_url: "https://ocw.mit.edu/courses/24-915-linguistic-phonetics-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/24-915-linguistic-phonetics-fall-2015/ceb01a247960c746f44324ee761b9cdd_24-915f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

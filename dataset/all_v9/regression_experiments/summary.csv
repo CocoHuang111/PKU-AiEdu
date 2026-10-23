@@ -1,5 +1,0 @@
-variant,title,n_input_columns,n_model_features,fixed_mae,fixed_rmse,cv_mae_mean,cv_mae_std,cv_rmse_mean,cv_rmse_std
-ridge5,五维 Ridge,5,5,0.3853,0.4285,0.3389,0.0428,0.4226,0.0726
-huber5agg,五维+聚合特征 Huber,5,15,0.3778,0.4394,0.3582,0.0443,0.4379,0.0633
-monotonic_gam,五维+单调聚合 GAM,5,42,0.3681,0.4202,0.3366,0.0407,0.419,0.0673
-residual_gb,聚合主干+精选特征残差 GB,21,23,0.3691,0.4349,0.3639,0.0581,0.4508,0.0696

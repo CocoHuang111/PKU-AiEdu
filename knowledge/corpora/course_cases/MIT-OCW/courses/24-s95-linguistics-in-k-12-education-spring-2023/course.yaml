@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-24-s95-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.S95"
+cross_listed_codes: []
+course_title: "Linguistics in K–12 Education"
+course_slug: "24-s95-linguistics-in-k-12-education-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Maya Honda"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This seminar explored the idea that the study of linguistics can be a means to develop young people’s understanding of scientific inquiry as well as their understanding of the nature of language. The challenge of this seminar was to create pedagogical materials and methods that will motivate learners of all ages to be inquisitive about their native language and about language in general. Seminar participants worked with one another and in partnership with K–12 teachers to accomplish this goal.
+course_url: "https://ocw.mit.edu/courses/24-s95-linguistics-in-k-12-education-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/24-s95-linguistics-in-k-12-education-spring-2023/mit24_s95_s23_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

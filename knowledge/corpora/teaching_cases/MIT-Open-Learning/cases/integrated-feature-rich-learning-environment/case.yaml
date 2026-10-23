@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-integrated-feature-rich-learning-environment"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "An Integrated, Feature-rich Learning Environment"
+slug: "integrated-feature-rich-learning-environment"
+course_codes:
+  - "6.042, 6.046, 6.849, 6.854"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Erik Demaine"
+digital_innovations_tools:
+  - "Flexible Course Delivery"
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/integrated-feature-rich-learning-environment"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "8172ae6c168445ff7d9137dbec58d48a85ca71647d897c927c3630855fab27f0"

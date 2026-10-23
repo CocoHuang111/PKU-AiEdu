@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-video-assessments-replace-exams"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Video Assessments Replace Exams"
+slug: "video-assessments-replace-exams"
+course_codes:
+  - "3.039"
+departments:
+  - "Materials Science and Engineering (Course 3)"
+instructors:
+  - "Craig Carter"
+digital_innovations_tools:
+  - "Online Assessments & Rapid Feedback"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/video-assessments-replace-exams"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "4a826c3e5c761acf846b45e2d399c16da0ac2bfb348f49a980b78b5968fe10fe"

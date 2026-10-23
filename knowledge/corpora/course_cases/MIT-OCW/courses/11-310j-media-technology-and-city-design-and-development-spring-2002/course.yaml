@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-11-310j-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.310J"
+cross_listed_codes:
+  - "4.243J"
+course_title: "Media Technology and City Design and Development"
+course_slug: "11-310j-media-technology-and-city-design-and-development-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ceasar McDowell"
+  - "Prof. Anne Whiston Spirn"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Social Science"
+  - "Communication"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This workshop explores the potential of media technology and the Internet to enhance communication and transform city design and community development in inner-city neighborhoods. The class introduces a variety of methods for describing or representing a place and its residents, for simulating actions and changes, for presenting visions of the future, and for engaging multiple actors in the process of envisioning change and guiding action. Students will engage two neighborhoods: the Mill Creek neighborhood of West Philadelphia, PA, and the Brightwood/Northend neighborhood of Springfield, MA. Students will meet real people working on real projects, put theory into practice, and reflect on insights gained in the process. Our hope is that student work will contribute to new initiatives in both communities. The class Web site can be found here: Media Technology and City Design and Development . It is sponsored by the West Philadelphia Landscape Project and the Center for Reflective Community Practice.
+course_url: "https://ocw.mit.edu/courses/11-310j-media-technology-and-city-design-and-development-spring-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/11-310j-media-technology-and-city-design-and-development-spring-2002/c4b99edfe6632fead219df9565121858_11-310js02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

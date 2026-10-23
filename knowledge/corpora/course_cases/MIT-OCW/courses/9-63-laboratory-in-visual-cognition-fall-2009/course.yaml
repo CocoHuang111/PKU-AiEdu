@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-9-63-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.63"
+cross_listed_codes: []
+course_title: "Laboratory in Visual Cognition"
+course_slug: "9-63-laboratory-in-visual-cognition-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Aude Oliva"
+subject_primary: "Sensory-Neural Systems"
+subject_secondary:
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  9.63 teaches principles of experimental methods in human perception and cognition, including design and statistical analysis. The course combines lectures and hands-on experimental exercises and requires an independent experimental project. Some experience in programming is desirable. To foster improved writing and presentation skills in conducting and critiquing research in cognitive science, students are required to provide reports and give oral presentations of three team experiments. A fourth individually conducted experiment includes a proposal with revision, and concluding written and oral reports.
+course_url: "https://ocw.mit.edu/courses/9-63-laboratory-in-visual-cognition-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/9-63-laboratory-in-visual-cognition-fall-2009/def35014ef50acc077eef733da911f54_9-63f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

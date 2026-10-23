@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-3-a04-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.A04"
+cross_listed_codes: []
+course_title: "Modern Blacksmithing and Physical Metallurgy"
+course_slug: "3-a04-modern-blacksmithing-and-physical-metallurgy-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Michael Tarkanian"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Metallurgical Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Metallurgical Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+description: |
+  Physical metallurgy encompasses the relationships between the composition, structure, processing history and properties of metallic materials. In this seminar you’ll be introduced to metallurgy in a particularly “physical” way. We will do blacksmithing, metal casting, machining, and welding, using both traditional and modern methods. The seminar meets once per week for an evening laboratory session, and once per week for discussion of issues in materials science and engineering that tie in to the laboratory work. Students will begin by completing some specified projects and progress to designing and fabricating one forged and one cast piece.
+course_url: "https://ocw.mit.edu/courses/3-a04-modern-blacksmithing-and-physical-metallurgy-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/3-a04-modern-blacksmithing-and-physical-metallurgy-fall-2008/6c86988776b806d0a7eb4ae22de104f0_3-a04f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

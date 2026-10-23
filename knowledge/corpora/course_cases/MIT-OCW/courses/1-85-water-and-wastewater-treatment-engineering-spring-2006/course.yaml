@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-1-85-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.85"
+cross_listed_codes: []
+course_title: "Water and Wastewater Treatment Engineering"
+course_slug: "1-85-water-and-wastewater-treatment-engineering-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Peter Shanahan"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Aquatic Sciences and Water Quality Control"
+  - "Hydrology and Water Resource Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Aquatic Sciences and Water Quality Control"
+          - "Hydrology and Water Resource Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course is an overview of engineering approaches to protecting water quality with an emphasis on fundamental principals. Theory and conceptual design of systems for treating municipal wastewater and drinking water are discussed, as well as reactor theory, process kinetics, and models. Physical, chemical, and biological processes are presented, including sedimentation, filtration, biological treatment, disinfection, and sludge processing. Finally, there is discussion of engineered and natural processes for wastewater treatment.
+course_url: "https://ocw.mit.edu/courses/1-85-water-and-wastewater-treatment-engineering-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/1-85-water-and-wastewater-treatment-engineering-spring-2006/5e23ac55e86cbd568daa8dd8b2662b59_1-85s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

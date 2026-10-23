@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-062j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.062J"
+cross_listed_codes:
+  - "21A.344J"
+course_title: "Drugs, Politics, and Culture"
+course_slug: "sts-062j-drugs-politics-and-culture-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Hugh Gusterson"
+subject_primary: "Pharmacology and Toxicology"
+subject_secondary:
+  - "Public Health"
+  - "Social Science"
+  - "Sociology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Pharmacology and Toxicology"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This class examines the relationship between a number of mind-altering substances and cultural processes. We look at the relationship between drugs and such phenomena as poverty, religion, technology, inter-generational conflict, colonialism, and global capitalism. We read about the physiological and psychological effects of these substances – ranging from alcohol to LSD, cocaine and ecstasy – and ask why different societies prohibit and sanction different drugs. We examine the use of mind-altering substances in a number of “traditional” societies, and follow the development of a global trade in such substances as sugar, coffee, tea, nicotine, cocaine, and marijuana concurrent with the evolution of global capitalism. We look at the use of LSD as a mind-control substance by the CIA and as a mind-altering substance in the 1960’s counter-culture, and we look at the rise of Prozac® and Viagra® as popular, if controversial, pharmaceutical products in recent years. Finally, we evaluate America’s current drug laws.
+course_url: "https://ocw.mit.edu/courses/sts-062j-drugs-politics-and-culture-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/sts-062j-drugs-politics-and-culture-spring-2006/9061e9c98a9bbfc81fb89b9719bbc784_sts-062js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-1-364-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.364"
+cross_listed_codes: []
+course_title: "Advanced Geotechnical Engineering"
+course_slug: "1-364-advanced-geotechnical-engineering-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Andrew Whittle"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Geotechnical Engineering"
+  - "Structural Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Geotechnical Engineering"
+          - "Structural Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Exams"
+  - "Written Assignments"
+description: |
+  1.364 examines site characterization and geotechnical aspects of the design and construction of foundation systems. Topics include: site investigation (with emphasis on in situ testing), shallow (footings and raftings) and deep (piles and caissons) foundations, excavation support systems, groundwater control, slope stability, soil improvement (compaction, soil reinforcement, etc.), and construction monitoring. This course is a core requirement for the Geotechnical Master of Engineering program at MIT.
+course_url: "https://ocw.mit.edu/courses/1-364-advanced-geotechnical-engineering-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/1-364-advanced-geotechnical-engineering-fall-2003/177fecd5a44eecda6d9a4282cfe9a588_1-364f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

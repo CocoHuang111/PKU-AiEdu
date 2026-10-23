@@ -1,0 +1,55 @@
+schema_version: "1.0"
+course_id: "mitocw-9-916-fall-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.916"
+cross_listed_codes: []
+course_title: "Modularity, Domain-specificity, and the Organization of Knowledge"
+course_slug: "9-916-modularity-domain-specificity-and-the-organization-of-knowledge-fall-2001"
+term: "Fall"
+year: 2001
+as_taught_in: "Fall 2001"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Elizabeth S. Spelke"
+  - "Prof. Nancy Kanwisher"
+subject_primary: "Cognitive Science"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course will consider the degree and nature of the modular organization of the mind and brain. We will focus in detail on the domains of objects, number, places, and people, drawing on evidence from behavioral studies in human infants, children, normal adults, neurological patients, and animals, as well as from studies using neural measures such as functional brain imaging and ERPs. With these domains as examples, we will address broader questions about the role of domain-general and domain-specific processing systems in mature human performance, the innateness vs. plasticity of encapsulated cognitive systems, the nature of the evidence for such systems, and the processes by which people link information flexibly across domains.
+course_url: "https://ocw.mit.edu/courses/9-916-modularity-domain-specificity-and-the-organization-of-knowledge-fall-2001/"
+image_url: |
+  https://ocw.mit.edu/courses/9-916-modularity-domain-specificity-and-the-organization-of-knowledge-fall-2001/6966260549407ea15b48a7ffa9fba620_9-916f01.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

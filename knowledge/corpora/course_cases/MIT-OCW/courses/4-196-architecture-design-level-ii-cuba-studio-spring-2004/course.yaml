@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-4-196-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.196"
+cross_listed_codes:
+  - "4.132"
+course_title: "Architecture Design, Level II: Cuba Studio"
+course_slug: "4-196-architecture-design-level-ii-cuba-studio-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jan Wampler"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Environmental Design"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Video Materials"
+description: |
+  This architectural studio will have one main project for the semester: to explore the issues surrounding the redesign of an area in Havana, Cuba. It is a typical area about the size of a Law of Indies block that presently has a mix of housing, work, and shopping, in buildings that need to be replaced and others that need to be rehabilitated. There is also vacant land, and buildings that are unused. Part of the blocks front on the Malecon, the street next to the water. The other edge fronts onto a typical neighborhood. The intention is to study the culture through an understanding of one area of Havana and then design an “echo” in architectural form. The design will include public space as well as a mix of buildings: some new, some rehabilitated.
+course_url: "https://ocw.mit.edu/courses/4-196-architecture-design-level-ii-cuba-studio-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/4-196-architecture-design-level-ii-cuba-studio-spring-2004/c87eec30c64ad3f57c6c6ba75a03d7ca_4-196s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

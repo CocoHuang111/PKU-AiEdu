@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-17-100j-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.100J"
+cross_listed_codes:
+  - "15.678J"
+  - "14.781J"
+course_title: "Political Economy I"
+course_slug: "17-100j-political-economy-i-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Political Science"
+  - "Sloan School of Management"
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Suzanne Berger"
+  - "Prof. Michael Piore"
+subject_primary: "Economics"
+subject_secondary:
+  - "Political Economy"
+  - "Political Science"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Political Economy"
+      - name: "Political Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Political Economy I explores the major social science paradigms for analyzing relations among state, economy, and society. Through readings, lectures and discussion of original texts in political liberalism and individualism, neo-classical economics, Marxism, sociological and cultural theories, and neo-institutionalism, the seminar examines the fundamental assumptions on which our understanding of the social world and our research are based.
+course_url: "https://ocw.mit.edu/courses/17-100j-political-economy-i-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/17-100j-political-economy-i-spring-2016/86cf04aef235e3e428868f3c0b37ffcf_17-100js16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

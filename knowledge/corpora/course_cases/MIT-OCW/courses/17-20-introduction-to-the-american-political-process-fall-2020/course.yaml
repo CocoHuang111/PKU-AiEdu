@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-17-20-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.20"
+cross_listed_codes: []
+course_title: "Introduction to the American Political Process"
+course_slug: "17-20-introduction-to-the-american-political-process-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Asya Magazinnik"
+  - "Zeyu Chris Peng"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course provides a substantive overview of U.S. politics and an introduction to the discipline of political science. It surveys the institutional foundations of U.S. politics as well as the activities of political elites, organizations, and ordinary citizens. It explores the application of general political science concepts and analytic frameworks to specific episodes and phenomena in U.S. politics.
+course_url: "https://ocw.mit.edu/courses/17-20-introduction-to-the-american-political-process-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/17-20-introduction-to-the-american-political-process-fall-2020/6a8016c8cc43d0f440be8d1110ae57a9_17-20f20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

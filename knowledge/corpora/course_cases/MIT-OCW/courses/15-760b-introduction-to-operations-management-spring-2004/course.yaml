@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-15-760b-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.760B"
+cross_listed_codes: []
+course_title: "Introduction to Operations Management"
+course_slug: "15-760b-introduction-to-operations-management-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jérémie Gallien"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Project Management"
+  - "Supply Chain Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Project Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This half-term course introduces students to problems and analysis related to the design, planning, control, and improvement of manufacturing and service operations. Class sessions involve explaining concepts, working examples, and discussing cases. A wide range of topics are covered, including: process analysis, quality management, supply chain design, procurement, and product development. Toward the end of the course, students work in teams to manage a virtual factory in a web-based simulation exercise.
+course_url: "https://ocw.mit.edu/courses/15-760b-introduction-to-operations-management-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/15-760b-introduction-to-operations-management-spring-2004/e50ed883e56faacb6e2b786972795623_15-760bs04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

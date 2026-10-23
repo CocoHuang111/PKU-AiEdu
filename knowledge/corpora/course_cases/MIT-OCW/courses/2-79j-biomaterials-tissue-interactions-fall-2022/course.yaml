@@ -1,0 +1,91 @@
+schema_version: "1.0"
+course_id: "mitocw-2-79j-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.79J"
+cross_listed_codes:
+  - "HST.522J"
+course_title: "Biomaterials-Tissue Interactions"
+course_slug: "2-79j-biomaterials-tissue-interactions-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Myron Spector"
+  - "Prof. Ioannis Yannas"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Biomechanics"
+  - "Cell and Tissue Engineering"
+  - "Materials Science and Engineering"
+  - "Mechanical Engineering"
+  - "Health and Medicine"
+  - "Anatomy and Physiology"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Cell Biology"
+  - "Developmental Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Biomechanics"
+          - "Cell and Tissue Engineering"
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Cell Biology"
+          - "Developmental Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Readings"
+description: |
+  The goal of this course is to teach the principles of materials science, chemical and mechanical engineering, and cell biology underlying the use of materials for the development of implantable and injectable devices.
+course_url: "https://ocw.mit.edu/courses/2-79j-biomaterials-tissue-interactions-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/2-79j-biomaterials-tissue-interactions-fall-2022/mit2_79j_f22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

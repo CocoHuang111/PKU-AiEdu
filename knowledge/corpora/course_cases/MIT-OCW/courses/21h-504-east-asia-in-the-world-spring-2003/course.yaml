@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-504-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.504"
+cross_listed_codes: []
+course_title: "East Asia in the World"
+course_slug: "21h-504-east-asia-in-the-world-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Peter C. Perdue"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "Asian History"
+  - "Social Science"
+  - "Political Science"
+  - "International Relations"
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject examines the interactions of East Asia with the rest of the world and the relationships of each of the East Asian countries with each other, from ca. 1500 to 2000 A.D. Primary focus on China and Japan, with some reference to Korea, Vietnam, and Central Asia. Asks how international diplomatic, commercial, military, religious, and cultural relationships joined with internal processes to direct the development of East Asian societies. Subject addresses perceptions and misperceptions among East Asians and foreigners.
+course_url: "https://ocw.mit.edu/courses/21h-504-east-asia-in-the-world-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/21h-504-east-asia-in-the-world-spring-2003/033171f84a0db8a1b968df4a8bbef7e7_21h-504s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

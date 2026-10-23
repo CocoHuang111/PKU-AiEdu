@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-973-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.973"
+cross_listed_codes: []
+course_title: "Communication System Design"
+course_slug: "6-973-communication-system-design-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Vladimir Stojanovic"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Networks"
+  - "Electrical Engineering"
+  - "Telecommunications"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Networks"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course presents a top-down approach to communications system design. The course will cover communication theory, algorithms and implementation architectures for essential blocks in modern physical-layer communication systems (coders and decoders, filters, multi-tone modulation, synchronization sub-systems). The course is hands-on, with a project component serving as a vehicle for study of different communication techniques, architectures and implementations. This year, the project is focused on WLAN transceivers. At the end of the course, students will have gone through the complete WLAN System-On-a-Chip design process, from communication theory, through algorithm and architecture all the way to the synthesized standard-cell RTL chip representation.
+course_url: "https://ocw.mit.edu/courses/6-973-communication-system-design-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/6-973-communication-system-design-spring-2006/620a0b98b718b035600121896b74db4b_6-973s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

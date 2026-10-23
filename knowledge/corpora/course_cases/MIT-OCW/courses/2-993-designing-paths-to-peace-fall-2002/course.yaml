@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-2-993-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.993"
+cross_listed_codes:
+  - "2.996"
+course_title: "Designing Paths to Peace"
+course_slug: "2-993-designing-paths-to-peace-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alex Slocum"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+  - "Systems Engineering"
+  - "Systems Design"
+  - "Fine Arts"
+  - "Visual Arts"
+  - "Graphic Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Graphic Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  Teaches creative design based on the scientific method through the design, engineering, and manufacture of a detailed inlaid tile. This is an introductory lecture/studio course designed to teach students the basic principles of design and expose them to the design process. Throughout the course, students will be introduced to the terminology and concepts that underlie all forms of visual art; which–in many ways–forms the basis for the design of all physical objects. Along with learning mechanical skills, thinking both critically and visually, and working with different media, the students will consider how the arts grow out of and respond to particular cultural contexts and ideas; and how these thinking patterns can be applied to virtually all types of design. Presentations, lectures, demonstrations, discussions and various artistic works will be used to show students how other artists and designers have dealt with the same issues they will be facing in lab. Each class will begin with a critique of the students’ homework, followed by a discussion (and presentation when appropriate) of the pertinent issues of that week. All aspects of the course will aid the teams of students in designing and building a major inlaid tile whose elements are designed as digital solid models and manufactured on an abrasive waterjet machining center. The course will conclude with an exhibit of the completed tiles open to the MIT and the Greater-Boston public. Enrollment is limited to 16 students who will be divided into groups of 4 students each. Preference will be given to students who attend the first day of class in a pre-selected team of 4.
+course_url: "https://ocw.mit.edu/courses/2-993-designing-paths-to-peace-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/2-993-designing-paths-to-peace-fall-2002/61b3327fc0b6d6485220773b66973ac7_2-993f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

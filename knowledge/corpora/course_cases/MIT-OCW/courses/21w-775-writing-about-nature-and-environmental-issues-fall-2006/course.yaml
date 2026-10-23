@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-775-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.775"
+cross_listed_codes: []
+course_title: "Writing about Nature and Environmental Issues"
+course_slug: "21w-775-writing-about-nature-and-environmental-issues-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anthony Lioi"
+subject_primary: "Literature"
+subject_secondary:
+  - "Creative Writing"
+  - "Criticism"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Criticism"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course focuses on traditional nature writing and the environmentalist essay. Students will keep a Web log as a journal. Writings are drawn from the tradition of nature writing and from contemporary forms of the environmentalist essay.
+course_url: "https://ocw.mit.edu/courses/21w-775-writing-about-nature-and-environmental-issues-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21w-775-writing-about-nature-and-environmental-issues-fall-2006/65e91238eb6406c0b468ab303766f048_21w-775f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-8-284-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.284"
+cross_listed_codes: []
+course_title: "Modern Astrophysics"
+course_slug: "8-284-modern-astrophysics-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Paul Schechter"
+subject_primary: "Physics"
+subject_secondary:
+  - "Astrophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This course explores the applications of physics (Newtonian, statistical, and quantum mechanics) to fundamental processes that occur in celestial objects. The list of topics includes Main-sequence Stars, Collapsed Stars (White Dwarfs, Neutron Stars, and Black Holes), Pulsars, Supernovae, the Interstellar Medium, Galaxies, and as time permits, Active Galaxies, Quasars, and Cosmology. Observational data is also discussed.
+course_url: "https://ocw.mit.edu/courses/8-284-modern-astrophysics-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/8-284-modern-astrophysics-spring-2006/fe31d84a2a4b4b8cc38607ff3f52264b_8-284s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

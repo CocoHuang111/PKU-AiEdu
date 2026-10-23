@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-12-570-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.570"
+cross_listed_codes: []
+course_title: "Seminar in Geophysics: Thermal and Chemical Evolution of the Earth"
+course_slug: "12-570-seminar-in-geophysics-thermal-and-chemical-evolution-of-the-earth-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Robert Van Der Hilst"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geochemistry"
+  - "Geology"
+  - "Geophysics"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geochemistry"
+          - "Geology"
+          - "Geophysics"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+description: |
+  The main objective of this cross-disciplinary course is to understand the historical development and the current status of ideas and models, to present and question the constraints from the different research fields, and to investigate if and how the different views on mantle flow can be reconciled with the currently available data.
+course_url: "https://ocw.mit.edu/courses/12-570-seminar-in-geophysics-thermal-and-chemical-evolution-of-the-earth-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/12-570-seminar-in-geophysics-thermal-and-chemical-evolution-of-the-earth-spring-2005/504b1a9109c9634838f70fe5655b94a3_12-570s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

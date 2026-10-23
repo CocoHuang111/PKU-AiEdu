@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-1-225j-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.225J"
+cross_listed_codes:
+  - "ESD.205J"
+course_title: "Transportation Flow Systems"
+course_slug: "1-225j-transportation-flow-systems-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ismail Chabini"
+  - "Prof. Amedeo R. Odoni"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Transportation Engineering"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Social Science"
+  - "Urban Studies"
+  - "Transportation Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Transportation Engineering"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Transportation Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Design, operation, and management of traffic flows over complex transportation networks are the foci of this course. It covers two major topics: traffic flow modeling and traffic flow operations. Sub-topics include deterministic and probabilistic models, elements of queuing theory, and traffic assignment. Concepts are illustrated through various applications and case studies. This is a half-term subject offered during the second half of the semester.
+course_url: "https://ocw.mit.edu/courses/1-225j-transportation-flow-systems-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/1-225j-transportation-flow-systems-fall-2002/b3cb1a1fa9da65088f2ab2a8456d3fd1_1-225jf02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-17-42-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.42"
+cross_listed_codes: []
+course_title: "Causes and Prevention of War"
+course_slug: "17-42-causes-and-prevention-of-war-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Stephen Van Evera"
+subject_primary: "History"
+subject_secondary:
+  - "Military History"
+  - "Social Science"
+  - "Political Science"
+  - "International Relations"
+  - "Public Administration"
+  - "Military Studies"
+  - "Security Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Military History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+          - "Security Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course examines the causes of war, with a focus on practical measures to prevent and control war. Topics include causes and consequences of misperception by nations; military strategy and policy as cause of war; religion and war; U.S. foreign policy as a cause of war and peace; and the likelihood and possible nature of great wars in the future. The historical cases covered include World War I, World War II, the Korean War, the Seven Years’ War, the Arab-Israel conflict, other recent Mideast wars, and the Peloponnesian War.
+course_url: "https://ocw.mit.edu/courses/17-42-causes-and-prevention-of-war-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/17-42-causes-and-prevention-of-war-spring-2018/294dc796f07b8dee512f76ce7b841dd7_17-42s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

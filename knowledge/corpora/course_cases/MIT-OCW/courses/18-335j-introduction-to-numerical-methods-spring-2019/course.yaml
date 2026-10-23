@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-18-335j-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.335J"
+cross_listed_codes:
+  - "6.337J"
+course_title: "Introduction to Numerical Methods"
+course_slug: "18-335j-introduction-to-numerical-methods-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Steven G. Johnson"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Systems Engineering"
+  - "Numerical Simulation"
+  - "Mathematics"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+      - name: "Systems Engineering"
+        specialties:
+          - "Numerical Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course offers an advanced introduction to numerical analysis, with a focus on accuracy and efficiency of numerical algorithms. Topics include sparse-matrix/iterative and dense-matrix algorithms in numerical linear algebra (for linear systems and eigenproblems), floating-point arithmetic, backwards error analysis, conditioning, and stability. Other computational topics (e.g., numerical integration or nonlinear optimization) are also surveyed.
+course_url: "https://ocw.mit.edu/courses/18-335j-introduction-to-numerical-methods-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/18-335j-introduction-to-numerical-methods-spring-2019/d063f5d67a2a7d5a22b5a9e88e6a95be_18-335js19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

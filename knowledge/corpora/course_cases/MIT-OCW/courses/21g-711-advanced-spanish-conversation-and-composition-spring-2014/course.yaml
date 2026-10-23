@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-711-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.711"
+cross_listed_codes: []
+course_title: "Advanced Spanish Conversation and Composition"
+course_slug: "21g-711-advanced-spanish-conversation-and-composition-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Margarita Ribas Groeger"
+subject_primary: "Language"
+subject_secondary:
+  - "Spanish"
+  - "Social Science"
+  - "Communication"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Spanish"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  En este curso el estudiante perfeccionará su comunicación oral y escrita mediante el estudio y la discusión de temas relacionados al impacto social y cultural de la ciencia y la tecnología en ciertas sociedades hispanas. Algunos de los temas a tratar son los efectos de los cambios tecnológicos en la estructura familiar y comunitaria, en las relaciones entre los sexos, en la identidad personal y cultural, en el mundo natural y en los sistemas de valores, la religión, la educación y el trabajo. También se examinan y discuten diversas actitudes hacia la innovación tecnológica y científica así como las ramificaciones éticas de las decisiones tecnológicas.
+course_url: "https://ocw.mit.edu/courses/21g-711-advanced-spanish-conversation-and-composition-spring-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-711-advanced-spanish-conversation-and-composition-spring-2014/addffaa298c96438004a31189452f927_21g-711s14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

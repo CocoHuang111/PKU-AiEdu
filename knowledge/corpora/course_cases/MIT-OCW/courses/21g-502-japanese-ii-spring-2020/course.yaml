@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-502-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.502"
+cross_listed_codes:
+  - "21G.552"
+course_title: "Japanese II"
+course_slug: "21g-502-japanese-ii-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Takako Aikawa"
+  - "Masami Ikeda-Lamm"
+  - "Wakana Maekawa"
+  - "Emiko Rafique"
+subject_primary: "Language"
+subject_secondary:
+  - "Japanese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Japanese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+description: |
+  This course covers Genki I Lessons 7 through 12 that will enhance the basic skills for conversation, reading, and writing in Japenese. The program emphasizes active command of the language rather than passive knowledge. By the end of the semester, you will be able to carry on a conversation in Japanese. You will also learn approximately 90 kanji characters.
+course_url: "https://ocw.mit.edu/courses/21g-502-japanese-ii-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/21g-502-japanese-ii-spring-2020/e02b8ae0a1a91890fdeb01d78465a34d_21g502s20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

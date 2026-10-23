@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-1-252j-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.252J"
+cross_listed_codes:
+  - "11.540J"
+course_title: "Urban Transportation Planning"
+course_slug: "1-252j-urban-transportation-planning-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Frederick Salvucci"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Transportation Engineering"
+  - "Social Science"
+  - "Public Administration"
+  - "Public Policy"
+  - "Urban Studies"
+  - "Transportation Planning"
+  - "Urban Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Transportation Engineering"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Urban Studies"
+        specialties:
+          - "Transportation Planning"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course examines the policy, politics, planning, and engineering of transportation systems in urban areas, with a special focus on the Boston area. It covers the role of the federal, state, and local government and the MPO, public transit in the era of the automobile, analysis of current trends and pattern breaks; analytical tools for transportation planning, traffic engineering, and policy analysis; the contribution of transportation to air pollution, social costs, and climate change; land use and transportation interactions, and more. Transportation sustainability is a central theme throughout the course, as well as consideration of if and how it is possible to resolve the tension between the three E’s (environment, economy, and equity). The goal of this course is to elicit discussion, stimulate independent thinking, and encourage students to understand and challenge the “conventional wisdom” of transportation planning.
+course_url: "https://ocw.mit.edu/courses/1-252j-urban-transportation-planning-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/1-252j-urban-transportation-planning-fall-2016/da01775110f44dcb70ce6a87159c9ef3_1-252F16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

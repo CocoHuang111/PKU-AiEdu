@@ -1,0 +1,9 @@
+- Source: https://ocw.mit.edu/courses/es-113-ancient-greek-philosophy-and-mathematics-spring-2016/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+<table><tr><th>WEEK #</th><th>TOPICS</th><th>KEY DATES</th></tr><tr><td>1</td><td>Introduction</td><td></td></tr><tr><td colspan="3">I. Knowing</td></tr><tr><td>2</td><td>A. Logos as Definition: What is “What is?” <br> B. Knowledge as Power / Knowledge as Virtue</td><td></td></tr><tr><td>3</td><td>C. Definition and the Essence of Things <br> D. The Idea of a Proof</td><td></td></tr><tr><td colspan="3">II. Logos and Arithmos</td></tr><tr><td>4</td><td>Quality, Quantity, Relation, Multitude, Magnitude, Logos as Ratio <br> The Greek Conception of Number (What’s Not a Number?)</td><td></td></tr><tr><td colspan="3">III. Measuring the Unmeasurable</td></tr><tr><td>5</td><td>A. Putting the Irrational in Ratio</td><td></td></tr><tr><td>6</td><td>B. Fitting Ideas to the World</td><td>First Paper Due</td></tr><tr><td>7</td><td>C. The Pursuit of Truth and the Idea of an Idea</td><td></td></tr><tr><td>8 & 9</td><td>D. The Truth as a Surd</td><td>Re-write Due</td></tr><tr><td>10</td><td>E. Potentiality as a Way of Being</td><td></td></tr><tr><td colspan="3">IV. The Limits of Mathematics?</td></tr><tr><td>11</td><td>Aristotle’s <br> Nicomachean Ethics</td><td></td></tr><tr><td>12</td><td>Aristotle’s <br> Nicomachean Ethics <br> (cont.)</td><td></td></tr><tr><td colspan="3">V. The Modern Conception of Number and the Detachment from Reality</td></tr><tr><td>13</td><td>Isaac Newton’s <br> Arithmetica Universalis</td><td></td></tr><tr><td>14</td><td>“The World of Physics and the ‘Natural World” <br> “The Sources of Modern Symbolic Mathematics”</td><td>Second Paper Due</td></tr></table>

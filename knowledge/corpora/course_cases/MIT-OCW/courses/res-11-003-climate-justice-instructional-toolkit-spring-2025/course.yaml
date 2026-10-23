@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-res-11-003-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.11-003"
+cross_listed_codes: []
+course_title: "Climate Justice Instructional Toolkit"
+course_slug: "res-11-003-climate-justice-instructional-toolkit-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Dr. Christopher Rabe"
+subject_primary: "Climate"
+subject_secondary:
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Public Policy"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  The Climate Justice Instructional Toolkit was created by MIT Environmental Solutions Initiative as part of a larger initiative to expand climate justice education at MIT. The primary goal of these resources and programming is to provide support to faculty members and instructors across disciplines within introductory undergraduate courses to facilitate the integration of climate justice content and related instructional approaches into their courses.
+course_url: "https://ocw.mit.edu/courses/res-11-003-climate-justice-instructional-toolkit-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/res-11-003-climate-justice-instructional-toolkit-spring-2025/mitres_11_003_f23_chp.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

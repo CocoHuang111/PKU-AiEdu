@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-ids-910-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "IDS.910"
+cross_listed_codes:
+  - "IDS.910 (formerly ESD.801)"
+course_title: "Leadership Development"
+course_slug: "ids-910-leadership-development-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Institute for Data, Systems, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dava Newman"
+subject_primary: "Leadership"
+subject_secondary: []
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Students work in a seminar environment to enhance their leadership capabilities. An initial Leadership Laboratory Outward Bound experience builds trust, teamwork and communications. Readings and assignments emphasize the characteristics of effective leadership. Distinguished leaders participate in the “Leadership Lunch” story-telling series to share their experiences and to provide recommendations. Discussions help explore and further probe leadership development. The learning experience culminates in a personal leadership plan.
+course_url: "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/ids-910-leadership-development-fall-2014/fe14e7ef33719033b5e8ea3de861209a_ids-910f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

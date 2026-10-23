@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-engaging-students-challenge-world-poverty"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Engaging Students: Challenge of World Poverty"
+slug: "engaging-students-challenge-world-poverty"
+course_codes:
+  - "14.73"
+departments:
+  - "Economics (Course 14)"
+instructors:
+  - "Esther Duflo"
+  - "Abhijit Banerjee"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/engaging-students-challenge-world-poverty"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "4cb5a8e23a380823b831007f67187aa579544ce987d7d772e75e3342f1e200f2"

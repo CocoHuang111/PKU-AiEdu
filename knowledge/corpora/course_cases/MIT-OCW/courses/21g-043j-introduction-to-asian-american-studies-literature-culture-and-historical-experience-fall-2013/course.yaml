@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-043j-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.043J"
+cross_listed_codes:
+  - "21H.107J"
+course_title: "Introduction to Asian American Studies: Literature, Culture, and Historical Experience"
+course_slug: "21g-043j-introduction-to-asian-american-studies-literature-culture-and-historical-experience-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Emma J. Teng"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  This course provides an overview of Asian American history and its relevance for contemporary issues. It covers the first wave of Asian immigration in the 19th century, the rise of anti-Asian movements, the experiences of Asian Americans during WWII, the emergence of the Asian American movement in the 1960s, and the new wave of post–1965 Asian immigration. The class examines the role these experiences played in the formation of Asian American ethnicity. The course addresses key societal issues such as racial stereotyping, media racism, affirmative action, the glass ceiling, the “model minority” syndrome, and anti-Asian harassment or violence. The course is taught in English.
+course_url: "https://ocw.mit.edu/courses/21g-043j-introduction-to-asian-american-studies-literature-culture-and-historical-experience-fall-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-043j-introduction-to-asian-american-studies-literature-culture-and-historical-experience-fall-2013/350acd93263f350e89b231ceb50e9350_21g-043jf13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

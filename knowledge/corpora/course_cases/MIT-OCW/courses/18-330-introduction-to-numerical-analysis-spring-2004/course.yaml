@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-18-330-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.330"
+cross_listed_codes: []
+course_title: "Introduction to Numerical Analysis"
+course_slug: "18-330-introduction-to-numerical-analysis-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alar Toomre"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Systems Engineering"
+  - "Numerical Simulation"
+  - "Mathematics"
+  - "Differential Equations"
+  - "Linear Algebra"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+      - name: "Systems Engineering"
+        specialties:
+          - "Numerical Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course analyzed the basic techniques for the efficient numerical solution of problems in science and engineering. Topics spanned root finding, interpolation, approximation of functions, integration, differential equations and direct and iterative methods in linear algebra.
+course_url: "https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2004/28d18c4b18680fb9cec563f53a722bcc_18-330s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

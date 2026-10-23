@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-res-21h-001-spring-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.21H-001"
+cross_listed_codes: []
+course_title: "Visualizing the Birth of Modern Tokyo"
+course_slug: "res-21h-001-visualizing-the-birth-of-modern-tokyo-spring-2021"
+term: "Spring"
+year: 2021
+as_taught_in: "Spring 2021"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Shigeru Miyagawa"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "Asian History"
+  - "Modern History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+          - "Modern History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course shows the emergence of modern Tokyo through artist renderings of its neighborhoods, daily life and nightlife, nested between its recurring destruction by natural disasters and war. Students will learn about the tradition of the “100 views,” and through these composite depictions of the city, will witness the excitement and loss of change. Kiyochika Kobayashi’s woodblock prints of Tokyo in the late 1870s convey a moody view on the cusp of change as the new capital, formerly Edo, begins modernization with Western influences. Koizumi Kishio’s depictions of the “Imperial Capital” in the 1930s show the lively cosmopolitanism and move toward ultranationalism that placed the emperor at its center. This course is part of the Open Learning Library , which is free to use. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/res-21h-001-visualizing-the-birth-of-modern-tokyo-spring-2021/"
+image_url: |
+  https://ocw.mit.edu/courses/res-21h-001-visualizing-the-birth-of-modern-tokyo-spring-2021/65c9085de7b8871448bb9c1d684e29b3_res-21hs21-001.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

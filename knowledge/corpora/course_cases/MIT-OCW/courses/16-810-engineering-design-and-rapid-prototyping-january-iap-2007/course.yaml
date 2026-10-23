@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-16-810-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.810"
+cross_listed_codes: []
+course_title: "Engineering Design and Rapid Prototyping"
+course_slug: "16-810-engineering-design-and-rapid-prototyping-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Olivier de Weck"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Aerodynamics"
+  - "Structural Mechanics"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Aerodynamics"
+          - "Structural Mechanics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Design Assignments with Examples"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Projects with Examples"
+description: |
+  This course provides students with an opportunity to conceive, design and implement a product, using rapid prototyping methods and computer-aid tools. The first of two phases challenges each student team to meet a set of design requirements and constraints for a structural component. A course of iteration, fabrication, and validation completes this manual design cycle. During the second phase, each team conducts design optimization using structural analysis software, with their phase one prototype as a baseline. Acknowledgements This course is made possible thanks to a grant by the alumni sponsored Teaching and Education Enhancement Program (Class of ‘51 Fund for Excellence in Education, Class of ‘55 Fund for Excellence in Teaching, Class of ‘72 Fund for Educational Innovation). The instructors gratefully acknowledge the financial support. The course was approved by the Undergraduate Committee of the MIT Department of Aeronautics and Astronautics in 2003. The instructors thank Prof. Manuel Martinez-Sanchez and the committee members for their support and suggestions.
+course_url: "https://ocw.mit.edu/courses/16-810-engineering-design-and-rapid-prototyping-january-iap-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/16-810-engineering-design-and-rapid-prototyping-january-iap-2007/728bd85d8a16feb8a936385161cce1d4_16-810iap07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

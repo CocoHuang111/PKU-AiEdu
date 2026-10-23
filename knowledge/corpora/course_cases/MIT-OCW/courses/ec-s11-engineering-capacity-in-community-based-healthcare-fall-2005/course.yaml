@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-s11-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.S11"
+cross_listed_codes: []
+course_title: "Engineering Capacity in Community-Based Healthcare"
+course_slug: "ec-s11-engineering-capacity-in-community-based-healthcare-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Ms. Christina DeFilippo"
+  - "Mr. Eric Soller"
+  - "Ms. Kathie Dionisio"
+  - "Ms. MaryAnn Dakkak"
+  - "Mr. Peter J. Mack"
+  - "Mr. Sankey Chibale"
+  - "Mr. Will DelHagen"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Health and Medicine"
+  - "Biomedical Enterprise"
+  - "Public Health"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Enterprise"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+  - "Written Assignments with Examples"
+description: |
+  This multidisciplinary seminar addresses fundamental issues in global health faced by community-based healthcare programs in developing countries. Students will broadly explore topics with expert lecturers and guided readings. Topics will be further illuminated with case studies from healthcare programs in urban centers of Zambia. Multidisciplinary teams will be formed to develop feasible solutions to specific health challenges posed in the case studies and encouraged to pursue their ideas beyond the seminar. Possible global health topics include community-based AIDS/HIV management, maternity care, health diagnostics, and information technology in patient management and tracking. Students from Medicine, Public Health, Engineering, Management, and Social Sciences are encouraged to enroll. No specific background experience is expected, but students should have some relevant skills or experiences.
+course_url: "https://ocw.mit.edu/courses/ec-s11-engineering-capacity-in-community-based-healthcare-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/ec-s11-engineering-capacity-in-community-based-healthcare-fall-2005/63c7caeff26186c01b9b0347b9081011_ec-s11f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

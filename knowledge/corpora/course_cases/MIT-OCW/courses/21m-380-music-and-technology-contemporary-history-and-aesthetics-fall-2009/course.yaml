@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-380-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.380"
+cross_listed_codes: []
+course_title: "Music and Technology (Contemporary History and Aesthetics)"
+course_slug: "21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christopher Ariza"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Music"
+  - "Music History"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Music Audio"
+  - "Projects with Examples"
+description: |
+  This course is an investigation into the history and aesthetics of music and technology as deployed in experimental and popular musics from the 19th century to the present. Through original research, creative hands-on projects, readings, and lectures, the following topics will be explored. The history of radio, audio recording, and the recording studio, as well as the development of musique concrète and early electronic instruments. The creation and extension of musical interfaces by composers such as Harry Partch, John Cage, Conlon Nancarrow, and others. The exploration of electromagnetic technologies in pickups, and the development of dub, hip-hop, and turntablism. The history and application of the analog synthesizer, from the Moog modular to the Roland TR-808. The history of computer music, including music synthesis and representation languages. Contemporary practices in circuit bending, live electronics, and electro-acoustic music, as well as issues in copyright and intellectual property, will also be examined. No prerequisites.
+course_url: "https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/21m-380-music-and-technology-contemporary-history-and-aesthetics-fall-2009/6e51158e51681200dbec82e20a4a9a41_21m-380f09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

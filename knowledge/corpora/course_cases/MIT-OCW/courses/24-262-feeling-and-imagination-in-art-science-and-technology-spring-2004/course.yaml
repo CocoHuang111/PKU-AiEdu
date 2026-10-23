@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-24-262-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.262"
+cross_listed_codes: []
+course_title: "Feeling and Imagination in Art, Science, and Technology"
+course_slug: "24-262-feeling-and-imagination-in-art-science-and-technology-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Irving Singer"
+subject_primary: "Literature"
+subject_secondary:
+  - "Philosophy"
+  - "Science"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties: []
+      - name: "Philosophy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This course is a seminar on creativity in art, science, and technology. We discuss how these pursuits are jointly dependent on affective as well as cognitive elements in human nature. We study feeling and imagination in relation to principles of idealization, consummation, and the aesthetic values that give meaning to science and technology as well as literature and the other arts. Readings in philosophy, psychology, and literature are part of the course.
+course_url: "https://ocw.mit.edu/courses/24-262-feeling-and-imagination-in-art-science-and-technology-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/24-262-feeling-and-imagination-in-art-science-and-technology-spring-2004/b728ae0a3938a1c23b954899dabfa996_24-262s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

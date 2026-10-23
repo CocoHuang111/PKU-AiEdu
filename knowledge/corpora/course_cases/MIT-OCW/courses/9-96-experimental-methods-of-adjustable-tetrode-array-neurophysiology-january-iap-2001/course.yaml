@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-9-96-january-iap-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.96"
+cross_listed_codes: []
+course_title: "Experimental Methods of Adjustable Tetrode Array Neurophysiology"
+course_slug: "9-96-experimental-methods-of-adjustable-tetrode-array-neurophysiology-january-iap-2001"
+term: "January IAP"
+year: 2001
+as_taught_in: "January IAP 2001"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Matthew Wilson"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neurobiology"
+  - "Neuroscience"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  Students will be exposed to all aspects of a cutting-edge technique in modern electrophysiology, in a highly structured, team oriented environment. The research projects will probe the neural mechanisms of learning and memory through tetrode array recordings coupled with patterned microstimulation. Due to the broad nature of tasks to be completed, coupled with the team oriented approach we will be employing, we are interested in students with a wide variety of laboratory experience and skill levels.
+course_url: "https://ocw.mit.edu/courses/9-96-experimental-methods-of-adjustable-tetrode-array-neurophysiology-january-iap-2001/"
+image_url: |
+  https://ocw.mit.edu/courses/9-96-experimental-methods-of-adjustable-tetrode-array-neurophysiology-january-iap-2001/4a5258f4ddd8c16b51f60514a57a16ec_9-96iap01.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

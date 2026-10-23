@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-9-95-a-january-iap-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.95-A"
+cross_listed_codes: []
+course_title: "Research Topics in Neuroscience"
+course_slug: "9-95-a-research-topics-in-neuroscience-january-iap-2003"
+term: "January IAP"
+year: 2003
+as_taught_in: "January IAP 2003"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Peter H. Schiller"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neuroscience"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This series of research talks by members of the Department of Brain and Cognitive Sciences introduces students to different approaches to the study of the brain and mind. Topics include: From Neurons to Neural Networks Prefrontal Cortex and the Neural Basis of Cognitive Control Hippocampal Memory Formation and the Role of Sleep The Formation of Internal Modes for Learning Motor Skills Look and See: How the Brain Selects Objects and Directs the Eyes How the Brain Wires Itself
+course_url: "https://ocw.mit.edu/courses/9-95-a-research-topics-in-neuroscience-january-iap-2003/"
+image_url: "https://ocw.mit.edu/courses/9-95-a-research-topics-in-neuroscience-january-iap-2003/169f6a448446e5dfdc7455522167b4a1_9-95aiap03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

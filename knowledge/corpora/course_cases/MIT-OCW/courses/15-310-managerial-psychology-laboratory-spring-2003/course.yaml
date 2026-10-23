@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-15-310-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.310"
+cross_listed_codes:
+  - "15.301"
+course_title: "Managerial Psychology Laboratory"
+course_slug: "15-310-managerial-psychology-laboratory-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dan Ariely"
+  - "Prof. Tom Allen"
+subject_primary: "Management"
+subject_secondary:
+  - "Organizational Behavior"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Projects"
+  - "Written Assignments"
+description: |
+  Surveys social psychology and organization theory interpreted in the context of the managerial environment. Shares lectures with 15.301, with a separate recitation required. 15.301 is intended primarily for non-Sloan students, both graduate and undergraduate. Deals with a number of diverse subjects, including motivation and reward systems for engineers and scientists in industry; the aging of technical groups; the management of R&D matrix organizations; and the architecture of R&D laboratories and its effect on communication patterns in the organization. 15.301 is a core subject for students majoring in management science. A laboratory is a required element of the course for these students. It involves projects of an applied nature in behavioral science. Emphasizes use of behavioral science research methods to test hypotheses concerning organizational behavior. Instruction and practice in communication include report writing, team decision-making, and oral and visual presentation.
+course_url: "https://ocw.mit.edu/courses/15-310-managerial-psychology-laboratory-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/15-310-managerial-psychology-laboratory-spring-2003/e06bd15759eae6b9f6a84d108ed2eb79_15-310s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

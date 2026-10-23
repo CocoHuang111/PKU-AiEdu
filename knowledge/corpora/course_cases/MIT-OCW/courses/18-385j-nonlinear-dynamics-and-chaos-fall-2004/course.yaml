@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-18-385j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.385J"
+cross_listed_codes:
+  - "2.036J"
+course_title: "Nonlinear Dynamics and Chaos"
+course_slug: "18-385j-nonlinear-dynamics-and-chaos-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Rodolfo Rosales"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Differential Equations"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This graduate level course focuses on nonlinear dynamics with applications. It takes an intuitive approach with emphasis on geometric thinking, computational and analytical methods and makes extensive use of demonstration software.
+course_url: "https://ocw.mit.edu/courses/18-385j-nonlinear-dynamics-and-chaos-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/18-385j-nonlinear-dynamics-and-chaos-fall-2004/095728c1dcf7bdc3d4a674f09a14d823_18-385jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

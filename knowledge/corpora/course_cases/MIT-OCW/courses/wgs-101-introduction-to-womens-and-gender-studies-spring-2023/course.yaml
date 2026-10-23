@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-101-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.101"
+cross_listed_codes: []
+course_title: "Introduction to Women's and Gender Studies"
+course_slug: "wgs-101-introduction-to-womens-and-gender-studies-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Andrea Walsh"
+  - "Dr. Elizabeth M. Fox"
+subject_primary: "Gender Studies"
+subject_secondary:
+  - "Women's Studies"
+topic_tree:
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Editable Files"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Readings"
+  - "Written Assignments with Examples"
+description: |
+  This course offers an introduction to women’s and gender studies, an interdisciplinary academic field that explores critical questions about the meaning of gender in society. The primary goal of this course is to familiarize students with key issues, questions, and debates in women’s and gender studies scholarship, both historical and contemporary. Gender scholarship critically analyzes themes of gendered performance and power in a range of social spheres, such as law, culture, work, education, medicine, social policy, and the family, and explores the intersection of gender, race, class, and sexuality in individual lives and social institutions.
+course_url: "https://ocw.mit.edu/courses/wgs-101-introduction-to-womens-and-gender-studies-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/wgs-101-introduction-to-womens-and-gender-studies-spring-2023/mitwgs_101_s23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

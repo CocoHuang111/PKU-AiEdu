@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-engaging-students-challenging-readings-canvas-and"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Engaging students in challenging readings via Canvas and Perusall"
+slug: "engaging-students-challenging-readings-canvas-and"
+course_codes:
+  - "17.20"
+departments:
+  - "Political Science (Course 17)"
+instructors:
+  - "Devin Caughey"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+  - "Perusall"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/engaging-students-challenging-readings-canvas-and"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "14c8e7cae8fb14aa836abc809329876170afa928fd0a8bff65516ba0a013b7f2"

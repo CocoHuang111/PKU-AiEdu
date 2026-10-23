@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-69-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.69"
+cross_listed_codes:
+  - "HST.926J"
+course_title: "Seminar on Health Care Systems Innovation"
+course_slug: "esd-69-seminar-on-health-care-systems-innovation-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Stan Finkelstein, MD"
+  - "Prof. Joseph Coughlin"
+  - "Prof. Joel Moses"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Innovation"
+  - "Engineering"
+  - "Systems Engineering"
+  - "Health and Medicine"
+  - "Biomedical Enterprise"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Enterprise"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This seminar applies a systems perspective to understand health care delivery today, its stakeholders and problems as well as opportunities. Students are introduced to the ‘systems perspective’ that has been used successfully in other industries, and will address the introduction of new processes, technologies and strategies to improve overall health outcomes. Students are assigned to teams to work on a semester‐long group project, in collaboration with staff of a nearby Boston hospital.
+course_url: "https://ocw.mit.edu/courses/esd-69-seminar-on-health-care-systems-innovation-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/esd-69-seminar-on-health-care-systems-innovation-fall-2010/57ae62e671d79e1ef2f7723c423b18f4_esd-69f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-17-449-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.449"
+cross_listed_codes: []
+course_title: "Emerging Technology and International Security"
+course_slug: "17-449-emerging-technology-and-international-security-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Erik Lin-Greenberg"
+subject_primary: "Political Science"
+subject_secondary:
+  - "International Relations"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This course explores how emerging technologies—including drones, artificial intelligence, social media, additive manufacturing, and cyber warfare—affect international security. It examines how states develop these technologies, identifies barriers to innovation in the security domain, and considers how the proliferation of new military and dual-use technologies affect decisions on war and peace. The course is designed for students interested in international relations, security studies, and emerging technologies.
+course_url: "https://ocw.mit.edu/courses/17-449-emerging-technology-and-international-security-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/17-449-emerging-technology-and-international-security-fall-2024/mit17_449_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

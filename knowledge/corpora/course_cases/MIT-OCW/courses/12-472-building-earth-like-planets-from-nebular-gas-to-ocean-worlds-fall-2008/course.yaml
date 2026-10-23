@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-12-472-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.472"
+cross_listed_codes: []
+course_title: "Building Earth-like Planets: From Nebular Gas to Ocean Worlds"
+course_slug: "12-472-building-earth-like-planets-from-nebular-gas-to-ocean-worlds-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lindy Elkins-Tanton"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geology"
+  - "Geophysics"
+  - "Planetary Science"
+  - "Physics"
+  - "Astrophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+          - "Geophysics"
+          - "Planetary Science"
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course covers examination of the state of knowledge of planetary formation, beginning with planetary nebulas and continuing through accretion (from gas, to dust, to planetesimals, to planetary embryos, to planets). It also includes processes of planetary differentiation, crust formation, atmospheric degassing, and surface water condensation. This course has integrated discussions of compositional and physical processes, based upon observations from our solar system and from exoplanets. Focus on terrestrial (rocky and metallic) planets, though more volatile-rich bodies are also examined.
+course_url: "https://ocw.mit.edu/courses/12-472-building-earth-like-planets-from-nebular-gas-to-ocean-worlds-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/12-472-building-earth-like-planets-from-nebular-gas-to-ocean-worlds-fall-2008/00e8d175a441373dbdd22b93076bb589_12-472f08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

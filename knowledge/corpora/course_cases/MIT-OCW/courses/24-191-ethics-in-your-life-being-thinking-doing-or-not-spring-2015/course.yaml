@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-24-191-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.191"
+cross_listed_codes: []
+course_title: "Ethics in Your Life: Being, Thinking, Doing (or Not?)"
+course_slug: "24-191-ethics-in-your-life-being-thinking-doing-or-not-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sally Haslanger"
+  - "Patricia Weinmann"
+  - "Brendan de Kenessey"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Ethics"
+  - "Social Science"
+  - "Sociology"
+  - "Social Justice"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This seminar is made possible through a collaboration between Radius and the Philosophy section of MIT. This course provides an opportunity to explore a wide range of ethical issues through guided discussions that are geared to equip students for ongoing reflection and action. Lectures and discussions with guest faculty, as well as attendance at on-and off-campus events, expose students to ethical problems and resources for addressing them. The course also encourages students to work collaboratively as they clarify their personal and vocational principles. Topics vary each term and reflect the interests of those enrolled.
+course_url: "https://ocw.mit.edu/courses/24-191-ethics-in-your-life-being-thinking-doing-or-not-spring-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/24-191-ethics-in-your-life-being-thinking-doing-or-not-spring-2015/7bbee8b27017d562fbcb604382f6b0e5_24-191s15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

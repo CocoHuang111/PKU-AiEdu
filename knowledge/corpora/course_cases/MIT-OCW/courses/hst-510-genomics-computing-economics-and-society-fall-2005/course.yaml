@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-510-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.510"
+cross_listed_codes: []
+course_title: "Genomics, Computing, Economics, and Society"
+course_slug: "hst-510-genomics-computing-economics-and-society-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. George Church"
+  - "Jeremy Zucker"
+  - "Shawn Douglas"
+  - "Alexander Wait"
+subject_primary: "Biomedicine"
+subject_secondary:
+  - "Functional Genomics"
+  - "Public Health"
+  - "Science"
+  - "Biology"
+  - "Genetics"
+  - "Social Science"
+  - "Economics"
+  - "Political Economy"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedicine"
+        specialties: []
+      - name: "Functional Genomics"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Genetics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Political Economy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course will focus on understanding aspects of modern technology displaying exponential growth curves and the impact on global quality of life through a weekly updated class project integrating knowledge and providing practical tools for political and business decision-making concerning new aspects of bioengineering, personalized medicine, genetically modified organisms, and stem cells. Interplays of economic, ethical, ecological, and biophysical modeling will be explored through multi-disciplinary teams of students, and individual brief reports.
+course_url: "https://ocw.mit.edu/courses/hst-510-genomics-computing-economics-and-society-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-510-genomics-computing-economics-and-society-fall-2005/eee4775f684d9d4c31e16fc494266adf_hst-510f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-6-101-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.101"
+cross_listed_codes: []
+course_title: "Introductory Analog Electronics Laboratory"
+course_slug: "6-101-introductory-analog-electronics-laboratory-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Ron Roscoe"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  6.101 is an introductory experimental laboratory that explores the design, construction, and debugging of analog electronic circuits. Lectures and six laboratory projects investigate the performance characteristics of diodes, transistors, JFETs, and op-amps, including the construction of a small audio amplifier and preamplifier. Seven weeks are devoted to the design and implementation, and written and oral presentation of a project in an environment similar to that of engineering design teams in industry. The course provides opportunity to simulate real-world problems and solutions that involve trade offs and the use of engineering judgment. Engineers from local analog engineering companies come to campus to help students with their design projects.
+course_url: "https://ocw.mit.edu/courses/6-101-introductory-analog-electronics-laboratory-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/6-101-introductory-analog-electronics-laboratory-spring-2007/71cf63aa659480ddf693250f71077e2d_6-101s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

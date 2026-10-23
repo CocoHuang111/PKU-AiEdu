@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-001-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.001"
+cross_listed_codes: []
+course_title: "Technology in American History"
+course_slug: "sts-001-technology-in-american-history-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Merritt Roe Smith"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "History of Science and Technology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "History of Science and Technology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course will consider the ways in which technology, broadly defined, has contributed to the building of American society from colonial times to the present. This course has three primary goals: to train students to ask critical questions of both technology and the broader American culture of which it is a part; to provide an historical perspective with which to frame and address such questions; and to encourage students to be neither blind critics of new technologies, nor blind advocates for technologies in general, but thoughtful and educated participants in the democratic process.
+course_url: "https://ocw.mit.edu/courses/sts-001-technology-in-american-history-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/sts-001-technology-in-american-history-spring-2006/20a2c4124e4c18fbf27c05ace514dada_sts-001s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

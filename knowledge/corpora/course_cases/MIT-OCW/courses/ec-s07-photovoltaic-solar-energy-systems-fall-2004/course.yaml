@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-s07-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.S07"
+cross_listed_codes: []
+course_title: "Photovoltaic Solar Energy Systems"
+course_slug: "ec-s07-photovoltaic-solar-energy-systems-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Louis Bucciarelli"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Electrical Engineering"
+  - "Electric Power"
+  - "Materials Science and Engineering"
+  - "Electronic Materials"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electric Power"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Electronic Materials"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This class will study the behavior of photovoltaic solar energy systems, focusing on the behavior of “stand-alone” systems. The design of stand-alone photovoltaic systems will be covered. This will include estimation of costs and benefits, taking into account any available government subsidies. Introduction to the hardware elements and their behavior will be included.
+course_url: "https://ocw.mit.edu/courses/ec-s07-photovoltaic-solar-energy-systems-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/ec-s07-photovoltaic-solar-energy-systems-fall-2004/1a9c4226a67ba672332e35434c398521_ec-s07f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

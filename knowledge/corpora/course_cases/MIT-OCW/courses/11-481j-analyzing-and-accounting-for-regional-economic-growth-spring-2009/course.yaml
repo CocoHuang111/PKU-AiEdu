@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-11-481j-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.481J"
+cross_listed_codes:
+  - "1.284J"
+  - "ESD.192J"
+course_title: "Analyzing and Accounting for Regional Economic Growth"
+course_slug: "11-481j-analyzing-and-accounting-for-regional-economic-growth-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Civil and Environmental Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Karen R. Polenske"
+subject_primary: "Economics"
+subject_secondary:
+  - "Macroeconomics"
+  - "Political Economy"
+  - "Urban Studies"
+  - "Regional Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Macroeconomics"
+          - "Political Economy"
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course focuses on alternative ways in which the issues of growth, restructuring, innovation, knowledge, learning, and accounting and measurements can be examined, covering both industrialized and emerging countries. We give special emphasis to recent transformations in regional economies throughout the world and to the implications these changes have for the theories and research methods used in spatial economic analyses. Readings will relate mainly to the United States, but we cover pertinent material on foreign countries in lectures.
+course_url: "https://ocw.mit.edu/courses/11-481j-analyzing-and-accounting-for-regional-economic-growth-spring-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/11-481j-analyzing-and-accounting-for-regional-economic-growth-spring-2009/764609b92dd22944a2f90fc593337f68_11-481js09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

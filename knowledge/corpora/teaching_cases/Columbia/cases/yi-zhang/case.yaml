@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-yi-zhang"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Yi Zhang, PhD"
+slug: "yi-zhang"
+source_url: "https://ctl.columbia.edu/transformations/faculty/yi-zhang/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "db5fd17204483ce0ed25ca5587419d3c164a683054bff25ae91187a24ed86be6"

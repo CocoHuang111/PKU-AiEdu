@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-kapadia-marti"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Amy Kapadia, PhD and Dr. Yamile Marti, PhD"
+slug: "kapadia-marti"
+source_url: "https://ctl.columbia.edu/transformations/faculty/kapadia-marti/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "5558a89333b102d2da20f610e6706d7cad2820b4a523524448575964efe184b2"

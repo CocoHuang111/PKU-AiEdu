@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-17-541-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.541"
+cross_listed_codes:
+  - "17.543"
+course_title: "Japanese Politics and Society"
+course_slug: "17-541-japanese-politics-and-society-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Patricia Gercik"
+  - "Prof. Richard J. Samuels"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Economics"
+  - "Political Economy"
+  - "Political Science"
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Economics"
+        specialties:
+          - "Political Economy"
+      - name: "Political Science"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course is designed for students seeking a fundamental understanding of Japanese history, politics, culture, and the economy. “Raw Fish 101” (as it is often labeled) combines lectures, seminar discussion, small-team case studies, and Web page construction exercises, all designed to shed light on contemporary Japan.
+course_url: "https://ocw.mit.edu/courses/17-541-japanese-politics-and-society-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/17-541-japanese-politics-and-society-fall-2008/92b63e096899ad24852744946836bb6e_17-541f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

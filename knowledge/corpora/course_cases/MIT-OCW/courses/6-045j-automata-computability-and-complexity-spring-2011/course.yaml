@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-6-045j-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.045J"
+cross_listed_codes:
+  - "18.400J"
+course_title: "Automata, Computability, and Complexity"
+course_slug: "6-045j-automata-computability-and-complexity-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Scott Aaronson"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Cryptography"
+  - "Theory of Computation"
+  - "Mathematics"
+  - "Computation"
+  - "Discrete Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Cryptography"
+          - "Theory of Computation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides a challenging introduction to some of the central ideas of theoretical computer science. Beginning in antiquity, the course will progress through finite automata, circuits and decision trees, Turing machines and computability, efficient algorithms and reducibility, the P versus NP problem, NP-completeness, the power of randomness, cryptography and one-way functions, computational learning theory, and quantum computing. It examines the classes of problems that can and cannot be solved by various kinds of machines. It tries to explain the key differences between computational models that affect their power.
+course_url: "https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/6-045j-automata-computability-and-complexity-spring-2011/248aff97eaea32d07c0b4d3a3f543438_6-045js11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

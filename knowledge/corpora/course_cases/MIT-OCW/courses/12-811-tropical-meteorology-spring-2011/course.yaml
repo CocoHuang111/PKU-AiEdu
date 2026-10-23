@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-12-811-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.811"
+cross_listed_codes: []
+course_title: "Tropical Meteorology"
+course_slug: "12-811-tropical-meteorology-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Kerry Emanuel"
+  - "Allison Wing"
+subject_primary: "Ocean Engineering"
+subject_secondary:
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Climate Studies"
+  - "Geophysics"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Climate Studies"
+          - "Geophysics"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course describes the large-scale circulation systems of the tropical atmosphere and analyses the dynamics of such systems. Topics include: Radiative-convective equilibrium; the Hadley and walker circulation; monsoons; tropical boundary layers; theory of the response of the tropical atmosphere to localized sea-surface temperature anomalies; intraseasonal oscillations; equatorial waves; El Niño/Southern Oscillation; easterly waves; and tropical cyclones.
+course_url: "https://ocw.mit.edu/courses/12-811-tropical-meteorology-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/12-811-tropical-meteorology-spring-2011/2d2cd7a1f3bc3a03a1a8da4549bc4e8c_12-811s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

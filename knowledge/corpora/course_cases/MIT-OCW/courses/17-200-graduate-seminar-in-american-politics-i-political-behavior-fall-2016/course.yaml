@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-17-200-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.200"
+cross_listed_codes: []
+course_title: "Graduate Seminar in American Politics I: Political Behavior"
+course_slug: "17-200-graduate-seminar-in-american-politics-i-political-behavior-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ariel White"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This graduate-level course focuses on mass political behavior within the American political system. The goal of this course is to give an introduction to some of the major questions in the study of American political behavior, and how people have gone about answering them. The background goal is to help students practice reading work critically, and thinking through the difficulties of social science research, in preparation for individual research projects. The course examines political ideology, public opinion, voting behavior, media effects, racial attitudes, mass-elite relations, and opinion-policy linkages.
+course_url: "https://ocw.mit.edu/courses/17-200-graduate-seminar-in-american-politics-i-political-behavior-fall-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/17-200-graduate-seminar-in-american-politics-i-political-behavior-fall-2016/6a3f244296a75191e82b91ca471ee768_17-200F16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

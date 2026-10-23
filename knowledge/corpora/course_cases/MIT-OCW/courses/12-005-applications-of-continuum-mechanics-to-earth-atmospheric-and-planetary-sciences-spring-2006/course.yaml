@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-12-005-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.005"
+cross_listed_codes: []
+course_title: "Applications of Continuum Mechanics to Earth, Atmospheric, and Planetary Sciences"
+course_slug: "12-005-applications-of-continuum-mechanics-to-earth-atmospheric-and-planetary-sciences-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Bradford Hager"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Solid Mechanics"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Geology"
+  - "Planetary Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Solid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geology"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course focuses on the practical applications of the continuum concept for deformation of solids and fluids, emphasizing force balance. Topics include stress tensor, infinitesimal and finite strain, and rotation tensors. Constitutive relations applicable to geological materials, including elastic, viscous, brittle, and plastic deformation are studied.
+course_url: "https://ocw.mit.edu/courses/12-005-applications-of-continuum-mechanics-to-earth-atmospheric-and-planetary-sciences-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/12-005-applications-of-continuum-mechanics-to-earth-atmospheric-and-planetary-sciences-spring-2006/3183335855a42f582bd9700db57a5823_12-005s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

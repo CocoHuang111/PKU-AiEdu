@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-483-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.483"
+cross_listed_codes: []
+course_title: "Housing and Land Use in Rapidly Urbanizing Regions"
+course_slug: "11-483-housing-and-land-use-in-rapidly-urbanizing-regions-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Annette M. Kim"
+subject_primary: "Political Science"
+subject_secondary:
+  - "Public Administration"
+  - "Urban Studies"
+  - "Housing Development"
+  - "Regional Planning"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties: []
+      - name: "Urban Studies"
+        specialties:
+          - "Housing Development"
+          - "Regional Planning"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  A truly inter-disciplinary course, Housing and Land Use in Rapidly Urbanizing Regions reviews how law, economics, sociology, political science, and planning conceptualize urban land and property rights and uses cases to discuss what these different lenses illuminate and obscure. It also looks at how the social sciences might be informed by how design, cartography, and visual studies conceptualize space’s physicality. This year’s topics include land trusts for affordable housing, mixed-use in public space, and critical cartography.
+course_url: "https://ocw.mit.edu/courses/11-483-housing-and-land-use-in-rapidly-urbanizing-regions-fall-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/11-483-housing-and-land-use-in-rapidly-urbanizing-regions-fall-2011/7635138ef500f26a351a6eb9eafda940_11-483f11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

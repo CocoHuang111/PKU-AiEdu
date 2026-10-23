@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-16-891j-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.891J"
+cross_listed_codes:
+  - "ESD.129"
+course_title: "Space Policy Seminar"
+course_slug: "16-891j-space-policy-seminar-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniel Hastings"
+  - "Prof. Jeffrey Hoffman"
+subject_primary: "History"
+subject_secondary:
+  - "Modern History"
+  - "Social Science"
+  - "Public Administration"
+  - "Public Policy"
+  - "Science and Technology Policy"
+  - "Security Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Modern History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+          - "Science and Technology Policy"
+          - "Security Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  The seminar explores current issues in space policy as well as the historical roots for the issues. Emphasis on critical policy discussion combined with serious technical analysis. The range of issues covers national security space policy, civil space policy, as well as commercial space policy. Issues explored include: the GPS dilemma, the International Space Station choices, commercial launch from foreign countries, and the fate of satellite-based cellular systems.
+course_url: "https://ocw.mit.edu/courses/16-891j-space-policy-seminar-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/16-891j-space-policy-seminar-spring-2003/bc44c4da0cf6be8aba8539d70e3d4f74_16-891js03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

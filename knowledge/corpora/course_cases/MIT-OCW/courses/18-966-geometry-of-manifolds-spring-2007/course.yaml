@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-18-966-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.966"
+cross_listed_codes: []
+course_title: "Geometry of Manifolds"
+course_slug: "18-966-geometry-of-manifolds-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Denis Auroux"
+subject_primary: "Differential Equations"
+subject_secondary:
+  - "Linear Algebra"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This is a second-semester graduate course on the geometry of manifolds. The main emphasis is on the geometry of symplectic manifolds, but the material also includes long digressions into complex geometry and the geometry of 4-manifolds, with special emphasis on topological considerations.
+course_url: "https://ocw.mit.edu/courses/18-966-geometry-of-manifolds-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/18-966-geometry-of-manifolds-spring-2007/8bc4e30988fc589157a788d504ca60bc_18-966s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

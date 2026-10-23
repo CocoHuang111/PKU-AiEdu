@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-res-2-005-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.2-005"
+cross_listed_codes: []
+course_title: "Girls Who Build: Make Your Own Wearables Workshop"
+course_slug: "res-2-005-girls-who-build-make-your-own-wearables-workshop-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "High School"
+instructors:
+  - "Kristen E Railey"
+  - "Leslie Watkins"
+  - "David Scott"
+  - "Elisabeth Astle"
+  - "Gavin Lund"
+  - "Mike Gibson"
+  - "Katy Olesnavage"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Image Gallery"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Tutorial Videos"
+description: |
+  The Girls Who Build: Make Your Own Wearables workshop for high school girls is an introduction to computer science, electrical and mechanical engineering through wearable technology. The workshop, developed by MIT Lincoln Laboratory, consists of two major hands-on projects in manufacturing and wearable electronics. These include 3D printing jewelry and laser cutting a purse, as well as programming LEDs to light up when walking. Participants learn the design process, 3D computer modeling, and machine shop tools, in addition to writing code and building a circuit.
+course_url: "https://ocw.mit.edu/courses/res-2-005-girls-who-build-make-your-own-wearables-workshop-spring-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/res-2-005-girls-who-build-make-your-own-wearables-workshop-spring-2015/576a148b994ad12c915c30e593a90ff7_res-2-005.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-019-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.019"
+cross_listed_codes: []
+course_title: "Introduction to European and Latin American Fiction: Great Books on the Page and on the Screen"
+course_slug: "21l-019-introduction-to-european-and-latin-american-fiction-great-books-on-the-page-and-on-the-screen-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Margery Resnick"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "Creative Writing"
+  - "Fiction"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Creative Writing"
+          - "Fiction"
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject serves as a broad introduction to the field of European and Latin American fiction. It is designed to help students acquire a general understanding of major fictional modes. We will pay attention not only to the literary movements these works represent, but also to the subtle interplay of history, geography, language and cultural norms that gave rise to specific literary forms. The books we read in this course are compelling, and film versions of five of the works we read give variety to the course and time to think about the interplay of film and print.
+course_url: |
+  https://ocw.mit.edu/courses/21l-019-introduction-to-european-and-latin-american-fiction-great-books-on-the-page-and-on-the-screen-spring-2017/
+image_url: |
+  https://ocw.mit.edu/courses/21l-019-introduction-to-european-and-latin-american-fiction-great-books-on-the-page-and-on-the-screen-spring-2017/93955f466c31557de2f741379fd3c21f_21L-019S17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

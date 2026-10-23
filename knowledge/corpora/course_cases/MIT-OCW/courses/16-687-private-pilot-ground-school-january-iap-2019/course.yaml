@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-16-687-january-iap-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.687"
+cross_listed_codes: []
+course_title: "Private Pilot Ground School"
+course_slug: "16-687-private-pilot-ground-school-january-iap-2019"
+term: "January IAP"
+year: 2019
+as_taught_in: "January IAP 2019"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Philip Greenspun"
+  - "Dr. Tina Srivastava"
+subject_primary: "Aerospace Engineering"
+subject_secondary: []
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Podcasts"
+description: |
+  This is a three-day workshop that took place during the MIT Independent Activities Period (IAP) in January, 2019. This workshop aims to provide information for students to prepare for the FAA Private Pilot Knowledge Test. Topics include airplane aerodynamics, aircraft systems, navigation, meteorology, aircraft ownership and maintenance, aircraft performance, multi-engine and jets.
+course_url: "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/"
+image_url: "https://ocw.mit.edu/courses/16-687-private-pilot-ground-school-january-iap-2019/b5571466c776ed450f6a9d13f807c04f_16-687iap19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-17-55j-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.55J"
+cross_listed_codes:
+  - "21A.130J (formerly 21A.430J)"
+  - "21G.084J"
+course_title: "Introduction to Latin American Studies"
+course_slug: "17-55j-introduction-to-latin-american-studies-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Political Science"
+  - "Anthropology"
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Chappell Lawson"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Political Science"
+  - "Society"
+  - "Latin and Caribbean Studies"
+  - "The Developing World"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Political Science"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Latin and Caribbean Studies"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Interdisciplinary introduction to contemporary Latin America, drawing on films, literature, popular press accounts, and scholarly research. Topics include economic development, ethnic and racial identity, religion, revolution, democracy, transitional justice, and the rule of law. Examples draw on a range of countries in the region, especially Mexico, Chile, and Brazil. Includes a heavy oral participation component, with regular breakout groups, formal class presentations on pressing social issues (such as criminal justice and land tenure), and a structured class debate.
+course_url: "https://ocw.mit.edu/courses/17-55j-introduction-to-latin-american-studies-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/17-55j-introduction-to-latin-american-studies-fall-2006/15f89a27713ec8d6a33759ca6a877038_17-55jf06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

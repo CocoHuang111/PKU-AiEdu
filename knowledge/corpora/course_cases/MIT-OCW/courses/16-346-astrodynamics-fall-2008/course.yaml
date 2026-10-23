@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-16-346-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.346"
+cross_listed_codes: []
+course_title: "Astrodynamics"
+course_slug: "16-346-astrodynamics-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Richard Battin"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Astrodynamics"
+  - "Guidance and Control Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Astrodynamics"
+          - "Guidance and Control Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers the fundamentals of astrodynamics, focusing on the two-body orbital initial-value and boundary-value problems with applications to space vehicle navigation and guidance for lunar and planetary missions, including both powered flight and midcourse maneuvers. Other topics include celestial mechanics, Kepler’s problem, Lambert’s problem, orbit determination, multi-body methods, mission planning, and recursive algorithms for space navigation. Selected applications from the Apollo, Space Shuttle, and Mars exploration programs are also discussed.
+course_url: "https://ocw.mit.edu/courses/16-346-astrodynamics-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/16-346-astrodynamics-fall-2008/77986f60806567e9ae5ef12bd3f6d759_16-346f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

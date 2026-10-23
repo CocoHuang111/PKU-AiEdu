@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-operationalizing-learning-engineering-process-online"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Operationalizing the Learning Engineering Process for Online Training"
+slug: "operationalizing-learning-engineering-process-online"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Aaron Kessler"
+  - "Lauren Totino"
+digital_innovations_tools:
+  - "Remote Teaching"
+  - "Lightboard"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/operationalizing-learning-engineering-process-online"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "9784f6dfe4a5ad1b68fb882f20d2fda028fdbea9a950dbc7d1659355a12a299f"

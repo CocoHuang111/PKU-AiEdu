@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-11-011-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.011"
+cross_listed_codes: []
+course_title: "The Art and Science of Negotiation"
+course_slug: "11-011-the-art-and-science-of-negotiation-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Laws"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Social Science"
+  - "Sociology"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course provides an introduction to bargaining and negotiation in public, business, and legal settings. It combines a “hands-on” skill-building orientation with a look at pertinent social theory. Strategy, communications, ethics, and institutional influences are examined as they influence the ability of actors to analyze problems, negotiate agreements, and resolve disputes in social, organizational, and political circumstances characterized by interdependent interests.
+course_url: "https://ocw.mit.edu/courses/11-011-the-art-and-science-of-negotiation-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/11-011-the-art-and-science-of-negotiation-spring-2006/e6d6ffd664e679689195d275b73a922f_11-011s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

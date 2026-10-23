@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-4-651-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.651"
+cross_listed_codes: []
+course_title: "Art Since 1940"
+course_slug: "4-651-art-since-1940-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Caroline Jones"
+subject_primary: "Art History"
+subject_secondary:
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Art History"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This subject focuses on the objects, history, context, and critical discussion surrounding art since World War II. Because of the burgeoning increase in art production, the course is necessarily selective. We will trace major developments and movements in art up to the present, primarily from the US; but we will also be looking at art from Europe, Asia, Africa, Latin America, and the Middle East, as well as art “on the margins” — art that has been overlooked by the mainstream critical press, but may have a broad cultural base in its own community. We will ask what function art serves in its various cultures of origin, and why art has been such a lightning rod for political issues around the world.
+course_url: "https://ocw.mit.edu/courses/4-651-art-since-1940-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/4-651-art-since-1940-fall-2010/59c0421dabc4bb273993f8e6d3638098_4-651f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-res-8-010-summer-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.8-010"
+cross_listed_codes: []
+course_title: "Introduction to Statistical Physics"
+course_slug: "res-8-010-introduction-to-statistical-physics-summer-2018"
+term: "Summer"
+year: 2018
+as_taught_in: "Summer 2018"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "High School"
+instructors:
+  - "Dr. Mobolaji Williams"
+subject_primary: "Probability and Statistics"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Introduction to Statistical Physics introduces the concepts and formalism at the foundations of statistical physics. By the end of the course, students should understand qualitative and quantitative definitions of entropy, the implications of the laws of thermodynamics, and why the Boltzmann distribution is important in modeling systems at finite temperature. In terms of skills, students should have increased their familiarity with mathematical methods in the physical science, learned how to write short programs to simulate random events, and become more adept at articulating their understanding of physics. This course was offered as part of MITES Summer , a six-week, residential STEM experience for rising high school seniors. MIT Introduction to Technology, Engineering, and Science (MITES) provides transformative experiences that bolster confidence, create lifelong community, and build an exciting, challenging foundation in STEM for highly motivated 7th–12th grade students from diverse and underrepresented backgrounds.
+course_url: "https://ocw.mit.edu/courses/res-8-010-introduction-to-statistical-physics-summer-2018/"
+image_url: "https://ocw.mit.edu/courses/res-8-010-introduction-to-statistical-physics-summer-2018/res-8-010-su18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

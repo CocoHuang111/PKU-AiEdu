@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-24-962-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.962"
+cross_listed_codes: []
+course_title: "Advanced Phonology"
+course_slug: "24-962-advanced-phonology-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Donca Steriade"
+  - "Prof. Adam Albright"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Phonology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Phonology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course focuses on phonological phenomena that are sensitive to morphological structure, including base-reduplicant identity, cyclicity, level ordering, derived environment effects, opaque rule interactions, and morpheme structure constraints. In the recent OT literature, it has been claimed that all of these phenomena can be analyzed with a single theoretical device: correspondence constraints, which regulate the similarity of lexically related forms (such as input and output, base and derivative, base and reduplicant).
+course_url: "https://ocw.mit.edu/courses/24-962-advanced-phonology-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/24-962-advanced-phonology-spring-2005/17f95e219b8f1f6e93f3c0e903192b1d_24-962s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

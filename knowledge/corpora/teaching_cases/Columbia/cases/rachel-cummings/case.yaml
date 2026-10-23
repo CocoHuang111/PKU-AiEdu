@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-rachel-cummings"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "CTL spotlight or announcement"
+title: "Faculty Spotlight: Rachel Cummings on Using Case Studies and Discussion to Help Students Implement Technical Concepts in Real-World Settings"
+slug: "rachel-cummings"
+source_url: "https://ctl.columbia.edu/spotlight/rachel-cummings/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "1e1bd478fbd7e6ab58541967bf953c05a3ad5ecc59ce1f3bdbb2c012ef213231"

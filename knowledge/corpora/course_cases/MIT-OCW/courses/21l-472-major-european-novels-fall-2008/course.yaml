@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-472-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.472"
+cross_listed_codes: []
+course_title: "Major European Novels"
+course_slug: "21l-472-major-european-novels-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alvin Kibel"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Fiction"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Fiction"
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject traces the history of the European novel by studying texts that have been influential in connection with two interrelated ideas. (1) When serious fiction deals with matters of great consequence, it should not deal with the actions of persons of consequence—kings, princes, high elected officials and the like—but rather with the lives of apparently ordinary people and the everyday details of their social ambitions and desires. To use a phrase of Balzac’s, serious fiction deals with “what happens everywhere”. (2) This idea sometimes goes with another: that the most significant representations of the human condition are those dealing with persons who try to compel society to accept them as its destined agent, despite their absence of high birth or inheritance.
+course_url: "https://ocw.mit.edu/courses/21l-472-major-european-novels-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/21l-472-major-european-novels-fall-2008/0b568a42f39050f796a32f8af865f32d_21l-472f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

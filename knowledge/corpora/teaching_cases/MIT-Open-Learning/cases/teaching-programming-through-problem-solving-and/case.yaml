@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-teaching-programming-through-problem-solving-and"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Teaching Programming through Problem-Solving and Discussion"
+slug: "teaching-programming-through-problem-solving-and"
+course_codes:
+  - "6.S061"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Ana Bell"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/teaching-programming-through-problem-solving-and"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "19599bde03ea63d3767664867ae845e8507c7370003107ff6c001cb6dca6854c"

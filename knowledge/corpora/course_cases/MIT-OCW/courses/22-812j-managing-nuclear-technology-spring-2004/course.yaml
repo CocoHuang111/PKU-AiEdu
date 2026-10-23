@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-22-812j-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.812J"
+cross_listed_codes:
+  - "ESD.163J"
+course_title: "Managing Nuclear Technology"
+course_slug: "22-812j-managing-nuclear-technology-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Richard Lester"
+subject_primary: "Management"
+subject_secondary:
+  - "Energy"
+  - "Electricity"
+  - "Nuclear Energy"
+  - "Engineering"
+  - "Nuclear Engineering"
+  - "Nuclear Systems, Policy, and Economics"
+  - "Social Science"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+  - name: "Energy"
+    subtopics:
+      - name: "Electricity"
+        specialties: []
+      - name: "Nuclear Energy"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Nuclear Systems, Policy, and Economics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  An examination of current economic and policy issues in the electric power industry, focusing on nuclear power and its fuel cycle. Introduces techniques for analyzing private and public policy alternatives, including discounted cash flow methods and other techniques in engineering economics. Application to specific problem areas, including nuclear waste management and weapons proliferation. Other topics include deregulation and restructuring in the electric power industry.
+course_url: "https://ocw.mit.edu/courses/22-812j-managing-nuclear-technology-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/22-812j-managing-nuclear-technology-spring-2004/4833c0447dd7d692c07d30137c6f1309_22-812js04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-introduction-disabilities-and-assistive-technologies"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Introduction to Disabilities and Assistive Technologies"
+slug: "introduction-disabilities-and-assistive-technologies"
+course_codes:
+  - "6.811/2.78/HST.420/3.008"
+departments:
+  - "Mechanical Engineering (Course 2)"
+instructors:
+  - "Kyle Keane"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/introduction-disabilities-and-assistive-technologies"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "0a0b11ea07104e5697d39e52c0746cb4f84dd371c4fa7fbf07c0f9080dbb8869"

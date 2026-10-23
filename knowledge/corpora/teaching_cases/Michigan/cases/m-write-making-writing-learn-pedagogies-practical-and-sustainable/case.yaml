@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-m-write-making-writing-learn-pedagogies-practical-and-sustainable"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "M-Write: Making Writing-to-Learn Pedagogies Practical and Sustainable"
+slug: "m-write-making-writing-learn-pedagogies-practical-and-sustainable"
+source_url: "https://crlt.umich.edu/m-write-making-writing-learn-pedagogies-practical-and-sustainable"
+language: "en"
+published: null
+awarded_year: "2019"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "a8dc08b3bcf593f6872521a5fd0c2b8467440462869dff3478b86c77280dc333"

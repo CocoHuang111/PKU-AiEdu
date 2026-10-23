@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-700-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.700"
+cross_listed_codes: []
+course_title: "Changing Life: Reading the Intersections of Gender, Race, Biology, and Literature"
+course_slug: "wgs-700-changing-life-reading-the-intersections-of-gender-race-biology-and-literature-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mary Baine Campbell"
+  - "Prof. Peter Taylor"
+subject_primary: "Biology"
+subject_secondary:
+  - "Genetics"
+  - "Earth Science"
+  - "Climate Studies"
+  - "Environmental Science"
+  - "Society"
+  - "African American Studies"
+  - "Gender Studies"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Genetics"
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+          - "Environmental Science"
+  - name: "Society"
+    subtopics:
+      - name: "African American Studies"
+        specialties: []
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  In this course, students will develop their abilities to expose ways that scientific knowledge has been shaped in contexts that are gendered, racialized, economically exploitative, and hetero-normative. This happens through a sequence of four projects that concern: Interpretation of the cultural dimension of sciences Climate change futures Genomic citizenry Students’ plans for ongoing practice The course uses a Project-Based Learning format that allows students to shape their own directions of inquiry in each project, development of skills, and collegial support. Students’ learning will be guided by individualized bibliographies co-constructed with the instructors, the inquiries of the other students, and a set of tools and processes for literary analysis, inquiry, reflection, and support. Acknowledgement Professor Peter Taylor spent several years crafting the unique structure of the course, which is crucial to the way it was taught. The Consortium for Graduate Studies in Gender, Culture, Women, and Sexuality This course was taught as part of the Consortium for Graduate Studies in Gender, Culture, Women, and Sexuality (GCWS) at MIT. The GCWS brings together scholars and teachers at nine degree-granting institutions in the Boston area who are devoted to graduate teaching and research in Women’s Studies and to advance interdisciplinary Women’s Studies scholarship.
+course_url: "https://ocw.mit.edu/courses/wgs-700-changing-life-reading-the-intersections-of-gender-race-biology-and-literature-spring-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/wgs-700-changing-life-reading-the-intersections-of-gender-race-biology-and-literature-spring-2017/e8eb0926519cdcd002a1234769ef0749_wgs-700s17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-422-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.422"
+cross_listed_codes: []
+course_title: "Tragedy"
+course_slug: "21l-422-tragedy-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alvin Kibel"
+subject_primary: "Literature"
+subject_secondary:
+  - "Classics"
+  - "Criticism"
+  - "Drama"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Classics"
+          - "Criticism"
+          - "Drama"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  “Tragedy” is a name originally applied to a particular kind of dramatic art and subsequently to other literary forms; it has also been applied to particular events, often implying thereby a particular view of life. Throughout the history of Western literature it has sustained this double reference. Uniquely and insistently, the realm of the tragic encompasses both literature and life. Through careful, critical reading of literary texts, this subject will examine three aspects of the tragic experience: the scapegoat the tragic hero the ethical crisis These aspects of the tragic will be pursued in readings that range in the reference of their materials from the warfare of the ancient world to the experience of the modern extermination camps.
+course_url: "https://ocw.mit.edu/courses/21l-422-tragedy-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/21l-422-tragedy-fall-2002/ac4e70b0e208f46b5092d7a31d6c9aff_21l-422f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

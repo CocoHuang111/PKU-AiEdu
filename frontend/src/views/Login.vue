@@ -3,7 +3,7 @@
     <header class="nav">
       <div class="brand">
         北大问教
-        <span>PKU-AskEdu 2.0</span>
+        <span>PKU-AiEdu</span>
       </div>
     </header>
 
@@ -29,6 +29,7 @@
       <el-tabs v-else v-model="tab" class="tabs">
         <el-tab-pane label="登录" name="login">
           <el-form :model="loginForm" label-position="top" @submit.prevent="onLogin">
+            <el-alert v-if="loginError" :title="loginError" type="error" show-icon :closable="false" class="form-error" role="alert" />
             <el-form-item label="工号">
               <el-input v-model="loginForm.username" maxlength="32" placeholder="请输入工号" />
             </el-form-item>
@@ -50,8 +51,9 @@
 
         <el-tab-pane v-if="authState.config.registration_enabled" label="注册" name="register">
           <el-form :model="registerForm" label-position="top">
+            <el-alert v-if="registerError" :title="registerError" type="error" show-icon :closable="false" class="form-error" role="alert" />
             <el-form-item label="工号">
-              <el-input v-model="registerForm.username" maxlength="32" placeholder="3–32 位字母、数字或点/下划线" />
+              <el-input v-model="registerForm.username" maxlength="32" placeholder="3–32 位字母、数字或点/下划线/连字符" />
             </el-form-item>
             <el-form-item label="姓名">
               <el-input v-model="registerForm.display_name" maxlength="40" placeholder="例如：张明" />
@@ -94,11 +96,14 @@ import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
 import { authApi } from '../api/client'
 import { authState, setUser } from '../authStore'
+import { authErrorMessage } from '../utils/authErrors'
 
 const router = useRouter()
 const route = useRoute()
 const tab = ref('login')
 const loading = ref(false)
+const loginError = ref('')
+const registerError = ref('')
 const isSso = computed(() => authState.config.auth_mode === 'pku_sso')
 
 const loginForm = reactive({
@@ -120,8 +125,10 @@ function goNext() {
 }
 
 async function onLogin() {
+  if (loading.value) return
+  loginError.value = ''
   if (!loginForm.username.trim() || !loginForm.password) {
-    ElMessage.warning('请填写工号和密码')
+    loginError.value = '请填写工号和密码'
     return
   }
   loading.value = true
@@ -133,21 +140,39 @@ async function onLogin() {
     setUser(data.user)
     ElMessage.success(`欢迎回来，${data.user.display_name || data.user.username}`)
     goNext()
-  } catch {
-    /* 错误已由 axios 拦截器提示 */
+  } catch (error) {
+    loginError.value = authErrorMessage(error, 'login')
   } finally {
     loading.value = false
   }
 }
 
 async function onRegister() {
+  if (loading.value) return
+  registerError.value = ''
   const form = registerForm
   if (!form.username.trim() || !form.display_name.trim()) {
-    ElMessage.warning('请填写工号和姓名')
+    registerError.value = '请填写工号和姓名'
+    return
+  }
+  if (!/^[A-Za-z0-9._-]{3,32}$/.test(form.username.trim())) {
+    registerError.value = '工号须为 3–32 位字母、数字、点、下划线或连字符'
+    return
+  }
+  if (!form.password || !form.confirm_password) {
+    registerError.value = '请填写密码和确认密码'
+    return
+  }
+  if (form.password.length < authState.config.password_min_length) {
+    registerError.value = `密码至少需要 ${authState.config.password_min_length} 位`
+    return
+  }
+  if (authState.config.invite_required && !form.invite_code.trim()) {
+    registerError.value = '请填写邀请码'
     return
   }
   if (form.password !== form.confirm_password) {
-    ElMessage.warning('两次输入的密码不一致')
+    registerError.value = '两次输入的密码不一致'
     return
   }
   loading.value = true
@@ -162,8 +187,8 @@ async function onRegister() {
     setUser(data.user)
     ElMessage.success('注册成功')
     goNext()
-  } catch {
-    /* 错误已由 axios 拦截器提示 */
+  } catch (error) {
+    registerError.value = authErrorMessage(error, 'register')
   } finally {
     loading.value = false
   }
@@ -187,6 +212,9 @@ async function onPkuLogin() {
 </script>
 
 <style scoped>
+.form-error {
+  margin-bottom: 16px;
+}
 .login-page {
   min-height: 100vh;
   background: #f5f7fa;

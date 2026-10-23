@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-035-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.035"
+cross_listed_codes: []
+course_title: "Principle and Practice of Human Pathology"
+course_slug: "hst-035-principle-and-practice-of-human-pathology-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gary Tearney"
+  - "Prof. Kamran Badizadegan"
+subject_primary: "Pathology and Pathophysiology"
+subject_secondary: []
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Pathology and Pathophysiology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course provides a comprehensive overview of human pathology with emphasis on mechanisms of disease and diagnostic medicine. Topics include: Cellular Mechanisms of Disease Molecular Pathology Pathology of Major Organ Systems Review of Diagnostic Tools from Traditional Surgical Pathology to Diagnostic Spectroscopy Functional and Molecular Imaging Molecular Diagnostics In addition to lectures, one of the two weekly sessions includes a 2-3 hour laboratory component. Periodically, time will also be devoted to minicases. Lecturers Prof. Jon Aster, Prof. Frederick Bieber, Prof. Carlo Brugnara, Prof. Robert B. Colvin, Prof. Christopher Crum , Prof. Douglas Dockery, Prof. Mel Feany, Prof. Michael Feld, Prof. Jonathan Fletcher, Prof. Michael Gimbrone, Prof. Todd Golub, Prof. Frank B. Hu, Prof. Donald Ingber, Prof. Hart Lidov, Prof. David Louis, Prof. Richard Mitchell, Prof. Fiona Murray, Prof. Mark Redston, Prof. Helmut Rennke, Prof. Bruce Rosen, Prof. Frederick Schoen, Prof. Christine Seidman
+course_url: "https://ocw.mit.edu/courses/hst-035-principle-and-practice-of-human-pathology-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/hst-035-principle-and-practice-of-human-pathology-spring-2003/bbf9fbe5ceebb5db55904d63cf37b841_hst-035s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

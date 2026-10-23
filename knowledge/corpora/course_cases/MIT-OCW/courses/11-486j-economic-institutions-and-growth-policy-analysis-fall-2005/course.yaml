@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-11-486j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.486J"
+cross_listed_codes:
+  - "14.778J"
+  - "17.184J"
+course_title: "Economic Institutions and Growth Policy Analysis"
+course_slug: "11-486j-economic-institutions-and-growth-policy-analysis-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Economics"
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Michael Piore"
+  - "Prof. Alice Amsden"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+  - "Public Economics"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "Public Economics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course is designed for students particularly concerned with the practical problems of operating in large formal organizations, either from an operational or a research perspective. It will focus, as the title suggests, upon different forms of economic organizations and institutions in advanced and developing industrial societies and the theories (and theoretical perspectives) which might help us to understand them.
+course_url: "https://ocw.mit.edu/courses/11-486j-economic-institutions-and-growth-policy-analysis-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/11-486j-economic-institutions-and-growth-policy-analysis-fall-2005/dcf6e6391798f053dac9a2260a259e1d_11-486jf05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

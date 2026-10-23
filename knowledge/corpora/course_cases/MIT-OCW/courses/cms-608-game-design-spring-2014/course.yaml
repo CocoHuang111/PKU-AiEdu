@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-608-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.608"
+cross_listed_codes:
+  - "CMS-W.864"
+course_title: "Game Design"
+course_slug: "cms-608-game-design-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Philip B. Tan"
+  - "Richard Eberhardt"
+subject_primary: "Game Design"
+subject_secondary:
+  - "Media Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+      - name: "Media Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Instructor Insights"
+  - "Lecture Audio"
+description: |
+  This course is built around practical instruction in the design and analysis of non-­digital games. It provides students the texts, tools, references, and historical context to analyze and compare game designs across a variety of genres. In teams, students design, develop, and thoroughly test their original games to better understand the interaction and evolution of game rules. Covers various genres and types of games, including sports, game shows, games of chance, card games, schoolyard games, board games, and role-­playing games.
+course_url: "https://ocw.mit.edu/courses/cms-608-game-design-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/cms-608-game-design-spring-2014/ff5dc02a5f562c9ee28b6027595b998b_cms-608s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

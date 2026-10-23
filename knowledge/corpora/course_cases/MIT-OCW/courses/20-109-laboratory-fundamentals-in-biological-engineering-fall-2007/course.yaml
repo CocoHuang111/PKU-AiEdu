@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-20-109-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.109"
+cross_listed_codes: []
+course_title: "Laboratory Fundamentals in Biological Engineering"
+course_slug: "20-109-laboratory-fundamentals-in-biological-engineering-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Biological Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Drew Endy"
+  - "Dr. Natalie Kuldell"
+  - "Dr. Neal Lerner"
+  - "Dr. Agi Stachowiak"
+  - "Prof. Angela M. Belcher"
+  - "Dr. Atissa Banuazizi"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Systems Engineering"
+  - "Science"
+  - "Biology"
+  - "Genetics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Genetics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments with Examples"
+description: |
+  This course introduces experimental biochemical and molecular techniques from a quantitative engineering perspective. Experimental design, rigorous data analysis, and scientific communication form the underpinnings of this subject. Three discovery-based experimental modules focus on genome engineering, expression engineering, and biomaterial engineering. This OCW site is based on the source OpenWetWare class Wiki, found at 20.109(F07): Laboratory Fundamentals of Biological Engineering .
+course_url: "https://ocw.mit.edu/courses/20-109-laboratory-fundamentals-in-biological-engineering-fall-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/20-109-laboratory-fundamentals-in-biological-engineering-fall-2007/099f9c18f4f1ccbf4c21b5198e2c60ba_20-109f07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

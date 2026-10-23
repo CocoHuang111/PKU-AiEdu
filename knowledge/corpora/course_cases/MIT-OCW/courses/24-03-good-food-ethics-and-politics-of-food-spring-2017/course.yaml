@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-24-03-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.03"
+cross_listed_codes: []
+course_title: "Good Food: Ethics and Politics of Food"
+course_slug: "24-03-good-food-ethics-and-politics-of-food-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sally Haslanger"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Ethics"
+  - "Society"
+  - "Gender Studies"
+  - "Global Poverty"
+  - "The Developing World"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Global Poverty"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course explores the values (aesthetic, moral, cultural, religious, prudential, political) expressed in the choices of food people eat. Analyzes the decisions individuals make about what to eat, how society should manage food production and consumption collectively, and how reflection on food choices might help resolve conflicts between different values.
+course_url: "https://ocw.mit.edu/courses/24-03-good-food-ethics-and-politics-of-food-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/24-03-good-food-ethics-and-politics-of-food-spring-2017/ce822b94dd16697af7bc03ca7ce46f9b_24-03_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

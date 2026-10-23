@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-3-020-spring-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.020"
+cross_listed_codes:
+  - "3.012"
+course_title: "Thermodynamics of Materials"
+course_slug: "3-020-thermodynamics-of-materials-spring-2021"
+term: "Spring"
+year: 2021
+as_taught_in: "Spring 2021"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Rafael Jaramillo"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Editable Files"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Presentation Assignments"
+  - "Problem Sets"
+  - "Readings"
+description: |
+  This course introduces the competition between energetics and disorder that underpins materials thermodynamics. Classical thermodynamic concepts are presented in the context of phase equilibria including phase transformations, phase diagrams, and chemical reactions. The course also covers computerized thermodynamics and provides an introduction to statistical thermodynamics.
+course_url: "https://ocw.mit.edu/courses/3-020-thermodynamics-of-materials-spring-2021/"
+image_url: "https://ocw.mit.edu/courses/3-020-thermodynamics-of-materials-spring-2021/mit3-020s21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -14,6 +14,8 @@ data/uploads/*
 data/frames/*
 data/chroma/*
 data/*.db
+# Server benchmark artifacts may contain private transcripts and user identifiers.
+data/benchmarks/
 !data/**/.gitkeep
 
 # 评估数据集：转写 / 各版 rejudge 缓存不入库；抽音/帧仍走 data/
@@ -23,7 +25,7 @@ dataset/**/cache/
 dataset/**/cache_*/
 # 改分制前的整表拷贝，与现表重复
 dataset/scale_backup_legacy_*/
-# 专家规则抽取逐条 LLM 缓存可重建；长表、统计和审计产物保留可见
+# 专家规则抽取的逐条缓存。dataset/ 整体不进入公开仓库，见文末。
 dataset/expert_rules/mentions/
 dataset/expert_rules/expert_mentions.jsonl
 
@@ -61,3 +63,22 @@ models/*
 *.log
 *.pkl
 !models/live/gb_obj_cls5.pkl
+
+# 公开仓库只保留本机能跑起来的代码、语料和本地数据库配置。
+# 服务器部署、实验表、真实课程样本和界面稿留在本机，不进入后续提交。
+deploy/
+DEPLOYMENT.md
+docs/
+dataset/
+test/
+tmp/
+design-mockups/
+package-lock.json
+readme_old.md
+contest_2026/
+.cursor/
+evaluation_design.md
+evaluation_indicators.md
+
+# 入库时跳过，问答也不读取
+knowledge/corpora/**/original_sources/

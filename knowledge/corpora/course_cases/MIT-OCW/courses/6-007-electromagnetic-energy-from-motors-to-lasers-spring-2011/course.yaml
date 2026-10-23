@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-6-007-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.007"
+cross_listed_codes: []
+course_title: "Electromagnetic Energy: From Motors to Lasers"
+course_slug: "6-007-electromagnetic-energy-from-motors-to-lasers-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Vladimir Bulovic"
+  - "Prof. Rajeev Ram"
+  - "Prof. Steven Leeb"
+  - "Prof. Jeffrey H. Lang"
+  - "Dr. Yu Gu"
+subject_primary: "Electricity"
+subject_secondary:
+  - "Engineering"
+  - "Electrical Engineering"
+  - "Electronics"
+  - "Science"
+  - "Physics"
+  - "Electromagnetism"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Electricity"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Editable Files"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course discusses applications of electromagnetic and equivalent quantum mechanical principles to classical and modern devices. It covers energy conversion and power flow in both macroscopic and quantum-scale electrical and electromechanical systems, including electric motors and generators, electric circuit elements, quantum tunneling structures and instruments. It studies photons as waves and particles and their interaction with matter in optoelectronic devices, including solar cells, displays, and lasers. The instructors would like to thank Scott Bradley, David Friend, Ta-Ming Shih, and Yasuhiro Shirasaki for helping to develop the course, and Kyle Hounsell, Ethan Koether, and Dmitri Megretski for their work preparing the lecture notes for OCW publication.
+course_url: "https://ocw.mit.edu/courses/6-007-electromagnetic-energy-from-motors-to-lasers-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/6-007-electromagnetic-energy-from-motors-to-lasers-spring-2011/e6549695e6d988a911e509d1e75fa060_6-007f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

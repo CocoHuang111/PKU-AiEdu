@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-es-010-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.010"
+cross_listed_codes: []
+course_title: "Chemistry of Sports"
+course_slug: "es-010-chemistry-of-sports-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Patricia Christie"
+  - "Mr. Steve Lyons"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Health and Exercise Science"
+  - "Physical Education and Recreation"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+      - name: "Health and Exercise Science"
+        specialties: []
+      - name: "Physical Education and Recreation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Demonstration Videos"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  The seminar is designed to look at the science of triathlons and sports from a molecular/chemical biological point of view. We will be able to use our own bodies to see how exercise affects the system, through observations written in a training journal. We will also improve the overall fitness of the class through maintaining a physical fitness program over the course of the term. The end of the term will have us all participate in a mini-triathlon.
+course_url: "https://ocw.mit.edu/courses/es-010-chemistry-of-sports-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/es-010-chemistry-of-sports-spring-2013/330d55d55168b0cb15fd57c895857d7b_ES-010S13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

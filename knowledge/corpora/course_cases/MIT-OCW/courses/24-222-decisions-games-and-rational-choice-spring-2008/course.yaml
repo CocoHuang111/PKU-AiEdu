@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-24-222-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.222"
+cross_listed_codes: []
+course_title: "Decisions, Games, and Rational Choice"
+course_slug: "24-222-decisions-games-and-rational-choice-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Robert Stalnaker"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Social Science"
+  - "Game Theory"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  Foundations and philosophical applications of Bayesian decision theory, game theory and theory of collective choice. Why should degrees of belief be probabilities? Is it always rational to maximize expected utility? If so, why and what is its utility? What is a solution to a game? What does a game-theoretic solution concept such as Nash equilibrium say about how rational players will, or should, act in a game? How are the values and the actions of groups, institutions and societies related to the values and actions of the individuals that constitute them?
+course_url: "https://ocw.mit.edu/courses/24-222-decisions-games-and-rational-choice-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/24-222-decisions-games-and-rational-choice-spring-2008/f202963295fd50de9cb1716be999e5a6_24-222s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

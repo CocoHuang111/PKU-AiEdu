@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-virtualizing-project-based-learning-architecture"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Virtualizing Project-based Learning in Architecture"
+slug: "virtualizing-project-based-learning-architecture"
+course_codes:
+  - "11.332J / 4.163J, 4.154"
+departments:
+  - "Architecture (Course 4)"
+instructors:
+  - "Arindam Dutta"
+  - "Brent Ryan"
+  - "Miho Mazereeuw"
+  - "Nicholas de Monchaux"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/virtualizing-project-based-learning-architecture"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "9735efe6b1dc59c03bbe1443b58dddbcb410a27fae9a006bdc69bc0375961cf5"

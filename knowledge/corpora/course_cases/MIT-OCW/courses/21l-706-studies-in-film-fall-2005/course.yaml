@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-706-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.706"
+cross_listed_codes: []
+course_title: "Studies in Film"
+course_slug: "21l-706-studies-in-film-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alvin Kibel"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Visual Arts"
+  - "Film and Video"
+  - "Humanities"
+  - "Literature"
+  - "Comparative Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course investigates relationships between two media, film and literature, studying works linked across the two media by genre, topic, and style. It aims to sharpen appreciation of major works of cinema and of literary narrative. The course explores how artworks challenge and cross cultural, political and aesthetic boundaries. It includes some attention to theory of narrative. Films to be studied include works by Akira Kurosawa, John Ford, Francis Ford Coppolla, Clint Eastwood, Orson Welles, Billy Wilder, and Federico Fellini, among others. Literary works include texts by Aeschylus, Sophocles, Shakespeare, Cervantes, Honoré de Balzac, Henry James and F. Scott Fitzgerald.
+course_url: "https://ocw.mit.edu/courses/21l-706-studies-in-film-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21l-706-studies-in-film-fall-2005/aafc0e0c3cba130cb59b83580e27cc06_21l-706f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

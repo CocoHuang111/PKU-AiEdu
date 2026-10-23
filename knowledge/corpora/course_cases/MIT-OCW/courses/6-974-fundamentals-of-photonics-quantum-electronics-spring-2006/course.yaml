@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-974-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.974"
+cross_listed_codes:
+  - "6.097"
+course_title: "Fundamentals of Photonics: Quantum Electronics"
+course_slug: "6-974-fundamentals-of-photonics-quantum-electronics-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Franz Kärtner"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Electromagnetism"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Electromagnetism"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course explores the fundamentals of optical and optoelectronic phenomena and devices based on classical and quantum properties of radiation and matter culminating in lasers and applications. Fundamentals include: Maxwell’s electromagnetic waves, resonators and beams, classical ray optics and optical systems, quantum theory of light, matter and its interaction, classical and quantum noise, lasers and laser dynamics, continuous wave and short pulse generation, light modulation; examples from integrated optics and semiconductor optoelectronics and nonlinear optics.
+course_url: "https://ocw.mit.edu/courses/6-974-fundamentals-of-photonics-quantum-electronics-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/6-974-fundamentals-of-photonics-quantum-electronics-spring-2006/e56304d7cbda6c2fcf2a1c45476aad6e_6-974s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

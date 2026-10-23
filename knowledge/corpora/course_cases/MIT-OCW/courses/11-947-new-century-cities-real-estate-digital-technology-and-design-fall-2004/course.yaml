@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-11-947-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.947"
+cross_listed_codes: []
+course_title: "New Century Cities: Real Estate, Digital Technology, and Design"
+course_slug: "11-947-new-century-cities-real-estate-digital-technology-and-design-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Geltner"
+  - "Prof. Dennis Frenchman"
+  - "Susanne Seitinger"
+  - "Prof. William Mitchell"
+subject_primary: "Real Estate"
+subject_secondary:
+  - "Fine Arts"
+  - "Architecture"
+  - "Environmental Design"
+  - "Media Studies"
+  - "Digital Media"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Real Estate"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The course draws on faculty members from the Center for Real Estate, the City Design and Development Group (Department of Urban Studies and Planning), and the Media Lab to explore extraordinary projects that challenge conventional approaches to real estate development, urban design, and advanced digital technology.
+course_url: "https://ocw.mit.edu/courses/11-947-new-century-cities-real-estate-digital-technology-and-design-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/11-947-new-century-cities-real-estate-digital-technology-and-design-fall-2004/8ecda63300b27c9626c0d5c1ea857d72_11-947f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

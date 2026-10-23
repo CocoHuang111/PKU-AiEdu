@@ -106,7 +106,9 @@ def build_contexts(
                     "label", hit["corpus"]
                 ),
                 "source": meta.get("source", "未知来源"),
+                "source_url": meta.get("source_url", ""),
                 "score": hit["score"],
+                "whole_case": bool(hit.get("whole_case")),
             }
         )
         used += len(text)
@@ -118,29 +120,38 @@ def merge_contexts(
     retrieved: list[dict[str, Any]],
     max_chars: int | None = None,
 ) -> list[dict[str, Any]]:
-    """勾选的评估报告用单独额度，检索结果再用 max_context_chars。"""
+    """指定报告、上传材料与检索结果分别使用上下文额度。"""
     rag = settings.section("rag")
     rag_cap = max_chars or rag.get("max_context_chars", 6000)
-    pin_cap = rag.get("pinned_eval_max_chars", 12000)
+    eval_cap = rag.get("pinned_eval_max_chars", 12000)
+    attachment_cap = rag.get("pinned_attachment_max_chars", 40000)
     merged: list[dict[str, Any]] = []
     seen: set[str] = set()
 
-    used_pin = 0
-    for item in pinned or []:
-        text = (item.get("text") or "").strip()
-        if not text:
-            continue
-        key = text[:120]
-        if key in seen:
-            continue
-        if used_pin + len(text) > pin_cap:
-            remain = pin_cap - used_pin
-            if remain <= 200:
-                break
-            text = text[:remain]
-        merged.append({**item, "text": text, "pinned": True})
-        seen.add(key)
-        used_pin += len(text)
+    for context_type, pin_cap in (
+        ("eval_report", eval_cap),
+        ("attachment", attachment_cap),
+        ("other", eval_cap),
+    ):
+        used_pin = 0
+        for item in pinned or []:
+            item_type = item.get("context_type") or "other"
+            if item_type != context_type:
+                continue
+            text = (item.get("text") or "").strip()
+            if not text:
+                continue
+            key = text[:120]
+            if key in seen:
+                continue
+            if used_pin + len(text) > pin_cap:
+                remain = pin_cap - used_pin
+                if remain <= 200:
+                    break
+                text = text[:remain]
+            merged.append({**item, "text": text, "pinned": True})
+            seen.add(key)
+            used_pin += len(text)
 
     used_rag = 0
     for item in retrieved or []:
@@ -151,7 +162,11 @@ def merge_contexts(
         if key in seen:
             continue
         if used_rag + len(text) > rag_cap:
-            if used_rag == 0:
+            if item.get("whole_case"):
+                # 完整案例不从中间截断；已有内容时跳过这一整例，首例则完整保留。
+                if used_rag > 0:
+                    continue
+            elif used_rag == 0:
                 text = text[:rag_cap]
             else:
                 break

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+from typing import Literal
+
 from pydantic import BaseModel, Field, field_validator
 
 
@@ -24,11 +26,43 @@ class EvaluationTaskCreateForm(BaseModel):
         return text
 
 
+class RemoteSourceForm(BaseModel):
+    url: str = Field(..., min_length=1, max_length=8192)
+    password: str = Field("", max_length=128)
+    path: list[str] = Field(default_factory=list, max_length=12)
+
+    @field_validator("path")
+    @classmethod
+    def validate_path(cls, value):
+        if any(not item or len(item) > 2048 for item in value):
+            raise ValueError("无效的网盘目录路径")
+        return value
+
+
+class UploadSessionCreateForm(BaseModel):
+    mode: str = Field(..., pattern="^(original|evidence)$")
+    fingerprint: str = Field(..., min_length=64, max_length=64)
+    original_filename: str = Field(..., min_length=1, max_length=512)
+    original_size: int = Field(..., gt=0, le=20 * 1024 * 1024 * 1024)
+    audio_filename: str | None = Field(None, max_length=512)
+    audio_mime: str | None = Field(None, max_length=128)
+
+
+class UploadSessionCompleteForm(BaseModel):
+    session_id: str = Field(..., min_length=16, max_length=128)
+    audio_parts: int | None = Field(None, gt=0, le=100_000)
+    frame_parts: int | None = Field(None, gt=0, le=100_000)
+    manifest: dict | None = None
+
+
 class QAForm(BaseModel):
     question: str = Field(..., min_length=1)
+    mode: Literal[
+        "ask", "syllabus_design", "teaching_design", "learning_diagnosis"
+    ] = Field("ask", description="问答工作模式")
     session_id: str | None = None
     corpora: list[str] | None = Field(
-        None, description="限定检索的语料库；省略则全库，空列表则不检索"
+        None, description="限定检索的语料库；省略则使用模式默认库，空列表则不检索"
     )
     eval_task_ids: list[str] | None = Field(
         None,
@@ -37,6 +71,11 @@ class QAForm(BaseModel):
             "省略则检索该用户全部已完成报告；空列表则不检索报告"
         ),
         max_length=200,
+    )
+    attachment_ids: list[str] | None = Field(
+        None,
+        description="本轮问答指定带入的私有上传材料 ID；不会写入公共知识库",
+        max_length=12,
     )
 
 

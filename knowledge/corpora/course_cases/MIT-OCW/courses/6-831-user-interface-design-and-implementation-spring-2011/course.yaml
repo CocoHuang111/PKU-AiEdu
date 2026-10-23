@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-6-831-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.831"
+cross_listed_codes:
+  - "6.813"
+course_title: "User Interface Design and Implementation"
+course_slug: "6-831-user-interface-design-and-implementation-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Robert Miller"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Human-Computer Interfaces"
+  - "Software Design and Engineering"
+  - "Fine Arts"
+  - "Visual Arts"
+  - "Graphic Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+          - "Software Design and Engineering"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Graphic Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  6.831/6.813 examines human-computer interaction in the context of graphical user interfaces. The course covers human capabilities, design principles, prototyping techniques, evaluation techniques, and the implementation of graphical user interfaces. Deliverables include short programming assignments and a semester-long group project. Students taking the graduate version also have readings from current literature and additional assignments.
+course_url: "https://ocw.mit.edu/courses/6-831-user-interface-design-and-implementation-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/6-831-user-interface-design-and-implementation-spring-2011/17b80701d15ebd7c0beba0ee202abb94_6-831s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

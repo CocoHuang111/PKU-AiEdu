@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "cornell-exploring-ai-image-generation-for-landscape-architecture-designs"
+institution: "Cornell University"
+platform: "Cornell Teaching Case Studies"
+collection: "Teaching Innovation Case Study Library"
+title: "Exploring AI Image Generation for Landscape Architecture Designs"
+slug: "exploring-ai-image-generation-for-landscape-architecture-designs"
+source_url: "https://blogs.cornell.edu/teachingcasestudies/gai/exploring-ai-image-generation-for-landscape-architecture-designs/"
+language: "en"
+published: "2024-04-03"
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  published: "source"
+extraction_status: "complete"
+content_sha256: "c9df33cd40ea58fe045225d6e7267283a70fdb5625ae2c10c0d7bb30b4e26b06"

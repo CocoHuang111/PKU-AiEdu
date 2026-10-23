@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-12-517-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.517"
+cross_listed_codes: []
+course_title: "Dynamics of Complex Systems: Biological and Environmental Coevolution Preceding the Cambrian Explosion"
+course_slug: "12-517-dynamics-of-complex-systems-biological-and-environmental-coevolution-preceding-the-cambrian-explosion-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniel Rothman"
+subject_primary: "Biology"
+subject_secondary:
+  - "Biochemistry"
+  - "Computation and Systems Biology"
+  - "Ecology"
+  - "Molecular Biology"
+  - "Earth Science"
+  - "Geobiology"
+  - "Geochemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+          - "Computation and Systems Biology"
+          - "Ecology"
+          - "Molecular Biology"
+      - name: "Earth Science"
+        specialties:
+          - "Geobiology"
+          - "Geochemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+description: |
+  This seminar will focus on dynamical change in biogeochemical cycles accompanying early animal evolution – beginning with the time of the earliest known microscopic animal fossils (~600 million years ago) and culminating (~100 million years later) with the rapid diversification of marine animals known as the “Cambrian explosion.” Recent work indicates that this period of intense biological evolution was both a cause and an effect of changes in global biogeochemical cycles. We will seek to identify and quantify such coevolutionary changes. Lectures and discussions will attempt to unite the perspectives of quantitative theory, organic geochemistry, and evolutionary biology.
+course_url: |
+  https://ocw.mit.edu/courses/12-517-dynamics-of-complex-systems-biological-and-environmental-coevolution-preceding-the-cambrian-explosion-spring-2005/
+image_url: |
+  https://ocw.mit.edu/courses/12-517-dynamics-of-complex-systems-biological-and-environmental-coevolution-preceding-the-cambrian-explosion-spring-2005/2993ee35b1529d5394ef61210dadcce6_12-517s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-18-735-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.735"
+cross_listed_codes: []
+course_title: "Double Affine Hecke Algebras in Representation Theory, Combinatorics, Geometry, and Mathematical Physics"
+course_slug: "18-735-double-affine-hecke-algebras-in-representation-theory-combinatorics-geometry-and-mathematical-physics-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Pavel Etingof"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Linear Algebra"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Double affine Hecke algebras (DAHA), also called Cherednik algebras, and their representations appear in many contexts: integrable systems (Calogero-Moser and Ruijsenaars models), algebraic geometry (Hilbert schemes), orthogonal polynomials, Lie theory, quantum groups, etc. In this course we will review the basic theory of DAHA and their representations, emphasizing their connections with other subjects and open problems.
+course_url: |
+  https://ocw.mit.edu/courses/18-735-double-affine-hecke-algebras-in-representation-theory-combinatorics-geometry-and-mathematical-physics-fall-2009/
+image_url: |
+  https://ocw.mit.edu/courses/18-735-double-affine-hecke-algebras-in-representation-theory-combinatorics-geometry-and-mathematical-physics-fall-2009/f537e4655a1fecbeb5796c257768ee6e_18-735f09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

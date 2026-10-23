@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-18-783-fall-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.783"
+cross_listed_codes:
+  - "18.7831"
+course_title: "Elliptic Curves"
+course_slug: "18-783-elliptic-curves-fall-2025"
+term: "Fall"
+year: 2025
+as_taught_in: "Fall 2025"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Andrew V. Sutherland"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Mathematics"
+  - "Algebra and Number Theory"
+  - "Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Open Textbooks"
+  - "Problem Sets"
+  - "Readings"
+description: |
+  This course offers a computationally focused introduction to elliptic curves, emphasizing their deep connections to number theory and cryptography. Core topics include point-counting, isogenies, pairings, and the theory of complex multiplication. Throughout the course, these concepts are applied to practical problems such as integer factorization, primality proving, and elliptic curve cryptography.
+course_url: "https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/"
+image_url: "https://ocw.mit.edu/courses/18-783-elliptic-curves-fall-2025/mit18_783_f25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

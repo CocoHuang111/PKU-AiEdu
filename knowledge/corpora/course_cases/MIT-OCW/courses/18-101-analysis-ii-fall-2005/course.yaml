@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-18-101-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.101"
+cross_listed_codes: []
+course_title: "Analysis II"
+course_slug: "18-101-analysis-ii-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Victor Guillemin"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Mathematical Analysis"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course continues from Analysis I (18.100B), in the direction of manifolds and global analysis. The first half of the course covers multivariable calculus. The rest of the course covers the theory of differential forms in n-dimensional vector spaces and manifolds.
+course_url: "https://ocw.mit.edu/courses/18-101-analysis-ii-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/18-101-analysis-ii-fall-2005/d6cb407b899efae9c3d1f5d19af09815_18-101f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-4-619-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.619"
+cross_listed_codes: []
+course_title: "Historiography of Islamic Architecture"
+course_slug: "4-619-historiography-of-islamic-architecture-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Nasser Rabbat"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Architectural History and Criticism"
+  - "Religious Architecture"
+  - "Humanities"
+  - "History"
+  - "Historiography"
+  - "Middle Eastern History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Architectural History and Criticism"
+          - "Religious Architecture"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Historiography"
+          - "Middle Eastern History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  This seminar offers a critical review of scholarship on Islamic architecture through close reading of scholarly texts, museum exhibitions, and architectural projects. It also tackles methodological and historiographical questions about the field’s formation, genealogy, recent expansion, and its evolving historical and theoretical contours.
+course_url: "https://ocw.mit.edu/courses/4-619-historiography-of-islamic-architecture-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/4-619-historiography-of-islamic-architecture-fall-2014/e01628e140ecd3223d96c98365515b78_4-619f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

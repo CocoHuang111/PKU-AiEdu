@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-18-336-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.336"
+cross_listed_codes: []
+course_title: "Numerical Methods for Partial Differential Equations"
+course_slug: "18-336-numerical-methods-for-partial-differential-equations-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Benjamin Seibold"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Systems Engineering"
+  - "Numerical Simulation"
+  - "Mathematics"
+  - "Differential Equations"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+      - name: "Systems Engineering"
+        specialties:
+          - "Numerical Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This graduate-level course is an advanced introduction to applications and theory of numerical methods for solution of differential equations. In particular, the course focuses on physically-arising partial differential equations, with emphasis on the fundamental ideas underlying various methods.
+course_url: "https://ocw.mit.edu/courses/18-336-numerical-methods-for-partial-differential-equations-spring-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/18-336-numerical-methods-for-partial-differential-equations-spring-2009/5acb453ad51bf834e5830f6727878475_18-336s09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

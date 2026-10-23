@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-20-309-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.309"
+cross_listed_codes:
+  - "2.673J"
+  - "20.409J"
+course_title: "Biological Engineering II: Instrumentation and Measurement"
+course_slug: "20-309-biological-engineering-ii-instrumentation-and-measurement-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Maxim Shusteff"
+  - "Prof. Peter So"
+  - "Prof. Scott Manalis"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Electrical Engineering"
+  - "Electronics"
+  - "Signal Processing"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+          - "Signal Processing"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Problem Sets"
+  - "Tutorial Videos"
+description: |
+  This course covers sensing and measurement for quantitative molecular/cell/tissue analysis, in terms of genetic, biochemical, and biophysical properties. Methods include light and fluorescence microscopies; electro-mechanical probes such as atomic force microscopy, laser and magnetic traps, and MEMS devices; and the application of statistics, probability and noise analysis to experimental data. Enrollment preference is given to juniors and seniors.
+course_url: "https://ocw.mit.edu/courses/20-309-biological-engineering-ii-instrumentation-and-measurement-fall-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/20-309-biological-engineering-ii-instrumentation-and-measurement-fall-2006/a599a67054decb5975ac24a94fc58f43_20-309f06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,92 @@
+schema_version: "1.0"
+course_id: "mitocw-2-43-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.43"
+cross_listed_codes: []
+course_title: "Advanced Thermodynamics"
+course_slug: "2-43-advanced-thermodynamics-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gian Paolo Beretta"
+subject_primary: "Combustion"
+subject_secondary:
+  - "Fossil Fuels"
+  - "Renewables"
+  - "Engineering"
+  - "Chemical Engineering"
+  - "Transport Processes"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Combustion"
+        specialties: []
+      - name: "Fossil Fuels"
+        specialties: []
+      - name: "Renewables"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Multiple Assignment Types with Solutions"
+description: |
+  This course is a self-contained concise review of general thermodynamics concepts, multicomponent equilibrium properties, chemical equilibrium, electrochemical potentials, and chemical kinetics, as needed to introduce the methods of nonequilibrium thermodynamics and to provide a unified understanding of phase equilibria, transport, and nonequilibrium phenomena useful for future energy and climate engineering technologies. Applications include second-law efficiencies and methods to allocate primary energy consumptions and CO₂ emissions in cogeneration and hybrid power systems, minimum work of separation, maximum work of mixing, osmotic pressure and membrane equilibria, metastable states, spinodal decomposition, and Onsager’s near-equilibrium reciprocity in thermodiffusive, thermoelectric, and electrokinetic cross effects.
+course_url: "https://ocw.mit.edu/courses/2-43-advanced-thermodynamics-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/2-43-advanced-thermodynamics-spring-2024/mit2_43_s24_new.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

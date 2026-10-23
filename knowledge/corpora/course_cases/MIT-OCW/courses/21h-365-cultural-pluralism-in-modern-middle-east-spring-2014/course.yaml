@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-365-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.365"
+cross_listed_codes: []
+course_title: "Cultural Pluralism in Modern Middle East"
+course_slug: "21h-365-cultural-pluralism-in-modern-middle-east-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Lerna Ekmekcioglu"
+subject_primary: "History"
+subject_secondary:
+  - "Middle Eastern History"
+  - "Modern History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "Middle Eastern Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Middle Eastern History"
+          - "Modern History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Middle Eastern Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This seminar considers “difference” and “sameness” as they have been conceived, experienced, and regulated by peoples of the Middle East, with a focus on the 19th and 20th centuries. The first half discusses the Ottoman Empire by exploring how this multiethnic, polyglot empire survived for several relatively peaceful centuries and what happened when its formula for existence was challenged by politics based on mono-ethnic states. The second half of the course focuses on post-Ottoman nation-states, such as Turkey and Egypt, and Western-mandated Arab states, such as Syria, Lebanon, Palestine, and Iraq. Finally, the course concludes with a case analysis of Israel.
+course_url: "https://ocw.mit.edu/courses/21h-365-cultural-pluralism-in-modern-middle-east-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/21h-365-cultural-pluralism-in-modern-middle-east-spring-2014/ea7260d315a738829bf025a065cf113e_21H-365s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

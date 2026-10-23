@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-931-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.931"
+cross_listed_codes: []
+course_title: "Seminar in Historical Methods"
+course_slug: "21h-931-seminar-in-historical-methods-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Elizabeth A. Wood"
+subject_primary: "History"
+subject_secondary:
+  - "Comparative History"
+  - "Historical Methods"
+  - "Historiography"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Comparative History"
+          - "Historical Methods"
+          - "Historiography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course is designed to introduce students to fundamental issues and debates in the writing of history. It will feature innovative historical accounts written in recent years. The class will consider such questions as the words historians use, their language, sources, methods, organization, framing, and style. How does the choice of each of these affect the historian’s work? How does the author choose, analyze, and present evidence? How effective are different methodologies?
+course_url: "https://ocw.mit.edu/courses/21h-931-seminar-in-historical-methods-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/21h-931-seminar-in-historical-methods-spring-2002/8040f39d793a7a99c6bb246b027ac7e6_21h-931s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

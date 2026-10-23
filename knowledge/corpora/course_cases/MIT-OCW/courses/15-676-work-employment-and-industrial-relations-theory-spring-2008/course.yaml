@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-676-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.676"
+cross_listed_codes: []
+course_title: "Work, Employment, and Industrial Relations Theory"
+course_slug: "15-676-work-employment-and-industrial-relations-theory-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Thomas A. Kochan"
+subject_primary: "Industrial Relations and Human Resource Management"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Labor Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Labor Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This seminar will cover the multi-disciplinary theoretical and empirical foundations of research on work, employment, labor markets, and industrial relations. We begin by tracing the historical development of theory and research in the field, paying special attention to how the normative premises, concepts, and methodological traditions of industrial relations compare to those of other disciplines that contribute to the study of work and employment relations. Then we will review a number of current theoretical and policy debates shaping the field. This will be followed by a series of modules introducing different disciplinary perspectives used to study work and employment issues today. Emphasis will be given to recent research from different industries that illustrate the mix of methods—field work, qualitative and quantitative data collection and analysis, etc.—we encourage in this field of study.
+course_url: "https://ocw.mit.edu/courses/15-676-work-employment-and-industrial-relations-theory-spring-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/15-676-work-employment-and-industrial-relations-theory-spring-2008/e12e9dc0f73f7af62941505e3ed59c50_15-676s08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

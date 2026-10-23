@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-9-93-january-iap-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.93"
+cross_listed_codes: []
+course_title: "Cognitive Neuroscience of Remembering: Creating and Controlling Memory"
+course_slug: "9-93-cognitive-neuroscience-of-remembering-creating-and-controlling-memory-january-iap-2002"
+term: "January IAP"
+year: 2002
+as_taught_in: "January IAP 2002"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anthony Wagner"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month. This survey course is intended to review memory and its impact on our lives. Memories make us who we are, and make us what we are going to become. The loss of memory in amnesia can cause us to lose ourselves. Memory provides a bridge between past and present. Through memory, past sensations, feelings, and ideas that have dropped from conscious awareness can be subsequently recovered to guide current thought and action. In this manner, memory allows us to locate our car in the parking lot at the end of the day or guides us to avoid retelling the same joke to the same friend. This seminar will focus on how memories are created and controlled such that we are able to remember the past. Recent insights from non-human electrophysiological and human brain imaging research will be emphasized.
+course_url: "https://ocw.mit.edu/courses/9-93-cognitive-neuroscience-of-remembering-creating-and-controlling-memory-january-iap-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/9-93-cognitive-neuroscience-of-remembering-creating-and-controlling-memory-january-iap-2002/7277e7568a810f58a162e85bcda9fe03_9-93iap02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

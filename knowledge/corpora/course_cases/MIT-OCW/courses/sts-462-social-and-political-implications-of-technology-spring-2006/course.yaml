@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-462-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.462"
+cross_listed_codes: []
+course_title: "Social and Political Implications of Technology"
+course_slug: "sts-462-social-and-political-implications-of-technology-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Mindell"
+  - "Prof. Merritt Roe Smith"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Social Science"
+  - "Anthropology"
+  - "Political Science"
+  - "Sociology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties: []
+      - name: "Political Science"
+        specialties: []
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course is a graduate reading seminar, in which historical and contemporary studies are used to explore the interaction of technology with social and political values. Emphasis is on how technological devices, structures, and systems influence the organization of society and the behavior of its members. Examples are drawn from the technologies of war, transportation, communication, production, and reproduction.
+course_url: "https://ocw.mit.edu/courses/sts-462-social-and-political-implications-of-technology-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/sts-462-social-and-political-implications-of-technology-spring-2006/d9c39961316d019e5bc0e597259dc62f_sts-462s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

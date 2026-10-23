@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-701-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.701"
+cross_listed_codes:
+  - "CMS.901"
+course_title: "Current Debates in Media"
+course_slug: "cms-701-current-debates-in-media-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Gabrielle Trépanier-Jobin"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Philosophy"
+  - "Social Science"
+  - "Communication"
+  - "Political Science"
+  - "Public Administration"
+  - "Public Policy"
+  - "Society"
+  - "Gender Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Audio"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This class addresses important, current debates in media with in-depth discussion of popular perceptions and policy implications. Students will engage in the critical study of the economic, political, social, and cultural significance of media, and learn to identify, analyze, and understand the complex relations among media texts, policies, institutions, industries, and infrastructures. This class offers the opportunity to discuss, in stimulating and challenging ways, topics such as ideology, propaganda, net neutrality, big data, digital hacktivism, digital rebellion, media violence, gamification, collective intelligence, participatory culture, intellectual property, artificial intelligence, etc., from historical, transcultural, and multiple methodological perspectives.
+course_url: "https://ocw.mit.edu/courses/cms-701-current-debates-in-media-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/cms-701-current-debates-in-media-spring-2015/ff1b7b39d216321892a4e1a5d0e79ff6_CMS-701s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-17-s950-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.S950"
+cross_listed_codes: []
+course_title: "Emotions and Politics"
+course_slug: "17-s950-emotions-and-politics-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Roger Petersen"
+subject_primary: "Political Science"
+subject_secondary:
+  - "Psychology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course is premised on the belief that emotions are a fundamental part of human nature. Accordingly, understanding emotions and incorporating emotions into our research can help us better explain variation in important political phenomena. Research on emotions and how emotions can influence decision-making has dramatically increased over the past two decades. This class aims to pick up on new findings from psychology and other disciplines and marshal this knowledge toward the most important issues of political science.
+course_url: "https://ocw.mit.edu/courses/17-s950-emotions-and-politics-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/17-s950-emotions-and-politics-fall-2018/68ff2c5be600511bee1bc7dd2c18b6ac_17-s950f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-6-163-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.163"
+cross_listed_codes: []
+course_title: "Strobe Project Laboratory"
+course_slug: "6-163-strobe-project-laboratory-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. James Bales"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Fine Arts"
+  - "Visual Arts"
+  - "Photography"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Photography"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Exam Solutions"
+  - "Exams"
+  - "Image Gallery"
+  - "Projects with Examples"
+description: |
+  This is a laboratory experience course with a focus on photography, electronic imaging, and light measurement, much of it at short duration. In addition to teaching these techniques, the course provides students with experience working in a laboratory and teaches good work habits and techniques for approaching laboratory work. A major purpose of 6.163 is to provide students with many opportunities to sharpen their communication skills: oral, written, and visual.
+course_url: "https://ocw.mit.edu/courses/6-163-strobe-project-laboratory-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/6-163-strobe-project-laboratory-fall-2005/f83b4405714d2a829526ccaab72860a2_6-163f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

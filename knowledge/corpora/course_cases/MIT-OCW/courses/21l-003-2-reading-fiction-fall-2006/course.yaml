@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-003-2-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.003-2"
+cross_listed_codes: []
+course_title: "Reading Fiction"
+course_slug: "21l-003-2-reading-fiction-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ina Lipkowitz"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course introduces prose narrative, both short stories and the novel. It examines the construction of narrative and the analysis of literary response.
+course_url: "https://ocw.mit.edu/courses/21l-003-2-reading-fiction-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21l-003-2-reading-fiction-fall-2006/5b51fe6b40eb1bc5f3cdb8cf497960b7_21l-003-2f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

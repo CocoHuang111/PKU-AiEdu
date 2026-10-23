@@ -1,0 +1,26 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-biology-staying-and-learning-together-while-apart"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Biology: Staying and Learning Together While Apart"
+slug: "biology-staying-and-learning-together-while-apart"
+course_codes:
+  - "7.06, 7.002"
+departments:
+  - "Biology (Course 7)"
+instructors:
+  - "Adam Martin"
+  - "Mary Ellen Wiltrout"
+  - "Iain Cheeseman"
+  - "Becky Lamason"
+  - "Vanessa Cheung"
+  - "Eric Chu"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/biology-staying-and-learning-together-while-apart"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "687a84747e200db13df401d786e569b463ca3fbb1b0fc763a2adaf79c86df77b"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-947-fall-1998"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.947"
+cross_listed_codes: []
+course_title: "Imaging the City: The Place of Media in City Design and Development"
+course_slug: "11-947-imaging-the-city-the-place-of-media-in-city-design-and-development-fall-1998"
+term: "Fall"
+year: 1998
+as_taught_in: "Fall 1998"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lawrence Vale"
+  - "Prof. Sam Warner"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Media Studies"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+      - name: "Media Studies"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Kevin Lynch’s landmark volume, The Image of the City (1960), emphasized the perceptual characteristics of the urban environment, stressing the ways that individuals mentally organize their own sensory experience of cities. Increasingly, however, city imaging is supplemented and constructed by exposure to visual media, rather than by direct sense experience of urban realms. City images are not static, but subject to constant revision and manipulation by a variety of media-savvy individuals and institutions. In recent years, urban designers (and others) have used the idea of city image proactively – seeking innovative ways to alter perceptions of urban, suburban, and regional areas. City imaging, in this sense, is the process of constructing visually-based narratives about the potential of places.
+course_url: "https://ocw.mit.edu/courses/11-947-imaging-the-city-the-place-of-media-in-city-design-and-development-fall-1998/"
+image_url: |
+  https://ocw.mit.edu/courses/11-947-imaging-the-city-the-place-of-media-in-city-design-and-development-fall-1998/7e5f0890a27d83a08d37900002ffa519_11-947f98.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

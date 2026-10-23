@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-4-s26-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.S26"
+cross_listed_codes: []
+course_title: "Territory: Spatial Reification of Power"
+course_slug: "4-s26-territory-spatial-reification-of-power-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Gabriel Kozlowski"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Design"
+  - "Architectural History and Criticism"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Architectural History and Criticism"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course proposes that investigating the ways in which territory is produced, maintained and strategized, generates conflicts, establishes divisions, and builds identities can lead to a more critical understanding of architecture’s role in society. This course is designed to expand the student’s literacy in the concept of territory and its relation to the realm of architecture.
+course_url: "https://ocw.mit.edu/courses/4-s26-territory-spatial-reification-of-power-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/4-s26-territory-spatial-reification-of-power-spring-2016/13664d3249e13fa5f9c5229f1fed9422_4-s26s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-18-330-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.330"
+cross_listed_codes: []
+course_title: "Introduction to Numerical Analysis"
+course_slug: "18-330-introduction-to-numerical-analysis-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Laurent Demanet"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Computation"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course analyzed the basic techniques for the efficient numerical solution of problems in science and engineering. Topics spanned root finding, interpolation, approximation of functions, integration, differential equations, direct and iterative methods in linear algebra.
+course_url: "https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/18-330-introduction-to-numerical-analysis-spring-2012/5df8aa2c10fe1b90737c9f0e747b0f70_18-330s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

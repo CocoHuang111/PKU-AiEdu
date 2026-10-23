@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-16-885j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.885J"
+cross_listed_codes:
+  - "ESD.35J"
+course_title: "Aircraft Systems Engineering"
+course_slug: "16-885j-aircraft-systems-engineering-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jeffrey Hoffman"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Aerospace Engineering"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Image Gallery"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Projects"
+description: |
+  16.885J offers a holistic view of the aircraft as a system, covering: basic systems engineering; cost and weight estimation; basic aircraft performance; safety and reliability; lifecycle topics; aircraft subsystems; risk analysis and management; and system realization. Small student teams retrospectively analyze an existing aircraft covering: key design drivers and decisions; aircraft attributes and subsystems; and operational experience. Oral and written versions of the case study are delivered. For the Fall 2005 term, the class focuses on a systems engineering analysis of the Space Shuttle. It offers study of both design and operations of the shuttle, with frequent lectures by outside experts. Students choose specific shuttle systems for detailed analysis and develop new subsystem designs using state of the art technology.
+course_url: "https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2005/09cced96aa9ab8c4f9220ad837b8adeb_16-885jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

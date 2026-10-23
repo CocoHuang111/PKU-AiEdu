@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-488-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.488"
+cross_listed_codes: []
+course_title: "Contemporary Literature: British Novels Now"
+course_slug: "21l-488-contemporary-literature-british-novels-now-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sarah Brouillette"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Fiction"
+  - "Philosophy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Fiction"
+      - name: "Philosophy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  What is Britain now? Its metropolises are increasingly multicultural. Its hold over its distant colonies is a thing of the past. Its sway within the global political arena is weak. Its command over Northern Ireland, Wales, and Scotland is broken or threatened. What have novelists made of all this? What are they writing as the old empire fades away and as new social and political formations emerge? These are the questions that will concern us in this course.
+course_url: "https://ocw.mit.edu/courses/21l-488-contemporary-literature-british-novels-now-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/21l-488-contemporary-literature-british-novels-now-spring-2007/2460b456e52fb32ca33672e0231443e6_21l-488s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

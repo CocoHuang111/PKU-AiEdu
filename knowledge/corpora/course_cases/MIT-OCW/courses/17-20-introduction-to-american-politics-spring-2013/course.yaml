@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-17-20-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.20"
+cross_listed_codes: []
+course_title: "Introduction to American Politics"
+course_slug: "17-20-introduction-to-american-politics-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Devin Caughey"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course provides a substantive overview of U.S. politics and an introduction to the discipline of political science. It surveys the institutional foundations of U.S. politics as well as the activities of political elites, organizations, and ordinary citizens. It also explores the application of general political science concepts and analytic frameworks to specific episodes and phenomena in U.S. politics.
+course_url: "https://ocw.mit.edu/courses/17-20-introduction-to-american-politics-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/17-20-introduction-to-american-politics-spring-2013/57e9870a84a6e6d04056da9cb8e6313a_17-20s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

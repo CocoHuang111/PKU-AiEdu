@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-22-101-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.101"
+cross_listed_codes: []
+course_title: "Applied Nuclear Physics"
+course_slug: "22-101-applied-nuclear-physics-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Sow-Hsin Chen"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  The topics covered under this course include elements of nuclear physics for engineering students, basic properties of the nucleus and nuclear radiations, quantum mechanical calculations of deuteron bound-state wave function and energy, n-p scattering cross-section, transition probability per unit time and barrier transmission probability. Also explored are binding energy and nuclear stability, interactions of charged particles, neutrons, and gamma rays with matter, radioactive decays, energetics and general cross-section behavior in nuclear reactions.
+course_url: "https://ocw.mit.edu/courses/22-101-applied-nuclear-physics-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/22-101-applied-nuclear-physics-fall-2003/4590c8970805f384bb2d8a9284d2ea6d_22-101f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

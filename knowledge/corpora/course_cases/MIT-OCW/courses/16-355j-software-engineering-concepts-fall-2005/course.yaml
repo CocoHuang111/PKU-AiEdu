@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-16-355j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.355J"
+cross_listed_codes:
+  - "IDS.341J (formerly ESD.355J)"
+course_title: "Software Engineering Concepts"
+course_slug: "16-355j-software-engineering-concepts-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Institute for Data, Systems, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Nancy Leveson"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Software Design and Engineering"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Software Design and Engineering"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This is a reading and discussion subject on issues in the engineering of software systems and software development project design. It includes the present state of software engineering, what has been tried in the past, what worked, what did not, and why. Topics may differ in each offering, but will be chosen from: the software process and lifecycle; requirements and specifications; design principles; testing, formal analysis, and reviews; quality management and assessment; product and process metrics; COTS and reuse; evolution and maintenance; team organization and people management; and software engineering aspects of programming languages.
+course_url: "https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/8418b32501d762759b8279b1e289ae3f_16-355jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

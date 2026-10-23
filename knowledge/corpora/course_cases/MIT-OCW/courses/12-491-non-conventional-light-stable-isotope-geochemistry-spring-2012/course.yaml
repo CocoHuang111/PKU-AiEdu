@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-12-491-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.491"
+cross_listed_codes: []
+course_title: "Non-conventional Light Stable Isotope Geochemistry"
+course_slug: "12-491-non-conventional-light-stable-isotope-geochemistry-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Shuhei Ono"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geochemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geochemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This course is designed for graduate students with an interest in using primary research literature to discuss and learn about current research around non-conventional light stable isotope geochemistry.
+course_url: "https://ocw.mit.edu/courses/12-491-non-conventional-light-stable-isotope-geochemistry-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/12-491-non-conventional-light-stable-isotope-geochemistry-spring-2012/f71e7405f02eb7e0477c6ca3e8b3a8cd_12-491s12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-065-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.065"
+cross_listed_codes:
+  - "21A.142"
+  - "21G.593"
+course_title: "Japanese Literature and Cinema"
+course_slug: "21g-065-japanese-literature-and-cinema-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ian Condry"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Film and Video"
+  - "Humanities"
+  - "Literature"
+  - "International Literature"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course surveys both cinematic and literary representations of diverse eras and aspects of Japanese culture such as the classical era, the samurai age, wartime Japan and the atomic bombings, social change in the postwar period, and the appropriation of foreign cultural themes, with an emphasis on the modern period. Directors include Akira Kurosawa and Hiroshi Teshigahara. Authors include Kobo Abe and Yukio Mishima. Films shown have subtitles in English. Taught in English.
+course_url: "https://ocw.mit.edu/courses/21g-065-japanese-literature-and-cinema-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/21g-065-japanese-literature-and-cinema-fall-2013/199a541bf0f2039746f6ea57bcf7c538_21g-065f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

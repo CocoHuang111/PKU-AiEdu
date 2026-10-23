@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-22-a09-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.A09"
+cross_listed_codes: []
+course_title: "Career Options for Biomedical Research"
+course_slug: "22-a09-career-options-for-biomedical-research-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Bruce Rosen"
+  - "Prof. Sidney Yip"
+  - "Xin He"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Radiological Engineering"
+  - "Health and Medicine"
+  - "Biomedicine"
+  - "Medical Imaging"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Radiological Engineering"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedicine"
+        specialties: []
+      - name: "Medical Imaging"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course has been designed as a seminar to give students an understanding of how scientists with medical or scientific degrees conduct research in both hospital and academic settings. There will be interactive discussions with research clinicians and scientists about the career opportunities and research challenges in the biomedical field, which an MIT student might prepare for by obtaining an MD, PhD, or combined degrees. The seminar will be held in a case presentation format, with topics chosen from the radiological sciences, including current research in magnetic resonance imaging, positron emission tomography and other nuclear imaging techniques, and advances in radiation therapy. With the lectures as background, we will also examine alternative and related options such as biomedical engineering, medical physics, and medical engineering. We’ll use as examples and points of comparisons the curriculum paths available through MIT’s Department of Nuclear Science and Engineering. In past years we have given very modest assignments such as readings in advance of or after a seminar, and a short term project.
+course_url: "https://ocw.mit.edu/courses/22-a09-career-options-for-biomedical-research-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/22-a09-career-options-for-biomedical-research-fall-2006/71b90635c3eceec5b52b1b2b9fd65c7c_22-a09s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

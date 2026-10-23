@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-11-007-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.007"
+cross_listed_codes: []
+course_title: "Resolving Public Disputes"
+course_slug: "11-007-resolving-public-disputes-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Judith Layzer"
+subject_primary: "Political Science"
+subject_secondary:
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is an introduction to real-world dynamics of public policy controversies. Topics to be considered include national, state, and local policy disputes, such as smoking, hazardous waste, abortion, gun control, and education. Using a case study approach, students study whether and how those disputes get resolved. Students conduct debates and simulations in addition to writing a series of short essays.
+course_url: "https://ocw.mit.edu/courses/11-007-resolving-public-disputes-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/11-007-resolving-public-disputes-spring-2005/20f141b472bc43a1f8e5487422ba4d1e_11-007s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

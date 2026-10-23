@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-11-304j-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.304J"
+cross_listed_codes:
+  - "4.255J"
+course_title: "Site and Infrastructure Systems Planning"
+course_slug: "11-304j-site-and-infrastructure-systems-planning-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Eran Ben-Joseph"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Fine Arts"
+  - "Architecture"
+  - "Environmental Design"
+  - "Social Science"
+  - "Urban Studies"
+  - "Housing Development"
+  - "Urban Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Housing Development"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This course is a client-based land analysis and site planning project. The primary focus of the course changes from year to year. This year the focus is on Japan’s New Towns. Students will review land inventory, analysis, and planning of sites and the infrastructure systems that serve them. They will also examine spatial organization of uses, parcelization, design of roadways, grading, utility systems, stormwater runoff, parking, traffic and off-site impacts, as well as landscaping. Lectures will cover analytical techniques and examples of good site-planning practice. Requirements include a series of assignments and a client-based project.
+course_url: "https://ocw.mit.edu/courses/11-304j-site-and-infrastructure-systems-planning-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/11-304j-site-and-infrastructure-systems-planning-spring-2009/c264508cfe130ba1022fb7c22148144a_11-304js09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

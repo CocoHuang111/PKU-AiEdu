@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-281-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.281"
+cross_listed_codes: []
+course_title: "Advanced Communication for Leaders"
+course_slug: "15-281-advanced-communication-for-leaders-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Neal Hartman"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Management"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+description: |
+  This course introduces interactive oral and interpersonal communication skills critical to leaders, including strategies for presenting to a hostile audience, running effective and productive meetings, active listening, and contributing to group decision-making. There are team-run classes on chosen communication topics, and an individual analysis of leadership qualities and characteristics. Students deliver an oral presentation and an executive summary, both aimed at a business audience.
+course_url: "https://ocw.mit.edu/courses/15-281-advanced-communication-for-leaders-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/15-281-advanced-communication-for-leaders-spring-2016/e944febd92d92de176622eafcc520526_15-281s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-alan-detton"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Alan Detton, PhD"
+slug: "alan-detton"
+source_url: "https://ctl.columbia.edu/transformations/faculty/alan-detton/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "67c8f7c7d1c6a07b94794983191728bc9fe2229b78dcaac64bd40ab921da6c55"

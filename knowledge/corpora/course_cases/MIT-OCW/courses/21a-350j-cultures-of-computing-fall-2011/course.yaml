@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-350j-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.350J"
+cross_listed_codes:
+  - "STS.086J"
+  - "WGS.276J"
+course_title: "Cultures of Computing"
+course_slug: "21a-350j-cultures-of-computing-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Science, Technology, and Society"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Stefan Helmreich"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Modern History"
+  - "Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Modern History"
+      - name: "Philosophy"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course examines computers anthropologically, as artifacts revealing the social orders and cultural practices that create them. Students read classic texts in computer science along with cultural analyses of computing history and contemporary configurations. It explores the history of automata, automation and capitalist manufacturing; cybernetics and WWII operations research; artificial intelligence and gendered subjectivity; robots, cyborgs, and artificial life; creation and commoditization of the personal computer; the growth of the Internet as a military, academic, and commercial project; hackers and gamers; technobodies and virtual sociality. Emphasis is placed on how ideas about gender and other social differences shape labor practices, models of cognition, hacking culture, and social media.
+course_url: "https://ocw.mit.edu/courses/21a-350j-cultures-of-computing-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/21a-350j-cultures-of-computing-fall-2011/459c4011fd958280eb4ba63c2743b8b0_21a-350jf11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

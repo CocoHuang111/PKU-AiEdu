@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-remote-teaching-engineering-leadership"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Remote Teaching: Engineering Leadership"
+slug: "remote-teaching-engineering-leadership"
+course_codes:
+  - "6.912"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "James Magarian"
+digital_innovations_tools:
+  - "Remote Teaching"
+  - "Piazza"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/remote-teaching-engineering-leadership"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "1799371563d5b51591fe978e641df816bfdbeee739ab359f94a6d1c6e6fd4440"

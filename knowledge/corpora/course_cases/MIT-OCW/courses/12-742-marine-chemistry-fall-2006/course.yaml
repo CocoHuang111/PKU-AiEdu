@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-12-742-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.742"
+cross_listed_codes: []
+course_title: "Marine Chemistry"
+course_slug: "12-742-marine-chemistry-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Dierdre Toole"
+  - "Dr. Karen Casciotti"
+  - "Dr. Meg Tivey"
+  - "Dr. Scott Doney"
+  - "Dr. William Martin"
+subject_primary: "Ocean Engineering"
+subject_secondary:
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Geobiology"
+  - "Geochemistry"
+  - "Oceanography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geobiology"
+          - "Geochemistry"
+          - "Oceanography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Audio"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is an introduction to chemical oceanography. It describes reservoir models and residence time, major ion composition of seawater, inputs to and outputs from the ocean via rivers, the atmosphere, and the sea floor. Biogeochemical cycling within the oceanic water column and sediments, emphasizing the roles played by the formation, transport, and alteration of oceanic particles and the effects that these processes have on seawater composition. Cycles of carbon, nitrogen, phosphorus, oxygen, and sulfur. Uptake of anthropogenic carbon dioxide by the ocean. Material presented through lectures and student-led presentation and discussion of recent papers.
+course_url: "https://ocw.mit.edu/courses/12-742-marine-chemistry-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/12-742-marine-chemistry-fall-2006/5f634d8d4c8a063d2bba06a806009175_12-742f06.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-evst-255"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "EVST 255"
+course_title: "Environmental Politics and Law"
+course_slug: "evst-255"
+department_path: "environmental studies"
+professors:
+  - "John Wargo Tweedy/Ordway Professor of Environmental Health and Politics"
+course_url: "https://oyc.yale.edu/environmental-studies/evst-255"
+language: "en"
+description: |
+  Can law change human behavior to be less environmentally damaging? Law will be examined through case histories including: environmental effects of national security, pesticides, air pollution, consumer products, plastics, parks and protected area management, land use, urban growth and sprawl, public/private transit, drinking water standards, food safety, and hazardous site restoration. In each case we will review the structure of law and evaluate its strengths and weaknesses.
+license_url: ""
+session_count: 24
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

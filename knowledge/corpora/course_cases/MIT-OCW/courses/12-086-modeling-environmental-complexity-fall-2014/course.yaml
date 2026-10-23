@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-12-086-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.086"
+cross_listed_codes:
+  - "12.586"
+course_title: "Modeling Environmental Complexity"
+course_slug: "12-086-modeling-environmental-complexity-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Daniel Rothman"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Modeling and Simulation"
+  - "Science"
+  - "Earth Science"
+  - "Environmental Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to the study of environmental phenomena that exhibit both organized structure and wide variability—i.e., complexity. Through focused study of a variety of physical, biological, and chemical problems in conjunction with theoretical models, we learn a series of lessons with wide applicability to understanding the structure and organization of the natural world. Students also learn how to construct minimal mathematical, physical, and computational models that provide informative answers to precise questions. This course is appropriate for advanced undergraduates. Beginning graduate students are encouraged to register for 12.586 (graduate version of 12.086). Students taking the graduate version complete different assignments.
+course_url: "https://ocw.mit.edu/courses/12-086-modeling-environmental-complexity-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/12-086-modeling-environmental-complexity-fall-2014/181d87a05946cbcffe77af4ccfdb50e0_12-086f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

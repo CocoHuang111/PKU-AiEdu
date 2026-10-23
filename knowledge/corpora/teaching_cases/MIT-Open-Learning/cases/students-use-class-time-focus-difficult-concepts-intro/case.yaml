@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-students-use-class-time-focus-difficult-concepts-intro"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Students Use Class Time to Focus on Difficult Concepts: Intro to Probability & Statistics"
+slug: "students-use-class-time-focus-difficult-concepts-intro"
+course_codes:
+  - "18.05"
+departments:
+  - "Mathematics (Course 18)"
+instructors:
+  - "Jeremy Orloff"
+  - "Jonathan Bloom"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/students-use-class-time-focus-difficult-concepts-intro"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "a0f0e01f2537218e10e98d114954c78b83dfeb29fadcca22a6efb881c576a01e"

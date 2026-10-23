@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-211-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.211"
+cross_listed_codes: []
+course_title: "The United States in the Nuclear Age"
+course_slug: "21h-211-the-united-states-in-the-nuclear-age-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Caley Horan"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "History of Science and Technology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "History of Science and Technology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject examines the unique culture that developed in the United States after World War II. The dawn of the nuclear age and the ensuing Cold War fundamentally altered American politics and social life. It also led to a flowering of technological experimentation and rapid innovation in the sciences. Over the course of the term, students will explore how Americans responded to these changes, and how those responses continue to shape life in the US today.
+course_url: "https://ocw.mit.edu/courses/21h-211-the-united-states-in-the-nuclear-age-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/21h-211-the-united-states-in-the-nuclear-age-spring-2016/aa8128418b0c30af3c5efd00989e18e7_21h-211s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

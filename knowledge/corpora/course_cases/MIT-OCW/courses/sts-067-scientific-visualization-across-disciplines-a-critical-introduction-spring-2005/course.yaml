@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-067-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.067"
+cross_listed_codes: []
+course_title: "Scientific Visualization across Disciplines: A Critical Introduction"
+course_slug: "sts-067-scientific-visualization-across-disciplines-a-critical-introduction-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joseph Dumit"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This subject exposes students to a variety of visualization techniques so that they learn to understand the work involved in producing them and to critically assess the power and limits of each. Students concentrate on areas where visualizations are crucial for meaning making and data production. Drawing on scholarship in science and technology studies on visualization, critical art theory, and core discussions in science and engineering, students work through a series of case studies in order to become better readers and producers of visualizations.
+course_url: "https://ocw.mit.edu/courses/sts-067-scientific-visualization-across-disciplines-a-critical-introduction-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/sts-067-scientific-visualization-across-disciplines-a-critical-introduction-spring-2005/4df7913a5a28be34eb538497d96a9019_sts-067s05.gif
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

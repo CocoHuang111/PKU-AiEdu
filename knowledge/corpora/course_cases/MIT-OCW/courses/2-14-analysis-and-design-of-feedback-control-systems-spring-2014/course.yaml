@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-2-14-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.14"
+cross_listed_codes:
+  - "2.140"
+course_title: "Analysis and Design of Feedback Control Systems"
+course_slug: "2-14-analysis-and-design-of-feedback-control-systems-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Trumper"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Robotics and Control Systems"
+  - "Mechanical Engineering"
+  - "Dynamics and Control"
+  - "Mechanical Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+          - "Mechanical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course develops the fundamentals of feedback control using linear transfer function system models. Topics covered include analysis in time and frequency domains; design in the s-plane (root locus) and in the frequency domain (loop shaping); describing functions for stability of certain non-linear systems; extension to state variable systems and multivariable control with observers; discrete and digital hybrid systems and use of z-plane design. Students will complete an extended design case study. Students taking the graduate version (2.140) will attend the recitation sessions and complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/2-14-analysis-and-design-of-feedback-control-systems-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/2-14-analysis-and-design-of-feedback-control-systems-spring-2014/cbc4d7bcf2f7e8e1c93237097afe63db_2-14s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

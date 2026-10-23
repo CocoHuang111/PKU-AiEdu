@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "cornell-supporting-student-well-being-peer"
+institution: "Cornell University"
+platform: "Cornell Center for Teaching Innovation"
+collection: "Teaching Innovation Case Study Library"
+title: "Supporting Student Well-Being with Peer-Led Study Groups"
+slug: "supporting-student-well-being-peer"
+source_url: "https://teaching.cornell.edu/teaching-spotlight/provosts-working-group-innovation-assessment/supporting-student-well-being-peer"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "7d7e6ca8504947282386bb135c41be104fe67408b6ec4b8bace74d9ca6939166"

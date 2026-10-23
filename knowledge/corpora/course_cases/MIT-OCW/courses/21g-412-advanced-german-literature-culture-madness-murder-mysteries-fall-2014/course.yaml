@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-412-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.412"
+cross_listed_codes: []
+course_title: "Advanced German Literature & Culture: Madness, Murder, Mysteries"
+course_slug: "21g-412-advanced-german-literature-culture-madness-murder-mysteries-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Peter Weise"
+subject_primary: "Language"
+subject_secondary:
+  - "German"
+  - "Literature"
+  - "Comparative Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "German"
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course provides the opportunity to discuss, orally and in writing, cultural, ethical, and social issues on a stylistically sophisticated level. It explores representative and influential works from the nineteenth century to the present, through literary texts (prose, drama, poetry), radio plays, art, film, and architecture, as well as investigates topics such as the human and the machine, science and ethics, representation of memory, and issues of good and evil. Taught in German.
+course_url: "https://ocw.mit.edu/courses/21g-412-advanced-german-literature-culture-madness-murder-mysteries-fall-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-412-advanced-german-literature-culture-madness-murder-mysteries-fall-2014/2c7dc9b1ee410284f584c731a1ebaee4_21g.412f14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-18-782-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.782"
+cross_listed_codes: []
+course_title: "Introduction to Arithmetic Geometry"
+course_slug: "18-782-introduction-to-arithmetic-geometry-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Andrew V. Sutherland"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is an introduction to arithmetic geometry, a subject that lies at the intersection of algebraic geometry and number theory. Its primary motivation is the study of classical  from the modern perspective of algebraic geometry.
+course_url: "https://ocw.mit.edu/courses/18-782-introduction-to-arithmetic-geometry-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/18-782-introduction-to-arithmetic-geometry-fall-2013/9bd560220dd26c30789344c80171e4e7_18-782f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

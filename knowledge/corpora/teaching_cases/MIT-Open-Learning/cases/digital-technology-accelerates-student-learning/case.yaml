@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-digital-technology-accelerates-student-learning"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Digital Technology Accelerates Student Learning"
+slug: "digital-technology-accelerates-student-learning"
+course_codes:
+  - "15.672 /15.673"
+departments:
+  - "Management (Course 15)"
+instructors:
+  - "Jared Curhan"
+digital_innovations_tools: []
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/digital-technology-accelerates-student-learning"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "f13098335628706e7fb8ec981ec30f0edb6886f7b9999bb33fe311e28d9f7fff"

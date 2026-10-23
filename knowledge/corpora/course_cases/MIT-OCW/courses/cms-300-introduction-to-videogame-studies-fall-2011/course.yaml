@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-300-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.300"
+cross_listed_codes:
+  - "CMS.841"
+course_title: "Introduction to Videogame Studies"
+course_slug: "cms-300-introduction-to-videogame-studies-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Clara Fernandez-Vara"
+subject_primary: "Game Design"
+subject_secondary:
+  - "Media Studies"
+  - "Digital Media"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course offers an introduction to the interdisciplinary study of videogames as texts through an examination of their cultural, educational, and social functions in contemporary settings. Students play and analyze videogames while reading current research and theory from a variety of sources in the sciences, social sciences, humanities, and industry. Assignments focus on game analysis in the context of the theories discussed in class. Class meetings involve regular reading, writing, and presentation exercises. No prior programming experience required. Students taking the graduate version complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/cms-300-introduction-to-videogame-studies-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/cms-300-introduction-to-videogame-studies-fall-2011/2454d6c2cead0cb561e07847bd06bf30_cms-300f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-961-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.961"
+cross_listed_codes: []
+course_title: "Networks, Complexity and Its Applications"
+course_slug: "mas-961-networks-complexity-and-its-applications-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Cesar Hidalgo"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Engineering"
+  - "Systems Engineering"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+  - "Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  Networks are a ubiquitous way to represent complex systems, including those in the social and economic sciences. The goal of the course is to equip students with conceptual tools that can help them understand complex systems that emerge in both nature and social systems. This is a course intended for a general audience and will discuss applications of networks and complexity to diverse systems, including epidemic spreading, social networks and the evolution of economic development.
+course_url: "https://ocw.mit.edu/courses/mas-961-networks-complexity-and-its-applications-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/mas-961-networks-complexity-and-its-applications-spring-2011/1d0610c00cfb2953ed13e03338dbdcd5_mas-961s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

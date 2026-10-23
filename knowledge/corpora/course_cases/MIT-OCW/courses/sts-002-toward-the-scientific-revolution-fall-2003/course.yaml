@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-002-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.002"
+cross_listed_codes: []
+course_title: "Toward the Scientific Revolution"
+course_slug: "sts-002-toward-the-scientific-revolution-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Kaiser"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Intellectual History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Intellectual History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This subject traces the evolution of ideas about nature, and how best to study and explain natural phenomena, beginning in ancient times and continuing through the Middle Ages and the Renaissance. A central theme of the subject is the intertwining of conceptual and institutional relations within diverse areas of inquiry: cosmology, natural history, physics, mathematics, and medicine.
+course_url: "https://ocw.mit.edu/courses/sts-002-toward-the-scientific-revolution-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/sts-002-toward-the-scientific-revolution-fall-2003/40e5449c488681ba419a48557b364210_sts-002f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

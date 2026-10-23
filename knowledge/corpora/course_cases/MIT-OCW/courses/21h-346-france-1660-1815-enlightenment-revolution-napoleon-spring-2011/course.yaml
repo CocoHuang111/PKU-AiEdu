@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-346-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.346"
+cross_listed_codes: []
+course_title: "France, 1660-1815: Enlightenment, Revolution, Napoleon"
+course_slug: "21h-346-france-1660-1815-enlightenment-revolution-napoleon-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeffrey S. Ravel"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course covers French politics, culture, and society from Louis XIV to Napoleon Bonaparte. Attention is given to the growth of the central state, the beginnings of a modern consumer society, the Enlightenment, the French Revolution, including its origins, and the rise and fall of Napoleon.
+course_url: "https://ocw.mit.edu/courses/21h-346-france-1660-1815-enlightenment-revolution-napoleon-spring-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/21h-346-france-1660-1815-enlightenment-revolution-napoleon-spring-2011/a59ec821a34a2737d3b7f4ff0d7ab112_21h-346s11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

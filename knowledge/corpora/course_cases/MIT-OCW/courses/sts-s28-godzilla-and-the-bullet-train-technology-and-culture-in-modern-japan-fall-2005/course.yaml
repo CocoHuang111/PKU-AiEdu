@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-s28-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.S28"
+cross_listed_codes: []
+course_title: "Godzilla and the Bullet Train: Technology and Culture in Modern Japan"
+course_slug: "sts-s28-godzilla-and-the-bullet-train-technology-and-culture-in-modern-japan-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Takashi Nishiyama"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments with Examples"
+description: |
+  This course explores how and why Japan, a late-comer to modernization, emerged as an industrial power and the world’s second-richest nation, notwithstanding its recent difficulties. We are particularly concerned with the historical development of technology in Japan especially after 1945, giving particular attention to the interplays between business, ideology, technology, and culture. We will discuss key historical phenomena that symbolize modern Japan as a technological power in the world; specific examples to be discussed in class include kamikaze aircraft, the Shinkansen high-speed bullet train, Godzilla, and anime.
+course_url: "https://ocw.mit.edu/courses/sts-s28-godzilla-and-the-bullet-train-technology-and-culture-in-modern-japan-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/sts-s28-godzilla-and-the-bullet-train-technology-and-culture-in-modern-japan-fall-2005/0152916b49e4632245e4c44653e500c8_sts-s28f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

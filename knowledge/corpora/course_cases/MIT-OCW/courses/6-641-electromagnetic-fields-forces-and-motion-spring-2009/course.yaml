@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-6-641-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.641"
+cross_listed_codes: []
+course_title: "Electromagnetic Fields, Forces, and Motion"
+course_slug: "6-641-electromagnetic-fields-forces-and-motion-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Markus Zahn"
+subject_primary: "Physics"
+subject_secondary:
+  - "Electromagnetism"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course examines electric and magnetic quasistatic forms of Maxwell’s equations applied to dielectric, conduction, and magnetization boundary value problems. Topics covered include: electromagnetic forces, force densities, and stress tensors, including magnetization and polarization; thermodynamics of electromagnetic fields, equations of motion, and energy conservation; applications to synchronous, induction, and commutator machines; sensors and transducers; microelectromechanical systems; propagation and stability of electromechanical waves; and charge transport phenomena. Acknowledgments The instructor would like to thank Thomas Larsen and Matthew Pegler for transcribing into LaTeX the homework problems, homework solutions, and exam solutions.
+course_url: "https://ocw.mit.edu/courses/6-641-electromagnetic-fields-forces-and-motion-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/6-641-electromagnetic-fields-forces-and-motion-spring-2009/bd67f30b375599255596de1d4fece37a_6-641s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

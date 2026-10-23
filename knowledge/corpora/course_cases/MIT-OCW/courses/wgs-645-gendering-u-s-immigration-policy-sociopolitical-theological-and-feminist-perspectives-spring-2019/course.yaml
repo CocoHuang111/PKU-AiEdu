@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-645-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.645"
+cross_listed_codes: []
+course_title: "Gendering U.S. Immigration Policy: Sociopolitical, Theological and Feminist Perspectives"
+course_slug: "wgs-645-gendering-u-s-immigration-policy-sociopolitical-theological-and-feminist-perspectives-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Choi Hee An"
+  - "Dr. Philip Kretsedemas"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+  - "Public Administration"
+  - "Public Policy"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments with Examples"
+description: |
+  This course uses theories of gender to explore sociopolitical, ethical and theological perspectives on immigration policy, with a focus on the U.S. The course begins with an overview of global developments in the feminization of migration and ethical and policy dilemmas that are specific to the current era.
+course_url: "https://ocw.mit.edu/courses/wgs-645-gendering-u-s-immigration-policy-sociopolitical-theological-and-feminist-perspectives-spring-2019/"
+image_url: |
+  https://ocw.mit.edu/courses/wgs-645-gendering-u-s-immigration-policy-sociopolitical-theological-and-feminist-perspectives-spring-2019/1b3cbed49f4af7e197972b84d65bbf02_wgs-645s19.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

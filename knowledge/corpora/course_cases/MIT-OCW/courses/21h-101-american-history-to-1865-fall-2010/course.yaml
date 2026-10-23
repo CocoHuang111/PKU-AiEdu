@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-101-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.101"
+cross_listed_codes: []
+course_title: "American History to 1865"
+course_slug: "21h-101-american-history-to-1865-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Pauline Maier"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course provides a basic history of American social, economic, and political development from the colonial period through the Civil War. It examines the colonial heritages of Spanish and British America; the American Revolution and its impact; the establishment and growth of the new nation; and the Civil War, its background, character, and impact. Readings include writings of the period by J. Winthrop, T. Paine, T. Jefferson, J. Madison, W. H. Garrison, G. Fitzhugh, H. B. Stowe, and A. Lincoln.
+course_url: "https://ocw.mit.edu/courses/21h-101-american-history-to-1865-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/21h-101-american-history-to-1865-fall-2010/bcf129226a4257c801e79113c94455c2_21h-101f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

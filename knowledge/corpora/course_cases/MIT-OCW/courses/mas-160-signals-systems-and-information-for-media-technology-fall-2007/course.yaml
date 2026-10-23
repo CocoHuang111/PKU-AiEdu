@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-160-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.160"
+cross_listed_codes:
+  - "MAS.510"
+  - "MAS.511"
+course_title: "Signals, Systems and Information for Media Technology"
+course_slug: "mas-160-signals-systems-and-information-for-media-technology-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Rosalind W. Picard"
+  - "Dr. V. Michael Bove"
+  - "Dr. Quinn Smithwick"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Telecommunications"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Fine Arts"
+  - "Media Studies"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+          - "Telecommunications"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This class teaches the fundamentals of signals and information theory with emphasis on modeling audio/visual messages and physiologically derived signals, and the human source or recipient. Topics include linear systems, difference equations, Z-transforms, sampling and sampling rate conversion, convolution, filtering, modulation, Fourier analysis, entropy, noise, and Shannon’s fundamental theorems. Additional topics may include data compression, filter design, and feature detection. The undergraduate subject MAS.160 meets with the two half-semester graduate subjects MAS.510 and MAS.511, but assignments differ.
+course_url: "https://ocw.mit.edu/courses/mas-160-signals-systems-and-information-for-media-technology-fall-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/mas-160-signals-systems-and-information-for-media-technology-fall-2007/5d42511881d1fb08d4a504eda70b78e4_mas-160f07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

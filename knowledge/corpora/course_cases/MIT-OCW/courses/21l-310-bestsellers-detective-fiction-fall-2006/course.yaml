@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-310-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.310"
+cross_listed_codes: []
+course_title: "Bestsellers: Detective Fiction"
+course_slug: "21l-310-bestsellers-detective-fiction-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Stephen Tapscott"
+subject_primary: "Literature"
+subject_secondary:
+  - "Creative Writing"
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course focuses on works that caught the popular imagination in the past or present. It emphasizes texts that are related by genre, theme or style. The books studied in this course vary from semester to semester, and the topic for Fall 2006 is Detective Fictions.
+course_url: "https://ocw.mit.edu/courses/21l-310-bestsellers-detective-fiction-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21l-310-bestsellers-detective-fiction-fall-2006/d8b7b9092df387f4cdcdffc95e1a19f0_21l-310f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

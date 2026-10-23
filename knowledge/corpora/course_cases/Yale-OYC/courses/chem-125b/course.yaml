@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-chem-125b"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "CHEM 125b"
+course_title: "Freshman Organic Chemistry II"
+course_slug: "chem-125b"
+department_path: "chemistry"
+professors:
+  - "J. Michael McBride Richard M. Colgate Professor Emeritus of Chemistry"
+course_url: "https://oyc.yale.edu/chemistry/chem-125b"
+language: "en"
+description: |
+  This is a continuation of Freshman Organic Chemistry I (CHEM 125a), the introductory course on current theories of structure and mechanism in organic chemistry for students with excellent preparation in chemistry and physics. This semester treats simple and complex reaction mechanisms, spectroscopy, organic synthesis, and some molecules of nature.
+license_url: ""
+session_count: 38
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

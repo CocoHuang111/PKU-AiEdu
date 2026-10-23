@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-8-325-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.325"
+cross_listed_codes: []
+course_title: "Relativistic Quantum Field Theory III"
+course_slug: "8-325-relativistic-quantum-field-theory-iii-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Frank Wilczek"
+subject_primary: "Physics"
+subject_secondary:
+  - "Particle Physics"
+  - "Quantum Mechanics"
+  - "Relativity"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Particle Physics"
+          - "Quantum Mechanics"
+          - "Relativity"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This is the third and last term of the quantum field theory sequence. The course is devoted to the standard model of particle physics, including both its conceptual foundations and its specific structure, and to some current research frontiers that grow immediately out of it.
+course_url: "https://ocw.mit.edu/courses/8-325-relativistic-quantum-field-theory-iii-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/8-325-relativistic-quantum-field-theory-iii-spring-2003/274b9c5f498d2866223ea3557350d3de_8-32s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

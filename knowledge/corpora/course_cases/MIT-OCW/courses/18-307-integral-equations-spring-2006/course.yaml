@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-18-307-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.307"
+cross_listed_codes: []
+course_title: "Integral Equations"
+course_slug: "18-307-integral-equations-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Dionisios Margetis"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Calculus"
+  - "Differential Equations"
+  - "Mathematical Analysis"
+  - "Science"
+  - "Physics"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course emphasizes concepts and techniques for solving integral equations from an applied mathematics perspective. Material is selected from the following topics: Volterra and Fredholm equations, Fredholm theory, the Hilbert-Schmidt theorem; Wiener-Hopf Method; Wiener-Hopf Method and partial differential equations; the Hilbert Problem and singular integral equations of Cauchy type; inverse scattering transform; and group theory. Examples are taken from fluid and solid mechanics, acoustics, quantum mechanics, and other applications.
+course_url: "https://ocw.mit.edu/courses/18-307-integral-equations-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/18-307-integral-equations-spring-2006/812c464b351386889e4437585d1b76c5_18-307s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

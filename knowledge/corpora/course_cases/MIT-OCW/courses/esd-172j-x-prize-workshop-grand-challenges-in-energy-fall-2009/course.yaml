@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-172j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.172J"
+cross_listed_codes:
+  - "EC.421J"
+course_title: "X PRIZE Workshop: Grand Challenges in Energy"
+course_slug: "esd-172j-x-prize-workshop-grand-challenges-in-energy-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+  - "Edgerton Center"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Erika Wagner"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Innovation"
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Videos"
+description: |
+  In 2004, the Ansari X PRIZE for suborbital spaceflight captured the public’s imagination and revolutionized an industry, leveraging a $10M prize purse into over $100M in innovation. Building from that success, the X PRIZE Foundation is now developing new prizes to focus innovation around “Grand Challenge” themes, including genomics, energy, healthcare, and education. This course will examine the intersection of incentives and innovation, drawing on economic models, historic examples, and recent experience of the X PRIZE Foundation to help develop a future prize in Energy Storage Technologies.
+course_url: "https://ocw.mit.edu/courses/esd-172j-x-prize-workshop-grand-challenges-in-energy-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/esd-172j-x-prize-workshop-grand-challenges-in-energy-fall-2009/a9faff9c8b6ac023e7d9726d9a4d3d80_esd-172jf09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-1-061-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.061"
+cross_listed_codes:
+  - "1.61"
+course_title: "Transport Processes in the Environment"
+course_slug: "1-061-transport-processes-in-the-environment-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Heidi Nepf"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Environmental Engineering"
+  - "Aquatic Sciences and Water Quality Control"
+  - "Hydrology and Water Resource Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Environmental Engineering"
+        specialties:
+          - "Aquatic Sciences and Water Quality Control"
+          - "Hydrology and Water Resource Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Simulation Videos"
+description: |
+  This class serves as an introduction to mass transport in environmental flows, with emphasis given to river and lake systems. The class will cover the derivation and solutions to the differential form of mass conservation equations. Class topics to be covered will include: molecular and turbulent diffusion, boundary layers, dissolution, bed-water exchange, air-water exchange and particle transport.
+course_url: "https://ocw.mit.edu/courses/1-061-transport-processes-in-the-environment-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/1-061-transport-processes-in-the-environment-fall-2008/c7c2146d0db632cbdd748084dbe0765f_1-061f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

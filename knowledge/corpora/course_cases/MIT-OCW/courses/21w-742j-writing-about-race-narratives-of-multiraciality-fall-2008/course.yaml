@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-742j-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.742J"
+cross_listed_codes:
+  - "WGS.231J"
+course_title: "Writing About Race: Narratives of Multiraciality"
+course_slug: "21w-742j-writing-about-race-narratives-of-multiraciality-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Kym L. Ragusa"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Creative Writing"
+  - "Fiction"
+  - "Nonfiction Prose"
+  - "Social Science"
+  - "Anthropology"
+  - "Ethnography"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Fiction"
+          - "Nonfiction Prose"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Ethnography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  In this course we will read essays, novels, memoirs, and graphic texts, and view documentary and experimental films and videos which explore race from the standpoint of the multiracial. Examining the varied work of multiracial authors and filmmakers such as Danzy Senna, Ruth Ozeki, Kip Fulbeck, James McBride and others, we will focus not on how multiracial people are seen or imagined by the dominant culture, but instead on how they represent themselves. How do these authors approach issues of family, community, nation, language and history? What can their work tell us about the complex interconnections between race, gender, class, sexuality, and citizenship? Is there a relationship between their experiences of multiraciality and a willingness to experiment with form and genre? In addressing these and other questions, we will endeavor to think and write more critically and creatively about race as a social category and a lived experience.
+course_url: "https://ocw.mit.edu/courses/21w-742j-writing-about-race-narratives-of-multiraciality-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/21w-742j-writing-about-race-narratives-of-multiraciality-fall-2008/02fc34488627c861d3270c955b200858_21w-742jf08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

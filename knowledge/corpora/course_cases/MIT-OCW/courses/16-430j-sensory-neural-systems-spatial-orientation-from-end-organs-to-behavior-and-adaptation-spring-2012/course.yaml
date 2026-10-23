@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-16-430j-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.430J"
+cross_listed_codes:
+  - "HST.514J"
+course_title: "Sensory-Neural Systems: Spatial Orientation from End Organs to Behavior and Adaptation"
+course_slug: "16-430j-sensory-neural-systems-spatial-orientation-from-end-organs-to-behavior-and-adaptation-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Charles M. Oman"
+  - "Dr. Laurence R. Young"
+  - "Dr. Daniel M. Merfeld"
+  - "Dr. Kathleen Cullen"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Bioastronautics"
+  - "Science"
+  - "Biology"
+  - "Neurobiology"
+  - "Neuroscience"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Bioastronautics"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+description: |
+  This course introduces sensory systems and multi-sensory fusion using the vestibular and spatial orientation systems as a model. Topics range from end organ dynamics to neural responses, to sensory integration, to behavior, and adaptation, with particular application to balance, posture and locomotion under normal gravity and space conditions. Depending upon the background and interests of the students, advanced term project topics might include motion sickness, astronaut adaptation, artificial gravity, lunar surface locomotion, vestibulo-cardiovascular responses, vestibular neural prostheses, or other topics of interest.
+course_url: "https://ocw.mit.edu/courses/16-430j-sensory-neural-systems-spatial-orientation-from-end-organs-to-behavior-and-adaptation-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/16-430j-sensory-neural-systems-spatial-orientation-from-end-organs-to-behavior-and-adaptation-spring-2012/2e4b3a5d1ebc5fa509ac147f6b3e5cf2_16-430js12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

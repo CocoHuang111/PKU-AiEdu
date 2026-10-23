@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-930j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.930J"
+cross_listed_codes:
+  - "STS.449J"
+course_title: "Social Studies of Bioscience and Biotech"
+course_slug: "hst-930j-social-studies-of-bioscience-and-biotech-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Byron Good"
+  - "Prof. Mary-Jo DelVecchio Good"
+  - "Prof. Michael M.J. Fischer"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Engineering"
+  - "Biological Engineering"
+  - "Biotechnology"
+  - "Health and Medicine"
+  - "Biomedical Enterprise"
+  - "Biomedicine"
+  - "Social Science"
+  - "Economics"
+  - "Political Economy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biotechnology"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Enterprise"
+        specialties: []
+      - name: "Biomedicine"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Political Economy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  In this course, social, ethical and clinical issues associated with the development of new biotechnologies and their integration into clinical practice is discussed. Basic scientists, clinicians, bioethicists, and social scientists present on the following four general topics: changing political economy of biotech research; problems associated with the adaption of new biotechnologies and findings from molecular biology for clinical settings; the ethical issues that emerge from clinical research and clinical use of new technologies; and the broader social ethics of access and inequality.
+course_url: "https://ocw.mit.edu/courses/hst-930j-social-studies-of-bioscience-and-biotech-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-930j-social-studies-of-bioscience-and-biotech-fall-2005/b9c558877d2b77deddf4929b8b943e42_hst-930jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

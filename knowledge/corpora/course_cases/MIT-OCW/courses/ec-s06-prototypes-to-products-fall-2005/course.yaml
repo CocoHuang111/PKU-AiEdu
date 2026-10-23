@@ -1,0 +1,90 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-s06-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.S06"
+cross_listed_codes: []
+course_title: "Prototypes to Products"
+course_slug: "ec-s06-prototypes-to-products-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Mr. Andrew Heafitz"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+  - "Systems Engineering"
+  - "Systems Design"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Economics"
+  - "Developmental Economics"
+  - "International Development"
+  - "Sociology"
+  - "Community Development"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+          - "International Development"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Lecture Notes"
+  - "Other Video"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  For students and teams who have started a sustainable-development project in D-Lab (EC.701J or EC.720J), Product Engineering Processes (2.009), or elsewhere, this class provides a setting to continue developing projects for field implementation. Topics covered include prototyping techniques, materials selection, design-for-manufacturing, field-testing, and project management. All classwork will directly relate to the students’ projects, and the instructor will consult on the projects during weekly lab time. There are no exams. Teams are encouraged to enroll together.
+course_url: "https://ocw.mit.edu/courses/ec-s06-prototypes-to-products-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/ec-s06-prototypes-to-products-fall-2005/7db5ed83a1414498ebf6bcc008cf02bd_ec-s06f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

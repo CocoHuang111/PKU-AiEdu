@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-11-027-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.027"
+cross_listed_codes: []
+course_title: "Global Cityscope - Disaster Planning and Post-Disaster Rebuilding and Recovery"
+course_slug: "11-027-global-cityscope-disaster-planning-and-post-disaster-rebuilding-and-recovery-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Cherie Miot Abbanat"
+subject_primary: "Climate"
+subject_secondary:
+  - "Technology"
+  - "Engineering"
+  - "Civil Engineering"
+  - "Environmental Engineering"
+  - "Social Science"
+  - "Urban Studies"
+  - "Housing Development"
+  - "Regional Planning"
+  - "Urban Planning"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+      - name: "Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+      - name: "Environmental Engineering"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Housing Development"
+          - "Regional Planning"
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class is designed to expose you to the cycles of disasters, the roots of emergency planning in the U.S., how to understand and map vulnerabilities, and expose you to the disaster planning in different contexts, including in developing countries.
+course_url: "https://ocw.mit.edu/courses/11-027-global-cityscope-disaster-planning-and-post-disaster-rebuilding-and-recovery-spring-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/11-027-global-cityscope-disaster-planning-and-post-disaster-rebuilding-and-recovery-spring-2017/ca529a7603d8746e549d7a17c3f437fa_11-027S17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,53 @@
+schema_version: "1.0"
+course_id: "mitocw-res-env-009-january-iap-2026"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.ENV-009"
+cross_listed_codes: []
+course_title: "CS3 Lecture Series: Fundamentals of Climate Science and Policy"
+course_slug: "res-env-009-cs3-lecture-series-fundamentals-of-climate-science-and-policy-january-iap-2026"
+term: "January IAP"
+year: 2026
+as_taught_in: "January IAP 2026"
+language: "en"
+departments: []
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "MIT Center for Sustainability Science and Strategy"
+subject_primary: "Climate"
+subject_secondary: []
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  IAP 2026 provides members of the MIT community with a unique opportunity to participate in a wide variety of activities, including this lecture series on climate change produced by MIT’s Center for Sustainability Science and Strategy (CS3) . Please join CS3 during IAP 2026 to learn more about the science of climate change and policies aimed at stabilizing the global climate.
+course_url: "https://ocw.mit.edu/courses/res-env-009-cs3-lecture-series-fundamentals-of-climate-science-and-policy-january-iap-2026/"
+image_url: |
+  https://ocw.mit.edu/courses/res-env-009-cs3-lecture-series-fundamentals-of-climate-science-and-policy-january-iap-2026/mit_res_env_009_iap26.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

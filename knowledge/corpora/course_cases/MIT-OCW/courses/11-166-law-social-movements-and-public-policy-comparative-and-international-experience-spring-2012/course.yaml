@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-11-166-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.166"
+cross_listed_codes:
+  - "11.496"
+course_title: "Law, Social Movements, and Public Policy: Comparative and International Experience"
+course_slug: "11-166-law-social-movements-and-public-policy-comparative-and-international-experience-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Balakrishnan Rajagopal"
+subject_primary: "Economics"
+subject_secondary:
+  - "Labor Economics"
+  - "Political Economy"
+  - "Legal Studies"
+  - "Political Science"
+  - "Comparative Politics"
+  - "Sociology"
+  - "Social Justice"
+  - "Society"
+  - "Gender Studies"
+  - "The Developing World"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Labor Economics"
+          - "Political Economy"
+      - name: "Legal Studies"
+        specialties: []
+      - name: "Political Science"
+        specialties:
+          - "Comparative Politics"
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course studies the interaction between law, courts, and social movements in shaping domestic and global public policy. Examines how groups mobilize to use law to affect change and why they succeed and fail. The class uses case studies to explore the interplay between law, social movements, and public policy in current areas such as gender, race, labor, trade, environment, and human rights. Finally, it introduces the theories of public policy, social movements, law and society, and transnational studies.
+course_url: "https://ocw.mit.edu/courses/11-166-law-social-movements-and-public-policy-comparative-and-international-experience-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/11-166-law-social-movements-and-public-policy-comparative-and-international-experience-spring-2012/e7f04f19f6030f50885145747e3910d4_11-166s12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

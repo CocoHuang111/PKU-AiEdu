@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-12-803-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.803"
+cross_listed_codes: []
+course_title: "Quasi-Balanced Circulations in Oceans and Atmospheres"
+course_slug: "12-803-quasi-balanced-circulations-in-oceans-and-atmospheres-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Kerry Emanuel"
+subject_primary: "Ocean Engineering"
+subject_secondary:
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Geophysics"
+  - "Oceanography"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geophysics"
+          - "Oceanography"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course introduces the students to dynamics of large-scale circulations in oceans and atmospheres. Basic concepts include mass and momentum conservation, hydrostatic and geostrophic balance, and pressure and other vertical coordinates. It covers the topics of fundamental conservation and balance principles for large-scale flow, generation and dissipation of quasi-balanced eddies, as well as equilibrated quasi-balanced systems. Examples of oceanic and atmospheric quasi-balanced flows, computational models, and rotating tank experiments can be found in the accompaniment laboratory course 12.804, Large-scale Flow Dynamics Lab.
+course_url: "https://ocw.mit.edu/courses/12-803-quasi-balanced-circulations-in-oceans-and-atmospheres-fall-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/12-803-quasi-balanced-circulations-in-oceans-and-atmospheres-fall-2009/f73f50329e4a594df6c0a221abeb1068_12-803f09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

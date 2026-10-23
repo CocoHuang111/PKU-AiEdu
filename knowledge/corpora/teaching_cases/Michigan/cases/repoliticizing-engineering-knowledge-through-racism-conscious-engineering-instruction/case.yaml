@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-repoliticizing-engineering-knowledge-through-racism-conscious-engineering-instruction"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "(Re)Politicizing Engineering Knowledge Through Racism-Conscious Engineering Instruction"
+slug: "repoliticizing-engineering-knowledge-through-racism-conscious-engineering-instruction"
+source_url: "https://crlt.umich.edu/repoliticizing-engineering-knowledge-through-racism-conscious-engineering-instruction"
+language: "en"
+published: null
+awarded_year: "2023"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "ea638df5bde0fcd77f8d340977dad963aa7f15fe88745a8a81ef33d9fc95e13d"

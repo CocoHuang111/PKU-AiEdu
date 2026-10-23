@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-6-450-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.450"
+cross_listed_codes: []
+course_title: "Principles of Digital Communication I"
+course_slug: "6-450-principles-of-digital-communication-i-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Soheil Feizi-Khankandi"
+  - "Prof. Muriel Médard"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Digital Systems"
+  - "Telecommunications"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Telecommunications"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The course serves as an introduction to the theory and practice behind many of today’s communications systems. 6.450 forms the first of a two-course sequence on digital communication. The second class, 6.451 Principles of Digital Communication II , is offered in the spring. Topics covered include: digital communications at the block diagram level, data compression, Lempel-Ziv algorithm, scalar and vector quantization, sampling and aliasing, the Nyquist criterion, PAM and QAM modulation, signal constellations, finite-energy waveform spaces, detection, and modeling and system design for wireless communication.
+course_url: "https://ocw.mit.edu/courses/6-450-principles-of-digital-communication-i-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/6-450-principles-of-digital-communication-i-fall-2009/63446f600f68d7b6d34a616b025bb9c9_6-450f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

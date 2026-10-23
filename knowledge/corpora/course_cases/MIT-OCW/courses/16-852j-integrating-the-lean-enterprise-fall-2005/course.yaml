@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-16-852j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.852J"
+cross_listed_codes:
+  - "ESD.61J"
+course_title: "Integrating the Lean Enterprise"
+course_slug: "16-852j-integrating-the-lean-enterprise-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Deborah Nightingale"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Project Management"
+  - "Supply Chain Management"
+  - "Engineering"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Project Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This class addresses some of the important issues involved with the planning, development, and implementation of lean enterprises. People, technology, process, and management dimensions of an effective lean manufacturing company are considered in a unified framework. Particular emphasis is placed on the integration of these dimensions across the entire enterprise, including product development, production, and the extended supply chain. Analysis tools as well as future trends and directions are explored. A team project is a key component of this subject.
+course_url: "https://ocw.mit.edu/courses/16-852j-integrating-the-lean-enterprise-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/16-852j-integrating-the-lean-enterprise-fall-2005/4fbaac4d6d3620d103291bee67581a1f_16-852jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

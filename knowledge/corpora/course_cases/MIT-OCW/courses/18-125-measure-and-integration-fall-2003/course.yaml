@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-18-125-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.125"
+cross_listed_codes: []
+course_title: "Measure and Integration"
+course_slug: "18-125-measure-and-integration-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jeff Viaclovsky"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This graduate-level course covers Lebesgue's integration theory with applications to analysis, including an introduction to convolution and the Fourier transform.
+course_url: "https://ocw.mit.edu/courses/18-125-measure-and-integration-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/18-125-measure-and-integration-fall-2003/70d02cb821c5e62afd7fbbc2ffe49ab4_18-125f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

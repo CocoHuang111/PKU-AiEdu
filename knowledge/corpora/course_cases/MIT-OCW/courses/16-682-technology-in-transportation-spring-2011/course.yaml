@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-16-682-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.682"
+cross_listed_codes: []
+course_title: "Technology in Transportation"
+course_slug: "16-682-technology-in-transportation-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sanjay Sarma"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Guidance and Control Systems"
+  - "Propulsion Systems"
+  - "Mechanical Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Guidance and Control Systems"
+          - "Propulsion Systems"
+      - name: "Mechanical Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to the transportation industry’s major technical challenges and considerations. For upper level undergraduates interested in learning about the transportation field in a broad but quantitative manner. Topics include road vehicle engineering, internal combustion engines, batteries and motors, electric and hybrid powertrains, urban and high speed rail transportation, water vessels, aircraft types and aerodynamics, radar, navigation, GPS, GIS. Students will complete a project on a subject of their choosing.
+course_url: "https://ocw.mit.edu/courses/16-682-technology-in-transportation-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/16-682-technology-in-transportation-spring-2011/e79220e09bfba790b6fa79d4fbedc270_16-682s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

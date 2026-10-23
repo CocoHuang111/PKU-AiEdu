@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-3-53-spring-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.53"
+cross_listed_codes: []
+course_title: "Electrochemical Processing of Materials"
+course_slug: "3-53-electrochemical-processing-of-materials-spring-2001"
+term: "Spring"
+year: 2001
+as_taught_in: "Spring 2001"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Donald Sadoway"
+subject_primary: "Electricity"
+subject_secondary:
+  - "Fuel Cells"
+  - "Engineering"
+  - "Chemical Engineering"
+  - "Materials Science and Engineering"
+  - "Science"
+  - "Physics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Electricity"
+        specialties: []
+      - name: "Fuel Cells"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers a variety of topics concerning superconducting magnets, including thermodynamic and transport properties of aqueous and nonaqueous electrolytes, the electrode/electrolyte interface, and the kinetics of electrode processes. It also covers electrochemical characterization with regards to d.c. techniques (controlled potential, controlled current) and a.c. techniques (voltametry and impedance spectroscopy). Applications of the following will also be discussed: electrowinning, electrorefining, electroplating, and electrosynthesis, as well as electrochemical power sources (batteries and fuel cells).
+course_url: "https://ocw.mit.edu/courses/3-53-electrochemical-processing-of-materials-spring-2001/"
+image_url: "https://ocw.mit.edu/courses/3-53-electrochemical-processing-of-materials-spring-2001/e7877062659afaa150965141f24f9e4b_3-53s01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

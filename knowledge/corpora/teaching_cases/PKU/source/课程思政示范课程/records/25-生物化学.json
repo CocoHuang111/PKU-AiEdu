@@ -1,0 +1,542 @@
+{
+  "catalog": {
+    "td": "昌增益 秦咏梅 肖俊宇 张哲 陈晓伟",
+    "KCDM": "D0CE961D440F8282E050007F0100058E",
+    "IMG": "/dad/tp/0006165541/jxjbxx/wdkc/afa55ff6-a161-47ab-8728-d0078ebbe386.jpg",
+    "DADM": "D0CE72E45DF0B27CE050007F0100030C",
+    "JSXM": "昌增益",
+    "KCMC": "生物化学",
+    "ROW_ID": 25
+  },
+  "base": {
+    "sfxz": 1,
+    "kcdm": "D0CE961D440F8282E050007F0100058E",
+    "kcmc": "生物化学",
+    "kksj": null,
+    "ssxk": null,
+    "sszy": null,
+    "xf": null,
+    "xs": null,
+    "cjr": "0006165541",
+    "cjsj": "2021-11-15T14:26:32.000+08:00",
+    "xgsj": "2021-11-15T17:26:53.000+08:00",
+    "kkjd": null,
+    "skjs": "0006165541",
+    "sfbxkc": "1",
+    "skyx": "00011",
+    "kcjj": "《生物化学》是研究生命有机体内化学分子与化学反应的基础科学，从分子水平探讨生命现象的本质。它是全球生命科学专业本科生的一门重要的专业基础课，旨在揭示机体内那些“无生命”的分子（如蛋白质、核酸、糖类和脂类等）是通过怎样的相互作用而产生独特生命现象的，并用统一的化学术语来解释多种多样生命形式后面的统一规律。为培养学生的国际视野，我们开展全英文教学，即采用最新英文原版教材《Lehninger Principles of Biochemistry》、课程讲授语言以及教学课件、随堂测验、考试等环节均完全使用英语。该教材从生化发展历史和科学研究等角度对该领域已有成就进行了精彩总结和演绎。",
+    "img": "/dad/tp/0006165541/jxjbxx/wdkc/afa55ff6-a161-47ab-8728-d0078ebbe386.jpg",
+    "zgh": null,
+    "jsxm": null,
+    "yxmc": null,
+    "yxdm": null,
+    "kckdm": null,
+    "fjList": [
+
+    ]
+  },
+  "detail": {
+    "id": "D0D13E687401AE21E050007F010069BC",
+    "cjr": "0006165541",
+    "cjsj": "2021-11-15T17:26:53.000+08:00",
+    "zhxgr": "0006165541",
+    "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+    "rsylj": "<p>近年来，课程思政教育已在各高校各学科全面推进。2020年，教育部在印发《高等学校课程思政建设指导纲要》中明确提出&ldquo;理学类专业课程要注重科学思维方法的训练和科学伦理的教育，培养学生探索未知、追求真理、勇攀科学高峰的责任感和使命感&rdquo;。推进课程思政建设是落实立德树人根本任务的战略举措。《生物化学》是生命科学专业本科生重要的基础理论课，其中知识点蕴涵着丰富的思政元素。</p>\n<p>&nbsp;20世纪以来，随着物理学、化学、数学、计算机科学及相关理论和技术的发展，提供了人们认识生命活动规律的新技术及新方法，促进了生命科学的迅猛发展，知识总量呈现爆炸式的增长，《生物化学》也不例外，成为了一门发展极为迅速的学科。《生物化学》授课内容中有很多重要理论是由西方人发现或创立的，但在生物化学发展的历史长河中，中国科学家也做出了杰出的贡献。在北京大学双一流学科专业建设的背景下，将课程思政落实到生物化学课程教学中具有重要意义。我们通过讲述中国生化发展史，深入挖掘蕴含其中的思想政治教育资源，坚持在知识传授中实现价值引领。我们结合自身的科研经历，在课程思政背景下进行教学设计与实践，引导学生如何提出有价值的科学问题、研究问题进而解决问题。</p>",
+    "rsyljfjlj": null,
+    "rsyljfjmc": null,
+    "kcmb": "<p>《生物化学》是研究生命有机体内化学分子与化学反应的基础科学，从分子水平探讨生命现象的本质。它是全球生命科学专业本科生的一门重要的专业基础课，旨在揭示机体内那些&ldquo;无生命&rdquo;的分子（如蛋白质、核酸、糖类和脂类等）是通过怎样的相互作用而产生独特生命现象的，并用统一的化学术语来解释多种多样生命形式后面的统一规律。《生物化学》是生命科学专业本科生重要的基础理论课，其中知识点蕴涵着丰富的思政元素。在北京大学双一流学科专业建设的背景下，将课程思政落实到生物化学课程教学中具有重要意义。教师在授课内容上不拘泥于课本知识，还涉及生化学科的发展历史，特别是中国生化发展历史（如中国学者在胰岛素合成，蛋白质变性等领域取得的国际水准学术成果）。教师给学生介绍获取知识点的科学研究过程，引导学生主动进行认真的思考并能提出好的科学问题，帮助学生在正确学习目标的指导下培养爱国情怀、提升学习的能力和创新意识。</p>",
+    "jxff": "<p>一、课程结合教材对科学研究的结果、过程、已经发现的和尚未被发现的科学问题进行讲授。注重引导学生主动思考，并学习提出好的科学问题。教师也将结合自身科研工作进展，向学生讲述科学问题发现和研究的思路、过程等，增加学生对科学家们的工作的真实体会。&nbsp;<br />二、鼓励学生提问。提出好的科学问题是开展科学研究工作的第一步，因此训练并鼓励学生在课堂学习和阅读文献之后尝试提出有价值的科学问题是该课程的一个创举。学生所提的每一个问题如获得老师认可，将公布给全班同学，并在其最终成绩里加1分。&nbsp;<br />三、特别强调学科的发展历史。特别注意在教学中融入反映学科发展历史的一些重大科学发现的过程。在小班课上，强调让学生阅读并口头报告经典英文文献，即那些获得诺贝尔奖项的工作。透过对这类文献的阅读和讨论，使学生领悟科学研究的真谛并从中体会到科研工作的魅力，认识这门学科发展的历史和现状，将历史观的培养和开拓其国际视野的重要性根植于学生的脑海。 &nbsp;</p>",
+    "pjfa": "<p>根据课程内容安排，我们采用多种方式进行考核，包括：课堂小测验、课后提问、文献研讨、期中考试及期未考试。平时成绩占20%，期中和期末考试成绩各占40%。<br />学生所提的每一个问题如获得老师认可，将公布给全班同学，并在其最终成绩里加1分。 这些多样化的考核方式激发学生的学习兴趣、培养了他们的学术素养和综合能力。</p>",
+    "xgyq": "<p>授课中强调做科学先做人，要求格外认真严肃对待实验结果，坚决杜绝作假、抄袭等学术不端行为。哪怕是实验课上的小实验也实事求是的呈现实验结果。</p>",
+    "jxffjal": "<p>&nbsp;通过回顾中国科学家在世界上首次合成牛胰岛素的历程，以历史和科学的眼光重温这一重大成就，帮助学生在正确学习目标的指导下培养爱国情怀、提升学习的能力和创新意识。我们的学习心得总结为以下四点：1）科学发现离不开时代的机遇与挑战； 2）科学研究在困境中谋突破、求创新；3）科学研究需要尊重科学规律；4）科学创新离不开批判性思维。</p>\n<p><strong>&nbsp; </strong>人工合成胰岛素是我国生物化学发展史上的一个重要里程碑。它实现了人工合成蛋白质的伟大目标并开创了人工合成生命分子的新时代。我们要向当年参加人工合成胰岛素研究的全体科学家致敬，学习他们为国争光、团结协作、艰苦奋斗、坚持不懈、不计名利、勇攀科学高峰的伟大精神。授课教师秦咏梅与2019级本科生张令仪合作撰写&ldquo;学习中国生化发展史,培养学生的爱国情怀&mdash;&mdash;回顾中国科学家人工合成牛胰岛素的历程&rdquo;发表于《生命的化学》, 2021年第7期，1370-1374页。</p>",
+    "jxffjalfjlj": null,
+    "jxffjalfjmc": null,
+    "xgpj": "<p>&nbsp;授课教师不仅负责本科生主干课程的完全英文教学，也参与部分研究生课程的教学工作。同时，在科研上也保持着较高的水平。他们认为在本科培养阶段加强学生从被动学习变成主动学习的意识，学会独立思考，提出好的科学问题，并通过学习去解决问题的能力，为进入实验室开展科研实践或进一步在科研道路上深造奠定基础。通过讲述中国科学家的故事，并结合自身的科研经历，在课程思政背景下进行教学设计与实践，取得良好效果。大部分同学反映课程思政引入《生物化学》教学设计对他们学习如何提出有价值的科学问题、研究问题进而解决问题这一科学探究的过程具有引导作用。</p>",
+    "kcdm": "D0CE961D440F8282E050007F0100058E",
+    "fjList": [
+
+    ]
+  },
+  "elements": [
+    {
+      "id": "D0D13E687425AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "Chapter 1 Foundations of Biochemistry",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 1,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687426AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "Chapter 2 Water, the Solvent of Life ",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 2,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687427AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "Chapter 3 Amino acids, Peptides and Proteins",
+      "zsd": null,
+      "szys": "我国生物化学家吴宪教授在蛋白质变性方面所提出的理论，具有明显的领先性和超前性，载入世界生物化学发展史。",
+      "szwd": null,
+      "jxff": null,
+      "xssx": 3,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687428AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "  Chapter 4 The Three-dimensional Structure  of Proteins ",
+      "zsd": null,
+      "szys": "我国科学家在上个世纪60年代合成胰岛素的工作。客观评价其科学难度和第一次人工合成具有活性蛋白质方面的突出成绩。",
+      "szwd": null,
+      "jxff": null,
+      "xssx": 4,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687429AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": " Chapter 5 Protein Function",
+      "zsd": null,
+      "szys": "我国科学家对几种蛋白质复合物（呼吸链复合物I和II；剪接体复合体结构等）、抗体三维结构测定的结果。\n\n授课教师肖俊宇研究人体免疫球蛋白IgM和IgA组装、转运、及与病原体蛋白的相互作用取得重要进展 (Science 367: 1014-1017)。\n\n授课教师张哲和导师研究受体酪氨酸激酶家族（包括各种生长因子受体和胰岛素受体等）和Notch受体家族的结构和功能，取得了重大成果（Science 364: 1184-1188; Cell 167: 1586-1597.e9; Cell 169: 85-95.e8; Cell 170: 483-491.e8）。\n",
+      "szwd": null,
+      "jxff": null,
+      "xssx": 5,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E68742AAE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": " Chapter 6 Enzymes",
+      "zsd": null,
+      "szys": "\n",
+      "szwd": null,
+      "jxff": null,
+      "xssx": 6,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E68742BAE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": " Chapter 7 Carbohydrates and Glycobiology",
+      "zsd": null,
+      "szys": "吴宪教授和导师一起发明了Folin-Wu法测定血糖的含量，这是生命科学领域中第一个由中国人命名的科学方法。\n\n为预防和治疗新冠肺炎，授课教师肖俊宇与合作者阐明多个高活性中和抗体（SARS-CoV-2）的分子机制（Cell. 183:1013-1023.）。\n\n",
+      "szwd": null,
+      "jxff": null,
+      "xssx": 7,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E68742CAE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "Chapter 8 Nucleotides and Nucleic Acids",
+      "zsd": null,
+      "szys": "吴瑞教授早在1971年就取得了引物延伸法进行DNA测序的成功，是后来Sanger末端终止法快速测序的基础。他是“中美生物化学联合招生项目”（CUSBEA）创始人。从1981年开始实施到1989年结束，该项目连续8年派出422人，如今，许多当时的学子已成为当今全球生命科学领域的顶尖专家。\n",
+      "szwd": null,
+      "jxff": null,
+      "xssx": 8,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E68742DAE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "  Chapter 10 Lipids",
+      "zsd": null,
+      "szys": "\n",
+      "szwd": null,
+      "jxff": null,
+      "xssx": 9,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E68742EAE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": " Chapter 11 Biological membranes",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 10,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E68742FAE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": " Chapter 13 Principle of Bioenergetics ",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 11,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687430AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": " Chapter 14 Glycolysis, Gluconeogenesis & Pentose Phosphate Pathway",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 12,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687431AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "Chapter 15 Principle of Metabolic Regulation: Glucose and Glycogen",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 13,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687432AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": " Chapter 16 The Citric Acid Cycle",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 14,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687433AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "   Chapter 17 Fatty Acid Catabolism",
+      "zsd": null,
+      "szys": "\n授课教师肖俊宇与合作者解析了人源线粒体三功能酶的冷冻电镜结构，该酶在脂肪酸-氧化途径中发挥关键催化作用。（Proc Natl Acad Sci USA.115:7039-7044）。\n\n授课教师秦咏梅和导师揭示长链脂肪酸在过氧化物酶体中的氧化机制（J Biol Chem. 274:28619-18625.）。\n",
+      "szwd": null,
+      "jxff": null,
+      "xssx": 15,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687434AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "Chapter 18 Amino Acid Oxidation & Production of Urea",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 16,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687435AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "  Chapter 19 Oxidative Phosphorylation",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 17,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687436AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "   Chapter 21 Lipid Biosynthesis",
+      "zsd": null,
+      "szys": "授课教师陈晓伟通过发现TMEM41B磷脂翻转酶的功能，提出了“脂层不平衡反应”的新概念，为未来代谢疾病的诊断及控制提出了新思路（Cell Metab. 33:1655-1670.e8.）。",
+      "szwd": null,
+      "jxff": null,
+      "xssx": 18,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687437AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": "   Chapter 22 Biosynthesis of Amino acids, Nucleotides, and Related molecules",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 19,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "D0D13E687438AE21E050007F010069BC",
+      "cjr": "0006165541",
+      "cjsj": "2021-11-15T17:26:53.000+08:00",
+      "zhxgr": "0006165541",
+      "zhxgsj": "2021-11-15T17:26:53.000+08:00",
+      "zj": " Chapter 23 Hormonal Regulation and Integration of Mammalian Metabolism",
+      "zsd": null,
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 20,
+      "kcdm": "D0CE961D440F8282E050007F0100058E",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    }
+  ]
+}

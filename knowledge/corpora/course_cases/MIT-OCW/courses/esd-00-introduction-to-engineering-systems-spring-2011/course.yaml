@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-00-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.00"
+cross_listed_codes: []
+course_title: "Introduction to Engineering Systems"
+course_slug: "esd-00-introduction-to-engineering-systems-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joseph Sussman"
+  - "Dr. Afreen Siddiqi"
+  - "Regina Clewlow"
+subject_primary: "Systems Engineering"
+subject_secondary: []
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  Students in ESD.00 work on projects to address large, complex and seemingly intractable real-world problems, such as energy supply, environmental issues, health care delivery, and critical infrastructure (e.g., telecommunications, water supply, and transportation). The course introduces interdisciplinary approaches - rooted in engineering, management, and the social sciences - to considering these critical contemporary issues. Small, faculty-led teams select an engineering systems term project to illustrate one or more of these approaches.
+course_url: "https://ocw.mit.edu/courses/esd-00-introduction-to-engineering-systems-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/esd-00-introduction-to-engineering-systems-spring-2011/a241aa6b67f50c44e089c0ad8c6cf5d1_esd-00s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

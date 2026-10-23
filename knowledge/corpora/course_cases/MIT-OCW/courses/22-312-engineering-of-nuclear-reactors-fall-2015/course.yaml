@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-22-312-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.312"
+cross_listed_codes: []
+course_title: "Engineering of Nuclear Reactors"
+course_slug: "22-312-engineering-of-nuclear-reactors-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jacopo Buongiorno"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Solid Mechanics"
+  - "Nuclear Engineering"
+  - "Science"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Solid Mechanics"
+      - name: "Nuclear Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Sets"
+description: |
+  Engineering principles of nuclear reactors, emphasizing power reactors. Topics include power plant thermodynamics, reactor heat generation and removal (single-phase as well as two-phase coolant flow and heat transfer), structural mechanics, and engineering considerations in reactor design.
+course_url: "https://ocw.mit.edu/courses/22-312-engineering-of-nuclear-reactors-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/22-312-engineering-of-nuclear-reactors-fall-2015/c44a93b7289721d920ea7d7be5f44db2_22-312f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-050-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.050"
+cross_listed_codes: []
+course_title: "The History of MIT"
+course_slug: "sts-050-the-history-of-mit-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Mindell"
+  - "Prof. Merritt Roe Smith"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "History of Science and Technology"
+  - "Modern History"
+  - "Teaching and Education"
+  - "Higher Education"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "History of Science and Technology"
+          - "Modern History"
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Higher Education"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  This course examines the history of MIT through the lens of the broader history of science and technology, and vice versa. The course covers the founding of MIT in 1861 and goes through the present, including such topics as William Barton Rogers, educational philosophy, biographies of MIT students and professors, intellectual and organizational development, the role of science, changing laboratories and practices, and MIT’s relationship with Boston, the federal government, and industry. Assignments include short papers, presentations, and final paper. A number of classes are concurrent with the MIT150 Symposia.
+course_url: "https://ocw.mit.edu/courses/sts-050-the-history-of-mit-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/sts-050-the-history-of-mit-spring-2011/004754980a4063dc1c10535427207de2_sts-050s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

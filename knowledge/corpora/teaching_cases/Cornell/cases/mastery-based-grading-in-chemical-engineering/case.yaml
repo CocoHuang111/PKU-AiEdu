@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "cornell-mastery-based-grading-in-chemical-engineering"
+institution: "Cornell University"
+platform: "Cornell Teaching Case Studies"
+collection: "Teaching Innovation Case Study Library"
+title: "Creative Teaching Awards – Year 2 – Case Study 5: Rong Yang"
+slug: "mastery-based-grading-in-chemical-engineering"
+source_url: "https://blogs.cornell.edu/teachingcasestudies/assessment/mastery-based-grading-in-chemical-engineering/"
+language: "en"
+published: "2025-04-18"
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  published: "source"
+extraction_status: "complete"
+content_sha256: "8ea6fb083663d47e9da0e08a81bde5d64da4bebadc21d50be5fda85c8b8396dd"

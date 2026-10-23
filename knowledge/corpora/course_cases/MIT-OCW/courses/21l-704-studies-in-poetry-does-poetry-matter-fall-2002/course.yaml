@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-704-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.704"
+cross_listed_codes: []
+course_title: "Studies in Poetry: \"Does Poetry Matter\""
+course_slug: "21l-704-studies-in-poetry-does-poetry-matter-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Hildebidle"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Poetry"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Poetry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The landscape we will explore is the troublesome one of the relevance, impact, and importance of poetry in a troubled modern world. We will read both poetry and prose by several substantial modern writers, each of whom confronted the question that is the subject's title.
+course_url: "https://ocw.mit.edu/courses/21l-704-studies-in-poetry-does-poetry-matter-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/21l-704-studies-in-poetry-does-poetry-matter-fall-2002/d529400e3ac7e3d60278d26633c234b3_21l-704f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

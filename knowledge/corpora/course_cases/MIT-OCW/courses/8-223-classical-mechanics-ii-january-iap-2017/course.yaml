@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-8-223-january-iap-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.223"
+cross_listed_codes: []
+course_title: "Classical Mechanics II"
+course_slug: "8-223-classical-mechanics-ii-january-iap-2017"
+term: "January IAP"
+year: 2017
+as_taught_in: "January IAP 2017"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Matthew Evans"
+subject_primary: "Physics"
+subject_secondary:
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This undergraduate course is a broad, theoretical treatment of classical mechanics, useful in its own right for treating complex dynamical problems, but essential to understanding the foundations of quantum mechanics and statistical physics.
+course_url: "https://ocw.mit.edu/courses/8-223-classical-mechanics-ii-january-iap-2017/"
+image_url: "https://ocw.mit.edu/courses/8-223-classical-mechanics-ii-january-iap-2017/10f76c13caec5bf5cc2610c53e94d6fc_8-223iap17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

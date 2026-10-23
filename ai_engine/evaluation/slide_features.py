@@ -170,12 +170,48 @@ def extract_slide_features(
     change_threshold: float = 0.08,
     rois: list[dict] | None = None,
 ) -> dict[str, float]:
+    return _extract_slide_features_from_iter(
+        media.iter_gray_frames(video_path, interval_sec=interval_sec),
+        asr_segments=asr_segments,
+        interval_sec=interval_sec,
+        change_threshold=change_threshold,
+        rois=rois,
+    )
+
+
+def extract_slide_features_from_images(
+    image_paths: list[str],
+    asr_segments: list | None = None,
+    interval_sec: float = 3.0,
+    change_threshold: float = 0.08,
+    rois: list[dict] | None = None,
+) -> dict[str, float]:
+    """用浏览器上传的密集画面计算课件切换特征。"""
+    return _extract_slide_features_from_iter(
+        media.iter_gray_image_files(image_paths),
+        asr_segments=asr_segments,
+        interval_sec=interval_sec,
+        change_threshold=change_threshold,
+        rois=rois,
+    )
+
+
+def _extract_slide_features_from_iter(
+    frame_iter,
+    *,
+    asr_segments: list | None,
+    interval_sec: float,
+    change_threshold: float,
+    rois: list[dict] | None,
+) -> dict[str, float]:
     boxes = [b for b in (rois or []) if isinstance(b, dict) and "x" in b]
     total, changes, blank = _scan_frames(
-        media.iter_gray_frames(video_path, interval_sec=interval_sec),
+        frame_iter,
         change_threshold,
         rois=boxes or None,
     )
+    if total < 2:
+        raise media.MediaError(f"密集画面不足（得到 {total} 帧）")
     total_min = total * interval_sec / 60.0
 
     thresholds = load_yaml("feature_lexicon.yaml")["slide_thresholds"]

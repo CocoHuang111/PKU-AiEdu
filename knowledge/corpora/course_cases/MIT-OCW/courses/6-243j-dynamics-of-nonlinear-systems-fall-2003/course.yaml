@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-6-243j-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.243J"
+cross_listed_codes:
+  - "2.156J"
+  - "16.337J"
+course_title: "Dynamics of Nonlinear Systems"
+course_slug: "6-243j-dynamics-of-nonlinear-systems-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mechanical Engineering"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Alexandre Megretski"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to nonlinear deterministic dynamical systems. Topics covered include: nonlinear ordinary differential equations; planar autonomous systems; fundamental theory: Picard iteration, contraction mapping theorem, and Bellman-Gronwall lemma; stability of equilibria by Lyapunov’s first and second methods; feedback linearization; and application to nonlinear circuits and control systems.
+course_url: "https://ocw.mit.edu/courses/6-243j-dynamics-of-nonlinear-systems-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/6-243j-dynamics-of-nonlinear-systems-fall-2003/9b772f92b8b6b6024b83d408283d9706_6-243jf03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

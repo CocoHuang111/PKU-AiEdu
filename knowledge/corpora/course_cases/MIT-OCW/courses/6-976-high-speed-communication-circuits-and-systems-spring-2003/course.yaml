@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-6-976-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.976"
+cross_listed_codes: []
+course_title: "High Speed Communication Circuits and Systems"
+course_slug: "6-976-high-speed-communication-circuits-and-systems-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Michael Perrott"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Design and Engineering"
+  - "Computer Networks"
+  - "Electrical Engineering"
+  - "Digital Systems"
+  - "Telecommunications"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Design and Engineering"
+          - "Computer Networks"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Telecommunications"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  6.976 covers circuit and system level design issues of high speed communication systems, with primary focus being placed on wireless and broadband data link applications. Specific circuit topics include transmission lines, high speed and low noise amplifiers, VCO’s, and high speed digital circuits. Specific system topics include frequency synthesizers, clock and data recovery circuits, and GMSK transceivers. In addition to learning analysis skills for the above items, students will gain a significant amount of experience in simulating circuits in SPICE and systems in CppSim (a custom C++ simulator).
+course_url: "https://ocw.mit.edu/courses/6-976-high-speed-communication-circuits-and-systems-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/6-976-high-speed-communication-circuits-and-systems-spring-2003/d26b8d168b623555ac6f52579d204a8c_6-976s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

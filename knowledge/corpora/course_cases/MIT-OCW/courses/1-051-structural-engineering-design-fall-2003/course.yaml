@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-1-051-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.051"
+cross_listed_codes: []
+course_title: "Structural Engineering Design"
+course_slug: "1-051-structural-engineering-design-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Oral Buyukozturk"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Structural Engineering"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Structural Engineering"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course aims at providing students with a solid background on the principles of structural engineering design. Students will be exposed to the theories and concepts of both concrete and steel design and analysis both at the element and system levels. Hands-on design experience and skills will be gained and learned through problem sets and a comprehensive design project. An understanding of real-world open-ended design issues will be developed. Besides regular lectures, weekly recitations and project discussion sessions will be held.
+course_url: "https://ocw.mit.edu/courses/1-051-structural-engineering-design-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/1-051-structural-engineering-design-fall-2003/1e323cb9b50e5a4f8a8ca1c76d4486c0_1-051f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-801j-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.801J"
+cross_listed_codes:
+  - "EC.702J"
+  - "STS.071J"
+  - "EC.792J"
+  - "21A.839J"
+  - "STS.481J"
+course_title: "Cross-Cultural Investigations: Technology and Development"
+course_slug: "21a-801j-cross-cultural-investigations-technology-and-development-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Edgerton Center"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Heather Paxson"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Ethnography"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  This course enhances cross-cultural understanding through the discussion of practical, ethical, and epistemological issues in conducting social science and applied research in foreign countries or unfamiliar communities. It includes a research practicum to help students develop interviewing, participant-observation, and other qualitative research skills, as well as critical discussion of case studies. The course is open to all interested students, but intended particularly for those planning to undertake exploratory research or applied work abroad. Students taking the graduate version complete additional assignments.
+course_url: "https://ocw.mit.edu/courses/21a-801j-cross-cultural-investigations-technology-and-development-fall-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/21a-801j-cross-cultural-investigations-technology-and-development-fall-2012/828908a378436271bf87b95537b87287_21a-801jf12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

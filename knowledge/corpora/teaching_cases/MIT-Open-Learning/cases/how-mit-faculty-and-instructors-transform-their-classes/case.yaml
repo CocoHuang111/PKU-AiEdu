@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-how-mit-faculty-and-instructors-transform-their-classes"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "How MIT faculty and instructors transform their classes on Canvas for better instruction"
+slug: "how-mit-faculty-and-instructors-transform-their-classes"
+course_codes:
+  - "21H.134, 7.05, CMS.611, 21G.S63, 21M.011"
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Anne McCants, Michael Yaffe, Tyler Smith, Richard Eberhard, Philip Tan, Maria Khotimsky, Teresa Neff"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Online Assessments & Rapid Feedback"
+  - "Perusall"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/how-mit-faculty-and-instructors-transform-their-classes"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "5a23e8729da0e784dcee5d3a9ee41664010f655b12109e7f9fb77a33a483c31c"

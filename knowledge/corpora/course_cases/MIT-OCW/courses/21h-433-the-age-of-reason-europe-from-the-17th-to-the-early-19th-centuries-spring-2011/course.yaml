@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-433-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.433"
+cross_listed_codes: []
+course_title: "The Age of Reason: Europe from the 17th to the Early 19th Centuries"
+course_slug: "21h-433-the-age-of-reason-europe-from-the-17th-to-the-early-19th-centuries-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeffrey S. Ravel"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "History of Science and Technology"
+  - "Intellectual History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+          - "History of Science and Technology"
+          - "Intellectual History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course asks students to consider the ways in which social theorists, institutional reformers, and political revolutionaries in the 17th through 19th centuries seized upon insights developed in the natural sciences and mathematics to change themselves and the society in which they lived. Students study trials, art, literature and music to understand developments in Europe and its colonies in these two centuries. Covers works by Newton, Locke, Voltaire, Rousseau, Marx, and Darwin.
+course_url: "https://ocw.mit.edu/courses/21h-433-the-age-of-reason-europe-from-the-17th-to-the-early-19th-centuries-spring-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/21h-433-the-age-of-reason-europe-from-the-17th-to-the-early-19th-centuries-spring-2011/ca760ea8a26808b097d655f367903ed1_21h-433s11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

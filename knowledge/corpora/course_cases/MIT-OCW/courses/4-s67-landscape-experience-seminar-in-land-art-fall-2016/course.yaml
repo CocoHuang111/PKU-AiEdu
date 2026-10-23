@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-4-s67-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.S67"
+cross_listed_codes: []
+course_title: "Landscape Experience: Seminar in Land/Art"
+course_slug: "4-s67-landscape-experience-seminar-in-land-art-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Rebecca K. Uchill"
+  - "Prof. Caroline Jones"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Architectural History and Criticism"
+  - "Humanities"
+  - "History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Architectural History and Criticism"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+description: |
+  This seminar explores “land” as a genre, theme, and medium of art and architecture of the last five decades. Focusing largely on work within the boundaries of the United States, the course seeks to understand how the use of land in art and architecture is bound into complicated entanglements of property and power, the inheritances of non-U.S. traditions, and the violence of colonial ambitions. The term “landscape” is variously deployed in the service of a range of political and philosophical positions.
+course_url: "https://ocw.mit.edu/courses/4-s67-landscape-experience-seminar-in-land-art-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/4-s67-landscape-experience-seminar-in-land-art-fall-2016/e1205024926376c74b99fb82628c49d4_4-s67f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

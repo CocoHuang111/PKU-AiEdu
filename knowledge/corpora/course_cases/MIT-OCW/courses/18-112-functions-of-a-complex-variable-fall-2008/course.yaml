@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-18-112-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.112"
+cross_listed_codes: []
+course_title: "Functions of a Complex Variable"
+course_slug: "18-112-functions-of-a-complex-variable-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sigurdur Helgason"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Mathematical Analysis"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This is an advanced undergraduate course dealing with calculus in one complex variable with geometric emphasis. Since the course Analysis I (18.100B) is a prerequisite, topological notions like compactness, connectedness, and related properties of continuous functions are taken for granted. This course offers biweekly problem sets with solutions, two term tests and a final exam, all with solutions.
+course_url: "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/18-112-functions-of-a-complex-variable-fall-2008/b039f5767c57072ec922e985c5e3749a_18-112f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

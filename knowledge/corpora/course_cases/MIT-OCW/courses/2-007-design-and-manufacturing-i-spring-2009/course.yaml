@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-2-007-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.007"
+cross_listed_codes: []
+course_title: "Design and Manufacturing I"
+course_slug: "2-007-design-and-manufacturing-i-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Daniel Frey"
+  - "Prof. David Gossard"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Robotics and Control Systems"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Competition Videos"
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  Welcome to 2.007! This course is a first subject in engineering design. With your help, this course will be a great learning experience exposing you to interesting material, challenging you to think deeply, and providing skills useful in professional practice. A major element of the course is design of a robot to participate in a challenge that changes from year to year. This year, the theme is cleaning up the planet as inspired by the movie Wall-E . From its beginnings in 1970, the 2.007 final project competition has grown into an Olympics of engineering. See this MIT News story for more background, a photo gallery, and videos about this course.
+course_url: "https://ocw.mit.edu/courses/2-007-design-and-manufacturing-i-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/2-007-design-and-manufacturing-i-spring-2009/40036a167620d5dbd099a55e242f542b_2-007s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

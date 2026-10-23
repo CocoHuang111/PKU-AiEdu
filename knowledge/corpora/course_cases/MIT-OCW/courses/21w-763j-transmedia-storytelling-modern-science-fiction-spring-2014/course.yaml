@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-763j-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.763J"
+cross_listed_codes:
+  - "CMS.309"
+  - "CMS.809"
+course_title: "Transmedia Storytelling: Modern Science Fiction"
+course_slug: "21w-763j-transmedia-storytelling-modern-science-fiction-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Shariann Lewitt"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Visual Arts"
+  - "Film and Video"
+  - "Photography"
+  - "Humanities"
+  - "Literature"
+  - "Creative Writing"
+  - "Fiction"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+          - "Photography"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  Transmedia narratives exist across multiple storytelling platforms, using the advantages of each to enhance the experience of the audience. No matter which medium nor how many, the heart of any successful transmedia project is a good story. In this class we will spend time on the basics of solid storytelling in speculative fiction before we move on to how to translate those elements into various media. We will then explore how different presentations in different media can complement and enhance our storytelling. While we will read scholarly articles and discuss ideas about transmedia, this is primarily a class in making speculative fiction transmedia projects. We will analyze the strengths and weaknesses of various mediums and consider how they complement each other, and how by using several different media we can give the audience a more complete, rewarding, and immersive experience.
+course_url: "https://ocw.mit.edu/courses/21w-763j-transmedia-storytelling-modern-science-fiction-spring-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/21w-763j-transmedia-storytelling-modern-science-fiction-spring-2014/fa46f8f1932b4b2753515218132b082f_21w-763js14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

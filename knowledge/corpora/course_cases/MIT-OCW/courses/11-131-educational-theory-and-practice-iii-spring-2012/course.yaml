@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-11-131-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.131"
+cross_listed_codes: []
+course_title: "Educational Theory and Practice III"
+course_slug: "11-131-educational-theory-and-practice-iii-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Reen Gibb"
+subject_primary: "Curriculum and Teaching"
+subject_secondary:
+  - "Educational Technology"
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+description: |
+  This is the final course in the three-course sequence (11.129, 11.130 and 11.131) that deals with the practicalities of teaching students. Areas of study will include: educational psychology, identification of useful resources that support instruction, learning to use technology in meaningful ways in the classroom, finding more methods of motivating students, implementing differentiated instruction and obtaining a teaching job.
+course_url: "https://ocw.mit.edu/courses/11-131-educational-theory-and-practice-iii-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/11-131-educational-theory-and-practice-iii-spring-2012/872ce70ba029d276669f75ac2fb69d02_11-131s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

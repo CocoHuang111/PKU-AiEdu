@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-18-357-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.357"
+cross_listed_codes: []
+course_title: "Interfacial Phenomena"
+course_slug: "18-357-interfacial-phenomena-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John W. M. Bush"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This graduate-level course covers fluid systems dominated by the influence of interfacial tension. The roles of curvature pressure and Marangoni stress are elucidated in a variety of fluid systems. Particular attention is given to drops and bubbles, soap films and minimal surfaces, wetting phenomena, water-repellency, surfactants, Marangoni flows, capillary origami and contact line dynamics.
+course_url: "https://ocw.mit.edu/courses/18-357-interfacial-phenomena-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/18-357-interfacial-phenomena-fall-2010/f78258ab2201b6b74e15d8a91c728b9c_18-357f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

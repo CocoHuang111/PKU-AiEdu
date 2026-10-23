@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-3-15x-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.15x"
+cross_listed_codes: []
+course_title: "Electrical, Optical, and Magnetic Materials and Devices"
+course_slug: "3-15x-electrical-optical-and-magnetic-materials-and-devices-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Caroline Ross"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Materials Science and Engineering"
+  - "Electronic Materials"
+  - "Science"
+  - "Physics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Electronic Materials"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This course is a three-part series which explains the basis of the electrical, optical, and magnetic properties of materials including semiconductors, metals, organics, and insulators. We will show how devices are built to take advantage of these properties. This is illustrated with a wide range of devices, placing a strong emphasis on new and emerging technologies. The first part of the course covers electronic materials and devices, including diodes, bipolar junction transistors, MOSFETs, and semiconductor properties. The second part covers optical materials and devices, including photodetectors, solar cells (photovoltaics), displays, light emitting diodes, lasers, optical fibers, optical communications, and photonic devices. The final part of the series covers magnetic materials and devices, including magnetic data storage, motors, transformers, and spintronics. This course was organized as a three-part series on MITx by MIT’s Department of Materials Science and Engineering and is now archived on the Open Learning Library , which is free to use. You have the option to sign up and enroll in each modules if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/3-15x-electrical-optical-and-magnetic-materials-and-devices-spring-2020/"
+image_url: |
+  https://ocw.mit.edu/courses/3-15x-electrical-optical-and-magnetic-materials-and-devices-spring-2020/72b711e7f3cdf09f163c3af6327c1633_MIT3-15x.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

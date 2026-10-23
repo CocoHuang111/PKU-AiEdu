@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-res-10-s95-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.10-S95"
+cross_listed_codes: []
+course_title: "Physics of COVID-19 Transmission"
+course_slug: "res-10-s95-physics-of-covid-19-transmission-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Martin Bazant"
+  - "Dr. Joey Gu"
+  - "Alex Cohen"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Health and Medicine"
+  - "Public Health"
+  - "Science"
+  - "Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This resource is a collection of videos taught using a LightBoard, a specialized glass that creates a transparent white board. It teaches scientific principles to quantitatively assess the risk of airborne transmission of COVID-19 in indoor spaces based on factors such as the occupancy, time, room geometry, mask use, ventilation, air filtration, humidity, respiratory activities, etc., as well as how these factors interact. This collection is suitable for learners with some undergraduate-level training in STEM, although some videos may also be accessible to the general public. Graduate students and professionals can watch optional videos with more challenging mathematics. A full MITx course with problems and bonus content is available for free on MITx Online .
+course_url: "https://ocw.mit.edu/courses/res-10-s95-physics-of-covid-19-transmission-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/res-10-s95-physics-of-covid-19-transmission-fall-2020/2a92f492061700fed74dbbe31b8ab94a_res-10-s95f20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

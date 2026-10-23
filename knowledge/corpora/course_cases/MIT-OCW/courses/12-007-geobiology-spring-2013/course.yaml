@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-12-007-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.007"
+cross_listed_codes: []
+course_title: "Geobiology"
+course_slug: "12-007-geobiology-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Roger Summons"
+  - "Prof. Tanja Bosak"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geobiology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geobiology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course introduces the parallel evolution of life and the environment. Life processes are influenced by chemical and physical processes in the atmosphere, hydrosphere, cryosphere and the solid earth. In turn, life can influence chemical and physical processes on our planet. This course explores the concept of life as a geological agent and examines the interaction between biology and the earth system during the roughly 4 billion years since life first appeared.
+course_url: "https://ocw.mit.edu/courses/12-007-geobiology-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/12-007-geobiology-spring-2013/b037dab4b1ff2ace7a6f6557eb4515af_12-007s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

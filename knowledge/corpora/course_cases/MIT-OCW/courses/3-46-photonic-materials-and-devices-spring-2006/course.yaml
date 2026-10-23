@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-3-46-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.46"
+cross_listed_codes: []
+course_title: "Photonic Materials and Devices"
+course_slug: "3-46-photonic-materials-and-devices-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lionel C. Kimerling"
+  - "Dr. Sajan Saini"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Electromagnetism"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Electromagnetism"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course covers the theory, design, fabrication and applications of photonic materials and devices. After a survey of optical materials design for semiconductors, dielectrics and polymers, the course examines ray optics, electromagnetic optics and guided wave optics; physics of light-matter interactions; and device design principles of LEDs, lasers, photodetectors, modulators, fiber and waveguide interconnects, optical filters, and photonic crystals. Device processing topics include crystal growth, substrate engineering, thin film deposition, etching and process integration for dielectric, silicon and compound semiconductor materials. The course also covers microphotonic integrated circuits and applications in telecom/datacom systems. Course assignments include four design projects that emphasize materials, devices and systems applications.
+course_url: "https://ocw.mit.edu/courses/3-46-photonic-materials-and-devices-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/3-46-photonic-materials-and-devices-spring-2006/d32295b82f9413195bac03b77d9009dd_3-46s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

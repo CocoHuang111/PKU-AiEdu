@@ -14,10 +14,15 @@ const POLL_MS = 1500
 export const sessions = ref([])
 export const sessionId = ref(null)
 export const messages = ref([])
+export const qaModes = ref([])
+export const selectedMode = ref('ask')
 export const corpora = ref([])
 export const selectedCorpora = ref([])
 export const evalReports = ref([])
 export const selectedEvalTaskIds = ref([])
+export const selectedAttachments = ref([])
+export const uploadingAttachments = ref(false)
+export const attachmentUploadProgress = ref(0)
 export const input = ref('')
 export const sidebarOpen = ref(true)
 export const sessionQuery = ref('')
@@ -48,10 +53,15 @@ export function resetQa() {
   sessions.value = []
   sessionId.value = null
   messages.value = []
+  qaModes.value = []
+  selectedMode.value = 'ask'
   corpora.value = []
   selectedCorpora.value = []
   evalReports.value = []
   selectedEvalTaskIds.value = []
+  selectedAttachments.value = []
+  uploadingAttachments.value = false
+  attachmentUploadProgress.value = 0
   input.value = ''
   sessionQuery.value = ''
   try {
@@ -94,6 +104,7 @@ function hydrateMessages(history) {
     const pending = !!m.pending
     return {
       ...m,
+      mode: m.mode || m.plan?.mode || 'ask',
       streaming: pending,
       thinking: pending && !m.content,
     }
@@ -118,6 +129,21 @@ export const currentTitle = computed(() => {
 export const currentPinned = computed(() => {
   return !!sessions.value.find((s) => s.id === sessionId.value)?.pinned
 })
+
+export const currentMode = computed(() =>
+  qaModes.value.find((m) => m.name === selectedMode.value) || {
+    name: 'ask',
+    label: '通用问答',
+    description: '解释教学问题，并给出有依据的可执行建议',
+    placeholder: '问任何教学相关的问题',
+    default_corpora: [],
+    starter_questions: [],
+  }
+)
+
+export function modeLabel(name) {
+  return qaModes.value.find((m) => m.name === name)?.label || '通用问答'
+}
 
 export const visibleGroups = computed(() => {
   const q = sessionQuery.value.trim().toLowerCase()
@@ -180,13 +206,39 @@ export async function loadSessions() {
   }
 }
 
+export async function loadModes() {
+  try {
+    qaModes.value = await qaApi.modes()
+    if (!qaModes.value.some((m) => m.name === selectedMode.value)) {
+      selectedMode.value = qaModes.value[0]?.name || 'ask'
+    }
+  } catch {
+    /* 拦截器已提示 */
+  }
+}
+
+function applyModeCorpora() {
+  const available = new Set(selectableNames.value)
+  const defaults = (currentMode.value.default_corpora || []).filter((name) =>
+    available.has(name)
+  )
+  const selected = defaults.length ? defaults : [...selectableNames.value]
+  selectedCorpora.value = selectedEvalTaskIds.value.length
+    ? [...selected, 'eval_reports']
+    : selected
+}
+
+export function setMode(name, { resetCorpora = true } = {}) {
+  if (!qaModes.value.some((m) => m.name === name)) name = 'ask'
+  selectedMode.value = name
+  if (resetCorpora) applyModeCorpora()
+}
+
 export async function loadCorpora() {
   try {
     corpora.value = await qaApi.corpora()
     if (!selectedCorpora.value.length) {
-      selectedCorpora.value = corpora.value
-        .filter((c) => c.count && c.name !== 'eval_reports')
-        .map((c) => c.name)
+      applyModeCorpora()
     }
   } catch {
     /* 拦截器已提示 */
@@ -239,6 +291,8 @@ export function newSession() {
   pollingId.value = null
   sessionId.value = null
   messages.value = []
+  selectedAttachments.value = []
+  setMode('ask')
   persistSessionId(null)
 }
 
@@ -252,6 +306,8 @@ export async function openSession(id) {
   if (liveJob) {
     sessionId.value = id
     messages.value = liveJob.messages
+    selectedAttachments.value = [...(liveJob.attachments || [])]
+    setMode(liveJob.mode || 'ask')
     persistSessionId(id)
     stopPoll()
     pollingId.value = null
@@ -262,6 +318,11 @@ export async function openSession(id) {
     const s = await qaApi.getSession(id)
     sessionId.value = id
     messages.value = hydrateMessages(s.history)
+    selectedAttachments.value = [
+      ...([...messages.value].reverse().find((m) => m.role === 'user' && m.attachments)?.attachments || []),
+    ]
+    const lastMode = [...messages.value].reverse().find((m) => m.mode)?.mode || 'ask'
+    setMode(lastMode)
     persistSessionId(id)
     scrollDown()
     const last = messages.value[messages.value.length - 1]
@@ -357,6 +418,64 @@ export function useSample(q) {
   input.value = q
 }
 
+function isPendingAttachment(item) {
+  return !item || item.status === 'uploading' || String(item.id || '').startsWith('pending-')
+}
+
+export async function uploadAttachments(files) {
+  const pending = Array.from(files || [])
+  if (!pending.length || uploadingAttachments.value) return
+  if (selectedAttachments.value.length + pending.length > 8) {
+    ElMessage.warning('一次最多选择 8 个文件')
+    return
+  }
+  const placeholders = pending.map((file, index) => ({
+    id: `pending-${Date.now()}-${index}`,
+    name: file.name,
+    suffix: `.${String(file.name).split('.').pop() || ''}`.toLowerCase(),
+    size: file.size || 0,
+    status: 'uploading',
+    preview: '',
+    warnings: [],
+  }))
+  selectedAttachments.value = [...selectedAttachments.value, ...placeholders]
+  uploadingAttachments.value = true
+  attachmentUploadProgress.value = 0
+  try {
+    const result = await qaApi.uploadAttachments(pending, (progress) => {
+      attachmentUploadProgress.value = progress
+    })
+    const existing = new Set(
+      selectedAttachments.value.filter((item) => !isPendingAttachment(item)).map((item) => item.id)
+    )
+    selectedAttachments.value = [
+      ...selectedAttachments.value.filter((item) => !isPendingAttachment(item)),
+      ...(result.attachments || []).filter((item) => !existing.has(item.id)),
+    ]
+    for (const error of result.errors || []) {
+      ElMessage.warning(`${error.name}：${error.message}`)
+    }
+    if (result.attachments?.length) {
+      ElMessage.success(`已添加 ${result.attachments.length} 个文件`)
+    }
+  } catch {
+    selectedAttachments.value = selectedAttachments.value.filter((item) => !isPendingAttachment(item))
+  } finally {
+    uploadingAttachments.value = false
+    attachmentUploadProgress.value = 0
+  }
+}
+
+export async function removeAttachment(item) {
+  selectedAttachments.value = selectedAttachments.value.filter((a) => a.id !== item.id)
+  if (isPendingAttachment(item)) return
+  try {
+    await qaApi.deleteAttachment(item.id)
+  } catch {
+    // 已从当前问题移除；服务端不存在或删除失败由拦截器提示。
+  }
+}
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
@@ -416,16 +535,34 @@ function createLineRevealer(reply, job) {
 
 export async function send() {
   const question = input.value.trim()
-  if (!question || sending.value) return
+  if (!question || sending.value || uploadingAttachments.value) return
+
+  // The attached evaluation reports apply to this question only. Snapshot them
+  // before resetting the composer so the next question returns to the current
+  // mode's recommended knowledge-base selection.
+  const corporaForRequest = [...selectedCorpora.value]
+  const modeForRequest = selectedMode.value
+  const evalTaskIdsForRequest = corporaForRequest.includes('eval_reports')
+    ? [...selectedEvalTaskIds.value]
+    : null
+  const attachmentsForRequest = selectedAttachments.value.map((item) => ({ ...item }))
+  applyEvalTaskSelection([])
+  applyModeCorpora()
 
   stopPoll()
   pollingId.value = null
   input.value = ''
   const thread = messages.value
-  thread.push({ role: 'user', content: question })
+  thread.push({
+    role: 'user',
+    content: question,
+    mode: modeForRequest,
+    attachments: attachmentsForRequest,
+  })
 
   const reply = {
     role: 'assistant',
+    mode: modeForRequest,
     content: '',
     citations: [],
     plan: null,
@@ -439,6 +576,8 @@ export async function send() {
     sessionId: sessionId.value,
     messages: thread,
     sending: true,
+    mode: modeForRequest,
+    attachments: attachmentsForRequest,
   }
   jobs.value = [...jobs.value, job]
   const reveal = createLineRevealer(reply, job)
@@ -448,11 +587,11 @@ export async function send() {
     await askStream(
       {
         question,
+        mode: modeForRequest,
         sessionId: job.sessionId,
-        corpora: selectedCorpora.value,
-        evalTaskIds: selectedCorpora.value.includes('eval_reports')
-          ? selectedEvalTaskIds.value
-          : null,
+        corpora: corporaForRequest,
+        evalTaskIds: evalTaskIdsForRequest,
+        attachmentIds: attachmentsForRequest.map((item) => item.id),
       },
       (event) => {
         if (event.type === 'plan') reply.plan = event.data
@@ -491,6 +630,7 @@ export async function send() {
 
 export async function initQa(userId) {
   ensureQaOwner(userId)
+  if (!qaModes.value.length) await loadModes()
   if (!corpora.value.length) await loadCorpora()
   await loadEvalReports()
   await loadSessions()
@@ -505,6 +645,7 @@ export async function initQa(userId) {
 }
 
 export async function onQaActivated() {
+  await loadModes()
   await loadCorpora()
   await loadEvalReports()
   await loadSessions()

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-961-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.961"
+cross_listed_codes: []
+course_title: "Ambient Intelligence"
+course_slug: "mas-961-ambient-intelligence-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Patricia Maes"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Human-Computer Interfaces"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Human-Computer Interfaces"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course will provide an overview of a new vision for Human-Computer Interaction (HCI) in which people are surrounded by intelligent and intuitive interfaces embedded in the everyday objects around them. It will focus on understanding enabling technologies and studying applications and experiments, and, to a lesser extent, it will address the socio-cultural impact. Students will read and discuss the most relevant articles in related areas: smart environments, smart networked objects, augmented and mixed realities, ubiquitous computing, pervasive computing, tangible computing, intelligent interfaces and wearable computing. Finally, they will be asked to come up with new ideas and start innovative projects in this area.
+course_url: "https://ocw.mit.edu/courses/mas-961-ambient-intelligence-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/mas-961-ambient-intelligence-spring-2005/27822f98e8a12a5f3ebc46b598a049e0_mas-961s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

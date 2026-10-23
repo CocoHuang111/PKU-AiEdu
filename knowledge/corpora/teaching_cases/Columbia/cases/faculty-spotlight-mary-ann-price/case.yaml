@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-faculty-spotlight-mary-ann-price"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "CTL spotlight or announcement"
+title: "Faculty Spotlight: Professor Mary Ann Price on Using Case Study Method to Place Pre-Med Students in Real-Life Scenarios"
+slug: "faculty-spotlight-mary-ann-price"
+source_url: "https://ctl.columbia.edu/announcements/faculty-spotlight-mary-ann-price/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "79e06de2b8fc3fae45a696ae48529a6efb5a269daa515e63fc3c8e48bfeac5f1"

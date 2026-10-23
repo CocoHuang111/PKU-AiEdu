@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-es-242-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.242"
+cross_listed_codes: []
+course_title: "Gender Issues in Academics and Academia"
+course_slug: "es-242-gender-issues-in-academics-and-academia-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Holly Sweet"
+  - "Kayla Jacobs"
+  - "Laurel Ruhlen"
+subject_primary: "Gender Studies"
+subject_secondary:
+  - "Women's Studies"
+topic_tree:
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Does it matter in education whether or not you’ve got a Y chromosome? You bet it does. In this discussion-based seminar, we will explore why males vastly outrank females in math and science and career advancements (particularly in academia), and why girls get better grades and go to college more often than boys. Do the sexes have different learning styles? Are women denied advanced opportunities in academia and the workforce? How do family life and family decisions affect careers for both men and women?
+course_url: "https://ocw.mit.edu/courses/es-242-gender-issues-in-academics-and-academia-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/es-242-gender-issues-in-academics-and-academia-spring-2004/40752a1e3e6145e185d7bd7a7ea1ff22_es-242s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

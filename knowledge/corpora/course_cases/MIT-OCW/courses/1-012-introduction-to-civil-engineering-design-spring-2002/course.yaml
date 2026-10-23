@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-1-012-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.012"
+cross_listed_codes: []
+course_title: "Introduction to Civil Engineering Design"
+course_slug: "1-012-introduction-to-civil-engineering-design-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Herbert Einstein"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Construction Management"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Construction Management"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  1.012 introduces students to the theory, tools, and techniques of engineering design and creative problem-solving, as well as design issues and practices in civil engineering. The course includes several design cases, with an emphasis on built facilities (e.g., buildings, bridges and roads). Project design explicitly concerns technical approaches as well as consideration of the existing built environment, natural environment, economic and social factors, and expected life span. A large design case is introduced, which is used in the subsequent specialty area design subjects (1.031, 1.041, 1.051) and the capstone design subject (1.013).
+course_url: "https://ocw.mit.edu/courses/1-012-introduction-to-civil-engineering-design-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/1-012-introduction-to-civil-engineering-design-spring-2002/3c80a0fc2e318beb48a7faa712431604_1-012s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

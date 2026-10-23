@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-haeny-yoon"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Haeny Yoon, PhD"
+slug: "haeny-yoon"
+source_url: "https://ctl.columbia.edu/transformations/faculty/haeny-yoon/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "43304b54b84c0dd3df9439fe56a679a59d7d817884b63024a757306e480c8fd8"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-11-201-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.201"
+cross_listed_codes: []
+course_title: "Gateway: Planning Action"
+course_slug: "11-201-gateway-planning-action-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Diane Davis"
+  - "Prof. Langley Keyes"
+  - "Prof. Lawrence Susskind"
+subject_primary: "Urban Studies"
+subject_secondary:
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Projects with Examples"
+description: |
+  This class introduces first semester MCP students to the persistent themes and challenges facing planners. The goals of this class are: to excite students about their chosen profession; to offer a theoretical framework for thinking about the kinds of interventions that planners are expected to take; to introduce students to some of the most interesting and challenging theoretical debates in the planning field; and to press students to think about the best way of using their time to ensure their own personal professional development.
+course_url: "https://ocw.mit.edu/courses/11-201-gateway-planning-action-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/11-201-gateway-planning-action-fall-2002/28bab60a749e4570885978b67a423a28_11-201f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-17-418-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.418"
+cross_listed_codes: []
+course_title: "Field Seminar: International Relations Theory"
+course_slug: "17-418-field-seminar-international-relations-theory-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+  - "Undergraduate"
+instructors:
+  - "Prof. M. Taylor Fravel"
+subject_primary: "Political Science"
+subject_secondary:
+  - "International Relations"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This seminar provides an overview of the field of international relations. Each week, a different approach to explaining international relations will be examined. By surveying major concepts and theories in the field, the seminar will also assist graduate students in preparing for the comprehensive examination and further study in the department’s more specialized offerings in international relations.
+course_url: "https://ocw.mit.edu/courses/17-418-field-seminar-international-relations-theory-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/17-418-field-seminar-international-relations-theory-fall-2011/ac670ba5c595c50ae73c52d8d5d927c6_17-418f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

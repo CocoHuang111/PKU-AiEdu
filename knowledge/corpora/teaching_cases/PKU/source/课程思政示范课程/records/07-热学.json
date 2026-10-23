@@ -1,0 +1,728 @@
+{
+  "catalog": {
+    "td": "穆良柱 欧阳颀 刘玉鑫 高原宁 全海涛 曲波 张海君",
+    "KCDM": "C78ABB909C15B0FDE050007F010021F7",
+    "IMG": "/dad/tp/0006178105/jxjbxx/wdkc/37f9223b-ea0b-4ebf-8485-238b0689c176.png",
+    "DADM": "C789DD7D1DAE2FAAE050007F01000EE5",
+    "JSXM": "穆良柱",
+    "KCMC": "热学",
+    "ROW_ID": 7
+  },
+  "base": {
+    "sfxz": 1,
+    "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+    "kcmc": "热学",
+    "kksj": null,
+    "ssxk": null,
+    "sszy": null,
+    "xf": null,
+    "xs": null,
+    "cjr": "0006178105",
+    "cjsj": "2021-07-20T16:20:56.000+08:00",
+    "xgsj": "2022-03-18T09:58:31.000+08:00",
+    "kkjd": null,
+    "skjs": "0006178105",
+    "sfbxkc": "1",
+    "skyx": "00004",
+    "kcjj": "热学课程的主要内容是如何对微观上大量粒子无规则热运动构建系统化科学认知。课程会从宏观和微观两方面分别构建系统化认知。宏观上会从最简单的研究对象开始，观察现象，描述物理性质，总结实验规律，再到构建系统化热力学理论，并类比应用到其它复杂一点的研究对象。微观上也同样如此，从实验认知总结实验规律，到理论认知构建系统统计理论，并用实验证伪检验，然后不断拓展认知，从经典统计理论推广到量子统计理论。\n       本课程是北京大学物理学院本科生的必修课程，通常开课在第一学年第二学期。适合物理专业、应用物理专业，以及非物理类理工科对物理要求较强的专业的大学生选修。中学生中对物理特别感兴趣的，且学有余力的学生，可以通过选修该课程打下良好的基础。",
+    "img": "/dad/tp/0006178105/jxjbxx/wdkc/37f9223b-ea0b-4ebf-8485-238b0689c176.png",
+    "zgh": null,
+    "jsxm": null,
+    "yxmc": null,
+    "yxdm": null,
+    "kckdm": null,
+    "fjList": [
+
+    ]
+  },
+  "detail": {
+    "id": "DA757BCC0B7D73E3E050007F01001BD1",
+    "cjr": "0006178105",
+    "cjsj": "2022-03-18T09:58:31.000+08:00",
+    "zhxgr": "0006178105",
+    "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+    "rsylj": "<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; 物理课程思政教育的本质就是物理认知(科学认知)能力培养，包括物理认知模型的构建(如何思考)、物理方法的训练(如何做事)和物理精神的养成(如何做人)，实际上就是物理文化的传承。只有具备了这种物理文化，学生才有可能独立认知，形成独立人格，理解西方思想体系产生的背景，不盲从西方思想体系，理解中国特色社会主义道路的必然性，理解中国文化的根源，理解社会主义核心价值观，坚实走中国道路的自信。只有具备了有效认知能力，学生才有可能不仅照顾好自己和家人，还能立志报国，做好社会主义建设者和接班人。</span></p>",
+    "rsyljfjlj": null,
+    "rsyljfjmc": null,
+    "kcmb": "<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;新时代国家对创新型人才更加渴望，而创新型人才最核心的能力是对未知的研究对象构建出科学认知的能力。热学课程的教学目标恰恰就是通过热学这个案例，让学生理解如何构建科学认知，并学会相应的方法和精神。这是未来社会主义建设者和接班人必备的基本素养。</span></p>\n<p style=\"line-height: 1.75;\">&nbsp;</p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;一旦构建了这种科学认知能力，就很容易发现，马克思对国家、政治、经济的认识，中国共产党对中国的认识，同样遵循了科学认知模式。这样就很容易从根本上理解和接受中国走中国特色社会主义道路的必然性。</span></p>",
+    "jxff": "<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;采用ETA物理教学法，即按照ETA物理认知模型将教学内容整理成具体的认知案例，在每个案例中教会学生如何思考（构建科学认知模型），如何做事（训练科学方法），如何做人（养成科学精神）。具体教学手段分课堂讲授、实验演示、小组讨论等。</span></p>",
+    "pjfa": "<p style=\"line-height: 1.75;\"><span style=\"font-size: 14px; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;\">&nbsp; &nbsp; &nbsp; &nbsp;本课程考核方法为平时成绩10%+期中成绩40%+期末成绩50%。期中期末考试采取闭卷笔试形式，考核内容基本覆盖70%以上授课内容，题目本身就是认知案例分析，要求学生从实验认知、理论认知两个方面去分析题目，并用应用认知给出问题答案。</span></p>",
+    "xgyq": "<p style=\"line-height: 1.75;\"><span style=\"font-size: 14px; font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;\">要求学生遵守校纪校规，作业可以讨论，但要独立完成，不定期抽查出勤率。</span></p>",
+    "jxffjal": "<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;课程思政是为了完成科学认知能力培养，所以教学方法就是按照认知模型组织教学内容，然后根据学生特点采取相应的教学手段达成教学目标。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;首先用一个教案案例说明实验认知模式是如何思考的，即如何挑选研究对象，如何量化描述，如何构建实验规律，在构建这个认知的过程中，要如何做人，做事，例如做人上要实事求是，勇于探索，做事上要学会极端条件法，控制变量法等。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;然后用一个饮水鸟实验的视频展示物理认知的可证伪性特点，演示物理认知是如何不断突破认知边界，探索未知，从实验认知到理论认知再到应用认知的。最后我们可以看到一旦具备了科学认知能力，就能从根本上理解中国共产党是如何采用科学认知能力探索出中国特色社会主义道路的，以及如何构建中国特色社会主义建设理论的。</span></p>\n<p style=\"line-height: 1.75;\">状态方程部分教案案例：</p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">幻灯片 1</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp;<img src=\"../../../tp/0006178105/2875553b-e8aa-4f6e-a3dd-1427ea17cb39.png\" width=\"674\" height=\"509\" /></span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;在挑选了最简单的研究对象，学会了量化描述其物理性质之后，接下来按照实验认知模型的要求就是寻找实验规律了</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">幻灯片 2</span></p>\n<p style=\"line-height: 1.75;\"><img src=\"../../../tp/0006178105/fdb2f177-a5df-4a60-a273-206d2dad6997.png\" width=\"677\" height=\"513\" /></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;对于理想气体来说，可直接测量的物理性质有，温度，压强，体积。实验可以发现，这些量之间存在一定的关系，这被称为状态方程。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">幻灯片 3</span></p>\n<p style=\"line-height: 1.75;\"><img src=\"../../../tp/0006178105/6bf13828-e7fe-4571-9cf7-962f15fe7de3.png\" width=\"679\" height=\"516\" /></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;如何找到物态方程，一种就是直接测量两个物理量之间的关系，正如Boyle那样，直接测定压强和体积的关系，但是要注意在有多个变量的时候简单的做法是控制变量法，Boyle比较幸运的是尽管没有考虑温度的变化，但是所做实验的条件恰好保证了温度没有太大的变化；另一种就是测量响应函数，然后通过数学推导来得到物态方程，正如在上一次课的例题中所展示的那样。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;查理定律和盖吕萨克定律在大不列颠百科全书中被描述为同一定律，但在国内以前的教科书上被区别为不同的定律，并将查理定律用来描述压强和温度的关系，但在wikipedia上则称盖吕萨克定律既被用来描述体积与温度的关系，又被用来描述压强和温度的关系。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;有了这两个定律就可以设计一个等温过程和一个等压过程将1mol的理想气体状态从p0V0T0变到pV&rsquo;T0再变到pVT，利用两个定律就可以得到初态和末态满足的关系，从而得到物态方程，其中常数R的求出需要利用阿佛加德罗定律，推广到numol情况，可以得到任意物质的量的理想气体的物态方程，如果换成粒子数来表示，则可以得到玻尔兹曼常数。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;现在一些教材上已经将状态方程的获得归结为玻意耳定律和理想气体温标的定义，当然也是可以的。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;这里有个问题，即什么是理想气体，前面已经给出了一个定义，即压强趋于零的气体，或者说稀薄气体，这里我们可以将理想气体定义为满足该状态方程的气体。理想气体是个模型，其好处在于可以近似描述实际气体在低密度时的行为。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">幻灯片 4</span></p>\n<p style=\"line-height: 1.75;\"><img src=\"../../../tp/0006178105/a79af169-dfc2-45d3-87f5-9e159a22b8af.png\" width=\"682\" height=\"514\" /></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;这是响应函数的定义，其实就是物理中的控制变量法，对应数学上的偏微分。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">幻灯片 5</span></p>\n<p style=\"line-height: 1.75;\"><img src=\"../../../tp/0006178105/6f2c94aa-48e2-4237-ad6b-fa8d2adec6c7.png\" width=\"686\" height=\"517\" /></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;一旦知道了偏微分，就可以由逻辑导出多个变量之间的关系。对于理想气体来说，可以直接推导出状态方程。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">幻灯片 6</span></p>\n<p style=\"line-height: 1.75;\"><img src=\"../../../tp/0006178105/978c3381-cac9-4950-b132-21bc3c671a81.png\" width=\"683\" height=\"514\" /></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;理想气体模型的好处在于可以近似绝大部分气体在低密度时的行为，但对稠密气体这个方程就不好用了。这是该怎么办呢？原则上可以按之前的实验认知模式重新构建状态方程。但范德瓦尔斯直接从理论认知构建模型的角度，直接给出了一个状态方程。由于是稠密气体，所以构建模型时就不得不考虑分子之间的相互作用了，理想气体中分子之间距离很大，相互作用可以忽略，实际气体不可以忽略，考虑到分子所处的空间受到分子自身大小的限制，或者说受排斥作用的限制，体积V要变为V-b，考虑到器壁处分子受到内部分子的吸引作用，冲击到器壁上的压强减小，并且减小量正比于撞到器壁上的分子数和内部吸引撞击分子的分子数，所以压强修正正比于密度平方。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;而从应用的角度，还可以引入级数形式的昂内斯状态方程来近似实际气体的状态方程。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">幻灯片 7</span></p>\n<p style=\"line-height: 1.75;\"><img src=\"../../../tp/0006178105/698aadf0-15e2-460e-afdf-744fef74c424.png\" width=\"693\" height=\"524\" /></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;对于m摩尔的范氏气体状态方程可以直接通过1摩尔气体的情况导出。并且很容易展开成昂内斯方程的级数形式。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">幻灯片 8</span></p>\n<p style=\"line-height: 1.75;\"><img src=\"../../../tp/0006178105/a79005ad-fef9-40b8-a4e7-ba81e6487ebb.png\" width=\"697\" height=\"526\" /></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;另一种描述状态方程的形式，就是用实验的方法逐点扫描所有的状态，尽管这是比较笨的方法，但却是生产生活实践中常用的方法。例如对于原子弹材料铀金属的状态方程，其实就是通过各种爆炸实验，轻气炮发射撞击等方式，逐点扫描铀的物性。可以想象当年研制原子弹时，科技人员锲而不舍的精神。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">幻灯片 9</span></p>\n<p style=\"line-height: 1.75;\"><img src=\"../../../tp/0006178105/485b4848-03af-4758-b881-b60c90e7429f.png\" width=\"696\" height=\"524\" /></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;一旦理解了如何用实验认知的方式对气体构建出实验规律，马上就可以类比到其它热力学系统状态方程的构建，例如热磁系统的居里定律，弹性体的胡克定律等。</span></p>\n<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&nbsp; &nbsp; &nbsp; &nbsp;我们会发现掌握了科学认知模型和科学方法后，我们对客观物体的认识效率大大提高了。同样的能力可以迁移到对世界，人生，价值等对象的认知上，还可以清晰的发现中国共产党人也一直在用科学认知能力构建对中国发展的认知，这样形成的就是中国特色的社会主义道路，这显然是值得信赖的有效认知。</span></p>\n<p style=\"line-height: 1.75;\">&nbsp;</p>",
+    "jxffjalfjlj": null,
+    "jxffjalfjmc": null,
+    "xgpj": "<p style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">学生的文字反馈：</span></p>\n<ul>\n<li style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&ldquo;正像穆老师讲的那样，本课程注重给同学讲物理认知过程，让我们能对这个世界建立起自己的理解，本课程不仅讲实验物理是什么，而且又讲理论物理在实验物理上的应用，更多的强调我们对这个世界的理解与思考，这是一大优点，而且几乎每节课都会有演示实验，能激起我们对独特现象背后的原理的思考，课程特别棒！&rdquo;</span></li>\n<li style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&ldquo;我在这门课上的收获超出了知识本身。 当越来越多的课程变成了一个个定理的证明之后（有些甚至退化成了一个个结论的陈述），这种从实验出发，延伸到理论的教授方式已经比较罕见了。不过，至少，在上过穆老师的课之后，我不会遗憾了。&rdquo;</span></li>\n<li style=\"line-height: 1.75;\"><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">&ldquo;鼓励我们思考物理学的本质，把批判性思维引入物理。&rdquo;</span></li>\n</ul>\n<p style=\"line-height: 1.75;\"><span style=\"font-size: 16px;\"><strong><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;\">课程思政探索研究的论文/报道：</span></strong></span></p>\n<p><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">[1]穆良柱. 物理课程思政教育的核心是科学认知能力培养[J]. 物理与工程,2021,31(02):1-7.</span></p>\n<p><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">[2]穆良柱. 什么是ETA物理教学法[J]. 物理与工程,2020,30(02):32-36.</span></p>\n<p><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">[3]穆良柱. 什么是ETA物理认知模型[J]. 物理与工程,2020,30(01):29-33.</span></p>\n<p><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">[4]穆良柱. 什么是物理及物理文化?[J]. 物理与工程,2019,29(01):15-24.</span></p>\n<p><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">[5]穆良柱. 什么是物理精神[J]. 大学物理,2018,37(03):26-28.</span></p>\n<p><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">[6]穆良柱. 什么是物理方法[J]. 大学物理,2018,37(02):18-21.</span></p>\n<p><span style=\"font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 14px;\">[7]穆良柱. 什么是物理与物理的认知过程[J]. 大学物理,2018,37(01):21-24.</span></p>",
+    "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+    "fjList": [
+      {
+        "id": "DA757BCC0BB973E3E050007F01001BD1",
+        "cjr": "0006178105",
+        "cjsj": "2022-03-18T09:58:32.000+08:00",
+        "zhxgr": "0006178105",
+        "zhxgsj": "2022-03-18T09:58:32.000+08:00",
+        "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+        "wjmc": "20211105-Mu.mp4",
+        "wjlj": "/dad/fj/862ed5fb-a683-4867-aa84-e76a67beac57.mp4",
+        "bs": "jxffjal"
+      }
+    ]
+  },
+  "elements": [
+    {
+      "id": "DA757BCC0B9D73E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "总体总结",
+      "zsd": "科学教育育人的部分集中在科学认知模型，科学方法，科学精神三个方面",
+      "szys": null,
+      "szwd": null,
+      "jxff": null,
+      "xssx": 1,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+        {
+          "gljb": null,
+          "fjdm": "DA757BCC0B9E73E3E050007F01001BD1",
+          "fjlj": "/dad/fj/80437156-edba-456d-9468-1543c016637f.png",
+          "wjm": "ETA物理认知模型.png",
+          "ccm": null,
+          "glzj": "ID",
+          "scrq": null,
+          "scr": null,
+          "bm": "T_DAD_KCSZ_KCSZYSB",
+          "glzjz": "DA757BCC0B9D73E3E050007F01001BD1",
+          "mkmc": null,
+          "sjmkmc": null,
+          "bq": null,
+          "js": null,
+          "yywz": null,
+          "name": "ETA物理认知模型.png",
+          "url": "/dad/fj/80437156-edba-456d-9468-1543c016637f.png"
+        },
+        {
+          "gljb": null,
+          "fjdm": "DA757BCC0B9F73E3E050007F01001BD1",
+          "fjlj": "/dad/fj/68564e0c-f001-4bda-9ef9-cc8ee765243b.png",
+          "wjm": "物理方法.png",
+          "ccm": null,
+          "glzj": "ID",
+          "scrq": null,
+          "scr": null,
+          "bm": "T_DAD_KCSZ_KCSZYSB",
+          "glzjz": "DA757BCC0B9D73E3E050007F01001BD1",
+          "mkmc": null,
+          "sjmkmc": null,
+          "bq": null,
+          "js": null,
+          "yywz": null,
+          "name": "物理方法.png",
+          "url": "/dad/fj/68564e0c-f001-4bda-9ef9-cc8ee765243b.png"
+        },
+        {
+          "gljb": null,
+          "fjdm": "DA757BCC0BA073E3E050007F01001BD1",
+          "fjlj": "/dad/fj/29510064-987e-4a27-a17b-8d0004b92726.png",
+          "wjm": "物理精神.png",
+          "ccm": null,
+          "glzj": "ID",
+          "scrq": null,
+          "scr": null,
+          "bm": "T_DAD_KCSZ_KCSZYSB",
+          "glzjz": "DA757BCC0B9D73E3E050007F01001BD1",
+          "mkmc": null,
+          "sjmkmc": null,
+          "bq": null,
+          "js": null,
+          "yywz": null,
+          "name": "物理精神.png",
+          "url": "/dad/fj/29510064-987e-4a27-a17b-8d0004b92726.png"
+        }
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BA173E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "热学简介",
+      "zsd": "最简单的热学研究对象为理想气体",
+      "szys": "实验认知：挑选研究对象\n科学方法：类比法\n科学精神：小目标精神",
+      "szwd": "如何思考",
+      "jxff": "简单案例法+演示实验+课堂讲授",
+      "xssx": 2,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BA273E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "温度",
+      "zsd": "温度定义、摄氏温标、理想气体温标、热力学温标",
+      "szys": "实验认知：量化描述性质\n科学方法：转换法\n科学精神：严谨分析",
+      "szwd": "如何思考",
+      "jxff": "演示实验+课堂讲授",
+      "xssx": 3,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BA373E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "状态方程",
+      "zsd": "理想气体的实验规律",
+      "szys": "实验认知：寻找实验规律\n科学方法：控制变量法\n科学精神：小目标，怀疑主义，实事求是，勇于探索，寻根究底",
+      "szwd": "如何思考",
+      "jxff": "演示实验+课堂讲授",
+      "xssx": 4,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人，思政教育",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BA473E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "物质的微观图像",
+      "zsd": "介绍微观世界的基本结构于基本相互作用",
+      "szys": "科学精神：寻根究底",
+      "szwd": "如何做人",
+      "jxff": "课堂讲授",
+      "xssx": 5,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BA573E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "微观初级理论",
+      "zsd": "介绍微观构建系统化理论的简单框架",
+      "szys": "理论认知：构建理想模型，建立公理认知\n科学方法：还原法，数理逻辑，特例法\n科学精神：寻根究底",
+      "szwd": "如何思考",
+      "jxff": "实验录像+课堂讲授",
+      "xssx": 6,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BA673E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "麦克斯韦速度分布律",
+      "zsd": "介绍麦克斯韦速度分布律的发现过程",
+      "szys": "实验认知：量化描述性质，寻找实验规律\n理论认知：建立公理体系，实验证伪检验\n科学方法：猜想法\n科学精神：严谨分析，不怕失败，勇于探索",
+      "szwd": "如何思考",
+      "jxff": "计算模拟+课堂讲授+讨论",
+      "xssx": 7,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BA773E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "麦克斯韦-玻尔兹曼分布与能均分定理",
+      "zsd": "引入麦玻分布并推导能均分定理",
+      "szys": "理论认知：建立公理体系，实验证伪检验\n科学方法：数理逻辑\n科学精神：实事求是，怀疑主义",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授+讨论",
+      "xssx": 8,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BA873E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "麦克斯韦-玻尔兹曼分布的经典版本*",
+      "zsd": "构建经典的麦玻分布公理化体系",
+      "szys": "理论认知：建立公理体系\n科学方法：数理逻辑\n科学精神：严谨分析，小目标",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授",
+      "xssx": 9,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BA973E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "麦克斯韦-玻尔兹曼分布的量子版本",
+      "zsd": "构建基于量子力学版本的麦玻分布公理化体系",
+      "szys": "理论认知：建立公理体系\n科学方法：数理逻辑\n科学精神：严谨分析，小目标",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授",
+      "xssx": 10,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BAA73E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "费米-狄拉克分布与玻色-爱因斯坦分布*",
+      "zsd": "构建基于费米子和玻色子量子特性的麦玻分布理论",
+      "szys": "理论认知：构建理想模型，建立公理体系，实验证伪检验\n科学方法：数理逻辑，特例法\n科学精神：实事求是，严谨分析",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授",
+      "xssx": 11,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BAB73E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "气体分子动理论",
+      "zsd": "对非平衡态研究对象构建初步微观理解",
+      "szys": "实验认知：挑选研究对象，量化描述性质，寻找实验规律\n理论认知：构建理想模型，建立公理体系\n科学方法：简化法，数理逻辑\n科学精神：小目标",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授",
+      "xssx": 12,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人，思政教育",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BAC73E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "非平衡态的输运过程",
+      "zsd": "对线性非平衡态构建宏观理论",
+      "szys": "实验认知：挑选研究对象，量化描述性质，寻找实验规律\n科学方法：控制变量法\n科学精神：小目标",
+      "szwd": "如何思考",
+      "jxff": "演示实验+课堂讲授",
+      "xssx": 13,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BAD73E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "热力学第一定律",
+      "zsd": "对热力学过程中的能量问题构建理解",
+      "szys": "实验认知：挑选研究对象，量化描述性质，寻找实验规律\n科学方法：类比法，控制变量法\n科学精神：独立认知，寻根究底",
+      "szwd": "如何思考",
+      "jxff": "演示实验+课堂讲授+讨论",
+      "xssx": 14,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BAE73E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "第一定律的应用",
+      "zsd": "第一定律的应用，尤其是在热机中的应用",
+      "szys": "应用认知：解释已有现象，技术发明创造\n科学方法：类比，联想\n科学精神：锲而不舍，不怕失败，勇于探索",
+      "szwd": "如何思考",
+      "jxff": "演示实验+课堂讲授",
+      "xssx": 15,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BAF73E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "卡诺定理与热力学第二定律",
+      "zsd": "卡诺热机与卡诺定理",
+      "szys": "实验认知：观察实验现象，寻找实验规律\n科学方法：简化法，数理逻辑\n科学精神：寻根究底",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授+讨论",
+      "xssx": 16,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人，思政教育",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BB073E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "热力学第二定律的数学表述",
+      "zsd": "引入克劳修斯熵及熵表述的第二定律",
+      "szys": "理论认知：建立公理体系\n科学方法：数理逻辑\n科学精神：严谨分析",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授",
+      "xssx": 17,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BB173E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "第二定律的应用与讨论",
+      "zsd": "第二定律在各种条件下的应用",
+      "szys": "实验认知：量化描述性质\n理论认知：建立公理体系\n应用认知：解释已有现象\n科学方法：数理逻辑\n科学精神：严谨分析",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授",
+      "xssx": 18,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BB273E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "热力学基本微分方程",
+      "zsd": "热力学理论体系构建",
+      "szys": "理论认知：构建理想模型，建立公理体系\n科学方法：数理逻辑\n科学精神：严谨分析",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授",
+      "xssx": 19,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BB373E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "热力学理论的应用",
+      "zsd": "热力学在范氏气体，磁介质系统中的应用",
+      "szys": "理论认知：构建理想模型，建立公理体系，实验证伪检验\n应用认知：解释已有现象\n科学方法：类比，数理逻辑\n科学精神：严谨分析，怀疑主义",
+      "szwd": "如何思考",
+      "jxff": "演示实验+课堂讲授",
+      "xssx": 20,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BB473E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "相变现象",
+      "zsd": "利用等温压缩过程研究相变现象",
+      "szys": "实验认知：观察物理现象，挑选研究对象，量化描述性质，寻找实验规律\n科学方法：简化法，控制变量法\n科学精神：寻根究底",
+      "szwd": "如何思考",
+      "jxff": "演示实验+课堂讲授",
+      "xssx": 21,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": "如何做事，如何做人",
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BB573E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "范氏气体与气液相变",
+      "zsd": "利用范氏气体模型解释气液相变现象，以及过冷现象的应用",
+      "szys": "理论认知：构建理想模型，建立公理体系，实验证伪检验\n应用认知：技术发明创造",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授",
+      "xssx": 22,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BB673E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:31.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:31.000+08:00",
+      "zj": "临界现象*",
+      "zsd": "观察临界现象，构建实验认知",
+      "szys": "实验认知：观察物理现象，挑选研究对象，量化描述性质，寻找实验规律\n理论认知：构建理想模型，建立公理体系，实验证伪检验",
+      "szwd": "如何思考",
+      "jxff": "实验录像+课堂讲授",
+      "xssx": 23,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BB773E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:32.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:32.000+08:00",
+      "zj": "化学反应热力学初步*",
+      "zsd": "对化学反应应用热力学",
+      "szys": "应用认知：解释已有现象，预言可能事件",
+      "szwd": "如何思考",
+      "jxff": "课堂讲授",
+      "xssx": 24,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    },
+    {
+      "id": "DA757BCC0BB873E3E050007F01001BD1",
+      "cjr": "0006178105",
+      "cjsj": "2022-03-18T09:58:32.000+08:00",
+      "zhxgr": "0006178105",
+      "zhxgsj": "2022-03-18T09:58:32.000+08:00",
+      "zj": "光子气体",
+      "zsd": "对光子气体构建热力学理解和微观统计理解",
+      "szys": "实验认知：观察物理现象，挑选研究对象，量化描述性质，寻找实验规律\n理论认知：构建理想模型，建立公理体系",
+      "szwd": "如何思考",
+      "jxff": "演示实验+课堂讲授",
+      "xssx": 25,
+      "kcdm": "C78ABB909C15B0FDE050007F010021F7",
+      "fjs": [
+
+      ],
+      "szwdArr": [
+
+      ],
+      "szwdmc": null,
+      "ejwd": null,
+      "wjm": null,
+      "wjUrl": null
+    }
+  ]
+}

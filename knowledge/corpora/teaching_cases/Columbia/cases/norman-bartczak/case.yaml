@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-norman-bartczak"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Norman Bartczak, PhD, MBA"
+slug: "norman-bartczak"
+source_url: "https://ctl.columbia.edu/transformations/faculty/norman-bartczak/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "ac96415901a4732586c3f32a5e551e2eb9daa68fe772b2215b5ddda273a625d7"

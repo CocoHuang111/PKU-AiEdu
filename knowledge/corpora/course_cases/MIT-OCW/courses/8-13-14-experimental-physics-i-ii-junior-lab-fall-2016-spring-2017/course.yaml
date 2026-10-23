@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-8-13-14-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.13-14"
+cross_listed_codes: []
+course_title: "Experimental Physics I & II \"Junior Lab\""
+course_slug: "8-13-14-experimental-physics-i-ii-junior-lab-fall-2016-spring-2017"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Physics Department Faculty, Lecturers, and Technical Staff"
+subject_primary: "Physics"
+subject_secondary:
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+description: |
+  Junior Lab consists of two undergraduate courses in experimental physics. The course sequence is usually taken by Juniors (hence the name). Officially, the courses are called Experimental Physics I and II and are numbered 8.13 for the first half, given in the fall semester, and 8.14 for the second half, given in the spring. Each term, students do experiments on phenomena whose discoveries led to major advances in physics. In the process, they deepen their understanding of the relations between experiment and theory, mostly in atomic and nuclear physics.
+course_url: "https://ocw.mit.edu/courses/8-13-14-experimental-physics-i-ii-junior-lab-fall-2016-spring-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/8-13-14-experimental-physics-i-ii-junior-lab-fall-2016-spring-2017/d46df724033fc5b0de90180e229aad8b_8-13-14f16-s17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

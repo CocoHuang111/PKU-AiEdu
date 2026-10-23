@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-1000-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.1000"
+cross_listed_codes: []
+course_title: "Foundations of Theater Practice"
+course_slug: "21m-611-foundations-of-theater-practice-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Janet Sonenberg"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Humanities"
+  - "Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Written Assignments"
+description: |
+  The goals of this class are two-fold: the first is to experience the creative processes and storytelling behind several of theater’s arts and to acquire the analytical skills necessary in assessing the meaning they transmit when they come together in production. Secondly, we will introduce you to these languages in a creative way by giving you hands-on experience in each. To that end, several Visiting Artists and MIT faculty in Theater Arts will guest lecture, lead workshops, and give you practical instruction in their individual art forms.
+course_url: "https://ocw.mit.edu/courses/21m-611-foundations-of-theater-practice-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/21m-611-foundations-of-theater-practice-fall-2009/74e4043636241cfd6c88bed83b77d12a_21m-611f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

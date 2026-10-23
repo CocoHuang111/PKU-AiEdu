@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-11-954-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.954"
+cross_listed_codes: []
+course_title: "Community-Owned Enterprise and Civic Participation"
+course_slug: "11-954-community-owned-enterprise-and-civic-participation-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. J. Phillip Thompson"
+subject_primary: "Economics"
+subject_secondary:
+  - "Public Economics"
+  - "Political Science"
+  - "Public Administration"
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Public Economics"
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  This course will examine literature and practice regarding community-owned enterprise as an alternative means of increasing community participation and development. The use of cooperatives, credit unions, land trusts, and limited stock ownership enterprises for increasing community participation and empowerment will be examined.
+course_url: "https://ocw.mit.edu/courses/11-954-community-owned-enterprise-and-civic-participation-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/11-954-community-owned-enterprise-and-civic-participation-spring-2005/91fe0dcb812ac63d8a563147a3379e8a_11-954s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

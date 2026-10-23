@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-african-centered-practices-community-and-classroom"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "African Centered Practices in the Community and in the Classroom"
+slug: "african-centered-practices-community-and-classroom"
+source_url: "https://crlt.umich.edu/african-centered-practices-community-and-classroom"
+language: "en"
+published: null
+awarded_year: "2021"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "be87100c899afecfd8cb1bebb120c3ebfd5c52a3e751e88ae4c2bd5c9e65830d"

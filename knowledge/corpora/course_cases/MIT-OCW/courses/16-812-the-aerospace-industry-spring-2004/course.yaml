@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-16-812-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.812"
+cross_listed_codes: []
+course_title: "The Aerospace Industry"
+course_slug: "16-812-the-aerospace-industry-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Earll Murman"
+  - "Prof. Jennifer L. Craig"
+  - "Barbara Lechner"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Organizational Behavior"
+  - "Humanities"
+  - "History"
+  - "Modern History"
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Modern History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course meets weekly to discuss recent aerospace history and current events, in order to understand how they are responsible for the state of the aerospace industry. With invited subject matter experts participating in nearly every session, students have an opportunity to hone their insight through truly informed discussion. The aim of the course is to prepare junior and senior level students for their first industry experiences.
+course_url: "https://ocw.mit.edu/courses/16-812-the-aerospace-industry-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/16-812-the-aerospace-industry-spring-2004/54a669556f12fa2cb251f099cd602851_16-812s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

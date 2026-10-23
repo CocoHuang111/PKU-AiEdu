@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-student-forums-educational-technology-mooc-program"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Student Forums in the Educational Technology MOOC Program"
+slug: "student-forums-educational-technology-mooc-program"
+course_codes:
+  - "11.132x"
+departments:
+  - "Urban Studies and Planning (Course 11)"
+instructors:
+  - "Elizabeth Huttner-Loan"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/student-forums-educational-technology-mooc-program"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "5520f7259115313113c73b6ac8affe841d949c26238ca37d31c91c3a885ea4e2"

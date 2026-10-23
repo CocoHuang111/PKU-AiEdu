@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-principles-icap-framework-intro-eecs-robotics"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Principles from the ICAP Framework: Intro to EECS Robotics"
+slug: "principles-icap-framework-intro-eecs-robotics"
+course_codes:
+  - "6.01"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Sanjoy Mahajan"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/principles-icap-framework-intro-eecs-robotics"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "7b643b52296ec5035b0fc11e1cbfc388db6202cb88c6964a064c8d22ecce05df"

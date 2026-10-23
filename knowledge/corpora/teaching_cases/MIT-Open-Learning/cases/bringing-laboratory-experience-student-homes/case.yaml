@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-bringing-laboratory-experience-student-homes"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Bringing the Laboratory Experience to Student Homes"
+slug: "bringing-laboratory-experience-student-homes"
+course_codes:
+  - "20.309"
+departments:
+  - "Biological Engineering (Course 20)"
+instructors:
+  - "Maxine Jonas, Steven Wasserman"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/bringing-laboratory-experience-student-homes"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "18a4bb69f5bda18a77ca6d161c955e2d94b7f57bb9bbec3802602b8192751675"

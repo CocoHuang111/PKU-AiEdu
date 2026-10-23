@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-16-06-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.06"
+cross_listed_codes: []
+course_title: "Principles of Automatic Control"
+course_slug: "16-06-principles-of-automatic-control-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Steven Hall"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Guidance and Control Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Guidance and Control Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces the design of feedback control systems as applied to a variety of air and spacecraft systems. Topics include the properties and advantages of feedback systems, time-domain and frequency-domain performance measures, stability and degree of stability, the Root locus method, Nyquist criterion, frequency-domain design, and state space methods.
+course_url: "https://ocw.mit.edu/courses/16-06-principles-of-automatic-control-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/16-06-principles-of-automatic-control-fall-2012/a752f4a6855ebd3ecdfdadbe8d2ca954_16-06f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

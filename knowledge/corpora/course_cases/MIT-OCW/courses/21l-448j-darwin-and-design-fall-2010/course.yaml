@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-448j-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.448J"
+cross_listed_codes:
+  - "21W.739J"
+course_title: "Darwin and Design"
+course_slug: "21l-448j-darwin-and-design-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Paradis"
+subject_primary: "History"
+subject_secondary:
+  - "Intellectual History"
+  - "Literature"
+  - "Philosophy"
+  - "Metaphysics"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Intellectual History"
+      - name: "Literature"
+        specialties: []
+      - name: "Philosophy"
+        specialties:
+          - "Metaphysics"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  Humans are social animals; social demands, both cooperative and competitive, structure our development, our brain and our mind. This course covers social development, social behaviour, social cognition and social neuroscience, in both human and non-human social animals. Topics include altruism, empathy, communication, theory of mind, aggression, power, groups, mating, and morality. Methods include evolutionary biology, neuroscience, cognitive science, social psychology and anthropology.
+course_url: "https://ocw.mit.edu/courses/21l-448j-darwin-and-design-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/21l-448j-darwin-and-design-fall-2010/6991124f0da63e0b805e876b60d9d077_21l-448jf10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-16-920j-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.920J"
+cross_listed_codes:
+  - "2.097J"
+  - "6.339J"
+course_title: "Numerical Methods for Partial Differential Equations (SMA 5212)"
+course_slug: "16-920j-numerical-methods-for-partial-differential-equations-sma-5212-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Mechanical Engineering"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Boo Cheong Khoo"
+  - "Prof. Jacob White"
+  - "Prof. Jaime Peraire"
+  - "Prof. Anthony T. Patera"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Differential Equations"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  A presentation of the fundamentals of modern numerical techniques for a wide range of linear and nonlinear elliptic, parabolic and hyperbolic partial differential equations and integral equations central to a wide variety of applications in science, engineering, and other fields. Topics include: Mathematical Formulations; Finite Difference and Finite Volume Discretizations; Finite Element Discretizations; Boundary Element Discretizations; Direct and Iterative Solution Methods. This course was also taught as part of the Singapore-MIT Alliance (SMA) programme as course number SMA 5212 (Numerical Methods for Partial Differential Equations).
+course_url: "https://ocw.mit.edu/courses/16-920j-numerical-methods-for-partial-differential-equations-sma-5212-spring-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/16-920j-numerical-methods-for-partial-differential-equations-sma-5212-spring-2003/f3f453b7050707ceba4c18c12041e393_16-920js03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

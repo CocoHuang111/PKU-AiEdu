@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-seth-cluett"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Seth Cluett, Ph.D."
+slug: "seth-cluett"
+source_url: "https://ctl.columbia.edu/transformations/faculty/seth-cluett/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "4ef40d112a35362bac477b0a64830cb3d0f29b2cccb61bff64ecf541a158c646"

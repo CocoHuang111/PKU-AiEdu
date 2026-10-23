@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-716-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.716"
+cross_listed_codes: []
+course_title: "Introduction to Contemporary Hispanic Literature"
+course_slug: "21g-716-introduction-to-contemporary-hispanic-literature-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Margery Resnick"
+subject_primary: "Language"
+subject_secondary:
+  - "Spanish"
+  - "Literature"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Spanish"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This course studies important twentieth century texts from Spain and Latin America. The readings include short stories, theatre, the novel and poetry. This subject is conducted in Spanish and all reading and writing for the course is also done in Spanish.
+course_url: "https://ocw.mit.edu/courses/21g-716-introduction-to-contemporary-hispanic-literature-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-716-introduction-to-contemporary-hispanic-literature-spring-2005/704aaca89c579c963fef0f40602b23eb_21g-716s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

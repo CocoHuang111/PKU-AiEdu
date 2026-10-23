@@ -1,0 +1,13 @@
+- Source: https://ocw.mit.edu/courses/21a-157-the-meaning-of-life-spring-2019/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+[GJ] Taught by Prof. Graham Jones
+
+[HP] Taught by Prof. Heather Paxson
+
+<table><tr><th>SES #</th><th>TOPICS</th><th>KEY DUE DATES</th></tr><tr><td colspan="3">Introductory Lectures</td></tr><tr><td>1</td><td>The Good Life, and Its Meanings [HP]</td><td></td></tr><tr><td>2</td><td>What Matters? [GJ]</td><td></td></tr><tr><td colspan="3">Module 1: Family [HP]</td></tr><tr><td>3</td><td>The Ideals (and Realities) of Companionate Marriage</td><td>“Moral Moment” vignette due</td></tr><tr><td>4</td><td>The Moral Laboratory of Parenting</td><td></td></tr><tr><td>5</td><td>Module 1 Recitation</td><td></td></tr><tr><td colspan="3">Module 2: Wealth [GJ]</td></tr><tr><td>6</td><td>Reciprocity</td><td>Investigation paper 1 due</td></tr><tr><td>7</td><td>Money</td><td></td></tr><tr><td>8</td><td>Work</td><td></td></tr><tr><td>9</td><td>Module 2 Recitation</td><td></td></tr><tr><td colspan="3">Module 3: Sex [HP]</td></tr><tr><td>10</td><td>The Meanings of Sex</td><td>Investigation paper 2 due</td></tr><tr><td>11</td><td>Being Sexual</td><td></td></tr><tr><td>12</td><td>Sexual Bodies and Agencies</td><td></td></tr><tr><td>13</td><td>Module 3 Recitation</td><td></td></tr><tr><td colspan="3">Module 4: Self-Cultivation [GJ]</td></tr><tr><td>14</td><td>Talent</td><td>Investigation paper 3 due</td></tr><tr><td>15</td><td>Beauty</td><td></td></tr><tr><td>16</td><td>Mindfulness <br> In-class workshop led by Rana Chudnofsky of the <br> [*Benson-Henry Institute for Mind Body Medicine (BHI)*](https://bensonhenryinstitute.org/) <br> at Massachusetts General Hospital</td><td></td></tr><tr><td>17</td><td>Module 4 Recitation</td><td></td></tr><tr><td colspan="3">Module 5: Belonging [HP]</td></tr><tr><td>18</td><td>Remembering and Forgetting</td><td></td></tr><tr><td>19</td><td>Cultural Citizenship and Multiple Belongings</td><td>Investigation paper 4 due</td></tr><tr><td>20</td><td>Module 5 Recitation</td><td></td></tr><tr><td>21</td><td>Displacement, Loss and Crisis</td><td></td></tr><tr><td colspan="3">Module 6: Faith [GJ]</td></tr><tr><td>22</td><td>A Cause</td><td></td></tr><tr><td>23</td><td>Progress</td><td>Investigation paper 5 due</td></tr><tr><td>24</td><td>Religion</td><td></td></tr><tr><td>25</td><td>Module 6 Recitation</td><td></td></tr><tr><td colspan="3">Concluding Session: Community</td></tr><tr><td>26</td><td>Community</td><td>Final paper due</td></tr></table>

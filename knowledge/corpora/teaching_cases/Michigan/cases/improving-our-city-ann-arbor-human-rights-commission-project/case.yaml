@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-improving-our-city-ann-arbor-human-rights-commission-project"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Improving Our City: The Ann Arbor Human Rights Commission Project"
+slug: "improving-our-city-ann-arbor-human-rights-commission-project"
+source_url: "https://crlt.umich.edu/improving-our-city-ann-arbor-human-rights-commission-project"
+language: "en"
+published: null
+awarded_year: "2021"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "fa59351da6964b0b85c3c2ed1bfdb0614eadfcaf0c31827e719d2116e22cd4bc"

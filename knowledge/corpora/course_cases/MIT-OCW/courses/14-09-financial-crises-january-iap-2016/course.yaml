@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-14-09-january-iap-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.09"
+cross_listed_codes: []
+course_title: "Financial Crises"
+course_slug: "14-09-financial-crises-january-iap-2016"
+term: "January IAP"
+year: 2016
+as_taught_in: "January IAP 2016"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alp Simsek"
+subject_primary: "Finance"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course is an introduction to the economic theories of financial crises. It focuses on amplification mechanisms that exacerbate crises, such as leverage, fire sales, bank runs, interconnections, and complexity. It also analyzes the different perspectives on the origins of crises, such as mistaken beliefs and moral hazard, and discusses the optimal regulation of the financial system. The course draws upon examples from financial crises around the world, especially the recent subprime financial crisis. 14.09 is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/14-09-financial-crises-january-iap-2016/"
+image_url: "https://ocw.mit.edu/courses/14-09-financial-crises-january-iap-2016/51ff79f1c0bf3b2176d0311d6d424b2c_14-09iap16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

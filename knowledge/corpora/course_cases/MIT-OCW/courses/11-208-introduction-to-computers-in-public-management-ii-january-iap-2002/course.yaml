@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-11-208-january-iap-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.208"
+cross_listed_codes: []
+course_title: "Introduction to Computers in Public Management II"
+course_slug: "11-208-introduction-to-computers-in-public-management-ii-january-iap-2002"
+term: "January IAP"
+year: 2002
+as_taught_in: "January IAP 2002"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joseph Ferreira"
+  - "Prof. Lorlene Hoyt"
+  - "Thomas Grayson"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Social Science"
+  - "Public Administration"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties: []
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Second of two modules facilitating a basic understanding of computing in planning and public management. Students develop problem-solving skills using computer-based tools for "what-if" analyses. Emphasis on spatial analysis using geographic information systems and database query tools.
+course_url: "https://ocw.mit.edu/courses/11-208-introduction-to-computers-in-public-management-ii-january-iap-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/11-208-introduction-to-computers-in-public-management-ii-january-iap-2002/71a1053f72fd1269bcf0ed916173388f_11-208iap02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

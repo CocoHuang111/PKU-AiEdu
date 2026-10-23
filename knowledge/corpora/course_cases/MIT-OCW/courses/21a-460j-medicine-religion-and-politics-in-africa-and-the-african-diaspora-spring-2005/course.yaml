@@ -1,0 +1,85 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-460j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.460J"
+cross_listed_codes:
+  - "WGS.620J"
+course_title: "Medicine, Religion and Politics in Africa and the African Diaspora"
+course_slug: "21a-460j-medicine-religion-and-politics-in-africa-and-the-african-diaspora-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Erica James"
+subject_primary: "Public Health"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "African History"
+  - "Religion"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "African History"
+      - name: "Religion"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course provides an exploration of colonial and postcolonial clashes between theories of healing and embodiment in the African world and those of western bio-medicine. It examines how Afro-Atlantic religious traditions have challenged western conceptions of illness, healing, and the body and have also offered alternative notions of morality, rationality, kinship, gender, and sexuality. It also analyzes whether contemporary western bio-medical interventions reinforce colonial or imperial power in the effort to promote global health in Africa and the African diaspora.
+course_url: "https://ocw.mit.edu/courses/21a-460j-medicine-religion-and-politics-in-africa-and-the-african-diaspora-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/21a-460j-medicine-religion-and-politics-in-africa-and-the-african-diaspora-spring-2005/4311afffc2b6d9fac514db4ea8c2bdff_21a-460js05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

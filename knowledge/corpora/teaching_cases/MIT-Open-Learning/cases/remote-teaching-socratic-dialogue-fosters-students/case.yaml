@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-remote-teaching-socratic-dialogue-fosters-students"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Remote Teaching: Socratic dialogue fosters students as learners and educators"
+slug: "remote-teaching-socratic-dialogue-fosters-students"
+course_codes:
+  - "10.426"
+departments:
+  - "Chemical Engineering (Course 10)"
+instructors:
+  - "Karthish Manthiram"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/remote-teaching-socratic-dialogue-fosters-students"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "ad59b8a36740af3319f180efc30eb8d811e627605656aa731d6a1473c627fdbe"

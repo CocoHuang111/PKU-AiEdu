@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-411-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.411"
+cross_listed_codes: []
+course_title: "History of Western Thought, 500-1300"
+course_slug: "21h-411-history-of-western-thought-500-1300-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anne McCants"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "Intellectual History"
+  - "Medieval History"
+  - "Religion"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+          - "Intellectual History"
+          - "Medieval History"
+      - name: "Religion"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course examines the development of the western intellectual tradition from the fall of the Roman Empire through the High Middle Ages. Our basic premise will be that the triumph of Christianity in the west was not the inevitable outcome it might appear from hindsight. Our attention will therefore be focused not only on the development of Christian thought and practice, but on its challengers as well. The core themes of the course include the emergence of a uniform Christian orthodoxy in late antiquity; the development of monastic practice and its attendant intellectual traditions; and the geographical spread of Christian beliefs. Working in opposition to those trends were other forces, which we will also address in our readings. In particular, we will consider the persistence of northern paganism; the rise of Islam; the solidification of a separate Byzantine orthodoxy; indigenous heretical movements; and the ambiguous position of Jews in all of European society.
+course_url: "https://ocw.mit.edu/courses/21h-411-history-of-western-thought-500-1300-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/21h-411-history-of-western-thought-500-1300-fall-2004/699b66caf4f6a4c85c4cc8a472279079_21h-411f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

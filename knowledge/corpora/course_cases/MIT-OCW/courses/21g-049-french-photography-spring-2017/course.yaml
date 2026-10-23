@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-049-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.049"
+cross_listed_codes: []
+course_title: "French Photography"
+course_slug: "21g-049-french-photography-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Catherine E Clark"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Photography"
+  - "Humanities"
+  - "Language"
+  - "French"
+  - "Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Photography"
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Written Assignments"
+description: |
+  This course introduces students to the world of French photography from its invention in the 1820s to the present. It provides exposure to major photographers and images of the French tradition, and encourages students to explore the social and cultural roles and meanings of photographs. Designed to help students navigate their own photo-saturated worlds, it also provides opportunity to gain practical experience in photography. Taught in English.
+course_url: "https://ocw.mit.edu/courses/21g-049-french-photography-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/21g-049-french-photography-spring-2017/1e49b0114f3758288898d58b1f8e85e0_21G-049S17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

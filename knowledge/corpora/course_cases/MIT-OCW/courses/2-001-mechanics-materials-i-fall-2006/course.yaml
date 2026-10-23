@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-2-001-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.001"
+cross_listed_codes: []
+course_title: "Mechanics & Materials I"
+course_slug: "2-001-mechanics-materials-i-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Carol Livermore"
+  - "Prof. Henrik Schmidt"
+  - "Prof. James H. Williams"
+  - "Prof. Simona Socrate"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Solid Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to the mechanics of solids with applications to science and engineering. We emphasize the three essential features of all mechanics analyses, namely: (a) the geometry of the motion and/or deformation of the structure, and conditions of geometric fit, (b) the forces on and within structures and assemblages; and (c) the physical aspects of the structural system (including material properties) which quantify relations between the forces and motions/deformation.
+course_url: "https://ocw.mit.edu/courses/2-001-mechanics-materials-i-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/2-001-mechanics-materials-i-fall-2006/6126af1cc9c996a7cf06d82795560219_2-001f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

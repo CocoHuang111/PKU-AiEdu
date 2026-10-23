@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-1-63-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.63"
+cross_listed_codes: []
+course_title: "Advanced Fluid Dynamics of the Environment"
+course_slug: "1-63-advanced-fluid-dynamics-of-the-environment-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Chiang Mei"
+  - "Guangda Li"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Hydrodynamics and Coastal Engineering"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Hydrodynamics and Coastal Engineering"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  Designed to familiarize students with theories and analytical tools useful for studying research literature, this course is a survey of fluid mechanical problems in the water environment. Because of the inherent nonlinearities in the governing equations, we shall emphasize the art of making analytical approximations not only for facilitating calculations but also for gaining deeper physical insight. The importance of scales will be discussed throughout the course in lectures and homeworks. Mathematical techniques beyond the usual preparation of first-year graduate students will be introduced as a part of the course. Topics vary from year to year.
+course_url: "https://ocw.mit.edu/courses/1-63-advanced-fluid-dynamics-of-the-environment-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/1-63-advanced-fluid-dynamics-of-the-environment-fall-2002/3f2d7124b2f556748bf2449858ad6329_1-63f02.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

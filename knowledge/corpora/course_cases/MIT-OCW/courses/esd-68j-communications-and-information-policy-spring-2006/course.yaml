@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-68j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.68J"
+cross_listed_codes:
+  - "6.978J"
+course_title: "Communications and Information Policy"
+course_slug: "esd-68j-communications-and-information-policy-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. David D. Clark"
+  - "Dr. Frank Field"
+  - "Sharon E. Gillett"
+  - "Dr. William Lehr"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Telecommunications"
+  - "Social Science"
+  - "Communication"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course provides an introduction to the technology and policy context of public communications networks, through critical discussion of current issues in communications policy and their historical roots. The course focuses on underlying rationales and models for government involvement and the complex dynamics introduced by co-evolving technologies, industry structure, and public policy objectives. Cases drawn from cellular, fixed-line, and Internet applications include evolution of spectrum policy and current proposals for reform; the migration to broadband and implications for universal service policies; and property rights associated with digital content. The course lays a foundation for thesis research in this domain.
+course_url: "https://ocw.mit.edu/courses/esd-68j-communications-and-information-policy-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/esd-68j-communications-and-information-policy-spring-2006/8d1f9f14bcd9d08b4c13fc6f8cf0e332_esd-68js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

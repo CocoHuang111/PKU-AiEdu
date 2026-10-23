@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-448j-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.448J"
+cross_listed_codes:
+  - "21W.739J"
+course_title: "Darwin and Design"
+course_slug: "21l-448j-darwin-and-design-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alvin Kibel"
+subject_primary: "History"
+subject_secondary:
+  - "Intellectual History"
+  - "Literature"
+  - "Philosophy"
+  - "Metaphysics"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Intellectual History"
+      - name: "Literature"
+        specialties: []
+      - name: "Philosophy"
+        specialties:
+          - "Metaphysics"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject offers a broad survey of texts (both literary and philosophical) drawn from the Western tradition and selected to trace the immediate intellectual antecedents and some of the implications of the ideas animating Darwin’s revolutionary On the Origin of Species . Darwin’s text, of course, is about the mechanism that drives the evolution of life on this planet, but the fundamental ideas of the text have implications that range well beyond the scope of natural history, and the assumptions behind Darwin’s arguments challenge ideas that go much further back than the set of ideas that Darwin set himself explicitly to question - ideas of decisive importance when we think about ourselves, the nature of the material universe, the planet that we live upon, and our place in its scheme of life. In establishing his theory of natural selection, Darwin set himself, rather self-consciously, to challenge a whole way of thinking about these things. The main focus of attention will be Darwin’s contribution to the so-called “argument from design” - the notion that innumerable aspects of the world (and most particularly the organisms within it) display features directly analogous to objects of human design and, since design implies a designer, that an intelligent, conscious agency must have been responsible for their organization and creation. Previously, it had been argued that such features must have only one of two ultimate sources - chance or conscious agency. Darwin proposed and elaborated a third source, which he called Natural Selection, an unconscious agency capable of outdoing the most complex feats of human intelligence. The course of study will not only examine the immediate inspiration for this idea in the work of Adam Smith and Thomas Malthus and place Darwin’s Origin and the theory of Natural Selection in the history of ensuing debate, but it will also touch upon related issues.
+course_url: "https://ocw.mit.edu/courses/21l-448j-darwin-and-design-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/21l-448j-darwin-and-design-fall-2003/c1942c109f2412e5cd7d4a6490764adc_21l-448jf03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

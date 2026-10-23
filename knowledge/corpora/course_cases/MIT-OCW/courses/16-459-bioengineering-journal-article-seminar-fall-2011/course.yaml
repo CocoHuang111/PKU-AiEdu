@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-16-459-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.459"
+cross_listed_codes: []
+course_title: "Bioengineering Journal Article Seminar"
+course_slug: "16-459-bioengineering-journal-article-seminar-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Charles M. Oman"
+  - "Dr. Laurence R. Young"
+  - "Dr. Alan Natapoff"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Bioastronautics"
+  - "Computer Science"
+  - "Human-Computer Interfaces"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Bioastronautics"
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Presentation Assignments"
+description: |
+  Each term, the class selects a new set of professional journal articles on bioengineering topics of current research interest. Some papers are chosen because of particular content, others are selected because they illustrate important points of methodology. Each week, one student leads the discussion, evaluating the strengths, weaknesses, and importance of each paper. Subject may be repeated for credit a maximum of four terms. Letter grade given in the last term applies to all accumulated units of 16.459.
+course_url: "https://ocw.mit.edu/courses/16-459-bioengineering-journal-article-seminar-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/16-459-bioengineering-journal-article-seminar-fall-2011/a4bc9ea5a80861c47e7bd5997904b309_16-459f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

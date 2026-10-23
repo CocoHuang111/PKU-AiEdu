@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-9-012-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.012"
+cross_listed_codes: []
+course_title: "The Brain and Cognitive Sciences II"
+course_slug: "9-012-the-brain-and-cognitive-sciences-ii-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Edward Gibson"
+  - "Prof. Joshua Tenenbaum"
+  - "Prof. Pawan Sinha"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neuroscience"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This class is the second half of an intensive survey of cognitive science for first-year graduate students. Topics include visual perception, language, memory, cognitive architecture, learning, reasoning, decision-making, and cognitive development. Topics covered are from behavioral, computational, and neural perspectives.
+course_url: "https://ocw.mit.edu/courses/9-012-the-brain-and-cognitive-sciences-ii-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/9-012-the-brain-and-cognitive-sciences-ii-spring-2006/eb705ded0b076c7fff3a002c3dfef593_9-012s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

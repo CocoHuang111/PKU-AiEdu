@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-520-fall-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.520"
+cross_listed_codes: []
+course_title: "Magic, Science, and Religion"
+course_slug: "21a-520-magic-science-and-religion-fall-2021"
+term: "Fall"
+year: 2021
+as_taught_in: "Fall 2021"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Graham Jones"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course explores the origins of magic, science, and religion as forms of belief within and across cultures. It addresses the place of rationality and belief in competing sociocultural theories, with a focus on analyzing modern perspectives. It also examines how cases of overlap between magic, science, and religion raise new questions about modernity and human nature.
+course_url: "https://ocw.mit.edu/courses/21a-520-magic-science-and-religion-fall-2021/"
+image_url: "https://ocw.mit.edu/courses/21a-520-magic-science-and-religion-fall-2021/21a-520f21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,97 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-362-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.362"
+cross_listed_codes:
+  - "CMS.862"
+course_title: "Civic Media Codesign Studio"
+course_slug: "cms-362-civic-media-codesign-studio-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sasha Costanza-Chock"
+  - "Evan Henshaw-Plath"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Globalization"
+  - "Innovation"
+  - "Leadership"
+  - "Project Management"
+  - "Humanities"
+  - "Social Science"
+  - "Communication"
+  - "Economics"
+  - "Political Science"
+  - "Public Administration"
+  - "Sociology"
+  - "Urban Studies"
+  - "Society"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+      - name: "Globalization"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Project Management"
+        specialties: []
+  - name: "Humanities"
+    subtopics: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Economics"
+        specialties: []
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties: []
+      - name: "Sociology"
+        specialties: []
+      - name: "Urban Studies"
+        specialties: []
+  - name: "Society"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+description: |
+  This course is a service-learning, project-based studio course that focuses on collaborative design of civic media. Students will work in diverse teams with community partners to create civic media projects grounded in real-world community needs. This course covers co-design and lean UX methods, and best practices for including communities in iterative stages of project ideation, design, prototyping, testing, launch, and stewardship. Students should have an interest in collaboration with community-based organizations.
+course_url: "https://ocw.mit.edu/courses/cms-362-civic-media-codesign-studio-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/cms-362-civic-media-codesign-studio-spring-2016/4a43a0838b2cc3617c01f907dd3069f6_cms-362s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-10-571j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.571J"
+cross_listed_codes:
+  - "12.306"
+  - "12.806J"
+course_title: "Atmospheric Physics and Chemistry"
+course_slug: "10-571j-atmospheric-physics-and-chemistry-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Chemical Engineering"
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gregory McRae"
+  - "Prof. Ronald G Prinn"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Atmospheric Science"
+  - "Geochemistry"
+  - "Geophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geochemistry"
+          - "Geophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to the physics and chemistry of the atmosphere, including experience with computer codes. It is intended for undergraduates and first year graduate students.
+course_url: "https://ocw.mit.edu/courses/10-571j-atmospheric-physics-and-chemistry-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/10-571j-atmospheric-physics-and-chemistry-spring-2006/73123c7ea414a257dde4ae35dde88f7a_10-571js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

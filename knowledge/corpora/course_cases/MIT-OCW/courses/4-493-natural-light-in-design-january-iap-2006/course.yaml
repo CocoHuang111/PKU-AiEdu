@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-4-493-january-iap-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.493"
+cross_listed_codes: []
+course_title: "Natural Light in Design"
+course_slug: "4-493-natural-light-in-design-january-iap-2006"
+term: "January IAP"
+year: 2006
+as_taught_in: "January IAP 2006"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Marilyne Andersen"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Modeling and Simulation"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Design"
+  - "Environmental Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Environmental Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  Today, computer-based simulations are becoming increasingly popular, especially when daylighting and energy conservation are amongst the key goals for a project. This two-week workshop will expose participants to the current daylighting simulation models and beyond, by introducing realistic and dynamic assessment methods through hands-on exercises and application to a design project. Open to students and practitioners. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/4-493-natural-light-in-design-january-iap-2006/"
+image_url: "https://ocw.mit.edu/courses/4-493-natural-light-in-design-january-iap-2006/e3705f0cfd1225f429872e93d67ad782_4-493iap06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

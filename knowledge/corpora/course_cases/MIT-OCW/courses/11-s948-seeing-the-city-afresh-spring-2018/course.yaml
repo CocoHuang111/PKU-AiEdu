@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-11-s948-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.S948"
+cross_listed_codes: []
+course_title: "Seeing the City Afresh"
+course_slug: "11-s948-seeing-the-city-afresh-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Garnette Cadogan"
+subject_primary: "Literature"
+subject_secondary:
+  - "Creative Writing"
+  - "Nonfiction Prose"
+  - "Poetry"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+          - "Nonfiction Prose"
+          - "Poetry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the city through writing—listening to the voices of poets, short story writers, novelists, journalists, critics, historians, ethnographers, urbanists, musicians, filmmakers, and visual artists. Through extensive reading that informs their work on a longform story, students will join the chorus of storytellers to richly represent the variegated city. Our focus is on three nonfiction forms—essay, memoir, literary narrative—with special emphasis on the writer-editor relationship and on revision as a heuristic to better thinking.
+course_url: "https://ocw.mit.edu/courses/11-s948-seeing-the-city-afresh-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/11-s948-seeing-the-city-afresh-spring-2018/907eb2ec83602d54b273463b7e5bc831_11-s948s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

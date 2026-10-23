@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-161-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.161"
+cross_listed_codes: []
+course_title: "Molecular Biology and Genetics in Modern Medicine"
+course_slug: "hst-161-molecular-biology-and-genetics-in-modern-medicine-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Housman"
+  - "Prof. Anne Giersch"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Health and Medicine"
+  - "Biomedicine"
+  - "Functional Genomics"
+  - "Science"
+  - "Biology"
+  - "Developmental Biology"
+  - "Genetics"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedicine"
+        specialties: []
+      - name: "Functional Genomics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Developmental Biology"
+          - "Genetics"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course provides a foundation for understanding the relationship between molecular biology, developmental biology, genetics, genomics, bioinformatics, and medicine. It develops explicit connections between basic research, medical understanding, and the perspective of patients. Principles of human genetics are reviewed. We translate clinical understanding into analysis at the level of the gene, chromosome and molecule; we cover the concepts and techniques of molecular biology and genomics, and the strategies and methods of genetic analysis, including an introduction to bioinformatics. Material in the course extends beyond basic principles to current research activity in human genetics.
+course_url: "https://ocw.mit.edu/courses/hst-161-molecular-biology-and-genetics-in-modern-medicine-fall-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/hst-161-molecular-biology-and-genetics-in-modern-medicine-fall-2007/fc30eb5397a9514e396931d54370a89f_hst-161f07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

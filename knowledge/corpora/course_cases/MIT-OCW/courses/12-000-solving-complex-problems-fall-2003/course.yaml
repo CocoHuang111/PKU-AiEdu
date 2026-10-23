@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-12-000-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.000"
+cross_listed_codes: []
+course_title: "Solving Complex Problems"
+course_slug: "12-000-solving-complex-problems-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kip Hodges"
+  - "Prof. Rafael Bras"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Science"
+  - "Earth Science"
+  - "Environmental Science"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Environmental Science"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+description: |
+  Solving Complex Problems provides an opportunity for entering freshmen to gain first-hand experience with working as part of a team to develop effective approaches to complex problems in Earth system science and engineering that do not have straightforward solutions. The subject includes training in a variety of skills, ranging from library research to Web Design . Each year’s course explores a different problem in detail through the study of complimentary case histories and the development of creative solution strategies . Beginning in 2000 as an educational experiment sponsored by MIT’s Committee on the Undergraduate Program, and receiving major financial support from the Alex and Britt d’Arbeloff Fund for Excellence in MIT Education , the subject is designed to enhance the first-semester freshman experience by helping students develop contexts for other subjects in the sciences and humanities, and by helping them to establish learning communities that include upperclassmen, faculty, MIT alumni, and professionals from many walks of life. In Fall 2003, students from the Class of 2007 were challenged with “Mission 2007”: To design the most “environmentally correct” strategy for oil exploration and extraction in the Arctic National Wildlife Refuge (ANWR); and To perform a cost-benefit analysis in order to evaluate whether or not the hydrocarbon resources that might be extracted from beneath ANWR are worth the environmental damage that might result from the process.
+course_url: "https://ocw.mit.edu/courses/12-000-solving-complex-problems-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/12-000-solving-complex-problems-fall-2003/4aaf723268b9b92957904f680985d80e_12-000f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

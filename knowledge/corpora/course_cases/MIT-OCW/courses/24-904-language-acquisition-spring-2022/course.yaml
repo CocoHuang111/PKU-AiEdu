@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-24-904-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.904"
+cross_listed_codes: []
+course_title: "Language Acquisition"
+course_slug: "24-904-language-acquisition-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Athulya Aravind"
+subject_primary: "Linguistics"
+subject_secondary: []
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is an introduction to language acquisition, a subfield of linguistics whose goal is to understand how humans acquire the ability to speak and understand a language—a highly complex task that is routinely and seemingly effortlessly accomplished by competent (native) speakers of the language in the first few years of life and without explicit instruction. By contrast, acquiring a second language after the critical period takes a long time, is effortful, usually requires explicit instruction and correction, and often fails to reach a level of competency that native speakers of the language have. Focusing on first language acquisition—the process by which native speakers of a language acquire the ability to speak and understand that language—this course covers selected topics in core areas of linguistic knowledge, including the lexicon (words), sentence structure, meaning composition, and pragmatics, from a developmental perspective.
+course_url: "https://ocw.mit.edu/courses/24-904-language-acquisition-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/24-904-language-acquisition-spring-2022/mit24_904_s22_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

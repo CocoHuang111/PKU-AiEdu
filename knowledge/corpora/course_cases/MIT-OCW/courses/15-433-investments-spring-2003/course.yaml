@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-15-433-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.433"
+cross_listed_codes: []
+course_title: "Investments"
+course_slug: "15-433-investments-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Reto Gallati"
+subject_primary: "Finance"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The focus of this course is on financial theory and empirical evidence for making investment decisions. Topics include: portfolio theory; equilibrium models of security prices (including the capital asset pricing model and the arbitrage pricing theory); the empirical behavior of security prices; market efficiency; performance evaluation; and behavioral finance.
+course_url: "https://ocw.mit.edu/courses/15-433-investments-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/15-433-investments-spring-2003/a0ae275afebab36900de08b215df78dc_15-433s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

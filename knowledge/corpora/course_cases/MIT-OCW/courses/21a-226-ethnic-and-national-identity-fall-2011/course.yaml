@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-102-formerly-21a-226-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.102 (formerly 21A.226)"
+cross_listed_codes: []
+course_title: "Ethnic and National Identity"
+course_slug: "21a-226-ethnic-and-national-identity-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jean Jackson"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Ethnography"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  An introduction to the cross-cultural study of ethnic and national identity. We examine the concept of social identity, and consider the ways in which gendered, linguistic, religious, and ethno-racial identity components interact. We explore the history of nationalism, including the emergence of the idea of the nation-state, as well as ethnic conflict, globalization, identity politics, and human rights.
+course_url: "https://ocw.mit.edu/courses/21a-226-ethnic-and-national-identity-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/21a-226-ethnic-and-national-identity-fall-2011/fd0a21f9a49aa52d7129b8b263e92780_21a-226f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

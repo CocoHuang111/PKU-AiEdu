@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-digital-sandbox-experiential-model-based-engineering-education"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Digital Sandbox for Experiential Model-Based Engineering Education"
+slug: "digital-sandbox-experiential-model-based-engineering-education"
+source_url: "https://crlt.umich.edu/digital-sandbox-experiential-model-based-engineering-education"
+language: "en"
+published: null
+awarded_year: "2024"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "725be61cca6f4662f9cd1590c064015c00ffe597a90d2c8c1879c9da9d891d11"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-921-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.921"
+cross_listed_codes:
+  - "HST.922"
+course_title: "Information Technology in the Health Care System of the Future"
+course_slug: "hst-921-information-technology-in-the-health-care-system-of-the-future-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Bryan Bergeron"
+  - "Dr. Daniel Sands"
+  - "Prof. Steven Locke"
+  - "Mirena Bagur"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Information Technology"
+  - "Health and Medicine"
+  - "Biomedical Enterprise"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+      - name: "Information Technology"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Enterprise"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This innovative, trans-faculty subject teaches how information technologies (IT) are reshaping and redefining the health care marketplace through improved economies of scale, greater technical efficiencies in the delivery of care to patients, advanced tools for patient education and self-care, network integrated decision support tools for clinicians, and the emergence of e-commerce in health care. Student tutorials provide an opportunity for interactive discussion. Interdisciplinary project teams comprised of Harvard and MIT graduate students in medicine, business, law, education, engineering, computer science, public health, and government collaborate to design innovative IT applications. Projects are presented during the final class. Starting in Spring 2010, this course will be titled Enabling Technology Innovation in Healthcare and the Life Sciences .
+course_url: "https://ocw.mit.edu/courses/hst-921-information-technology-in-the-health-care-system-of-the-future-spring-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/hst-921-information-technology-in-the-health-care-system-of-the-future-spring-2009/52daf58a3daacb1584b5bb06a26c111d_hst-921s09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-027-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.027"
+cross_listed_codes:
+  - "21H.250"
+  - "CMS.874"
+course_title: "Asia in the Modern World: Images & Representations"
+course_slug: "21g-027-asia-in-the-modern-world-images-representations-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Shigeru Miyagawa"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Visual Arts"
+  - "Humanities"
+  - "History"
+  - "Asian History"
+  - "Modern History"
+  - "World History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Visual Arts"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+          - "Modern History"
+          - "World History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  We will explore images that pertain to the emergence of Japan as a modern state. We will focus on images that depict Japan as it comes into contact with the rest of the world after its long and deep isolation during the feudal period. We will also cover city planning of Tokyo that took place after WWII, and such topics as the 1964 Tokyo Olympics. A unique feature of this offering is that we will run it concurrently with the edX MOOC and two University of Tokyo MOOCs, Visualizing Postwar Tokyo and Four Faces of Contemporary Japanese Architecture, for much of the remainder of the class.
+course_url: "https://ocw.mit.edu/courses/21g-027-asia-in-the-modern-world-images-representations-fall-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-027-asia-in-the-modern-world-images-representations-fall-2016/84376a8bd0f13cd07123c96c6ae2c4b4_21g-027f16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

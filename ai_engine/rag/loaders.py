@@ -5,11 +5,19 @@ from __future__ import annotations
 import re
 import subprocess
 from pathlib import Path
+from urllib.parse import urlparse
 
 SUPPORTED = {".pdf", ".docx", ".md", ".txt", ".html", ".htm", ".doc"}
 
 # 不入库的目录/文件名（原始视频、转写中间产物、说明文档、演示种子）
-SKIP_DIR_NAMES = {"raw_video", ".work", "__pycache__"}
+SKIP_DIR_NAMES = {
+    "raw_video",
+    ".work",
+    "__pycache__",
+    # 原始网页/PDF 快照只用于追溯，避免与清洗后的正文重复入库。
+    "source",
+    "original_sources",
+}
 SKIP_FILE_NAMES = {"readme.md"}
 SKIP_FILE_PREFIXES = ("种子-",)
 
@@ -154,6 +162,101 @@ def _load_html(path: Path) -> str:
     for tag in soup(["script", "style", "nav", "footer"]):
         tag.decompose()
     return soup.get_text("\n")
+
+
+_SOURCE_URL_RE = re.compile(
+    r"(?:\*{0,2}(?:原始\s*URL|Source(?:\s*URL)?|原文链接|来源网址|来源)\*{0,2})\s*[:：]\s*"
+    r"<?(https?://[^\s)>）\]|。，；;（]+)",
+    re.IGNORECASE,
+)
+_MANIFEST_ROW_RE = re.compile(
+    r"\|\s*`([^`]+)`\s*\|\s*<?(https?://[^\s>|]+)", re.IGNORECASE
+)
+_LOCAL_FILE_ROW_RE = re.compile(r"\|\s*\*\*本地文件\*\*\s*\|\s*`([^`]+)`")
+_ORIGINAL_URL_ROW_RE = re.compile(
+    r"\|\s*\*\*原始\s*URL\*\*\s*\|\s*<?(https?://[^\s>|]+)", re.IGNORECASE
+)
+
+
+def _valid_web_url(value: str | None) -> str:
+    """只接受可供用户跳转的 HTTP(S) 来源，避免将页内脚本地址误当来源。"""
+    value = (value or "").strip().rstrip(".,;:，。；：")
+    parsed = urlparse(value)
+    if parsed.scheme in {"http", "https"} and parsed.netloc:
+        return value
+    return ""
+
+
+def _html_source_url(path: Path) -> str:
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(path.read_text(encoding="utf-8", errors="ignore"), "html.parser")
+    canonical = soup.find("link", rel=lambda value: value and "canonical" in value)
+    if canonical:
+        url = _valid_web_url(canonical.get("href"))
+        if url:
+            return url
+    og_url = soup.find("meta", attrs={"property": "og:url"})
+    if og_url:
+        return _valid_web_url(og_url.get("content"))
+    return ""
+
+
+def _manifest_source_urls(root: Path) -> dict[Path, str]:
+    """读取语料目录 README 中已有的「本地文件—原始 URL」对照表。"""
+    mapping: dict[Path, str] = {}
+    for readme in root.rglob("README.md"):
+        text = readme.read_text(encoding="utf-8", errors="ignore")
+
+        # 归档清单：| `file.html` | https://... |
+        for match in _MANIFEST_ROW_RE.finditer(text):
+            mapping[(readme.parent / match.group(1)).resolve()] = _valid_web_url(
+                match.group(2)
+            )
+
+        # 课程大纲目录：「本地文件」和「原始 URL」分属两行。
+        pending_file: str | None = None
+        for line in text.splitlines():
+            file_match = _LOCAL_FILE_ROW_RE.search(line)
+            if file_match:
+                pending_file = file_match.group(1)
+                continue
+            url_match = _ORIGINAL_URL_ROW_RE.search(line)
+            if pending_file and url_match:
+                mapping[(readme.parent / pending_file).resolve()] = _valid_web_url(
+                    url_match.group(1)
+                )
+                pending_file = None
+    return mapping
+
+
+def source_url_for_document(path: str | Path, root: str | Path, text: str = "") -> str:
+    """找出文档的原始公网地址；无公网来源时返回空字符串。"""
+    path = Path(path)
+    root = Path(root)
+
+    if path.suffix.lower() in {".html", ".htm"}:
+        url = _html_source_url(path)
+        if url:
+            return url
+
+    marked = _SOURCE_URL_RE.search(text)
+    if marked:
+        url = _valid_web_url(marked.group(1))
+        if url:
+            return url
+
+    manifest = _manifest_source_urls(root)
+    direct = manifest.get(path.resolve(), "")
+    if direct:
+        return direct
+
+    # 整理稿常在正文中指向 source/ 下的原件，继承原件的 URL。
+    for local_ref in re.findall(r"`([^`]+\.(?:html?|pdf))`", text, re.IGNORECASE):
+        inherited = manifest.get((path.parent / local_ref).resolve(), "")
+        if inherited:
+            return inherited
+    return ""
 
 
 def load_document(path: str | Path) -> str:

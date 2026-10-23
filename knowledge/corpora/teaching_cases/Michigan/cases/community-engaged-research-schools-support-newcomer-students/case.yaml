@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-community-engaged-research-schools-support-newcomer-students"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Community-Engaged Research with Schools in Support of Newcomer Students"
+slug: "community-engaged-research-schools-support-newcomer-students"
+source_url: "https://crlt.umich.edu/community-engaged-research-schools-support-newcomer-students"
+language: "en"
+published: null
+awarded_year: "2022"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "f75ab8ef89fd60326d77260210933fe136de2df2327c44b4141de72a412acf5e"

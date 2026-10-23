@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-15-599-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.599"
+cross_listed_codes: []
+course_title: "Workshop in IT: Collaborative Innovation Networks"
+course_slug: "15-599-workshop-in-it-collaborative-innovation-networks-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Peter Gloor"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Innovation"
+  - "Engineering"
+  - "Computer Science"
+  - "Data Mining"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Programming Assignments"
+  - "Projects"
+description: |
+  Diversity begets creativity—in this seminar we tap the amazing power of swarm creativity on the Web by studying and working together as Collaborative Innovation Networks (COINs). As interdisciplinary teams of MIT management, SCAD design, University of Cologne informatics, and Aalto University software engineering students we will explore how to discover latest trends on the Web, and how to make them succeed in online social networks. We study a wide range of methods for predictive analytics (coolhunting) and online social marketing (coolfarming), mostly based on social network analysis and the emerging science of collaboration. Students will also learn to use our own unique MIT-developed Condor tool for Web mining, social network analysis, and trend prediction.
+course_url: "https://ocw.mit.edu/courses/15-599-workshop-in-it-collaborative-innovation-networks-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/15-599-workshop-in-it-collaborative-innovation-networks-fall-2011/272e5b76d06116e0f84f048c6f7f5762_15-599f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-11-307-summer-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.307"
+cross_listed_codes:
+  - "4.166"
+course_title: "Beijing Urban Design Studio"
+course_slug: "11-307-beijing-urban-design-studio-summer-2008"
+term: "Summer"
+year: 2008
+as_taught_in: "Summer 2008"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dennis Frenchman"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Social Science"
+  - "Economics"
+  - "International Development"
+  - "Political Science"
+  - "International Relations"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "International Development"
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+  - "Projects with Examples"
+description: |
+  In 2008, the Beijing Urban Design Studio will focus on the issue of Beijing’s urban transformation under the theme of de-industrialization, by preparing an urban design and development plan for the Shougang (Capital Steel Factory) site. This studio will address whether portions of the old massive factory infrastructure can be preserved as a national industrial heritage site embedded into future new development; how to balance the cultural and recreational value of the site with environmental challenges; as well as how to use the site for urban development. A special focus of the studio will be to consider development approaches that minimize energy utilization. To research these questions, students will be asked to interact with clients from the factory, local residents, city officials and experts on transportation, environment, energy and real estate. They will assess strategic options for the steel factory and propose comprehensive plans for the design and development of the brownfield site.
+course_url: "https://ocw.mit.edu/courses/11-307-beijing-urban-design-studio-summer-2008/"
+image_url: "https://ocw.mit.edu/courses/11-307-beijing-urban-design-studio-summer-2008/1eee44767791f6d54ac531067cf51ae2_11-307su08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

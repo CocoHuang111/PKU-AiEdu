@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-051-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.051"
+cross_listed_codes: []
+course_title: "Fundamentals of Music"
+course_slug: "21m-051-fundamentals-of-music-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ms. Pamela Wood"
+subject_primary: "Music"
+subject_secondary:
+  - "Music Performance"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music Performance"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  This class introduces students to the rudiments of Western music through oral, aural, and written practice utilizing rhythm, melody, intervals, scales, chords, and musical notation. The approach is based upon the inclusive Kodály philosophy of music education. Individual skills are addressed through a variety of means, emphasizing singing and keyboard practice in the required piano labs.
+course_url: "https://ocw.mit.edu/courses/21m-051-fundamentals-of-music-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/21m-051-fundamentals-of-music-spring-2007/dc9df5fa5eb1fcefc31f789ccf402b73_21m-051s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

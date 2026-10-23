@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-315-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.315"
+cross_listed_codes: []
+course_title: "Prizewinners"
+course_slug: "21l-315-prizewinners-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Mary Fuller"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Poetry"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Poetry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This 6-unit subject gives students the opportunity to immerse themselves in the poetry of two living Nobel Laureates: the Caribbean poet, Derek Walcott, and the Northern-Irish poet, Seamus Heaney. We will begin and end the semester with their magnificent epic works: Heaney’s translation of the Anglo-Saxon epic Beowulf, and Walcott’s Omeros (a modern epic set in the West Indies). Between these major narrative poems, we will read a rich selection of their shorter poems, as well as some of their reflections in prose on what poetry does, on what other poets do, and what it means to write in English from the historical and political situation of Northern Ireland (for Heaney) or the Caribbean (for Walcott).
+course_url: "https://ocw.mit.edu/courses/21l-315-prizewinners-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/21l-315-prizewinners-spring-2007/1398128d72a832444bb2824c320d7fa3_21l-315s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

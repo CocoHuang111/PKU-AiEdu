@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-life-longitudinal-interprofessional-family-based-experience"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "LIFE: Longitudinal Interprofessional Family-Based Experience"
+slug: "life-longitudinal-interprofessional-family-based-experience"
+source_url: "https://crlt.umich.edu/life-longitudinal-interprofessional-family-based-experience"
+language: "en"
+published: null
+awarded_year: "2022"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "9c480126844c4037cbf9a6f91fcb49896a323617f663e8d09c23166cac03597d"

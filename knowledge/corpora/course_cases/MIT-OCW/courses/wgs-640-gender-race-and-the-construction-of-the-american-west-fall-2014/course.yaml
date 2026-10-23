@@ -1,0 +1,86 @@
+schema_version: "1.0"
+course_id: "mitocw-wgs-640-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "WGS.640"
+cross_listed_codes: []
+course_title: "Gender, Race, and the Construction of the American West"
+course_slug: "wgs-640-gender-race-and-the-construction-of-the-american-west-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Karen V Hansen"
+  - "Prof. Marilynn S Johnson"
+  - "Prof. Lois Rudnick"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Modern History"
+  - "Literature"
+  - "American Literature"
+  - "Social Science"
+  - "Political Science"
+  - "American Politics"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "Modern History"
+      - name: "Literature"
+        specialties:
+          - "American Literature"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  This course explores how gender shaped the historical experiences and cultural productions in the North American West during the time it was being explored, settled, and imagined. The North American West of the late nineteenth and early twentieth centuries provides a fascinating case study of the shifting meanings of gender, race, citizenship, and power in border societies. As the site of migration, settlement, and displacement, it spawned contests over land, labor disputes, inter-ethnic conflicts and peaceful relations, and many kinds of cultural productions. The Graduate Consortium in Women’s Studies (GCWS) This course is part of the Graduate Consortium in Women’s Studies. The GCWS at MIT brings together scholars and teachers at nine degree-granting institutions in the Boston area who are devoted to graduate teaching and research in Women’s Studies and to advancing interdisciplinary Women’s Studies scholarship. Learn more about the GCWS .
+course_url: "https://ocw.mit.edu/courses/wgs-640-gender-race-and-the-construction-of-the-american-west-fall-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/wgs-640-gender-race-and-the-construction-of-the-american-west-fall-2014/d392f4045081e3c96f560c743570e602_wgs-640f14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

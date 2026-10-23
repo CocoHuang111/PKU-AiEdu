@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-5-13-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.13"
+cross_listed_codes: []
+course_title: "Organic Chemistry II"
+course_slug: "5-13-organic-chemistry-ii-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Kimberly Berkowski"
+  - "Prof. Timothy F. Jamison"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Organic Chemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Organic Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This intermediate organic chemistry course focuses on the methods used to identify the structure of organic molecules, advanced principles of organic stereochemistry, organic reaction mechanisms, and methods used for the synthesis of organic compounds. Additional special topics include illustrating the role of organic chemistry in biology, medicine, and industry.
+course_url: "https://ocw.mit.edu/courses/5-13-organic-chemistry-ii-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/5-13-organic-chemistry-ii-fall-2006/514146d5f76bc25ca5e024d6480afb81_5-13f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-266-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.266"
+cross_listed_codes: []
+course_title: "Apartheid and South Africa"
+course_slug: "21h-266-apartheid-and-south-africa-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kenda Mutongi"
+subject_primary: "History"
+subject_secondary:
+  - "African History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "African History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course introduces students to the spatial, legal, economic, social and political structures that created apartheid in South Africa, and to the factors that led to the collapse of the racist order. We will examine the many forms of Black oppression and, also, the various forms of resistance to apartheid. Some of the themes we will explore include industrialization and the formation of the Black working classes; the constructions of race, ethnicities, and sexualities; land alienation and rural struggles; township poverty and violence; Black education; the African National Congress; and the Black Consciousness Movement.
+course_url: "https://ocw.mit.edu/courses/21h-266-apartheid-and-south-africa-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/21h-266-apartheid-and-south-africa-spring-2020/bd53e61c6cad73caee13130d110044d7_21H-266s20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

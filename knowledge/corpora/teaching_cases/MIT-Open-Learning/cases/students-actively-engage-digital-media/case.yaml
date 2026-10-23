@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-students-actively-engage-digital-media"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Students Actively Engage with Digital Media"
+slug: "students-actively-engage-digital-media"
+course_codes:
+  - "21W.035"
+departments:
+  - "Comparative Media Studies/Writing (Course CMS/21W)"
+instructors:
+  - "Amy Carleton"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/students-actively-engage-digital-media"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "087c64395dc2402bbf1e7e410093133b43d4e37372590a8afa078774595f6501"

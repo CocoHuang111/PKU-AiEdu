@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-8-01x-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.01X"
+cross_listed_codes:
+  - "ES.801X"
+course_title: "Physics I: Classical Mechanics with an Experimental Focus"
+course_slug: "8-01x-physics-i-classical-mechanics-with-an-experimental-focus-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Physics"
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kate Scholberg"
+  - "Dr. Peter Dourmashkin"
+subject_primary: "Physics"
+subject_secondary:
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+description: |
+  Physics I is a first-year physics course which introduces students to classical mechanics. This course has a hands-on focus, and approaches mechanics through take-home experiments. Topics include: kinematics, Newton’s laws of motion, universal gravitation, statics, conservation laws, energy, work, momentum, and special relativity.
+course_url: "https://ocw.mit.edu/courses/8-01x-physics-i-classical-mechanics-with-an-experimental-focus-fall-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/8-01x-physics-i-classical-mechanics-with-an-experimental-focus-fall-2002/83e58eb8ec840620c4ca663b6e02fdef_8-01xf02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

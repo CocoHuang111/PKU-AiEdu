@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-12-753-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.753"
+cross_listed_codes: []
+course_title: "Geodynamics Seminar"
+course_slug: "12-753-geodynamics-seminar-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Karen Bice"
+  - "Prof. Mark Behn"
+  - "Prof. Sarah Das"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geology"
+  - "Geophysics"
+  - "Planetary Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+          - "Geophysics"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Projects"
+description: |
+  In this year’s Geodynamics Seminar, we will explore the depth and breadth of scientific research related to Earth’s present and past ice-sheets, glaciers and sea-ice, as well as extraterrestrial planetary ice. Invited speakers have been chosen from experts in the current frontiers in ice-related research, including planetary ice, climate records from polar and tropical ice cores, the Snowball Earth, subglacial volcanoes, ice rheology, ice sheet modeling, ice microkinetics, glacial erosion and tectonics, subglacial life and polar remote sensing. A field trip to Iceland in Summer 2006 will allow us to view some of the island’s ice caps and glacial geology, the exposed mid Atlantic Ridge and evidence of ice-volcano interactions.
+course_url: "https://ocw.mit.edu/courses/12-753-geodynamics-seminar-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/12-753-geodynamics-seminar-spring-2006/8c3aa8874a919d752e0b787d7c78a7b9_12-753s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

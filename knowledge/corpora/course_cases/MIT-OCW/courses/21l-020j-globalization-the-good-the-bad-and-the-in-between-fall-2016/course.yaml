@@ -1,0 +1,106 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-020j-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.020J"
+cross_listed_codes:
+  - "21G.076"
+  - "WGS.145"
+course_title: "Globalization: The Good, the Bad and the In-Between"
+course_slug: "21l-020j-globalization-the-good-the-bad-and-the-in-between-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Literature"
+  - "Global Studies and Languages"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Margery Resnick"
+  - "Dr. Joaquín Terrones"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "World History"
+  - "Language"
+  - "Literature"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Economics"
+  - "Political Science"
+  - "International Relations"
+  - "Society"
+  - "Global Poverty"
+  - "The Developing World"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "World History"
+      - name: "Language"
+        specialties: []
+      - name: "Literature"
+        specialties: []
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Economics"
+        specialties: []
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+  - name: "Society"
+    subtopics:
+      - name: "Global Poverty"
+        specialties: []
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject examines the paradoxes of contemporary globalization. Through lectures, discussions and student presentations, we will study the cultural, linguistic, social and political impact of globalization across broad international borders. We will pay attention to the subtle interplay of history, geography, language and cultural norms that gave rise to specific ways of life. The materials for the course include fiction, nonfiction, audio pieces, maps and visual materials.
+course_url: "https://ocw.mit.edu/courses/21l-020j-globalization-the-good-the-bad-and-the-in-between-fall-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-020j-globalization-the-good-the-bad-and-the-in-between-fall-2016/03145a694573737e8ca05989a008cffe_21L-020F16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

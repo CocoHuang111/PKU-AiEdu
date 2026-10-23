@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-2-500-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.500"
+cross_listed_codes: []
+course_title: "Desalination and Water Purification"
+course_slug: "2-500-desalination-and-water-purification-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Lienhard"
+  - "Dr. Miriam Balaban"
+subject_primary: "Climate"
+subject_secondary:
+  - "Engineering"
+  - "Chemical Engineering"
+  - "Separation Processes"
+  - "Environmental Engineering"
+  - "Aquatic Sciences and Water Quality Control"
+  - "Hydrology and Water Resource Systems"
+  - "Ocean Engineering"
+  - "Oceanic Pollution Control"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Separation Processes"
+      - name: "Environmental Engineering"
+        specialties:
+          - "Aquatic Sciences and Water Quality Control"
+          - "Hydrology and Water Resource Systems"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Oceanic Pollution Control"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  Water supply is a problem of worldwide concern: more than 1 billion people do not have reliable access to clean drinking water. Water is a particular problem for the developing world, but scarcity also impacts industrial societies. Water purification and desalination technology can be used to convert brackish ground water or seawater into drinking water. The challenge is to do so sustainably, with minimum cost and energy consumption, and with appropriately accessible technologies. This subject will survey the state-of-the-art in water purification by desalination and filtration. Fundamental thermodynamic and transport processes which govern the creation of fresh water from seawater and brackish ground water will be developed. The technologies of existing desalination systems will be discussed, and factors which limit the performance or the affordability of these systems will be highlighted. Energy efficiency will be a focus. Nanofiltration and emerging technologies for desalination will be considered. A student project in desalination will involve designing a well-water purification system for a village in Haiti.
+course_url: "https://ocw.mit.edu/courses/2-500-desalination-and-water-purification-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/2-500-desalination-and-water-purification-spring-2009/e49f672b88e589aa7a4591d86ddf9c21_2-500s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

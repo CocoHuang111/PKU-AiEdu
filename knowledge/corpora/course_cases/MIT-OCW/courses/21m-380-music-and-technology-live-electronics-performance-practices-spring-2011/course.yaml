@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-380-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.380"
+cross_listed_codes: []
+course_title: "Music and Technology: Live Electronics Performance Practices"
+course_slug: "21m-380-music-and-technology-live-electronics-performance-practices-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christopher Ariza"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Human-Computer Interfaces"
+  - "Electrical Engineering"
+  - "Electronics"
+  - "Fine Arts"
+  - "Music"
+  - "Music History"
+  - "Music Performance"
+  - "Music Theory"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Performance"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Lecture Notes"
+  - "Media Assignments with Examples"
+  - "Music Audio"
+  - "Presentation Assignments"
+  - "Programming Assignments"
+description: |
+  This course is a creative, hands-on exploration of contemporary and historical approaches to live electronics performance and improvisation, including basic analog instrument design, computer synthesis programming, and hardware and software interface design.
+course_url: "https://ocw.mit.edu/courses/21m-380-music-and-technology-live-electronics-performance-practices-spring-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/21m-380-music-and-technology-live-electronics-performance-practices-spring-2011/73f8bc8d3df6b2281bc0d16d7946bea7_21m-380s11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-15-387-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.387"
+cross_listed_codes: []
+course_title: "Entrepreneurial Sales"
+course_slug: "15-387-entrepreneurial-sales-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Lou Shipley"
+  - "Kirk Arnold"
+  - "Dennis Hoffman"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Management"
+  - "Marketing"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Marketing"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Media Assignments"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course outlines the practical and tactical ins and outs of how to sell technical products to a sophisticated marketplace. How to build and manage a sales force; building compensation systems for a sales force, assigning territories, resolving disputes, and dealing with channel conflicts. Focus on selling to customers, whether through a direct salesforce, a channel salesforce, or building an OEM relationship.
+course_url: "https://ocw.mit.edu/courses/15-387-entrepreneurial-sales-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/15-387-entrepreneurial-sales-spring-2015/58d5f95e2eb28b102019e72b1a55d010_15-387s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

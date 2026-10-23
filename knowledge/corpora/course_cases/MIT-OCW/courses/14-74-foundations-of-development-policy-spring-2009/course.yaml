@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-14-74-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.74"
+cross_listed_codes: []
+course_title: "Foundations of Development Policy"
+course_slug: "14-74-foundations-of-development-policy-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Esther Duflo"
+subject_primary: "Economics"
+subject_secondary:
+  - "Developmental Economics"
+  - "International Development"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+          - "International Development"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Problem Sets"
+description: |
+  This course explores the foundations of policy making in developing countries. The goal is to spell out various policy options and to quantify the trade-offs between them. We will study the different facets of human development: education, health, gender, the family, land relations, risk, informal and formal norms and institutions. This is an empirical class. For each topic, we will study several concrete examples chosen from around the world. While studying each of these topics, we will ask: What determines the decisions of poor households in developing countries? What constraints are they subject to? Is there a scope for policy (by government, international organizations, or non-governmental organizations (NGOs))? What policies have been tried out? Have they been successful? MITx Online Version This course is part of the Micromaster’s Program in Data, Economics, and Design of Policy through MITx Online. The course is entirely free to audit, though learners have the option to pay a fee, which is based on the learner’s ability to pay, to take the proctored exam, and earn a course certificate. To access the course, create an MITx Online account and enroll in the course 14.740x Foundations of Development Policy .
+course_url: "https://ocw.mit.edu/courses/14-74-foundations-of-development-policy-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/14-74-foundations-of-development-policy-spring-2009/a32a113e9f29bef6e83aca4d8bd9bdba_14-74s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

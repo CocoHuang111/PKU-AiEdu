@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-activating-classroom-unified-engineering-materials-and"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Activating the classroom - Unified Engineering: Materials and Structures"
+slug: "activating-classroom-unified-engineering-materials-and"
+course_codes:
+  - "16.001"
+departments:
+  - "Aeronautics and Astronautics (Course 16)"
+instructors:
+  - "Stephen Hall"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/activating-classroom-unified-engineering-materials-and"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "92abbbf3ece1e15494718280fe85997b83bb66b2344983597e69244ddd6c934a"

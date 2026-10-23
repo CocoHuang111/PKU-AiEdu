@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-18-969-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.969"
+cross_listed_codes: []
+course_title: "Topics in Geometry: Mirror Symmetry"
+course_slug: "18-969-topics-in-geometry-mirror-symmetry-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Denis Auroux"
+subject_primary: "Linear Algebra"
+subject_secondary:
+  - "Topology and Geometry"
+  - "Science"
+  - "Physics"
+  - "Particle Physics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Particle Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course will focus on various aspects of mirror symmetry. It is aimed at students who already have some basic knowledge in symplectic and complex geometry (18.966, or equivalent). The geometric concepts needed to formulate various mathematical versions of mirror symmetry will be introduced along the way, in variable levels of detail and rigor.
+course_url: "https://ocw.mit.edu/courses/18-969-topics-in-geometry-mirror-symmetry-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/18-969-topics-in-geometry-mirror-symmetry-spring-2009/c77397da8d8d7c466051df7ea9fb825f_18-969s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

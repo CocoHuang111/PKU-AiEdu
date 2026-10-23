@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-340j-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.340J"
+cross_listed_codes:
+  - "ESD.52J"
+course_title: "Introduction to the History of Technology"
+course_slug: "sts-340j-introduction-to-the-history-of-technology-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Mindell"
+subject_primary: "History"
+subject_secondary:
+  - "History of Science and Technology"
+  - "Modern History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Modern History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course is an introduction to the consideration of technology as the outcome of particular technical, historical, cultural, and political efforts, especially in the United States during the 19th and 20th centuries. Topics include industrialization of production and consumption, development of engineering professions, the emergence of management and its role in shaping technological forms, the technological construction of gender roles, and the relationship between humans and machines.
+course_url: "https://ocw.mit.edu/courses/sts-340j-introduction-to-the-history-of-technology-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/sts-340j-introduction-to-the-history-of-technology-fall-2006/27098a7eed5bb9aa5684fd33a63aa13a_sts-340jf06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

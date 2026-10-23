@@ -1,0 +1,86 @@
+schema_version: "1.0"
+course_id: "mitocw-11-003j-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.003J"
+cross_listed_codes:
+  - "17.303J"
+course_title: "Methods of Policy Analysis"
+course_slug: "11-003j-methods-of-policy-analysis-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Cherie Miot Abbanat"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Health Care Management"
+  - "Health and Medicine"
+  - "Public Health"
+  - "Social Science"
+  - "Political Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Public Policy"
+  - "Regional Politics"
+  - "Science and Technology Policy"
+  - "Social Welfare"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+      - name: "Health Care Management"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Public Policy"
+          - "Regional Politics"
+          - "Science and Technology Policy"
+          - "Social Welfare"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course provides an introduction to public policy analysis. It is designed for students who may be planning a career in public or non-profit sectors. The primary goal is to help students understand the implications of public policy for different pursuits. The class examines various approaches to policy analysis by considering the concepts, tools, and methods used in economics, political science, and other disciplines. Students apply and critique these approaches through case studies of current public policy problems.
+course_url: "https://ocw.mit.edu/courses/11-003j-methods-of-policy-analysis-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/11-003j-methods-of-policy-analysis-spring-2016/3d7468b95c8f1348424633b2c149e611_11-003js16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

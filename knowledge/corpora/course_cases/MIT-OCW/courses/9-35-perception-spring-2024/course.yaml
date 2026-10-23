@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-9-35-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.35"
+cross_listed_codes: []
+course_title: "Perception"
+course_slug: "9-35-perception-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Josh McDermott"
+subject_primary: "Sensory-Neural Systems"
+subject_secondary:
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Laboratory Assignments"
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Readings"
+  - "Supplemental Exam Materials"
+description: |
+  This course studies how the senses work and how physical stimuli are transformed into signals in the nervous system. It examines how the brain uses those signals to make inferences about the world and uses illusions and demonstrations to gain insight into those inferences, emphasizing audition and vision, with some discussion of touch, taste, and smell. Experience with psychophysical methods is provided. This course is supported in part by Dr. Eugene Stark, Jr. SB ‘68, SM ‘69, EE ‘70, SCD ‘72 for the 2026-2027 academic year.
+course_url: "https://ocw.mit.edu/courses/9-35-perception-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/9-35-perception-spring-2024/mit9_35_s24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

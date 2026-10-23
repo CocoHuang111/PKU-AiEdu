@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-722j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.722J"
+cross_listed_codes:
+  - "9.044J"
+course_title: "Brain Mechanisms for Hearing and Speech"
+course_slug: "hst-722j-brain-mechanisms-for-hearing-and-speech-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Bertrand Delgutte"
+  - "Prof. David N. Caplan"
+  - "Prof. Frank H. Guenther"
+  - "Prof. Jennifer R. Melcher"
+  - "Prof. Joe C. Adams"
+  - "Dr. Joseph S. Perkell"
+  - "Dr. Kenneth E. Hancock"
+  - "Prof. M. Christian Brown"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Sensory-Neural Systems"
+  - "Science"
+  - "Biology"
+  - "Neurobiology"
+  - "Neuroscience"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  An advanced course covering anatomical, physiological, behavioral, and computational studies of the central nervous system relevant to speech and hearing. Students learn primarily by discussions of scientific papers on topics of current interest. Recent topics include cell types and neural circuits in the auditory brainstem, organization and processing in the auditory cortex, auditory reflexes and descending systems, functional imaging of the human auditory system, quantitative methods for relating neural responses to behavior, speech motor control, cortical representation of language, and auditory learning in songbirds.
+course_url: "https://ocw.mit.edu/courses/hst-722j-brain-mechanisms-for-hearing-and-speech-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-722j-brain-mechanisms-for-hearing-and-speech-fall-2005/67253b4be7973fa919537d76a4f72f8d_hst-722jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

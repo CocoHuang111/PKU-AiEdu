@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-16-885j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.885J"
+cross_listed_codes:
+  - "ESD.35J"
+course_title: "Aircraft Systems Engineering"
+course_slug: "16-885j-aircraft-systems-engineering-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Earll Murman"
+  - "Prof. John Hansman"
+  - "Prof. Robert Liebeck"
+  - "Allen Haggerty"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Aerospace Engineering"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Aircraft are complex products comprised of many subsystems which must meet demanding customer and operational lifecycle value requirements. This course adopts a holistic view of the aircraft as a system, covering: basic systems engineering; cost and weight estimation; basic aircraft performance; safety and reliability; lifecycle topics; aircraft subsystems; risk analysis and management; and system realization. Small student teams “retrospectively analyze” an existing aircraft covering: key design drivers and decisions; aircraft attributes and subsystems; and operational experience. Finally, the student teams deliver oral and written versions of the case study.
+course_url: "https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/16-885j-aircraft-systems-engineering-fall-2004/e8412ad543e1f017bc52915cfd3a460d_16-885jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

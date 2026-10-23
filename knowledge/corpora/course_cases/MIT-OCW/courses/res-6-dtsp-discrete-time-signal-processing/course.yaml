@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-res-6-dtsp-spring-2026"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.6-DTSP"
+cross_listed_codes: []
+course_title: "Discrete-Time Signal Processing: Oppenheim and Schafer"
+course_slug: "res-6-dtsp-discrete-time-signal-processing"
+term: "Spring"
+year: 2026
+as_taught_in: "Spring 2026"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels: []
+instructors:
+  - "Prof. Alan V. Oppenheim"
+  - "Prof. Ronald Schafer"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Electrical Engineering"
+  - "Signal Processing"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+description: |
+  This page is the central hub for the third edition of Discrete-Time Signal Processing by Alan Oppenheim and Ron Schafer, available online for free. Here, you’ll find the complete third edition, along with a curated selection of related resources, including the following: Access to previous editions of the textbook, including the first and second editions, as well as the predecessor text, Digital Signal Processing Links to companion MIT OpenCourseWare and MITx courses by Alan Oppenheim This comprehensive resource hub is designed to support both independent learners and educators, providing a rich collection of materials that cover the fundamentals and advanced topics in discrete-time signal processing, including signal representation, filter design, and multirate techniques. This book was previously published by Pearson Education, Inc.
+course_url: "https://ocw.mit.edu/courses/res-6-dtsp-discrete-time-signal-processing/"
+image_url: "https://ocw.mit.edu/courses/res-6-dtsp-discrete-time-signal-processing/mitres_6-dtsp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

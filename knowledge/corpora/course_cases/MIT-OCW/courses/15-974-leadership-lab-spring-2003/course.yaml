@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-15-974-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.974"
+cross_listed_codes: []
+course_title: "Leadership Lab"
+course_slug: "15-974-leadership-lab-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Claus Otto Scharmer"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Innovation"
+  - "Leadership"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This five-day interactive and experiential workshop focuses on how leaders lead innovations that both promote social responsibility and produce business success. The workshop is organized around three main parts: observation, sense-making, and creating. During the observation phase, students spend a full day inside the Boston office of the design company IDEO and visit some of the most interesting proven innovators in corporate social responsibility such as Ben & Jerry’s, KLD, MBDC, Plug Power (fuel cell technology), PwC, Schlumberger, or core team members of the UN Global Compact. After returning from their company visits, students describe to one another what they saw and learned. In the final part of the Lab, students conceive and implement innovation projects that serve the needs of a local community. Each team presents its practical accomplishments on the final day of the Lab. Starting in 2004 this course will be renumbered as 15.975.
+course_url: "https://ocw.mit.edu/courses/15-974-leadership-lab-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/15-974-leadership-lab-spring-2003/e350e62719eec8409d7ce185f3f544e3_15-974s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

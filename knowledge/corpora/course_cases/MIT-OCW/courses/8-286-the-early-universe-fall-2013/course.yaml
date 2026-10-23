@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-8-286-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.286"
+cross_listed_codes: []
+course_title: "The Early Universe"
+course_slug: "8-286-the-early-universe-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alan Guth"
+subject_primary: "Physics"
+subject_secondary:
+  - "Astrophysics"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  The Early Universe provides an introduction to modern cosmology. The first part of the course deals with the classical cosmology, and later part with modern particle physics and its recent impact on cosmology. In the News For more about Professor Guth’s work, listen to this interview from WBUR, Boston’s National Public Radio news station. You may also be interested in this MIT Alumni Association Podcast Inflationary Cosmology—Is Our Universe Part of a Multiverse? with Professor Guth.
+course_url: "https://ocw.mit.edu/courses/8-286-the-early-universe-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/8-286-the-early-universe-fall-2013/6048b3f78009b55a0e0ed59426799317_8-286f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

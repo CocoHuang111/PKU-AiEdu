@@ -1,0 +1,90 @@
+schema_version: "1.0"
+course_id: "mitocw-res-10-001-spring-2026"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.10-001"
+cross_listed_codes: []
+course_title: "Making Science and Engineering Pictures: A Practical Guide to Presenting Your Work"
+course_slug: "res-10-001-making-science-and-engineering-pictures-a-practical-guide-to-presenting-your-work-spring-2026"
+term: "Spring"
+year: 2026
+as_taught_in: "Spring 2026"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Felice C. Frankel"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Fine Arts"
+  - "Visual Arts"
+  - "Graphic Design"
+  - "Photography"
+  - "Health and Medicine"
+  - "Science"
+  - "Biology"
+  - "Chemistry"
+  - "Physics"
+  - "Teaching and Education"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Graphic Design"
+          - "Photography"
+  - name: "Health and Medicine"
+    subtopics: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties: []
+      - name: "Chemistry"
+        specialties: []
+      - name: "Physics"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Instructor Insights"
+  - "Lecture Audio"
+  - "Lecture Videos"
+description: |
+  In this course you will learn the basics of photography and gain an intriguing new perspective into the visual world. We will begin with a gentle introduction to the tools, and after that, we start in earnest. Although we will emphasize photographing science and engineering, most of the material will easily apply to other kinds of macro photography. The course’s video tutorials will be accompanied by assignments using a camera, a flatbed scanner, and mobile devices. You will discover how subtle changes in lighting, composition, and background contribute to creating more effective images. You will also learn to think graphically and present your photographs for journal figures, covers, and grant submissions. We will also host interviews with notable image makers and art directors. In 2026, Felice Frankel updated the course with a video where she discusses AI and its role in generating images. Felice brings our attention to the pitfalls and ethics of using generative AI models to document research and outlines the necessary guardrails to ensure the production of honest and communicative images. About the Instructor Felice Frankel is an award-winning science photographer and research scientist in the Department of Chemical Engineering at the Massachusetts Institute of Technology. Felice’s images have been internationally published in books, journals, and magazines, including The New York Times , Nature, Science , National Geographic , and Discover . She is a fellow of the American Association for the Advancement of Science, a Gugghenheim Fellow, has received awards and grants from NSF, NEA, the Alfred P. Sloan Foundation, and was a senior research fellow in Harvard University’s Faculty of Arts and Sciences. Acknowledgements The production of these videos is supported by OpenCourseWare, MITx, the Center for Materials Science and Engineering and the following departments: Chemical Engineering, Materials Science and Engineering and Mechanical Engineering.
+course_url: "https://ocw.mit.edu/courses/res-10-001-making-science-and-engineering-pictures-a-practical-guide-to-presenting-your-work-spring-2026/"
+image_url: |
+  https://ocw.mit.edu/courses/res-10-001-making-science-and-engineering-pictures-a-practical-guide-to-presenting-your-work-spring-2026/mitres_10_001_chp.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

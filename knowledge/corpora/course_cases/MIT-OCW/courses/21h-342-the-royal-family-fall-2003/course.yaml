@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-342-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.342"
+cross_listed_codes: []
+course_title: "The Royal Family"
+course_slug: "21h-342-the-royal-family-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Harriet Ritvo"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Political Science"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Political Science"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course is an an exploration of British culture and politics, focusing on the changing role of the monarchy from the accession of the House of Hanover (later Windsor) in 1714 to the present. The dynasty has encountered a series of crises, in which the personal and the political have been inextricably combined: for example, George III’s mental illness; the scandalous behavior of his son, George IV; Victoria’s withdrawal from public life after the death of Prince Albert; the abdication of Edward VIII; and the public antagonism sparked by sympathy for Diana, Princess of Wales.
+course_url: "https://ocw.mit.edu/courses/21h-342-the-royal-family-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/21h-342-the-royal-family-fall-2003/9ac6826bb03807b1d496357d73e11b31_21h-342f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

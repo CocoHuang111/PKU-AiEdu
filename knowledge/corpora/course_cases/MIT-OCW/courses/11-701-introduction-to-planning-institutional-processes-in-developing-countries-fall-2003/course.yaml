@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-11-701-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.701"
+cross_listed_codes: []
+course_title: "Introduction to Planning & Institutional Processes in Developing Countries"
+course_slug: "11-701-introduction-to-planning-institutional-processes-in-developing-countries-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Judith Tendler"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "International Development"
+  - "Public Administration"
+  - "Regional Politics"
+  - "Urban Studies"
+  - "Regional Planning"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "International Development"
+      - name: "Public Administration"
+        specialties:
+          - "Regional Politics"
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This introductory course helps students learn to pose questions and analyze problems in the field of planning in developing countries. Not arguing for one “right” approach, the course draws on grounded empirical experiences - historical and recent - to help students navigate the way they approach their future work in developing-country governments, NGOs and international organizations.
+course_url: "https://ocw.mit.edu/courses/11-701-introduction-to-planning-institutional-processes-in-developing-countries-fall-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/11-701-introduction-to-planning-institutional-processes-in-developing-countries-fall-2003/8a76dbbc1b4a24a38e298e18aeead69f_11-701f03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

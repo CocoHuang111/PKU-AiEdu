@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-348-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.348"
+cross_listed_codes:
+  - "CMS.835"
+course_title: "Photography and Truth"
+course_slug: "21a-348-photography-and-truth-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Howe"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Photography"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Ethnography"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Photography"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Still photography, a practice and form of expression that has worked its way into every facet of social life and every culture in the world, is considered here from the perspectives of history and social science. We will discuss the uses and functions of pictures; how they are to be understood and interpreted; whether they have clear-cut content and meanings; how they shape and are shaped by politics, economics, and social life.
+course_url: "https://ocw.mit.edu/courses/21a-348-photography-and-truth-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/21a-348-photography-and-truth-spring-2008/2ce04c16e5ebd217b5f6798b6bdb99a8_21a-348f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-963-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.963"
+cross_listed_codes: []
+course_title: "Technological Tools for School Reform"
+course_slug: "mas-963-technological-tools-for-school-reform-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Bakhtiar Mikhak"
+subject_primary: "Curriculum and Teaching"
+subject_secondary:
+  - "Education Policy"
+  - "Educational Technology"
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Education Policy"
+        specialties: []
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This course explores the potential impact of modern technologies on the school reforms debate. The first part of the course provides an overview of the current state of the school reform debate and reviews the ideas in the progressive school reform movement, as well as examining the new public charter school in Cambridge as a case study. The second part of the course requires critical study of research projects that hold promise as inspirations and guidelines for concrete multidisciplinary activities and curriculum for progressive charter schools. The course concludes with a discussion of the challenges in scaling the successful innovations in school reform to new contexts.
+course_url: "https://ocw.mit.edu/courses/mas-963-technological-tools-for-school-reform-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/mas-963-technological-tools-for-school-reform-fall-2005/66c90a7ecd943972db344ab4c0804151_mas-963f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

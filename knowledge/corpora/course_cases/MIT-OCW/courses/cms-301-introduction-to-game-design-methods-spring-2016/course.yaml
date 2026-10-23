@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-301-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.301"
+cross_listed_codes: []
+course_title: "Introduction to Game Design Methods"
+course_slug: "cms-301-introduction-to-game-design-methods-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Mikael Jakobsson"
+  - "Sara Verrilli"
+subject_primary: "Game Design"
+subject_secondary:
+  - "Media Studies"
+  - "Digital Media"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  This course is an introduction to the theory and practice of the process of designing games and playful experiences. Students are familiarized with methods, concepts, techniques, and literature used in the design of games. The strategy is process-oriented, focusing on aspects such as: Rapid prototyping, play testing, and design iteration using a player-centered approach.
+course_url: "https://ocw.mit.edu/courses/cms-301-introduction-to-game-design-methods-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/cms-301-introduction-to-game-design-methods-spring-2016/0f1f41917de9685340890eba68b499d7_cms-301s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-666-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.666"
+cross_listed_codes:
+  - "15.971"
+course_title: "Developmental Entrepreneurship"
+course_slug: "mas-666-developmental-entrepreneurship-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Alex Pentland"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "International Development"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "International Development"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This class surveys developmental entrepreneurship via case examples of both successful and failed businesses and generally grapples with deploying and diffusing products and services through entrepreneurial action. By drawing on live and historical cases, especially from South Asia, Africa, Latin America as well as Eastern Europe, China, and other developing regions, we seek to cover the broad spectrum of challenges and opportunities facing developmental entrepreneurs. Finally, we explore a range of established and emerging business models as well as new business opportunities enabled by developmental technologies developed in MIT labs and beyond.
+course_url: "https://ocw.mit.edu/courses/mas-666-developmental-entrepreneurship-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/mas-666-developmental-entrepreneurship-fall-2003/85f71ca49f7aae933a806189a573046d_mas-666f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

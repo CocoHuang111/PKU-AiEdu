@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-338j-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.338J"
+cross_listed_codes:
+  - "WGS.457J"
+course_title: "Gender, Power, and International Development"
+course_slug: "21a-338j-gender-power-and-international-development-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christine Walley"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Economics"
+  - "International Development"
+  - "Society"
+  - "Gender Studies"
+  - "Global Poverty"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties: []
+      - name: "Economics"
+        specialties:
+          - "International Development"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Global Poverty"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  After decades of efforts to promote development, why is there so much poverty in the world? What are some of the root causes of inequality world-wide and why do poverty, economic transformations and development policies often have different consequences for women and men? This course explores these issues while also examining the history of development itself, its underlying assumptions, and its range of supporters and critics. It considers the various meanings given to development by women and men, primarily as residents of particular regions, but also as aid workers, policy makers and government officials. In considering how development projects and policies are experienced in daily life in urban and rural areas in Africa, Latin America, Asia and Melanesia, this course asks what are the underlying political, economic, social, and gender dynamics that make “development” an ongoing problem world-wide.
+course_url: "https://ocw.mit.edu/courses/21a-338j-gender-power-and-international-development-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/21a-338j-gender-power-and-international-development-fall-2003/8d1b8242dca45a5fe39ebca822665e2c_21a-338jf03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

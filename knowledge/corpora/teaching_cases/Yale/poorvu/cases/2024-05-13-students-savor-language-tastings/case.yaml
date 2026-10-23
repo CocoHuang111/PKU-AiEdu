@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "poorvu-2024-05-13-students-savor-language-tastings"
+institution: "Yale University"
+platform: "Poorvu Center for Teaching and Learning"
+collection: "Poorvu Center teaching stories"
+title: "Students ‘Savor’ Language Tastings"
+slug: "2024-05-13-students-savor-language-tastings"
+source_url: "https://poorvucenter.yale.edu/posts/2024-05-13-students-savor-language-tastings"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "e83f81c09355629502386da404cfdec103aecd9189673858d45e22eccd175fec"

@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-17-506-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.506"
+cross_listed_codes: []
+course_title: "Ethnic Politics"
+course_slug: "17-506-ethnic-politics-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Volha Charnysh"
+  - "Prof. Evan Lieberman"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Ethnography"
+  - "Social Anthropology"
+  - "Political Science"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Ethnography"
+          - "Social Anthropology"
+      - name: "Political Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This course introduces students to the classic works on ethnic politics, familiarizes them with new research and methodological innovations in the study of ethnic politics, and helps them design and execute original research projects related to ethnic politics. Readings are drawn from across disciplines, including political science, anthropology, sociology, and economics. Students read across the four subfields within political science: American Politics, Comparative Politics, International Relations, and Political Theory. Graduate students specializing in any subfield are encouraged to take this subject, regardless of their previous empirical or theoretical background.
+course_url: "https://ocw.mit.edu/courses/17-506-ethnic-politics-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/17-506-ethnic-politics-fall-2024/mit17_506_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

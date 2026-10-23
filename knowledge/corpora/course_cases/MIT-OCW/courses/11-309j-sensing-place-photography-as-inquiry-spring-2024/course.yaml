@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-309j-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.309J"
+cross_listed_codes:
+  - "4.215J"
+course_title: "Sensing Place: Photography as Inquiry"
+course_slug: "11-309j-sensing-place-photography-as-inquiry-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Anne Whiston Spirn"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Visual Arts"
+  - "Photography"
+  - "Social Science"
+  - "Urban Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+      - name: "Visual Arts"
+        specialties:
+          - "Photography"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Media Assignments with Examples"
+description: |
+  This course explores photography as a disciplined way of seeing, as a research method, and as a medium of inquiry and of expressing ideas. Readings, observations, and photographs form the basis of discussions on landscape, light, significant detail, place, narrative, and how photography can inform research, design, and planning, among other issues. The class is highly recommended for students who want to employ visual methods in their thesis or dissertation.
+course_url: "https://ocw.mit.edu/courses/11-309j-sensing-place-photography-as-inquiry-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/11-309j-sensing-place-photography-as-inquiry-spring-2024/mit11_309j_s24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

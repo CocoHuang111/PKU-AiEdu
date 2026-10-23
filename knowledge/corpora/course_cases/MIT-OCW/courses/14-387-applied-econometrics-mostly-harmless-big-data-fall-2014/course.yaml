@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-14-387-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.387"
+cross_listed_codes: []
+course_title: "Applied Econometrics: Mostly Harmless Big Data"
+course_slug: "14-387-applied-econometrics-mostly-harmless-big-data-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joshua Angrist"
+  - "Prof. Victor Chernozhukov"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Mathematics"
+  - "Probability and Statistics"
+  - "Social Science"
+  - "Economics"
+  - "Econometrics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Econometrics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course covers empirical strategies for applied micro research questions. Our agenda includes regression and matching, instrumental variables, differences-in-differences, regression discontinuity designs, standard errors, and a module consisting of 8–9 lectures on the analysis of high-dimensional data sets a.k.a. “Big Data”.
+course_url: "https://ocw.mit.edu/courses/14-387-applied-econometrics-mostly-harmless-big-data-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/14-387-applied-econometrics-mostly-harmless-big-data-fall-2014/3680ab46f388d7a8d1dbfe391a776ee7_14-387f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

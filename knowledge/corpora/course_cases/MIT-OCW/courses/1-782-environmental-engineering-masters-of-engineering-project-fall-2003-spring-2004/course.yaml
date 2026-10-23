@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-1-782-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.782"
+cross_listed_codes: []
+course_title: "Environmental Engineering Masters of Engineering Project"
+course_slug: "1-782-environmental-engineering-masters-of-engineering-project-fall-2003-spring-2004"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Daniele Lantagne"
+  - "Dr. Eric Adams"
+  - "Dr. Peter Shanahan"
+  - "Susan Murcott"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Aquatic Sciences and Water Quality Control"
+  - "Environmental Management"
+  - "Hydrology and Water Resource Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Aquatic Sciences and Water Quality Control"
+          - "Environmental Management"
+          - "Hydrology and Water Resource Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This class is one of the core requirements for the Environmental Masters of Engineering program. It is designed to teach about environmental engineering through the use of case studies, computer software tools, and seminars from industrial experts. Case studies provide the basis for group projects as well as individual theses. Past case studies have included the MMR Superfund site on Cape Cod; restoration of the Florida Everglades; dredging of Boston Harbor; local watershed trading programs; appropriate wastewater treatment technology for Brazil; point-of-use water treatment for Nepal, Brownfields Development in Providence, RI, and water resource planning for the island of Cyprus. This class spans the entire academic year: students must register for the Fall term, IAP, and the Spring term.
+course_url: "https://ocw.mit.edu/courses/1-782-environmental-engineering-masters-of-engineering-project-fall-2003-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/1-782-environmental-engineering-masters-of-engineering-project-fall-2003-spring-2004/b43fe165b83741b9aaa7db80081c004d_1-782f03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

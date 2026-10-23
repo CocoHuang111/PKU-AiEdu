@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-flexible-access-curricula-mechanical-behavior-materials"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Flexible Access to Curricula: Mechanical Behavior of Materials"
+slug: "flexible-access-curricula-mechanical-behavior-materials"
+course_codes:
+  - "3.032"
+departments:
+  - "Materials Science and Engineering (Course 3)"
+instructors:
+  - "Lorna Gibson"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/flexible-access-curricula-mechanical-behavior-materials"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "020b6281e5577592db5409b4f04b84d29cd546128dcc732597dbf26fbea5f6ef"

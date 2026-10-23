@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-9-201-spring-2000"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.201"
+cross_listed_codes: []
+course_title: "Advanced Animal Behavior"
+course_slug: "9-201-advanced-animal-behavior-spring-2000"
+term: "Spring"
+year: 2000
+as_taught_in: "Spring 2000"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gerald E. Schneider"
+subject_primary: "Cognitive Science"
+subject_secondary:
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  The course includes survey and special topics designed for graduate students in the brain and cognitive sciences. It emphasizes ethological studies of natural behavior patterns and their analysis in laboratory work, with contributions from field biology (mammology, primatology), sociobiology, and comparative psychology. It stresses mammalian behavior but also includes major contributions from studies of other vertebrates and of invertebrates. It covers some applications of animal-behavior knowledge to neuropsychology and behavioral pharmacology.
+course_url: "https://ocw.mit.edu/courses/9-201-advanced-animal-behavior-spring-2000/"
+image_url: "https://ocw.mit.edu/courses/9-201-advanced-animal-behavior-spring-2000/4a65d7b8ab75793c345450652f53501d_9-201s00.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

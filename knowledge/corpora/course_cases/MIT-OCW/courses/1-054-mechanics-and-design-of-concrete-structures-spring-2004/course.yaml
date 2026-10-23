@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-1-054-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.054"
+cross_listed_codes:
+  - "1.541"
+course_title: "Mechanics and Design of Concrete Structures"
+course_slug: "1-054-mechanics-and-design-of-concrete-structures-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Oral Buyukozturk"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Structural Engineering"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Structural Engineering"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  The main objective of 1.054/1.541 is to provide students with a rational basis of the design of reinforced concrete members and structures through advanced understanding of material and structural behavior. This course is offered to undergraduate (1.054) and graduate students (1.541). Topics covered include: Strength and Deformation of Concrete under Various States of Stress; Failure Criteria; Concrete Plasticity; Fracture Mechanics Concepts; Fundamental Behavior of Reinforced Concrete Structural Systems and their Members; Basis for Design and Code Constraints; High-performance Concrete Materials and their use in Innovative Design Solutions; Slabs: Yield Line Theory; Behavior Models and Nonlinear Analysis; and Complex Systems: Bridge Structures, Concrete Shells, and Containments. Professor Oral Buyukozturk thanks Tzu-Yang Yu, a graduate student at MIT, for his valuable assistance in preparing course documents.
+course_url: "https://ocw.mit.edu/courses/1-054-mechanics-and-design-of-concrete-structures-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/1-054-mechanics-and-design-of-concrete-structures-spring-2004/8e12e986c09864fc4410f26f624ac191_1-054s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

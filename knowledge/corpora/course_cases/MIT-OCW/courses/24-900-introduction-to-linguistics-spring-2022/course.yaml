@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-24-900-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.900"
+cross_listed_codes: []
+course_title: "Introduction to Linguistics"
+course_slug: "24-900-introduction-to-linguistics-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Norvin W. Richards"
+subject_primary: "Linguistics"
+subject_secondary: []
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This class provides some answers to basic questions about the nature of human language. Throughout the course, we examine a number of ways in which human language is a complex but law-governed mental system. Much of the class is devoted to studying some core aspects of this system in detail; we also spend individual classes discussing a number of other issues, including how language is acquired, how languages change over time, language endangerment, and others.
+course_url: "https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-spring-2022/24-900s22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

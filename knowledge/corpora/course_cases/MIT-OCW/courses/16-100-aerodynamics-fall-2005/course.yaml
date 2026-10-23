@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-16-100-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.100"
+cross_listed_codes: []
+course_title: "Aerodynamics"
+course_slug: "16-100-aerodynamics-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Darmofal"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Aerodynamics"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Aerodynamics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course extends fluid mechanic concepts from Unified Engineering to the aerodynamic performance of wings and bodies in sub/supersonic regimes. 16.100 generally has four components: subsonic potential flows, including source/vortex panel methods; viscous flows, including laminar and turbulent boundary layers; aerodynamics of airfoils and wings, including thin airfoil theory, lifting line theory, and panel method/interacting boundary layer methods; and supersonic and hypersonic airfoil theory. Course material varies each year depending upon the focus of the design problem.
+course_url: "https://ocw.mit.edu/courses/16-100-aerodynamics-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/16-100-aerodynamics-fall-2005/d7cb9a6dcebc796c85e96d971b9eb10e_16-100f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-154-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.154"
+cross_listed_codes:
+  - "21G.554"
+course_title: "Inventing the Samurai"
+course_slug: "21h-154-inventing-the-samurai-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "History"
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Hiromu Nagahara"
+subject_primary: "History"
+subject_secondary:
+  - "Ancient History"
+  - "Asian History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Ancient History"
+          - "Asian History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This course explores the historical origins of the Japanese warrior class as well as its reinvention throughout the archipelago’s history, with a special focus on the pre-modern era (200–1600 CE). It highlights key historical contexts including the rise of the imperial court, interactions with the broader world, and the establishment of a warrior-dominated state. It also considers the modern imaginations and uses of the warrior figure. Note: This course is taught in English with a project that requires research in Japanese.
+course_url: "https://ocw.mit.edu/courses/21h-154-inventing-the-samurai-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/21h-154-inventing-the-samurai-fall-2022/21h-154f22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,88 @@
+schema_version: "1.0"
+course_id: "mitocw-ids-505j-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "IDS.505J"
+cross_listed_codes:
+  - "6.695"
+  - "15.032J"
+  - "ESD.162"
+  - "6.974"
+  - "IDS.505J (formerly ESD.934)"
+course_title: "Engineering, Economics and Regulation of the Electric Power Sector"
+course_slug: "ids-505j-engineering-economics-and-regulation-of-the-electric-power-sector-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Institute for Data, Systems, and Society"
+  - "Electrical Engineering and Computer Science"
+  - "Sloan School of Management"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ignacio Perez-Arriaga"
+subject_primary: "Electricity"
+subject_secondary:
+  - "Renewables"
+  - "Engineering"
+  - "Systems Engineering"
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Electricity"
+        specialties: []
+      - name: "Renewables"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+description: |
+  The course presents an in-depth interdisciplinary perspective of electric power systems, with regulation providing the link among the engineering, economic, legal and environmental viewpoints. Generation dispatch, demand response, optimal network flows, risk allocation, reliability of service, renewable energy sources, ancillary services, tariff design, distributed generation, rural electrification, environmental impacts and strategic sustainability issues will be among the topics addressed under both traditional and competitive regulatory frameworks.
+course_url: "https://ocw.mit.edu/courses/ids-505j-engineering-economics-and-regulation-of-the-electric-power-sector-spring-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/ids-505j-engineering-economics-and-regulation-of-the-electric-power-sector-spring-2010/c7a7c58a4c930f5ab008559fb1fa4002_ids-505j10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

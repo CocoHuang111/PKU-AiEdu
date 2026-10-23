@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-18-319-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.319"
+cross_listed_codes: []
+course_title: "Geometric Combinatorics"
+course_slug: "18-319-geometric-combinatorics-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Csaba Toth"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Mathematics"
+  - "Algebra and Number Theory"
+  - "Discrete Mathematics"
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This course offers an introduction to discrete and computational geometry. Emphasis is placed on teaching methods in combinatorial geometry. Many results presented are recent, and include open (as yet unsolved) problems.
+course_url: "https://ocw.mit.edu/courses/18-319-geometric-combinatorics-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/18-319-geometric-combinatorics-fall-2005/351eee6b05124290b1b8cbff97bb7ca6_18-319f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

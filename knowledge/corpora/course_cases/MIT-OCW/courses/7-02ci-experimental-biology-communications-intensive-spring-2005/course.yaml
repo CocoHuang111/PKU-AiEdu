@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-7-02ci-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.02CI"
+cross_listed_codes:
+  - "10.702CI"
+course_title: "Experimental Biology - Communications Intensive"
+course_slug: "7-02ci-experimental-biology-communications-intensive-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Biology"
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Marilee Ogren-Balkema"
+  - "Dr. Neal Lerner"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Science"
+  - "Biology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is the scientific communications portion of course 7.02, Experimental Biology and Communication. Students develop their skills as writers of scientific research, skills that also contribute to the learning of the 7.02 course materials. Through in class and out of class writing exercises, students explore the genre of the research article and its components while developing an understanding of the materials covered in the 7.02 laboratory.
+course_url: "https://ocw.mit.edu/courses/7-02ci-experimental-biology-communications-intensive-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/7-02ci-experimental-biology-communications-intensive-spring-2005/4184f92e4530a6b3a595725ce6c8c933_7-02cis05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

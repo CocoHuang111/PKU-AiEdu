@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-6-728-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.728"
+cross_listed_codes: []
+course_title: "Applied Quantum and Statistical Physics"
+course_slug: "6-728-applied-quantum-and-statistical-physics-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Terry Orlando"
+subject_primary: "Probability and Statistics"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  6.728 is offered under the department’s “Devices, Circuits, and Systems” concentration. The course covers concepts in elementary quantum mechanics and statistical physics, introduces applied quantum physics, and emphasizes an experimental basis for quantum mechanics. Concepts covered include: Schrodinger’s equation applied to the free particle, tunneling, the harmonic oscillator, and hydrogen atom, variational methods, Fermi-Dirac, Bose-Einstein, and Boltzmann distribution functions, and simple models for metals, semiconductors, and devices such as electron microscopes, scanning tunneling microscope, thermonic emitters, atomic force microscope, and others.
+course_url: "https://ocw.mit.edu/courses/6-728-applied-quantum-and-statistical-physics-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/6-728-applied-quantum-and-statistical-physics-fall-2006/49dc695ffb52b094300dacf79ace290d_6-728f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

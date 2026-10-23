@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-14-44-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.44"
+cross_listed_codes:
+  - "14.444"
+course_title: "Energy Economics"
+course_slug: "14-44-energy-economics-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Paul Joskow"
+subject_primary: "Electricity"
+subject_secondary:
+  - "Fossil Fuels"
+  - "Nuclear Energy"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Economics"
+  - "Microeconomics"
+  - "Political Economy"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Electricity"
+        specialties: []
+      - name: "Fossil Fuels"
+        specialties: []
+      - name: "Nuclear Energy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Microeconomics"
+          - "Political Economy"
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course explores the theoretical and empirical perspectives on individual and industrial demand for energy, energy supply, energy markets, and public policies affecting energy markets. It discusses aspects of the oil, natural gas, electricity, and nuclear power sectors and examines energy tax, price regulation, deregulation, energy efficiency and policies for controlling emission.
+course_url: "https://ocw.mit.edu/courses/14-44-energy-economics-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/14-44-energy-economics-spring-2007/d499f976ac3dbfb644f752f80bf650dd_14-44s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

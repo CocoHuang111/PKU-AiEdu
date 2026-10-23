@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-8-591j-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.591J"
+cross_listed_codes:
+  - "7.81J"
+  - "7.32"
+course_title: "Systems Biology"
+course_slug: "8-591j-systems-biology-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Physics"
+  - "Biology"
+academic_levels:
+  - "Graduate"
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeff Gore"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Synthetic Biology"
+  - "Science"
+  - "Biology"
+  - "Cell Biology"
+  - "Computation and Systems Biology"
+  - "Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Synthetic Biology"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+          - "Computation and Systems Biology"
+      - name: "Physics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to cellular and population-level systems biology with an emphasis on synthetic biology, modeling of genetic networks, cell-cell interactions, and evolutionary dynamics. Cellular systems include genetic switches and oscillators, network motifs, genetic network evolution, and cellular decision-making. Population-level systems include models of pattern formation, cell-cell communication, and evolutionary systems biology.
+course_url: "https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/8-591j-systems-biology-fall-2014/5a4e655e52f45f37185ad3d45fa4e667_8-591jf14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

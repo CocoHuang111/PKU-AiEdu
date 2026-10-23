@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-2-094-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.094"
+cross_listed_codes: []
+course_title: "Finite Element Analysis of Solids and Fluids II"
+course_slug: "2-094-finite-element-analysis-of-solids-and-fluids-ii-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Klaus-Jürgen Bathe"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Solid Mechanics"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Differential Equations"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Solid Mechanics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course presents finite element theory and methods for general linear and nonlinear analyses. Reliable and effective finite element procedures are discussed with their applications to the solution of general problems in solid, structural, and fluid mechanics, heat and mass transfer, and fluid-structure interactions. The governing continuum mechanics equations, conservation laws, virtual work, and variational principles are used to establish effective finite element discretizations and the stability, accuracy, and convergence are discussed. The homework and the student-selected term project using the general-purpose finite element analysis program ADINA are important parts of the course.
+course_url: "https://ocw.mit.edu/courses/2-094-finite-element-analysis-of-solids-and-fluids-ii-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/2-094-finite-element-analysis-of-solids-and-fluids-ii-spring-2011/f5802efeb3528e22f9db1749ef604869_2-094s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

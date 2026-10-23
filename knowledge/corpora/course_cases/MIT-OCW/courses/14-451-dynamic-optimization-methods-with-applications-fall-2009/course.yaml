@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-14-451-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.451"
+cross_listed_codes: []
+course_title: "Dynamic Optimization Methods with Applications"
+course_slug: "14-451-dynamic-optimization-methods-with-applications-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Guido Lorenzoni"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Systems Optimization"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Probability and Statistics"
+  - "Social Science"
+  - "Economics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course focuses on dynamic optimization methods, both in discrete and in continuous time. We approach these problems from a dynamic programming and optimal control perspective. We also study the dynamic systems that come from the solutions to these problems. The course will illustrate how these techniques are useful in various applications, drawing on many economic examples. However, the focus will remain on gaining a general command of the tools so that they can be applied later in other classes.
+course_url: "https://ocw.mit.edu/courses/14-451-dynamic-optimization-methods-with-applications-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/14-451-dynamic-optimization-methods-with-applications-fall-2009/3928efab2538977dedfea04726a0fd21_14-451f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

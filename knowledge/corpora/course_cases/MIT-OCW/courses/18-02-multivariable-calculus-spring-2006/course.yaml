@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-18-02-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.02"
+cross_listed_codes: []
+course_title: "Multivariable Calculus"
+course_slug: "18-02-multivariable-calculus-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Jerison"
+  - "Prof. Arthur Mattuck"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course covers vector and multi-variable calculus. It is the second semester in the freshman calculus sequence. Topics include Vectors and Matrices, Partial Derivatives, Double and Triple Integrals, and Vector Calculus in 2 and 3-space.
+course_url: "https://ocw.mit.edu/courses/18-02-multivariable-calculus-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/18-02-multivariable-calculus-spring-2006/ec3b11a9e61917ff610aaf38a3b3a08f_18-02s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

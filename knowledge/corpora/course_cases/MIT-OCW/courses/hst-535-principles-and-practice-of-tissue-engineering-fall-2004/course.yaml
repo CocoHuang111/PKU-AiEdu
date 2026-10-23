@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-535-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.535"
+cross_listed_codes: []
+course_title: "Principles and Practice of Tissue Engineering"
+course_slug: "hst-535-principles-and-practice-of-tissue-engineering-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Myron Spector"
+  - "Prof. Fu-Zhai Cui"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Cell and Tissue Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Cell and Tissue Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The principles and practice of tissue engineering (and regenerative medicine) are taught by faculty of the Harvard-MIT Division of Health Sciences and Technology (HST) and Tsinghua University, Beijing, China. The principles underlying strategies for employing selected cells, biomaterial scaffolds, soluble regulators or their genes, and mechanical loading and culture conditions, for the regeneration of tissues and organs in vitro and in vivo are addressed. Differentiated cell types and stem cells are compared and contrasted for this application, as are natural and synthetic scaffolds. Methodology for the preparation of cells and scaffolds in practice is described. The rationale for employing selected growth factors is covered and the techniques for incorporating their genes into the scaffolds are examined. Discussion also addresses the influence of environmental factors including mechanical loading and culture conditions (e.g., static versus dynamic). Methods for fabricating tissue-engineered products and devices for implantation are taught. Examples of tissue engineering-based procedures currently employed clinically are analyzed as case studies. Archived webcast lecture videos for the Fall 2008 version of this class can be found at the HST.535 Fall 2008 website .
+course_url: "https://ocw.mit.edu/courses/hst-535-principles-and-practice-of-tissue-engineering-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/hst-535-principles-and-practice-of-tissue-engineering-fall-2004/06b203699c3e255b564dd3b6e8cae954_hst-535f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

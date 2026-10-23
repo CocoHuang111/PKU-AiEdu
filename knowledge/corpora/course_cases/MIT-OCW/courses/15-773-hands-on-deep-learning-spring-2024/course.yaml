@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-15-773-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.773"
+cross_listed_codes:
+  - "15.777"
+course_title: "Hands-On Deep Learning"
+course_slug: "15-773-hands-on-deep-learning-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Rama Ramakrishnan"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Artificial Intelligence"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This is a fast-paced introduction to deep learning with an emphasis on developing a practical understanding of how to build models to solve complex problems involving unstructured data. Topics include the basics of deep neural networks and how to set up and train them, convolutional networks to process images and videos, transformers for natural language processing, generative large language models (such as ChatGPT), and text-to-image models (such as Midjourney). Prior familiarity with Python and fundamental machine learning concepts (such as training/validation/testing, overfitting/underfitting, and regularization) is required.
+course_url: "https://ocw.mit.edu/courses/15-773-hands-on-deep-learning-spring-2024/"
+image_url: "https://ocw.mit.edu/courses/15-773-hands-on-deep-learning-spring-2024/mit15_773_s24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

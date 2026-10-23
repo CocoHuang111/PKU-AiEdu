@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-span-300"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "SPAN 300"
+course_title: "Cervantes' Don Quixote"
+course_slug: "span-300"
+department_path: "spanish and portuguese"
+professors:
+  - "Roberto González Echevarría Sterling Professor of Hispanic and Comparative Literature"
+course_url: "https://oyc.yale.edu/spanish-and-portuguese/span-300"
+language: "en"
+description: |
+  The course facilitates a close reading of Don Quixote in the artistic and historical context of renaissance and baroque Spain. Students are also expected to read four of Cervantes' Exemplary Stories , Cervantes' Don Quixote: A Casebook , and J.H. Elliott's Imperial Spain . Cervantes' work will be discussed in relation to paintings by Velázquez. The question of why Don Quixote is read today will be addressed throughout the course. Students are expected to know the book, the background readings and the materials covered in the lectures and class discussions.
+license_url: ""
+session_count: 24
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

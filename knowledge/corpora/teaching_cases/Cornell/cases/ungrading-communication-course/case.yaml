@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "cornell-ungrading-communication-course"
+institution: "Cornell University"
+platform: "Cornell Center for Teaching Innovation"
+collection: "Teaching Innovation Case Study Library"
+title: "“Ungrading” A Communication Course Using Feedback, Critical Reflections, and a Portfolio"
+slug: "ungrading-communication-course"
+source_url: "https://teaching.cornell.edu/teaching-spotlight/provosts-working-group-innovation-assessment/ungrading-communication-course"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "5603d30a71b4d94f7ec02ae21881b2e7628dd14a51824fffd2ae8537976a2cce"

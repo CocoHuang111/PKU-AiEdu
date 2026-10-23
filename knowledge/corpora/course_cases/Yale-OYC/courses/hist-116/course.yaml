@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-hist-116"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "HIST 116"
+course_title: "The American Revolution"
+course_slug: "hist-116"
+department_path: "history"
+professors:
+  - "Joanne Freeman Professor of History"
+course_url: "https://oyc.yale.edu/history/hist-116"
+language: "en"
+description: |
+  The American Revolution entailed some remarkable transformations--converting British colonists into American revolutionaries, and a cluster of colonies into a confederation of states with a common cause--but it was far more complex and enduring than the fighting of a war. As John Adams put it, "The Revolution was in the Minds of the people... before a drop of blood was drawn at Lexington"--and it continued long past America's victory at Yorktown. This course will examine the Revolution from this broad perspective, tracing the participants' shifting sense of themselves as British subjects, colonial settlers, revolutionaries, and Americans.
+license_url: ""
+session_count: 25
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

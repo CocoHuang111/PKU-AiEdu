@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-12-091-january-iap-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.091"
+cross_listed_codes: []
+course_title: "Trace Element Analysis of Geological, Biological & Environmental Materials by Neutron Activation Analysis: An Exposure"
+course_slug: "12-091-trace-element-analysis-of-geological-biological-environmental-materials-by-neutron-activation-analysis-an-exposure-january-iap-2005"
+term: "January IAP"
+year: 2005
+as_taught_in: "January IAP 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Ila Pillalamarri"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Analytical Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Analytical Chemistry"
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+description: |
+  This course introduces students to the technique of instrumental neutron activation analysis. This is a non-destructive analytical technique for the determination of elemental abundances at trace levels in a wide variety of geological, biological, environmental and industrial samples.
+course_url: |
+  https://ocw.mit.edu/courses/12-091-trace-element-analysis-of-geological-biological-environmental-materials-by-neutron-activation-analysis-an-exposure-january-iap-2005/
+image_url: |
+  https://ocw.mit.edu/courses/12-091-trace-element-analysis-of-geological-biological-environmental-materials-by-neutron-activation-analysis-an-exposure-january-iap-2005/3c8f77820a3a349840886890a3e09c2e_12-091iap05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

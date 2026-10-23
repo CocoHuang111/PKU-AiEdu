@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-karol-dibello"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Karol DiBello, DNP, FNP-BC, ACHNP"
+slug: "karol-dibello"
+source_url: "https://ctl.columbia.edu/transformations/faculty/karol-dibello/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "782639c3b7509573fba9ec1826f8be3305251eed1a26c0e7877b5d543f73892b"

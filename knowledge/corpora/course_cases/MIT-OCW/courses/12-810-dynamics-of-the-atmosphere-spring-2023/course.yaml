@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-12-810-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.810"
+cross_listed_codes: []
+course_title: "Dynamics of the Atmosphere"
+course_slug: "12-810-dynamics-of-the-atmosphere-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Paul O'Gorman"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Atmospheric Science"
+  - "Geophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+  - "Readings"
+description: |
+  This course discusses the dynamics of the atmosphere, with emphasis on the large scale. Topics include internal gravity waves in the atmosphere; potential vorticity conservation and Rossby waves; baroclinic instability and extratropical storms; the general circulation including the role of eddies, isentropic coordinates and tracer transport. This class builds on a previous version of 12.810 taught by Professor Alan Plumb.
+course_url: "https://ocw.mit.edu/courses/12-810-dynamics-of-the-atmosphere-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/12-810-dynamics-of-the-atmosphere-spring-2023/mit12_810_s23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

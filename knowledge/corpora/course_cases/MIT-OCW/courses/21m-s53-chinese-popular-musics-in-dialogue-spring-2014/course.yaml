@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-s53-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.S53"
+cross_listed_codes: []
+course_title: "Chinese Popular Musics in Dialogue"
+course_slug: "21m-s53-chinese-popular-musics-in-dialogue-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Meredith Schweig"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  This course provides an introduction to the major popular music cultures of the Chinese-speaking world. We will consider a wide variety of genres, from Shanghainese shidaiqu to Cantopop to Taiwanese rap, with the goal of listening beyond the notion of a monolithic “Chinese popular music” to something more dynamic, multivocal, and translocal. We will ask: What, if anything, is so “Chinese” about Chinese popular music? How does popular music participate in the formation of identities for artists and audiences in these areas? How does it enable the articulation of diverging social and political values while also facilitating meaningful connections among disparate communities? We will approach these questions through a diverse array of source materials, including sound recordings, music videos, films, and online multimedia.
+course_url: "https://ocw.mit.edu/courses/21m-s53-chinese-popular-musics-in-dialogue-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/21m-s53-chinese-popular-musics-in-dialogue-spring-2014/c971c3732786901a558549fd77e08b72_21m-s53s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

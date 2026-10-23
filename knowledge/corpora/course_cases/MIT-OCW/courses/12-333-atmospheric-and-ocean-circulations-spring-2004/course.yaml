@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-12-333-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.333"
+cross_listed_codes: []
+course_title: "Atmospheric and Ocean Circulations"
+course_slug: "12-333-atmospheric-and-ocean-circulations-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. R. Alan Plumb"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Atmospheric Science"
+  - "Climate Studies"
+  - "Geophysics"
+  - "Oceanography"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Climate Studies"
+          - "Geophysics"
+          - "Oceanography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  In this course, we will look at many important aspects of the circulation of the atmosphere and ocean, from length scales of meters to thousands of km and time scales ranging from seconds to years. We will assume familiarity with concepts covered in course 12.003 (Physics of the Fluid Earth). In the early stages of the present course, we will make somewhat greater use of math than did 12.003, but the math we will use is no more than that encountered in elementary electromagnetic field theory, for example. The focus of the course is on the physics of the phenomena which we will discuss.
+course_url: "https://ocw.mit.edu/courses/12-333-atmospheric-and-ocean-circulations-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/12-333-atmospheric-and-ocean-circulations-spring-2004/fe6bc893da2dd6d499c676b6c749c8b8_12-333s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

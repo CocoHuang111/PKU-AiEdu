@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-9-15-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.15"
+cross_listed_codes:
+  - "9.150"
+course_title: "Biochemistry and Pharmacology of Synaptic Transmission"
+course_slug: "9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Richard Wurtman"
+subject_primary: "Pharmacology and Toxicology"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Biochemistry"
+  - "Neurobiology"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Pharmacology and Toxicology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+          - "Neurobiology"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course considers the process of neurotransmission, especially chemicals used in the brain and elsewhere to carry signals from nerve terminals to the structures they innervate. We focus on monoamine transmitters (acetylcholine; serotonin; dopamine and norepinephrine); we also examine amino acid and peptide transmitters and neuromodulators like adenosine. Macromolecules that mediate neurotransmitter synthesis, release, inactivation and receptor-mediated actions are discussed, as well as factors that regulate their activity and the second-messenger systems and ion fluxes that they control. The involvement of particular neurotransmitters in human diseases is considered.
+course_url: "https://ocw.mit.edu/courses/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/9-15-biochemistry-and-pharmacology-of-synaptic-transmission-fall-2007/999a1828cfd87c370be8c4f13f3305d0_9-15f07.gif
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

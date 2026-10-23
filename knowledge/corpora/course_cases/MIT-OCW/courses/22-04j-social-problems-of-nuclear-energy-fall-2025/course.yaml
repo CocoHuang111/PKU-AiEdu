@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-22-04j-fall-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.04J"
+cross_listed_codes:
+  - "STS.084J"
+course_title: "Social Problems of Nuclear Energy"
+course_slug: "22-04j-social-problems-of-nuclear-energy-fall-2025"
+term: "Fall"
+year: 2025
+as_taught_in: "Fall 2025"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. R. Scott Kemp"
+subject_primary: "Nuclear Energy"
+subject_secondary:
+  - "Engineering"
+  - "Nuclear Engineering"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Nuclear Energy"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This course examines nuclear power as a low‑carbon electricity source, balancing its potential role in addressing climate change against longstanding technical, economic, and social challenges. Topics include the ability of nuclear power to help mitigate climate change; challenges associated with ensuring nuclear safety; the effects of nuclear accidents; the management of nuclear waste; the linkages between nuclear power and nuclear weapons, the consequences of nuclear war; and political challenges to the safe and economic regulation of the nuclear industry. Students explore both fission and fusion technologies, emerging reactor designs, policy options, and the institutional and societal constraints shaping nuclear power’s future. Emphasis is placed on critical evaluation of tradeoffs, uncertainties, and value judgments involved in decisions about nuclear energy within an increasingly competitive renewable energy landscape.
+course_url: "https://ocw.mit.edu/courses/22-04j-social-problems-of-nuclear-energy-fall-2025/"
+image_url: "https://ocw.mit.edu/courses/22-04j-social-problems-of-nuclear-energy-fall-2025/mit22_04_f25_v2.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

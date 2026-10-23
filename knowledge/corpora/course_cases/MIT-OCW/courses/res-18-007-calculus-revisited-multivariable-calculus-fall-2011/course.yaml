@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-res-18-007-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.18-007"
+cross_listed_codes: []
+course_title: "Calculus Revisited: Multivariable Calculus"
+course_slug: "res-18-007-calculus-revisited-multivariable-calculus-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Herbert Gross"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Calculus Revisited is a series of videos and related resources that covers the materials normally found in freshman- and sophomore-level introductory mathematics courses. Multivariable Calculus is the second course in the series, consisting of 26 videos, 4 Study Guides, and a set of Supplementary Notes. The series was first released in 1971 as a way for people to review the essentials of calculus. It is equally valuable for students who are learning calculus for the first time. About the Instructor Herb Gross has taught math as senior lecturer at MIT and was the founding math department chair at Bunker Hill Community College. He is the developer of the Mathematics As A Second Language website, providing arithmetic and algebra materials to elementary and middle school teachers. Acknowledgements Funding for this resource was provided by the Gabriella and Paul Rosenbaum Foundation . Other Resources by Herb Gross Calculus Revisited: Single Variable Calculus Calculus Revisited: Complex Variables, Differential Equations, and Linear Algebra
+course_url: "https://ocw.mit.edu/courses/res-18-007-calculus-revisited-multivariable-calculus-fall-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/res-18-007-calculus-revisited-multivariable-calculus-fall-2011/854b435085940a70d021829d02f0b802_res-18-007f11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

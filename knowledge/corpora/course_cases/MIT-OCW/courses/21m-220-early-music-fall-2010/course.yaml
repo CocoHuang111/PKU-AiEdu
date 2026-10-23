@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-220-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.220"
+cross_listed_codes: []
+course_title: "Early Music"
+course_slug: "21m-220-early-music-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michael Scott Asato Cuthbert"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Humanities"
+  - "History"
+  - "European History"
+  - "Historical Methods"
+  - "Medieval History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+          - "Historical Methods"
+          - "Medieval History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This course examines European music from the early Middle Ages until the end of the Renaissance. It includes a chronological survey and intensive study of three topics: chant and its development, music in Italy 1340-1420, and music in Elizabethan England. Instruction focuses on methods and pitfalls in studying music of the distant past. Students’ papers, problem sets, and presentations explore lives, genres, and works in depth. Works are studied in facsimile of original notation, and from original manuscripts at MIT, where possible.
+course_url: "https://ocw.mit.edu/courses/21m-220-early-music-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/21m-220-early-music-fall-2010/7ee3c28bc4a22383579ddd8be0a2db28_21m-220f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

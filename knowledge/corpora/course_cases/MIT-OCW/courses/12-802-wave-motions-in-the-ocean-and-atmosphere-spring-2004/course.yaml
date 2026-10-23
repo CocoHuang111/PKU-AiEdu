@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-12-802-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.802"
+cross_listed_codes: []
+course_title: "Wave Motions in the Ocean and Atmosphere"
+course_slug: "12-802-wave-motions-in-the-ocean-and-atmosphere-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Glenn Flierl"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Hydrodynamics and Coastal Engineering"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Geophysics"
+  - "Oceanography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Hydrodynamics and Coastal Engineering"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geophysics"
+          - "Oceanography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course is an introduction to basic ideas of geophysical wave motion in rotating, stratified, and rotating-stratified fluids. Subject begins with general wave concepts of phase and group velocity. It also covers the dynamics and kinematics of gravity waves with a focus on dispersion, energy flux, initial value problems, etc. Also addressed are subject foundation used to study internal and inertial waves, Kelvin, Poincare, and Rossby waves in homogeneous and stratified fluids. Laplace tidal equations are applied to equatorial waves. Other topics include: resonant interactions, potential vorticity, wave-mean flow interactions, and instability.
+course_url: "https://ocw.mit.edu/courses/12-802-wave-motions-in-the-ocean-and-atmosphere-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/12-802-wave-motions-in-the-ocean-and-atmosphere-spring-2004/30260780619c9d81b8a5f8ff15806dfa_12-802s04.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

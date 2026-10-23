@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-teaching-remotely-environment-participation-innovative"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Teaching Remotely: Environment, Participation & Innovative Techniques"
+slug: "teaching-remotely-environment-participation-innovative"
+course_codes:
+  - "15.286"
+departments:
+  - "Management (Course 15)"
+instructors:
+  - "Miro Kazakoff"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/teaching-remotely-environment-participation-innovative"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "b636174cbc080a3050a61355d0dfded39f1315337dc5a0b7d0ef8c1aaf3787e9"

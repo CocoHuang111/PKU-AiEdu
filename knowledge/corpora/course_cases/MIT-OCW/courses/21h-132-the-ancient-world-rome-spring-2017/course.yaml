@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-132-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.132"
+cross_listed_codes: []
+course_title: "The Ancient World: Rome"
+course_slug: "21h-132-the-ancient-world-rome-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. William Broadhead"
+subject_primary: "History"
+subject_secondary:
+  - "Ancient History"
+  - "European History"
+  - "Literature"
+  - "Classics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Ancient History"
+          - "European History"
+      - name: "Literature"
+        specialties:
+          - "Classics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course covers the history of Rome from its humble beginnings to the 5th century A.D. The first half covers Kingship to Republican form; the conquest of Italy; Roman expansion: Pyrrhus, Punic Wars and provinces; classes, courts, and the Roman revolution; Augustus and the formation of empire. The second half covers Virgil to the Vandals; major social, economic, political and religious trends at Rome and in the provinces. There is an emphasis on the use of primary sources in translation.
+course_url: "https://ocw.mit.edu/courses/21h-132-the-ancient-world-rome-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/21h-132-the-ancient-world-rome-spring-2017/8784e11e727a108efb935846c2648593_21H-132s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-s01-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.S01"
+cross_listed_codes: []
+course_title: "Food in American History"
+course_slug: "21h-s01-food-in-american-history-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Anya Zilberstein"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Energy"
+  - "Climate"
+  - "Technology"
+  - "Health and Medicine"
+  - "Health and Exercise Science"
+  - "Humanities"
+  - "History"
+  - "American History"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+      - name: "Technology"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Health and Exercise Science"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course will explore food in modern American history as a story of industrialization and globalization. Lectures, readings, and discussions will emphasize the historical dimensions of—and debates about—slave plantations and factory farm labor; industrial processing and technologies of food preservation; the political economy and ecology of global commodity chains; the vagaries of nutritional science; food restrictions and reform movements; food surpluses and famines; cooking traditions and innovations; the emergence of restaurants, supermarkets, fast food, and slow food. The core concern of the course will be to understand the increasingly pervasive influence of the American model of food production and consumption patterns.
+course_url: "https://ocw.mit.edu/courses/21h-s01-food-in-american-history-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/21h-s01-food-in-american-history-fall-2014/673473b08f68bc25674c3e2686a9d71e_21h-s01f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

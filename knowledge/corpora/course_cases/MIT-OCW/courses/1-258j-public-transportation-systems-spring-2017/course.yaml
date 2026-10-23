@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-1-258j-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.258J"
+cross_listed_codes:
+  - "11.541J"
+course_title: "Public Transportation Systems"
+course_slug: "1-258j-public-transportation-systems-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Nigel Wilson"
+  - "Dr. Gabriel E. Sanchez-Martinez"
+  - "Dr. Neema Nassir"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Transportation Engineering"
+  - "Social Science"
+  - "Urban Studies"
+  - "Transportation Planning"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Transportation Engineering"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Transportation Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  This course discusses the evolution and role of urban public transportation modes, systems, and services, focusing on bus and rail. It covers various topics, including current practice and new methods for data collection and analysis, performance monitoring, route design, frequency determination, vehicle and crew scheduling, effect of pricing policy and service quality on ridership.
+course_url: "https://ocw.mit.edu/courses/1-258j-public-transportation-systems-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/1-258j-public-transportation-systems-spring-2017/f05dd8f8311ee9d6d192ab981cbbdf3e_1-258Js17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

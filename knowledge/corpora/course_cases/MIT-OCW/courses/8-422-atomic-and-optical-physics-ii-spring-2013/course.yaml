@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-8-422-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.422"
+cross_listed_codes: []
+course_title: "Atomic and Optical Physics II"
+course_slug: "8-422-atomic-and-optical-physics-ii-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Wolfgang Ketterle"
+subject_primary: "Physics"
+subject_secondary:
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This is the second of a two-semester subject sequence beginning with Atomic and Optical Physics I (8.421) that provides the foundations for contemporary research in selected areas of atomic and optical physics. Topics covered include non-classical states of light–squeezed states; multi-photon processes, Raman scattering; coherence–level crossings, quantum beats, double resonance, superradiance; trapping and cooling-light forces, laser cooling, atom optics, spectroscopy of trapped atoms and ions; atomic interactions–classical collisions, quantum scattering theory, ultracold collisions; and experimental methods.
+course_url: "https://ocw.mit.edu/courses/8-422-atomic-and-optical-physics-ii-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/8-422-atomic-and-optical-physics-ii-spring-2013/9e0e7b0a495fa128b8bac270422677a4_8-422s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

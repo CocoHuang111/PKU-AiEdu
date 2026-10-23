@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-15-769-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.769"
+cross_listed_codes: []
+course_title: "Operations Strategy"
+course_slug: "15-769-operations-strategy-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles H. Fine"
+  - "Prof. Donald Rosenfield"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Operations Management"
+  - "Supply Chain Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  15.769 Operations Strategy provides a unifying framework for analyzing strategic issues in manufacturing and service operations. Students analyze the relationships between manufacturing and service companies and their suppliers, customers, and competitors. The course covers strategic decisions in technology, facilities, vertical integration, human resources, and other areas, and also explores means of competition such as cost, quality, and innovativeness.
+course_url: "https://ocw.mit.edu/courses/15-769-operations-strategy-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/15-769-operations-strategy-fall-2010/1cf33708520b0e3a311942147280d77e_15-769f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

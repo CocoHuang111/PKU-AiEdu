@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-2-171-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.171"
+cross_listed_codes: []
+course_title: "Analysis and Design of Digital Control Systems"
+course_slug: "2-171-analysis-and-design-of-digital-control-systems-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Trumper"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Design and Engineering"
+  - "Electrical Engineering"
+  - "Digital Systems"
+  - "Robotics and Control Systems"
+  - "Signal Processing"
+  - "Mechanical Engineering"
+  - "Dynamics and Control"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Design and Engineering"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Robotics and Control Systems"
+          - "Signal Processing"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This course is a comprehensive introduction to control system synthesis in which the digital computer plays a major role, reinforced with hands-on laboratory experience. The course covers elements of real-time computer architecture; input-output interfaces and data converters; analysis and synthesis of sampled-data control systems using classical and modern (state-space) methods; analysis of trade-offs in control algorithms for computation speed and quantization effects. Laboratory projects emphasize practical digital servo interfacing and implementation problems with timing, noise, and nonlinear devices.
+course_url: "https://ocw.mit.edu/courses/2-171-analysis-and-design-of-digital-control-systems-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/2-171-analysis-and-design-of-digital-control-systems-fall-2006/ae6281bc7698d22a5608923d23188b0d_2-171f06.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

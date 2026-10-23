@@ -1,0 +1,9 @@
+- Source: https://ocw.mit.edu/courses/17-581-riots-rebellions-revolutions-spring-2013/pages/calendar/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Calendar
+
+<table><tr><th>LEC #</th><th>TOPICS</th></tr><tr><td>1</td><td>Introductory class</td></tr><tr><td colspan="2">Part I: Theory and Method</td></tr><tr><td>2</td><td>Explaining social action</td></tr><tr><td>3</td><td>Rationality</td></tr><tr><td>4</td><td>Psychological approaches, relative deprivation</td></tr><tr><td>5</td><td>Norms</td></tr><tr><td>6</td><td>Emotions</td></tr><tr><td>7</td><td>Structural explanations</td></tr><tr><td>8</td><td>In-class quiz</td></tr><tr><td colspan="2">Part II: Contentious Politics</td></tr><tr><td>9–11</td><td>Dynamics of Contention</td></tr><tr><td colspan="2">Part III: Riots</td></tr><tr><td>12</td><td>U.S. Riots I</td></tr><tr><td>13</td><td>U.S. Riots II: Relative deprivation and the 1960’s urban riots</td></tr><tr><td>14</td><td>U.S. Riots III: The Rodney King riots in LA</td></tr><tr><td>15</td><td>Threshold-based models</td></tr><tr><td>16</td><td>Student presentations of agent-based modeling exercises</td></tr><tr><td colspan="2">Part IV: Rebellion</td></tr><tr><td>17</td><td>Background to Eastern European cases</td></tr><tr><td>18</td><td>Cascade models applied to Eastern Europe</td></tr><tr><td>19</td><td>Violent rebellion in Kosovo</td></tr><tr><td colspan="2">Part V: Revolutions</td></tr><tr><td>20</td><td>Revolutions I</td></tr><tr><td>21</td><td>Revolutions II</td></tr><tr><td>22</td><td>Revolutions III</td></tr><tr><td colspan="2">Part VI: Arab Spring</td></tr><tr><td>23</td><td>Readings from the October 2011 edition of the <br> Journal of Democracy</td></tr><tr><td>24–25</td><td>Student presentations of comparative analyses of some aspect of the Arab Spring</td></tr><tr><td>26</td><td>Final exam</td></tr></table>

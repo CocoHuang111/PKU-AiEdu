@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-443-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.443"
+cross_listed_codes: []
+course_title: "European Imperialism in the 19th and 20th Centuries"
+course_slug: "21h-443-european-imperialism-in-the-19th-and-20th-centuries-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Ciarlo"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "European History"
+  - "Modern History"
+  - "Philosophy"
+  - "Political Philosophy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+          - "Modern History"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  From pineapples grown in Hawaii to English-speaking call centers outsourced to India, the legacy of the "Age of Imperialism" appears everywhere in our modern world. This class explores the history of European imperialism in its political, economic, and cultural dimensions from the 1840s through the 1960s.
+course_url: "https://ocw.mit.edu/courses/21h-443-european-imperialism-in-the-19th-and-20th-centuries-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/21h-443-european-imperialism-in-the-19th-and-20th-centuries-spring-2006/33af2f52ee0a379b783f1c928df2eeff_21h-443s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

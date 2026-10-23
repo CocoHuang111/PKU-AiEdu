@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-965-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.965"
+cross_listed_codes: []
+course_title: "Relational Machines"
+course_slug: "mas-965-relational-machines-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Cynthia Breazeal"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course examines the issues, principles, and challenges toward building relational machines through a combination of studio-style design and critique along with lecture, lively discussion of course readings, and assignments. Insights from social psychology, human-computer interaction, and design will be examined, as well as how these ideas are manifest in a broad range of applications for software agents and robots.
+course_url: "https://ocw.mit.edu/courses/mas-965-relational-machines-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/mas-965-relational-machines-spring-2005/169eb340b3f07123238332e56a58ddc8_mas-965s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

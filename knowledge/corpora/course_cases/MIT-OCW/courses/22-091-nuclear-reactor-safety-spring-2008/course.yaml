@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-22-091-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.091"
+cross_listed_codes:
+  - "22.903"
+course_title: "Nuclear Reactor Safety"
+course_slug: "22-091-nuclear-reactor-safety-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Andrew Kadak"
+subject_primary: "Nuclear Energy"
+subject_secondary:
+  - "Engineering"
+  - "Nuclear Engineering"
+  - "Nuclear Systems, Policy, and Economics"
+  - "Science"
+  - "Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Nuclear Energy"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Nuclear Systems, Policy, and Economics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Programming Assignments"
+  - "Written Assignments"
+description: |
+  Problems in nuclear engineering often involve applying knowledge from many disciplines simultaneously in achieving satisfactory solutions. The course will focus on understanding the complete nuclear reactor system including the balance of plant, support systems and resulting interdependencies affecting the overall safety of the plant and regulatory oversight. Both the Seabrook and Pilgrim nuclear plant simulators will be used as part of the educational experience to provide as realistic as possible understanding of nuclear power systems short of being at the reactor.
+course_url: "https://ocw.mit.edu/courses/22-091-nuclear-reactor-safety-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/22-091-nuclear-reactor-safety-spring-2008/cf3f97b58e895f4fc45fb33735e04871_22-091s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

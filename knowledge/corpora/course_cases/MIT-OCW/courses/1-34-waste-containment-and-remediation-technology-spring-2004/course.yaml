@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-1-34-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.34"
+cross_listed_codes: []
+course_title: "Waste Containment and Remediation Technology"
+course_slug: "1-34-waste-containment-and-remediation-technology-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Peter Shanahan"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Geotechnical Engineering"
+  - "Environmental Engineering"
+  - "Environmental Management"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Geotechnical Engineering"
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  1.34 focuses on the geotechnical aspects of hazardous waste management, with specific emphasis on the design of land-based waste containment structures and hazardous waste remediation. Topics include: introduction to hazardous waste, definition of hazardous waste, regulatory requirements, waste characteristics, geo-chemistry, and contaminant transport; the design and operation of waste containment structures, landfills, impoundments, and mine-waste disposal; the characterization and remediation of contaminated sites, the superfund law, preliminary site assessment, site investigation techniques, and remediation technologies; and monitoring requirements.
+course_url: "https://ocw.mit.edu/courses/1-34-waste-containment-and-remediation-technology-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/1-34-waste-containment-and-remediation-technology-spring-2004/56f8ea093b9b026e2cf0d57f21446193_1-34s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

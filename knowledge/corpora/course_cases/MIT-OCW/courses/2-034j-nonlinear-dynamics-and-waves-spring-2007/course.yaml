@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-2-034j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.034J"
+cross_listed_codes:
+  - "1.685J"
+  - "18.377J"
+course_title: "Nonlinear Dynamics and Waves"
+course_slug: "2-034j-nonlinear-dynamics-and-waves-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Civil and Environmental Engineering"
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Triantaphyllos Akylas"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Solid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Solid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This graduate-level course provides a unified treatment of nonlinear oscillations and wave phenomena with applications to mechanical, optical, geophysical, fluid, electrical and flow-structure interaction problems.
+course_url: "https://ocw.mit.edu/courses/2-034j-nonlinear-dynamics-and-waves-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/2-034j-nonlinear-dynamics-and-waves-spring-2007/a925748279d59197fcad924c0ba5a75a_2-034js07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

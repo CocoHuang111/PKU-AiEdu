@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-20-201-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.201"
+cross_listed_codes: []
+course_title: "Mechanisms of Drug Actions"
+course_slug: "20-201-mechanisms-of-drug-actions-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Biological Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Peter Dedon"
+  - "Prof. Steven Tannenbaum"
+  - "Dr. Mark Murcko"
+  - "Dr. Charles Knutson"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Health and Medicine"
+  - "Biomedicine"
+  - "Pharmacology and Toxicology"
+  - "Science"
+  - "Biology"
+  - "Biochemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedicine"
+        specialties: []
+      - name: "Pharmacology and Toxicology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This course addresses the scientific basis for the development of new drugs. The first half of the semester begins with an overview of the drug discovery process, followed by fundamental principles of pharmacokinetics, pharmacodynamics, metabolism, and the mechanisms by which drugs cause therapeutic and toxic responses. The second half of the semester applies those principles to case studies and literature discussions of current problems with specific drugs, drug classes, and therapeutic targets.
+course_url: "https://ocw.mit.edu/courses/20-201-mechanisms-of-drug-actions-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/20-201-mechanisms-of-drug-actions-fall-2013/f76b778e71e28b963c4efb1e5625ad1a_20-201f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

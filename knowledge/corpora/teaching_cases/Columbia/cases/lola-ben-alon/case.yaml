@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-lola-ben-alon"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Lola Ben-Alon, PhD, M. Arch"
+slug: "lola-ben-alon"
+source_url: "https://ctl.columbia.edu/transformations/faculty/lola-ben-alon/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "7ba47589ef636dc81b6dbed84ba80af80a772e0f2679416d0d4b85e810b5171f"

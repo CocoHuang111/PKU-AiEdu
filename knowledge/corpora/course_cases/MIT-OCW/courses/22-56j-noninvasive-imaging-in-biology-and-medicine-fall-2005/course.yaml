@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-22-56j-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.56J"
+cross_listed_codes:
+  - "2.761J"
+  - "20.483J"
+  - "HST.561J"
+  - "9.173J"
+course_title: "Noninvasive Imaging in Biology and Medicine"
+course_slug: "22-56j-noninvasive-imaging-in-biology-and-medicine-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+  - "Mechanical Engineering"
+  - "Biological Engineering"
+  - "Health Sciences and Technology"
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Alan Jasanoff"
+subject_primary: "Biomedical Instrumentation"
+subject_secondary:
+  - "Biomedical Signal and Image Processing"
+  - "Medical Imaging"
+  - "Science"
+  - "Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+      - name: "Biomedical Signal and Image Processing"
+        specialties: []
+      - name: "Medical Imaging"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  22.56J aims to give graduate students and advanced undergraduates background in the theory and application of noninvasive imaging methods to biology and medicine, with emphasis on neuroimaging. The course focuses on the modalities most frequently used in scientific research (X-ray CT, PET/SPECT, MRI, and optical imaging), and includes discussion of molecular imaging approaches used in conjunction with these scanning methods. Lectures by the professor will be supplemented by in-class discussions of problems in research, and hands-on demonstrations of imaging systems.
+course_url: "https://ocw.mit.edu/courses/22-56j-noninvasive-imaging-in-biology-and-medicine-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/22-56j-noninvasive-imaging-in-biology-and-medicine-fall-2005/0baab77f2b778b713d47e0c909b38b67_22-56jf05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

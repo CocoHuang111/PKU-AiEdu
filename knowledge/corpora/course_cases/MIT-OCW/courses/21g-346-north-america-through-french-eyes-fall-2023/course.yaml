@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-346-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.346"
+cross_listed_codes: []
+course_title: "North America through French Eyes"
+course_slug: "21g-346-north-america-through-french-eyes-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Bruno Perreau"
+subject_primary: "Language"
+subject_secondary:
+  - "French"
+  - "Literature"
+  - "International Literature"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Readings"
+  - "Written Assignments"
+description: |
+  The course offers an analysis of the keen interest shown by France and the French in North American cultures since the 18th century. Not only did France contribute to the construction of both Canadian and American nations, but it has also constantly delineated its identity by way of praising or criticizing North American cultures. Using materials drawn from literature, comics, TV shows, and series as well as political debates, the course will historically trace this ambivalent relation exploring various themes such as liberalism, entertainment and the media, trade and cultural goods, transatlantic intellectual encounters, and translation. The course is taught entirely in French. About the instructor: Bruno Perreau is the Cynthia L. Reed Associate Professor of French Studies at MIT. He is also an Affiliate Faculty at the Center for European Studies, Harvard. Perreau recently published The Politics of Adoption: Gender and the Making of French Citizenship (MIT Press, 2014), Queer Theory: The French Response (Stanford University Press, 2016), Les Défis de la République (ed. with Joan W. Scott, Presses de Sciences Po, 2017), Qui a peur de la théorie queer ? (Presses de Sciences Po, 2018), Sphères d’injustice. Pour un universalisme minoritaire (La Découverte, 2023).
+course_url: "https://ocw.mit.edu/courses/21g-346-north-america-through-french-eyes-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/21g-346-north-america-through-french-eyes-fall-2023/mit21g_346f23.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-res-ec-004-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.EC-004"
+cross_listed_codes: []
+course_title: "Energy Needs Assessment Toolkit"
+course_slug: "res-ec-004-energy-needs-assessment-toolkit"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Dr. Eric Verploegen"
+subject_primary: "Energy"
+subject_secondary:
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Energy"
+    subtopics: []
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Understanding the energy needs and market opportunities in the specific off-grid community or region is the first step for effectively selecting and implementing the solutions to meet a community’s energy needs. MIT D-Lab has developed the Energy Assessment Toolkit to guide organizations through the process of gathering the information needed to make informed decisions about what technologies and business models are best suited to meet the specific needs of their community through market-based initiatives. This toolkit is designed for any organization that has an on­-the­-ground presence in an off­-grid community or region and has the ability to take action based on the opportunities identified. This community-­based assessment approach is not intended to replace studies that track energy access on a national level or to generate market intelligence reports for external organizations looking to expand their business or programs into new markets.
+course_url: "https://ocw.mit.edu/courses/res-ec-004-energy-needs-assessment-toolkit/"
+image_url: "https://ocw.mit.edu/courses/res-ec-004-energy-needs-assessment-toolkit/mitres_ec-004_s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

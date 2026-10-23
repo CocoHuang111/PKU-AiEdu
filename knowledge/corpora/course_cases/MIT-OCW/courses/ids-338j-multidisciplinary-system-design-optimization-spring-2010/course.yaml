@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-ids-338j-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "IDS.338J"
+cross_listed_codes:
+  - "16.888"
+  - "IDS.338J (formerly ESD.77)"
+course_title: "Multidisciplinary System Design Optimization"
+course_slug: "ids-338j-multidisciplinary-system-design-optimization-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Institute for Data, Systems, and Society"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Olivier de Weck"
+  - "Prof. Karen Willcox"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Systems Engineering"
+  - "Systems Design"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  There is need for a rigorous, quantitative multidisciplinary design methodology that works with the non-quantitative and creative side of the design process in engineering systems. The goal of multidisciplinary systems design optimization is to create advanced and complex engineering systems that must be competitive not only in terms of performance, but also in terms of life-cycle value. The objective of the course is to present tools and methodologies for performing system optimization in a multidisciplinary design context. Focus will be equally strong on all three aspects of the problem: (i) the multidisciplinary character of engineering systems, (ii) design of these complex systems, and (iii) tools for optimization.
+course_url: "https://ocw.mit.edu/courses/ids-338j-multidisciplinary-system-design-optimization-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/ids-338j-multidisciplinary-system-design-optimization-spring-2010/9021d53e7c8531a050f752695115501c_ids-77s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-6-055j-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.055J"
+cross_listed_codes:
+  - "2.038J"
+course_title: "The Art of Approximation in Science and Engineering"
+course_slug: "6-055j-the-art-of-approximation-in-science-and-engineering-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Sanjoy Mahajan"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course teaches simple reasoning techniques for complex phenomena: divide and conquer, dimensional analysis, extreme cases, continuity, scaling, successive approximation, balancing, cheap calculus, and symmetry. Applications are drawn from the physical and biological sciences, mathematics, and engineering. Examples include bird and machine flight, neuron biophysics, weather, prime numbers, and animal locomotion. Emphasis is on low-cost experiments to test ideas and on fostering curiosity about phenomena in the world.
+course_url: "https://ocw.mit.edu/courses/6-055j-the-art-of-approximation-in-science-and-engineering-spring-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/6-055j-the-art-of-approximation-in-science-and-engineering-spring-2008/dc0932fed5e8d55a868a31bdbcdc7ebb_6-055js08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

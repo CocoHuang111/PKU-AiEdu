@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-12-540-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.540"
+cross_listed_codes: []
+course_title: "Principles of the Global Positioning System"
+course_slug: "12-540-principles-of-the-global-positioning-system-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Thomas Herring"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Surveying"
+  - "Electrical Engineering"
+  - "Telecommunications"
+  - "Science"
+  - "Earth Science"
+  - "Geophysics"
+  - "Social Science"
+  - "Geography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Surveying"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geophysics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Geography"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments with Examples"
+description: |
+  The aim of this course is to introduce the principles of the Global Positioning System and to demonstrate its application to various aspects of Earth Sciences. The specific content of the course depends each year on the interests of the students in the class. In some cases, the class interests are towards the geophysical applications of GPS and we concentrate on high precision (millimeter level) positioning on regional and global scales. In other cases, the interests have been more toward engineering applications of kinematic positioning with GPS in which case the concentration is on positioning with slightly less accuracy but being able to do so for a moving object. In all cases, we concentrate on the fundamental issues so that students should gain an understanding of the basic limitations of the system and how to extend its application to areas not yet fully explored.
+course_url: "https://ocw.mit.edu/courses/12-540-principles-of-the-global-positioning-system-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/12-540-principles-of-the-global-positioning-system-spring-2012/6f252901a5446915cece7898666eb207_12-540s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

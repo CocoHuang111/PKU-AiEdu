@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-12-524-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.524"
+cross_listed_codes: []
+course_title: "Mechanical Properties of Rocks"
+course_slug: "12-524-mechanical-properties-of-rocks-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. J. Evans"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geology"
+  - "Geophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+          - "Geophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  12.524 is a survey of the mechanical behavior of rocks in natural geologic situations. Topics will include a brief survey of field evidence of rock deformation, physics of plastic deformation in minerals, brittle fracture and sliding, and pressure-solution processes. We will compare results of field petrologic and structural studies to data from experimental structural geology.
+course_url: "https://ocw.mit.edu/courses/12-524-mechanical-properties-of-rocks-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/12-524-mechanical-properties-of-rocks-fall-2005/9777dd84e86b209896db6e664ae6575b_12-524f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

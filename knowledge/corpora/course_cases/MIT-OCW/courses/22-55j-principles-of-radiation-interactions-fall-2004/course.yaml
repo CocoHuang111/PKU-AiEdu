@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-22-55j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.55J"
+cross_listed_codes:
+  - "HST.560J"
+course_title: "Principles of Radiation Interactions"
+course_slug: "22-55j-principles-of-radiation-interactions-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jeffrey Coderre"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Radiological Engineering"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Electromagnetism"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Radiological Engineering"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The central theme of this course is the interaction of radiation with biological material. The course is intended to provide a broad understanding of how different types of radiation deposit energy, including the creation and behavior of secondary radiations; of how radiation affects cells and why the different types of radiation have very different biological effects. Topics will include: the effects of radiation on biological systems including DNA damage; in vitro cell survival models; and in vivo mammalian systems. The course covers radiation therapy, radiation syndromes in humans and carcinogenesis. Environmental radiation sources on earth and in space, and aspects of radiation protection are also discussed. Examples from the current literature will be used to supplement lecture material.
+course_url: "https://ocw.mit.edu/courses/22-55j-principles-of-radiation-interactions-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/22-55j-principles-of-radiation-interactions-fall-2004/f9189692418bf0a18d0b8d36d9a599f1_22-55jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

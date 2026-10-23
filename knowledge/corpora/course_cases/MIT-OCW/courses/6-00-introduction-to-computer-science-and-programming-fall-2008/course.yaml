@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-6-00-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.00"
+cross_listed_codes: []
+course_title: "Introduction to Computer Science and Programming"
+course_slug: "6-00-introduction-to-computer-science-and-programming-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Eric Grimson"
+  - "Prof. John Guttag"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Programming Languages"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Programming Languages"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  6.00 Intro to CS and Programming has been retired from OCW. You can access the archived course on DSpace – MIT’s digital repository . Please see the list of introductory programming courses and other programming courses from recent years.
+course_url: "https://ocw.mit.edu/courses/6-00-introduction-to-computer-science-and-programming-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/6-00-introduction-to-computer-science-and-programming-fall-2008/mit6_00_f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

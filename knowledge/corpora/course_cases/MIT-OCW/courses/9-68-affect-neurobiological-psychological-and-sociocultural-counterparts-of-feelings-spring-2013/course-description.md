@@ -1,0 +1,27 @@
+- Source: https://ocw.mit.edu/courses/9-68-affect-neurobiological-psychological-and-sociocultural-counterparts-of-feelings-spring-2013/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Course Description
+
+
+
+## Course Info
+
+### Instructor
+
+- [Stephan L. Chorover](https://ocw.mit.edu/search/?q=Stephan+L.+Chorover)
+
+### Departments
+
+- [Brain and Cognitive Sciences](https://ocw.mit.edu/search/?d=Brain+and+Cognitive+Sciences)
+
+### As Taught In
+
+Spring 2013
+
+### Level
+
+[Undergraduate](https://ocw.mit.edu/search/?l=Undergraduate)

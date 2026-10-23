@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-153j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.153J"
+cross_listed_codes:
+  - "21G.069J"
+  - "WGS.237J"
+course_title: "Race and Gender in Asian America"
+course_slug: "21h-153j-race-and-gender-in-asian-america-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "History"
+  - "Global Studies and Languages"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Emma J. Teng"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Ethnography"
+  - "Society"
+  - "Asian Studies"
+  - "Gender Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  In this seminar we will examine various issues related to the intersection of race and gender in Asian America, starting with the nineteenth century, but focusing on contemporary issues. Topics to be covered may include racial and gender discourse, the stereotyping of Asian American women and men in the media, Asian American masculinity, Asian American feminisms and their relation to mainstream American feminism, the debate between feminism and ethnic nationalism, gay and lesbian identity, class and labor issues, domestic violence, interracial dating and marriage, and multiracial identity.
+course_url: "https://ocw.mit.edu/courses/21h-153j-race-and-gender-in-asian-america-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/21h-153j-race-and-gender-in-asian-america-spring-2006/d83a1960dfdb0332d68c28f7e49ef6f6_21h-153js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

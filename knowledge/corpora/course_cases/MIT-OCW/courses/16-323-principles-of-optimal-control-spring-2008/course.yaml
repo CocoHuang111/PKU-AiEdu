@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-16-323-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.323"
+cross_listed_codes: []
+course_title: "Principles of Optimal Control"
+course_slug: "16-323-principles-of-optimal-control-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jonathan P. How"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Guidance and Control Systems"
+  - "Systems Engineering"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Guidance and Control Systems"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This course studies basic optimization and the principles of optimal control. It considers deterministic and stochastic problems for both discrete and continuous systems. The course covers solution methods including numerical search algorithms, model predictive control, dynamic programming, variational calculus, and approaches based on Pontryagin’s maximum principle, and it includes many examples and applications of the theory.
+course_url: "https://ocw.mit.edu/courses/16-323-principles-of-optimal-control-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/16-323-principles-of-optimal-control-spring-2008/57901042c0bc0d8c795e1e286efce639_16-323s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

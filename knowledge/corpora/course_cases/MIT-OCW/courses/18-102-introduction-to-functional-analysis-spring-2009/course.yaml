@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-18-102-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.102"
+cross_listed_codes: []
+course_title: "Introduction to Functional Analysis"
+course_slug: "18-102-introduction-to-functional-analysis-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Richard Melrose"
+subject_primary: "Linear Algebra"
+subject_secondary:
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This is a undergraduate course. It will cover normed spaces, completeness, functionals, Hahn-Banach theorem, duality, operators; Lebesgue measure, measurable functions, integrability, completeness of L-p spaces; Hilbert space; compact, Hilbert-Schmidt and trace class operators; as well as spectral theorem.
+course_url: "https://ocw.mit.edu/courses/18-102-introduction-to-functional-analysis-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/18-102-introduction-to-functional-analysis-spring-2009/ac99036eccf333f49ac154d36d2af581_18-102s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

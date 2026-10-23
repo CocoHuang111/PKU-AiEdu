@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-20-181-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.181"
+cross_listed_codes: []
+course_title: "Computation for Biological Engineers"
+course_slug: "20-181-computation-for-biological-engineers-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Biological Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Eric Alm"
+  - "Prof. Andrew Endy"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Systems Engineering"
+  - "Computational Science and Engineering"
+  - "Systems Optimization"
+  - "Science"
+  - "Biology"
+  - "Computation and Systems Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+          - "Systems Optimization"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers the analytical, graphical, and numerical methods supporting the analysis and design of integrated biological systems. Topics include modularity and abstraction in biological systems, mathematical encoding of detailed physical problems, numerical methods for solving the dynamics of continuous and discrete chemical systems, statistics and probability in dynamic systems, applied local and global optimization, simple feedback and control analysis, statistics and probability in pattern recognition. An official course Web site and Wiki is maintained on OpenWetWare: 20.181 Computation for Biological Engineers .
+course_url: "https://ocw.mit.edu/courses/20-181-computation-for-biological-engineers-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/20-181-computation-for-biological-engineers-fall-2006/fd0492843b9ba7dd741a714a88be8317_20-181f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-6-432-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.432"
+cross_listed_codes: []
+course_title: "Stochastic Processes, Detection, and Estimation"
+course_slug: "6-432-stochastic-processes-detection-and-estimation-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gregory Wornell"
+  - "Prof. Alan Willsky"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course examines the fundamentals of detection and estimation for signal processing, communications, and control. Topics covered include: vector spaces of random variables; Bayesian and Neyman-Pearson hypothesis testing; Bayesian and nonrandom parameter estimation; minimum-variance unbiased estimators and the Cramer-Rao bounds; representations for stochastic processes, shaping and whitening filters, and Karhunen-Loeve expansions; and detection and estimation from waveform observations. Advanced topics include: linear prediction and spectral estimation, and Wiener and Kalman filters.
+course_url: "https://ocw.mit.edu/courses/6-432-stochastic-processes-detection-and-estimation-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/6-432-stochastic-processes-detection-and-estimation-spring-2004/47903e1c28a3865162b3c477757c56fb_6-432s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

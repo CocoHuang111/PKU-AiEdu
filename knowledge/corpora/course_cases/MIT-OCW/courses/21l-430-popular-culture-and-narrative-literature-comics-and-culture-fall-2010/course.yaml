@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-430-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.430"
+cross_listed_codes:
+  - "WGS.492"
+  - "CMS.920"
+course_title: "Popular Culture and Narrative: Literature, Comics, and Culture"
+course_slug: "21l-430-popular-culture-and-narrative-literature-comics-and-culture-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Literature"
+  - "Women's and Gender Studies"
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Picker"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  In this course, we will investigate popular culture and narrative by focusing on the relationship between literary texts and comics. Several questions shape the syllabus and provide a framework for approaching the course materials: How do familiar aspects of comics trace their origins to literary texts and broader cultural concerns? How have classic comics gone on to influence literary fiction? In what ways do contemporary graphic narratives bring a new kind of seriousness of purpose to comics, blurring what’s left of the boundaries between the highbrow and the lowbrow? Readings and materials for the course range from the nineteenth century to the present, and include novels, short stories, essays, older and newer comics, and some older and newer films. Expectations include diligent reading, active participation, occasional discussion leading, and two papers.
+course_url: "https://ocw.mit.edu/courses/21l-430-popular-culture-and-narrative-literature-comics-and-culture-fall-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-430-popular-culture-and-narrative-literature-comics-and-culture-fall-2010/773953de80625bd2b2839bd1f54b211a_21l-430f10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

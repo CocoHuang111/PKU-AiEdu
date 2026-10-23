@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-ellen-fahey"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Ellen Fahey, DNP, MSN, FNP-C"
+slug: "ellen-fahey"
+source_url: "https://ctl.columbia.edu/transformations/faculty/ellen-fahey/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "d558f6cac0e33637aee8601df14b626f44fc9c035ca361e753ea964747f44291"

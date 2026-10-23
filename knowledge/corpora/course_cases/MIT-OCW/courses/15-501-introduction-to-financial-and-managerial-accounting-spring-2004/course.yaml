@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-15-501-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.501"
+cross_listed_codes:
+  - "15.516"
+course_title: "Introduction to Financial and Managerial Accounting"
+course_slug: "15-501-introduction-to-financial-and-managerial-accounting-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sugata Roychowdhury"
+subject_primary: "Accounting"
+subject_secondary:
+  - "Finance"
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Accounting"
+        specialties: []
+      - name: "Finance"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course studies basic concepts of financial and managerial reporting. The viewpoint is that of readers of financial and managerial reports rather than the accountants who prepare them.
+course_url: "https://ocw.mit.edu/courses/15-501-introduction-to-financial-and-managerial-accounting-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/15-501-introduction-to-financial-and-managerial-accounting-spring-2004/7d38e86516db70986e22ef8bf96b2ccd_15-501s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

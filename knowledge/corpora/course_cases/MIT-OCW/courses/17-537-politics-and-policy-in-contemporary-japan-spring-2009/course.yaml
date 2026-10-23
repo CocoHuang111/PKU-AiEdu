@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-17-537-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.537"
+cross_listed_codes:
+  - "17.538"
+course_title: "Politics and Policy in Contemporary Japan"
+course_slug: "17-537-politics-and-policy-in-contemporary-japan-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Richard J. Samuels"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "Social Science"
+  - "Political Science"
+  - "Public Administration"
+  - "Public Policy"
+  - "Society"
+  - "Asian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This subject is designed for upper level undergraduates and graduate students as an introduction to politics and the policy process in modern Japan. The semester is divided into two parts. After a two-week general introduction to Japan and to the dominant approaches to the study of Japanese history, politics and society, we will begin exploring five aspects of Japanese politics: party politics, electoral politics, interest group politics, bureaucratic politics, and policy, which will be broken up into seven additional sections. We will try to understand the ways in which the actors and institutions identified in the first part of the semester affect the policy process across a variety of issues areas.
+course_url: "https://ocw.mit.edu/courses/17-537-politics-and-policy-in-contemporary-japan-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/17-537-politics-and-policy-in-contemporary-japan-spring-2009/e2f13e2cacdd033cdec08ce11ec7306d_17-537s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

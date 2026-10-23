@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-4-297-fall-2000"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.297"
+cross_listed_codes: []
+course_title: "Special Problems in Architecture Studies"
+course_slug: "4-297-special-problems-in-architecture-studies-fall-2000"
+term: "Fall"
+year: 2000
+as_taught_in: "Fall 2000"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Daniel Greenwood"
+  - "Prof. William Mitchell"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Media Studies"
+  - "Digital Media"
+  - "Teaching and Education"
+  - "Educational Technology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The course investigates e-Learning systems from a business, policy, technical and legal perspective. The issues presented will be tackled by discussion of the design and structure of the various example systems. The connection between information architectures and the physical workplace of the users will also be examined. The course will be comprised of readings, discussions, guest speakers and group design sessions. Laboratory sessions will be focused on implementation tools and opportunities to create one’s own working prototypes. Students will learn to describe information architectures using the Unified Modeling Language (used to specify, design and structure web applications) and XML (to designate meaningful content).
+course_url: "https://ocw.mit.edu/courses/4-297-special-problems-in-architecture-studies-fall-2000/"
+image_url: "https://ocw.mit.edu/courses/4-297-special-problems-in-architecture-studies-fall-2000/f651a0dd0f14e9502cbeb0b968275aa9_4-297f00.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

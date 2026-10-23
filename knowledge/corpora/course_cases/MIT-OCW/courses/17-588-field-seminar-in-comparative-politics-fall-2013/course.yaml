@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-17-588-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.588"
+cross_listed_codes: []
+course_title: "Field Seminar in Comparative Politics"
+course_slug: "17-588-field-seminar-in-comparative-politics-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Chappell Lawson"
+subject_primary: "Political Science"
+subject_secondary:
+  - "Comparative Politics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "Comparative Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  This course provides an introduction to the field of comparative politics. Readings include both classic and recent materials. Discussions include research design and research methods, in addition to topics such as political culture, social cleavages, the state, and democratic institutions. The emphasis on each issue depends in part on the interests of the students.
+course_url: "https://ocw.mit.edu/courses/17-588-field-seminar-in-comparative-politics-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/17-588-field-seminar-in-comparative-politics-fall-2013/3ff83d71a7f6da1c126522c0294a46cd_17-588f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

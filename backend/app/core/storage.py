@@ -1,4 +1,4 @@
-"""本地文件存储。预留对象存储接口，本次只实现 local。"""
+"""File storage backends. Existing uploads remain local until explicitly migrated."""
 
 from __future__ import annotations
 
@@ -32,7 +32,7 @@ class LocalStorageBackend:
         if not key or key.startswith("/") or ".." in Path(key).parts:
             raise ValueError("非法存储路径")
         path = (self.root / key).resolve()
-        if not str(path).startswith(str(self.root)):
+        if not path.is_relative_to(self.root):
             raise ValueError("非法存储路径")
         return path
 
@@ -72,7 +72,10 @@ class ObjectStorageBackend:
 def get_storage(backend: str = "local") -> StorageBackend:
     if backend == "local":
         return LocalStorageBackend()
-    if backend in {"s3", "minio", "oss", "object"}:
+    if backend == "oss":
+        from .oss_storage import OSSStorageBackend
+        return OSSStorageBackend()
+    if backend in {"s3", "minio", "object"}:
         return ObjectStorageBackend()
     raise ValueError(f"未知存储后端: {backend}")
 

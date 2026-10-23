@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-17-473-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.473"
+cross_listed_codes: []
+course_title: "The Politics of Nuclear Proliferation: Nuclear History, Strategy, and Statecraft"
+course_slug: "17-473-the-politics-of-nuclear-proliferation-nuclear-history-strategy-and-statecraft-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Francis J. Gavin"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Nuclear Systems, Policy, and Economics"
+  - "Humanities"
+  - "History"
+  - "World History"
+  - "Social Science"
+  - "Political Science"
+  - "International Relations"
+  - "Public Administration"
+  - "Military Studies"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties:
+          - "Nuclear Systems, Policy, and Economics"
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "World History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course provides an introduction to the politics and theories surrounding the proliferation of nuclear weapons. It introduces the basics of nuclear weapons, nuclear strategy, and deterrence theory. It also examines the historical record during the Cold War as well as the proliferation of nuclear weapons to regional powers and the resulting deterrence consequences.
+course_url: "https://ocw.mit.edu/courses/17-473-the-politics-of-nuclear-proliferation-nuclear-history-strategy-and-statecraft-fall-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/17-473-the-politics-of-nuclear-proliferation-nuclear-history-strategy-and-statecraft-fall-2015/f40b7ec42e5655d712ea538fca7ceea2_17-473f15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

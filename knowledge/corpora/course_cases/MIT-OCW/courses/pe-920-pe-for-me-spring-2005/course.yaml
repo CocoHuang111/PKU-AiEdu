@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-pe-920-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "PE.920"
+cross_listed_codes: []
+course_title: "PE for ME"
+course_slug: "pe-920-pe-for-me-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Athletics, Physical Education and Recreation"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Noah Riskin"
+  - "Prof. Alex Slocum"
+  - "Aline Newton"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Health and Medicine"
+  - "Physical Education and Recreation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Physical Education and Recreation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  The sensing, thinking, moving body is the basis of our experience in the world; it is the very foundation on which cognitive intelligence is built. Physical Intelligence, then, is the inherent ability of the human organism to function in extraordinary accord with its physical environment. This class–a joint offering from the Department of Athletics, Physical Education and Recreation (DAPER) and Department of Mechanical Engineering (ME) for both PE and academic credit–uses the MIT gymnastics gym as a laboratory to explore Physical Intelligence as applied to Mechanical Engineering and design. Readings, discussions and experiential learning introduce various dimensions of Physical Intelligence which students then apply to the design of innovative exercise equipment.
+course_url: "https://ocw.mit.edu/courses/pe-920-pe-for-me-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/pe-920-pe-for-me-spring-2005/14ba7a0a27e3cfaad9c2039663d36919_pe-920s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

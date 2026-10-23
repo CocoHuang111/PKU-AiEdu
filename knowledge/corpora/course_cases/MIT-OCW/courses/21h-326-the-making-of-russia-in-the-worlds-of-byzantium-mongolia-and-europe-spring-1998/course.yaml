@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-326-spring-1998"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.326"
+cross_listed_codes: []
+course_title: "The Making of Russia in the Worlds of Byzantium, Mongolia, and Europe"
+course_slug: "21h-326-the-making-of-russia-in-the-worlds-of-byzantium-mongolia-and-europe-spring-1998"
+term: "Spring"
+year: 1998
+as_taught_in: "Spring 1998"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Elizabeth A. Wood"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "European History"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+          - "European History"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Medieval and early modern Russia stood at the crossroads of Europe and Asia. In this course we will examine some of the native developments and foreign influences which most affected the course of Russian history. Particular topics include the rise of the Kievan State, the Mongol Yoke, the rise of Muscovy, Ivan the Terrible, Peter the Great, relations with Western Europe. How did foreigners perceive Russia? How did those living in the Russian lands perceive foreigners? What social relations were developing between nobility and peasantry, town and country, women and men? What were the relations of each of these groups to the state? How did state formation come about in Kievan and Muscovite Russia? What were the political, religious, economic, and social factors affecting relations between state and society? In examining these questions we will consider a variety of sources including contemporary accounts (both domestic and foreign), legal and political documents, historical monographs and interpretive essays.
+course_url: "https://ocw.mit.edu/courses/21h-326-the-making-of-russia-in-the-worlds-of-byzantium-mongolia-and-europe-spring-1998/"
+image_url: |
+  https://ocw.mit.edu/courses/21h-326-the-making-of-russia-in-the-worlds-of-byzantium-mongolia-and-europe-spring-1998/189495ae27040afd441af5c33fd138d4_21h-326s98.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

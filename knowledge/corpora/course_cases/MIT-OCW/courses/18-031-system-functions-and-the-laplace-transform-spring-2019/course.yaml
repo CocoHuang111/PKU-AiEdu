@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-18-031-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.031"
+cross_listed_codes: []
+course_title: "System Functions and the Laplace Transform"
+course_slug: "18-031-system-functions-and-the-laplace-transform-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Philip Pearce"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Calculus"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Calculus"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+description: |
+  This half-semester course studies basic continuous control theory as well as representation of functions in the complex frequency domain. It covers generalized functions, unit impulse response, and convolution. Also covered are the Laplace transform, system (or transfer) functions, and the pole diagram. Examples from mechanical and electrical engineering are provided. Go to OCW’s Open Learning Library site for 18.031: System Functions and the Laplace Transform . The site is free to use, just like all OCW sites. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/18-031-system-functions-and-the-laplace-transform-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/18-031-system-functions-and-the-laplace-transform-spring-2019/59ae678fd4601bfc791b1072bf5ebc11_18-031s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-4-638-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.638"
+cross_listed_codes: []
+course_title: "Drawings & Numbers: Five Centuries of Digital Design"
+course_slug: "4-638-drawings-numbers-five-centuries-of-digital-design-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Leonardo Diaz Borioli"
+  - "Prof. Mario Carpo"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Engineering"
+  - "Architectural History and Criticism"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Engineering"
+          - "Architectural History and Criticism"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The aim of this course is to highlight some technical aspects of the classical tradition in architecture that have so far received only sporadic attention. It is well known that quantification has always been an essential component of classical design: proportional systems in particular have been keenly investigated. But the actual technical tools whereby quantitative precision was conceived, represented, transmitted, and implemented in pre-modern architecture remain mostly unexplored. By showing that a dialectical relationship between architectural theory and data-processing technologies was as crucial in the past as it is today, this course hopes to promote a more historically aware understanding of the current computer-induced transformations in architectural design.
+course_url: "https://ocw.mit.edu/courses/4-638-drawings-numbers-five-centuries-of-digital-design-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/4-638-drawings-numbers-five-centuries-of-digital-design-fall-2002/efaafaaad346ffcb371136bad412f8e7_4-638f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

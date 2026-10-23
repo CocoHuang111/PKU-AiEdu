@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-707-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.707"
+cross_listed_codes: []
+course_title: "Arthurian Literature and Celtic Colonization"
+course_slug: "21l-707-arthurian-literature-and-celtic-colonization-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Cain"
+subject_primary: "History"
+subject_secondary:
+  - "European History"
+  - "Literature"
+  - "Criticism"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "European History"
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The course examines the earliest emergence of stories about King Arthur and the Knights of the Round Table in the context of the first wave of British Imperialism and the expanded powers of the Catholic Church during the twelfth and thirteenth centuries. The morphology of Arthurian romance will be set off against original historical documents and chronicle sources for the English conquests in Brittany, Wales, Scotland, and Ireland to understand the ways in which these new attitudes towards Empire were being mythologized. Authors will include Bede, Geoffrey of Monmouth, Chrétien de Troyes, Marie de France, Gerald of Wales, together with some lesser known works like the Perilous Graveyard , the Knight with the Sword , and Perlesvaus , or the High History of the Holy Graal . Special attention will be paid to how the narrative material of the story gets transformed according to the particular religious and political agendas of each new author.
+course_url: "https://ocw.mit.edu/courses/21l-707-arthurian-literature-and-celtic-colonization-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/21l-707-arthurian-literature-and-celtic-colonization-spring-2005/a630b104d14aa6c84bf507521f2134d3_21l-707s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

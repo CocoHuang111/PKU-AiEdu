@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-res-ll-004-spring-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.LL-004"
+cross_listed_codes: []
+course_title: "LL EduCATE: Introduction to Engineering Concepts"
+course_slug: "res.ll-004-ll-educate-introduction-to-engineering-concepts-spring-2022"
+term: "Spring"
+year: 2022
+as_taught_in: "Spring 2022"
+language: "en"
+departments: []
+academic_levels:
+  - "Non-Credit"
+  - "High School"
+instructors:
+  - "Juliana Furgala"
+  - "Jennifer Swanson"
+  - "David Maurer"
+  - "Adam Kern"
+  - "Bich Vu"
+  - "Maxsimo Salazar"
+  - "Amanda C. Prescott"
+  - "Cristina Gath"
+subject_primary: "Engineering"
+subject_secondary: []
+topic_tree:
+  - name: "Engineering"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Laboratory Assignments"
+  - "Videos"
+description: |
+  Welcome to “Introduction to Engineering Concepts," a lesson that will introduce you to several STEM fields and help you build core skills that are helpful across many engineering disciplines. We also explain the engineering/research development process. This lesson assumes little to no prior engineering experience but does provide suggestions to increase the difficulty of the experiments should you desire to do so. This course is provided by MIT Lincoln Laboratory, a research and development laboratory focusing on advanced technologies to meet critical national security needs.
+course_url: "https://ocw.mit.edu/courses/res.ll-004-ll-educate-introduction-to-engineering-concepts-spring-2022/"
+image_url: "https://ocw.mit.edu/courses/res.ll-004-ll-educate-introduction-to-engineering-concepts-spring-2022/res-ll-004.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

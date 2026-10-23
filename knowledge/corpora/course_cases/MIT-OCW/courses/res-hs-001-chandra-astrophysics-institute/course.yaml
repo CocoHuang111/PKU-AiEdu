@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-res-hs-001-summer-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.HS-001"
+cross_listed_codes: []
+course_title: "Chandra Astrophysics Institute"
+course_slug: "res-hs-001-chandra-astrophysics-institute"
+term: "Summer"
+year: 2008
+as_taught_in: "Summer 2008"
+language: "en"
+departments: []
+academic_levels:
+  - "High School"
+instructors:
+  - "Mark Hartman, Principal Instructor"
+  - "Peter Ashton, Assistant Instructor"
+  - "Shakib Ahmed, CAI Intern"
+  - "Simba Kol, CAI Intern"
+  - "Dr. Irene Porro"
+subject_primary: "Physics"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Videos"
+description: |
+  The Chandra Astrophysics Institute (CAI), a Chandra X-ray Observatory–sponsored program run by the MIT Kavli Institute for Astrophysics and Space Research , was intended for students from the Boston area from a wide range of academic backgrounds with a limited opportunity to directly experience authentic science. The CAI was a year-long program to train for and take part in authentic astronomy projects. Participants built employable research, technology, and collaboration skills and the background knowledge necessary to understand how research science is done. Investigations of different astronomical systems were undertaken during a five-week summer session at MIT. Participants, mentored by MIT researchers and educators, then applied these skills to undertake research projects in x-ray astronomy based on observations made with the Chandra X-Ray Observatory.
+course_url: "https://ocw.mit.edu/courses/res-hs-001-chandra-astrophysics-institute/"
+image_url: "https://ocw.mit.edu/courses/res-hs-001-chandra-astrophysics-institute/mitres-hs001.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

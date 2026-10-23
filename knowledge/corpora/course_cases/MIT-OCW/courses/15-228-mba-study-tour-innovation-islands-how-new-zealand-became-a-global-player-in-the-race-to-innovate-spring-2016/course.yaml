@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-15-228-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.228"
+cross_listed_codes: []
+course_title: "MBA Study Tour: Innovation Islands - How New Zealand Became A Global Player in the Race to Innovate"
+course_slug: "15-228-mba-study-tour-innovation-islands-how-new-zealand-became-a-global-player-in-the-race-to-innovate-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Neal Hartman"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Innovation"
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+description: |
+  This International Study Tour went to New Zealand during the first half of the 2016 Spring semester and travel during the Sloan Innovation Period. International Study Tours provide students with a course credit opportunity to identify and address issues about which they feel particularly passionate. After classroom sessions featuring faculty, industry, and cultural experts, students embark on site visits to their destination of choice, meeting with industry and government leaders, as well as local alumni. Through these visits, students are able to build on the preparatory course work with an in-depth exploration of industries, companies, and countries they have visited. This course fulfills the Sloan Innovation Period (SIP) elective requirement. SIP occurs at the midpoint of each semester providing students with an intensive week of experiential leadership learning, as well as exposure to groundbreaking faculty work. It allows students to engage in intellectual exploration outside the classroom. SIP degree requirements include core courses in ethics and leadership as well as electives.
+course_url: |
+  https://ocw.mit.edu/courses/15-228-mba-study-tour-innovation-islands-how-new-zealand-became-a-global-player-in-the-race-to-innovate-spring-2016/
+image_url: |
+  https://ocw.mit.edu/courses/15-228-mba-study-tour-innovation-islands-how-new-zealand-became-a-global-player-in-the-race-to-innovate-spring-2016/37514ca54502c07c4948927690ed4048_15-228s16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

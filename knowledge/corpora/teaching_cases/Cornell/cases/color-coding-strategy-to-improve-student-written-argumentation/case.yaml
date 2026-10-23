@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "cornell-color-coding-strategy-to-improve-student-written-argumentation"
+institution: "Cornell University"
+platform: "Cornell Teaching Case Studies"
+collection: "Teaching Innovation Case Study Library"
+title: "Color-Coding Strategy to Improve Student Written Argumentation"
+slug: "color-coding-strategy-to-improve-student-written-argumentation"
+source_url: "https://blogs.cornell.edu/teachingcasestudies/gai/color-coding-strategy-to-improve-student-written-argumentation/"
+language: "en"
+published: "2024-04-03"
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  published: "source"
+extraction_status: "complete"
+content_sha256: "697ab7fa52d64b51ed0eab22f7a06e2319c01ca23a338aaeab1a2fb3e263df9b"

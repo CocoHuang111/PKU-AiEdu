@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-6-301-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.301"
+cross_listed_codes: []
+course_title: "Solid-State Circuits"
+course_slug: "6-301-solid-state-circuits-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "James Roberge"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  6.301 is a course in analog circuit analysis and design. We cover the tools and methods necessary for the creative design of useful circuits using active devices. The class stresses insight and intuition, applied to the design of transistor circuits and the estimation of their performance. We concentrate on circuits using the bipolar junction transistor, but the techniques that we study can be equally applied to circuits using JFETs, MOSFETs, MESFETs, future exotic devices, or even vacuum tubes.
+course_url: "https://ocw.mit.edu/courses/6-301-solid-state-circuits-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/6-301-solid-state-circuits-fall-2010/419ca54ea78c2c980a1f0f4263801b77_6-301f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

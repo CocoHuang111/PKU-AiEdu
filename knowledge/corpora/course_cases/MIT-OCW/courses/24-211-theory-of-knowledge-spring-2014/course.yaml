@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-24-211-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.211"
+cross_listed_codes: []
+course_title: "Theory of Knowledge"
+course_slug: "24-211-theory-of-knowledge-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Declan Smithies"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Epistemology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Epistemology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course is an introduction to epistemology: the theory of knowledge. We will focus on skepticism—that is, the thesis that we know nothing at all—and we will survey a range of skeptical arguments and responses to skepticism.
+course_url: "https://ocw.mit.edu/courses/24-211-theory-of-knowledge-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/24-211-theory-of-knowledge-spring-2014/b13b82f62bdfde4e4d2b9b865e6faf47_24-211s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

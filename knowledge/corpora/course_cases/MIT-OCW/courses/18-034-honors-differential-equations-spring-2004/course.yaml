@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-18-034-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.034"
+cross_listed_codes: []
+course_title: "Honors Differential Equations"
+course_slug: "18-034-honors-differential-equations-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jason Starr"
+subject_primary: "Differential Equations"
+subject_secondary:
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers the same material as 18.03 with more emphasis on theory. Topics include first order equations, separation, initial value problems, systems, linear equations, independence of solutions, undetermined coefficients, and singular points and periodic orbits for planar systems.
+course_url: "https://ocw.mit.edu/courses/18-034-honors-differential-equations-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/18-034-honors-differential-equations-spring-2004/ade3412a58f3fa8f7cf4888d277ad571_18-034s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-res-sud-01-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.SUD-01"
+cross_listed_codes: []
+course_title: "Substance Use Disorder Ventures Program"
+course_slug: "res-sud-01-substance-use-disorder-ventures-program-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments: []
+academic_levels:
+  - "Graduate"
+instructors:
+  - "MIT SUD Ventures Team"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Health and Medicine"
+  - "Biomedical Enterprise"
+  - "Public Health"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Enterprise"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  Substance Use Disorder (SUD) Ventures is an intense and immersive hybrid program, offered through MIT Open Learning, whose aim is to fuel the next generation of innovation in the field of substance use treatment and research. This program is designed to support researchers and other innovators in the field of SUD with knowledge and examples of how to bring their innovations to market. The program and its research are supported by the National Institute on Drug Abuse of the National Institutes of Health under Award Number UE5DA056914. This award is subject to the Cooperative Agreement Terms and Conditions of Award as set forth in RFA DA-22–020, entitled “Growing Great Ideas: Research Education Course in Product Development and Entrepreneurship for Life Science Researchers (UE5 Clinical Trial Not Allowed).”
+course_url: "https://ocw.mit.edu/courses/res-sud-01-substance-use-disorder-ventures-program-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/res-sud-01-substance-use-disorder-ventures-program-spring-2025/res_sud_01_s25_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

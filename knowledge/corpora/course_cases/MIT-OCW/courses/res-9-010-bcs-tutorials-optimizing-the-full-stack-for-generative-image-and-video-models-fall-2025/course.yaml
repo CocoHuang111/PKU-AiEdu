@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-res-9-010-fall-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.9-010"
+cross_listed_codes: []
+course_title: "Brain and Cognitive Sciences Computational Tutorial: Optimizing the Full Stack for Generative Image and Video Models"
+course_slug: "res-9-010-bcs-tutorials-optimizing-the-full-stack-for-generative-image-and-video-models-fall-2025"
+term: "Fall"
+year: 2025
+as_taught_in: "Fall 2025"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Non-Credit"
+instructors: []
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Tutorial Videos"
+description: |
+  This tutorial covers optimization strategies for diffusion models used in image and video generation; topics include architecture design, hardware efficiency, and inference techniques. Speaker: Sayak Paul, Hugging Face. This tutorial is part of a seminar series led by graduate students and postdocs in the MIT Department of Brain and Cognitive Sciences (BCS) from 2015 to the present, featuring topics relevant to research on intelligence in neuroscience, cognitive science, and artificial intelligence. The tutorials are aimed at participants who have some computational background but are not experts on these topics. This series was organized by Sol Markman and Ajani Stewart, graduate students in the Department of Brain and Cognitive Sciences.
+course_url: "https://ocw.mit.edu/courses/res-9-010-bcs-tutorials-optimizing-the-full-stack-for-generative-image-and-video-models-fall-2025/"
+image_url: |
+  https://ocw.mit.edu/courses/res-9-010-bcs-tutorials-optimizing-the-full-stack-for-generative-image-and-video-models-fall-2025/mitres_9_010_f25.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

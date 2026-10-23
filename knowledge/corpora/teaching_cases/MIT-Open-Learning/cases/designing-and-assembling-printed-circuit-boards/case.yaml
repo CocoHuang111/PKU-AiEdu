@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-designing-and-assembling-printed-circuit-boards"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Designing and Assembling Printed Circuit Boards for Impactful Projects"
+slug: "designing-and-assembling-printed-circuit-boards"
+course_codes:
+  - "6.9000"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Joel Voldman"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/designing-and-assembling-printed-circuit-boards"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "1a232bc2cc6f6df6c20db8eb2da08827a973ccfa0bd09db0960382fb173317b7"

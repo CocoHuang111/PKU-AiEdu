@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-17-251-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.251"
+cross_listed_codes:
+  - "17.252"
+course_title: "Congress and the American Political System I"
+course_slug: "17-251-congress-and-the-american-political-system-i-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Charles Stewart"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Exams"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+description: |
+  The United States Congress is the most open of the national branches of government, and therefore the most closely studied. This course aims to find ways to deal with the vast array of information we have about Congress by asking two basic questions: What does Congress do (and why), and what are the various ways of studying congressional behavior? This course focuses on both the internal processes of the House and Senate, and on the place of Congress in the American political system.
+course_url: "https://ocw.mit.edu/courses/17-251-congress-and-the-american-political-system-i-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/17-251-congress-and-the-american-political-system-i-fall-2016/400f0325fc5e04625e6107124a38bc90_17-251f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

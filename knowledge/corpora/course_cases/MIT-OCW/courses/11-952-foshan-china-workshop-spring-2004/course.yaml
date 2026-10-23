@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-11-952-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.952"
+cross_listed_codes: []
+course_title: "Foshan China Workshop"
+course_slug: "11-952-foshan-china-workshop-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Tunney Lee"
+  - "Prof. Yu-Hung Hong"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Sustainability"
+  - "Social Science"
+  - "Economics"
+  - "Developmental Economics"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+  - "Projects with Examples"
+description: |
+  This practicum focuses on applying the principles of sustainability to improve the quality of life and activity along the Foshan downtown riverfront. The City has recently engaged in several planning efforts that, with the help of consultants and experts, will help to identify strategies to revitalize the City’s center and establish a new downtown. This practicum will compliment these efforts by focusing on planning and design options in and around the Pearl River, a now underutilized waterway that runs through the City’s new downtown.
+course_url: "https://ocw.mit.edu/courses/11-952-foshan-china-workshop-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/11-952-foshan-china-workshop-spring-2004/f388b70a64dba4c841228779c3b41ba9_11-952s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

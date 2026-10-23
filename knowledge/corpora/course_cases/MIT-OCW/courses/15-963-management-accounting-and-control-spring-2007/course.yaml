@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-15-963-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.963"
+cross_listed_codes: []
+course_title: "Management Accounting and Control"
+course_slug: "15-963-management-accounting-and-control-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mozaffar Khan"
+subject_primary: "Accounting"
+subject_secondary:
+  - "Management"
+  - "Operations Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Accounting"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course is an introduction to the use of accounting information by managers for decision making, performance evaluation and control. The course should be useful for those who intend to work as management consultants, for LFM (Leaders for Manufacturing) students, and in general, for those who will become senior managers.
+course_url: "https://ocw.mit.edu/courses/15-963-management-accounting-and-control-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/15-963-management-accounting-and-control-spring-2007/5b3f2e4b019f266fdab866af492f409f_15-963s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

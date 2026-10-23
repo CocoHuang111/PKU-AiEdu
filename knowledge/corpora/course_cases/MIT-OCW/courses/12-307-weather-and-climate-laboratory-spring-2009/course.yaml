@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-12-307-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.307"
+cross_listed_codes: []
+course_title: "Weather and Climate Laboratory"
+course_slug: "12-307-weather-and-climate-laboratory-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Marshall"
+  - "Dr. Lodovica Illari"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Atmospheric Science"
+  - "Climate Studies"
+  - "Oceanography"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Climate Studies"
+          - "Oceanography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Projects"
+description: |
+  Course 12.307 is an undergraduate course intended to illustrate, by means of ‘hands on’ projects, the basic dynamical and physical principles that govern the general circulation of the atmosphere and ocean and the day to day sequence of weather events. The course parallels the content of the new undergraduate textbook Atmosphere, Ocean and Climate Dynamics by John Marshall and R. Alan Plumb.
+course_url: "https://ocw.mit.edu/courses/12-307-weather-and-climate-laboratory-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/12-307-weather-and-climate-laboratory-spring-2009/ccde7941ad74114d54bf6b34292748a3_12-307s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

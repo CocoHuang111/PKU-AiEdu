@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-237-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.237"
+cross_listed_codes: []
+course_title: "Practice of Participatory Action Research (PAR)"
+course_slug: "11-237-practice-of-participatory-action-research-par-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lawrence Susskind"
+  - "Dayna Cunningham, Esq."
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course introduces students to the techniques of participatory action research (PAR) and the practice of case study research. PAR processes are place or case-specific, place a premium on local ways of knowing, and gauge the success of research in terms of what partner-communities do with the knowledge that is co-produced. The objective of PAR is to generate the ideas, information, and understandings that ought to inform efforts to promote social change. By focusing on ways of co-producing knowledge using various forms of data collection and analysis, students will learn how the people and communities who are often university partners in applied social science research can use findings or results from PAR case studies to address the challenges they confront in their communities. Learn more about Participatory Action Research at MIT .
+course_url: "https://ocw.mit.edu/courses/11-237-practice-of-participatory-action-research-par-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/11-237-practice-of-participatory-action-research-par-spring-2016/1989712564a4e8114e028ed69497a832_11-237S162.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

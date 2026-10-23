@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-508-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.508"
+cross_listed_codes: []
+course_title: "Quantitative Genomics"
+course_slug: "hst-508-quantitative-genomics-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Isaac Kohane"
+  - "Prof. Leonid Mirny"
+  - "Prof. Robert Berwick"
+  - "Dr. Alvin Kho"
+subject_primary: "Functional Genomics"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Genetics"
+  - "Proteomics"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Functional Genomics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Genetics"
+          - "Proteomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course provides a foundation in the following four areas: evolutionary and population genetics; comparative genomics; structural genomics and proteomics; and functional genomics and regulation.
+course_url: "https://ocw.mit.edu/courses/hst-508-quantitative-genomics-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-508-quantitative-genomics-fall-2005/a60722d23ca28163afe321c92a6d0703_hst-508f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

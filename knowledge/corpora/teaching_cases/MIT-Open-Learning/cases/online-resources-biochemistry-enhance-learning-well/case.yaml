@@ -1,0 +1,25 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-online-resources-biochemistry-enhance-learning-well"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Online Resources in Biochemistry Enhance Learning & Well-being"
+slug: "online-resources-biochemistry-enhance-learning-well"
+course_codes:
+  - "7.05"
+departments:
+  - "Biology (Course 7)"
+instructors:
+  - "Michael Yaffe"
+  - "Darcy Gordon"
+  - "Mary Ellen Wiltrout"
+  - "Monika Avello"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Online Assessments & Rapid Feedback"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/online-resources-biochemistry-enhance-learning-well"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "32a53b8fe59b2fe481fc879c0d162fafbe692d80845d2db723a36806715a8ebd"

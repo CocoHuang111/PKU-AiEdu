@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-2-20-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.20"
+cross_listed_codes: []
+course_title: "Marine Hydrodynamics (13.021)"
+course_slug: "2-20-marine-hydrodynamics-13-021-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dick K. P. Yue"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  In this course the fundamentals of fluid mechanics are developed in the context of naval architecture and ocean science and engineering. The various topics covered are: Transport theorem and conservation principles, Navier-Stokes’ equation, dimensional analysis, ideal and potential flows, vorticity and Kelvin’s theorem, hydrodynamic forces in potential flow, D’Alembert’s paradox, added-mass, slender-body theory, viscous-fluid flow, laminar and turbulent boundary layers, model testing, scaling laws, application of potential theory to surface waves, energy transport, wave/body forces, linearized theory of lifting surfaces, and experimental project in the towing tank or propeller tunnel. This subject was originally offered in Course 13 (Department of Ocean Engineering) as 13.021. In 2005, ocean engineering became part of Course 2 (Department of Mechanical Engineering), and this subject was renumbered 2.20.
+course_url: "https://ocw.mit.edu/courses/2-20-marine-hydrodynamics-13-021-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/2-20-marine-hydrodynamics-13-021-spring-2005/886bc5f79c54f98784a75bed241c24ef_2-20s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

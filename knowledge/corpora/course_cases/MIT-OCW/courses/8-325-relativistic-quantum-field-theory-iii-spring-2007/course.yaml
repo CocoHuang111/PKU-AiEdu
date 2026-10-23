@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-8-325-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.325"
+cross_listed_codes: []
+course_title: "Relativistic Quantum Field Theory III"
+course_slug: "8-325-relativistic-quantum-field-theory-iii-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Iain Stewart"
+subject_primary: "Physics"
+subject_secondary:
+  - "Particle Physics"
+  - "Quantum Mechanics"
+  - "Relativity"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Particle Physics"
+          - "Quantum Mechanics"
+          - "Relativity"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This course is the third and last term of the quantum field theory sequence. Its aim is the proper theoretical discussion of the physics of the standard model. Topics include: quantum chromodynamics; the Higgs phenomenon and a description of the standard model; deep-inelastic scattering and structure functions; basics of lattice gauge theory; operator products and effective theories; detailed structure of the standard model; spontaneously broken gauge theory and its quantization; instantons and theta-vacua; topological defects; introduction to supersymmetry.
+course_url: "https://ocw.mit.edu/courses/8-325-relativistic-quantum-field-theory-iii-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/8-325-relativistic-quantum-field-theory-iii-spring-2007/b636939751c1970e44632eda4ed33ca1_8-325s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

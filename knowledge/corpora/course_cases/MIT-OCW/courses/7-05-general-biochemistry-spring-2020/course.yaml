@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-7-05-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.05"
+cross_listed_codes: []
+course_title: "General Biochemistry"
+course_slug: "7-05-general-biochemistry-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michael Yaffe"
+  - "Prof. Matthew Vander Heiden"
+subject_primary: "Biology"
+subject_secondary:
+  - "Biochemistry"
+  - "Chemistry"
+  - "Analytical Chemistry"
+  - "Organic Chemistry"
+  - "Physical Chemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+      - name: "Chemistry"
+        specialties:
+          - "Analytical Chemistry"
+          - "Organic Chemistry"
+          - "Physical Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course focuses on contributions of biochemistry toward an understanding of the structure and functioning of organisms, tissues, and cells. Topics include: Chemistry and functions of constituents of cells and tissues and the chemical and physical-chemical basis for the structures of nucleic acids, proteins, and carbohydrates. Basic enzymology and biochemical reaction mechanisms involved in macromolecular synthesis and degradation, signaling, transport, and movement. General metabolism of carbohydrates, fats, and nitrogen-containing materials such as amino acids, proteins, and related compounds. NOTE: The first half of this course, taught by Prof. Yaffe, is available on the MITx platform as 7.05x Biochemistry: Biomolecules, Methods, and Mechanisms . This OCW website provides content primarily from the second half with Prof. Vander Heiden, which focuses on metabolism.
+course_url: "https://ocw.mit.edu/courses/7-05-general-biochemistry-spring-2020/"
+image_url: "https://ocw.mit.edu/courses/7-05-general-biochemistry-spring-2020/ee542d846a1a8a0f5367efea0e7522e0_7-05s20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

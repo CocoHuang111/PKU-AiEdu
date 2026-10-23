@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-20-380j-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.380J"
+cross_listed_codes:
+  - "5.22J"
+course_title: "Biological Engineering Design"
+course_slug: "20-380j-biological-engineering-design-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Essigmann"
+  - "Prof. Darrell Irvine"
+  - "Prof. Forest White"
+  - "Dr. Atissa Banuazizi"
+  - "Mr. Harlan Breindel"
+  - "Dr. Mya Poe"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Health and Medicine"
+  - "Biomedical Enterprise"
+  - "Pathology and Pathophysiology"
+  - "Public Health"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Enterprise"
+        specialties: []
+      - name: "Pathology and Pathophysiology"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course illustrates how knowledge and principles of biology, biochemistry, and engineering are integrated to create new products for societal benefit. It uses a case study format to examine recently developed products of pharmaceutical and biotechnology industries: how a product evolves from initial idea, through patents, testing, evaluation, production, and marketing. Emphasizes scientific and engineering principles; the responsibility scientists, engineers, and business executives have for the consequences of their technology; and instruction and practice in written and oral communication. The topic focus of this class will vary from year to year. This version looks at inflammation underlying many diseases, specifically its role in cancer, diabetes, and cardiovascular disease.
+course_url: "https://ocw.mit.edu/courses/20-380j-biological-engineering-design-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/20-380j-biological-engineering-design-spring-2010/c16631b7dab45a97451c3c335373fa23_20-380js10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

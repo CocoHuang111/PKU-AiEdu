@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-natalie-voigt"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Natalie Voigt, PhD, MPhil, MSN, RN"
+slug: "natalie-voigt"
+source_url: "https://ctl.columbia.edu/transformations/faculty/natalie-voigt/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "0a1e1c18d526f808848a04a3d27d812cbdd531e4a646820d9825d42b30acf6ff"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-15-997-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.997"
+cross_listed_codes: []
+course_title: "Practice of Finance: Advanced Corporate Risk Management"
+course_slug: "15-997-practice-of-finance-advanced-corporate-risk-management-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Parsons"
+subject_primary: "Finance"
+subject_secondary:
+  - "Operations Management"
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Problem Sets"
+description: |
+  This is a course in how corporations make use of the insights and tools of risk management. Most courses on derivatives, futures and options, and financial engineering are taught from the viewpoint of investment bankers and traders in the securities. This course is taught from the point of view of the manufacturing corporation, the utility, the software firm—any potential end-user of derivatives, but not the dealer. Most related courses focus on the extensive taxonomy of instruments and the complex models developed to price them, and on ways to exploit mispricing. While this course will make use of some of these pricing models, the focus is on how corporations use the insights and models to improve their operations, to increase the value of their real assets, or to create the financial flexibility necessary to implement their core strategy.
+course_url: "https://ocw.mit.edu/courses/15-997-practice-of-finance-advanced-corporate-risk-management-spring-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/15-997-practice-of-finance-advanced-corporate-risk-management-spring-2009/661291beef5372b0e03465c8785316da_15-997s09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

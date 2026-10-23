@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-1-74-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.74"
+cross_listed_codes: []
+course_title: "Land, Water, Food, and Climate"
+course_slug: "1-74-land-water-food-and-climate-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dennis McLaughlin"
+subject_primary: "Climate"
+subject_secondary:
+  - "Renewables"
+  - "Science"
+  - "Earth Science"
+  - "Climate Studies"
+  - "Environmental Science"
+  - "Sustainability"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+      - name: "Renewables"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+          - "Environmental Science"
+          - "Sustainability"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Podcasts"
+description: |
+  This reading seminar examines land, water, food, and climate in a changing world, with an emphasis on key scientific questions about the connections between natural resources and food production. Students read and discuss papers on a range of topics, including water and land resources, climate change, demography, agroecology, biotechnology, trade, and food security. The readings are supplemented by short lectures that provide context and summarize main points. The seminar provides a broad perspective on one of the defining global issues of this century. Students consider scientific controversies as well as areas of general agreement and examine practical solutions for addressing critical problems.
+course_url: "https://ocw.mit.edu/courses/1-74-land-water-food-and-climate-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/1-74-land-water-food-and-climate-fall-2020/91c7e46aac2bd5748ba131e1e5a55ee2_1-74s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

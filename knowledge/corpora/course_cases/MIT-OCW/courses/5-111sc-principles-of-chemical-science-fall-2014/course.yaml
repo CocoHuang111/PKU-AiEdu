@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-5-111sc-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.111SC"
+cross_listed_codes: []
+course_title: "Principles of Chemical Science"
+course_slug: "5-111sc-principles-of-chemical-science-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Catherine Drennan"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Inorganic Chemistry"
+  - "Organic Chemistry"
+  - "Physical Chemistry"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Inorganic Chemistry"
+          - "Organic Chemistry"
+          - "Physical Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Other Video"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to the chemistry of biological, inorganic, and organic molecules. The emphasis is on basic principles of atomic and molecular electronic structure, thermodynamics, acid-base and redox equilibria, chemical kinetics, and catalysis. One year of high school chemistry is the expected background for this freshman-level course. The aims include developing a unified and intuitive view of how electronic structure controls the three-dimensional shape of molecules, the physical and chemical properties of molecules in gases, liquids and solids, and ultimately the assembly of macromolecules as in polymers and DNA. Relationships between chemistry and other fundamental sciences such as biology and physics are emphasized, as are the relationships between the science of chemistry to its applications in environmental science, atmospheric chemistry and electronic devices. Acknowledgements Professor Drennan would like to acknowledge the contributions of MIT Lecturer Dr. Elizabeth Vogel Taylor, Professor Sylvia Ceyer, and Professor Robert Silbey to the development of this course and its materials.
+course_url: "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/afc26c2e5de67efafa76680f079d1254_5-111scf14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

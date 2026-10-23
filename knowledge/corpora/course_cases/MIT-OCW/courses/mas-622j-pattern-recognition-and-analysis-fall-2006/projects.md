@@ -1,0 +1,15 @@
+- Source: https://ocw.mit.edu/courses/mas-622j-pattern-recognition-and-analysis-fall-2006/pages/projects/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Projects
+
+Here are some sample student projects from the class. All work is courtesy of the students named and used with permission.
+
+Jun Ki Lee - Instrinsic Rewards in Reinforcement Learning ([PDF](https://ocw.mit.edu/courses/mas-622j-pattern-recognition-and-analysis-fall-2006/resources/lee_jun_ki/))
+
+Hyun Sung Chang - Non-parametric Classification of Facial Features ([PDF](https://ocw.mit.edu/courses/mas-622j-pattern-recognition-and-analysis-fall-2006/resources/chang_report/))
+
+Jeff Orkin - Speech Act Classification of Video Game Data ([PDF](https://ocw.mit.edu/courses/mas-622j-pattern-recognition-and-analysis-fall-2006/resources/jeff_orkin/))

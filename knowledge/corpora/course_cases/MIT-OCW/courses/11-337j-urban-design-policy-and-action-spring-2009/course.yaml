@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-11-337j-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.337J"
+cross_listed_codes:
+  - "4.247J"
+course_title: "Urban Design Policy and Action"
+course_slug: "11-337j-urban-design-policy-and-action-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Aseem Inam"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Environmental Design"
+  - "Social Science"
+  - "Public Administration"
+  - "Public Policy"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  In this course we examine the relationship between public policy and urban design through readings, discussions, presentations, and papers. We also analyze the ways in which policies shape cities, and investigate how governments implement urban design. Students gain a critical understanding of both the complex system of governance within which urban design occurs and the effective tools available for creative intervention.
+course_url: "https://ocw.mit.edu/courses/11-337j-urban-design-policy-and-action-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/11-337j-urban-design-policy-and-action-spring-2009/6e5607a4092b2dc71b6b5a418583ad4b_11-337js09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

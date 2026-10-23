@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-506-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.506"
+cross_listed_codes: []
+course_title: "The Anthropology of Politics: U.S. Presidential Election Edition"
+course_slug: "21a-506-the-anthropology-of-politics-u-s-presidential-election-edition-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Maria Vidart-Delgado"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Ethnography"
+  - "Political Science"
+  - "American Politics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Ethnography"
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  This course examines the birth and international expansion of an American industry of political marketing. It focuses attention on the cultural processes, sociopolitical contexts and moral utopias that shape the practice of political marketing in the U.S. and in different countries. By looking at the debates and expert practices at the core of the business of politics, the course explores how the “universal” concept of democracy is interpreted and reworked through space and time, while examining how different cultural groups experimenting with political marketing understand the role of citizens in a democracy.
+course_url: "https://ocw.mit.edu/courses/21a-506-the-anthropology-of-politics-u-s-presidential-election-edition-fall-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/21a-506-the-anthropology-of-politics-u-s-presidential-election-edition-fall-2016/1aa58b3a578b5fd22866968892030ea4_21a-506f16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-2-161-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.161"
+cross_listed_codes: []
+course_title: "Signal Processing: Continuous and Discrete"
+course_slug: "2-161-signal-processing-continuous-and-discrete-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Derek Rowell"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Digital Systems"
+  - "Signal Processing"
+  - "Mechanical Engineering"
+  - "Dynamics and Control"
+  - "Mathematics"
+  - "Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Signal Processing"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This course provides a solid theoretical foundation for the analysis and processing of experimental data, and real-time experimental control methods. Topics covered include spectral analysis, filter design, system identification, and simulation in continuous and discrete-time domains. The emphasis is on practical problems with laboratory exercises.
+course_url: "https://ocw.mit.edu/courses/2-161-signal-processing-continuous-and-discrete-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/2-161-signal-processing-continuous-and-discrete-fall-2008/8685512b6a846b30fc734d61ba0b02af_2-161f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-22-920-january-iap-1997"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.920"
+cross_listed_codes: []
+course_title: "A Hands-On Introduction to Nuclear Magnetic Resonance"
+course_slug: "22-920-a-hands-on-introduction-to-nuclear-magnetic-resonance-january-iap-1997"
+term: "January IAP"
+year: 1997
+as_taught_in: "January IAP 1997"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Cory"
+subject_primary: "Biomedical Instrumentation"
+subject_secondary:
+  - "Biomedical Signal and Image Processing"
+  - "Medical Imaging"
+  - "Spectroscopy"
+  - "Science"
+  - "Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+      - name: "Biomedical Signal and Image Processing"
+        specialties: []
+      - name: "Medical Imaging"
+        specialties: []
+      - name: "Spectroscopy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Simulation Videos"
+description: |
+  Hands-on introduction to NMR presenting background in classical theory and instrumentation. Each lecture is followed by lab experiments to demonstrate ideas presented during the lecture and to familiarize students with state-of-the-art NMR instrumentation. Experiments cover topics ranging from spin dynamics to spectroscopy, and include imaging.
+course_url: "https://ocw.mit.edu/courses/22-920-a-hands-on-introduction-to-nuclear-magnetic-resonance-january-iap-1997/"
+image_url: |
+  https://ocw.mit.edu/courses/22-920-a-hands-on-introduction-to-nuclear-magnetic-resonance-january-iap-1997/7e3db2f271726ace3cc2d5f42f5ff760_22-920iap97.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

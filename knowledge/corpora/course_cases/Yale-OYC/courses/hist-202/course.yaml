@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-hist-202"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "HIST 202"
+course_title: "European Civilization, 1648-1945"
+course_slug: "hist-202"
+department_path: "history"
+professors:
+  - "John Merriman Charles Seymour Professor of History"
+course_url: "https://oyc.yale.edu/history/hist-202"
+language: "en"
+description: |
+  This course offers a broad survey of modern European history, from the end of the Thirty Years' War to the aftermath of World War II. Along with the consideration of major events and figures such as the French Revolution and Napoleon, attention will be paid to the experience of ordinary people in times of upheaval and transition. The period will thus be viewed neither in terms of historical inevitability nor as a procession of great men, but rather through the lens of the complex interrelations between demographic change, political revolution, and cultural development. Textbook accounts will be accompanied by the study of exemplary works of art, literature, and cinema.
+license_url: ""
+session_count: 24
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

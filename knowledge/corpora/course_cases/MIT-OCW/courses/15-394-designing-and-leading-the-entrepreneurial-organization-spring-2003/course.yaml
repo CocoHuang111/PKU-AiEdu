@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-394-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.394"
+cross_listed_codes: []
+course_title: "Designing and Leading the Entrepreneurial Organization"
+course_slug: "15-394-designing-and-leading-the-entrepreneurial-organization-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Diane Burton"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Industrial Relations and Human Resource Management"
+  - "Leadership"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This subject is about building, running, and growing an organization. Subject has four central themes: How to think analytically about designing organizational systems How leaders, especially founders, play a critical role in shaping an organization’s culture What really needs to be done to build a successful organization for the long-term and What one can do to improve the likelihood of personal success. Not a survey of entrepreneurship or leadership; subject addresses the principles of organizational architecture, group behavior and performance, interpersonal influence, leadership and motivation in entrepreneurial settings. Through a series of cases, lectures, readings and exercises students develop competencies in organizational design, human resources management, leadership and organizational behavior in the context of a new, small firm.
+course_url: "https://ocw.mit.edu/courses/15-394-designing-and-leading-the-entrepreneurial-organization-spring-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/15-394-designing-and-leading-the-entrepreneurial-organization-spring-2003/43fd18793f319c39dfde72210c11ed40_15-394s03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

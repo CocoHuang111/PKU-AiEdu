@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-16-621-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.621"
+cross_listed_codes: []
+course_title: "Experimental Projects I"
+course_slug: "16-621-experimental-projects-i-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Earll Murman"
+  - "Prof. Edward Greitzer"
+  - "Prof. Jennifer L. Craig"
+  - "Prof. John Deyst"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Computer Science"
+  - "Data Mining"
+  - "Systems Engineering"
+  - "Systems Design"
+  - "Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties: []
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+  - name: "Science"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  The Experimental Project Lab in the Department of Aeronautics and Astronautics is a two-semester course sequence: 16.621 Experimental Projects I (this course) and 16.622 Experimental Projects II . This site offers material on 16.621. In the course, two-person teams initiate a project of their own conception and design in 16.621 and then complete it in 16.622. For many students, this is a first encounter with research standards and techniques. It is a complicated course that requires a lot of interaction and support and also access to facilities and materials, but it is rewarding for students to explore an hypothesis under the guidance of a faculty advisor. This OCW site presents the building block materials of the course, which can provide only a profile of the course because the most important learning elements are the interactions between student team, faculty, project advisor, and shop staff and also between student team members. However, this site offers some of the preparation and guidance materials for students embarking on an experimental project. To emphasize the focus on communication skills, a set of study materials and examples of student work are provided.
+course_url: "https://ocw.mit.edu/courses/16-621-experimental-projects-i-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/16-621-experimental-projects-i-spring-2003/7d39ca1d8574312e876232ef920acfe8_16-621s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-res-21g-3004-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.21G-3004"
+cross_listed_codes: []
+course_title: "Marguerite de Navarre Society Website"
+course_slug: "res-21g-3004-marguerite-de-navarre-society-website-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Leanna B. Rezvani"
+subject_primary: "Language"
+subject_secondary:
+  - "French"
+  - "Literature"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Recent decades have seen a sharp increase in critical interest in Marguerite de Navarre and her work. This society website is dedicated to the study of Marguerite, her network, and her historical and cultural influence. The main goals are to facilitate scholarly exchange, to encourage collaboration, and to make digital resources available to the wider community. The society seeks to bring together the multiple lines of inquiry which inspire our understanding and appreciation of Marguerite, and to inspire new ones. The Marguerite de Navarre Society website is published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA) International license.
+course_url: "https://ocw.mit.edu/courses/res-21g-3004-marguerite-de-navarre-society-website-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/res-21g-3004-marguerite-de-navarre-society-website-fall-2023/mitres_21g_3004_f23.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

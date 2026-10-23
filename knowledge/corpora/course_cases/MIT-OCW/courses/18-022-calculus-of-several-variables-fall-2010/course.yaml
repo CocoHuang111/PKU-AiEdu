@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-18-022-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.022"
+cross_listed_codes: []
+course_title: "Calculus of Several Variables"
+course_slug: "18-022-calculus-of-several-variables-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James McKernan"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This is a variation on 18.02 Multivariable Calculus . It covers the same topics as in 18.02, but with more focus on mathematical concepts. Acknowledgement Prof. McKernan would like to acknowledge the contributions of Lars Hesselholt to the development of this course.
+course_url: "https://ocw.mit.edu/courses/18-022-calculus-of-several-variables-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/18-022-calculus-of-several-variables-fall-2010/b1dae2b3c25146b44cb8905469aeaba4_18-022f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

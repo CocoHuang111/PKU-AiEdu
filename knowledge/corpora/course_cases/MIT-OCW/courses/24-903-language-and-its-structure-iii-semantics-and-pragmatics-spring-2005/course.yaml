@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-24-903-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.903"
+cross_listed_codes:
+  - "24.933"
+course_title: "Language and its Structure III: Semantics and Pragmatics"
+course_slug: "24-903-language-and-its-structure-iii-semantics-and-pragmatics-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Kai von Fintel"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Semantics"
+  - "Philosophy"
+  - "Philosophy of Language"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Semantics"
+      - name: "Philosophy"
+        specialties:
+          - "Philosophy of Language"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course gives an introduction to the science of linguistic meaning. There are two branches to this discipline: semantics, the study of conventional, “compositional meaning”, and pragmatics, the study of interactional meaning. There are other contributaries: philosophy, logic, syntax, and psychology. We will try to give you an understanding of the concepts of semantics and pragmatics and of some of the technical tools that we use.
+course_url: "https://ocw.mit.edu/courses/24-903-language-and-its-structure-iii-semantics-and-pragmatics-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/24-903-language-and-its-structure-iii-semantics-and-pragmatics-spring-2005/f716540bd4594f5d2bcf3b12253534b1_24-903s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

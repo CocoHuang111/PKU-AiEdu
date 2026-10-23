@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-3-032-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.032"
+cross_listed_codes: []
+course_title: "Mechanical Behavior of Materials"
+course_slug: "3-032-mechanical-behavior-of-materials-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Vander Sande"
+  - "Prof. Krystyn van Vliet"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Solid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Solid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Here we will learn about the mechanical behavior of structures and materials, from the continuum description of properties to the atomistic and molecular mechanisms that confer those properties to all materials. We will cover elastic and plastic deformation, creep, and fracture of materials including crystalline and amorphous metals, ceramics, and (bio)polymers, and will focus on the design and processing of materials from the atomic to the macroscale to achieve desired mechanical behavior. Integrated laboratories provide the opportunity to explore these concepts through hands-on experiments including instrumentation of pressure vessels, visualization of atomistic deformation in bubble rafts, nanoindentation, and uniaxial mechanical testing, as well as writing assignments to communicate these findings to either general scientific or nontechnical audiences.
+course_url: "https://ocw.mit.edu/courses/3-032-mechanical-behavior-of-materials-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/3-032-mechanical-behavior-of-materials-fall-2007/225cc7e88c6f04439067dd85e15ac354_3-032f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

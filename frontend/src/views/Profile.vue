@@ -1,5 +1,6 @@
 <template>
   <div class="profile">
+    <el-alert v-if="reportMailTask" title="请填写邮箱并保存，系统将为刚提交的任务登记完成通知。" type="info" :closable="false" show-icon style="margin-bottom: 16px" />
     <el-card shadow="never" class="hero">
       <div class="hero-inner">
         <div class="avatar-wrap">
@@ -56,7 +57,7 @@
           </el-col>
           <el-col :xs="24" :sm="12">
             <el-form-item label="邮箱">
-              <el-input v-model="form.email" maxlength="80" placeholder="name@pku.edu.cn" />
+              <el-input ref="emailInput" v-model="form.email" maxlength="80" placeholder="name@pku.edu.cn" />
             </el-form-item>
           </el-col>
           <el-col :xs="24" :sm="12">
@@ -121,12 +122,17 @@
 </template>
 
 <script setup>
-import { computed, onMounted, reactive, ref } from 'vue'
+import { computed, nextTick, onMounted, reactive, ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { ElMessage } from 'element-plus'
-import { authApi } from '../api/client'
+import { authApi, evaluationApi, syllabusApi } from '../api/client'
 import { authState, setUser } from '../authStore'
 
 const TITLES = ['教授', '副教授', '讲师', '助教', '研究员', '副研究员', '其他']
+const router = useRouter()
+const route = useRoute()
+const emailInput = ref(null)
+const reportMailTask = computed(() => typeof route.query.reportMailTask === 'string' && /^[0-9a-f-]{36}$/i.test(route.query.reportMailTask) ? route.query.reportMailTask : '')
 
 const loading = ref(false)
 const saving = ref(false)
@@ -202,6 +208,11 @@ async function onAvatarChange(file) {
 }
 
 async function save() {
+    if (reportMailTask.value && !form.email.trim()) {
+      ElMessage.warning('请填写邮箱后再保存通知申请')
+      emailInput.value?.focus()
+      return
+    }
   if (!form.name.trim()) {
     ElMessage.warning('请填写姓名')
     return
@@ -220,6 +231,13 @@ async function save() {
     applyUser(user)
     setUser(user)
     ElMessage.success('已保存')
+    if (reportMailTask.value) {
+      const task = reportMailTask.value
+      const syllabus = route.query.reportMailKind === 'syllabus'
+      const notification = await (syllabus ? syllabusApi : evaluationApi).requestEmail(task)
+      ElMessage.info(notification.status === 'waiting_service' ? '通知申请已保存，邮件服务待配置；报告可在系统内查看' : '已登记报告完成通知')
+      await router.push({ path: syllabus ? '/syllabus' : '/evaluation', query: { task, submitted: '1' } })
+    }
   } catch {
     /* 错误已由 axios 拦截器提示 */
   } finally {
@@ -247,7 +265,13 @@ async function changePassword() {
   }
 }
 
-onMounted(reload)
+onMounted(async () => {
+  await reload()
+  if (reportMailTask.value) {
+    await nextTick()
+    emailInput.value?.focus()
+  }
+})
 </script>
 
 <style scoped>

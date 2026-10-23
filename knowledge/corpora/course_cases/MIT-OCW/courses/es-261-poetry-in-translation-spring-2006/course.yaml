@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-es-261-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.261"
+cross_listed_codes: []
+course_title: "Poetry in Translation"
+course_slug: "es-261-poetry-in-translation-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "David Custer"
+  - "Alevtina Asarina"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "Criticism"
+  - "International Literature"
+  - "Poetry"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+          - "International Literature"
+          - "Poetry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This seminar addresses the inherent challenges of translating poetry from different languages, cultures, and eras. Students do some translation of their own, though accommodations are made if a student lacks even a basic knowledge of any foreign language.
+course_url: "https://ocw.mit.edu/courses/es-261-poetry-in-translation-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/es-261-poetry-in-translation-spring-2006/961c5c244d1306f05188b61f1362f8cb_es-261s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

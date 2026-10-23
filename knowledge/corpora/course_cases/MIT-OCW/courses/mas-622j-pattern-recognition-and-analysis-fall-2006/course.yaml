@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-622j-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.622J"
+cross_listed_codes:
+  - "1.126J"
+course_title: "Pattern Recognition and Analysis"
+course_slug: "mas-622j-pattern-recognition-and-analysis-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Media Lab Faculty and Staff"
+  - "Bo Morgan"
+  - "Prof. Rosalind W. Picard"
+  - "Andrea Thomaz"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Mathematics"
+  - "Probability and Statistics"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Programming Assignments"
+  - "Projects"
+description: |
+  This class deals with the fundamentals of characterizing and recognizing patterns and features of interest in numerical data. We discuss the basic tools and theory for signal understanding problems with applications to user modeling, affect recognition, speech recognition and understanding, computer vision, physiological analysis, and more. We also cover decision theory, statistical classification, maximum likelihood and Bayesian estimation, nonparametric methods, unsupervised learning and clustering. Additional topics on machine and human learning from active research are also talked about in the class.
+course_url: "https://ocw.mit.edu/courses/mas-622j-pattern-recognition-and-analysis-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/mas-622j-pattern-recognition-and-analysis-fall-2006/b25342ba460a1b4b373299237c7e735e_mas-622jf06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

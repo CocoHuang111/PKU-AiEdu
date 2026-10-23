@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-6-776-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.776"
+cross_listed_codes: []
+course_title: "High Speed Communication Circuits"
+course_slug: "6-776-high-speed-communication-circuits-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Hae-Seung Lee"
+  - "Prof. Michael Perrott"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Networks"
+  - "Electrical Engineering"
+  - "Digital Systems"
+  - "Signal Processing"
+  - "Telecommunications"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Networks"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Signal Processing"
+          - "Telecommunications"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  6.776 covers circuit level design issues of high speed communication systems, with primary focus being placed on wireless and broadband data link applications. Specific circuit topics include transmission lines, high speed and low noise amplifiers, VCO’s, mixers, power amps, high speed digital circuits, and frequency synthesizers. In addition to learning analysis skills for the above items, students will gain a significant amount of experience in simulating RF circuits in SPICE and also building RF circuits within a lab project.
+course_url: "https://ocw.mit.edu/courses/6-776-high-speed-communication-circuits-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/6-776-high-speed-communication-circuits-spring-2005/227ee0a4829902393942adbb5bcbcbbb_6-776s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

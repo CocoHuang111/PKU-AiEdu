@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-6-973-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.973"
+cross_listed_codes: []
+course_title: "Organic Optoelectronics"
+course_slug: "6-973-organic-optoelectronics-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Vladimir Bulovic"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biotechnology"
+  - "Electrical Engineering"
+  - "Mechanical Engineering"
+  - "Microtechnology"
+  - "Nanotechnology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biotechnology"
+      - name: "Electrical Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Microtechnology"
+      - name: "Nanotechnology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The course examines optical and electronic processes in organic molecules and polymers that govern the behavior of practical organic optoelectronic devices. Electronic structure of a single organic molecule is used as a guide to the electronic behavior of organic aggregate structures. Emphasis is placed on the use of organic thin films in active organic devices including organic LEDs, solar cells, photodetectors, transistors, chemical sensors, memory cells, electrochromic devices, as well as xerography and organic non-linear optics. How to reach the ultimate miniaturization limit of molecular electronics and related nanoscale patterning techniques of organic materials will also be discussed. The class encompasses three laboratory sessions during which the students will practice the use of select vacuum and non-vacuum organic deposition techniques by making their own active organic devices.
+course_url: "https://ocw.mit.edu/courses/6-973-organic-optoelectronics-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/6-973-organic-optoelectronics-spring-2003/28b70f8a67aed0270ee2c330e23a96ff_6-973s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

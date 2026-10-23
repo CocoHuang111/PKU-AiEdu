@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-506-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.506"
+cross_listed_codes: []
+course_title: "The Anthropology of Politics: Persuasion and Power"
+course_slug: "21a-506-the-anthropology-of-politics-persuasion-and-power-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Anthropology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Xenia Cherkaev"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Ethnography"
+  - "Political Science"
+  - "American Politics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Ethnography"
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course introduces the ethnographic study of politics, i.e., what anthropologists understand to be “political” in various social and economic systems, from small-scale societies to liberal democratic states. It examines politics across three contemporary contexts: electoral politics, public spheres, bureaucracies and humanitarian governance. Students consider and analyze how questions of authority, coercion, and violence have been theorized to relate to the political, and how some aspects of social life are regimented in explicitly non-political ways.
+course_url: "https://ocw.mit.edu/courses/21a-506-the-anthropology-of-politics-persuasion-and-power-spring-2019/"
+image_url: |
+  https://ocw.mit.edu/courses/21a-506-the-anthropology-of-politics-persuasion-and-power-spring-2019/f2dd9dbe81ebaeb7c1176da3531fd3d8_21A-506s19.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

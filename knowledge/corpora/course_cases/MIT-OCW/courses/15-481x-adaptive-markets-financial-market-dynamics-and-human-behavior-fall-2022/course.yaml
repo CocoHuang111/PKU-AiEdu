@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-15-481x-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.481X"
+cross_listed_codes:
+  - "15.481"
+course_title: "Adaptive Markets: Financial Market Dynamics and Human Behavior"
+course_slug: "15-481x-adaptive-markets-financial-market-dynamics-and-human-behavior-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Andrew Lo"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Finance"
+  - "Marketing"
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+      - name: "Finance"
+        specialties: []
+      - name: "Marketing"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Tutorial Videos"
+description: |
+  Economists can’t agree on whether investors and markets are rational and efficient, as modern financial theory assumes, or irrational and inefficient, as behavioral economists believe. Drawing on psychology, evolutionary biology, neuroscience, artificial intelligence, and other fields, Prof. Lo cuts through the debate in this course with a new framework—the Adaptive Markets Hypothesis—in which rationality and irrationality coexist. Topics: Introduction and Financial Orthodoxy Rejecting the Random Walk and Efficient Markets Behavioral Biases and Psychology The Neuroscience of Decision-Making Evolution and the Origin of Behavior The Adaptive Markets Hypothesis Hedge Funds: The Galapagos Islands of Finance Applications of Adaptive Markets The Financial Crisis Ethics and Adaptive Markets The Finance of the Future and the Future of Finance As part of the Open Learning Library (OLL) , this course is free to use. You have the option to sign up and enroll if you want to track your progress, or you can view and use all the materials without enrolling. Resources on OLL allow learners to learn at their own pace while receiving immediate feedback through interactive content and exercises.
+course_url: "https://ocw.mit.edu/courses/15-481x-adaptive-markets-financial-market-dynamics-and-human-behavior-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/15-481x-adaptive-markets-financial-market-dynamics-and-human-behavior-fall-2022/mit15_481x_f22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

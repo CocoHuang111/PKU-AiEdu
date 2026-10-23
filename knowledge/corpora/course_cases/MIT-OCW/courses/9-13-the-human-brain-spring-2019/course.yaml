@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-9-13-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.13"
+cross_listed_codes: []
+course_title: "The Human Brain"
+course_slug: "9-13-the-human-brain-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Nancy Kanwisher"
+subject_primary: "Sensory-Neural Systems"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Written Assignments"
+description: |
+  This course surveys the core perceptual and cognitive abilities of the human mind and asks how they are implemented in the brain. Key themes include the representations, development, and degree of functional specificity of these components of mind and brain. The course will take students straight to the cutting edge of the field, empowering them to understand and critically evaluate empirical articles in the current literature.
+course_url: "https://ocw.mit.edu/courses/9-13-the-human-brain-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/9-13-the-human-brain-spring-2019/6a08eddd73159f17c840c47b8e052a02_MIT9_13S19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

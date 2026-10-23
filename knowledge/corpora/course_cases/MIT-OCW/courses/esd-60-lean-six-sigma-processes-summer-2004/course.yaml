@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-60-summer-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.60"
+cross_listed_codes: []
+course_title: "Lean/Six Sigma Processes"
+course_slug: "esd-60-lean-six-sigma-processes-summer-2004"
+term: "Summer"
+year: 2004
+as_taught_in: "Summer 2004"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joel Cutcher-Gershenfeld"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Project Management"
+  - "Engineering"
+  - "Systems Engineering"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Students of this course will develop a broad understanding of Lean/Six Sigma principles and practices, build capability to implement Lean/Six Sigma initiatives in manufacturing operations, and learn to operate with awareness of Lean/Six Sigma at the enterprise level. All course materials are organized around a common “single-point lesson” (SPL) format, with some of the SPLs provided by the instructor and guests and with some developed and delivered by student teams.
+course_url: "https://ocw.mit.edu/courses/esd-60-lean-six-sigma-processes-summer-2004/"
+image_url: "https://ocw.mit.edu/courses/esd-60-lean-six-sigma-processes-summer-2004/4c4ead75abd4251d779d6cb41e69cff0_esd-60su04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-17-918-january-iap-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.918"
+cross_listed_codes: []
+course_title: "New Global Agenda: Exploring 21st Century Challenges through Innovations in Information Technologies"
+course_slug: "17-918-new-global-agenda-exploring-21st-century-challenges-through-innovations-in-information-technologies-january-iap-2006"
+term: "January IAP"
+year: 2006
+as_taught_in: "January IAP 2006"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Nazli Choucri"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Social Science"
+  - "Political Science"
+  - "International Relations"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This workshop is designed to introduce students to different perspectives on international politics in the 21st century. Students will explore how advances in information technology are changing international relations and global governance through opening new channels of communication, creating new methods of education, and new potentials for democratization. We will consider the positive and negative externalities associated with applications of such technologies. Students will be encouraged to look at alternative futures, and/or to frame solutions to problems that they define. The class will include guest lectures, discussions, and a final project and presentation.
+course_url: |
+  https://ocw.mit.edu/courses/17-918-new-global-agenda-exploring-21st-century-challenges-through-innovations-in-information-technologies-january-iap-2006/
+image_url: |
+  https://ocw.mit.edu/courses/17-918-new-global-agenda-exploring-21st-century-challenges-through-innovations-in-information-technologies-january-iap-2006/50102e39e1be63a8a99a4c28af93be78_17-918iap06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-6-8300-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.8300"
+cross_listed_codes: []
+course_title: "Advances in Computer Vision"
+course_slug: "6-8300-advances-in-computer-vision-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Vincent Sitzmann"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This course dives into advanced concepts in computer vision. A first focus is geometry in computer vision, including image formation, representation theory for vision, classic multi-view geometry, multi-view geometry in the age of deep learning, differentiable rendering, neural scene representations, correspondence estimation, optical flow computation, and point tracking. Next, we explore generative modeling and representation learning including image and video generation, guidance in diffusion models, and conditional probabilistic models, as well as representation learning in the form of contrastive and masking-based methods. Finally, we will explore the intersection of robotics and computer vision with “vision for embodied agents,” investigating the role of vision for decision-making, planning and control.
+course_url: "https://ocw.mit.edu/courses/6-8300-advances-in-computer-vision-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/6-8300-advances-in-computer-vision-spring-2025/mit6_8300_s25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

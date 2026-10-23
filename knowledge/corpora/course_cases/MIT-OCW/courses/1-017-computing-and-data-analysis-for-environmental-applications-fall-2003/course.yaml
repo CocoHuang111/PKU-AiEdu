@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-1-017-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.017"
+cross_listed_codes:
+  - "1.010"
+course_title: "Computing and Data Analysis for Environmental Applications"
+course_slug: "1-017-computing-and-data-analysis-for-environmental-applications-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Dennis McLaughlin"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Environmental Engineering"
+  - "Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+      - name: "Environmental Engineering"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments with Examples"
+description: |
+  This subject is a computer-oriented introduction to probability and data analysis. It is designed to give students the knowledge and practical experience they need to interpret lab and field data. Basic probability concepts are introduced at the outset because they provide a systematic way to describe uncertainty. They form the basis for the analysis of quantitative data in science and engineering. The MATLAB® programming language is used to perform virtual experiments and to analyze real-world data sets, many downloaded from the web. Programming applications include display and assessment of data sets, investigation of hypotheses, and identification of possible casual relationships between variables. This is the first semester that two courses, Computing and Data Analysis for Environmental Applications (1.017) and Uncertainty in Engineering (1.010), are being jointly offered and taught as a single course.
+course_url: "https://ocw.mit.edu/courses/1-017-computing-and-data-analysis-for-environmental-applications-fall-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/1-017-computing-and-data-analysis-for-environmental-applications-fall-2003/f2fb0154d9cee6cefea6e2bc5d2914d2_1-017f03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

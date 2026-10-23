@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-4-001j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.001J"
+cross_listed_codes:
+  - "11.004J"
+course_title: "CityScope: New Orleans"
+course_slug: "4-001j-cityscope-new-orleans-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Architecture"
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Cherie Miot Abbanat"
+  - "Prof. J. Phillip Thompson"
+  - "Prof. John Fernandez"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Engineering"
+  - "Social Science"
+  - "Urban Studies"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Engineering"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Do you want to think about ways to help solve New Orleans’ problems? CityScope is a project-based introduction to the contemporary city. “Problem solving in complex (urban) environments” is different than “solving complex problems.” As a member of a team, you will learn to assess scenarios for the purpose of formulating social, economic and design strategies to provide humane and sustainable solutions. A visit to New Orleans is planned for spring break 2007.
+course_url: "https://ocw.mit.edu/courses/4-001j-cityscope-new-orleans-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/4-001j-cityscope-new-orleans-spring-2007/8b2090c1632cbc606c0a3d5b3a838d90_4-001js07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-res-7-007-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.7-007"
+cross_listed_codes: []
+course_title: "7.06x Cell Biology"
+course_slug: "res-7-007-7-06x-cell-biology"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Rebecca Lamason"
+  - "Prof. Iain Cheeseman"
+  - "Prof. Sebastian Lourido"
+  - "Dr. Mary Ellen Wiltrout"
+  - "Dr. Darcy G. Gordon"
+  - "Dr. Monika Avello"
+  - "Dr. Caitlin Friend"
+  - "Mingyu Yang, PhD Candidate"
+subject_primary: "Biology"
+subject_secondary:
+  - "Cell Biology"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  In this course, you will engage in the biology of cells of higher organisms. You will study the structure, function, and biosynthesis of cellular membranes and organelles; cell growth and oncogenic transformation; transport, receptors, and cell signaling; the cytoskeleton, the extracellular matrix, and cell movements; cell division and cell cycle; functions of specialized cell types. This course emphasizes the current molecular knowledge of cell biological processes as well as the genetic, biochemical, and other experimental approaches that resulted in these discoveries. This course, based on the MIT course 7.06 Cell Biology taken by enrolled MIT students, was organized as a three-part series offered through the MITx program by MIT’s Department of Biology . It is self-paced and free as long as you enroll in the Audit Track option, which you can select after creating a free account on MITx Online.
+course_url: "https://ocw.mit.edu/courses/res-7-007-7-06x-cell-biology/"
+image_url: "https://ocw.mit.edu/courses/res-7-007-7-06x-cell-biology/res7-007-s23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

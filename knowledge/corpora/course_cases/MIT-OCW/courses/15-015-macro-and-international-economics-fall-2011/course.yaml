@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-15-015-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.015"
+cross_listed_codes: []
+course_title: "Macro and International Economics"
+course_slug: "15-015-macro-and-international-economics-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Simon Johnson"
+subject_primary: "Finance"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+  - "International Economics"
+  - "Macroeconomics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "International Economics"
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Projects"
+  - "Written Assignments with Examples"
+description: |
+  15.015 Macro and International Economics focuses on the policy and economic environment of firms. This subject divided in three parts. The first part of the course is a study of the closed economy and how monetary and fiscal policy interacts with employment, GNP, inflation, and interest rates. Next, the course provides an examination of national economic strategies for development and growth and recent financial and currency crises in emerging markets. Finally, the course addresses the problems faced by transition economies and the role of institutions both as the engine of growth, and as the constraints for policy.
+course_url: "https://ocw.mit.edu/courses/15-015-macro-and-international-economics-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/15-015-macro-and-international-economics-fall-2011/833be7e9ced74413d6ec79479099fab1_15-015f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

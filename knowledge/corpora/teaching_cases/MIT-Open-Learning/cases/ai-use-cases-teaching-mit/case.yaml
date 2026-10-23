@@ -1,0 +1,17 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-ai-use-cases-teaching-mit"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "AI use cases in teaching at MIT"
+slug: "ai-use-cases-teaching-mit"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors: []
+digital_innovations_tools: []
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/ai-use-cases-teaching-mit"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "6d8b6cf3516f70e19791f4a874a3ebb845399c7b11122230a5681510b4099d45"

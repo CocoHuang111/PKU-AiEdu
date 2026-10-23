@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-24-917-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.917"
+cross_listed_codes: []
+course_title: "ConLangs: How to Construct a Language"
+course_slug: "24-917-conlangs-how-to-construct-a-language-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Norvin W. Richards"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Phonology"
+  - "Semantics"
+  - "Syntax"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Phonology"
+          - "Semantics"
+          - "Syntax"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+description: |
+  This course explores languages that have been deliberately constructed, including Esperanto, Klingon, and Tolkien’s Elvish. Students construct their own languages while considering the basic linguistic characteristics of various languages of the world. Through regular assignments, students describe the phonology, morphology, syntax, semantics, and writing system of their constructed language. The final assignment is a grammatical description of the new language.
+course_url: "https://ocw.mit.edu/courses/24-917-conlangs-how-to-construct-a-language-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/24-917-conlangs-how-to-construct-a-language-fall-2018/ed61af12c8af929f41b84843bf6db27a_24-917f18.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

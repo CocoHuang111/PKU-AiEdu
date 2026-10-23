@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-15-810-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.810"
+cross_listed_codes: []
+course_title: "Marketing Management: Analytics, Frameworks, and Applications"
+course_slug: "15-810-marketing-management-analytics-frameworks-and-applications-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Hauser"
+subject_primary: "Management"
+subject_secondary:
+  - "Marketing"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+      - name: "Marketing"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course helps students develop skills in marketing analysis and planning, and introduces key marketing ideas and phenomena, such as how to deliver benefits to customers and marketing analytics. It presents a framework for marketing analysis and enhances problem solving and decision-making abilities in these areas. Material relevant to understanding, managing, and integrating marketing concepts in managerial situations, from entrepreneurial ventures to large multinational firms, and to consulting are presented.
+course_url: "https://ocw.mit.edu/courses/15-810-marketing-management-analytics-frameworks-and-applications-fall-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/15-810-marketing-management-analytics-frameworks-and-applications-fall-2015/04213e06e2f27145757c55a1e9eaac76_15.810s15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-12-490-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.490"
+cross_listed_codes: []
+course_title: "Advanced Igneous Petrology"
+course_slug: "12-490-advanced-igneous-petrology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Timothy Grove"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geochemistry"
+  - "Geology"
+  - "Geophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geochemistry"
+          - "Geology"
+          - "Geophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Advanced Igneous Petrology covers the history of and recent developments in the study of igneous rocks. Students review the chemistry and structure of igneous rock-forming minerals and proceed to study how these minerals occur and interact in igneous rocks. The course focuses on igneous processes and how we have learned about them through studying a number of significant sites worldwide.
+course_url: "https://ocw.mit.edu/courses/12-490-advanced-igneous-petrology-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/12-490-advanced-igneous-petrology-fall-2005/863d68393595d61146999261efe75033_12-490f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

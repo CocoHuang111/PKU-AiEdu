@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-2-29-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.29"
+cross_listed_codes: []
+course_title: "Numerical Marine Hydrodynamics (13.024)"
+course_slug: "2-29-numerical-marine-hydrodynamics-13-024-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jerome Milgram"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Systems Engineering"
+  - "Numerical Simulation"
+  - "Mathematics"
+  - "Differential Equations"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+      - name: "Systems Engineering"
+        specialties:
+          - "Numerical Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This course is an introduction to numerical methods: interpolation, differentiation, integration, and systems of linear equations. It covers the solution of differential equations by numerical integration, as well as partial differential equations of inviscid hydrodynamics: finite difference methods, boundary integral equation panel methods. Also addressed are introductory numerical lifting surface computations, fast Fourier transforms, the numerical representation of deterministic and random sea waves, as well as integral boundary layer equations and numerical solutions. This course was originally offered in Course 13 (Department of Ocean Engineering) as 13.024. In 2005, ocean engineering subjects became part of Course 2 (Department of Mechanical Engineering), and this course was renumbered 2.29.
+course_url: "https://ocw.mit.edu/courses/2-29-numerical-marine-hydrodynamics-13-024-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/2-29-numerical-marine-hydrodynamics-13-024-spring-2003/fd4ecc4a1d959695cd8a647999c2baef_2-29s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

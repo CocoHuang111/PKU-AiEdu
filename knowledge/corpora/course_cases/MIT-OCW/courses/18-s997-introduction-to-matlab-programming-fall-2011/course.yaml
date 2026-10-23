@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-18-s997-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.S997"
+cross_listed_codes: []
+course_title: "Introduction To MATLAB Programming"
+course_slug: "18-s997-introduction-to-matlab-programming-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Yossi Farjoun"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Programming Languages"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Programming Languages"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Programming Assignments with Examples"
+description: "This course is intended to assist undergraduates with learning the basics of programming in general and programming MATLAB® in particular."
+course_url: "https://ocw.mit.edu/courses/18-s997-introduction-to-matlab-programming-fall-2011/"
+image_url: "https://ocw.mit.edu/courses/18-s997-introduction-to-matlab-programming-fall-2011/f5e3d4a851671a690f037c1f6e91abf9_18-s997f11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-9-66j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.66J"
+cross_listed_codes:
+  - "9.660J"
+  - "6.804J"
+course_title: "Computational Cognitive Science"
+course_slug: "9-66j-computational-cognitive-science-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joshua Tenenbaum"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Science and Engineering"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course is an introduction to computational theories of human cognition. Drawing on formal models from classic and contemporary artificial intelligence, students will explore fundamental issues in human knowledge representation, inductive learning and reasoning. What are the forms that our knowledge of the world takes? What are the inductive principles that allow us to acquire new knowledge from the interaction of prior knowledge with observed data? What kinds of data must be available to human learners, and what kinds of innate knowledge (if any) must they have?
+course_url: "https://ocw.mit.edu/courses/9-66j-computational-cognitive-science-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/9-66j-computational-cognitive-science-fall-2004/5ab7a9d47bad5d2afb2e473158c147f1_9-66jf04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

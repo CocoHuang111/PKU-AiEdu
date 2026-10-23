@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-950j-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.950J"
+cross_listed_codes:
+  - "6.872J"
+course_title: "Medical Computing"
+course_slug: "hst-950j-medical-computing-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Isaac Kohane"
+  - "Prof. Lucila Ohno-Machado"
+  - "Prof. Peter Szolovits"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Biological Engineering"
+  - "Computational Biology"
+  - "Computer Science"
+  - "Data Mining"
+  - "Health and Medicine"
+  - "Biomedical Instrumentation"
+  - "Biomedicine"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+      - name: "Biomedicine"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  The focus of the course is on medical science and practice in the age of automation and the genome, both present and future.
+  
+  It ncludes an analysis of the computational needs of clinical medicine, a review systems and approaches that have been used to support those needs, and an examination of new technologies.
+course_url: "https://ocw.mit.edu/courses/hst-950j-medical-computing-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/hst-950j-medical-computing-spring-2003/36abf33ed3360e593e9ece30ece018e0_hst-950js03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

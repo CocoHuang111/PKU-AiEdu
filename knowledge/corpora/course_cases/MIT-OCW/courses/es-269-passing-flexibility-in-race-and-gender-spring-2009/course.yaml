@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-es-269-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.269"
+cross_listed_codes: []
+course_title: "Passing: Flexibility in Race and Gender"
+course_slug: "es-269-passing-flexibility-in-race-and-gender-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Rachel Elizabeth Dillon"
+subject_primary: "Literature"
+subject_secondary:
+  - "American Literature"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "American Literature"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  This course is primarily a literature seminar. We will use American literature as a lens through which to examine different passing tropes. It will provide an introduction to queer, gender, and critical race theories for science and math majors. We will read such works as Running A Thousand Miles for Freedom , Incognegro , and Focault’s A History of Sexuality , to name just a few.
+course_url: "https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/es-269-passing-flexibility-in-race-and-gender-spring-2009/edf0f029435c7b67da9f5aa3121efcaf_es-269s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

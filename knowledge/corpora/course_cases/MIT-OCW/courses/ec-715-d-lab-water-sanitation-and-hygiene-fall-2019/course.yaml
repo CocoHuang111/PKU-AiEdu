@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-715-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.715"
+cross_listed_codes:
+  - "11.474"
+course_title: "D-Lab: Water, Sanitation, and Hygiene"
+course_slug: "ec-715-d-lab-water-sanitation-and-hygiene-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Edgerton Center"
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Libby Hsu"
+  - "Susan Murcott"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Aquatic Sciences and Water Quality Control"
+  - "Health and Medicine"
+  - "Public Health"
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Aquatic Sciences and Water Quality Control"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+  - "Written Assignments"
+description: |
+  This course focuses on disseminating Water, Sanitation and Hygiene (WASH) or water/environment innovations in developing countries and underserved communities worldwide. It emphasizes core WASH and water/environment principles, culture-specific solutions, tools for start-ups, appropriate and sustainable technologies, behavior change, social marketing, building partnerships, and the theory and practice of innovation diffusion.
+course_url: "https://ocw.mit.edu/courses/ec-715-d-lab-water-sanitation-and-hygiene-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/ec-715-d-lab-water-sanitation-and-hygiene-fall-2019/f402674eb612e32df8ec9f7a8d3465b2_ec-715f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

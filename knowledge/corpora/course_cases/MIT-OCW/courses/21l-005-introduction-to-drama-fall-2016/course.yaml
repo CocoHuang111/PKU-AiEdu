@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-005-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.005"
+cross_listed_codes: []
+course_title: "Introduction to Drama"
+course_slug: "21l-005-introduction-to-drama-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Anne Fleche"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Humanities"
+  - "Literature"
+  - "Classics"
+  - "Drama"
+  - "International Literature"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Classics"
+          - "Drama"
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course is a study of the history of theater art and practice from its origins to the modern period, including its roles in non-western cultures. Special attention is given to the relationship between the literary and performative dimensions of drama, and the relationship between drama and its cultural context.
+course_url: "https://ocw.mit.edu/courses/21l-005-introduction-to-drama-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/21l-005-introduction-to-drama-fall-2016/d232312d77fe115f14a3b1ab30a3d5f0_21l-005f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

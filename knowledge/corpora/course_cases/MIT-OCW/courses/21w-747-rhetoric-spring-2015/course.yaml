@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-747-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.747"
+cross_listed_codes: []
+course_title: "Rhetoric"
+course_slug: "21w-747-rhetoric-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Steven Strang"
+subject_primary: "Literature"
+subject_secondary:
+  - "Rhetoric"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Rhetoric"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course is an examination of the theory, the practice, and the implications of rhetoric & rhetorical criticism. This semester, you will have the opportunity to deepen many of your skills: Analysis, persuasion, oral presentation, and critical thinking. In this course you will act as both a rhetor (a person who uses rhetoric to persuade) and as a rhetorical critic (one who analyzes the rhetoric of others). Both the rhetor and the rhetorical critic write to persuade; both ask and answer important questions. Always one of their goals is to create new knowledge for all of us, so no endeavor in this class is a “mere exercise.”
+course_url: "https://ocw.mit.edu/courses/21w-747-rhetoric-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/21w-747-rhetoric-spring-2015/604f807c4d88638e38ec35da7ad79799_21w-747s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-advancing-diversity-equity-and-inclusion-advanced-quantitative-courses"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Advancing Diversity, Equity, and Inclusion via Advanced Quantitative Courses"
+slug: "advancing-diversity-equity-and-inclusion-advanced-quantitative-courses"
+source_url: "https://crlt.umich.edu/advancing-diversity-equity-and-inclusion-advanced-quantitative-courses"
+language: "en"
+published: null
+awarded_year: "2019"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "d667dac7273d75e2884c5674691a327c89b3a9277efe02b7e841f369f20e588d"

@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-009-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.009"
+cross_listed_codes: []
+course_title: "Shakespeare"
+course_slug: "21l-009-shakespeare-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Diana Henderson"
+  - "Prof. Peter S. Donaldson"
+  - "Prof. Shankar Raman"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Drama"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Drama"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Other Video"
+  - "Written Assignments with Examples"
+description: |
+  Three hundred and eighty years after his death, William Shakespeare remains the central author of the English-speaking world; he is the most quoted poet and the most regularly produced playwright — and now among the most popular screenwriters as well. Why is that, and who “is” he? Why do so many people think his writing is so great? What meanings did his plays have in his own time, and how do we read, speak, or listen to his words now? What should we watch for when viewing his plays in performance? Whose plays are we watching, anyway? We’ll consider these questions as we carefully examine a sampling of Shakespeare’s plays from a variety of critical perspectives.
+course_url: "https://ocw.mit.edu/courses/21l-009-shakespeare-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21l-009-shakespeare-spring-2004/80562563c07db0195d67984a88d7fc2d_21l-009s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-210-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.210"
+cross_listed_codes: []
+course_title: "Visualization for Mathematics, Science, and Technology Education"
+course_slug: "ec-210-visualization-for-mathematics-science-and-technology-education-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Violeta Ivanova"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Visual Arts"
+  - "Film and Video"
+  - "Graphic Design"
+  - "Social Science"
+  - "Communication"
+  - "Teaching and Education"
+  - "Educational Technology"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+          - "Graphic Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Media Assignments"
+description: |
+  This course is an introduction to principles and techniques of visual communication, and provides opportunities for science and engineering majors to acquire practical skills in the visual computer arts, in a studio environment. Students will learn how to create graphics for print and web, animations, and interactive media, and how to use these techniques to effectively communicate scientific and engineering concepts for learning and teaching. This class involves three hands-on creative projects, which will be presented in class.
+course_url: "https://ocw.mit.edu/courses/ec-210-visualization-for-mathematics-science-and-technology-education-spring-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/ec-210-visualization-for-mathematics-science-and-technology-education-spring-2016/3218759092d555c44fb42fb5e4feb616_EC-210S16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

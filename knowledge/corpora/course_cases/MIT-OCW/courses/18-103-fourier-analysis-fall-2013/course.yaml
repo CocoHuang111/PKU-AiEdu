@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-18-103-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.103"
+cross_listed_codes: []
+course_title: "Fourier Analysis"
+course_slug: "18-103-fourier-analysis-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Jerison"
+subject_primary: "Mathematical Analysis"
+subject_secondary:
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Mathematical Analysis"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course continues the content covered in [_18.100 Analysis I_](/courses/18-100b-analysis-i-fall-2010/). Roughly half of the subject is devoted to the theory of the Lebesgue integral with applications to probability, and the other half to Fourier series and Fourier integrals.
+course_url: "https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/18-103-fourier-analysis-fall-2013/33eb81b52351dcb5e9e74aaab3219cd0_18-103-f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

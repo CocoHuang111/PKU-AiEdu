@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-18-409-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.409"
+cross_listed_codes: []
+course_title: "Behavior of Algorithms"
+course_slug: "18-409-behavior-of-algorithms-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniel Spielman"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Theory of Computation"
+  - "Mathematics"
+  - "Computation"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Theory of Computation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course is a study of Behavior of Algorithms and covers an area of current interest in theoretical computer science. The topics vary from term to term. During this term, we discuss rigorous approaches to explaining the typical performance of algorithms with a focus on the following approaches: smoothed analysis, condition numbers/parametric analysis, and subclassing inputs.
+course_url: "https://ocw.mit.edu/courses/18-409-behavior-of-algorithms-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/18-409-behavior-of-algorithms-spring-2002/12f350b80ee921d9be75e7d68063c0ea_18-409s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

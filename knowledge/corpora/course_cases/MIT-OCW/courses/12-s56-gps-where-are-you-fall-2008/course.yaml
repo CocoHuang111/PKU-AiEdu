@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-12-s56-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.S56"
+cross_listed_codes: []
+course_title: "GPS: Where Are You?"
+course_slug: "12-s56-gps-where-are-you-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Thomas Herring"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Surveying"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Geophysics"
+  - "Social Science"
+  - "Geography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Surveying"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geophysics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Geography"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This is a freshman advising seminar . The professor of a FAS is the first year advisor to the (no more than 8) students in the seminar. The use of Global Positioning System (GPS) in a wide variety of applications has exploded in the last few years. In this seminar we explore how positions on the Earth were determined before GPS; how GPS itself works and the range of applications in which GPS is now a critical element. This seminar is followed by a UROP research project in the spring semester where results from precise GPS measurements will be analyzed and displayed on the Web.
+course_url: "https://ocw.mit.edu/courses/12-s56-gps-where-are-you-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/12-s56-gps-where-are-you-fall-2008/a26fa20ed4d9314d9575f8682783904f_12-s56f08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-2-087-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.087"
+cross_listed_codes: []
+course_title: "Engineering Math: Differential Equations and Linear Algebra"
+course_slug: "2-087-engineering-math-differential-equations-and-linear-algebra-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Daniel Frey"
+  - "Prof. Gilbert Strang"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Differential Equations"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Programming Assignments with Examples"
+description: |
+  This course is about the mathematics that is most widely used in the mechanical engineering core subjects: An introduction to linear algebra and ordinary differential equations (ODEs), including general numerical approaches to solving systems of equations.
+course_url: "https://ocw.mit.edu/courses/2-087-engineering-math-differential-equations-and-linear-algebra-fall-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/2-087-engineering-math-differential-equations-and-linear-algebra-fall-2014/f3ef06c70a775a74be6b2a5a6788e1a9_2-080jf14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-455-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.455"
+cross_listed_codes: []
+course_title: "Classical Literature: The Golden Age of Augustan Rome"
+course_slug: "21l-455-classical-literature-the-golden-age-of-augustan-rome-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Cain"
+subject_primary: "History"
+subject_secondary:
+  - "Ancient History"
+  - "Intellectual History"
+  - "Literature"
+  - "Classics"
+  - "Philosophy"
+  - "Political Philosophy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Ancient History"
+          - "Intellectual History"
+      - name: "Literature"
+        specialties:
+          - "Classics"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Roman Literature of the Golden Age of Augustus Caesar, produced during the transition from Republican to Imperial forms of government, was to have a profound and defining influence on Western European and American societies. These writings ultimately established lasting models of aesthetic refinement, philosophical aspiration, and political ambition that continue to shape modern cultures. This class will be exploring the Golden Age of Latin Literature from an historical perspective in order to provide an intensive examination of the cultural contexts in which these monumental works of classical art were first produced. Readings will emphasize the transition from a Republican form of government to an Empire under the rule of Augustus Caesar and the diversity of responses among individual authors to the profound structural changes that Roman society was undergoing at this time. Particular attention will be devoted to the reorganization of society and the self through textuality, the changing dimensions of the public and the private, the roles of class and gender, and the relationship between art and pleasure. Writings covering a wide variety of literary genres will include the works of Caesar, Cicero, Catullus, Livy, Virgil, Horace, and Ovid, with additional readings from Cassius Dio for background.
+course_url: "https://ocw.mit.edu/courses/21l-455-classical-literature-the-golden-age-of-augustan-rome-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-455-classical-literature-the-golden-age-of-augustan-rome-fall-2004/ba6b7be53b5f10e6716385e8b649efc2_21l-455f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

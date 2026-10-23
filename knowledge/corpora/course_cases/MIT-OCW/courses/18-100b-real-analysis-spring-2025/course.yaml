@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-18-100b-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.100B"
+cross_listed_codes:
+  - "18.1002"
+course_title: "Real Analysis"
+course_slug: "18-100b-real-analysis-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Tobias Colding"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This course gives an introduction to analysis, and the goal is twofold: 1. To learn how to prove mathematical theorems in analysis and how to write proofs. 2. To prove theorems in calculus in a rigorous way. The course will start with real numbers, limits, convergence, series and continuity. We will continue on with metric spaces, differentiation and Riemann integrals. After that, we will move on to differential equations.
+course_url: "https://ocw.mit.edu/courses/18-100b-real-analysis-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/18-100b-real-analysis-spring-2025/mit18_100b_s25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

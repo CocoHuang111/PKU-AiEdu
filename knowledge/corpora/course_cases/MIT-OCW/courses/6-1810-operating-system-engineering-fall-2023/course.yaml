@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-6-1810-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.1810"
+cross_listed_codes: []
+course_title: "Operating System Engineering"
+course_slug: "6-1810-operating-system-engineering-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Robert Morris"
+  - "Prof. Adam Belay"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Operating Systems"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Operating Systems"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Laboratory Assignments"
+  - "Lecture Notes"
+description: |
+  This is a course on the design and implementation of operating systems and their use as a foundation for systems programming. Topics covered include virtual memory; file systems; threads; context switches; kernels; interrupts; system calls; and interprocess communication, coordination, and interaction between software and hardware. A multi-processor operating system for RISC-V, xv6, is used to illustrate these topics. Individual laboratory assignments involve extending the xv6 operating system, for example to support sophisticated virtual memory features and networking.
+course_url: "https://ocw.mit.edu/courses/6-1810-operating-system-engineering-fall-2023/"
+image_url: "https://ocw.mit.edu/courses/6-1810-operating-system-engineering-fall-2023/mit6-1810-f23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

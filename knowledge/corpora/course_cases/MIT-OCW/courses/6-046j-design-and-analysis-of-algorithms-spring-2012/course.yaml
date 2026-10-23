@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-6-046j-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.046J"
+cross_listed_codes:
+  - "18.410J"
+course_title: "Design and Analysis of Algorithms"
+course_slug: "6-046j-design-and-analysis-of-algorithms-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Dana Moshkovitz"
+  - "Prof. Bruce Tidor"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Techniques for the design and analysis of efficient algorithms, emphasizing methods useful in practice. Topics include sorting; search trees, heaps, and hashing; divide-and-conquer; dynamic programming; greedy algorithms; amortized analysis; graph algorithms; and shortest paths. Advanced topics may include network flow, computational geometry, number-theoretic algorithms, polynomial and matrix calculations, caching, and parallel computing.
+course_url: "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2012/9a1eaa38cdc21738866f2cdd4feb1364_6-046js12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

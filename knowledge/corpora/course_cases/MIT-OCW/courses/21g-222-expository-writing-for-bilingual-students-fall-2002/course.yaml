@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-222-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.222"
+cross_listed_codes: []
+course_title: "Expository Writing for Bilingual Students"
+course_slug: "21g-222-expository-writing-for-bilingual-students-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Patricia Brennecke"
+subject_primary: "Language"
+subject_secondary:
+  - "English as a Second Language"
+  - "Literature"
+  - "Academic Writing"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "English as a Second Language"
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The purpose of this course is to develop your writing skills so that you can feel confident writing the essays, term papers, reports, and exams you will have to produce during your career here at MIT. We will read and analyze samples of expository writing, do some work on vocabulary development, and concentrate on developing your ability to write clear, accurate, sophisticated prose. We will also deal with the grammar and mechanical problems you may have trouble with.
+course_url: "https://ocw.mit.edu/courses/21g-222-expository-writing-for-bilingual-students-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/21g-222-expository-writing-for-bilingual-students-fall-2002/7ea5e82c1a3e8b6e36dd56bd61b0a3a6_21g-222f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

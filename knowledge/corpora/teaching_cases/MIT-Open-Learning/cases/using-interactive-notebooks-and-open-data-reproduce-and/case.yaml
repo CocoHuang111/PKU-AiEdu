@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-using-interactive-notebooks-and-open-data-reproduce-and"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Using Interactive Notebooks and Open Data to Reproduce and Learn from Physics Discoveries"
+slug: "using-interactive-notebooks-and-open-data-reproduce-and"
+course_codes:
+  - "8.316"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Philip Harris"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/using-interactive-notebooks-and-open-data-reproduce-and"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "ce6f539f6b6e346d5d6c1027428dcd5062e29196efec8b919530a98fe4489281"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-025j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.025J"
+cross_listed_codes:
+  - "21H.913J"
+course_title: "Making the Modern World: The Industrial Revolution in Global Perspective"
+course_slug: "sts-025j-making-the-modern-world-the-industrial-revolution-in-global-perspective-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Merritt Roe Smith"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "History of Science and Technology"
+  - "Modern History"
+  - "World History"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "History of Science and Technology"
+          - "Modern History"
+          - "World History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class is a global survey of the great transformation in history known as the “Industrial Revolution.” Topics include origins of mechanized production, the factory system, steam propulsion, electrification, mass communications, mass production and automation. Emphasis on the transfer of technology and its many adaptations around the world. Countries treated include Great Britain, France, Germany, the US, Sweden, Russia, Japan, China, and India. Includes brief reflection papers and a final paper.
+course_url: "https://ocw.mit.edu/courses/sts-025j-making-the-modern-world-the-industrial-revolution-in-global-perspective-fall-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/sts-025j-making-the-modern-world-the-industrial-revolution-in-global-perspective-fall-2009/f689f4294ffc3de5aef7d9413c53dfee_sts-025jf09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

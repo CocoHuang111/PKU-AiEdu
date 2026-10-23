@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-18-996-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.996"
+cross_listed_codes:
+  - "16.399"
+course_title: "Random Matrix Theory and Its Applications"
+course_slug: "18-996-random-matrix-theory-and-its-applications-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Moe Win"
+  - "Prof. Alan Edelman"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Calculus"
+  - "Linear Algebra"
+  - "Mathematical Analysis"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Calculus"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: "This course is an introduction to the basics of random matrix theory, motivated by engineering and scientific applications."
+course_url: "https://ocw.mit.edu/courses/18-996-random-matrix-theory-and-its-applications-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/18-996-random-matrix-theory-and-its-applications-spring-2004/1819ac3c1b925ddd9ff03c2319ed7a22_18-996s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

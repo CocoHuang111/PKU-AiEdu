@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-lars-dietrich"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Lars Dietrich, PhD"
+slug: "lars-dietrich"
+source_url: "https://ctl.columbia.edu/transformations/faculty/lars-dietrich/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "8493b55767c3fc207dbee1dc656f39bf22670d97c77a9d6657ec6189a40aaf60"

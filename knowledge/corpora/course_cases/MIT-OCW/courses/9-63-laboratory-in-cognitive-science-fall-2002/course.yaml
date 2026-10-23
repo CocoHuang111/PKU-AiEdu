@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-9-63-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.63"
+cross_listed_codes: []
+course_title: "Laboratory in Cognitive Science"
+course_slug: "9-63-laboratory-in-cognitive-science-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Pawan Sinha"
+subject_primary: "Cognitive Science"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Teaches principles of experimental methods in human perception and cognition, including design and statistical analysis. Combines lectures and hands-on experimental exercises; requires an independent experimental project. Some experience in programming desirable. To foster improved writing and presentation skills in conducting and critiquing research in cognitive science, students are required to provide reports and give oral presentations of three team experiments; a fourth individually conducted experiment includes a proposal with revision, and concluding written and oral reports.
+course_url: "https://ocw.mit.edu/courses/9-63-laboratory-in-cognitive-science-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/9-63-laboratory-in-cognitive-science-fall-2002/90fc9dd9300507d9412a88f05922c180_9-63f02.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

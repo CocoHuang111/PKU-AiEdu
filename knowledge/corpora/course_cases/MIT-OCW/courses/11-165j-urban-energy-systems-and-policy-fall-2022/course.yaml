@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-165j-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.165J"
+cross_listed_codes:
+  - "11.477J"
+  - "1.286J"
+course_title: "Urban Energy Systems and Policy"
+course_slug: "11-165j-urban-energy-systems-and-policy-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. David Hsu"
+subject_primary: "Energy"
+subject_secondary:
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Energy"
+    subtopics: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  This class is about figuring out together what cities and users can do to reduce their energy use and carbon emissions. Many other classes at MIT focus on policies, technologies, and systems, often at the national or international level, but this course focuses on the scale of cities and users. It is designed for any students interested in learning how to intervene in the energy use of cities using policy, technology, economics, and urban planning.
+course_url: "https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/11-165j-urban-energy-systems-and-policy-fall-2022/11-165f21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

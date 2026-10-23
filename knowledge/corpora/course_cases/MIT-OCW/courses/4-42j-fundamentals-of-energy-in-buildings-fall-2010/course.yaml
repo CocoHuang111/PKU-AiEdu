@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-4-42j-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.42J"
+cross_listed_codes:
+  - "1.044J"
+  - "2.45J"
+course_title: "Fundamentals of Energy in Buildings"
+course_slug: "4-42j-fundamentals-of-energy-in-buildings-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Architecture"
+  - "Civil and Environmental Engineering"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Leon Glicksman"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Architectural Engineering"
+  - "Environmental Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Architectural Engineering"
+          - "Environmental Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This design-based subject provides a first course in energy and thermo-sciences with applications to sustainable energy-efficient architecture and building technology. No previous experience with subject matter is assumed. After taking this subject, students will understand introductory thermodynamics and heat transfer, know the leading order factors in building energy use, and have creatively employed their understanding of energy fundamentals and knowledge of building energy use in innovative building design projects. This year, the focus will be on design projects that will complement the new NSTAR/MIT campus efficiency program .
+course_url: "https://ocw.mit.edu/courses/4-42j-fundamentals-of-energy-in-buildings-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/4-42j-fundamentals-of-energy-in-buildings-fall-2010/f3f02f4df67ed359def8909015647fb3_4-42jf10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

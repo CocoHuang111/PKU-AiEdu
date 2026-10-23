@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-4-520-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.520"
+cross_listed_codes:
+  - "4.521"
+course_title: "Computational Design I: Theory and Applications"
+course_slug: "4-520-computational-design-i-theory-and-applications-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Terry Knight"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Science and Engineering"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Science and Engineering"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This class introduces design as a computational enterprise in which rules are developed to compose and describe architectural and other designs. The class covers topics such as shapes, shape arithmetic, symmetry, spatial relations, shape computations, and shape grammars. It focuses on the application of shape grammars in creative design, and teaches shape grammar fundamentals through in-class, hands-on exercises with abstract shape grammars. The class discusses issues related to practical applications of shape grammars.
+course_url: "https://ocw.mit.edu/courses/4-520-computational-design-i-theory-and-applications-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/4-520-computational-design-i-theory-and-applications-fall-2005/464a8008f971b2ab72cb121b1a53ed4b_4-520f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

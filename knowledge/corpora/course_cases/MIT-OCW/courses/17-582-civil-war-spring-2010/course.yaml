@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-17-582-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.582"
+cross_listed_codes: []
+course_title: "Civil War"
+course_slug: "17-582-civil-war-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Roger Petersen"
+subject_primary: "History"
+subject_secondary:
+  - "Comparative History"
+  - "Military History"
+  - "Social Science"
+  - "Political Science"
+  - "Public Administration"
+  - "Military Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Comparative History"
+          - "Military History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course surveys the social science literature on civil war. Students will study the origins of civil war, discuss variables that affect the duration of civil war, and examine the termination of conflict. This course is highly interdisciplinary and covers a wide variety of cases.
+course_url: "https://ocw.mit.edu/courses/17-582-civil-war-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/17-582-civil-war-spring-2010/aa8cf071102842cb7436900a3c8206a6_17-582s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

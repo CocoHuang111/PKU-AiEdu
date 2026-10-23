@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-6-263j-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.263J"
+cross_listed_codes:
+  - "16.37J"
+course_title: "Data Communication Networks"
+course_slug: "6-263j-data-communication-networks-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dimitri Bertsekas"
+  - "Prof. Eytan Modiano"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Networks"
+  - "Electrical Engineering"
+  - "Telecommunications"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Networks"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  6.263J / 16.37J focuses on the fundamentals of data communication networks. One goal is to give some insight into the rationale of why networks are structured the way they are today and to understand the issues facing the designers of next-generation data networks. Much of the course focuses on network algorithms and their performance. Students are expected to have a strong mathematical background and an understanding of probability theory. Topics discussed include: layered network architecture, Link Layer protocols, high-speed packet switching, queueing theory, Local Area Networks, and Wide Area Networking issues, including routing and flow control.
+course_url: "https://ocw.mit.edu/courses/6-263j-data-communication-networks-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/6-263j-data-communication-networks-fall-2002/f9043247c5f29e16c46a707de10bc4c5_6-263jf02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

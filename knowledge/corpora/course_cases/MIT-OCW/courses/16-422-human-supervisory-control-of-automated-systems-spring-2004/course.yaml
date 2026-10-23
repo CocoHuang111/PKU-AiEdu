@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-16-422-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.422"
+cross_listed_codes: []
+course_title: "Human Supervisory Control of Automated Systems"
+course_slug: "16-422-human-supervisory-control-of-automated-systems-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Hansman"
+  - "Prof. Missy Cummings"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Guidance and Control Systems"
+  - "Computer Science"
+  - "Human-Computer Interfaces"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Guidance and Control Systems"
+      - name: "Computer Science"
+        specialties:
+          - "Human-Computer Interfaces"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  Human Supervisory Control of Automated Systems discusses elements of the interactions between humans and machines. These elements include: assignment of roles and authority; tradeoffs between human control and human monitoring; and human intervention in automatic processes. Further topics comprise: performance, optimization and social implications of the system; enhanced human interfaces; decision aiding; and automated alterting systems. Topics refer to applications in aerospace, industrial and transportation systems.
+course_url: "https://ocw.mit.edu/courses/16-422-human-supervisory-control-of-automated-systems-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/16-422-human-supervisory-control-of-automated-systems-spring-2004/010a137e25b1183f78cd70610b81ff9d_16-422s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-703-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.703"
+cross_listed_codes: []
+course_title: "Spanish III"
+course_slug: "21g-703-spanish-iii-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Douglas Morgenstern"
+  - "José A. Ramos"
+subject_primary: "Language"
+subject_secondary:
+  - "Spanish"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Spanish"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  This course is the first intermediate-level course in Spanish, with a focus on grammar review, additional vocabulary, writing of essays in Spanish and enhancement of cultural awareness. Group activities and projects, and conversation are emphasized. There are detailed simulation activities, readings about literature and art from Latin America and Spain, activities with music videos and interviews, and viewings of recent films such as El espinazo del diablo , Juana la loca , and María llena eres de gracia . Students also participate in the MITUPV Exchange project , a multimedia-centered Web site that deals with university life at MIT, the Universidad Politécnica de Valencia in Spain, and other universities.
+course_url: "https://ocw.mit.edu/courses/21g-703-spanish-iii-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/21g-703-spanish-iii-spring-2006/614c1585f5ca14a1161b5f81a3b80336_21g-703s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-714j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.714J"
+cross_listed_codes:
+  - "STS.445J"
+course_title: "Technologies for Creative Learning"
+course_slug: "mas-714j-technologies-for-creative-learning-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mitchel Resnick"
+  - "Karen Brennan"
+subject_primary: "Educational Technology"
+subject_secondary: []
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course explores the design of innovative educational technologies and creative learning environments, drawing on specific case studies such as the LEGO® Programmable Brick, Scratch software and Computer Clubhouse after-school learning centers. Includes activities with new educational technologies, reflections on learning experiences, and discussion of strategies and principles underlying the design of new tools and activities.
+course_url: "https://ocw.mit.edu/courses/mas-714j-technologies-for-creative-learning-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/mas-714j-technologies-for-creative-learning-fall-2009/52f5b523c692d20747464e48c72e1b96_mas-714jf09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

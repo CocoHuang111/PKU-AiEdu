@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-108-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.108"
+cross_listed_codes:
+  - "21G.158"
+course_title: "Chinese II (Streamlined)"
+course_slug: "21g-108-chinese-ii-streamlined-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Min-Min Liang"
+subject_primary: "Language"
+subject_secondary:
+  - "Chinese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Chinese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  This course, along with 21G.107 / 157 Chinese I (Streamlined) offered in the previous fall, form the elementary level of the streamlined sequence, which is intended for students who, when they began the sequence at beginning level, had basic conversational skills (gained, typically, from growing up in a Chinese speaking environment), but lacked a corresponding level of literacy. The focus of the course is on standard usage, on reading in both traditional and simplified characters, and on writing. The course is conducted entirely in Chinese. Streamlined I and II—each section is limited to 16 students for pedagogical purposes. Pre-registered students have priority. Continuing students get first priority, followed, in order, by students in 21G.076, declared concentrators and minors, sophomores, freshmen, juniors, seniors, and graduate students. Pre-registered students who did not show up for the first two days of class without warning will be eliminated. Students beginning their studies of Chinese language at MIT above the elementary level must contact the Chinese instructors for a placement test. No auditors allowed.
+course_url: "https://ocw.mit.edu/courses/21g-108-chinese-ii-streamlined-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/21g-108-chinese-ii-streamlined-spring-2015/336467cdd6275f6a586ccb671652dd87_21g-108s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

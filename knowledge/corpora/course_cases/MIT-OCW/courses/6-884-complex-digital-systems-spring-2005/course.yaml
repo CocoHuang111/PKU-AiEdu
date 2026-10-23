@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-884-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.884"
+cross_listed_codes: []
+course_title: "Complex Digital Systems"
+course_slug: "6-884-complex-digital-systems-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Chris Terman"
+  - "Prof. Krste Asanovic"
+  - "Prof. Arvind"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Design and Engineering"
+  - "Electrical Engineering"
+  - "Digital Systems"
+  - "Mathematics"
+  - "Discrete Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Design and Engineering"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Discrete Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course is offered to graduates and is a project-oriented course to teach new methodologies for designing multi-million-gate CMOS VLSI chips using high-level synthesis tools in conjunction with standard commercial EDA tools. The emphasis is on modular and robust designs, reusable modules, correctness by construction, architectural exploration, and meeting the area, timing, and power constraints within standard cell and FPGA frameworks.
+course_url: "https://ocw.mit.edu/courses/6-884-complex-digital-systems-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/6-884-complex-digital-systems-spring-2005/bdf7410991079e1a9d2b9426a6102135_6-884S05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

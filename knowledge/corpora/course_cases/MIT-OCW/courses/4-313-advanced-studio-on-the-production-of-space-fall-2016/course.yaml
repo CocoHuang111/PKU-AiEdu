@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-4-313-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.313"
+cross_listed_codes:
+  - "4.312"
+course_title: "Advanced Studio on the Production of Space"
+course_slug: "4-313-advanced-studio-on-the-production-of-space-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Gediminas Urbonas"
+  - "Nikola Bojic"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Environmental Engineering"
+  - "Fine Arts"
+  - "Architecture"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties: []
+      - name: "Environmental Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This class is developed around the concept of disobedient interference within the existing models of production of space and knowledge. Modeling is the main modus operandi of the class as students will be required to make critical diagrammatic cuts through processes of production in different thematic registers – from chemistry, law and economy to art, architecture and urbanism – in order to investigate the sense of social responsibility and control over the complex agendas embedded in models that supports production of everyday objects and surroundings. Students will be encouraged to explore relations between material or immaterial aspects and agencies of production, whether they emerged as a consequence of connection of mind, body and space, or the infrastructural, geographical and ecological complexities of the Anthropocene. These production environments will be taken as modeling settings.
+course_url: "https://ocw.mit.edu/courses/4-313-advanced-studio-on-the-production-of-space-fall-2016/"
+image_url: "https://ocw.mit.edu/courses/4-313-advanced-studio-on-the-production-of-space-fall-2016/7b3266744082c0c5becb4e6d46405806_4-313f16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

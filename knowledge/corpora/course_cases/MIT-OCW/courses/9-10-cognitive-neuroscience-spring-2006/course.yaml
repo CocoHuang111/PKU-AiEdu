@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-9-10-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.10"
+cross_listed_codes: []
+course_title: "Cognitive Neuroscience"
+course_slug: "9-10-cognitive-neuroscience-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Suzanne Corkin"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the cognitive and neural processes that support attention, vision, language, motor control, navigation, and memory. It introduces basic neuroanatomy, functional imaging techniques, and behavioral measures of cognition, and discusses methods by which inferences about the brain bases of cognition are made. We consider evidence from patients with neurological diseases (Alzheimer’s disease, Parkinson’s disease, Huntington’s disease, Balint’s syndrome, amnesia, and focal lesions from stroke) and from normal human participants.
+course_url: "https://ocw.mit.edu/courses/9-10-cognitive-neuroscience-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/9-10-cognitive-neuroscience-spring-2006/e7d56398d22af64ba6a4e20d266e1f2a_9-10s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

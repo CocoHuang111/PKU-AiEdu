@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-15-279-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.279"
+cross_listed_codes: []
+course_title: "Management Communication for Undergraduates"
+course_slug: "15-279-management-communication-for-undergraduates-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Lori Breslow"
+  - "Dr. Terence Heagney"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  The goal of this course is to help students learn to communicate strategically within a professional setting. Students are asked to analyze their intended audience, the purpose of their communication, and the context in which they are operating before developing the message. The course focuses specifically on improving students’ ability to write, speak, work in a team, and communicate across cultures in their roles as future managers.
+course_url: "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/15-279-management-communication-for-undergraduates-fall-2012/6194b09353004eab70419c9001cec392_15-279f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

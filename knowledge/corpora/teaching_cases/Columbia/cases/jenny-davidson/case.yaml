@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-jenny-davidson"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Jenny Davidson, PhD"
+slug: "jenny-davidson"
+source_url: "https://ctl.columbia.edu/transformations/faculty/jenny-davidson/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "8021256f9fa07169e23b226bb24c51c6834de3437425bc96fdb8d2bea88f15f7"

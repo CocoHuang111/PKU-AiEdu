@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-935-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.935"
+cross_listed_codes: []
+course_title: "Narrative Ethics: Literary Texts and Moral Issues in Medicine"
+course_slug: "hst-935-narrative-ethics-literary-texts-and-moral-issues-in-medicine-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Martha Montello"
+subject_primary: "Health and Medicine"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Philosophy"
+  - "Ethics"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties: []
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This eight-session course, designed for a mixed group of first, second, third and fourth-year medical students, uses literary narratives and poetry to study ethical issues in medicine. This methodology emphasizes the importance of context, contingency, and circumstances in recognizing, evaluating, and resolving moral problems. The seminar will focus on developing the skills of critical and reflective reading that increase effectiveness in clinical medicine. Texts will include short fiction and poetry by authors such as Woolf, Chekhov, Carver, Kafka, Hurston, Marquez and Tolstoy. The instructor will provide necessary philosophic and literary context at the beginning of each session, the balance devoted to class discussion. During the course, students will keep a reading journal that examines the meanings of illness, the moral role of the physician, and the relevance of emotions, culture, faith, values, social realities, and life histories to patient care.
+course_url: "https://ocw.mit.edu/courses/hst-935-narrative-ethics-literary-texts-and-moral-issues-in-medicine-january-iap-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/hst-935-narrative-ethics-literary-texts-and-moral-issues-in-medicine-january-iap-2007/51ee2674b896673c63521190a88745eb_hst-935iap07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

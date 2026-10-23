@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-2-003j-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.003J"
+cross_listed_codes:
+  - "1.053J"
+course_title: "Dynamics and Control I"
+course_slug: "2-003j-dynamics-and-control-i-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Nicholas Makris"
+  - "Prof. Peter So"
+  - "Prof. Sanjay Sarma"
+  - "Dr. Yahya Modarres-Sadeghi"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Dynamics and Control"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Problem Sets"
+  - "Programming Assignments with Examples"
+description: |
+  This class is an introduction to the dynamics and vibrations of lumped-parameter models of mechanical systems. Topics include kinematics; force-momentum formulation for systems of particles and rigid bodies in planar motion; work-energy concepts; virtual displacements and virtual work; Lagrange’s equations for systems of particles and rigid bodies in planar motion; linearization of equations of motion; linear stability analysis of mechanical systems; free and forced vibration of linear multi-degree of freedom models of mechanical systems; and matrix eigenvalue problems. The class includes an introduction to numerical methods and using MATLAB® to solve dynamics and vibrations problems. This version of the class stresses kinematics and builds around a strict but powerful approach to kinematic formulation which is different from the approach presented in Spring 2007. Our notation was adapted from that of Professor Kane of Stanford University.
+course_url: "https://ocw.mit.edu/courses/2-003j-dynamics-and-control-i-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/2-003j-dynamics-and-control-i-fall-2007/8616c4522a27a8fb7a2c4d1b56bcf3fe_2-003jf07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-sarah-holloway"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Professor Sarah Holloway, MPA"
+slug: "sarah-holloway"
+source_url: "https://ctl.columbia.edu/transformations/faculty/sarah-holloway/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "a73531cfc8b1facd300958e3bf53c6854bf66b3eba3724a6db989ef36561d250"

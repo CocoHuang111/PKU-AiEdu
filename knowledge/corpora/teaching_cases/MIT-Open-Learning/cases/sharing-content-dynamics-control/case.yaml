@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-sharing-content-dynamics-control"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Sharing Content in Dynamics & Control"
+slug: "sharing-content-dynamics-control"
+course_codes:
+  - "2.003"
+departments:
+  - "Mechanical Engineering (Course 2)"
+instructors:
+  - "Alberto Rodriguez"
+digital_innovations_tools:
+  - "Flexible Course Delivery"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/sharing-content-dynamics-control"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "5856446500abb86be396f4acd87ae607a59c83064a134783d720fef04f0fd4f2"

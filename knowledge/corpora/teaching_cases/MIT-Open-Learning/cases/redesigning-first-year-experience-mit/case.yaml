@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-redesigning-first-year-experience-mit"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Redesigning the First Year Experience at MIT"
+slug: "redesigning-first-year-experience-mit"
+course_codes:
+  - "2.S991"
+departments:
+  - "Mechanical Engineering (Course 2)"
+instructors:
+  - "Ian Waitz"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/redesigning-first-year-experience-mit"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "66b0e91d499fd6d65da91e0f23ef27abcbb8111af7e36a78c3ccc5dbab56c741"

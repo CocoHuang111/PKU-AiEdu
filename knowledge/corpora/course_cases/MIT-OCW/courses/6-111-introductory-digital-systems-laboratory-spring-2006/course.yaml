@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-6-111-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.111"
+cross_listed_codes: []
+course_title: "Introductory Digital Systems Laboratory"
+course_slug: "6-111-introductory-digital-systems-laboratory-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anantha Chandrakasan"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Design and Engineering"
+  - "Electrical Engineering"
+  - "Digital Systems"
+  - "Electronics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Design and Engineering"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Electronics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  6.111 is reputed to be one of the most demanding classes at MIT, exhausting many students’ time and creativity. The course covers digital design topics such as digital logic, sequential building blocks, finite-state machines, FPGAs, timing and synchronization. The semester begins with lectures and problem sets, to introduce fundamental topics before students embark on lab assignments and ultimately, a digital design project. The students design and implement a final digital project of their choice, in areas such as games, music, digital filters, wireless communications, video, and graphics. The course relies on extensive use of Verilog® for describing and implementing digital logic designs on state-of-the-art FPGA.
+course_url: "https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-spring-2006/06faa568a75d3e9498da09d18f598590_6-111s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

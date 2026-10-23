@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-18-226-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.226"
+cross_listed_codes: []
+course_title: "Probabilistic Methods in Combinatorics"
+course_slug: "18-226-probabilistic-methods-in-combinatorics-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Yufei Zhao"
+subject_primary: "Applied Mathematics"
+subject_secondary:
+  - "Discrete Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Open Textbooks"
+  - "Problem Sets"
+description: |
+  This course is a graduate-level introduction to the probabilistic methods, a fundamental and powerful technique in combinatorics and theoretical computer science. The essence of the approach is to show that some combinatorial object exists and prove that a certain random construction works with positive probability. The course focuses on methodology as well as combinatorial applications.
+course_url: "https://ocw.mit.edu/courses/18-226-probabilistic-methods-in-combinatorics-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/18-226-probabilistic-methods-in-combinatorics-fall-2022/mit18_226_f22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

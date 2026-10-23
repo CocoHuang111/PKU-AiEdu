@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-2-875-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.875"
+cross_listed_codes: []
+course_title: "Mechanical Assembly and Its Role in Product Development"
+course_slug: "2-875-mechanical-assembly-and-its-role-in-product-development-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Daniel E. Whitney"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Engineering"
+  - "Mechanical Engineering"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  The course presents a systematic approach to design and assembly of mechanical assemblies, which should be of interest to engineering professionals, as well as post-baccalaureate students of mechanical, manufacturing and industrial engineering. It introduces mechanical and economic models of assemblies and assembly automation at two levels. “Assembly in the small” includes basic engineering models of part mating, and an explanation of the Remote Center Compliance. “Assembly in the large” takes a system view of assembly, including the notion of product architecture, feature-based design, and computer models of assemblies, analysis of mechanical constraint, assembly sequence analysis, tolerances, system-level design for assembly and JIT methods, and economics of assembly automation. Class exercises and homework include analyses of real assemblies, the mechanics of part mating, and a semester long project. Case studies and current research are included.
+course_url: "https://ocw.mit.edu/courses/2-875-mechanical-assembly-and-its-role-in-product-development-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/2-875-mechanical-assembly-and-its-role-in-product-development-fall-2004/7ed741459bcb5f49217eb541e7eeab8f_2-875f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

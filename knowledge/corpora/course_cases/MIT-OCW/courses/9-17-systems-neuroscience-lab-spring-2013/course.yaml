@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-9-17-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.17"
+cross_listed_codes: []
+course_title: "Systems Neuroscience Lab"
+course_slug: "9-17-systems-neuroscience-lab-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James DiCarlo"
+  - "Prof. Kay Tye"
+subject_primary: "Biology"
+subject_secondary:
+  - "Neurobiology"
+  - "Neuroscience"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Systems Neuroscience Laboratory consists of a series of laboratories designed to give students experience with basic techniques for conducting systems neuroscience research. It includes sessions on anatomical, neurophysiological, and data acquisition and analysis techniques, and the ways these techniques are used to study nervous system function. Training is provided in the art of scientific writing with feedback designed to improve writing skills. Assignments include weekly preparation for lab sessions, two major research reports and a series of basic computer programming tutorials (MATLAB ® ). The class involves the use of experimental animals. Enrollment is limited.
+course_url: "https://ocw.mit.edu/courses/9-17-systems-neuroscience-lab-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/9-17-systems-neuroscience-lab-spring-2013/5ee841de55abb27feb71a3b684440700_9-17s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

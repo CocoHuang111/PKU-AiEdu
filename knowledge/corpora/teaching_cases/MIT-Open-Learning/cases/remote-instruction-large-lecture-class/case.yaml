@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-remote-instruction-large-lecture-class"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Remote Instruction in a Large Lecture Class"
+slug: "remote-instruction-large-lecture-class"
+course_codes:
+  - "6.0002"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Eric Grimson"
+  - "John Guttag"
+  - "Fredo Durand"
+  - "Ana Bell"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/remote-instruction-large-lecture-class"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "afa1c6e85f3fd4de39a2fbc893c5da8421cb291eb9f10c6404b77433ae3ee489"

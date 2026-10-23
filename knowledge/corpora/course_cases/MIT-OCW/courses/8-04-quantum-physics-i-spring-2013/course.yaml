@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-8-04-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.04"
+cross_listed_codes: []
+course_title: "Quantum Physics I"
+course_slug: "8-04-quantum-physics-i-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Allan Adams"
+  - "Prof. Matthew Evans"
+  - "Prof. Barton Zwiebach"
+subject_primary: "Physics"
+subject_secondary:
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers the experimental basis of quantum physics. It introduces wave mechanics, Schrödinger’s equation in a single dimension, and Schrödinger’s equation in three dimensions. It is the first course in the undergraduate Quantum Physics sequence, followed by 8.05 Quantum Physics II and 8.06 Quantum Physics III .
+course_url: "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2013/f9a126fdf655de26b194279aa4e2a62b_8-04s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

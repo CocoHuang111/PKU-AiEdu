@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-24-04j-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.04J"
+cross_listed_codes:
+  - "17.01J"
+course_title: "Justice"
+course_slug: "24-04j-justice-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Lucas Stanczyk"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Ethics"
+  - "Social Science"
+  - "Political Science"
+  - "Sociology"
+  - "Social Justice"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course explores the ideal of social justice. What makes a society just? We will approach this question by studying three opposing theories of justice—utilitarianism, libertarianism, and egalitarian liberalism—each foundational to contemporary political thought and discourse.
+course_url: "https://ocw.mit.edu/courses/24-04j-justice-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/24-04j-justice-spring-2012/d490f7f46d9977f2531d01ebf9ea8311_24-04js12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

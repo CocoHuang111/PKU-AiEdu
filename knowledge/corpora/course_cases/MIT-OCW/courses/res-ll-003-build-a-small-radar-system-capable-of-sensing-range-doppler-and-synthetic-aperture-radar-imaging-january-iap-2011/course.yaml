@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-res-ll-003-january-iap-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.LL-003"
+cross_listed_codes: []
+course_title: "Build a Small Radar System Capable of Sensing Range, Doppler, and Synthetic Aperture Radar Imaging"
+course_slug: "res-ll-003-build-a-small-radar-system-capable-of-sensing-range-doppler-and-synthetic-aperture-radar-imaging-january-iap-2011"
+term: "January IAP"
+year: 2011
+as_taught_in: "January IAP 2011"
+language: "en"
+departments: []
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Gregory L. Charvat"
+  - "Jonathan H. Williams"
+  - "Alan J. Fenn"
+  - "Steve Kogon"
+  - "Jeffrey S. Herd"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Signal Processing"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+          - "Signal Processing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  Are you interested in building and testing your own imaging radar system? MIT Lincoln Laboratory offers this 3-week course in the design, fabrication, and test of a laptop-based radar sensor capable of measuring Doppler, range, and forming synthetic aperture radar (SAR) images. You do not have to be a radar engineer but it helps if you are interested in any of the following; electronics, amateur radio, physics, or electromagnetics. It is recommended that you have some familiarity with MATLAB®. Teams of three students will receive a radar kit and will attend a total of 5 sessions spanning topics from the fundamentals of radar to SAR imaging. Experiments will be performed each week as the radar kit is implemented. You will bring your radar kit into the field and perform additional experiments such as measuring the speed of passing cars or plotting the range of moving targets. A final SAR imaging contest will test your ability to form a SAR image of a target scene of your choice from around campus; the most detailed and most creative image wins. Acknowledgement and Disclaimer This work is sponsored by the Department of the Air Force under Air Force Contract #FA8721-05-C-0002. Opinions, interpretations, conclusions and recommendations are those of the authors and are not necessarily endorsed by the United States Government.
+course_url: |
+  https://ocw.mit.edu/courses/res-ll-003-build-a-small-radar-system-capable-of-sensing-range-doppler-and-synthetic-aperture-radar-imaging-january-iap-2011/
+image_url: |
+  https://ocw.mit.edu/courses/res-ll-003-build-a-small-radar-system-capable-of-sensing-range-doppler-and-synthetic-aperture-radar-imaging-january-iap-2011/b71bcfcc97f8bda90bf52381a48f82fb_res-ll-003iap11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-701j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.701J"
+cross_listed_codes:
+  - "11.025J"
+  - "11.472J"
+course_title: "D-Lab I: Development"
+course_slug: "ec-701j-d-lab-i-development-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Edgerton Center"
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Amy J. Smith"
+  - "Prof. Bishwapriya Sanyal"
+  - "Victor Grau Serrat"
+subject_primary: "Engineering"
+subject_secondary:
+  - "Science"
+  - "Earth Science"
+  - "Sustainability"
+  - "Social Science"
+  - "Economics"
+  - "Developmental Economics"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Engineering"
+    subtopics: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Sustainability"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  D-Lab Development addresses issues of technological improvements at the micro level for developing countries—in particular, how the quality of life of low-income households can be improved by adaptation of low cost and sustainable technologies. Discussion of development issues as well as project implementation challenges are addressed through lectures, case studies, guest speakers and laboratory exercises. Students form project teams to partner with mostly local level organizations in developing countries, and formulate plans for an IAP site visit. (Previous field sites include Ghana, Brazil, Honduras and India.) Project team meetings focus on developing specific projects and include cultural, social, political, environmental and economic overviews of the countries and localities to be visited as well as an introduction to the local languages.
+course_url: "https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/ec-701j-d-lab-i-development-fall-2009/616e7a7bf16fbcef2928b0da889f6782_ec-701jf09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-psyc-110"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "PSYC 110"
+course_title: "Introduction to Psychology"
+course_slug: "psyc-110"
+department_path: "introduction psychology"
+professors:
+  - "Paul Bloom Brooks and Suzanne Ragen Professor Emeritus of Psychology"
+course_url: "https://oyc.yale.edu/introduction-psychology/psyc-110"
+language: "en"
+description: |
+  What do your dreams mean? Do men and women differ in the nature and intensity of their sexual desires? Can apes learn sign language? Why can’t we tickle ourselves? This course tries to answer these questions and many others, providing a comprehensive overview of the scientific study of thought and behavior. It explores topics such as perception, communication, learning, memory, decision-making, religion, persuasion, love, lust, hunger, art, fiction, and dreams. We will look at how these aspects of the mind develop in children, how they differ across people, how they are wired-up in the brain, and how they break down due to illness and injury.
+license_url: ""
+session_count: 24
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

@@ -1,0 +1,95 @@
+schema_version: "1.0"
+course_id: "mitocw-11-333-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.333"
+cross_listed_codes:
+  - "4.244"
+course_title: "Urban Design Seminar"
+course_slug: "11-333-urban-design-seminar-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Jota Samper"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Real Estate"
+  - "Energy"
+  - "Buildings"
+  - "Technology"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Design"
+  - "Architectural Engineering"
+  - "Environmental Design"
+  - "Social Science"
+  - "Urban Studies"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+      - name: "Real Estate"
+        specialties: []
+  - name: "Energy"
+    subtopics:
+      - name: "Buildings"
+        specialties: []
+      - name: "Technology"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Architectural Engineering"
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Presentation Assignments"
+description: |
+  This seminar focuses on understanding the role of high-quality design as a tool to address urban social problems. This course will also examine marginalized spaces and how urban design can intervene as a tool to creatively challenge traditional urban design practices.
+course_url: "https://ocw.mit.edu/courses/11-333-urban-design-seminar-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/11-333-urban-design-seminar-spring-2016/da49c7b4db4000ac905b6e4969a5a518_11-333s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

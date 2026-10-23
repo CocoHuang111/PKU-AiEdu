@@ -1,0 +1,17 @@
+- Source: https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+Solutions are available for selected problems below. The solutions and selected MATLAB® files are courtesy of Rick E. Cory and John W. Roberts, and are used with permission.
+
+| ASSN # | TOPICS | PROBLEM SETS | SOLUTIONS |
+| --- | --- | --- | --- |
+| 1 | Definition of underactuated <br> The simple pendulum <br> Optimal control of the double integrator | ( <br> [PDF](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/mit6_832s09_pset01/) <br> ) <br> calc_basin.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/calc_basin/) <br> ) <br> brick_control.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/brick_control/) <br> ) | ( <br> [PDF](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/mit6_832s09_sol_pset01/) <br> ) |
+| 2 | Value iteration on the double integrator <br> Pontryagin minimum principle <br> Swing-up and balance for the cart-pole system | ( <br> [PDF](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/mit6_832s09_pset02/) <br> ) <br> brick_vi.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/brick_vi/) <br> ) <br> cartpole.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/cartpole/) <br> ) | Problem 1: brick_vi_sol.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/brick_vi_sol/) <br> ) <br> Problem 2 ( <br> [PDF](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/mit6_832s09_sol_pset02/) <br> ) <br> The solution to Problem 3 is unavailable. |
+| 3 | Optimal swing-up for the simple pendulum <br> Single-pump swing-up for the cart-pole <br> The rimless wheel | ( <br> [PDF](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/mit6_832s09_pset03/) <br> ) <br> pend_snopt.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/pend_snopt/) <br> ) <br> pendfun.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/pendfun/) <br> ) | The solutions to Problems 1 and 2 are unavailable. <br> Problem 3: rimlessWheel.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/rimlesswheel/) <br> ) |
+| 4 | The spring loaded inverted pendulum <br> Motion planning with rapidly-exploring random trees | ( <br> [PDF](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/mit6_832s09_pset04/) <br> ) <br> slip.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/slip/) <br> ) | The solutions are unavailable. |
+| 5 | The weight-perturbation algorithm <br> Temporal difference learning | ( <br> [PDF](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/mit6_832s09_pset05/) <br> ) <br> cartpole_wp.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/cartpole_wp/) <br> ) <br> markov_td.m ( <br> [M](https://ocw.mit.edu/courses/6-832-underactuated-robotics-spring-2009/resources/markov_td/) <br> ) | The solutions are unavailable. |

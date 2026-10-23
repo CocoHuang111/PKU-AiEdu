@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-problem-roulette-stress-free-practice-zone-supports-student-success"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Problem Roulette: A Stress-Free Practice Zone Supports Student Success"
+slug: "problem-roulette-stress-free-practice-zone-supports-student-success"
+source_url: "https://crlt.umich.edu/problem-roulette-stress-free-practice-zone-supports-student-success"
+language: "en"
+published: null
+awarded_year: "2019"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "c51a1356aa21c07ce9e417b80bf0ddf72b7ec3c3a09d9df626a7122b38f0793d"

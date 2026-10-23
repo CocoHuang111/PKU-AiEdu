@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-elizabeth-philipone"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Elizabeth Marie Philipone, DMD"
+slug: "elizabeth-philipone"
+source_url: "https://ctl.columbia.edu/transformations/faculty/elizabeth-philipone/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "3390a2a1fcf153264b45d3ad92ac5872799ea10bd87aefc04a3ef9ebbe541a75"

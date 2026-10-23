@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-11-469-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.469"
+cross_listed_codes: []
+course_title: "Urban Sociology in Theory and Practice"
+course_slug: "11-469-urban-sociology-in-theory-and-practice-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Diane Davis"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Social Anthropology"
+  - "Sociology"
+  - "Social Justice"
+  - "Urban Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  This course is intended to introduce graduate students to a set of core writings in the field of urban sociology. Topics include the changing nature of community, social inequality, political power, socio-spatial change, technological change, and the relationship between the built environment and human behavior. We examine the key theoretical paradigms that have constituted the field since its founding, assess how and why they have changed over time, and discuss the implications of these paradigmatic shifts for urban scholarship, social policy and the planning practice.
+course_url: "https://ocw.mit.edu/courses/11-469-urban-sociology-in-theory-and-practice-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/11-469-urban-sociology-in-theory-and-practice-spring-2009/2ecfc7cc607cd96e2e3a34e6434dbefc_11-469s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-289-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.289"
+cross_listed_codes: []
+course_title: "Islam/Media"
+course_slug: "21m-289-islam-media-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Peter McMurray"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Music"
+  - "Music History"
+  - "Visual Arts"
+  - "Film and Video"
+  - "Humanities"
+  - "Religion"
+  - "Society"
+  - "Middle Eastern Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+      - name: "Music"
+        specialties:
+          - "Music History"
+      - name: "Visual Arts"
+        specialties:
+          - "Film and Video"
+  - name: "Humanities"
+    subtopics:
+      - name: "Religion"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Middle Eastern Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This course is an introduction to Islam from the perspective of media and sound studies, intended for advanced undergraduates and graduate students. From the time of the Prophet Muhammad, Islam in its various manifestations has had a complex relationship with media. While much contemporary writing focuses on Islam in the media, this course explores how many aspects of Islamic practice and thinking might be understood as media technologies that facilitate the inscription, storage and transmission of knowledge. Central questions include: How do Islam and media technologies relate? What kinds of practices of inscription and transmission characterize Islam in all its varieties across time and place? How might Islamic thought and practice be understood in light of databases, networks, and audiovisual sensation? Given the rich diversity in Islam historically and geographically, emphasis will be placed on these interconnected but divergent practices from the earliest revelations of the Qur’an to contemporary Islamist political movements, with geographies spanning from Indonesia to the Middle East and North Africa, as well as in Europe and North America. In addition to exploring these themes through reading and writing, students will be encouraged to complete course assignments and projects in media, using audiovisual documentary or composition as a means of responding to the course themes.
+course_url: "https://ocw.mit.edu/courses/21m-289-islam-media-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/21m-289-islam-media-spring-2015/ce269ac8db66abf2c3ace6c694197485_21m-289s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

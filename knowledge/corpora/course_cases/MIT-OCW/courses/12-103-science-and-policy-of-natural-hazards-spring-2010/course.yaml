@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-12-103-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.103"
+cross_listed_codes: []
+course_title: "Science and Policy of Natural Hazards"
+course_slug: "12-103-science-and-policy-of-natural-hazards-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kerry Emanuel"
+  - "Prof. Stephane Rondenay"
+  - "Jane Connor"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course examines the science of natural catastrophes such as earthquakes and hurricanes and explores the relationships between the science of and policy toward such hazards. It presents the causes and effects of these phenomena, discusses their predictability, and examines how this knowledge influences policy making. This course includes intensive practice in the writing and presentation of scientific research and summaries for policy makers.
+course_url: "https://ocw.mit.edu/courses/12-103-science-and-policy-of-natural-hazards-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/12-103-science-and-policy-of-natural-hazards-spring-2010/06e073b6410a6317656d5807eb4efcc7_12-103s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

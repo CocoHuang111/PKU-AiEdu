@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-7-88j-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.88J"
+cross_listed_codes:
+  - "5.48J"
+  - "10.543J"
+course_title: "Protein Folding and Human Disease"
+course_slug: "7-88j-protein-folding-and-human-disease-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Biology"
+  - "Chemistry"
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jonathan King"
+subject_primary: "Biology"
+subject_secondary:
+  - "Biochemistry"
+  - "Cell Biology"
+  - "Proteomics"
+  - "Virology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+          - "Cell Biology"
+          - "Proteomics"
+          - "Virology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+  - "Written Assignments"
+description: |
+  This course covers amino acid sequence control of protein folding, misfolding, amyloid polymerization and aggregation. Readings and discussions address topics such as chaperone structure and function, folding and assembly of fibrous proteins, and pathologies associated with protein misfolding and aggregation in Alzheimer’s, Parkinson’s, Huntington’s and other protein deposition diseases. Students are required to write and present a research paper.
+course_url: "https://ocw.mit.edu/courses/7-88j-protein-folding-and-human-disease-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/7-88j-protein-folding-and-human-disease-spring-2015/69d014bcb59ee3010bd02583990ffbd0_7-88js15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

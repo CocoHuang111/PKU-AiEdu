@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-4-341-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.341"
+cross_listed_codes: []
+course_title: "Introduction to Photography"
+course_slug: "4-341-introduction-to-photography-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Reiner Leist"
+subject_primary: "Visual Arts"
+subject_secondary:
+  - "Photography"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties:
+          - "Photography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This course combines practical instruction, field trips, group discussions, and individual reviews intended to foster a critical awareness of how images in our culture are produced and constructed. Student-initiated term projects are at the core of this exploration of the relationship of image to language and issues of interpretation and personal history. Besides, this course also offers practical instruction in basic black and white techniques, digital imaging, fundamentals of camera operation, lighting, film exposure, development and printing. Course provides opportunity for continued exploration.
+course_url: "https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/4-341-introduction-to-photography-fall-2002/6762cff43d83f7681690d1525fbe2ef2_4-341f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

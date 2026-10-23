@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-735-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.735"
+cross_listed_codes: []
+course_title: "Writing and Reading the Essay"
+course_slug: "21w-735-writing-and-reading-the-essay-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Rebecca Blevins Faery"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Creative Writing"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Creative Writing"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This is a course focused on the literary genre of the essay, that wide-ranging, elastic, and currently very popular form that attracts not only nonfiction writers but also fiction writers, poets, scientists, physicians, and others to write in the form, and readers of every stripe to read it. Some say we are living in era in which the essay is enjoying a renaissance; certainly essays, both short and long, are at present easier to get published than are short stories or novels, and essays are featured regularly and prominently in the mainstream press (both magazines and newspapers) and on the New York Times bestseller books list. But the essay has a history, too, a long one, which goes back at least to the sixteenth-century French writer Montaigne, generally considered the progenitor of the form. It will be our task, and I hope our pleasure, to investigate the possibilities of the essay together this semester, both by reading and by writing.
+course_url: "https://ocw.mit.edu/courses/21w-735-writing-and-reading-the-essay-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21w-735-writing-and-reading-the-essay-fall-2005/85f41cd5e33a1337d36bed20b6b79de1_21w-735f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

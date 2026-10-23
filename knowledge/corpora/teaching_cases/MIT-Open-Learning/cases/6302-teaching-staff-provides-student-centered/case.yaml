@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-6302-teaching-staff-provides-student-centered"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "6.302 Teaching Staff Provides Student-Centered Experience"
+slug: "6302-teaching-staff-provides-student-centered"
+course_codes:
+  - "6.302"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Jacob White"
+digital_innovations_tools:
+  - "Remote Teaching"
+  - "Piazza"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/6302-teaching-staff-provides-student-centered"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "5775d664e1071dfbf95fc9ca8b9510a49e9d2b05cb89431f08686497938fedfa"

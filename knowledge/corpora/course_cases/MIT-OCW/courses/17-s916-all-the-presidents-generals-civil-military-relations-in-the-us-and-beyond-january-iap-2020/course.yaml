@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-17-s916-january-iap-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.S916"
+cross_listed_codes: []
+course_title: "All the President's Generals: Civil-Military Relations in the US and Beyond"
+course_slug: "17-s916-all-the-presidents-generals-civil-military-relations-in-the-us-and-beyond-january-iap-2020"
+term: "January IAP"
+year: 2020
+as_taught_in: "January IAP 2020"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Sara Plana"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Military Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course introduces the unique characteristics of militaries and explores the roles they play in the societies they are constructed to defend, with a special focus on the relationships between the military and their civilian leaders and popular publics. Topics include a modern history of relations between US presidents and the military, coups and military governments, public trust in the military, racial integration of the military, and the military-industrial (and tech!) complex.
+course_url: "https://ocw.mit.edu/courses/17-s916-all-the-presidents-generals-civil-military-relations-in-the-us-and-beyond-january-iap-2020/"
+image_url: |
+  https://ocw.mit.edu/courses/17-s916-all-the-presidents-generals-civil-military-relations-in-the-us-and-beyond-january-iap-2020/ff9f3535544a7203fec378eacb69b41f_17-s916iap20.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

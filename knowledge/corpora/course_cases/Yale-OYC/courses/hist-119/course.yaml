@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-hist-119"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "HIST 119"
+course_title: "The Civil War and Reconstruction Era, 1845-1877"
+course_slug: "hist-119"
+department_path: "history"
+professors:
+  - "David W. Blight Class of 1954 Professor of American History"
+course_url: "https://oyc.yale.edu/history/hist-119"
+language: "en"
+description: |
+  This course explores the causes, course, and consequences of the American Civil War, from the 1840s to 1877. The primary goal of the course is to understand the multiple meanings of a transforming event in American history. Those meanings may be defined in many ways: national, sectional, racial, constitutional, individual, social, intellectual, or moral. Four broad themes are closely examined: the crisis of union and disunion in an expanding republic; slavery, race, and emancipation as national problem, personal experience, and social process; the experience of modern, total war for individuals and society; and the political and social challenges of Reconstruction.
+license_url: ""
+session_count: 28
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

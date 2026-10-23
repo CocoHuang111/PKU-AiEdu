@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-223-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.223"
+cross_listed_codes: []
+course_title: "War & American Society"
+course_slug: "21h-223-war-american-society-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christopher Capozzola"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Military History"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Social Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "Military History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Social Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Writing in the wake of the Civil War, poet Walt Whitman insisted that “the real war will never get in the books.” Throughout American history, the experience of war has fundamentally shaped the ways that Americans think about themselves, their fellow Americans, and the meanings of national citizenship. War has also posed challenges of representation, both for those who fought as well as those who did not. This subject examines how Americans have told the stories of modern war in history, literature, and popular culture, and interprets them in terms of changing ideas about American national identity.
+course_url: "https://ocw.mit.edu/courses/21h-223-war-american-society-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/21h-223-war-american-society-fall-2002/4988334b5e81d11135fc65ee966a4187_21h-223f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

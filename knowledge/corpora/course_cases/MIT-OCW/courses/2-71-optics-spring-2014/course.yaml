@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-2-71-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.71"
+cross_listed_codes:
+  - "2.710"
+course_title: "Optics"
+course_slug: "2-71-optics-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Nicholas X. Fang"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Electromagnetism"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Electromagnetism"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to optical science with elementary engineering applications. Topics covered in geometrical optics include: ray-tracing, aberrations, lens design, apertures and stops, radiometry and photometry. Topics covered in wave optics include: basic electrodynamics, polarization, interference, wave-guiding, Fresnel and Fraunhofer diffraction, image formation, resolution, space-bandwidth product. Analytical and numerical tools used in optical design are emphasized. Graduate students are required to complete assignments with stronger analytical content, and an advanced design project.
+course_url: "https://ocw.mit.edu/courses/2-71-optics-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/2-71-optics-spring-2014/589786f4e0c311abefe5590ada139090_2-71s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

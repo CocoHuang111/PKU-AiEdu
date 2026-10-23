@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-14-454-spring-2026"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.454"
+cross_listed_codes: []
+course_title: "Economic Crises"
+course_slug: "14-454-economic-crises-spring-2026"
+term: "Spring"
+year: 2026
+as_taught_in: "Spring 2026"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ricardo Caballero"
+subject_primary: "Economics"
+subject_secondary:
+  - "Financial Economics"
+  - "Macroeconomics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Readings"
+description: |
+  This half-semester, 13-week course provides a fast-paced description of the canonical macroeconomic models of ﬁnancial frictions and crises. We will cover various topics, including (i) ﬁnancial ampliﬁcation mechanisms; (ii) ﬁnancial intermediation and credit crunches; (iii) coordination failures and bank runs; (iv) speculative bubbles and credit booms; (v) liquidity traps and deleveraging; and (vi) sudden stops and ﬁnancial contagion.
+course_url: "https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/"
+image_url: "https://ocw.mit.edu/courses/14-454-economic-crises-spring-2026/mit14_454_s26_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

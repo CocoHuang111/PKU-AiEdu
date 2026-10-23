@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-14-03-fall-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.03"
+cross_listed_codes:
+  - "14.003"
+course_title: "Microeconomic Theory and Public Policy"
+course_slug: "14-03-microeconomic-theory-and-public-policy-fall-2025"
+term: "Fall"
+year: 2025
+as_taught_in: "Fall 2025"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. David Autor"
+subject_primary: "Economics"
+subject_secondary:
+  - "Microeconomics"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Microeconomics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Readings"
+description: |
+  14.03/003 is a fast-paced, interactive introduction to modern applied economics as it is lived, breathed, and practiced by academic researchers and policy analysts. You will master core tools of applied theory while learning how to frame and test causal relationships using research design, experimentation, and data analysis. In class and in the problem sets, you will read and we will discuss classic and contemporary research studies that put these pieces together.
+course_url: "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/"
+image_url: "https://ocw.mit.edu/courses/14-03-microeconomic-theory-and-public-policy-fall-2025/mit14_03_f25_chpimage.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

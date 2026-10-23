@@ -9,11 +9,40 @@
 from __future__ import annotations
 
 import json
+import os
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
 from ..pedagogy.loader import render_prompt
 from ..providers import ProviderError, get_vlm
+from ..config import settings
+
+
+def _parallel_describe(items, describe, progress_callback, workers):
+    """Cloud I/O only. Preserve input ordering and call progress on the caller thread."""
+    if not items:
+        return []
+    results = [None] * len(items)
+    with ThreadPoolExecutor(max_workers=min(workers, len(items))) as pool:
+        pending = {pool.submit(describe, item): i for i, item in enumerate(items)}
+        try:
+            for done, future in enumerate(as_completed(pending), 1):
+                results[pending[future]] = future.result()
+                if progress_callback:
+                    progress_callback(done, len(items))
+        except BaseException:
+            for future in pending:
+                future.cancel()
+            raise
+    return results
+
+
+def _vision_workers():
+    # Local inference must not multiply CPU/RAM usage.
+    if settings.mode != 'cloud':
+        return 1
+    return max(1, min(4, int(os.getenv('EVALUATION_VLM_CONCURRENCY', settings.section('evaluation').get('vlm_concurrency', 1)))))
 
 JSON_BLOCK = re.compile(r"\{[\s\S]*\}")
 
@@ -299,8 +328,11 @@ def render_label_text(labels: dict[str, Any]) -> str:
     return f"{summary}。{note}" if note else summary
 
 
-def describe_keyframes(frames: list[dict], progress_callback=None) -> list[dict]:
+def describe_keyframes(frames: list[dict], progress_callback=None, *, _serial=False) -> list[dict]:
     """逐帧标注。单帧失败不影响其余帧，失败的帧标记为不可用并排除在统计外。"""
+    workers = _vision_workers()
+    if not _serial and workers > 1:
+        return _parallel_describe(frames, lambda frame: describe_keyframes([frame], _serial=True)[0], progress_callback, workers)
     vlm = get_vlm()
     notes: list[dict] = []
 
@@ -458,8 +490,12 @@ def render_courseware_label_text(labels: dict[str, Any]) -> str:
     return f"{summary}。{note}" if note else summary
 
 
-def describe_courseware_pages(pages: list[dict], progress_callback=None) -> list[dict]:
+def describe_courseware_pages(pages: list[dict], progress_callback=None, *, _serial=False) -> list[dict]:
     """对上传课件的渲染页做结构化标注。单页失败不影响其余页。"""
+    workers = _vision_workers()
+    if not _serial and workers > 1:
+        prepared = [dict(page, index=page.get('index', i), page=page.get('page', i + 1), page_count=page.get('page_count', len(pages))) for i, page in enumerate(pages)]
+        return _parallel_describe(prepared, lambda page: describe_courseware_pages([page], _serial=True)[0], progress_callback, workers)
     vlm = get_vlm()
     notes: list[dict] = []
     total = len(pages)
@@ -517,4 +553,3 @@ def aggregate_courseware_features(notes: list[dict]) -> dict[str, float]:
         "cw_readable_high_ratio": _ratio(col("readable"), ("high",)),
         "cw_readable_low_ratio": _ratio(col("readable"), ("low",)),
     }
-

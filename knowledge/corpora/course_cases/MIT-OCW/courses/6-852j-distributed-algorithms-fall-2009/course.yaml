@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-6-852j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.852J"
+cross_listed_codes:
+  - "18.437J"
+course_title: "Distributed Algorithms"
+course_slug: "6-852j-distributed-algorithms-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Nancy Lynch"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Theory of Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Theory of Computation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Distributed algorithms are algorithms designed to run on multiple processors, without tight centralized control. In general, they are harder to design and harder to understand than single-processor sequential algorithms. Distributed algorithms are used in many practical systems, ranging from large computer networks to multiprocessor shared-memory systems. They also have a rich theory, which forms the subject matter for this course. The core of the material will consist of basic distributed algorithms and impossibility results, as covered in Prof. Lynch’s book Distributed Algorithms . This will be supplemented by some updated material on topics such as self-stabilization, wait-free computability, and failure detectors, and some new material on scalable shared-memory concurrent programming.
+course_url: "https://ocw.mit.edu/courses/6-852j-distributed-algorithms-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/6-852j-distributed-algorithms-fall-2009/cbf5c77ae27ece354f52f3d12ee55431_6-852jf09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

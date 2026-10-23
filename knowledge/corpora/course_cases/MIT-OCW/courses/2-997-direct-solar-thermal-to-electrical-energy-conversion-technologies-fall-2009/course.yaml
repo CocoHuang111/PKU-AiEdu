@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-2-997-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.997"
+cross_listed_codes: []
+course_title: "Direct Solar/Thermal to Electrical Energy Conversion Technologies"
+course_slug: "2-997-direct-solar-thermal-to-electrical-energy-conversion-technologies-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gang Chen"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Electrical Engineering"
+  - "Electric Power"
+  - "Materials Science and Engineering"
+  - "Electronic Materials"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electric Power"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Electronic Materials"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Audio"
+  - "Lecture Notes"
+description: |
+  This course introduces principles and technologies for converting heat into electricity via solid-state devices. The first part of the course discusses thermoelectric energy conversion and thermoelectric materials, thermionic energy conversion, and photovoltaics. The second part of the course discusses solar thermal technologies. Various solar heat collection systems will be reviewed, followed by an introduction to the principles of solar thermophotovoltaics and solar thermoelectrics. Spectral control techniques, which are critical for solar thermal systems, will be discussed.
+course_url: "https://ocw.mit.edu/courses/2-997-direct-solar-thermal-to-electrical-energy-conversion-technologies-fall-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/2-997-direct-solar-thermal-to-electrical-energy-conversion-technologies-fall-2009/b9b0a35e445c954f38f29800f5e87553_2-997f09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

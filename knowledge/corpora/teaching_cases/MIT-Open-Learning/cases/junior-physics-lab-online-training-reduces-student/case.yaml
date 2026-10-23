@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-junior-physics-lab-online-training-reduces-student"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Junior Physics Lab - Online Training Reduces Student Stress"
+slug: "junior-physics-lab-online-training-reduces-student"
+course_codes:
+  - "8.13"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Sean Robinson"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/junior-physics-lab-online-training-reduces-student"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "a991b8797317d8fb54a47afc6025caa6331a0a63cb972769e0eaf443aa9c8a2c"

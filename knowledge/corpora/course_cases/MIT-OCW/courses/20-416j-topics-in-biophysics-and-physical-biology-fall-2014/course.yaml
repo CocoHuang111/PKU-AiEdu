@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-20-416j-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.416J"
+cross_listed_codes:
+  - "7.74J"
+  - "8.590J"
+course_title: "Topics in Biophysics and Physical Biology"
+course_slug: "20-416j-topics-in-biophysics-and-physical-biology-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Biology"
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mark Bathe"
+  - "Prof. Jeff Gore"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+description: |
+  This course provides broad exposure to research in biophysics and physical biology, with emphasis on the critical evaluation of scientific literature. Weekly meetings include in-depth discussion of scientific literature led by various MIT faculty on active research topics. Each session also includes a brief discussion of non-research topics including effective presentation skills, writing papers and fellowship proposals, choosing scientific and technical research topics, time management, and scientific ethics.
+course_url: "https://ocw.mit.edu/courses/20-416j-topics-in-biophysics-and-physical-biology-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/20-416j-topics-in-biophysics-and-physical-biology-fall-2014/9ceac5cf6c936b97239b5161ed49515c_20-416jf14.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

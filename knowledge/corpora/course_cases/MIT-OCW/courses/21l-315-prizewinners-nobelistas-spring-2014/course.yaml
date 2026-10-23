@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-315-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.315"
+cross_listed_codes: []
+course_title: "Prizewinners: Nobelistas"
+course_slug: "21l-315-prizewinners-nobelistas-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Wyn Kelley"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Presentation Assignments"
+description: |
+  This half-semester Samplings course, worth six instead of the typical twelve credits, drew attention to the thirteen female Nobel laureates. As the MIT Literature website explains, Samplings serve students looking for “a less intensive, more discussion and reading oriented way of continuing literary study.” Secondly, “they allow the Literature Faculty to offer occasional subjects that cannot be permanently and regularly offered. Finally, they are a site of experimentation—a way of trying out new authors and new themes.”
+course_url: "https://ocw.mit.edu/courses/21l-315-prizewinners-nobelistas-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/21l-315-prizewinners-nobelistas-spring-2014/a750e4fb602338c7fbc6c6ec6c90eb66_21l-315s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

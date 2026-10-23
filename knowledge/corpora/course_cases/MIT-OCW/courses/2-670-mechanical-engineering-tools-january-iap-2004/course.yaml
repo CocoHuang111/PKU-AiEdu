@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-2-670-january-iap-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.670"
+cross_listed_codes: []
+course_title: "Mechanical Engineering Tools"
+course_slug: "2-670-mechanical-engineering-tools-january-iap-2004"
+term: "January IAP"
+year: 2004
+as_taught_in: "January IAP 2004"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Wallace"
+  - "Prof. Douglas Hart"
+subject_primary: "Mechanical Engineering"
+subject_secondary: []
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Programming Assignments"
+description: |
+  This course introduces the fundamentals of machine tool and computer tool use. Students work with a variety of machine tools including the bandsaw, milling machine, and lathe. Instruction given on MATLAB®, MAPLE®, XESS™, and CAD. Emphasis is on problem solving, not programming or algorithmic development. Assignments are project-oriented relating to mechanical engineering topics. It is recommended that students take this subject in the first IAP after declaring the major in Mechanical Engineering. This course was co-created by Prof. Douglas Hart and Dr. Kevin Otto.
+course_url: "https://ocw.mit.edu/courses/2-670-mechanical-engineering-tools-january-iap-2004/"
+image_url: "https://ocw.mit.edu/courses/2-670-mechanical-engineering-tools-january-iap-2004/6a511c4d14a287fd76406a52a27ec82d_2-670iap04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

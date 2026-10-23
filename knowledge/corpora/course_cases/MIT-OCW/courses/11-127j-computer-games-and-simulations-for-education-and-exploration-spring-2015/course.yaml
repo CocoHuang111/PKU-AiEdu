@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-11-127j-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.127J"
+cross_listed_codes:
+  - "CMS.590J"
+  - "CMS.836J"
+  - "11.252J"
+course_title: "Computer Games and Simulations for Education and Exploration"
+course_slug: "11-127j-computer-games-and-simulations-for-education-and-exploration-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Eric Klopfer"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Software Design and Engineering"
+  - "Fine Arts"
+  - "Game Design"
+  - "Teaching and Education"
+  - "Educational Technology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Software Design and Engineering"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Projects with Examples"
+description: |
+  This course immerses students in the process of building and testing their own digital and board games in order to better understand how we learn from games. We explore the design and use of games in the classroom in addition to research and development issues associated with computer–based (desktop and handheld) and non–computer–based media. In developing their own games, students examine what and how people learn from them (including field testing of products), as well as how games can be implemented in educational settings.
+course_url: "https://ocw.mit.edu/courses/11-127j-computer-games-and-simulations-for-education-and-exploration-spring-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/11-127j-computer-games-and-simulations-for-education-and-exploration-spring-2015/8b33f48c4f3ddb22d1d4bf4454893fed_11-127js15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

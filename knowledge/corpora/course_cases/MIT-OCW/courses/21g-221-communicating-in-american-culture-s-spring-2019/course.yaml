@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-221-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.221"
+cross_listed_codes: []
+course_title: "Communicating in American Culture(s)"
+course_slug: "21g-221-communicating-in-american-culture-s-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Jane Dunphy"
+subject_primary: "Language"
+subject_secondary:
+  - "English as a Second Language"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Communication"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "English as a Second Language"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  In Communicating in American Culture(s) , bilingual students examine how various aspects of American culture—history, geography, institutions, traditions, values—have shaped dominant Anglo-American communication norms and responses to critical events in the world. In addition, you can expect to practice and strengthen your analytical and communication skills in a carefully scaffolded manner, starting with frequent short writing and speaking tasks and progressing to longer, more formal tasks.
+course_url: "https://ocw.mit.edu/courses/21g-221-communicating-in-american-culture-s-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/21g-221-communicating-in-american-culture-s-spring-2019/4d24a55ffb6894fe96be4df86c3ace02_21g-221s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

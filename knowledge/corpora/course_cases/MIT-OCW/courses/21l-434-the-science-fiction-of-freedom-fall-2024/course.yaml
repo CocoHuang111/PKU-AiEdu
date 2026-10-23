@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-434-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.434"
+cross_listed_codes: []
+course_title: "The Science Fiction of Freedom"
+course_slug: "21l-434-the-science-fiction-of-freedom-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ben Mangrum"
+subject_primary: "Literature"
+subject_secondary:
+  - "Fiction"
+  - "Society"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Fiction"
+  - name: "Society"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Readings"
+  - "Written Assignments"
+description: |
+  What does it mean to be free? Is freedom a state of mind? An inalienable property of the self? The absence of coercive or oppressive structures? Such questions often inspire philosophers to develop thought experiments about alternative worlds. These same questions lie at the heart of many major works in science fiction. This subject will put the two together—philosophy and science fiction—to consider speculative techniques for imagining freedom.
+course_url: "https://ocw.mit.edu/courses/21l-434-the-science-fiction-of-freedom-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/21l-434-the-science-fiction-of-freedom-fall-2024/mit21l_434_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

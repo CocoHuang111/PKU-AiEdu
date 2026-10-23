@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-8-033-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.033"
+cross_listed_codes: []
+course_title: "Relativity"
+course_slug: "8-033-relativity-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Max Tegmark"
+subject_primary: "Physics"
+subject_secondary:
+  - "Electromagnetism"
+  - "Particle Physics"
+  - "Relativity"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+          - "Particle Physics"
+          - "Relativity"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course, which concentrates on special relativity, is normally taken by physics majors in their sophomore year. Topics include Einstein’s postulates, the Lorentz transformation, relativistic effects and paradoxes, and applications involving electromagnetism and particle physics. This course also provides a brief introduction to some concepts of general relativity, including the principle of equivalence, the Schwartzschild metric and black holes, and the FRW metric and cosmology.
+course_url: "https://ocw.mit.edu/courses/8-033-relativity-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/8-033-relativity-fall-2006/93306b227bb30787cd20941d837470a0_8-033f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

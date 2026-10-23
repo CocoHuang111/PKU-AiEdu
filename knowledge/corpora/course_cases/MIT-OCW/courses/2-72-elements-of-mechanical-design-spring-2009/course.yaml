@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-2-72-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.72"
+cross_listed_codes: []
+course_title: "Elements of Mechanical Design"
+course_slug: "2-72-elements-of-mechanical-design-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Martin Culpepper"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Mechanical Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This is an advanced course on modeling, design, integration and best practices for use of machine elements such as bearings, springs, gears, cams and mechanisms. Modeling and analysis of these elements is based upon extensive application of physics, mathematics and core mechanical engineering principles (solid mechanics, fluid mechanics, manufacturing, estimation, computer simulation, etc.). These principles are reinforced via (1) hands-on laboratory experiences wherein students conduct experiments and disassemble machines and (2) a substantial design project wherein students model, design, fabricate and characterize a mechanical system that is relevant to a real world application. Students master the materials via problems sets that are directly related to, and coordinated with, the deliverables of their project. Student assessment is based upon mastery of the course materials and the student’s ability to synthesize, model and fabricate a mechanical device subject to engineering constraints (e.g. cost and time/schedule).
+course_url: "https://ocw.mit.edu/courses/2-72-elements-of-mechanical-design-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/2-72-elements-of-mechanical-design-spring-2009/0c4310d1a90b3759953c6efc965c779b_2-72s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

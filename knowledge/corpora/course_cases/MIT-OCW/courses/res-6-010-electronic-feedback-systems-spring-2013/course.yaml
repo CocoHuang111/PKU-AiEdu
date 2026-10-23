@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-res-6-010-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.6-010"
+cross_listed_codes: []
+course_title: "Electronic Feedback Systems"
+course_slug: "res-6-010-electronic-feedback-systems-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "James Roberge"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Open Textbooks"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Feedback control is an important technique that is used in many modern electronic and electromechanical systems. The successful inclusion of this technique improves performance, reliability, and cost effectiveness of many designs. In this series of lectures we introduce the analytical concepts that underlie classical feedback system design. The application of these concepts is illustrated by a variety of experiments and demonstration systems. The diversity of the demonstration systems reinforces the value of the analytic methods.
+course_url: "https://ocw.mit.edu/courses/res-6-010-electronic-feedback-systems-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/res-6-010-electronic-feedback-systems-spring-2013/5e37dbec27f0876924a185a394940de2_RES-6.010s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

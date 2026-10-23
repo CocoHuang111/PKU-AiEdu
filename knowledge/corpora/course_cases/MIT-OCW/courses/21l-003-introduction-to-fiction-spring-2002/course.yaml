@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-003-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.003"
+cross_listed_codes: []
+course_title: "Introduction to Fiction"
+course_slug: "21l-003-introduction-to-fiction-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Elizabeth M. Fox"
+  - "Dr. Howard Eiland"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "Criticism"
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course investigates the uses and boundaries of fiction in a range of novels and narrative styles, traditional and innovative, western and non-western, and raises questions about the pleasures and meanings of verbal texts in different cultures, times, and forms.
+course_url: "https://ocw.mit.edu/courses/21l-003-introduction-to-fiction-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/21l-003-introduction-to-fiction-spring-2002/2681ba56631eabc988cb6e697c4cf79b_21l-003s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

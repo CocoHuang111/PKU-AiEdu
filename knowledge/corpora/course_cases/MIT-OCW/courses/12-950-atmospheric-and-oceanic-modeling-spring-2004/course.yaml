@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-12-950-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.950"
+cross_listed_codes: []
+course_title: "Atmospheric and Oceanic Modeling"
+course_slug: "12-950-atmospheric-and-oceanic-modeling-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Marshall"
+  - "Prof. Kerry Emanuel"
+  - "Dr. Alistair Adcroft"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Oceanography"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Oceanography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The numerical methods, formulation and parameterizations used in models of the circulation of the atmosphere and ocean will be described in detail. Widely used numerical methods will be the focus but we will also review emerging concepts and new methods. The numerics underlying a hierarchy of models will be discussed, ranging from simple GFD models to the high-end GCMs. In the context of ocean GCMs, we will describe parameterization of geostrophic eddies, mixing and the surface and bottom boundary layers. In the atmosphere, we will review parameterizations of convection and large scale condensation, the planetary boundary layer and radiative transfer.
+course_url: "https://ocw.mit.edu/courses/12-950-atmospheric-and-oceanic-modeling-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/12-950-atmospheric-and-oceanic-modeling-spring-2004/5e1297687396910603436bab93a5caef_12-950s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

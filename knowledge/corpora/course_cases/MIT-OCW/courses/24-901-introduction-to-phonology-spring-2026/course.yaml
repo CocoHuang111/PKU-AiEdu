@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-24-901-spring-2026"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.901"
+cross_listed_codes: []
+course_title: "Introduction to Phonology"
+course_slug: "24-901-introduction-to-phonology-spring-2026"
+term: "Spring"
+year: 2026
+as_taught_in: "Spring 2026"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Donca Steriade"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Phonology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Phonology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Readings"
+description: |
+  This is an introduction to the scientific study of phonological grammars, the component of speakers’ knowledge of language that models the system of speech sounds they use to communicate. In class exercises and assignments, students develop grammars that characterize sound inventories, sound distributions, and alternations in a language. They explore systems of phonological representations that allow simple statements of segment inventories, sound distributions, and alternations. The course compares two types of grammatical formalisms, rule-based and constraint-based, and evaluates their success in analyzing different processes that occur in human phonologies. We explore sound laws that govern the structure of all human spoken languages and discuss their significance for the formulation of individual grammars. In the last part of the course, we study the interaction between phonology and other components of a grammar, such as morphology and syntax.
+course_url: "https://ocw.mit.edu/courses/24-901-introduction-to-phonology-spring-2026/"
+image_url: "https://ocw.mit.edu/courses/24-901-introduction-to-phonology-spring-2026/mit24_901_s26.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

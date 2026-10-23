@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-3-45-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.45"
+cross_listed_codes: []
+course_title: "Magnetic Materials"
+course_slug: "3-45-magnetic-materials-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Robert O’Handley"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course will cover the following topics: Magnetostatics Origin of magnetism in materials Magnetic domains and domain walls Magnetic anisotropy Reversible and irreversible magnetization processes Hard and soft magnetic materials Magnetic recording Special topics include magnetism of thin films, surfaces and fine particles; transport in ferromagnets, magnetoresistive sensors, and amorphous magnetic materials.
+course_url: "https://ocw.mit.edu/courses/3-45-magnetic-materials-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/3-45-magnetic-materials-spring-2004/5f8f629d693b7c8433e747481a4d94b5_3-45s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

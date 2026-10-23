@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-18-353j-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.353J"
+cross_listed_codes:
+  - "2.050J"
+  - "12.006J"
+course_title: "Nonlinear Dynamics I: Chaos"
+course_slug: "18-353j-nonlinear-dynamics-i-chaos-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Mechanical Engineering"
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Lyubov Chumakova"
+subject_primary: "Computation"
+subject_secondary:
+  - "Differential Equations"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+  - "Programming Assignments with Examples"
+description: |
+  This course provides an introduction to nonlinear dynamics and chaos in dissipative systems. The content is structured to be of general interest to undergraduates in engineering and science.
+course_url: "https://ocw.mit.edu/courses/18-353j-nonlinear-dynamics-i-chaos-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/18-353j-nonlinear-dynamics-i-chaos-fall-2012/77a54ac6a70457dd6db42aaa1fc8ba51_18-353jf12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

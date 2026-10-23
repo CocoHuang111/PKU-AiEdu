@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-951j-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.951J"
+cross_listed_codes:
+  - "6.873J"
+course_title: "Medical Decision Support"
+course_slug: "hst-951j-medical-decision-support-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Isaac Kohane"
+  - "Prof. Lucila Ohno-Machado"
+  - "Prof. Peter Szolovits"
+  - "Prof. Staal Vinterbo"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Biological Engineering"
+  - "Computational Biology"
+  - "Computer Science"
+  - "Artificial Intelligence"
+  - "Health and Medicine"
+  - "Biomedicine"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedicine"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This course presents the main concepts of decision analysis, artificial intelligence and predictive model construction and evaluation in the specific context of medical applications. It emphasizes the advantages and disadvantages of using these methods in real-world systems and provides hands-on experience. Its technical focus is on decision support, knowledge-based systems (qualitative and quantitative), learning systems (including logistic regression, classification trees, neural networks, rough sets), and techniques to evaluate the performance of such systems. It reviews computer-based diagnosis, planning and monitoring of therapeutic interventions. It also discusses implemented medical applications and the software tools used in their construction. Students produce a final project using the machine learning methods learned in the course, based on actual clinical data. Lecturers Prof. Stephan Dreiseitl Prof. Ju Jan Kim Prof. Bill Long Prof. Marco Ramoni Prof. Fred Resnic Prof. David Wypij
+course_url: "https://ocw.mit.edu/courses/hst-951j-medical-decision-support-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/hst-951j-medical-decision-support-spring-2003/876c1e7edf0ba3b92822b9dfa0e3e353_hst-951js03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

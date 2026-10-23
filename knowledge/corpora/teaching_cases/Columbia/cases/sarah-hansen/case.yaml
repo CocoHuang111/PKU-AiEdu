@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-sarah-hansen"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Dr. Sarah Hansen, PhD"
+slug: "sarah-hansen"
+source_url: "https://ctl.columbia.edu/transformations/faculty/sarah-hansen/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "f6ab894c4eef591368e9862d888f8b21fa207ef1b509408cc5e01ee84bdc2268"

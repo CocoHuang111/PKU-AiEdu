@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-6-047-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.047"
+cross_listed_codes:
+  - "6.878"
+  - "HST.507"
+course_title: "Computational Biology"
+course_slug: "6-047-computational-biology-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Manolis Kellis"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course covers the algorithmic and machine learning foundations of computational biology combining theory with practice. We cover both foundational topics in computational biology, and current research frontiers. We study fundamental techniques, recent advances in the field, and work directly with current large-scale biological datasets.
+course_url: "https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/6-047-computational-biology-fall-2015/b65db7458bfb7d5b849a6125731a6296_6-047f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

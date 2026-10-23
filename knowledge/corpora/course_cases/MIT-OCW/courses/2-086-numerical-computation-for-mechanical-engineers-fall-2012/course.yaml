@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-2-086-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.086"
+cross_listed_codes: []
+course_title: "Numerical Computation for Mechanical Engineers"
+course_slug: "2-086-numerical-computation-for-mechanical-engineers-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Anthony T. Patera"
+  - "Prof. Daniel Frey"
+  - "Prof. Nicholas Hadjiconstantinou"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Systems Engineering"
+  - "Numerical Simulation"
+  - "Mathematics"
+  - "Differential Equations"
+  - "Linear Algebra"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties:
+          - "Numerical Simulation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Exam Solutions"
+  - "Exams"
+  - "Programming Assignments"
+description: |
+  This class introduces elementary programming concepts including variable types, data structures, and flow control. After an introduction to linear algebra and probability, it covers numerical methods relevant to mechanical engineering, including approximation (interpolation, least squares and statistical regression), integration, solution of linear and nonlinear equations, ordinary differential equations, and deterministic and probabilistic approaches. Examples are drawn from mechanical engineering disciplines, in particular from robotics, dynamics, and structural analysis. Assignments require MATLAB® programming.
+course_url: "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/2-086-numerical-computation-for-mechanical-engineers-fall-2012/31261a8b32593aea7bbf1f1336c2611b_2-086F12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

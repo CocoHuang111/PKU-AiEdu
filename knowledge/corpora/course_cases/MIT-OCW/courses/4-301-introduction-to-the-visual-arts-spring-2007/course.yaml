@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-4-301-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.301"
+cross_listed_codes: []
+course_title: "Introduction to the Visual Arts"
+course_slug: "4-301-introduction-to-the-visual-arts-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joe Zane"
+subject_primary: "Visual Arts"
+subject_secondary: []
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Visual Arts"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Lecture Videos"
+  - "Projects with Examples"
+description: |
+  This class will introduce students to a variety of contemporary art practices and ideas. The class will begin with a brief overview of ‘visual language’ by looking at a variety of artworks and discussing basic concepts revolving around artistic practice. The rest of the class will focus on notions of the real/unreal as explored with various mediums and practices. The class will work in video, sculpture and in public space.
+course_url: "https://ocw.mit.edu/courses/4-301-introduction-to-the-visual-arts-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/4-301-introduction-to-the-visual-arts-spring-2007/b419a6abe5137c9464d6b81395ae0b11_4-301s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

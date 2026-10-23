@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-289-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.289"
+cross_listed_codes: []
+course_title: "Communication Skills for Academics"
+course_slug: "15-289-communication-skills-for-academics-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joanne Yates"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Your success as an academic will depend heavily on your ability to communicate to fellow researchers in your discipline, to colleagues in your department and university, to undergraduate and graduate students, and perhaps even to the public at large. Communicating well in an academic setting depends not only on following the basic rules that govern all good communication (for example, tailoring the message to meet the needs of a specific audience), but also on adhering to the particular norms of academic genres. The purpose of this course, then, is threefold. First, the course will acquaint you with guidelines that will help you create well-crafted academic communication. Second, it will give you the opportunity to practice your communication skills and to receive extensive feedback from your colleagues and from me. You will write and/or revise an article manuscript or conference paper, present a conference paper or job talk, write a manuscript peer review, and engage in various other communication exercises. The article and talk, which are the major assignments of the course, will be based on material from your own doctoral studies. Third, the course will provide an opportunity for you to learn about professional norms for a range of activities that surround the academic enterprise, including, for example, the scholarly publication process and the job search process.
+course_url: "https://ocw.mit.edu/courses/15-289-communication-skills-for-academics-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/15-289-communication-skills-for-academics-spring-2002/1523eca85e6dd9cd37dd50970bef6aeb_15-289s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

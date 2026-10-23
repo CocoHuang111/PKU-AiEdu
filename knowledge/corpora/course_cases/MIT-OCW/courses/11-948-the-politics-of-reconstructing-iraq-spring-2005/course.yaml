@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-11-948-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.948"
+cross_listed_codes: []
+course_title: "The Politics of Reconstructing Iraq"
+course_slug: "11-948-the-politics-of-reconstructing-iraq-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Yosef Jabareen"
+subject_primary: "Economics"
+subject_secondary:
+  - "International Development"
+  - "Political Science"
+  - "International Relations"
+  - "Public Administration"
+  - "Security Studies"
+  - "Urban Studies"
+  - "Regional Planning"
+  - "Society"
+  - "Middle Eastern Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "International Development"
+      - name: "Political Science"
+        specialties:
+          - "International Relations"
+      - name: "Public Administration"
+        specialties:
+          - "Security Studies"
+      - name: "Urban Studies"
+        specialties:
+          - "Regional Planning"
+  - name: "Society"
+    subtopics:
+      - name: "Middle Eastern Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Projects with Examples"
+description: |
+  This course is being offered in conjunction with the colloquium The Politics of Reconstructing Iraq, which is sponsored by MIT’s Center for International Studies and Department of Urban Studies and Planning. Fundamentally, the course focuses on contemporary post-conflict countries (or in-conflict countries) and the role of planning and reconstruction in building nations, mitigating conflicts, reshaping the social, spatial, geopolitical, and political life, and determining the country’s future.
+course_url: "https://ocw.mit.edu/courses/11-948-the-politics-of-reconstructing-iraq-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/11-948-the-politics-of-reconstructing-iraq-spring-2005/c4fb913723275a17d56b03209d0478c3_11-948s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

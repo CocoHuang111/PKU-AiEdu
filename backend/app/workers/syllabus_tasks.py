@@ -10,6 +10,8 @@ from ai_engine.syllabus.exceptions import SyllabusCancelled
 from ai_engine.syllabus.optimizer import optimize_file, optimize_text
 
 from ..core import db
+from ..core.material_storage import resolve_material, clear_staged_material
+from ..core.execution import run_syllabus
 
 STEP_LABELS = {
     "queued": "排队中",
@@ -28,9 +30,11 @@ async def _heartbeat(task_id: str, stop: asyncio.Event) -> None:
     """LLM 单轮生成期间平滑推进进度条（协作式，可被 stop 终止）。"""
     while not stop.is_set():
         await asyncio.sleep(30)
-        if stop.is_set() or db.is_syllabus_task_cancelled(task_id):
+        if stop.is_set():
             return
         task = await db.get_syllabus_task(task_id)
+        if task and task["status"] == "queued":
+            continue
         if not task or task["status"] != "processing":
             return
         if task["current_step"] != "generating" or task["progress"] >= 75:
@@ -41,20 +45,14 @@ async def _heartbeat(task_id: str, stop: asyncio.Event) -> None:
 
 
 async def run_syllabus_optimization(task_id: str) -> None:
-    if db.is_syllabus_task_cancelled(task_id):
-        return
-
     task = await db.get_syllabus_task(task_id, include_source=True)
-    if not task:
+    if not task or task["status"] != "queued":
         return
-
-    await db.update_syllabus_task(
-        task_id, status="processing", progress=2, current_step="starting"
-    )
 
     loop = asyncio.get_running_loop()
     prompt_mode = task.get("prompt_mode")
     source_path = task.get("source_path")
+    resolved_source_path = source_path
     source_text = task.get("source_text") or ""
 
     def progress(pct: int, step: str, detail: dict | None = None) -> None:
@@ -73,19 +71,22 @@ async def run_syllabus_optimization(task_id: str) -> None:
     stop = asyncio.Event()
     heartbeat = asyncio.create_task(_heartbeat(task_id, stop))
 
-    try:
+    def execute() -> dict | None:
+        started = asyncio.run_coroutine_threadsafe(
+            db.start_syllabus_task(task_id), loop
+        ).result()
+        if not started:
+            return None
         if source_path:
-            result = await asyncio.to_thread(
-                optimize_file,
-                source_path,
+            return optimize_file(
+                resolved_source_path,
                 prompt_mode=prompt_mode,
                 progress=progress,
                 is_cancelled=is_cancelled,
             )
         elif source_text.strip():
             progress(5, "parsing", {"chars": len(source_text)})
-            result = await asyncio.to_thread(
-                optimize_text,
+            return optimize_text(
                 source_text,
                 prompt_mode=prompt_mode,
                 progress=progress,
@@ -94,6 +95,14 @@ async def run_syllabus_optimization(task_id: str) -> None:
         else:
             raise ValueError("任务缺少 source_path 或 source_text，无法解析大纲")
 
+    try:
+        if source_path:
+            resolved_source_path = await asyncio.to_thread(
+                resolve_material, source_path, owner=task["user_id"], task_id=task_id
+            )
+        result = await run_syllabus(execute)
+        if result is None:
+            return
         if db.is_syllabus_task_cancelled(task_id):
             return
 
@@ -136,6 +145,10 @@ async def run_syllabus_optimization(task_id: str) -> None:
             task_id, status="failed", current_step="failed", error=str(e)
         )
     finally:
+        try:
+            await asyncio.to_thread(clear_staged_material, source_path, owner=task["user_id"], task_id=task_id)
+        except Exception:
+            print("[storage] 大纲临时文件清理失败，持久材料仍在 OSS", flush=True)
         stop.set()
         heartbeat.cancel()
         try:

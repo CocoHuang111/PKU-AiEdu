@@ -1,0 +1,90 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-319-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.319"
+cross_listed_codes: []
+course_title: "Race, Crime, and Citizenship in American Law"
+course_slug: "21h-319-race-crime-and-citizenship-in-american-law-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Malick Ghachem"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Modern History"
+  - "Social Science"
+  - "Legal Studies"
+  - "Political Science"
+  - "American Politics"
+  - "Public Administration"
+  - "Public Policy"
+  - "Security Studies"
+  - "Sociology"
+  - "Social Justice"
+  - "Society"
+  - "African American Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "Modern History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Legal Studies"
+        specialties: []
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+          - "Security Studies"
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+  - name: "Society"
+    subtopics:
+      - name: "African American Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  This seminar looks at key issues in the historical development and current state of modern American criminal justice, with an emphasis on its relationship to citizenship, nationhood, and race/ethnicity. We begin with a range of perspectives on the rise of what is often called “mass incarceration”: how did our current system of criminal punishment take shape, and what role did race play in that process? Part Two takes up a series of case studies, including racial disparities in the administration of the death penalty, enforcement of the drug laws, and the regulation of police investigations. The third and final part of the seminar looks at national security policing: the development of a constitutional law governing the intersection of ethnicity, religion, and counter-terrorism, and the impact of counter-terrorism policy on domestic police practices.
+course_url: "https://ocw.mit.edu/courses/21h-319-race-crime-and-citizenship-in-american-law-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/21h-319-race-crime-and-citizenship-in-american-law-fall-2014/7927d53cce57e4630f6ea911f98f6c18_21h-319f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

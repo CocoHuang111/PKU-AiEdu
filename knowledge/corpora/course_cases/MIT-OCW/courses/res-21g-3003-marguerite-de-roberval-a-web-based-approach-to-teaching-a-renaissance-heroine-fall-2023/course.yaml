@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-res-21g-3003-fall-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.21G-3003"
+cross_listed_codes: []
+course_title: "Marguerite de Roberval: A Web-Based Approach to Teaching a Renaissance Heroine"
+course_slug: "res-21g-3003-marguerite-de-roberval-a-web-based-approach-to-teaching-a-renaissance-heroine-fall-2023"
+term: "Fall"
+year: 2023
+as_taught_in: "Fall 2023"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Leanna B. Rezvani"
+subject_primary: "Language"
+subject_secondary:
+  - "French"
+  - "Literature"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Media Assignments"
+  - "Multiple Assignment Types"
+  - "Other Video"
+description: |
+  This website is designed to introduce students to Marguerite de Roberval and the sixteenth-century texts she inspired. The site includes extensive bibliographies, teaching ideas, lists of modern and Renaissance versions of her story, information about Captain Roberval and his company, early exploration of Canada, images, and other media. The Marguerite de Roberval website is published under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 (CC BY-NC-SA) International license.
+course_url: "https://ocw.mit.edu/courses/res-21g-3003-marguerite-de-roberval-a-web-based-approach-to-teaching-a-renaissance-heroine-fall-2023/"
+image_url: |
+  https://ocw.mit.edu/courses/res-21g-3003-marguerite-de-roberval-a-web-based-approach-to-teaching-a-renaissance-heroine-fall-2023/mitres_21g_3003_f23.jpeg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

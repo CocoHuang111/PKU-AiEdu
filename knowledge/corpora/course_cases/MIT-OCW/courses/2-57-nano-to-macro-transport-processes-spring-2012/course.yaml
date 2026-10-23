@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-2-57-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.57"
+cross_listed_codes:
+  - "2.570"
+course_title: "Nano-to-Macro Transport Processes"
+course_slug: "2-57-nano-to-macro-transport-processes-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gang Chen"
+subject_primary: "Technology"
+subject_secondary:
+  - "Engineering"
+  - "Mechanical Engineering"
+  - "Nanotechnology"
+  - "Science"
+  - "Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  Parallel treatments of photons, electrons, phonons, and molecules as energy carriers, aiming at fundamental understanding and descriptive tools for energy and heat transport processes from nanoscale continuously to macroscale. Topics include the energy levels, the statistical behavior and internal energy, energy transport in the forms of waves and particles, scattering and heat generation processes, Boltzmann equation and derivation of classical laws, deviation from classical laws at nanoscale and their appropriate descriptions, with applications in nano- and microtechnology.
+course_url: "https://ocw.mit.edu/courses/2-57-nano-to-macro-transport-processes-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/2-57-nano-to-macro-transport-processes-spring-2012/8e9a0b217b3fd7ff26c22985b770de69_2-57s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

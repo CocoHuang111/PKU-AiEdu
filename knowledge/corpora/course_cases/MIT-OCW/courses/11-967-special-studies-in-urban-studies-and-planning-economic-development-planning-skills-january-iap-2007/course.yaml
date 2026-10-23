@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-11-967-january-iap-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.967"
+cross_listed_codes: []
+course_title: "Special Studies in Urban Studies and Planning: Economic Development Planning Skills"
+course_slug: "11-967-special-studies-in-urban-studies-and-planning-economic-development-planning-skills-january-iap-2007"
+term: "January IAP"
+year: 2007
+as_taught_in: "January IAP 2007"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Karl Seidman"
+subject_primary: "Economics"
+subject_secondary:
+  - "Developmental Economics"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This intensive and brief 4-day seminar, taught during MIT’s Independent Activities Period in January, uses a case set in Hartford, Vermont to introduce economic development planning skills to students in the Master in City Planning (MCP) Degree Program. It introduces analytical tools that are used to assess local economic development conditions, issues, and opportunities as part of formulating economic development plans. The course is designed to provide MCP students with skills needed for applied economic development planning work in other courses, particularly Economic Development Planning (11.438) and Revitalizing Urban Main Streets ( 11.439 ).
+course_url: "https://ocw.mit.edu/courses/11-967-special-studies-in-urban-studies-and-planning-economic-development-planning-skills-january-iap-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/11-967-special-studies-in-urban-studies-and-planning-economic-development-planning-skills-january-iap-2007/796b75933e88b49bc4c1f5f183668efa_11-967iap07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

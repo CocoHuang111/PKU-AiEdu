@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-15-390-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.390"
+cross_listed_codes: []
+course_title: "New Enterprises"
+course_slug: "15-390-new-enterprises-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "William Aulet"
+  - "Howard Anderson"
+  - "Prof. Matt Marx"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Leadership"
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Tutorial Videos"
+  - "Written Assignments"
+description: |
+  This course covers the process of identifying and quantifying market opportunities, then conceptualizing, planning, and starting a new, technology-based enterprise. Students develop detailed business plans for a startup. It is intended for students who want to start their own business, further develop an existing business, be a member of a management team in a new enterprise, or better understand the entrepreneur and the entrepreneurial process.
+course_url: "https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/15-390-new-enterprises-spring-2013/20ebb9d7d0fd6dfe961520a9ede7c7d9_15-390s13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-12-517-spring-2000"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.517"
+cross_listed_codes: []
+course_title: "Dynamics of Complex Systems: Complexity in Ecology"
+course_slug: "12-517-dynamics-of-complex-systems-complexity-in-ecology-spring-2000"
+term: "Spring"
+year: 2000
+as_taught_in: "Spring 2000"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniel Rothman"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biostatistics"
+  - "Science"
+  - "Biology"
+  - "Computation and Systems Biology"
+  - "Ecology"
+  - "Earth Science"
+  - "Geobiology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biostatistics"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+          - "Ecology"
+      - name: "Earth Science"
+        specialties:
+          - "Geobiology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+description: |
+  In this class we will critically review both classical works and recent literature on complexity in ecology. The emphasis will be on developing quantitative theories in the context of experimental and observational data. We will meet twice weekly for roundtable discussions.
+course_url: "https://ocw.mit.edu/courses/12-517-dynamics-of-complex-systems-complexity-in-ecology-spring-2000/"
+image_url: |
+  https://ocw.mit.edu/courses/12-517-dynamics-of-complex-systems-complexity-in-ecology-spring-2000/94dcd1f9faebdb5a5ea07aeb5fcce17f_12-517s00.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

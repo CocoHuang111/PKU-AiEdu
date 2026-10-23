@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-14-310x-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.310x"
+cross_listed_codes: []
+course_title: "Data Analysis for Social Scientists"
+course_slug: "14-310x-data-analysis-for-social-scientists-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Esther Duflo"
+  - "Dr. Sara Ellison"
+subject_primary: "Probability and Statistics"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Econometrics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Econometrics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Problem Sets"
+description: |
+  This course introduces methods for harnessing data to answer questions of cultural, social, economic, and policy interest. We will start with essential notions of probability and statistics. We will proceed to cover techniques in modern data analysis: regression and econometrics, design of experiments, randomized control trials (and A/B testing), machine learning, and data visualization. We will illustrate these concepts with applications drawn from real-world examples and frontier research. Finally, we will provide instruction on the use of the statistical package R, and opportunities for students to perform self-directed empirical analyses. MITx Online This course draws materials from 14.310x Data Analysis for Social Scientists , which is part of the MicroMasters Program in Data, Economics, and Design of Policy offered by MITx Online. The MITx Online course is entirely free to audit, though learners have the option to pay a fee, which is based on the learner’s ability to pay, to take the proctored exam and earn a course certificate. To access that course, create an MITx Online account and enroll in the course 14.310x Data Analysis for Social Scientists .
+course_url: "https://ocw.mit.edu/courses/14-310x-data-analysis-for-social-scientists-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/14-310x-data-analysis-for-social-scientists-spring-2023/mit14_310x_s23_chp.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

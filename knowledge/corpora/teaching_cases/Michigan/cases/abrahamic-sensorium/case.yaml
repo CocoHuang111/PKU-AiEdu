@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-abrahamic-sensorium"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "The Abrahamic Sensorium"
+slug: "abrahamic-sensorium"
+source_url: "https://crlt.umich.edu/abrahamic-sensorium"
+language: "en"
+published: null
+awarded_year: "2023"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "34e09b782ce2ca40ce4c1e7dca2dee9e1786cee6620ac84f340a6252b2ae797f"

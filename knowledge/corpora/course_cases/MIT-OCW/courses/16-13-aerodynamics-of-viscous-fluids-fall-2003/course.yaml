@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-16-13-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.13"
+cross_listed_codes: []
+course_title: "Aerodynamics of Viscous Fluids"
+course_slug: "16-13-aerodynamics-of-viscous-fluids-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mark Drela"
+  - "Dr. Ali Merchant"
+subject_primary: "Aerospace Engineering"
+subject_secondary:
+  - "Aerodynamics"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Aerospace Engineering"
+        specialties:
+          - "Aerodynamics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The major focus of 16.13 is on boundary layers, and boundary layer theory subject to various flow assumptions, such as compressibility, turbulence, dimensionality, and heat transfer. Parameters influencing aerodynamic flows and transition and influence of boundary layers on outer potential flow are presented, along with associated stall and drag mechanisms. Numerical solution techniques and exercises are included.
+course_url: "https://ocw.mit.edu/courses/16-13-aerodynamics-of-viscous-fluids-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/16-13-aerodynamics-of-viscous-fluids-fall-2003/b26b6aed1229cfe00b9d9c46d80bf22c_16-13f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

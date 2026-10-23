@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-232-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.232"
+cross_listed_codes:
+  - "21G.233"
+course_title: "Advanced Speaking and Critical Listening Skills (ELS)"
+course_slug: "21g-232-advanced-speaking-and-critical-listening-skills-els-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Jane Dunphy"
+subject_primary: "Language"
+subject_secondary:
+  - "English as a Second Language"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "English as a Second Language"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  This course is for advanced students who wish to build confidence and skills in spoken English. It focuses on the appropriate oral presentation of material in a variety of professional contexts: group discussions, classroom explanations and interactions, and theses/research proposals. It is valuable for those who intend to teach or lecture in English and includes language laboratory assignments. The goal of the workshop is to develop effective speaking and listening skills for academic and professional contexts.
+course_url: "https://ocw.mit.edu/courses/21g-232-advanced-speaking-and-critical-listening-skills-els-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-232-advanced-speaking-and-critical-listening-skills-els-spring-2007/5e3812944babb5f6270aa0bdac09e2ec_21g-232s07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

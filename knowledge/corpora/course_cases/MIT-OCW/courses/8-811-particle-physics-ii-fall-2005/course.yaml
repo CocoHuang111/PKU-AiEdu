@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-8-811-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.811"
+cross_listed_codes: []
+course_title: "Particle Physics II"
+course_slug: "8-811-particle-physics-ii-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Min Chen"
+subject_primary: "Physics"
+subject_secondary:
+  - "High Energy Physics"
+  - "Particle Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "High Energy Physics"
+          - "Particle Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  8.811, Particle Physics II, describes essential research in High Energy Physics. We derive the Standard Model (SM) first using a bottom up method based on Unitarity, in addition to the usual top down method using SU3xSU2xU1. We describe and analyze several classical experiments, which established the SM, as examples on how to design experiments. Further topics include heavy flavor physics, high-precision tests of the Standard Model, neutrino oscillations, searches for new phenomena (compositeness, supersymmetry, technical color, and GUTs), and discussion of expectations from future accelerators (B factory, LHC, large electron-positron linear colliders, etc). The term paper requires the students to have constant discussions with the instructor throughout the semester on theories, physics, measurables, signatures, detectors, resolution, background identification and elimination, signal to noise and statistical analysis.
+course_url: "https://ocw.mit.edu/courses/8-811-particle-physics-ii-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/8-811-particle-physics-ii-fall-2005/e093e517152a537d1c3d8707b36d6b31_8-811f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

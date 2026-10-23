@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-503-fall-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.503"
+cross_listed_codes: []
+course_title: "Japanese III"
+course_slug: "21g-503-japanese-iii-fall-2019"
+term: "Fall"
+year: 2019
+as_taught_in: "Fall 2019"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Takako Aikawa"
+  - "Masami Ikeda-Lamm"
+  - "Wakana Maekawa"
+  - "Emiko Rafique"
+subject_primary: "Language"
+subject_secondary:
+  - "Japanese"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "Japanese"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  Students further develop their skills in Japanese speaking, listening, reading, and writing in this intermediate language course. This course involves continued vocabulary and kanji building.
+course_url: "https://ocw.mit.edu/courses/21g-503-japanese-iii-fall-2019/"
+image_url: "https://ocw.mit.edu/courses/21g-503-japanese-iii-fall-2019/f31e883988f5ca758736f61cc9cc9904_21g503f19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-res-cms-502-spring-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.CMS-502"
+cross_listed_codes: []
+course_title: "Competency-Based Education: The Why, What, and How"
+course_slug: "res-cms-502-competency-based-education-the-why-what-and-how-spring-2020"
+term: "Spring"
+year: 2020
+as_taught_in: "Spring 2020"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Justin Reich"
+  - "Elizabeth Huttner-Loan"
+subject_primary: "Teaching and Education"
+subject_secondary: []
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Videos"
+description: |
+  This course will help you develop an understanding of the characteristic elements of competency-based education (CBE) and how schools are implementing it. You will learn about CBE’s potential for closing opportunity gaps, as well as challenges and concerns. You will get a closer look at what the implementation of CBE looks and feels like for students, teachers, administrators, families, and community members. You will consider the kinds of system-wide shifts necessary to support this innovation in education. By looking at research and hearing from experts and voices in schools, you will leave the course equipped to start or continue conversations about whether CBE is a good fit in your context. This course is part of the Open Learning Library , which is free to use. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/res-cms-502-competency-based-education-the-why-what-and-how-spring-2020/"
+image_url: |
+  https://ocw.mit.edu/courses/res-cms-502-competency-based-education-the-why-what-and-how-spring-2020/53ac9f32c308db83279f7428066a811a_res-cms-502s20.jpeg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

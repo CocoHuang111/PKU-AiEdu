@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-18-900-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.900"
+cross_listed_codes: []
+course_title: "Geometry and Topology in the Plane"
+course_slug: "18-900-geometry-and-topology-in-the-plane-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Paul Seidel"
+subject_primary: "Topology and Geometry"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces students to selected aspects of geometry and topology, using concepts that can be visualized easily. We mix geometric topics (such as hyperbolic geometry or billiards) and more topological ones (such as loops in the plane). The course is suitable for students with no prior exposure to differential geometry or topology. Think of it as a moderate hike, overlooking various parts of the geometry and topology landscape. Bits are flat, bits are uphill, there are occasional rocky parts (may be different for everyone), but none that are designed to be cliff faces. The class moves from one topic to the next quickly, so it’s important to learn continuously.
+course_url: "https://ocw.mit.edu/courses/18-900-geometry-and-topology-in-the-plane-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/18-900-geometry-and-topology-in-the-plane-spring-2023/mit18_900s23_chp.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

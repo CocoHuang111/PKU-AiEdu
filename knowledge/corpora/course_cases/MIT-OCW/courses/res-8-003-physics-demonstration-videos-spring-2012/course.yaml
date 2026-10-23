@@ -1,0 +1,53 @@
+schema_version: "1.0"
+course_id: "mitocw-res-8-003-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.8-003"
+cross_listed_codes: []
+course_title: "Physics Demonstration Videos"
+course_slug: "res-8-003-physics-demonstration-videos-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "MIT Department of Physics Technical Services Group "
+subject_primary: "Physics"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The Technical Services Group at MIT’s Department of Physics provides technical and teaching support for undergraduate courses at MIT. These brief videos of physics demos display subtle physics concepts ranging from electromagnetism, to kinematics, to optics. Online Publication
+course_url: "https://ocw.mit.edu/courses/res-8-003-physics-demonstration-videos-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/res-8-003-physics-demonstration-videos-spring-2012/2012171ffb07df59cdb3f93599688586_res-8-003s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

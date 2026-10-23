@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-12-009j-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.009J"
+cross_listed_codes:
+  - "18.352J"
+course_title: "Theoretical Environmental Analysis"
+course_slug: "12-009j-theoretical-environmental-analysis-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Daniel Rothman"
+subject_primary: "Biology"
+subject_secondary:
+  - "Ecology"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Climate Studies"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Ecology"
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Climate Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course analyzes cooperative processes that shape the natural environment, now and in the geologic past. It emphasizes the development of theoretical models that relate the physical and biological worlds, the comparison of theory to observational data, and associated mathematical methods.
+course_url: "https://ocw.mit.edu/courses/12-009j-theoretical-environmental-analysis-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/12-009j-theoretical-environmental-analysis-spring-2015/9e11b73d7a358907166b8c1b41463f01_12-009js15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

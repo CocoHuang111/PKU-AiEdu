@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-video-assessments-11011-1111117381j-promote-learning"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Video Assessments in 11.011 & 11.111/17.381J Promote Learning in an Atmosphere of Trust"
+slug: "video-assessments-11011-1111117381j-promote-learning"
+course_codes:
+  - "11.011, 11.111/17.381J"
+departments:
+  - "Urban Studies and Planning (Course 11)"
+instructors:
+  - "Bruno Verdini"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Dropbox"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/video-assessments-11011-1111117381j-promote-learning"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "06102ecb0c5537891eac0ba5feb5871883edc916030ae216b6621a5a1b3a0b62"

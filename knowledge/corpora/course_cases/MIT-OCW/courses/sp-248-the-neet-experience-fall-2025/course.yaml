@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-sp-248-fall-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "SP.248"
+cross_listed_codes: []
+course_title: "The NEET Experience"
+course_slug: "sp-248-the-neet-experience-fall-2025"
+term: "Fall"
+year: 2025
+as_taught_in: "Fall 2025"
+language: "en"
+departments:
+  - "Special Programs"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Rea Lavi"
+  - "Dr. Cong Cong"
+  - "Dr. Greg Long"
+  - "Dr. Nathan Melenbrink"
+  - "Dr. Mehdi Salek"
+subject_primary: "Climate"
+subject_secondary:
+  - "Engineering"
+  - "Biological Engineering"
+  - "Civil Engineering"
+  - "Electrical Engineering"
+  - "Systems Engineering"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+      - name: "Civil Engineering"
+        specialties: []
+      - name: "Electrical Engineering"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Editable Files"
+  - "Instructor Insights"
+description: |
+  SP.248 gives first-year students an opportunity to explore various interdisciplinary domains, or threads: autonomous machines, climate and sustainability systems, digital cities, and living machines, all of which are a part of the New Engineering Education Transformation (NEET) program. Students gain knowledge and skills in those domains through interactions with NEET faculty, instructors, and students, and exercise their algorithmic, creative, and systems thinking through team-based challenges taken from those domains.
+course_url: "https://ocw.mit.edu/courses/sp-248-the-neet-experience-fall-2025/"
+image_url: "https://ocw.mit.edu/courses/sp-248-the-neet-experience-fall-2025/sp-248f25.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

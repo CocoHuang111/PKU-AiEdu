@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-res-9-005-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.9-005"
+cross_listed_codes: []
+course_title: "fMRI Bootcamp"
+course_slug: "res-9-005-fmri-bootcamp-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Rebecca Saxe"
+subject_primary: "Medical Imaging"
+subject_secondary:
+  - "Sensory-Neural Systems"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Medical Imaging"
+        specialties: []
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+description: |
+  This video lecture series begins with an introduction to the basics of anatomical and functional MRI and the time course of the fMRI signal, then delves into several methods for analyzing fMRI data. The series emphasizes how to think about fMRI data and the steps of analysis rather than the technical execution of each step. Lecture Topics: fMRI Bootcamp Part 1 - Basics of fMRI fMRI Bootcamp Part 2 - fMRI timecourse fMRI Bootcamp Part 3 - Univariate analysis fMRI Bootcamp Part 4 - Multivariate analysis fMRI Bootcamp Part 5 - Multivoxel pattern analysis (MVPA) fMRI Bootcamp Part 6 - Classification fMRI Bootcamp Part 7 - Representational similarity fMRI Bootcamp Part 8 - fMRI & multiple comparisons fMRI Bootcamp Part 9 - Hyperalignment Additional Resources: Rebecca Saxe’s Lab website Analyzing fMRI Data page in Modeling and Data Analysis Tools and Datasets Poldrack R. A., Mumford J. A., Nichols T. E. (2011) Handbook of Functional MRI Data Analysis , Cambridge University Press. ISBN: 9780521517669 [ hardcover, eBook , Google Books preview ]
+course_url: "https://ocw.mit.edu/courses/res-9-005-fmri-bootcamp-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/res-9-005-fmri-bootcamp-fall-2017/mitres9_005_f17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

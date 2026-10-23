@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-14-129-spring-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.129"
+cross_listed_codes: []
+course_title: "Blockchain and the Design of Financial Systems"
+course_slug: "14-129-blockchain-and-the-design-of-financial-systems-spring-2025"
+term: "Spring"
+year: 2025
+as_taught_in: "Spring 2025"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Robert M. Townsend"
+subject_primary: "Economics"
+subject_secondary:
+  - "Financial Economics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  This course synthesizes the computer science technologies underlying cryptocurrency, blockchain, tokenization, platforms, and computational algorithms with the economics tools of contract theory, mechanism design, general equilibrium theory, and monetary theory. The goal is to understand the assumptions, existing shortcomings, and potential impact on legacy systems of distributed ledgers, smart contracts, and encryption and to explore possibilities for new financial designs and for regulation.
+course_url: "https://ocw.mit.edu/courses/14-129-blockchain-and-the-design-of-financial-systems-spring-2025/"
+image_url: "https://ocw.mit.edu/courses/14-129-blockchain-and-the-design-of-financial-systems-spring-2025/mit14_129_s25.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

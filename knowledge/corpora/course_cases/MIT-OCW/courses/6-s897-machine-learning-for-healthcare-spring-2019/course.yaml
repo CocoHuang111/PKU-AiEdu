@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-6-s897-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.S897"
+cross_listed_codes:
+  - "HST.956"
+course_title: "Machine Learning for Healthcare"
+course_slug: "6-s897-machine-learning-for-healthcare-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Peter Szolovits"
+  - "Prof. David Sontag"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Human-Computer Interfaces"
+  - "Health and Medicine"
+  - "Medical Imaging"
+  - "Public Health"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Human-Computer Interfaces"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Medical Imaging"
+        specialties: []
+      - name: "Public Health"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Projects"
+description: |
+  This course introduces students to machine learning in healthcare, including the nature of clinical data and the use of machine learning for risk stratification, disease progression modeling, precision medicine, diagnosis, subtype discovery, and improving clinical workflows.
+course_url: "https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/6-s897-machine-learning-for-healthcare-spring-2019/73b7842c733d06776ceff964880a0e41_6-s897s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

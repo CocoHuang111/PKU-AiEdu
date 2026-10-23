@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-15-083j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.083J"
+cross_listed_codes:
+  - "6.859J"
+course_title: "Integer Programming and Combinatorial Optimization"
+course_slug: "15-083j-integer-programming-and-combinatorial-optimization-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dimitris Bertsimas"
+  - "Prof. Andreas Schulz"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Systems Optimization"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The course is a comprehensive introduction to the theory, algorithms and applications of integer optimization and is organized in four parts: formulations and relaxations, algebra and geometry of integer optimization, algorithms for integer optimization, and extensions of integer optimization.
+course_url: "https://ocw.mit.edu/courses/15-083j-integer-programming-and-combinatorial-optimization-fall-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/15-083j-integer-programming-and-combinatorial-optimization-fall-2009/7e9b1cf3cf6ee9e6dbf50f48bb1a45c1_15-083jf09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

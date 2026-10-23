@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-11-002j-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.002J"
+cross_listed_codes:
+  - "17.30J"
+course_title: "Making Public Policy"
+course_slug: "11-002j-making-public-policy-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christopher Warshaw"
+  - "Leah Stokes"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  This course aims to get students thinking about politics and policy as a part of their everyday life. We treat politics as a struggle among competing advocates trying to persuade others to see the world as they do, working within a context that is structured primarily by institutions and cultural ideas. We’ll begin by developing a policymaking framework, understanding ideology, and taking a whirlwind tour of the American political system. Then, we’ll examine six policy issues in depth: health care, gun control, the federal budget, immigration reform, same-sex marriage, and energy and climate change.
+course_url: "https://ocw.mit.edu/courses/11-002j-making-public-policy-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/11-002j-making-public-policy-fall-2014/7663dbec135528581aa255f8ee0a4106_11-002jf14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

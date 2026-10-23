@@ -1,6 +1,0 @@
-video_id,score_mapping_version,expert_avg,expert_score_5,llm_overall_5,pred_obj_reg,pred_llm_reg,pred_llm_cls5,pred_llm_cls8,pred_obj_only_reg,pred_ind_reg
-宋晨,expert-4pt-direct-v2,2.45,3.0625,3.72,3.3407,3.821,4.25,3.9062,3.4898,3.7576
-王勋,expert-4pt-direct-v2,3.65,4.5625,3.71,3.4454,3.3476,4.25,3.5938,3.4224,3.6856
-厉行,expert-4pt-direct-v2,3.4799999999999995,4.35,3.93,4.5594,3.4246,4.25,3.5938,4.48,3.9306
-王菁,expert-4pt-direct-v2,3.35,4.1875,3.73,4.1461,3.791,4.25,2.9688,3.9844,4.1832
-杨文云,expert-4pt-direct-v2,2.96,3.7,3.43,3.4395,4.6024,4.25,3.9062,3.255,3.9219

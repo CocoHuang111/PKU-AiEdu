@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-simulating-interactions-between-science-and-policymaking"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Simulating Interactions Between Science and Policymaking"
+slug: "simulating-interactions-between-science-and-policymaking"
+source_url: "https://crlt.umich.edu/simulating-interactions-between-science-and-policymaking"
+language: "en"
+published: null
+awarded_year: "2022"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "808cee4715bd5edcfe2b36b97b8117460391830ef71a375350c01e0f7b8a914b"

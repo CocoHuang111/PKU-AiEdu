@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-8-592j-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.592J"
+cross_listed_codes:
+  - "HST.452J"
+course_title: "Statistical Physics in Biology"
+course_slug: "8-592j-statistical-physics-in-biology-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Physics"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mehran Kardar"
+  - "Prof. Leonid Mirny"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biostatistics"
+  - "Science"
+  - "Biology"
+  - "Computation and Systems Biology"
+  - "Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biostatistics"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+      - name: "Physics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  Statistical Physics in Biology is a survey of problems at the interface of statistical physics and modern biology. Topics include: bioinformatic methods for extracting information content of DNA; gene finding, sequence comparison, and phylogenetic trees; physical interactions responsible for structure of biopolymers; DNA double helix, secondary structure of RNA, and elements of protein folding; considerations of force, motion, and packaging; protein motors, membranes. We also look at collective behavior of biological elements, cellular networks, neural networks, and evolution.
+course_url: "https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/8-592j-statistical-physics-in-biology-spring-2011/29cab1075cd18f731334b92c858a94ee_8-592s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

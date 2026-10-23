@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-6-071j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.071J"
+cross_listed_codes:
+  - "22.071J"
+course_title: "Introduction to Electronics, Signals, and Measurement"
+course_slug: "6-071j-introduction-to-electronics-signals-and-measurement-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Cory"
+  - "Prof. Ian Hutchinson"
+  - "Prof. Manos Chaniotakis"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Signal Processing"
+  - "Mathematics"
+  - "Differential Equations"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+          - "Signal Processing"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Differential Equations"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  The course is designed to provide a practical - hands on - introduction to electronics with a focus on measurement and signals. The prerequisites are courses in differential equations, as well as electricity and magnetism. No prior experience with electronics is necessary. The course will integrate demonstrations and laboratory examples with lectures on the foundations. Throughout the course we will use modern “virtual instruments” as test-beds for understanding electronics. The aim of the course is to provide students with the practical knowledge necessary to work in a modern science or engineering setting.
+course_url: "https://ocw.mit.edu/courses/6-071j-introduction-to-electronics-signals-and-measurement-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/6-071j-introduction-to-electronics-signals-and-measurement-spring-2006/f65b4d007b84cc4275b82686aca1a439_6-071js06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

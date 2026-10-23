@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-11-947-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.947"
+cross_listed_codes: []
+course_title: "Race, Immigration, and Planning"
+course_slug: "11-947-race-immigration-and-planning-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. J. Phillip Thompson"
+  - "Prof. Alethia Jones"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+  - "Society"
+  - "African American Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+  - name: "Society"
+    subtopics:
+      - name: "African American Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  This course provides an introduction to the issues of immigrants, planning, and race. It identifies the complexities and identities of immigrant populations emerging in the United States context and how different community groups negotiate that complexity. It explores the critical differences and commonalities between immigrant and non-immigrant communities, as well as how the planning profession does and should respond to those differences. Finally, the course explores the intersection of immigrant communities’ formation and their interactions with African Americans and the idea of race in the United States.
+course_url: "https://ocw.mit.edu/courses/11-947-race-immigration-and-planning-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/11-947-race-immigration-and-planning-spring-2005/7d84b2f9ad17613e164a592455e4fa39_11-947s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

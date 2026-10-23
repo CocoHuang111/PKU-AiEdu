@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-15-960-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.960"
+cross_listed_codes: []
+course_title: "New Executive Thinking Social-Impact Technology Projects"
+course_slug: "15-960-new-executive-thinking-social-impact-technology-projects-fall-2017-spring-2018"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Anjali Sastry"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Other Video"
+  - "Podcasts"
+  - "Projects with Examples"
+description: |
+  This customized independent study course puts Sloan Fellows MBA students into direct contact with innovators tackling global needs in education, healthcare, and energy/environment. Co-designed projects address low-income markets in the U.S. or globally, focusing on the application of new ideas and technology rooted in MIT innovations or the Boston ecosystem. Every project aims to develop better ways for the right innovations to reach scale, sustainability, and quality, thereby improving lives and uncovering opportunities in underserved markets.
+course_url: "https://ocw.mit.edu/courses/15-960-new-executive-thinking-social-impact-technology-projects-fall-2017-spring-2018/"
+image_url: |
+  https://ocw.mit.edu/courses/15-960-new-executive-thinking-social-impact-technology-projects-fall-2017-spring-2018/1f9ff7c87438d41a064fcd6b9a92589f_MIT15-960S17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

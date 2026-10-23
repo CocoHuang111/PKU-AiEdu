@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-9-913-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.913"
+cross_listed_codes: []
+course_title: "Pattern Recognition for Machine Vision"
+course_slug: "9-913-pattern-recognition-for-machine-vision-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Bernd Heisele"
+  - "Dr. Yuri Ivanov"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Electrical Engineering"
+  - "Signal Processing"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Simulation Videos"
+description: |
+  The applications of pattern recognition techniques to problems of machine vision is the main focus for this course. Topics covered include, an overview of problems of machine vision and pattern classification, image formation and processing, feature extraction from images, biological object recognition, bayesian decision theory, and clustering.
+course_url: "https://ocw.mit.edu/courses/9-913-pattern-recognition-for-machine-vision-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/9-913-pattern-recognition-for-machine-vision-fall-2004/7b21660d6562d305d86210c7e32658d9_9-913f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

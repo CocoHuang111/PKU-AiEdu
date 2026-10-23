@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-703-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.703"
+cross_listed_codes: []
+course_title: "Studies in Drama: Too Hot to Handle: Forbidden Plays in Modern America"
+course_slug: "21l-703-studies-in-drama-too-hot-to-handle-forbidden-plays-in-modern-america-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Anne Fleche"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Humanities"
+  - "Literature"
+  - "Criticism"
+  - "Drama"
+  - "Philosophy"
+  - "Ethics"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Drama"
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments with Examples"
+description: |
+  Unlike film, theater in America does not have a ratings board that censors content. So plays have had more freedom to explore and to transgress normative culture. Yet censorship of the theater has been part of American culture from the beginning, and continues today. How and why does this happen, and who decides whether a play is too dangerous to see or to teach? Are plays dangerous? Sinful? Even demonic? In our seminar, we will study plays that have been censored, either legally or extra-legally (i.e. refused production, closed down during production, denied funding, or taken off school reading lists). We’ll look at laws, both national and local, relating to the “obscene”, as well as unofficial practices, and think about the way censorship operates in American life now. And of course we will study the offending texts, themselves, to find what is really dangerous about them, for ourselves.
+course_url: "https://ocw.mit.edu/courses/21l-703-studies-in-drama-too-hot-to-handle-forbidden-plays-in-modern-america-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-703-studies-in-drama-too-hot-to-handle-forbidden-plays-in-modern-america-fall-2008/7c305f1afc7cd6d6fbab611a7fd4ffee_21l-703f08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-11-235-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.235"
+cross_listed_codes: []
+course_title: "Analyzing Projects and Organizations"
+course_slug: "11-235-analyzing-projects-and-organizations-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Judith Tendler"
+subject_primary: "Organizational Behavior"
+subject_secondary:
+  - "Social Science"
+  - "Political Science"
+  - "Public Administration"
+  - "Sociology"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties: []
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This course teaches students how to understand the rationality behind how organizations and their programs behave, and to be comfortable and analytical with a live organization. It thereby builds analytic skills for evaluating programs and projects, organizations, and environments. It draws on the literature of the sociology of organizations, political science, public administration, and historical experience-and is based on both developing-country and developed-country experience.
+course_url: "https://ocw.mit.edu/courses/11-235-analyzing-projects-and-organizations-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/11-235-analyzing-projects-and-organizations-fall-2009/fb7f7c9ce199ec4f19a810311634fe47_11-235f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

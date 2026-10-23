@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-6-892-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.892"
+cross_listed_codes: []
+course_title: "Computational Models of Discourse"
+course_slug: "6-892-computational-models-of-discourse-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Regina Barzilay"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Theory of Computation"
+  - "Humanities"
+  - "Linguistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Theory of Computation"
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course is a graduate level introduction to automatic discourse processing. The emphasis will be on methods and models that have applicability to natural language and speech processing. The class will cover the following topics: discourse structure, models of coherence and cohesion, plan recognition algorithms, and text segmentation. We will study symbolic as well as machine learning methods for discourse analysis. We will also discuss the use of these methods in a variety of applications ranging from dialogue systems to automatic essay writing. This subject qualifies as an Artificial Intelligence and Applications concentration subject.
+course_url: "https://ocw.mit.edu/courses/6-892-computational-models-of-discourse-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/6-892-computational-models-of-discourse-spring-2004/ca094bc607062eb5d302ce76306b7514_6-892s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

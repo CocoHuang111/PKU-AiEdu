@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-es-260-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.260"
+cross_listed_codes: []
+course_title: "Women's Novels: A Weekly Book Club"
+course_slug: "es-260-womens-novels-a-weekly-book-club-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Faye Kasemset"
+  - "Dr. Holly Sweet"
+  - "Jocelyn Rodal"
+subject_primary: "Literature"
+subject_secondary:
+  - "Fiction"
+  - "Society"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Fiction"
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This pass/fail seminar should be a fun setting where we can all enjoy a love of good books together. Students will read approximately one novel every two weeks, and the class will discuss each novel in a relaxed and interactive setting, with attention to whatever themes and issues interest them most about each book. We will read a wide mixture of classic and contemporary novels written by women, including: Edith Wharton, The House of Mirth ; Toni Morrison, Jazz ; Virginia Woolf, Mrs. Dalloway ; Alice Walker, The Color Purple ; Charlotte Brontë, Jane Eyre ; Sheri Reynolds, The Rapture of Canaan ; Jane Austen, Pride and Prejudice ; and Sylvia Plath, The Bell Jar . Recurrent issues likely to be discussed include: gender, race, and class; romance, love, and marriage; depression and suicide; and conception, childbirth, and parenthood.
+course_url: "https://ocw.mit.edu/courses/es-260-womens-novels-a-weekly-book-club-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/es-260-womens-novels-a-weekly-book-club-spring-2006/b2c39977d1c1fb608ae3cdfda6109273_es-260s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

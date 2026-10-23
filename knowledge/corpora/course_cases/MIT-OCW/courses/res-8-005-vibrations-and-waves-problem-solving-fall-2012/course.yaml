@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-res-8-005-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.8-005"
+cross_listed_codes: []
+course_title: "Vibrations and Waves Problem Solving"
+course_slug: "res-8-005-vibrations-and-waves-problem-solving-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Wit Busza"
+subject_primary: "Physics"
+subject_secondary:
+  - "Classical Mechanics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  8.03 Physics III: Vibrations and Waves is the third course in the core physics curriculum at MIT, following 8.01 Physics I: Classical Mechanics and 8.02 Physics II: Electricity and Magnetism . Topics include mechanical vibrations and waves, electromagnetic waves, and optics. These Problem Solving Help Videos provide step-by-step solutions to sample problems. Also included is information about how Physics III is typically taught on the MIT campus. Instructor Insights are shared by Professor Wit Busza who has taught Physics III and its associated recitation sessions many times. Professor Busza’s insights focus on his approach to problem solving, strategies for supporting students as they solve problems, and common sources of confusion for students in the process of problem solving. Note : These videos were originally produced as part of a physics course that is no longer available on OCW.
+course_url: "https://ocw.mit.edu/courses/res-8-005-vibrations-and-waves-problem-solving-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/res-8-005-vibrations-and-waves-problem-solving-fall-2012/21baaf5086dee18b81aba855e0cc34cd_res-8-005f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

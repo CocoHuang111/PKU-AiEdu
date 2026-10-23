@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-15-067-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.067"
+cross_listed_codes: []
+course_title: "Competitive Decision-Making and Negotiation"
+course_slug: "15-067-competitive-decision-making-and-negotiation-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gordon Kaufman"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+description: |
+  This course aims to develop negotiation skills by active participation in a variety of negotiation settings, and a series of integrative bargaining cases between two and more than two parties over multiple issues. Ethical dilemmas in negotiation are discussed at various times throughout the course.
+course_url: "https://ocw.mit.edu/courses/15-067-competitive-decision-making-and-negotiation-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/15-067-competitive-decision-making-and-negotiation-spring-2011/ae875a15c6b850e0943c7519c2aeb693_15-067s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

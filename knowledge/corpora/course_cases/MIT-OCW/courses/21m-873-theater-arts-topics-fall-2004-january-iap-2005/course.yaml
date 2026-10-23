@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-423-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.423"
+cross_listed_codes: []
+course_title: "Theater Arts Topics"
+course_slug: "21m-873-theater-arts-topics-fall-2004-january-iap-2005"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Janet Sonenberg"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Theatrical Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+          - "Theatrical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+description: |
+  Directed practice in acting, directing, or design on a sustained theater piece, either one-act or full length, from pre-rehearsal preparation to workshop production.
+course_url: "https://ocw.mit.edu/courses/21m-873-theater-arts-topics-fall-2004-january-iap-2005/"
+image_url: "https://ocw.mit.edu/courses/21m-873-theater-arts-topics-fall-2004-january-iap-2005/7c9117fba0d0db688748ab7381e7f9db_21m-873iap05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

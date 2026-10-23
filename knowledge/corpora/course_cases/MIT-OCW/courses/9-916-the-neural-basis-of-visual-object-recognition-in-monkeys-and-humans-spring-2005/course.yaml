@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-9-916-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.916"
+cross_listed_codes: []
+course_title: "The Neural Basis of Visual Object Recognition in Monkeys and Humans"
+course_slug: "9-916-the-neural-basis-of-visual-object-recognition-in-monkeys-and-humans-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. James DiCarlo"
+  - "Prof. Nancy Kanwisher"
+subject_primary: "Sensory-Neural Systems"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Neuroscience"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Understanding the brain’s remarkable ability for visual object recognition is one of the greatest challenges of brain research. The goal of this course is to provide an overview of key issues of object representation and to survey data from primate physiology and human fMRI that bear on those issues. Topics include the computational problems of object representation, the nature of object representations in the brain, the tolerance and selectivity of those representations, and the effects of attention and learning.
+course_url: "https://ocw.mit.edu/courses/9-916-the-neural-basis-of-visual-object-recognition-in-monkeys-and-humans-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/9-916-the-neural-basis-of-visual-object-recognition-in-monkeys-and-humans-spring-2005/add59be4b8ce799ac9671137e269c91d_9-916s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

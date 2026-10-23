@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-student-pre-class-preparation-enhances-class-time"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Student pre-class preparation enhances in-class time"
+slug: "student-pre-class-preparation-enhances-class-time"
+course_codes:
+  - "IDS.333, IDS.332, IDS.330"
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Richard de Neufville"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/student-pre-class-preparation-enhances-class-time"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "82d5208917230ee5b23e1123166811013c75c4f348d5a5630b4cfee875dd2b83"

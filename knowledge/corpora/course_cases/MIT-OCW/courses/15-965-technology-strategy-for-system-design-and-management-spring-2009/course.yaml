@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-15-965-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.965"
+cross_listed_codes: []
+course_title: "Technology Strategy for System Design and Management"
+course_slug: "15-965-technology-strategy-for-system-design-and-management-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Michael A. M. Davies"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Management"
+  - "Marketing"
+  - "Operations Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Marketing"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course provides you with a framework to understand the structure and dynamics of high-tech businesses, together with an approach for their effective strategic management. It is focused on domains in which systems are important, because either or both products are parts of larger and more complex systems, or they are comprised of systems. The domains covered include computing, communications (in particular the mobile and IP domains), consumer electronics, industrial networking, automotive, aerospace and medical devices. The course will be of particular interest to those interested in managing a business in which technology will likely play a major role, and also to those interested in investing in or providing counsel to these businesses. The emphasis throughout is on the development and application of ways of thinking or mental models that bring clarity to the complex co-evolution of technological innovation, the demand opportunity, systems architecture, business ecosystems, and decision-making and execution within the business.
+course_url: "https://ocw.mit.edu/courses/15-965-technology-strategy-for-system-design-and-management-spring-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/15-965-technology-strategy-for-system-design-and-management-spring-2009/3c5b8aeb83fab29622fcd76aa737ef6a_15-965s09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

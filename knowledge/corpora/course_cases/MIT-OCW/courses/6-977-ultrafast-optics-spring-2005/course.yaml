@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-6-977-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.977"
+cross_listed_codes: []
+course_title: "Ultrafast Optics"
+course_slug: "6-977-ultrafast-optics-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Franz Kärtner"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Telecommunications"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+          - "Telecommunications"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+  - "Problem Sets"
+description: |
+  This course is offered to graduate students and addresses issues regarding ultrafast optics. Topics covered include: Generation, propagation and applications of ultrashort pulses (nano-, pico-, femto-, attosecond pulses); Linear and nonlinear pulse shaping processes: Optical solitons, Pulse compression; Laser principles: Single- and multi-mode laser dynamics, Q-switching, Active and passive mode-locking; Pulse characterization: Autocorrelation, FROG, SPIDER; Noise in mode-locked lasers and its limitations in measurements; Laser amplifiers, optical parametric amplifiers, and oscillators; Applications in research and industry: Pump-probe techniques, Optical imaging, Frequency metrology, Laser ablation, High harmonic generation.
+course_url: "https://ocw.mit.edu/courses/6-977-ultrafast-optics-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/6-977-ultrafast-optics-spring-2005/464a1500aa14b654305a3413ea34dcf2_6-977s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

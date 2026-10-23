@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-24-900-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.900"
+cross_listed_codes: []
+course_title: "Introduction to Linguistics"
+course_slug: "24-900-introduction-to-linguistics-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Pesetsky"
+subject_primary: "Language"
+subject_secondary:
+  - "Linguistics"
+  - "Syntax"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties: []
+      - name: "Linguistics"
+        specialties:
+          - "Syntax"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course studies what is language and what does knowledge of a language consist of. It asks how do children learn languages and is language unique to humans; why are there many languages; how do languages change; is any language or dialect superior to another; and how are speech and writing related. Context for these and similar questions is provided by basic examination of internal organization of sentences, words, and sound systems. No prior training in linguistics is assumed.
+course_url: "https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/24-900-introduction-to-linguistics-fall-2012/250c24ed7aa09d4363b354e0e2f1f4b9_24-900f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-10-445-summer-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.445"
+cross_listed_codes:
+  - "10.545"
+course_title: "Separation Processes for Biochemical Products"
+course_slug: "10-445-separation-processes-for-biochemical-products-summer-2005"
+term: "Summer"
+year: 2005
+as_taught_in: "Summer 2005"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Charles Cooney"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Separation Processes"
+  - "Science"
+  - "Biology"
+  - "Biochemistry"
+  - "Chemistry"
+  - "Analytical Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Separation Processes"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+      - name: "Chemistry"
+        specialties:
+          - "Analytical Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course serves as an introduction to the fundamental principles of separation operations for the recovery of products from biological processes, membrane filtration, chromatography, centrifugation, cell disruption, extraction, and process design. This course was last taught during the regular school year in the Spring semester of 1999, but has been a part of the MIT Technology and Development Program ( TDP ) at the Malaysia University of Science and Technology ( MUST ), as well as at MIT’s Professional Institute in more recent years.
+course_url: "https://ocw.mit.edu/courses/10-445-separation-processes-for-biochemical-products-summer-2005/"
+image_url: "https://ocw.mit.edu/courses/10-445-separation-processes-for-biochemical-products-summer-2005/eab4a09142661cb058d7070264a8eb43_10-445su05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

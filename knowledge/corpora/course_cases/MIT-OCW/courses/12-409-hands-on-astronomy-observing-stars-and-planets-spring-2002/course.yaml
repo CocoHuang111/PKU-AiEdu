@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-12-409-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.409"
+cross_listed_codes: []
+course_title: "Hands-On Astronomy: Observing Stars and Planets"
+course_slug: "12-409-hands-on-astronomy-observing-stars-and-planets-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "James Elliot"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Health and Medicine"
+  - "Spectroscopy"
+  - "Science"
+  - "Earth Science"
+  - "Planetary Science"
+  - "Physics"
+  - "Astrophysics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Spectroscopy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Planetary Science"
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This class introduces the student to the use of small telescopes, either for formal research or as a hobby. This course covers background for and techniques of visual observation, electronic imaging, and spectroscopy of the Moon, planets, satellites, stars, and brighter deep-space objects. Weekly outdoor observing sessions using 8-inch diameter telescopes when weather permits. Indoor sessions introduce needed skills. Introduction to contemporary observational astronomy including astronomical computing, image and data processing, and how astronomers work. Student must maintain a careful and complete written log which is graded. (Limited enrollment with priority to freshmen. Consumes an entire evening each week; 100% attendance at observing sessions required to pass.)
+course_url: "https://ocw.mit.edu/courses/12-409-hands-on-astronomy-observing-stars-and-planets-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/12-409-hands-on-astronomy-observing-stars-and-planets-spring-2002/79bc41618021f06e820108f8962ef147_12-409s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

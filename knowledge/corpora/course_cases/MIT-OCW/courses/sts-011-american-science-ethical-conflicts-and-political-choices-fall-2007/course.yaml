@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-011-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.011"
+cross_listed_codes: []
+course_title: "American Science: Ethical Conflicts and Political Choices"
+course_slug: "sts-011-american-science-ethical-conflicts-and-political-choices-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Brendan Foley"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "History of Science and Technology"
+  - "Philosophy"
+  - "Ethics"
+  - "Social Science"
+  - "Political Science"
+  - "American Politics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "History of Science and Technology"
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Other Video"
+  - "Written Assignments"
+description: |
+  We will explore the changing political choices and ethical dilemmas of American scientists from the atomic scientists of World War II to biologists in the present wrestling with the questions raised by cloning and other biotechnologies. As well as asking how we would behave if confronted with the same choices, we will try to understand the choices scientists have made by seeing them in their historical and political contexts. Some of the topics covered include: the original development of nuclear weapons and the bombing of Hiroshima and Nagasaki; the effects of the Cold War on American science; the space shuttle disasters; debates on the use of nuclear power, wind power, and biofuels; abuse of human subjects in psychological and other experiments; deliberations on genetically modified food, the human genome project, human cloning, embryonic stem cell research; and the ethics of archaeological science in light of controversies over museum collections.
+course_url: "https://ocw.mit.edu/courses/sts-011-american-science-ethical-conflicts-and-political-choices-fall-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/sts-011-american-science-ethical-conflicts-and-political-choices-fall-2007/80f83ed3c641ede1575b9e2300f7ab6c_sts-011f07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

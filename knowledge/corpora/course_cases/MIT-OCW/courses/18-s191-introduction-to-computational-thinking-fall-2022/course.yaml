@@ -1,0 +1,91 @@
+schema_version: "1.0"
+course_id: "mitocw-18-s191-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.S191"
+cross_listed_codes:
+  - "1.S992"
+  - "6.S083"
+  - "12.S083"
+  - "16.S686"
+  - "22.S093"
+course_title: "Introduction to Computational Thinking"
+course_slug: "18-s191-introduction-to-computational-thinking-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Civil and Environmental Engineering"
+  - "Electrical Engineering and Computer Science"
+  - "Earth, Atmospheric, and Planetary Sciences"
+  - "Aeronautics and Astronautics"
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alan Edelman"
+  - "Prof. David P. Sanders"
+  - "Prof. Charles Leiserson"
+subject_primary: "Climate"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Algorithms and Data Structures"
+  - "Computer Design and Engineering"
+  - "Computer Networks"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Computation"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Computer Design and Engineering"
+          - "Computer Networks"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Problem Sets"
+  - "Programming Assignments"
+description: |
+  This class uses revolutionary programmable interactivity to combine material from three fields – Computer Science + Mathematics + Applications – creating an engaging, efficient learning solution to prepare students to be sophisticated and intuitive thinkers, programmers, and solution providers for the modern interconnected online world. Upon completion, students are well trained to be scientific “trilinguals,” seeing and experimenting with mathematics interactively as math is meant to be seen, and ready to participate and contribute to open source development of large projects and ecosystems.
+course_url: "https://ocw.mit.edu/courses/18-s191-introduction-to-computational-thinking-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/18-s191-introduction-to-computational-thinking-fall-2022/18-s191f22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

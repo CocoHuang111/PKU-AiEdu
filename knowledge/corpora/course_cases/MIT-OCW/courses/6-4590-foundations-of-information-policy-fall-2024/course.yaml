@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-6-4590-fall-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.4590"
+cross_listed_codes:
+  - "STS.085"
+  - "STS.487"
+  - "6.805"
+course_title: "Foundations of Information Policy"
+course_slug: "6-4590-foundations-of-information-policy-fall-2024"
+term: "Fall"
+year: 2024
+as_taught_in: "Fall 2024"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Daniel Weitzner"
+  - "Prof. Michael M.J. Fischer"
+  - "Prof. Harold Abelson"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Social Science"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Readings"
+  - "Written Assignments with Examples"
+description: |
+  In this class, we will consider the interaction between law, policy, and technology as they relate to the evolving controversies over control of the internet. Our goal is for participants to develop the technical, legal, and rhetorical skills to analyze and participate in the evolution of the global public policy environments that govern human behavior on the internet. Topics include history of internet policy, the relationship between technical architecture and law, privacy, cybersecurity, freedom of expression, intellectual property, electronic surveillance, trade policy, and international affairs.
+course_url: "https://ocw.mit.edu/courses/6-4590-foundations-of-information-policy-fall-2024/"
+image_url: "https://ocw.mit.edu/courses/6-4590-foundations-of-information-policy-fall-2024/mit6_4590_f24.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

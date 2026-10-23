@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "cornell-theory-table-capstone-experience-food-service-management"
+institution: "Cornell University"
+platform: "Cornell Center for Teaching Innovation"
+collection: "Teaching Innovation Case Study Library"
+title: "From Theory to Table: A Capstone Experience in Food Service Management"
+slug: "theory-table-capstone-experience-food-service-management"
+source_url: "https://teaching.cornell.edu/theory-table-capstone-experience-food-service-management"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "d1880d812f6e952200f27d2bd4a8a925c691392f1fed9bc6d081395a07c83517"

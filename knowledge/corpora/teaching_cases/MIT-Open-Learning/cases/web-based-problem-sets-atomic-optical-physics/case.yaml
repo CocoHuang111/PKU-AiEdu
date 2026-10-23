@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-web-based-problem-sets-atomic-optical-physics"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Web-based Problem Sets in Atomic & Optical Physics"
+slug: "web-based-problem-sets-atomic-optical-physics"
+course_codes:
+  - "8.421"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Wolfgang Ketterle"
+digital_innovations_tools:
+  - "Adaptive Hinting"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/web-based-problem-sets-atomic-optical-physics"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "1494d3c5e735fef7972bac8f25ad945241834094ba8771039b66e28fcd48f7e9"

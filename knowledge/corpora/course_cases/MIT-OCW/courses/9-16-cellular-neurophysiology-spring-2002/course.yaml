@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-9-16-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.16"
+cross_listed_codes:
+  - "9.161"
+course_title: "Cellular Neurophysiology"
+course_slug: "9-16-cellular-neurophysiology-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Guosong Liu"
+subject_primary: "Anatomy and Physiology"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Cell Biology"
+  - "Neurobiology"
+  - "Neuroscience"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Anatomy and Physiology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Cell Biology"
+          - "Neurobiology"
+          - "Neuroscience"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This course includes: Surveying the molecular and cellular mechanisms of neuronal communication. Coversion channels in excitable membrane, synaptic transmission, and synaptic plasticity. Correlation of the properties of ion channels and synaptic transmission with their physiological function such as learning and memory. Discussion of the organizational principles for the formation of functional neural networks at synaptic and cellular levels.
+course_url: "https://ocw.mit.edu/courses/9-16-cellular-neurophysiology-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/9-16-cellular-neurophysiology-spring-2002/be8f0c39da5691d5c47d8973ace453c8_9-16s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

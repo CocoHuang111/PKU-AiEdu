@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-034-fall-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.034"
+cross_listed_codes: []
+course_title: "Science Writing and New Media: Perspectives on Medicine and Public Health"
+course_slug: "21w-034-science-writing-and-new-media-perspectives-on-medicine-and-public-health-fall-2016"
+term: "Fall"
+year: 2016
+as_taught_in: "Fall 2016"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Cynthia Taft"
+subject_primary: "Public Health"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Academic Writing"
+  - "Nonfiction Prose"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Nonfiction Prose"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  Like other scientists, medical researchers and clinicians must be capable of presenting their work to an audience of professional peers. Unlike many scientists, however, physicians must routinely translate their sophisticated knowledge into lay terms for their own patients and for the education of the public at large. A surprising number of physicians write for less utilitarian reasons as well, choosing the narrative essay as a means of exploring the non-technical issues that emerge in their clinical practice. Over the course of the semester, we will explore the full range of writings by physicians and other health practitioners.
+course_url: "https://ocw.mit.edu/courses/21w-034-science-writing-and-new-media-perspectives-on-medicine-and-public-health-fall-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/21w-034-science-writing-and-new-media-perspectives-on-medicine-and-public-health-fall-2016/9079b587317a936f385ea51ac20adf2a_21w-034f16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

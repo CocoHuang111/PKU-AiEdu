@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-2-067-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.067"
+cross_listed_codes: []
+course_title: "Advanced Structural Dynamics and Acoustics (13.811)"
+course_slug: "2-067-advanced-structural-dynamics-and-acoustics-13-811-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. David Battle"
+  - "Prof. Henrik Schmidt"
+  - "Prof. Tomasz Wierzbicki"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Solid Mechanics"
+  - "Ocean Engineering"
+  - "Ocean Structures"
+  - "Science"
+  - "Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Solid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Ocean Structures"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course begins with the foundations of 3D elasticity, fluid and elastic wave equations, elastic and plastic waves in rods and beams, waves in plates, and dynamics and acoustics of cylindrical shells. The course considers acoustic fluids effects such as radiation and scattering by submerged plates and shells, and interaction between structural elements. Finally, it covers the response of plates and shells to high-intensity loads, dynamic plasticity and fracture, and structural damage caused by implosive and impact loads. This course was originally offered in Course 13 (Department of Ocean Engineering) as 13.811. In 2005, ocean engineering subjects became part of Course 2 (Department of Mechanical Engineering), and this course was renumbered 2.067.
+course_url: "https://ocw.mit.edu/courses/2-067-advanced-structural-dynamics-and-acoustics-13-811-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/2-067-advanced-structural-dynamics-and-acoustics-13-811-spring-2004/b03d777bb9c60756e26e5339a49a85f2_2-067s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

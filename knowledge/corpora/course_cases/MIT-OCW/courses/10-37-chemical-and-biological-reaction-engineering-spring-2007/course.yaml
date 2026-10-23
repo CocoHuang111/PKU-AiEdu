@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-10-37-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.37"
+cross_listed_codes: []
+course_title: "Chemical and Biological Reaction Engineering"
+course_slug: "10-37-chemical-and-biological-reaction-engineering-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. K. Dane Wittrup"
+  - "Prof. William Green, Jr."
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Chemical Engineering"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties: []
+      - name: "Chemical Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course applies the concepts of reaction rate, stoichiometry and equilibrium to the analysis of chemical and biological reacting systems, derivation of rate expressions from reaction mechanisms and equilibrium or steady state assumptions, design of chemical and biochemical reactors via synthesis of chemical kinetics, transport phenomena, and mass and energy balances. Topics covered include: chemical/biochemical pathways; enzymatic, pathway, and cell growth kinetics; batch, plug flow and well-stirred reactors for chemical reactions and cultivations of microorganisms and mammalian cells; heterogeneous and enzymatic catalysis; heat and mass transport in reactors, including diffusion to and within catalyst particles and cells or immobilized enzymes.
+course_url: "https://ocw.mit.edu/courses/10-37-chemical-and-biological-reaction-engineering-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/10-37-chemical-and-biological-reaction-engineering-spring-2007/bccea16fcc804939417af606da191833_10-37s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

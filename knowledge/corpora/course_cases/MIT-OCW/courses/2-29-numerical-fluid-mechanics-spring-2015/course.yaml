@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-2-29-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.29"
+cross_listed_codes: []
+course_title: "Numerical Fluid Mechanics"
+course_slug: "2-29-numerical-fluid-mechanics-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Pierre Lermusiaux"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Mathematics"
+  - "Computation"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Programming Assignments"
+  - "Projects"
+description: |
+  This course is an introduction to numerical methods and MATLAB®: Errors, condition numbers and roots of equations. Topics covered include Navier-Stokes; direct and iterative methods for linear systems; finite differences for elliptic, parabolic and hyperbolic equations; Fourier decomposition, error analysis and stability; high-order and compact finite-differences; finite volume methods; time marching methods; Navier-Stokes solvers; grid generation; finite volumes on complex geometries; finite element methods; spectral methods; boundary element and panel methods; turbulent flows; boundary layers; and Lagrangian coherent structures (LCSs). Prof. Pierre Lermusiaux is very grateful to the teaching assistants Dr. Matt Ueckermann, Dr. Tapovan Lolla, Mr. Jing Lin, and Mr. Arpit Agarwal for their contributions to the course over the years.
+course_url: "https://ocw.mit.edu/courses/2-29-numerical-fluid-mechanics-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/2-29-numerical-fluid-mechanics-spring-2015/a1736dffb564485d6115d3694f0dfb3c_2-29s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

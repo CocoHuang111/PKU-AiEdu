@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-715-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.715"
+cross_listed_codes:
+  - "CMS.871"
+course_title: "Media in Cultural Context"
+course_slug: "21l-715-media-in-cultural-context-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Literature"
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Joshua Green"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Fine Arts"
+  - "Media Studies"
+  - "Humanities"
+  - "Literature"
+  - "Criticism"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the international trade in television text, considering the ways in which ‘foreign’ programs find places within ‘domestic’ schedules. Looking at the life television texts maintain outside of their home market, this course examines questions of globalization and national cultures of production and reception. Students will be introduced to a range of positions about the nature of international textual trade, including economic arguments about the structuring of international markets and ethnographic studies about the role imported content plays in the formation of hybrid national identities. Students will be encouraged to consider the role American content is made to play in non-American markets.
+course_url: "https://ocw.mit.edu/courses/21l-715-media-in-cultural-context-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/21l-715-media-in-cultural-context-spring-2007/98e0e894ecc208b0782fe73ae572c16d_21l-715s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

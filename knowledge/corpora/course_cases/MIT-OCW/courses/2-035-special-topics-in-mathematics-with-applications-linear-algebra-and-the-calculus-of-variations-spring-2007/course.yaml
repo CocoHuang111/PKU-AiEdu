@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-2-035-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.035"
+cross_listed_codes: []
+course_title: "Special Topics in Mathematics with Applications: Linear Algebra and the Calculus of Variations"
+course_slug: "2-035-special-topics-in-mathematics-with-applications-linear-algebra-and-the-calculus-of-variations-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Rohan Abeyaratne"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Solid Mechanics"
+  - "Mathematics"
+  - "Applied Mathematics"
+  - "Calculus"
+  - "Linear Algebra"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+          - "Solid Mechanics"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Calculus"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+description: |
+  This course forms an introduction to a selection of mathematical topics that are not covered in traditional mechanical engineering curricula, such as differential geometry, integral geometry, discrete computational geometry, graph theory, optimization techniques, calculus of variations and linear algebra. The topics covered in any particular year depend on the interest of the students and instructor. Emphasis is on basic ideas and on applications in mechanical engineering. This year, the subject focuses on selected topics from linear algebra and the calculus of variations. It is aimed mainly (but not exclusively) at students aiming to study mechanics (solid mechanics, fluid mechanics, energy methods etc.), and the course introduces some of the mathematical tools used in these subjects. Applications are related primarily (but not exclusively) to the microstructures of crystalline solids.
+course_url: "https://ocw.mit.edu/courses/2-035-special-topics-in-mathematics-with-applications-linear-algebra-and-the-calculus-of-variations-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/2-035-special-topics-in-mathematics-with-applications-linear-algebra-and-the-calculus-of-variations-spring-2007/3796178fddab20ea7c5716e686252d29_2-035s07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

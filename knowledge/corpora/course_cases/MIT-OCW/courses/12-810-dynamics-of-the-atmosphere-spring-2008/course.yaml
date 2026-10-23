@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-12-810-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.810"
+cross_listed_codes: []
+course_title: "Dynamics of the Atmosphere"
+course_slug: "12-810-dynamics-of-the-atmosphere-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Richard Lindzen"
+subject_primary: "Ocean Engineering"
+subject_secondary:
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Geophysics"
+  - "Planetary Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geophysics"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course begins with a study of the role of dynamics in the general physics of the atmosphere, the consideration of the differences between modeling and approximation, and the observed large-scale phenomenology of the atmosphere. Only then are the basic equations derived in rigorous manner. The equations are then applied to important problems and methodologies in meteorology and climate, with discussions of the history of the topics where appropriate. Problems include the Hadley circulation and its role in the general circulation, atmospheric waves including gravity and Rossby waves and their interaction with the mean flow, with specific applications to the stratospheric quasi-biennial oscillation, tides, the super-rotation of Venus’ atmosphere, the generation of atmospheric turbulence, and stationary waves among other problems. The quasi-geostrophic approximation is derived, and the resulting equations are used to examine the hydrodynamic stability of the circulation with applications ranging from convective adjustment to climate.
+course_url: "https://ocw.mit.edu/courses/12-810-dynamics-of-the-atmosphere-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/12-810-dynamics-of-the-atmosphere-spring-2008/dfc5f0e611a429dfccb914e4eed21e14_12-810s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-3-052-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.052"
+cross_listed_codes: []
+course_title: "Nanomechanics of Materials and Biomaterials"
+course_slug: "3-052-nanomechanics-of-materials-and-biomaterials-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Christine Ortiz"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Materials Science and Engineering"
+  - "Nanotechnology"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+  - "Physics"
+  - "Classical Mechanics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+      - name: "Materials Science and Engineering"
+        specialties: []
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Simulation Videos"
+  - "Written Assignments with Examples"
+description: |
+  This course focuses on the latest scientific developments and discoveries in the field of nanomechanics, the study of forces and motion on extremely tiny (10 \-9 m) areas of synthetic and biological materials and structures. At this level, mechanical properties are intimately related to chemistry, physics, and quantum mechanics. Most lectures will consist of a theoretical component that will then be compared to recent experimental data (case studies) in the literature. The course begins with a series of introductory lectures that describes the normal and lateral forces acting at the atomic scale. The following discussions include experimental techniques in high resolution force spectroscopy, atomistic aspects of adhesion, nanoindentation, molecular details of fracture, chemical force microscopy, elasticity of single macromolecular chains, intermolecular interactions in polymers, dynamic force spectroscopy, biomolecular bond strength measurements, and molecular motors.
+course_url: "https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/"
+image_url: "https://ocw.mit.edu/courses/3-052-nanomechanics-of-materials-and-biomaterials-spring-2007/a4200e84460fe7e4a8f59ac7494e3b69_3-052s07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

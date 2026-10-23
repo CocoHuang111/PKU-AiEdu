@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-remote-teaching-chemical-engineering-thermodynamics"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Remote Teaching: Chemical Engineering Thermodynamics 10.213"
+slug: "remote-teaching-chemical-engineering-thermodynamics"
+course_codes:
+  - "10.213"
+departments:
+  - "Chemical Engineering (Course 10)"
+instructors:
+  - "William Tisdale"
+  - "Christopher Love"
+digital_innovations_tools:
+  - "Remote Teaching"
+  - "Piazza"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/remote-teaching-chemical-engineering-thermodynamics"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "afa74b112d6973f55f1c7547018acbe4de9c7adfe7a083742528f4571247dae7"

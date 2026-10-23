@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-4-440-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.440"
+cross_listed_codes:
+  - "4.462"
+course_title: "Basic Structural Design"
+course_slug: "4-440-basic-structural-design-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Ochsendorf"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Structural Engineering"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Structural Engineering"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Exams"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course provides students with a basic knowledge of structural analysis and design for buildings, bridges and other structures. The course emphasizes the historical development of structural form and the evolution of structural design knowledge, from Gothic cathedrals to long span suspension bridges. Students will investigate the behavior of structural systems and elements through design exercises, case studies, and load testing of models. Students will design structures using timber, masonry, steel, and concrete and will gain an appreciation of the importance of structural design today, with an emphasis on environmental impact of large scale construction.
+course_url: "https://ocw.mit.edu/courses/4-440-basic-structural-design-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/4-440-basic-structural-design-spring-2009/bc484a2f7a48bbbfbd7078a6b3a5f31b_4-440s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

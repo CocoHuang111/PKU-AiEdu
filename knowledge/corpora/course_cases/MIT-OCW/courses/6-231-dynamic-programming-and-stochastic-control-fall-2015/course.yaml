@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-6-231-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.231"
+cross_listed_codes: []
+course_title: "Dynamic Programming and Stochastic Control"
+course_slug: "6-231-dynamic-programming-and-stochastic-control-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dimitri Bertsekas"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+  - "Systems Engineering"
+  - "Systems Optimization"
+  - "Mathematics"
+  - "Discrete Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Discrete Mathematics"
+        specialties: []
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Other Video"
+  - "Problem Sets"
+description: |
+  The course covers the basic models and solution techniques for problems of sequential decision making under uncertainty (stochastic control). We will consider optimal control of a dynamical system over both a finite and an infinite number of stages. This includes systems with finite or infinite state spaces, as well as perfectly or imperfectly observed systems. We will also discuss approximation methods for problems involving large state spaces. Applications of dynamic programming in a variety of fields will be covered in recitations.
+course_url: "https://ocw.mit.edu/courses/6-231-dynamic-programming-and-stochastic-control-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/6-231-dynamic-programming-and-stochastic-control-fall-2015/b07839d7d388c37c981c3e2f78600c27_6-231f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

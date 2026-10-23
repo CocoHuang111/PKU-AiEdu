@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-es-292-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.292"
+cross_listed_codes: []
+course_title: "Writing Workshop"
+course_slug: "es-292-writing-workshop-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Jessica Young"
+subject_primary: "Literature"
+subject_secondary:
+  - "Creative Writing"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Creative Writing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  MIT students are challenged daily to solve for x, to complete four problem sets, two papers, and prepare for an exam worth 30% of their grade… all in one night. When they do stop to breathe, it’s for a shower or a meal. What does this have to do with creative writing? Everything. Creative writing and MIT go together better than you might imagine.
+course_url: "https://ocw.mit.edu/courses/es-292-writing-workshop-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/es-292-writing-workshop-spring-2008/79cfc52b8de45ecde96030fe19d142d8_es-292s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

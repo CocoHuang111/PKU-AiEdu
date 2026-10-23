@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-es-113-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.113"
+cross_listed_codes: []
+course_title: "Ancient Greek Philosophy and Mathematics"
+course_slug: "es-113-ancient-greek-philosophy-and-mathematics-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Lee Perlman"
+subject_primary: "History"
+subject_secondary:
+  - "Ancient History"
+  - "History of Science and Technology"
+  - "Literature"
+  - "Classics"
+  - "Philosophy"
+  - "Mathematics"
+  - "Mathematical Logic"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Ancient History"
+          - "History of Science and Technology"
+      - name: "Literature"
+        specialties:
+          - "Classics"
+      - name: "Philosophy"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Mathematical Logic"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the relationship between ancient Greek philosophy and mathematics. We investigate how ideas of definition, reason, argument and proof, rationality / irrationality, number, quality and quantity, truth, and even the idea of an idea were shaped by the interplay of philosophic and mathematical inquiry. The course examines how discovery of the incommensurability of magnitudes challenged the Greek presumption that the cosmos is fully understandable. Students explore the influence of mathematics on ancient Greek ethical theories. We read such authors as: Euclid, Plato, Aristotle, Nicomachus, Theon of Smyrna, Bacon, Descartes, Dedekind, and Newton.
+course_url: "https://ocw.mit.edu/courses/es-113-ancient-greek-philosophy-and-mathematics-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/es-113-ancient-greek-philosophy-and-mathematics-spring-2016/7b7baef25cd4cc0cb0d17c89b72b6e3b_es-113s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

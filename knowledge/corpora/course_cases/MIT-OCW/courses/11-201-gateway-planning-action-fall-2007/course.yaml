@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-11-201-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.201"
+cross_listed_codes: []
+course_title: "Gateway: Planning Action"
+course_slug: "11-201-gateway-planning-action-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Xavier de Souza Briggs"
+subject_primary: "Urban Studies"
+subject_secondary:
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course introduces incoming students in the Master in City Planning (MCP) program to the theory and history of planning in the public interest. It relies primarily on challenging real-world cases to highlight persistent dilemmas: the power and limits of planning, the multiple roles in which planners find themselves in communities around the globe, and the political, ethical, and practical dilemmas that planners face as they try to be effective. As such, the course provides an introduction to the major ideas and debates that define what the field labels “planning theory,” as well as a (necessarily) condensed global history of modern planning. Courses in planning history, politics, and ethics—often several of them—are required in all accredited graduate programs in planning in the U.S. Gateway: Planning Action combines those contents, with a stronger focus on real-world cases than more conventional lecture-based planning theory and history courses at other schools. It also adds several opportunities to strengthen hands-on professional competencies, especially in communication.
+course_url: "https://ocw.mit.edu/courses/11-201-gateway-planning-action-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/11-201-gateway-planning-action-fall-2007/f60dbd84b5a7944959ee6d507b161906_11-201f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-12-113-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.113"
+cross_listed_codes: []
+course_title: "Structural Geology"
+course_slug: "12-113-structural-geology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. B. Clark Burchfiel"
+  - "Christopher Studnicki-Gizbert"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geology"
+  - "Geophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+          - "Geophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Lecture Notes"
+description: |
+  Structural geology is the study of processes and products of rock deformation. This course introduces the techniques of structural geology through a survey of the mechanics of rock deformation, a survey of the features and geometries of faults and folds, and techniques of strain analysis. Regional structural geology and tectonics are introduced. Class lectures are supplemented by lab exercises and demonstrations as well as field trips to local outcrops.
+course_url: "https://ocw.mit.edu/courses/12-113-structural-geology-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/12-113-structural-geology-fall-2005/f74a5fa1a6e9c9450ad17694162182e6_12-113f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

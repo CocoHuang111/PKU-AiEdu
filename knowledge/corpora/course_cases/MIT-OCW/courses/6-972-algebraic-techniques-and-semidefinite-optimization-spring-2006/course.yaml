@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-6-972-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.972"
+cross_listed_codes: []
+course_title: "Algebraic Techniques and Semidefinite Optimization"
+course_slug: "6-972-algebraic-techniques-and-semidefinite-optimization-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Pablo Parrilo"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Systems Optimization"
+  - "Mathematics"
+  - "Algebra and Number Theory"
+  - "Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Optimization"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This research-oriented course will focus on algebraic and computational techniques for optimization problems involving polynomial equations and inequalities with particular emphasis on the connections with semidefinite optimization. The course will develop in a parallel fashion several algebraic and numerical approaches to polynomial systems, with a view towards methods that simultaneously incorporate both elements. We will study both the complex and real cases, developing techniques of general applicability, and stressing convexity-based ideas, complexity results, and efficient implementations. Although we will use examples from several engineering areas, particular emphasis will be given to those arising from systems and control applications.
+course_url: "https://ocw.mit.edu/courses/6-972-algebraic-techniques-and-semidefinite-optimization-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/6-972-algebraic-techniques-and-semidefinite-optimization-spring-2006/58d50c96bbb189caee7a357d7537f73c_6-972s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

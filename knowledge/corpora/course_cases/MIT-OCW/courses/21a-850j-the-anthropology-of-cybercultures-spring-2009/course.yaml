@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-850j-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.850J"
+cross_listed_codes:
+  - "STS.484J"
+course_title: "The Anthropology of Cybercultures"
+course_slug: "21a-850j-the-anthropology-of-cybercultures-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Lucy Suchman"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Digital Media"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Ethnography"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course explores a range of contemporary scholarship oriented to the study of ‘cybercultures,’ with a focus on research inspired by ethnographic and more broadly anthropological perspectives. Taking anthropology as a resource for cultural critique, the course will be organized through a set of readings chosen to illustrate central topics concerning the cultural and material practices that comprise digital technologies. We’ll examine social histories of automata and automation; the trope of the ‘cyber’ and its origins in the emergence of cybernetics during the last century; cybergeographies and politics; robots, agents and humanlike machines; bioinformatics and artificial life; online sociality and the cyborg imaginary; ubiquitous and mobile computing; ethnographies of research and development; and geeks, gamers and hacktivists. We’ll close by considering the implications for all of these topics of emerging reconceptualizations of sociomaterial relations, informed by feminist science and technology studies.
+course_url: "https://ocw.mit.edu/courses/21a-850j-the-anthropology-of-cybercultures-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/21a-850j-the-anthropology-of-cybercultures-spring-2009/40fa3e4b5b07dba8e8ea4989091af0fa_21a-850js09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

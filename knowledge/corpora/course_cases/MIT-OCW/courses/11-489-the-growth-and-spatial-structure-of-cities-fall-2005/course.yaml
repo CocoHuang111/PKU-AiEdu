@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-11-489-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.489"
+cross_listed_codes: []
+course_title: "The Growth and Spatial Structure of Cities"
+course_slug: "11-489-the-growth-and-spatial-structure-of-cities-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Diane Davis"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Urban Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties: []
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course examines the economic, political, social, and spatial dynamics of urban growth and decline in cities and their key component areas (downtown, suburbs, etc.). Topics include impacts of industrialization, technology, politics, and social practices on cities. Students will examine the role of public and private sector activities, ranging from zoning and subsidies to infrastructure development and real estate investment, in affecting urban growth and decline. Readings are both theoretical and empirical, with considerable thought paid to comparative and historical differences.
+course_url: "https://ocw.mit.edu/courses/11-489-the-growth-and-spatial-structure-of-cities-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/11-489-the-growth-and-spatial-structure-of-cities-fall-2005/0830d39ae0904e7866a8cb2047c29892_11-489f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

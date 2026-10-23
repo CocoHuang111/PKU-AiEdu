@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-res-18-005-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.18-005"
+cross_listed_codes: []
+course_title: "Highlights of Calculus"
+course_slug: "res-18-005-highlights-of-calculus-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gilbert Strang"
+subject_primary: "Calculus"
+subject_secondary:
+  - "Differential Equations"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Calculus"
+        specialties: []
+      - name: "Differential Equations"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+description: |
+  Highlights of Calculus is a series of short videos that introduces the basics of calculus—how it works and why it is important. The intended audience is high school students, college students, or anyone who might need help understanding the subject. The series is divided into three sections: Introduction Why Professor Strang created these videos How to use the materials Highlights of Calculus Five videos reviewing the key topics and ideas of calculus Applications to real-life situations and problems Additional summary slides and practice problems Derivatives Twelve videos focused on differential calculus More applications to real-life situations and problems Additional summary slides and practice problems About the Instructor Professor Gilbert Strang is a renowned mathematics professor who has taught at MIT since 1962. Read more about Prof. Strang . Acknowledgements Special thanks to Professor J.C. Nave for his help and advice on the development and recording of this program. The video editing was funded by the Lord Foundation of Massachusetts.
+course_url: "https://ocw.mit.edu/courses/res-18-005-highlights-of-calculus-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/res-18-005-highlights-of-calculus-spring-2010/463a728bd2bbd5853cf04e6a3edafc0f_res-18-005s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

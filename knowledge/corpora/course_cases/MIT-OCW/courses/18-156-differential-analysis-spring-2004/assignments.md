@@ -1,0 +1,18 @@
+- Source: https://ocw.mit.edu/courses/18-156-differential-analysis-spring-2004/pages/assignments/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Assignments
+
+There are only two assignments for this course, due in the lecture sessions listed in the table below. They are from the following two texts:
+
+Jost, Jurgen. *Partial Differential Equations.* New York: Springer-Verlag, 2002. ISBN: 0387954287.
+
+Gilbarg, David, and Neil Trudinger. *Elliptic Partial Differential Equations of Second Order.* 2nd ed. Berlin: Springer-Verlag, 1983.
+
+| LEC # | ASSIGNMENTS |
+| --- | --- |
+| 6 | Homework 1 - Jost Chapter 1: 1, 4, 5, 7, 8, 9 |
+| 11 | Homework 2 - Gilbarg-Trudinger Chapter 4: 4.5, 4.9 |

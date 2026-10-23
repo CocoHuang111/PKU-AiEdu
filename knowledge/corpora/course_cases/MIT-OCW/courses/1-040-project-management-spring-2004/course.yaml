@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-1-040-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.040"
+cross_listed_codes:
+  - "1.401J"
+  - "ESD.018J"
+course_title: "Project Management"
+course_slug: "1-040-project-management-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Nathaniel Osgood"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Civil Engineering"
+  - "Construction Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Construction Management"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects"
+description: |
+  1.040 covers three important aspects of construction project management: the theory, methods and quantitative tools used to effectively plan, organize, and control construction projects; efficient management methods revealed through practice and research; and hands-on, practical project management knowledge from on-site situations and field trips. The course relies on a basic project management framework in which the project life-cycle is broken into organizing, planning, monitoring, controlling and learning from old and current construction projects. Within the framework, students learn the methodologies and tools necessary for each aspect of the process as well as the theories upon which these are built. By the end of the term they are able to adapt and apply the framework to effectively manage a construction project in an Architecture/Engineering/Construction (A/E/C) organization.
+course_url: "https://ocw.mit.edu/courses/1-040-project-management-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/1-040-project-management-spring-2004/ed78302ef0194f93b950119b5e7e24f5_1-040s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

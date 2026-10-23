@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-3-064-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.064"
+cross_listed_codes: []
+course_title: "Polymer Engineering"
+course_slug: "3-064-polymer-engineering-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Roylance"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Polymers"
+  - "Materials Science and Engineering"
+  - "Polymeric Materials"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Polymers"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Polymeric Materials"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course offers and overview of engineering analysis and design techniques for synthetic polymers. Treatment of materials properties selection, mechanical characterization, and processing in design of load-bearing and environment-compatible structures are covered.
+course_url: "https://ocw.mit.edu/courses/3-064-polymer-engineering-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/3-064-polymer-engineering-fall-2003/8c3fa9c7a6607d89fd79aa6651ae371c_3-064f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

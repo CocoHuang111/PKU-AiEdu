@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-participatory-action-research-class-improve-teaching-across-campus"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Participatory Action Research in Class to Improve Teaching Across Campus"
+slug: "participatory-action-research-class-improve-teaching-across-campus"
+source_url: "https://crlt.umich.edu/participatory-action-research-class-improve-teaching-across-campus"
+language: "en"
+published: null
+awarded_year: "2025"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "bdeec0d1aa48b336b81f202a6b641ae21e49b028a453af436677d79fac38992f"

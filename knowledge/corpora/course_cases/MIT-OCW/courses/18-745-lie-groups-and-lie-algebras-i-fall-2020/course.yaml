@@ -1,0 +1,57 @@
+schema_version: "1.0"
+course_id: "mitocw-18-745-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.745"
+cross_listed_codes: []
+course_title: "Lie Groups and Lie Algebras I"
+course_slug: "18-745-lie-groups-and-lie-algebras-i-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Pavel Etingof"
+subject_primary: "Algebra and Number Theory"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Open Textbooks"
+  - "Problem Sets"
+description: |
+  This course is the first half of the year-long introductory graduate sequence 18.745/18.755 on Lie groups and Lie algebras. Topics include foundations of the theory of Lie groups and Lie algebras; theorems of Engel and Lie; the universal enveloping algebra, the Poincare-Birkhoff-Witt theorem; free Lie algebras; the Campbell-Hausdorff formula; classification and structure of finite dimensional complex simple Lie algebras; their finite dimensional representations; and the Weyl character formula.
+course_url: "https://ocw.mit.edu/courses/18-745-lie-groups-and-lie-algebras-i-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/18-745-lie-groups-and-lie-algebras-i-fall-2020/mit18_745_f20.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

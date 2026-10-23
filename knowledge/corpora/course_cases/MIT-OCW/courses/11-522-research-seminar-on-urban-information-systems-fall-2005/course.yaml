@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-11-522-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.522"
+cross_listed_codes: []
+course_title: "Research Seminar on Urban Information Systems"
+course_slug: "11-522-research-seminar-on-urban-information-systems-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joseph Ferreira"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Data Mining"
+  - "Graphics and Visualization"
+  - "Social Science"
+  - "Public Administration"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+          - "Graphics and Visualization"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties: []
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Seminar participants and invited guests will lead critical discussions of current literature and ongoing research. Each student will be responsible for identifying, reviewing, and presenting one structured discussion of articles from the current literature that are relevant to their research topic. The remaining time will be spent working on individual projects or thesis proposals. This fall, the seminar will focus on the following core issues that underlie most implementations of urban information systems and decision support tools: the sustainable acquisition and representation of urban knowledge; the emergent technological infrastructure for supporting metropolitan decision-making; and the innovative organizational and institutional arrangements that can take advantage of modern urban information systems. ArcGIS/ArcMap/ArcInfo Graphical User Interface is the intellectual property of ESRI and is used herein with permission. Copyright © ESRI. All rights reserved.
+course_url: "https://ocw.mit.edu/courses/11-522-research-seminar-on-urban-information-systems-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/11-522-research-seminar-on-urban-information-systems-fall-2005/26abdd01f0c402f746ed752b5e978562_11-522f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

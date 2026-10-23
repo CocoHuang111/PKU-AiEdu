@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-17-951-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.951"
+cross_listed_codes: []
+course_title: "Special Graduate Topic in Political Science: Public Opinion"
+course_slug: "17-951-special-graduate-topic-in-political-science-public-opinion-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Adam Berinsky"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+  - "Public Administration"
+  - "Public Policy"
+  - "Sociology"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  This course provides an introduction to the vast literature devoted to public opinion. In the next 12 weeks, we will survey the major theoretical approaches and empirical research in the field of political behavior (though we will only tangentially discuss political participation and voting). For the most part we will focus on American public opinion, though some of the work we will read is comparative in nature.
+course_url: "https://ocw.mit.edu/courses/17-951-special-graduate-topic-in-political-science-public-opinion-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/17-951-special-graduate-topic-in-political-science-public-opinion-spring-2004/e3fddad6fb5965c573e1ba6c3c96381f_17-951s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

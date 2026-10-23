@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-360-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.360"
+cross_listed_codes:
+  - "CMS.860"
+course_title: "Introduction to Civic Media"
+course_slug: "cms-360-introduction-to-civic-media-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sasha Costanza-Chock"
+  - "Rebecca Hurwitz"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This course examines civic media in comparative, transnational and historical perspectives through the use of various theoretical tools, research approaches, and project design methods.
+course_url: "https://ocw.mit.edu/courses/cms-360-introduction-to-civic-media-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/cms-360-introduction-to-civic-media-fall-2012/d69cdf029083859a4b7531de2d7ebaa8_cms-360f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

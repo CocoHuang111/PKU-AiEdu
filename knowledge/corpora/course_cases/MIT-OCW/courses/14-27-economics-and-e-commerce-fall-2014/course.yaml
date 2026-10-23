@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-14-27-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.27"
+cross_listed_codes: []
+course_title: "Economics and E-Commerce"
+course_slug: "14-27-economics-and-e-commerce-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Sara Ellison"
+subject_primary: "Economics"
+subject_secondary:
+  - "Industrial Organization"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Written Assignments with Examples"
+description: |
+  This course uses theoretical models and empirical studies to help understand the economics behind various internet businesses. We will begin with a discussion of relevant topics from industrial organization (IO) including monopoly pricing, price discrimination, product differentiation, and barriers to entry. The main part of the course will be a discussion of a number of online businesses. In the context of those businesses, we will discuss extensions and applications of the ideas from the first section of the course.
+course_url: "https://ocw.mit.edu/courses/14-27-economics-and-e-commerce-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/14-27-economics-and-e-commerce-fall-2014/6b9dbb10a00fae1497352c94121eb0de_14-27f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

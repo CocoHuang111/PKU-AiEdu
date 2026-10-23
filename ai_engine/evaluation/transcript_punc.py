@@ -7,7 +7,14 @@ LLM 不可用或行数对不上时，退回规则断句，评估不中断。
 from __future__ import annotations
 
 import re
+import hashlib
+import json
+import time
 from dataclasses import replace
+from pathlib import Path
+
+from .. import checkpoints
+from ..config import settings
 
 from ..providers import ASRResult, ASRSegment, ChatMessage, ProviderError, get_llm
 from .text_features import CHINESE_CHAR
@@ -152,12 +159,19 @@ def punctuate_texts(
     texts: list[str],
     llm_fn=None,
     chunk_chars: int = CHUNK_CHARS,
+    progress_callback=None,
+    budget_seconds: float = 180,
+    checkpoint_dir: Path | None = None,
 ) -> list[str]:
     """给若干片段补标点，顺序与条数不变。"""
     if not texts:
         return []
     if not any(needs_punctuation(t) for t in texts):
+        if progress_callback:
+            progress_callback(len(texts), len(texts), {"skipped": True})
         return list(texts)
+
+    started = time.monotonic()
 
     def call_llm(prompt: str) -> str:
         if llm_fn:
@@ -165,11 +179,12 @@ def punctuate_texts(
         return get_llm().chat(
             [ChatMessage("system", SYSTEM), ChatMessage("user", prompt)],
             temperature=0.1,
-            timeout=60,
+            timeout=max(1, min(60, budget_seconds - (time.monotonic() - started))),
         )
 
     result = list(texts)
     i = 0
+    batch_index = 0
     while i < len(texts):
         batch: list[str] = []
         idxs: list[int] = []
@@ -179,30 +194,54 @@ def punctuate_texts(
             idxs.append(i)
             size += len(texts[i])
             i += 1
-        try:
-            raw = call_llm(USER_TMPL.format(body=_format_batch(batch)))
-            parsed = parse_numbered_lines(raw, len(batch))
-        except (ProviderError, Exception):
+        signature = hashlib.sha256(json.dumps(
+            [2, batch, budget_seconds, settings.mode, settings.section("llm")],
+            ensure_ascii=False, sort_keys=True,
+        ).encode()).hexdigest()
+        path = checkpoint_dir / f"{batch_index:05d}.json" if checkpoint_dir else None
+        saved = checkpoints.read(path, signature) if path else None
+        detail = {"batch": batch_index + 1}
+        if saved is not None:
+            filled = saved["texts"]
+            detail.update(saved["detail"], cached=True)
+        elif not any(needs_punctuation(t) for t in batch):
+            filled = batch
+            detail["skipped"] = True
+        else:
             parsed = None
-        filled = _apply_batch(batch, parsed)
+            if time.monotonic() - started < budget_seconds:
+                try:
+                    raw = call_llm(USER_TMPL.format(body=_format_batch(batch)))
+                    parsed = parse_numbered_lines(raw, len(batch))
+                except Exception:
+                    pass
+            else:
+                detail["budget_exhausted"] = True
+            filled = _apply_batch(batch, parsed)
+            detail["rule_fallback"] = parsed is None
+        if path and saved is None:
+            checkpoints.write(path, signature, {"texts": filled, "detail": detail})
         for j, text in zip(idxs, filled):
             result[j] = text
+        batch_index += 1
+        if progress_callback:
+            progress_callback(i, len(texts), detail)
     return result
 
 
-def punctuate_asr_result(result: ASRResult, llm_fn=None) -> ASRResult:
+def punctuate_asr_result(result: ASRResult, llm_fn=None, **kwargs) -> ASRResult:
     """补片段文本里的标点，重拼 full_text；时间戳与置信度不动。"""
     if not result.segments:
         text = result.text or ""
         if not needs_punctuation(text):
             return result
-        filled = punctuate_texts([text], llm_fn=llm_fn)[0]
+        filled = punctuate_texts([text], llm_fn=llm_fn, **kwargs)[0]
         return replace(result, text=filled)
 
     old = [s.text for s in result.segments]
     if not any(needs_punctuation(t) for t in old) and not needs_punctuation(result.text or ""):
         return result
-    new_texts = punctuate_texts(old, llm_fn=llm_fn)
+    new_texts = punctuate_texts(old, llm_fn=llm_fn, **kwargs)
     segments = [
         replace(seg, text=text) for seg, text in zip(result.segments, new_texts)
     ]

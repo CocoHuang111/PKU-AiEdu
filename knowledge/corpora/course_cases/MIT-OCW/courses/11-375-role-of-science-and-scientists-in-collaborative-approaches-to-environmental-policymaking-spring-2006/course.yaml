@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-375-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.375"
+cross_listed_codes: []
+course_title: "Role of Science and Scientists in Collaborative Approaches to Environmental Policymaking"
+course_slug: "11-375-role-of-science-and-scientists-in-collaborative-approaches-to-environmental-policymaking-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Herman Karl"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Public Policy"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Public Policy"
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course examines joint fact-finding within the context of adaptive and ecosystem-based management. Challenges and obstacles to collaborative approaches for deciding environmental and natural resource policy and the institutional changes within federal agencies necessary to utilize joint fact-finding as a means to link science and societal decisions are discussed and reviewed with scientists and managers. Senior-level federal policymakers also participate in these discussions.
+course_url: "https://ocw.mit.edu/courses/11-375-role-of-science-and-scientists-in-collaborative-approaches-to-environmental-policymaking-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/11-375-role-of-science-and-scientists-in-collaborative-approaches-to-environmental-policymaking-spring-2006/c70e7069e6e40d8f2dad0851650cda9f_11-375s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

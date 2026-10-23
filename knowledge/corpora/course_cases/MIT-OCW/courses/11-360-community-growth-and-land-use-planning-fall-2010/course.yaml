@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-360-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.360"
+cross_listed_codes: []
+course_title: "Community Growth and Land Use Planning"
+course_slug: "11-360-community-growth-and-land-use-planning-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Terry Szold"
+  - "Annis Sengupta"
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  This subject explores the techniques, processes, and personal and professional skills required to effectively manage growth and land use change. While primarily focused on the planning practice in the United States, the principles and techniques reviewed and presented may have international application. This course is not for bystanders; it is designed for those who wish to become actively involved or exposed to the planning discipline and profession as it is practiced today, and as it may need to be practiced in the future.
+course_url: "https://ocw.mit.edu/courses/11-360-community-growth-and-land-use-planning-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/11-360-community-growth-and-land-use-planning-fall-2010/7ae2487e43d16e9fb92de879e7644476_11-360f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

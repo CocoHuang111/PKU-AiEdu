@@ -23,6 +23,16 @@ def _csv(name: str) -> list[str]:
     return [item.strip() for item in raw.split(",") if item.strip()]
 
 
+def _positive_int(name: str, default: int) -> int:
+    try:
+        value = int(os.getenv(name) or default)
+    except ValueError as exc:
+        raise ValueError(f"{name} 必须是正整数") from exc
+    if value < 1:
+        raise ValueError(f"{name} 必须是正整数")
+    return value
+
+
 class AppSettings:
     def __init__(self) -> None:
         self.app_env = (os.getenv("APP_ENV") or "development").strip().lower()
@@ -61,6 +71,8 @@ class AppSettings:
         self.cookie_name = (os.getenv("SESSION_COOKIE_NAME") or "pku_session").strip()
         self.login_rate_limit = int(os.getenv("LOGIN_RATE_LIMIT") or 10)
         self.login_rate_window_sec = int(os.getenv("LOGIN_RATE_WINDOW_SEC") or 15 * 60)
+        self.qa_max_concurrency = _positive_int("QA_MAX_CONCURRENCY", 4)
+        self.syllabus_max_concurrency = _positive_int("SYLLABUS_MAX_CONCURRENCY", 2)
 
     @property
     def is_production(self) -> bool:

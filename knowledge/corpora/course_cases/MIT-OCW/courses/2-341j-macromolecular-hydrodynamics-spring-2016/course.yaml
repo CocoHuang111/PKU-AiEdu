@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-2-341j-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.341J"
+cross_listed_codes:
+  - "10.531J"
+course_title: "Macromolecular Hydrodynamics"
+course_slug: "2-341j-macromolecular-hydrodynamics-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Robert C Armstrong"
+  - "Prof. Gareth McKinley"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Molecular Engineering"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Science"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Molecular Engineering"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The topics cover physical phenomena in polymeric liquids undergoing deformation and flow; kinematics and material functions for complex fluids; techniques of viscometry, rheometry; and linear viscoelastic measurements for polymeric fluids. Also, generalized Newtonian fluids; continuum mechnanics, frame invariance, and convected derivatives for finite strain viscoelasticity; differential and integral constitutive equations for viscoelastic fluids; analytical solutions to isothermal and non-isothermal flow problems; the roles of non-Newtonian viscosity, linear viscoelasticity, normal stresses, elastic recoil, stress relaxation in processing flows; and introduction to molecular theories for dynamics of polymeric fluids. (Extensive class project and presentation required instead of a final exam).
+course_url: "https://ocw.mit.edu/courses/2-341j-macromolecular-hydrodynamics-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/2-341j-macromolecular-hydrodynamics-spring-2016/d1ce14274cf922b8b3f8d09c99e78bea_2-341js16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

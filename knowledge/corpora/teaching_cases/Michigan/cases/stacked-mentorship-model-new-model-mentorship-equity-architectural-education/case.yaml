@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-stacked-mentorship-model-new-model-mentorship-equity-architectural-education"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Stacked Mentorship Model, A New Model of Mentorship for Equity in Architectural Education"
+slug: "stacked-mentorship-model-new-model-mentorship-equity-architectural-education"
+source_url: "https://crlt.umich.edu/stacked-mentorship-model-new-model-mentorship-equity-architectural-education"
+language: "en"
+published: null
+awarded_year: "2024"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "623952e83497d511bae69d2abf79c58ccfee32b72cdf0f54e2c95ac0cfe70dde"

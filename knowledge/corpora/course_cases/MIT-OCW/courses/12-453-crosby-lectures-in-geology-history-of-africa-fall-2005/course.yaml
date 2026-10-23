@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-12-453-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.453"
+cross_listed_codes: []
+course_title: "Crosby Lectures in Geology: History of Africa"
+course_slug: "12-453-crosby-lectures-in-geology-history-of-africa-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Kevin Burke"
+subject_primary: "History"
+subject_secondary:
+  - "African History"
+  - "Science"
+  - "Earth Science"
+  - "Geology"
+  - "Geophysics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "African History"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+          - "Geophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course is a series of presentations on an advanced topic in the field of geology by the visiting William Otis Crosby lecturer. The Crosby lectureship is awarded to a distinguished international scientist each year to introduce new scientific perspectives to the MIT community. This year’s Crosby lecturer is Prof. Kevin Burke. His lecture is about African history. The basic theme is the distinctiveness of the African continent in both the way that it originated 600 million years ago and in the way that it has developed ever since.
+course_url: "https://ocw.mit.edu/courses/12-453-crosby-lectures-in-geology-history-of-africa-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/12-453-crosby-lectures-in-geology-history-of-africa-fall-2005/b7db3bb1cbfcc1640741d01fb2c172cb_12-453f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

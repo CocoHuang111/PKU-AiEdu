@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-online-materials-expand-frequency-subject-offerings"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Online Materials Expand Frequency of Subject Offerings in Physics"
+slug: "online-materials-expand-frequency-subject-offerings"
+course_codes:
+  - "8.S05"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Barton Zwiebach"
+  - "Saif Rayyan"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/online-materials-expand-frequency-subject-offerings"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "f6116cb3982ebacc96510c5f014055aa27f1037cb84b6a017f2c481f3e315941"

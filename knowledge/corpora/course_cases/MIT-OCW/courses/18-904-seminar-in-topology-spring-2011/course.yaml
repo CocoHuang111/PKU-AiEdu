@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-18-904-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.904"
+cross_listed_codes: []
+course_title: "Seminar in Topology"
+course_slug: "18-904-seminar-in-topology-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Andrew Snowden"
+subject_primary: "Topology and Geometry"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course is a seminar in topology. The main mathematical goal is to learn about the fundamental group, homology and cohomology. The main non-mathematical goal is to obtain experience giving math talks.
+course_url: "https://ocw.mit.edu/courses/18-904-seminar-in-topology-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/18-904-seminar-in-topology-spring-2011/d26157d4799e67615995dafb4f02b2b9_18-904s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

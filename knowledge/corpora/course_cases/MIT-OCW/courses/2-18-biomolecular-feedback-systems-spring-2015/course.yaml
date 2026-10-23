@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-2-18-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.18"
+cross_listed_codes:
+  - "2.180"
+course_title: "Biomolecular Feedback Systems"
+course_slug: "2-18-biomolecular-feedback-systems-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Domitilla Del Vecchio"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+  - "Synthetic Biology"
+  - "Mechanical Engineering"
+  - "Dynamics and Control"
+  - "Systems Engineering"
+  - "Systems Design"
+  - "Science"
+  - "Biology"
+  - "Computation and Systems Biology"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+          - "Synthetic Biology"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Computation and Systems Biology"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course focuses on feedback control mechanisms that living organisms implement at the molecular level to execute their functions, with emphasis on techniques to design novel systems with prescribed behaviors. Students will learn how biological functions can be understood and designed using notions from feedback control.
+course_url: "https://ocw.mit.edu/courses/2-18-biomolecular-feedback-systems-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/2-18-biomolecular-feedback-systems-spring-2015/f3c959d8418d34cddbc35a0f520ba738_2-18s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

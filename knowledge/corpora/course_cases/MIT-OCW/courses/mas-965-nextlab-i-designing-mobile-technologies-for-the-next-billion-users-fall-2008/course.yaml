@@ -1,0 +1,88 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-965-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.965"
+cross_listed_codes:
+  - "6.976"
+  - "EC.S06"
+course_title: "NextLab I: Designing Mobile Technologies for the Next Billion Users"
+course_slug: "mas-965-nextlab-i-designing-mobile-technologies-for-the-next-billion-users-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+  - "Electrical Engineering and Computer Science"
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Mr. Jhonatan Rotberg"
+  - "Dr. Luis Sarmenta"
+  - "Dr. Gari Clifford"
+  - "Dr. Richard Fletcher"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Engineering"
+  - "Electrical Engineering"
+  - "Telecommunications"
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+  - "Social Science"
+  - "Sociology"
+  - "Community Development"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+description: |
+  Can you make a cellphone change the world? NextLab is a hands-on year-long design course in which students research, develop and deploy mobile technologies for the next billion mobile users in developing countries. Guided by real-world needs as observed by local partners, students work in multidisciplinary teams on term-long projects, closely collaborating with NGOs and communities at the local level, field practitioners, and experts in relevant fields. Students are expected to leverage technical ingenuity in both mobile and internet technologies together with social insight in order to address social challenges in areas such as health, microfinance, entrepreneurship, education, and civic activism. Students with technically and socially viable prototypes may obtain funding for travel to their target communities, in order to obtain the first-hand feedback necessary to prepare their technologies for full fledged deployment into the real world (subject to guidelines and limitations).
+course_url: "https://ocw.mit.edu/courses/mas-965-nextlab-i-designing-mobile-technologies-for-the-next-billion-users-fall-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/mas-965-nextlab-i-designing-mobile-technologies-for-the-next-billion-users-fall-2008/c09b3c0595785ee0a87fd58615a80266_mas-965f08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

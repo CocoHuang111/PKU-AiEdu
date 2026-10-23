@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-4-205-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.205"
+cross_listed_codes: []
+course_title: "Analysis of Contemporary Architecture"
+course_slug: "4-205-analysis-of-contemporary-architecture-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Mr. Dan Cheng-ta Chen"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural History and Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural History and Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  The goal of this course is to investigate with students backgrounds on some of the pivotal events that have shaped our understanding and approach to architecture. Emphasis of discussion will be primarily on buildings and works of individual architects. Canonical architects, buildings and movements that have exerted significant influences on the development of architecture will be studied in detail. We will visit some of these buildings for a first-hand look and to evaluate for ourselves their significance or lack thereof. As a final project, each student will analyze a building through drawings, text, bibliography and a physical model in a format ready for documentation and exhibition.
+course_url: "https://ocw.mit.edu/courses/4-205-analysis-of-contemporary-architecture-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/4-205-analysis-of-contemporary-architecture-fall-2009/101f7f82705a7b977b8b4137c1bbc7ba_4-205f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

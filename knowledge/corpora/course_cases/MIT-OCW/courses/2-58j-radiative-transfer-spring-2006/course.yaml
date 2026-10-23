@@ -1,0 +1,88 @@
+schema_version: "1.0"
+course_id: "mitocw-2-58j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.58J"
+cross_listed_codes:
+  - "10.74J"
+course_title: "Radiative Transfer"
+course_slug: "2-58j-radiative-transfer-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Chemical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Gang Chen"
+subject_primary: "Climate"
+subject_secondary:
+  - "Combustion"
+  - "Technology"
+  - "Engineering"
+  - "Chemical Engineering"
+  - "Transport Processes"
+  - "Science"
+  - "Physics"
+  - "Electromagnetism"
+  - "Particle Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+      - name: "Combustion"
+        specialties: []
+      - name: "Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+          - "Particle Physics"
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course investigates the principles of thermal radiation and their applications to engineering heat and photon transfer problems. Topics include quantum and classical models of radiative properties of materials, electromagnetic wave theory for thermal radiation, radiative transfer in absorbing, emitting, and scattering media, and coherent laser radiation. Applications cover laser-material interactions, imaging, infrared instrumentation, global warming, semiconductor manufacturing, combustion, furnaces, and high temperature processing.
+course_url: "https://ocw.mit.edu/courses/2-58j-radiative-transfer-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/2-58j-radiative-transfer-spring-2006/82566101ea5c181aecf5ec0e199c65f0_2-58js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

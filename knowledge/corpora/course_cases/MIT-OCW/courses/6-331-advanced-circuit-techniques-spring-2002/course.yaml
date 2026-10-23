@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-6-331-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.331"
+cross_listed_codes: []
+course_title: "Advanced Circuit Techniques"
+course_slug: "6-331-advanced-circuit-techniques-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "James Roberge"
+  - "Dr. Kent Lundberg"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electric Power"
+  - "Electronics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electric Power"
+          - "Electronics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Following a brief classroom discussion of relevant principles, each student in this course completes the paper design of several advanced circuits such as multiplexers, sample-and-holds, gain-controlled amplifiers, analog multipliers, digital-to-analog or analog-to-digital converters, and power amplifiers. One of each student’s designs is presented to the class, and one may be built and evaluated. Associated laboratory assignments emphasize the use of modern analog building blocks. This course is worth 12 Engineering Design Points.
+course_url: "https://ocw.mit.edu/courses/6-331-advanced-circuit-techniques-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/6-331-advanced-circuit-techniques-spring-2002/4303e9e96fe42ab56a3e640d38a44dcc_6-331s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

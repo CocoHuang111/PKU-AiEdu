@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-11-491j-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.491J"
+cross_listed_codes:
+  - "17.176J"
+course_title: "Economic Development, Policy Analysis, and Industrialization"
+course_slug: "11-491j-economic-development-policy-analysis-and-industrialization-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Alice Amsden"
+subject_primary: "Economics"
+subject_secondary:
+  - "Developmental Economics"
+  - "Industrial Organization"
+  - "International Development"
+  - "Public Economics"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+          - "Industrial Organization"
+          - "International Development"
+          - "Public Economics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This class analyzes the theoretical and historical reasons why governments in latecomer countries have intervened with a wide array of policies to foster industrial development at various turning points: the initiation of industrial activity; the diversification of the industrial base; the restructuring of major industrial institutions; and the entry into high-technology sectors.
+course_url: "https://ocw.mit.edu/courses/11-491j-economic-development-policy-analysis-and-industrialization-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/11-491j-economic-development-policy-analysis-and-industrialization-fall-2004/d3dc5070b9af91dcdb2d5c4b18218f26_11-491jf04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

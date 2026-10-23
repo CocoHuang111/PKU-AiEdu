@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-res-15-003-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.15-003"
+cross_listed_codes: []
+course_title: "Shaping the Future of Work (15.662x)"
+course_slug: "res-15-003-shaping-the-future-of-work-15-662x-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Thomas A. Kochan"
+subject_primary: "Industrial Relations and Human Resource Management"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+  - "Labor Economics"
+  - "Public Administration"
+  - "Social Welfare"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "Labor Economics"
+      - name: "Public Administration"
+        specialties:
+          - "Social Welfare"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Videos"
+description: |
+  The goal of this course is to explore and develop plans of action for improving the job and career opportunities for today and tomorrow’s workforce. If we take the right actions we can shape the future of work in ways that meet the needs of workers, families, and their economies and societies. To do so we first have to understand how the world of work is changing, how firms can compete and prosper and support good jobs and careers, and how to update the policies and practices governing the world of work.
+course_url: "https://ocw.mit.edu/courses/res-15-003-shaping-the-future-of-work-15-662x-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/res-15-003-shaping-the-future-of-work-15-662x-spring-2016/a55670dbf5fc5344ca7164f239ab901a_res-15-003s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

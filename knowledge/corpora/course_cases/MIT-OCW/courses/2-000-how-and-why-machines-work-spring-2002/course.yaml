@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-2-000-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.000"
+cross_listed_codes: []
+course_title: "How and Why Machines Work"
+course_slug: "2-000-how-and-why-machines-work-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joseph Smith"
+  - "Prof. Martin Culpepper"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Subject studies how and why machines work, how they are conceived, how they are developed (drawn), and how they are utilized. Students learn from the hands-on experiences of taking things apart mentally and physically, drawing (sketching, 3D CAD) what they envision and observe, taking occasional field trips, and completing an individual term project (concept, creation, and presentation). Emphasis on understanding the physics and history of machines.
+course_url: "https://ocw.mit.edu/courses/2-000-how-and-why-machines-work-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/2-000-how-and-why-machines-work-spring-2002/bca02d3a7d36b448fcde27950d22f93b_2-000s02.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

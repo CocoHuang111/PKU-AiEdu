@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-4-131b-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.131B"
+cross_listed_codes: []
+course_title: "Architectural Design, Level II: Material and Tectonic Transformations: The Herreshoff Museum"
+course_slug: "4-131b-architectural-design-level-ii-material-and-tectonic-transformations-the-herreshoff-museum-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Paul Lukez"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Architectural History and Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Architectural History and Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Projects with Examples"
+description: |
+  This semester students are asked to transform the Hereshoff Museum in Bristol, Rhode Island, through processes of erasure and addition. Hereshoff Manufacturing was recognized as one of the premier builders of America’s Cup racing boats between 1890’s and 1930’s. The studio, however, is about more than the program. It is about land, water, and wind and the search for expressing materially and tectonically the relationships between these principle conditions. That is, where the land is primarily about stasis (docking, anchoring and referencing our locus), water’s fluidity holds the latent promise of movement and freedom. Movement is activated by wind, allowing for negotiating the relationship between water and land.
+course_url: "https://ocw.mit.edu/courses/4-131b-architectural-design-level-ii-material-and-tectonic-transformations-the-herreshoff-museum-fall-2003/"
+image_url: |
+  https://ocw.mit.edu/courses/4-131b-architectural-design-level-ii-material-and-tectonic-transformations-the-herreshoff-museum-fall-2003/04f40391ff47fd20dba373f2de54b434_4-131bf03.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

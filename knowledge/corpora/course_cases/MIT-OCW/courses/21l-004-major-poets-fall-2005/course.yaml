@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-004-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.004"
+cross_listed_codes: []
+course_title: "Major Poets"
+course_slug: "21l-004-major-poets-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Stephen Tapscott"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Poetry"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Poetry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject is an introduction to poetry as a genre; most of our texts are originally written in English. We read poems from the Renaissance through the 17th and 18th centuries, Romanticism, and Modernism. Focus will be on analytic reading, on literary history, and on the development of the genre and its forms; in writing we attend to techniques of persuasion and of honest evidenced sequential argumentation. Poets to be read will include William Shakespeare, Queen Elizabeth, William Wordsworth, John Keats, T.S. Eliot, Langston Hughes, Sylvia Plath, Elizabeth Bishop, and some contemporary writers.
+course_url: "https://ocw.mit.edu/courses/21l-004-major-poets-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/21l-004-major-poets-fall-2005/89491b30845b90f51d07fb037dc6d503_21l-004f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

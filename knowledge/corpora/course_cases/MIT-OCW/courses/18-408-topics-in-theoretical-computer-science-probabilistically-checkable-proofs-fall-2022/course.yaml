@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-18-408-fall-2022"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.408"
+cross_listed_codes: []
+course_title: "Topics in Theoretical Computer Science: Probabilistically Checkable Proofs"
+course_slug: "18-408-topics-in-theoretical-computer-science-probabilistically-checkable-proofs-fall-2022"
+term: "Fall"
+year: 2022
+as_taught_in: "Fall 2022"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Dor Minzer"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Mathematics"
+  - "Algebra and Number Theory"
+  - "Discrete Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  In this course, we will present the theory of Probabilistically Checkable Proofs (PCPs), and prove some fundamental consequences of it as well as more recent advances. More specifically, the first half of the course will be devoted to the (algebraic) proof of the basic PCP Theorem and basic relation to approximation problems. We will then move on to more advanced topics, such as hardness amplification, the long-code framework, the Unique-Games Conjecture and its implications, and the 2-to-2 Games Theorem.
+course_url: "https://ocw.mit.edu/courses/18-408-topics-in-theoretical-computer-science-probabilistically-checkable-proofs-fall-2022/"
+image_url: "https://ocw.mit.edu/courses/18-408-topics-in-theoretical-computer-science-probabilistically-checkable-proofs-fall-2022/18-408f22.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

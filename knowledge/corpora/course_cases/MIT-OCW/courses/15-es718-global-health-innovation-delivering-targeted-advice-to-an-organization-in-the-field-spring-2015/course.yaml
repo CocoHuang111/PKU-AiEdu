@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-15-es718-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.ES718"
+cross_listed_codes: []
+course_title: "Global Health Innovation: Delivering Targeted Advice to an Organization in the Field"
+course_slug: "15-es718-global-health-innovation-delivering-targeted-advice-to-an-organization-in-the-field-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Anjali Sastry"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Innovation"
+  - "Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments with Examples"
+description: |
+  In this three-day workshop, students will get a broad introduction to global health issues. We will look at one particular non-governmental organization in India that works to improve health across the lifespan by empowering existing community resources to provide appropriate physical, psychological and social therapies, focusing on child development, adolescent and youth health, mental health, and chronic disease. This workshop equips student to explore novel ideas and technologies with an inspiring and ground-breaking Indian NGO. Fulfills the Sloan Innovation Period (SIP) elective requirement. SIP occurs at the midpoint of each semester providing students with an intensive week of experiential leadership learning, as well as exposure to groundbreaking faculty work. It allows students to engage in intellectual exploration outside the classroom. SIP degree requirements include core courses in ethics and leadership as well as electives.
+course_url: "https://ocw.mit.edu/courses/15-es718-global-health-innovation-delivering-targeted-advice-to-an-organization-in-the-field-spring-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/15-es718-global-health-innovation-delivering-targeted-advice-to-an-organization-in-the-field-spring-2015/4ddcbaf15d7a201688a953d854618297_15-es718s15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

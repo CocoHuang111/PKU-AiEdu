@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-15-223-fall-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.223"
+cross_listed_codes: []
+course_title: "Global Markets, National Politics and the Competitive Advantage of Firms"
+course_slug: "15-223-global-markets-national-politics-and-the-competitive-advantage-of-firms-fall-2011"
+term: "Fall"
+year: 2011
+as_taught_in: "Fall 2011"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Simon Johnson"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+  - "International Economics"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "International Economics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Projects"
+  - "Written Assignments"
+description: |
+  This course examines opportunities and risks firms face in today’s global market. It provides conceptual tools for analyzing how governments and social institutions influence economic competition among firms embedded in different national settings. Public policies and institutions that shape competitive outcomes are examined through cases and analytical readings on different companies and industries operating in both developed and emerging markets.
+course_url: "https://ocw.mit.edu/courses/15-223-global-markets-national-politics-and-the-competitive-advantage-of-firms-fall-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/15-223-global-markets-national-politics-and-the-competitive-advantage-of-firms-fall-2011/8d73a567f99d5905c28dc182081dbc0b_15-223f11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

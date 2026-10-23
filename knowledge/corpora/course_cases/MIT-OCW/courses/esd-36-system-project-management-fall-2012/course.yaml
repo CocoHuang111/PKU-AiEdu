@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-esd-36-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ESD.36"
+cross_listed_codes: []
+course_title: "System Project Management"
+course_slug: "esd-36-system-project-management-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Olivier de Weck"
+  - "Dr. James Lyneis"
+  - "Prof. Dan Braha"
+subject_primary: "Management"
+subject_secondary:
+  - "Project Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+      - name: "Project Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments"
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  Subject focuses on management principles, methods, and tools to effectively plan and implement successful system and product development projects. Material is divided into four major sections: project preparation, planning, monitoring, and adaptation. Brief review of classical techniques such as CPM and PERT. Emphasis on new methodologies and tools such as Design Structure Matrix (DSM), probabilistic project simulation, as well as project system dynamics (SD). Topics are covered from strategic, tactical, and operational perspectives. Industrial case studies expose factors that are typical drivers of success and failure in complex projects with both hardware and software content. Term projects analyze and evaluate past and ongoing projects in student’s area of interest. Projects used to apply concepts discussed in class.
+course_url: "https://ocw.mit.edu/courses/esd-36-system-project-management-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/esd-36-system-project-management-fall-2012/31aeabfc01f98bab5c1c73b039453dff_esd-36f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

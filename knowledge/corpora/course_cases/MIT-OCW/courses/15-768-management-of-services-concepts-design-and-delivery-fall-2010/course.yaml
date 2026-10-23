@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-15-768-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.768"
+cross_listed_codes: []
+course_title: "Management of Services: Concepts, Design, and Delivery"
+course_slug: "15-768-management-of-services-concepts-design-and-delivery-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles H. Fine"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Supply Chain Management"
+  - "Engineering"
+  - "Computer Science"
+  - "Data Mining"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  15.768 Management of Services: Concepts, Design, and Delivery explores the use of operations tools and perspectives in the service sector, including both for-profit and not-for-profit organizations. The course builds on conceptual frameworks and cases from a wide range of service operations, selected from health care, hospitality, internet services, supply chain, transportation, retailing, food service, entertainment, financial services, humanitarian services, government services, and others.
+course_url: "https://ocw.mit.edu/courses/15-768-management-of-services-concepts-design-and-delivery-fall-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/15-768-management-of-services-concepts-design-and-delivery-fall-2010/9aa06bab204dffa7bbe1181813decee5_15-768f10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,78 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-209-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.209"
+cross_listed_codes: []
+course_title: "America in Depression and War"
+course_slug: "21h-209-america-in-depression-and-war-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Meg Jacobs"
+subject_primary: "History"
+subject_secondary:
+  - "American History"
+  - "Military History"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Political Science"
+  - "American Politics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "Military History"
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course focuses on the Great Depression and World War II and how they led to a major reordering of American politics and society. We will examine how ordinary people experienced these crises and how those experiences changed their outlook on politics and the world around them.
+course_url: "https://ocw.mit.edu/courses/21h-209-america-in-depression-and-war-spring-2012/"
+image_url: "https://ocw.mit.edu/courses/21h-209-america-in-depression-and-war-spring-2012/1393ce67811830362d76a072389f7621_21h-209s12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

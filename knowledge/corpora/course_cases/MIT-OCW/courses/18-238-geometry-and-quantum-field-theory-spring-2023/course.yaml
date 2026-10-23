@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-18-238-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.238"
+cross_listed_codes: []
+course_title: "Geometry and Quantum Field Theory"
+course_slug: "18-238-geometry-and-quantum-field-theory-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Pavel Etingof"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Applied Mathematics"
+  - "Topology and Geometry"
+  - "Science"
+  - "Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Applied Mathematics"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Open Textbooks"
+  - "Problem Sets"
+description: |
+  The main goal of this course is to present the basic ideas of quantum field theory (QFT) in a completely rigorous and mathematical way. Topics of the course include generalities on classical and quantum mechanics and field theory, 0-dimensional QFT, 1-dimensional QFT, d -dimensional QFT, supergeometry and field theories with fermions, and an introduction to 2-dimensional conformal field theory.
+course_url: "https://ocw.mit.edu/courses/18-238-geometry-and-quantum-field-theory-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/18-238-geometry-and-quantum-field-theory-spring-2023/mit18_238_s23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

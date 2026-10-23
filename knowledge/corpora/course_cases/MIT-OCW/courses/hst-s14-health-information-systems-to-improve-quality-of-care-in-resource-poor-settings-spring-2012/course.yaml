@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-s14-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.S14"
+cross_listed_codes: []
+course_title: "Health Information Systems to Improve Quality of Care in Resource-Poor Settings"
+course_slug: "hst-s14-health-information-systems-to-improve-quality-of-care-in-resource-poor-settings-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+  - "Undergraduate"
+instructors:
+  - "Leo A. Celi"
+  - "Dr. Hamish Fraser"
+  - "Prof. Peter Szolovits"
+  - "Dr. Ken Paik"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Information Technology"
+  - "Innovation"
+  - "Health and Medicine"
+  - "Public Health"
+  - "Social Science"
+  - "Economics"
+  - "International Development"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+      - name: "Information Technology"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "International Development"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Projects with Examples"
+description: |
+  This course is a collaborative offering of Sana , Partners in Health , and the Institute for Healthcare Improvement (IHI). The goal of this course is the development of innovations in information systems for developing countries that will (1) translate into improvement in health outcomes, (2) strengthen the existing organizational infrastructure, and (3) create a collaborative ecosystem to maximize the value of these innovations. The course will be taught by guest speakers who are internationally recognized experts in the field and who, with their operational experiences, will outline the challenges they faced and detail how these were addressed. This OCW site combines resources from the initial Spring 2011 offering of the course (numbered HST.184) and the Spring 2012 offering (numbered HST.S14).
+course_url: "https://ocw.mit.edu/courses/hst-s14-health-information-systems-to-improve-quality-of-care-in-resource-poor-settings-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/hst-s14-health-information-systems-to-improve-quality-of-care-in-resource-poor-settings-spring-2012/b377f0dca384373dca6f4baefd462e9b_hst-s14s12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

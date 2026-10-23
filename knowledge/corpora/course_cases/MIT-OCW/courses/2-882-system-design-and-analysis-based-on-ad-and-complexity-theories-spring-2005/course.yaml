@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-2-882-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.882"
+cross_listed_codes: []
+course_title: "System Design and Analysis based on AD and Complexity Theories"
+course_slug: "2-882-system-design-and-analysis-based-on-ad-and-complexity-theories-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Nam Suh"
+  - "Dr. Taesik Lee"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Theory of Computation"
+  - "Nanotechnology"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Theory of Computation"
+      - name: "Nanotechnology"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course studies what makes a good design and how one develops a good design. Students consider how the design of engineered systems (such as hardware, software, materials, and manufacturing systems) differ from the “design” of natural systems such as biological systems; discuss complexity and how one makes use of complexity theory to improve design; and discover how one uses axiomatic design theory (AD theory) in design of many different kinds of engineered systems. Questions are analyzed using Axiomatic Design Theory and Complexity Theory. Case studies are presented including the design of machines, tribological systems, materials, manufacturing systems, and recent inventions. Implications of AD and complexity theories on biological systems discussed.
+course_url: "https://ocw.mit.edu/courses/2-882-system-design-and-analysis-based-on-ad-and-complexity-theories-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/2-882-system-design-and-analysis-based-on-ad-and-complexity-theories-spring-2005/4360335455d93ba4844b01a2e7847ab5_2-882s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

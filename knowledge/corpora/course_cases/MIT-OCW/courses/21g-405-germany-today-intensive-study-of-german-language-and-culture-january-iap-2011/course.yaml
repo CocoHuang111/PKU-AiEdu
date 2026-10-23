@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-405-january-iap-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.405"
+cross_listed_codes: []
+course_title: "Germany Today: Intensive Study of German Language and Culture"
+course_slug: "21g-405-germany-today-intensive-study-of-german-language-and-culture-january-iap-2011"
+term: "January IAP"
+year: 2011
+as_taught_in: "January IAP 2011"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ellen Crocker"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Language"
+  - "German"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Society"
+  - "European and Russian Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "German"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "European and Russian Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  Prepares students for working and living in German-speaking countries. Focus on current political, social, and cultural issues, using newspapers, journals, TV, radio broadcasts, and Web sources from Germany, Austria, and Switzerland. Emphasis on speaking, writing, and reading skills for professional contexts. Activities include: oral presentations, group discussions, guest lectures, and interviews with German speakers. No listeners.
+course_url: "https://ocw.mit.edu/courses/21g-405-germany-today-intensive-study-of-german-language-and-culture-january-iap-2011/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-405-germany-today-intensive-study-of-german-language-and-culture-january-iap-2011/45ec540254a92517d09a8025ce39edf2_21g-405iap11.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "partial"

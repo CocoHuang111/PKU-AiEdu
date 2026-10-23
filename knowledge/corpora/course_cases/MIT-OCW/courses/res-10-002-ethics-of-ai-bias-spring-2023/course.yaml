@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-res-10-002-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.10-002"
+cross_listed_codes: []
+course_title: "Ethics of AI Bias"
+course_slug: "res-10-002-ethics-of-ai-bias-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "Prof. Bernhardt Trout"
+  - "Prof. Svetozar Minkov"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Humanities"
+  - "Philosophy"
+  - "Ethics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Other Video"
+description: |
+  This video aims to delve into the human problems brought out by issues in artificial intelligence, specifically with respect to bias. It is suitable for classroom use or as a standalone video for those who wish to understand the issue more deeply than is conventionally covered. For classroom use, we recommend watching the chapterized version of the video and working through the teaching materials provided for each chapter.
+course_url: "https://ocw.mit.edu/courses/res-10-002-ethics-of-ai-bias-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/res-10-002-ethics-of-ai-bias-spring-2023/res-10-002s23.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-449-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.449"
+cross_listed_codes: []
+course_title: "End of Nature"
+course_slug: "21l-449-end-of-nature-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alvin Kibel"
+subject_primary: "History"
+subject_secondary:
+  - "Intellectual History"
+  - "Literature"
+  - "Comparative Literature"
+  - "Criticism"
+  - "Philosophy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Intellectual History"
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "Criticism"
+      - name: "Philosophy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This subject offers a broad survey of texts (both literary and philosophical) drawn from the Western tradition and selected to trace the growth of ideas about nature and the natural environment of mankind. The term nature in this context has to do with the varying ways in which the physical world has been conceived as the habitation of mankind, a source of imperatives for the collective organization and conduct of human life. In this sense, nature is less the object of complex scientific investigation than the object of individual experience and direct observation. Using the term “nature” in this sense, we can say that modern reference to “the environment” owes much to three ideas about the relation of mankind to nature. In the first of these, which harks back to ancient medical theories and notions about weather, geographical nature was seen as a neutral agency affecting or transforming agent of mankind’s character and institutions. In the second, which derives from religious and classical sources in the Western tradition, the earth was designed as a fit environment for mankind or, at the least, as adequately suited for its abode, and civic or political life was taken to be consonant with the natural world. In the third, which also makes its appearance in the ancient world but becomes important only much later, nature and mankind are regarded as antagonists, and one must conquer the other or be subjugated by it.
+course_url: "https://ocw.mit.edu/courses/21l-449-end-of-nature-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/21l-449-end-of-nature-spring-2002/45caffc3de5f47427991e06c2d8f8e71_21l-449s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

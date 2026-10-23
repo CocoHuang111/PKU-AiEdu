@@ -1,0 +1,84 @@
+schema_version: "1.0"
+course_id: "mitocw-sts-038-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "STS.038"
+cross_listed_codes: []
+course_title: "Energy and Environment in American History: 1705-2005"
+course_slug: "sts-038-energy-and-environment-in-american-history-1705-2005-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Peter Shulman"
+subject_primary: "Buildings"
+subject_secondary:
+  - "Electricity"
+  - "Fossil Fuels"
+  - "Technology"
+  - "Humanities"
+  - "History"
+  - "American History"
+  - "History of Science and Technology"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Buildings"
+        specialties: []
+      - name: "Electricity"
+        specialties: []
+      - name: "Fossil Fuels"
+        specialties: []
+      - name: "Technology"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "History of Science and Technology"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  A survey of how America has become the world’s largest consumer of energy. Explores American history from the perspective of energy and its relationship to politics, diplomacy, the economy, science and technology, labor, culture, and the environment. Topics include muscle and water power in early America, coal and the Industrial Revolution, electrification, energy consumption in the home, oil and U.S. foreign policy, automobiles and suburbanization, nuclear power, OPEC and the 70’s energy crisis, global warming, and possible paths for the future.
+course_url: "https://ocw.mit.edu/courses/sts-038-energy-and-environment-in-american-history-1705-2005-fall-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/sts-038-energy-and-environment-in-american-history-1705-2005-fall-2006/c1565ee7ab52d5855e48543550acfe8e_sts-038f06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-488-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.488"
+cross_listed_codes: []
+course_title: "Contemporary Literature"
+course_slug: "21l-488-contemporary-literature-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. John Hildebidle"
+subject_primary: "Literature"
+subject_secondary:
+  - "Criticism"
+  - "Fiction"
+  - "International Literature"
+  - "Poetry"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Fiction"
+          - "International Literature"
+          - "Poetry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This semester, Contemporary Literature (21L.488) deals with Irish literature, a subject broad and deep. To achieve a manageable volume of study, the course focuses primarily on poetry and prose, at drama’s expense, and on living writers, at the expense of their predecessors. Each class session follows a discussion format, often with students assigned to lead-off or summarize the day’s topic.
+course_url: "https://ocw.mit.edu/courses/21l-488-contemporary-literature-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/21l-488-contemporary-literature-spring-2003/33caac7fdbfebff9d7bddc019b7be41a_21l-488s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

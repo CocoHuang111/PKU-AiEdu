@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-8-942-fall-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.942"
+cross_listed_codes: []
+course_title: "Cosmology"
+course_slug: "8-942-cosmology-fall-2001"
+term: "Fall"
+year: 2001
+as_taught_in: "Fall 2001"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Edmund Bertschinger"
+subject_primary: "Physics"
+subject_secondary:
+  - "Astrophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides an overview of astrophysical cosmology with emphasis on the Cosmic Microwave Background (CMB) radiation, galaxies and related phenomena at high redshift, and cosmic structure formation. Additional topics include cosmic inflation, nucleosynthesis and baryosynthesis, quasar (QSO) absorption lines, and gamma-ray bursts. Some background in general relativity is assumed.
+course_url: "https://ocw.mit.edu/courses/8-942-cosmology-fall-2001/"
+image_url: "https://ocw.mit.edu/courses/8-942-cosmology-fall-2001/3b655aaf9fec91409c1616fd31245776_8-942f01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

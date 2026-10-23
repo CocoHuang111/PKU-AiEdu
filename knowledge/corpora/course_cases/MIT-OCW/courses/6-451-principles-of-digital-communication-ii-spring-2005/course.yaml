@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-6-451-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.451"
+cross_listed_codes: []
+course_title: "Principles of Digital Communication II"
+course_slug: "6-451-principles-of-digital-communication-ii-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David Forney"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Digital Systems"
+  - "Telecommunications"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Telecommunications"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is the second of a two-term sequence with 6.450. The focus is on coding techniques for approaching the Shannon limit of additive white Gaussian noise (AWGN) channels, their performance analysis, and design principles. After a review of 6.450 and the Shannon limit for AWGN channels, the course begins by discussing small signal constellations, performance analysis and coding gain, and hard-decision and soft-decision decoding. It continues with binary linear block codes, Reed-Muller codes, finite fields, Reed-Solomon and BCH codes, binary linear convolutional codes, and the Viterbi algorithm. More advanced topics include trellis representations of binary linear block codes and trellis-based decoding; codes on graphs; the sum-product and min-sum algorithms; the BCJR algorithm; turbo codes, LDPC codes and RA codes; and performance of LDPC codes with iterative decoding. Finally, the course addresses coding for the bandwidth-limited regime, including lattice codes, trellis-coded modulation, multilevel coding and shaping. If time permits, it covers equalization of linear Gaussian channels.
+course_url: "https://ocw.mit.edu/courses/6-451-principles-of-digital-communication-ii-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/6-451-principles-of-digital-communication-ii-spring-2005/26272a054def6c3695d7d2ef7435104d_6-451s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

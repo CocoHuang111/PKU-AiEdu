@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-5-067-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.067"
+cross_listed_codes: []
+course_title: "Crystal Structure Refinement"
+course_slug: "5-067-crystal-structure-refinement-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Peter Mueller"
+subject_primary: "Chemistry"
+subject_secondary:
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties: []
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course in crystal structure refinement examines the practical aspects of crystal structure determination from data collection strategies to data reduction and basic and advanced refinement problems of organic and inorganic molecules.
+course_url: "https://ocw.mit.edu/courses/5-067-crystal-structure-refinement-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/5-067-crystal-structure-refinement-fall-2009/bd6d208fddee4d887fe3104cf59a166a_5-067f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-8-334-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.334"
+cross_listed_codes: []
+course_title: "Statistical Mechanics II: Statistical Physics of Fields"
+course_slug: "8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mehran Kardar"
+subject_primary: "Probability and Statistics"
+subject_secondary:
+  - "Science"
+  - "Physics"
+  - "Theoretical Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Theoretical Physics"
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This is the second term in a two-semester course on statistical mechanics. Basic principles are examined in this class, such as the laws of thermodynamics and the concepts of temperature, work, heat, and entropy. Topics from modern statistical mechanics are also explored, including the hydrodynamic limit and classical field theories.
+course_url: "https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/8-334-statistical-mechanics-ii-statistical-physics-of-fields-spring-2014/5672848001bbb171070bbbc08cbb6af6_8-334s14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

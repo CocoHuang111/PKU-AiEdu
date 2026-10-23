@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-24-964-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.964"
+cross_listed_codes: []
+course_title: "Topics in Phonology"
+course_slug: "24-964-topics-in-phonology-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Adam Albright"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Modeling and Simulation"
+  - "Humanities"
+  - "Linguistics"
+  - "Phonology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Phonology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces students to the theory and practice of modeling phonology, with an empirical focus on modeling the discovery of static phonotactics, the discovery of alternations, learning in the midst of variation and exceptions, and the discovery of gradient patterns. This course is also intended to provide hands-on experience with various aspects of using and developing models, including preparing training data, running simulations, and interpreting their results.
+course_url: "https://ocw.mit.edu/courses/24-964-topics-in-phonology-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/24-964-topics-in-phonology-fall-2004/c7a33292b1417f3804fa2bab5fc7115b_24-964f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,9 @@
+- Source: https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/pages/exams/
+- source_format: html
+- capture_date: 2026-10-03
+- license: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+---
+## Exams
+
+<table><tr><th>EXAMS</th><th>SOLUTIONS</th></tr><tr><td colspan="2">EXAM 1</td></tr><tr><td>Sample Exam ( <br> [PDF](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/sample_exam1/) <br> )</td><td>( <br> [PDF](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/sample_exam1sols/) <br> )</td></tr><tr><td>Exam ( <br> [PDF](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/exam1/) <br> )</td><td>( <br> [PDF](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/exam1_sol/) <br> )</td></tr><tr><td colspan="2">EXAM 2</td></tr><tr><td>Sample Exam ( <br> [PDF - 1.3 MB](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/sample_exam2/) <br> )</td><td>( <br> [PDF](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/prac_exam2sol/) <br> )</td></tr><tr><td>Exam ( <br> [PDF](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/exam2/) <br> )</td><td>( <br> [PDF](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/exam2_sol/) <br> )</td></tr><tr><td colspan="2">FINAL EXAM</td></tr><tr><td>Sample Exam ( <br> [PDF](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/sample_final/) <br> )</td><td>( <br> [PDF](https://ocw.mit.edu/courses/3-15-electrical-optical-magnetic-materials-and-devices-fall-2006/resources/prac_final_sol/) <br> )</td></tr></table>

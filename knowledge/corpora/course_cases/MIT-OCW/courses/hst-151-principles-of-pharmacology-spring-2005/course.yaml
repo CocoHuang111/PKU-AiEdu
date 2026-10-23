@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-151-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.151"
+cross_listed_codes: []
+course_title: "Principles of Pharmacology"
+course_slug: "hst-151-principles-of-pharmacology-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Carl Rosow"
+  - "Dr. David Standaert"
+  - "Prof. Gary Strichartz"
+subject_primary: "Pharmacology and Toxicology"
+subject_secondary: []
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Pharmacology and Toxicology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  The object of the course is to teach students an approach to the study of pharmacologic agents. It is not intended to be a review of the pharmacopoeia. The focus is on the basic principles of biophysics, biochemistry and physiology, as related to the mechanisms of drug action, biodistribution and metabolism. The course consists of lectures and student-led case discussions. Topics covered include: mechanisms of drug action, dose-response relations, pharmacokinetics, drug delivery systems, drug metabolism, toxicity of pharmacological agents, drug interaction and substance abuse. Selected agents and classes of agents are examined in detail.
+course_url: "https://ocw.mit.edu/courses/hst-151-principles-of-pharmacology-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-151-principles-of-pharmacology-spring-2005/91ecc2fdc99bb06e1a96dbcb6636e476_hst-151s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-reimagining-terrascope-project-classes-online"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Reimagining Terrascope Project Classes Online"
+slug: "reimagining-terrascope-project-classes-online"
+course_codes:
+  - "2.00C/1.016/EC.746, SP.360"
+departments:
+  - "Mechanical Engineering (Course 2)"
+instructors:
+  - "Ari Epstein"
+  - "Libby Hsu"
+  - "Joel Grimm"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/reimagining-terrascope-project-classes-online"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "3e8765169a92fefefbd61b329633e370effd505262dba938cec0f00e04d43de6"

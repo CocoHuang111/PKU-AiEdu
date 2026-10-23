@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-mas-962-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "MAS.962"
+cross_listed_codes: []
+course_title: "Special Topics: New Textiles"
+course_slug: "mas-962-special-topics-new-textiles-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Media Arts and Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Leah Buechley"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Fine Arts"
+  - "Media Studies"
+  - "Digital Media"
+  - "Visual Arts"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+      - name: "Visual Arts"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Image Gallery"
+  - "Other Video"
+  - "Projects with Examples"
+description: |
+  This project-based course will explore the future of textiles, focusing particularly on blending rich crafting traditions with new technologies. Topics will include textile-based electronics, textile fabrication, algorithmic pattern design, and composites. We will experiment with a wide range of fibers, yarns, and fabrics including traditional materials like wool and cotton as well as metal fibers and yarns, fusible plastics, papers, and resins. We will also explore techniques like felting, laser cutting, CNC knitting, digital printing, and CNC embroidery. Students will complete weekly hands-on assignments and a final project. WARNING NOTICE: An activity described in this course is potentially hazardous and requires a high level of safety training, special facilities and equipment, and supervision by appropriate individuals. You bear the sole responsibility, liability, and risk for the implementation of such safety procedures and measures. MIT shall have no responsibility, liability, or risk for the content or implementation of any of the material presented. Legal Notice
+course_url: "https://ocw.mit.edu/courses/mas-962-special-topics-new-textiles-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/mas-962-special-topics-new-textiles-spring-2010/cc4f2e567ab0e72fb2fde7f077d43e00_mas-962s10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

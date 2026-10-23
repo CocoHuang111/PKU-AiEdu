@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-22-903-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.903"
+cross_listed_codes: []
+course_title: "Photon and Neutron Scattering Spectroscopy and Its Applications in Condensed Matter"
+course_slug: "22-903-photon-and-neutron-scattering-spectroscopy-and-its-applications-in-condensed-matter-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Sow-Hsin Chen"
+subject_primary: "Nuclear Engineering"
+subject_secondary:
+  - "Health and Medicine"
+  - "Spectroscopy"
+  - "Science"
+  - "Physics"
+  - "Condensed Matter Physics"
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Nuclear Engineering"
+        specialties: []
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Spectroscopy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Condensed Matter Physics"
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  The purpose of this course is to discuss modern techniques of generation of x-ray photons and neutrons and then follow with selected applications of newly developed photon and neutron scattering spectroscopic techniques to investigations of properties of condensed matter which are of interest to nuclear engineers.
+course_url: "https://ocw.mit.edu/courses/22-903-photon-and-neutron-scattering-spectroscopy-and-its-applications-in-condensed-matter-spring-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/22-903-photon-and-neutron-scattering-spectroscopy-and-its-applications-in-condensed-matter-spring-2005/ede41a63a07b03314e1b30f627f0af02_22-903s05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

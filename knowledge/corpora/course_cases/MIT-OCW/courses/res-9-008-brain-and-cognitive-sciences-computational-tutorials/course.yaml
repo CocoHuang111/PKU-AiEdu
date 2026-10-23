@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-res-9-008-fall-2025"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.9-008"
+cross_listed_codes: []
+course_title: "Brain and Cognitive Sciences Computational Tutorial Series"
+course_slug: "res-9-008-brain-and-cognitive-sciences-computational-tutorials"
+term: "Fall"
+year: 2025
+as_taught_in: "Fall 2025"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Non-Credit"
+instructors: []
+subject_primary: "Computation"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Videos"
+  - "Tutorial Videos"
+description: |
+  This is a seminar series led by graduate students and postdocs in the MIT Department of Brain and Cognitive Sciences (BCS) from 2015 to the present, featuring tutorials on computational topics relevant to research on intelligence in neuroscience, cognitive science, and artificial intelligence. These tutorials are aimed at participants with some computational background but who are not experts in these topics. A computational tutorial can consist of any method, tool, or model that is broadly relevant within neuroscience, cognitive science, and artificial intelligence. The goal is to bring researchers in brain and cognitive sciences closer to researchers developing computational methods. Resources posted here include lecture videos, lecture slides, code and datasets for exercises, background references, and other supplementary material. Typically, each tutorial consists of a short lecture and an interactive part with tutorials or ‘office hours’ to work through practice problems and discuss how the material may be applied to participants’ research. The series was organized by Emily Mackevicius, Jenelle Feather, Nhat Le, Fernanda De La Torre Romo, Greta Tuckute, Ajani Stewart, and Sol Markman, with financial support from BCS. Through 2024, the videos were filmed, edited, and produced by Kris Brewer, Director of Technology at the Center for Brains, Minds, and Machines (CBMM).
+course_url: "https://ocw.mit.edu/courses/res-9-008-brain-and-cognitive-sciences-computational-tutorials/"
+image_url: "https://ocw.mit.edu/courses/res-9-008-brain-and-cognitive-sciences-computational-tutorials/mitres9_008f23.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

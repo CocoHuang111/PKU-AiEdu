@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-707-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.707"
+cross_listed_codes: []
+course_title: "Reading Cookbooks: from The Forme of Cury to The Smitten Kitchen"
+course_slug: "21l-707-reading-cookbooks-from-the-forme-of-cury-to-the-smitten-kitchen-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Ina Lipkowitz"
+subject_primary: "History"
+subject_secondary:
+  - "Literature"
+  - "Society"
+  - "Gender Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties: []
+      - name: "Literature"
+        specialties: []
+  - name: "Society"
+    subtopics:
+      - name: "Gender Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments with Examples"
+  - "Written Assignments with Examples"
+description: |
+  In this course students will visit the past through cookbooks to learn about what foodstuffs and technologies were available and when, and how religious and nutritional concerns dictated what was eaten and how it was cooked. Students will also learn about the gender dynamics of culinary writing and performances and the roles people played in writing and cooking recipes.
+course_url: "https://ocw.mit.edu/courses/21l-707-reading-cookbooks-from-the-forme-of-cury-to-the-smitten-kitchen-spring-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/21l-707-reading-cookbooks-from-the-forme-of-cury-to-the-smitten-kitchen-spring-2017/38f24e3a7597a80ccb60210e3af74c81_21L-707S17.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

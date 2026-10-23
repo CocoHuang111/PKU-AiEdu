@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-student-notation-class-readings-art-approximation-stem"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Student notation of class readings: Art of Approximation in STEM"
+slug: "student-notation-class-readings-art-approximation-stem"
+course_codes:
+  - "6.055"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Sanjoy Mahajan"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/student-notation-class-readings-art-approximation-stem"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "e7c0df98af783121628e11bee0bd588c47a56afe7c63f0855c8be7fd9f91cdc3"

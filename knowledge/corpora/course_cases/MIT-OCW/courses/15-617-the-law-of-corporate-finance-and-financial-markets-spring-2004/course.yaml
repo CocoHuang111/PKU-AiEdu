@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-15-617-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.617"
+cross_listed_codes: []
+course_title: "The Law of Corporate Finance and Financial Markets"
+course_slug: "15-617-the-law-of-corporate-finance-and-financial-markets-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. John Akula"
+subject_primary: "Finance"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+  - "Legal Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+      - name: "Legal Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Much of 15.617 focuses on mergers and acquisitions (M&A), and the law-sensitive aspects of financial services and financial markets. The course is designed to be an introduction to business law that covers the fundamentals, including contracts, liability, regulation, employment, and corporations. This class also provides an in-depth treatment of the law of finance.
+course_url: "https://ocw.mit.edu/courses/15-617-the-law-of-corporate-finance-and-financial-markets-spring-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/15-617-the-law-of-corporate-finance-and-financial-markets-spring-2004/6ef80b776416864626a8e9182db8797c_15-617s04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

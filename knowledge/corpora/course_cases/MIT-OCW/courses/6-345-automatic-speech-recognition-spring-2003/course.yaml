@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-6-345-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.345"
+cross_listed_codes: []
+course_title: "Automatic Speech Recognition"
+course_slug: "6-345-automatic-speech-recognition-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. James Glass"
+  - "Prof. Victor Zue"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Signal Processing"
+  - "Humanities"
+  - "Linguistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Signal Processing"
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Audio"
+  - "Lecture Notes"
+description: |
+  6.345 introduces students to the rapidly developing field of automatic speech recognition. Its content is divided into three parts. Part I deals with background material in the acoustic theory of speech production, acoustic-phonetics, and signal representation. Part II describes algorithmic aspects of speech recognition systems including pattern classification, search algorithms, stochastic modelling, and language modelling techniques. Part III compares and contrasts the various approaches to speech recognition, and describes advanced techniques used for acoustic-phonetic modelling, robust speech recognition, speaker adaptation, processing paralinguistic information, speech understanding, and multimodal processing.
+course_url: "https://ocw.mit.edu/courses/6-345-automatic-speech-recognition-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/6-345-automatic-speech-recognition-spring-2003/7b5744dc5c86cb14e6cf16c44a86ab0b_6-345s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

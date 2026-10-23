@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-9-52-b-spring-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.52-B"
+cross_listed_codes: []
+course_title: "Topics in Brain and Cognitive Sciences Human Ethology"
+course_slug: "9-52-b-topics-in-brain-and-cognitive-sciences-human-ethology-spring-2001"
+term: "Spring"
+year: 2001
+as_taught_in: "Spring 2001"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Gerald E. Schneider"
+subject_primary: "Cognitive Science"
+subject_secondary:
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Survey and special topics designed for students in Brain and Cognitive Sciences. Emphasizes ethological studies of natural behavior patterns and their analysis in laboratory work, with contributions from field biology (mammology, primatology), sociobiology, and comparative psychology. Stresses human behavior but also includes major contributions from studies of other animals.
+course_url: "https://ocw.mit.edu/courses/9-52-b-topics-in-brain-and-cognitive-sciences-human-ethology-spring-2001/"
+image_url: |
+  https://ocw.mit.edu/courses/9-52-b-topics-in-brain-and-cognitive-sciences-human-ethology-spring-2001/fd5c8cf8e50f7065a10657b549440a2e_9-52s01.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

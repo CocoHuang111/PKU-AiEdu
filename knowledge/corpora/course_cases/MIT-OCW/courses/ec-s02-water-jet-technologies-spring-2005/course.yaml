@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-s02-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.S02"
+cross_listed_codes: []
+course_title: "Water Jet Technologies"
+course_slug: "ec-s02-water-jet-technologies-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Kenneth Stone"
+  - "Alea Teeters"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Lecture Notes"
+  - "Projects with Examples"
+description: |
+  In this Public Service Design Seminar (PSDS), we will design and build products with developmentally disabled students at the Protestant Guild Learning Center in Waltham, MA. The class will work closely with community clients to make sure that what is developed is helpful and functional. These products will be built using the Hobby Shop equipment, the water jet machine in particular. Over the course of the seminar, this class will teach students how to use the OMAX® Jet Machining Center commonly called the water jet and associated OMAX® software. The product development process will also be detailed in depth: determining customer needs, concept development, prototyping, design, and manufacturing.
+course_url: "https://ocw.mit.edu/courses/ec-s02-water-jet-technologies-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/ec-s02-water-jet-technologies-spring-2005/140d044037fb8c58177bafcbf016d5da_ec-s02s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

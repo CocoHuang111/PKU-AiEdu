@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-5-37-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.37"
+cross_listed_codes: []
+course_title: "Introduction to Organic Synthesis Laboratory"
+course_slug: "5-37-introduction-to-organic-synthesis-laboratory-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Rick Danheiser"
+  - "Prof. Timothy Swager"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Science"
+  - "Chemistry"
+  - "Organic Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Organic Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course, which spans a third of a semester, provides students with experience using techniques employed in synthetic organic chemistry. It also introduces them to the exciting research area of catalytic chiral catalysis. This class is part of the new laboratory curriculum in the MIT Department of Chemistry. Undergraduate Research-Inspired Experimental Chemistry Alternatives ( URIECA ) introduces students to cutting edge research topics in a modular format.
+course_url: "https://ocw.mit.edu/courses/5-37-introduction-to-organic-synthesis-laboratory-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/5-37-introduction-to-organic-synthesis-laboratory-spring-2009/fd981ce72401603d6cf38092cd548b9d_5-37s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

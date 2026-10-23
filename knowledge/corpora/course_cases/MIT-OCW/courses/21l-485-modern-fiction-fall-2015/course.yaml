@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-485-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.485"
+cross_listed_codes: []
+course_title: "Modern Fiction"
+course_slug: "21l-485-modern-fiction-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. James Buzard"
+subject_primary: "Literature"
+subject_secondary:
+  - "Fiction"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Fiction"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  Tradition and innovation in representative fiction of the early modern period. Recurring themes include the role of the artist in the modern period; the representation of psychological and sexual experience; and the virtues (and defects) of the aggressively experimental character. Works by Conrad, Kipling, Babel, Kafka, James, Lawrence, Mann, Ford Madox Ford, Joyce, Woolf, Faulkner, and Nabokov.
+course_url: "https://ocw.mit.edu/courses/21l-485-modern-fiction-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/21l-485-modern-fiction-fall-2015/2ba3d297246fbaa99ec37b1dad277864_21l-485f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

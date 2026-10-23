@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-269-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.269"
+cross_listed_codes: []
+course_title: "Studies in Western Music History: Quantitative and Computational Approaches to Music History"
+course_slug: "21m-269-studies-in-western-music-history-quantitative-and-computational-approaches-to-music-history-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michael Scott Asato Cuthbert"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Theory"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Theory"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  The disciplines of music history and music theory have been slow to embrace the digital revolutions that have transformed other fields’ text-based scholarship (history and literature in particular). Computational musicology opens the door to the possibility of understanding—even if at a broad level—trends and norms of behavior of large repertories of music. This class presents the major approaches, results, and challenges of computational musicology through readings in the field, gaining familiarity with datasets, and hands on workshops and assignments on data analysis and “corpus” (i.e., repertory) studies. Class sessions alternate between discussion/lecture and labs on digital tools for studying music. A background in music theory and/or history is required, and experience in computer programming will be extremely helpful. Coursework culminates in an independent research project in quantitative or computational musicology that will be presented to the class as a whole.
+course_url: "https://ocw.mit.edu/courses/21m-269-studies-in-western-music-history-quantitative-and-computational-approaches-to-music-history-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/21m-269-studies-in-western-music-history-quantitative-and-computational-approaches-to-music-history-spring-2012/be9293472a7d4f58f8ac40675d27b199_21m-269s12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

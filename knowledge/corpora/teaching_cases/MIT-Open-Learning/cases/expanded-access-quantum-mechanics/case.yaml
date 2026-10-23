@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-expanded-access-quantum-mechanics"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Expanded Access to Quantum Mechanics"
+slug: "expanded-access-quantum-mechanics"
+course_codes:
+  - "8.S05"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Barton Zwiebach"
+digital_innovations_tools:
+  - "Flexible Course Delivery"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/expanded-access-quantum-mechanics"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "3f10f4ebe4fa5f0478432fd7d11667414bc7a6ac7275eb4d408b8bd391a3d308"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-7-18-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "7.18"
+cross_listed_codes: []
+course_title: "Topics in Experimental Biology"
+course_slug: "7-18-topics-in-experimental-biology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Biology"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Karen Pepper"
+  - "Dr. Leslie Ann Roldan"
+  - "Prof. Paul T. Matsudaira"
+  - "Prof. Anthony Sinskey"
+subject_primary: "Biology"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This independent experimental study course is designed to allow students with a strong interest in independent research to fulfill the project laboratory requirement for the Biology Department Program in the context of a research laboratory at MIT. The research should be a continuation of a previous project under the direction of a member of the Biology Department faculty. This course provides instruction and practice in written and oral communication. Journal club discussions are used to help students evaluate and write scientific papers.
+course_url: "https://ocw.mit.edu/courses/7-18-topics-in-experimental-biology-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/7-18-topics-in-experimental-biology-fall-2005/ed1e7a6da8508ac66a0607bd9c3d7f68_7-18f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

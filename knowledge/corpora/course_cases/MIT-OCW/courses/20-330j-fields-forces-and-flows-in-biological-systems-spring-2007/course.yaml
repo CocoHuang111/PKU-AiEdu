@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-20-330j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.330J"
+cross_listed_codes:
+  - "2.793J"
+  - "6.023J"
+course_title: "Fields, Forces and Flows in Biological Systems"
+course_slug: "20-330j-fields-forces-and-flows-in-biological-systems-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Mechanical Engineering"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jongyoon Han"
+  - "Prof. Scott Manalis"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Transport Processes"
+  - "Mechanical Engineering"
+  - "Fluid Mechanics"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Computation and Systems Biology"
+  - "Molecular Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Transport Processes"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Computation and Systems Biology"
+          - "Molecular Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course introduces the basic driving forces for electric current, fluid flow, and mass transport, plus their application to a variety of biological systems. Basic mathematical and engineering tools will be introduced, in the context of biology and physiology. Various electrokinetic phenomena are also considered as an example of coupled nature of chemical-electro-mechanical driving forces. Applications include transport in biological tissues and across membranes, manipulation of cells and biomolecules, and microfluidics.
+course_url: "https://ocw.mit.edu/courses/20-330j-fields-forces-and-flows-in-biological-systems-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/20-330j-fields-forces-and-flows-in-biological-systems-spring-2007/f581d528660db0b5e25e5978ef573f52_20-330js07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

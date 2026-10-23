@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-18-969-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.969"
+cross_listed_codes: []
+course_title: "Topics in Geometry: Dirac Geometry"
+course_slug: "18-969-topics-in-geometry-dirac-geometry-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Marco Gualtieri"
+subject_primary: "Linear Algebra"
+subject_secondary:
+  - "Topology and Geometry"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Linear Algebra"
+        specialties: []
+      - name: "Topology and Geometry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This is an introductory (i.e. first year graduate students are welcome and expected) course in generalized geometry, with a special emphasis on Dirac geometry, as developed by Courant, Weinstein, and Severa, as well as generalized complex geometry, as introduced by Hitchin. Dirac geometry is based on the idea of unifying the geometry of a Poisson structure with that of a closed 2-form, whereas generalized complex geometry unifies complex and symplectic geometry. For this reason, the latter is intimately related to the ideas of mirror symmetry.
+course_url: "https://ocw.mit.edu/courses/18-969-topics-in-geometry-dirac-geometry-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/18-969-topics-in-geometry-dirac-geometry-fall-2006/3f2c8b5f012d763958c1f77f19ac2f80_18-969f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

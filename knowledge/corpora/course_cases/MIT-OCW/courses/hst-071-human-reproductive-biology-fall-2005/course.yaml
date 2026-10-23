@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-071-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.071"
+cross_listed_codes: []
+course_title: "Human Reproductive Biology"
+course_slug: "hst-071-human-reproductive-biology-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Henry Klapholz"
+subject_primary: "Biology"
+subject_secondary:
+  - "Developmental Biology"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Developmental Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+description: |
+  This course is designed to give the student a clear understanding of the pathophysiology of the menstrual cycle, fertilization, implantation, ovum growth development, differentiation and associated abnormalities. Disorders of fetal development including the principles of teratology and the mechanism of normal and abnormal parturition will be covered as well as the pathophysiology of the breast and disorders of lactation. Fetal asphyxia and its consequences will be reviewed with emphasis on the technology currently available for its detection. In addition the conclusion of the reproductive cycle, menopause, and the use of hormonal replacement will be covered.
+course_url: "https://ocw.mit.edu/courses/hst-071-human-reproductive-biology-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-071-human-reproductive-biology-fall-2005/8cb78ec79321dc301cc5eaa462fb0dc9_hst-071f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

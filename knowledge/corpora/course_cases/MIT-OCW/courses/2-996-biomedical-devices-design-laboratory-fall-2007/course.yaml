@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-2-996-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.996"
+cross_listed_codes:
+  - "6.971"
+course_title: "Biomedical Devices Design Laboratory"
+course_slug: "2-996-biomedical-devices-design-laboratory-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Hongshen Ma"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+  - "Health and Medicine"
+  - "Biomedical Instrumentation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course provides intensive coverage of the theory and practice of electromechanical instrument design with application to biomedical devices. Students will work with MGH doctors to develop new medical products from concept to prototype development and testing. Lectures will present techniques for designing electronic circuits as part of complete sensor systems. Topics covered include: basic electronics circuits, principles of accuracy, op amp circuits, analog signal conditioning, power supplies, microprocessors, wireless communications, sensors, and sensor interface circuits. Labs will cover practical printed circuit board (PCB) design including component selection, PCB layout, assembly, and planning and budgeting for large projects. Problem sets and labs in the first six weeks are in support of the project. Major team-based design, build, and test project in the last six weeks. Student teams will be composed of both electrical engineering and mechanical engineering students.
+course_url: "https://ocw.mit.edu/courses/2-996-biomedical-devices-design-laboratory-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/2-996-biomedical-devices-design-laboratory-fall-2007/d60b93bafcf01fdf9c10ad92548341f2_2-996f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "cornell-culturally-immersive-field-trips-japan-virtual-reality"
+institution: "Cornell University"
+platform: "Cornell Center for Teaching Innovation"
+collection: "Teaching Innovation Case Study Library"
+title: "Culturally Immersive Field Trips to Japan with Virtual Reality"
+slug: "culturally-immersive-field-trips-japan-virtual-reality"
+source_url: "https://teaching.cornell.edu/culturally-immersive-field-trips-japan-virtual-reality"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "8a163ea2f9c3eba829ebbdf957a94adb7c2b604b906e64a4d55b8d725211a587"

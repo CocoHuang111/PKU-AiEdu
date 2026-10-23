@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-4-671-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.671"
+cross_listed_codes:
+  - "4.670"
+course_title: "Nationalism, Internationalism, and Globalism in Modern Art"
+course_slug: "4-671-nationalism-internationalism-and-globalism-in-modern-art-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Caroline Jones"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Art History"
+  - "Humanities"
+  - "History"
+  - "Comparative History"
+  - "European History"
+  - "World History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties: []
+      - name: "Art History"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Comparative History"
+          - "European History"
+          - "World History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  This course studies how international modernism interacted with the concept of "nation" and how contemporary discourses concerning globalism changes that dynamic. This course also looks at how art uses and critiques globalization on various levels.
+course_url: "https://ocw.mit.edu/courses/4-671-nationalism-internationalism-and-globalism-in-modern-art-spring-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/4-671-nationalism-internationalism-and-globalism-in-modern-art-spring-2016/ee4e9a1d872cd5941c030ac68f576289_4-671s16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

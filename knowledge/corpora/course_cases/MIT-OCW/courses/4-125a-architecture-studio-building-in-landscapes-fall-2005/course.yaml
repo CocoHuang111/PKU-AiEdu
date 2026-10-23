@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-4-125a-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.125A"
+cross_listed_codes: []
+course_title: "Architecture Studio: Building in Landscapes"
+course_slug: "4-125a-architecture-studio-building-in-landscapes-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alan Joslin"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Environmental Design"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Environmental Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Image Gallery"
+description: |
+  This subject introduces skills needed to build within a landscape establishing continuities between the built and natural world. Students learn to build appropriately through analysis of landscape and climate for a chosen site, and to conceptualize design decisions through drawings and models. This class was taught concurrently with 4.125B . Some of the assignments are the same, some are different, and the sites for the final project are different. But since they were taught in tandem, it would be useful to look at both together.
+course_url: "https://ocw.mit.edu/courses/4-125a-architecture-studio-building-in-landscapes-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/4-125a-architecture-studio-building-in-landscapes-fall-2005/774340f84b768813f74f08659a72d590_4-125af05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

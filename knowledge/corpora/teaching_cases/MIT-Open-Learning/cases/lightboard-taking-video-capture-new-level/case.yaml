@@ -1,0 +1,27 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-lightboard-taking-video-capture-new-level"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Lightboard: Taking Video Capture to a New Level"
+slug: "lightboard-taking-video-capture-new-level"
+course_codes:
+  - "multiple departments"
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Barton Zwiebach"
+  - "John Hart"
+  - "Peter Dourmashkin"
+  - "Bradley Olsen"
+  - "Peter Singhe"
+  - "Otto Scharmer"
+  - "Anshul Singhal"
+  - "Ankur Gupta"
+digital_innovations_tools:
+  - "Lightboard"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/lightboard-taking-video-capture-new-level"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "63560c8233eb539e239bf9148694ccfd0289fa9a6865fbd6870471f83ae70807"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-3-091-fall-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.091"
+cross_listed_codes: []
+course_title: "Introduction to Solid-State Chemistry"
+course_slug: "3-091-introduction-to-solid-state-chemistry-fall-2018"
+term: "Fall"
+year: 2018
+as_taught_in: "Fall 2018"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeffrey Grossman"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Materials Science and Engineering"
+  - "Science"
+  - "Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Podcasts"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Tutorial Videos"
+description: |
+  In this course, we will explore what makes things in the world the way they are and why, to understand the science and consider the engineering. We learn not only why the physical world behaves the way it does, but also how to think with chemical intuition, which can’t be gained simply by observing the macroscopic world. This 2018 version of 3.091 by Jeffrey Grossman and the 2010 OCW version by Don Sadoway cover similar topics and both provide complete learning materials. This 2018 version also includes Jeffrey Grossman’s innovative Goodie Bags, Why This Matters, and CHEMATLAS content, as well as additional practice problems, quizzes, and exams.
+course_url: "https://ocw.mit.edu/courses/3-091-introduction-to-solid-state-chemistry-fall-2018/"
+image_url: "https://ocw.mit.edu/courses/3-091-introduction-to-solid-state-chemistry-fall-2018/1bd0528076c75313960844cd7028ab92_mit3-091f18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

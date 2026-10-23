@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-17-269-spring-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.269"
+cross_listed_codes: []
+course_title: "Race, Ethnicity, and American Politics"
+course_slug: "17-269-race-ethnicity-and-american-politics-spring-2017"
+term: "Spring"
+year: 2017
+as_taught_in: "Spring 2017"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ariel White"
+subject_primary: "Political Science"
+subject_secondary:
+  - "American Politics"
+  - "Society"
+  - "African American Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties:
+          - "American Politics"
+  - name: "Society"
+    subtopics:
+      - name: "African American Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Instructor Insights"
+  - "Written Assignments with Examples"
+description: |
+  This course explores the role of race and ethnicity in modern American politics. It focuses on social science approaches to measuring the effects of race, both at the individual level and more broadly. Topics include race and representation, measurement of racial and ethnic identities, voting rights and electoral districting, protest and other forms of political participation, and the meaning and measurement of racial attitudes.
+course_url: "https://ocw.mit.edu/courses/17-269-race-ethnicity-and-american-politics-spring-2017/"
+image_url: "https://ocw.mit.edu/courses/17-269-race-ethnicity-and-american-politics-spring-2017/7429f3037bfe04f6247cc8dfef0aee33_17-269s17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

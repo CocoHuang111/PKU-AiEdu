@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-pe-910-january-iap-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "PE.910"
+cross_listed_codes: []
+course_title: "Physical Intelligence"
+course_slug: "pe-910-physical-intelligence-january-iap-2002"
+term: "January IAP"
+year: 2002
+as_taught_in: "January IAP 2002"
+language: "en"
+departments:
+  - "Athletics, Physical Education and Recreation"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Noah Riskin"
+subject_primary: "Physical Education and Recreation"
+subject_secondary:
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Physical Education and Recreation"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  For all of the bodies attached to the many great minds that walk the Institute’s halls, in the work that goes on at MIT the body is present as an object of study, but is all but unrecognized as an important dimension of our intelligence and experience. Yet the body is the basis of our experience in the world; it is the very foundation on which cognitive intelligence is built. Using the MIT gymnastics gym as our laboratory, the Physical Intelligence activity will take an innovative, hands-on approach to explore the kinesthetic intelligence of the body as applicable to a wide range of disciplines. Via exercises, activities, readings and discussions designed to excavate our physical experience, we will not only develop balance, agility, flexibility and strength, but a deep appreciation for the inherent unity of mind and body that suggests physical intelligence as a powerful complement to cognitive intelligence.
+course_url: "https://ocw.mit.edu/courses/pe-910-physical-intelligence-january-iap-2002/"
+image_url: "https://ocw.mit.edu/courses/pe-910-physical-intelligence-january-iap-2002/a3ed64e97dc56779ad8357d98706a50f_pe-910iap02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

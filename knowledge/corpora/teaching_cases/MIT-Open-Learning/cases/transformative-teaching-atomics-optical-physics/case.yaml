@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-transformative-teaching-atomics-optical-physics"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Transformative Teaching in Atomics & Optical Physics"
+slug: "transformative-teaching-atomics-optical-physics"
+course_codes:
+  - "8.421"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Wolfgang Ketterle"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/transformative-teaching-atomics-optical-physics"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "0dcba9a5897b2574eb0a0754653680d8521ea47c6811969b80c89b0fc9812a45"

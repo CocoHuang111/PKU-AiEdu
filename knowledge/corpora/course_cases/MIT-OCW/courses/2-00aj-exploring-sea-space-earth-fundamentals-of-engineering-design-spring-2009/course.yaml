@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-2-00aj-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.00AJ"
+cross_listed_codes:
+  - "16.00AJ"
+course_title: "Exploring Sea, Space, & Earth: Fundamentals of Engineering Design"
+course_slug: "2-00aj-exploring-sea-space-earth-fundamentals-of-engineering-design-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alexandra Techet"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Robotics and Control Systems"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+  - "Ocean Engineering"
+  - "Ocean Exploration"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Ocean Exploration"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Design Assignments with Examples"
+  - "Image Gallery"
+  - "Lecture Notes"
+  - "Presentation Assignments"
+  - "Projects with Examples"
+  - "Written Assignments"
+description: |
+  Student teams formulate and complete space/earth/ocean exploration-based design projects with weekly milestones. This course introduces core engineering themes, principles, and modes of thinking, and includes exercises in written and oral communication and team building. Specialized learning modules enable teams to focus on the knowledge required to complete their projects, such as machine elements, electronics, design process, visualization and communication. Examples of projects include surveying a lake for millfoil from a remote controlled aircraft, then sending out robotic harvesters to clear the invasive growth; and exploration to search for the evidence of life on a moon of Jupiter, with scientists participating through teleoperation and supervisory control of robots.
+course_url: "https://ocw.mit.edu/courses/2-00aj-exploring-sea-space-earth-fundamentals-of-engineering-design-spring-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/2-00aj-exploring-sea-space-earth-fundamentals-of-engineering-design-spring-2009/b6a31a6a85998d664ea826a766d9032b_2-00ajs09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-11-467j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.467J"
+cross_listed_codes:
+  - "4.257J"
+  - "17.550J"
+course_title: "Property Rights in Transition"
+course_slug: "11-467j-property-rights-in-transition-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Annette M. Kim"
+subject_primary: "Real Estate"
+subject_secondary:
+  - "Humanities"
+  - "Philosophy"
+  - "Political Philosophy"
+  - "Social Science"
+  - "Legal Studies"
+  - "Public Administration"
+  - "Public Policy"
+  - "Sociology"
+  - "Social Justice"
+  - "Urban Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Real Estate"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Legal Studies"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Social Justice"
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+description: |
+  This course examines the theories and policy debates over who can own real property, how to communicate and enforce property rights, and the range of liberties that they confer. It explores alternative economic, political, and sociological perspectives of property rights and their policy and planning implications.
+course_url: "https://ocw.mit.edu/courses/11-467j-property-rights-in-transition-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/11-467j-property-rights-in-transition-spring-2005/db9262adb5501b68e9af9bdd1b86b4e8_11-467js05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

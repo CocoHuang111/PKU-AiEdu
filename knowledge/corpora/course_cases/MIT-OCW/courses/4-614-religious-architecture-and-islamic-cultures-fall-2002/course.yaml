@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-4-614-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.614"
+cross_listed_codes: []
+course_title: "Religious Architecture and Islamic Cultures"
+course_slug: "4-614-religious-architecture-and-islamic-cultures-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Nasser Rabbat"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural History and Criticism"
+  - "Religious Architecture"
+  - "Society"
+  - "Middle Eastern Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural History and Criticism"
+          - "Religious Architecture"
+  - name: "Society"
+    subtopics:
+      - name: "Middle Eastern Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+description: |
+  This course introduces the history of Islamic cultures through their most vibrant material signs: the religious architecture that spans fourteen centuries and three continents — Asia, Africa, and Europe. The course presents Islamic architecture both as a historical tradition and as a cultural catalyst that influenced and was influenced by the civilizations with which it came in contact.
+course_url: "https://ocw.mit.edu/courses/4-614-religious-architecture-and-islamic-cultures-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/4-614-religious-architecture-and-islamic-cultures-fall-2002/7370719a890e90587a579880b1bb2c1f_4-614f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

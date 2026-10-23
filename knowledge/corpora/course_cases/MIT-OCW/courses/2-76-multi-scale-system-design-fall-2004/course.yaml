@@ -1,0 +1,73 @@
+schema_version: "1.0"
+course_id: "mitocw-2-76-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.76"
+cross_listed_codes:
+  - "2.760"
+course_title: "Multi-Scale System Design"
+course_slug: "2-76-multi-scale-system-design-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Martin Culpepper"
+  - "Prof. Sang-Gook Kim"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+  - "Microtechnology"
+  - "Nanotechnology"
+  - "Systems Engineering"
+  - "Systems Design"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+          - "Microtechnology"
+      - name: "Nanotechnology"
+        specialties: []
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+  - "Written Assignments"
+description: |
+  Multi-scale systems (MuSS) consist of components from two or more length scales (nano, micro, meso, or macro-scales). In MuSS, the engineering modeling, design principles, and fabrication processes of the components are fundamentally different. The challenge is to make these components so they are conceptually and model-wise compatible with other-scale components with which they interface. This course covers the fundamental properties of scales, design theories, modeling methods and manufacturing issues which must be addressed in these systems. Examples of MuSS include precision instruments, nanomanipulators, fiber optics, micro/nano-photonics, nanorobotics, MEMS (piezoelectric driven manipulators and optics), X-Ray telescopes and carbon nano-tube assemblies. Students master the materials through problem sets and a project literature critique.
+course_url: "https://ocw.mit.edu/courses/2-76-multi-scale-system-design-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/2-76-multi-scale-system-design-fall-2004/50157ef9404b4f9a433d95fa372be4b1_2-76f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

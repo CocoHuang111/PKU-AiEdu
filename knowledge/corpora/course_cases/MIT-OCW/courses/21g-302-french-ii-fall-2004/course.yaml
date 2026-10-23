@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-302-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.302"
+cross_listed_codes:
+  - "21G.352"
+course_title: "French II"
+course_slug: "21g-302-french-ii-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Laura Ceia-Minjares"
+  - "Cathy Culot"
+  - "Gilberte Furstenberg"
+  - "Johann Sadock"
+subject_primary: "Language"
+subject_secondary:
+  - "French"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  21G.302/352 is the second part of an introductory course to the French language and culture with an emphasis on the acquisition of vocabulary and grammatical concepts through active communication. The course is conducted entirely in French and students interact in French with their classmates from the very beginning. They also receive exposure to the language via a variety of authentic sources such as the Internet, audio, video and printed materials which help them develop cultural awareness as well as linguistic proficiency. There is a coordinated language lab program. This course is taught in rotation by the following instructors: Laura Ceia-Minjares, Cathy Culot, Gilberte Furstenberg, and Johann Sadock.
+course_url: "https://ocw.mit.edu/courses/21g-302-french-ii-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/21g-302-french-ii-fall-2004/8ab74c3d2f5838c93e7e7e87b6e3e3ed_21g-302f04.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

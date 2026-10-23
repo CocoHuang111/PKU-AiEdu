@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-1-361-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.361"
+cross_listed_codes:
+  - "1.032"
+  - "1.366"
+course_title: "Advanced Soil Mechanics"
+course_slug: "1-361-advanced-soil-mechanics-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles Ladd"
+  - "Dr. Lucy C. Jen"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Geotechnical Engineering"
+  - "Science"
+  - "Earth Science"
+  - "Geology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Geotechnical Engineering"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This class presents the application of principles of soil mechanics. It considers the following topics: the origin and nature of soils; soil classification; the effective stress principle; hydraulic conductivity and seepage; stress-strain-strength behavior of cohesionless and cohesive soils and application to lateral earth stresses; bearing capacity and slope stability; consolidation theory and settlement analysis; and laboratory and field methods for evaluation of soil properties in design practice.
+course_url: "https://ocw.mit.edu/courses/1-361-advanced-soil-mechanics-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/1-361-advanced-soil-mechanics-fall-2004/fa3337fdeff06378e0b7bde1b7d8af30_1-361f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

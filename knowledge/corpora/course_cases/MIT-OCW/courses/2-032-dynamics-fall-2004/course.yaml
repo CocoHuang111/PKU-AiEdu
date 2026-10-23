@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-2-032-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.032"
+cross_listed_codes: []
+course_title: "Dynamics"
+course_slug: "2-032-dynamics-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. George Haller"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Dynamics and Control"
+  - "Science"
+  - "Physics"
+  - "Classical Mechanics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Classical Mechanics"
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course reviews momentum and energy principles, and then covers the following topics: Hamilton’s principle and Lagrange’s equations; three-dimensional kinematics and dynamics of rigid bodies; steady motions and small deviations therefrom, gyroscopic effects, and causes of instability; free and forced vibrations of lumped-parameter and continuous systems; nonlinear oscillations and the phase plane; nonholonomic systems; and an introduction to wave propagation in continuous systems. This course was originally developed by Professor T. Akylas.
+course_url: "https://ocw.mit.edu/courses/2-032-dynamics-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/2-032-dynamics-fall-2004/3edcdd9f3ebeecf391575373af3a1a5d_2-032f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-6-827-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.827"
+cross_listed_codes: []
+course_title: "Multithreaded Parallelism: Languages and Compilers"
+course_slug: "6-827-multithreaded-parallelism-languages-and-compilers-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Arvind"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Programming Languages"
+  - "Software Design and Engineering"
+  - "Theory of Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Programming Languages"
+          - "Software Design and Engineering"
+          - "Theory of Computation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Programming Assignments"
+  - "Projects"
+description: |
+  The topics covered in this course include: Languages and compilers to exploit multithreaded parallelism Implicit parallel programming using functional languages and their extensions Higher-order functions, non-strictness, and polymorphism Explicit parallel programming and nondeterminism The lambda calculus and its variants Term rewriting and operational semantics Compiling multithreaded code for symmetric multiprocessors and clusters Static analysis and compiler optimizations This course is worth 4 Engineering Design Points.
+course_url: "https://ocw.mit.edu/courses/6-827-multithreaded-parallelism-languages-and-compilers-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/6-827-multithreaded-parallelism-languages-and-compilers-fall-2002/6-827f02.jpeg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

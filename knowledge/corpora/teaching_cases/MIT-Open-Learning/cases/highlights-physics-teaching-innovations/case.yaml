@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-highlights-physics-teaching-innovations"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Highlights in Physics Teaching Innovations"
+slug: "highlights-physics-teaching-innovations"
+course_codes:
+  - "8"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Saif Rayyan"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/highlights-physics-teaching-innovations"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "c86106fa468d4b2de50b69aa825aeb023d74240e4d2a0c11642472bcd731068b"

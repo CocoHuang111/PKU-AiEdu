@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-remote-teaching-applying-principles-flexibility"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Remote Teaching: Applying Principles of Flexibility & Consistency"
+slug: "remote-teaching-applying-principles-flexibility"
+course_codes:
+  - "8.323"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Phiala Shanahan"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/remote-teaching-applying-principles-flexibility"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "c7fc801e93c0b1d953e0ee043888caad9e24ca6b6e11b06c5e4da2413fb26b0e"

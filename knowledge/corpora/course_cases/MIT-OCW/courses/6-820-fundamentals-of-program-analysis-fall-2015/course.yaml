@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-6-820-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.820"
+cross_listed_codes: []
+course_title: "Fundamentals of Program Analysis"
+course_slug: "6-820-fundamentals-of-program-analysis-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Armando Solar-Lezama"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Software Design and Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Software Design and Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Programming Assignments"
+description: |
+  This course offers a comprehensive introduction to the field of program analysis. It covers some of the major forms of program analysis including Type Checking, Abstract Interpretation and Model Checking. For each of these, the course covers the underlying theories as well as modern techniques and applications.
+course_url: "https://ocw.mit.edu/courses/6-820-fundamentals-of-program-analysis-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/6-820-fundamentals-of-program-analysis-fall-2015/dcbb2e461578bee6147ce7c156ee6c17_6-820f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

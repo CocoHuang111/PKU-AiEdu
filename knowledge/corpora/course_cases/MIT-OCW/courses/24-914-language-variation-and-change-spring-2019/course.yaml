@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-24-914-spring-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.914"
+cross_listed_codes: []
+course_title: "Language Variation and Change"
+course_slug: "24-914-language-variation-and-change-spring-2019"
+term: "Spring"
+year: 2019
+as_taught_in: "Spring 2019"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Edward Flemming"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Phonology"
+  - "Syntax"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties:
+          - "Phonology"
+          - "Syntax"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  All languages vary across geographic space and between social groups, and languages are always changing. It makes sense to study these phenomena together because they are intimately related: language change is the basic source of language variation. So studying language change can help us to understand variation, and the nature of linguistic variation provides evidence as to how language changes. Both illuminate the nature of grammar. The course will focus largely on variation and change in phonetics and phonology, and most case studies will be drawn from the English language.
+course_url: "https://ocw.mit.edu/courses/24-914-language-variation-and-change-spring-2019/"
+image_url: "https://ocw.mit.edu/courses/24-914-language-variation-and-change-spring-2019/108812cd1d06b4afa8acd96858113964_24-914s19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

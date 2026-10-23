@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-15-835-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.835"
+cross_listed_codes: []
+course_title: "Entrepreneurial Marketing"
+course_slug: "15-835-entrepreneurial-marketing-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jin Gyo Kim"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Marketing"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Marketing"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course clarifies key marketing concepts, methods, and strategic issues relevant for start-up and early-stage entrepreneurs. At this course, there are two major questions: Marketing Question: What and how am I selling to whom? New Venture Question: How do I best leverage my limited marketing recourses? Specifically, this course is designed to give students a broad and deep understanding of such topics as: What are major strategic constraints and issues confronted by entrepreneurs today? How can one identify and evaluate marketing opportunities? How do entrepreneurs achieve competitive advantages given limited marketing resources? What major marketing/sales tools are most useful in an entrepreneurial setting? Because there is no universal marketing solution applicable to all entrepreneurial ventures, this course is designed to help students develop a flexible way of thinking about marketing problems in general.
+course_url: "https://ocw.mit.edu/courses/15-835-entrepreneurial-marketing-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/15-835-entrepreneurial-marketing-spring-2002/6efc1711d37e8e136ae578131f10f11a_15-835s02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-studying-history-online-visual-materials"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Studying History with Online Visual Materials"
+slug: "studying-history-online-visual-materials"
+course_codes:
+  - "21H.250"
+departments:
+  - "History (Course 21H)"
+instructors:
+  - "Shigeru Miyagawa"
+  - "John Dower"
+digital_innovations_tools:
+  - "Blended Learning & Flipped Classroom"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/studying-history-online-visual-materials"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "bcef59e30d2050f3aa866741bb5302e3c954d1cc79ebbf9ded5b5077ef3c4322"

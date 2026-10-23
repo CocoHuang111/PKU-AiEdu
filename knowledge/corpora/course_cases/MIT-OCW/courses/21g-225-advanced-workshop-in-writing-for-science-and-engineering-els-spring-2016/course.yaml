@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-225-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.225"
+cross_listed_codes:
+  - "21G.226"
+course_title: "Advanced Workshop in Writing for Science and Engineering (ELS)"
+course_slug: "21g-225-advanced-workshop-in-writing-for-science-and-engineering-els-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Jane Dunphy"
+subject_primary: "Language"
+subject_secondary:
+  - "English as a Second Language"
+  - "Literature"
+  - "Academic Writing"
+  - "Nonfiction Prose"
+  - "Technical Writing"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "English as a Second Language"
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Nonfiction Prose"
+          - "Technical Writing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course offers analysis and practice of various forms of scientific and technical writing, from memos to journal articles, in addition to strategies for conveying technical information to specialist and non-specialist audiences. Comparable to 21W.780 Communicating in Technical Organizations , but methods in this course are designed to deal with special problems of advanced ELS or bilingual students. The goal of the workshop is to develop effective writing skills for academic and professional contexts. Models, materials, topics and assignments vary from term to term.
+course_url: "https://ocw.mit.edu/courses/21g-225-advanced-workshop-in-writing-for-science-and-engineering-els-spring-2016/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-225-advanced-workshop-in-writing-for-science-and-engineering-els-spring-2016/cf2b53db0816b88f455a204835d2c62b_21g-225s16.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

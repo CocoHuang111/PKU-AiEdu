@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-20-442-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.442"
+cross_listed_codes:
+  - "20.342"
+course_title: "Molecular Structure of Biological Materials (BE.442)"
+course_slug: "20-442-molecular-structure-of-biological-materials-be-442-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Biological Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Shuguang Zhang"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Biomaterials"
+  - "Biotechnology"
+  - "Nanotechnology"
+  - "Science"
+  - "Biology"
+  - "Molecular Biology"
+  - "Structural Biology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Biomaterials"
+          - "Biotechnology"
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Molecular Biology"
+          - "Structural Biology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+  - "Written Assignments with Examples"
+description: |
+  This course, intended for both graduate and upper level undergraduate students, will focus on understanding of the basic molecular structural principles of biological materials. It will address the molecular structures of various materials of biological origin, such as several types of collagen, silk, spider silk, wool, hair, bones, shells, protein adhesives, GFP, and self-assembling peptides. It will also address molecular design of new biological materials applying the molecular structural principles. The long-term goal of this course is to teach molecular design of new biological materials for a broad range of applications. A brief history of biological materials and its future perspective as well as its impact to the society will also be discussed. Several experts will be invited to give guest lectures.
+course_url: "https://ocw.mit.edu/courses/20-442-molecular-structure-of-biological-materials-be-442-fall-2005/"
+image_url: |
+  https://ocw.mit.edu/courses/20-442-molecular-structure-of-biological-materials-be-442-fall-2005/64305e65f9e16478177b0a1865cd410e_20-442f05.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

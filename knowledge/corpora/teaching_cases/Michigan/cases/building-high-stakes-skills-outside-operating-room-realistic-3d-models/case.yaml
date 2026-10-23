@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-building-high-stakes-skills-outside-operating-room-realistic-3d-models"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Building High-Stakes Skills Outside the Operating Room With Realistic, 3D Models"
+slug: "building-high-stakes-skills-outside-operating-room-realistic-3d-models"
+source_url: "https://crlt.umich.edu/building-high-stakes-skills-outside-operating-room-realistic-3d-models"
+language: "en"
+published: null
+awarded_year: "2020"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "36b90b65b1730e89cabcf8da814df315708593a5dd427d0e23c7d5e77f76f86d"

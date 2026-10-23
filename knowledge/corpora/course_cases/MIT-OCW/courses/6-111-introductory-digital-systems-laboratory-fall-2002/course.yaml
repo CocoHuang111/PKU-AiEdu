@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-6-111-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.111"
+cross_listed_codes: []
+course_title: "Introductory Digital Systems Laboratory"
+course_slug: "6-111-introductory-digital-systems-laboratory-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Don Troxel"
+  - "Prof. James L. Kirtley Jr."
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Design and Engineering"
+  - "Electrical Engineering"
+  - "Digital Systems"
+  - "Electronics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Design and Engineering"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Digital Systems"
+          - "Electronics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  6.111 consists of lectures and labs on digital logic, flipflops, PALs, counters, timing, synchronization, finite-state machines, and microprogrammed systems. Students are expected to design and implement a final project of their choice: games, music, digital filters, graphics, etc. The course requires extensive use of VHDL for describing and implementing digital logic designs. 6.111 is worth 12 Engineering Design Points.
+course_url: "https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/6-111-introductory-digital-systems-laboratory-fall-2002/6505d2441dcbc29a1e45d0c3eaa32ce3_6-111f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

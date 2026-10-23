@@ -5,11 +5,14 @@
 
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any
 
 import numpy as np
 
 from ..pedagogy.loader import load_yaml
+from .. import checkpoints
+from ..processes import run_json_worker
 
 # 只给页面画曲线，不进 rubric / Judge / GB
 AUDIO_SERIES_KEYS = (
@@ -46,8 +49,83 @@ def _curve(times: np.ndarray, values: np.ndarray, n: int = 160) -> list[list[flo
     return out
 
 
+def _window(audio, start: int, count: int) -> np.ndarray:
+    """Read only a bounded window, with the same zero padding as librosa."""
+    left = max(0, -start)
+    audio.seek(max(0, start))
+    actual = max(0, min(count - left, audio.frames - max(0, start)))
+    values = audio.read(actual, dtype="float32", always_2d=True).mean(axis=1)
+    return np.pad(values, (left, max(0, count - left - values.size)))
+
+
+def _stream_rms(audio, librosa, progress_callback=None, block_seconds=30):
+    hop, frame = 512, 2048
+    total = 1 + audio.frames // hop
+    per_block = max(1, round(block_seconds * audio.samplerate / hop))
+    parts = []
+    for start in range(0, total, per_block):
+        count = min(per_block, total - start)
+        samples = _window(audio, start * hop - frame // 2, (count - 1) * hop + frame)
+        parts.append(librosa.feature.rms(
+            y=samples, frame_length=frame, hop_length=hop, center=False,
+        )[0])
+        if progress_callback:
+            progress_callback("loudness", min((start + count) * hop / audio.samplerate, audio.frames / audio.samplerate), audio.frames / audio.samplerate)
+    return np.concatenate(parts)
+
+
+def _stream_pitch(audio, path, librosa, signature, progress_callback=None, block_seconds=30):
+    # 16kHz input -> 8kHz pitch; the input hop is 512 samples = 32ms.
+    hop, context_frames = 512, 8
+    total = 1 + audio.frames // hop
+    per_block = max(1, round(block_seconds * audio.samplerate / hop))
+    parts = []
+    for index, start in enumerate(range(0, total, per_block)):
+        count = min(per_block, total - start)
+        checkpoint = Path(path).with_suffix(".audio-checkpoint") / f"pitch-{index:05d}.json"
+        saved = checkpoints.read(checkpoint, signature)
+        if saved is None:
+            samples = _window(audio, (start - context_frames) * hop, (count + 2 * context_frames) * hop)
+            pitch_samples = librosa.resample(samples, orig_sr=16000, target_sr=8000)
+            f0, _, _ = librosa.pyin(
+                pitch_samples, fmin=float(librosa.note_to_hz("C2")),
+                fmax=float(librosa.note_to_hz("C6")), sr=8000,
+                frame_length=1024, hop_length=256,
+            )
+            values = f0[context_frames:context_frames + count]
+            if values.size != count:
+                raise AudioFeatureError("基频分块返回帧数不一致")
+            saved = [float(value) if np.isfinite(value) else None for value in values]
+            checkpoints.write(checkpoint, signature, saved)
+        parts.append(np.array([np.nan if v is None else v for v in saved]))
+        if progress_callback:
+            progress_callback("pitch", min((start + count) * hop / audio.samplerate, audio.frames / audio.samplerate), audio.frames / audio.samplerate)
+    return np.concatenate(parts)
+
+
+def _wave_envelope(audio):
+    n = min(360, max(8, audio.frames // 64))
+    if audio.frames < n:
+        return []
+    win = max(1, audio.frames // n)
+    peaks = []
+    # A single display bin can itself be large for very long media. Bound reads.
+    for index in range(n):
+        audio.seek(index * win)
+        remaining, peak = min(win, audio.frames - index * win), 0.0
+        while remaining > 0:
+            count = min(remaining, audio.samplerate * 30)
+            values = audio.read(count, dtype="float32", always_2d=True).mean(axis=1)
+            peak = max(peak, float(np.max(np.abs(values))))
+            remaining -= count
+        peaks.append(peak)
+    peak = max(peaks) or 1.0
+    return [round(value / peak, 4) for value in peaks]
+
+
 def extract_audio_features(
-    audio_path: str, asr_segments: list | None = None
+    audio_path: str, asr_segments: list | None = None, progress_callback=None,
+    block_seconds: float = 30,
 ) -> dict[str, Any]:
     try:
         import librosa
@@ -58,16 +136,37 @@ def extract_audio_features(
 
     thresholds = load_yaml("feature_lexicon.yaml")["audio_thresholds"]
 
-    y, sr = librosa.load(audio_path, sr=16000, mono=True)
-    if y.size == 0:
-        raise AudioFeatureError("音频为空")
+    import soundfile as sf
 
-    duration = float(len(y) / sr)
+    signature = checkpoints.identity(audio_path, {"audio_features": 2, "block_seconds": block_seconds})
+    final_path = Path(audio_path).with_suffix(".audio-features.json")
+    cached = checkpoints.read(final_path, signature)
+    if cached is not None:
+        if progress_callback:
+            progress_callback("cached", cached["audio_duration_sec"], cached["audio_duration_sec"])
+        return cached
+    with sf.SoundFile(audio_path) as audio:
+        sr = audio.samplerate
+        if sr != 16000 or audio.frames == 0:
+            raise AudioFeatureError("声学分析需要非空的16kHz音频")
+        duration = float(audio.frames / sr)
+        rms = _stream_rms(audio, librosa, progress_callback, block_seconds)
+        envelope = _wave_envelope(audio)
+        pitch_warning = None
+        try:
+            f0 = _stream_pitch(audio, audio_path, librosa, signature, progress_callback, block_seconds)
+        except Exception as exc:
+            # Cancellation raised by a callback must propagate, not become a warning.
+            from .exceptions import EvaluationCancelled
+            if isinstance(exc, EvaluationCancelled):
+                raise
+            f0 = np.array([], dtype=float)
+            pitch_warning = str(exc)
+
     features: dict[str, Any] = {"audio_duration_sec": round(duration, 1)}
 
     # --- 响度 ---
     hop_length = 512
-    rms = librosa.feature.rms(y=y, frame_length=2048, hop_length=hop_length)[0]
     rms_db = 20 * np.log10(np.maximum(rms, 1e-10))
     voiced = rms_db > (rms_db.max() - 40)  # 只统计有声部分，避免静音拉低均值
     features["loudness_db"] = round(float(np.mean(rms_db[voiced])), 1) if voiced.any() else -60.0
@@ -77,15 +176,7 @@ def extract_audio_features(
     features["loudness_curve"] = _curve(rms_times, rms_db)
 
     # 波形包络：按窗口取峰值，页面画对称波形，不把原始采样塞进结果
-    n_env = min(360, max(8, y.size // 64))
-    win = max(1, y.size // n_env)
-    trimmed = y[: n_env * win]
-    if trimmed.size >= n_env:
-        env = np.max(np.abs(trimmed.reshape(n_env, win)), axis=1)
-        peak = float(np.max(env)) or 1.0
-        features["wave_envelope"] = [round(float(v / peak), 4) for v in env]
-    else:
-        features["wave_envelope"] = []
+    features["wave_envelope"] = envelope
 
     # --- 静音与停顿 ---
     silence_mask = ~voiced
@@ -113,16 +204,9 @@ def extract_audio_features(
     )
 
     # --- 基频与语调 ---
-    # pyin 很慢，长音频先降采样到 8kHz 并限制分析范围
-    try:
-        y_pitch = librosa.resample(y, orig_sr=sr, target_sr=8000)
-        f0, voiced_flag, _ = librosa.pyin(
-            y_pitch,
-            fmin=float(librosa.note_to_hz("C2")),
-            fmax=float(librosa.note_to_hz("C6")),
-            sr=8000,
-            frame_length=1024,
-        )
+    # Full-duration coverage, but only one 30-second pYIN matrix at a time.
+    if pitch_warning is None:
+        features["pitch_available"] = True
         f0_valid = f0[~np.isnan(f0)]
         hop_pitch = 256 / 8000
         f0_times = np.arange(f0.size) * hop_pitch
@@ -136,8 +220,8 @@ def extract_audio_features(
             )
         else:
             features.update(pitch_median=0.0, pitch_std=0.0, pitch_variation=0.0)
-    except Exception:
-        features.update(pitch_median=0.0, pitch_std=0.0, pitch_variation=0.0, pitch_curve=[])
+    else:
+        features.update(pitch_available=False, pitch_warning=pitch_warning, pitch_curve=[])
 
     # --- 信噪比估计：有声帧能量 vs 静音帧能量 ---
     if voiced.any() and silence_mask.any():
@@ -153,4 +237,32 @@ def extract_audio_features(
     peaks = int(np.sum((rms[1:-1] > rms[:-2]) & (rms[1:-1] > rms[2:]) & (rms[1:-1] > peak_threshold)))
     features["emphasis_per_min"] = round(peaks / max(duration / 60.0, 1.0), 1)
 
+    # Do not permanently cache a transient partial result.
+    if pitch_warning is None:
+        checkpoints.write(final_path, signature, features)
     return features
+
+
+def extract_audio_features_isolated(audio_path: str, progress_callback=None):
+    return run_json_worker("ai_engine.evaluation.audio_features", {
+        "audio_path": str(Path(audio_path).resolve()),
+    }, lambda value: progress_callback(
+        (value or {}).get("phase", "starting"),
+        float((value or {}).get("done_sec", 0)),
+        float((value or {}).get("total_sec", 1)),
+    ) if progress_callback else None, timeout=3600)
+
+
+if __name__ == "__main__":
+    import json
+    import sys
+    import resource
+    from ..processes import emit
+
+    request = json.load(sys.stdin)
+    result = extract_audio_features(request["audio_path"], progress_callback=lambda phase, done, total: emit(
+        "progress", {"phase": phase, "done_sec": done, "total_sec": total},
+    ))
+    peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    result["analysis_peak_rss_mb"] = round(peak / (1024**2 if sys.platform == "darwin" else 1024), 2)
+    emit("result", result)

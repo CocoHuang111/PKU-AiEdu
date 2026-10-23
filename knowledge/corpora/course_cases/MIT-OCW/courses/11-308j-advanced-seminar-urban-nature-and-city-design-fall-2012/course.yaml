@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-11-308j-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.308J"
+cross_listed_codes:
+  - "4.213J"
+course_title: "Advanced Seminar: Urban Nature and City Design"
+course_slug: "11-308j-advanced-seminar-urban-nature-and-city-design-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Anne Whiston Spirn"
+subject_primary: "Urban Studies"
+subject_secondary:
+  - "Urban Planning"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course will explore the mutual influences of ideas of nature, theories of city design and planning, and practices of urban design, construction, and management. We will investigate how natural processes shape urban landscapes (from the scale of street corner to region) and how to intervene strategically in those processes in order to achieve certain goals. We will examine cases of cities that adapted successfully to natural processes and those that did not. Students will then have the opportunity to research a case of their choice and to present their findings for discussion. The subject may be historical or an an example of contemporary theory and practice.
+course_url: "https://ocw.mit.edu/courses/11-308j-advanced-seminar-urban-nature-and-city-design-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/11-308j-advanced-seminar-urban-nature-and-city-design-fall-2012/d5d3efcc79bb5981b591fbdbbb3b35a0_11-308jf12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

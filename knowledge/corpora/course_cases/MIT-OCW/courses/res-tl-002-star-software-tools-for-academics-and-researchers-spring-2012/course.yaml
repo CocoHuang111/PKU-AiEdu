@@ -1,0 +1,88 @@
+schema_version: "1.0"
+course_id: "mitocw-res-tll-002-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.TLL-002"
+cross_listed_codes: []
+course_title: "STAR: Software Tools for Academics and Researchers"
+course_slug: "res-tl-002-star-software-tools-for-academics-and-researchers-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments: []
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "MIT Office of Educational Innovation and Technology "
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Computer Networks"
+  - "Software Design and Engineering"
+  - "Environmental Engineering"
+  - "Hydrology and Water Resource Systems"
+  - "Science"
+  - "Biology"
+  - "Biochemistry"
+  - "Cell Biology"
+  - "Genetics"
+  - "Molecular Biology"
+  - "Physics"
+  - "Atomic, Molecular, Optical Physics"
+  - "Teaching and Education"
+  - "Educational Technology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Computer Networks"
+          - "Software Design and Engineering"
+      - name: "Environmental Engineering"
+        specialties:
+          - "Hydrology and Water Resource Systems"
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biochemistry"
+          - "Cell Biology"
+          - "Genetics"
+          - "Molecular Biology"
+      - name: "Physics"
+        specialties:
+          - "Atomic, Molecular, Optical Physics"
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Educational Technology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  The Software Tools for Academics and Researchers (STAR) program at MIT seeks to bridge the divide between scientific research and the classroom. Understanding and applying research methods in the classroom setting can be challenging due to time constraints and the need for advanced equipment and facilities. The multidisciplinary STAR team collaborates with faculty from MIT and other educational institutions to design software exploring core scientific research concepts. The goal of STAR is to develop innovative and intuitive teaching tools for classroom use. All of the STAR educational tools are freely available. To complement the educational software, the STAR website contains curriculum components/modules which can facilitate the use of STAR educational tools in a variety of educational settings. Students, teachers, and professors should feel welcome to download software and curriculum modules for their own use. Online Publication
+course_url: "https://ocw.mit.edu/courses/res-tl-002-star-software-tools-for-academics-and-researchers-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/res-tl-002-star-software-tools-for-academics-and-researchers-spring-2012/32209890c984cf5a8e50b26eb259c4ea_res-tl-002s12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

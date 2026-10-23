@@ -1,0 +1,21 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-mitx-effective-pre-class-preparatory-intervention"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "MITx an Effective Pre-class Preparatory Intervention"
+slug: "mitx-effective-pre-class-preparatory-intervention"
+course_codes:
+  - "8.13; 8.14"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Sean Robinson"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/mitx-effective-pre-class-preparatory-intervention"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "98516488c42216b6d08cdf42eb07cadaf3da4b3d43350c1a593b267a72329ac3"

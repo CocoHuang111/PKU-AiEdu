@@ -13,13 +13,31 @@ from ..core import db
 from ..core.audit import audit
 from ..core.auth import current_user
 from ..core.database import session_scope
+from ..core.report_mail import follow_up, subscribe, unsubscribe, notification_states
+from .evaluation_followup import valid_id
 from ..core.uploads import new_task_id, record_upload, save_user_upload
+from ..core.material_storage import material_reference, mark_task_files_deleted, purge_deleted_oss_files, release_uploaded_paths
 from ..schemas import SyllabusTextForm
 from ..workers.syllabus_tasks import STEP_LABELS, run_syllabus_optimization
 
 router = APIRouter(prefix="/api/syllabus", tags=["教学大纲优化"])
 
 ALLOWED_EXT = {".pdf", ".docx", ".doc", ".txt", ".md"}
+
+
+@router.get('/task/{task_id}/follow-up')
+async def task_followup(task_id: str, user: dict = Depends(current_user)):
+    return await follow_up(valid_id(task_id), user['id'], 'syllabus')
+
+
+@router.post('/task/{task_id}/email-notification')
+async def task_email(task_id: str, user: dict = Depends(current_user)):
+    return await subscribe(valid_id(task_id), user['id'], 'syllabus')
+
+
+@router.delete('/task/{task_id}/email-notification')
+async def task_email_cancel(task_id: str, user: dict = Depends(current_user)):
+    return await unsubscribe(valid_id(task_id), user['id'], 'syllabus')
 
 
 @router.post("/optimize")
@@ -57,13 +75,13 @@ async def optimize_from_file(
         )
 
     task_id = new_task_id()
-    dest, key = save_user_upload(
+    dest, key = await asyncio.to_thread(save_user_upload,
         file,
         user_id=user["id"],
         task_id=task_id,
         purpose="syllabus",
         allowed=ALLOWED_EXT,
-        max_bytes=30 * 1024 * 1024,
+        max_bytes=50 * 1024 * 1024,
         kind_label="大纲",
     )
     await file.close()
@@ -78,10 +96,11 @@ async def optimize_from_file(
     await db.create_syllabus_task(
         filename=file.filename or "上传文件",
         prompt_mode=prompt_mode,
-        source_path=dest,
+        source_path=material_reference(dest, key),
         user_id=user["id"],
         task_id=task_id,
     )
+    await release_uploaded_paths(user["id"], task_id, dest)
     background.add_task(run_syllabus_optimization, task_id)
     return {"task_id": task_id, "status": "queued", "filename": file.filename}
 
@@ -89,7 +108,9 @@ async def optimize_from_file(
 @router.get("/tasks")
 async def list_tasks(user: dict = Depends(current_user)) -> list[dict]:
     tasks = await db.list_syllabus_tasks(user_id=user["id"])
+    states = await notification_states(user['id'], 'syllabus')
     for task in tasks:
+        task['notification_status'] = states.get(task['id'], {}).get('status', '')
         task["step_label"] = STEP_LABELS.get(task["current_step"], task["current_step"])
     return tasks
 
@@ -99,6 +120,8 @@ async def get_task(task_id: str, user: dict = Depends(current_user)) -> dict:
     task = await db.get_syllabus_task(task_id, user_id=user["id"])
     if not task:
         raise HTTPException(404, "任务不存在")
+    states = await notification_states(user['id'], 'syllabus')
+    task['notification_status'] = states.get(task['id'], {}).get('status', '')
     task["step_label"] = STEP_LABELS.get(task["current_step"], task["current_step"])
     return task
 
@@ -119,6 +142,8 @@ async def cancel_task(task_id: str, user: dict = Depends(current_user)) -> dict:
 async def delete_task(task_id: str, user: dict = Depends(current_user)) -> dict:
     if not await db.delete_syllabus_task(task_id, user_id=user["id"]):
         raise HTTPException(404, "任务不存在")
+    await mark_task_files_deleted(user["id"], task_id)
+    await purge_deleted_oss_files()
     async with session_scope() as session:
         await audit(
             session,

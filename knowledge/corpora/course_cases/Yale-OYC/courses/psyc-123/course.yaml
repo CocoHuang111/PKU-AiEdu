@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-psyc-123"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "PSYC 123"
+course_title: "The Psychology, Biology and Politics of Food"
+course_slug: "psyc-123"
+department_path: "psychology"
+professors:
+  - "Kelly D. Brownell James Rowland Angell Professor of Psychology and Professor of Epidemiology and Public Health"
+course_url: "https://oyc.yale.edu/psychology/psyc-123"
+language: "en"
+description: |
+  This course encompasses the study of eating as it affects the health and well-being of every human. Topics include taste preferences, food aversions, the regulation of hunger and satiety, food as comfort and friendship, eating as social ritual, and social norms of blame for food problems. The politics of food discusses issues such as sustainable agriculture, organic farming, genetically modified foods, nutrition policy, and the influence of food and agriculture industries. Also examined are problems such as malnutrition, eating disorders, and the global obesity epidemic; the impact of food advertising aimed at children; poverty and food; and how each individual's eating is affected by the modern environment.
+license_url: ""
+session_count: 23
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

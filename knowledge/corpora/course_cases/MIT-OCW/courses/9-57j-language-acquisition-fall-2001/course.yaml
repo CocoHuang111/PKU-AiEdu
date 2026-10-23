@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-9-57j-fall-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.57J"
+cross_listed_codes:
+  - "24.904J"
+course_title: "Language Acquisition"
+course_slug: "9-57j-language-acquisition-fall-2001"
+term: "Fall"
+year: 2001
+as_taught_in: "Fall 2001"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Ken Wexler"
+subject_primary: "Linguistics"
+subject_secondary:
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Linguistics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Covers the major results in the study of first language acquisition concentrating on the development of linguistic structure, including sentence structure and morphology. Universal aspects of development are discussed, as well as a variety of cross-linguistic phenomena. Theories of language learning are considered, including parameter-setting and maturation.
+course_url: "https://ocw.mit.edu/courses/9-57j-language-acquisition-fall-2001/"
+image_url: "https://ocw.mit.edu/courses/9-57j-language-acquisition-fall-2001/0373ffb051c3334541c182d76eae0791_9-57f01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

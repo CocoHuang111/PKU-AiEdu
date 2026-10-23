@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21t-1003-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21T.1003"
+cross_listed_codes: []
+course_title: "Dance Theory and Composition"
+course_slug: "21m-675-dance-theory-and-composition-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Theater Arts"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Thomas DeFrantz"
+subject_primary: "Music"
+subject_secondary:
+  - "Music Theory"
+  - "Performance Arts"
+  - "Dance"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music Theory"
+      - name: "Performance Arts"
+        specialties:
+          - "Dance"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Projects with Examples"
+description: |
+  This course introduces students to the art and formal ideologies of contemporary dance. We explore the aesthetic and technical underpinnings of contemporary dance composition. Basic compositional techniques are discussed and practiced, with an emphasis on principles such as weight, space, time, effort, and shape. Principles of musicality are considered and developed by each student. Working with each other as the raw material of the dance, students develop short compositions that reveal their understanding of basic techniques. Hopefully, students come to understand a range of compositional possibilities available to artists who work with the medium of the human body.
+course_url: "https://ocw.mit.edu/courses/21m-675-dance-theory-and-composition-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/21m-675-dance-theory-and-composition-fall-2003/f040e797a1d0cd35a3a70169c3ec058a_21m-675f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

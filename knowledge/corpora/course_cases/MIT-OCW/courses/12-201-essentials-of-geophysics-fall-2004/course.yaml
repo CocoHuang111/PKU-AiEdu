@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-12-201-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.201"
+cross_listed_codes:
+  - "12.501"
+course_title: "Essentials of Geophysics"
+course_slug: "12-201-essentials-of-geophysics-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Robert Van Der Hilst"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geophysics"
+  - "Planetary Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geophysics"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course is designed to be a survey of the various subdisciplines of geophysics (geodesy, gravity, geomagnetism, seismology, and geodynamics) and how they might relate to or be relevant for other planets. No prior background in Earth sciences is assumed, but students should be comfortable with vector calculus, classical mechanics, and potential field theory.
+course_url: "https://ocw.mit.edu/courses/12-201-essentials-of-geophysics-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/12-201-essentials-of-geophysics-fall-2004/d943c64d4df76486d7409636adccf5c6_12-201f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

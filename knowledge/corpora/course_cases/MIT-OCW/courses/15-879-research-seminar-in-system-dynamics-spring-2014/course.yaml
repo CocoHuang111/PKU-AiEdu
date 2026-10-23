@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-15-879-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.879"
+cross_listed_codes: []
+course_title: "Advanced Research Seminar in System Dynamics:"
+course_slug: "15-879-research-seminar-in-system-dynamics-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Hazhir Rahmandad"
+subject_primary: "Management"
+subject_secondary:
+  - "Operations Management"
+  - "Organizational Behavior"
+  - "Engineering"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+  - "Systems Optimization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Management"
+        specialties: []
+      - name: "Operations Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Systems Optimization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Media Assignments with Examples"
+  - "Tutorial Videos"
+  - "Written Assignments"
+description: |
+  Doctoral-level advanced research seminar in system dynamics modeling with a focus on social, economic, and technical systems. The course covers classic works in dynamic modeling from various disciplines and current research problems and papers. Participants critique theories and models, often including replication, testing, and improvement of various models.
+course_url: "https://ocw.mit.edu/courses/15-879-research-seminar-in-system-dynamics-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/15-879-research-seminar-in-system-dynamics-spring-2014/c46df307c6571550372ddbd646ece7d5_15-879s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

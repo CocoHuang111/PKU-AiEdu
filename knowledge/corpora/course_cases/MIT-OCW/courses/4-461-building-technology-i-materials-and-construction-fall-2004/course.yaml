@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-4-461-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.461"
+cross_listed_codes: []
+course_title: "Building Technology I: Materials and Construction"
+course_slug: "4-461-building-technology-i-materials-and-construction-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. John Fernandez"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Structural Engineering"
+  - "Materials Science and Engineering"
+  - "Fine Arts"
+  - "Architecture"
+  - "Architectural Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Structural Engineering"
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Engineering"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course offers an introduction to the history, theory, and construction of basic structural systems as well as an introduction to energy issues in buildings. It emphasizes basic systematic and elemental behavior, principles of structural behavior, and analysis of individual structural elements and strategies for load carrying. The course also introduces fundamental energy topics including thermodynamics, psychrometrics, and comfort. It is a required class for M. Arch. students.
+course_url: "https://ocw.mit.edu/courses/4-461-building-technology-i-materials-and-construction-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/4-461-building-technology-i-materials-and-construction-fall-2004/98dbd6790062f55321758bbba7e15007_4-461f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

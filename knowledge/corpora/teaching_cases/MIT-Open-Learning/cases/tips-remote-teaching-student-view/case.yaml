@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-tips-remote-teaching-student-view"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Tips for Remote Teaching: Student View"
+slug: "tips-remote-teaching-student-view"
+course_codes:
+  - "multiple subjects/disciplines"
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "none: student project"
+digital_innovations_tools:
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/tips-remote-teaching-student-view"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "990ceb6658631df1343322f2684692f58b47de8cceeed43ce5ff27e2a13d5723"

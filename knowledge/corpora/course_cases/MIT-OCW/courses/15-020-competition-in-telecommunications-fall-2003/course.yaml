@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-15-020-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.020"
+cross_listed_codes:
+  - "14.28"
+course_title: "Competition in Telecommunications"
+course_slug: "15-020-competition-in-telecommunications-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jerry Hausman"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Electrical Engineering"
+  - "Telecommunications"
+  - "Social Science"
+  - "Economics"
+  - "Industrial Organization"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Telecommunications"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  Competition in Telecommunications provides an introduction to the economics, business strategies, and technology of telecommunications markets. This includes markets for wireless communications, local and long-distance services, and customer equipment. The convergence of computers, cable TV and telecommunications and the competitive emergence of the Internet are covered in depth. A number of speakers from leading companies in the industry will give course lectures.
+course_url: "https://ocw.mit.edu/courses/15-020-competition-in-telecommunications-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/15-020-competition-in-telecommunications-fall-2003/292b4048a8cec5c0418751da86757274_15-020f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

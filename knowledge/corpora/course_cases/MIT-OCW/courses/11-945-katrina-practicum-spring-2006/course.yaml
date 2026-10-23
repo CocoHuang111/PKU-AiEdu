@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-11-945-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.945"
+cross_listed_codes: []
+course_title: "Katrina Practicum"
+course_slug: "11-945-katrina-practicum-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Ceasar McDowell"
+  - "Prof. J. Phillip Thompson"
+  - "Prof. JoAnn Carmin"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Public Policy"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+  - "Housing Development"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Public Policy"
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties:
+          - "Housing Development"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Lecture Notes"
+description: |
+  In the wake of Katrina the entire gulf coast is embroiled in a struggle over what constitutes “appropriate” rebuilding and redevelopment efforts. This practicum will engage students in a set of work groups designed to assist local community based institutions and people in shaping the policy and practices that will guide the redevelopment and rebuilding efforts in the city of New Orleans.
+course_url: "https://ocw.mit.edu/courses/11-945-katrina-practicum-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/11-945-katrina-practicum-spring-2006/242148a39d62cc9484b268189d980886_11-945s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

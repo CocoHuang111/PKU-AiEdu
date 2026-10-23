@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-res-2-006-summer-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.2-006"
+cross_listed_codes: []
+course_title: "Girls Who Build Cameras"
+course_slug: "res-2-006-girls-who-build-cameras-summer-2016"
+term: "Summer"
+year: 2016
+as_taught_in: "Summer 2016"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "High School"
+instructors:
+  - "Kristen E Railey"
+  - "Bob Schulein"
+  - "Olivia Glennon"
+  - "Leslie Watkins"
+  - "Alex Lorman"
+  - "Carol Carveth"
+  - "Sara James"
+subject_primary: "Technology"
+subject_secondary:
+  - "Engineering"
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Image Gallery"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Programming Assignments with Examples"
+description: |
+  The Girls Who Build Cameras workshop for high school girls is a one-day, hands-on introduction to camera physics and technology (i.e. how Instagram works!) at the MIT Lincoln Laboratory Beaverworks Center . The workshop includes tearing down old dSLR cameras, building a Raspberry Pi camera, and designing Instagram filters and Photoshop tools. Participants also get to listen to keynote speakers from the camera technology industry, including Kris Clark who engineers space cameras for NASA and MIT Lincoln Laboratory, and Uyanga Tsedev who creates imaging probes to help surgeons find tumors at MIT. During lunch, representatives from the Society of Women Engineers and the Women’s Technology Program at MIT will present future opportunities to get involved in engineering in high school and college.
+course_url: "https://ocw.mit.edu/courses/res-2-006-girls-who-build-cameras-summer-2016/"
+image_url: "https://ocw.mit.edu/courses/res-2-006-girls-who-build-cameras-summer-2016/79dbf8496c35fd78c2c1336060c66402_res-2-006sum16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

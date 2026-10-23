@@ -1,0 +1,67 @@
+schema_version: "1.0"
+course_id: "mitocw-8-821-fall-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.821"
+cross_listed_codes:
+  - "8.871"
+course_title: "String Theory and Holographic Duality"
+course_slug: "8-821-string-theory-and-holographic-duality-fall-2014"
+term: "Fall"
+year: 2014
+as_taught_in: "Fall 2014"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Hong Liu"
+subject_primary: "Physics"
+subject_secondary:
+  - "Particle Physics"
+  - "Quantum Mechanics"
+  - "Theoretical Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Particle Physics"
+          - "Quantum Mechanics"
+          - "Theoretical Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This string theory course focuses on holographic duality (also known as gauge / gravity duality or AdS / CFT) as a novel method of approaching and connecting a range of diverse subjects, including quantum gravity / black holes, QCD at extreme conditions, exotic condensed matter systems, and quantum information.
+course_url: "https://ocw.mit.edu/courses/8-821-string-theory-and-holographic-duality-fall-2014/"
+image_url: "https://ocw.mit.edu/courses/8-821-string-theory-and-holographic-duality-fall-2014/529bf14b1b4a356d33946b186a3181a5_8-821f14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

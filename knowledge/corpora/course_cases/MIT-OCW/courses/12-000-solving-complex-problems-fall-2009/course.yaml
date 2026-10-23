@@ -1,0 +1,77 @@
+schema_version: "1.0"
+course_id: "mitocw-12-000-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.000"
+cross_listed_codes: []
+course_title: "Solving Complex Problems"
+course_slug: "12-000-solving-complex-problems-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Samuel Bowring"
+subject_primary: "Environmental Engineering"
+subject_secondary:
+  - "Environmental Management"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Environmental Science"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Environmental Engineering"
+        specialties:
+          - "Environmental Management"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Environmental Science"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects with Examples"
+  - "Written Assignments with Examples"
+description: |
+  12.000 Solving Complex Problems is designed to provide students the opportunity to work as part of a team to propose solutions to a complex problem that requires an interdisciplinary approach. For the students of the class of 2013, 12.000 will revolve around the issues associated with what we can and must do about the steadily increasing amounts CO 2 in Earth’s atmosphere. 12.000 is a core course for the MIT Terrascope freshman learning community. Each year’s class explores a different problem in detail through the study of complementary case histories and the development of creative solution strategies. It includes training in Web site development, effective written and oral communication, and team building. Initially developed with major financial support from the d’Arbeloff Fund for Excellence in Education , 12.000 is designed to enhance the freshman experience by helping students develop contexts for other subjects in the sciences and humanities, and by helping them to establish learning communities that include upperclassmen, faculty, MIT alumni, and professionals in science and engineering fields.
+course_url: "https://ocw.mit.edu/courses/12-000-solving-complex-problems-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/12-000-solving-complex-problems-fall-2009/d0858e57959fc33931782b75722957ef_12-000f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

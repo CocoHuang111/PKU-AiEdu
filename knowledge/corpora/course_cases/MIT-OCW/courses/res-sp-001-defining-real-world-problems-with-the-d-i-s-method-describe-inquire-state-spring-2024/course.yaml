@@ -1,0 +1,54 @@
+schema_version: "1.0"
+course_id: "mitocw-res-sp-001-spring-2024"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.SP-001"
+cross_listed_codes: []
+course_title: "Defining Real-World Problems With the D.I.S. Method: Describe, Inquire, State"
+course_slug: "res-sp-001-defining-real-world-problems-with-the-d-i-s-method-describe-inquire-state-spring-2024"
+term: "Spring"
+year: 2024
+as_taught_in: "Spring 2024"
+language: "en"
+departments:
+  - "Special Programs"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Rea Lavi"
+  - "Claire Berman"
+  - "Alejandro Paz"
+subject_primary: "Engineering"
+subject_secondary: []
+topic_tree:
+  - name: "Engineering"
+    subtopics: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course introduces the D.I.S. method to structure and define real-world problems. The D.I.S., which stands for “Describe, Inquire, State," is a domain-agnostic method for structuring (or defining) ill-structured problems.
+course_url: "https://ocw.mit.edu/courses/res-sp-001-defining-real-world-problems-with-the-d-i-s-method-describe-inquire-state-spring-2024/"
+image_url: |
+  https://ocw.mit.edu/courses/res-sp-001-defining-real-world-problems-with-the-d-i-s-method-describe-inquire-state-spring-2024/mit_res_sp_001_s24.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

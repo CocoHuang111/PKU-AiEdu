@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-22-012-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "22.012"
+cross_listed_codes:
+  - "22.S27"
+course_title: "Seminar: Fusion and Plasma Physics"
+course_slug: "22-012-seminar-fusion-and-plasma-physics-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Nuclear Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kim Molvig"
+subject_primary: "Physics"
+subject_secondary:
+  - "Nuclear Physics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Nuclear Physics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+description: |
+  This course uses lectures and discussion to introduce the range of topics relevant to plasma physics and fusion engineering. An introductory discussion of the economic and ecological motivation for the development of fusion power is also presented. Contemporary magnetic confinement schemes, theoretical questions, and engineering considerations are presented by expert guest lecturers. Students enrolled in the course also tour the Plasma Science and Fusion Center experimental facilities.
+course_url: "https://ocw.mit.edu/courses/22-012-seminar-fusion-and-plasma-physics-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/22-012-seminar-fusion-and-plasma-physics-spring-2006/7304a857b003afd41a370decbd08f9fe_22-012s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

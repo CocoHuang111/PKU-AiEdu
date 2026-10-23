@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-guided-discovery-mechanical-engineering"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Guided Discovery in Mechanical Engineering"
+slug: "guided-discovery-mechanical-engineering"
+course_codes:
+  - "2"
+departments:
+  - "Mechanical Engineering (Course 2)"
+instructors:
+  - "Emanuel Sachs"
+digital_innovations_tools:
+  - "Active Learning"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/guided-discovery-mechanical-engineering"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "062d07867a2881f5f8b39f8737ad5e6dd087de3591c1999f26c5f8b0895f0828"

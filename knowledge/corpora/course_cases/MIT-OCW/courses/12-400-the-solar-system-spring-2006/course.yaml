@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-12-400-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.400"
+cross_listed_codes: []
+course_title: "The Solar System"
+course_slug: "12-400-the-solar-system-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Richard Binzel"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geophysics"
+  - "Planetary Science"
+  - "Physics"
+  - "Astrophysics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geophysics"
+          - "Planetary Science"
+      - name: "Physics"
+        specialties:
+          - "Astrophysics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This is an introduction to the study of the solar system with emphasis on the latest spacecraft results. The subject covers basic principles rather than detailed mathematical and physical models. Topics include: an overview of the solar system, planetary orbits, rings, planetary formation, meteorites, asteroids, comets, planetary surfaces and cratering, planetary interiors, planetary atmospheres, and life in the solar system.
+course_url: "https://ocw.mit.edu/courses/12-400-the-solar-system-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/12-400-the-solar-system-spring-2006/5d7737e642fc18071767cce92b7fac12_12-400s06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

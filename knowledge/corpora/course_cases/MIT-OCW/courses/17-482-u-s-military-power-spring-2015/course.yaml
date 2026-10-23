@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-17-482-spring-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.482"
+cross_listed_codes:
+  - "17.483"
+course_title: "U.S. Military Power"
+course_slug: "17-482-u-s-military-power-spring-2015"
+term: "Spring"
+year: 2015
+as_taught_in: "Spring 2015"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Undergraduate"
+  - "Graduate"
+instructors:
+  - "Prof. Barry Posen"
+subject_primary: "Political Science"
+subject_secondary:
+  - "Public Administration"
+  - "Military Studies"
+  - "Security Studies"
+  - "Urban Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+          - "Security Studies"
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The purpose of this course is to acquaint the student with the missions, capabilities, and costs of the largely non-nuclear forces that make up the bulk of the U.S. military establishment. The course will also introduce the student to basic techniques for the assessment of relative military capabilities between adversaries in given theaters of military action. Central to the course will be an examination of historical cases of military action that shed light on current defence issues. Many of these cases are recent.
+course_url: "https://ocw.mit.edu/courses/17-482-u-s-military-power-spring-2015/"
+image_url: "https://ocw.mit.edu/courses/17-482-u-s-military-power-spring-2015/e27db152e634e4b2b21797db351f3817_17-482s15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

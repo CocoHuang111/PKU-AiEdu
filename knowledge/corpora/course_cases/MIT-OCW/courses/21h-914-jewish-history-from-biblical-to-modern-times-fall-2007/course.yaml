@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-914-fall-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.914"
+cross_listed_codes: []
+course_title: "Jewish History from Biblical to Modern Times"
+course_slug: "21h-914-jewish-history-from-biblical-to-modern-times-fall-2007"
+term: "Fall"
+year: 2007
+as_taught_in: "Fall 2007"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Peter Temin"
+subject_primary: "History"
+subject_secondary:
+  - "Jewish History"
+  - "Religion"
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+  - "Ethnography"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Jewish History"
+      - name: "Religion"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores how our views of Jewish history have been formed and how this history can explain the survival of the Jews as an ethnic/religious group into the present day. Special attention is given to the partial and fragmentary nature of our information about the past, and the difficulties inherent in decoding statements about the past that were written with a religious agenda in mind. It also considers complex events in Jewish history – from early history as portrayed in the Bible to recent history, including the Holocaust.
+course_url: "https://ocw.mit.edu/courses/21h-914-jewish-history-from-biblical-to-modern-times-fall-2007/"
+image_url: "https://ocw.mit.edu/courses/21h-914-jewish-history-from-biblical-to-modern-times-fall-2007/892b129780e3c54f0992a0813c1659a2_21h-914f07.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

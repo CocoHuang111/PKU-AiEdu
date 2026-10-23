@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-12-753-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.753"
+cross_listed_codes: []
+course_title: "Geodynamics Seminar"
+course_slug: "12-753-geodynamics-seminar-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Glenn Gaetani"
+  - "Prof. Laurent Montesi"
+subject_primary: "Earth Science"
+subject_secondary:
+  - "Geology"
+  - "Geophysics"
+  - "Planetary Science"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Geology"
+          - "Geophysics"
+          - "Planetary Science"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Image Gallery"
+  - "Projects"
+description: |
+  In this year’s seminar, we will embark on a scientific journey through some of the most controversial topics about the origin and formation of our home planet. This journey will take us to other planetary bodies - even to other solar systems - as we immerse ourselves in observations and theories from the microscopic to the universe scale. The seminar will be organized around three broad questions: How was the Earth formed? What did early Earth look like? When did living organisms first appear on Earth? Experts in meteorites, geology of other planets, thermodynamics and tracers of living organisms, and theories of formation and evolution of planets, including early atmosphere and oceans, will come to WHOI and help us address these questions.
+course_url: "https://ocw.mit.edu/courses/12-753-geodynamics-seminar-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/12-753-geodynamics-seminar-spring-2005/625c4966a984c87b3dd96c63b726b653_12-753s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

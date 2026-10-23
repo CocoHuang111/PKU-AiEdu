@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-11-433j-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.433J"
+cross_listed_codes:
+  - "15.021J"
+course_title: "Real Estate Economics"
+course_slug: "11-433j-real-estate-economics-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. William Wheaton"
+subject_primary: "Real Estate"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Macroeconomics"
+  - "Public Administration"
+  - "Urban Studies"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Real Estate"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Macroeconomics"
+      - name: "Public Administration"
+        specialties: []
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course, offered by the MIT Center for Real Estate , focuses on developing an understanding of the macroeconomic factors that shape and influence markets for real property. We will develop the theory of land markets and locational choice. The material covered includes studies of changing economic activities, demographic trends, transportation and local government behavior as they affect real estate.
+course_url: "https://ocw.mit.edu/courses/11-433j-real-estate-economics-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/11-433j-real-estate-economics-fall-2008/4d913099abe0c4065b853fd3503fc5cf_11-433jf08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-10-467-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "10.467"
+cross_listed_codes: []
+course_title: "Polymer Science Laboratory"
+course_slug: "10-467-polymer-science-laboratory-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Chemical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Mr. Harlan Breindel"
+  - "Prof. Paula Hammond"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Polymers"
+  - "Materials Science and Engineering"
+  - "Polymeric Materials"
+  - "Science"
+  - "Chemistry"
+  - "Physical Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties:
+          - "Polymers"
+      - name: "Materials Science and Engineering"
+        specialties:
+          - "Polymeric Materials"
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties:
+          - "Physical Chemistry"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Experiments in this class are broadly aimed at acquainting students with the range of properties of polymers, methods of synthesis, and physical chemistry. Some examples of laboratory work include solution polymerization of acrylamide, bead polymerization of divinylbenzene, and interfacial polymerization of nylon 6,10. Evaluation of networks by tensile and swelling experiments, rheology of polymer solutions and suspensions, and physical properties of natural and silicone rubber are also covered.
+course_url: "https://ocw.mit.edu/courses/10-467-polymer-science-laboratory-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/10-467-polymer-science-laboratory-fall-2005/2d74349d8e4eef92ce757e32209c3efa_10-467f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

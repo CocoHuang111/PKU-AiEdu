@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-207-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.207"
+cross_listed_codes: []
+course_title: "The Energy Crisis: Past and Present"
+course_slug: "21h-207-the-energy-crisis-past-and-present-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Meg Jacobs"
+subject_primary: "Fossil Fuels"
+subject_secondary:
+  - "Humanities"
+  - "History"
+  - "American History"
+  - "Modern History"
+  - "Social Science"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Fossil Fuels"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "American History"
+          - "Modern History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course will explore how Americans have confronted energy challenges since the end of World War II. Beginning in the 1970s, Americans worried about the supply of energy. As American production of oil declined, would the US be able to secure enough fuel to sustain their high consumption lifestyles? At the same time, Americans also began to fear the environmental side affects of energy use. Even if the US had enough fossil fuel, would its consumption be detrimental to health and safety? This class examines how Americans thought about these questions in the last half-century. We will consider the political, diplomatic, economic, cultural, and technological aspects of the energy crisis. Topics include nuclear power, suburbanization and the new car culture, the environmental movement and the challenges of clean energy, the Middle East and supply of oil, the energy crisis of the 1970s, and global warming.
+course_url: "https://ocw.mit.edu/courses/21h-207-the-energy-crisis-past-and-present-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/21h-207-the-energy-crisis-past-and-present-fall-2010/d8e20c9c627bb798c196b35aa6467164_21h-207f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

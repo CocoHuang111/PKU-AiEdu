@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "cornell-building-ai-literacy-through-visualizing-innovative-textile-projects"
+institution: "Cornell University"
+platform: "Cornell Teaching Case Studies"
+collection: "Teaching Innovation Case Study Library"
+title: "Building AI Literacy through Visualizing Innovative Textile Projects"
+slug: "building-ai-literacy-through-visualizing-innovative-textile-projects"
+source_url: "https://blogs.cornell.edu/teachingcasestudies/gai/building-ai-literacy-through-visualizing-innovative-textile-projects/"
+language: "en"
+published: "2024-04-05"
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  published: "source"
+extraction_status: "complete"
+content_sha256: "928c7e6f7b7cec85cf1ed95b9f8d107da77622998845d083647de8ad0b2e4623"

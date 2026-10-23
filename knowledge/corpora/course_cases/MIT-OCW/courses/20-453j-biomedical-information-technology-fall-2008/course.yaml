@@ -1,0 +1,90 @@
+schema_version: "1.0"
+course_id: "mitocw-20-453j-fall-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "20.453J"
+cross_listed_codes:
+  - "2.771J"
+  - "HST.958J"
+course_title: "Biomedical Information Technology"
+course_slug: "20-453j-biomedical-information-technology-fall-2008"
+term: "Fall"
+year: 2008
+as_taught_in: "Fall 2008"
+language: "en"
+departments:
+  - "Biological Engineering"
+  - "Mechanical Engineering"
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. C. Forbes Dewey"
+  - "Prof. Hanry Yu"
+  - "Prof. Sourav Saha Bhowmick"
+subject_primary: "Information Technology"
+subject_secondary:
+  - "Engineering"
+  - "Biological Engineering"
+  - "Computational Biology"
+  - "Computer Science"
+  - "Data Mining"
+  - "Health and Medicine"
+  - "Biomedical Instrumentation"
+  - "Biomedicine"
+  - "Medical Imaging"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Information Technology"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Instrumentation"
+        specialties: []
+      - name: "Biomedicine"
+        specialties: []
+      - name: "Medical Imaging"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Presentation Assignments with Examples"
+  - "Programming Assignments"
+  - "Written Assignments with Examples"
+description: |
+  This course teaches the design of contemporary information systems for biological and medical data. Examples are chosen from biology and medicine to illustrate complete life cycle information systems, beginning with data acquisition, following to data storage and finally to retrieval and analysis. Design of appropriate databases, client-server strategies, data interchange protocols, and computational modeling architectures. Students are expected to have some familiarity with scientific application software and a basic understanding of at least one contemporary programming language (e.g. C, C++, Java, Lisp, Perl, Python). A major term project is required of all students. This subject is open to motivated seniors having a strong interest in biomedical engineering and information system design with the ability to carry out a significant independent project. This course was offered as part of the Singapore-MIT Alliance (SMA) program as course number SMA 5304.
+course_url: "https://ocw.mit.edu/courses/20-453j-biomedical-information-technology-fall-2008/"
+image_url: "https://ocw.mit.edu/courses/20-453j-biomedical-information-technology-fall-2008/c2dc5f4cc94aa3c22770f8e497f3734e_20-453jf08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

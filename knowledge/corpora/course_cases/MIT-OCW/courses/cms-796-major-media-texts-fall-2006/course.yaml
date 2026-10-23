@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-cms-796-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "CMS.796"
+cross_listed_codes: []
+course_title: "Major Media Texts"
+course_slug: "cms-796-major-media-texts-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Diana Henderson"
+subject_primary: "Media Studies"
+subject_secondary:
+  - "Humanities"
+  - "Literature"
+  - "Criticism"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Media Studies"
+        specialties: []
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This class does intensive close study and analysis of historically significant media “texts” that have been considered landmarks or have sustained extensive critical and scholarly discussion. Such texts may include oral epic, story cycles, plays, novels, films, opera, television drama and digital works. The course emphasizes close reading from a variety of contextual and aesthetic perspectives. The syllabus varies each year, and may be organized around works that have launched new modes and genres, works that reflect upon their own media practices, or on stories that migrate from one medium to another. At least one of the assigned texts is collaboratively taught, and visiting lectures and discussions are a regular feature of the subject.
+course_url: "https://ocw.mit.edu/courses/cms-796-major-media-texts-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/cms-796-major-media-texts-fall-2006/f0da6dba5fb3fd34850c1d2721a7f232_cms-796f06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

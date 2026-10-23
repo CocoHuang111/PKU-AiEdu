@@ -1,0 +1,76 @@
+schema_version: "1.0"
+course_id: "mitocw-12-804-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "12.804"
+cross_listed_codes: []
+course_title: "Large-scale Flow Dynamics Lab"
+course_slug: "12-804-large-scale-flow-dynamics-lab-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Earth, Atmospheric, and Planetary Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Glenn Flierl"
+  - "Dr. Lodovica Illari"
+subject_primary: "Ocean Engineering"
+subject_secondary:
+  - "Hydrodynamics"
+  - "Science"
+  - "Earth Science"
+  - "Atmospheric Science"
+  - "Geophysics"
+  - "Oceanography"
+  - "Physics"
+  - "Thermodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Atmospheric Science"
+          - "Geophysics"
+          - "Oceanography"
+      - name: "Physics"
+        specialties:
+          - "Thermodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  This course is a laboratory accompaniment to 12.803, Quasi-balanced Circulations in Oceans and Atmospheres. The subject includes analysis of observations of oceanic and atmospheric quasi-balanced flows, computational models, and rotating tank experiments. Student projects illustrate the basic principles of potential vorticity conservation and inversion, Rossby wave propagation, baroclinic instability, and the behavior of isolated vortices.
+course_url: "https://ocw.mit.edu/courses/12-804-large-scale-flow-dynamics-lab-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/12-804-large-scale-flow-dynamics-lab-fall-2009/69bbbc522d22da653456e0ee2db35e01_12-804f09.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

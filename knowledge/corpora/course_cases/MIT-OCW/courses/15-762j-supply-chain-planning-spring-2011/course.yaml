@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-15-762j-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.762J"
+cross_listed_codes:
+  - "IDS.735J (formerly ESD.267J)"
+  - "1.273J"
+course_title: "Supply Chain Planning"
+course_slug: "15-762j-supply-chain-planning-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Institute for Data, Systems, and Society"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Stephen Graves"
+  - "Prof. David Simchi-Levi"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Supply Chain Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  15.762J Supply Chain Planning focuses on effective supply chain strategies for companies that operate globally, with an emphasis on how to plan and integrate supply chain components into a coordinated system. Students are exposed to concepts and models important in supply chain planning with emphasis on key tradeoffs and phenomena. The course introduces and utilizes key tactics such as risk pooling and inventory placement, integrated planning and collaboration, and information sharing. Lectures, computer exercises, and case discussions introduce various models and methods for supply chain analysis and optimization.
+course_url: "https://ocw.mit.edu/courses/15-762j-supply-chain-planning-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/15-762j-supply-chain-planning-spring-2011/12b4faeba1b4a271a2f6630a9e35c46f_15-762js11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

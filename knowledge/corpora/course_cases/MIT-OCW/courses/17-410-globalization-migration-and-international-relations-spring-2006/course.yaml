@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-17-410-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.410"
+cross_listed_codes:
+  - "17.411"
+course_title: "Globalization, Migration, and International Relations"
+course_slug: "17-410-globalization-migration-and-international-relations-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Nazli Choucri"
+subject_primary: "Globalization"
+subject_secondary:
+  - "Social Science"
+  - "Economics"
+  - "Political Economy"
+  - "Political Science"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Globalization"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Political Economy"
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Tracing the evolution of international interactions, this course examines the dimensions of globalization in terms of scale and scope. It is divided into three parts; together they are intended to provide theoretical, empirical, and policy perspectives on source and consequences of globalization, focusing on emergent structures and processes, and on the implications of flows of goods and services across national boundaries – with special attention to the issue of migration, on the assumption that people matter and matter a lot. An important concern addressed pertains to the dilemmas of international policies that are shaped by the macro-level consequences of micro-level behavior. 17.411 fulfills undergraduate public policy requirement in the major and minor. Graduate students are expected to explore the subject in greater depth through reading and individual research.
+course_url: "https://ocw.mit.edu/courses/17-410-globalization-migration-and-international-relations-spring-2006/"
+image_url: |
+  https://ocw.mit.edu/courses/17-410-globalization-migration-and-international-relations-spring-2006/6493ca51bbb260d0c7f70d9dfb6b7251_17-410s06.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

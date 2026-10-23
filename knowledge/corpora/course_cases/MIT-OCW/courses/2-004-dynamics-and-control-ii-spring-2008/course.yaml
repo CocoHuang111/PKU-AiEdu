@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-2-004-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.004"
+cross_listed_codes: []
+course_title: "Dynamics and Control II"
+course_slug: "2-004-dynamics-and-control-ii-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Derek Rowell"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties: []
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Upon successful completion of this course, students will be able to: Create lumped parameter models (expressed as ODEs) of simple dynamic systems in the electrical and mechanical energy domains Make quantitative estimates of model parameters from experimental measurements Obtain the time-domain response of linear systems to initial conditions and/or common forcing functions (specifically; impulse, step and ramp input) by both analytical and computational methods Obtain the frequency-domain response of linear systems to sinusoidal inputs Compensate the transient response of dynamic systems using feedback techniques Design, implement and test an active control system to achieve a desired performance measure Mastery of these topics will be assessed via homework, quizzes/exams, and lab assignments.
+course_url: "https://ocw.mit.edu/courses/2-004-dynamics-and-control-ii-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/2-004-dynamics-and-control-ii-spring-2008/c4768f524c35138e3b5f70eada96a3c1_2-004s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

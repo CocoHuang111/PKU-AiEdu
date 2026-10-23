@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-14-661-fall-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.661"
+cross_listed_codes: []
+course_title: "Labor Economics I"
+course_slug: "14-661-labor-economics-i-fall-2017"
+term: "Fall"
+year: 2017
+as_taught_in: "Fall 2017"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daron Acemoglu"
+  - "Prof. Joshua Angrist"
+subject_primary: "Economics"
+subject_secondary:
+  - "Labor Economics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Labor Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Projects"
+description: |
+  This course aims to acquaint students with traditional and contemporary topics in labor economics and to encourage the development of independent research interests. The class provides a systematic development of the theory of labor supply, labor demand, and human capital. Topics covered include wage and employment determination, immigration, unemployment, equalizing differences, among many others. There is a particular emphasis on the interaction between theoretical and empirical modeling.
+course_url: "https://ocw.mit.edu/courses/14-661-labor-economics-i-fall-2017/"
+image_url: "https://ocw.mit.edu/courses/14-661-labor-economics-i-fall-2017/5503ef364608a026dcca500beecc7979_14-661f17.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

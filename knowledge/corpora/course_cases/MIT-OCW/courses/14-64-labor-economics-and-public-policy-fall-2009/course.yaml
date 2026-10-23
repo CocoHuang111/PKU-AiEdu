@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-14-64-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.64"
+cross_listed_codes: []
+course_title: "Labor Economics and Public Policy"
+course_slug: "14-64-labor-economics-and-public-policy-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Joshua Angrist"
+subject_primary: "Economics"
+subject_secondary:
+  - "Econometrics"
+  - "Labor Economics"
+  - "Microeconomics"
+  - "Public Administration"
+  - "Public Policy"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Econometrics"
+          - "Labor Economics"
+          - "Microeconomics"
+      - name: "Public Administration"
+        specialties:
+          - "Public Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course is an introduction to labor economics with an emphasis on applied microeconomic theory and empirical analysis. We are especially interested in the link between research and public policy. Topics to be covered include: labor supply and demand, taxes and transfers, minimum wages, immigration, human capital, education production, inequality, discrimination, unions and strikes, and unemployment.
+course_url: "https://ocw.mit.edu/courses/14-64-labor-economics-and-public-policy-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/14-64-labor-economics-and-public-policy-fall-2009/b8ecaa82e0dcc2dcaa9eeddd61f67023_14-64f09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

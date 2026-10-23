@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-2-154-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.154"
+cross_listed_codes: []
+course_title: "Maneuvering and Control of Surface and Underwater Vehicles (13.49)"
+course_slug: "2-154-maneuvering-and-control-of-surface-and-underwater-vehicles-13-49-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Michael Triantafyllou"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Dynamics and Control"
+  - "Fluid Mechanics"
+  - "Mechanical Design"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Dynamics and Control"
+          - "Fluid Mechanics"
+          - "Mechanical Design"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Open Textbooks"
+description: |
+  This course is about maneuvering motions of surface and underwater vehicles. Topics covered include: derivation of equations of motion, hydrodynamic coefficients, memory effects, linear and nonlinear forms of the equations of motion, control surfaces modeling and design, engine, propulsor, and transmission systems modeling and simulation during maneuvering. The course also deals with stability of motion, principles of multivariable automatic control, optimal control, Kalman filtering, and loop transfer recovery. We will also explore applications chosen from autopilots for surface vehicles; towing in open seas; and remotely operated vehicles. This course was originally offered in Course 13 (Department of Ocean Engineering) as 13.49. In 2005, ocean engineering subjects became part of Course 2 (Department of Mechanical Engineering), and this course was renumbered 2.154.
+course_url: "https://ocw.mit.edu/courses/2-154-maneuvering-and-control-of-surface-and-underwater-vehicles-13-49-fall-2004/"
+image_url: |
+  https://ocw.mit.edu/courses/2-154-maneuvering-and-control-of-surface-and-underwater-vehicles-13-49-fall-2004/cb28974fff7b2ae2510166c0ab657bdf_2-154f04.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

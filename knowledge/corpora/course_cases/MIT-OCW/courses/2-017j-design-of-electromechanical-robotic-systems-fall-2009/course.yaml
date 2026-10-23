@@ -1,0 +1,81 @@
+schema_version: "1.0"
+course_id: "mitocw-2-017j-fall-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.017J"
+cross_listed_codes:
+  - "1.015J"
+course_title: "Design of Electromechanical Robotic Systems"
+course_slug: "2-017j-design-of-electromechanical-robotic-systems-fall-2009"
+term: "Fall"
+year: 2009
+as_taught_in: "Fall 2009"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Franz Hover"
+  - "Harrison (Hsinyung) Chin"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Robotics and Control Systems"
+  - "Mechanical Engineering"
+  - "Mechanical Design"
+  - "Systems Engineering"
+  - "Systems Design"
+  - "Mathematics"
+  - "Applied Mathematics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+          - "Robotics and Control Systems"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Systems Engineering"
+        specialties:
+          - "Systems Design"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Applied Mathematics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Open Textbooks"
+  - "Problem Sets"
+  - "Projects with Examples"
+description: |
+  This course covers the design, construction, and testing of field robotic systems, through team projects with each student responsible for a specific subsystem. Projects focus on electronics, instrumentation, and machine elements. Design for operation in uncertain conditions is a focus point, with ocean waves and marine structures as a central theme. Topics include basic statistics, linear systems, Fourier transforms, random processes, spectra, ethics in engineering practice, and extreme events with applications in design.
+course_url: "https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/"
+image_url: "https://ocw.mit.edu/courses/2-017j-design-of-electromechanical-robotic-systems-fall-2009/3603c65f2db2f01086d68508804bd3f4_2-017jf09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

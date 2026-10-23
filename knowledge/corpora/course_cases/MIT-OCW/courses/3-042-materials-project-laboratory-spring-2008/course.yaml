@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-3-042-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.042"
+cross_listed_codes: []
+course_title: "Materials Project Laboratory"
+course_slug: "3-042-materials-project-laboratory-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. David Roylance"
+  - "Prof. Yet-Ming Chiang"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Materials Science and Engineering"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Projects"
+description: |
+  As its name implies, the 3.042 Materials Project Laboratory involves working with such operations as investment casting of metals, injection molding of polymers, and sintering of ceramics. After all the abstraction and theory in the lecture part of the DMSE curriculum, many students have found this hands-on experience with materials to be very fun stuff - several have said that 3.042/3.082 was their favorite DMSE subject. The lab is more than operating processing equipment, however. It is intended also to emulate professional practice in materials engineering project management, with aspects of design, analysis, teamwork, literature and patent searching, Web creation and oral presentation, and more.
+course_url: "https://ocw.mit.edu/courses/3-042-materials-project-laboratory-spring-2008/"
+image_url: "https://ocw.mit.edu/courses/3-042-materials-project-laboratory-spring-2008/533fd755104650f0ad222f4831bc3cb8_3-042s08.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

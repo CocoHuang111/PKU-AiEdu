@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21w-794-january-iap-2019"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21W.794"
+cross_listed_codes: []
+course_title: "Graduate Technical Writing Workshop"
+course_slug: "21w-794-graduate-technical-writing-workshop-january-iap-2019"
+term: "January IAP"
+year: 2019
+as_taught_in: "January IAP 2019"
+language: "en"
+departments:
+  - "Comparative Media Studies/Writing"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Caroline Beimford"
+  - "Dr. Andreas Karatsolis"
+  - "Dr. Suzanne T. Lane"
+  - "Dr. Leslie Ann Roldan"
+  - "Dr. Jessie Stickgold-Sarah"
+subject_primary: "Literature"
+subject_secondary:
+  - "Academic Writing"
+  - "Technical Writing"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Academic Writing"
+          - "Technical Writing"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course is designed to improve the student’s ability to communicate technical information. It covers the basics of working with sources, including summarizing and paraphrasing, synthesizing source materials, citing, quoting, and avoiding plagiarism. It also covers how to write an abstract and a literature review. In addition, we will cover communication concepts, tools, and strategies that can help you understand how engineering texts work, and how you can make your texts work more effectively. This course is limited to MIT graduate engineering students based on results of the Graduate Writing Exam .
+course_url: "https://ocw.mit.edu/courses/21w-794-graduate-technical-writing-workshop-january-iap-2019/"
+image_url: "https://ocw.mit.edu/courses/21w-794-graduate-technical-writing-workshop-january-iap-2019/47e728342492e75124cd5b1eb7c88395_21W-794IAP19.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

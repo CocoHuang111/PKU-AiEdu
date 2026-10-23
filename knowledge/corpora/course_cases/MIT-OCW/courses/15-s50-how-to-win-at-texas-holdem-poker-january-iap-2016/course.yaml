@@ -1,0 +1,58 @@
+schema_version: "1.0"
+course_id: "mitocw-15-s50-january-iap-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.S50"
+cross_listed_codes: []
+course_title: "How to Win at Texas Hold'em Poker"
+course_slug: "15-s50-how-to-win-at-texas-holdem-poker-january-iap-2016"
+term: "January IAP"
+year: 2016
+as_taught_in: "January IAP 2016"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Will Ma"
+subject_primary: "Probability and Statistics"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Offered during MIT’s Independent Activites Period (IAP), this short course covers the poker concepts, math concepts, and general concepts needed to play the game of Texas Hold’em on a professional level. IAP is a special 4-week term in January that provides members of the MIT community including students, faculty, staff, and alums with an opportunity to organize, sponsor and participate in a wide variety of activities and topics that are often outside of the regular MIT curriculum. Faculty Advisor: Paul Mende
+course_url: "https://ocw.mit.edu/courses/15-s50-how-to-win-at-texas-holdem-poker-january-iap-2016/"
+image_url: "https://ocw.mit.edu/courses/15-s50-how-to-win-at-texas-holdem-poker-january-iap-2016/64244208708d59729ad2d6eaf4aca647_15-s50iap16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-11-125-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.125"
+cross_listed_codes: []
+course_title: "Introduction to Education: Understanding and Evaluating Education"
+course_slug: "11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Eric Klopfer"
+subject_primary: "Curriculum and Teaching"
+subject_secondary:
+  - "Education Policy"
+topic_tree:
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Education Policy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+description: |
+  This class uses K-12 classroom experiences, along with student-centered classroom activities and student-led classes, to explore issues in schools and education. Students in this course spend time each week observing pre-college math and science classes. Topics of study include design and implementation of curriculum, addressing the needs of a diversity of students, standards in math and science, student misconceptions, methods of instruction, the digital divide, teaching through different media, and student assessment.
+course_url: "https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/11-125-introduction-to-education-understanding-and-evaluating-education-spring-2009/1dc90a2a40c52e3df4517b7148d793d0_11-125s09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-311-fall-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.311"
+cross_listed_codes: []
+course_title: "The Renaissance, 1300-1600"
+course_slug: "21h-311-the-renaissance-1300-1600-fall-2004"
+term: "Fall"
+year: 2004
+as_taught_in: "Fall 2004"
+language: "en"
+departments:
+  - "History"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jeffrey S. Ravel"
+subject_primary: "Humanities"
+subject_secondary:
+  - "Social Science"
+  - "Anthropology"
+  - "Cultural Anthropology"
+topic_tree:
+  - name: "Humanities"
+    subtopics: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The “Renaissance” as a phenomenon in European history is best understood as a series of social, political, and cultural responses to an intellectual trend which began in Italy in the fourteenth century. This intellectual tendency, known as humanism, or the studia humanitatis , was at the heart of developments in literature, the arts, the sciences, religion, and government for almost three hundred years. In this class, we will highlight the history of humanism, but we will also study religious reformations, high politics, the agrarian world, and European conquest and expansion abroad in the period.
+course_url: "https://ocw.mit.edu/courses/21h-311-the-renaissance-1300-1600-fall-2004/"
+image_url: "https://ocw.mit.edu/courses/21h-311-the-renaissance-1300-1600-fall-2004/53068df743269ee2437b888a521aa529_21h-311f04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,79 @@
+schema_version: "1.0"
+course_id: "mitocw-res-3-003-january-iap-2017"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.3-003"
+cross_listed_codes: []
+course_title: "Learn to Build Your Own Videogame with the Unity Game Engine and Microsoft Kinect"
+course_slug: "res-3-003-learn-to-build-your-own-videogame-with-the-unity-game-engine-and-microsoft-kinect-january-iap-2017"
+term: "January IAP"
+year: 2017
+as_taught_in: "January IAP 2017"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Kyle Keane"
+  - "Andrew Ringler"
+  - "Abhinav Gandhi"
+  - "Mark Vrablic"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Graphics and Visualization"
+  - "Software Design and Engineering"
+  - "Fine Arts"
+  - "Game Design"
+  - "Media Studies"
+  - "Digital Media"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Graphics and Visualization"
+          - "Software Design and Engineering"
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Game Design"
+        specialties: []
+      - name: "Media Studies"
+        specialties:
+          - "Digital Media"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Instructor Insights"
+  - "Lecture Videos"
+  - "Projects with Examples"
+  - "Tutorial Videos"
+description: |
+  This is a 9-day hands-on workshop about designing, building, and publishing simple educational videogames. No previous experience with computer programming or videogame design is required; beginning students will be taught everything they need to know and advanced students will be challenged to learn new skills. Participants will learn about videogame creation using the Unity game engine, collaborative software development using GitHub, gesture handling using the Microsoft Kinect, 3D digital object creation, videogame design, and small team management. This course is offered during the Independent Activities Period (IAP), which is a special 4-week term at MIT that runs from the first week of January until the end of the month.
+course_url: "https://ocw.mit.edu/courses/res-3-003-learn-to-build-your-own-videogame-with-the-unity-game-engine-and-microsoft-kinect-january-iap-2017/"
+image_url: |
+  https://ocw.mit.edu/courses/res-3-003-learn-to-build-your-own-videogame-with-the-unity-game-engine-and-microsoft-kinect-january-iap-2017/076b46dc3dc24d0a61d516a8d2fb648d_RES-3-003iap2017.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

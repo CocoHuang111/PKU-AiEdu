@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-15-667-spring-2001"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.667"
+cross_listed_codes: []
+course_title: "Negotiation and Conflict Management"
+course_slug: "15-667-negotiation-and-conflict-management-spring-2001"
+term: "Spring"
+year: 2001
+as_taught_in: "Spring 2001"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Mary Rowe"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Industrial Relations and Human Resource Management"
+  - "Management"
+  - "Social Science"
+  - "Communication"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Podcasts"
+  - "Written Assignments"
+description: |
+  Negotiation and Conflict Management presents negotiation theory – strategies and styles – within an employment context. 15.667 meets only eleven times, with a different topic each week, which is why students should commit to attending all classes. In addition to the theory and exercises presented in class, students practice negotiating with role-playing simulations that cover a range of topics. Students also learn how to negotiate in difficult situations, which include abrasiveness, racism, sexism, whistle-blowing, and emergencies. The course covers conflict management as a first party and as a third party: third-party skills include helping others deal directly with their conflicts, mediation, investigation, arbitration, and helping the system change as a result of a dispute. Learning and grading in 15.667 is based on: readings, simulations and class discussions, four self-assessments, your analysis of the negotiations of others, writing each week in your journal, and writing three Little Papers.
+course_url: "https://ocw.mit.edu/courses/15-667-negotiation-and-conflict-management-spring-2001/"
+image_url: "https://ocw.mit.edu/courses/15-667-negotiation-and-conflict-management-spring-2001/8a405cf94502792d40f4ae3d92661dae_15-667s01.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

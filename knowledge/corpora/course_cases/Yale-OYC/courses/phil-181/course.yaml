@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-phil-181"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "PHIL 181"
+course_title: "Philosophy and the Science of Human Nature"
+course_slug: "phil-181"
+department_path: "philosophy"
+professors:
+  - "Tamar Gendler Vincent J. Scully Professor of Philosophy and Professor of Cognitive Science"
+course_url: "https://oyc.yale.edu/philosophy/phil-181"
+language: "en"
+description: |
+  Philosophy and the Science of Human Nature pairs central texts from Western philosophical tradition (including works by Plato, Aristotle, Epictetus, Hobbes, Kant, Mill, Rawls, and Nozick) with recent findings in cognitive science and related fields. The course is structured around three intertwined sets of topics: Happiness and Flourishing; Morality and Justice; and Political Legitimacy and Social Structures.
+license_url: ""
+session_count: 26
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

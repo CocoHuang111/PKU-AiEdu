@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-235-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.235"
+cross_listed_codes: []
+course_title: "Monteverdi to Mozart: 1600-1800"
+course_slug: "21m-235-monteverdi-to-mozart-1600-1800-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Music"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Teresa M. Neff"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Demonstration Videos"
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course surveys seven Baroque and Classical genres: opera, oratorio, cantata, sonata, concerto, quartet, symphony, and includes work by composers Bach, Handel, Haydn, Monteverdi, Mozart, Purcell, Schütz and Vivaldi. Course work is based on live performances as well as listening and reading assignments.
+course_url: "https://ocw.mit.edu/courses/21m-235-monteverdi-to-mozart-1600-1800-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/21m-235-monteverdi-to-mozart-1600-1800-fall-2013/661cefcb9aa4ee1e90d7bc30962ca046_21m-235f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

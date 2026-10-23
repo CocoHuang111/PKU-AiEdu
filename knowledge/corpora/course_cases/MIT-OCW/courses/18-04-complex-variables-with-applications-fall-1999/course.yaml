@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-18-04-fall-1999"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.04"
+cross_listed_codes: []
+course_title: "Complex Variables with Applications"
+course_slug: "18-04-complex-variables-with-applications-fall-1999"
+term: "Fall"
+year: 1999
+as_taught_in: "Fall 1999"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. R. Rosales"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Calculus"
+  - "Mathematical Analysis"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Calculus"
+        specialties: []
+      - name: "Mathematical Analysis"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  The following topics are covered in the course: complex algebra and functions; analyticity; contour integration, Cauchy's theorem; singularities, Taylor and Laurent series; residues, evaluation of integrals; multivalued functions, potential theory in two dimensions; Fourier analysis and Laplace transforms.
+course_url: "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-fall-1999/"
+image_url: "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-fall-1999/1790a782d0d01699e160227fa083ce88_18-04f99.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

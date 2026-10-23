@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-5-301-january-iap-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "5.301"
+cross_listed_codes: []
+course_title: "Chemistry Laboratory Techniques"
+course_slug: "5-301-chemistry-laboratory-techniques-january-iap-2012"
+term: "January IAP"
+year: 2012
+as_taught_in: "January IAP 2012"
+language: "en"
+departments:
+  - "Chemistry"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. John J. Dolhun"
+subject_primary: "Chemistry"
+subject_secondary: []
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Instructor Insights"
+description: |
+  This course is an intensive introduction to the techniques of experimental chemistry and gives first year students an opportunity to learn and master the basic chemistry lab techniques for carrying out experiments. Students who successfully complete the course and obtain a “Competent Chemist” (CC) or “Expert Experimentalist” (EE) rating are likely to secure opportunities for research work in a chemistry lab at MIT. Acknowledgements The laboratory manual and materials for this course were prepared by Dr. Katherine J. Franz and Dr. Kevin M. Shea with the assistance of Professors Rick L. Danheiser and Timothy M. Swager. Materials have been revised by Dr. J. Haseltine, Dr. Kevin M. Shea, Dr. Sarah A. Tabacco, Dr. Kimberly L. Berkowski, Anne M. (Gorham) Rachupka, and Dr. John J. Dolhun. WARNING NOTICE The experiments described in these materials are potentially hazardous and require a high level of safety training, special facilities and equipment, and supervision by appropriate individuals. You bear the sole responsibility, liability, and risk for the implementation of such safety procedures and measures. MIT shall have no responsibility, liability, or risk for the content or implementation of any of the material presented. Legal Notice
+course_url: "https://ocw.mit.edu/courses/5-301-chemistry-laboratory-techniques-january-iap-2012/"
+image_url: "https://ocw.mit.edu/courses/5-301-chemistry-laboratory-techniques-january-iap-2012/608fbe13fdb3edc9a80e353b29b7ebe1_5-301iap12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

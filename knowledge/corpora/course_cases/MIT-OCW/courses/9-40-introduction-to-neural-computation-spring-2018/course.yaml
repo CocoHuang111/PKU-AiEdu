@@ -1,0 +1,83 @@
+schema_version: "1.0"
+course_id: "mitocw-9-40-spring-2018"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.40"
+cross_listed_codes: []
+course_title: "Introduction to Neural Computation"
+course_slug: "9-40-introduction-to-neural-computation-spring-2018"
+term: "Spring"
+year: 2018
+as_taught_in: "Spring 2018"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michale Fee"
+  - "Daniel Zysman"
+subject_primary: "Biological Engineering"
+subject_secondary:
+  - "Computational Biology"
+  - "Health and Medicine"
+  - "Biomedical Signal and Image Processing"
+  - "Sensory-Neural Systems"
+  - "Science"
+  - "Biology"
+  - "Biophysics"
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Biological Engineering"
+        specialties:
+          - "Computational Biology"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Biomedical Signal and Image Processing"
+        specialties: []
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Biophysics"
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  This course introduces quantitative approaches to understanding brain and cognitive functions. Topics include mathematical description of neurons, the response of neurons to sensory stimuli, simple neuronal networks, statistical inference and decision making. It also covers foundational quantitative tools of data analysis in neuroscience: correlation, convolution, spectral analysis, principal components analysis, and mathematical concepts including simple differential equations and linear algebra.
+course_url: "https://ocw.mit.edu/courses/9-40-introduction-to-neural-computation-spring-2018/"
+image_url: "https://ocw.mit.edu/courses/9-40-introduction-to-neural-computation-spring-2018/45e32c888216f65a9424be2d8e80c3ba_9-40s18.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

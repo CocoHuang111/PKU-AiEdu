@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-15-356-spring-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.356"
+cross_listed_codes: []
+course_title: "How to Develop Breakthrough Products and Services"
+course_slug: "15-356-how-to-develop-breakthrough-products-and-services-spring-2012"
+term: "Spring"
+year: 2012
+as_taught_in: "Spring 2012"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Eric von Hippel"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Innovation"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Innovation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Written Assignments"
+description: |
+  Firms must develop major innovations to prosper, but they don’t know how to. However, recent research into the innovation process has made it possible to develop breakthroughs systematically. 15.356 How to Develop Breakthrough Products and Services explores several practical idea generation development methods. To convey the art required to implement each of these methodologies, experts are invited to present real cases to the class.
+course_url: "https://ocw.mit.edu/courses/15-356-how-to-develop-breakthrough-products-and-services-spring-2012/"
+image_url: |
+  https://ocw.mit.edu/courses/15-356-how-to-develop-breakthrough-products-and-services-spring-2012/e9364f2c78325737c5785e372c8330cc_15-356s12.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

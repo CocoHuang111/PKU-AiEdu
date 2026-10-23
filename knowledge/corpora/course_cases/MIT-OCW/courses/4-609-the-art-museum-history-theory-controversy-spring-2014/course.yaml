@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-4-609-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.609"
+cross_listed_codes: []
+course_title: "The Art Museum: History, Theory, Controversy"
+course_slug: "4-609-the-art-museum-history-theory-controversy-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Kristel R Smentek"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural History and Criticism"
+  - "Art History"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural History and Criticism"
+      - name: "Art History"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  Art museums are powerful and contested institutions. They are also innovative sites of architectural and artistic practice. From the exhibitionary complex of the nineteenth century to the experiential complex of today, this course investigates the art museum from historical and contemporary perspectives, striking a balance between theoretical investigation and case studies of recent exhibitions and museum buildings. Where and why did the concept of the public art museum emerge, and how have its functions changed over time? How do art museums continue to shape our definitions of what art is? How have they responded to recent critiques of the self-described ‘universal’ museum and to claims for the ethical display of ill-gotten artifacts or the restitution of such objects as Greek vases and bronzes looted from Benin? And why is the Euro-American art museum so compelling a model that it has spread around the globe? To address these and other questions, we will also go behind the scenes. Visits to local museums and discussions with curators are an essential component of the course.
+course_url: "https://ocw.mit.edu/courses/4-609-the-art-museum-history-theory-controversy-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/4-609-the-art-museum-history-theory-controversy-spring-2014/deebbed447be0f63ec525658a06f2ffb_4-609s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-3-091sc-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "3.091SC"
+cross_listed_codes: []
+course_title: "Introduction to Solid State Chemistry"
+course_slug: "3-091sc-introduction-to-solid-state-chemistry-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Donald Sadoway"
+subject_primary: "Chemical Engineering"
+subject_secondary:
+  - "Materials Science and Engineering"
+  - "Science"
+  - "Chemistry"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Chemical Engineering"
+        specialties: []
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Chemistry"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Problem-solving Videos"
+  - "Supplemental Exam Materials"
+description: |
+  Introduction to Solid State Chemistry is a first-year single-semester college course on the principles of chemistry. This unique and popular course satisfies MIT’s general chemistry degree requirement, with an emphasis on solid-state materials and their application to engineering systems. Course Format This course has been designed for independent study. It provides everything you will need to understand the concepts covered in the course. The materials include: A complete set of Lecture Videos by Prof. Sadoway. Detailed Course Notes for most video sessions, plus readings in several suggested textbooks. Homework problems with solution keys, to further develop your understanding. For Further Study collections of links to supplemental online content. Self-Assessment pages containing quiz and exam problems to assess your mastery, and Help Session Videos in which teaching assistants take you step-by-step through exam problem solutions. About OCW Scholar OCW Scholar courses are designed specifically for OCW’s single largest audience: independent learners. These courses are substantially more complete than typical OCW courses, and include new custom-created content as well as materials repurposed from previously published courses. Learn more about OCW Scholar .
+course_url: "https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/ddf384aecab5bc43975190d715fefe91_3-091scf10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

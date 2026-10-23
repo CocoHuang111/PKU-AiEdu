@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-online-testing-recommendations-security-economy-and"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Online Testing: Recommendations for security, economy, and student wellbeing"
+slug: "online-testing-recommendations-security-economy-and"
+course_codes: []
+departments:
+  - "Office of Digital Learning"
+instructors:
+  - "Craig Zilles (University of Illinois)"
+digital_innovations_tools:
+  - "Online Assessments & Rapid Feedback"
+  - "Remote Teaching"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/online-testing-recommendations-security-economy-and"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "20b9c83d513493a035c247551730d462ed7b3ff933d2347db9fd17e55afefe8b"

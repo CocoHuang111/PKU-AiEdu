@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-1-571-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.571"
+cross_listed_codes: []
+course_title: "Structural Analysis and Control"
+course_slug: "1-571-structural-analysis-and-control-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jerome Connor"
+subject_primary: "Civil Engineering"
+subject_secondary:
+  - "Structural Engineering"
+  - "Systems Engineering"
+  - "Computational Modeling and Simulation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Structural Engineering"
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Open Textbooks"
+  - "Problem Sets"
+description: |
+  This course uses computer-based methods for the analysis of large-scale structural systems. Topics covered include: modeling strategies for complex structures; application to tall buildings, cable-stayed bridges, and tension structures; introduction to the theory of active structural control; design of classical feedback control systems for civil structures; and simulation studies using customized computer software.
+course_url: "https://ocw.mit.edu/courses/1-571-structural-analysis-and-control-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/1-571-structural-analysis-and-control-spring-2004/9759393a54c131055b9c589d3dbc94dc_1-571s04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

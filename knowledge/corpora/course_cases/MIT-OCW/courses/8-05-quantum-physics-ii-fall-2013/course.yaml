@@ -1,0 +1,61 @@
+schema_version: "1.0"
+course_id: "mitocw-8-05-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.05"
+cross_listed_codes: []
+course_title: "Quantum Physics II"
+course_slug: "8-05-quantum-physics-ii-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Barton Zwiebach"
+subject_primary: "Physics"
+subject_secondary:
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Problem Sets"
+description: |
+  Together, this course and 8.06 Quantum Physics III cover quantum physics with applications drawn from modern physics. Topics covered in this course include the general formalism of quantum mechanics, harmonic oscillator, quantum mechanics in three-dimensions, angular momentum, spin, and addition of angular momentum. The lectures and lecture notes for this course form the basis of Zwiebach’s textbook Mastering Quantum Mechanics published by MIT Press in April 2022.
+course_url: "https://ocw.mit.edu/courses/8-05-quantum-physics-ii-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/8-05-quantum-physics-ii-fall-2013/25694246e28ccb008139c6ab57556c6a_8-05f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

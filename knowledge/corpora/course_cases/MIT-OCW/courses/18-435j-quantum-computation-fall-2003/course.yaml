@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-18-435j-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.435J"
+cross_listed_codes:
+  - "2.111J"
+  - "ESD.79J"
+course_title: "Quantum Computation"
+course_slug: "18-435j-quantum-computation-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Mathematics"
+  - "Mechanical Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Peter Shor"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Cryptography"
+  - "Theory of Computation"
+  - "Mathematics"
+  - "Computation"
+  - "Discrete Mathematics"
+  - "Science"
+  - "Physics"
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+          - "Cryptography"
+          - "Theory of Computation"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+      - name: "Discrete Mathematics"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course provides an introduction to the theory and practice of quantum computation. Topics covered include: physics of information processing, quantum logic, quantum algorithms including Shor's factoring algorithm and Grover's search algorithm, quantum error correction, quantum communication, and cryptography.
+course_url: "https://ocw.mit.edu/courses/18-435j-quantum-computation-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/18-435j-quantum-computation-fall-2003/16e4d41cb81f9011b985fc465397aa7e_18-435jf03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

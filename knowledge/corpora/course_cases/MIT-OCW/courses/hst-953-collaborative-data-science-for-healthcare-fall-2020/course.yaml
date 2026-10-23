@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-953-fall-2020"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.953"
+cross_listed_codes: []
+course_title: "Collaborative Data Science for Healthcare"
+course_slug: "hst-953-collaborative-data-science-for-healthcare-fall-2020"
+term: "Fall"
+year: 2020
+as_taught_in: "Fall 2020"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Leo A. Celi"
+  - "Dr. Louis Agha-Mir-Salim"
+  - "Marie-Laure Charpignon"
+subject_primary: "Health Care Management"
+subject_secondary:
+  - "Engineering"
+  - "Computer Science"
+  - "Artificial Intelligence"
+  - "Data Mining"
+  - "Health and Medicine"
+  - "Public Health"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Health Care Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+          - "Data Mining"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Public Health"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course provides an introductory survey of data science tools in healthcare. It was created by members of MIT Critical Data , a global consortium consisting of healthcare practitioners, computer scientists, and engineers from academia, industry, and government, that seeks to place data and research at the front and center of healthcare operations. The most daunting global health issues right now are the result of interconnected crises. In this course, we highlight the importance of a multidisciplinary approach to health data science. It is intended for front-line clinicians and public health practitioners, as well as computer scientists, engineers, and social scientists, whose goal is to understand health and disease better using digital data captured in the process of care. What you’ll learn: Principles of data science as applied to health Analysis of electronic health records Artificial intelligence and machine learning in healthcare This course is part of the Open Learning Library , which is free to use. You have the option to sign up and enroll in the course if you want to track your progress, or you can view and use all the materials without enrolling.
+course_url: "https://ocw.mit.edu/courses/hst-953-collaborative-data-science-for-healthcare-fall-2020/"
+image_url: "https://ocw.mit.edu/courses/hst-953-collaborative-data-science-for-healthcare-fall-2020/9b2a31017d21b3e0d1a932e167cbe763_HST-953f20.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

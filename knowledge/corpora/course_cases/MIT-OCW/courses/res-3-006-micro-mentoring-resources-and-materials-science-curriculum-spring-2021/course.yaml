@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-res-3-006-spring-2021"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.3-006"
+cross_listed_codes: []
+course_title: "MICRO Mentoring Resources and Materials Science Curriculum"
+course_slug: "res-3-006-micro-mentoring-resources-and-materials-science-curriculum-spring-2021"
+term: "Spring"
+year: 2021
+as_taught_in: "Spring 2021"
+language: "en"
+departments:
+  - "Materials Science and Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Jessica G. Sandland"
+  - "Cécile Chazot"
+  - "Max L'Etoile"
+subject_primary: "Materials Science and Engineering"
+subject_secondary:
+  - "Teaching and Education"
+  - "Curriculum and Teaching"
+  - "Higher Education"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Materials Science and Engineering"
+        specialties: []
+  - name: "Teaching and Education"
+    subtopics:
+      - name: "Curriculum and Teaching"
+        specialties: []
+      - name: "Higher Education"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Instructor Insights"
+  - "Podcasts"
+  - "Written Assignments with Examples"
+description: |
+  MICRO is the *Materials Initiative for Comprehensive Research Opportunity* created to provide a remote research and education experience to undergraduate students from underrepresented backgrounds. This site includes mentoring resources and online materials science curriculum provided for self-study in the program.
+course_url: "https://ocw.mit.edu/courses/res-3-006-micro-mentoring-resources-and-materials-science-curriculum-spring-2021/"
+image_url: "https://ocw.mit.edu/courses/res-3-006-micro-mentoring-resources-and-materials-science-curriculum-spring-2021/mitres3-006s21.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

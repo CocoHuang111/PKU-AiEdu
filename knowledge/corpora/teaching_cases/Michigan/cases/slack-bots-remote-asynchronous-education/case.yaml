@@ -1,0 +1,20 @@
+schema_version: "1.0"
+case_id: "michigan-slack-bots-remote-asynchronous-education"
+institution: "University of Michigan"
+platform: "CRLT Provost's Teaching Innovation Prize"
+collection: "Provost's Teaching Innovation Prize winners"
+title: "Slack Bots for Remote Asynchronous Education"
+slug: "slack-bots-remote-asynchronous-education"
+source_url: "https://crlt.umich.edu/slack-bots-remote-asynchronous-education"
+language: "en"
+published: null
+awarded_year: "2022"
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin:
+  awarded_year: "source"
+extraction_status: "complete"
+content_sha256: "0a7e6e54a4d28d122dfbd947c723ae2945ce13250a7990322ef66ce9eb7912d8"

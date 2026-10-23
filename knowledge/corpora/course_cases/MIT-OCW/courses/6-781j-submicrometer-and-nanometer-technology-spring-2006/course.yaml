@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-6-781j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.781J"
+cross_listed_codes:
+  - "2.391J"
+course_title: "Submicrometer and Nanometer Technology"
+course_slug: "6-781j-submicrometer-and-nanometer-technology-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. George Barbastathis"
+  - "Prof. Henry Smith"
+  - "Prof. Karl Berggren"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Mechanical Engineering"
+  - "Microtechnology"
+  - "Nanotechnology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties: []
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Microtechnology"
+      - name: "Nanotechnology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Demonstration Videos"
+  - "Problem Sets"
+description: |
+  This course surveys techniques to fabricate and analyze submicron and nanometer structures, with applications. Optical and electron microscopy is reviewed. Additional topics that are covered include: surface characterization, preparation, and measurement techniques, resist technology, optical projection, interferometric, X-ray, ion, and electron lithography; Aqueous, ion, and plasma etching techniques; lift-off and electroplating; and ion implantation. Applications in microelectronics, microphotonics, information storage, and nanotechnology will also be explored. Acknowledgements The Instructors would like to thank Bob Barsotti, Bryan Cord, and Ben Wunsch for their work on the Atomic Force Microscope video. They would also like to thank Bryan Cord for creating each video.
+course_url: "https://ocw.mit.edu/courses/6-781j-submicrometer-and-nanometer-technology-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/6-781j-submicrometer-and-nanometer-technology-spring-2006/99cabe0d8284667118af853dad242c1e_6-781js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

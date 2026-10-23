@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-highlights-dmse-teaching-innovations"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Highlights in DMSE Teaching Innovations"
+slug: "highlights-dmse-teaching-innovations"
+course_codes:
+  - "3"
+departments:
+  - "Materials Science and Engineering (Course 3)"
+instructors:
+  - "Jessica Sandland"
+digital_innovations_tools: []
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/highlights-dmse-teaching-innovations"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "8fe26916a7c46def374437b674c2ee5ea76cbdfd67101c5de14b256eb59b59fa"

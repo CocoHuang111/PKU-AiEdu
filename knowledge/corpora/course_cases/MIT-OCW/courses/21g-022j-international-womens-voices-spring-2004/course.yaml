@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-022j-spring-2004"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.022J"
+cross_listed_codes:
+  - "WGS.141J"
+course_title: "International Women's Voices"
+course_slug: "21g-022j-international-womens-voices-spring-2004"
+term: "Spring"
+year: 2004
+as_taught_in: "Spring 2004"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Margery Resnick"
+subject_primary: "Literature"
+subject_secondary:
+  - "Comparative Literature"
+  - "International Literature"
+  - "Society"
+  - "Women's Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Comparative Literature"
+          - "International Literature"
+  - name: "Society"
+    subtopics:
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Written Assignments"
+description: |
+  International Women’s Voices has several objectives. It introduces students to a variety of works by contemporary women writers from Asia, Africa, the Middle East, Latin America and North America. The emphasis is on non-western writers. The readings are chosen to encourage students to think about how each author’s work reflects a distinct cultural heritage and to what extent, if any, we can identify a female voice that transcends national cultures. In lectures and readings distributed in class, students learn about the history and culture of each of the countries these authors represent. The way in which colonialism, religion, nation formation and language influence each writer is a major concern of this course. In addition, students examine the patterns of socialization of women in patriarchal cultures, and how, in the imaginary world, authors resolve or understand the relationship of the characters to love, work, identity, sex roles, marriage, and politics.
+course_url: "https://ocw.mit.edu/courses/21g-022j-international-womens-voices-spring-2004/"
+image_url: "https://ocw.mit.edu/courses/21g-022j-international-womens-voices-spring-2004/c71ffbd8666c8bbeeaeca1bf11dc5050_21g-022js04.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

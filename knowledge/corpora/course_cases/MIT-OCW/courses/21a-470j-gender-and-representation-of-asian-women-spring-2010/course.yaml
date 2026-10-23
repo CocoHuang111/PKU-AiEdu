@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-21a-470j-spring-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21A.470J"
+cross_listed_codes:
+  - "WGS.274J"
+course_title: "Gender and Representation of Asian Women"
+course_slug: "21a-470j-gender-and-representation-of-asian-women-spring-2010"
+term: "Spring"
+year: 2010
+as_taught_in: "Spring 2010"
+language: "en"
+departments:
+  - "Anthropology"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Manduhai Buyandelger"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Cultural Anthropology"
+  - "Ethnography"
+  - "Society"
+  - "Asian Studies"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Cultural Anthropology"
+          - "Ethnography"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores stereotypes associated with Asian women in colonial, nationalist, state-authoritarian, and global/diasporic narratives about gender and power. Students will read ethnography, cultural studies, and history, and view films to examine the politics and circumstances that create and perpetuate the representation of Asian women as dragon ladies, lotus blossoms, despotic tyrants, desexualized servants, and docile subordinates. Students are introduced to the debates about Orientalism, gender, and power.
+course_url: "https://ocw.mit.edu/courses/21a-470j-gender-and-representation-of-asian-women-spring-2010/"
+image_url: "https://ocw.mit.edu/courses/21a-470j-gender-and-representation-of-asian-women-spring-2010/b57e788cd9edbd2c945a34d2a7ab716f_21a-470js10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-15-760a-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.760A"
+cross_listed_codes: []
+course_title: "Operations Management"
+course_slug: "15-760a-operations-management-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles H. Fine"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Supply Chain Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  Our objective in this course is to introduce you to concepts and techniques related to the design, planning, control, and improvement of manufacturing and service operations. The course begins with a holistic view of operations, where we stress the coordination of product development, process management, and supply chain management. As the course progresses, we will investigate various aspects of each of these three tiers of operations in detail. We will cover topics in the areas of process analysis, materials management, production scheduling, quality improvement, and product design. To pursue the course objective most effectively, you will have to: Study the assigned reading materials. Prepare and discuss cases, readings, and exercises in class. Prepare written analyses of cases.
+course_url: "https://ocw.mit.edu/courses/15-760a-operations-management-spring-2002/"
+image_url: "https://ocw.mit.edu/courses/15-760a-operations-management-spring-2002/1e24fc6088151df477fca65578420091_15-760as02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

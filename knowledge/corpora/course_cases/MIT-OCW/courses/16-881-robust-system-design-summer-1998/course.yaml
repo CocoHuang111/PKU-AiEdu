@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-16-881-summer-1998"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "16.881"
+cross_listed_codes: []
+course_title: "Robust System Design"
+course_slug: "16-881-robust-system-design-summer-1998"
+term: "Summer"
+year: 1998
+as_taught_in: "Summer 1998"
+language: "en"
+departments:
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Daniel Frey"
+subject_primary: "Systems Engineering"
+subject_secondary:
+  - "Computational Modeling and Simulation"
+  - "Systems Design"
+  - "Mathematics"
+  - "Probability and Statistics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Systems Engineering"
+        specialties:
+          - "Computational Modeling and Simulation"
+          - "Systems Design"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course was created for the “product development” track of MIT’s System Design and Management Program (SDM) in conjunction with the Center for Innovation in Product Development. After taking this course, a student should be able to: Formulate measures of performance of a system or quality characteristics. These quality characteristics are to be made robust to noise affecting the system. Sythesize and select design concepts for robustness. Identify noise factors whose variation may affect the quality characteristics. Estimate the robustness of any given design (experimentally and analytically). Formulate and implement methods to reduce the effects of noise (parameter design, active control, adjustment). Select rational tolerances for a design. Explain the role of robust design techniques within the wider context of the product development process. Lead product development activities that include robust design techniques.
+course_url: "https://ocw.mit.edu/courses/16-881-robust-system-design-summer-1998/"
+image_url: "https://ocw.mit.edu/courses/16-881-robust-system-design-summer-1998/6291e753908e3d66adbc7cda198fe0a3_16-881su98.gif"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

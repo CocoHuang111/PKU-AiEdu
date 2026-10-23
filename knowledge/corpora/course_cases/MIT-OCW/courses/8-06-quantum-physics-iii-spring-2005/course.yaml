@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-8-06-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "8.06"
+cross_listed_codes: []
+course_title: "Quantum Physics III"
+course_slug: "8-06-quantum-physics-iii-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Physics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Krishna Rajagopal"
+subject_primary: "Physics"
+subject_secondary:
+  - "Quantum Mechanics"
+topic_tree:
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Quantum Mechanics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+  - "Projects"
+description: |
+  Together, this course and its predecessor, 8.05: Quantum Physics II , cover quantum physics with applications drawn from modern physics. Topics in this course include units, time-independent approximation methods, the structure of one- and two-electron atoms, charged particles in a magnetic field, scattering, and time-dependent perturbation theory. In this second term, students are required to research and write a paper on a topic related to the content of 8.05 and 8.06.
+course_url: "https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2005/6f396c617216f1b579547f1872052d4a_8-06s05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

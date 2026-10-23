@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-11-202-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.202"
+cross_listed_codes: []
+course_title: "Planning Economics"
+course_slug: "11-202-planning-economics-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Frank Levy"
+subject_primary: "Economics"
+subject_secondary:
+  - "Developmental Economics"
+  - "Microeconomics"
+  - "Political Economy"
+  - "Urban Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Developmental Economics"
+          - "Microeconomics"
+          - "Political Economy"
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  Planning Economics will apply microeconomic theory to issues that markets don’t always handle well and so are not usually covered in a standard microeconomics course. Issues for this year include global warming, how you value a national park, the economics and politics of New York City development, how cities form and why people are willing to pay more to live in, say, the Boston Metro area, than they would pay to live in rural North Dakota, and how to evaluate costs and benefits that occur at different points in time.
+course_url: "https://ocw.mit.edu/courses/11-202-planning-economics-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/11-202-planning-economics-fall-2010/b4c1fb13c47eb16dc0d7bb2c0f14ed1c_11-202f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

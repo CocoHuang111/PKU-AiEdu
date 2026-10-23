@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-14-72-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "14.72"
+cross_listed_codes: []
+course_title: "Capitalism and Its Critics"
+course_slug: "14-72-capitalism-and-its-critics-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Economics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michael Piore"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Political Philosophy"
+  - "Social Science"
+  - "Economics"
+  - "Labor Economics"
+  - "Political Economy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Political Philosophy"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Labor Economics"
+          - "Political Economy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course addresses the evolution of the modern capitalist economy and evaluates its current structure and performance. Various paradigms of economics are contrasted and compared (neoclassical, Marxist, socioeconomic, and neocorporate) in order to understand how modern capitalism has been shaped and how it functions in today’s economy. The course stresses general analytic reasoning and problem formulation rather than specific analytic techniques. Readings include classics in economic thought as well as contemporary analyses.
+course_url: "https://ocw.mit.edu/courses/14-72-capitalism-and-its-critics-fall-2013/"
+image_url: "https://ocw.mit.edu/courses/14-72-capitalism-and-its-critics-fall-2013/4cca4a5f7bff331e34f8fe27b477b006_14-72f13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

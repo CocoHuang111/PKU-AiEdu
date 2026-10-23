@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "columbia-christopher-munsell"
+institution: "Columbia University"
+platform: "Columbia Center for Teaching and Learning"
+collection: "Teaching Transformations"
+title: "Professor Christopher Munsell, MSRED"
+slug: "christopher-munsell"
+source_url: "https://ctl.columbia.edu/transformations/faculty/christopher-munsell/"
+language: "en"
+published: null
+awarded_year: null
+license_url: ""
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+metadata_origin: {}
+extraction_status: "complete"
+content_sha256: "b078a4d585ffb6924623661f46cf81848abab9796aa56ca641310fcfe33389c5"

@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-2-96-fall-2012"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.96"
+cross_listed_codes:
+  - "2.961"
+  - "6.930"
+  - "10.806"
+  - "16.653"
+course_title: "Management in Engineering"
+course_slug: "2-96-management-in-engineering-fall-2012"
+term: "Fall"
+year: 2012
+as_taught_in: "Fall 2012"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+  - "Electrical Engineering and Computer Science"
+  - "Chemical Engineering"
+  - "Aeronautics and Astronautics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Jung-Hoon Chun"
+  - "Prof. Henry S. Marcus"
+  - "Dr. Abbott Weiss"
+subject_primary: "Entrepreneurship"
+subject_secondary:
+  - "Project Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Entrepreneurship"
+        specialties: []
+      - name: "Project Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exam Solutions"
+  - "Exams"
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course gives an overview of engineering management and covers topics such as financial principles, management of innovation, technology strategy, and best management practices. The focus of the course is the development of individual skills and team work. This is carried out through an exposure to management tools.
+course_url: "https://ocw.mit.edu/courses/2-96-management-in-engineering-fall-2012/"
+image_url: "https://ocw.mit.edu/courses/2-96-management-in-engineering-fall-2012/aac891868c06653ecc96bcb25398741c_2-96f12.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

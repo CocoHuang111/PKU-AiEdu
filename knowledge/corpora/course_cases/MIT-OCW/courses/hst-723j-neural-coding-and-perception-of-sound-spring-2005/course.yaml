@@ -1,0 +1,75 @@
+schema_version: "1.0"
+course_id: "mitocw-hst-723j-spring-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "HST.723J"
+cross_listed_codes:
+  - "9.285J"
+course_title: "Neural Coding and Perception of Sound"
+course_slug: "hst-723j-neural-coding-and-perception-of-sound-spring-2005"
+term: "Spring"
+year: 2005
+as_taught_in: "Spring 2005"
+language: "en"
+departments:
+  - "Health Sciences and Technology"
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Bertrand Delgutte"
+  - "Prof. Jennifer R. Melcher"
+  - "Prof. John Guinan"
+  - "Prof. M. Christian Brown"
+  - "Prof. Andrew Oxenham"
+subject_primary: "Sensory-Neural Systems"
+subject_secondary:
+  - "Science"
+  - "Biology"
+  - "Neurobiology"
+  - "Neuroscience"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neurobiology"
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course focuses on neural structures and mechanisms mediating the detection, localization and recognition of sounds. Discussions cover how acoustic signals are coded by auditory neurons, the impact of these codes on behavioral performance, and the circuitry and cellular mechanisms underlying signal transformations. Topics include temporal coding, neural maps and feature detectors, learning and plasticity, and feedback control. General principles are conveyed by theme discussions of auditory masking, sound localization, musical pitch, speech coding, and cochlear implants.
+course_url: "https://ocw.mit.edu/courses/hst-723j-neural-coding-and-perception-of-sound-spring-2005/"
+image_url: "https://ocw.mit.edu/courses/hst-723j-neural-coding-and-perception-of-sound-spring-2005/6f16301ebe1c93153fd5d4f987b1c260_hst-723js05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

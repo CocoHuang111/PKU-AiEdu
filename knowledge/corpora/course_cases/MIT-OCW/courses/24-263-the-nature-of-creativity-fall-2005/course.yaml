@@ -1,0 +1,66 @@
+schema_version: "1.0"
+course_id: "mitocw-24-263-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.263"
+cross_listed_codes: []
+course_title: "The Nature of Creativity"
+course_slug: "24-263-the-nature-of-creativity-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Irving Singer"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Science"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  This course is an introduction to problems about creativity as it pervades human experience and behavior. Questions about imagination and innovation are studied in relation to the history of philosophy as well as more recent work in philosophy, affective psychology, cognitive studies, and art theory. Readings and guidance are aligned with the student’s focus of interest.
+course_url: "https://ocw.mit.edu/courses/24-263-the-nature-of-creativity-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/24-263-the-nature-of-creativity-fall-2005/72f9981174414b51f00b09869b643968_24-263f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

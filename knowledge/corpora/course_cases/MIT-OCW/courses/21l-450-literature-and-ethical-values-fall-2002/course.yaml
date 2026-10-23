@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-450-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.450"
+cross_listed_codes: []
+course_title: "Literature and Ethical Values"
+course_slug: "21l-450-literature-and-ethical-values-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alvin Kibel"
+subject_primary: "Literature"
+subject_secondary:
+  - "Classics"
+  - "Comparative Literature"
+  - "Philosophy"
+  - "Ethics"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Classics"
+          - "Comparative Literature"
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  The aim of this subject is to acquaint the student with some important works of systematic ethical philosophy and to bring to bear the viewpoint of those works on the study of classic works of literature. This subject will trace the history of ethical speculation in systematic philosophy by identifying four major positions: two from the ancient world and the two most important traditions of ethical philosophy since the renaissance. The two ancient positions will be represented by Plato and Aristotle, the two modern positions by Immanuel Kant and John Stuart Mill. We will try to understand these four positions as engaged in a rivalry with one another, and we will also engage with the philosophy of Thomas Hobbes, which offers a bridge between ancient and modern conceptions and provides a source for the rivalry between the viewpoints of Kant and Mill. Further, we will be mindful that the modern positions are subject to criticism today by new currents of philosophical speculation, some of which argue for a return to the positions of Plato and Aristotle.
+course_url: "https://ocw.mit.edu/courses/21l-450-literature-and-ethical-values-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/21l-450-literature-and-ethical-values-fall-2002/c8544940054bd195ba62f7f959cb1f5b_21l-450f02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

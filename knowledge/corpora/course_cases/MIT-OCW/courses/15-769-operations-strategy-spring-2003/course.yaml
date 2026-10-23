@@ -1,0 +1,60 @@
+schema_version: "1.0"
+course_id: "mitocw-15-769-spring-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.769"
+cross_listed_codes: []
+course_title: "Operations Strategy"
+course_slug: "15-769-operations-strategy-spring-2003"
+term: "Spring"
+year: 2003
+as_taught_in: "Spring 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Charles H. Fine"
+  - "Prof. Michael Hammer"
+subject_primary: "Operations Management"
+subject_secondary:
+  - "Supply Chain Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Operations Management"
+        specialties: []
+      - name: "Supply Chain Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course will address operations strategy by building on the concepts of: Reengineering and process design developed by Dr. Michael Hammer. Manufacturing strategy as developed in the literature, primarily by people at HBS. Supply chain design and 3-D concurrent engineering literature as developed in Charles Fine’s book, Clockspeed: Winning Industry Control in the Age of Temporary Advantage. Perseus Books, 1999. The concepts there emphasize the necessity of integrating product strategy, manufacturing strategy, and supply chain strategy. As a result, each of these will be touched upon in the course.
+course_url: "https://ocw.mit.edu/courses/15-769-operations-strategy-spring-2003/"
+image_url: "https://ocw.mit.edu/courses/15-769-operations-strategy-spring-2003/45dbb70f2f822290acc0d3b3d9218f1b_15-769s03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

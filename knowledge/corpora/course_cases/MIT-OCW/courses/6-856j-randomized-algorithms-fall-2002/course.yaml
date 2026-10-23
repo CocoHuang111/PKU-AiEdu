@@ -1,0 +1,68 @@
+schema_version: "1.0"
+course_id: "mitocw-6-856j-fall-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.856J"
+cross_listed_codes:
+  - "18.416J"
+course_title: "Randomized Algorithms"
+course_slug: "6-856j-randomized-algorithms-fall-2002"
+term: "Fall"
+year: 2002
+as_taught_in: "Fall 2002"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. David R. Karger"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Algorithms and Data Structures"
+  - "Mathematics"
+  - "Computation"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Algorithms and Data Structures"
+  - name: "Mathematics"
+    subtopics:
+      - name: "Computation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course examines how randomization can be used to make algorithms simpler and more efficient via random sampling, random selection of witnesses, symmetry breaking, and Markov chains. Topics covered include: randomized computation; data structures (hash tables, skip lists); graph algorithms (minimum spanning trees, shortest paths, minimum cuts); geometric algorithms (convex hulls, linear programming in fixed or arbitrary dimension); approximate counting; parallel algorithms; online algorithms; derandomization techniques; and tools for probabilistic analysis of algorithms.
+course_url: "https://ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/"
+image_url: "https://ocw.mit.edu/courses/6-856j-randomized-algorithms-fall-2002/da6d1b9b62c59cd9691c0bb342f4416a_6-856jf02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

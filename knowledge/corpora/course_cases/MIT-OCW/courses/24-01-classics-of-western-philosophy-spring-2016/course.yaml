@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-24-01-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "24.01"
+cross_listed_codes: []
+course_title: "Classics of Western Philosophy"
+course_slug: "24-01-classics-of-western-philosophy-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Linguistics and Philosophy"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Sally Haslanger"
+  - "Milo Phillips-Brown"
+  - "Kevin Richardson"
+  - "Said Saillant"
+subject_primary: "History"
+subject_secondary:
+  - "Intellectual History"
+  - "Literature"
+  - "Classics"
+  - "Philosophy"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Intellectual History"
+      - name: "Literature"
+        specialties:
+          - "Classics"
+      - name: "Philosophy"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments with Examples"
+description: |
+  This course will introduce you to the Western philosophical tradition through the study of thinkers such as Plato, Aristotle, Descartes, Cavendish, Hume, and Kant. You’ll grapple with questions that have been significant to philosophy from its beginnings: Questions about the nature of the mind, the existence of God, the foundations of knowledge, and the good life. You’ll also observe changes of intellectual outlook over time, and the effect of scientific, religious, and political concerns on the development of philosophical ideas.
+course_url: "https://ocw.mit.edu/courses/24-01-classics-of-western-philosophy-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/24-01-classics-of-western-philosophy-spring-2016/efeb7f336dcf841a6165dbbd4649b7ed_24-01s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

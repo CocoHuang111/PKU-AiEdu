@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-21l-703-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21L.703"
+cross_listed_codes: []
+course_title: "Studies in Drama: Stoppard and Company"
+course_slug: "21l-703-studies-in-drama-stoppard-and-company-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Diana Henderson"
+subject_primary: "Performance Arts"
+subject_secondary:
+  - "Theater"
+  - "Humanities"
+  - "Literature"
+  - "Criticism"
+  - "Drama"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Performance Arts"
+        specialties:
+          - "Theater"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Criticism"
+          - "Drama"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Written Assignments"
+description: |
+  Taking as its starting point the works of one of Britain’s most respected, prolific—and funny—living dramatists, this seminar will explore a wide range of knowledge in fields such as math, philosophy, politics, history and art. The careful reading and discussion of plays by (Sir) Tom Stoppard and some of his most compelling contemporaries (including Caryl Churchill, Anna Deveare Smith and Howard Barker) will allow us to time-travel and explore other cultures, and to think about the medium of drama as well as one writer’s work in depth. Some seminar participants will report on earlier plays that influenced these writers, others will research everything from Lord Byron’s poetry to the bridges of Konigsberg, from Dadaism to Charter 77. Employing a variety of critical approaches (both theoretical and theatrical), we will consider what postmodernity means, as applied to these plays. In the process, we will analyze how drama connects with both the culture it represents and that which it addresses in performance. We will also explore the wit and verbal energy of these contemporary dramatists…not to mention, how Fermat’s theorem, classical translation, and chaos theory become the stuff of stage comedy.
+course_url: "https://ocw.mit.edu/courses/21l-703-studies-in-drama-stoppard-and-company-spring-2014/"
+image_url: "https://ocw.mit.edu/courses/21l-703-studies-in-drama-stoppard-and-company-spring-2014/e88da801484024ca773c1e47936b8356_21l-703s14.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

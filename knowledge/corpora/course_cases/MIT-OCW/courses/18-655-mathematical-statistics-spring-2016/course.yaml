@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-18-655-spring-2016"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.655"
+cross_listed_codes: []
+course_title: "Mathematical Statistics"
+course_slug: "18-655-mathematical-statistics-spring-2016"
+term: "Spring"
+year: 2016
+as_taught_in: "Spring 2016"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Dr. Peter Kempthorne"
+subject_primary: "Probability and Statistics"
+subject_secondary:
+  - "Social Science"
+  - "Game Theory"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Probability and Statistics"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Game Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This course provides students with decision theory, estimation, confidence intervals, and hypothesis testing. It introduces large sample theory, asymptotic efficiency of estimates, exponential families, and sequential analysis.
+course_url: "https://ocw.mit.edu/courses/18-655-mathematical-statistics-spring-2016/"
+image_url: "https://ocw.mit.edu/courses/18-655-mathematical-statistics-spring-2016/c81fd6035b2ba5c281e6340016adb664_18-655s16.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

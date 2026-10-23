@@ -1,0 +1,63 @@
+schema_version: "1.0"
+course_id: "mitocw-ec-050-january-iap-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "EC.050"
+cross_listed_codes: []
+course_title: "Recreate Experiments from History: Inform the Future from the Past: Galileo"
+course_slug: "ec-050-recreate-experiments-from-history-inform-the-future-from-the-past-galileo-january-iap-2010"
+term: "January IAP"
+year: 2010
+as_taught_in: "January IAP 2010"
+language: "en"
+departments:
+  - "Edgerton Center"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Dr. Elizabeth Cavicchi"
+subject_primary: "History"
+subject_secondary:
+  - "Intellectual History"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Intellectual History"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Image Gallery"
+  - "Lecture Notes"
+  - "Projects"
+  - "Written Assignments with Examples"
+description: |
+  2010 marks the 400th anniversary of Galileo’s astonishing sightings of features on the moon, stars, and moons around Jupiter that no one had seen before. Recreate these new ways of seeing and exploring from the materials and techniques Galileo had on hand, while you reflect on the times and works of Galileo. What was it like to improvise new ways of seeing and exploring from the materials and techniques on hand? What do we notice? What surprises us? How can we relate to past experience and ideas? What are we curious to research? How does our experimenting grow into our learning? Let your own curiosity drive your explorations.
+course_url: "https://ocw.mit.edu/courses/ec-050-recreate-experiments-from-history-inform-the-future-from-the-past-galileo-january-iap-2010/"
+image_url: |
+  https://ocw.mit.edu/courses/ec-050-recreate-experiments-from-history-inform-the-future-from-the-past-galileo-january-iap-2010/118ea95073a9849937243a6d7307075c_ec-050iap10.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

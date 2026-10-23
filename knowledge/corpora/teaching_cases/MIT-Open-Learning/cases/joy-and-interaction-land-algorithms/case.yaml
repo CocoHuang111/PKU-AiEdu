@@ -1,0 +1,23 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-joy-and-interaction-land-algorithms"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Joy and interaction in the land of algorithms"
+slug: "joy-and-interaction-land-algorithms"
+course_codes:
+  - "6.390"
+departments:
+  - "Electrical Engineering & Computer Science (Course 6)"
+instructors:
+  - "Shen Shen"
+digital_innovations_tools:
+  - "Active Learning"
+  - "Blended Learning & Flipped Classroom"
+  - "Flexible Course Delivery"
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/joy-and-interaction-land-algorithms"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "2e40245a6b495ab2fecd18af9558280289eb864d0e4a46c783012cf1fac1650f"

@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-es-s71-spring-2014"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "ES.S71"
+cross_listed_codes: []
+course_title: "Increasing Your Physical Intelligence, Enhancing Your Social Smarts"
+course_slug: "es-s71-increasing-your-physical-intelligence-enhancing-your-social-smarts-spring-2014"
+term: "Spring"
+year: 2014
+as_taught_in: "Spring 2014"
+language: "en"
+departments:
+  - "Experimental Study Group"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Noah Riskin"
+subject_primary: "Health and Exercise Science"
+subject_secondary:
+  - "Mental Health"
+  - "Physical Education and Recreation"
+topic_tree:
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Health and Exercise Science"
+        specialties: []
+      - name: "Mental Health"
+        specialties: []
+      - name: "Physical Education and Recreation"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Media Assignments"
+description: |
+  The purpose of this class is to offer students a new perspective on the importance of our bodily experience to our cognitive and social lives. The curriculum is designed to foster a working appreciation for how better bodily awareness can positively affect how we feel in our bodies, carry and present ourselves for improved social sensitivity and more successful social interactions.
+course_url: "https://ocw.mit.edu/courses/es-s71-increasing-your-physical-intelligence-enhancing-your-social-smarts-spring-2014/"
+image_url: |
+  https://ocw.mit.edu/courses/es-s71-increasing-your-physical-intelligence-enhancing-your-social-smarts-spring-2014/e283ee89f16bff616039d4558b7431ae_es-s71s14.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: true
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

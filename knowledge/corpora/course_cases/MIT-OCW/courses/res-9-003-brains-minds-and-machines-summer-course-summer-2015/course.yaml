@@ -1,0 +1,92 @@
+schema_version: "1.0"
+course_id: "mitocw-res-9-003-summer-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.9-003"
+cross_listed_codes: []
+course_title: "Brains, Minds and Machines Summer Course"
+course_slug: "res-9-003-brains-minds-and-machines-summer-course-summer-2015"
+term: "Summer"
+year: 2015
+as_taught_in: "Summer 2015"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Tomaso Poggio"
+  - "Prof. Gabriel Kreiman"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Artificial Intelligence"
+  - "Electrical Engineering"
+  - "Robotics and Control Systems"
+  - "Health and Medicine"
+  - "Sensory-Neural Systems"
+  - "Science"
+  - "Biology"
+  - "Neuroscience"
+  - "Cognitive Science"
+  - "Social Science"
+  - "Psychology"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Artificial Intelligence"
+      - name: "Electrical Engineering"
+        specialties:
+          - "Robotics and Control Systems"
+  - name: "Health and Medicine"
+    subtopics:
+      - name: "Sensory-Neural Systems"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Biology"
+        specialties:
+          - "Neuroscience"
+      - name: "Cognitive Science"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Psychology"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Other Video"
+  - "Projects"
+description: |
+  This course explores the problem of intelligence—its nature, how it is produced by the brain and how it could be replicated in machines—using an approach that integrates cognitive science, which studies the mind; neuroscience, which studies the brain; and computer science and artificial intelligence, which study the computations needed to develop intelligent machines. Materials are drawn from the Brains, Minds and Machines Summer Course offered annually at the Marine Biological Laboratory in Woods Hole, MA, taught by faculty affiliated with the Center for Brains, Minds and Machines headquartered at MIT. Elements of the summer course are integrated into the MIT course, 9.523 Aspects of a Computational Theory of Intelligence. Contributors This course includes the contributions of many instructors, guest speakers, and a team of iCub researchers. See the complete list of contributors .
+course_url: "https://ocw.mit.edu/courses/res-9-003-brains-minds-and-machines-summer-course-summer-2015/"
+image_url: |
+  https://ocw.mit.edu/courses/res-9-003-brains-minds-and-machines-summer-course-summer-2015/d9b85b4bdedd72beb1e5cac01ea694d1_res-9-003sum15.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: true
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

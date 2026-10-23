@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-18-701-fall-2010"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.701"
+cross_listed_codes: []
+course_title: "Algebra I"
+course_slug: "18-701-algebra-i-fall-2010"
+term: "Fall"
+year: 2010
+as_taught_in: "Fall 2010"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Michael Artin"
+subject_primary: "Algebra and Number Theory"
+subject_secondary:
+  - "Linear Algebra"
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+      - name: "Linear Algebra"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Sets"
+description: |
+  This undergraduate level Algebra I course covers groups, vector spaces, linear transformations, symmetry groups, bilinear forms, and linear groups.
+course_url: "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/"
+image_url: "https://ocw.mit.edu/courses/18-701-algebra-i-fall-2010/afe1d32a60b2c66b094096708cdce61e_18-701f10.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

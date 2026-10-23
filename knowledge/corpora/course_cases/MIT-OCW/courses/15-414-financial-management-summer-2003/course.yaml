@@ -1,0 +1,70 @@
+schema_version: "1.0"
+course_id: "mitocw-15-414-summer-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.414"
+cross_listed_codes: []
+course_title: "Financial Management"
+course_slug: "15-414-financial-management-summer-2003"
+term: "Summer"
+year: 2003
+as_taught_in: "Summer 2003"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jonathan Lewellen"
+subject_primary: "Finance"
+subject_secondary:
+  - "Management"
+  - "Social Science"
+  - "Economics"
+  - "Financial Economics"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Finance"
+        specialties: []
+      - name: "Management"
+        specialties: []
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Financial Economics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Lecture Notes"
+  - "Problem Sets"
+  - "Written Assignments"
+description: |
+  Financial Management studies corporate finance and capital markets, emphasizing the financial aspects of managerial decisions. It touches on all areas of finance, including the valuation of real and financial assets, risk management and financial derivatives, the trade-off between risk and expected return, and corporate financing and dividend policy. The course draws heavily on empirical research to help guide managerial decisions.
+course_url: "https://ocw.mit.edu/courses/15-414-financial-management-summer-2003/"
+image_url: "https://ocw.mit.edu/courses/15-414-financial-management-summer-2003/c9cc72af3aa4c28321f09fbeedb02051_15-414su03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

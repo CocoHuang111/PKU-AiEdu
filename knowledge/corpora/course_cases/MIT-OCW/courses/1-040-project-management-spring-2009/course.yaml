@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-1-040-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "1.040"
+cross_listed_codes:
+  - "1.401J"
+  - "ESD.018J"
+course_title: "Project Management"
+course_slug: "1-040-project-management-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Civil and Environmental Engineering"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Fred Moavenzadeh"
+subject_primary: "Project Management"
+subject_secondary:
+  - "Engineering"
+  - "Civil Engineering"
+  - "Construction Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Project Management"
+        specialties: []
+  - name: "Engineering"
+    subtopics:
+      - name: "Civil Engineering"
+        specialties:
+          - "Construction Management"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  1.040 Project Management focuses on the management and implementation of construction projects, primarily infrastructure projects. A project refers to a temporary piece of work undertaken to create a unique product or service. Whereas operations are continuous and repeating, projects are finite and have an end date. Projects bring form or function to ideas or need. Some notable projects include the Manhattan Project (developing the first nuclear weapon); the Human Genome Project (mapping the human genome); and the Central Artery Project (Boston’s “Big Dig”). The field of project management deals with the planning, execution, and controlling of projects. The course is divided into three parts: Part 1: project finance Part 2: project evaluation Part 3: project organization This course will cover the basic tools, skills, and knowledge necessary to successfully manage a project through its inception, design, planning, construction, and transition phases. There will be several guest lectures discussing current projects, and a construction site visit to MIT’s Media Lab extension.
+course_url: "https://ocw.mit.edu/courses/1-040-project-management-spring-2009/"
+image_url: "https://ocw.mit.edu/courses/1-040-project-management-spring-2009/2ee32d068981d65519c8c094c5c11c03_1-040s09.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

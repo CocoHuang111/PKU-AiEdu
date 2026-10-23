@@ -1,0 +1,72 @@
+schema_version: "1.0"
+course_id: "mitocw-15-343-spring-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.343"
+cross_listed_codes: []
+course_title: "Managing Transformations in Work, Organizations, and Society"
+course_slug: "15-343-managing-transformations-in-work-organizations-and-society-spring-2002"
+term: "Spring"
+year: 2002
+as_taught_in: "Spring 2002"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Joel Cutcher-Gershenfeld"
+  - "Prof. Thomas A. Kochan"
+  - "Prof. Wanda Orlikowski"
+subject_primary: "Business Ethics"
+subject_secondary:
+  - "Industrial Relations and Human Resource Management"
+  - "Leadership"
+  - "Management"
+  - "Organizational Behavior"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Business Ethics"
+        specialties: []
+      - name: "Industrial Relations and Human Resource Management"
+        specialties: []
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+      - name: "Organizational Behavior"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  The course focuses on skills managers need to adapt to current sweeping changes in the nature of work and the workforce, in business organizations and their roles in society, and in the institutions that interact with work, particularly the labor market, community and family-centered groups. This year’s teaching will be the basis for a workshop session at the Sloan School’s 50th Anniversary Convocation. The course will involve a mix of on-campus and off-campus students taking the course via distance learning, and professionals from a variety of organizations who will participate in specific modules of interest to them. One session will be linked to colleagues at Cambridge University in England where a parallel course is being offered. Managerial issues addressed are associated with managing changes and innovations occurring in the nature of work and organizations and the role of the corporation in society. Topics covered include the changing social contract at work, integrating work and family, managing diversity, managing strategic labor-management partnerships, and managing relations between the firm and its multiple stakeholders. Subject is open to distance learning as well as on-campus students and to industry participants.
+course_url: "https://ocw.mit.edu/courses/15-343-managing-transformations-in-work-organizations-and-society-spring-2002/"
+image_url: |
+  https://ocw.mit.edu/courses/15-343-managing-transformations-in-work-organizations-and-society-spring-2002/64ef5b969e17c4b98b19afcef0ba8d09_15-343s02.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

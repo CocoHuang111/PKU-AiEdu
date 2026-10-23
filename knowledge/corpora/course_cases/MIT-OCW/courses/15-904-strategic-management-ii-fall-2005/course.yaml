@@ -1,0 +1,59 @@
+schema_version: "1.0"
+course_id: "mitocw-15-904-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.904"
+cross_listed_codes: []
+course_title: "Strategic Management II"
+course_slug: "15-904-strategic-management-ii-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Arnoldo Hax"
+subject_primary: "Leadership"
+subject_secondary:
+  - "Management"
+topic_tree:
+  - name: "Business"
+    subtopics:
+      - name: "Leadership"
+        specialties: []
+      - name: "Management"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+description: |
+  This course is intended to be an extension of course 15.902 Strategic Management I, with the purpose of allowing the students to experience an in-depth application of the concepts and frameworks of strategic management. Throughout the course, Prof. Arnoldo Hax will discuss the appropriate methodologies, concepts, and tools pertinent to strategic analyses and will illustrate their use by discussing many applications in real-life settings, drawn from his own personal experiences.
+course_url: "https://ocw.mit.edu/courses/15-904-strategic-management-ii-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/15-904-strategic-management-ii-fall-2005/470543bb61f9470cdfe86cd7b5ef7eff_15-904f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

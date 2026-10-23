@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-21m-013j-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21M.013J"
+cross_listed_codes:
+  - "21A.113J"
+  - "21L.013J"
+course_title: "The Supernatural in Music, Literature and Culture"
+course_slug: "21m-013j-the-supernatural-in-music-literature-and-culture-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Music"
+  - "Anthropology"
+  - "Literature"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Charles Shadle"
+  - "Prof. Mary Fuller"
+subject_primary: "Music"
+subject_secondary:
+  - "Music History"
+  - "Music Performance"
+  - "Humanities"
+  - "Literature"
+  - "Classics"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Music"
+        specialties:
+          - "Music History"
+          - "Music Performance"
+  - name: "Humanities"
+    subtopics:
+      - name: "Literature"
+        specialties:
+          - "Classics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course explores the relationship between music and the supernatural, focusing on the social history and context of supernatural beliefs as reflected in key literary and musical works from 1600 to the present. It provides an understanding of the place of ambiguity and the role of interpretation in culture, science and art. Great works of art by Shakespeare, Verdi, Goethe (in translation), Gounod, Henry James and Benjamin Britten are explored, as well as readings from the most recent scholarship on magic and the supernatural.
+course_url: "https://ocw.mit.edu/courses/21m-013j-the-supernatural-in-music-literature-and-culture-fall-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/21m-013j-the-supernatural-in-music-literature-and-culture-fall-2013/dbb2e85e9015a40958c77d3fc3e1ee44_21m-013f13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

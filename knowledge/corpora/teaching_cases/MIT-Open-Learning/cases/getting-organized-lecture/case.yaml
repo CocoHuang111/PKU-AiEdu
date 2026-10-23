@@ -1,0 +1,19 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-getting-organized-lecture"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Getting Organized for Lecture"
+slug: "getting-organized-lecture"
+course_codes:
+  - "5.111"
+departments:
+  - "Chemistry (Course 5)"
+instructors:
+  - "Brett McGuire"
+digital_innovations_tools: []
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/getting-organized-lecture"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "61a5c7ec87e44f45da6396866ee4e502640178381c6037f26e384fecf03c076d"

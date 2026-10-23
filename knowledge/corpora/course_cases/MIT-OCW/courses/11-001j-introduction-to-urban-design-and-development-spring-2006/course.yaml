@@ -1,0 +1,71 @@
+schema_version: "1.0"
+course_id: "mitocw-11-001j-spring-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "11.001J"
+cross_listed_codes:
+  - "4.250J"
+course_title: "Introduction to Urban Design and Development"
+course_slug: "11-001j-introduction-to-urban-design-and-development-spring-2006"
+term: "Spring"
+year: 2006
+as_taught_in: "Spring 2006"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+  - "Architecture"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Susan Silberberg"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Environmental Design"
+  - "Social Science"
+  - "Urban Studies"
+  - "Urban Planning"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+          - "Environmental Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Urban Studies"
+        specialties:
+          - "Urban Planning"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course examines the evolving structure of cities and the way that cities, suburbs, and metropolitan areas can be designed and developed. Boston and other American cities are studied to see how physical, social, political and economic forces interact to shape and reshape cities over time.
+course_url: "https://ocw.mit.edu/courses/11-001j-introduction-to-urban-design-and-development-spring-2006/"
+image_url: "https://ocw.mit.edu/courses/11-001j-introduction-to-urban-design-and-development-spring-2006/68b4bc4de4ed3665710c2b0689bd37c7_11-001js06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

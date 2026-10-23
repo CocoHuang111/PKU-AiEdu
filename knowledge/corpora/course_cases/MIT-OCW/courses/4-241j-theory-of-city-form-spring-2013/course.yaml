@@ -1,0 +1,74 @@
+schema_version: "1.0"
+course_id: "mitocw-4-241j-spring-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "4.241J"
+cross_listed_codes:
+  - "11.330J"
+course_title: "Theory of City Form"
+course_slug: "4-241j-theory-of-city-form-spring-2013"
+term: "Spring"
+year: 2013
+as_taught_in: "Spring 2013"
+language: "en"
+departments:
+  - "Architecture"
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Julian Beinart"
+subject_primary: "Architecture"
+subject_secondary:
+  - "Architectural Design"
+  - "Social Science"
+  - "Sociology"
+  - "Community Development"
+  - "Urban Studies"
+topic_tree:
+  - name: "Fine Arts"
+    subtopics:
+      - name: "Architecture"
+        specialties:
+          - "Architectural Design"
+  - name: "Social Science"
+    subtopics:
+      - name: "Sociology"
+        specialties:
+          - "Community Development"
+      - name: "Urban Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Instructor Insights"
+  - "Lecture Notes"
+  - "Lecture Videos"
+  - "Written Assignments with Examples"
+description: |
+  This course covers theories about the form that settlements should take and attempts a distinction between descriptive and normative theory by examining examples of various theories of city form over time. Case studies will highlight the origins of the modern city and theories about its emerging form, including the transformation of the nineteenth-century city and its organization. Through examples and historical context, current issues of city form in relation to city-making, social structure, and physical design will also be discussed and analyzed.
+course_url: "https://ocw.mit.edu/courses/4-241j-theory-of-city-form-spring-2013/"
+image_url: "https://ocw.mit.edu/courses/4-241j-theory-of-city-form-spring-2013/121f278b7066ebae182261855776df1e_4-241js13.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: false
+  projects: false
+  exams: false
+  videos: true
+  instructor_insights: true
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

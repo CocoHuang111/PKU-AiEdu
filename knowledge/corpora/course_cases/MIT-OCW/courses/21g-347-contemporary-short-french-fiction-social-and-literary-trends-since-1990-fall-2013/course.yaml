@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-21g-347-fall-2013"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21G.347"
+cross_listed_codes: []
+course_title: "Contemporary Short French Fiction: Social and Literary Trends since 1990"
+course_slug: "21g-347-contemporary-short-french-fiction-social-and-literary-trends-since-1990-fall-2013"
+term: "Fall"
+year: 2013
+as_taught_in: "Fall 2013"
+language: "en"
+departments:
+  - "Global Studies and Languages"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Bruno Perreau"
+subject_primary: "Language"
+subject_secondary:
+  - "French"
+  - "Literature"
+  - "Fiction"
+  - "International Literature"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Language"
+        specialties:
+          - "French"
+      - name: "Literature"
+        specialties:
+          - "Fiction"
+          - "International Literature"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Students in this course will examine short stories and short novels published in France during the past 20 years, with emphasis on texts related to the dominant social and cultural trends. Themes include the legacy of France’s colonial experience, the re-examination of its wartime past, memory and the Holocaust, the specter of AIDS, changing gender relationships, new families, the quest for personal identity, and immigration narratives. This course is taught in French.
+course_url: "https://ocw.mit.edu/courses/21g-347-contemporary-short-french-fiction-social-and-literary-trends-since-1990-fall-2013/"
+image_url: |
+  https://ocw.mit.edu/courses/21g-347-contemporary-short-french-fiction-social-and-literary-trends-since-1990-fall-2013/b97cff56154543aaf98da98bdc9bf021_21g-347f13.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

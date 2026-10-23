@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-res-11-001-fall-2015"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "RES.11-001"
+cross_listed_codes: []
+course_title: "CITE Reports"
+course_slug: "res-11-001-cite-reports-fall-2015"
+term: "Fall"
+year: 2015
+as_taught_in: "Fall 2015"
+language: "en"
+departments:
+  - "Urban Studies and Planning"
+academic_levels:
+  - "Non-Credit"
+instructors:
+  - "MIT Comprehensive Initiative on Technology Evaluation "
+subject_primary: "Public Administration"
+subject_secondary:
+  - "Science and Technology Policy"
+  - "Society"
+  - "The Developing World"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+  - name: "Society"
+    subtopics:
+      - name: "The Developing World"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags: []
+description: |
+  Created in 2012 at the Massachusetts Institute of Technology, the Comprehensive Initiative on Technology Evaluation ( CITE ) is the first-ever program dedicated to developing methods for product evaluation in global development. CITE produces technology evaluations that provide evidence for data-driven decision-making by development workers, donors, manufacturers, suppliers, and consumers themselves. In addition, CITE evaluations lead to significant developing insights, helping us better understand development challenges.
+course_url: "https://ocw.mit.edu/courses/res-11-001-cite-reports-fall-2015/"
+image_url: "https://ocw.mit.edu/courses/res-11-001-cite-reports-fall-2015/59579559a438a143e9402045f8c513ab_res-11-001f15.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: false
+  calendar: false
+  readings: false
+  lecture_notes: false
+  assignments: false
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

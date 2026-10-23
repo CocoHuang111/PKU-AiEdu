@@ -1,0 +1,56 @@
+schema_version: "1.0"
+course_id: "mitocw-18-706-spring-2023"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "18.706"
+cross_listed_codes: []
+course_title: "Noncommutative Algebra"
+course_slug: "18-706-noncommutative-algebra-spring-2023"
+term: "Spring"
+year: 2023
+as_taught_in: "Spring 2023"
+language: "en"
+departments:
+  - "Mathematics"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Roman Bezrukavnikov"
+subject_primary: "Algebra and Number Theory"
+subject_secondary: []
+topic_tree:
+  - name: "Mathematics"
+    subtopics:
+      - name: "Algebra and Number Theory"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  Noncommutative algebra studies algebraic phenomena involving multiplication for which commutativity law fails, such as product of matrices in linear algebra; such phenomena arise in various disciplines ranging from quantum physics to number theory.
+course_url: "https://ocw.mit.edu/courses/18-706-noncommutative-algebra-spring-2023/"
+image_url: "https://ocw.mit.edu/courses/18-706-noncommutative-algebra-spring-2023/18_706_s23.png"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: false
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

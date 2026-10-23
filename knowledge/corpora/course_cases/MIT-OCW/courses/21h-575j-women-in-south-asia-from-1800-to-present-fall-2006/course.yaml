@@ -1,0 +1,80 @@
+schema_version: "1.0"
+course_id: "mitocw-21h-575j-fall-2006"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "21H.575J"
+cross_listed_codes:
+  - "WGS.459J"
+course_title: "Women in South Asia from 1800 to Present"
+course_slug: "21h-575j-women-in-south-asia-from-1800-to-present-fall-2006"
+term: "Fall"
+year: 2006
+as_taught_in: "Fall 2006"
+language: "en"
+departments:
+  - "History"
+  - "Women's and Gender Studies"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Haimanti Roy"
+subject_primary: "History"
+subject_secondary:
+  - "Asian History"
+  - "Social Science"
+  - "Anthropology"
+  - "Social Anthropology"
+  - "Society"
+  - "Asian Studies"
+  - "Gender Studies"
+  - "Women's Studies"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "History"
+        specialties:
+          - "Asian History"
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+  - name: "Society"
+    subtopics:
+      - name: "Asian Studies"
+        specialties: []
+      - name: "Gender Studies"
+        specialties: []
+      - name: "Women's Studies"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments"
+description: |
+  This course is designed to introduce and help students understand the changes and continuities in the lives of women in South Asia from a historical perspective. Using gender as a lens of examining the past, we will examine how politics of race, class, caste and religion affected and continue to impact women in South Asian countries, primarily in India, Pakistan, Bangladesh and Sri Lanka. We will reflect upon current debates within South Asian women’s history in order to examine some of the issues and problems that arise in re-writing the past from a gendered perspective and these are found in primary documents, secondary readings, films, newspaper articles, and the Internet.
+course_url: "https://ocw.mit.edu/courses/21h-575j-women-in-south-asia-from-1800-to-present-fall-2006/"
+image_url: "https://ocw.mit.edu/courses/21h-575j-women-in-south-asia-from-1800-to-present-fall-2006/4870159c9a283382e1021488712b0bef_21h-575jf06.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

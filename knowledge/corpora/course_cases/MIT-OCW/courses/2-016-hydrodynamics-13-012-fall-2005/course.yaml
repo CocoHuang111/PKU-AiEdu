@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-2-016-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.016"
+cross_listed_codes: []
+course_title: "Hydrodynamics (13.012)"
+course_slug: "2-016-hydrodynamics-13-012-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Alexandra Techet"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Fluid Mechanics"
+  - "Ocean Engineering"
+  - "Hydrodynamics"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Fluid Mechanics"
+      - name: "Ocean Engineering"
+        specialties:
+          - "Hydrodynamics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Problem Set Solutions"
+  - "Problem Sets"
+description: |
+  This course covers the development of the fundamental equations of fluid mechanics and their simplifications for several areas of marine hydrodynamics and the application of these principles to the solution of engineering problems. Topics include the principles of conservation of mass, momentum and energy, lift and drag forces, laminar and turbulent flows, dimensional analysis, added mass, and linear surface waves, including wave velocities, propagation phenomena, and descriptions of real sea waves. Wave forces on structures are treated in the context of design and basic seakeeping analysis of ships and offshore platforms. Geophysical fluid dynamics will also be addressed including distributions of salinity, temperature, and density; heat balance in the ocean; major ocean circulations and geostrophic flows; and the influence of wind stress. Experimental projects conducted in ocean engineering laboratories illustrating concepts taught in class, including ship resistance and model testing, lift and drag forces on submerged bodies, and vehicle propulsion.
+course_url: "https://ocw.mit.edu/courses/2-016-hydrodynamics-13-012-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/2-016-hydrodynamics-13-012-fall-2005/2ae25f4657a652bde7c31ce9549473eb_2-016f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

@@ -1,0 +1,69 @@
+schema_version: "1.0"
+course_id: "mitocw-17-586-spring-2009"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "17.586"
+cross_listed_codes: []
+course_title: "Warlords, Terrorists, and Militias: Theorizing on Violent Non-State Actors"
+course_slug: "17-586-warlords-terrorists-and-militias-theorizing-on-violent-non-state-actors-spring-2009"
+term: "Spring"
+year: 2009
+as_taught_in: "Spring 2009"
+language: "en"
+departments:
+  - "Political Science"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Fotini Christia"
+subject_primary: "Anthropology"
+subject_secondary:
+  - "Social Anthropology"
+  - "Political Science"
+  - "Public Administration"
+  - "Military Studies"
+  - "Security Studies"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Anthropology"
+        specialties:
+          - "Social Anthropology"
+      - name: "Political Science"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Military Studies"
+          - "Security Studies"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Written Assignments with Examples"
+description: |
+  This course is a general overview of the recent political science literature on violent non-state actors. Its aim is to examine why non-state actors (such as warlords, terrorists, militias, etc.) resort to violence, what means and tactics they use, and what can be done to counter that violence. In that regard, the class will cover works pertaining to the production side of non-state violence (i.e. the objectives and organization of insurgents/terrorists/militias/warlords, their mobilization strategies and support base, how they coerce opponents, etc.); as well as the response that violence elicits from governments or other actors (i.e. counter-insurgency or counter-terrorism strategies, among others). Apart from introducing the basic variables and theoretical and empirical findings in the literature, this course will also grapple with questions of definition, operationalization of variables, and general methodology relevant to conducting research in this area of violent conflict. Though thematically-driven, this course will also reference cases from the contemporary battlefields of insurgency and terrorism (be it Afghanistan, Iraq, Pakistan, the West Bank and Gaza, Colombia, etc.) as they relate to the pertinent themes.
+course_url: "https://ocw.mit.edu/courses/17-586-warlords-terrorists-and-militias-theorizing-on-violent-non-state-actors-spring-2009/"
+image_url: |
+  https://ocw.mit.edu/courses/17-586-warlords-terrorists-and-militias-theorizing-on-violent-non-state-actors-spring-2009/b8b315a8fbe37b6e6f5e6211e617a511_17-586s09.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

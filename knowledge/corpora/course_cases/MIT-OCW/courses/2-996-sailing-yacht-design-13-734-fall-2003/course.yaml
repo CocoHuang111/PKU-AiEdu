@@ -1,0 +1,62 @@
+schema_version: "1.0"
+course_id: "mitocw-2-996-fall-2003"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "2.996"
+cross_listed_codes: []
+course_title: "Sailing Yacht Design (13.734)"
+course_slug: "2-996-sailing-yacht-design-13-734-fall-2003"
+term: "Fall"
+year: 2003
+as_taught_in: "Fall 2003"
+language: "en"
+departments:
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Jerome Milgram"
+subject_primary: "Mechanical Engineering"
+subject_secondary:
+  - "Mechanical Design"
+  - "Ocean Engineering"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Mechanical Design"
+      - name: "Ocean Engineering"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Exams"
+  - "Problem Sets"
+description: |
+  This subject teaches students, having an initial interest in sailing design, how to design good yachts. Topics covered include hydrostatics, transverse stability, and the incorporation of the design spiral into one’s working methods. Computer aided design (CAD) is used to design the shapes of hulls, appendages and decks, and is an important part of this course. The capstone project in this course is the Final Design Project in which each student designs a sailing yacht, complete in all major respects. The central material for this subject is the content of the book Principals of Yacht Design by Larssson and Eliasson (see further description in the syllabus ). All the class lectures are based on the material in this book. The figures in the book which are shown in class (but not reproduced on this site), contain the essential material and their meaning is explained in detail during the lecture sessions. Mastery of the material in the book and completing a design project provides the desired and needed education. This course was originally offered in Course 13 (Department of Ocean Engineering) as 13.734. In 2005, ocean engineering subjects became part of Course 2 (Department of Mechanical Engineering), and this course was renumbered 2.996.
+course_url: "https://ocw.mit.edu/courses/2-996-sailing-yacht-design-13-734-fall-2003/"
+image_url: "https://ocw.mit.edu/courses/2-996-sailing-yacht-design-13-734-fall-2003/66f1af5a862009323d890dbf6092bc07_2-996f03.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: false
+  lecture_notes: false
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

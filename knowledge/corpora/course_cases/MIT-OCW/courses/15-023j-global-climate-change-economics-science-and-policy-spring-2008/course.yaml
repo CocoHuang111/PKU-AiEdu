@@ -1,0 +1,87 @@
+schema_version: "1.0"
+course_id: "mitocw-15-023j-spring-2008"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.023J"
+cross_listed_codes:
+  - "12.848J"
+  - "ESD.128J"
+course_title: "Global Climate Change: Economics, Science, and Policy"
+course_slug: "15-023j-global-climate-change-economics-science-and-policy-spring-2008"
+term: "Spring"
+year: 2008
+as_taught_in: "Spring 2008"
+language: "en"
+departments:
+  - "Sloan School of Management"
+  - "Earth, Atmospheric, and Planetary Sciences"
+  - "Engineering Systems Division"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Henry Jacoby"
+  - "Prof. Ronald G Prinn"
+  - "Prof. Mort Webster"
+  - "Travis Franck"
+  - "Eunjee Lee"
+subject_primary: "Climate"
+subject_secondary:
+  - "Science"
+  - "Earth Science"
+  - "Climate Studies"
+  - "Social Science"
+  - "Economics"
+  - "Public Administration"
+  - "Environmental Policy"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Energy"
+    subtopics:
+      - name: "Climate"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Earth Science"
+        specialties:
+          - "Climate Studies"
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Environmental Policy"
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Sets"
+description: |
+  This class introduces scientific, economic, and ecological issues underlying the threat of global climate change, and the institutions engaged in negotiating an international response. It also develops an integrated approach to analysis of climate change processes, and assessment of proposed policy measures, drawing on research and model development within the MIT Joint Program on the Science and Policy of Global Change.
+course_url: "https://ocw.mit.edu/courses/15-023j-global-climate-change-economics-science-and-policy-spring-2008/"
+image_url: |
+  https://ocw.mit.edu/courses/15-023j-global-climate-change-economics-science-and-policy-spring-2008/53578b977200835549f524390101a3de_15-023js08.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: false
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

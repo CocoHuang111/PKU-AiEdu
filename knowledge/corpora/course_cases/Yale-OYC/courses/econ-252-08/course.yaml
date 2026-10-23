@@ -1,0 +1,27 @@
+schema_version: "1.0"
+course_id: "oyc-econ-252-08"
+institution: "Yale University"
+platform: "Open Yale Courses"
+course_codes:
+  - "ECON 252"
+course_title: "Financial Markets (2008)"
+course_slug: "econ-252-08"
+department_path: "economics"
+professors:
+  - "Robert J. Shiller Arthur M. Okun Professor of Economics"
+course_url: "https://oyc.yale.edu/economics/econ-252-08"
+language: "en"
+description: |
+  Financial institutions are a pillar of civilized society, supporting people in their productive ventures and managing the economic risks they take on. The workings of these institutions are important to comprehend if we are to predict their actions today and their evolution in the coming information age. The course strives to offer understanding of the theory of finance and its relation to the history, strengths and imperfections of such institutions as banking, insurance, securities, futures, and other derivatives markets, and the future of these institutions over the next century.
+license_url: ""
+session_count: 29
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+capture_date: "2026-10-08"
+extraction_status: "complete"
+metadata_origin:
+  course_codes: "source"
+  professors: "source"
+  description: "source"
+  department_path: "source"

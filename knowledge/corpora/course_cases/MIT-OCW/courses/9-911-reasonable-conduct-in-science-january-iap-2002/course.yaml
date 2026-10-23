@@ -1,0 +1,65 @@
+schema_version: "1.0"
+course_id: "mitocw-9-911-january-iap-2002"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "9.911"
+cross_listed_codes: []
+course_title: "Reasonable Conduct in Science"
+course_slug: "9-911-reasonable-conduct-in-science-january-iap-2002"
+term: "January IAP"
+year: 2002
+as_taught_in: "January IAP 2002"
+language: "en"
+departments:
+  - "Brain and Cognitive Sciences"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Matthew Wilson"
+subject_primary: "Philosophy"
+subject_secondary:
+  - "Ethics"
+  - "Science"
+  - "Cognitive Science"
+topic_tree:
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Science"
+    subtopics:
+      - name: "Cognitive Science"
+        specialties: []
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Presentation Assignments"
+  - "Written Assignments"
+description: |
+  To provide instruction and dialog on practical ethical issues relating to the responsible conduct of human and animal research in the brain and cognitive sciences. Specific emphasis will be placed on topics relevant to young researchers including data handling, animal and human subjects, misconduct, mentoring, intellectual property, and publication.
+course_url: "https://ocw.mit.edu/courses/9-911-reasonable-conduct-in-science-january-iap-2002/"
+image_url: "https://ocw.mit.edu/courses/9-911-reasonable-conduct-in-science-january-iap-2002/6fa84b41f73be08b6f3357ebc64adbc2_9-911iap02.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: false
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: true
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

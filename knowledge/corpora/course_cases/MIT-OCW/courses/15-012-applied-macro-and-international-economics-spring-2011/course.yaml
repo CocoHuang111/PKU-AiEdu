@@ -1,0 +1,64 @@
+schema_version: "1.0"
+course_id: "mitocw-15-012-spring-2011"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "15.012"
+cross_listed_codes: []
+course_title: "Applied Macro- and International Economics"
+course_slug: "15-012-applied-macro-and-international-economics-spring-2011"
+term: "Spring"
+year: 2011
+as_taught_in: "Spring 2011"
+language: "en"
+departments:
+  - "Sloan School of Management"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Roberto Rigobon"
+  - "Prof. Alberto Cavallo"
+subject_primary: "Economics"
+subject_secondary:
+  - "Industrial Organization"
+  - "International Economics"
+  - "Macroeconomics"
+topic_tree:
+  - name: "Social Science"
+    subtopics:
+      - name: "Economics"
+        specialties:
+          - "Industrial Organization"
+          - "International Economics"
+          - "Macroeconomics"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments with Examples"
+  - "Lecture Notes"
+description: |
+  15.012 Applied Macro- and International Economics uses case studies to investigate the macroeconomic environment in which firms operate. The first half of the course develops the basic tools of macroeconomic management: monetary, fiscal, and exchange rate policy. The class discusses recent emerging market and financial crises by examining their causes and considering how best to address them and prevent them from recurring in the future. The second half evaluates different strategies of economic development. Topics covered in the second half of this course include growth, the role of debt and foreign aid, and the reliance on natural resources.
+course_url: "https://ocw.mit.edu/courses/15-012-applied-macro-and-international-economics-spring-2011/"
+image_url: "https://ocw.mit.edu/courses/15-012-applied-macro-and-international-economics-spring-2011/6ea92390245473e58d5b3c0a33d8c718_15-012s11.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: false
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

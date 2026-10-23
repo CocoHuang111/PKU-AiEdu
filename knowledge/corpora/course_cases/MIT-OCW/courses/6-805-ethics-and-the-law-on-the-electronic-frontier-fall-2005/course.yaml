@@ -1,0 +1,88 @@
+schema_version: "1.0"
+course_id: "mitocw-6-805-fall-2005"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.805"
+cross_listed_codes:
+  - "6.806"
+  - "STS.085"
+course_title: "Ethics and the Law on the Electronic Frontier"
+course_slug: "6-805-ethics-and-the-law-on-the-electronic-frontier-fall-2005"
+term: "Fall"
+year: 2005
+as_taught_in: "Fall 2005"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Science, Technology, and Society"
+academic_levels:
+  - "Undergraduate"
+instructors:
+  - "Prof. Daniel Weitzner"
+  - "Prof. Harold Abelson"
+  - "Prof. Michael M.J. Fischer"
+subject_primary: "Computer Science"
+subject_secondary:
+  - "Data Mining"
+  - "Humanities"
+  - "Philosophy"
+  - "Ethics"
+  - "Social Science"
+  - "Communication"
+  - "Legal Studies"
+  - "Public Administration"
+  - "Science and Technology Policy"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Computer Science"
+        specialties:
+          - "Data Mining"
+  - name: "Humanities"
+    subtopics:
+      - name: "Philosophy"
+        specialties:
+          - "Ethics"
+  - name: "Social Science"
+    subtopics:
+      - name: "Communication"
+        specialties: []
+      - name: "Legal Studies"
+        specialties: []
+      - name: "Public Administration"
+        specialties:
+          - "Science and Technology Policy"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Activity Assignments"
+  - "Exams"
+  - "Lecture Notes"
+  - "Written Assignments"
+description: |
+  This course considers the interaction between law, policy, and technology as they relate to the evolving controversies over control of the Internet. In addition, there will be an in-depth treatment of privacy and the notion of “transparency” – regulations and technologies that govern the use of information, as well as access to information. Topics explored will include: Legal Background for Regulation of the Internet Fourth Amendment Law and Electronic Surveillance Profiling, Data Mining, and the U.S. PATRIOT Act Technologies for Anonymity and Transparency The Policy-Aware Web
+course_url: "https://ocw.mit.edu/courses/6-805-ethics-and-the-law-on-the-electronic-frontier-fall-2005/"
+image_url: "https://ocw.mit.edu/courses/6-805-ethics-and-the-law-on-the-electronic-frontier-fall-2005/6c7b5d06ab81aa95a81cc476256d8658_6-805f05.jpg"
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: true
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"

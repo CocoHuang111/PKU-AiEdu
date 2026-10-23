@@ -1,0 +1,22 @@
+schema_version: "1.0"
+case_id: "mit-open-learning-visualizations-and-learning-sequences-803"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT Open Learning"
+collection: "Residential Digital Innovations"
+title: "Visualizations and Learning Sequences in 8.03"
+slug: "visualizations-and-learning-sequences-803"
+course_codes:
+  - "8.03"
+departments:
+  - "Physics (Course 8)"
+instructors:
+  - "Yen-Jie Lee"
+  - "Alex Shvonski"
+  - "Michelle Tomasik"
+digital_innovations_tools:
+  - "Simulations & Visualizations"
+source_url: "https://openlearning.mit.edu/mit-faculty/residential-digital-innovations/visualizations-and-learning-sequences-803"
+language: "en"
+capture_date: "2026-10-09"
+extraction_status: "complete"
+content_sha256: "989ceb1eda6bbcfc8a5d393ac461f9364d557c9c2eaa019c267f054e6e8d1b26"

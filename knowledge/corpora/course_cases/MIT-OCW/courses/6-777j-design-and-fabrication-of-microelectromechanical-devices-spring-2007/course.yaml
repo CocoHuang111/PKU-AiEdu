@@ -1,0 +1,82 @@
+schema_version: "1.0"
+course_id: "mitocw-6-777j-spring-2007"
+institution: "Massachusetts Institute of Technology"
+platform: "MIT OpenCourseWare"
+course_codes:
+  - "6.777J"
+cross_listed_codes:
+  - "2.372J"
+course_title: "Design and Fabrication of Microelectromechanical Devices"
+course_slug: "6-777j-design-and-fabrication-of-microelectromechanical-devices-spring-2007"
+term: "Spring"
+year: 2007
+as_taught_in: "Spring 2007"
+language: "en"
+departments:
+  - "Electrical Engineering and Computer Science"
+  - "Mechanical Engineering"
+academic_levels:
+  - "Graduate"
+instructors:
+  - "Prof. Carol Livermore"
+  - "Prof. Joel Voldman"
+subject_primary: "Electrical Engineering"
+subject_secondary:
+  - "Electronics"
+  - "Mechanical Engineering"
+  - "Microtechnology"
+  - "Nanotechnology"
+  - "Science"
+  - "Physics"
+  - "Electromagnetism"
+topic_tree:
+  - name: "Engineering"
+    subtopics:
+      - name: "Electrical Engineering"
+        specialties:
+          - "Electronics"
+      - name: "Mechanical Engineering"
+        specialties:
+          - "Microtechnology"
+      - name: "Nanotechnology"
+        specialties: []
+  - name: "Science"
+    subtopics:
+      - name: "Physics"
+        specialties:
+          - "Electromagnetism"
+topic_keywords: []
+pedagogy_tags: []
+assessment_types: []
+course_feature_tags:
+  - "Lecture Notes"
+  - "Problem Set Solutions"
+  - "Problem Sets"
+  - "Programming Assignments"
+  - "Projects"
+description: |
+  6.777J / 2.372J is an introduction to microsystem design. Topics covered include: material properties, microfabrication technologies, structural behavior, sensing methods, fluid flow, microscale transport, noise, and amplifiers feedback systems. Student teams design microsystems (sensors, actuators, and sensing/control systems) of a variety of types, (e.g., optical MEMS, bioMEMS, inertial sensors) to meet a set of performance specifications (e.g., sensitivity, signal-to-noise) using a realistic microfabrication process. There is an emphasis on modeling and simulation in the design process. Prior fabrication experience is desirable. The course is worth 4 Engineering Design Points.
+course_url: "https://ocw.mit.edu/courses/6-777j-design-and-fabrication-of-microelectromechanical-devices-spring-2007/"
+image_url: |
+  https://ocw.mit.edu/courses/6-777j-design-and-fabrication-of-microelectromechanical-devices-spring-2007/48d6e35d863672759d9e08a0056cb84b_6-777js07.jpg
+license_name: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+resources:
+  syllabus: true
+  calendar: true
+  readings: true
+  lecture_notes: true
+  assignments: true
+  projects: true
+  exams: false
+  videos: false
+  instructor_insights: false
+  related_resources: false
+metadata_origin:
+  subject_primary: "source"
+  subject_secondary: "source"
+  academic_levels: "source"
+  course_feature_tags: "source"
+capture_date: "2026-10-03"
+last_verified_date: "2026-10-03"
+extraction_status: "complete"
