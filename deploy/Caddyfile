@@ -1,0 +1,33 @@
+{
+    default_sni {$SITE_ADDRESS}
+}
+
+{$SITE_ADDRESS} {
+    # Let's Encrypt 的公网 IP 证书必须使用 shortlived ACME profile。
+    # Caddy 会在证书约 6 天有效期内自动续签，证书状态保存在 caddy_data 卷。
+    tls {
+        issuer acme {
+            profile shortlived
+        }
+    }
+
+    encode zstd gzip
+
+    @api path /api/*
+    handle @api {
+        reverse_proxy backend:8010
+    }
+
+    handle {
+        root * /srv
+        try_files {path} /index.html
+        file_server
+    }
+
+    header {
+        X-Content-Type-Options nosniff
+        Referrer-Policy strict-origin-when-cross-origin
+        X-Frame-Options SAMEORIGIN
+        -Server
+    }
+}

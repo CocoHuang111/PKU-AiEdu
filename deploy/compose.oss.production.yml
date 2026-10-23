@@ -1,0 +1,21 @@
+# 与 deploy/compose.production.yml 叠加使用。在仓库根目录执行：
+# docker compose --env-file .env.production -f deploy/compose.production.yml -f deploy/compose.oss.production.yml up -d
+x-oss-env: &oss-env
+  UPLOAD_STORAGE_BACKEND: ${UPLOAD_STORAGE_BACKEND:-oss}
+  OSS_BUCKET: ${OSS_BUCKET:-pku-askedu}
+  OSS_REGION: ${OSS_REGION:-cn-beijing}
+  OSS_RAM_ROLE_NAME: ${OSS_RAM_ROLE_NAME:-AskEduOssServerRole}
+  OSS_USE_INTERNAL: "true"
+  OSS_CACHE_ROOT: /app/data/oss-cache
+  OSS_CACHE_MIN_FREE_BYTES: "5368709120"
+
+services:
+  backend:
+    environment:
+      <<: *oss-env
+  worker:
+    environment:
+      <<: *oss-env
+  archive-worker:
+    environment:
+      <<: *oss-env

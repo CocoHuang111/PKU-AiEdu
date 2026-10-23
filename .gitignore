@@ -64,9 +64,7 @@ models/*
 *.pkl
 !models/live/gb_obj_cls5.pkl
 
-# 公开仓库只保留本机能跑起来的代码、语料和本地数据库配置。
-# 服务器部署、实验表、真实课程样本和界面稿留在本机，不进入后续提交。
-deploy/
+# 生产部署模板可以入库；真实环境变量、实验表、课程样本和界面稿仍留在本机。
 DEPLOYMENT.md
 docs/
 dataset/

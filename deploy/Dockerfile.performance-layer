@@ -1,0 +1,6 @@
+# Narrow worker update: keep existing ASR dependencies and model cache intact.
+# 在仓库根目录构建：docker build -f deploy/Dockerfile.performance-layer .
+ARG BASE_IMAGE
+FROM ${BASE_IMAGE}
+COPY --chown=app:app backend/app/workers/tasks.py /app/backend/app/workers/tasks.py
+COPY --chown=app:app ai_engine/evaluation/vision.py /app/ai_engine/evaluation/vision.py
