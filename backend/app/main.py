@@ -18,7 +18,7 @@ async def lifespan(app: FastAPI):
     app_settings = get_app_settings()
     get_execution_pools()
     print(
-        "北大问教 2.0 后端启动 | "
+        "TeachBuddy 后端启动 | "
         f"AI 模式: {settings.mode} | "
         f"认证: {app_settings.auth_mode} | "
         f"环境: {app_settings.app_env}"
@@ -33,7 +33,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="北大问教 2.0",
+    title="TeachBuddy",
     description="面向高校教师的智能教学支持系统：视频质量评估 / 大纲优化 / 教学问答",
     version="2.0.0",
     lifespan=lifespan,

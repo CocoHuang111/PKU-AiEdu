@@ -1,10 +1,7 @@
 <template>
   <div class="login-page">
     <header class="nav">
-      <div class="brand">
-        北大问教
-        <span>PKU-AiEdu</span>
-      </div>
+      <div class="brand">TeachBuddy</div>
     </header>
 
     <div class="panel">
@@ -233,15 +230,6 @@ async function onPkuLogin() {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 1px;
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-}
-.brand span {
-  font-size: 11px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-  color: rgba(255, 255, 255, 0.55);
 }
 
 .panel {

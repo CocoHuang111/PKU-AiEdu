@@ -1,7 +1,7 @@
 <template>
   <el-container class="shell" direction="vertical">
     <header class="nav">
-      <div class="brand">北大问教 · 管理后台</div>
+      <div class="brand">TeachBuddy · 管理后台</div>
       <div class="nav-right">
         <el-menu :default-active="$route.path" router mode="horizontal" class="menu">
           <el-menu-item index="/admin/overview">概览</el-menu-item>

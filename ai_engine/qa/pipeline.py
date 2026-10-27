@@ -244,7 +244,7 @@ def _build_messages(
     return [
         ChatMessage(
             "system",
-            f"你是面向高校教师的教学支持助手「北大问教」，"
+            f"你是面向高校教师的教学支持助手「TeachBuddy」，"
             f"当前工作模式为「{mode_config.label}」。",
         ),
         ChatMessage("user", user_content),

@@ -4,7 +4,7 @@ PY ?= python
 BACKEND_PORT ?= 8010
 
 help:
-	@echo "北大问教 2.0"
+	@echo "TeachBuddy"
 	@echo ""
 	@echo "  make install        安装基础依赖（需先 conda activate pku2）"
 	@echo "  make install-local  安装可选依赖（本地 embedding/rerank、说话人分离）"
