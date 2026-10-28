@@ -22,7 +22,7 @@
       </template>
     </el-dialog>
     <header class="nav">
-      <div class="brand">北大问教</div>
+      <div class="brand">TeachBuddy</div>
       <div class="nav-right">
         <el-menu
           :default-active="$route.path"

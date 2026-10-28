@@ -164,7 +164,7 @@ def send_report(email, task, name='', staff_id='', kind='evaluation'):
     message = EmailMessage()
     message["From"] = os.environ["SMTP_FROM"]
     message["To"] = email
-    message["Subject"] = "北大问教：大纲优化已完成" if kind == 'syllabus' else "北大问教：视频评估报告已完成"
+    message["Subject"] = "TeachBuddy：大纲优化已完成" if kind == 'syllabus' else "TeachBuddy：视频评估报告已完成"
     message["Message-ID"] = f"<askedu-report-{task.id}@{urlsplit(os.environ['APP_PUBLIC_URL']).hostname}>"
     page = 'syllabus' if kind == 'syllabus' else 'evaluation'
     link = os.environ["APP_PUBLIC_URL"].rstrip("/") + f"/#/{page}?task={task.id}"
@@ -172,8 +172,8 @@ def send_report(email, task, name='', staff_id='', kind='evaluation'):
     message.set_content(
         f"{salutation}\n\n您的{task.filename or '教学材料'}{'大纲优化任务已完成，优化结果' if kind == 'syllabus' else '视频评估任务已完成，报告'}见附件；"
         f"更多详细解析请登录{link}（报告链接需登录本人账号访问）。\n\n"
-        "感谢您的耐心等待和对北大问教系统的支持！如使用过程中存在不便体验或相关问题，"
-        "欢迎随时邮件beidawenjiao@163.com，非常感谢您的宝贵意见！")
+        "感谢您的耐心等待和对 TeachBuddy 的支持！如使用过程中存在不便体验或相关问题，"
+        "欢迎随时邮件 TeachBuddy@163.com，非常感谢您的宝贵意见！")
     message.add_attachment(pdf, maintype='application', subtype='pdf', filename=filename)
     security = os.getenv("SMTP_SECURITY", "starttls")
     port = int(os.getenv("SMTP_PORT", "465" if security == "ssl" else "587"))
